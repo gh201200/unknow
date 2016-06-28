@@ -1,46 +1,15 @@
 package.cpath = package.cpath .. ";../3rd/skynet/luaclib/?.so;../server/luaclib/?.so"
-package.path = package.path .. ";../3rd/skynet/lualib/?.lua;../game/lualib/proto/?.lua"
+package.path = package.path .. ";../3rd/skynet/lualib/?.lua;../game/lualib/?.lua"
 
 local print_r = require "print_r"
 local socket = require "clientsocket"
 local sproto = require "sproto"
-local srp = require "srp"
-local aes = require "aes"
 local login_proto = require "proto.login_proto"
 local game_proto = require "proto.game_proto"
-local constant = require "constant"
 
-local username = arg[1]
-local password = arg[2]
-
-local user = { name = arg[1], password = arg[2] }
-
-if not user.name then
-	local f = io.open ("anonymous", "r")
-	if not f then
-		f = io.open ("anonymous", "w")
-		local name = ""
-		math.randomseed (os.time ())
-		for i = 1, 16 do
-			name = name .. string.char (math.random (127))
-		end
-
-		user.name = name
-		f:write (name)
-		f:flush ()
-		f:close ()
-	else
-		user.name = f:read ("a")
-		f:close ()
-	end
-end
-
-if not user.password then
-	user.password = constant.default_password
-end
 
 local server = "127.0.0.1"
-local login_port = 9777
+local login_port = 8888
 local game_port = 9555
 local gameserver = {
 	addr = "127.0.0.1",
@@ -48,8 +17,8 @@ local gameserver = {
 	name = "gameserver",
 }
 
-local host = sproto.new (login_proto.s2c):host "package"
-local request = host:attach (sproto.new (login_proto.c2s))
+local host = sproto.new (game_proto.s2c):host "package"
+local request = host:attach (sproto.new (game_proto.c2s))
 local fd 
 local game_fd
 
@@ -192,12 +161,8 @@ local function dispatch_message ()
 	end
 end
 
-local private_key, public_key = srp.create_client_key ()
-user.private_key = private_key
-user.public_key = public_key 
 fd = assert (socket.connect (server, login_port))
 print (string.format ("login server connected, fd = %d", fd))
-send_request ("handshake", { name = user.name, client_pub = public_key })
 
 local HELP = {}
 
