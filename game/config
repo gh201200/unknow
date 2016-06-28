@@ -11,7 +11,7 @@ start = "main"	-- main script
 bootstrap = "snlua bootstrap"	-- The service for bootstrap
 --standalone = "0.0.0.0:2013"
 
-lua_path = skynet_root.."lualib/?.lua;"..root.."lualib/?.lua"
+lua_path = skynet_root.."lualib/?.lua;"..root.."lualib/?.lua;"..root.."lualib/base/?.lua;"
 lua_cpath = skynet_root.."luaclib/?.so;"..root.."luaclib/?.so"
 cpath = skynet_root.."cservice/?.so;"..root.."cservice/?.so"
 luaservice = skynet_root.."service/?.lua;"..root.."service/?.lua"

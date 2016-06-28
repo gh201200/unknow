@@ -18,7 +18,7 @@ local function close_agent(fd)
 	if a then
 		skynet.call(gate, "lua", "kick", fd)
 		-- disconnect never return
-		skynet.send(a, "lua", "disconnect")
+		skynet.call(a, "lua", "disconnect")
 	end
 end
 

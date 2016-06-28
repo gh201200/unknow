@@ -4,7 +4,7 @@ local sharemap = require "sharemap"
 local socket = require "socket"
 
 local syslog = require "syslog"
-local protoloader = require "protoloader"
+local protoloader = require "proto.protoloader"
 local character_handler = require "agent.character_handler"
 --local map_handler = require "agent.map_handler"
 --local aoi_handler = require "agent.aoi_handler"
@@ -13,7 +13,7 @@ local character_handler = require "agent.character_handler"
 
 
 
-local gamed = tonumber (...)
+--local gamed = tonumber (...)
 local database
 
 local host, proto_request = protoloader.load (protoloader.GAME)
@@ -129,7 +129,7 @@ skynet.register_protocol {
 local CMD = {}
 
 function CMD.Start (conf)
-	local name = string.format ("agent:%d", account)
+	
 	syslog.debug ("agent Start")
 	local gate = conf.gate
 
@@ -147,41 +147,29 @@ function CMD.Start (conf)
 	
 	character_handler:register (user)
 
-	skynet.call(gate, "lua", "forward", fd)
 
-	last_heartbeat_time = skynet.now ()
-	heartbeat_check ()
+	for k, v in pairs (REQUEST) do
+		syslog.warningf ("REQUEST function : %s", k)
+	end
+
+	skynet.call(gate, "lua", "forward", user_fd)
+
+	--last_heartbeat_time = skynet.now ()
+	--heartbeat_check ()
 end
 
 function CMD.disconnect ()
 	syslog.debug ("agent closed")
 	
-	local account
 	if user then
-		account = user.account
-
-		if user.map then
-			skynet.call (user.map, "lua", "character_leave")
-			user.map = nil
-			--map_handler:unregister (user)
-			--aoi_handler:unregister (user)
-			--move_handler:unregister (user)
-			--combat_handler:unregister (user)
-		end
-
-		if user.world then
-			skynet.call (user.world, "lua", "character_leave", user.character.id)
-			user.world = nil
-		end
-
-		character_handler.save (user.character)
 		character_handler:unregister (user)
 		user = nil
 		user_fd = nil
 		REQUEST = nil
 	end
-
+	
 	--skynet.call (gamed, "lua", "close", skynet.self (), account)
+
 end
 
 
@@ -200,6 +188,7 @@ skynet.start (function ()
 			return skynet.ret ()
 		end
 		skynet.retpack (ret)
+		--skynet.ret(skynet.pack(ret))
 	end)
 end)
 
