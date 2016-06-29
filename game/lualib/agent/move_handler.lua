@@ -2,7 +2,6 @@ local skynet = require "skynet"
 
 local syslog = require "syslog"
 local handler = require "agent.handler"
-local aoi_handler = require "agent.aoi_handler"
 
 
 local REQUEST = {}
@@ -12,6 +11,11 @@ handler = handler.new (REQUEST)
 handler:init (function (u)
 	user = u
 end)
+
+function REQUEST.delat_time()
+	syslog.debug("recv clien sync time")
+	return {}
+end
 
 function REQUEST.move (args)
 	assert (args and args.pos)
@@ -33,5 +37,7 @@ function REQUEST.move (args)
 
 	return { pos = npos }
 end
+
+
 
 return handler

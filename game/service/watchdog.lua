@@ -4,22 +4,49 @@ local netpack = require "netpack"
 local CMD = {}
 local SOCKET = {}
 local gate
-local agent = {}
+local agentfd = {}
+local agentPools = {}
 
 function SOCKET.open(fd, addr)
 	skynet.error("New client from : " .. addr)
-	agent[fd] = skynet.newservice("agent")
-	skynet.call(agent[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
+	if #agentPools == 0 then
+		agentfd[fd] = skynet.newservice ("agent")
+		syslog.noticef ("pool is empty, new agent(%d),fd(%d) created", agentfd[fd], fd)
+	else
+		agentfd[fd] = table.remove (agentPools, 1)
+		syslog.debugf ("agent(%d),fd(%d) assigned, %d remain in pool", agentfd[fd], fd, #agentPools)
+	end
+	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
 end
 
+
+
+local function create_agents(num)	
+	print("agentPools num = " .. #agentPools)
+	--every five minites to check agent pools
+	skynet.timeout(30000, function() create_agents(100) end)
+
+	if #agentPools > 100 then return end
+
+	for i = 1, num do
+		table.insert (agentPools, skynet.newservice ("agent"))
+	end
+end
+
+
 local function close_agent(fd)
-	local a = agent[fd]
-	agent[fd] = nil
+	local a = agentfd[fd]
+	agentfd[fd] = nil
 	if a then
 		skynet.call(gate, "lua", "kick", fd)
 		-- disconnect never return
 		skynet.call(a, "lua", "disconnect")
 	end
+end
+
+local function timeout(t)
+	if #agentPools > 100 then return end
+	print(t)
 end
 
 function SOCKET.close(fd)
@@ -41,6 +68,8 @@ function SOCKET.data(fd, msg)
 end
 
 function CMD.start(conf)
+	create_agents(conf.agent_pool)
+
 	skynet.call(gate, "lua", "open" , conf)
 end
 

@@ -18,6 +18,7 @@ end)
 
 local function create_character (name, race, class)
 
+	syslog.warningf ("name =  %s, race = %s, class = %s", name, race, class)
 	local general = {
 		name = name,
 		race = race,

@@ -8,7 +8,7 @@ local protoloader = require "proto.protoloader"
 local character_handler = require "agent.character_handler"
 --local map_handler = require "agent.map_handler"
 --local aoi_handler = require "agent.aoi_handler"
---local move_handler = require "agent.move_handler"
+local move_handler = require "agent.move_handler"
 --local combat_handler = require "agent.combat_handler"
 
 
@@ -146,6 +146,7 @@ function CMD.Start (conf)
 	RESPONSE = user.RESPONSE
 	
 	character_handler:register (user)
+	move_handler:register (user)
 
 
 	for k, v in pairs (REQUEST) do
@@ -163,6 +164,7 @@ function CMD.disconnect ()
 	
 	if user then
 		character_handler:unregister (user)
+		move_handler:unregister (user)
 		user = nil
 		user_fd = nil
 		REQUEST = nil
