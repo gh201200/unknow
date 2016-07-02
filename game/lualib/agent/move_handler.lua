@@ -18,7 +18,7 @@ function REQUEST.delat_time()
 end
 
 function REQUEST.move (args)
-	assert (args and args.pos)
+	assert (args and args.dir)
 
 	local npos = args.pos
 	local opos = user.character.movement.pos
@@ -27,13 +27,9 @@ function REQUEST.move (args)
 			npos[k] = v
 		end
 	end
-	user.character.movement.pos = npos
+	user.entity.movement.pos = npos
 	
-	local ok = skynet.call (user.map, "lua", "move_blink", npos) 
-	if not ok then
-		user.character.movement.pos = opos
-		error ()
-	end
+
 
 	return { pos = npos }
 end

@@ -16,7 +16,8 @@ lua_cpath = skynet_root.."luaclib/?.so;"..root.."luaclib/?.so"
 cpath = skynet_root.."cservice/?.so;"..root.."cservice/?.so"
 luaservice = skynet_root.."service/?.lua;"..root.."service/?.lua"
 lualoader = skynet_root.."lualib/loader.lua"
-snax = skynet_root.."?.lua;"
+preload = root.."lualib/base/preload.lua"	-- run preload.lua before every lua service run
+snax = skynet_root.."?.lua;"..root.."service/?.lua"
  
 -- snax_interface_g = "snax_g"
 -- daemon = root .. "$SERVER_NAME" .. ".pid"

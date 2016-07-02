@@ -19,9 +19,19 @@ local types = [[
 local c2s = [[
 
 
-delat_time 200{		
+map_delat_time 200{		
 	response {
 	}
+}
+
+move 201{
+	request {       
+		dir 0 : Vector3		# move direction
+	}
+	response {
+		pos 0 : Vector3		# entity position
+		dir 1 : Vector3		# entity direction
+	} 
 }
 
 ]]
