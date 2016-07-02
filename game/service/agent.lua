@@ -1,37 +1,36 @@
 local skynet = require "skynet"
 local queue = require "skynet.queue"
 local sharemap = require "sharemap"
+local snax = require "snax"
 local socket = require "socket"
+
 
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
 local character_handler = require "agent.character_handler"
---local map_handler = require "agent.map_handler"
---local aoi_handler = require "agent.aoi_handler"
-local move_handler = require "agent.move_handler"
---local combat_handler = require "agent.combat_handler"
 
+local IAgentplayer = require "entity.IAgentPlayer"
 
+local hijack_msg = {}
 
---local gamed = tonumber (...)
-local database
+--local map = tonumber (...)
 
 local host, proto_request = protoloader.load (protoloader.GAME)
 
 --[[
-.user {
-	fd : integer
-	account : integer
-
-	character : character
-	world : integer
-	map : integer
-}
+.user = { 
+		fd = conf.client, 
+		agentPlayer = Iplayer,
+		REQUEST = {},
+		RESPONSE = {},
+		CMD = CMD,
+		send_request = send_request,
+	}
 ]]
 
 local user
 
-local function send_msg (fd, msg)
+function send_msg (fd, msg)
 	local package = string.pack (">s2", msg)
 	socket.write (fd, package)
 end
@@ -67,6 +66,16 @@ end
 local traceback = debug.traceback
 local REQUEST
 local function handle_request (name, args, response)
+	if hijack_msg[name] then
+		if response then
+			local ret = hijack_msg[name].req[name](user.agentPlayer.playerId, args)
+			send_msg (user_fd, response (ret))
+		else
+			hijack_msg[name].post[name](user.agentPlayer.playerId, args)
+		end
+		return
+	end
+
 	local f = REQUEST[name]
 	if f then
 		local ok, ret = xpcall (f, traceback, args)
@@ -108,6 +117,28 @@ local function handle_response (id, args)
 	end
 end
 
+local function request_hijack_msg(handle, name)
+	local interface = snax.interface(name)
+	for k, v in pairs(interface.accept) do
+		hijack_msg[k] = handle
+	end
+	for k, v in pairs(interface.response) do
+		assert(hijack_msg[k]==nil)
+		hijack_msg[k] = handle
+	end
+end
+
+local function request_release_msg(handle, name)
+	local interface = snax.interface(name)
+	for k, v in pairs(interface.accept) do
+		hijack_msg[k] = nil
+	end
+	for k, v in pairs(interface.response) do
+		hijack_msg[k] = nil
+	end
+end
+
+
 skynet.register_protocol {
 	name = "client",
 	id = skynet.PTYPE_CLIENT,
@@ -129,29 +160,31 @@ skynet.register_protocol {
 local CMD = {}
 
 function CMD.Start (conf)
+	local map = snax.newservice("map")
+	request_hijack_msg(map, "map")
 	
+	map.req.join(conf.client)
+
 	syslog.debug ("agent Start")
 	local gate = conf.gate
 
 	user = { 
 		fd = conf.client, 
-		account = conf.account,
+		agentPlayer = IAgentplayer.create(),
 		REQUEST = {},
 		RESPONSE = {},
 		CMD = CMD,
+		MAP = map,
 		send_request = send_request,
 	}
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
-	
+
+	--user.entity:init()
+
 	character_handler:register (user)
-	move_handler:register (user)
-
-
-	for k, v in pairs (REQUEST) do
-		syslog.warningf ("REQUEST function : %s", k)
-	end
+	
 
 	skynet.call(gate, "lua", "forward", user_fd)
 
@@ -164,7 +197,7 @@ function CMD.disconnect ()
 	
 	if user then
 		character_handler:unregister (user)
-		move_handler:unregister (user)
+		request_release_msg(user.MAP, "map")
 		user = nil
 		user_fd = nil
 		REQUEST = nil
