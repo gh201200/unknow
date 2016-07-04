@@ -13,7 +13,9 @@ function EntityManager:createPlayer(serverId, playerId)
 	local player = IMapPlayer.create()
 	player.serverId = serverId
 	player.playerId = playerId
-	table.insert(entityList, player)
+	
+	player:advanceEventStamp(EventStampType.Move)
+	table.insert(self.entityList, player)
 end
 
 function EntityManager:getEntity(serverId)

@@ -165,7 +165,7 @@ function CMD.Start (conf)
 	local map = snax.newservice("map")
 	request_hijack_msg(map, "map")
 	
-	map.req.join(conf.client)
+	--map.req.join(conf.client)
 
 	syslog.debug ("agent Start")
 	local gate = conf.gate
