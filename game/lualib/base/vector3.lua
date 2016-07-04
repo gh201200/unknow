@@ -29,4 +29,69 @@ function vector3:set(x, y ,z)
 	self.z = z
 end
 
+function vector3:mul_num(num)
+	self.x = self.x * num
+	self.y = self.y * num
+	self.z = self.z * num
+end
+
+function vector3:return_mul_num(num)
+	local v3 = vector3.create(self.x*num, self.y*num, self.z*num)
+	return v3
+end
+
+function vector3:length()
+	return math.sqrt(self.x * self.x + self.y * self.y + self.z * self.z );
+end
+
+function vector3:length_square()
+	return self.x * self.x + self.y * self.y + self.z * self.z;
+end
+
+function vector3:add(v)
+	self.x = self.x + v.x
+	self.y = self.y + v.y
+	self.z = self.z + v.z
+end
+
+function vector3:return_add(v)
+	self.x = self.x + v.x
+	self.y = self.y + v.y
+	self.z = self.z + v.z
+end
+
 return vector3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

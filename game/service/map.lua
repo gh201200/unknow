@@ -1,31 +1,39 @@
 local skynet = require "skynet"
 local snax = require "snax"
-local IMapPlayer = require "entity.IMapPlayer"
 local vector3 = require "vector3"
+local EntityManager = require "EntityManager"
+local EventStampHandle = require "EventStampHandle"
+local profile = require "profile"
+
+local coroutine_resume = profile.resume
+local coroutine_yield = profile.yield
+
 
 local max_number = 4
 local roomid
 local gate
-local users = {}
+
 
 function accept.move(playerId, args)
 	print("playerId = "..playerId)
-	print("x = "..args.dir.x.." y = "..args.dir.y.." z = "..args.dir.z)
-	local ret = {pos = vector3.create(1,2,3), dir = vector3.create(0,2,0)}
-	return {pos = {x=6,y=3,z=2}, dir = {x=4,y=6,z=7}}
+	local player = EntityManager.getPlayerByPlayerId(playerId)
+	player:setTargetPos(args)
 end
 
-function response.move000(playerId, args)
-	print("playerId = "..playerId)
-	print("x = "..args.dir.x.." y = "..args.dir.y.." z = "..args.dir.z)
-	local ret = {pos = vector3.create(1,2,3), dir = vector3.create(0,2,0)}
-	return {pos = {x=6,y=3,z=2}, dir = {x=4,y=6,z=7}}
+
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+function response.query_event_status(playerId, args)
+	local player = EntityManager.getPlayerByPlayerId(playerId)
+	local stamp = player:checkeventStamp(args.event_type, args.event_stamp)
+	if stamp < 0 then return nil end
+	return {event_type = args.event_type, event_stamp = stamp}
 end
 
 function response.join(fd)
-	local player = IMapPlayer.create()
-	player.serverId = fd
-	table.insert(users, player)
+	EntityManager.createPlayer(fd, 500001)
 end
 
 function response.leave(session)

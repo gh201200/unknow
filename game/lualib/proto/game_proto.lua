@@ -18,26 +18,40 @@ local types = [[
 
 local c2s = [[
 
+query_event_status 0 {		--query event stamp
+	request {
+		event_type 0 : integer
+		event_stamp 1 : integer
+	}
+	response {
+		event_type 0 : integer
+		event_stamp 1 : integer
+	}
+}
 
-map_delat_time 200{		
+
+map_delat_time 200{			--for estimate ping time
 	response {
 	}
 }
 
-move 201{
-	request {       
-		dir 0 : Vector3		# move direction
+move 201 {		--client move
+	request {
+		target 0 : Vector3
+		dir 1 : Vector3
 	}
-	response {
-		pos 0 : Vector3		# entity position
-		dir 1 : Vector3		# entity direction
-	} 
 }
+
 
 ]]
 
 local s2c = [[
-
+move 0 {
+	request {
+		pos 0 : Vector3
+		dir 1 : Vector3
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)

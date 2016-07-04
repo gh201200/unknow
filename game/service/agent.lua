@@ -69,7 +69,9 @@ local function handle_request (name, args, response)
 	if hijack_msg[name] then
 		if response then
 			local ret = hijack_msg[name].req[name](user.agentPlayer.playerId, args)
-			send_msg (user_fd, response (ret))
+			if ret then
+				send_msg (user_fd, response (ret))
+			end
 		else
 			hijack_msg[name].post[name](user.agentPlayer.playerId, args)
 		end
