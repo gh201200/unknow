@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SkillCfgmanager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<info id="1100101">
+		<szName>女妖攻击技能</szName>
+		<eSummonEffect>0</eSummonEffect>
+		<n32TriggerRate>1000</n32TriggerRate>
+	</info>
+	<info id="1100102">
+		<szName>女妖攻击技能</szName>
+		<eSummonEffect>60</eSummonEffect>
+		<n32TriggerRate>10020</n32TriggerRate>
+	</info>
+</SkillCfgmanager>
