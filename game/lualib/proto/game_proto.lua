@@ -18,7 +18,7 @@ local types = [[
 
 local c2s = [[
 
-query_event_status 0 {		--query event stamp
+query_event_status 0 {		#query event stamp
 	request {
 		event_type 0 : integer
 		event_stamp 1 : integer
@@ -29,13 +29,12 @@ query_event_status 0 {		--query event stamp
 	}
 }
 
-
-map_delat_time 200{			--for estimate ping time
+map_delat_time 200{			#for estimate ping time
 	response {
 	}
 }
 
-move 201 {		--client move
+move 201 {			#client move
 	request {
 		target 0 : Vector3
 		dir 1 : Vector3
