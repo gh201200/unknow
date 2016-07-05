@@ -70,7 +70,6 @@ end
 
 function CMD.start(conf)
 	create_agents(conf.agent_pool)
-
 	skynet.call(gate, "lua", "open" , conf)
 end
 
@@ -91,6 +90,5 @@ skynet.start(function()
 	end)
 	local m = require "entity.EntityManager"
 	print(m.ctor)
-
 	gate = skynet.newservice("gate")
 end)
