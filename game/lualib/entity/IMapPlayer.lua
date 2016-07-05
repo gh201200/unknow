@@ -4,10 +4,6 @@ local vector3 = require "vector3"
 
 local IMapPlayer = class("IMapPlayer", Ientity)
 
-function IMapPlayer.create()
-	return IMapPlayer.new()
-end
-
 
 function IMapPlayer:ctor()
 	IMapPlayer.super.ctor(self)

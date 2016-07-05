@@ -1,8 +1,9 @@
 local vector3 = require "vector3"
+local EventStampHandle = require "entity.EventStampHandle"
+
+
 
 local Ientity = class("Ientity")
-
-
 
 function Ientity:ctor()
 	
@@ -40,12 +41,16 @@ function Ientity:advanceEventStamp(event)
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
 	end
+	if not self.clientEventStamps[event] then
+		self.clientEventStamps[event] = 0
+	end
+
 	self.serverEventStamps[event] = self.serverEventStamps[event] + 1
 
-	if self.newClientReq and self.serverEventStamps[event] > self.clientEventStamps[event] then		--should resp now
-		map.post.respClientEventStamp(event, self.playerId)
-		self.newClientReq = false			--wait for another req
+	if self.newClientReq and self.serverEventStamps[event] > self.clientEventStamps[event] then 
 		self.clientEventStamps[event] = self.serverEventStamps[event]
+		EventStampHandle.respClientEventStamp(event, self.serverId)
+		self.newClientReq = false				
 	end
 end
 
@@ -53,12 +58,18 @@ function Ientity:checkeventStamp(event, stamp)
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
 	end
-	self.clientEventStamps[event] = stamp
+	if not self.clientEventStamps[event] then
+		self.clientEventStamps[event] = 0
+	end
 
-	if self.serverEventStamps[event] > stamp then 
+	if  self.serverEventStamps[event] > stamp then 
+		self.clientEventStamps[event] = self.serverEventStamps[event]
+		EventStampHandle.respClientEventStamp(event, self.serverId)
+		self.newClientReq = false				
 		return self.serverEventStamps[event]
 	else
-		self.newClientReq = true		--mark need be resp
+		self.clientEventStamps[event] = stamp
+		self.newClientReq = true				--mark need be resp
 		return -1
 	end
 end

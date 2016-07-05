@@ -186,7 +186,6 @@ function CMD.Start (conf)
 	--user.entity:init()
 
 	character_handler:register (user)
-	
 
 	skynet.call(gate, "lua", "forward", user_fd)
 

@@ -3,14 +3,13 @@ local IMapPlayer = require "entity.IMapPlayer"
 
 local EntityManager = class("EntityManager")
 
-
-function EntityManager:ctor()
+function EntityManager:ctor(p)
 	self.entityList = {}
-	
 end
 
 function EntityManager:createPlayer(serverId, playerId)
-	local player = IMapPlayer.create()
+	
+	local player = IMapPlayer.new()
 	player.serverId = serverId
 	player.playerId = playerId
 	
@@ -35,6 +34,7 @@ function EntityManager:getPlayerByPlayerId(playerId)
 	end
 	return nil
 end
+
 
 return EntityManager.new()
 
