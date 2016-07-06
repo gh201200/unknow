@@ -98,7 +98,7 @@ local function dispatch_package()
 	end
 end
 
-send_request("handshake")
+--send_request("handshake")
 send_request("set", { what = "hello", value = "world" })
 while true do
 	dispatch_package()

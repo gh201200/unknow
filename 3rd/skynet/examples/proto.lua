@@ -8,6 +8,12 @@ proto.c2s = sprotoparser.parse [[
 	session 1 : integer
 }
 
+.vector{
+	x 0 : integer
+	y 1 : integer
+	z 2 : integer
+}
+
 handshake 1 {
 	response {
 		msg 0  : string
@@ -17,6 +23,7 @@ handshake 1 {
 get 2 {
 	request {
 		what 0 : string
+		pos 1 : vector
 	}
 	response {
 		result 0 : string

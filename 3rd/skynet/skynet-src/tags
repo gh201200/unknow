@@ -1,0 +1,684 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AGAIN_WOULDBLOCK	socket_server.c	51;"	d	file:
+AGAIN_WOULDBLOCK	socket_server.c	53;"	d	file:
+ATOM_ADD	atomic.h	10;"	d
+ATOM_AND	atomic.h	12;"	d
+ATOM_CAS	atomic.h	4;"	d
+ATOM_CAS_POINTER	atomic.h	5;"	d
+ATOM_DEC	atomic.h	8;"	d
+ATOM_FDEC	atomic.h	9;"	d
+ATOM_FINC	atomic.h	7;"	d
+ATOM_INC	atomic.h	6;"	d
+ATOM_SUB	atomic.h	11;"	d
+CHECKCALLING_BEGIN	skynet_server.c	26;"	d	file:
+CHECKCALLING_BEGIN	skynet_server.c	34;"	d	file:
+CHECKCALLING_DECL	skynet_server.c	30;"	d	file:
+CHECKCALLING_DECL	skynet_server.c	38;"	d	file:
+CHECKCALLING_DESTROY	skynet_server.c	29;"	d	file:
+CHECKCALLING_DESTROY	skynet_server.c	37;"	d	file:
+CHECKCALLING_END	skynet_server.c	27;"	d	file:
+CHECKCALLING_END	skynet_server.c	35;"	d	file:
+CHECKCALLING_INIT	skynet_server.c	28;"	d	file:
+CHECKCALLING_INIT	skynet_server.c	36;"	d	file:
+CHECK_ABORT	skynet_start.c	45;"	d	file:
+DEFAULT_QUEUE_SIZE	skynet_mq.c	12;"	d	file:
+DEFAULT_SLOT_SIZE	skynet_handle.c	11;"	d	file:
+E	skynet_env.c	/^static struct skynet_env *E = NULL;$/;"	v	typeref:struct:skynet_env	file:
+FREE	socket_server.c	212;"	d	file:
+GLOBALNAME_LENGTH	skynet_harbor.h	7;"	d
+G_NODE	skynet_server.c	/^static struct skynet_node G_NODE;$/;"	v	typeref:struct:skynet_node	file:
+H	skynet_handle.c	/^static struct handle_storage *H = NULL;$/;"	v	typeref:struct:handle_storage	file:
+HANDLE_MASK	skynet_handle.h	7;"	d
+HANDLE_REMOTE_SHIFT	skynet_handle.h	8;"	d
+HARBOR	skynet_harbor.c	/^static unsigned int HARBOR = ~0;$/;"	v	file:
+HASH_ID	socket_server.c	39;"	d	file:
+L	skynet_env.c	/^	lua_State *L;$/;"	m	struct:skynet_env	file:
+LOG_MESSAGE_SIZE	skynet_error.c	11;"	d	file:
+LUA_SHORT_STRING_TABLE_H	luashrtbl.h	2;"	d
+M	skynet_module.c	/^static struct modules * M = NULL;$/;"	v	typeref:struct:modules	file:
+MALLOC	socket_server.c	211;"	d	file:
+MAX_EVENT	socket_server.c	22;"	d	file:
+MAX_GLOBAL_MQ	skynet_mq.c	13;"	d	file:
+MAX_INFO	socket_server.c	19;"	d	file:
+MAX_MODULE_TYPE	skynet_module.c	13;"	d	file:
+MAX_SLOT_SIZE	skynet_handle.c	12;"	d	file:
+MAX_SOCKET	socket_server.c	34;"	d	file:
+MAX_SOCKET_P	socket_server.c	21;"	d	file:
+MAX_UDP_PACKAGE	socket_server.c	47;"	d	file:
+MESSAGE_TYPE_MASK	skynet_mq.h	15;"	d
+MESSAGE_TYPE_SHIFT	skynet_mq.h	16;"	d
+MIN_READ_BUFFER	socket_server.c	23;"	d	file:
+MQ_IN_GLOBAL	skynet_mq.c	18;"	d	file:
+MQ_OVERLOAD	skynet_mq.c	19;"	d	file:
+PREFIX_SIZE	malloc_hook.c	20;"	d	file:
+PRIORITY_HIGH	socket_server.c	36;"	d	file:
+PRIORITY_LOW	socket_server.c	37;"	d	file:
+PROTOCOL_TCP	socket_server.c	41;"	d	file:
+PROTOCOL_UDP	socket_server.c	42;"	d	file:
+PROTOCOL_UDPv6	socket_server.c	43;"	d	file:
+PTYPE_CLIENT	skynet.h	12;"	d
+PTYPE_ERROR	skynet.h	17;"	d
+PTYPE_HARBOR	skynet.h	14;"	d
+PTYPE_MULTICAST	skynet.h	11;"	d
+PTYPE_RESERVED_DEBUG	skynet.h	20;"	d
+PTYPE_RESERVED_LUA	skynet.h	21;"	d
+PTYPE_RESERVED_QUEUE	skynet.h	19;"	d
+PTYPE_RESERVED_SNAX	skynet.h	22;"	d
+PTYPE_RESPONSE	skynet.h	10;"	d
+PTYPE_SOCKET	skynet.h	15;"	d
+PTYPE_SYSTEM	skynet.h	13;"	d
+PTYPE_TAG_ALLOCSESSION	skynet.h	25;"	d
+PTYPE_TAG_DONTCOPY	skynet.h	24;"	d
+PTYPE_TEXT	skynet.h	9;"	d
+Q	skynet_mq.c	/^static struct global_queue *Q = NULL;$/;"	v	typeref:struct:global_queue	file:
+REMOTE	skynet_harbor.c	/^static struct skynet_context * REMOTE = 0;$/;"	v	typeref:struct:skynet_context	file:
+REMOTE_MAX	skynet_harbor.h	8;"	d
+SIG	skynet_start.c	/^static int SIG = 0;$/;"	v	file:
+SIZEOF_TCPBUFFER	socket_server.c	65;"	d	file:
+SIZEOF_UDPBUFFER	socket_server.c	66;"	d	file:
+SKYNET_ATOMIC_H	atomic.h	2;"	d
+SKYNET_CONTEXT_HANDLE_H	skynet_handle.h	2;"	d
+SKYNET_ENV_H	skynet_env.h	2;"	d
+SKYNET_H	skynet.h	2;"	d
+SKYNET_HARBOR_H	skynet_harbor.h	2;"	d
+SKYNET_IMP_H	skynet_imp.h	2;"	d
+SKYNET_MALLOC_HOOK_H	malloc_hook.h	2;"	d
+SKYNET_MESSAGE_QUEUE_H	skynet_mq.h	2;"	d
+SKYNET_MODULE_H	skynet_module.h	2;"	d
+SKYNET_MONITOR_H	skynet_monitor.h	2;"	d
+SKYNET_RWLOCK_H	rwlock.h	2;"	d
+SKYNET_SERVER_H	skynet_server.h	2;"	d
+SKYNET_SOCKET_TYPE_ACCEPT	skynet_socket.h	9;"	d
+SKYNET_SOCKET_TYPE_CLOSE	skynet_socket.h	8;"	d
+SKYNET_SOCKET_TYPE_CONNECT	skynet_socket.h	7;"	d
+SKYNET_SOCKET_TYPE_DATA	skynet_socket.h	6;"	d
+SKYNET_SOCKET_TYPE_ERROR	skynet_socket.h	10;"	d
+SKYNET_SOCKET_TYPE_UDP	skynet_socket.h	11;"	d
+SKYNET_SOCKET_TYPE_WARNING	skynet_socket.h	12;"	d
+SKYNET_SPINLOCK_H	spinlock.h	2;"	d
+SKYNET_TIMER_H	skynet_timer.h	2;"	d
+SLOT_SIZE	malloc_hook.c	19;"	d	file:
+SOCKET_ACCEPT	socket_server.h	9;"	d
+SOCKET_CLOSE	socket_server.h	7;"	d
+SOCKET_DATA	socket_server.h	6;"	d
+SOCKET_ERROR	socket_server.h	10;"	d
+SOCKET_EXIT	socket_server.h	11;"	d
+SOCKET_OPEN	socket_server.h	8;"	d
+SOCKET_SERVER	skynet_socket.c	/^static struct socket_server * SOCKET_SERVER = NULL;$/;"	v	typeref:struct:socket_server	file:
+SOCKET_TYPE_BIND	socket_server.c	32;"	d	file:
+SOCKET_TYPE_CONNECTED	socket_server.c	29;"	d	file:
+SOCKET_TYPE_CONNECTING	socket_server.c	28;"	d	file:
+SOCKET_TYPE_HALFCLOSE	socket_server.c	30;"	d	file:
+SOCKET_TYPE_INVALID	socket_server.c	24;"	d	file:
+SOCKET_TYPE_LISTEN	socket_server.c	27;"	d	file:
+SOCKET_TYPE_PACCEPT	socket_server.c	31;"	d	file:
+SOCKET_TYPE_PLISTEN	socket_server.c	26;"	d	file:
+SOCKET_TYPE_RESERVE	socket_server.c	25;"	d	file:
+SOCKET_UDP	socket_server.h	12;"	d
+SPIN_DESTROY	spinlock.h	7;"	d
+SPIN_INIT	spinlock.h	4;"	d
+SPIN_LOCK	spinlock.h	5;"	d
+SPIN_UNLOCK	spinlock.h	6;"	d
+THREAD_MAIN	skynet_imp.h	15;"	d
+THREAD_MONITOR	skynet_imp.h	18;"	d
+THREAD_SOCKET	skynet_imp.h	16;"	d
+THREAD_TIMER	skynet_imp.h	17;"	d
+THREAD_WORKER	skynet_imp.h	14;"	d
+TI	skynet_timer.c	/^static struct timer * TI = NULL;$/;"	v	typeref:struct:timer	file:
+TIME_LEVEL	skynet_timer.c	24;"	d	file:
+TIME_LEVEL_MASK	skynet_timer.c	26;"	d	file:
+TIME_LEVEL_SHIFT	skynet_timer.c	23;"	d	file:
+TIME_NEAR	skynet_timer.c	22;"	d	file:
+TIME_NEAR_MASK	skynet_timer.c	25;"	d	file:
+TIME_NEAR_SHIFT	skynet_timer.c	21;"	d	file:
+UDP_ADDRESS_SIZE	socket_server.c	45;"	d	file:
+_drop_queue	skynet_mq.c	/^_drop_queue(struct message_queue *q, message_drop drop_func, void *ud) {$/;"	f	file:
+_filter_args	skynet_server.c	/^_filter_args(struct skynet_context * context, int type, int *session, void ** data, size_t * sz) {$/;"	f	file:
+_init_env	skynet_main.c	/^_init_env(lua_State *L) {$/;"	f	file:
+_insert_name	skynet_handle.c	/^_insert_name(struct handle_storage *s, const char * name, uint32_t handle) {$/;"	f	file:
+_insert_name_before	skynet_handle.c	/^_insert_name_before(struct handle_storage *s, char *name, uint32_t handle, int before) {$/;"	f	file:
+_mem_data	malloc_hook.c	/^typedef struct _mem_data {$/;"	s	file:
+_memory_block	malloc_hook.c	/^static size_t _memory_block = 0;$/;"	v	file:
+_open_sym	skynet_module.c	/^_open_sym(struct skynet_module *mod) {$/;"	f	file:
+_query	skynet_module.c	/^_query(const char * name) {$/;"	f	file:
+_release	skynet_mq.c	/^_release(struct message_queue *q) {$/;"	f	file:
+_try_open	skynet_module.c	/^_try_open(struct modules *m, const char * name) {$/;"	f	file:
+_used_memory	malloc_hook.c	/^static size_t _used_memory = 0;$/;"	v	file:
+add_node	skynet_timer.c	/^add_node(struct timer *T,struct timer_node *node) {$/;"	f	file:
+add_udp_socket	socket_server.c	/^add_udp_socket(struct socket_server *ss, struct request_udp *udp) {$/;"	f	file:
+address	socket_server.c	/^	uint8_t address[UDP_ADDRESS_SIZE];$/;"	m	struct:request_send_udp	file:
+address	socket_server.c	/^	uint8_t address[UDP_ADDRESS_SIZE];$/;"	m	struct:request_setudp	file:
+alloc_id	socket_server.c	/^	int alloc_id;$/;"	m	struct:socket_server	file:
+allocated	malloc_hook.c	/^	ssize_t allocated;$/;"	m	struct:_mem_data	file:
+append_sendbuffer	socket_server.c	/^append_sendbuffer(struct socket_server *ss, struct socket *s, struct request_send * request, int n) {$/;"	f	file:
+append_sendbuffer_	socket_server.c	/^append_sendbuffer_(struct socket_server *ss, struct wb_list *s, struct request_send * request, int size, int n) {$/;"	f	file:
+append_sendbuffer_low	socket_server.c	/^append_sendbuffer_low(struct socket_server *ss,struct socket *s, struct request_send * request) {$/;"	f	file:
+append_sendbuffer_udp	socket_server.c	/^append_sendbuffer_udp(struct socket_server *ss, struct socket *s, int priority, struct request_send * request, const uint8_t udp_address[UDP_ADDRESS_SIZE]) {$/;"	f	file:
+bind	socket_server.c	/^		struct request_bind bind;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_bind	file:
+bind_socket	socket_server.c	/^bind_socket(struct socket_server *ss, struct request_bind *request, struct socket_message *result) {$/;"	f	file:
+block_readpipe	socket_server.c	/^block_readpipe(int pipefd, void *buffer, int sz) {$/;"	f	file:
+bootstrap	skynet_imp.h	/^	const char * bootstrap;$/;"	m	struct:skynet_config
+bootstrap	skynet_start.c	/^bootstrap(struct skynet_context * logger, const char * cmdline) {$/;"	f	file:
+buffer	skynet_socket.h	/^	char * buffer;$/;"	m	struct:skynet_socket_message
+buffer	socket_server.c	/^		char buffer[256];$/;"	m	union:request_package::__anon2	file:
+buffer	socket_server.c	/^	char * buffer;$/;"	m	struct:request_send	file:
+buffer	socket_server.c	/^	char buffer[MAX_INFO];$/;"	m	struct:socket_server	file:
+buffer	socket_server.c	/^	void * buffer;$/;"	m	struct:send_object	file:
+buffer	socket_server.c	/^	void *buffer;$/;"	m	struct:write_buffer	file:
+buffer	socket_server.h	/^	void * (*buffer)(void *);$/;"	m	struct:socket_object_interface
+cap	skynet_mq.c	/^	int cap;$/;"	m	struct:message_queue	file:
+cb	skynet_server.c	/^	skynet_cb cb;$/;"	m	struct:skynet_context	file:
+cb_ud	skynet_server.c	/^	void * cb_ud;$/;"	m	struct:skynet_context	file:
+check_pid	skynet_daemon.c	/^check_pid(const char *pidfile) {$/;"	f	file:
+check_version	skynet_monitor.c	/^	int check_version;$/;"	m	struct:skynet_monitor	file:
+check_wb_list	socket_server.c	/^check_wb_list(struct wb_list *s) {$/;"	f	file:
+check_wsz	skynet_socket.c	/^check_wsz(struct skynet_context *ctx, int id, void *buffer, int64_t wsz) {$/;"	f	file:
+checkctrl	socket_server.c	/^	int checkctrl;$/;"	m	struct:socket_server	file:
+clean_prefix	malloc_hook.c	/^clean_prefix(char* ptr) {$/;"	f	file:
+clear_closed_event	socket_server.c	/^clear_closed_event(struct socket_server *ss, struct socket_message * result, int type) {$/;"	f	file:
+clear_wb_list	socket_server.c	/^clear_wb_list(struct wb_list *list) {$/;"	f	file:
+close	socket_server.c	/^		struct request_close close;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_close	file:
+close_socket	socket_server.c	/^close_socket(struct socket_server *ss, struct request_close *request, struct socket_message *result) {$/;"	f	file:
+cmd_abort	skynet_server.c	/^cmd_abort(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_endless	skynet_server.c	/^cmd_endless(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_exit	skynet_server.c	/^cmd_exit(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_funcs	skynet_server.c	/^static struct command_func cmd_funcs[] = {$/;"	v	typeref:struct:command_func	file:
+cmd_getenv	skynet_server.c	/^cmd_getenv(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_kill	skynet_server.c	/^cmd_kill(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_launch	skynet_server.c	/^cmd_launch(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_logoff	skynet_server.c	/^cmd_logoff(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_logon	skynet_server.c	/^cmd_logon(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_monitor	skynet_server.c	/^cmd_monitor(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_mqlen	skynet_server.c	/^cmd_mqlen(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_name	skynet_server.c	/^cmd_name(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_query	skynet_server.c	/^cmd_query(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_reg	skynet_server.c	/^cmd_reg(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_setenv	skynet_server.c	/^cmd_setenv(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_signal	skynet_server.c	/^cmd_signal(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_starttime	skynet_server.c	/^cmd_starttime(struct skynet_context * context, const char * param) {$/;"	f	file:
+cmd_timeout	skynet_server.c	/^cmd_timeout(struct skynet_context * context, const char * param) {$/;"	f	file:
+command_func	skynet_server.c	/^struct command_func {$/;"	s	file:
+cond	skynet_start.c	/^	pthread_cond_t cond;$/;"	m	struct:monitor	file:
+context_dec	skynet_server.c	/^context_dec() {$/;"	f	file:
+context_inc	skynet_server.c	/^context_inc() {$/;"	f	file:
+copy_name	skynet_server.c	/^copy_name(char name[GLOBALNAME_LENGTH], const char * addr) {$/;"	f	file:
+count	skynet_module.c	/^	int count;$/;"	m	struct:modules	file:
+count	skynet_start.c	/^	int count;$/;"	m	struct:monitor	file:
+create	skynet_module.h	/^	skynet_dl_create create;$/;"	m	struct:skynet_module
+create_thread	skynet_start.c	/^create_thread(pthread_t *thread, void *(*start_routine) (void *), void *arg) {$/;"	f	file:
+ctrl_cmd	socket_server.c	/^ctrl_cmd(struct socket_server *ss, struct socket_message *result) {$/;"	f	file:
+current	skynet_timer.c	/^	uint64_t current;$/;"	m	struct:timer	file:
+current_point	skynet_timer.c	/^	uint64_t current_point;$/;"	m	struct:timer	file:
+daemon	skynet_imp.h	/^	const char * daemon;$/;"	m	struct:skynet_config
+daemon_exit	skynet_daemon.c	/^daemon_exit(const char *pidfile) {$/;"	f
+daemon_init	skynet_daemon.c	/^daemon_init(const char *pidfile) {$/;"	f
+data	skynet_mq.h	/^	void * data;$/;"	m	struct:skynet_message
+data	socket_server.h	/^	char * data;$/;"	m	struct:socket_message
+delete_context	skynet_server.c	/^delete_context(struct skynet_context *ctx) {$/;"	f	file:
+destination	skynet_harbor.h	/^	struct remote_name destination;$/;"	m	struct:remote_message	typeref:struct:remote_message::remote_name
+destination	skynet_monitor.c	/^	uint32_t destination;$/;"	m	struct:skynet_monitor	file:
+dispatch_list	skynet_timer.c	/^dispatch_list(struct timer_node *current) {$/;"	f	file:
+dispatch_message	skynet_server.c	/^dispatch_message(struct skynet_context *ctx, struct skynet_message *msg) {$/;"	f	file:
+do_bind	socket_server.c	/^do_bind(const char *host, int port, int protocol, int *family) {$/;"	f	file:
+do_listen	socket_server.c	/^do_listen(const char * host, int port, int backlog) {$/;"	f	file:
+drop_message	skynet_server.c	/^drop_message(struct skynet_message *msg, void *ud) {$/;"	f	file:
+drop_t	skynet_server.c	/^struct drop_t {$/;"	s	file:
+dummy	socket_server.c	/^	uint8_t dummy[256];$/;"	m	struct:request_package	file:
+dump_c_mem	malloc_hook.c	/^dump_c_mem() {$/;"	f
+dump_mem_lua	malloc_hook.c	/^dump_mem_lua(lua_State *L) {$/;"	f
+endless	skynet_server.c	/^	bool endless;$/;"	m	struct:skynet_context	file:
+ev	socket_server.c	/^	struct event ev[MAX_EVENT];$/;"	m	struct:socket_server	typeref:struct:socket_server::event	file:
+event	socket_poll.h	/^struct event {$/;"	s
+event_fd	socket_server.c	/^	poll_fd event_fd;$/;"	m	struct:socket_server	file:
+event_index	socket_server.c	/^	int event_index;$/;"	m	struct:socket_server	file:
+event_n	socket_server.c	/^	int event_n;$/;"	m	struct:socket_server	file:
+expand_queue	skynet_mq.c	/^expand_queue(struct message_queue *q) {$/;"	f	file:
+expire	skynet_timer.c	/^	uint32_t expire;$/;"	m	struct:timer_node	file:
+family	socket_server.c	/^	int family;$/;"	m	struct:request_udp	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:request_bind	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:request_listen	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:request_udp	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:socket	file:
+fill_prefix	malloc_hook.c	/^fill_prefix(char* ptr) {$/;"	f	file:
+force_close	socket_server.c	/^force_close(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+forward_message	skynet_socket.c	/^forward_message(int type, bool padding, struct socket_message * result) {$/;"	f	file:
+forward_message_tcp	socket_server.c	/^forward_message_tcp(struct socket_server *ss, struct socket *s, struct socket_message * result) {$/;"	f	file:
+forward_message_udp	socket_server.c	/^forward_message_udp(struct socket_server *ss, struct socket *s, struct socket_message * result) {$/;"	f	file:
+free	socket_server.h	/^	void (*free)(void *);$/;"	m	struct:socket_object_interface
+free_buffer	socket_server.c	/^free_buffer(struct socket_server *ss, const void * buffer, int sz) {$/;"	f	file:
+free_func	socket_server.c	/^	void (*free_func)(void *);$/;"	m	struct:send_object	file:
+free_monitor	skynet_start.c	/^free_monitor(struct monitor *m) {$/;"	f	file:
+free_wb_list	socket_server.c	/^free_wb_list(struct socket_server *ss, struct wb_list *list) {$/;"	f	file:
+func	skynet_server.c	/^	const char * (*func)(struct skynet_context * context, const char * param);$/;"	m	struct:command_func	file:
+gen_udp_address	socket_server.c	/^gen_udp_address(int protocol, union sockaddr_all *sa, uint8_t * udp_address) {$/;"	f	file:
+get_allocated_field	malloc_hook.c	/^get_allocated_field(uint32_t handle) {$/;"	f	file:
+gettime	skynet_timer.c	/^gettime() {$/;"	f	file:
+global_queue	skynet_mq.c	/^struct global_queue {$/;"	s	file:
+handle	malloc_hook.c	/^	uint32_t handle;$/;"	m	struct:_mem_data	file:
+handle	skynet_handle.c	/^	uint32_t handle;$/;"	m	struct:handle_name	file:
+handle	skynet_harbor.h	/^	uint32_t handle;$/;"	m	struct:remote_name
+handle	skynet_mq.c	/^	uint32_t handle;$/;"	m	struct:message_queue	file:
+handle	skynet_server.c	/^	uint32_t handle;$/;"	m	struct:drop_t	file:
+handle	skynet_server.c	/^	uint32_t handle;$/;"	m	struct:skynet_context	file:
+handle	skynet_timer.c	/^	uint32_t handle;$/;"	m	struct:timer_event	file:
+handle_exit	skynet_server.c	/^handle_exit(struct skynet_context * context, uint32_t handle) {$/;"	f	file:
+handle_hup	skynet_start.c	/^handle_hup(int signal) {$/;"	f	file:
+handle_index	skynet_handle.c	/^	uint32_t handle_index;$/;"	m	struct:handle_storage	file:
+handle_key	skynet_server.c	/^	pthread_key_t handle_key;$/;"	m	struct:skynet_node	file:
+handle_name	skynet_handle.c	/^struct handle_name {$/;"	s	file:
+handle_storage	skynet_handle.c	/^struct handle_storage {$/;"	s	file:
+harbor	skynet_handle.c	/^	uint32_t harbor;$/;"	m	struct:handle_storage	file:
+harbor	skynet_imp.h	/^	int harbor;$/;"	m	struct:skynet_config
+has_cmd	socket_server.c	/^has_cmd(struct socket_server *ss) {$/;"	f	file:
+head	skynet_mq.c	/^	int head;$/;"	m	struct:message_queue	file:
+head	skynet_mq.c	/^	struct message_queue *head;$/;"	m	struct:global_queue	typeref:struct:global_queue::message_queue	file:
+head	skynet_timer.c	/^	struct timer_node head;$/;"	m	struct:link_list	typeref:struct:link_list::timer_node	file:
+head	socket_server.c	/^	struct write_buffer * head;$/;"	m	struct:wb_list	typeref:struct:wb_list::write_buffer	file:
+header	socket_server.c	/^	uint8_t header[8];	\/\/ 6 bytes dummy$/;"	m	struct:request_package	file:
+high	socket_server.c	/^	struct wb_list high;$/;"	m	struct:socket	typeref:struct:socket::wb_list	file:
+host	socket_server.c	/^	char host[1];$/;"	m	struct:request_listen	file:
+host	socket_server.c	/^	char host[1];$/;"	m	struct:request_open	file:
+id	skynet_socket.h	/^	int id;$/;"	m	struct:skynet_socket_message
+id	skynet_start.c	/^	int id;$/;"	m	struct:worker_parm	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_bind	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_close	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_listen	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_open	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_send	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_setopt	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_setudp	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_start	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_udp	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:socket	file:
+id	socket_server.h	/^	int id;$/;"	m	struct:socket_message
+id_to_hex	skynet_server.c	/^id_to_hex(char * str, uint32_t id) {$/;"	f	file:
+in_global	skynet_mq.c	/^	int in_global;$/;"	m	struct:message_queue	file:
+init	skynet_module.h	/^	skynet_dl_init init;$/;"	m	struct:skynet_module
+init	skynet_server.c	/^	bool init;$/;"	m	struct:skynet_context	file:
+init	skynet_server.c	/^	int init;$/;"	m	struct:skynet_node	file:
+instance	skynet_server.c	/^	void * instance;$/;"	m	struct:skynet_context	file:
+link	skynet_timer.c	/^link(struct link_list *list,struct timer_node *node) {$/;"	f	file:
+link_clear	skynet_timer.c	/^link_clear(struct link_list *list) {$/;"	f	file:
+link_list	skynet_timer.c	/^struct link_list {$/;"	s	file:
+list_uncomplete	socket_server.c	/^list_uncomplete(struct wb_list *s) {$/;"	f	file:
+listen	socket_server.c	/^		struct request_listen listen;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_listen	file:
+listen_socket	socket_server.c	/^listen_socket(struct socket_server *ss, struct request_listen * request, struct socket_message *result) {$/;"	f	file:
+load_config	skynet_main.c	/^static const char * load_config = "\\$/;"	v	file:
+lock	rwlock.h	/^	pthread_rwlock_t lock;$/;"	m	struct:rwlock
+lock	skynet_env.c	/^	struct spinlock lock;$/;"	m	struct:skynet_env	typeref:struct:skynet_env::spinlock	file:
+lock	skynet_handle.c	/^	struct rwlock lock;$/;"	m	struct:handle_storage	typeref:struct:handle_storage::rwlock	file:
+lock	skynet_module.c	/^	struct spinlock lock;$/;"	m	struct:modules	typeref:struct:modules::spinlock	file:
+lock	skynet_mq.c	/^	struct spinlock lock;$/;"	m	struct:global_queue	typeref:struct:global_queue::spinlock	file:
+lock	skynet_mq.c	/^	struct spinlock lock;$/;"	m	struct:message_queue	typeref:struct:message_queue::spinlock	file:
+lock	skynet_timer.c	/^	struct spinlock lock;$/;"	m	struct:timer	typeref:struct:timer::spinlock	file:
+lock	spinlock.h	/^	int lock;$/;"	m	struct:spinlock
+lock	spinlock.h	/^	pthread_mutex_t lock;$/;"	m	struct:spinlock
+log_blob	skynet_log.c	/^log_blob(FILE *f, void * buffer, size_t sz) {$/;"	f	file:
+log_socket	skynet_log.c	/^log_socket(FILE * f, struct skynet_socket_message * message, size_t sz) {$/;"	f	file:
+logfile	skynet_server.c	/^	FILE * logfile;$/;"	m	struct:skynet_context	file:
+logger	skynet_imp.h	/^	const char * logger;$/;"	m	struct:skynet_config
+logservice	skynet_imp.h	/^	const char * logservice;$/;"	m	struct:skynet_config
+low	socket_server.c	/^	struct wb_list low;$/;"	m	struct:socket	typeref:struct:socket::wb_list	file:
+luaS_exitshr	luashrtbl.h	/^static inline void luaS_exitshr() {}$/;"	f
+luaS_expandshr	luashrtbl.h	/^static inline void luaS_expandshr(int n) {}$/;"	f
+luaS_initshr	luashrtbl.h	/^static inline void luaS_initshr() {}$/;"	f
+luaS_shrinfo	luashrtbl.h	/^static inline int luaS_shrinfo(lua_State *L) { return 0; }$/;"	f
+m	skynet_module.c	/^	struct skynet_module m[MAX_MODULE_TYPE];$/;"	m	struct:modules	typeref:struct:modules::skynet_module	file:
+m	skynet_start.c	/^	struct monitor *m;$/;"	m	struct:worker_parm	typeref:struct:worker_parm::monitor	file:
+m	skynet_start.c	/^	struct skynet_monitor ** m;$/;"	m	struct:monitor	typeref:struct:monitor::skynet_monitor	file:
+main	skynet_main.c	/^main(int argc, char *argv[]) {$/;"	f
+mallctl_int64	malloc_hook.c	/^mallctl_int64(const char* name, size_t* newval) {$/;"	f
+mallctl_opt	malloc_hook.c	/^mallctl_opt(const char* name, int* newval) {$/;"	f
+malloc_current_memory	malloc_hook.c	/^malloc_current_memory(void) {$/;"	f
+malloc_memory_block	malloc_hook.c	/^malloc_memory_block(void) {$/;"	f
+malloc_oom	malloc_hook.c	/^static void malloc_oom(size_t size) {$/;"	f	file:
+malloc_used_memory	malloc_hook.c	/^malloc_used_memory(void) {$/;"	f
+mem_data	malloc_hook.c	/^} mem_data;$/;"	t	typeref:struct:_mem_data	file:
+mem_stats	malloc_hook.c	/^static mem_data mem_stats[SLOT_SIZE];$/;"	v	file:
+memory_info_dump	malloc_hook.c	/^memory_info_dump(void) {$/;"	f
+message	skynet_harbor.h	/^	const void * message;$/;"	m	struct:remote_message
+message_drop	skynet_mq.h	/^typedef void (*message_drop)(struct skynet_message *, void *);$/;"	t
+message_queue	skynet_mq.c	/^struct message_queue {$/;"	s	file:
+mod	skynet_server.c	/^	struct skynet_module * mod;$/;"	m	struct:skynet_context	typeref:struct:skynet_context::skynet_module	file:
+module	skynet_module.h	/^	void * module;$/;"	m	struct:skynet_module
+module_path	skynet_imp.h	/^	const char * module_path;$/;"	m	struct:skynet_config
+modules	skynet_module.c	/^struct modules {$/;"	s	file:
+monitor	skynet_start.c	/^struct monitor {$/;"	s	file:
+monitor_exit	skynet_server.c	/^	uint32_t monitor_exit;$/;"	m	struct:skynet_node	file:
+move_list	skynet_timer.c	/^move_list(struct timer *T, int level, int idx) {$/;"	f	file:
+mutex	skynet_start.c	/^	pthread_mutex_t mutex;$/;"	m	struct:monitor	file:
+name	skynet_handle.c	/^	char * name;$/;"	m	struct:handle_name	file:
+name	skynet_handle.c	/^	struct handle_name *name;$/;"	m	struct:handle_storage	typeref:struct:handle_storage::handle_name	file:
+name	skynet_harbor.h	/^	char name[GLOBALNAME_LENGTH];$/;"	m	struct:remote_name
+name	skynet_module.h	/^	const char * name;$/;"	m	struct:skynet_module
+name	skynet_server.c	/^	const char *name;$/;"	m	struct:command_func	file:
+name_cap	skynet_handle.c	/^	int name_cap;$/;"	m	struct:handle_storage	file:
+name_count	skynet_handle.c	/^	int name_count;$/;"	m	struct:handle_storage	file:
+near	skynet_timer.c	/^	struct link_list near[TIME_NEAR];$/;"	m	struct:timer	typeref:struct:timer::link_list	file:
+new_fd	socket_server.c	/^new_fd(struct socket_server *ss, int id, int fd, int protocol, uintptr_t opaque, bool add) {$/;"	f	file:
+next	skynet_mq.c	/^	struct message_queue *next;$/;"	m	struct:message_queue	typeref:struct:message_queue::message_queue	file:
+next	skynet_timer.c	/^	struct timer_node *next;$/;"	m	struct:timer_node	typeref:struct:timer_node::timer_node	file:
+next	socket_server.c	/^	struct write_buffer * next;$/;"	m	struct:write_buffer	typeref:struct:write_buffer::write_buffer	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_bind	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_close	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_listen	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_open	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_start	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_udp	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:socket	file:
+opaque	socket_server.h	/^	uintptr_t opaque;$/;"	m	struct:socket_message
+open	socket_server.c	/^		struct request_open open;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_open	file:
+open_request	socket_server.c	/^open_request(struct socket_server *ss, struct request_package *req, uintptr_t opaque, const char *addr, int port) {$/;"	f	file:
+open_socket	socket_server.c	/^open_socket(struct socket_server *ss, struct request_open * request, struct socket_message *result) {$/;"	f	file:
+optint	skynet_main.c	/^optint(const char *key, int opt) {$/;"	f	file:
+optstring	skynet_main.c	/^optstring(const char *key,const char * opt) {$/;"	f	file:
+overload	skynet_mq.c	/^	int overload;$/;"	m	struct:message_queue	file:
+overload_threshold	skynet_mq.c	/^	int overload_threshold;$/;"	m	struct:message_queue	file:
+p	socket_server.c	/^	} p;$/;"	m	struct:socket	typeref:union:socket::__anon1	file:
+path	skynet_module.c	/^	const char * path;$/;"	m	struct:modules	file:
+poll_fd	socket_poll.h	/^typedef int poll_fd;$/;"	t
+poll_socket_epoll_h	socket_epoll.h	2;"	d
+poll_socket_kqueue_h	socket_kqueue.h	2;"	d
+port	socket_server.c	/^	int port;$/;"	m	struct:request_open	file:
+protocol	socket_server.c	/^	uint16_t protocol;$/;"	m	struct:socket	file:
+ptr	socket_server.c	/^	char *ptr;$/;"	m	struct:write_buffer	file:
+queue	skynet_mq.c	/^	struct skynet_message *queue;$/;"	m	struct:message_queue	typeref:struct:message_queue::skynet_message	file:
+queue	skynet_server.c	/^	struct message_queue *queue;$/;"	m	struct:skynet_context	typeref:struct:skynet_context::message_queue	file:
+quit	skynet_start.c	/^	int quit;$/;"	m	struct:monitor	file:
+raise_uncomplete	socket_server.c	/^raise_uncomplete(struct socket * s) {$/;"	f	file:
+raw_free	malloc_hook.c	175;"	d	file:
+raw_free	malloc_hook.c	31;"	d	file:
+raw_realloc	malloc_hook.c	174;"	d	file:
+raw_realloc	malloc_hook.c	30;"	d	file:
+read	rwlock.h	/^	int read;$/;"	m	struct:rwlock
+read	socket_poll.h	/^	bool read;$/;"	m	struct:event
+recvctrl_fd	socket_server.c	/^	int recvctrl_fd;$/;"	m	struct:socket_server	file:
+ref	skynet_server.c	/^	int ref;$/;"	m	struct:skynet_context	file:
+release	skynet_module.h	/^	skynet_dl_release release;$/;"	m	struct:skynet_module
+release	skynet_mq.c	/^	int release;$/;"	m	struct:message_queue	file:
+remote_message	skynet_harbor.h	/^struct remote_message {$/;"	s
+remote_name	skynet_harbor.h	/^struct remote_name {$/;"	s
+report_accept	socket_server.c	/^report_accept(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+report_connect	socket_server.c	/^report_connect(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+request_bind	socket_server.c	/^struct request_bind {$/;"	s	file:
+request_close	socket_server.c	/^struct request_close {$/;"	s	file:
+request_listen	socket_server.c	/^struct request_listen {$/;"	s	file:
+request_open	socket_server.c	/^struct request_open {$/;"	s	file:
+request_package	socket_server.c	/^struct request_package {$/;"	s	file:
+request_send	socket_server.c	/^struct request_send {$/;"	s	file:
+request_send_udp	socket_server.c	/^struct request_send_udp {$/;"	s	file:
+request_setopt	socket_server.c	/^struct request_setopt {$/;"	s	file:
+request_setudp	socket_server.c	/^struct request_setudp {$/;"	s	file:
+request_start	socket_server.c	/^struct request_start {$/;"	s	file:
+request_udp	socket_server.c	/^struct request_udp {$/;"	s	file:
+reserve_id	socket_server.c	/^reserve_id(struct socket_server *ss) {$/;"	f	file:
+result	skynet_server.c	/^	char result[32];$/;"	m	struct:skynet_context	file:
+rfds	socket_server.c	/^	fd_set rfds;$/;"	m	struct:socket_server	file:
+rwlock	rwlock.h	/^struct rwlock {$/;"	s
+rwlock_init	rwlock.h	/^rwlock_init(struct rwlock *lock) {$/;"	f
+rwlock_rlock	rwlock.h	/^rwlock_rlock(struct rwlock *lock) {$/;"	f
+rwlock_runlock	rwlock.h	/^rwlock_runlock(struct rwlock *lock) {$/;"	f
+rwlock_wlock	rwlock.h	/^rwlock_wlock(struct rwlock *lock) {$/;"	f
+rwlock_wunlock	rwlock.h	/^rwlock_wunlock(struct rwlock *lock) {$/;"	f
+s	socket_poll.h	/^	void * s;$/;"	m	struct:event
+s	socket_server.c	/^	struct sockaddr s;$/;"	m	union:sockaddr_all	typeref:struct:sockaddr_all::sockaddr	file:
+send	socket_server.c	/^		struct request_send send;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_send	file:
+send	socket_server.c	/^	struct request_send send;$/;"	m	struct:request_send_udp	typeref:struct:request_send_udp::request_send	file:
+send_buffer	socket_server.c	/^send_buffer(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+send_buffer_empty	socket_server.c	/^send_buffer_empty(struct socket *s) {$/;"	f	file:
+send_list	socket_server.c	/^send_list(struct socket_server *ss, struct socket *s, struct wb_list *list, struct socket_message *result) {$/;"	f	file:
+send_list_tcp	socket_server.c	/^send_list_tcp(struct socket_server *ss, struct socket *s, struct wb_list *list, struct socket_message *result) {$/;"	f	file:
+send_list_udp	socket_server.c	/^send_list_udp(struct socket_server *ss, struct socket *s, struct wb_list *list, struct socket_message *result) {$/;"	f	file:
+send_object	socket_server.c	/^struct send_object {$/;"	s	file:
+send_object_init	socket_server.c	/^send_object_init(struct socket_server *ss, struct send_object *so, void *object, int sz) {$/;"	f	file:
+send_request	socket_server.c	/^send_request(struct socket_server *ss, struct request_package *request, char type, int len) {$/;"	f	file:
+send_socket	socket_server.c	/^send_socket(struct socket_server *ss, struct request_send * request, struct socket_message *result, int priority, const uint8_t *udp_address) {$/;"	f	file:
+send_udp	socket_server.c	/^		struct request_send_udp send_udp;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_send_udp	file:
+sendctrl_fd	socket_server.c	/^	int sendctrl_fd;$/;"	m	struct:socket_server	file:
+session	skynet_mq.h	/^	int session;$/;"	m	struct:skynet_message
+session	skynet_timer.c	/^	int session;$/;"	m	struct:timer_event	file:
+session_id	skynet_server.c	/^	int session_id;$/;"	m	struct:skynet_context	file:
+set_udp	socket_server.c	/^		struct request_setudp set_udp;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_setudp	file:
+set_udp_address	socket_server.c	/^set_udp_address(struct socket_server *ss, struct request_setudp *request, struct socket_message *result) {$/;"	f	file:
+setopt	socket_server.c	/^		struct request_setopt setopt;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_setopt	file:
+setopt_socket	socket_server.c	/^setopt_socket(struct socket_server *ss, struct request_setopt *request) {$/;"	f	file:
+shutdown	socket_server.c	/^	int shutdown;$/;"	m	struct:request_close	file:
+sigign	skynet_main.c	/^int sigign() {$/;"	f
+signal	skynet_module.h	/^	skynet_dl_signal signal;$/;"	m	struct:skynet_module
+signal_hup	skynet_start.c	/^signal_hup() {$/;"	f	file:
+size	socket_server.c	/^		int size;$/;"	m	union:socket::__anon1	file:
+size	socket_server.h	/^	int (*size)(void *);$/;"	m	struct:socket_object_interface
+skynet_callback	skynet_server.c	/^skynet_callback(struct skynet_context * context, void *ud, skynet_cb cb) {$/;"	f
+skynet_calloc	malloc_hook.c	/^skynet_calloc(size_t nmemb,size_t size) {$/;"	f
+skynet_calloc	skynet_malloc.h	7;"	d
+skynet_cb	skynet.h	/^typedef int (*skynet_cb)(struct skynet_context * context, void *ud, int type, int session, uint32_t source , const void * msg, size_t sz);$/;"	t
+skynet_command	skynet_server.c	/^skynet_command(struct skynet_context * context, const char * cmd , const char * param) {$/;"	f
+skynet_config	skynet_imp.h	/^struct skynet_config {$/;"	s
+skynet_context	skynet_server.c	/^struct skynet_context {$/;"	s	file:
+skynet_context_dispatchall	skynet_server.c	/^skynet_context_dispatchall(struct skynet_context * ctx) {$/;"	f
+skynet_context_endless	skynet_server.c	/^skynet_context_endless(uint32_t handle) {$/;"	f
+skynet_context_grab	skynet_server.c	/^skynet_context_grab(struct skynet_context *ctx) {$/;"	f
+skynet_context_handle	skynet_server.c	/^skynet_context_handle(struct skynet_context *ctx) {$/;"	f
+skynet_context_message_dispatch	skynet_server.c	/^skynet_context_message_dispatch(struct skynet_monitor *sm, struct message_queue *q, int weight) {$/;"	f
+skynet_context_new	skynet_server.c	/^skynet_context_new(const char * name, const char *param) {$/;"	f
+skynet_context_newsession	skynet_server.c	/^skynet_context_newsession(struct skynet_context *ctx) {$/;"	f
+skynet_context_push	skynet_server.c	/^skynet_context_push(uint32_t handle, struct skynet_message *message) {$/;"	f
+skynet_context_release	skynet_server.c	/^skynet_context_release(struct skynet_context *ctx) {$/;"	f
+skynet_context_reserve	skynet_server.c	/^skynet_context_reserve(struct skynet_context *ctx) {$/;"	f
+skynet_context_send	skynet_server.c	/^skynet_context_send(struct skynet_context * ctx, void * msg, size_t sz, uint32_t source, int type, int session) {$/;"	f
+skynet_context_total	skynet_server.c	/^skynet_context_total() {$/;"	f
+skynet_current_handle	skynet_server.c	/^skynet_current_handle(void) {$/;"	f
+skynet_daemon_h	skynet_daemon.h	2;"	d
+skynet_debug_memory	malloc_hook.c	/^skynet_debug_memory(const char *info) {$/;"	f
+skynet_dl_create	skynet_module.h	/^typedef void * (*skynet_dl_create)(void);$/;"	t
+skynet_dl_init	skynet_module.h	/^typedef int (*skynet_dl_init)(void * inst, struct skynet_context *, const char * parm);$/;"	t
+skynet_dl_release	skynet_module.h	/^typedef void (*skynet_dl_release)(void * inst);$/;"	t
+skynet_dl_signal	skynet_module.h	/^typedef void (*skynet_dl_signal)(void * inst, int signal);$/;"	t
+skynet_env	skynet_env.c	/^struct skynet_env {$/;"	s	file:
+skynet_env_init	skynet_env.c	/^skynet_env_init() {$/;"	f
+skynet_error	skynet_error.c	/^skynet_error(struct skynet_context * context, const char *msg, ...) {$/;"	f
+skynet_free	malloc_hook.c	/^skynet_free(void *ptr) {$/;"	f
+skynet_free	skynet_malloc.h	9;"	d
+skynet_getenv	skynet_env.c	/^skynet_getenv(const char *key) {$/;"	f
+skynet_globalexit	skynet_server.c	/^skynet_globalexit(void) {$/;"	f
+skynet_globalinit	skynet_server.c	/^skynet_globalinit(void) {$/;"	f
+skynet_globalmq_pop	skynet_mq.c	/^skynet_globalmq_pop() {$/;"	f
+skynet_globalmq_push	skynet_mq.c	/^skynet_globalmq_push(struct message_queue * queue) {$/;"	f
+skynet_handle_findname	skynet_handle.c	/^skynet_handle_findname(const char * name) {$/;"	f
+skynet_handle_grab	skynet_handle.c	/^skynet_handle_grab(uint32_t handle) {$/;"	f
+skynet_handle_init	skynet_handle.c	/^skynet_handle_init(int harbor) {$/;"	f
+skynet_handle_namehandle	skynet_handle.c	/^skynet_handle_namehandle(uint32_t handle, const char *name) {$/;"	f
+skynet_handle_register	skynet_handle.c	/^skynet_handle_register(struct skynet_context *ctx) {$/;"	f
+skynet_handle_retire	skynet_handle.c	/^skynet_handle_retire(uint32_t handle) {$/;"	f
+skynet_handle_retireall	skynet_handle.c	/^skynet_handle_retireall() {$/;"	f
+skynet_harbor_exit	skynet_harbor.c	/^skynet_harbor_exit() {$/;"	f
+skynet_harbor_init	skynet_harbor.c	/^skynet_harbor_init(int harbor) {$/;"	f
+skynet_harbor_message_isremote	skynet_harbor.c	/^skynet_harbor_message_isremote(uint32_t handle) {$/;"	f
+skynet_harbor_send	skynet_harbor.c	/^skynet_harbor_send(struct remote_message *rmsg, uint32_t source, int session) {$/;"	f
+skynet_harbor_start	skynet_harbor.c	/^skynet_harbor_start(void *ctx) {$/;"	f
+skynet_initthread	skynet_server.c	/^skynet_initthread(int m) {$/;"	f
+skynet_isremote	skynet_server.c	/^skynet_isremote(struct skynet_context * ctx, uint32_t handle, int * harbor) {$/;"	f
+skynet_lalloc	malloc_hook.c	/^skynet_lalloc(void *ptr, size_t osize, size_t nsize) {$/;"	f
+skynet_log_close	skynet_log.c	/^skynet_log_close(struct skynet_context * ctx, FILE *f, uint32_t handle) {$/;"	f
+skynet_log_h	skynet_log.h	2;"	d
+skynet_log_open	skynet_log.c	/^skynet_log_open(struct skynet_context * ctx, uint32_t handle) {$/;"	f
+skynet_log_output	skynet_log.c	/^skynet_log_output(FILE *f, uint32_t source, int type, int session, void * buffer, size_t sz) {$/;"	f
+skynet_malloc	malloc_hook.c	/^skynet_malloc(size_t size) {$/;"	f
+skynet_malloc	skynet_malloc.h	6;"	d
+skynet_malloc_h	skynet_malloc.h	2;"	d
+skynet_message	skynet_mq.h	/^struct skynet_message {$/;"	s
+skynet_module	skynet_module.h	/^struct skynet_module {$/;"	s
+skynet_module_init	skynet_module.c	/^skynet_module_init(const char *path) {$/;"	f
+skynet_module_insert	skynet_module.c	/^skynet_module_insert(struct skynet_module *mod) {$/;"	f
+skynet_module_instance_create	skynet_module.c	/^skynet_module_instance_create(struct skynet_module *m) {$/;"	f
+skynet_module_instance_init	skynet_module.c	/^skynet_module_instance_init(struct skynet_module *m, void * inst, struct skynet_context *ctx, const char * parm) {$/;"	f
+skynet_module_instance_release	skynet_module.c	/^skynet_module_instance_release(struct skynet_module *m, void *inst) {$/;"	f
+skynet_module_instance_signal	skynet_module.c	/^skynet_module_instance_signal(struct skynet_module *m, void *inst, int signal) {$/;"	f
+skynet_module_query	skynet_module.c	/^skynet_module_query(const char * name) {$/;"	f
+skynet_monitor	skynet_monitor.c	/^struct skynet_monitor {$/;"	s	file:
+skynet_monitor_check	skynet_monitor.c	/^skynet_monitor_check(struct skynet_monitor *sm) {$/;"	f
+skynet_monitor_delete	skynet_monitor.c	/^skynet_monitor_delete(struct skynet_monitor *sm) {$/;"	f
+skynet_monitor_new	skynet_monitor.c	/^skynet_monitor_new() {$/;"	f
+skynet_monitor_trigger	skynet_monitor.c	/^skynet_monitor_trigger(struct skynet_monitor *sm, uint32_t source, uint32_t destination) {$/;"	f
+skynet_mq_create	skynet_mq.c	/^skynet_mq_create(uint32_t handle) {$/;"	f
+skynet_mq_handle	skynet_mq.c	/^skynet_mq_handle(struct message_queue *q) {$/;"	f
+skynet_mq_init	skynet_mq.c	/^skynet_mq_init() {$/;"	f
+skynet_mq_length	skynet_mq.c	/^skynet_mq_length(struct message_queue *q) {$/;"	f
+skynet_mq_mark_release	skynet_mq.c	/^skynet_mq_mark_release(struct message_queue *q) {$/;"	f
+skynet_mq_overload	skynet_mq.c	/^skynet_mq_overload(struct message_queue *q) {$/;"	f
+skynet_mq_pop	skynet_mq.c	/^skynet_mq_pop(struct message_queue *q, struct skynet_message *message) {$/;"	f
+skynet_mq_push	skynet_mq.c	/^skynet_mq_push(struct message_queue *q, struct skynet_message *message) {$/;"	f
+skynet_mq_release	skynet_mq.c	/^skynet_mq_release(struct message_queue *q, message_drop drop_func, void *ud) {$/;"	f
+skynet_node	skynet_server.c	/^struct skynet_node {$/;"	s	file:
+skynet_now	skynet_timer.c	/^skynet_now(void) {$/;"	f
+skynet_queryname	skynet_server.c	/^skynet_queryname(struct skynet_context * context, const char * name) {$/;"	f
+skynet_realloc	malloc_hook.c	/^skynet_realloc(void *ptr, size_t size) {$/;"	f
+skynet_realloc	skynet_malloc.h	8;"	d
+skynet_send	skynet_server.c	/^skynet_send(struct skynet_context * context, uint32_t source, uint32_t destination , int type, int session, void * data, size_t sz) {$/;"	f
+skynet_sendname	skynet_server.c	/^skynet_sendname(struct skynet_context * context, uint32_t source, const char * addr , int type, int session, void * data, size_t sz) {$/;"	f
+skynet_setenv	skynet_env.c	/^skynet_setenv(const char *key, const char *value) {$/;"	f
+skynet_socket_bind	skynet_socket.c	/^skynet_socket_bind(struct skynet_context *ctx, int fd) {$/;"	f
+skynet_socket_close	skynet_socket.c	/^skynet_socket_close(struct skynet_context *ctx, int id) {$/;"	f
+skynet_socket_connect	skynet_socket.c	/^skynet_socket_connect(struct skynet_context *ctx, const char *host, int port) {$/;"	f
+skynet_socket_exit	skynet_socket.c	/^skynet_socket_exit() {$/;"	f
+skynet_socket_free	skynet_socket.c	/^skynet_socket_free() {$/;"	f
+skynet_socket_h	skynet_socket.h	2;"	d
+skynet_socket_init	skynet_socket.c	/^skynet_socket_init() {$/;"	f
+skynet_socket_listen	skynet_socket.c	/^skynet_socket_listen(struct skynet_context *ctx, const char *host, int port, int backlog) {$/;"	f
+skynet_socket_message	skynet_socket.h	/^struct skynet_socket_message {$/;"	s
+skynet_socket_nodelay	skynet_socket.c	/^skynet_socket_nodelay(struct skynet_context *ctx, int id) {$/;"	f
+skynet_socket_poll	skynet_socket.c	/^skynet_socket_poll() {$/;"	f
+skynet_socket_send	skynet_socket.c	/^skynet_socket_send(struct skynet_context *ctx, int id, void *buffer, int sz) {$/;"	f
+skynet_socket_send_lowpriority	skynet_socket.c	/^skynet_socket_send_lowpriority(struct skynet_context *ctx, int id, void *buffer, int sz) {$/;"	f
+skynet_socket_server_h	socket_server.h	2;"	d
+skynet_socket_shutdown	skynet_socket.c	/^skynet_socket_shutdown(struct skynet_context *ctx, int id) {$/;"	f
+skynet_socket_start	skynet_socket.c	/^skynet_socket_start(struct skynet_context *ctx, int id) {$/;"	f
+skynet_socket_udp	skynet_socket.c	/^skynet_socket_udp(struct skynet_context *ctx, const char * addr, int port) {$/;"	f
+skynet_socket_udp_address	skynet_socket.c	/^skynet_socket_udp_address(struct skynet_socket_message *msg, int *addrsz) {$/;"	f
+skynet_socket_udp_connect	skynet_socket.c	/^skynet_socket_udp_connect(struct skynet_context *ctx, int id, const char * addr, int port) {$/;"	f
+skynet_socket_udp_send	skynet_socket.c	/^skynet_socket_udp_send(struct skynet_context *ctx, int id, const char * address, const void *buffer, int sz) {$/;"	f
+skynet_start	skynet_start.c	/^skynet_start(struct skynet_config * config) {$/;"	f
+skynet_starttime	skynet_timer.c	/^skynet_starttime(void) {$/;"	f
+skynet_strdup	malloc_hook.c	/^skynet_strdup(const char *str) {$/;"	f
+skynet_timeout	skynet_timer.c	/^skynet_timeout(uint32_t handle, int time, int session) {$/;"	f
+skynet_timer_init	skynet_timer.c	/^skynet_timer_init(void) {$/;"	f
+skynet_updatetime	skynet_timer.c	/^skynet_updatetime(void) {$/;"	f
+sleep	skynet_start.c	/^	int sleep;$/;"	m	struct:monitor	file:
+slot	skynet_handle.c	/^	struct skynet_context ** slot;$/;"	m	struct:handle_storage	typeref:struct:handle_storage::skynet_context	file:
+slot	socket_server.c	/^	struct socket slot[MAX_SOCKET];$/;"	m	struct:socket_server	typeref:struct:socket_server::socket	file:
+slot_size	skynet_handle.c	/^	int slot_size;$/;"	m	struct:handle_storage	file:
+sockaddr_all	socket_server.c	/^union sockaddr_all {$/;"	u	file:
+socket	socket_server.c	/^struct socket {$/;"	s	file:
+socket_keepalive	socket_server.c	/^socket_keepalive(int fd) {$/;"	f	file:
+socket_message	socket_server.h	/^struct socket_message {$/;"	s
+socket_object_interface	socket_server.h	/^struct socket_object_interface {$/;"	s
+socket_poll_h	socket_poll.h	2;"	d
+socket_server	socket_server.c	/^struct socket_server {$/;"	s	file:
+socket_server_bind	socket_server.c	/^socket_server_bind(struct socket_server *ss, uintptr_t opaque, int fd) {$/;"	f
+socket_server_close	socket_server.c	/^socket_server_close(struct socket_server *ss, uintptr_t opaque, int id) {$/;"	f
+socket_server_connect	socket_server.c	/^socket_server_connect(struct socket_server *ss, uintptr_t opaque, const char * addr, int port) {$/;"	f
+socket_server_create	socket_server.c	/^socket_server_create() {$/;"	f
+socket_server_exit	socket_server.c	/^socket_server_exit(struct socket_server *ss) {$/;"	f
+socket_server_listen	socket_server.c	/^socket_server_listen(struct socket_server *ss, uintptr_t opaque, const char * addr, int port, int backlog) {$/;"	f
+socket_server_nodelay	socket_server.c	/^socket_server_nodelay(struct socket_server *ss, int id) {$/;"	f
+socket_server_poll	socket_server.c	/^socket_server_poll(struct socket_server *ss, struct socket_message * result, int * more) {$/;"	f
+socket_server_release	socket_server.c	/^socket_server_release(struct socket_server *ss) {$/;"	f
+socket_server_send	socket_server.c	/^socket_server_send(struct socket_server *ss, int id, const void * buffer, int sz) {$/;"	f
+socket_server_send_lowpriority	socket_server.c	/^socket_server_send_lowpriority(struct socket_server *ss, int id, const void * buffer, int sz) {$/;"	f
+socket_server_shutdown	socket_server.c	/^socket_server_shutdown(struct socket_server *ss, uintptr_t opaque, int id) {$/;"	f
+socket_server_start	socket_server.c	/^socket_server_start(struct socket_server *ss, uintptr_t opaque, int id) {$/;"	f
+socket_server_udp	socket_server.c	/^socket_server_udp(struct socket_server *ss, uintptr_t opaque, const char * addr, int port) {$/;"	f
+socket_server_udp_address	socket_server.c	/^socket_server_udp_address(struct socket_server *ss, struct socket_message *msg, int *addrsz) {$/;"	f
+socket_server_udp_connect	socket_server.c	/^socket_server_udp_connect(struct socket_server *ss, int id, const char * addr, int port) {$/;"	f
+socket_server_udp_send	socket_server.c	/^socket_server_udp_send(struct socket_server *ss, int id, const struct socket_udp_address *addr, const void *buffer, int sz) {$/;"	f
+socket_server_userobject	socket_server.c	/^socket_server_userobject(struct socket_server *ss, struct socket_object_interface *soi) {$/;"	f
+soi	socket_server.c	/^	struct socket_object_interface soi;$/;"	m	struct:socket_server	typeref:struct:socket_server::socket_object_interface	file:
+source	skynet_monitor.c	/^	uint32_t source;$/;"	m	struct:skynet_monitor	file:
+source	skynet_mq.h	/^	uint32_t source;$/;"	m	struct:skynet_message
+sp_add	socket_epoll.h	/^sp_add(int efd, int sock, void *ud) {$/;"	f
+sp_add	socket_kqueue.h	/^sp_add(int kfd, int sock, void *ud) {$/;"	f
+sp_create	socket_epoll.h	/^sp_create() {$/;"	f
+sp_create	socket_kqueue.h	/^sp_create() {$/;"	f
+sp_del	socket_epoll.h	/^sp_del(int efd, int sock) {$/;"	f
+sp_del	socket_kqueue.h	/^sp_del(int kfd, int sock) {$/;"	f
+sp_invalid	socket_epoll.h	/^sp_invalid(int efd) {$/;"	f
+sp_invalid	socket_kqueue.h	/^sp_invalid(int kfd) {$/;"	f
+sp_nonblocking	socket_epoll.h	/^sp_nonblocking(int fd) {$/;"	f
+sp_nonblocking	socket_kqueue.h	/^sp_nonblocking(int fd) {$/;"	f
+sp_release	socket_epoll.h	/^sp_release(int efd) {$/;"	f
+sp_release	socket_kqueue.h	/^sp_release(int kfd) {$/;"	f
+sp_wait	socket_epoll.h	/^sp_wait(int efd, struct event *e, int max) {$/;"	f
+sp_wait	socket_kqueue.h	/^sp_wait(int kfd, struct event *e, int max) {$/;"	f
+sp_write	socket_epoll.h	/^sp_write(int efd, int sock, void *ud, bool enable) {$/;"	f
+sp_write	socket_kqueue.h	/^sp_write(int kfd, int sock, void *ud, bool enable) {$/;"	f
+spinlock	spinlock.h	/^struct spinlock {$/;"	s
+spinlock_destroy	spinlock.h	/^spinlock_destroy(struct spinlock *lock) {$/;"	f
+spinlock_init	spinlock.h	/^spinlock_init(struct spinlock *lock) {$/;"	f
+spinlock_lock	spinlock.h	/^spinlock_lock(struct spinlock *lock) {$/;"	f
+spinlock_trylock	spinlock.h	/^spinlock_trylock(struct spinlock *lock) {$/;"	f
+spinlock_unlock	spinlock.h	/^spinlock_unlock(struct spinlock *lock) {$/;"	f
+start	skynet_start.c	/^start(int thread) {$/;"	f	file:
+start	socket_server.c	/^		struct request_start start;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_start	file:
+start_socket	socket_server.c	/^start_socket(struct socket_server *ss, struct request_start *request, struct socket_message *result) {$/;"	f	file:
+starttime	skynet_timer.c	/^	uint32_t starttime;$/;"	m	struct:timer	file:
+systime	skynet_timer.c	/^systime(uint32_t *sec, uint32_t *cs) {$/;"	f	file:
+sz	skynet_harbor.h	/^	size_t sz;$/;"	m	struct:remote_message
+sz	skynet_mq.h	/^	size_t sz;$/;"	m	struct:skynet_message
+sz	socket_server.c	/^	int sz;$/;"	m	struct:request_send	file:
+sz	socket_server.c	/^	int sz;$/;"	m	struct:send_object	file:
+sz	socket_server.c	/^	int sz;$/;"	m	struct:write_buffer	file:
+t	skynet_timer.c	/^	struct link_list t[4][TIME_LEVEL];$/;"	m	struct:timer	typeref:struct:timer::link_list	file:
+tail	skynet_mq.c	/^	int tail;$/;"	m	struct:message_queue	file:
+tail	skynet_mq.c	/^	struct message_queue *tail;$/;"	m	struct:global_queue	typeref:struct:global_queue::message_queue	file:
+tail	skynet_timer.c	/^	struct timer_node *tail;$/;"	m	struct:link_list	typeref:struct:link_list::timer_node	file:
+tail	socket_server.c	/^	struct write_buffer * tail;$/;"	m	struct:wb_list	typeref:struct:wb_list::write_buffer	file:
+thread	skynet_imp.h	/^	int thread;$/;"	m	struct:skynet_config
+thread_monitor	skynet_start.c	/^thread_monitor(void *p) {$/;"	f	file:
+thread_socket	skynet_start.c	/^thread_socket(void *p) {$/;"	f	file:
+thread_timer	skynet_start.c	/^thread_timer(void *p) {$/;"	f	file:
+thread_worker	skynet_start.c	/^thread_worker(void *p) {$/;"	f	file:
+time	skynet_timer.c	/^	uint32_t time;$/;"	m	struct:timer	file:
+timer	skynet_timer.c	/^struct timer {$/;"	s	file:
+timer_add	skynet_timer.c	/^timer_add(struct timer *T,void *arg,size_t sz,int time) {$/;"	f	file:
+timer_create_timer	skynet_timer.c	/^timer_create_timer() {$/;"	f	file:
+timer_event	skynet_timer.c	/^struct timer_event {$/;"	s	file:
+timer_execute	skynet_timer.c	/^timer_execute(struct timer *T) {$/;"	f	file:
+timer_execute_func	skynet_timer.c	/^typedef void (*timer_execute_func)(void *ud,void *arg);$/;"	t	file:
+timer_node	skynet_timer.c	/^struct timer_node {$/;"	s	file:
+timer_shift	skynet_timer.c	/^timer_shift(struct timer *T) {$/;"	f	file:
+timer_update	skynet_timer.c	/^timer_update(struct timer *T) {$/;"	f	file:
+tohandle	skynet_server.c	/^tohandle(struct skynet_context * context, const char * param) {$/;"	f	file:
+total	skynet_server.c	/^	int total;$/;"	m	struct:skynet_node	file:
+type	skynet_socket.h	/^	int type;$/;"	m	struct:skynet_socket_message
+type	socket_server.c	/^	uint16_t type;$/;"	m	struct:socket	file:
+u	socket_server.c	/^	} u;$/;"	m	struct:request_package	typeref:union:request_package::__anon2	file:
+ud	skynet_socket.h	/^	int ud;$/;"	m	struct:skynet_socket_message
+ud	socket_server.h	/^	int ud;	\/\/ for accept, ud is new connection id ; for data, ud is size of data $/;"	m	struct:socket_message
+udp	socket_server.c	/^		struct request_udp udp;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_udp	file:
+udp_address	socket_server.c	/^		uint8_t udp_address[UDP_ADDRESS_SIZE];$/;"	m	union:socket::__anon1	file:
+udp_address	socket_server.c	/^	uint8_t udp_address[UDP_ADDRESS_SIZE];$/;"	m	struct:write_buffer	file:
+udp_socket_address	socket_server.c	/^udp_socket_address(struct socket *s, const uint8_t udp_address[UDP_ADDRESS_SIZE], union sockaddr_all *sa) {$/;"	f	file:
+udpbuffer	socket_server.c	/^	uint8_t udpbuffer[MAX_UDP_PACKAGE];$/;"	m	struct:socket_server	file:
+update_xmalloc_stat_alloc	malloc_hook.c	/^update_xmalloc_stat_alloc(uint32_t handle, size_t __n) {$/;"	f	file:
+update_xmalloc_stat_free	malloc_hook.c	/^update_xmalloc_stat_free(uint32_t handle, size_t __n) {$/;"	f	file:
+userobject	socket_server.c	/^	bool userobject;$/;"	m	struct:write_buffer	file:
+v4	socket_server.c	/^	struct sockaddr_in v4;$/;"	m	union:sockaddr_all	typeref:struct:sockaddr_all::sockaddr_in	file:
+v6	socket_server.c	/^	struct sockaddr_in6 v6;$/;"	m	union:sockaddr_all	typeref:struct:sockaddr_all::sockaddr_in6	file:
+value	socket_server.c	/^	int value;$/;"	m	struct:request_setopt	file:
+version	skynet_monitor.c	/^	int version;$/;"	m	struct:skynet_monitor	file:
+wakeup	skynet_start.c	/^wakeup(struct monitor *m, int busy) {$/;"	f	file:
+wb_list	socket_server.c	/^struct wb_list {$/;"	s	file:
+wb_size	socket_server.c	/^	int64_t wb_size;$/;"	m	struct:socket	file:
+weight	skynet_start.c	/^	int weight;$/;"	m	struct:worker_parm	file:
+what	socket_server.c	/^	int what;$/;"	m	struct:request_setopt	file:
+worker_parm	skynet_start.c	/^struct worker_parm {$/;"	s	file:
+write	rwlock.h	/^	int write;$/;"	m	struct:rwlock
+write	socket_poll.h	/^	bool write;$/;"	m	struct:event
+write_buffer	socket_server.c	/^struct write_buffer {$/;"	s	file:
+write_buffer_free	socket_server.c	/^write_buffer_free(struct socket_server *ss, struct write_buffer *wb) {$/;"	f	file:
+write_pid	skynet_daemon.c	/^write_pid(const char *pidfile) {$/;"	f	file:

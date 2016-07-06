@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CMD.afk	login/msgagent.lua	/^function CMD.afk(source)$/;"	f
+CMD.close	watchdog.lua	/^function CMD.close(fd)$/;"	f
+CMD.disconnect	agent.lua	/^function CMD.disconnect()$/;"	f
+CMD.login	login/msgagent.lua	/^function CMD.login(source, uid, sid, secret)$/;"	f
+CMD.logout	login/logind.lua	/^function CMD.logout(uid, subid)$/;"	f
+CMD.logout	login/msgagent.lua	/^function CMD.logout(source)$/;"	f
+CMD.register_gate	login/logind.lua	/^function CMD.register_gate(server, address)$/;"	f
+CMD.start	agent.lua	/^function CMD.start(conf)$/;"	f
+CMD.start	watchdog.lua	/^function CMD.start(conf)$/;"	f
+REQUEST:get	agent.lua	/^function REQUEST:get()$/;"	f
+REQUEST:handshake	agent.lua	/^function REQUEST:handshake()$/;"	f
+REQUEST:quit	agent.lua	/^function REQUEST:quit()$/;"	f
+REQUEST:set	agent.lua	/^function REQUEST:set()$/;"	f
+SOCKET.close	watchdog.lua	/^function SOCKET.close(fd)$/;"	f
+SOCKET.data	watchdog.lua	/^function SOCKET.data(fd, msg)$/;"	f
+SOCKET.error	watchdog.lua	/^function SOCKET.error(fd, msg)$/;"	f
+SOCKET.open	watchdog.lua	/^function SOCKET.open(fd, addr)$/;"	f
+SOCKET.warning	watchdog.lua	/^function SOCKET.warning(fd, size)$/;"	f
+close_agent	watchdog.lua	/^local function close_agent(fd)$/;"	f
+command.GET	simpledb.lua	/^function command.GET(key)$/;"	f
+command.SET	simpledb.lua	/^function command.SET(key, value)$/;"	f
+dispatch 	agent.lua	/^	dispatch = function (_, _, type, ...)$/;"	f
+dispatch 	simplemonitor.lua	/^	dispatch = function(_, address)$/;"	f
+dispatch 	userlog.lua	/^	dispatch = function()$/;"	f
+dispatch 	userlog.lua	/^	dispatch = function(_, address, msg)$/;"	f
+dispatch_package	client.lua	/^local function dispatch_package()$/;"	f
+encode_token	login/client.lua	/^local function encode_token(token)$/;"	f
+local ok, err 	share.lua	/^	local ok, err = pcall(function()$/;"	f
+logout	login/msgagent.lua	/^local function logout()$/;"	f
+monitor	simplemonitor.lua	/^local function monitor(session, watcher, command, service)$/;"	f
+monitor_master	main_log.lua	/^local function monitor_master()$/;"	f
+print_package	client.lua	/^local function print_package(t, ...)$/;"	f
+print_request	client.lua	/^local function print_request(name, args)$/;"	f
+print_response	client.lua	/^local function print_response(session, args)$/;"	f
+recv_package	client.lua	/^local function recv_package(last)$/;"	f
+recv_response	login/client.lua	/^local function recv_response(v)$/;"	f
+request	agent.lua	/^local function request(name, args, response)$/;"	f
+response	simpleweb.lua	/^local function response(id, ...)$/;"	f
+send_package	agent.lua	/^local function send_package(pack)$/;"	f
+send_package	client.lua	/^local function send_package(fd, pack)$/;"	f
+send_package	login/client.lua	/^local function send_package(fd, pack)$/;"	f
+send_request	client.lua	/^local function send_request(name, args)$/;"	f
+send_request	login/client.lua	/^local function send_request(v, session)$/;"	f
+server.auth_handler	login/logind.lua	/^function server.auth_handler(token)$/;"	f
+server.command_handler	login/logind.lua	/^function server.command_handler(command, ...)$/;"	f
+server.disconnect_handler	login/gated.lua	/^function server.disconnect_handler(username)$/;"	f
+server.kick_handler	login/gated.lua	/^function server.kick_handler(uid, subid)$/;"	f
+server.login_handler	login/gated.lua	/^function server.login_handler(uid, secret)$/;"	f
+server.login_handler	login/logind.lua	/^function server.login_handler(server, uid, secret)$/;"	f
+server.logout_handler	login/gated.lua	/^function server.logout_handler(uid, subid)$/;"	f
+server.register_handler	login/gated.lua	/^function server.register_handler(name)$/;"	f
+server.request_handler	login/gated.lua	/^function server.request_handler(username, msg)$/;"	f
+timeout_check	checkdeadloop.lua	/^local function timeout_check(ti)$/;"	f
+try_recv	login/client.lua	/^	local function try_recv(fd, last)$/;"	f
+unpack 	agent.lua	/^	unpack = function (msg, sz)$/;"	f
+unpack 	simplemonitor.lua	/^	unpack = function() end,$/;"	f
+unpack 	userlog.lua	/^	unpack = function(...) return ... end,$/;"	f
+unpack_f	login/client.lua	/^local function unpack_f(f)$/;"	f
+unpack_line	login/client.lua	/^local function unpack_line(text)$/;"	f
+unpack_package	client.lua	/^local function unpack_package(text)$/;"	f
+unpack_package	login/client.lua	/^local function unpack_package(text)$/;"	f
+writeline	login/client.lua	/^local function writeline(fd, text)$/;"	f

@@ -14,13 +14,16 @@ local client_fd
 
 function REQUEST:get()
 	print("get", self.what)
+	print("pos",self.pos.x)
 	local r = skynet.call("SIMPLEDB", "lua", "get", self.what)
 	return { result = r }
 end
 
 function REQUEST:set()
+	print("REQUEST:set")
 	print("set", self.what, self.value)
-	local r = skynet.call("SIMPLEDB", "lua", "set", self.what, self.value)
+	--local r = skynet.call("SIMPLEDB", "lua", "set", self.what, self.value)
+	return 0
 end
 
 function REQUEST:handshake()
@@ -52,9 +55,12 @@ skynet.register_protocol {
 	end,
 	dispatch = function (_, _, type, ...)
 		if type == "REQUEST" then
+			print("reqqq:")
 			local ok, result  = pcall(request, ...)
+			print("REQUEST",ok,result)
 			if ok then
 				if result then
+					print("ffff")
 					send_package(result)
 				end
 			else
@@ -76,7 +82,7 @@ function CMD.start(conf)
 	send_request = host:attach(sprotoloader.load(2))
 	skynet.fork(function()
 		while true do
-			send_package(send_request "heartbeat")
+			--send_package(send_request "heartbeat")
 			skynet.sleep(500)
 		end
 	end)
