@@ -89,8 +89,7 @@ skynet.start(function()
 			skynet.ret(skynet.pack(f(subcmd, ...)))
 		end
 	end)
-	local m = require "entity.EntityManager"
-	print(m.ctor)
+
 
 	gate = skynet.newservice("gate")
 end)

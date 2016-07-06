@@ -5,10 +5,19 @@ local EntityManager = require "entity.EntityManager"
 local EventStampHandle = require "entity.EventStampHandle"
 
 
+local last_update_time = nil
+local function updateMapEvent()
+	local nt = skynet.now()
+	EntityManager:update(nt - last_update_time)
+	last_update_time = nt
+	skynet.timeout(3, function() updateMapEvent() end)
+end
 
-local max_number = 4
-local roomid
-local gate
+
+function accept.entity_enter(agent)
+	local player = EntityManager:getPlayerByPlayerId(500001)
+	player.agent = agent
+end
 
 
 function accept.move(playerId, args)
@@ -16,9 +25,6 @@ function accept.move(playerId, args)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
 	player:setTargetPos(args)
 end
-
-
-
 
 
 --------------------------------------------------------------------------
@@ -48,7 +54,10 @@ function response.query(session)
 end
 
 function init()
-	EventStampHandle.entityManager = EntityManager
+	--every 0.03s update entity
+	skynet.timeout(3, function() updateMapEvent() end)
+	last_update_time = skynet.now()
+
 	EntityManager:createPlayer(fd, 500001)
 	EntityManager:createPlayer(fd, 500002)
 end

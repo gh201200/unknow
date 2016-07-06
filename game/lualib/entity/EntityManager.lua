@@ -3,8 +3,17 @@ local IMapPlayer = require "entity.IMapPlayer"
 
 local EntityManager = class("EntityManager")
 
+
 function EntityManager:ctor(p)
 	self.entityList = {}
+end
+
+function EntityManager:update(dt)
+	for k, v in pairs(self.entityList) do
+		if v.update then
+			v:update(dt)		
+		end	
+	end
 end
 
 function EntityManager:createPlayer(serverId, playerId)
@@ -13,7 +22,7 @@ function EntityManager:createPlayer(serverId, playerId)
 	player.serverId = serverId
 	player.playerId = playerId
 	
-	player:advanceEventStamp(EventStampType.Move)
+	--player:advanceEventStamp(EventStampType.Move)
 	table.insert(self.entityList, player)
 end
 

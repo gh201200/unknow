@@ -1,4 +1,5 @@
 local coroutine = require "skynet.coroutine"
+local EntityManager = require "entity.EntityManager"
 
 
 local coroutine_pool = {}
@@ -24,7 +25,7 @@ end
 
 
 
-function EventStampHandle.respClientEventStamp(event, serverId)
+function respClientEventStamp(event, serverId)
 	coroutine.resume(coroutine_pool[event], serverId)
 end
 
@@ -32,9 +33,10 @@ end
 
 
 EventStampHandle[EventStampType.Move] = function (serverId)
-	--local player = entityManager:getEntity(serverId)
+	local player = EntityManager:getEntity(serverId)
 	print("EventStampHandle : EventStampType.Move")
-	
+	local r = { pos = {player.pos.x, player.pos.y, player.pos.z}, dir = {player.dir.x, player.dir.y, player.dir.z} }
+	skynet.send (player.agent, "lua", "sendRequest", r)
 end
 
 return EventStampHandle

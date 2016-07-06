@@ -30,10 +30,7 @@ local host, proto_request = protoloader.load (protoloader.GAME)
 
 local user
 
-function send_msg (fd, msg)
-	local package = string.pack (">s2", msg)
-	socket.write (fd, package)
-end
+
 
 local user_fd
 local session = {}
@@ -164,6 +161,8 @@ local CMD = {}
 function CMD.Start (conf)
 	local map = snax.newservice("map")
 	request_hijack_msg(map, "map")
+
+	map.post.entity_enter(skynet.self())
 	
 	--map.req.join(conf.client)
 
@@ -206,6 +205,10 @@ function CMD.disconnect ()
 	
 	--skynet.call (gamed, "lua", "close", skynet.self (), account)
 
+end
+
+function CMD.sendRequest (name, args)
+	send_request(name, args)
 end
 
 
