@@ -35,10 +35,16 @@ function REQUEST:quit()
 end
 
 local function request(name, args, response)
+	print(name)
+	print(args)
+	print(response)
 	local f = assert(REQUEST[name])
 	local r = f(args)
 	if response then
-		return response(r)
+		print("functionfffff")
+		local www = response(r)
+		print(www)
+		return www
 	end
 end
 

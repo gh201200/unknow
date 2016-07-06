@@ -1,6 +1,4 @@
 local vector3 = require "vector3"
-local EventStampHandle = require "entity.EventStampHandle"
-
 
 
 local Ientity = class("Ientity")
@@ -15,6 +13,7 @@ function Ientity:ctor()
 	self.pos = vector3.create()
 	self.dir = vector3.create()
 	self.targetPos = vector3.create()
+	self.moveSpeed = 0
 
 	--event stamp handle about
 	self.serverEventStamps = {}
@@ -49,7 +48,7 @@ function Ientity:advanceEventStamp(event)
 
 	if self.newClientReq and self.serverEventStamps[event] > self.clientEventStamps[event] then 
 		self.clientEventStamps[event] = self.serverEventStamps[event]
-		EventStampHandle.respClientEventStamp(event, self.serverId)
+		respClientEventStamp(event, self.serverId)
 		self.newClientReq = false				
 	end
 end
@@ -64,7 +63,7 @@ function Ientity:checkeventStamp(event, stamp)
 
 	if  self.serverEventStamps[event] > stamp then 
 		self.clientEventStamps[event] = self.serverEventStamps[event]
-		EventStampHandle.respClientEventStamp(event, self.serverId)
+		respClientEventStamp(event, self.serverId)
 		self.newClientReq = false				
 		return self.serverEventStamps[event]
 	else
@@ -75,12 +74,9 @@ function Ientity:checkeventStamp(event, stamp)
 end
 
 function Ientity:setTargetPos(args)
-	self.dir:set(args.dir.x, args.dir.y, args.dir.z)
+	print(args)
 	self.targetPos:set(args.target.x, args.target.y, args.target.z)
-end
-
-function Ientity:update()
-	
+	self.moveSpeed = 1
 end
 
 

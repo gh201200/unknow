@@ -10,31 +10,38 @@ function IMapPlayer:ctor()
 
 	self.playerId = 500001		--same with IAgentPlayer.playerId
 	self.serverId = 1001
-	self.pos.x = 10
+	self.pos.x = 0
 	self.pos.y = 0
-	self.pos.z = 10
+	self.pos.z = 0
 	self.dir:set(0, -1, 0)
-	self.moveTime = 0
 	self.moveSpeed = 0
 	self.entityType = EntityType.player
+	self.agent = 0
+
+	print("IMapPlayer:ctor()")
 end
 
-function IMapPlayer:update()
-	IMapPlayer.super.update(self)
-	self:move()
+function IMapPlayer:update(dt)
+	self:move(dt)
 	
 end
 
-function IMapPlayer:move()
+function IMapPlayer:move(dt)
 	if self.moveSpeed <= 0 then return end
 
-	local timeDiff = (skynet.now() - self.moveTime) / 100
-	local moveVec = self.dir:return_mul_num(self.moveSpeed * timeDiff)
-	local dst = self.pos:return_add(moveVec)
+	self.dir:set(self.targetPos.x, self.targetPos.y, self.targetPos.z)
+	self.dir:sub(self.pos)
+	self.dir:normalize(self.moveSpeed * dt/100)
+	
+
+	local dst = self.pos:return_add(self.dir)
 	--check iegal
 	
 	--move
-	self.pos:set(dst.x, dst,y, dst.z)
+	self.pos:set(dst.x, dst.y, dst.z)
+	if math.abs(self.targetPos.x - dst.x) < 1 and math.abs(self.targetPos.z - dst.z) < 1 then
+		self.moveSpeed = 0
+	end
 
 	--advance move event stamp
 	self:advanceEventStamp(EventStampType.Move)

@@ -1,11 +1,17 @@
 local vector3 = class("vector3")
 
+local function vector3_length(v)
+	return math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z )
+end
 
 function vector3.create(x, y, z)
 	local o = vector3.new()
 	o.x = x or 0
 	o.y = y or 0
 	o.z = z or 0
+	assert(type(o.x) == "number")
+	assert(type(o.y) == "number")
+	assert(type(o.z) == "number")
 	return o
 end
 
@@ -27,6 +33,9 @@ function vector3:set(x, y ,z)
 	self.x = x
 	self.y = y
 	self.z = z
+	assert(type(x) == "number")
+	assert(type(y) == "number")
+	assert(type(z) == "number")
 end
 
 function vector3:mul_num(num)
@@ -55,9 +64,29 @@ function vector3:add(v)
 end
 
 function vector3:return_add(v)
-	self.x = self.x + v.x
-	self.y = self.y + v.y
-	self.z = self.z + v.z
+	local v3 = vector3.create(self.x + v.x, self.y + v.y,  self.z + v.z)
+	return v3
+end
+
+function vector3:return_sub(v)
+	local v3 = vector3.create(self.x - v.x, self.y - v.y,  self.z - v.z)
+	return v3
+end
+
+function vector3:sub(v)
+	self.x = self.x - v.x
+	self.y = self.y - v.y
+	self.z = self.z - v.z
+end
+
+
+
+function vector3:normalize(n)
+	if not n then n = 1 end
+	local invLen = 1.0 / vector3_length(self);
+	self.x = self.x * invLen * n
+	self.y = self.y * invLen * n
+	self.z = self.z * invLen * n
 end
 
 return vector3
