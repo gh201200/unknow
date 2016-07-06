@@ -14,7 +14,7 @@ local client_fd
 
 function REQUEST:get()
 	print("get", self.what)
-	print("pos",self.pos.x)
+	print("pos",self.pos.x,self.pos.y,self.pos.z)
 	local r = skynet.call("SIMPLEDB", "lua", "get", self.what)
 	return { result = r }
 end

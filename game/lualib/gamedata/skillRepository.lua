@@ -1,8 +1,8 @@
 #!/usr/bin/env lua
 ---Sample application to read a XML file and print it on the terminal.
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
-dofile("../3rd/LuaXML/xml.lua")
-dofile("../3rd/LuaXML/handler.lua")
+dofile("../3rd/LuaXMLlib/xml.lua")
+dofile("../3rd/LuaXMLlib/handler.lua")
 local filename = "./lualib/gamedata/skill.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
