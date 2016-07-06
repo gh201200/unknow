@@ -75,7 +75,7 @@ end
 
 function Ientity:setTargetPos(args)
 	print(args)
-	self.targetPos:set(args.target.x, args.target.y, args.target.z)
+	self.targetPos:set(args.target.x/10000, args.target.y/10000, args.target.z/10000)
 	self.moveSpeed = 1
 end
 

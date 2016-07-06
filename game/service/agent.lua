@@ -201,13 +201,13 @@ function CMD.disconnect ()
 		user = nil
 		user_fd = nil
 		REQUEST = nil
-	end
-	
+	end	
 	--skynet.call (gamed, "lua", "close", skynet.self (), account)
-
 end
 
+
 function CMD.sendRequest (name, args)
+	print("sendRequest", name, args)
 	send_request(name, args)
 end
 
@@ -226,7 +226,9 @@ skynet.start (function ()
 			kick_self ()
 			return skynet.ret ()
 		end
-		skynet.retpack (ret)
+		if ret then
+			skynet.retpack (ret)
+		end
 		--skynet.ret(skynet.pack(ret))
 	end)
 end)

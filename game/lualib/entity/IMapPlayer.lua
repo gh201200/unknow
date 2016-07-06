@@ -38,8 +38,10 @@ function IMapPlayer:move(dt)
 	--check iegal
 	
 	--move
+	print("dst = ", dst.x, dst.y, dst.z)
 	self.pos:set(dst.x, dst.y, dst.z)
-	if math.abs(self.targetPos.x - dst.x) < 1 and math.abs(self.targetPos.z - dst.z) < 1 then
+	print("pos = ", self.pos.x, self.pos.y,self.pos.z)
+	if math.abs(self.targetPos.x - dst.x) < 0.01 and math.abs(self.targetPos.z - dst.z) < 0.01 then
 		self.moveSpeed = 0
 	end
 
