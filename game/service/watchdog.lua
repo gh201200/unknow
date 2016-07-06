@@ -70,7 +70,6 @@ end
 
 function CMD.start(conf)
 	create_agents(conf.agent_pool)
-
 	skynet.call(gate, "lua", "open" , conf)
 end
 
@@ -89,7 +88,5 @@ skynet.start(function()
 			skynet.ret(skynet.pack(f(subcmd, ...)))
 		end
 	end)
-
-
 	gate = skynet.newservice("gate")
 end)

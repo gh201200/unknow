@@ -10,7 +10,7 @@ skynet.start(function()
 	skynet.uniqueservice("protod")
 	local console = skynet.newservice("console")
 	skynet.newservice("debug_console",8000)
-
+	skynet.uniqueservice("golbaldata")
 	local watchdog = skynet.newservice("watchdog")
 	skynet.call(watchdog, "lua", "start", game_config)
 	skynet.exit()
