@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+) create_agents	watchdog.lua	/^	skynet.timeout(30000, function() create_agents(100) end)$/;"	f
+CMD.Start 	agent.lua	/^function CMD.Start (conf)$/;"	f
+CMD.close	watchdog.lua	/^function CMD.close(fd)$/;"	f
+CMD.disconnect 	agent.lua	/^function CMD.disconnect ()$/;"	f
+CMD.start	watchdog.lua	/^function CMD.start(conf)$/;"	f
+SOCKET.close	watchdog.lua	/^function SOCKET.close(fd)$/;"	f
+SOCKET.data	watchdog.lua	/^function SOCKET.data(fd, msg)$/;"	f
+SOCKET.error	watchdog.lua	/^function SOCKET.error(fd, msg)$/;"	f
+SOCKET.open	watchdog.lua	/^function SOCKET.open(fd, addr)$/;"	f
+SOCKET.warning	watchdog.lua	/^function SOCKET.warning(fd, size)$/;"	f
+accept.move	map.lua	/^function accept.move(playerId, args)$/;"	f
+close_agent	watchdog.lua	/^local function close_agent(fd)$/;"	f
+create_agents	watchdog.lua	/^local function create_agents(num)	$/;"	f
+dispatch 	agent.lua	/^	dispatch = function (_, _, type, ...)$/;"	f
+exit	map.lua	/^function exit()$/;"	f
+handle_request 	agent.lua	/^local function handle_request (name, args, response)$/;"	f
+handle_response 	agent.lua	/^local function handle_response (id, args)$/;"	f
+heartbeat_check 	agent.lua	/^local function heartbeat_check ()$/;"	f
+init	map.lua	/^function init()$/;"	f
+kick_self 	agent.lua	/^local function kick_self ()$/;"	f
+request_hijack_msg	agent.lua	/^local function request_hijack_msg(handle, name)$/;"	f
+request_release_msg	agent.lua	/^local function request_release_msg(handle, name)$/;"	f
+response.join	map.lua	/^function response.join(fd)$/;"	f
+response.leave	map.lua	/^function response.leave(session)$/;"	f
+response.query	map.lua	/^function response.query(session)$/;"	f
+response.query_event_status	map.lua	/^function response.query_event_status(playerId, args)$/;"	f
+send_msg 	agent.lua	/^function send_msg (fd, msg)$/;"	f
+send_request 	agent.lua	/^local function send_request (name, args)$/;"	f
+timeout	watchdog.lua	/^local function timeout(t)$/;"	f
+unpack 	agent.lua	/^	unpack = function (msg, sz)$/;"	f
