@@ -14,6 +14,7 @@ function Ientity:ctor()
 	self.dir = vector3.create()
 	self.targetPos = vector3.create()
 	self.moveSpeed = 0
+	self.curActionState = 0 
 
 	--event stamp handle about
 	self.serverEventStamps = {}
@@ -73,10 +74,16 @@ function Ientity:checkeventStamp(event, stamp)
 	end
 end
 
-function Ientity:setTargetPos(args)
-	print(args)
-	self.targetPos:set(args.target.x/10000, args.target.y/10000, args.target.z/10000)
+function Ientity:stand()
+	self.moveSpeed  = 0
+	self.curActionState = ActionState.stand
+end
+
+function Ientity:setTargetPos(target)
+	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
 	self.moveSpeed = 1
+	self.curActionState = ActionState.move
+
 end
 
 

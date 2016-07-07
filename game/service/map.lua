@@ -21,9 +21,8 @@ end
 
 
 function accept.move(playerId, args)
-	print("playerId = "..playerId)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
-	player:setTargetPos(args)
+	player:setTargetPos(args.target)
 end
 
 

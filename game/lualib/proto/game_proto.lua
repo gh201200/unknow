@@ -48,6 +48,7 @@ move 1 {
 	request {
 		pos 0 : Vector3
 		dir 1 : Vector3
+		action 2 : integer
 	}
 }
 ]]

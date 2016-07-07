@@ -36,8 +36,13 @@ end
 EventStampHandle[EventStampType.Move] = function (serverId)
 	local player = EntityManager:getEntity(serverId)
 	print("EventStampHandle : EventStampType.Move")
-	local r = { pos = {x=math.ceil(player.pos.x*10000), y=math.ceil(player.pos.y*10000),z=math.ceil(player.pos.z*10000)}, dir = {x=math.ceil(player.dir.x*10000), y=math.ceil(player.dir.y*10000), z=math.ceil(player.dir.z*10000)} }
-	print("agent = ", player.agent)
+	local r = {  
+		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
+		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)}, 
+		action = player.actionStatek 
+		
+		}
+	
 	skynet.send (player.agent, "lua", "sendRequest", "move" ,r)
 end
 
