@@ -9,6 +9,7 @@ function Ientity:ctor()
 
 	--entity world data about
 	self.entityType = 0
+	self.serverId = 0
 
 	self.pos = vector3.create()
 	self.dir = vector3.create()
@@ -17,25 +18,16 @@ function Ientity:ctor()
 	self.curActionState = 0 
 
 	--event stamp handle about
-	self.serverEventStamps = {}
+	self.serverEventStamps = {}		--server event stamp
 	self.clientEventStamps = {}		--now this table has no means
-	self.newClientReq = false
-
+	self.newClientReq = {}			--whether
+	self.coroutine_pool = {}
+	self.coroutine_response = {}
 	--skynet about
 	
 	
 end
 
-
-function Ientity:responseClientStamp(event)
-	local f = eventHandle[event]
-	if f then
-		f(self.serverId)	
-	else
-		syslog.errf("no %d handle defined", event)	
-	end
-	self.newClientReq = false
-end
 
 function Ientity:advanceEventStamp(event)
 	if not self.serverEventStamps[event] then
@@ -47,10 +39,10 @@ function Ientity:advanceEventStamp(event)
 
 	self.serverEventStamps[event] = self.serverEventStamps[event] + 1
 
-	if self.newClientReq and self.serverEventStamps[event] > self.clientEventStamps[event] then 
+	if self.newClientReq[event] and self.serverEventStamps[event] > self.clientEventStamps[event] then 
 		self.clientEventStamps[event] = self.serverEventStamps[event]
-		respClientEventStamp(event, self.serverId)
-		self.newClientReq = false				
+		self.newClientReq[event] = false				
+		respClientEventStamp(self.coroutine_pool[event], self.serverId, event)
 	end
 end
 
@@ -64,13 +56,12 @@ function Ientity:checkeventStamp(event, stamp)
 
 	if  self.serverEventStamps[event] > stamp then 
 		self.clientEventStamps[event] = self.serverEventStamps[event]
-		respClientEventStamp(event, self.serverId)
-		self.newClientReq = false				
-		return self.serverEventStamps[event]
+		self.newClientReq[event] = false				
+		respClientEventStamp(self.coroutine_pool[event], self.serverId, event)
 	else
 		self.clientEventStamps[event] = stamp
-		self.newClientReq = true				--mark need be resp
-		return -1
+		self.newClientReq[event] = true				--mark need be resp
+		return nil
 	end
 end
 

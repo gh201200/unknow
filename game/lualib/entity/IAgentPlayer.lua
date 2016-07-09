@@ -4,10 +4,11 @@ function IAgentPlayer.create()
 	return IAgentPlayer.new()
 end
 
-function IAgentPlayer:ctor()
-	
+local playerId = 500001
 
-	self.playerId = 500001
+function IAgentPlayer:ctor()
+	self.playerId = playerId
+	playerId = playerId + 1
 end
 
 

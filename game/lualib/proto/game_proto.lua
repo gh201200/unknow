@@ -14,22 +14,35 @@ local types = [[
 	y 1 : integer
 	z 2 : integer
 }
+.EventStamp {
+	id 0 : integer
+	type 1 : integer
+	stamp 2 : integer 
+}
 ]]
 
 local c2s = [[
 
-query_event_status 1 {		#query event stamp
+query_event_move 1 {		#query event stamp
 	request {
-		event_type 0 : integer
-		event_stamp 1 : integer
+		event_stamp 0 : EventStamp
 	}
 	response {
-		event_type 0 : integer
-		event_stamp 1 : integer
+		event_stamp 0 : EventStamp
+		pos 1 : Vector3
+		dir 2 : Vector3
+		action 3 : integer
 	}
 }
 
-map_delat_time 200{			#for estimate ping time
+query_server_id 2 {
+	response {
+		server_id 0 : integer
+	}
+}
+
+
+map_delat_timy 200{			#for estimate ping time
 	response {
 	}
 }

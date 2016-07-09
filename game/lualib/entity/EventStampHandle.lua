@@ -4,46 +4,48 @@ local EntityManager = require "entity.EntityManager"
 
 
 local coroutine_pool = {}
+local coroutine_response = {}
 
 local EventStampHandle = {}
 
-function EventStampHandle.createHandleCoroutine(event)
-	if not coroutine_pool[event] then
+function EventStampHandle.createHandleCoroutine(serverId, event, response)
+	local entity = EntityManager:getEntity( serverId )
+	if not entity.coroutine_pool[event] then
 		local co = coroutine.create(function(...)
 			repeat
 				local f = EventStampHandle[event]
 				if f then
-					f(...)	
+					print("coroutine response")
+					entity.coroutine_response[event] (true,  f(...) )
 				else
 					syslog.errf("no %d handle defined", event)	
 				end
 				coroutine.yield()
 			until false
 		end)
-		coroutine_pool[event] = co
+		entity.coroutine_pool[event] =  co
 	end
+	entity.coroutine_response[event] = response
+end
+
+function respClientEventStamp(co, serverId, event)
+	coroutine.resume(co, serverId, event)
 end
 
 
-
-function respClientEventStamp(event, serverId)
-	coroutine.resume(coroutine_pool[event], serverId)
-end
-
-
-
-
-EventStampHandle[EventStampType.Move] = function (serverId)
-	local player = EntityManager:getEntity(serverId)
+--------------------------------------------------------------------------------------------
+----
+EventStampHandle[EventStampType.Move] = function (serverId, event)
 	print("EventStampHandle : EventStampType.Move")
-	local r = {  
-		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
-		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)}, 
-		action = player.actionStatek 
+	local player = EntityManager:getEntity(serverId)
+	local r = {
+		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		
-		}
-	
-	skynet.send (player.agent, "lua", "sendRequest", "move" ,r)
+		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
+		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)},			
+		action = player.actionState	
+	}
+	return r
 end
 
 return EventStampHandle

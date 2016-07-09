@@ -8,8 +8,8 @@ local IMapPlayer = class("IMapPlayer", Ientity)
 function IMapPlayer:ctor()
 	IMapPlayer.super.ctor(self)
 
-	self.playerId = 500001		--same with IAgentPlayer.playerId
-	self.serverId = 1001
+	self.playerId = 0		--same with IAgentPlayer.playerId
+	self.serverId = 0
 	self.pos.x = 0
 	self.pos.y = 0
 	self.pos.z = 0

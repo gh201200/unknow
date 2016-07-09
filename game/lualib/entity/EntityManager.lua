@@ -16,11 +16,12 @@ function EntityManager:update(dt)
 	end
 end
 
-function EntityManager:createPlayer(serverId, playerId)
+function EntityManager:createPlayer(agent, playerId, serverId)
 	
 	local player = IMapPlayer.new()
 	player.serverId = serverId
 	player.playerId = playerId
+	player.agent = agent
 	
 	--player:advanceEventStamp(EventStampType.Move)
 	table.insert(self.entityList, player)

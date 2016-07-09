@@ -12,6 +12,7 @@ local character_handler = require "agent.character_handler"
 local IAgentplayer = require "entity.IAgentPlayer"
 
 local hijack_msg = {}
+local hijack_msg_event_stamp = {}
 
 --local map = tonumber (...)
 
@@ -62,19 +63,22 @@ end
 
 local traceback = debug.traceback
 local REQUEST
+
+
 local function handle_request (name, args, response)
+	print(response)
 	if hijack_msg[name] then
-		if response then
-			local ret = hijack_msg[name].req[name](user.agentPlayer.playerId, args)
+		skynet.fork(function()
+			print("begin req " .. name)
+			local ret = skynet.call(hijack_msg[name], "lua", name, user.agentPlayer.playerId, args)
+			print("end req " ..name)
+			print(ret)
 			if ret then
-				send_msg (user_fd, response (ret))
-			end
-		else
-			hijack_msg[name].post[name](user.agentPlayer.playerId, args)
-		end
+				send_msg (user_fd, response(ret))
+			end		
+		end)
 		return
 	end
-
 	local f = REQUEST[name]
 	if f then
 		local ok, ret = xpcall (f, traceback, args)
@@ -116,24 +120,11 @@ local function handle_response (id, args)
 	end
 end
 
-local function request_hijack_msg(handle, name)
-	local interface = snax.interface(name)
-	for k, v in pairs(interface.accept) do
-		hijack_msg[k] = handle
-	end
-	for k, v in pairs(interface.response) do
-		assert(hijack_msg[k]==nil)
-		hijack_msg[k] = handle
-	end
-end
-
-local function request_release_msg(handle, name)
-	local interface = snax.interface(name)
-	for k, v in pairs(interface.accept) do
-		hijack_msg[k] = nil
-	end
-	for k, v in pairs(interface.response) do
-		hijack_msg[k] = nil
+local function request_hijack_msg(handle)
+	local interface = skynet.call(handle, "lua", "hijack_msg")
+	for k, v in pairs(interface) do
+		hijack_msg[v] = handle
+		print(v)
 	end
 end
 
@@ -159,12 +150,8 @@ skynet.register_protocol {
 local CMD = {}
 
 function CMD.Start (conf)
-	local map = snax.newservice("map")
-	request_hijack_msg(map, "map")
-
-	map.post.entity_enter(skynet.self())
-	
-	--map.req.join(conf.client)
+	local map = skynet.newservice("map") 
+	request_hijack_msg(map)
 
 	syslog.debug ("agent Start")
 	local gate = conf.gate
@@ -182,6 +169,7 @@ function CMD.Start (conf)
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
 
+	skynet.call(map, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)
 	--user.entity:init()
 
 	character_handler:register (user)
@@ -196,10 +184,10 @@ function CMD.disconnect ()
 	syslog.debug ("agent closed")
 	
 	if user then
-		character_handler:unregister (user)
+		character_handler:unregister (useR)
 		request_release_msg(user.MAP, "map")
 		user = nil
-		user_fd = nil
+		user_fd = niL
 		REQUEST = nil
 	end	
 	--skynet.call (gamed, "lua", "close", skynet.self (), account)
@@ -219,7 +207,6 @@ skynet.start (function ()
 			syslog.warningf ("unhandled message(%s)", command) 
 			return skynet.ret ()
 		end
-
 		local ok, ret = xpcall (f, traceback, ...)
 		if not ok then
 			syslog.warningf ("handle message(%s) failed : %s", command, ret) 
