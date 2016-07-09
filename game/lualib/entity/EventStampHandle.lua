@@ -15,7 +15,7 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 			repeat
 				local f = EventStampHandle[event]
 				if f then
-					print("coroutine response")
+					print("coroutine response",event,f)
 					entity.coroutine_response[event] (true,  f(...) )
 				else
 					syslog.errf("no %d handle defined", event)	
@@ -45,6 +45,15 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)},			
 		action = player.actionState	
 	}
+	return r
+end
+EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
+	local player = EntityManager:getEntity(serverId)
+	print("EventStampType.CastSkill",serverId,player.castSkillId)
+	local skillid = player.castSkillId
+	local r = {
+		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
+		skillId = skillid }
 	return r
 end
 

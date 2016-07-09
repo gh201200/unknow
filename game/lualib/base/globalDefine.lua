@@ -1,6 +1,6 @@
 EventStampType = {
 	Move				= 0,
-	
+	CastSkill			= 1,
 }
 
 

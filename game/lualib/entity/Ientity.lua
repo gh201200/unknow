@@ -16,7 +16,7 @@ function Ientity:ctor()
 	self.targetPos = vector3.create()
 	self.moveSpeed = 0
 	self.curActionState = 0 
-
+	
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.clientEventStamps = {}		--now this table has no means
@@ -47,6 +47,7 @@ function Ientity:advanceEventStamp(event)
 end
 
 function Ientity:checkeventStamp(event, stamp)
+	print("checkeventStamp",event,self.serverEventStamps[event],stamp) 
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
 	end
@@ -76,7 +77,6 @@ function Ientity:setTargetPos(target)
 	self.curActionState = ActionState.move
 
 end
-
 
 
 return Ientity
