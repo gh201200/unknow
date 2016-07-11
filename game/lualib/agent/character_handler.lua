@@ -16,6 +16,7 @@ handler:init (function (u)
 	user = u
 end)
 
+
 local function create_character (name, race, class)
 
 	syslog.warningf ("name =  %s, race = %s, class = %s", name, race, class)
@@ -90,6 +91,10 @@ attribute_string = {
 	"strength",
 	"stamina",
 }
+
+function REQUEST.heart_beat_time()
+	return {}
+end
 
 return handler
 

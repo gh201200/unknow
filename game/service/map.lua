@@ -44,9 +44,6 @@ function CMD.move(response, playerId, args)
 end
 
 function CMD.query_event_move(response, playerId, args)
-	print(response)
-	print(playerId)
-	print(args)
 	local entity = EntityManager:getEntity( args.event_stamp.id )
 	if not entity then
 		syslog.warningf("client[%d] query_event_move server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
@@ -59,6 +56,13 @@ end
 function CMD.query_server_id(response, playerId, args)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
 	response( true, { server_id = player.serverId } )
+
+--	local entity = EntityManager:createPlayer(player.agent, playerId, server_id)
+--	local ret = { server_id = server_id }
+--	skynet.send(player.agent, "lua", "sendRequest", "enter_room", ret) 
+--	server_id = server_id + 1
+
+--	entity:setTargetPos(vector3.create(3, 0, -3))
 end
 
 

@@ -25,7 +25,7 @@ function Ientity:ctor()
 	self.coroutine_response = {}
 	--skynet about
 	
-	
+	self.testb = 1
 end
 
 
@@ -65,16 +65,18 @@ function Ientity:checkeventStamp(event, stamp)
 	end
 end
 
+
 function Ientity:stand()
+	print("stand")
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
 end
 
 function Ientity:setTargetPos(target)
+	print("setTargetPos")
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
 	self.moveSpeed = 1
 	self.curActionState = ActionState.move
-
 end
 
 

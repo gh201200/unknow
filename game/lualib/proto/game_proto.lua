@@ -32,6 +32,7 @@ query_event_move 1 {		#query event stamp
 		pos 1 : Vector3
 		dir 2 : Vector3
 		action 3 : integer
+		speed 4 : integer
 	}
 }
 
@@ -42,7 +43,7 @@ query_server_id 2 {
 }
 
 
-map_delat_timy 200{			#for estimate ping time
+heart_beat_time 200{			#heartbeat,also for estimate ping time
 	response {
 	}
 }
@@ -57,12 +58,11 @@ move 201 {			#client move
 ]]
 
 local s2c = [[
-move 1 {
+enter_room 1 {
 	request {
-		pos 0 : Vector3
-		dir 1 : Vector3
-		action 2 : integer
+		server_id 0 : integer
 	}
+
 }
 ]]
 

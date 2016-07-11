@@ -23,7 +23,6 @@ end
 
 function IMapPlayer:update(dt)
 	self:move(dt)
-	
 end
 
 function IMapPlayer:move(dt)
@@ -39,7 +38,7 @@ function IMapPlayer:move(dt)
 	
 	--move
 	self.pos:set(dst.x, dst.y, dst.z)
-	if math.abs(self.targetPos.x - dst.x) < 0.01 and math.abs(self.targetPos.z - dst.z) < 0.01 then
+	if IS_SAME_GRID(self.targetPos,  dst) then
 		self:stand()
 	end
 

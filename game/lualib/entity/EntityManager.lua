@@ -25,6 +25,8 @@ function EntityManager:createPlayer(agent, playerId, serverId)
 	
 	--player:advanceEventStamp(EventStampType.Move)
 	table.insert(self.entityList, player)
+
+	return player
 end
 
 function EntityManager:getEntity(serverId)

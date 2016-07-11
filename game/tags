@@ -3,33 +3,40 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ) create_agents	service/watchdog.lua	/^	skynet.timeout(30000, function() create_agents(100) end)$/;"	f
+C	lualib-src/math3d.h	217;"	d
+C	lualib-src/math3d.h	541;"	d
 CFLAGS	Makefile	/^CFLAGS = -g -O2 -Wall -I$(LUA_INC) $(MYCFLAGS) $/;"	m
 CJSON_INC	Makefile	/^CJSON_INC ?= ..\/skynet\/3rd\/lua$/;"	m
 CJSON_ROOT	Makefile	/^CJSON_ROOT ?= $(THIRD_LIB_ROOT)lua-cjson-master$/;"	m
 CMD.Start 	service/agent.lua	/^function CMD.Start (conf)$/;"	f
 CMD.close	service/watchdog.lua	/^function CMD.close(fd)$/;"	f
 CMD.disconnect 	service/agent.lua	/^function CMD.disconnect ()$/;"	f
+CMD.entity_enter	service/map.lua	/^function CMD.entity_enter(response, agent, playerId)$/;"	f
+CMD.hijack_msg	service/map.lua	/^function CMD.hijack_msg(response)$/;"	f
+CMD.move	service/map.lua	/^function CMD.move(response, playerId, args)$/;"	f
+CMD.query_event_move	service/map.lua	/^function CMD.query_event_move(response, playerId, args)$/;"	f
+CMD.query_server_id	service/map.lua	/^function CMD.query_server_id(response, playerId, args)$/;"	f
+CMD.sendRequest 	service/agent.lua	/^function CMD.sendRequest (name, args)$/;"	f
 CMD.start	service/watchdog.lua	/^function CMD.start(conf)$/;"	f
-EntityManager:createPlayer	lualib/entity/EntityManager.lua	/^function EntityManager:createPlayer(serverId, playerId)$/;"	f
+EntityManager:createPlayer	lualib/entity/EntityManager.lua	/^function EntityManager:createPlayer(agent, playerId, serverId)$/;"	f
 EntityManager:ctor	lualib/entity/EntityManager.lua	/^function EntityManager:ctor(p)$/;"	f
 EntityManager:getEntity	lualib/entity/EntityManager.lua	/^function EntityManager:getEntity(serverId)$/;"	f
 EntityManager:getPlayerByPlayerId	lualib/entity/EntityManager.lua	/^function EntityManager:getPlayerByPlayerId(playerId)$/;"	f
-EventStampHandle.createHandleCoroutine	lualib/entity/EventStampHandle.lua	/^function EventStampHandle.createHandleCoroutine(event)$/;"	f
-EventStampHandle.respClientEventStamp	lualib/entity/EventStampHandle.lua	/^function EventStampHandle.respClientEventStamp(event, serverId)$/;"	f
-EventStampHandle[EventStampType.Move] 	lualib/entity/EventStampHandle.lua	/^EventStampHandle[EventStampType.Move] = function (serverId)$/;"	f
+EntityManager:update	lualib/entity/EntityManager.lua	/^function EntityManager:update(dt)$/;"	f
+EventStampHandle.createHandleCoroutine	lualib/entity/EventStampHandle.lua	/^function EventStampHandle.createHandleCoroutine(serverId, event, response)$/;"	f
+EventStampHandle[EventStampType.Move] 	lualib/entity/EventStampHandle.lua	/^EventStampHandle[EventStampType.Move] = function (serverId, event)$/;"	f
 IAgentPlayer.create	lualib/entity/IAgentPlayer.lua	/^function IAgentPlayer.create()$/;"	f
 IAgentPlayer:ctor	lualib/entity/IAgentPlayer.lua	/^function IAgentPlayer:ctor()$/;"	f
 IMapPlayer:ctor	lualib/entity/IMapPlayer.lua	/^function IMapPlayer:ctor()$/;"	f
-IMapPlayer:move	lualib/entity/IMapPlayer.lua	/^function IMapPlayer:move()$/;"	f
-IMapPlayer:update	lualib/entity/IMapPlayer.lua	/^function IMapPlayer:update()$/;"	f
+IMapPlayer:move	lualib/entity/IMapPlayer.lua	/^function IMapPlayer:move(dt)$/;"	f
+IMapPlayer:update	lualib/entity/IMapPlayer.lua	/^function IMapPlayer:update(dt)$/;"	f
 Ientity:advanceEventStamp	lualib/entity/Ientity.lua	/^function Ientity:advanceEventStamp(event)$/;"	f
 Ientity:checkeventStamp	lualib/entity/Ientity.lua	/^function Ientity:checkeventStamp(event, stamp)$/;"	f
 Ientity:ctor	lualib/entity/Ientity.lua	/^function Ientity:ctor()$/;"	f
-Ientity:responseClientStamp	lualib/entity/Ientity.lua	/^function Ientity:responseClientStamp(event)$/;"	f
-Ientity:setTargetPos	lualib/entity/Ientity.lua	/^function Ientity:setTargetPos(args)$/;"	f
-Ientity:update	lualib/entity/Ientity.lua	/^function Ientity:update()$/;"	f
+Ientity:setTargetPos	lualib/entity/Ientity.lua	/^function Ientity:setTargetPos(target)$/;"	f
+Ientity:stand	lualib/entity/Ientity.lua	/^function Ientity:stand()$/;"	f
 LUA_CLIB	Makefile	/^LUA_CLIB = cjson uuid math3d$/;"	m
 LUA_CLIB_PATH	Makefile	/^LUA_CLIB_PATH ?= luaclib$/;"	m
 LUA_INC	Makefile	/^LUA_INC ?= $(SKYNET_ROOT)3rd\/lua$/;"	m
@@ -51,8 +58,8 @@ SOCKET.error	service/watchdog.lua	/^function SOCKET.error(fd, msg)$/;"	f
 SOCKET.open	service/watchdog.lua	/^function SOCKET.open(fd, addr)$/;"	f
 SOCKET.warning	service/watchdog.lua	/^function SOCKET.warning(fd, size)$/;"	f
 THIRD_LIB_ROOT	Makefile	/^THIRD_LIB_ROOT ?= ..\/3rd\/$/;"	m
-accept.move	service/map.lua	/^function accept.move(playerId, args)$/;"	f
 bit	lualib/base/util.lua	/^function bit(n)$/;"	f
+c	lualib-src/math3d.h	/^	float c[4][4];$/;"	m	union:matrix44
 cb	service-src/service_syslog.c	/^cb (struct skynet_context *ctx, void *ud, int type, int session, uint32_t source, const void *msg, size_t sz) {$/;"	f	file:
 check_msg	service-src/service_syslog.c	/^check_msg (const char *msg, size_t sz, int *priority) {$/;"	f	file:
 class	lualib/base/luaext.lua	/^function class(classname, super)$/;"	f
@@ -64,9 +71,10 @@ cls.new	lualib/base/luaext.lua	/^        function cls.new(...)$/;"	f
 create_agents	service/watchdog.lua	/^local function create_agents(num)	$/;"	f
 create_character 	lualib/agent/character_handler.lua	/^local function create_character (name, race, class)$/;"	f
 dispatch 	service/agent.lua	/^	dispatch = function (_, _, type, ...)$/;"	f
+dist	lualib-src/math3d.h	/^	float dist;$/;"	m	struct:plane
 dump	lualib/base/luaext.lua	/^local function dump(obj)$/;"	f
 dumpObj 	lualib/base/luaext.lua	/^    dumpObj = function(obj, level)$/;"	f
-exit	service/map.lua	/^function exit()$/;"	f
+ejoy3d_math_h	lualib-src/math3d.h	4;"	d
 getIndent 	lualib/base/luaext.lua	/^    getIndent = function(level)$/;"	f
 handle_request 	service/agent.lua	/^local function handle_request (name, args, response)$/;"	f
 handle_response 	service/agent.lua	/^local function handle_response (id, args)$/;"	f
@@ -77,7 +85,8 @@ handler:unregister 	lualib/agent/handler.lua	/^function handler:unregister (user
 heartbeat_check 	service/agent.lua	/^local function heartbeat_check ()$/;"	f
 if superType 	lualib/base/luaext.lua	/^    if superType == "function" or (super and super.__ctype == 1) then$/;"	f
 if superType ~	lualib/base/luaext.lua	/^    if superType ~= "function" and superType ~= "table" then$/;"	f
-init	service/map.lua	/^function init()$/;"	f
+if type(v) 	service/map.lua	/^		if type(v) == "function" then$/;"	f
+init	service/map.lua	/^local function init()$/;"	f
 instantSpell:Advance	lualib/skill/instantSpell.lua	/^function instantSpell:Advance(dt)$/;"	f
 instantSpell:cast	lualib/skill/instantSpell.lua	/^function instantSpell:cast(skillid)$/;"	f
 instantSpell:create	lualib/skill/instantSpell.lua	/^function instantSpell:create(skillid,source,target)$/;"	f
@@ -85,6 +94,8 @@ instantSpell:ctor	lualib/skill/instantSpell.lua	/^function instantSpell:ctor()$/
 instantSpell:onBegin	lualib/skill/instantSpell.lua	/^function instantSpell:onBegin()$/;"	f
 instantSpell:onChannelCast	lualib/skill/instantSpell.lua	/^function instantSpell:onChannelCast()$/;"	f
 instantSpell:onEnd	lualib/skill/instantSpell.lua	/^function instantSpell:onEnd()$/;"	f
+intersection_rayAABB	lualib-src/math3d.h	/^intersection_rayAABB(const struct vector3 *rayOrig, const struct vector3 *rayDir, $/;"	f
+intersection_raytriangle	lualib-src/math3d.h	/^intersection_raytriangle(const struct vector3 *rayOrig, const struct vector3 *rayDir,$/;"	f
 iskindof	lualib/base/luaext.lua	/^function iskindof(obj, classname)$/;"	f
 kick_self 	service/agent.lua	/^local function kick_self ()$/;"	f
 loader.init 	lualib/proto/protoloader.lua	/^function loader.init ()$/;"	f
@@ -94,16 +105,40 @@ lsid	lualib-src/lua-uuid.c	/^lsid (lua_State *L) {$/;"	f	file:
 luaopen_uuid_core	lualib-src/lua-uuid.c	/^luaopen_uuid_core (lua_State *L) {$/;"	f
 math.floor 	lualib/base/luaext.lua	/^	math.floor = function(n, p)$/;"	f
 math.round 	lualib/base/luaext.lua	/^math.round = function(n, p)$/;"	f
+matrix44	lualib-src/math3d.h	/^union matrix44 {$/;"	u
+matrix44_decompose	lualib-src/math3d.h	/^matrix44_decompose(const union matrix44 *m, struct vector3 *trans, struct vector3 *rot, struct vector3 *scale ) {$/;"	f
+matrix44_determinant	lualib-src/math3d.h	/^matrix44_determinant(const union matrix44 *m) {$/;"	f
+matrix44_fastmul43	lualib-src/math3d.h	/^matrix44_fastmul43(union matrix44 *m, const union matrix44 *m1, const union matrix44 *m2) {$/;"	f
+matrix44_from_quaternion	lualib-src/math3d.h	/^matrix44_from_quaternion(union matrix44 *m, const struct quaternion *q) {$/;"	f
+matrix44_getscale	lualib-src/math3d.h	/^matrix44_getscale(const union matrix44 *m, struct vector3 *scale) {$/;"	f
+matrix44_gettrans	lualib-src/math3d.h	/^matrix44_gettrans(const union matrix44 *m, struct vector3 *trans) {$/;"	f
+matrix44_identity	lualib-src/math3d.h	/^matrix44_identity(union matrix44 * m) {$/;"	f
+matrix44_inverted	lualib-src/math3d.h	/^matrix44_inverted(union matrix44 *dst, const union matrix44 *m) {$/;"	f
+matrix44_mul	lualib-src/math3d.h	/^matrix44_mul(union matrix44 *m, const union matrix44 *m1, const union matrix44 *m2) {$/;"	f
+matrix44_ortho	lualib-src/math3d.h	/^matrix44_ortho(union matrix44 *m, float l, float r, float b, float t, float n, float f ) {$/;"	f
+matrix44_perspective	lualib-src/math3d.h	/^matrix44_perspective(union matrix44 *m, float l, float r, float b, float t, float n, float f) {$/;"	f
+matrix44_rot	lualib-src/math3d.h	/^matrix44_rot(union matrix44 *m, float x, float y, float z) {$/;"	f
+matrix44_rot_axis	lualib-src/math3d.h	/^matrix44_rot_axis(union matrix44 *m, const struct vector3 *axis, float angle) {$/;"	f
+matrix44_scale	lualib-src/math3d.h	/^matrix44_scale(union matrix44 *m, float x, float y, float z) {$/;"	f
+matrix44_trans	lualib-src/math3d.h	/^matrix44_trans(union matrix44 *m, float x, float y, float z) {$/;"	f
+matrix44_transposed	lualib-src/math3d.h	/^matrix44_transposed(union matrix44 *m) {$/;"	f
 merge 	lualib/agent/handler.lua	/^local function merge (dest, t)$/;"	f
 mt.__index 	lualib/base/luaext.lua	/^    mt.__index = function (s, ...)$/;"	f
+normal	lualib-src/math3d.h	/^	struct vector3 normal;$/;"	m	struct:plane	typeref:struct:plane::vector3
+plane	lualib-src/math3d.h	/^struct plane {$/;"	s
+plane_dist	lualib-src/math3d.h	/^plane_dist(const struct plane *p, const struct vector3 *v) {$/;"	f
+plane_init	lualib-src/math3d.h	/^plane_init(struct plane *p, const struct vector3 *normal, float d ) {$/;"	f
+plane_init_dot3	lualib-src/math3d.h	/^plane_init_dot3(struct plane *p, const struct vector3 *v0, const struct vector3 *v1, const struct vector3 *v2) {$/;"	f
+quaternion	lualib-src/math3d.h	/^struct quaternion {$/;"	s
+quaternion_init	lualib-src/math3d.h	/^quaternion_init(struct quaternion *q, float x, float y, float z) {$/;"	f
+quaternion_inverted	lualib-src/math3d.h	/^quaternion_inverted(struct quaternion * q) {$/;"	f
+quaternion_mul	lualib-src/math3d.h	/^quaternion_mul(struct quaternion *q, const struct quaternion *a, const struct quaternion *b) {$/;"	f
+quaternion_nslerp	lualib-src/math3d.h	/^quaternion_nslerp(struct quaternion *q, const struct quaternion *a, const struct quaternion *b, float t) {$/;"	f
+quaternion_slerp	lualib-src/math3d.h	/^quaternion_slerp(struct quaternion *q, const struct quaternion *a, const struct quaternion *b, float t) {$/;"	f
 quoteStr 	lualib/base/luaext.lua	/^    quoteStr = function(str)$/;"	f
-request_hijack_msg	service/agent.lua	/^local function request_hijack_msg(handle, name)$/;"	f
-request_release_msg	service/agent.lua	/^local function request_release_msg(handle, name)$/;"	f
-response.join	service/map.lua	/^function response.join(fd)$/;"	f
-response.leave	service/map.lua	/^function response.leave(session)$/;"	f
-response.query	service/map.lua	/^function response.query(session)$/;"	f
-response.query_event_status	service/map.lua	/^function response.query_event_status(playerId, args)$/;"	f
-send_msg 	service/agent.lua	/^function send_msg (fd, msg)$/;"	f
+request_hijack_msg	service/agent.lua	/^local function request_hijack_msg(handle)$/;"	f
+respClientEventStamp	lualib/entity/EventStampHandle.lua	/^function respClientEventStamp(co, serverId, event)$/;"	f
+send_msg 	lualib/base/util.lua	/^function send_msg (fd, msg)$/;"	f
 send_request 	service/agent.lua	/^local function send_request (name, args)$/;"	f
 sid	lualib-src/lua-uuid.c	/^static uint32_t sid;$/;"	v	file:
 spell:cast	lualib/skill/spell.lua	/^function spell:cast(skillid)$/;"	f
@@ -138,9 +173,11 @@ table.values 	lualib/base/luaext.lua	/^table.values = function(t)$/;"	f
 timeout	service/watchdog.lua	/^local function timeout(t)$/;"	f
 tostring 	lualib/base/luaext.lua	/^    tostring = function(v)$/;"	f
 unpack 	service/agent.lua	/^	unpack = function (msg, sz)$/;"	f
+updateMapEvent	service/map.lua	/^local function updateMapEvent()$/;"	f
 uuid.gen 	lualib/base/uuid.lua	/^function uuid.gen ()$/;"	f
 uuid.split 	lualib/base/uuid.lua	/^function uuid.split (id)$/;"	f
 v) table.insert	lualib/base/luaext.lua	/^    string.gsub(s, pattern, function(v) table.insert(split, v) end)$/;"	f
+vector3	lualib-src/math3d.h	/^struct vector3 {$/;"	s
 vector3.create	lualib/base/vector3.lua	/^function vector3.create(x, y, z)$/;"	f
 vector3.cross	lualib/base/vector3.lua	/^function vector3.cross(a, b)$/;"	f
 vector3.cross	lualib/math/vector3.lua	/^function vector3.cross(a, b)$/;"	f
@@ -151,11 +188,41 @@ vector3:create	lualib/math/vector3.lua	/^function vector3:create(x, y, z, o)$/;"
 vector3:length	lualib/base/vector3.lua	/^function vector3:length()$/;"	f
 vector3:length_square	lualib/base/vector3.lua	/^function vector3:length_square()$/;"	f
 vector3:mul_num	lualib/base/vector3.lua	/^function vector3:mul_num(num)$/;"	f
+vector3:normalize	lualib/base/vector3.lua	/^function vector3:normalize(n)$/;"	f
 vector3:return_add	lualib/base/vector3.lua	/^function vector3:return_add(v)$/;"	f
 vector3:return_mul_num	lualib/base/vector3.lua	/^function vector3:return_mul_num(num)$/;"	f
+vector3:return_sub	lualib/base/vector3.lua	/^function vector3:return_sub(v)$/;"	f
 vector3:set	lualib/base/vector3.lua	/^function vector3:set(x, y ,z)$/;"	f
 vector3:set	lualib/math/vector3.lua	/^function vector3:set(x, y, z)$/;"	f
+vector3:sub	lualib/base/vector3.lua	/^function vector3:sub(v)$/;"	f
+vector3_array	lualib-src/math3d.h	/^vector3_array(struct vector3 *v) {$/;"	f
+vector3_cross	lualib-src/math3d.h	/^vector3_cross(struct vector3 *v, const struct vector3 *a, const struct vector3 *b) {$/;"	f
+vector3_distAABB	lualib-src/math3d.h	/^vector3_distAABB(const struct vector3 *pos, const struct vector3 *mins, const struct vector3 *maxs ) {$/;"	f
+vector3_dot	lualib-src/math3d.h	/^vector3_dot(const struct vector3 *a, const struct vector3 *b) {$/;"	f
+vector3_length	lualib-src/math3d.h	/^vector3_length(const struct vector3 *v) {$/;"	f
+vector3_length	lualib/base/vector3.lua	/^local function vector3_length(v)$/;"	f
+vector3_lerp	lualib-src/math3d.h	/^vector3_lerp(struct vector3 *v, const struct vector3 *a, const struct vector3 *b, float f) {$/;"	f
+vector3_mul	lualib-src/math3d.h	/^vector3_mul(struct vector3 *v, const union matrix44 *m) {$/;"	f
+vector3_mul33	lualib-src/math3d.h	/^vector3_mul33(struct vector3 *v, const union matrix44 *m) {$/;"	f
+vector3_normalize	lualib-src/math3d.h	/^vector3_normalize(struct vector3 *v) {$/;"	f
+vector3_to_rotation	lualib-src/math3d.h	/^vector3_to_rotation(struct vector3 *v, const struct vector3 *r) {$/;"	f
+vector3_vector	lualib-src/math3d.h	/^vector3_vector(struct vector3 *v, const struct vector3 *p1, const struct vector3 *p2) {$/;"	f
+vector4	lualib-src/math3d.h	/^struct vector4 {$/;"	s
+vector4_array	lualib-src/math3d.h	/^vector4_array(struct vector4 *v) {$/;"	f
+vector4_mul	lualib-src/math3d.h	/^vector4_mul(struct vector4 *v, const union matrix44 *m) {$/;"	f
+w	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:quaternion
+w	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:vector4
 wrapKey 	lualib/base/luaext.lua	/^    wrapKey = function(val)$/;"	f
 wrapVal 	lualib/base/luaext.lua	/^    wrapVal = function(val, level)$/;"	f
 write 	lualib/base/syslog.lua	/^local function write (priority, fmt, ...)$/;"	f
 writef 	lualib/base/syslog.lua	/^local function writef (priority, ...)$/;"	f
+x	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:quaternion
+x	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:vector4
+x	lualib-src/math3d.h	/^	float x,y,z;$/;"	m	struct:vector3
+x	lualib-src/math3d.h	/^	float x[16];$/;"	m	union:matrix44
+y	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:quaternion
+y	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:vector4
+y	lualib-src/math3d.h	/^	float x,y,z;$/;"	m	struct:vector3
+z	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:quaternion
+z	lualib-src/math3d.h	/^	float x,y,z,w;$/;"	m	struct:vector4
+z	lualib-src/math3d.h	/^	float x,y,z;$/;"	m	struct:vector3
