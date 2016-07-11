@@ -1,10 +1,10 @@
 local skynet = require "skynet"
 local sharedata = require "sharedata"
-local skillRepository= require "skillRepository"
---local skillRead = require "skillRead"
+local gdd  = {
+	skillRepository = require "skillRepository"	
+}
 skynet.start(function()
-	sharedata.new("skillRepository",skillRepository)
---	sharedata.new("skillRepository",skillRead)
+	sharedata.new("gdd",gdd)
 end
 )
 

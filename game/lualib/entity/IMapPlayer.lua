@@ -17,11 +17,12 @@ function IMapPlayer:ctor()
 	self.moveSpeed = 0
 	self.entityType = EntityType.player
 	self.agent = 0
-
+	self.castSkillId = 0
 	print("IMapPlayer:ctor()")
 end
 
 function IMapPlayer:update(dt)
+	self.super:update(dt)
 	self:move(dt)
 end
 
@@ -46,6 +47,5 @@ function IMapPlayer:move(dt)
 	self:advanceEventStamp(EventStampType.Move)
 end
 
-
-
 return IMapPlayer
+

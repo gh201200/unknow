@@ -1,7 +1,9 @@
 local vector3 = require "vector3"
-
-
+local spell =  require "entity.spell"
 local Ientity = class("Ientity")
+local sharedata = require "sharedata"
+
+
 
 function Ientity:ctor()
 	
@@ -16,7 +18,7 @@ function Ientity:ctor()
 	self.targetPos = vector3.create()
 	self.moveSpeed = 0
 	self.curActionState = 0 
-
+		
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.clientEventStamps = {}		--now this table has no means
@@ -25,7 +27,8 @@ function Ientity:ctor()
 	self.coroutine_response = {}
 	--skynet about
 	
-	self.testb = 1
+	--技能相关----
+	self.spell = spell.new()
 end
 
 
@@ -47,6 +50,7 @@ function Ientity:advanceEventStamp(event)
 end
 
 function Ientity:checkeventStamp(event, stamp)
+	print("checkeventStamp",event,self.serverEventStamps[event],stamp) 
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
 	end
@@ -79,8 +83,26 @@ function Ientity:setTargetPos(target)
 	self.curActionState = ActionState.move
 end
 
+function Ientity:update(dt)
+--	print("Ientity:update",self.testvalue)
+	if self.spell ~= nil then
+		self.spell:update(dt)
+	end
+end
+---------------------------------------------------技能相关-------------------------------------
+function Ientity:canCast(skilldata,target,pos)
+	return true
+end
 
 
+function Ientity:setCastSkillId(id)
+         print("Ientity:setCastSkillId",id,EventStampType.CastSkill)
+         for _k,_v in pairs(self.gdd.skillRepository) do
+		print(_k,_v)
+	 end
+	 self.castSkillId = id
+	 self:advanceEventStamp(EventStampType.CastSkill)
+end
 return Ientity
 
 

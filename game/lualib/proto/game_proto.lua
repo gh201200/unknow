@@ -42,6 +42,16 @@ query_server_id 2 {
 	}
 }
 
+query_event_CastSkill 3 {
+	request {
+		event_stamp 0 : EventStamp
+	}
+	response {
+		event_stamp 0 : EventStamp
+		skillId 1 : integer 
+	}
+}
+
 
 heart_beat_time 200{			#heartbeat,also for estimate ping time
 	response {
@@ -54,7 +64,11 @@ move 201 {			#client move
 	}
 }
 
-
+castskill 202 {
+	request {
+		skillid 0 : integer
+	}
+}
 ]]
 
 local s2c = [[

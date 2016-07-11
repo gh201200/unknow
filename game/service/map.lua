@@ -5,10 +5,13 @@ local vector3 = require "vector3"
 local syslog = require "syslog"
 local EntityManager = require "entity.EntityManager"
 local EventStampHandle = require "entity.EventStampHandle"
-local traceback  = debug.traceback
+local sharedata = require "sharedata"
 
+local traceback  = debug.traceback
 local server_id = 1
 local last_update_time = nil
+
+local gdd 
 local function updateMapEvent()
 	local nt = skynet.now()
 	EntityManager:update(nt - last_update_time)
@@ -31,7 +34,7 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.entity_enter(response, agent, playerId)
-	EntityManager:createPlayer(agent, playerId, server_id)
+	EntityManager:createPlayer(agent, playerId, server_id,gdd)
 	server_id = server_id + 1
 	response(true, nil)
 end
@@ -43,6 +46,12 @@ function CMD.move(response, playerId, args)
 	response(true, nil)
 end
 
+function CMD.castskill(response, playerId, args)
+	print("CMD.castskill",response,playerId)	
+	local player = EntityManager:getPlayerByPlayerId(playerId)
+	player:setCastSkillId(args.skillid)
+	response(true, nil)
+end
 function CMD.query_event_move(response, playerId, args)
 	local entity = EntityManager:getEntity( args.event_stamp.id )
 	if not entity then
@@ -52,6 +61,15 @@ function CMD.query_event_move(response, playerId, args)
 	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
 end
 
+function CMD.query_event_CastSkill(response,playerId,args)
+	print("map.CMD.query_event_CastSkill",playerid,response,args)
+	local entity = EntityManager:getEntity( args.event_stamp.id )
+	if not entity then
+		syslog.warningf("client[%d] query_event_CastSkill server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
+	end
+	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
+	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
+end
 
 function CMD.query_server_id(response, playerId, args)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
@@ -70,6 +88,7 @@ local function init()
 	--every 0.03s update entity
 	skynet.timeout(3, updateMapEvent)
 	last_update_time = skynet.now()
+	gdd  = sharedata.query "gdd"
 end
 
 
