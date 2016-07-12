@@ -7,6 +7,7 @@ local SOCKET = {}
 local gate
 local agentfd = {}
 local agentPools = {}
+local pid = 500001 
 
 function SOCKET.open(fd, addr)
 	skynet.error("New client from : " .. addr)
@@ -17,7 +18,8 @@ function SOCKET.open(fd, addr)
 		agentfd[fd] = table.remove (agentPools, 1)
 		syslog.debugf ("agent(%d),fd(%d) assigned, %d remain in pool", agentfd[fd], fd, #agentPools)
 	end
-	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
+	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self(), playerId = pid })
+	pid = pid + 1
 end
 
 

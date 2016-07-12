@@ -23,7 +23,7 @@ LUA_INC ?= $(SKYNET_ROOT)3rd/lua
 # skynet
 
 MCSERVICE = syslog
-LUA_CLIB = cjson uuid math3d
+LUA_CLIB = cjson uuid pathfinding
 
 all : \
   $(foreach v, $(MCSERVICE), $(MCSERVICE_PATH)/$(v).so) \
@@ -45,7 +45,7 @@ $(LUA_CLIB_PATH)/uuid.so : lualib-src/lua-uuid.c | $(LUA_CLIB_PATH)
 $(LUA_CLIB_PATH)/cjson.so : | $(LUA_CLIB_PATH)
 	cd $(CJSON_ROOT) && $(MAKE) LUA_INCLUDE_DIR=$(CJSON_INC) CC=$(CC) CJSON_LDFLAGS="$(SHARED)" && cd - && cp $(CJSON_ROOT)/cjson.so $@
 
-$(LUA_CLIB_PATH)/math3d.so : lualib-src/math3d.c | $(LUA_CLIB_PATH)
+$(LUA_CLIB_PATH)/pathfinding.so : lualib-src/pathfinding.c | $(LUA_CLIB_PATH)
 	$(CC) $(CFLAGS) $(SHARED) $^  -o $@ 
 
 clean :

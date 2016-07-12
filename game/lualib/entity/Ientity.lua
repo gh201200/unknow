@@ -21,13 +21,11 @@ function Ientity:ctor()
 		
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
-	self.clientEventStamps = {}		--now this table has no means
-	self.newClientReq = {}			--whether
+	self.newClientReq = {}		
 	self.coroutine_pool = {}
 	self.coroutine_response = {}
 	--skynet about
 	
-	self.gdd = nil
 	--技能相关----
 	self.spell = spell.new()
 	self.spell.gdd = self.gdd	
@@ -38,14 +36,10 @@ function Ientity:advanceEventStamp(event)
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
 	end
-	if not self.clientEventStamps[event] then
-		self.clientEventStamps[event] = 0
-	end
 
 	self.serverEventStamps[event] = self.serverEventStamps[event] + 1
 
-	if self.newClientReq[event] and self.serverEventStamps[event] > self.clientEventStamps[event] then 
-		self.clientEventStamps[event] = self.serverEventStamps[event]
+	if self.newClientReq[event] then 
 		self.newClientReq[event] = false				
 		respClientEventStamp(self.coroutine_pool[event], self.serverId, event)
 	end
@@ -56,31 +50,27 @@ function Ientity:checkeventStamp(event, stamp)
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
 	end
-	if not self.clientEventStamps[event] then
-		self.clientEventStamps[event] = 0
-	end
 
 	if  self.serverEventStamps[event] > stamp then 
-		self.clientEventStamps[event] = self.serverEventStamps[event]
 		self.newClientReq[event] = false				
 		respClientEventStamp(self.coroutine_pool[event], self.serverId, event)
 	else
-		self.clientEventStamps[event] = stamp
 		self.newClientReq[event] = true				--mark need be resp
-		return nil
 	end
 end
 
+
 function Ientity:stand()
+	print("stand")
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
 end
 
 function Ientity:setTargetPos(target)
+	print("setTargetPos")
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
 	self.moveSpeed = 1
 	self.curActionState = ActionState.move
-
 end
 
 function Ientity:update(dt)

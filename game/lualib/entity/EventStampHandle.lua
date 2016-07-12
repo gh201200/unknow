@@ -15,8 +15,10 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 			repeat
 				local f = EventStampHandle[event]
 				if f then
-					print("coroutine response",event,f)
-					entity.coroutine_response[event] (true,  f(...) )
+					for k, v in pairs(entity.coroutine_response[event]) do
+						v (true,  f(...) )
+					end
+					entity.coroutine_response[event] = {}
 				else
 					syslog.errf("no %d handle defined", event)	
 				end
@@ -25,7 +27,10 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 		end)
 		entity.coroutine_pool[event] =  co
 	end
-	entity.coroutine_response[event] = response
+	if not entity.coroutine_response[event] then
+		entity.coroutine_response[event] = {}
+	end
+	table.insert(entity.coroutine_response[event], response)
 end
 
 function respClientEventStamp(co, serverId, event)
@@ -43,7 +48,8 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 		
 		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
 		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)},			
-		action = player.actionState	
+		action = player.curActionState,	
+		speed = player.moveSpeed * GAMEPLAY_PERCENT
 	}
 	return r
 end

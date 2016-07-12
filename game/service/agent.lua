@@ -14,7 +14,6 @@ local IAgentplayer = require "entity.IAgentPlayer"
 local hijack_msg = {}
 local hijack_msg_event_stamp = {}
 
---local map = tonumber (...)
 
 local host, proto_request = protoloader.load (protoloader.GAME)
 
@@ -64,14 +63,14 @@ end
 local traceback = debug.traceback
 local REQUEST
 
-
 local function handle_request (name, args, response)
-	print(response)
+	print("handle_request : " .. name )
+	print(args)
 	if hijack_msg[name] then
 		skynet.fork(function()
-			print("begin req " .. name)
 			local ret = skynet.call(hijack_msg[name], "lua", name, user.agentPlayer.playerId, args)
-			print("end req " ,name,ret)
+			print(user.agentPlayer.playerId)
+			print(ret)
 			if ret then
 				send_msg (user_fd, response(ret))
 			end		
@@ -123,7 +122,6 @@ local function request_hijack_msg(handle)
 	local interface = skynet.call(handle, "lua", "hijack_msg")
 	for k, v in pairs(interface) do
 		hijack_msg[v] = handle
-		print(v)
 	end
 end
 
@@ -147,17 +145,17 @@ skynet.register_protocol {
 }
 
 local CMD = {}
-
+local pf = require "pathfinding"
 function CMD.Start (conf)
-	local map = skynet.newservice("map") 
+	print("agent start")	
+	local map  = skynet.queryservice "map"
 	request_hijack_msg(map)
 
-	syslog.debug ("agent Start")
 	local gate = conf.gate
 
 	user = { 
 		fd = conf.client, 
-		agentPlayer = IAgentplayer.create(),
+		agentPlayer = IAgentplayer.create(conf.playerId),
 		REQUEST = {},
 		RESPONSE = {},
 		CMD = CMD,
@@ -168,6 +166,7 @@ function CMD.Start (conf)
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
 
+	print("player id: " .. user.agentPlayer.playerId)
 	skynet.call(map, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)
 	--user.entity:init()
 
@@ -177,13 +176,26 @@ function CMD.Start (conf)
 
 	--last_heartbeat_time = skynet.now ()
 	--heartbeat_check ()
+	--[[
+	local m = pf.new {
+		width = 20,
+		height = 20,
+		{x=1,y=1,size=2},
+		{x=3,y=4,size=3},
+	}
+	local path = { pf.path(m, 1, 4, 10, 10) }
+	print("pathing")
+	for i=1, #path,2 do
+		print(path[i] .. "  " .. path[i+1])
+	end
+	]]
 end
 
 function CMD.disconnect ()
 	syslog.debug ("agent closed")
 	
 	if user then
-		character_handler:unregister (useR)
+		character_handler:unregister (user)
 		request_release_msg(user.MAP, "map")
 		user = nil
 		user_fd = niL
@@ -212,9 +224,7 @@ skynet.start (function ()
 			kick_self ()
 			return skynet.ret ()
 		end
-		if ret then
-			skynet.retpack (ret)
-		end
+		skynet.retpack (ret)
 		--skynet.ret(skynet.pack(ret))
 	end)
 end)
