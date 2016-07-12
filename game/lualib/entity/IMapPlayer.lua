@@ -18,13 +18,13 @@ function IMapPlayer:ctor()
 	self.entityType = EntityType.player
 	self.agent = 0
 	self.castSkillId = 0
+	self.testvalue = 101
 	print("IMapPlayer:ctor()")
 end
 
 function IMapPlayer:update(dt)
-	self.super:update(dt)
+	IMapPlayer.super.update(self,dt)
 	self:move(dt)
-	
 end
 
 function IMapPlayer:move(dt)

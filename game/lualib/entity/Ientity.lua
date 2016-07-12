@@ -30,6 +30,7 @@ function Ientity:ctor()
 	self.gdd = nil
 	--技能相关----
 	self.spell = spell.new()
+	self.spell.gdd = self.gdd	
 end
 
 
@@ -83,10 +84,7 @@ function Ientity:setTargetPos(target)
 end
 
 function Ientity:update(dt)
---	print("Ientity:update",self.testvalue)
-	if self.spell ~= nil then
-		self.spell:update(dt)
-	end
+	self.spell:update(dt)
 end
 ---------------------------------------------------技能相关-------------------------------------
 function Ientity:canCast(skilldata,target,pos)
@@ -99,8 +97,13 @@ function Ientity:setCastSkillId(id)
          for _k,_v in pairs(self.gdd.skillRepository) do
 		print(_k,_v)
 	 end
-	 self.castSkillId = id
-	 self:advanceEventStamp(EventStampType.CastSkill)
+	 local skilldata = self.gdd.skillRepository[id]
+	 if self:canCast(skilldata,id) == true then
+	 	self.castSkillId = id
+		
+		self:advanceEventStamp(EventStampType.CastSkill)
+		
+	 end
 end
 return Ientity
 
