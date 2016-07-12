@@ -11,7 +11,6 @@ local traceback  = debug.traceback
 local server_id = 1
 local last_update_time = nil
 
-local gdd 
 local function updateMapEvent()
 	local nt = skynet.now()
 	EntityManager:update(nt - last_update_time)
@@ -34,7 +33,7 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.entity_enter(response, agent, playerId)
-	EntityManager:createPlayer(agent, playerId, server_id,gdd)
+	local p = EntityManager:createPlayer(agent, playerId, server_id,gdd)
 	server_id = server_id + 1
 	response(true, nil)
 end
@@ -74,13 +73,13 @@ end
 function CMD.query_server_id(response, playerId, args)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
 	response( true, { server_id = player.serverId } )
-
---	local entity = EntityManager:createPlayer(player.agent, playerId, server_id)
---	local ret = { server_id = server_id }
---	skynet.send(player.agent, "lua", "sendRequest", "enter_room", ret) 
---	server_id = server_id + 1
-
---	entity:setTargetPos(vector3.create(3, 0, -3))
+	
+	local ret = { server_id = player.serverId }
+	for k, v in pairs(EntityManager.entityList) do
+		if v.serverId ~= player.serverId then
+			skynet.call(v.agent, "lua", "sendRequest", "enter_room", ret) 
+		end
+	end
 end
 
 

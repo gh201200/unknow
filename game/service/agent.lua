@@ -69,6 +69,8 @@ local function handle_request (name, args, response)
 	if hijack_msg[name] then
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, user.agentPlayer.playerId, args)
+			print(user.agentPlayer.playerId)
+			print(ret)
 			if ret then
 				send_msg (user_fd, response(ret))
 			end		
@@ -153,7 +155,7 @@ function CMD.Start (conf)
 
 	user = { 
 		fd = conf.client, 
-		agentPlayer = IAgentplayer.create(),
+		agentPlayer = IAgentplayer.create(conf.playerId),
 		REQUEST = {},
 		RESPONSE = {},
 		CMD = CMD,
@@ -164,6 +166,7 @@ function CMD.Start (conf)
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
 
+	print("player id: " .. user.agentPlayer.playerId)
 	skynet.call(map, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)
 	--user.entity:init()
 
@@ -192,7 +195,7 @@ function CMD.disconnect ()
 	syslog.debug ("agent closed")
 	
 	if user then
-		character_handler:unregister (useR)
+		character_handler:unregister (user)
 		request_release_msg(user.MAP, "map")
 		user = nil
 		user_fd = niL
@@ -221,9 +224,7 @@ skynet.start (function ()
 			kick_self ()
 			return skynet.ret ()
 		end
-		if ret then
-			skynet.retpack (ret)
-		end
+		skynet.retpack (ret)
 		--skynet.ret(skynet.pack(ret))
 	end)
 end)

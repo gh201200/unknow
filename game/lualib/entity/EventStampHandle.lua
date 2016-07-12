@@ -15,7 +15,10 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 			repeat
 				local f = EventStampHandle[event]
 				if f then
-					entity.coroutine_response[event] (true,  f(...) )
+					for k, v in pairs(entity.coroutine_response[event]) do
+						v (true,  f(...) )
+					end
+					entity.coroutine_response[event] = {}
 				else
 					syslog.errf("no %d handle defined", event)	
 				end
@@ -24,7 +27,10 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 		end)
 		entity.coroutine_pool[event] =  co
 	end
-	entity.coroutine_response[event] = response
+	if not entity.coroutine_response[event] then
+		entity.coroutine_response[event] = {}
+	end
+	table.insert(entity.coroutine_response[event], response)
 end
 
 function respClientEventStamp(co, serverId, event)
