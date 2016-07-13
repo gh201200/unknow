@@ -5,6 +5,7 @@ local vector3 = require "vector3"
 local syslog = require "syslog"
 local EntityManager = require "entity.EntityManager"
 local EventStampHandle = require "entity.EventStampHandle"
+require "globalDefine"
 local sharedata = require "sharedata"
 
 local traceback  = debug.traceback
@@ -33,7 +34,7 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.entity_enter(response, agent, playerId)
-	local p = EntityManager:createPlayer(agent, playerId, server_id,gdd)
+	local p = EntityManager:createPlayer(agent, playerId, server_id)
 	server_id = server_id + 1
 	response(true, nil)
 end
@@ -87,7 +88,7 @@ local function init()
 	--every 0.03s update entity
 	skynet.timeout(3, updateMapEvent)
 	last_update_time = skynet.now()
-	gdd  = sharedata.query "gdd"
+	g_shareData  = sharedata.query "gdd"
 end
 
 

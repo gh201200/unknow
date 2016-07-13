@@ -3,7 +3,7 @@ local spell =  require "entity.spell"
 local Ientity = class("Ientity")
 local sharedata = require "sharedata"
 
-
+require "globalDefine"
 
 function Ientity:ctor()
 	
@@ -28,7 +28,6 @@ function Ientity:ctor()
 	
 	--技能相关----
 	self.spell = spell.new()
-	self.spell.gdd = self.gdd	
 end
 
 
@@ -68,6 +67,8 @@ end
 
 function Ientity:setTargetPos(target)
 	print("setTargetPos")
+--	if self.spell:Breaking(ActionState.move) == false then return end
+	
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
 	self.moveSpeed = 1
 	self.curActionState = ActionState.move
@@ -84,13 +85,13 @@ end
 
 function Ientity:setCastSkillId(id)
          print("Ientity:setCastSkillId",id,EventStampType.CastSkill)
-         for _k,_v in pairs(self.gdd.skillRepository) do
-		print(_k,_v)
-	 end
-	 local skilldata = self.gdd.skillRepository[id]
+        -- for _k,_v in pairs(g_shareData.skillRepository) do
+	--	print(_k,_v)
+	-- end
+	 local skilldata = g_shareData.skillRepository[id]
 	 if self:canCast(skilldata,id) == true then
 	 	self.castSkillId = id
-		
+		self.spell:Cast(id,target,pos)
 		self:advanceEventStamp(EventStampType.CastSkill)
 		
 	 end
