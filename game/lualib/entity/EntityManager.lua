@@ -22,10 +22,9 @@ function EntityManager:createPlayer(agent, playerId, serverId)
 	player.serverId = serverId
 	player.playerId = playerId
 	player.agent = agent
-	player.modolId = 8888
-	--player:advanceEventStamp(EventStampType.Move)
-	table.insert(self.entityList, player)
+	player:init()
 
+	table.insert(self.entityList, player)
 	return player
 end
 

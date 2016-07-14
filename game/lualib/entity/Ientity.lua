@@ -1,7 +1,7 @@
 local vector3 = require "vector3"
 local spell =  require "entity.spell"
+local BuffTable = require "skill.BuffTable"
 local Ientity = class("Ientity")
-local sharedata = require "sharedata"
 
 require "globalDefine"
 
@@ -29,6 +29,10 @@ function Ientity:ctor()
 	self.modolId = 0	--模型id	
 	--技能相关----
 	self.spell = spell.new()
+
+	--buff about
+	self.buffTable = BuffTable.new()
+	self.Stats = self.buffTable.Stats
 end
 
 
@@ -61,24 +65,27 @@ end
 
 
 function Ientity:stand()
-	print("stand")
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
 end
 
 function Ientity:setTargetPos(target)
-	print("setTargetPos")
 --	if self.spell:Breaking(ActionState.move) == false then return end
 	
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
-	self.moveSpeed = 1
+	self.moveSpeed = self.Stats.n32MoveSpeed
 	self.curActionState = ActionState.move
 end
 
 function Ientity:update(dt)
 	self.spell:update(dt)
+	self.buffTable:update(dt)
 end
 ---------------------------------------------------技能相关-------------------------------------
+function Ientity:addBuff(_id, cnt, src, origin)
+	self.buffTable:addBuffById(_id, cnt, src, origin)
+end
+
 function Ientity:canCast(skilldata,target,pos)
 	return true
 end
