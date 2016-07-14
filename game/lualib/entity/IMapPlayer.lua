@@ -1,6 +1,8 @@
 local skynet = require "skynet"
 local Ientity = require "entity.Ientity"
 local vector3 = require "vector3"
+local Buff = require "skill.Buff"
+
 
 local IMapPlayer = class("IMapPlayer", Ientity)
 
@@ -18,7 +20,6 @@ function IMapPlayer:ctor()
 	self.entityType = EntityType.player
 	self.agent = 0
 	self.castSkillId = 0
-	self.testvalue = 101
 	print("IMapPlayer:ctor()")
 end
 
@@ -28,11 +29,12 @@ function IMapPlayer:update(dt)
 end
 
 function IMapPlayer:move(dt)
+	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
 
 	self.dir:set(self.targetPos.x, self.targetPos.y, self.targetPos.z)
 	self.dir:sub(self.pos)
-	self.dir:normalize(self.moveSpeed * dt/100)
+	self.dir:normalize(self.moveSpeed * dt)
 	
 
 	local dst = self.pos:return_add(self.dir)
@@ -46,6 +48,20 @@ function IMapPlayer:move(dt)
 
 	--advance move event stamp
 	self:advanceEventStamp(EventStampType.Move)
+end
+
+function IMapPlayer:init()
+	local baseBuffId = 100000001
+	local colorBuffId = 200000001
+
+	self:addBuff(baseBuffId, 1, self, Buff.Origin.Equip) 
+	self:addBuff(colorBuffId, 1, self, Buff.Origin.Equip)
+	
+	self.buffTable:calculateStats(true)
+	
+	self:addBuff(300000001, 1)
+	self.Stats:dump()
+	self.buffTable:dump()
 end
 
 return IMapPlayer
