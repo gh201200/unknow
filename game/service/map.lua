@@ -5,7 +5,6 @@ local vector3 = require "vector3"
 local syslog = require "syslog"
 local EntityManager = require "entity.EntityManager"
 local EventStampHandle = require "entity.EventStampHandle"
-require "globalDefine"
 local sharedata = require "sharedata"
 
 local traceback  = debug.traceback

@@ -25,7 +25,8 @@ function Ientity:ctor()
 	self.coroutine_pool = {}
 	self.coroutine_response = {}
 	--skynet about
-	
+
+	self.modolId = 0	--模型id	
 	--技能相关----
 	self.spell = spell.new()
 end
@@ -45,7 +46,7 @@ function Ientity:advanceEventStamp(event)
 end
 
 function Ientity:checkeventStamp(event, stamp)
-	print("checkeventStamp",event,self.serverEventStamps[event],stamp) 
+	--print("checkeventStamp",event,self.serverEventStamps[event],stamp) 
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
 	end
@@ -89,8 +90,17 @@ function Ientity:setCastSkillId(id)
 	--	print(_k,_v)
 	-- end
 	 local skilldata = g_shareData.skillRepository[id]
-	 if self:canCast(skilldata,id) == true then
-	 	self.castSkillId = id
+	 local modoldata = g_shareData.heroModolRepository[self.modolId]
+	 if modoldata ~= nil and self:canCast(skilldata,id) == true then
+		if string.find(skilldata.szAction,"skill") then
+			self.spell.readyTime =  modoldata["n32Skill1" .. "Time1"] or 0
+			self.spell.castTime = modoldata["n32Skill1" .. "Time2"] or  0
+			self.spell.endTime = modoldata["n32Skill1" .. "Time3"] or 0
+		else
+		
+		end
+		self.castSkillId = id
+		
 		self.spell:Cast(id,target,pos)
 		self:advanceEventStamp(EventStampType.CastSkill)
 		

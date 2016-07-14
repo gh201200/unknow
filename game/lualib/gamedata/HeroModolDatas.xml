@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<HeroModolDatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<info id="8888">
+			<szName>testmode</szName>
+			<szMod_name>gui_wu_shi_001_ty</szMod_name>
+			<n32Hight>2000</n32Hight>
+			<n32Radius>500</n32Radius>
+			<n32AttckTime1>300</n32AttckTime1>
+			<n32AttckTime2>300</n32AttckTime2>
+			<n32AttckTime3>400</n32AttckTime3>
+			<n32Skill1Time1>400</n32Skill1Time1>
+			<n32Skill1Time2>600</n32Skill1Time2>
+			<n32Skill2Time1>400</n32Skill2Time1>
+			<n32Skill2Time2>600</n32Skill2Time2>
+	</info>
+	<info id="8889">
+			<szName>testmode</szName>
+			<szMod_name>gui_wu_shi_001_ty</szMod_name>
+			<n32Hight>2000</n32Hight>
+			<n32Radius>500</n32Radius>
+			<n32AttckTime1>300</n32AttckTime1>
+			<n32AttckTime2>300</n32AttckTime2>
+			<n32AttckTime3>400</n32AttckTime3>
+			<n32Skill1Time1>400</n32Skill1Time1>
+			<n32Skill1Time2>600</n32Skill1Time2>
+			<n32Skill2Time1>400</n32Skill2Time1>
+			<n32Skill2Time2>600</n32Skill2Time2>
+	</info>
+</HeroModolDatas>

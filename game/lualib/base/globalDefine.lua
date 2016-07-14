@@ -21,5 +21,14 @@ ActionState = {
 	spell2				= 6,	--技能第二段
 }
 
+ErrorCode = {
+	EC_None				= 0,	--没有错误
+---------------技能-----------------
+	EC_Spell_MpLow 			= 1000, --蓝量不够
+	EC_Spell_SkillIdNotExit		= 1001, --技能id不存在
+		
+	EC_Spell_Unkonw			= 1999, --技能未知错误
+
+}
 g_shareData = {}
 GAMEPLAY_PERCENT = 10000
