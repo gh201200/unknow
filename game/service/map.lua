@@ -6,9 +6,9 @@ local syslog = require "syslog"
 local EntityManager = require "entity.EntityManager"
 local EventStampHandle = require "entity.EventStampHandle"
 local sharedata = require "sharedata"
-local Repository = require "Repository"
-
 local traceback  = debug.traceback
+
+
 local server_id = 1
 local last_update_time = nil
 
@@ -90,7 +90,7 @@ local function init()
 	--every 0.03s update entity
 	skynet.timeout(3, updateMapEvent)
 	last_update_time = skynet.now()
-	Repository.gdd  = sharedata.query "gdd"
+	g_shareData  = sharedata.query "gdd"
 end
 
 

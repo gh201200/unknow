@@ -145,7 +145,7 @@ skynet.register_protocol {
 }
 
 local CMD = {}
-local pf = require "pathfinding"
+--local pf = require "pathfinding"
 function CMD.Start (conf)
 	print("agent start")	
 	local map  = skynet.queryservice "map"

@@ -22,11 +22,9 @@ function EntityManager:createPlayer(agent, playerId, serverId)
 	player.serverId = serverId
 	player.playerId = playerId
 	player.agent = agent
-	
 	player:init()
 
 	table.insert(self.entityList, player)
-
 	return player
 end
 

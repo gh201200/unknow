@@ -1,6 +1,5 @@
 local Stats = require "skill.Stats"
 local Buff = require "skill.Buff"
-local Repository = require "Repository"
 local syslog = require "syslog"
 
 local BuffTable = class("buffTable")
@@ -30,7 +29,7 @@ function BuffTable:addBuffById(buffId, cnt, src, origin)
 		self:removeBuffById(buffId, -cnt, src)
 		return 
 	end
-	local buffdata =  Repository.getData("buffRep", buffId)
+	local buffdata = g_shareData["buffRep"][buffId]
 	if not buffdata then
 		syslog.warningf("add buff[%d] is null", buffId)
 		return 
