@@ -10,8 +10,6 @@
 					<n32LimitCount>0</n32LimitCount>
 					<n32LimitTime>0</n32LimitTime>
 					<n32LimitTimes>0</n32LimitTimes>
-					<n32Flag>0</n32Flag>
-					<n32Effect>0</n32Effect>
                     <n32Strength>2000</n32Strength>
 					<n32Strength_Pc>0</n32Strength_Pc>
                     <n32Agile>50</n32Agile>
@@ -22,10 +20,10 @@
 					<n32Hp_Pc>0</n32Hp_Pc>
 					<n32Mp>500</n32Mp>
 					<n32Mp_Pc>0</n32Mp_Pc>
-					<n32RecHp>0</n32RecHp>
-					<n32RecHp_Pc>0</n32RecHp_Pc>
-					<n32RecMp>0</n32RecMp>
-					<n32RecMp_Pc>0</n32RecMp_Pc>
+					<n32RecvHp>0</n32RecvHp>
+					<n32RecvHp_Pc>0</n32RecvHp_Pc>
+					<n32RecvMp>0</n32RecvMp>
+					<n32RecvMp_Pc>0</n32RecvMp_Pc>
 					<n32AttackPhy>500</n32AttackPhy>
                     <n32AttackPhy_Pc>0</n32AttackPhy_Pc>
 					<n32DefencePhy>0</n32DefencePhy>
@@ -34,7 +32,6 @@
 					<n32AttackSpeed_Pc>0</n32AttackSpeed_Pc>
 					<n32MoveSpeed>1</n32MoveSpeed>
 					<n32MoveSpeed_Pc>0</n32MoveSpeed_Pc>
-					<n32AttackRange>1</n32AttackRange>
 					<n32AttackRange_Pc>0</n32AttackRange_Pc>
 			</info>
 			<info id="200000001">
@@ -47,8 +44,6 @@
 					<n32LimitCount>0</n32LimitCount>
 					<n32LimitTime>0</n32LimitTime>
 					<n32LimitTimes>0</n32LimitTimes>
-					<n32Flag>0</n32Flag>
-					<n32Effect>0</n32Effect>
                     <n32Strength>0</n32Strength>
 					<n32Strength_Pc>10000</n32Strength_Pc>
                     <n32Agile>0</n32Agile>
@@ -59,10 +54,10 @@
 					<n32Hp_Pc>0</n32Hp_Pc>
 					<n32Mp>0</n32Mp>
 					<n32Mp_Pc>0</n32Mp_Pc>
-					<n32RecHp>0</n32RecHp>
-					<n32RecHp_Pc>0</n32RecHp_Pc>
-					<n32RecMp>0</n32RecMp>
-					<n32RecMp_Pc>0</n32RecMp_Pc>
+					<n32RecvHp>0</n32RecvHp>
+					<n32RecvHp_Pc>0</n32RecvHp_Pc>
+					<n32RecvMp>0</n32RecvMp>
+					<n32RecvMp_Pc>0</n32RecvMp_Pc>
 					<n32AttackPhy>0</n32AttackPhy>
                     <n32AttackPhy_Pc>0</n32AttackPhy_Pc>
 					<n32DefencePhy>0</n32DefencePhy>
@@ -71,7 +66,6 @@
 					<n32AttackSpeed_Pc>0</n32AttackSpeed_Pc>
 					<n32MoveSpeed>0</n32MoveSpeed>
 					<n32MoveSpeed_Pc>0</n32MoveSpeed_Pc>
-					<n32AttackRange>0</n32AttackRange>
 					<n32AttackRange_Pc>0</n32AttackRange_Pc>
 			</info>
 			<info id="300000001">
@@ -84,8 +78,6 @@
 					<n32LimitCount>0</n32LimitCount>
 					<n32LimitTime>5000</n32LimitTime>
 					<n32LimitTimes>0</n32LimitTimes>
-					<n32Flag>0</n32Flag>
-					<n32Effect>0</n32Effect>
                     <n32Strength>0</n32Strength>
 					<n32Strength_Pc>0</n32Strength_Pc>
                     <n32Agile>0</n32Agile>
@@ -96,10 +88,10 @@
 					<n32Hp_Pc>0</n32Hp_Pc>
 					<n32Mp>0</n32Mp>
 					<n32Mp_Pc>0</n32Mp_Pc>
-					<n32RecHp>0</n32RecHp>
-					<n32RecHp_Pc>0</n32RecHp_Pc>
-					<n32RecMp>0</n32RecMp>
-					<n32RecMp_Pc>0</n32RecMp_Pc>
+					<n32RecvHp>0</n32RecvHp>
+					<n32RecvHp_Pc>0</n32RecvHp_Pc>
+					<n32RecvMp>0</n32RecvMp>
+					<n32RecvMp_Pc>0</n32RecvMp_Pc>
 					<n32AttackPhy>0</n32AttackPhy>
                     <n32AttackPhy_Pc>0</n32AttackPhy_Pc>
 					<n32DefencePhy>0</n32DefencePhy>
@@ -108,7 +100,6 @@
 					<n32AttackSpeed_Pc>0</n32AttackSpeed_Pc>
 					<n32MoveSpeed>0</n32MoveSpeed>
 					<n32MoveSpeed_Pc>10000</n32MoveSpeed_Pc>
-					<n32AttackRange>0</n32AttackRange>
 					<n32AttackRange_Pc>0</n32AttackRange_Pc>
 			</info>
 </BuffRepository>

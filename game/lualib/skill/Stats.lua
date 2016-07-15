@@ -13,9 +13,11 @@ function Stats:ctor()
 	self.n32Hp = 0
 	self.n32Hp_Pc = 0
 	self.n32Hp_gPc = 0
+	self.n32MaxHp = 0
 	self.n32Mp = 0
 	self.n32Mp_Pc = 0
 	self.n32Mp_gPc = 0
+	self.n32MaxMp = 0
 	self.n32RecvHp = 0
 	self.n32RecvHp_Pc = 0
 	self.n32RecvHp_gPc = 0
@@ -80,10 +82,16 @@ function Stats:init(buffData)
 	self.n32AttackSpeed_Pc = buffData.n32AttackSpeed_Pc 
 	self.n32MoveSpeed = buffData.n32MoveSpeed 
 	self.n32MoveSpeed_Pc = buffData.n32MoveSpeed_Pc 
-	self.n32AttackRange = buffData.n32AttackRange 
 	self.n32AttackRange_Pc = buffData.n32AttackRange_Pc 
 end
 
+function Stats:copy(_stats)
+	for k, v in pairs(_stats) do
+		if type(v) == "number" then
+			self[k] = v
+		end
+	end
+end
 function Stats:add(_stats, cnt)
 	if not cnt then cnt = 1 end
 	for k, v in pairs(_stats) do
@@ -116,8 +124,9 @@ function Stats:plusDone()
 	self.n32AttackSpeed_Pc = 0
 	self.n32MoveSpeed = math.floor(self.n32MoveSpeed * (1.0 + self.n32MoveSpeed_Pc / GAMEPLAY_PERCENT))
 	self.n32MoveSpeed_Pc = 0
-	self.n32AttackRange = math.floor(self.n32AttackRange * (1.0 + self.n32AttackRange_Pc / GAMEPLAY_PERCENT))
-	self.n32AttackRange_Pc = 0
+
+	self.n32MaxHp = self.n32Hp
+	self.n32MaxMp =self.n32Mp
 end
 
 function Stats:Calc(summa)
@@ -126,7 +135,7 @@ function Stats:Calc(summa)
 	self.n32Strength = math.floor(summa.n32Strength * (1.0 + summa.n32Strength_Pc / GAMEPLAY_PERCENT))
 	self.n32Strength_Pc = summa.n32Strength_Pc
 	self.n32Agile = math.floor(summa.n32Agile * (1.0 + summa.n32Agile_Pc / GAMEPLAY_PERCENT))
-	self.n32Agile = summa.n32Agile_Pc 
+	self.n32Agile_Pc = summa.n32Agile_Pc 
 	self.n32Intelg = math.floor(summa.n32Intelg * (1.0 + summa.n32Intelg_Pc / GAMEPLAY_PERCENT))
 	self.n32Intelg_Pc = summa.n32Intelg_Pc 
 	self.n32Hp = math.floor(summa.n32Hp * (1.0 + summa.n32Hp_Pc / GAMEPLAY_PERCENT))
@@ -142,10 +151,9 @@ function Stats:Calc(summa)
 	self.n32DefencePhy = math.floor(summa.n32DefencePhy * (1.0 + summa.n32DefencePhy_Pc / GAMEPLAY_PERCENT))
 	self.n32DefencePhy_Pc = summa.n32DefencePhy_Pc 
 	self.n32AttackSpeed = math.floor(summa.n32AttackSpeed * (1.0 + summa.n32AttackSpeed_Pc / GAMEPLAY_PERCENT))
-	self.n32AttackSpeed = summa.n32AttackSpeed_Pc 
+	self.n32AttackSpeed_Pc = summa.n32AttackSpeed_Pc 
 	self.n32MoveSpeed = math.floor(summa.n32MoveSpeed * (1.0 + summa.n32MoveSpeed_Pc / GAMEPLAY_PERCENT))
 	self.n32MoveSpeed_Pc = summa.n32MoveSpeed_Pc 
-	self.n32AttackRange = math.floor(summa.n32AttackRange * (1.0 + summa.n32AttackRange_Pc / GAMEPLAY_PERCENT))
 	self.n32AttackRange_Pc = summa.n32AttackRange_Pc 
 end
 

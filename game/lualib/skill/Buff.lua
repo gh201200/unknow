@@ -4,11 +4,12 @@ local Stats = require "skill.Stats"
 local Buff = class("Buff") 
 
 Buff.Flags = {
-	ReplaceUpper = bit(0),	
-	StopReplaceSame = bit(1),
-	NotRefresh = bit(2),
-	Damage = bit(3),
-	Infinity = bit(4),
+	ReplaceUpper = bit(0),	--lower lv can replace higer lv
+	StopReplaceSame = bit(1),	--cannot replace same knid of buff
+	NotRefresh = bit(2),	--donot refresh remaintime
+	Damage = bit(3),	--make damage about hp&mp
+	Infinity = bit(4),	--loop forever
+	CalcStats = bit(5),	--should calc stats again
 }
 
 Buff.Effect=  {
@@ -67,7 +68,12 @@ end
 
 function Buff:onTrigger(entity)
 	if bit_and(self.buffDta.n32Flags,Buff.Flags.Damage) > 0 then
-		
+		if self.buffData.n32RecvHp ~= 0 then
+			entity:addHp(self.buffData.n32RecvHp, HpMpMask.BuffHp)
+		end
+		if self.buffData.n32RecvMp ~= 0 then
+			entity:addMp(self.buffData.n32RecvMp, HpMpMask.BuffMp)
+		end
 	end
 end
 

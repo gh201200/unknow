@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SkillEffect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<info id="1100101">
+			<n32Type>1</n32Type>
+			<szTypeInfo>对单体敌方目标效果</szTypeInfo>
+			<szMyEffect>myeffect</szMyEffect>
+			<szTargetEffect>targeteffect</szTargetEffect>
+			<n32SkillRange>0</n32SkillRange>	
+			<n32SkillEffect>10001</n32SkillEffect>
+			<n32BuffEffect>80001</n32BuffEffect>
+	</info>
+	<info id="1100102">
+			<n32Type>2</n32Type>
+			<szTypeInfo>对范围目标效果</szTypeInfo>
+			<szMyEffect>myeffect</szMyEffect>
+			<szTargetEffect>targeteffect</szTargetEffect>
+			<n32SkillRange>2</n32SkillRange>	
+			<n32SkillEffect>10001</n32SkillEffect>
+			<n32BuffEffect>80001</n32BuffEffect>
+	</info>
+</SkillEffect>

@@ -32,11 +32,12 @@ function Ientity:ctor()
 	self.spell = spell.new(self)
 
 	--buff about
-	self.buffTable = BuffTable.new()
+	self.buffTable = BuffTable.new(self)
 	self.Stats = self.buffTable.Stats
-
 	--cooldown
 	self.cooldown = cooldown.new(self)
+	self.maskHpMpChange = 0		--mask the reason why hp&mp changed 
+	self.HpMpChange = false 	--just for merging the resp of hp&mp
 end
 
 
@@ -50,6 +51,7 @@ function Ientity:advanceEventStamp(event)
 	if self.newClientReq[event] then 
 		self.newClientReq[event] = false				
 		respClientEventStamp(self.coroutine_pool[event], self.serverId, event)
+		self:onRespClientEventStamp(event)
 	end
 end
 
@@ -62,8 +64,15 @@ function Ientity:checkeventStamp(event, stamp)
 	if  self.serverEventStamps[event] > stamp then 
 		self.newClientReq[event] = false				
 		respClientEventStamp(self.coroutine_pool[event], self.serverId, event)
+		self:onRespClientEventStamp(event)
 	else
 		self.newClientReq[event] = true				--mark need be resp
+	end
+end
+
+function Ientity:onRespClientEventStamp(event)
+	if event == tEventStampType.HP_Mp then
+		self.maskHpMpChange = 0
 	end
 end
 
@@ -85,6 +94,42 @@ function Ientity:update(dt)
 	self.spell:update(dt)
 	self.buffTable:update(dt)
 	self.cooldown:update(dt)
+
+
+
+	--add code before this
+	if self.HpMpChange then
+		self:advanceEventStamp(EventStampType.HP_Mp)
+		self.HpMpChange = false
+	end
+end
+
+
+function Ientity:addHp(_hp, mask)
+	if _hp == 0 then return  end
+	if not mask then
+		mask = HpMpMask.SkillHp
+	end
+	self.lastHp = self.Stats.n32Hp
+	self.Stats.n32Hp = mClamp(self.Stats.n32Hp + _hp, 0, self.Stats.n32MaxHp)
+	if self.lastHp ~= self.Stats.n32Hp then	
+		self.maskHpMpChange = self.maskHpMpChange | mask
+		self.HpMpChange = true
+	end
+end
+
+
+function Ientity:addMp(_mp, mask)
+	if _mp == 0 then return  end
+	if not mask then
+		mask = HpMpMask.SkillMp
+	end
+	self.lastMp = self.Stats.n32Mp
+	self.Stats.n32Mp = mClamp(self.Stats.n32Mp + _hp, 0, self.Stats.n32MaxMp)
+	if self.lastMp ~= self.Stats.n32Mp then	
+		self.maskHpMpChange = self.maskHpMpChange | mask
+		self.HpMpChange = true
+	end
 end
 ---------------------------------------------------技能相关-------------------------------------
 function Ientity:addBuff(_id, cnt, src, origin)

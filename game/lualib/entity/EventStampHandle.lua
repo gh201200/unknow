@@ -15,8 +15,9 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 			repeat
 				local f = EventStampHandle[event]
 				if f then
+					local r = f(...)
 					for k, v in pairs(entity.coroutine_response[event]) do
-						v (true,  f(...) )
+						v (true,  r)
 					end
 					entity.coroutine_response[event] = {}
 				else
@@ -63,6 +64,67 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 		skillId = skillid,
 		errorCode = errorCode 
 }
+	return r
+end
+
+EventStampHandle[EventStampType.Stats] = function (serverId, event)
+	print("EventStampHandle : EventStampType.Stats")
+	local player = EntityManager:getEntity(serverId)
+	local r = {
+		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
+		
+		stats = { 
+			n32Strength = player.Stats.n32Strength,
+			n32Strength_Pc = player.Stats.n32Strength_Pc,
+			n32Agile =  player.Stats.n32Agile,
+			n32Agile_Pc = player.Stats.n32Agile_Pc,
+			n32Intelg = player.Stats.n32Intelg,
+			n32Intelg_Pc = player.Stats.n32Intelg_Pc,
+			n32AttackPhy = player.Stats.n32AttackPhy,
+			n32AttackPhy_Pc = player.Stats.n32AttackPhy_Pc,
+			n32DefencePhy = player.Stats.n32DefencePhy,
+			n32DefencePhy_Pc = player.Stats.n32DefencePhy_Pc,
+			n32AttackSpeed = player.Stats.n32AttackSpeed,
+			n32AttackSpeed_Pc = player.Stats.n32AttackSpeed_Pc,
+			n32MoveSpeed = player.Stats.n32MoveSpeed,
+			n32MoveSpeed_Pc = player.Stats.n32MoveSpeed_Pc,
+			n32AttackRange_Pc = player.Stats.n32AttackRange_Pc,
+			n32MaxHp = player.Stats.n32MaxHp,
+			n32Hp_Pc = player.Stats.n32Hp_Pc,
+			n32MaxMp = player.Stats.n32MaxMp,
+			n32Mp_Pc = player.Stats.n32Mp_Pc,
+			n32RecvHp = player.Stats.n32RecvHp,
+			n32RecvHp_Pc = player.Stats.n32RecvHp_Pc,
+			n32RecvMp = player.Stats.n32RecvMp,
+			n32RecvMp_Pc = player.Stats.n32RecvMp_Pc,
+		}
+	}
+	return r
+end
+
+EventStampHandle[EventStampType.Hp_Mp] = function (serverId, event)
+	print("EventStampHandle : EventStampType.Hp_Mp")
+	local player = EntityManager:getEntity(serverId)
+	local r = {
+		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
+
+		n32Hp = player.Stats.n32Hp,
+		n32Mp = player.Stats.n32Mp,
+		mask = player.maskHpMPChange,
+	}
+	return r
+end
+EventStampHandle[EventStampType.Buff] = function (serverId, event)
+	print("EventStampHandle : EventStampType.Buff")
+	local player = EntityManager:getEntity(serverId)
+	local r = {
+		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
+		buffLists = { }
+	}
+	for i=#player.buffList, 1, -1 do
+		local v = player.buffList[i]
+		table.insert( r.buffLists, { buffId = v.buffId, count = v.Count, remainTime = v.remainTime } )  
+	end
 	return r
 end
 
