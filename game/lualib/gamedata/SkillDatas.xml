@@ -9,7 +9,7 @@
 			 <szAction>skill1</szAction>
 			 <n32range>1</n32range>
 			 <n32MpCost>1</n32MpCost>
-			 <n32CD>2</n32CD>
+			 <n32CD>2000</n32CD>
 			 <n32DemageTime>500</n32DemageTime>
 			 <n32ActionTime>1500</n32ActionTime>
 			 <szAttackSound>attcksoud1</szAttackSound>
@@ -26,7 +26,7 @@
 			 <n32range>1</n32range>
 			 <szAction>attack</szAction>
 			 <n32MpCost>1</n32MpCost>
-			 <n32CD>2</n32CD>
+			 <n32CD>20000</n32CD>
 			 <n32DemageTime>500</n32DemageTime>
 			 <n32ActionTime>1500</n32ActionTime>
 			 <szAttackSound>attcksoud1</szAttackSound>

@@ -78,6 +78,9 @@ castskill 202 {
 	request {
 		skillid 0 : integer
 	}
+	response {
+		errorcode 0 :integer
+	}
 }
 ]]
 

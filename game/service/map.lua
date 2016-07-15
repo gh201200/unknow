@@ -51,8 +51,8 @@ end
 function CMD.castskill(response, playerId, args)
 	print("CMD.castskill",response,playerId)	
 	local player = EntityManager:getPlayerByPlayerId(playerId)
-	player:setCastSkillId(args.skillid)
-	response(true, nil)
+	local err = player:castSkill(args.skillid)
+	response(true, { errorcode =  err })
 end
 function CMD.query_event_move(response, playerId, args)
 	local entity = EntityManager:getEntity( args.event_stamp.id )

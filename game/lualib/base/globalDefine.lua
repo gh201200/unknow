@@ -27,6 +27,8 @@ ErrorCode = {
 	EC_Spell_MpLow 			= 1000, --蓝量不够
 	EC_Spell_SkillIdNotExit		= 1001, --技能id不存在
 		
+	EC_Spell_SkillIsRunning		= 1002, --技能正在释放
+	EC_Spell_SkillIsInCd		= 1003, --技能在cd中
 	EC_Spell_Unkonw			= 1999, --技能未知错误
 
 }

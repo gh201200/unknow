@@ -1,5 +1,6 @@
 local vector3 = require "vector3"
 local spell =  require "entity.spell"
+local cooldown = require "entity.cooldown"
 local BuffTable = require "skill.BuffTable"
 local Ientity = class("Ientity")
 
@@ -26,13 +27,16 @@ function Ientity:ctor()
 	self.coroutine_response = {}
 	--skynet about
 
-	self.modolId = 0	--模型id	
+	self.modolId = 8888	--模型id	
 	--技能相关----
-	self.spell = spell.new()
+	self.spell = spell.new(self)
 
 	--buff about
 	self.buffTable = BuffTable.new()
 	self.Stats = self.buffTable.Stats
+
+	--cooldown
+	self.cooldown = cooldown.new(self)
 end
 
 
@@ -80,6 +84,7 @@ end
 function Ientity:update(dt)
 	self.spell:update(dt)
 	self.buffTable:update(dt)
+	self.cooldown:update(dt)
 end
 ---------------------------------------------------技能相关-------------------------------------
 function Ientity:addBuff(_id, cnt, src, origin)
@@ -87,31 +92,45 @@ function Ientity:addBuff(_id, cnt, src, origin)
 end
 
 function Ientity:canCast(skilldata,target,pos)
-	return true
+	--print(ErrorCode)
+	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+		print("spell is cding",skilldata.id)
+		return ErrorCode.EC_Spell_SkillIsInCd
+	end
+	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then 
+		print("spell is running",skilldata.id)
+		return ErrorCode.EC_Spell_SkillIsRunning 
+	end
+	return 0
 end
 
 
-function Ientity:setCastSkillId(id)
-         print("Ientity:setCastSkillId",id,EventStampType.CastSkill)
-        -- for _k,_v in pairs(g_shareData.skillRepository) do
-	--	print(_k,_v)
-	-- end
-	 local skilldata = g_shareData.skillRepository[id]
-	 local modoldata = g_shareData.heroModolRepository[self.modolId]
-	 if modoldata ~= nil and self:canCast(skilldata,id) == true then
-		if string.find(skilldata.szAction,"skill") then
-			self.spell.readyTime =  modoldata["n32Skill1" .. "Time1"] or 0
-			self.spell.castTime = modoldata["n32Skill1" .. "Time2"] or  0
-			self.spell.endTime = modoldata["n32Skill1" .. "Time3"] or 0
-		else
-		
-		end
-		self.castSkillId = id
-		
-		self.spell:Cast(id,target,pos)
-		self:advanceEventStamp(EventStampType.CastSkill)
-		
-	 end
+function Ientity:castSkill(id)
+        print("Ientity:castSkillId",id,EventStampType.CastSkill)
+	local skilldata = g_shareData.skillRepository[id]
+	local modoldata = g_shareData.heroModolRepository[self.modolId]
+	assert(skilldata)
+	assert(modoldata)
+	local errorcode = self:canCast(skilldata,id) 
+	print("castskill error",errorcode)
+	if errorcode ~= 0 then return errorcode end
+	self.spell:init(skilldata)
+	if string.find(skilldata.szAction,"skill") then
+		self.spell.readyTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 
+		self.spell.castTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time2"] or  0 ) / 1000
+		self.spell.endTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time3"] or 0 ) / 1000
+	else
+		--普通攻击
+		self.spell.readyTime =  modoldata["n32Attack" .. "Time1"] or 0
+		self.spell.castTime = modoldata["n32Attack" .. "Time2"] or  0
+		self.spell.endTime = modoldata["n32Attack" .. "Time3"] or 0
+	end
+	print("spellTime",self.spell.readyTime,self.spell.castTime,self.spell.endTime)
+	self.castSkillId = id
+	self.cooldown:addItem(id) --加入cd
+	self.spell:Cast(id,target,pos)
+	self:advanceEventStamp(EventStampType.CastSkill)
+	return 0
 end
 return Ientity
 

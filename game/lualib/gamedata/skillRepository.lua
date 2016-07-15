@@ -38,7 +38,49 @@ for k, p in pairs(xmlhandler.root.SkillDatas.info) do
 	skillTable[tmpTb.id] = tmpTb
 end
 
---for _k,_v in pairs(skillTable) do
---	print(_k,_v.id,_v)
---end
+
+--skillEffect
+filename = "./lualib/gamedata/SkillEffect.xml"
+xmltext = ""
+f, e = io.open(filename, "r")
+if f then
+  xmltext = f:read("*a")
+else
+  error(e)
+end
+xmlhandler = simpleTreeHandler()
+xmlparser = xmlParser(xmlhandler)
+xmlparser:parse(xmltext)
+local skillEffectTable = {}
+for k, p in pairs(xmlhandler.root.SkillEffect.info) do
+	local tmpTb = {}
+	for _i,_v in pairs(p)do
+		if _i == "_attr" then
+			tmpTb.id = tonumber(_v.id)
+		else
+			if string.match(_i,"n32%a+") then
+				tmpTb[_i] = tonumber(_v)
+			elseif string.match(_i,"b%a+") then
+				if tonumber(_v) == 0 then
+					tmpTb[_i] = false
+				else
+					tmpTb[_i] = true
+				end
+			else
+				tmpTb[_i] = _v
+			end 
+		end
+	end
+	assert(skillTable[tmpTb.id])
+	for _i,_v in pairs(tmpTb) do
+		if _i ~= "id" then
+			skillTable[tmpTb.id][_i] = _v
+		end
+	end
+end
+--[[
+for _k,_v in pairs(skillTable) do
+	print(_v)
+end
+]]
 return skillTable
