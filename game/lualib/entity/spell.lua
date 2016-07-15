@@ -18,7 +18,6 @@ local SpellDemageStatus = {
 	End		= 2,	--伤害结束状态
 }
 
-
 function spell:ctor()
 	print("spell:ctor()")
 	self.skillId = 0
@@ -27,12 +26,12 @@ function spell:ctor()
 	self.status = SpellStatus.None
 	self.skilldata = {}	
 
-	self.beginTime = 0
 	self.readyTime = 0 	 --施法前摇
 	self.castTime = 0	 --施放中
 	self.endTime = 0	 --施法后摇
 	
 	self.demageTime = 0
+	self.errorCode = ErrorCode.None 
 end
 
 function spell:Breaking(ms)
@@ -68,10 +67,10 @@ function spell:update(dt)
 end
 
 function spell:onBegin()
-	print("onBegin",skynet.now())
-	self.readyTime = 200
-	self.castTime = 100
-	self.demageTime = 0
+	print("onBegin",skynet.now(),self.readyTime,self.castTime,self.endTime)
+	--self.readyTime = 200
+	--self.castTime = 100
+	--self.demageTime = 0
 	if self.readyTime > 0 then
 		print("onReady",skynet.now())
 		self.status = SpellStatus.Ready
@@ -85,6 +84,13 @@ function spell:onReady()
 		self.status = SpellStatus.Cast
 	end
 
+end
+function spell:clear()
+	self.status = SpellStatus.None
+	self.errorCode = ErrorCode.None
+	self.readyTime = 0
+	self.castTime = 0
+	self.endTime = 0 
 end
 function spell:onCast()
 	if self.castTime < 0 then

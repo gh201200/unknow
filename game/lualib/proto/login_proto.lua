@@ -15,9 +15,7 @@ handshake 1 {
 	}
 	response {
 		user_exists 0 : boolean		# 'true' if username is already used
-		salt 1 : string		# srp argument, salt, known as 's'
-		server_pub 2 : string		# srp argument, server public key, known as 'B'
-		challenge 3 : string		# session challenge
+		gameserver_port 1 : integer
 	}
 }
 

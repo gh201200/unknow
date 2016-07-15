@@ -119,8 +119,16 @@ query_event_buff 6 {
 }
 
 
-
-
+login 101 {
+         request {
+                 name 0 : string    
+                 client_pub 1 : string         
+         }
+         response {
+                 user_exists 0 : boolean
+                 gameserver_port 1 : integer
+         }
+}
 
 heart_beat_time 200{			#heartbeat,also for estimate ping time
 	response {
