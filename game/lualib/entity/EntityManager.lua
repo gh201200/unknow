@@ -1,11 +1,13 @@
+require "globalDefine"
 local IMapPlayer = require "entity.IMapPlayer"
-
+local vector3 = require "vector3"
 
 local EntityManager = class("EntityManager")
 
 
 function EntityManager:ctor(p)
 	self.entityList = {}
+	g_entityManager = self
 end
 
 function EntityManager:update(dt)
@@ -46,7 +48,31 @@ function EntityManager:getPlayerByPlayerId(playerId)
 	return nil
 end
 
-
+function EntityManager:getSkillAttackEntitys(source,skilldata)
+	local targets = {}
+	if skilldata.bNeedTarget == true then
+		assert(source.target)
+		local disVec = source.target.pos:sub(source.pos)	
+		local disLen = disVec:length()
+		if disLen >= n32range then
+			table.insert(targets,source.target)
+			return targets
+		else 
+			--返回技能查询错误 返回
+			return {}
+		end 
+	end
+	for _k,_v in pairs(self.entityList) do
+		if _v.serverId ~= _v.serverId then
+			local disVec = _v.pos:sub(source.pos)	
+			local disLen = disVec:length()
+			if disLen >= n32range then
+				table.insert(targets,_v)
+			end
+		end
+	end
+	return targets
+end
 return EntityManager.new()
 
 

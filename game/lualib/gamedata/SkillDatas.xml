@@ -20,7 +20,7 @@
 	<info id="1100102">
 			 <szName>女妖攻击技能2</szName>
 			 <bActive>1</bActive>
-			 <bNeedTarget>0</bNeedTarget>
+			 <bNeedTarget>1</bNeedTarget>
 			 <szIcon>icon</szIcon>
 			 <szEffect>fuhuo</szEffect>
 			 <n32range>1</n32range>

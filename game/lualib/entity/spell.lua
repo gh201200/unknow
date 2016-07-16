@@ -12,18 +12,24 @@ local SpellStatus = {
 	ChannelCast 	= 4,	--持续施法
 	End 		= 5,	--结束
 }
-local SpellDemageStatus = {
+
+local SpellTriggerStatus = {
 	None		= 0,	--
-	Trigger		= 1,	--伤害触发状态
-	End		= 2,	--伤害结束状态
+	Begin		= 1,	--触发开始
+	Trigger		= 2,	--触发状态
+	End		= 3,	--结束状态
+}
+local spellEffect = {
+	["ap"] = {1.0,1000,100,1000,"effect1"}
 }
 
 function spell:ctor(entity)
 	print("spell:ctor()")
 	self.skillId = 0
 	self.source = entity
-	self.target = nil
+	self.targets = {}
 	self.status = SpellStatus.None
+	self.triggerStatus = SpellTriggerStatus.None
 	self.skilldata = {}	
 
 	self.readyTime = 0 	 --施法前摇
@@ -33,6 +39,8 @@ function spell:ctor(entity)
 	self.triggerTime = -1 
 	self.errorCode = ErrorCode.None 
 	self.castingTime = 0
+
+	self.effects = {}	--技能效果表
 end
 function spell:init(skilldata)
 	self.triggerTime = skilldata.n32DemageTime
@@ -59,9 +67,8 @@ function spell:isSpellRunning()
 	return self.status ~= SpellStatus.None
 end
 function spell:update(dt)
-	if self.status == SpellStatus.None then
-	
-	elseif self.status == SpellStatus.Ready then
+	if self:isSpellRunning() == false then return end --技能不推进
+	if self.status == SpellStatus.Ready then
 		self.readyTime =  self.readyTime - dt
 		self:onReady()
 	elseif self.status == SpellStatus.Cast then
@@ -73,24 +80,42 @@ function spell:update(dt)
 		self.endTime =  self.endTime - dt
 		self:onEnd()
 	end
-	self:onTrigger(dt)
+	--推进技能效果	
+	self:advanceEffect(dt)
 end
-function spell:onTrigger(dt)
-	if self.triggerTime < 0 then return end
-	--计算伤害
-	if self.triggerTime >= 0 and (self.triggerTime - dt) < 0 then
-		--触发伤害
-		print("on Trigger Demage")
+function spell:triggerEffect(type,effect)
+	--计算触发的目标玩家
+	local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)	
+	for _i,_target in pairs(targets) do
+		if _type == "ap" then	
+			local apdemValue = effect["rate"] * self.source.Stats.n32AttackPhy + effect["value"] - _target.Stats.n32DefencePhy
+			print("triggerEffect",skynet.now,apdemValue)
+		end
+	end
+
+end
+--更新技能效果
+function spell:advanceEffect(dt)
+	if self.triggerTime >= 0  then 
 		self.triggerTime = self.triggerTime - dt
-	else
-	  self.triggerTime = self.triggerTime - dt	
+		return
+	end
+	for _k,_v in pairs(self.effects) do
+		if _v["lasttime"] ~= nil  then
+			if _v["ticks"] == nil then _v["ticks"] = _v["inteval"] end
+			if _v["runningTime"] == nil then _v["runningTime"] = _v["lasttime"]
+				_v["ticks"] = _v["ticks"] - dt
+				--触发效果
+				self:triggerEffect(_k,_v)
+				--判断最终时间
+				_v["runningTime"] = _v["runningTime"] - dt
+				if _v["runningTime"] <= 0 then self.effects[_k] = {} end
+			end
+		end
 	end
 end
 function spell:onBegin()
 	print("onBegin",skynet.now(),self.readyTime,self.castTime,self.endTime)
-	--self.readyTime = 200
-	--self.castTime = 100
-	--self.triggerTime = 0
 	if self.readyTime > 0 then
 		print("onReady",skynet.now())
 		self.status = SpellStatus.Ready
@@ -119,9 +144,6 @@ function spell:onCast()
 	end
 end
 
-function spell:onChannelCast()
-	
-end
 function spell:onEnd()
 	if self.endTime < 0 then
 		print("onNone",skynet.now())
@@ -131,8 +153,12 @@ function spell:onEnd()
 end
 function spell:Cast(skillid,target,pos)
 	self.skilldata = g_shareData.skillRepository[skillid]
-	if self.skilldata and self:isSpellRunning() == false then
-		self:onBegin()
+	assert(self.skilldata)
+	self.targets = {} --清空目标列表
+	if self.skilldata.bNeedTarget == true then
+		target = target or self.source.target
+		self.targets = {target}
 	end
+	self:onBegin()
 end
 return spell

@@ -40,11 +40,12 @@ ErrorCode = {
 ---------------技能-----------------
 	EC_Spell_MpLow 			= 1000, --蓝量不够
 	EC_Spell_SkillIdNotExit		= 1001, --技能id不存在
-		
 	EC_Spell_SkillIsRunning		= 1002, --技能正在释放
 	EC_Spell_SkillIsInCd		= 1003, --技能在cd中
+	EC_Spell_NoTarget		= 1005, --目标不存在
+	EC_Spell_TargetOutDistance	= 1006, --目标距离过远
 	EC_Spell_Unkonw			= 1999, --技能未知错误
-
 }
 g_shareData = {}
+g_entityManager = nil
 GAMEPLAY_PERCENT = 10000

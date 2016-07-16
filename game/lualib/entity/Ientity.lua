@@ -71,7 +71,7 @@ function Ientity:checkeventStamp(event, stamp)
 end
 
 function Ientity:onRespClientEventStamp(event)
-	if event == tEventStampType.HP_Mp then
+	if event == EventStampType.HP_Mp then
 		self.maskHpMpChange = 0
 	end
 end
@@ -146,10 +146,20 @@ function Ientity:canCast(skilldata,target,pos)
 		print("spell is running",skilldata.id)
 		return ErrorCode.EC_Spell_SkillIsRunning 
 	end
+	--如果是有目标类型
+	if skilldata.bNeedTarget == true then
+		if self.target == nil then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		if self.getDistance(target) > skilldata.n32range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
+	end
+	if skilldata.n32MpCost > self.Stats.n32Mp then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end
-
-
+function Ientity:getDistance(target)
+	assert(target)
+	local disVec = self.pos:sub(target.pos)
+        local disLen = disVec:length()
+	return disLen
+end
 function Ientity:castSkill(id)
         print("Ientity:castSkillId",id,EventStampType.CastSkill)
 	local skilldata = g_shareData.skillRepository[id]
@@ -159,6 +169,7 @@ function Ientity:castSkill(id)
 	local errorcode = self:canCast(skilldata,id) 
 	print("castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
+	
 	self.spell:init(skilldata)
 	if string.find(skilldata.szAction,"skill") then
 		self.spell.readyTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 

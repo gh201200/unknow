@@ -49,7 +49,7 @@ function CMD.move(response, playerId, args)
 end
 
 function CMD.castskill(response, playerId, args)
-	print("CMD.castskill",response,playerId)	
+	--print("CMD.castskill",response,playerId)	
 	local player = EntityManager:getPlayerByPlayerId(playerId)
 	local err = player:castSkill(args.skillid)
 	response(true, { errorcode =  err })
@@ -64,7 +64,7 @@ function CMD.query_event_move(response, playerId, args)
 end
 
 function CMD.query_event_CastSkill(response,playerId,args)
-	print("map.CMD.query_event_CastSkill",playerid,response,args)
+	--print("map.CMD.query_event_CastSkill",playerid,response,args)
 	local entity = EntityManager:getEntity( args.event_stamp.id )
 	if not entity then
 		syslog.warningf("client[%d] query_event_CastSkill server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
