@@ -41,31 +41,44 @@ function spell:ctor(entity)
 	self.castingTime = 0
 
 	self.effects = {}	--技能效果表
+	self.targets = {}
 end
 function spell:init(skilldata)
 	self.triggerTime = skilldata.n32DemageTime
 end
-function spell:Breaking(ms)
-	print("spell:breaking")
-	--ready状态可以被主动被动打断，打算后不计入cd和消耗
-	--cast状态 主动不可打断 被动打断，依然计入cd和消耗
-	--end 主动和被动打断后 依然生效
+function spell:canBreak(ms)
+	print("spell:canBreak")
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
-		self.status = SpellStatus.None
 		print("branking successful")
 		self.source.cooldown.resetCd(self.skillId,0) 	
 		return true
 	end
 	if ms == ActionState.move and self.status == SpellStatus.End then 
-		self.status = SpellStatus.None
+		self.clear()
 		return true	
 	end
-	
 	return false
+end
+
+function spell:breakSpell()
+	if self.status == SpellStatus.Ready then
+		--技能准备阶段被打断 不计入cd
+		self.source.cooldown:resetCd(self.skillId,0)
+	elseif self.status == SpellStatus.Cast then
+		--释放过程被打断
+			
+	elseif self.status == SpellStatus.End then
+		--释放收尾被打断
+		
+	end
+	
+	self.clear()
+	
 end
 function spell:isSpellRunning()
 	return self.status ~= SpellStatus.None
 end
+
 function spell:update(dt)
 	if self:isSpellRunning() == false then return end --技能不推进
 	if self.status == SpellStatus.Ready then
@@ -83,37 +96,31 @@ function spell:update(dt)
 	--推进技能效果	
 	self:advanceEffect(dt)
 end
-function spell:triggerEffect(type,effect)
-	--计算触发的目标玩家
-	local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)	
-	for _i,_target in pairs(targets) do
-		if _type == "ap" then	
-			local apdemValue = effect["rate"] * self.source.Stats.n32AttackPhy + effect["value"] - _target.Stats.n32DefencePhy
-			print("triggerEffect",skynet.now,apdemValue)
-		end
-	end
-
-end
 --更新技能效果
 function spell:advanceEffect(dt)
 	if self.triggerTime >= 0  then 
 		self.triggerTime = self.triggerTime - dt
+		if self.triggerTime < 0 then
+			--扣除蓝消耗
+			self.source.addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
+		end
 		return
 	end
-	for _k,_v in pairs(self.effects) do
-		if _v["lasttime"] ~= nil  then
-			if _v["ticks"] == nil then _v["ticks"] = _v["inteval"] end
-			if _v["runningTime"] == nil then _v["runningTime"] = _v["lasttime"]
-				_v["ticks"] = _v["ticks"] - dt
-				--触发效果
-				self:triggerEffect(_k,_v)
-				--判断最终时间
-				_v["runningTime"] = _v["runningTime"] - dt
-				if _v["runningTime"] <= 0 then self.effects[_k] = {} end
-			end
-		end
+	local effectId = skilldata.n32SkillEffect
+	local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
+	--
+	local mid,left,right =  table.calCross(self.targets,targets)	
+	--进去技能区域
+	for i = 1,#right,1 do
+		targets[i].addBuff(effectId,1,self.source,nil)
 	end
+	--离开技能区域
+	for i = 1,#left,1 do
+		targets[i].removeBuffById(effectId,1) 
+	end		
+	self.targets = targets
 end
+
 function spell:onBegin()
 	print("onBegin",skynet.now(),self.readyTime,self.castTime,self.endTime)
 	if self.readyTime > 0 then
@@ -131,12 +138,20 @@ function spell:onReady()
 
 end
 function spell:clear()
+	--正在触发中 移除目标技能效果
+	if  self.triggerTime < 0 then
+		for _k,_v in pairs(self.targets) do
+			_v.removeBuffById(effectId,1)
+		end
+	end
+	self.triggerTime = 0
 	self.status = SpellStatus.None
 	self.errorCode = ErrorCode.None
 	self.readyTime = 0
 	self.castTime = 0
 	self.endTime = 0 
 end
+
 function spell:onCast()
 	if self.castTime < 0 then
 		print("onEnd",skynet.now())

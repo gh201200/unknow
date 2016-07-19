@@ -1,9 +1,11 @@
+require "base.globalFun"
 EventStampType = {
 	Move				= 0,
 	CastSkill			= 1,
 	Stats				= 2,
 	Buff				= 3,
 	Hp_Mp				= 4,
+	SkillAffect			= 5,
 }
 
 
@@ -49,3 +51,4 @@ ErrorCode = {
 g_shareData = {}
 g_entityManager = nil
 GAMEPLAY_PERCENT = 10000
+

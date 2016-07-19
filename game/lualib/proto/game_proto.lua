@@ -52,7 +52,6 @@ local types = [[
 	remainTime 2 : integer 
 }
 
-
 ]]
 
 local c2s = [[
@@ -117,7 +116,6 @@ query_event_buff 6 {
 		buffLists 1 : *Buff
 	}
 }
-
 
 login 101 {
          request {

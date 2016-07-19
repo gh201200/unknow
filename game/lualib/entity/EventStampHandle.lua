@@ -128,4 +128,17 @@ EventStampHandle[EventStampType.Buff] = function (serverId, event)
 	return r
 end
 
+EventStampHandle[EventStampType.SkillAffect] = function (serverId, event)
+	print("EventStampHandle : EventStampType.SkillAffect")
+	local player = EntityManager:getEntity(serverId)
+	local r = {
+		 event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
+		 AffectList = { }	 
+	}
+	
+	for i=#player.AffectList,1,-1 do
+		local v = player.AffectList[i]
+		table.insert(r.AffectList, {effectId = v.effectId , AffectType = v.AffectType ,AffectValue = v.AffectValue ,AffectTime = v.AffectTime })
+	end
+end
 return EventStampHandle

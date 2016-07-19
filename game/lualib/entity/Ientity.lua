@@ -30,7 +30,7 @@ function Ientity:ctor()
 	self.modolId = 8888	--模型id	
 	--技能相关----
 	self.spell = spell.new(self)
-
+	self.AffectList = {}   --技能效果列表
 	--buff about
 	self.buffTable = BuffTable.new(self)
 	self.Stats = self.buffTable.Stats
@@ -83,7 +83,7 @@ function Ientity:stand()
 end
 
 function Ientity:setTargetPos(target)
---	if self.spell:Breaking(ActionState.move) == false then return end
+	if self.spell:canBreak(ActionState.move) == false then return end
 	
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
 	self.moveSpeed = self.Stats.n32MoveSpeed
@@ -160,6 +160,7 @@ function Ientity:getDistance(target)
         local disLen = disVec:length()
 	return disLen
 end
+
 function Ientity:castSkill(id)
         print("Ientity:castSkillId",id,EventStampType.CastSkill)
 	local skilldata = g_shareData.skillRepository[id]
@@ -187,6 +188,10 @@ function Ientity:castSkill(id)
 	self.spell:Cast(id,target,pos)
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
+end
+
+function Ientity:addSkillAffect(tb)
+	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
 end
 return Ientity
 
