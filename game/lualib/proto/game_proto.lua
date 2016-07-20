@@ -52,6 +52,12 @@ local types = [[
 	remainTime 2 : integer 
 }
 
+.Affect {
+	effectId 0 : integer
+	type 1 : integer
+	operType 2 : integer
+}
+
 ]]
 
 local c2s = [[
@@ -117,6 +123,15 @@ query_event_buff 6 {
 	}
 }
 
+query_event_affect 7 {
+	request {
+		event_stamp 0 : EventStamp
+	}
+	response {
+		event_stamp 0 : EventStamp
+		affectLists 1 : *Affect
+	}
+}
 login 101 {
          request {
                  name 0 : string    

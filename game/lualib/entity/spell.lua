@@ -102,13 +102,13 @@ function spell:advanceEffect(dt)
 		self.triggerTime = self.triggerTime - dt
 		if self.triggerTime < 0 then
 			--扣除蓝消耗
-			self.source.addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
+			self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
 		end
 		return
 	end
-	local effectId = skilldata.n32SkillEffect
+	local effectId = self.skilldata.n32SkillEffect
 	local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
-	--
+	--[[
 	local mid,left,right =  table.calCross(self.targets,targets)	
 	--进去技能区域
 	for i = 1,#right,1 do
@@ -117,7 +117,8 @@ function spell:advanceEffect(dt)
 	--离开技能区域
 	for i = 1,#left,1 do
 		targets[i].removeBuffById(effectId,1) 
-	end		
+	end
+	]]		
 	self.targets = targets
 end
 

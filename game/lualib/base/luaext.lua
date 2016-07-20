@@ -67,7 +67,37 @@ table.merge = function(dest, src)
         dest[k] = v
     end
 end
-
+--查看表是否包含键值
+function table.containKey( t, key )
+    for k, v in pairs(t) do
+        if key == k then
+            return true;
+        end
+    end
+    return false;
+end
+--计算两个表相交
+function table.calCross(tab1,tb2)
+        local left = {}
+        local mid = {}
+        local right = {}
+        for _k,_v in pairs(tab1) do
+                if table.containKey(tb2,_v) == true then
+                        table.insert(mid,_v)
+                end
+        end
+        for _k,_v in pairs(tab1) do
+                if table.containKey(mid,_v) == false then
+                        table.insert(left,_v)
+                end
+        end
+        for _k,_v in pairs(tab2) do
+                if table.containKey(mid,_v) == false then
+                        table.insert(right,_v)
+                end
+        end
+        return mid,left,right
+end    
 -- string扩展
 
 -- 下标运算

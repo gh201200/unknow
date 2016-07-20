@@ -19,10 +19,14 @@ function NpcAI:update()
 end
 function NpcAI:onEnter_Idle()
 	print("NpcAI:onEnter_Idle")
+	
 end
 
 function NpcAI:onExec_Idle()
 	print("NpcAI:onExec_Idle")
+	if self.source.target == nil then
+		--更新目标 查找仇恨列表
+	end
 end
 
 function NpcAI:onExit_Idle()

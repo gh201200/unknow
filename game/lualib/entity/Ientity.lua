@@ -2,6 +2,8 @@ local vector3 = require "vector3"
 local spell =  require "entity.spell"
 local cooldown = require "entity.cooldown"
 local BuffTable = require "skill.BuffTable"
+local AffectTable = require "skill.Affects.AffectTable"
+
 local Ientity = class("Ientity")
 
 require "globalDefine"
@@ -30,7 +32,7 @@ function Ientity:ctor()
 	self.modolId = 8888	--模型id	
 	--技能相关----
 	self.spell = spell.new(self)
-	self.AffectList = {}   --技能效果列表
+	self.affectTable = AffectTable.new(self) --效果表
 	--buff about
 	self.buffTable = BuffTable.new(self)
 	self.Stats = self.buffTable.Stats
@@ -94,8 +96,7 @@ function Ientity:update(dt)
 	self.spell:update(dt)
 	self.buffTable:update(dt)
 	self.cooldown:update(dt)
-
-
+	self.affectTable:update(dt)
 
 	--add code before this
 	if self.HpMpChange then
@@ -125,7 +126,7 @@ function Ientity:addMp(_mp, mask)
 		mask = HpMpMask.SkillMp
 	end
 	self.lastMp = self.Stats.n32Mp
-	self.Stats.n32Mp = mClamp(self.Stats.n32Mp + _hp, 0, self.Stats.n32MaxMp)
+	self.Stats.n32Mp = mClamp(self.Stats.n32Mp + _mp, 0, self.Stats.n32MaxMp)
 	if self.lastMp ~= self.Stats.n32Mp then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true

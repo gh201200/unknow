@@ -1,11 +1,10 @@
-require "base.globalFun"
 EventStampType = {
 	Move				= 0,
 	CastSkill			= 1,
 	Stats				= 2,
 	Buff				= 3,
 	Hp_Mp				= 4,
-	SkillAffect			= 5,
+	Affect				= 5,
 }
 
 
