@@ -85,6 +85,14 @@ function CMD.query_server_id(response, playerId, args)
 	end
 end
 
+function CMD.query_event_affect(response, playerId, args)
+	local entity = EntityManager:getEntity( args.event_stamp.id )
+	if not entity then
+		syslog.warningf("client[%d] query_event_affect server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
+	end
+	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
+	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
+end
 
 local function init()
 	--every 0.03s update entity

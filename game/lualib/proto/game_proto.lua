@@ -54,8 +54,7 @@ local types = [[
 
 .Affect {
 	effectId 0 : integer
-	type 1 : integer
-	operType 2 : integer
+	effectTime 1 : integer 
 }
 
 ]]
@@ -129,7 +128,8 @@ query_event_affect 7 {
 	}
 	response {
 		event_stamp 0 : EventStamp
-		affectLists 1 : *Affect
+		affectNum 1 : integer
+		affectLists 22 : *Affect
 	}
 }
 login 101 {

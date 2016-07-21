@@ -28,10 +28,6 @@ function AffectTable:addAffect(source,data)
 end
 
 function AffectTable:buildAffects(source,dataStr)
-	string.gmatch(dataStr,"[%w]")
-	local affectTable = string.split(dataStr,"]")
-	
-	
 	local tb = {}
 	for v in string.gmatch(dataStr,"%[(.-)%]") do
 		local data = {}

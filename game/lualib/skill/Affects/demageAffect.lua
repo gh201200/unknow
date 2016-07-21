@@ -2,18 +2,17 @@ local demageAffect = class("Affect")
 
 function demageAffect:ctor(entity,sourcei,data)
 	super.ctor(self,entity,source,data)
-	--self.n32AttackPhy = 1.0
-	--self.n32AttackPhy_Pc = 1.0
-	self.triggerTime = 100
-	self.leftime = 2000
-	self.effectId = 10000
-
+	self.triggerTime = 0
+	self.leftime = data[5] or 0
+	self.effectId = data[6] or 0
+	self.effectTime = data[5] or 0
 end
 function demageAffect:onEnter()
 	--推送客户端开始效果1:类型  2:属性百分比 3：属性固定值 4：间隔时间 5：持续时间 6：特效id
 	super.onEnter()
 	if self.data[6] ~= nil then
 		--推送效果
+		--self.owner
 	end
 	if self.data[4] == nil or self.data[5] == nil or self.data[5] == 0 then
 		--瞬发伤害

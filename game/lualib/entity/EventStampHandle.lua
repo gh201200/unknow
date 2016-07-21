@@ -133,12 +133,14 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		 event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
-		 affectList = { }	 
+		affectNum = 0,  
+		affectList = { }	 
 	}
-	
-	for i=#player.AffectList,1,-1 do
-		local v = player.AffectList[i]
-		table.insert(r.affectList, {effectId = v.effectId , remainTime = v.remainTime })
+	r.affectNum = #player.AffectTable.affects
+	for i=#player.AffectTable.affects,1,-1 do
+		local v = player.AffectTable.affects[i]
+		assert(v and v.effectId)
+		table.insert(r.affectList, {effectId = v.effectId , effectTime = v.effectTime })
 	end
 	return r
 end

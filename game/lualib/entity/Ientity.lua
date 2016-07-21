@@ -1,5 +1,5 @@
 local vector3 = require "vector3"
-local spell =  require "entity.spell"
+local spell =  require "skill.spell"
 local cooldown = require "entity.cooldown"
 local BuffTable = require "skill.BuffTable"
 local AffectTable = require "skill.Affects.AffectTable"
