@@ -1,12 +1,26 @@
 local vector3 = require "vector3"
 local spell =  require "skill.spell"
 local cooldown = require "entity.cooldown"
-local BuffTable = require "skill.BuffTable"
 local AffectTable = require "skill.Affects.AffectTable"
+require "globalDefine"
+
 
 local Ientity = class("Ientity")
 
-require "globalDefine"
+local function register_stats(t, name)
+	t['s_'..name] = 0
+	t['add' .. name] = function(self, v)
+		self['s_'..name] = self['s_'..name] + v
+		self.StatsChange = true
+	end
+	t['set' .. name] = function (self, v)
+		self['s_'..name] = v
+		self.StatsChange = true
+	end
+	t['get' .. name] = function(self)
+		return self['s_'..name] 
+	end
+end
 
 function Ientity:ctor()
 	
@@ -29,17 +43,51 @@ function Ientity:ctor()
 	self.coroutine_response = {}
 	--skynet about
 
+	--att data
+	self.attDat = nil
+	
 	self.modolId = 8888	--模型id	
 	--技能相关----
 	self.spell = spell.new(self)
 	self.affectTable = AffectTable.new(self) --效果表
-	--buff about
-	self.buffTable = BuffTable.new(self)
-	self.Stats = self.buffTable.Stats
+	--stats about
+	register_stats(self, 'Strength')
+	register_stats(self, 'StrengthPc')
+	register_stats(self, 'Minjie')
+	register_stats(self, 'MinjiePc')
+	register_stats(self, 'Zhili')
+	register_stats(self, 'ZhiliPc')
+	register_stats(self, 'HpMax')
+	register_stats(self, 'HpMaxPc')
+	register_stats(self, 'MpMax')
+	register_stats(self, 'MpMaxPc')
+	register_stats(self, 'Attack')
+	register_stats(self, 'AttackPc')
+	register_stats(self, 'Defence')
+	register_stats(self, 'DefencePc')
+	register_stats(self, 'ASpeed')
+	register_stats(self, 'ASpeedPc') 
+	register_stats(self, 'MSpeed')
+	register_stats(self, 'MSpeedPc')
+	register_stats(self, 'AttackRange')
+	register_stats(self, 'AttackRangePc')
+	register_stats(self, 'RecvHp')
+	register_stats(self, 'RecvHpPc')
+	register_stats(self, 'RecvMp')
+	register_stats(self, 'RecvMpPc')
+	register_stats(self, 'BaojiRate') 
+	register_stats(self, 'BaojiTimes')
+	register_stats(self, 'Hit')
+	register_stats(self, 'HitPc')
+	register_stats(self, 'Miss')
+	register_stats(self, 'MissPc')
+	
+	self.recvTime = 0
 	--cooldown
 	self.cooldown = cooldown.new(self)
 	self.maskHpMpChange = 0		--mask the reason why hp&mp changed 
 	self.HpMpChange = false 	--just for merging the resp of hp&mp
+	self.StatsChange = true		--just for merging the resp of stats
 end
 
 
@@ -93,27 +141,32 @@ function Ientity:setTargetPos(target)
 end
 
 function Ientity:update(dt)
-	self.spell:update(dt)
+	self.spell:update(dta)
 	self.buffTable:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
+	self:recvHpMp(dt)
 
 	--add code before this
 	if self.HpMpChange then
 		self:advanceEventStamp(EventStampType.HP_Mp)
 		self.HpMpChange = false
 	end
+	if self.StatsChange then
+		self:advanceEventStamp(EventStampType.Stats)
+		self.StatsChange = false
+	end
 end
 
 
 function Ientity:addHp(_hp, mask)
-	if _hp == 0 then return  end
+	if _hp == 0 then return end
 	if not mask then
 		mask = HpMpMask.SkillHp
 	end
-	self.lastHp = self.Stats.n32Hp
-	self.Stats.n32Hp = mClamp(self.Stats.n32Hp + _hp, 0, self.Stats.n32MaxHp)
-	if self.lastHp ~= self.Stats.n32Hp then	
+	self.lastHp = self:getHp()
+	self:setHp(mClamp(self.lastHp+_hp, 0, self.attDat.n32Hp * (1.0 + self:getHpMaxPc()/GAMEPLAY_PERCENT) + self:getHpMax()))
+	if self.lastHp ~= self.getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true
 	end
@@ -126,12 +179,28 @@ function Ientity:addMp(_mp, mask)
 		mask = HpMpMask.SkillMp
 	end
 	self.lastMp = self.Stats.n32Mp
-	self.Stats.n32Mp = mClamp(self.Stats.n32Mp + _mp, 0, self.Stats.n32MaxMp)
-	if self.lastMp ~= self.Stats.n32Mp then	
+	self:setMp(mClamp(self.lastMp+_mp, 0, self.attDat.n32Mp * (1.0 + self:getMpMaxPc()/GAMEPLAY_PERCENT) + self:getMpMax()))
+	if self.lastMp ~= self:getMp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true
 	end
 end
+
+function Ientity:recvHpMp()
+	if self.recvHp <= 0 and self.recvMp <= 0 then return end
+	local curTime = skynet.now()
+	if self.recvTime == 0 then
+		self.recvTime = curTime
+	end    
+	if (curTime - self.recvTime) * 100  > HP_MP_RECOVER_TIMELINE then
+		local cnt = math.ceil((curTime - self.recvTime) * 100 / HP_MP_RECOVER_TIMELINE)
+		self.recvTime = curTime
+ 		self:addHp((self:getBaseRecvHp() * (1.0 + self:getRecvHpPc() / GAMEPLAY_PERCENT) + self:getRecvHp()) * cnt, HpMpMask.TimeLine)
+ 		self:addMp((self:getBaseRecvMp() * (1.0 + self:getRecvMpPc() / GAMEPLAY_PERCENT) + self:getRecvMp()) * cnt, HpMpMask.TimeLine)
+ 	end
+end
+
+
 ---------------------------------------------------技能相关-------------------------------------
 function Ientity:addBuff(_id, cnt, src, origin)
 	self.buffTable:addBuffById(_id, cnt, src, origin)

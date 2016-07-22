@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<HeroRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<info id="100000001">
+					<n32Color>1</n32Color>
+					<szName>fff</szName>
+					<szModule>10000.icon</szModule>
+					<n32MainAtt>2</n32MainAtt>
+					<n32Strength>10</n32Strength>
+					<n32Minjie>0</n32Minjie>
+					<n32Zhili>0</n32Zhili>
+					<n32StrengthPc>0</n32StrengthPc>
+					<n32MinjiePc>0</n32MinjiePc>
+                    <n32ZhiliPc>2000</n32ZhiliPc>
+					<n32Hp>1000</n32Hp>
+                    <n32Mp>50</n32Mp>
+					<n32Attack>10</n32Attack>
+                    <n32Defence>80</n32Defence>
+					<n32ASpeed>5000</n32ASpeed>
+					<n32MSpeed>1000</n32MSpeed>
+					<n32AttackRange>0</n32AttackRange>
+					<n32RecvHp>0</n32RecvHp>
+					<n32RecvMp>0</n32RecvMp>
+					<n32GodSkillId>500</n32GodSkillId>
+                    <n32WCardNum>0</n32WCardNum>
+			</info>
+			<info id="100000002">
+					<n32Color>1</n32Color>
+					<szName>fff</szName>
+					<szModule>10000.icon</szModule>
+					<n32MainAtt>2</n32MainAtt>
+					<n32Strength>10</n32Strength>
+					<n32Minjie>0</n32Minjie>
+					<n32Zhili>0</n32Zhili>
+					<n32StrengthPc>0</n32StrengthPc>
+					<n32MinjiePc>0</n32MinjiePc>
+                    <n32ZhiliPc>2000</n32ZhiliPc>
+					<n32Hp>1000</n32Hp>
+                    <n32Mp>50</n32Mp>
+					<n32Attack>10</n32Attack>
+                    <n32Defence>80</n32Defence>
+					<n32ASpeed>5000</n32ASpeed>
+					<n32MSpeed>1000</n32MSpeed>
+					<n32AttackRange>0</n32AttackRange>
+					<n32RecvHp>0</n32RecvHp>
+					<n32RecvMp>0</n32RecvMp>
+					<n32GodSkillId>500</n32GodSkillId>
+                    <n32WCardNum>0</n32WCardNum>
+			</info>
+</HeroRepository>
