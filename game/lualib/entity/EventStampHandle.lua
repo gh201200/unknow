@@ -74,29 +74,33 @@ EventStampHandle[EventStampType.Stats] = function (serverId, event)
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		
 		stats = { 
-			n32Strength = player.Stats.n32Strength,
-			n32Strength_Pc = player.Stats.n32Strength_Pc,
-			n32Agile =  player.Stats.n32Agile,
-			n32Agile_Pc = player.Stats.n32Agile_Pc,
-			n32Intelg = player.Stats.n32Intelg,
-			n32Intelg_Pc = player.Stats.n32Intelg_Pc,
-			n32AttackPhy = player.Stats.n32AttackPhy,
-			n32AttackPhy_Pc = player.Stats.n32AttackPhy_Pc,
-			n32DefencePhy = player.Stats.n32DefencePhy,
-			n32DefencePhy_Pc = player.Stats.n32DefencePhy_Pc,
-			n32AttackSpeed = player.Stats.n32AttackSpeed,
-			n32AttackSpeed_Pc = player.Stats.n32AttackSpeed_Pc,
-			n32MoveSpeed = player.Stats.n32MoveSpeed,
-			n32MoveSpeed_Pc = player.Stats.n32MoveSpeed_Pc,
-			n32AttackRange_Pc = player.Stats.n32AttackRange_Pc,
-			n32MaxHp = player.Stats.n32MaxHp,
-			n32Hp_Pc = player.Stats.n32Hp_Pc,
-			n32MaxMp = player.Stats.n32MaxMp,
-			n32Mp_Pc = player.Stats.n32Mp_Pc,
-			n32RecvHp = player.Stats.n32RecvHp,
-			n32RecvHp_Pc = player.Stats.n32RecvHp_Pc,
-			n32RecvMp = player.Stats.n32RecvMp,
-			n32RecvMp_Pc = player.Stats.n32RecvMp_Pc,
+			n32Strength = player:getStrength(),
+			n32Strength_Pc = player:getStrengthPc(),
+			n32Agile =  player:getMinjie(),
+			n32Agile_Pc = player:getMinjiePc(),
+			n32Intelg = player:getZhili(),
+			n32Intelg_Pc = player:getZhiliPc(),
+			n32AttackPhy = player:getAttack(),
+			n32AttackPhy_Pc = player:getAttackPc(),
+			n32DefencePhy = player:getDefence(),
+			n32DefencePhy_Pc = player:getDefencePhyPc(),
+			n32AttackSpeed = player:getASpeed(),
+			n32MoveSpeed = player:getMSpeed(),
+			n32MoveSpeed_Pc = player:getMSpeedPc(),
+			n32AttackRange = player:getAttackRange(),
+			n32AttackRange_Pc = player:getAttackRangePc(),
+			n32MaxHp = player:getMaxHp(),
+			n32MaxHpPc = player:getMaxHpPc(),
+			n32MaxMp = player:getMaxMp(),
+			n32Mp_Pc = player:getMaxMpPc(),
+			n32RecvHp = player:getRecvHp(),
+			n32RecvHp_Pc = player:RecvHpPc(),
+			n32RecvMp = player:getRecvMp(),
+			n32RecvMp_Pc = player:getRecvMpPc(),
+			baojiR = player:getBaojiRate(),
+			baojiT = player:getBaojiTimes(),
+			hit = player:getHit(),
+			miss = player:getMiss(),
 		}
 	}
 	return r
@@ -112,19 +116,6 @@ EventStampHandle[EventStampType.Hp_Mp] = function (serverId, event)
 		n32Mp = player.Stats.n32Mp,
 		mask = player.maskHpMPChange,
 	}
-	return r
-end
-EventStampHandle[EventStampType.Buff] = function (serverId, event)
-	print("EventStampHandle : EventStampType.Buff")
-	local player = EntityManager:getEntity(serverId)
-	local r = {
-		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
-		buffLists = { }
-	}
-	for i=#player.buffList, 1, -1 do
-		local v = player.buffList[i]
-		table.insert( r.buffLists, { buffId = v.buffId, count = v.Count, remainTime = v.remainTime } )  
-	end
 	return r
 end
 

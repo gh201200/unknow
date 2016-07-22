@@ -1,9 +1,9 @@
-#!/usr/bin/env lua
+#!ousr/bin/env lua
 ---Sample application to read a XML file and print it on the terminal.
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
 dofile("../3rd/LuaXMLlib/xml.lua")
 dofile("../3rd/LuaXMLlib/handler.lua")
-local filename = "./lualib/gamedata/BuffRepository.xml"
+local filename = "./lualib/gamedata/HeroRepository.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
 if f then
@@ -15,8 +15,8 @@ local xmlhandler = simpleTreeHandler()
 local xmlparser = xmlParser(xmlhandler)
 xmlparser:parse(xmltext)
 
-local buffTable = {}
-for k, p in pairs(xmlhandler.root.BuffRepository.info) do
+local modolsTable = {}
+for k, p in pairs(xmlhandler.root.HeroRepository.info) do
 	local tmpTb = {}
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then
@@ -35,19 +35,11 @@ for k, p in pairs(xmlhandler.root.BuffRepository.info) do
 			end 
 		end
 	end
-	if tmpTb.n32LimitCount <= 0 then
-                tmpTb.n32LimitCount = 9999
-        end
-        if tmpTb.n32LimitTime <= 0 then
-                tmpTb.n32limitTime  = 1000
-        end
-	tmpTb.seriesId = Macro_GetBuffSeriesId(tmpTb.id)
-	tmpTb.level = Macro_GetBuffLevel(tmpTb.id) 
-	assert(buffTable[tmpTb.id]==nil, "BuffRespository has two more id: " .. tmpTb.id)
-	buffTable[tmpTb.id] = tmpTb
+	modolsTable[tmpTb.id] = tmpTb
 end
-
---for _k,_v in pairs(skillTable) do
---	print(_k,_v.id,_v)
---end
-return buffTable
+--[[
+for _k,_v in pairs(modolsTable) do
+	print(_k,_v.id,_v)
+end
+]]
+return modolsTable
