@@ -19,6 +19,8 @@ function Ientity:ctor()
 	self.pos = vector3.create()
 	self.dir = vector3.create()
 	self.targetPos = vector3.create()
+	self.pos:set(0, 0, 0)
+	self.dir:set(0, 0, 0)
 	self.moveSpeed = 0
 	self.curActionState = 0 
 		
@@ -82,6 +84,7 @@ end
 function Ientity:stand()
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
+	self.state = "idle" --idle walk spell
 end
 
 function Ientity:setTargetPos(target)
@@ -103,6 +106,33 @@ function Ientity:update(dt)
 		self:advanceEventStamp(EventStampType.HP_Mp)
 		self.HpMpChange = false
 	end
+	
+	if self.state == "walk" then
+		self:move(dt)
+	end
+end
+
+
+function Ientity:move(dt)
+	dt = dt / 1000		--second
+	if self.moveSpeed <= 0 then return end
+
+	self.dir:set(self.targetPos.x, self.targetPos.y, self.targetPos.z)
+	self.dir:sub(self.pos)
+	self.dir:normalize(self.moveSpeed * dt)
+	
+
+	local dst = self.pos:return_add(self.dir)
+	--check iegal
+	
+	--move
+	self.pos:set(dst.x, dst.y, dst.z)
+	if IS_SAME_GRID(self.targetPos,  dst) then
+		self:stand()
+	end
+
+	--advance move event stamp
+	self:advanceEventStamp(EventStampType.Move)
 end
 
 
