@@ -277,18 +277,18 @@ function Ientity:castSkill(id)
 	local errorcode = self:canCast(skilldata,id) 
 	print("castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
-	
-	self.spell:init(skilldata)
+	local skillTimes = {}	
 	if string.find(skilldata.szAction,"skill") then
-		self.spell.readyTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 
-		self.spell.castTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time2"] or  0 ) / 1000
-		self.spell.endTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time3"] or 0 ) / 1000
+		skillTimes[1] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 
+		skillTimes[2] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time2"] or  0 ) / 1000
+		skillTimes[3] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time3"] or 0 ) / 1000
 	else
 		--普通攻击
-		self.spell.readyTime =  modoldata["n32Attack" .. "Time1"] or 0
-		self.spell.castTime = modoldata["n32Attack" .. "Time2"] or  0
-		self.spell.endTime = modoldata["n32Attack" .. "Time3"] or 0
+		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
+		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
+		skillTimes[3] = modoldata["n32Attack" .. "Time3"] or 0
 	end
+	self.spell:init(skilldata,skillTimes)
 	print("spellTime",self.spell.readyTime,self.spell.castTime,self.spell.endTime)
 	self.castSkillId = id
 	self.cooldown:addItem(id) --加入cd

@@ -11,7 +11,7 @@
 			 <n32MpCost>1</n32MpCost>
 			 <n32CD>2000</n32CD>
 			 <n32DemageTime>500</n32DemageTime>
-			 <n32ActionTime>1500</n32ActionTime>
+			 <n32ActionTime>14000</n32ActionTime>
 			 <szAttackSound>attcksoud1</szAttackSound>
 			 <szHurtSound>hurtsoud1</szHurtSound>
 			 <bAce>0</bAce>
@@ -20,7 +20,7 @@
 	<info id="1100102">
 			 <szName>女妖攻击技能2</szName>
 			 <bActive>1</bActive>
-			 <bNeedTarget>1</bNeedTarget>
+			 <bNeedTarget>0</bNeedTarget>
 			 <szIcon>icon</szIcon>
 			 <szEffect>fuhuo</szEffect>
 			 <n32range>1</n32range>
@@ -28,7 +28,7 @@
 			 <n32MpCost>1</n32MpCost>
 			 <n32CD>20000</n32CD>
 			 <n32DemageTime>500</n32DemageTime>
-			 <n32ActionTime>1500</n32ActionTime>
+			 <n32ActionTime>14000</n32ActionTime>
 			 <szAttackSound>attcksoud1</szAttackSound>
 			 <szHurtSound>hurtsoud1</szHurtSound>
 			 <bAce>0</bAce>

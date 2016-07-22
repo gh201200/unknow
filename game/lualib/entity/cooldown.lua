@@ -34,7 +34,7 @@ end
 function cooldown:resetCd(id,time)
 	print("cooldown:resetCd",id,time)
 	time = time or 0
-	assert(self.coolDownTable[id])
+	assert(self.coolDownTable[id] ~= nil)
 	self.coolDownTable[id] = time
 end
 return cooldown
