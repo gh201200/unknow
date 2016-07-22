@@ -46,11 +46,13 @@ end
 function spell:init(skilldata)
 	self.triggerTime = skilldata.n32DemageTime
 end
+
 function spell:canBreak(ms)
+	if self:isSpellRunning() == false then return true end
 	print("spell:canBreak")
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
 		print("branking successful")
-		self.source.cooldown.resetCd(self.skillId,0) 	
+		self.source.cooldown:resetCd(self.skillId,0) 	
 		return true
 	end
 	if ms == ActionState.move and self.status == SpellStatus.End then 
@@ -69,11 +71,12 @@ function spell:breakSpell()
 			
 	elseif self.status == SpellStatus.End then
 		--释放收尾被打断
-		
+			
 	end
 	
+	--打断后 进入站立状态
+	self.source:stand()
 	self.clear()
-	
 end
 function spell:isSpellRunning()
 	return self.status ~= SpellStatus.None
@@ -94,7 +97,7 @@ function spell:update(dt)
 		self:onEnd()
 	end
 	--推进技能效果	
-	self:advanceEffect(dt)
+	--:=self:advanceEffect(dt)
 end
 --更新技能效果
 function spell:advanceEffect(dt)

@@ -142,12 +142,12 @@ function Ientity:setTargetPos(target)
 	if self.spell:canBreak(ActionState.move) == false then return end
 	
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
-	self.moveSpeed = self.Stats.n32MoveSpeed
+	self.moveSpeed = 1 --self.getMoveSpeed()
 	self.curActionState = ActionState.move
 end
 
 function Ientity:update(dt)
-	self.spell:update(dta)
+	self.spell:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
@@ -158,8 +158,11 @@ function Ientity:update(dt)
 		self.HpMpChange = false
 	end
 	
-	if self.state == "walk" then
+	if self.curActionState == ActionState.move then
 		self:move(dt)
+	elseif self.curActionState == ActionState.stand then
+		--站立状态
+		
 	end
 end
 
@@ -233,9 +236,10 @@ function Ientity:recvHpMp()
 end
 
 
----------------------------------------------------技能相关-------------------------------------
-function Ientity:addBuff(_id, cnt, src, origin)
-	self.buffTable:addBuffById(_id, cnt, src, origin)
+---------------------------------------------------------------------------------技能相关------------------------------------------------------------------------------------------------------------------
+--设置人物状态
+function Ientity:setState(state)
+	self.state = state
 end
 
 function Ientity:canCast(skilldata,target,pos)
@@ -253,9 +257,10 @@ function Ientity:canCast(skilldata,target,pos)
 		if self.target == nil then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 		if self.getDistance(target) > skilldata.n32range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
 	end
-	if skilldata.n32MpCost > self.Stats.n32Mp then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
+	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end
+
 function Ientity:getDistance(target)
 	assert(target)
 	local disVec = self.pos:sub(target.pos)
@@ -288,6 +293,7 @@ function Ientity:castSkill(id)
 	self.castSkillId = id
 	self.cooldown:addItem(id) --加入cd
 	self.spell:Cast(id,target,pos)
+	self:stand()
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
 end
