@@ -1,6 +1,6 @@
 local vector3 = require "vector3"
 local spell =  require "skill.spell"
-local cooldown = require "entity.cooldown"
+local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 require "globalDefine"
 
