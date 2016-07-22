@@ -60,7 +60,6 @@ function spell:canBreak(ms)
 		return true
 	end
 	if ms == ActionState.move and self.status == SpellStatus.End then 
-		self.clear()
 		return true	
 	end
 	return false
@@ -136,11 +135,6 @@ function spell:onReady()
 end
 function spell:clear()
 	--正在触发中 移除目标技能效果
-	if  self.triggerTime < 0 then
-		for _k,_v in pairs(self.targets) do
-			_v.removeBuffById(effectId,1)
-		end
-	end
 	self.triggerTime = 0
 	self.status = SpellStatus.None
 	self.errorCode = ErrorCode.None
