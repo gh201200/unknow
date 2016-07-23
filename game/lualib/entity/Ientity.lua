@@ -25,7 +25,7 @@ local function register_stats(t, name)
 	t['set' .. name] = function (self, v)
 		if v == self['s_'..name] then return end
 		self['s_'..name] = v
-		self.StatsChange = true
+		--self.StatsChange = true
 	end
 	t['get' .. name] = function(self)
 		return self['s_'..name] 
