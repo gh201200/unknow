@@ -11,6 +11,8 @@ skynet.start(function()
 	skynet.newservice("debug_console",8000)
 	skynet.uniqueservice("globaldata")
 	skynet.uniqueservice("room")
+	--启动数据库服务
+	skynet.uniqueservice ("database")
 	local loginserver = skynet.newservice("loginserver")
 	skynet.call(loginserver,"lua","open",login_config)
 	local watchdog = skynet.newservice("watchdog")

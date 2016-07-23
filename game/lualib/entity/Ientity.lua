@@ -180,7 +180,6 @@ function Ientity:update(dt)
 	end
 end
 
-
 function Ientity:move(dt)
 	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
@@ -202,6 +201,12 @@ function Ientity:move(dt)
 	self:advanceEventStamp(EventStampType.Move)
 end
 
+--强制设置位置（闪现,击飞,回城等）
+function Ientity:forcePosition(des)
+	--先判定des位置是否超过地图范围
+	self:stand()
+	self.pos:set(des.x,des.y,des.z)
+end
 
 function Ientity:addHp(_hp, mask)
 	if _hp == 0 then return end

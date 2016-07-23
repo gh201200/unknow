@@ -3,7 +3,7 @@ local socket = require "socket"
 
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
-
+local uuid = require "uuid"
 local traceback = debug.traceback
 
 
@@ -22,7 +22,7 @@ local CMD = {}
 
 function CMD.init (m, id, conf)
 	master = m
---	database = skynet.uniqueservice ("database")
+	database = skynet.uniqueservice ("database")
 	host = protoloader.load (protoloader.GAME)
 	auth_timeout = conf.auth_timeout * 100
 	session_expire_time = conf.session_expire_time * 100
@@ -70,14 +70,17 @@ function CMD.auth (fd, addr)
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")
 
-		local account = {} --skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
-
-	--	local session_key, _, pkey = srp.create_server_session_key (account.verifier, args.client_pub)
-	--	local challenge = srp.random ()
-		
+		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
+		if account.id == nil then
+			--注册账号
+			local id = uuid.gen ()
+			skynet.call (database, "lua", "account", "create",id, args.name,"123456")
+			account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
+		end
+		--print("CMD:auth account",account)		
 		local msg = response {
 					user_exists = (account.id ~= nil),
-					gameserver_port = 8888
+					gameserver_port = 8888 --网关的端口
 				}
 		send_msg (fd, msg)
 	end
