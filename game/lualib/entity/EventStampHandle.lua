@@ -50,7 +50,7 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
 		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)},			
 		action = player.curActionState,	
-		speed = player.moveSpeed * GAMEPLAY_PERCENT
+		speed = player.moveSpeed * GAMEPLAY_PERCENT,
 	}
 	return r
 end

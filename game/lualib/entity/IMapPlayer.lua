@@ -24,6 +24,25 @@ end
 
 function IMapPlayer:init()
 	self.attDat =  g_shareData.heroRepository[100000001]
+	self:calcStats()
+end
+
+function IMapPlayer:calcStats()
+	self:calcStrength()
+	self:calcZhili()
+	self:calcMinjie()
+	self:calcHpMax()
+	self:calcMpMax()
+	self:calcAttack()
+	self:calcDefence()
+	self:calcASpeed()
+	self:calcMSpeed()
+	self:calcRecvHp()
+	self:calcRecvMp()
+	self:calcAttackRange()
+	self:calcBaoji()
+	self:calcHit()
+	self:calcMiss()
 end
 
 return IMapPlayer
