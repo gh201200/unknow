@@ -70,7 +70,22 @@ addbuilding(lua_State *L, struct map *m, int x, int y, int size) {
 		}
 	}
 }
-
+static void 
+removebuliding(lua_State *L,struct map* m,int x,int y,int size)
+{
+        if (x < 0 || x + size >= m->width ||
+                y < 0 || y + size >= m->height) {
+                luaL_error(L, "building (%d,%d,%d) is out of map", (x-2)/2,(y-2)/2,(size+1)/2);
+        }   
+        int i,j;
+        for (i=0;i<size;i++) {
+                for (j=0;j<size;j++) {
+                        if (map_set(m, j + x, i + y,0) == 0) {
+                                luaL_error(L, "Can't remove building (%d,%d,%d)", (x-2)/2,(y-2)/2,(size+1)/2);
+                        }   
+                }   
+        }   	
+}
 static int
 getfield(lua_State *L, int index, const char *f) {
 	if (lua_getfield(L, -1, f) != LUA_TNUMBER) {
@@ -660,6 +675,54 @@ lflowgraph(lua_State *L) {
 	return 1;
 }
 
+static int 
+laddbuilding(lua_State *L)
+{
+        luaL_checktype(L,1, LUA_TUSERDATA);
+        struct map * m = lua_touserdata(L, 1);
+        int x = luaL_checkinteger(L, 2);
+        int y = luaL_checkinteger(L, 3);
+        int size = luaL_checkinteger(L,4);
+	if (x < 0 || x >= m->width ||
+                y < 0 || y >= m->height) {
+                luaL_error(L, "Position (%d,%d) is out of map", x,y);
+        }
+	if((size + x) >= m->width || (size + y) >= m->height )
+	{
+		luaL_error(L,"Position(%d,%d) Size (%d) is out of map",x,y,size);
+	}	
+	addbuilding(L, m, x, y, size);		
+	return 1;
+}
+static int  
+lremovebuliding(lua_State *L)
+{
+        luaL_checktype(L,1, LUA_TUSERDATA);
+        struct map * m = lua_touserdata(L, 1);
+        int x = luaL_checkinteger(L, 2);
+        int y = luaL_checkinteger(L, 3);
+        int size = luaL_checkinteger(L,4);
+        if (x < 0 || x >= m->width ||
+                y < 0 || y >= m->height) {
+                luaL_error(L, "Position (%d,%d) is out of map", x,y);
+        }
+        if((size + x) >= m->width || (size + y) >= m->height )
+        {
+                luaL_error(L,"Position(%d,%d) Size (%d) is out of map",x,y,size);
+        }
+        removebuliding(L, m, x, y, size);
+	return 1;
+}
+static int
+lclear(lua_State *L)
+{
+        luaL_checktype(L,1, LUA_TUSERDATA);
+        struct map * m = lua_touserdata(L, 1);
+	memset(m->m, 0, m->width * m->height * sizeof(m->m[0]));		
+	return 1;
+}
+
+
 int
 luaopen_pathfinding(lua_State *L) {
 	luaL_checkversion(L);
@@ -668,8 +731,13 @@ luaopen_pathfinding(lua_State *L) {
 		{ "block", lblock },
 		{ "path", lpath },
 		{ "flowgraph", lflowgraph },
+		{ "clear",lclear },
+		{"removebuliding",lremovebuliding},
+		{"addbuilding", laddbuilding },
 		{ NULL, NULL },
 	};
 	luaL_newlib(L,l);
 	return 1;
 }
+
+
