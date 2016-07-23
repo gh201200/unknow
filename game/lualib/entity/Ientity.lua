@@ -193,22 +193,25 @@ function Ientity:move(dt)
 	
 
 	local dst = self.pos:return_add(self.dir)
-	--check iegal
-	if IS_SAME_GRID(self.pos, dst) == false then
-		if Map:get(dst.x, dst.z) == false then
-			self:stand()
-			return
+		
+	repeat
+		--check iegal
+		if IS_SAME_GRID(self.pos, dst) == false then
+			if Map:get(dst.x, dst.z) == false then
+				self:stand()
+				break
+			end
+			-- mark the map
+			Map:set(self.pos.x, self.pos.z, true)
+			Map:set(dst.x, dst.z, false)
 		end	
-		--first mark the map
-		Map:set(self.pos.x, self.pos.z, true)
-		Map:set(dst.x, dst.z, false)
-	end	
 
-	--move
-	self.pos:set(dst.x, dst.y, dst.z)
-	if IS_SAME_GRID(self.targetPos,  dst) then
-		self:stand()
-	end
+		--move
+		self.pos:set(dst.x, dst.y, dst.z)
+		if IS_SAME_GRID(self.targetPos,  dst) then
+			self:stand()
+		end
+	until true
 
 	--advance move event stamp
 	self:advanceEventStamp(EventStampType.Move)
