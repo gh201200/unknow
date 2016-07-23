@@ -8,7 +8,6 @@ local EventStampHandle = require "entity.EventStampHandle"
 local sharedata = require "sharedata"
 local traceback  = debug.traceback
 
-
 local server_id = 1
 local last_update_time = nil
 

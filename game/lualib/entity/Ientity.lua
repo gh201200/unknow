@@ -3,7 +3,7 @@ local vector3 = require "vector3"
 local spell =  require "skill.spell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
-require "globalDefine"
+local Map = require "map.Map"
 
 
 local Ientity = class("Ientity")
@@ -148,8 +148,9 @@ function Ientity:stand()
 end
 
 function Ientity:setTargetPos(target)
-	if self.spell:canBreak(ActionState.move) == false then return end
-	
+	if self.spell:canBreaak(ActionState.move) == false then return end
+	if Map:get(target.x, target.z) == false then return end	
+
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
@@ -190,7 +191,16 @@ function Ientity:move(dt)
 
 	local dst = self.pos:return_add(self.dir)
 	--check iegal
-	
+	if IS_SAME_GRID(self.pos, dst) == false then
+		if Map:get(dst.x, dst.z) == false then
+			self:stand()
+			return
+		end	
+		--first mark the map
+		Map:set(self.pos.x, self.pos.z, true)
+		Map:set(dst.x, dst.z, false)
+	end	
+
 	--move
 	self.pos:set(dst.x, dst.y, dst.z)
 	if IS_SAME_GRID(self.targetPos,  dst) then
