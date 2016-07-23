@@ -8,12 +8,16 @@ require "globalDefine"
 local Ientity = class("Ientity")
 
 local function register_stats(t, name)
-	t['s_'..name] = 0
-	t['add' .. name] = function(self, v)
-		self['s_'..name] = self['s_'..name] + v
-		self.StatsChange = true
+	t['s_mid_'..name] = 0
+	t['addMid' .. name] = function(self, v)
+		self['s_mid_'..name] = self['s_mid_'..name] + v
 	end
+	t['getMid'..name] = function(self)
+		return t['s_mid_'..name]
+	end
+	t['s_'..name] = 0
 	t['set' .. name] = function (self, v)
+		if v == self['s_'..name] then return end
 		self['s_'..name] = v
 		self.StatsChange = true
 	end
@@ -59,8 +63,10 @@ function Ientity:ctor()
 	register_stats(self, 'MinjiePc')
 	register_stats(self, 'Zhili')
 	register_stats(self, 'ZhiliPc')
+	register_stats(self, 'Hp')
 	register_stats(self, 'HpMax')
 	register_stats(self, 'HpMaxPc')
+	register_stats(self, 'Mp')
 	register_stats(self, 'MpMax')
 	register_stats(self, 'MpMaxPc')
 	register_stats(self, 'Attack')
@@ -80,19 +86,14 @@ function Ientity:ctor()
 	register_stats(self, 'BaojiRate') 
 	register_stats(self, 'BaojiTimes')
 	register_stats(self, 'Hit')
-	register_stats(self, 'HitPc')
 	register_stats(self, 'Miss')
-	register_stats(self, 'MissPc')
 
-        self.recvHp = 0
-        self.recvMp = 0
-        self.recvTime = 0	
 	self.recvTime = 0
 	--cooldown
 	self.cooldown = cooldown.new(self)
 	self.maskHpMpChange = 0		--mask the reason why hp&mp changed 
 	self.HpMpChange = false 	--just for merging the resp of hp&mp
-	self.StatsChange = true		--just for merging the resp of stats
+	self.StatsChange = false	--just for merging the resp of stats
 end
 
 
@@ -142,7 +143,7 @@ function Ientity:setTargetPos(target)
 	if self.spell:canBreak(ActionState.move) == false then return end
 	
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
-	self.moveSpeed = 1 --self.getMoveSpeed()
+	self.moveSpeed = self:getMSpeed()
 	self.curActionState = ActionState.move
 end
 
@@ -158,6 +159,11 @@ function Ientity:update(dt)
 		self.HpMpChange = false
 	end
 	
+	if self.StatsChange then
+		self:advanceEventStamp(EventStampType.Stats)
+		self.StatsChange = false
+	end
+
 	if self.curActionState == ActionState.move then
 		self:move(dt)
 	elseif self.curActionState == ActionState.stand then
@@ -187,10 +193,6 @@ function Ientity:move(dt)
 
 	--advance move event stamp
 	self:advanceEventStamp(EventStampType.Move)
-	if self.StatsChange then
-		self:advanceEventStamp(EventStampType.Stats)
-		self.StatsChange = false
-	end
 end
 
 
@@ -200,7 +202,7 @@ function Ientity:addHp(_hp, mask)
 		mask = HpMpMask.SkillHp
 	end
 	self.lastHp = self:getHp()
-	self:setHp(mClamp(self.lastHp+_hp, 0, self.attDat.n32Hp * (1.0 + self:getHpMaxPc()/GAMEPLAY_PERCENT) + self:getHpMax()))
+	self:setHp(mClamp(self.lastHp+_hp, 0, self:getMpMax()))
 	if self.lastHp ~= self.getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true
@@ -214,7 +216,7 @@ function Ientity:addMp(_mp, mask)
 		mask = HpMpMask.SkillMp
 	end
 	self.lastMp = self.Stats.n32Mp
-	self:setMp(mClamp(self.lastMp+_mp, 0, self.attDat.n32Mp * (1.0 + self:getMpMaxPc()/GAMEPLAY_PERCENT) + self:getMpMax()))
+	self:setMp(mClamp(self.lastMp+_mp, 0, self:getMpMax()))
 	if self.lastMp ~= self:getMp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true
@@ -222,7 +224,7 @@ function Ientity:addMp(_mp, mask)
 end
 
 function Ientity:recvHpMp()
-	if self.recvHp <= 0 and self.recvMp <= 0 then return end
+	if self:getRecvHp() <= 0 and self:getRecvMp() <= 0 then return end
 	local curTime = skynet.now()
 	if self.recvTime == 0 then
 		self.recvTime = curTime
@@ -230,8 +232,8 @@ function Ientity:recvHpMp()
 	if (curTime - self.recvTime) * 100  > HP_MP_RECOVER_TIMELINE then
 		local cnt = math.ceil((curTime - self.recvTime) * 100 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
- 		self:addHp((self:getBaseRecvHp() * (1.0 + self:getRecvHpPc() / GAMEPLAY_PERCENT) + self:getRecvHp()) * cnt, HpMpMask.TimeLine)
- 		self:addMp((self:getBaseRecvMp() * (1.0 + self:getRecvMpPc() / GAMEPLAY_PERCENT) + self:getRecvMp()) * cnt, HpMpMask.TimeLine)
+ 		self:addHp(self:getRecvHp() * cnt, HpMpMask.TimeLine)
+ 		self:addMp(self:getRecvMp() * cnt, HpMpMask.TimeLine)
  	end
 end
 
@@ -263,7 +265,7 @@ end
 
 function Ientity:getDistance(target)
 	assert(target)
-	local disVec = self.pos:sub(target.pos)
+	local disVec = self.pos:return_sub(target.pos)
         local disLen = disVec:length()
 	return disLen
 end

@@ -17,13 +17,13 @@ function IMapPlayer:ctor()
 end
 
 function IMapPlayer:update(dt)
---	self:recvHpMp()
 	--add code before this
 	IMapPlayer.super.update(self,dt)
 end
 
 
 function IMapPlayer:init()
+	self.attDat =  g_shareData.heroRepository[100000001]
 end
 
 return IMapPlayer
