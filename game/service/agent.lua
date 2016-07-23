@@ -125,7 +125,6 @@ local function request_hijack_msg(handle)
 	end
 end
 
-
 skynet.register_protocol {
 	name = "client",
 	id = skynet.PTYPE_CLIENT,
@@ -196,7 +195,7 @@ function CMD.disconnect ()
 	
 	if user then
 		character_handler:unregister (user)
-		request_release_msg(user.MAP, "map")
+		--request_release_msg(user.MAP, "map")
 		user = nil
 		user_fd = niL
 		REQUEST = nil

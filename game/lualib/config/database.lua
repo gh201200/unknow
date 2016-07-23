@@ -11,7 +11,7 @@ local center = {
 local ngroup = 1
 local group = {}
 for i = 1, ngroup do
-	table.insert (group, { host = host, port = port + i, db = db })
+	table.insert (group, { host = host, port = port + i - 1 , db = db })
 end
 
 local database_config = { center = center, group = group }
