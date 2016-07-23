@@ -9,7 +9,7 @@ end
 function AffectTable:update(dt)
 	for i=#self.affects,1,-1 do
 		if self.affects[i].status == "exec" then
-			_v:onExec()
+			self.affects[i]:onExec()
 		elseif self.affects[i].status == "enter" then
 			self.affects[i].status = "exec"
 			self.affects[i]:onEnter()			

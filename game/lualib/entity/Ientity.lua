@@ -1,6 +1,6 @@
 local vector3 = require "vector3"
 local spell =  require "skill.spell"
-local cooldown = require "entity.cooldown"
+local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 require "globalDefine"
 
@@ -37,6 +37,8 @@ function Ientity:ctor()
 	self.pos = vector3.create()
 	self.dir = vector3.create()
 	self.targetPos = vector3.create()
+	self.pos:set(0, 0, 0)
+	self.dir:set(0, 0, 0)
 	self.moveSpeed = 0
 	self.curActionState = 0 
 		
@@ -85,13 +87,13 @@ function Ientity:ctor()
 	register_stats(self, 'BaojiTimes')
 	register_stats(self, 'Hit')
 	register_stats(self, 'Miss')
-	
+
 	self.recvTime = 0
 	--cooldown
 	self.cooldown = cooldown.new(self)
 	self.maskHpMpChange = 0		--mask the reason why hp&mp changed 
 	self.HpMpChange = false 	--just for merging the resp of hp&mp
-	self.StatsChange = true		--just for merging the resp of stats
+	self.StatsChange = false	--just for merging the resp of stats
 end
 
 
@@ -134,6 +136,7 @@ end
 function Ientity:stand()
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
+	self.state = "idle" --idle walk spell
 end
 
 function Ientity:setTargetPos(target)
@@ -141,12 +144,11 @@ function Ientity:setTargetPos(target)
 	
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
 	self.moveSpeed = self:getMSpeed()
-	print("ddddddddddddddd d "..self.moveSpeed)
 	self.curActionState = ActionState.move
 end
 
 function Ientity:update(dt)
-	self.spell:update(dta)
+	self.spell:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
@@ -156,10 +158,41 @@ function Ientity:update(dt)
 		self:advanceEventStamp(EventStampType.HP_Mp)
 		self.HpMpChange = false
 	end
+	
 	if self.StatsChange then
 		self:advanceEventStamp(EventStampType.Stats)
 		self.StatsChange = false
 	end
+
+	if self.curActionState == ActionState.move then
+		self:move(dt)
+	elseif self.curActionState == ActionState.stand then
+		--站立状态
+		
+	end
+end
+
+
+function Ientity:move(dt)
+	dt = dt / 1000		--second
+	if self.moveSpeed <= 0 then return end
+
+	self.dir:set(self.targetPos.x, self.targetPos.y, self.targetPos.z)
+	self.dir:sub(self.pos)
+	self.dir:normalize(self.moveSpeed * dt)
+	
+
+	local dst = self.pos:return_add(self.dir)
+	--check iegal
+	
+	--move
+	self.pos:set(dst.x, dst.y, dst.z)
+	if IS_SAME_GRID(self.targetPos,  dst) then
+		self:stand()
+	end
+
+	--advance move event stamp
+	self:advanceEventStamp(EventStampType.Move)
 end
 
 
@@ -205,9 +238,10 @@ function Ientity:recvHpMp()
 end
 
 
----------------------------------------------------技能相关-------------------------------------
-function Ientity:addBuff(_id, cnt, src, origin)
-	self.buffTable:addBuffById(_id, cnt, src, origin)
+---------------------------------------------------------------------------------技能相关------------------------------------------------------------------------------------------------------------------
+--设置人物状态
+function Ientity:setState(state)
+	self.state = state
 end
 
 function Ientity:canCast(skilldata,target,pos)
@@ -225,12 +259,13 @@ function Ientity:canCast(skilldata,target,pos)
 		if self.target == nil then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 		if self.getDistance(target) > skilldata.n32range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
 	end
-	if skilldata.n32MpCost > self.Stats.n32Mp then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
+	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end
+
 function Ientity:getDistance(target)
 	assert(target)
-	local disVec = self.pos:sub(target.pos)
+	local disVec = self.pos:return_sub(target.pos)
         local disLen = disVec:length()
 	return disLen
 end
@@ -244,22 +279,23 @@ function Ientity:castSkill(id)
 	local errorcode = self:canCast(skilldata,id) 
 	print("castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
-	
-	self.spell:init(skilldata)
+	local skillTimes = {}	
 	if string.find(skilldata.szAction,"skill") then
-		self.spell.readyTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 
-		self.spell.castTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time2"] or  0 ) / 1000
-		self.spell.endTime 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time3"] or 0 ) / 1000
+		skillTimes[1] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 
+		skillTimes[2] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time2"] or  0 ) / 1000
+		skillTimes[3] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time3"] or 0 ) / 1000
 	else
 		--普通攻击
-		self.spell.readyTime =  modoldata["n32Attack" .. "Time1"] or 0
-		self.spell.castTime = modoldata["n32Attack" .. "Time2"] or  0
-		self.spell.endTime = modoldata["n32Attack" .. "Time3"] or 0
+		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
+		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
+		skillTimes[3] = modoldata["n32Attack" .. "Time3"] or 0
 	end
+	self.spell:init(skilldata,skillTimes)
 	print("spellTime",self.spell.readyTime,self.spell.castTime,self.spell.endTime)
 	self.castSkillId = id
 	self.cooldown:addItem(id) --加入cd
 	self.spell:Cast(id,target,pos)
+	self:stand()
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
 end

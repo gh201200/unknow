@@ -25,7 +25,7 @@ local spellEffect = {
 
 function spell:ctor(entity)
 	print("spell:ctor()")
-	self.skillId = 0
+	 --self.skillId = 0
 	self.source = entity
 	self.targets = {}
 	self.status = SpellStatus.None
@@ -43,18 +43,23 @@ function spell:ctor(entity)
 	self.effects = {}	--技能效果表
 	self.targets = {}
 end
-function spell:init(skilldata)
+function spell:init(skilldata,skillTimes)
+	self.skilldata = skilldata
+	self.readyTime = skillTimes[1]
+	self.castTime = skillTimes[2]
+	self.endTime = skillTimes[3]
 	self.triggerTime = skilldata.n32DemageTime
 end
+
 function spell:canBreak(ms)
+	if self:isSpellRunning() == false then return true end
 	print("spell:canBreak")
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
 		print("branking successful")
-		self.source.cooldown.resetCd(self.skillId,0) 	
+		self.source.cooldown:resetCd(self.skilldata.id,0) 	
 		return true
 	end
 	if ms == ActionState.move and self.status == SpellStatus.End then 
-		self.clear()
 		return true	
 	end
 	return false
@@ -63,17 +68,18 @@ end
 function spell:breakSpell()
 	if self.status == SpellStatus.Ready then
 		--技能准备阶段被打断 不计入cd
-		self.source.cooldown:resetCd(self.skillId,0)
+		self.source.cooldown:resetCd(self.skilldata.id,0)
 	elseif self.status == SpellStatus.Cast then
 		--释放过程被打断
 			
 	elseif self.status == SpellStatus.End then
 		--释放收尾被打断
-		
+			
 	end
 	
+	--打断后 进入站立状态
+	self.source:stand()
 	self.clear()
-	
 end
 function spell:isSpellRunning()
 	return self.status ~= SpellStatus.None
@@ -94,7 +100,7 @@ function spell:update(dt)
 		self:onEnd()
 	end
 	--推进技能效果	
-	self:advanceEffect(dt)
+	--:=self:advanceEffect(dt)
 end
 --更新技能效果
 function spell:advanceEffect(dt)
@@ -108,17 +114,6 @@ function spell:advanceEffect(dt)
 	end
 	local effectId = self.skilldata.n32SkillEffect
 	local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
-	--[[
-	local mid,left,right =  table.calCross(self.targets,targets)	
-	--进去技能区域
-	for i = 1,#right,1 do
-		targets[i].addBuff(effectId,1,self.source,nil)
-	end
-	--离开技能区域
-	for i = 1,#left,1 do
-		targets[i].removeBuffById(effectId,1) 
-	end
-	]]		
 	self.targets = targets
 end
 
@@ -140,11 +135,6 @@ function spell:onReady()
 end
 function spell:clear()
 	--正在触发中 移除目标技能效果
-	if  self.triggerTime < 0 then
-		for _k,_v in pairs(self.targets) do
-			_v.removeBuffById(effectId,1)
-		end
-	end
 	self.triggerTime = 0
 	self.status = SpellStatus.None
 	self.errorCode = ErrorCode.None
