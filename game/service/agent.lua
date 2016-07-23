@@ -148,7 +148,7 @@ local CMD = {}
 --local pf = require "pathfinding"
 function CMD.Start (conf)
 	print("agent start")	
-	local map  = skynet.queryservice "map"
+	local map  = skynet.queryservice "room"
 	request_hijack_msg(map)
 
 	local gate = conf.gate
