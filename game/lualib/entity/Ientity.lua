@@ -1,3 +1,4 @@
+local skynet = require "skynet"
 local vector3 = require "vector3"
 local spell =  require "skill.spell"
 local cooldown = require "skill.cooldown"
@@ -6,6 +7,11 @@ require "globalDefine"
 
 
 local Ientity = class("Ientity")
+
+local StrengthEffect = { 50,0,2,0,0,0,1,0, }
+local MinjieEffect = { 0,0,2,0.5,0.05,1.2,0,0,}
+local ZhiliEffect = { 0,30,2,0,0,0,0,1, }
+local HP_MP_RECOVER_TIMELINE = 1000
 
 local function register_stats(t, name)
 	t['s_mid_'..name] = 0
@@ -26,6 +32,7 @@ local function register_stats(t, name)
 	end
 end
 
+
 function Ientity:ctor()
 	
 	self.serverId = 0		--it is socket fd
@@ -33,6 +40,7 @@ function Ientity:ctor()
 	--entity world data about
 	self.entityType = 0
 	self.serverId = 0
+	register_class_var(self, 'Level', 1)
 
 	self.pos = vector3.create()
 	self.dir = vector3.create()
@@ -143,7 +151,7 @@ function Ientity:setTargetPos(target)
 	if self.spell:canBreak(ActionState.move) == false then return end
 	
 	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
-	self.moveSpeed = self:getMSpeed()
+	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
 end
 
@@ -155,7 +163,7 @@ function Ientity:update(dt)
 
 	--add code before this
 	if self.HpMpChange then
-		self:advanceEventStamp(EventStampType.HP_Mp)
+		self:advanceEventStamp(EventStampType.Hp_Mp)
 		self.HpMpChange = false
 	end
 	
@@ -176,7 +184,6 @@ end
 function Ientity:move(dt)
 	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
-
 	self.dir:set(self.targetPos.x, self.targetPos.y, self.targetPos.z)
 	self.dir:sub(self.pos)
 	self.dir:normalize(self.moveSpeed * dt)
@@ -203,7 +210,7 @@ function Ientity:addHp(_hp, mask)
 	end
 	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getMpMax()))
-	if self.lastHp ~= self.getHp() then	
+	if self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true
 	end
@@ -235,6 +242,189 @@ function Ientity:recvHpMp()
  		self:addHp(self:getRecvHp() * cnt, HpMpMask.TimeLine)
  		self:addMp(self:getRecvMp() * cnt, HpMpMask.TimeLine)
  	end
+end
+
+---------------------------------------stats about---------------------------------
+function Ientity:dumpStats()
+	print('Strength = '..self:getStrength())
+	print('Minjie = '..self:getMinjie())
+	print('Zhili = '..self:getZhili())
+	print('Hp = '..self:getHp())
+	print('HpMax = '..self:getHpMax())
+	print('Mp = '..self:getMp())
+	print('MpMax = '..self:getMpMax())
+	print('Attack = '..self:getAttack())
+	print('Defence = '..self:getDefence())
+	print('ASpeed = '..self:getASpeed())
+	print('MSpeed = '..self:getMSpeed())
+	print('AttackRange = '..self:getAttackRange())
+	print('RecvHp = '..self:getRecvHp())
+	print('RecvMp = '..self:getRecvMp())
+	print('BaojiRate = '..self:getBaojiRate()) 
+	print('BaojiTimes = '..self:getBaojiTimes())
+	print('Hit = '..self:getHit())
+	print('Miss = '..self:getMiss())
+
+end
+
+function Ientity:dumpMidStats()
+	print('Mid Strength = '..self:getMidStrength())
+	print('Mid StrengthPc = '..self:getMidStrengthPc ())
+	print('Mid Minjie = '..self:getMidMinjie ())
+	print('Mid MinjiePc = '..self:getMidMinjiePc ())
+	print('Mid Zhili = '..self:getMidZhili ())
+	print('Mid ZhiliPc = '..self:getMidZhiliPc ())
+	print('Mid Hp = '..self:getMidHp ())
+	print('Mid HpMax = '..self:getMidHpMax ())
+	print('Mid HpMaxPc = '..self:getMidHpMaxPc ())
+	print('Mid Mp = '..self:getMidMp ())
+	print('Mid MpMax = '..self:getMidMpMax ())
+	print('Mid MpMaxPc = '..self:getMidMpMaxPc ())
+	print('Mid Attack = '..self:getMidAttack ())
+	print('Mid AttackPc = '..self:getMidAttackPc ())
+	print('Mid Defence = '..self:getMidDefence ())
+	print('Mid DefencePc = '..self:getMidDefencePc ())
+	print('Mid ASpeed = '..self:getMidASpeed ())
+	print('Mid ASpeedPc = '..self:getMidASpeedPc ()) 
+	print('Mid MSpeed = '..self:getMidMSpeed ())
+	print('Mid MSpeedPc = '..self:getMidMSpeedPc ())
+	print('Mid AttackRange = '..self:getMidAttackRange ())
+	print('Mid AttackRangePc = '..self:getMidAttackRangePc ())
+	print('Mid RecvHp = '..self:getMidRecvHp ())
+	print('Mid RecvHpPc = '..self:getMidRecvHpPc ())
+	print('Mid RecvMp = '..self:getMidRecvMp ())
+	print('Mid RecvMpPc = '..self:getMidRecvMpPc ())
+	print('Mid BaojiRate = '..self:getMidBaojiRate ()) 
+	print('Mid BaojiTimes = '..self:getMidBaojiTimes ())
+	print('Mid Hit = '..self:getMidHit ())
+	print('Mid Miss = '..self:getMidMiss ())
+end
+
+function Ientity:calcStrength()
+	self:setStrength(math.floor(
+		math.floor((self.attDat.n32Strength 
+		+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel()) 
+		* (1.0 + self:getMidStrengthPc()/GAMEPLAY_PERCENT)) 
+		+ self:getMidStrength())
+	)
+end
+
+function Ientity:calcMinjie()
+	self:setMinjie(math.floor(
+		math.floor((self.attDat.n32Minjie 
+		+ self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel()) 
+		* (1.0 + self:getMidMinjiePc()/GAMEPLAY_PERCENT)) 
+		+ self:getMidMinjie())
+	)
+end
+
+function Ientity:calcZhili()
+	self:setZhili(math.floor(
+		math.floor((self.attDat.n32Zhili 
+		+ self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel()) 
+		* (1.0 + self:getMidZhiliPc()/GAMEPLAY_PERCENT)) 
+		+ self:getMidZhili())
+	)
+end
+
+function Ientity:calcHpMax()
+	self:setHpMax(math.floor(
+		self.attDat.n32Hp * (1.0 + self:getMidHpMaxPc()/GAMEPLAY_PERCENT)) 
+		+ self:getMidHpMax() 
+		+ self:getStrength() * StrengthEffect[1]
+		+ self:getZhili() * ZhiliEffect[1]
+		+ self:getMinjie() * MinjieEffect[1]
+	)
+end
+
+function Ientity:calcMpMax()
+	self:setMpMax(math.floor(
+		self.attDat.n32Mp * (1.0 + self:getMidMpMaxPc()/GAMEPLAY_PERCENT)) 
+		+ self:getMidMpMax() 
+		+ self:getStrength() * StrengthEffect[2]
+		+ self:getZhili() * ZhiliEffect[2]
+		+ self:getMinjie() * MinjieEffect[2]
+	)
+end
+
+function Ientity:calcAttack()
+	self:setAttack(math.floor(
+		self.attDat.n32Attack * (1.0 + self:getMidAttackPc()/GAMEPLAY_PERCENT)) 
+		+ self:getMidAttack() 
+		+ self:getStrength() * StrengthEffect[3]
+		+ self:getZhili() * ZhiliEffect[3]
+		+ self:getMinjie() * MinjieEffect[3]
+	)
+end
+
+function Ientity:calcDefence()
+	self:setDefence(math.floor(
+		self.attDat.n32Defence * (1.0 + self:getMidDefencePc()/GAMEPLAY_PERCENT)) 
+		+ self:getMidDefence() 
+		+ self:getStrength() * StrengthEffect[4]
+		+ self:getZhili() * ZhiliEffect[4]
+		+ self:getMinjie() * MinjieEffect[4]
+	)
+end
+
+function Ientity:calcASpeed()
+	self:setASpeed(
+		self.attDat.n32ASpeed 
+		+ self:getMidASpeed() 
+		+ self:getStrength() * StrengthEffect[5]
+		+ self:getZhili() * ZhiliEffect[5]
+		+ self:getMinjie() * MinjieEffect[5]
+	)
+end
+
+function Ientity:calcMSpeed()
+	self:setMSpeed(math.floor(
+		self.attDat.n32MSpeed * (1.0 + self:getMSpeedPc()/GAMEPLAY_PERCENT))
+		+ self:getMidMSpeed() 
+		+ self:getStrength() * StrengthEffect[6]
+		+ self:getZhili() * ZhiliEffect[6]
+		+ self:getMinjie() * MinjieEffect[6]
+	)
+end
+
+function Ientity:calcRecvHp()
+	self:setRecvHp(math.floor(
+		self.attDat.n32RecvHp * (1.0 + self:getMidRecvHp()/GAMEPLAY_PERCENT))
+		+ self:getMidRecvHp()
+		+ self:getStrength() * StrengthEffect[7]
+		+ self:getZhili() * ZhiliEffect[7]
+		+ self:getMinjie() * MinjieEffect[7]
+	)
+end
+
+function Ientity:calcRecvMp()
+	self:setRecvMp(math.floor(
+		self.attDat.n32RecvMp * (1.0 + self:getMidRecvMp()/GAMEPLAY_PERCENT))
+		+ self:getMidRecvMp()
+		+ self:getStrength() * StrengthEffect[8]
+		+ self:getZhili() * ZhiliEffect[8]
+		+ self:getMinjie() * MinjieEffect[8]
+	)
+end
+
+function Ientity:calcAttackRange()
+	self:setAttackRange(math.floor(
+		self.attDat.n32AttackRange * (1.0 +self:getMidAttackRange()/GAMEPLAY_PERCENT))
+		+ self:getMidAttackRange()
+	)
+end
+
+function Ientity:calcBaoji()
+	self:setBaojiRate(self:getMidBaojiRate())
+	self:setBaojiTimes(self:getMidBaojiTimes())
+end
+
+function Ientity:calcHit()
+	self:setHit(self:getMidHit())
+end
+
+function Ientity:calcMiss()
+	self:setMiss(self:getMidMiss())
 end
 
 

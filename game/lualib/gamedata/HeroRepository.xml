@@ -5,8 +5,8 @@
 					<szName>fff</szName>
 					<n32Module>10000</n32Module>
 					<n32MainAtt>2</n32MainAtt>
-					<n32Strength>10</n32Strength>
-					<n32Minjie>0</n32Minjie>
+					<n32Strength>10000</n32Strength>
+					<n32Minjie>10000</n32Minjie>
 					<n32Zhili>0</n32Zhili>
 					<n32LStrength>0</n32LStrength>
 					<n32LMinjie>0</n32LMinjie>
@@ -16,7 +16,7 @@
 					<n32Attack>10</n32Attack>
                     <n32Defence>80</n32Defence>
 					<n32ASpeed>5000</n32ASpeed>
-					<n32MSpeed>1</n32MSpeed>
+					<n32MSpeed>10000</n32MSpeed>
 					<n32AttackRange>0</n32AttackRange>
 					<n32RecvHp>0</n32RecvHp>
 					<n32RecvMp>0</n32RecvMp>

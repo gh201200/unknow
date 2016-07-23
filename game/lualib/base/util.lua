@@ -44,10 +44,13 @@ function mClamp(a, min, max)
 	return a
 end
 
-function Macro_GetBuffSeriesId(_id)
-	return math.floor(_id/1000)
-end
-
-function Macro_GetBuffLevel(_id)
-	return _id%1000
+--------common func to register get set-----------
+function register_class_var(t, name, iv)
+	t['m_'..name] = iv
+	t['set'..name] = function(self, v)
+		t['m_'..name] = v
+	end
+	t['get'..name] = function(self)
+		return t['m_'..name]
+	end
 end
