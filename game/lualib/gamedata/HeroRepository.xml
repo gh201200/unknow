@@ -3,20 +3,20 @@
 			<info id="100000001">
 					<n32Color>1</n32Color>
 					<szName>fff</szName>
-					<szModule>10000.icon</szModule>
+					<n32Module>10000</n32Module>
 					<n32MainAtt>2</n32MainAtt>
 					<n32Strength>10</n32Strength>
 					<n32Minjie>0</n32Minjie>
 					<n32Zhili>0</n32Zhili>
-					<n32StrengthPc>0</n32StrengthPc>
-					<n32MinjiePc>0</n32MinjiePc>
-                    <n32ZhiliPc>2000</n32ZhiliPc>
+					<n32LStrength>0</n32LStrength>
+					<n32LMinjie>0</n32LMinjie>
+                    <n32LZhili>2000</n32LZhili>
 					<n32Hp>1000</n32Hp>
                     <n32Mp>50</n32Mp>
 					<n32Attack>10</n32Attack>
                     <n32Defence>80</n32Defence>
 					<n32ASpeed>5000</n32ASpeed>
-					<n32MSpeed>1000</n32MSpeed>
+					<n32MSpeed>1</n32MSpeed>
 					<n32AttackRange>0</n32AttackRange>
 					<n32RecvHp>0</n32RecvHp>
 					<n32RecvMp>0</n32RecvMp>
@@ -26,20 +26,20 @@
 			<info id="100000002">
 					<n32Color>1</n32Color>
 					<szName>fff</szName>
-					<szModule>10000.icon</szModule>
+					<n32Module>10000</n32Module>
 					<n32MainAtt>2</n32MainAtt>
 					<n32Strength>10</n32Strength>
 					<n32Minjie>0</n32Minjie>
 					<n32Zhili>0</n32Zhili>
-					<n32StrengthPc>0</n32StrengthPc>
-					<n32MinjiePc>0</n32MinjiePc>
-                    <n32ZhiliPc>2000</n32ZhiliPc>
+					<n32LStrength>0</n32LStrength>
+					<n32LMinjie>0</n32LMinjie>
+                    <n32LZhili>2000</n32LZhili>
 					<n32Hp>1000</n32Hp>
                     <n32Mp>50</n32Mp>
 					<n32Attack>10</n32Attack>
                     <n32Defence>80</n32Defence>
 					<n32ASpeed>5000</n32ASpeed>
-					<n32MSpeed>1000</n32MSpeed>
+					<n32MSpeed>1</n32MSpeed>
 					<n32AttackRange>0</n32AttackRange>
 					<n32RecvHp>0</n32RecvHp>
 					<n32RecvMp>0</n32RecvMp>
