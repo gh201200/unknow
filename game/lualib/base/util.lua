@@ -21,7 +21,7 @@ function bit_not(a)
 	return ~a
 end
 
-local MAP_GRID_SIZE = 0.2
+local MAP_GRID_SIZE = 0.5
 function POS_2_GRID(p)
 	return math.floor(p/MAP_GRID_SIZE)
 end

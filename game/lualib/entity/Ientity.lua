@@ -45,7 +45,7 @@ function Ientity:ctor()
 	self.pos = vector3.create()
 	self.dir = vector3.create()
 	self.targetPos = vector3.create()
-	self.pos:set(0, 0, 0)
+	self.pos:set(5, 0, 5)
 	self.dir:set(0, 0, 0)
 	self.moveSpeed = 0
 	self.curActionState = 0 
@@ -148,10 +148,13 @@ function Ientity:stand()
 end
 
 function Ientity:setTargetPos(target)
-	if self.spell:canBreaak(ActionState.move) == false then return end
+	target.x = target.x/GAMEPLAY_PERCENT
+	target.z = target.z/GAMEPLAY_PERCENT
+
+	if self.spell:canBreak(ActionState.move) == false then return end
 	if Map:get(target.x, target.z) == false then return end	
 
-	self.targetPos:set(target.x/GAMEPLAY_PERCENT, target.y/GAMEPLAY_PERCENT, target.z/GAMEPLAY_PERCENT)
+	self.targetPos:set(target.x, 0, target.z)
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
 end
