@@ -1,4 +1,5 @@
 local demageAffect = require "skill.Affects.demageAffect"
+local recoverAffect = require "skill.Affects.recoverAffect"
 local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
@@ -25,6 +26,8 @@ function AffectTable:addAffect(source,data)
 	local aff = nil
 	if data[1] == "ap" or data[1] == "str" or data[1] == "dex" or data[1] == "inte" then
 		aff = demageAffect.new(self.owner,source,data)
+	elseif data[1] == "curehp" or data[1] == "curemp" then
+		aff = recoverAffect.new(self.owner,source,data)
 	end
 	if aff ~= nil then table.insert(self.affects,aff) end
 end
@@ -37,7 +40,7 @@ function AffectTable:buildAffects(source,dataStr)
 			vals = vals .. "," 
 			table.insert(data,tp)
 			for val in string.gmatch(vals,"(%d+)%,") do
-				table.insert(data,val)
+				table.insert(data,tonumber(val))
 			end 
 		end
 		self:addAffect(source,data) 

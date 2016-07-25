@@ -4,6 +4,7 @@ local demageAffect = class("demageAffect",Affect)
 function demageAffect:ctor(entity,source,data)
 	self.super.ctor(self,entity,source,data)
 	self.triggerTime = 0
+
 	self.leftTime = data[5] or 0
 	self.effectId = data[6] or 0
 	self.effectTime = data[5] or 0
@@ -29,9 +30,10 @@ function demageAffect:onExec(dt)
 	end
 	if self.triggerTime <= 0 then
 		print("demageAffect:onExec trgger")
-		self.triggerTime = self.data.triggerTime
+		print(self.data)
+		self.triggerTime = self.data[4]
 		local demage = self:calDemage()
-		self.owner.addHp(demage)
+		self.owner:addHp(demage)
 	end
 end
 
@@ -42,23 +44,23 @@ end
 
 function demageAffect:calDemage()
 	--计算伤害
-	local ap_pc,ap_val,str_pc,dex_pc,inte_pc =  1,0,1,1
-	if self.affectData[1] == "ap" then
+	local ap_pc,ap_val,str_pc,cure_pc,inte_pc =  1,0,1,1,1
+	if self.data[1] == "ap" then
 		ap_pc = self.data[2]
 		ap_val = self.data[3]
-	elseif self.affectData[1] == "str" then
+	elseif self.data[1] == "str" then
 		str_pc = self.data[2]
-	elseif self.affectData[1] == "dex" then
+	elseif self.data[1] == "dex" then
 		dex_pc = self.data[2]
-	elseif self.affectData[1] == "inte" then
+	elseif self.data[1] == "inte" then
 		inte_pc = self.data[2]
 	end
 	
-	local apDem = ap_pc * self.source.Stats.n32AttackPhy + ap_val -  self.owner.Stats.n32DefencePhy 
+	local apDem = ap_pc * self.source:getAttack() + ap_val -  self.owner:getDefence() 
 	if apDem < 0 then apDem = 1 end
-	local strDem =  self.source.Stats.n32Strength * str_pc
-	local intDem =  self.source.Stats.n32Intelg * int_pc
-	local cureDem =  self.source.Stats.n32Agile * cure_pc
+	local strDem =  self.source:getStrength() * str_pc
+	local intDem =  self.source:getZhili() * inte_pc
+	local cureDem =  self.source:getMinjie() * cure_pc
 	local demage = apDem + strDem + intDem + cureDem
 	return -demage
 end
