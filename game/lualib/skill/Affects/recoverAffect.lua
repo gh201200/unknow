@@ -35,7 +35,7 @@ function recoverAffect:onExec(dt)
 end
 
 function recoverAffect:onExit()
-	print("recoverAffect:onEnter()")
+	print("recoverAffect:onExit()")
 	self.super.onExit(self)
 end
 
