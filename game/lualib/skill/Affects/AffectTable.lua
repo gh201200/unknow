@@ -9,17 +9,19 @@ end
 function AffectTable:update(dt)
 	for i=#self.affects,1,-1 do
 		if self.affects[i].status == "exec" then
-			self.affects[i]:onExec()
+			self.affects[i]:onExec(dt)
 		elseif self.affects[i].status == "enter" then
-			self.affects[i].status = "exec"
+			--self.affects[i].status = "exec"
 			self.affects[i]:onEnter()			
 		elseif self.affects[i].status == "exit" then
+			print("Affect remove affect", i)
 			table.remove(self.affects,i)
 		end
 	end
 end
 
 function AffectTable:addAffect(source,data)
+	print("addAffect",data)
 	local aff = nil
 	if data[1] == "ap" or data[1] == "str" or data[1] == "dex" or data[1] == "inte" then
 		aff = demageAffect.new(self.owner,source,data)

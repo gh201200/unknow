@@ -7,7 +7,8 @@
 			<szTargetEffect>targeteffect</szTargetEffect>
 			<n32SkillRange>0</n32SkillRange>	
 			<n32SkillEffect>10001</n32SkillEffect>
-			<n32BuffEffect>80001</n32BuffEffect>
+			<szTargetEffect>[ap:1.5,100,0,0,60001],[inte:2]</szTargetEffect>
+			<szSelfEffect>[ap:1,100,5000,1000,60001]</szSelfEffect>
 	</info>
 	<info id="1100102">
 			<n32Type>2</n32Type>
@@ -16,6 +17,7 @@
 			<szTargetEffect>targeteffect</szTargetEffect>
 			<n32SkillRange>2</n32SkillRange>	
 			<n32SkillEffect>10001</n32SkillEffect>
-			<n32BuffEffect>80001</n32BuffEffect>
+			<szTargetEffect>[ap:1.5,100,0,0,60001],[inte:2]</szTargetEffect>
+			<szSelfEffect>[ap:1.5,100,0,0,60001]</szSelfEffect>
 	</info>
 </SkillEffect>

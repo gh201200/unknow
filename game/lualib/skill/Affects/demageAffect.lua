@@ -2,15 +2,15 @@ local Affect = require "skill.Affects.Affect"
 local demageAffect = class("demageAffect",Affect)
 
 function demageAffect:ctor(entity,source,data)
-	super.ctor(self,entity,source,data)
+	self.super.ctor(self,entity,source,data)
 	self.triggerTime = 0
-	self.leftime = data[5] or 0
+	self.leftTime = data[5] or 0
 	self.effectId = data[6] or 0
 	self.effectTime = data[5] or 0
 end
 function demageAffect:onEnter()
 	--推送客户端开始效果1:类型  2:属性百分比 3：属性固定值 4：间隔时间 5：持续时间 6：特效id
-	super.onEnter()
+	self.super.onEnter(self)
 	if self.data[4] == nil or self.data[5] == nil or self.data[5] == 0 then
 		--瞬发伤害
 		local demage = self:calDemage()
@@ -21,12 +21,14 @@ function demageAffect:onEnter()
 	
 end
 function demageAffect:onExec(dt)
+	print("demageAffect:onExec")
 	self.leftTime = self.leftTime -  dt
 	if self.leftTime <= 0 then
-		self.status = "exit"
+		self:onExit()		
 		return
 	end
 	if self.triggerTime <= 0 then
+		print("demageAffect:onExec trgger")
 		self.triggerTime = self.data.triggerTime
 		local demage = self:calDemage()
 		self.owner.addHp(demage)
@@ -34,7 +36,8 @@ function demageAffect:onExec(dt)
 end
 
 function demageAffect:onExit()
-	super:onExit()	
+	self.super.onExit(self)
+	print("demageAffect:onExit",self.status)
 end
 
 function demageAffect:calDemage()

@@ -15,7 +15,7 @@ function blinkAffect:onEnter()
 end
 
 function blinkAffect:onExec(dt)
-
+	
 end
 
 function blinkAffect:onExit()
