@@ -48,7 +48,7 @@ function spell:init(skilldata,skillTimes)
 	self.readyTime = skillTimes[1]
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
-	self.triggerTime = skilldata.n32DemageTime
+	self.triggerTime = skilldata.n32TriggerTime
 end
 
 function spell:canBreak(ms)
@@ -111,13 +111,13 @@ function spell:advanceEffect(dt)
 			--扣除蓝消耗
 			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
 		--	触发目标效果
-			local selfEffects = self.skilldata.szSelfEffect
+			local selfEffects = self.skilldata.szMyAffect
 			if selfEffects ~= ""  then
 				local targets = { self.source }
 				self:trgggerAffect(selfEffects,targets)
 			end
 			
-			local targetEffects = self.skilldata.szTargetEffect
+			local targetEffects = self.skilldata.szTargetAffect
 			local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
 			self.targets = targets
 			if #targets ~= 0 and targetEffects ~= "" then

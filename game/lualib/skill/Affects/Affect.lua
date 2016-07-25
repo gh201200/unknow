@@ -8,7 +8,7 @@ function Affect:ctor(entity,source,data)
 end
 
 function Affect:onEnter()
-	print("Affect:onEnter")
+	--print("Affect:onEnter")
 	self.status = "exec"
 end
 
@@ -17,7 +17,7 @@ function Affect:onExec()
 end
 
 function Affect:onExit()
-	print("Affect:onExit")
+	--print("Affect:onExit")
 	self.status = "exit"
 end
 

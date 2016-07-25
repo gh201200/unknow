@@ -66,6 +66,7 @@ end
 
 function AffectTable:buildAffects(source,dataStr)
 	local tb = {}
+	--print(dataStr)
 	for v in string.gmatch(dataStr,"%[(.-)%]") do
 		local data = {}
 		for tp,vals in string.gmatch(v,"(%a+)%:(.+)") do
