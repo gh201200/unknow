@@ -21,29 +21,33 @@ local types = [[
 }
 
 .Stats {
-	n32Strength 0 : integer
-     	n32Strength_Pc 1 : integer
-     	n32Agile 2 : integer
-     	n32Agile_Pc 3 : integer
-     	n32Intelg 4 : integer
-     	n32Intelg_Pc 5 : integer
-     	n32AttackPhy 6 : integer
-     	n32AttackPhy_Pc 7 : integer
-     	n32DefencePhy 8 : integer
-     	n32DefencePhy_Pc 9 : integer
-     	n32AttackSpeed 10 : integer
-     	n32AttackSpeed_Pc 11 : integer
-     	n32MoveSpeed 12 : integer
-     	n32MoveSpeed_Pc 13 : integer
-     	n32AttackRange_Pc 14 : integer
-	n32MaxHp 15 : integer
-	n32Hp_Pc 16 : integer
-	n32MaxMp 17 : integer
-	n32Mp_Pc 18 : integer 
-	n32RecvHp 19 : integer
-	n32RecvHp_Pc 20 : integer
-	n32RecvMp 21 : integer
-	n32RecvMp_Pc 22 : integer
+	Strength 0 : integer
+  	StrengthPc 1 : integer
+ 	Minjie 2 : integer
+  	MinjiePc 3 : integer
+  	Zhili 4 : integer
+  	ZhiliPc 5 : integer
+	HpMax 6 : integer
+	HpMaxPc 7 : integer
+	MpMax 8 : integer
+	MpMaxPc 9 : integer
+  	Attack 10 : integer
+  	AttackPc 11 : integer
+  	Defence 12 : integer
+  	DefencePc 13 : integer
+  	ASpeed 14 : integer
+  	MSpeed 15 : integer
+  	MSpeedPc 16 : integer
+  	AttackRange 17 : integer
+  	AttackRangePc 18 : integer
+  	RecvHp 19 : integer
+  	RecvHpPc 20 : integer
+  	RecvMp 21 : integer
+  	RecvMpPc 22 : integer
+  	BaojiRate 23 : integer
+  	BaojiTimes 24 : integer
+  	Hit 25 : integer
+  	Miss 26 : integer
 }
 
 .Buff {

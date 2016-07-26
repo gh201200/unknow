@@ -14,7 +14,7 @@ function demageAffect:onEnter()
 	if self.data[4] == nil or self.data[5] == nil or self.data[5] == 0 then
 		--瞬发伤害
 		local demage = self:calDemage()
-		self.owner.addHp(demage)
+		self.owner:addHp(demage)
 		self:onExit()
 		return
 	end
@@ -29,7 +29,7 @@ function demageAffect:onExec(dt)
 	if self.triggerTime <= 0 then
 		self.triggerTime = self.data.triggerTime
 		local demage = self:calDemage()
-		self.owner.addHp(demage)
+		self.owner:addHp(demage)
 	end
 end
 

@@ -64,13 +64,13 @@ local traceback = debug.traceback
 local REQUEST
 
 local function handle_request (name, args, response)
---	print("handle_request : " .. name )
---	print(args)
+	--print("handle_request : " .. name )
+	--print(args)
 	if hijack_msg[name] then
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, user.agentPlayer.playerId, args)
-		--	print(user.agentPlayer.playerId)
-		--	print(ret)
+			--print(user.agentPlayer.playerId)
+			--print(ret)
 			if ret then
 				send_msg (user_fd, response(ret))
 			end		

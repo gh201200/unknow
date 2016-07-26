@@ -20,9 +20,24 @@ local function updateMapEvent()
 	skynet.timeout(3, updateMapEvent)
 end
 
+local function query_event_func(response, playerId, args)
+	local entity = EntityManager:getEntity( args.event_stamp.id )
+	if not entity then
+		syslog.warningf("client[%d] query_event server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
+	end
+	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
+	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
+end
 
 local CMD = {}
 
+local function register_query_event_func()
+	CMD.query_event_move = query_event_func
+	CMD.query_event_stats = query_event_func
+	CMD.query_event_hp_mp = query_event_func
+	CMD.query_event_CastSkill = query_event_func
+	CMD.query_event_affect = query_event_func
+end
 
 function CMD.hijack_msg(response)
 	local ret = {}
@@ -53,24 +68,7 @@ function CMD.castskill(response, playerId, args)
 	local err = player:castSkill(args.skillid)
 	response(true, { errorcode =  err })
 end
-function CMD.query_event_move(response, playerId, args)
-	local entity = EntityManager:getEntity( args.event_stamp.id )
-	if not entity then
-		syslog.warningf("client[%d] query_event_move server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
-	end
-	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
-	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
-end
 
-function CMD.query_event_CastSkill(response,playerId,args)
-	--print("map.CMD.query_event_CastSkill",playerid,response,args)
-	local entity = EntityManager:getEntity( args.event_stamp.id )
-	if not entity then
-		syslog.warningf("client[%d] query_event_CastSkill server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
-	end
-	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
-	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
-end
 
 function CMD.query_server_id(response, playerId, args)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
@@ -84,19 +82,12 @@ function CMD.query_server_id(response, playerId, args)
 	end
 end
 
-function CMD.query_event_affect(response, playerId, args)
-	local entity = EntityManager:getEntity( args.event_stamp.id )
-	if not entity then
-		syslog.warningf("client[%d] query_event_affect server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
-	end
-	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
-	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
-end
 
 local function init()
 	--every 0.03s update entity
 	skynet.timeout(3, updateMapEvent)
 	last_update_time = skynet.now()
+	register_query_event_func()
 	g_shareData  = sharedata.query "gdd"
 end
 
