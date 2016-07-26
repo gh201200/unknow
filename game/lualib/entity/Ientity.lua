@@ -149,8 +149,8 @@ end
 function Ientity:setTargetPos(target)
 	target.x = target.x/GAMEPLAY_PERCENT
 	target.z = target.z/GAMEPLAY_PERCENT
-
-	if self.spell:canBreak(ActionState.move) == false then return end
+	if self.affectTable:canControl() == false then return end		--不受控制状态
+	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态
 	if Map:get(target.x, target.z) == false then return end	
 
 	self.targetPos:set(target.x, 0, target.z)

@@ -35,7 +35,15 @@ HpMpMask = {
 	BuffMp				= 1 << 17,
 	TimeLineMp			= 1 << 18,
 }
-
+AffectState = {
+	dizzy				= 1 << 0, --眩晕状态
+	repel				= 1 << 1, --击退状态
+	fly				= 1 << 2, --击飞状态
+	jump				= 1 << 3, --跳跃状态
+	charge				= 1 << 4, --冲锋状态
+	inivincible			= 1 << 5, --无敌状态
+	noskill				= 1 << 6, --禁魔状态
+}
 ErrorCode = {
 	EC_None				= 0,	--没有错误
 ---------------技能-----------------

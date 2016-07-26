@@ -48,7 +48,7 @@ function spell:init(skilldata,skillTimes)
 	self.readyTime = skillTimes[1]
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
-	self.triggerTime = skilldata.n32DemageTime
+	self.triggerTime = skilldata.n32TriggerTime
 end
 
 function spell:canBreak(ms)
@@ -100,23 +100,39 @@ function spell:update(dt)
 		self:onEnd()
 	end
 	--推进技能效果	
-	--:=self:advanceEffect(dt)
+	self:advanceEffect(dt)
 end
+
 --更新技能效果
 function spell:advanceEffect(dt)
 	if self.triggerTime >= 0  then 
 		self.triggerTime = self.triggerTime - dt
 		if self.triggerTime < 0 then
 			--扣除蓝消耗
-			self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
+			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
+		--	触发目标效果
+			local selfEffects = self.skilldata.szMyAffect
+			if selfEffects ~= ""  then
+				local targets = { self.source }
+				self:trgggerAffect(selfEffects,targets)
+			end
+			
+			local targetEffects = self.skilldata.szTargetAffect
+			local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
+			self.targets = targets
+			if #targets ~= 0 and targetEffects ~= "" then
+				self:trgggerAffect(targetEffects,targets)
+			end
 		end
 		return
 	end
-	local effectId = self.skilldata.n32SkillEffect
-	local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
-	self.targets = targets
 end
-
+--触发目标效果
+function spell:trgggerAffect(datastr,targets)
+	for _k,_v in pairs(targets) do
+		_v.affectTable:buildAffects(self.source,datastr)
+	end
+end
 function spell:onBegin()
 	print("onBegin",skynet.now(),self.readyTime,self.castTime,self.endTime)
 	if self.readyTime > 0 then
