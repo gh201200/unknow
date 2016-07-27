@@ -72,35 +72,36 @@ EventStampHandle[EventStampType.Stats] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
-	
-		n32Strength = player:getStrength(),
-		n32StrengthPc = player:getStrengthPc(),
-		n32Minjie =  player:getMinjie(),
-		n32MinjiePc = player:getMinjiePc(),
-		n32Zhili = player:getZhili(),
-		n32ZhiliPc = player:getZhiliPc(),
-		n32Attack = player:getAttack(),
-		n32AttackPc = player:getAttackPc(),
-		n32Defence = player:getDefence(),
-		n32DefencePc = player:getDefencePhyPc(),
-		n32ASpeed = player:getASpeed(),
-		n32MSpaeed = player:getMSpeed(),
-		n32MSpeedPc = player:getMSpeedPc(),
-		n32AttackRange = player:getAttackRange(),
-		n32AttackRangePc = player:getAttackRangePc(),
-		n32MaxHp = player:getMaxHp(),
-		n32MaxHpPc = player:getMaxHpPc(),
-		n32MaxMp = player:getMaxMp(),
-		n32MpPc = player:getMaxMpPc(),
-		n32RecvHp = player:getRecvHp(),
-		n32RecvHpPc = player:RecvHpPc(),
-		n32RecvMp = player:getRecvMp(),
-		n32RecvMpPc = player:getRecvMpPc(),
-		baojiR = player:getBaojiRate(),
-		baojiT = player:getBaojiTimes(),
-		hit = player:getHit(),
-		miss = player:getMiss(),
-	}
+		stats = {
+			Strength = player:getStrength(),
+			StrengthPc = player:getStrengthPc(),
+			Minjie =  player:getMinjie(),
+			MinjiePc = player:getMinjiePc(),
+			Zhili = player:getZhili(),
+			ZhiliPc = player:getZhiliPc(),
+			HpMax = player:getHpMax(),
+			HpMaxPc = player:getHpMaxPc(),
+			MpMax = player:getMpMax(),
+			MpMaxPc = player:getMpMaxPc(),
+			Attack = player:getAttack(),
+			AttackPc = player:getAttackPc(),
+			Defence = player:getDefence(),
+			DefencePc = player:getDefencePc(),
+			ASpeed = player:getASpeed(),
+			MSpeed = player:getMSpeed(),
+			MSpeedPc = player:getMSpeedPc(),
+			AttackRange = player:getAttackRange(),
+			AttackRangePc = player:getAttackRangePc(),
+			RecvHp = player:getRecvHp(),
+			RecvHpPc = player:getRecvHpPc(),
+			RecvMp = player:getRecvMp(),
+			RecvMpPc = player:getRecvMpPc(),
+			BaojiRate = player:getBaojiRate(),
+			BaojiTimes = player:getBaojiTimes(),
+			Hit = player:getHit(),
+			Miss = player:getMiss(),
+		}
+	}	
 	return r
 end
 
@@ -110,9 +111,9 @@ EventStampHandle[EventStampType.Hp_Mp] = function (serverId, event)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 
-		n32Hp = player.Stats.n32Hp,
-		n32Mp = player.Stats.n32Mp,
-		mask = player.maskHpMPChange,
+		n32Hp = player:getHp(),
+		n32Mp = player:getMp(),
+		mask = player.maskHpMpChange,
 	}
 	return r
 end

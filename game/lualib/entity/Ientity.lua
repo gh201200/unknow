@@ -82,7 +82,6 @@ function Ientity:ctor()
 	register_stats(self, 'Defence')
 	register_stats(self, 'DefencePc')
 	register_stats(self, 'ASpeed')
-	register_stats(self, 'ASpeedPc') 
 	register_stats(self, 'MSpeed')
 	register_stats(self, 'MSpeedPc')
 	register_stats(self, 'AttackRange')
@@ -230,7 +229,7 @@ function Ientity:addHp(_hp, mask)
 		mask = HpMpMask.SkillHp
 	end
 	self.lastHp = self:getHp()
-	self:setHp(mClamp(self.lastHp+_hp, 0, self:getMpMax()))
+	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	if self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true
@@ -306,7 +305,6 @@ function Ientity:dumpMidStats()
 	print('Mid Defence = '..self:getMidDefence ())
 	print('Mid DefencePc = '..self:getMidDefencePc ())
 	print('Mid ASpeed = '..self:getMidASpeed ())
-	print('Mid ASpeedPc = '..self:getMidASpeedPc ()) 
 	print('Mid MSpeed = '..self:getMidMSpeed ())
 	print('Mid MSpeedPc = '..self:getMidMSpeedPc ())
 	print('Mid AttackRange = '..self:getMidAttackRange ())
