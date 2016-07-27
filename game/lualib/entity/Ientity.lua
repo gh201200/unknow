@@ -468,6 +468,7 @@ function Ientity:canCast(skilldata,target,pos)
 		if self.target == nil then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 		if self.getDistance(target) > skilldata.n32range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
 	end
+	
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end
@@ -489,7 +490,7 @@ function Ientity:castSkill(id)
 	print("castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}	
-	if string.find(skilldata.szAction,"skill") then
+	if skilldata.bCommonSkill == false then
 		skillTimes[1] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 
 		skillTimes[2] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time2"] or  0 ) / 1000
 		skillTimes[3] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time3"] or 0 ) / 1000

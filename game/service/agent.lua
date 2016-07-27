@@ -14,6 +14,7 @@ local IAgentplayer = require "entity.IAgentPlayer"
 local hijack_msg = {}
 local hijack_msg_event_stamp = {}
 
+local database
 
 local host, proto_request = protoloader.load (protoloader.GAME)
 
@@ -29,9 +30,6 @@ local host, proto_request = protoloader.load (protoloader.GAME)
 ]]
 
 local user
-
-
-
 local user_fd
 local session = {}
 local session_id = 0
@@ -140,13 +138,13 @@ skynet.register_protocol {
 			syslog.warningf ("invalid message type : %s", type) 
 			kick_self ()
 		end
-	end,
+	end
 }
 
 local CMD = {}
---local pf = require "pathfinding"
 function CMD.Start (conf)
 	print("agent start")	
+	database = skynet.uniqueservice ("database")
 	local map  = skynet.queryservice "room"
 	request_hijack_msg(map)
 
@@ -160,10 +158,13 @@ function CMD.Start (conf)
 		CMD = CMD,
 		MAP = map,
 		send_request = send_request,
+		cards = {}
 	}
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
+
+	user.cards =  skynet.call (database, "lua", "cards", "load","jf") --玩家拥有的卡牌
 
 	print("player id: " .. user.agentPlayer.playerId)
 	skynet.call(map, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)

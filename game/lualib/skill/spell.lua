@@ -49,6 +49,9 @@ function spell:init(skilldata,skillTimes)
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
 	self.triggerTime = skilldata.n32TriggerTime
+	self.myEffectId = skilldata.n32MyEffect or 0  		 --自身绑定特效
+	self.targetEffectId = skilldata.n32TargetEffect or 0  	 --目标位置特效
+	self.targetEffectPos = nil				 --目标特效位置
 end
 
 function spell:canBreak(ms)
@@ -79,7 +82,7 @@ function spell:breakSpell()
 	
 	--打断后 进入站立状态
 	self.source:stand()
-	self.clear()
+	self:clear()
 end
 function spell:isSpellRunning()
 	return self.status ~= SpellStatus.None

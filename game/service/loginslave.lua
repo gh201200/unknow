@@ -77,7 +77,9 @@ function CMD.auth (fd, addr)
 			skynet.call (database, "lua", "account", "create",id, args.name,"123456")
 			account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		end
-		--print("CMD:auth account",account)		
+		
+		--local cards =  skynet.call (database, "lua", "cards", "load","jf")
+		--print("CMD:auth cards",cards)		
 		local msg = response {
 					user_exists = (account.id ~= nil),
 					gameserver_port = 8888 --网关的端口
