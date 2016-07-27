@@ -3,6 +3,7 @@ local redis = require "redis"
 
 local config = require "config.database"
 local account = require "db.account"
+local cards = require "db.cards"
 
 local center
 local group = {}
@@ -44,7 +45,8 @@ local traceback = debug.traceback
 
 skynet.start (function ()
 	module_init ("account", account)
-
+	module_init ("cards", cards)
+	
 	center = redis.connect (config.center)
 	ngroup = #config.group
 	for _, c in ipairs (config.group) do
