@@ -1,5 +1,6 @@
 require "globalDefine"
 local IMapPlayer = require "entity.IMapPlayer"
+local Imonster = require "entity.Imonster"
 local vector3 = require "vector3"
 
 local EntityManager = class("EntityManager")
@@ -28,6 +29,15 @@ function EntityManager:createPlayer(agent, playerId, serverId)
 
 	table.insert(self.entityList, player)
 	return player
+end
+
+function EntityManager:createMonster(serverId)
+	local monster = Imonster.new()
+	monster.serverId = serverId
+	monster:init()
+
+	table.insert(self.entityList, monster)
+	return monster
 end
 
 function EntityManager:getEntity(serverId)
