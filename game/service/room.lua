@@ -53,6 +53,9 @@ function CMD.entity_enter(response, agent, playerId)
 	local p = EntityManager:createPlayer(agent, playerId, server_id)	
 	server_id = server_id + 1
 	response(true, nil)
+
+	local m = EntityManager:createMonster(server_id)
+	server_id = server_id + 1
 end
 
 
@@ -76,7 +79,7 @@ function CMD.query_server_id(response, playerId, args)
 	
 	local ret = { server_id = player.serverId }
 	for k, v in pairs(EntityManager.entityList) do
-		if v.serverId ~= player.serverId then
+		if v.entityType == EntityType.player and  v.serverId ~= player.serverId then
 			skynet.call(v.agent, "lua", "sendRequest", "enter_room", ret) 
 		end
 	end

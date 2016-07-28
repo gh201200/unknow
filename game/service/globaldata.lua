@@ -3,7 +3,8 @@ local sharedata = require "sharedata"
 local gdd  = {
 	skillRepository = require "skillRepository",	
 	heroModolRepository = require "heroModolRepository",
-	heroRepository = require "heroRepository"
+	heroRepository = require "heroRepository",
+	monsterRepository = require "monsterRepository",
 }
 skynet.start(function()
 	sharedata.new("gdd",gdd)
