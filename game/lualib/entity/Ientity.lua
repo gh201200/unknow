@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local vector3 = require "vector3"
 local spell =  require "skill.spell"
+local AttackSpell = require "skill.AttackSpell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
@@ -62,7 +63,8 @@ function Ientity:ctor()
 	
 	self.modolId = 8888	--模型id	
 	--技能相关----
-	self.spell = spell.new(self)
+	self.spell = spell.new(self)		 --技能
+	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
 	--stats about
 	register_stats(self, 'Strength')
@@ -162,6 +164,7 @@ function Ientity:update(dt)
 	if self:getHp() <= 0 then return end
 	
 	self.spell:update(dt)
+	self.attackSpell:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
@@ -508,11 +511,15 @@ function Ientity:castSkill(id)
 		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
 		skillTimes[3] = modoldata["n32Attack" .. "Time3"] or 0
 	end
-	self.spell:init(skilldata,skillTimes)
-	print("spellTime",self.spell.readyTime,self.spell.castTime,self.spell.endTime)
+	local tmpSpell = self.spell
+	if skilldata.bCommonSkill == true then
+		tmpSpell = self.attackSpell
+	end
+	tmpSpell:init(skilldata,skillTimes)
+	print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
 	self.castSkillId = id
 	self.cooldown:addItem(id) --加入cd
-	self.spell:Cast(id,target,pos)
+	tmpSpell:Cast(id,target,pos)
 	self:stand()
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
