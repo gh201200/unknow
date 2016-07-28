@@ -5,6 +5,7 @@ local gdd  = {
 	heroModolRepository = require "heroModolRepository",
 	heroRepository = require "heroRepository",
 	monsterRepository = require "monsterRepository",
+	spawnMonsterResp = require "spawnMonsterRepository"
 }
 skynet.start(function()
 	sharedata.new("gdd",gdd)

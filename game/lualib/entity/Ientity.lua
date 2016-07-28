@@ -159,6 +159,8 @@ function Ientity:setTargetPos(target)
 end
 
 function Ientity:update(dt)
+	if self:getHp() <= 0 then return end
+	
 	self.spell:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
@@ -223,6 +225,9 @@ function Ientity:forcePosition(des)
 	self.pos:set(des.x,des.y,des.z)
 end
 
+function Ientity:onDead()
+end
+
 function Ientity:addHp(_hp, mask)
 	if _hp == 0 then return end
 	if not mask then
@@ -233,6 +238,9 @@ function Ientity:addHp(_hp, mask)
 	if self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		self.HpMpChange = true
+	end
+	if self:getHp() <= 0 then
+		self:onDead()
 	end
 end
 
