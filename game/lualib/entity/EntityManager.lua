@@ -7,14 +7,20 @@ local EntityManager = class("EntityManager")
 
 
 function EntityManager:ctor(p)
+	--if you want to remove a entity, please set the entity's hp to 0
+	--do not use table.remove or set nil
 	self.entityList = {}
 	g_entityManager = self
 end
 
 function EntityManager:update(dt)
-	for k, v in pairs(self.entityList) do
+	for i=#self.entityList, 1, -1 do
+		local v = self.entityList[i]
 		if v.update then
 			v:update(dt)		
+			if v:getHp() <= 0 then		--dead, remove it
+				table.remove(self.entityList, i)	
+			end
 		end	
 	end
 end
@@ -31,10 +37,11 @@ function EntityManager:createPlayer(agent, playerId, serverId)
 	return player
 end
 
-function EntityManager:createMonster(serverId)
+function EntityManager:createMonster(serverId, mt)
 	local monster = Imonster.new()
 	monster.serverId = serverId
-	monster:init()
+	monster.batch = mt.batch
+	monster:init(mt)
 
 	table.insert(self.entityList, monster)
 	return monster
@@ -57,6 +64,17 @@ function EntityManager:getPlayerByPlayerId(playerId)
 	end
 	return nil
 end
+
+function EntityManager:getMonsterCountByBatch(batch)
+	local cnt = 0
+	for k, v in pairs(self.entityList) do
+		if v.entityType == EntityType.monster and v.batch == batch then
+			cnt = cnt + 1	
+		end
+	end
+	return cnt
+end
+
 function EntityManager:getSkillAttackEntitys(source,skilldata)
 	local type_range = math.floor(skilldata.n32Type % 10)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:目标点的矩形区域 
 	local type_target = math.floor(skilldata.n32Type / 10)  -- 1:自身 2:友方 3:敌方

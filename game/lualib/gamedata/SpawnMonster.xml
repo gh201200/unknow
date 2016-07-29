@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SpawnMonster xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<info id="1">
+					<szMonsterIds>20001,20002,20003</szMonsterIds>
+					<n32NextBatch>1000</n32NextBatch>
+					<n32CDTime>30</n32CDTime>
+					<szPosition>(50,50),(80,80),(20,30)</szPosition>
+					<n32MapId>1</n32MapId>
+			</info>
+			<info id="2">
+					<szMonsterIds>20001,20002,20003</szMonsterIds>
+					<n32NextBatch>1001</n32NextBatch>
+					<n32CDTime>30</n32CDTime>
+					<szPosition>(50,50),(80,80),(20,30)</szPosition>
+					<n32MapId>1</n32MapId>
+			</info>
+			<info id="1000">
+					<szMonsterIds>20001,20003</szMonsterIds>
+					<n32NextBatch>1000</n32NextBatch>
+					<n32CDTime>30</n32CDTime>
+					<szPosition>(50,50),(80,30)</szPosition>
+					<n32MapId>0</n32MapId>
+			</info>
+			<info id="1001">
+					<szMonsterIds>20001,20002,20003</szMonsterIds>
+					<n32NextBatch>1001</n32NextBatch>
+					<n32CDTime>30</n32CDTime>
+					<szPosition>(50,50),(80,80),(20,30)</szPosition>
+					<n32MapId>0</n32MapId>
+			</info>
+</SpawnMonster>

@@ -5,10 +5,10 @@ local vector3 = require "vector3"
 local syslog = require "syslog"
 local EntityManager = require "entity.EntityManager"
 local EventStampHandle = require "entity.EventStampHandle"
+local SpawnNpcManager = require "entity.SpawnNpcManager"
 local sharedata = require "sharedata"
 local traceback  = debug.traceback
 
-local server_id = 1
 local last_update_time = nil
 
 
@@ -16,6 +16,7 @@ local last_update_time = nil
 local function updateMapEvent()
 	local nt = skynet.now()
 	EntityManager:update( (nt - last_update_time) * 10)
+	SpawnNpcManager:update( (nt - last_update_time) * 10)
 	last_update_time = nt
 	skynet.timeout(3, updateMapEvent)
 end
@@ -50,12 +51,8 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.entity_enter(response, agent, playerId)
-	local p = EntityManager:createPlayer(agent, playerId, server_id)	
-	server_id = server_id + 1
+	local p = EntityManager:createPlayer(agent, playerId, assin_server_id())	
 	response(true, nil)
-
-	local m = EntityManager:createMonster(server_id)
-	server_id = server_id + 1
 end
 
 
@@ -92,6 +89,7 @@ local function init()
 	last_update_time = skynet.now()
 	register_query_event_func()
 	g_shareData  = sharedata.query "gdd"
+	SpawnNpcManager:init(1)
 end
 
 

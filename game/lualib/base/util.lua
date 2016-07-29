@@ -54,3 +54,9 @@ function register_class_var(t, name, iv)
 		return t['m_'..name]
 	end
 end
+
+local server_id = 0
+function assin_server_id()
+	server_id = server_id + 1
+	return server_id
+end

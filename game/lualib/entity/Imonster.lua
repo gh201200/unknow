@@ -9,8 +9,9 @@ function IMonster:ctor()
 	self.entityType = EntityType.monster	
 end
 
-function IMonster:init()
-	self.attDat = g_shareData.monsterRepository[20001]
+function IMonster:init(mt)
+	self.attDat = g_shareData.monsterRepository[mt.id]
+	self.pos:set(mt.px, 0, mt.py)
 	self:calcStats()
 	self:setHp(self:getHpMax())
 	self:setMp(self:getMpMax())
