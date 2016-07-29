@@ -142,9 +142,16 @@ login 101 {
                  client_pub 1 : string         
          }
          response {
-                 user_exists 0 : boolean
-                 gameserver_port 1 : integer
+		 user_exists 0 : boolean
+                 account_id 1 : string
+                 gameserver_port 2 : integer
          }
+}
+
+enterGame 102 {
+	request {
+		account_id 0 : string
+	}
 }
 
 heart_beat_time 200{			#heartbeat,also for estimate ping time

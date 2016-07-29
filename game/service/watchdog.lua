@@ -18,8 +18,9 @@ function SOCKET.open(fd, addr)
 		agentfd[fd] = table.remove (agentPools, 1)
 		syslog.debugf ("agent(%d),fd(%d) assigned, %d remain in pool", agentfd[fd], fd, #agentPools)
 	end
-	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self(), playerId = pid })
-	pid = pid + 1
+	print("SOCET.open",fd)
+	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
+--	pid = pid + 1
 end
 
 
@@ -68,6 +69,7 @@ function SOCKET.warning(fd, size)
 end
 
 function SOCKET.data(fd, msg)
+	print("watchdog --------------- socket.data",msg)
 end
 
 function CMD.start(conf)
@@ -81,6 +83,7 @@ end
 
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, cmd, subcmd, ...)
+		print("watchdog---dispach",cmd,subcmd)
 		if cmd == "socket" then
 			local f = SOCKET[subcmd]
 			f(...)

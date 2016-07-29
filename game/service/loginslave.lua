@@ -53,6 +53,7 @@ local function send_msg (fd, msg)
 end
 
 function CMD.auth (fd, addr)
+	print("loginslave auth",fd)
 	connection[fd] = addr
 	skynet.timeout (auth_timeout, function ()
 		if connection[fd] == addr then
@@ -69,19 +70,16 @@ function CMD.auth (fd, addr)
 	print("auth",type,name,args)
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")
-
 		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		if account.id == nil then
-			--注册账号
+			--自动注册账号
 			local id = uuid.gen ()
 			skynet.call (database, "lua", "account", "create",id, args.name,"123456")
 			account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		end
-		
-		--local cards =  skynet.call (database, "lua", "cards", "load","jf")
-		--print("CMD:auth cards",cards)		
 		local msg = response {
 					user_exists = (account.id ~= nil),
+					account_id = account.id,
 					gameserver_port = 8888 --网关的端口
 				}
 		send_msg (fd, msg)
