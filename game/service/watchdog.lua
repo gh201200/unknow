@@ -69,7 +69,6 @@ function SOCKET.warning(fd, size)
 end
 
 function SOCKET.data(fd, msg)
-	print("watchdog --------------- socket.data",msg)
 end
 
 function CMD.start(conf)
@@ -83,7 +82,6 @@ end
 
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, cmd, subcmd, ...)
-		print("watchdog---dispach",cmd,subcmd)
 		if cmd == "socket" then
 			local f = SOCKET[subcmd]
 			f(...)
