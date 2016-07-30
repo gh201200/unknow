@@ -5,9 +5,11 @@ local AttackSpell = require "skill.AttackSpell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
+local transfrom = require "entity.transfrom"
 
+local coroutine = require "skynet.coroutine"
 
-local Ientity = class("Ientity")
+local Ientity = class("Ientity" , transfrom)
 
 local StrengthEffect = { 50,0,2,0,0,0,1,0, }
 local MinjieEffect = { 0,0,2,0.5,0.05,1.2,0,0,}
@@ -33,9 +35,12 @@ local function register_stats(t, name)
 	end
 end
 
-
-function Ientity:ctor()
-	
+function Ientity:test()
+	print("Ientity:test")
+end
+function Ientity:ctor(pos,dir)
+	print("Ientity:ctor")
+	Ientity.super.ctor(self,pos)
 	self.serverId = 0		--it is socket fd
 
 	--entity world data about
@@ -45,7 +50,7 @@ function Ientity:ctor()
 
 	self.pos = vector3.create()
 	self.dir = vector3.create()
-	self.targetPos = vector3.create()
+	self.target =  nil --选中目标实体
 	self.pos:set(5, 0, 5)
 	self.dir:set(0, 0, 0)
 	self.moveSpeed = 0
@@ -148,14 +153,17 @@ function Ientity:stand()
 	self.state = "idle" --idle walk spell
 end
 
-function Ientity:setTargetPos(target)
+function Ientity:setTargetPos(target,ismouse)
 	target.x = target.x/GAMEPLAY_PERCENT
 	target.z = target.z/GAMEPLAY_PERCENT
 	if self.affectTable:canControl() == false then return end		--不受控制状态
-	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态
+	if self.spell:canBreak(ActionState.move) == false and ismouse  == true then return end	--技能释放状态=
+	if self.attackSpell:canBreak(ActionState.move) == false then return end	
 	if Map:get(target.x, target.z) == false then return end	
-
-	self.targetPos:set(target.x, 0, target.z)
+	
+	--self.target:set(target.x, 0, target.z)
+	local pos = vector3.create(target.x,0,target.z)
+	self.target = transfrom.new(pos,nil)
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
 end
@@ -168,7 +176,18 @@ function Ientity:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
-
+	--技能相关
+	local status  = nil 
+	if self.spell_co ~= nil then
+		status = coroutine.status(self.spell_co)
+	end
+	if status == "suspended" then
+		--技能在和目标在施法范围内
+		local states, skilldata = coroutine.resume(self.spell_co,"getdata")
+		if states == true and self:getDistance(self.target) <=  skilldata.n32Range then
+			coroutine.resume(self.spell_co,"run")
+		end
+	end
 	--add code before this
 	if self.HpMpChange then
 		self:advanceEventStamp(EventStampType.Hp_Mp)
@@ -191,7 +210,7 @@ end
 function Ientity:move(dt)
 	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
-	self.dir:set(self.targetPos.x, self.targetPos.y, self.targetPos.z)
+	self.dir:set(self.target.pos.x, self.target.pos.y, self.target.pos.z)
 	self.dir:sub(self.pos)
 	self.dir:normalize(self.moveSpeed * dt)
 	
@@ -212,7 +231,7 @@ function Ientity:move(dt)
 
 		--move
 		self.pos:set(dst.x, dst.y, dst.z)
-		if IS_SAME_GRID(self.targetPos,  dst) then
+		if IS_SAME_GRID(self.target,  dst) then
 			self:stand()
 		end
 	until true
@@ -515,13 +534,35 @@ function Ientity:castSkill(id)
 	if skilldata.bCommonSkill == true then
 		tmpSpell = self.attackSpell
 	end
-	tmpSpell:init(skilldata,skillTimes)
-	print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
-	self.castSkillId = id
-	self.cooldown:addItem(id) --加入cd
-	tmpSpell:Cast(id,target,pos)
-	self:stand()
-	self:advanceEventStamp(EventStampType.CastSkill)
+	co = coroutine.create(function(cmd)
+		assert(cmd)
+		while(1) do
+			if cmd == "getdata" then
+				local newcmd = coroutine.yield(skilldata)
+				cmd = newcmd
+			elseif cmd == "run" then
+				break
+			else
+				assert(nil)
+			end
+		end
+		tmpSpell:init(skilldata,skillTimes)
+		print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
+		self.castSkillId = id
+		self.cooldown:addItem(id) --加入cd
+		tmpSpell:Cast(id,target,pos)
+		self:stand()
+		self:advanceEventStamp(EventStampType.CastSkill)
+	end)
+	local type_target = math.floor(skilldata.n32Type / 10)
+	local type_range = math.floor(skilldata.n32Type % 10)
+	if type_range == 3 or type_range == 4 then
+		--挂起
+		self.spell_co = co
+	else
+		--立即释放
+		coroutine.resume(co,"run")
+	end 	
 	return 0
 end
 
