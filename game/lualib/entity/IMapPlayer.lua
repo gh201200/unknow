@@ -17,6 +17,8 @@ function IMapPlayer:ctor()
 end
 
 function IMapPlayer:update(dt)
+	if self.getHp() <= 0 then return end
+	
 	--add code before this
 	IMapPlayer.super.update(self,dt)
 end

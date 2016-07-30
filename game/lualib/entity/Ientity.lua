@@ -172,8 +172,6 @@ function Ientity:setTargetPos(target)
 end
 
 function Ientity:update(dt)
-	if self:getHp() <= 0 then return end
-	
 	self.spell:update(dt)
 	self.attackSpell:update(dt)
 	self.cooldown:update(dt)

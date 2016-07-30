@@ -30,6 +30,8 @@ end
 
 
 function IMonster:update(dt)
+	if self.getHp() <= 0 then return end
+
 	IMonster.super.update(self, dt)
 	self.ai:update(dt)
 end
