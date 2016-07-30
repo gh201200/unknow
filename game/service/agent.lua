@@ -61,14 +61,11 @@ end
 local traceback = debug.traceback
 local REQUEST
 
+
 local function handle_request (name, args, response)
-	--print("handle_request : " .. name )
-	--print(args)
 	if hijack_msg[name] then
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, user.agentPlayer.playerId, args)
-			--print(user.agentPlayer.playerId)
-			--print(ret)
 			if ret then
 				send_msg (user_fd, response(ret))
 			end		
@@ -116,12 +113,6 @@ local function handle_response (id, args)
 	end
 end
 
-local function request_hijack_msg(handle)
-	local interface = skynet.call(handle, "lua", "hijack_msg")
-	for k, v in pairs(interface) do
-		hijack_msg[v] = handle
-	end
-end
 
 skynet.register_protocol {
 	name = "client",
@@ -130,65 +121,46 @@ skynet.register_protocol {
 		return host:dispatch (msg, sz)
 	end,
 	dispatch = function (_, _, type, ...)
-		if type == "REQUEST" then
-			handle_request (...)
-		elseif type == "RESPONSE" then
-			handle_response (...)
-		else
-			syslog.warningf ("invalid message type : %s", type) 
-			kick_self ()
+                if type == "REQUEST" then
+                       handle_request (...)
+               elseif type == "RESPONSE" then
+                       handle_response (...)
+               else
+                       syslog.warningf ("invalid message type : %s", type) 
+                       kick_self ()
 		end
 	end
 }
+local function request_hijack_msg(handle)
+	local interface = skynet.call(handle, "lua", "hijack_msg")
+	for k, v in pairs(interface) do
+		hijack_msg[v] = handle
+	end
+end
 
 local CMD = {}
 function CMD.Start (conf)
-	print("agent start")	
-	database = skynet.uniqueservice ("database")
-	local map  = skynet.queryservice "room"
-	request_hijack_msg(map)
-
 	local gate = conf.gate
-
 	user = { 
 		fd = conf.client, 
-		agentPlayer = IAgentplayer.create(conf.playerId),
+		agentPlayer = nil,
 		REQUEST = {},
 		RESPONSE = {},
 		CMD = CMD,
-		MAP = map,
+		MAP = nil,
 		send_request = send_request,
 		cards = {}
 	}
+
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
-
-	user.cards =  skynet.call (database, "lua", "cards", "load","jf") --玩家拥有的卡牌
-
-	print("player id: " .. user.agentPlayer.playerId)
-	skynet.call(map, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)
-	--user.entity:init()
-
+        
+	local map  = skynet.queryservice "room"
+        request_hijack_msg(map)
+	user.MAP = map
 	character_handler:register (user)
-
 	skynet.call(gate, "lua", "forward", user_fd)
-
-	--last_heartbeat_time = skynet.now ()
-	--heartbeat_check ()
-	--[[
-	local m = pf.new {
-		width = 20,
-		height = 20,
-		{x=1,y=1,size=2},
-		{x=3,y=4,size=3},
-	}
-	local path = { pf.path(m, 1, 4, 10, 10) }
-	print("pathing")
-	for i=1, #path,2 do
-		print(path[i] .. "  " .. path[i+1])
-	end
-	]]
 end
 
 function CMD.disconnect ()

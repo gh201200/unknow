@@ -2,15 +2,14 @@ local skynet = require "skynet"
 
 local syslog = require "syslog"
 local handler = require "agent.handler"
-
 local uuid = require "uuid"
-
+local IAgentplayer = require "entity.IAgentPlayer"
 
 local REQUEST = {}
 handler = handler.new (REQUEST)
 
 local user
-
+local database
 
 handler:init (function (u)
 	user = u
@@ -53,6 +52,15 @@ local function create_character (name, race, class)
 	}
 	
 	return character
+end
+
+function REQUEST.enterGame(args)
+	print("character hander ---requst",args)
+	database = skynet.uniqueservice ("database")
+	local account_id = args.account_id
+	user.agentPlayer = IAgentplayer.create(account_id)			
+	user.cards =  skynet.call (database, "lua", "cards", "load",account_id) --玩家拥有的卡牌
+	skynet.call(user.MAP, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)
 end
 
 function REQUEST.character_list ()

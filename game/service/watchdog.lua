@@ -18,8 +18,9 @@ function SOCKET.open(fd, addr)
 		agentfd[fd] = table.remove (agentPools, 1)
 		syslog.debugf ("agent(%d),fd(%d) assigned, %d remain in pool", agentfd[fd], fd, #agentPools)
 	end
-	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self(), playerId = pid })
-	pid = pid + 1
+	print("SOCET.open",fd)
+	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
+--	pid = pid + 1
 end
 
 
