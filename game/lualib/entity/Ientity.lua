@@ -50,7 +50,7 @@ function Ientity:ctor()
 	self.dir:set(0, 0, 0)
 	self.moveSpeed = 0
 	self.curActionState = 0 
-		
+	register_class_var(self, 'Target', nil)
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -486,9 +486,8 @@ end
 
 function Ientity:getDistance(target)
 	assert(target)
-	local disVec = self.pos:return_sub(target.pos)
-        local disLen = disVec:length()
-	return disLen
+	local dis = vector3.len(self.pos, target.pos)
+	return dis
 end
 
 function Ientity:castSkill(id)
@@ -529,45 +528,3 @@ function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
 end
 return Ientity
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

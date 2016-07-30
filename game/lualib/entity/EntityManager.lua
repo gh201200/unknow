@@ -18,8 +18,10 @@ function EntityManager:update(dt)
 		local v = self.entityList[i]
 		if v.update then
 			v:update(dt)		
-			if v:getHp() <= 0 then		--dead, remove it
-				table.remove(self.entityList, i)	
+			if v.entityType == EntityType.monster then
+				if v:getHp() <= 0 then		--dead, remove it
+					table.remove(self.entityList, i)
+				end	
 			end
 		end	
 	end
@@ -73,6 +75,31 @@ function EntityManager:getMonsterCountByBatch(batch)
 		end
 	end
 	return cnt
+end
+
+function EntityManager:getMonsterById(_id)
+	local lt = {}
+	for k, v in pairs(self.entityList) do
+		if v.entityType == EntityType.monster and v.attDat.id == _id then
+			table.insert(lt, v)
+		end
+	end
+	return lt
+end
+
+function EntityManager:getCloseEntityByType(source, _type)
+	local et = nil
+	local minLen = 0xffffffff
+	for k, v in pairs(self.entityList) do
+		if v.entityType == _type and v ~= source then
+			local ln = vector3.len(source.pos, v.pos)
+			if minLen > ln then
+				minLen = ln
+				et = v
+			end
+		end
+	end
+	return et
 end
 
 function EntityManager:getSkillAttackEntitys(source,skilldata)

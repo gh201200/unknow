@@ -1,4 +1,7 @@
 local Ientity = require "entity.Ientity"
+local HateList = require "ai.HateList" 
+local NpcAI = require "ai.NpcAI"
+
 
 local IMonster = class("IMonster", Ientity)
 
@@ -7,6 +10,9 @@ function IMonster:ctor()
 	print('IMonster:ctor')
 	IMonster.super.ctor(self)
 	self.entityType = EntityType.monster	
+	self.hateList = HateList.new()
+	self.ai = NpcAI.new(self)
+	register_class_var(self, "PreSkillData", nil)
 end
 
 function IMonster:init(mt)
@@ -17,6 +23,12 @@ function IMonster:init(mt)
 	self:setMp(self:getMpMax())
 	self.HpMpChange = true
 	self.StatsChange = true
+end
+
+
+function IMonster:update(dt)
+	IMonster.super.update(self, dt)
+	self.ai:update(dt)
 end
 
 function IMonster:calcStats()
@@ -30,5 +42,19 @@ function IMonster:calcStats()
 	self:calcRecvHp()
 	self:calcRecvMp()
 end
+
+function IMonster:onDead()
+	IMonster.super.onDead(self)	
+end
+
+function IMonster:preCastSkill()
+	self:setPreSkilldata(self.attDat.n32Skill)
+end
+
+function IMonster:clearPreCastSkill()
+	self:setPreSkillData(nil)
+end
+
+
 
 return IMonster
