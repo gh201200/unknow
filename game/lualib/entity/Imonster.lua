@@ -9,12 +9,14 @@ local IMonster = class("IMonster", Ientity)
 
 function IMonster:ctor()
 	print("IMonster:ctor")
-	IMonster.super.ctor(self,nil,nil)
+	IMonster.super.ctor(self)
 	self.entityType = EntityType.monster	
 	self.hateList = HateList.new()
 	self.ai = NpcAI.new(self)
-	register_class_var(self, "PreSkillData", nil)
 	self.bornPos =  vector3.create()
+	
+
+	register_class_var(self, "PreSkillData", nil)
 end
 
 function IMonster:init(mt)
@@ -30,10 +32,12 @@ end
 
 
 function IMonster:update(dt)
-	if self.getHp() <= 0 then return end
+	if self:getHp() <= 0 then return end
 
-	IMonster.super.update(self, dt)
 	self.ai:update(dt)
+
+	--add code before this
+	IMonster.super.update(self, dt)
 end
 
 function IMonster:calcStats()

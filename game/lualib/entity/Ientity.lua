@@ -251,8 +251,9 @@ end
 function Ientity:onDead()
 end
 
-function Ientity:addHp(_hp, mask)
+function Ientity:addHp(_hp, mask, source)
 	if _hp == 0 then return end
+	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
 		mask = HpMpMask.SkillHp
 	end
@@ -263,12 +264,21 @@ function Ientity:addHp(_hp, mask)
 		self.HpMpChange = true
 	end
 	if self:getHp() <= 0 then
+		self.hateList:addHate(source, self.lstHp + math.floor(self:getHpMax() * 0.2))
 		self:onDead()
+	else	
+		if _hp < 0 then
+			if self.lastHp == self:getMaxHp() then
+				self.hateList:addHate(source, -_hp + math.floor(self.getHpMax() * 0.1))
+			else
+				self.hateList:addHate(source, -_hp)
+			end
+		end
 	end
 end
 
 
-function Ientity:addMp(_mp, mask)
+function Ientity:addMp(_mp, mask, source)
 	if _mp == 0 then return  end
 	if not mask then
 		mask = HpMpMask.SkillMp
