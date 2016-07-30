@@ -1,4 +1,5 @@
 local Ientity = require "entity.Ientity"
+local vector3 =require "vector3"
 local HateList = require "ai.HateList" 
 local NpcAI = require "ai.NpcAI"
 
@@ -13,11 +14,13 @@ function IMonster:ctor()
 	self.hateList = HateList.new()
 	self.ai = NpcAI.new(self)
 	register_class_var(self, "PreSkillData", nil)
+	self.bornPos =  vector3.create()
 end
 
 function IMonster:init(mt)
 	self.attDat = g_shareData.monsterRepository[mt.id]
-	self.pos:set(mt.px, 0, mt.py)
+	self.pos:set(mt.px, 0, mt.pz)
+	self.bornPos:set(mt.px, 0, mt.pz)
 	self:calcStats()
 	self:setHp(self:getHpMax())
 	self:setMp(self:getMpMax())

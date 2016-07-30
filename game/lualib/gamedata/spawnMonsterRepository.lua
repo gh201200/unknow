@@ -38,8 +38,8 @@ for k, p in pairs(xmlhandler.root.SpawnMonster.info) do
 					end	
 				elseif _i == "szPosition" then
 					tmpTb[_i] = {}
-					for _x, _y in string.gmatch(_v, "(%d+),(%d+)") do
-						table.insert(tmpTb[_i], {x=_x,y=_y})
+					for _x, _z in string.gmatch(_v, "(%d+),(%d+)") do
+						table.insert(tmpTb[_i], {x=_x,z=_z})
 					end
 				else
 					tmpTb[_i] = _v

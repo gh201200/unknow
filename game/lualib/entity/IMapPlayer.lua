@@ -23,6 +23,7 @@ end
 
 
 function IMapPlayer:init()
+	self.pos:set(5,0,5)
 	self.attDat =  g_shareData.heroRepository[100000001]
 	self:calcStats()
 	self:setHp(self:getHpMax())

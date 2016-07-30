@@ -40,22 +40,18 @@ function Ientity:test()
 end
 function Ientity:ctor(pos,dir)
 	print("Ientity:ctor")
-	Ientity.super.ctor(self,pos)
-	self.serverId = 0		--it is socket fd
+	Ientity.super.ctor(self,pos,dir)
 
 	--entity world data about
 	self.entityType = 0
 	self.serverId = 0
 	register_class_var(self, 'Level', 1)
+	self.modolId = 8888	--模型id	
+	
 
-	self.pos = vector3.create()
-	self.dir = vector3.create()
 	self.target =  nil --选中目标实体
-	self.pos:set(5, 0, 5)
-	self.dir:set(0, 0, 0)
 	self.moveSpeed = 0
 	self.curActionState = 0 
-	register_class_var(self, 'Target', nil)
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -66,7 +62,6 @@ function Ientity:ctor(pos,dir)
 	--att data
 	self.attDat = nil
 	
-	self.modolId = 8888	--模型id	
 	--技能相关----
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
@@ -153,19 +148,27 @@ function Ientity:stand()
 	self.state = "idle" --idle walk spell
 end
 
-function Ientity:setTargetPos(target,ismouse)
-	target.x = target.x/GAMEPLAY_PERCENT
-	target.z = target.z/GAMEPLAY_PERCENT
+function Ientity:setTarget(target)
 	if self.affectTable:canControl() == false then return end		--不受控制状态
-	if self.spell:canBreak(ActionState.move) == false and ismouse  == true then return end	--技能释放状态=
+	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	if self.attackSpell:canBreak(ActionState.move) == false then return end	
 	if Map:get(target.x, target.z) == false then return end	
+	self.target = target
+	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
+	self.curActionState = ActionState.move
+end
+
+function Ientity:getTarget()
+	return self.target
+end
+
+function Ientity:setTargetPos(target)
+	target.x = target.x/GAMEPLAY_PERCENT
+	target.z = target.z/GAMEPLAY_PERCENT
 	
 	--self.target:set(target.x, 0, target.z)
 	local pos = vector3.create(target.x,0,target.z)
-	self.target = transfrom.new(pos,nil)
-	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
-	self.curActionState = ActionState.move
+	self:setTarget(transfrom.new(pos,nil))
 end
 
 function Ientity:update(dt)
