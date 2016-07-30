@@ -152,7 +152,7 @@ function Ientity:setTarget(target)
 	if self.affectTable:canControl() == false then return end		--不受控制状态
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	if self.attackSpell:canBreak(ActionState.move) == false then return end	
-	if Map:get(target.x, target.z) == false then return end	
+	if Map:get(target.pos.x, target.pos.z) == false then return end	
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
@@ -234,7 +234,7 @@ function Ientity:move(dt)
 
 		--move
 		self.pos:set(dst.x, dst.y, dst.z)
-		if IS_SAME_GRID(self.target,  dst) then
+		if IS_SAME_GRID(self.target.pos,  dst) then
 			self:stand()
 		end
 	until true

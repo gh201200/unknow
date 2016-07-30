@@ -72,7 +72,6 @@ end
 
 function CMD.query_server_id(response, playerId, args)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
-	print(player)
 	response( true, { server_id = player.serverId } )
 	
 	local ret = { server_id = player.serverId }
