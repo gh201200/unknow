@@ -17,12 +17,15 @@ function IMapPlayer:ctor()
 end
 
 function IMapPlayer:update(dt)
+	if self:getHp() <= 0 then return end
+	
 	--add code before this
 	IMapPlayer.super.update(self,dt)
 end
 
 
 function IMapPlayer:init()
+	self.pos:set(5,0,5)
 	self.attDat =  g_shareData.heroRepository[100000001]
 	self:calcStats()
 	self:setHp(self:getHpMax())

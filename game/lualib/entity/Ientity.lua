@@ -40,22 +40,19 @@ function Ientity:test()
 end
 function Ientity:ctor(pos,dir)
 	--print("Ientity:ctor")
-	Ientity.super.ctor(self,pos)
+	print("Ientity:ctor")
+	Ientity.super.ctor(self,pos,dir)
 	self.serverId = 0		--it is socket fd
-
 	--entity world data about
 	self.entityType = 0
 	self.serverId = 0
 	register_class_var(self, 'Level', 1)
+	self.modolId = 8888	--模型id	
+	
 
-	self.pos = vector3.create()
-	self.dir = vector3.create()
 	self.target =  nil --选中目标实体
-	self.pos:set(5, 0, 5)
-	self.dir:set(0, 0, 0)
 	self.moveSpeed = 0
 	self.curActionState = 0 
-		
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -66,7 +63,6 @@ function Ientity:ctor(pos,dir)
 	--att data
 	self.attDat = nil
 	
-	self.modolId = 8888	--模型id	
 	--技能相关----
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
@@ -153,24 +149,30 @@ function Ientity:stand()
 	self.state = "idle" --idle walk spell
 end
 
-function Ientity:setTargetPos(target,ismouse)
-	target.x = target.x/GAMEPLAY_PERCENT
-	target.z = target.z/GAMEPLAY_PERCENT
+function Ientity:setTarget(target)
 	if self.affectTable:canControl() == false then return end		--不受控制状态
-	if self.spell:canBreak(ActionState.move) == false and ismouse  == true then return end	--技能释放状态=
+	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	if self.attackSpell:canBreak(ActionState.move) == false then return end	
-	if Map:get(target.x, target.z) == false then return end	
-	
-	--self.target:set(target.x, 0, target.z)
-	local pos = vector3.create(target.x,0,target.z)
-	self.target = transfrom.new(pos,nil)
+	if Map:get(target.pos.x, target.pos.z) == false then return end	
+	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
 end
 
-function Ientity:update(dt)
-	if self:getHp() <= 0 then return end
+function Ientity:getTarget()
+	return self.target
+end
+
+function Ientity:setTargetPos(target)
+	target.x = target.x/GAMEPLAY_PERCENT
+	target.z = target.z/GAMEPLAY_PERCENT
 	
+	--self.target:set(target.x, 0, target.z)
+	local pos = vector3.create(target.x,0,target.z)
+	self:setTarget(transfrom.new(pos,nil))
+end
+
+function Ientity:update(dt)
 	self.spell:update(dt)
 	self.attackSpell:update(dt)
 	self.cooldown:update(dt)
@@ -231,7 +233,7 @@ function Ientity:move(dt)
 
 		--move
 		self.pos:set(dst.x, dst.y, dst.z)
-		if IS_SAME_GRID(self.target,  dst) then
+		if IS_SAME_GRID(self.target.pos,  dst) then
 			self:stand()
 		end
 	until true
@@ -250,8 +252,9 @@ end
 function Ientity:onDead()
 end
 
-function Ientity:addHp(_hp, mask)
+function Ientity:addHp(_hp, mask, source)
 	if _hp == 0 then return end
+	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
 		mask = HpMpMask.SkillHp
 	end
@@ -262,12 +265,21 @@ function Ientity:addHp(_hp, mask)
 		self.HpMpChange = true
 	end
 	if self:getHp() <= 0 then
+		self.hateList:addHate(source, self.lstHp + math.floor(self:getHpMax() * 0.2))
 		self:onDead()
+	else	
+		if _hp < 0 then
+			if self.lastHp == self:getMaxHp() then
+				self.hateList:addHate(source, -_hp + math.floor(self.getHpMax() * 0.1))
+			else
+				self.hateList:addHate(source, -_hp)
+			end
+		end
 	end
 end
 
 
-function Ientity:addMp(_mp, mask)
+function Ientity:addMp(_mp, mask, source)
 	if _mp == 0 then return  end
 	if not mask then
 		mask = HpMpMask.SkillMp
@@ -505,9 +517,8 @@ end
 
 function Ientity:getDistance(target)
 	assert(target)
-	local disVec = self.pos:return_sub(target.pos)
-        local disLen = disVec:length()
-	return disLen
+	local dis = vector3.len(self.pos, target.pos)
+	return dis
 end
 
 function Ientity:castSkill(id)
@@ -570,45 +581,3 @@ function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
 end
 return Ientity
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

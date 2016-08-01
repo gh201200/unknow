@@ -32,7 +32,7 @@ function SpawnNpcManager:update(dt)
 					EntityManager:createMonster(assin_server_id(), {
 						id = q, 
 						px = v.dat.szPosition[p].x/10, 
-						py = v.dat.szPosition[p].y/10,
+						pz = v.dat.szPosition[p].z/10,
 						v.batch,			
 					})
 					

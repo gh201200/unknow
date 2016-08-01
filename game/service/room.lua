@@ -18,7 +18,7 @@ local function updateMapEvent()
 	EntityManager:update( (nt - last_update_time) * 10)
 	SpawnNpcManager:update( (nt - last_update_time) * 10)
 	last_update_time = nt
-	skynet.timeout(3, updateMapEvent)
+	skynet.timeout(2, updateMapEvent)
 end
 
 local function query_event_func(response, playerId, args)

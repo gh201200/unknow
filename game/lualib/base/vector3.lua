@@ -15,6 +15,10 @@ function vector3.create(x, y, z)
 	return o
 end
 
+function vector3.len(a, b)
+	return math.sqrt((a.x-b.x)*(a.x-b.x) + (a.y-b.y)*(a.y-b.y) + (a.z-b.z)*(a.z-b.z))
+end
+
 function vector3.dot(a, b)
 	return a.x * b.x + a.y * b.y + a.z * b.z;
 end
@@ -78,8 +82,6 @@ function vector3:sub(v)
 	self.y = self.y - v.y
 	self.z = self.z - v.z
 end
-
-
 
 function vector3:normalize(n)
 	if not n then n = 1 end
