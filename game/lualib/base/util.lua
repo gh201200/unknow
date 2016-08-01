@@ -44,6 +44,29 @@ function mClamp(a, min, max)
 	return a
 end
 
+function ptInRect(p,rectPts)
+	local size = #rectPts
+	local ncross = 0
+	for i=1,size,1 do
+		while true do
+			local p1 = rectPts[i]
+			local p2 = rectPts[(i+1)% size ]
+			if p1.y == p2.y then break end
+			if p.y >= math.max(p1.y,p2.y) then break end
+			if p.y < math.min(p1.y,p2.y) then break end
+			local x = (p.y - p1.y) * (p2.x - p1.x) / (p2.y - p1.y) + p1.x
+			if x > p.x then
+				ncross = ncross + 1
+			end
+			break
+		end		
+	end
+	if ncross % 2 == 1 then
+		return true
+	end
+	return false
+end
+
 --------common func to register get set-----------
 function register_class_var(t, name, iv)
 	t['m_'..name] = iv

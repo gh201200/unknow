@@ -75,6 +75,8 @@ function CMD.auth (fd, addr)
 			--自动注册账号
 			local id = uuid.gen ()
 			skynet.call (database, "lua", "account", "create",id, args.name,"123456")
+			--添加默认赠送卡牌数据
+			skynet.call(database,"lua","cards","createdefault",id)
 			account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		end
 		local msg = response {

@@ -4,7 +4,7 @@ local IMonster = class("IMonster", Ientity)
 
 
 function IMonster:ctor()
-	print("IMonster:ctor")
+	--print("IMonster:ctor")
 	IMonster.super.ctor(self,nil,nil)
 	self.entityType = EntityType.monster	
 end

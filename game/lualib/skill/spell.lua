@@ -24,8 +24,7 @@ local spellEffect = {
 }
 
 function spell:ctor(entity)
-	print("spell:ctor()")
-	 --self.skillId = 0
+	--print("spell:ctor()")
 	self.source = entity
 	self.targets = {}
 	self.status = SpellStatus.None

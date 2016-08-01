@@ -39,7 +39,7 @@ function Ientity:test()
 	print("Ientity:test")
 end
 function Ientity:ctor(pos,dir)
-	print("Ientity:ctor")
+	--print("Ientity:ctor")
 	Ientity.super.ctor(self,pos)
 	self.serverId = 0		--it is socket fd
 
