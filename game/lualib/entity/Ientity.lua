@@ -39,9 +39,10 @@ function Ientity:test()
 	print("Ientity:test")
 end
 function Ientity:ctor(pos,dir)
+	--print("Ientity:ctor")
 	print("Ientity:ctor")
 	Ientity.super.ctor(self,pos,dir)
-
+	self.serverId = 0		--it is socket fd
 	--entity world data about
 	self.entityType = 0
 	self.serverId = 0

@@ -18,10 +18,17 @@ function cards.load (account)
 		for k, v in pairs(st) do
 			table.insert(tb, load(v)())
 		end
-	end
 	return tb
 end
-
+function cards.createdefault(name)
+	local connection,key = make_key(name)
+	if connection:exists (key)  then assert(0) end
+	--默认赠送的3张卡牌
+	connection:zadd(key,1,9000001)
+	connection:zadd(key,1,9000002)
+	connection:zadd(key,1,9000003)
+	
+end
 --添加卡牌
 function cards.addCard(account, tb)
 	assert(account and tb)
@@ -33,9 +40,9 @@ end
 function cards.delCard(account, tb)
 	assert(account and tb)
 	local connection,key = make_key(account)
-	print(serialize_table(tb))
 	connection:srem(key, serialize_table(tb))
 end
+
 
 return cards
 

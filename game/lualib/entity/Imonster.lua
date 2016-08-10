@@ -8,7 +8,6 @@ local IMonster = class("IMonster", Ientity)
 
 
 function IMonster:ctor()
-	print("IMonster:ctor")
 	IMonster.super.ctor(self)
 	self.entityType = EntityType.monster	
 	self.hateList = HateList.new()

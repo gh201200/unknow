@@ -4,7 +4,7 @@ local cooldown = class("cooldown")
 require "globalDefine"
 
 function cooldown:ctor(entity)
-	print("cooldown:ctor")
+--	print("cooldown:ctor")
 	self.coolDownTable = {}
 	self.entity = entity
 end
