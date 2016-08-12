@@ -73,15 +73,14 @@ function CMD.auth (fd, addr)
 		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		if account.id == nil then
 			--自动注册账号
-			local id = uuid.gen ()
-			skynet.call (database, "lua", "account", "create",id, args.name,"123456")
+			skynet.call (database, "lua", "account", "create", args.name,"123456")
 			--添加默认赠送卡牌数据
 			skynet.call(database,"lua","cards","createdefault",id)
 			account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		end
 		local msg = response {
-					user_exists = (account.id ~= nil),
-					account_id = account.id,
+					user_exists = (account.account_id ~= nil),
+					account_id = account.account_id,
 					gameserver_port = 8888 --网关的端口
 				}
 		send_msg (fd, msg)

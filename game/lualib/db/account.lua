@@ -9,30 +9,44 @@ local function make_key (name)
 	return connection_handler (name), string.format ("user:%s", name)
 end
 
-function account.load (name)
-	assert (name)
+function account.load (account)
+	assert (account)
 
-	local acc = { name = name }
+	local acc = { account_id = account }
 
-	local connection, key = make_key (name)
+	local connection, key = make_key (account)
 	if connection:exists (key) then
-		acc.id = connection:hget (key, "account")
+		acc.nick = connection:hget (key, "nick")
 		acc.password = connection:hget (key, "password")
+		acc.gold = connection:hget (key, "gold")
+		acc.money = connection:hget (key, "money")
+		acc.exp = connection:hget (key, "exp")
+		acc.icon = connection:hget (key, "icon")
 	end
 
 	return acc
 end
 
-function account.create (id, name, password)
-	assert (id and name and #name < 24 and password and #password < 24, "invalid argument")
+function account.create (account, password, nick, icon)
+	assert (account and #account < 24 and password and #password < 24, "invalid argument")
 	
-	local connection, key = make_key (name)
-	assert (connection:hsetnx (key, "account", id) ~= 0, "create account failed")
+	if not nick then nick = 'three hero' end
+	if not icon then icon = '1000.icon' end
+
+	local connection, key = make_key (account)
+	assert (connection:hsetnx (key, "account_id", account) ~= 0, "create account failed")
 
 	--local salt, verifier = srp.create_verifier (name, password)
-	--assert (connection:hmset (key, "salt", salt, "verifier", verifier) ~= 0, "save account verifier failed")
+	assert (connection:hmset (key, 
+		"nick", nick, 
+		"passsword", password, 
+		"gold", 0, 
+		"money", 0,
+		"exp", 0,
+		"icon", icon
+		) ~= 0, "save account verifier failed")
 
-	return id
+	return account
 end
 
 return account
