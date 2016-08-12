@@ -60,6 +60,11 @@ local types = [[
 	effectId 0 : integer
 	effectTime 1 : integer 
 }
+.Matcher {
+	account 0 : string
+	modleid 1 : integer
+	username 2 : string	
+}
 
 ]]
 
@@ -154,6 +159,23 @@ enterGame 102 {
 	}
 }
 
+requestMatch 103 {
+	request {
+	}
+	response {
+		errorcode 0 : integer
+		matcherNum 1 : integer
+		matcherList 2 : *Matcher
+	}
+}
+
+cancelMatch 104 {
+	request {
+	}
+	response {
+		errorcode 0 : integer
+	}
+}
 heart_beat_time 200{			#heartbeat,also for estimate ping time
 	response {
 	}

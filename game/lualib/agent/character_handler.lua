@@ -58,9 +58,10 @@ function REQUEST.enterGame(args)
 	print("character hander ---requst",args)
 	database = skynet.uniqueservice ("database")
 	local account_id = args.account_id
+	user.account_id = account_id
 	user.agentPlayer = IAgentplayer.create(account_id)			
 	user.cards =  skynet.call (database, "lua", "cards", "load",account_id) --玩家拥有的卡牌
-	skynet.call(user.MAP, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)
+	--skynet.call(user.MAP, "lua", "entity_enter", skynet.self(), user.agentPlayer.playerId)
 end
 
 function REQUEST.character_list ()
@@ -93,6 +94,7 @@ function REQUEST.character_pick (args)
 
 	return { character = character }
 end
+
 
 attribute_string = {
 	"health",
