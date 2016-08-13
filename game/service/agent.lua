@@ -149,6 +149,7 @@ function CMD.Start (conf)
 		CMD = CMD,
 		MAP = nil,
 		send_request = send_request,
+		account_id = nil,
 		cards = nil,
 		account = nil,
 		explore = nil,

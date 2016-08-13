@@ -31,6 +31,7 @@ function CMD.requestMatch(response,agent)
 		print(arg.account,"already in match list")
 		return
 	end
+	print("arg",arg)
 	local hash_key = arg.score * baseRate
 	for i = hash_key,hash_key + baseRate,1 do
 		if requestMatchers[i] == nil then

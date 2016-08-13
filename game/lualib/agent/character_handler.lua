@@ -17,6 +17,7 @@ end)
 function REQUEST.enterGame(args)
 	database = skynet.uniqueservice ("database")
 	local account_id = args.account_id
+	user.account_id = account_id
 	user.account = skynet.call(database, "lua", "account_rd", "load", account_id)	
 	setmetatable(user.account, {__index = AccountMethod})
 	user.cards =  skynet.call (database, "lua", "cards_rd", "load",account_id) --玩家拥有的卡牌
