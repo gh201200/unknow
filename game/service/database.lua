@@ -2,8 +2,9 @@ local skynet = require "skynet"
 local redis = require "redis"
 
 local config = require "config.database"
-local account = require "db.account"
-local cards = require "db.cards"
+local account = require "db.account_rd"
+local cards = require "db.cards_rd"
+local explore = require "db.explore_rd"
 
 local center
 local group = {}
@@ -44,8 +45,9 @@ end
 local traceback = debug.traceback
 
 skynet.start (function ()
-	module_init ("account", account)
-	module_init ("cards", cards)
+	module_init ("account_rd", account)
+	module_init ("cards_rd", cards)
+	module_init ("explore_rd", explore)
 	
 	center = redis.connect (config.center)
 	ngroup = #config.group

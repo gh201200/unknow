@@ -120,3 +120,13 @@ function serialize_table(t)
 	return "do local ret="..ser_table(t,"ret")..table.concat(assign," ").." return ret end"
 end
 
+
+------------------------
+-- get card serial id
+function getCardSerialId(_id)
+	return math.floor(_id / 10)
+end
+--get card color
+function getCardColor(_id)
+	return _id%10
+end

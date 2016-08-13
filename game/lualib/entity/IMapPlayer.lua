@@ -9,7 +9,7 @@ local IMapPlayer = class("IMapPlayer", Ientity)
 function IMapPlayer:ctor()
 	IMapPlayer.super.ctor(self)
 
-	self.playerId = 0		--same with IAgentPlayer.playerId
+	self.playerId = ''		--same with user.account.account_id
 	self.entityType = EntityType.player
 	self.agent = 0
 	

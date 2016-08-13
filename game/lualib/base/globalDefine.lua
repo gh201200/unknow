@@ -55,6 +55,15 @@ ErrorCode = {
 	EC_Spell_TargetOutDistance	= 1006, --目标距离过远
 	EC_Spell_Unkonw			= 1999, --技能未知错误
 }
+
+CardColor = {
+	White = 1,
+	Green = 2,
+	Blue = 3,
+	Purple = 4,
+	Orange = 5,
+}
+
 g_shareData = {}
 g_entityManager = nil
 GAMEPLAY_PERCENT = 10000

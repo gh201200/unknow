@@ -265,16 +265,7 @@ function Ientity:addHp(_hp, mask, source)
 		self.HpMpChange = true
 	end
 	if self:getHp() <= 0 then
-		self.hateList:addHate(source, self.lstHp + math.floor(self:getHpMax() * 0.2))
 		self:onDead()
-	else	
-		if _hp < 0 then
-			if self.lastHp == self:getMaxHp() then
-				self.hateList:addHate(source, -_hp + math.floor(self.getHpMax() * 0.1))
-			else
-				self.hateList:addHate(source, -_hp)
-			end
-		end
 	end
 end
 

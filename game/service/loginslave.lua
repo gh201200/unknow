@@ -1,6 +1,6 @@
 local skynet = require "skynet"
 local socket = require "socket"
-
+local Quest = require "quest.quest"
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
 local uuid = require "uuid"
@@ -52,6 +52,14 @@ local function send_msg (fd, msg)
 	socket.write (fd, package)
 end
 
+local function firstRegister(account_id)
+	--添加默认赠送卡牌数据
+	for k, v in pairs(Quest.AutoGainCards) do 
+		skynet.call(database, "lua", "cards_rd", "create", account_id, uuid.gen(), v)
+	end
+end
+
+
 function CMD.auth (fd, addr)
 	print("loginslave auth",fd)
 	connection[fd] = addr
@@ -70,19 +78,20 @@ function CMD.auth (fd, addr)
 	print("auth",type,name,args)
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")
-		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
-		if account.id == nil then
+		local account = skynet.call (database, "lua", "account_rd", "load", args.name) or error ("load account " .. args.name .. " failed")
+		if account.nick == nil then
 			--自动注册账号
-			skynet.call (database, "lua", "account", "create", args.name,"123456")
-			--添加默认赠送卡牌数据
-			skynet.call(database,"lua","cards","createdefault",id)
-			account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
+			skynet.call (database, "lua", "account_rd", "create", args.name,"123456")
+			account.account_id = args.name
+	
+			firstRegister(account.account_id)
 		end
+		
 		local msg = response {
-					user_exists = (account.account_id ~= nil),
-					account_id = account.account_id,
-					gameserver_port = 8888 --网关的端口
-				}
+			user_exists = false,
+			account_id = account.account_id,
+			gameserver_port = 8888 --网关的端口
+		}
 		send_msg (fd, msg)
 	end
 

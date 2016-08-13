@@ -6,6 +6,9 @@ local login_config = require "config.loginserver"
 local max_client = 64
 
 skynet.start(function()
+			
+	math.randomseed(skynet.now())
+
 	skynet.uniqueservice("protod")
 	local console = skynet.newservice("console")
 	skynet.newservice("debug_console",8000)

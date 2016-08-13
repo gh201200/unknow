@@ -24,7 +24,7 @@ end
 local function query_event_func(response, playerId, args)
 	local entity = EntityManager:getEntity( args.event_stamp.id )
 	if not entity then
-		syslog.warningf("client[%d] query_event server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
+		syslog.warningf("client[%s] query_event server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
 	end
 	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
 	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
@@ -51,6 +51,7 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.entity_enter(response, agent, playerId)
+	print('entity_enter: '..playerId)
 	local p = EntityManager:createPlayer(agent, playerId, assin_server_id())	
 	response(true, nil)
 end

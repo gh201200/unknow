@@ -65,7 +65,7 @@ local REQUEST
 local function handle_request (name, args, response)
 	if hijack_msg[name] then
 		skynet.fork(function()
-			local ret = skynet.call(hijack_msg[name], "lua", name, user.agentPlayer.playerId, args)
+			local ret = skynet.call(hijack_msg[name], "lua", name, user.account.account_id, args)
 			if ret then
 				send_msg (user_fd, response(ret))
 			end		
@@ -143,13 +143,14 @@ function CMD.Start (conf)
 	local gate = conf.gate
 	user = { 
 		fd = conf.client, 
-		agentPlayer = nil,
 		REQUEST = {},
 		RESPONSE = {},
 		CMD = CMD,
 		MAP = nil,
 		send_request = send_request,
-		cards = {}
+		cards = nil,
+		account = nil,
+		explore = nil,
 	}
 
 	user_fd = user.fd
