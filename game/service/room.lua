@@ -21,7 +21,7 @@ local function updateMapEvent()
 	skynet.timeout(2, updateMapEvent)
 end
 
-local function query_event_func(response, playerId, args)
+local function query_event_func(response,agent, playerId, args)
 	local entity = EntityManager:getEntity( args.event_stamp.id )
 	if not entity then
 		syslog.warningf("client[%s] query_event server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
@@ -40,7 +40,7 @@ local function register_query_event_func()
 	CMD.query_event_affect = query_event_func
 end
 
-function CMD.hijack_msg(response)
+function CMD.hijack_msg(response,agent)
 	local ret = {}
 	for k, v in pairs(CMD) do
 		if type(v) == "function" then
@@ -57,13 +57,13 @@ function CMD.entity_enter(response, agent, playerId)
 end
 
 
-function CMD.move(response, playerId, args)
+function CMD.move(response, agent, playerId, args)
 	local player = EntityManager:getPlayerByPlayerId(playerId)
 	player:setTargetPos(args.target)
 	response(true, nil)
 end
 
-function CMD.castskill(response, playerId, args)
+function CMD.castskill(response,agent, playerId, args)
 	--print("CMD.castskill",response,playerId)	
 	local player = EntityManager:getPlayerByPlayerId(playerId)
 	local err = player:castSkill(args.skillid)
@@ -71,7 +71,11 @@ function CMD.castskill(response, playerId, args)
 end
 
 
-function CMD.query_server_id(response, playerId, args)
+function CMD.query_server_id(response,agent, playerId, args)
+	if true then
+		 response( true, { server_id = 10001 } )
+		return
+	end
 	local player = EntityManager:getPlayerByPlayerId(playerId)
 	response( true, { server_id = player.serverId } )
 	

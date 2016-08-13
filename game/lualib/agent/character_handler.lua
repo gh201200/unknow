@@ -15,7 +15,6 @@ handler:init (function (u)
 end)
 
 function REQUEST.enterGame(args)
-	print("character hander ---requst",args)
 	database = skynet.uniqueservice ("database")
 	local account_id = args.account_id
 	user.account = skynet.call(database, "lua", "account_rd", "load", account_id)	
@@ -24,9 +23,11 @@ function REQUEST.enterGame(args)
 	setmetatable(user.cards, {__index = CardsMethod})
 	user.explore = skynet.call (database, "lua", "explore_rd", "load", account_id) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
-	skynet.call(user.MAP, "lua", "entity_enter", skynet.self(), account_id)
-	
-	
+end
+
+function REQUEST.character_list ()
+	local character = create_character ()
+	return { character = character }
 end
 
 
@@ -129,6 +130,10 @@ function REQUEST.explore_goFight(args)
 		user.cards:addPower(user.explore["slot"..args.index], -(nowTime-user.explore.time))
 	end
 	user.explore["slot"..args.index] = args.uuid
+
+
+function REQUEST.heart_beat_time()
+	return {}
 end
 
 

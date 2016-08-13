@@ -65,8 +65,9 @@ local REQUEST
 local function handle_request (name, args, response)
 	if hijack_msg[name] then
 		skynet.fork(function()
-			local ret = skynet.call(hijack_msg[name], "lua", name, user.account.account_id, args)
+			local ret = skynet.call(hijack_msg[name], "lua", name, skynet.self(), user.account.account_id, args)
 			if ret then
+				print("ret handle_request ",user_fd,name,ret)
 				send_msg (user_fd, response(ret))
 			end		
 		end)
@@ -157,9 +158,14 @@ function CMD.Start (conf)
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
         
-	local map  = skynet.queryservice "room"
-        request_hijack_msg(map)
-	user.MAP = map
+	--local map  = skynet.queryservice "room"
+        --request_hijack_msg(map)
+
+	--注册匹配服务
+	local matchserver = skynet.queryservice "match"
+	request_hijack_msg(matchserver)
+
+	--user.MAP = map
 	character_handler:register (user)
 	skynet.call(gate, "lua", "forward", user_fd)
 end
@@ -177,12 +183,23 @@ function CMD.disconnect ()
 	--skynet.call (gamed, "lua", "close", skynet.self (), account)
 end
 
+function CMD.getmatchinfo()
+	local tb = {agent = skynet.self(),account = user.account_id, score = 10, modelid = 8888,username = "test",time = 0,range = 0}
+	return tb
+end
 
 function CMD.sendRequest (name, args)
 	print("sendRequest", name, args)
 	send_request(name, args)
 end
 
+--匹配成功进入地图
+function CMD.enterMap(map)
+	print("CMD.enterMap")
+	request_hijack_msg(map)
+	user.MAP = map
+	--character_handler:register (user)
+end
 
 skynet.start (function ()
 	skynet.dispatch ("lua", function (_, _, command, ...)
