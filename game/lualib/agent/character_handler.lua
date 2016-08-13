@@ -130,7 +130,7 @@ function REQUEST.explore_goFight(args)
 		user.cards:addPower(user.explore["slot"..args.index], -(nowTime-user.explore.time))
 	end
 	user.explore["slot"..args.index] = args.uuid
-
+end
 
 function REQUEST.heart_beat_time()
 	return {}
