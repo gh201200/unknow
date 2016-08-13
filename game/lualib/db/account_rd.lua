@@ -17,11 +17,11 @@ function account.load (account_id)
 	if connection:exists (key) then
 		acc.nick = connection:hget (key, "nick")
 		acc.password = connection:hget (key, "password")
-		acc.gold = connection:hget (key, "gold")
-		acc.money = connection:hget (key, "money")
-		acc.exp = connection:hget (key, "exp")
+		acc.gold = tonumber(connection:hget (key, "gold"))
+		acc.money = tonumber(connection:hget (key, "money"))
+		acc.exp = tonumber(connection:hget (key, "exp"))
 		acc.icon = connection:hget (key, "icon")
-		acc.flag = connection:hget (key, "flag")
+		acc.flag = tonumber(connection:hget (key, "flag"))
 	end
 
 	return acc

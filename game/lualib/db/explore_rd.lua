@@ -15,7 +15,7 @@ function explore.load (account_id)
 
 	local connection, key = make_key (account_id)
 	if connection:exists (key) then
-		acc.time = connection:hget (key, "time")
+		acc.time = tonumber(connection:hget (key, "time"))
 		acc.slot0 = connection:hget (key, "slot0")
 		acc.slot1 = connection:hget (key, "slot1")
 		acc.slot2 = connection:hget (key, "slot2")
