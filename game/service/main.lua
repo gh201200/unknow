@@ -19,7 +19,7 @@ skynet.start(function()
 	-----------------------------------------------------------
 	------------
 	skynet.uniqueservice("match")
-	snax.uniqueservice("cooldown")
+	snax.uniqueservice("cddown")
 	local loginserver = skynet.newservice("loginserver")
 	skynet.call(loginserver,"lua","open",login_config)
 	local watchdog = skynet.newservice("watchdog")
