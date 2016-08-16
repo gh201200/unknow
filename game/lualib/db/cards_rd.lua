@@ -19,9 +19,9 @@ function cards.load (account_id)
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
 			cards[v]  = {uuid = v}	
-			cards[v].dataId = connection:hget (v, "dataId")
-			cards[v].power = connection:hget (v, "power")
-			cards[v].count = connection:hget (v, "count")
+			cards[v].dataId = tonumber(connection:hget (v, "dataId"))
+			cards[v].power = tonumber(connection:hget (v, "power"))
+			cards[v].count = tonumber(connection:hget (v, "count"))
 		end
 	end
 
