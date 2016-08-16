@@ -14,7 +14,7 @@ SOCKET.data	watchdog.lua	/^function SOCKET.data(fd, msg)$/;"	f
 SOCKET.error	watchdog.lua	/^function SOCKET.error(fd, msg)$/;"	f
 SOCKET.open	watchdog.lua	/^function SOCKET.open(fd, addr)$/;"	f
 SOCKET.warning	watchdog.lua	/^function SOCKET.warning(fd, size)$/;"	f
-accept.move	map.lua	/^function accept.move(playerId, args)$/;"	f
+accept.move	map.lua	/^function accept.move(account_id, args)$/;"	f
 close_agent	watchdog.lua	/^local function close_agent(fd)$/;"	f
 create_agents	watchdog.lua	/^local function create_agents(num)	$/;"	f
 dispatch 	agent.lua	/^	dispatch = function (_, _, type, ...)$/;"	f
@@ -29,7 +29,7 @@ request_release_msg	agent.lua	/^local function request_release_msg(handle, name)
 response.join	map.lua	/^function response.join(fd)$/;"	f
 response.leave	map.lua	/^function response.leave(session)$/;"	f
 response.query	map.lua	/^function response.query(session)$/;"	f
-response.query_event_status	map.lua	/^function response.query_event_status(playerId, args)$/;"	f
+response.query_event_status	map.lua	/^function response.query_event_status(account_id, args)$/;"	f
 send_msg 	agent.lua	/^function send_msg (fd, msg)$/;"	f
 send_request 	agent.lua	/^local function send_request (name, args)$/;"	f
 timeout	watchdog.lua	/^local function timeout(t)$/;"	f

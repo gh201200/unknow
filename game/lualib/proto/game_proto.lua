@@ -62,8 +62,7 @@ local types = [[
 }
 .Matcher {
 	account 0 : string
-	modleid 1 : integer
-	username 2 : string	
+	nickname 1 : string	
 }
 
 ]]
@@ -176,6 +175,14 @@ cancelMatch 104 {
 		errorcode 0 : integer
 	}
 }
+pickHero 110 {
+	request {
+		heroid 0 : integer
+	}
+	response {
+		errorcode 0 : integer
+	}
+}
 heart_beat_time 200{			#heartbeat,also for estimate ping time
 	response {
 	}
@@ -202,8 +209,18 @@ enter_room 1 {
 	request {
 		server_id 0 : integer
 	}
-
 }
+pickedhero 100 {
+	request {
+		account 0 : string
+		heroid 1 : integer
+	}
+}
+beginEnterPvpMap 101 {
+	request {
+	}
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)

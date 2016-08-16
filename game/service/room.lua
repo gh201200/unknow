@@ -21,7 +21,7 @@ local function updateMapEvent()
 	skynet.timeout(2, updateMapEvent)
 end
 
-local function query_event_func(response,agent, playerId, args)
+local function query_event_func(response,agent, account_id, args)
 	local entity = EntityManager:getEntity( args.event_stamp.id )
 	if not entity then
 		syslog.warningf("client[%s] query_event server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
@@ -50,33 +50,29 @@ function CMD.hijack_msg(response,agent)
 	response(true, ret )
 end
 
-function CMD.entity_enter(response, agent, playerId)
-	print('entity_enter: '..playerId)
-	local p = EntityManager:createPlayer(agent, playerId, assin_server_id())	
+function CMD.entity_enter(response,agent,arg)
+	print('entity_enter: ',arg)
+	local p = EntityManager:createPlayer(agent,arg)
 	response(true, nil)
 end
 
 
-function CMD.move(response, agent, playerId, args)
-	local player = EntityManager:getPlayerByPlayerId(playerId)
+function CMD.move(response, agent, account_id, args)
+	local player = EntityManager:getPlayerByPlayerId(account_id)
 	player:setTargetPos(args.target)
 	response(true, nil)
 end
 
-function CMD.castskill(response,agent, playerId, args)
-	--print("CMD.castskill",response,playerId)	
-	local player = EntityManager:getPlayerByPlayerId(playerId)
+function CMD.castskill(response,agent, account_id, args)
+	--print("CMD.castskill",response,account_id)	
+	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local err = player:castSkill(args.skillid)
 	response(true, { errorcode =  err })
 end
 
 
-function CMD.query_server_id(response,agent, playerId, args)
-	if true then
-		 response( true, { server_id = 10001 } )
-		return
-	end
-	local player = EntityManager:getPlayerByPlayerId(playerId)
+function CMD.query_server_id(response,agent, account_id, args)
+	local player = EntityManager:getPlayerByPlayerId(account_id)
 	response( true, { server_id = player.serverId } )
 	
 	local ret = { server_id = player.serverId }
@@ -86,7 +82,6 @@ function CMD.query_server_id(response,agent, playerId, args)
 		end
 	end
 end
-
 
 local function init()
 	--every 0.03s update entity

@@ -4,10 +4,10 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-EntityManager:createPlayer	EntityManager.lua	/^function EntityManager:createPlayer(serverId, playerId)$/;"	f
+EntityManager:createPlayer	EntityManager.lua	/^function EntityManager:createPlayer(serverId, account_id)$/;"	f
 EntityManager:ctor	EntityManager.lua	/^function EntityManager:ctor(p)$/;"	f
 EntityManager:getEntity	EntityManager.lua	/^function EntityManager:getEntity(serverId)$/;"	f
-EntityManager:getPlayerByPlayerId	EntityManager.lua	/^function EntityManager:getPlayerByPlayerId(playerId)$/;"	f
+EntityManager:getPlayerByPlayerId	EntityManager.lua	/^function EntityManager:getPlayerByPlayerId(account_id)$/;"	f
 EntityManager:update	EntityManager.lua	/^function EntityManager:update(dt)$/;"	f
 EventStampHandle.createHandleCoroutine	EventStampHandle.lua	/^function EventStampHandle.createHandleCoroutine(event)$/;"	f
 EventStampHandle[EventStampType.Move] 	EventStampHandle.lua	/^EventStampHandle[EventStampType.Move] = function (serverId)$/;"	f

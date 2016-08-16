@@ -27,14 +27,14 @@ function EntityManager:update(dt)
 	end
 end
 
-function EntityManager:createPlayer(agent, playerId, serverId)
-	
+function EntityManager:createPlayer(agent,arg)
+	--{ account = _v.account, pickedheroid = , nickname = _v.nickname, color = }	
 	local player = IMapPlayer.new()
-	player.serverId = serverId
-	player.playerId = playerId
+	player.serverId = assin_server_id() 
+	player.account_id= arg.account
 	player.agent = agent
-	player:init()
-
+	player.color = arg.color 	--红方 蓝方 -1 -2 -3 和 1 2 3表示 以及出生位置
+	player:init(arg.pickedheroid)
 	table.insert(self.entityList, player)
 	return player
 end
@@ -58,9 +58,9 @@ function EntityManager:getEntity(serverId)
 	return nil
 end
 
-function EntityManager:getPlayerByPlayerId(playerId)
+function EntityManager:getPlayerByPlayerId(account_id)
 	for k, v in pairs(self.entityList) do 
-		if v.entityType == EntityType.player and v.playerId == playerId then
+		if v.entityType == EntityType.player and v.account_id == account_id then
 			return v		
 		end
 	end

@@ -9,7 +9,7 @@ local IMapPlayer = class("IMapPlayer", Ientity)
 function IMapPlayer:ctor()
 	IMapPlayer.super.ctor(self)
 
-	self.playerId = ''		--same with user.account.account_id
+	self.account_id = ''		--same with user.account.account_id
 	self.entityType = EntityType.player
 	self.agent = 0
 	
@@ -24,9 +24,12 @@ function IMapPlayer:update(dt)
 end
 
 
-function IMapPlayer:init()
+function IMapPlayer:init(modleid)
+		
 	self.pos:set(5,0,5)
-	self.attDat =  g_shareData.heroRepository[100000001]
+	modleid = 100000001
+	--self.attDat =  g_shareData.heroRepository[100000001]
+	self.attDat = g_shareData.heroRepository[modleid]
 	self:calcStats()
 	self:setHp(self:getHpMax())
 	self:setMp(self:getMpMax())
