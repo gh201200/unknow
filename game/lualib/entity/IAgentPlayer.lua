@@ -5,8 +5,8 @@ function IAgentPlayer.create(...)
 end
 
 
-function IAgentPlayer:ctor(playerId)
-	self.playerId = playerId
+function IAgentPlayer:ctor(account_id)
+	self.account_id = account_id
 end
 
 

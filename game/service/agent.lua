@@ -67,7 +67,7 @@ local function handle_request (name, args, response)
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, skynet.self(), user.account.account_id, args)
 			if ret then
-				print("ret handle_request ",user_fd,name,ret)
+				--print("ret handle_request ",user_fd,name,ret)
 				send_msg (user_fd, response(ret))
 			end		
 		end)
@@ -185,7 +185,7 @@ function CMD.disconnect ()
 end
 
 function CMD.getmatchinfo()
-	local tb = {agent = skynet.self(),account = user.account_id, score = 10, modelid = 8888,username = "test",time = 0,range = 0}
+	local tb = {agent = skynet.self(),account = user.account_id, score = 10, nickname = "test",time = 0,range = 0}
 	return tb
 end
 
@@ -193,13 +193,18 @@ function CMD.sendRequest (name, args)
 	print("sendRequest", name, args)
 	send_request(name, args)
 end
+--进入选英雄服务
+function CMD.enterPickHero(s_pickup)
+	request_hijack_msg(s_pickup)
+end
 
---匹配成功进入地图
-function CMD.enterMap(map)
+--进入地图
+function CMD.enterMap(map,arg)
 	print("CMD.enterMap")
 	request_hijack_msg(map)
 	user.MAP = map
-	--character_handler:register (user)
+	skynet.call(map,"lua","entity_enter",skynet.self(),arg)
+	send_request("beginEnterPvpMap",{}) --开始准备切图
 end
 
 skynet.start (function ()

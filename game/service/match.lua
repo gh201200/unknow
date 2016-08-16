@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local coroutine = require "skynet.coroutine"
 local syslog = require "syslog"
 local traceback  = debug.traceback
+local uuid = require "uuid"
 
 local CMD = {}
 local requestMatchers = {}
@@ -11,6 +12,7 @@ local database
 local baseRate = 10000 --同一分数匹配人数不超过一万人
 local account_cors = {}
 
+local s_pickHeros = { } --选角色服务
 
 function CMD.hijack_msg(response)
 	local ret = {}
@@ -23,7 +25,7 @@ function CMD.hijack_msg(response)
 end
 
 
---请求匹配 arg = {agent = ,account = ,modelid = ,username= ,score = ,time = ,range = }
+--请求匹配 arg = {agent = ,account = ,modelid = ,nickname= ,score = ,time = ,range = }
 function CMD.requestMatch(response,agent)
 	print("CMD.requestMatch")
 	local arg = skynet.call(agent,"lua","getmatchinfo")
@@ -31,7 +33,6 @@ function CMD.requestMatch(response,agent)
 		print(arg.account,"already in match list")
 		return
 	end
-	print("arg",arg)
 	local hash_key = arg.score * baseRate
 	for i = hash_key,hash_key + baseRate,1 do
 		if requestMatchers[i] == nil then
@@ -41,7 +42,6 @@ function CMD.requestMatch(response,agent)
 		end
 	end
 	account_cors[arg.account] = coroutine.create(function(ret)
-		print("account_cosrs")
 		response(true,ret)
 	end)
 end
@@ -59,16 +59,21 @@ function CMD.cancelMatch(response,account)
 end
 
 
---处理匹配到的人
+--处理匹配到的人 account nickname agent
 local function handleMatch(t)
-	--启动地图服务
+	--返回 分组信息
 	print("handleMatch")
-	local mapserver = skynet.newservice ("room")
-	local ret = { errorcode = 0 ,matcherNum = #(t),matcherList = {} }
-	
+	local s_pickHero =  skynet.newservice "pickHero"
+	table.insert(s_pickHeros,s_pickHero)
+	skynet.call(s_pickHero,"lua","init",t)
+	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
-		skynet.call(_v.agent, "lua", "enterMap", mapserver)	
-		table.insert(ret.matcherList,{ account = _v.account, modleid = _v.modeleid, username = _v.username })
+		ret.matherNum = ret.matcherNum + 1
+		local tmp = { account = _v.account,nickname = _v.nickname }
+		table.insert(ret.matcherList,tmp)
+		skynet.call(_v.agent,"lua","enterPickHero",s_pickHero)
+	end
+	for _k,_v in pairs(t) do
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
@@ -78,8 +83,10 @@ local function update()
 	dt = 1
 	---begin test-----
 	if next(requestMatchers) ~= nil then
-		handleMatch(requestMatchers)
-		requestMatchers = {}	
+		print("update handlematch")
+		local tmp = requestMatchers
+		requestMatchers = {}
+		handleMatch(tmp)
 	end
 	if true then return end
 	---end   test-----
