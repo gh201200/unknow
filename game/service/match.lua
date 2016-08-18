@@ -86,6 +86,7 @@ local function update()
 		print("update handlematch")
 		local tmp = requestMatchers
 		requestMatchers = {}
+		reverseMatchers = {}
 		handleMatch(tmp)
 	end
 	if true then return end
