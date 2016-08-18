@@ -3,7 +3,8 @@ local queue = require "skynet.queue"
 local sharemap = require "sharemap"
 local snax = require "snax"
 local socket = require "socket"
-
+local mc = require "multicast"
+local dc = require "datacenter"
 
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
@@ -44,6 +45,23 @@ local function kick_self ()
 	skynet.call (gamed, "lua", "kick", skynet.self (), user_fd)
 end
 
+local function registerToChatserver(name)
+	--默认注册到系统频道
+	local channelname = "system_channel"
+	if name ~=  nil then
+		channelname = name
+	end	
+	local channel = dc.get(channelname)
+	if channel == nil then return end
+	local c = mc.new {
+	channel = channel ,
+		dispatch = function (channel,  ...)
+			print(string.format("%s", channel), ...)
+			--发给客户端
+		end
+	}
+	c:subscribe()	
+end
 local last_heartbeat_time
 local HEARTBEAT_TIME_MAX = 0 -- 60 * 100
 local function heartbeat_check ()
@@ -60,7 +78,6 @@ end
 
 local traceback = debug.traceback
 local REQUEST
-
 
 local function handle_request (name, args, response)
 	if hijack_msg[name] then
@@ -169,6 +186,9 @@ function CMD.Start (conf)
 	--user.MAP = map
 	character_handler:register (user)
 	skynet.call(gate, "lua", "forward", user_fd)
+	
+	--注册到聊天服务
+	registerToChatserver()
 end
 
 function CMD.disconnect ()

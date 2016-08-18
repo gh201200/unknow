@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local traceback  = debug.traceback
 local syslog = require "syslog"
+
 local CMD = {}
 local players = {}
 local max_pickTime = 30

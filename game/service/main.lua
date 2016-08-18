@@ -19,6 +19,8 @@ skynet.start(function()
 	-----------------------------------------------------------
 	------------
 	skynet.uniqueservice("match")
+	--启动聊天服务
+	skynet.uniqueservice("chatserver")
 	snax.uniqueservice("cddown")
 	local loginserver = skynet.newservice("loginserver")
 	skynet.call(loginserver,"lua","open",login_config)
