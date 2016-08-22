@@ -183,6 +183,15 @@ pickHero 110 {
 		errorcode 0 : integer
 	}
 }
+
+confirmHero 111 {
+	request {
+	}
+	response {
+		errorcode 0 : integer
+	}
+}
+
 heart_beat_time 200{			#heartbeat,also for estimate ping time
 	response {
 	}
@@ -217,6 +226,21 @@ pickedhero 100 {
 	}
 }
 beginEnterPvpMap 101 {
+	request {
+	}
+}
+synPickTime 102 {
+	request {
+		leftTime 0 : integer	 
+	}
+}
+confirmedHero 103 {
+	request {
+		account 0 : string
+		heroid 1 : integer
+	}
+}
+quitPick 104 {
 	request {
 	}
 }

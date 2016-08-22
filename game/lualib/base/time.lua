@@ -83,17 +83,17 @@ function Time.AddDateMonth(dt, month, clampDays)
 	end
 	-- clamp days
 	if clampDays ~= false then
-		dt.day = getMin(dt.day, GetDaysInMonth(dt.year, dt.month))
+		dt.day = getMin(dt.day, Time.GetDaysInMonth(dt.year, dt.month))
 	end
 end
 
 function Time.AddDateDay(dt, day)
 	dt.day = dt.day + day
 	while true do
-		local maxDay = GetDaysInMonth(dt.year, dt.month)
+		local maxDay = Time.GetDaysInMonth(dt.year, dt.month)
 		if dt.day > maxDay then
 			dt.day = dt.day - maxDay
-			AddDateMonth(dt, 1, false)
+			Time.AddDateMonth(dt, 1, false)
 		else
 			break
 		end
@@ -131,12 +131,12 @@ function Time.AddDateSec(dt, sec)
 end
 
 function Time.AddDate(dt, add)
-	if add.year then AddDateYear(dt, add.year) end
-	if add.month then AddDateMonth(dt, add.month) end
-	if add.day then AddDateDay(dt, add.day) end
-	if add.hour then AddDateHour(dt, add.hour) end
-	if add.min then AddDateMin(dt, add.min) end
-	if add.sec then AddDateYear(dt, add.sec) end
+	if add.year then Time.AddDateYear(dt, add.year) end
+	if add.month then Time.AddDateMonth(dt, add.month) end
+	if add.day then Time.AddDateDay(dt, add.day) end
+	if add.hour then Time.AddDateHour(dt, add.hour) end
+	if add.min then Time.AddDateMin(dt, add.min) end
+	if add.sec then Time.AddDateYear(dt, add.sec) end
 end
 
 local DateDay = {"sec", "min", "hour", "day", "month", "year"}
@@ -174,7 +174,7 @@ function Time.nextDay(nextDate)
 	for i=valid+1,6 do
 		target[DateDay[i]] = dt[DateDay[i]]
 	end
-	if isCarry then AddDate(target, {[DateDay[valid+1]] = 1}) end
+	if isCarry then Time.AddDate(target, {[DateDay[valid+1]] = 1}) end
 	return target
 end
 
@@ -188,7 +188,7 @@ function Time.nextWday(nextDate)
 	end
 	-- carry?
 	local now = os.time()
-	local dt = os.date("*t", now)
+	local dt = os.date("*/AddDatet", now)
 	local isCarry = false
 	for i=4,1,-1 do
 		if target[DateWday[i]] > dt[DateWday[i]] then
@@ -204,7 +204,7 @@ function Time.nextWday(nextDate)
 	target.month = dt.month
 	target.year = dt.year
 	local addtion = isCarry and 7 or 0
-	AddDate(target, {day = (target.wday - dt.wday + addtion)})
+	Time.AddDate(target, {day = (target.wday - dt.wday + addtion)})
 	return target
 end
 
@@ -233,15 +233,15 @@ function Time.nextYday(nextDate)
 	-- get next
 	if isCarry then
 		if nextDate.year then return false end
-		AddDate(target, {year = 1})
+		Time.AddDate(target, {year = 1})
 	end
 	-- just in case
 	target.yday = getMin(target.yday, (IsLeapYear(target.year) and 366 or 365))
 	-- convert to month day
 	target.month = 1
 	target.day = target.yday
-	while target.day > GetDaysInMonth(target.year, target.month) do
-		target.day = target.day - GetDaysInMonth(target.year, target.month)
+	while target.day > Time.GetDaysInMonth(target.year, target.month) do
+		target.day = target.day - Time.GetDaysInMonth(target.year, target.month)
 		target.month = target.month + 1
 	end
 	return target
