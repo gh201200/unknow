@@ -18,6 +18,7 @@ skynet.start(function()
 	skynet.uniqueservice ("database")
 	-----------------------------------------------------------
 	------------
+	skynet.uniqueservice("simpleweb")
 	skynet.uniqueservice("match")
 	snax.uniqueservice("cddown")
 	local loginserver = skynet.newservice("loginserver")
