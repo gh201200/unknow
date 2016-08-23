@@ -5,6 +5,9 @@ local sockethelper = require "http.sockethelper"
 local urllib = require "http.url"
 local table = table
 local string = string
+local sharedata = require "sharedata"
+local json = require "cjson"
+
 
 local mode = ...
 
@@ -18,33 +21,55 @@ local function response(id, ...)
 	end
 end
 
+local funcs = {}
+
+funcs['getHero'] = function (param)
+	local attDat = g_shareData.heroRepository[tonumber(param['id'])]
+	local r = {
+		id = attDat.id,
+		name = attDat.szName,
+		attack = attDat.n32Attack,
+	}
+	local jt = json.encode(r)
+	return jt
+end;
+
 skynet.start(function()
+	g_shareData = sharedata.query "gdd"
 	skynet.dispatch("lua", function (_,_,id)
 		socket.start(id)
 		-- limit request body size to 8192 (you can pass nil to unlimit)
 		local code, url, method, header, body = httpd.read_request(sockethelper.readfunc(id), 8192)
+			
 		if code then
-			if code ~= 200 then
+			if method ~= "GET" then
+				skynet.error("only support get method")
+			elseif code ~= 200 then
 				response(id, code)
 			else
-				local tmp = {}
-				if header.host then
-					table.insert(tmp, string.format("host: %s", header.host))
-				end
+				local func = nil
+				local params = {}
 				local path, query = urllib.parse(url)
-				table.insert(tmp, string.format("path: %s", path))
 				if query then
 					local q = urllib.parse_query(query)
 					for k, v in pairs(q) do
-						table.insert(tmp, string.format("query: %s= %s", k,v))
+						if k=='func' then
+							func = funcs[v]
+						else
+							params[k] = v
+						end
 					end
 				end
-				table.insert(tmp, "-----header----")
-				for k,v in pairs(header) do
-					table.insert(tmp, string.format("%s = %s",k,v))
+				print(params)
+				print(func)
+				if func then
+					local res = func(params)
+					print(res)
+					response(id, code, res)
+				else
+					
+					response(id, code)
 				end
-				table.insert(tmp, "-----body----\n" .. body)
-				response(id, code, table.concat(tmp,"\n"))
 			end
 		else
 			if url == sockethelper.socket_error then
