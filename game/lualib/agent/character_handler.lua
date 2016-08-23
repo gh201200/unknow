@@ -37,6 +37,19 @@ function REQUEST.heart_beat_time()
 	return {}
 end
 
+function REQUEST.getCardsDatas()
+	print("REQUEST.getCardsDatas")
+	local  cardsList = {}
+	local cardNum = 0
+	print(user.cards)
+	for _k,_v in pairs(user.cards) do
+		if _v.uuid ~= nil then
+			cardNum = cardNum + 1
+			table.insert(cardsList,_v)
+		end
+	end	
+	return {cardNum = cardNum ,cardsList = cardsList }
+end
 ----------------explore----------------------
 local function begin_explore()
 	user.explore.time = os.time()

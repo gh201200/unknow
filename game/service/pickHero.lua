@@ -54,7 +54,6 @@ function CMD.pickHero(response, agent, account ,arg)
 		for _agent,_v in pairs(players) do
 			skynet.call(_agent,"lua","sendRequest","pickedhero",t)
 		end
-		--enterMap()
 	end
 end
 

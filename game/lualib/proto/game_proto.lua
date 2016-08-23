@@ -65,6 +65,13 @@ local types = [[
 	nickname 1 : string	
 }
 
+.card {
+	dataId 0 : integer
+	uuid 1 : string
+	power 2 : integer
+	count 3 : integer
+}
+
 ]]
 
 local c2s = [[
@@ -192,6 +199,13 @@ confirmHero 111 {
 	}
 }
 
+getCardsDatas 112 {
+	response {
+		cardNum 0 : integer
+		cardsList 1 : *card
+	}
+}
+
 heart_beat_time 200{			#heartbeat,also for estimate ping time
 	response {
 	}
@@ -244,6 +258,7 @@ quitPick 104 {
 	request {
 	}
 }
+
 
 ]]
 
