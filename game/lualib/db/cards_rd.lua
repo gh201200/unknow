@@ -12,7 +12,7 @@ local function make_key (name)
 end
 
 function cards.load (account_id)
-	local cards = {account_id = account_id}
+	local cards = {}
 	local connection, key = make_key (account_id)
 	
 	if connection:exists (key) then

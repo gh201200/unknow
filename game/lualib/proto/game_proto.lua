@@ -68,8 +68,8 @@ local types = [[
 .card {
 	dataId 0 : integer
 	uuid 1 : string
-	power 2 : integer
-	count 3 : integer
+	count 2 : integer
+	power 3 : integer
 }
 
 ]]
@@ -225,6 +225,17 @@ castskill 202 {
 		errorcode 0 :integer
 	}
 }
+
+explore_goFight 300 {
+	request {
+		uuid 0 : string
+		index 1 : integer
+	}
+	response {
+		errorCode 0 :integer
+	}
+}
+
 ]]
 
 local s2c = [[
@@ -233,6 +244,44 @@ enter_room 1 {
 		server_id 0 : integer
 	}
 }
+#下发卡牌数据
+sendHero 2 {
+	request {
+		cardsList 0 : *card(uuid)
+	}
+}
+#下发账户数据
+sendAccount 3 {
+	request {
+		nick 0 : string
+		gold 1 : integer
+		money 2 : integer
+		exp 3 : integer
+		icon 4 : string
+		flag 5 : integer
+	}
+}
+
+#下发探索数据
+sendExplore 4 {
+	request {
+		time 0 : integer
+		uuid0 1 : string
+		uuid1 2 : string
+		uuid2 3 : string
+		uuid3 4 : string
+		uuid4 5 : string
+	}
+}
+
+#下发CD数据
+sendCDTime 5 {
+	request {
+		ResetCardPowertime 0 : integer
+	}
+}
+
+
 pickedhero 100 {
 	request {
 		account 0 : string

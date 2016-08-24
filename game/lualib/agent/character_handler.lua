@@ -1,9 +1,12 @@
 local skynet = require "skynet"
+local snax = require "snax"
 local syslog = require "syslog"
 local handler = require "agent.handler"
 local CardsMethod = require "agent.cards_method"
 local AccountMethod = require "agent.account_method"
 local ExploreMethod = require "agent.explore_method"
+local Quest = require "quest.quest"
+
 local REQUEST = {}
 handler = handler.new (REQUEST)
 
@@ -14,16 +17,58 @@ handler:init (function (u)
 	user = u
 end)
 
+local function sendAccountData()
+	user.send_request("sendAccount", user.account.unit)
+end
+
+local function sendHeroData()
+	user.send_request("sendHero", {cardsList = user.cards.units})
+end
+
+local function sendExploreData()
+	print(user.explore:getTime())
+	local r = {
+		time = Quest.Explore.CD - (os.time() - user.explore:getTime()),
+		uuid0 = user.explore:getSlot(0),
+		uuid1 = user.explore:getSlot(1),
+		uuid2 = user.explore:getSlot(2),
+		uuid3 = user.explore:getSlot(3),
+		uuid4 = user.explore:getSlot(4),
+	}
+	user.send_request("sendExplore", r)
+end
+
+local function sendCDTimeData()
+	local cds = snax.queryservice "cddown"
+	local r = {
+		ResetCardPowertime = cds.req.getRemainingTime("ResetCardPowertime") - os.time()
+	}
+	user.send_request("sendCDTime", r)
+end
+
+
+local function onEnterGame()
+	
+	sendAccountData()
+	sendHeroData()
+	sendExploreData()
+	sendCDTimeData()
+end
+
 function REQUEST.enterGame(args)
 	database = skynet.uniqueservice ("database")
 	local account_id = args.account_id
-	user.account_id = account_id
-	user.account = skynet.call(database, "lua", "account_rd", "load", account_id)	
+	user.account = { account_id = account_id }
+	user.account.unit = skynet.call(database, "lua", "account_rd", "load", account_id)	
 	setmetatable(user.account, {__index = AccountMethod})
-	user.cards =  skynet.call (database, "lua", "cards_rd", "load",account_id) --玩家拥有的卡牌
+	user.cards = {}
+	user.cards.units =  skynet.call (database, "lua", "cards_rd", "load",account_id) --玩家拥有的卡牌
 	setmetatable(user.cards, {__index = CardsMethod})
-	user.explore = skynet.call (database, "lua", "explore_rd", "load", account_id) --explore
+	user.explore = {}
+	user.explore.unit = skynet.call (database, "lua", "explore_rd", "load", account_id) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
+
+	onEnterGame()
 end
 
 function REQUEST.character_list ()
@@ -52,7 +97,7 @@ function REQUEST.getCardsDatas()
 end
 ----------------explore----------------------
 local function begin_explore()
-	user.explore.time = os.time()
+	user.explore:setTime(os.time())
 	skynet.timeout(Quest.Explore.CD*100, explore_timeout)
 end
 
@@ -61,11 +106,11 @@ local function explore_timeout()
 	local gains = Quest.Explore.gains_num
 	local stillHas = false
 	for i=0, 4 do 
-		if string.len(user.explore["slot"..i]) > 1 then
+		if string.len(user.explore:getSlot(i)) > 1 then
 			stillHas = true
-			local card = user.cards:getCardByUuid(user.explore["slot"..i])
+			local card = user.cards:getCardByUuid(user.explore:getSlot(i))
 			
-			user.cards:addPower(user.explore["slot"..i], -Quest.Explore.CD)
+			user.cards:addPower(user.explore:getSlot(i), -Quest.Explore.CD)
 			if card.power <= 0 then  
 				user.explore:setSlot(i, "0")	
 				stillHas = false
@@ -121,8 +166,16 @@ function REQUEST.explore_goFight(args)
 			errorCode = -1
 			break
 		end
+		for i=0, 4 do
+			if user.explore:getSlot(i) == args.uuid then
+				errorCode = -1
+				break
+			end
+		end
+		if errorCode ~= 0 then break end
+
 		--the rule of 3 minites
-		local dt = user.explore.time > 0 and nowTime - user.explore.time or 0
+		local dt = user.explore:getTime() > 0 and nowTime - user.explore:getTime() or 0
 		if dt > 180 then	
 			errorCode = 1
 			break
@@ -137,13 +190,15 @@ function REQUEST.explore_goFight(args)
 		return {errorCode = errorCode}
 	end
 	--ok
-	if user.explore.time == 0 then
+	if user.explore:getTime() == 0 then
 		begin_explore()
 	end
-	if string.len(user.explore["slot"..args.index]) > 1 then
-		user.cards:addPower(user.explore["slot"..args.index], -(nowTime-user.explore.time))
+	if string.len(user.explore:getSlot(args.index)) > 1 then
+		user.cards:addPower(user.explore:geSlot(args.index), -(nowTime-user.explore:getTime()))
 	end
-	user.explore["slot"..args.index] = args.uuid
+	user.explore:setSlot(args.index, args.uuid)
+	
+	return {errorCode = errorCode}
 end
 
 function REQUEST.heart_beat_time()

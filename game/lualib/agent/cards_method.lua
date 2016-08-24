@@ -11,7 +11,7 @@ local CardsMethod =
 	end;
 	--
 	geCardBySerialId = function(self, _serId)
-		for k, v in pairs(self.cards) do
+		for k, v in pairs(self.cards.units) do
 			if v and Macro_GetCardSerialId(v.dataId) == _serId then
 				return v
 			end
@@ -20,7 +20,7 @@ local CardsMethod =
 	end;
 	--
 	getCardByUuid = function(self, _uuid)
-		return self.cards[_uuid]
+		return self.cards.units[_uuid]
 	end;
 	--
 	addCard = function(self, dataId, num)
@@ -30,7 +30,7 @@ local CardsMethod =
 			v.count = v.count + g_shareData.heroRepository[dataId].n32WCardNum * num
 		else
 			v = self.initCard(dataId)
-			self.cards[v.uuid] =  v
+			self.cards.units[v.uuid] =  v
 		end
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "addCard", self.account_id, v)

@@ -6,7 +6,7 @@ local AccountMethod =
 {
 	--
 	setNickName = function(self, name)
-		self.nick = name
+		self.unit.nick = name
 		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self, "nick")
@@ -16,9 +16,9 @@ local AccountMethod =
 	end;
 	--
 	addGold = function(self, _gold)
-		local nv = self.gold + _gold
+		local nv = self.unit.gold + _gold
 		if nv < 0 then return end
-		self.gold = nv
+		self.unit.gold = nv
 		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self, "gold")
@@ -28,9 +28,9 @@ local AccountMethod =
 	end;
 	--
 	addMoney = function(self, _money)
-		local nv = self.money + _money
+		local nv = self.unit.money + _money
 		if nv < 0 then return end
-		self.money = nv
+		self.unit.money = nv
 
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self, "money")
@@ -40,9 +40,9 @@ local AccountMethod =
 	end;
 	--
 	addExp = function(self, _exp)
-		local nv = self.exp + _exp
+		local nv = self.unit.exp + _exp
 		if nv < 0 then return end
-		self.exp = nv
+		self.unit.exp = nv
 
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self, "exp")
@@ -52,7 +52,7 @@ local AccountMethod =
 	end;
 	--
 	setIcon = function(self, _icon)
-		self.icon = _icon		
+		self.unit.icon = _icon		
 
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self, "icon")
@@ -62,7 +62,7 @@ local AccountMethod =
 	end;
 	--
 	setFlag = function(self, _flag)
-		self.flag = _flag
+		self.unit.flag = _flag
 	
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self, "flag")
@@ -72,7 +72,7 @@ local AccountMethod =
 	end;
 	--
 	addFlag = function(self, _flag)
-		self.flag = self.flag | _flag
+		self.unit.flag = self.unit.flag | _flag
 		self:setFlag(self.flag)
 	end;
 }
