@@ -64,9 +64,9 @@ function CMD.move(response, agent, account_id, args)
 end
 
 function CMD.castskill(response,agent, account_id, args)
-	--print("CMD.castskill",response,account_id)	
+	print("CMD.castskill",args.skillid)	
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local err = player:castSkill(args.skillid)
+	local err = player:setCastSkillId(args.skillid)
 	response(true, { errorcode =  err })
 end
 

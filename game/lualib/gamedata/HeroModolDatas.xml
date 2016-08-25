@@ -8,8 +8,10 @@
 			<n32AttackTime1>4000</n32AttackTime1>
 			<n32AttackTime2>5000</n32AttackTime2>
 			<n32AttackTime3>5000</n32AttackTime3>
-			<n32Skill1Time1>400</n32Skill1Time1>
-			<n32Skill1Time2>600</n32Skill1Time2>
+			
+			<n32Skill1Time1>70</n32Skill1Time1>
+			<n32Skill1Time2>930</n32Skill1Time2>
+			
 			<n32Skill2Time1>400</n32Skill2Time1>
 			<n32Skill2Time2>600</n32Skill2Time2>
 	</info>

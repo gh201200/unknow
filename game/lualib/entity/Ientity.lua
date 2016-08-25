@@ -34,9 +34,8 @@ local function register_stats(t, name)
 		return self['s_'..name] 
 	end
 end
-
-function Ientity:test()
-	print("Ientity:test")
+function Ientity:getType()
+        return "Ientity"
 end
 function Ientity:ctor(pos,dir)
 	--print("Ientity:ctor")
@@ -67,6 +66,7 @@ function Ientity:ctor(pos,dir)
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
+	self.CastSkillId = 0 --释放技能的id
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
@@ -179,15 +179,10 @@ function Ientity:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
 	--技能相关
-	local status  = nil 
-	if self.spell_co ~= nil then
-		status = coroutine.status(self.spell_co)
-	end
-	if status == "suspended" then
-		--技能在和目标在施法范围内
-		local states, skilldata = coroutine.resume(self.spell_co,"getdata")
-		if states == true and self:getDistance(self.target) <=  skilldata.n32Range then
-			coroutine.resume(self.spell_co,"run")
+	if self.CastSkillId ~= 0 then	
+			print("self.CastSkillId" ,self.CastSkillId)
+			if self:canCast(self.CastSkillId) == 0 then
+			self:castSkill(self.CastSkillId)
 		end
 	end
 	--add code before this
@@ -486,19 +481,14 @@ function Ientity:setState(state)
 	self.state = state
 end
 
-function Ientity:canCast(skilldata,target,pos)
-	--print(ErrorCode)
-	if self.cooldown:getCdTime(skilldata.id) > 0 then 
-		print("spell is cding",skilldata.id)
-		return ErrorCode.EC_Spell_SkillIsInCd
-	end
-	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then 
-		print("spell is running",skilldata.id)
-		return ErrorCode.EC_Spell_SkillIsRunning 
-	end
+
+function Ientity:canCast(id)
+	print("Ientity:canCast",id)
+	if id == 0 then return 0 end
+	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if skilldata.bNeedTarget == true then
-		if self.target == nil then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		if self.target == nil and self.target:getType() ~= "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 		if self.getDistance(target) > skilldata.n32range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
 	end
 	
@@ -512,20 +502,55 @@ function Ientity:getDistance(target)
 	return dis
 end
 
-function Ientity:castSkill(id)
-        print("Ientity:castSkillId",id,EventStampType.CastSkill)
+--是否能选中技能
+function Ientity:canSetCastSkill(id)
+        local skilldata = g_shareData.skillRepository[id]
+	--cd状态
+	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+		print("spell is cding",skilldata.id)
+		return ErrorCode.EC_Spell_SkillIsInCd
+	end
+	--技能正在释放状态
+	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then
+           print("spell is running",skilldata.id)
+           return ErrorCode.EC_Spell_SkillIsRunning
+        end
+	--被控制状态 
+	return 0
+end
+function Ientity:setCastSkillId(id)
+	print("111111",self.CastSkillId)
+	self.CastSkillId = id
+	print("",self.CastSkillId)
+	local skilldata = g_shareData.skillRepository[id]
+	local errorcode = self:canSetCastSkill(id) 
+        print("castskill error",errorcode)
+        if errorcode ~= 0 then return errorcode end 
+	local type_target = math.floor(skilldata.n32Type / 10)
+	local type_range = math.floor(skilldata.n32Type % 10)
+	if  type_range == 3 or type_range  == 4 then
+		--立即释放
+		errorcode = self.canCast(id)
+		if errorcode ~= 0 then
+			return errorcode
+		end
+		self.castSkill()
+	end
+end
+function Ientity:castSkill()
+	local id = self.CastSkillId
+	self.CastSkillId = 0
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = g_shareData.heroModolRepository[self.modolId]
-	assert(skilldata)
-	assert(modoldata)
-	local errorcode = self:canCast(skilldata,id) 
+	assert(skilldata and modoldata)
+	local errorcode = self:canCast(id) 
 	print("castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}	
 	if skilldata.bCommonSkill == false then
-		skillTimes[1] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time1"] or 0 ) / 1000 
-		skillTimes[2] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time2"] or  0 ) / 1000
-		skillTimes[3] 	= skilldata.n32ActionTime * (modoldata["n32Skill1" .. "Time3"] or 0 ) / 1000
+		skillTimes[1] 	= modoldata["n32Skill1" .. "Time1"] or 0  
+		skillTimes[2] 	= modoldata["n32Skill1" .. "Time2"] or  0 
+		skillTimes[3] 	= modoldata["n32Skill1" .. "Time3"] or 0 
 	else
 		--普通攻击
 		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
@@ -535,36 +560,13 @@ function Ientity:castSkill(id)
 	local tmpSpell = self.spell
 	if skilldata.bCommonSkill == true then
 		tmpSpell = self.attackSpell
-	end
-	co = coroutine.create(function(cmd)
-		assert(cmd)
-		while(1) do
-			if cmd == "getdata" then
-				local newcmd = coroutine.yield(skilldata)
-				cmd = newcmd
-			elseif cmd == "run" then
-				break
-			else
-				assert(nil)
-			end
-		end
 		tmpSpell:init(skilldata,skillTimes)
 		print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
-		self.castSkillId = id
 		self.cooldown:addItem(id) --加入cd
 		tmpSpell:Cast(id,target,pos)
 		self:stand()
 		self:advanceEventStamp(EventStampType.CastSkill)
-	end)
-	local type_target = math.floor(skilldata.n32Type / 10)
-	local type_range = math.floor(skilldata.n32Type % 10)
-	if type_range == 3 or type_range == 4 then
-		--挂起
-		self.spell_co = co
-	else
-		--立即释放
-		coroutine.resume(co,"run")
-	end 	
+	end
 	return 0
 end
 

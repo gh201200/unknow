@@ -6,4 +6,7 @@ function transform:ctor(pos, dir)
 	self.pos = pos or vector3.create()
 	self.dir = dir or vector3.create()
 end
+function transform:getType()
+	return "transform"
+end
 return transform

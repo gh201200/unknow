@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SkillEffect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<info id="30001">
+		<n32Type>1</n32Type>
+		<szTypeInfo>对单体敌方目标效果</szTypeInfo>
+		<szName>普攻</szName>
+		<szDescribe>轰击目标，对其造成伤害
+等级1：造成150%攻击力+100+2倍智力的伤害</szDescribe>
+		<szMyAffect></szMyAffect>
+		<szTargetAffect>[ap:1.5,100,0,0,60001],[inte:2]</szTargetAffect>
+		<n32TargetType>1</n32TargetType>
+	</info>
 	<info id="30101">
 		<n32Type>1</n32Type>
 		<szTypeInfo>对单体敌方目标效果</szTypeInfo>
 		<szName>落雷</szName>
 		<szDescribe>轰击目标，对其造成伤害
-等级1：造成150%攻击力+100+2倍智力的伤害</szDescribe>
+		等级1：造成150%攻击力+100+2倍智力的伤害</szDescribe>
 		<szMyAffect>[ap:1.5,100,0,0,60001],[inte:2]</szMyAffect>
 		<szTargetAffect>[ap:1.5,100,0,0,60001],[inte:2]</szTargetAffect>
 		<n32TargetType>1</n32TargetType>
-	</info>
-	<info id="30102">
+</info>
+<info id="30102">
 		<n32Type>1</n32Type>
 		<szName>变羊</szName>
 		<szDescribe>使目标变成小羊，没有护甲并缓慢移动
