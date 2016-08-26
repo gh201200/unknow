@@ -79,6 +79,10 @@ function CMD.lockTarget(response,agent, account_id, args)
 		print("target is not nil")
 		print(target.pos.x)	
 	end
+	if player.CastSkillId == 0 then
+		--默认设置普攻
+		player.CastSkillId = 30001
+	end
 	player:setTarget(target)
 	local err = 0
 	response(true, { errorcode =  err })

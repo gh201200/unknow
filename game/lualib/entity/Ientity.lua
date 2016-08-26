@@ -166,7 +166,6 @@ end
 function Ientity:setTargetPos(target)
 	target.x = target.x/GAMEPLAY_PERCENT
 	target.z = target.z/GAMEPLAY_PERCENT
-	
 	--self.target:set(target.x, 0, target.z)
 	local pos = vector3.create(target.x,0,target.z)
 	self:setTarget(transfrom.new(pos,nil))
@@ -180,8 +179,8 @@ function Ientity:update(dt)
 	self:recvHpMp(dt)
 	--技能相关
 	if self.CastSkillId ~= 0 then	
-			print("self.CastSkillId" ,self.CastSkillId)
-			if self:canCast(self.CastSkillId) == 0 then
+	--	print("self.CastSkillId" ,self.CastSkillId)
+		if self:canCast(self.CastSkillId) == 0 then
 			self:castSkill(self.CastSkillId)
 		end
 	end
@@ -239,8 +238,11 @@ end
 --强制设置位置（闪现,击飞,回城等）
 function Ientity:forcePosition(des)
 	--先判定des位置是否超过地图范围
-	self:stand()
+	--self:stand()
 	self.pos:set(des.x,des.y,des.z)
+	self.curActionState = 8--ActionState.blink
+	--强制更新位置	
+	self:advanceEventStamp(EventStampType.Move)
 end
 
 function Ientity:onDead()
@@ -482,13 +484,11 @@ end
 
 
 function Ientity:canCast(id)
-	print("Ientity:canCast",id)
-	if id == 0 then return 0 end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if skilldata.bNeedTarget == true then
-		if self.target == nil and self.target:getType() ~= "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
-		if self.getDistance(target) > skilldata.n32range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
+		if self.target == nil or self.target:getType() == "transform1111" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		if self:getDistance(self.target) > skilldata.n32Range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
 	end
 	
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
@@ -518,9 +518,7 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	print("111111",self.CastSkillId)
 	self.CastSkillId = id
-	print("",self.CastSkillId)
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
         print("castskill error",errorcode)
@@ -538,7 +536,7 @@ function Ientity:setCastSkillId(id)
 end
 function Ientity:castSkill()
 	local id = self.CastSkillId
-	self.CastSkillId = 0
+	--self.CastSkillId = 0
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = g_shareData.heroModolRepository[self.modolId]
 	assert(skilldata and modoldata)
@@ -559,13 +557,14 @@ function Ientity:castSkill()
 	local tmpSpell = self.spell
 	if skilldata.bCommonSkill == true then
 		tmpSpell = self.attackSpell
-		tmpSpell:init(skilldata,skillTimes)
-		print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
-		self.cooldown:addItem(id) --加入cd
-		tmpSpell:Cast(id,target,pos)
-		self:stand()
-		self:advanceEventStamp(EventStampType.CastSkill)
 	end
+	tmpSpell:init(skilldata,skillTimes)
+	print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
+	self.cooldown:addItem(id) --加入cd
+	tmpSpell:Cast(id,target,pos)
+	self:stand()
+	self:advanceEventStamp(EventStampType.CastSkill)
+	self.CastSkillId = 0 
 	return 0
 end
 

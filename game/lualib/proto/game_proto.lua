@@ -151,7 +151,7 @@ query_event_affect 7 {
 	response {
 		event_stamp 0 : EventStamp
 		affectNum 1 : integer
-		affectLists 22 : *Affect
+		affectList 2 : *Affect
 	}
 }
 login 101 {

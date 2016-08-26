@@ -24,6 +24,7 @@ ActionState = {
 	spell1				= 5,	--技能第一段 
 	spell2				= 6,	--技能第二段
 	idle				= 7,	--controled by buff 
+	blink				= 8,
 }
 
 HpMpMask = {

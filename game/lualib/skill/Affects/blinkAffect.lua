@@ -6,6 +6,9 @@ function blinkAffect:ctor(entity,source,data)
 	self.distance = self.data[2] or 0
 	self.effectId = self.data[3]
 	self.effectTime = 1000
+	
+	self.effectId = 100002
+	self.distance = 1
 end
 
 function blinkAffect:onEnter()
@@ -13,8 +16,9 @@ function blinkAffect:onEnter()
 	self.super.onEnter(self)	
 	local distance  = 2 --闪现距离
 	local vec = self.owner.dir:return_mul_num(distance)
-	local  des = self.owner.pos:return_add(vec)
+	local  des = self.owner.target.pos--self.owner.pos:return_add(vec)
 	self.owner:forcePosition(des)
+
 end
 
 function blinkAffect:onExec(dt)
