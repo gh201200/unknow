@@ -205,7 +205,7 @@ function CMD.disconnect ()
 end
 
 function CMD.getmatchinfo()
-	local tb = {agent = skynet.self(),account = user.account_id, score = 10, nickname = "test",time = 0,range = 0}
+	local tb = {agent = skynet.self(),account = user.account.account_id, score = 10, nickname = "test",time = 0,range = 0}
 	return tb
 end
 

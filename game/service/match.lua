@@ -29,6 +29,7 @@ end
 function CMD.requestMatch(response,agent)
 	print("CMD.requestMatch")
 	local arg = skynet.call(agent,"lua","getmatchinfo")
+	print("arg",arg)
 	if reverseMatchers[arg.account] ~= nil then
 		print(arg.account,"already in match list")
 		return

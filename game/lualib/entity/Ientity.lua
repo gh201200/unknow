@@ -210,8 +210,6 @@ function Ientity:move(dt)
 	self.dir:set(self.target.pos.x, self.target.pos.y, self.target.pos.z)
 	self.dir:sub(self.pos)
 	self.dir:normalize(self.moveSpeed * dt)
-	
-
 	local dst = self.pos:return_add(self.dir)
 		
 	repeat
@@ -230,6 +228,7 @@ function Ientity:move(dt)
 		self.pos:set(dst.x, dst.y, dst.z)
 		if IS_SAME_GRID(self.target.pos,  dst) then
 			self:stand()
+			break
 		end
 	until true
 

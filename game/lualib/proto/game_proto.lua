@@ -232,7 +232,14 @@ castskill 202 {
 		errorcode 0 :integer
 	}
 }
-
+lockTarget 203 {
+	request {
+		serverid 0 : integer
+	}
+	response {
+		errorcode 0 : integer
+	}
+ }
 explore_goFight 300 {
 	request {
 		uuid 0 : string
