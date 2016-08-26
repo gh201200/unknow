@@ -28,6 +28,7 @@ function Map:ctor()
 end
 
 function Map:get(x, z)
+	print("Map:get",x,z)
 	local gx = POS_2_GRID(x)
 	local gz = POS_2_GRID(z)
 	if gz < 0 or gz > MAP_ZGRID_NUM then return false end

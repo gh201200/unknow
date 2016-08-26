@@ -70,6 +70,19 @@ function CMD.castskill(response,agent, account_id, args)
 	response(true, { errorcode =  err })
 end
 
+function CMD.lockTarget(response,agent, account_id, args)
+	print("CMD.lockTarget",args)
+	local player = EntityManager:getPlayerByPlayerId(account_id)
+	local serverid = args.serverid
+	local target = EntityManager:getEntity(serverid)
+	if target ~= nil then 
+		print("target is not nil")
+		print(target.pos.x)	
+	end
+	player:setTarget(target)
+	local err = 0
+	response(true, { errorcode =  err })
+end
 
 function CMD.query_server_id(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
