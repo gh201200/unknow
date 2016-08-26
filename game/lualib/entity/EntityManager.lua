@@ -1,9 +1,19 @@
+local skynet = require "skynet"
 require "globalDefine"
 local IMapPlayer = require "entity.IMapPlayer"
 local Imonster = require "entity.Imonster"
 local vector3 = require "vector3"
 
 local EntityManager = class("EntityManager")
+
+function EntityManager:sendToAllPlayers(msg, val, except)
+	if not except then except = "" end
+	for k, v in pairs(self.entityList) do
+		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then
+			skynet.call(v.agent, "sendRequest", msg, val)
+		end
+	end
+end
 
 
 function EntityManager:ctor(p)

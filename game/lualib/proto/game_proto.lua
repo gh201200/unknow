@@ -72,6 +72,13 @@ local types = [[
 	power 3 : integer
 }
 
+.spawn {
+	monsterId 0 : integer
+	serverId 1 : integer
+	posx 2 : integer
+	posz 3 : integer
+
+}
 ]]
 
 local c2s = [[
@@ -309,6 +316,13 @@ quitPick 104 {
 }
 
 
+
+#战斗相关消息定义
+spawnmonsters 201 {
+	request {
+		spawnList 0 : *spawn
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)

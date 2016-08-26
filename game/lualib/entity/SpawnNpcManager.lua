@@ -28,15 +28,28 @@ function SpawnNpcManager:update(dt)
 			if v.remainTime <= 0 then
 				print("begin spawn the monster: "..v.dat.id)
 				v.batch = v.batch + 1
+				local ret = {}
+				
 				for p, q in pairs(v.dat.szMonsterIds) do
-					EntityManager:createMonster(assin_server_id(), {
+					local sid = assin_server_id()
+					EntityManager:createMonster(sid, {
 						id = q, 
-						px = v.dat.szPosition[p].x/10, 
-						pz = v.dat.szPosition[p].z/10,
+						px = v.dat.szPosition[p].x/GAMEPLAY_PERCENT, 
+						pz = v.dat.szPosition[p].z/GAMEPLAY_PERCENT,
 						v.batch,			
 					})
-					
+					local m = {
+						monsterId = q,
+						serverId = sid,
+						px = v.dat.szPosition[p].x,
+						py = v.dat.szPosition[p].z,
+					}
+					table.insert(ret, m)
 				end
+					
+				--tell the clients
+				EntityManager:sendToAllPlayers("spawnmonsters", {spawnList = ret})
+				
 				v.remaintime = v.dat.n32CDtime
 				v.dat = g_shareData.spawnMonsterResp[v.dat.n32NextBatch]
 				spawnOvrer = true
