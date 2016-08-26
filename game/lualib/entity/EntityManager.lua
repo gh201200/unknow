@@ -11,7 +11,9 @@ function EntityManager:sendToAllPlayers(msg, val, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
 		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then
-			skynet.call(v.agent, "sendRequest", msg, val)
+			print(msg)
+			print(val)
+			skynet.call(v.agent, "lua", "sendRequest", msg, val)
 		end
 	end
 end
