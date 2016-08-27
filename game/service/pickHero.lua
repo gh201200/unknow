@@ -7,11 +7,9 @@ local players = {}
 local max_pickTime = 30
 
 local function enterMap()
-	print(players)
-	
 	local mapserver = skynet.newservice ("room")
 	skynet.call(mapserver, "lua", "start", players)
-	skynet.exit()		
+	skynet.exit()
 end
 
 local function quitPick()
@@ -32,6 +30,8 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.init(response,playerTb)
+	print('init')
+	print(playerTb)
 	for _k,_v in pairs(playerTb) do
 		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0 ,confirmheroid = 0 ,color = 1 }
 	end

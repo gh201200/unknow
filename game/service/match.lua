@@ -63,7 +63,6 @@ end
 --处理匹配到的人 account nickname agent
 local function handleMatch(t)
 	--返回 分组信息
-	print("handleMatch")
 	local s_pickHero =  skynet.newservice "pickHero"
 	table.insert(s_pickHeros,s_pickHero)
 	skynet.call(s_pickHero,"lua","init",t)

@@ -35,6 +35,8 @@ local user_fd
 local session = {}
 local session_id = 0
 local function send_request (name, args)
+	print(name)
+	print(args)
 	session_id = session_id + 1
 	local str = proto_request (name, args, session_id)
 	send_msg (user_fd, str)
