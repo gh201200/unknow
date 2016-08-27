@@ -99,15 +99,11 @@ function CMD.query_server_id(response,agent, account_id, args)
 end
 
 function CMD.start(response, args)
-	response(true, nil)
-
-	print('ooooooooooooooooooooooooo')
-	print(args)	
 
 	for k, v in pairs (args) do
 		EntityManager:createPlayer(v)
 	end
-
+	
 	local ret = {}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then
@@ -128,7 +124,7 @@ function CMD.start(response, args)
 	}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then
-			skynet.send(v.agent, "lua", "enterMap", skynet.self(), ret)
+			skynet.call(v.agent, "lua", "enterMap", skynet.self(), ret)
 		end
 	end
 	
@@ -141,7 +137,7 @@ function CMD.start(response, args)
 
 	SpawnNpcManager:init(roomId)
 
-	print('rrrrrrrrrrrrrrrrrrrrrrrrr')
+	response(true, nil)
 end
 
 local function init()
