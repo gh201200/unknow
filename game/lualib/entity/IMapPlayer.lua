@@ -12,6 +12,8 @@ function IMapPlayer:ctor()
 	self.account_id = ''		--same with user.account.account_id
 	self.entityType = EntityType.player
 	self.agent = 0
+	self.nickName = ''
+	self.color = 0
 	
 	print("IMapPlayer:ctor()")
 end

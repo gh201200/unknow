@@ -16,9 +16,10 @@ function SpawnNpcManager:init(mapId)
 		end
 	end
 end
-
+local test = false
 local spawnOver
 function SpawnNpcManager:update(dt)
+	if test then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
 	spawnOver = false
 	for k ,v in pairs(self.groups) do
@@ -41,18 +42,20 @@ function SpawnNpcManager:update(dt)
 					local m = {
 						monsterId = q,
 						serverId = sid,
-						px = v.dat.szPosition[p].x,
-						py = v.dat.szPosition[p].z,
+						posx = v.dat.szPosition[p].x,
+						posz = v.dat.szPosition[p].z,
 					}
 					table.insert(ret, m)
 				end
 					
 				--tell the clients
-				EntityManager:sendToAllPlayers("spawnmonsters", {spawnList = ret})
+				EntityManager:sendToAllPlayers("spawnMonsters", {spawnList = ret})
 				
 				v.remaintime = v.dat.n32CDtime
 				v.dat = g_shareData.spawnMonsterResp[v.dat.n32NextBatch]
 				spawnOvrer = true
+				test = true
+				break
 			end
 		end
 	end

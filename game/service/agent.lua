@@ -223,8 +223,7 @@ function CMD.enterMap(map,arg)
 	print("CMD.enterMap")
 	request_hijack_msg(map)
 	user.MAP = map
-	skynet.call(map,"lua","entity_enter",skynet.self(),arg)
-	send_request("beginEnterPvpMap",{}) --开始准备切图
+	send_request("beginEnterPvpMap", arg) --开始准备切图
 end
 
 skynet.start (function ()

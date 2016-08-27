@@ -11,8 +11,6 @@ function EntityManager:sendToAllPlayers(msg, val, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
 		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then
-			print(msg)
-			print(val)
 			skynet.call(v.agent, "lua", "sendRequest", msg, val)
 		end
 	end
@@ -40,12 +38,13 @@ function EntityManager:update(dt)
 	end
 end
 
-function EntityManager:createPlayer(agent,arg)
+function EntityManager:createPlayer(arg)
 	--{ account = _v.account, pickedheroid = , nickname = _v.nickname, color = }	
 	local player = IMapPlayer.new()
 	player.serverId = assin_server_id() 
 	player.account_id= arg.account
-	player.agent = agent
+	player.agent = arg.agent
+	player.nickName = arg.nickname
 	player.color = arg.color 	--红方 蓝方 -1 -2 -3 和 1 2 3表示 以及出生位置
 	player:init(arg.pickedheroid)
 	table.insert(self.entityList, player)

@@ -79,6 +79,13 @@ local types = [[
 	posz 3 : integer
 
 }
+
+.LoadHero {
+	serverId 0 : integer
+	heroId 1 : integer
+	name 2 : string
+	color 3 : integer
+}
 ]]
 
 local c2s = [[
@@ -206,10 +213,9 @@ confirmHero 111 {
 	}
 }
 
-getCardsDatas 112 {
-	response {
-		cardNum 0 : integer
-		cardsList 1 : *card
+loadingRes 112 {
+	request {
+		percent 0 : integer
 	}
 }
 
@@ -304,6 +310,8 @@ pickedhero 100 {
 }
 beginEnterPvpMap 101 {
 	request {
+		roomId 0 : integer
+		heroInfoList 1 : *LoadHero
 	}
 }
 synPickTime 102 {
@@ -325,10 +333,13 @@ quitPick 104 {
 
 
 #战斗相关消息定义
-spawnmonsters 201 {
+spawnMonsters 201 {
 	request {
 		spawnList 0 : *spawn
 	}
+}
+
+fightBegin 202 {
 }
 ]]
 

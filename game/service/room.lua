@@ -12,6 +12,7 @@ local traceback  = debug.traceback
 local last_update_time = nil
 
 
+
 --dt is ms
 local function updateMapEvent()
 	local nt = skynet.now()
@@ -49,6 +50,7 @@ function CMD.hijack_msg(response,agent)
 	end
 	response(true, ret )
 end
+
 
 function CMD.entity_enter(response,agent,arg)
 	print('entity_enter: ',arg)
@@ -100,13 +102,56 @@ function CMD.query_server_id(response,agent, account_id, args)
 	end
 end
 
-local function init()
+function CMD.start(response, args)
+	response(true, nil)
+
+	print('ooooooooooooooooooooooooo')
+	print(args)	
+
+	for k, v in pairs (args) do
+		EntityManager:createPlayer(v)
+	end
+
+	local ret = {}
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player  then
+			local LoadHero = {
+				serverId = v.serverId,
+				heroId = v.attDat.id,
+				name = v.nickName,
+				color = v.color
+			}
+			table.insert(ret, LoadHero)
+		end
+	end
+
+	local roomId = 1
+	local ret = {
+		roomId = roomId,
+		heroInfoList = ret,
+	}
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player  then
+			skynet.send(v.agent, "lua", "enterMap", skynet.self(), ret)
+		end
+	end
+	
+	--这里跳过loading流程
+	EntityManager:sendToAllPlayers("fightBegin")
+
 	--every 0.03s update entity
 	skynet.timeout(3, updateMapEvent)
 	last_update_time = skynet.now()
+
+	SpawnNpcManager:init(roomId)
+
+	print('rrrrrrrrrrrrrrrrrrrrrrrrr')
+end
+
+local function init()
 	register_query_event_func()
 	g_shareData  = sharedata.query "gdd"
-	SpawnNpcManager:init(1)
+
 end
 
 
