@@ -7,10 +7,10 @@ local players = {}
 local max_pickTime = 30
 
 local function enterMap()
+	print(players)
+	
 	local mapserver = skynet.newservice ("room")
-	for _agent,_v in pairs(players) do
-		skynet.call(_agent,"lua","enterMap",mapserver,_v)
-	end
+	skynet.call(mapserver, "lua", "start", players)
 	skynet.exit()		
 end
 
