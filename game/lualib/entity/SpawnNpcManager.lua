@@ -16,10 +16,12 @@ function SpawnNpcManager:init(mapId)
 		end
 	end
 end
-local test = false
-local spawnOver
+local test = 0
+local spawnOver = false
 function SpawnNpcManager:update(dt)
-	if test then return end
+	if spawnOver then return end
+	test = test + dt
+	if test < 1000 then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
 	spawnOver = false
 	for k ,v in pairs(self.groups) do
@@ -54,7 +56,6 @@ function SpawnNpcManager:update(dt)
 				v.remaintime = v.dat.n32CDtime
 				v.dat = g_shareData.spawnMonsterResp[v.dat.n32NextBatch]
 				spawnOvrer = true
-				test = true
 				break
 			end
 		end

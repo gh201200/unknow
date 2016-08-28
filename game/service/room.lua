@@ -139,7 +139,7 @@ function CMD.start(response, args)
 	skynet.timeout(3, updateMapEvent)
 	last_update_time = skynet.now()
 
-	--SpawnNpcManager:init(roomId)
+	SpawnNpcManager:init(roomId)
 
 	response(true, nil)
 end
