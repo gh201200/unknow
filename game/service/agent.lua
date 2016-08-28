@@ -35,6 +35,7 @@ local user_fd
 local session = {}
 local session_id = 0
 local function send_request (name, args)
+	print('hhhhhhhhhhhhhhhhhhhhhhhhhhh')
 	print(name)
 	print(args)
 	session_id = session_id + 1
@@ -207,12 +208,11 @@ function CMD.disconnect ()
 end
 
 function CMD.getmatchinfo()
-	local tb = {agent = skynet.self(),account = user.account.account_id, score = 10, nickname = "test",time = 0,range = 0}
+	local tb = {agent = skynet.self(),account = user.account.account_id, score = 10, nickname = user.account:getNickName(),time = 0,range = 0}
 	return tb
 end
 
 function CMD.sendRequest (name, args)
-	print("sendRequest", name, args)
 	send_request(name, args)
 end
 --进入选英雄服务

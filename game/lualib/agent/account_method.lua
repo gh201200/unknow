@@ -15,6 +15,10 @@ local AccountMethod =
 		syslog.infof("player[%s]:setNickName:%s", self.account_id, name)
 	end;
 	--
+	getNickName = function(self)
+		return self.unit.nick
+	end;
+	--
 	addGold = function(self, _gold)
 		local nv = self.unit.gold + _gold
 		if nv < 0 then return end
