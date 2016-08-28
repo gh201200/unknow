@@ -57,10 +57,15 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
 	print("EventStampType.CastSkill",serverId,player.CastSkillId)
 	local skillid = player.CastSkillId
+	local targetId = 0
+	if player.target ~= nil and player.target:getType() ~= "transform" then
+		targetId = player.target.serverId
+	end
 	local errorCode = player.spell.errorCode
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		skillId = skillid,
+		targetId = targetId,
 		errorCode = errorCode 
 }
 	return r

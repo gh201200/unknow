@@ -115,7 +115,8 @@ query_event_CastSkill 3 {
 	}
 	response {
 		event_stamp 0 : EventStamp
-		skillId 1 : integer 
+		skillId 1 : integer
+		targetId 2 : integer 
 	}
 }
 

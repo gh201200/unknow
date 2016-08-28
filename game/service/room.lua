@@ -61,7 +61,6 @@ end
 
 function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	print("CMD.move")
 	player:setTargetPos(args.target)
 	response(true, nil)
 end

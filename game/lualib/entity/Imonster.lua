@@ -23,6 +23,8 @@ function IMonster:getType()
 end
 function IMonster:init(mt)
 	self.attDat = g_shareData.monsterRepository[mt.id]
+	mt.px = 2
+	mt.pz = 2
 	self.pos:set(mt.px, 0, mt.pz)
 	self.bornPos:set(mt.px, 0, mt.pz)
 	self:calcStats()
