@@ -34,9 +34,6 @@ local function register_stats(t, name)
 		return self['s_'..name] 
 	end
 end
-function Ientity:getType()
-        return "Ientity"
-end
 function Ientity:ctor(pos,dir)
 	--print("Ientity:ctor")
 	print("Ientity:ctor")
@@ -66,7 +63,8 @@ function Ientity:ctor(pos,dir)
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
-	self.CastSkillId = 0 --释放技能的id
+	self.CastSkillId = 0 	--正在释放技能的id
+	self.ReadySkillId = 0	--准备释放技能的iastSkillId
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
@@ -106,6 +104,9 @@ function Ientity:ctor(pos,dir)
 	self.StatsChange = false	--just for merging the resp of stats
 end
 
+function Ientity:getType()
+	return "Ientity"
+end
 
 function Ientity:advanceEventStamp(event)
 	if not self.serverEventStamps[event] then
@@ -153,7 +154,7 @@ function Ientity:setTarget(target)
 	if self.affectTable:canControl() == false then return end		--不受控制状态
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	if self.attackSpell:canBreak(ActionState.move) == false then return end	
-	if Map:get(target.pos.x, target.pos.z) == false then return end	
+	--if Map:get(target.pos.x, target.pos.z) == false then return end	
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
@@ -178,10 +179,9 @@ function Ientity:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
 	--技能相关
-	if self.CastSkillId ~= 0 then	
-	--	print("self.CastSkillId" ,self.CastSkillId)
-		if self:canCast(self.CastSkillId) == 0 then
-			self:castSkill(self.CastSkillId)
+	if self.ReadySkillId ~= 0 then	
+		if self:canCast(self.ReadySkillId) == 0 then
+			self:castSkill(self.ReadySkillId)
 		end
 	end
 	--add code before this
@@ -244,7 +244,11 @@ function Ientity:forcePosition(des)
 	--强制更新位置	
 	self:advanceEventStamp(EventStampType.Move)
 end
-
+--进入待机状态
+function Ientity:enterIdle()
+	self.curActionState =  ActionState.stand
+	self:advanceEventStamp(EventStampType.Move)
+end
 function Ientity:onDead()
 end
 
@@ -487,7 +491,7 @@ function Ientity:canCast(id)
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if skilldata.bNeedTarget == true then
-		if self.target == nil or self.target:getType() == "transform1111" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		if self.target == nil or self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 		if self:getDistance(self.target) > skilldata.n32Range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
 	end
 	
@@ -518,7 +522,7 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	self.CastSkillId = id
+	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
         print("castskill error",errorcode)
@@ -531,17 +535,18 @@ function Ientity:setCastSkillId(id)
 		if errorcode ~= 0 then
 			return errorcode
 		end
-		self.castSkill()
+		--self.castSkill()
 	end
 end
 function Ientity:castSkill()
+	self.CastSkillId = self.ReadySkillId
+	self.ReadySkillId = 0
 	local id = self.CastSkillId
-	--self.CastSkillId = 0
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = g_shareData.heroModolRepository[self.modolId]
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
-	print("castskill error",errorcode)
+	print("cast castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}	
 	if skilldata.bCommonSkill == false then
@@ -563,8 +568,8 @@ function Ientity:castSkill()
 	self.cooldown:addItem(id) --加入cd
 	tmpSpell:Cast(id,target,pos)
 	self:stand()
+	print("=============advanceEventStamp(EventStampType.CastSkill)")
 	self:advanceEventStamp(EventStampType.CastSkill)
-	self.CastSkillId = 0 
 	return 0
 end
 

@@ -5,9 +5,9 @@
 			<szMod_name>gui_wu_shi_001_ty</szMod_name>
 			<n32Hight>2000</n32Hight>
 			<n32Radius>500</n32Radius>
-			<n32AttackTime1>4000</n32AttackTime1>
-			<n32AttackTime2>5000</n32AttackTime2>
-			<n32AttackTime3>5000</n32AttackTime3>
+			<n32AttackTime1>400</n32AttackTime1>
+			<n32AttackTime2>500</n32AttackTime2>
+			<n32AttackTime3>500</n32AttackTime3>
 			
 			<n32Skill1Time1>70</n32Skill1Time1>
 			<n32Skill1Time2>930</n32Skill1Time2>
@@ -20,9 +20,9 @@
 			<szMod_name>gui_wu_shi_001_ty</szMod_name>
 			<n32Hight>2000</n32Hight>
 			<n32Radius>500</n32Radius>
-			<n32AttackTime1>4000</n32AttackTime1>
-			<n32AttackTime2>5000</n32AttackTime2>
-			<n32AttackTime3>5000</n32AttackTime3>
+			<n32AttackTime1>400</n32AttackTime1>
+			<n32AttackTime2>500</n32AttackTime2>
+			<n32AttackTime3>500</n32AttackTime3>
 			<n32Skill1Time1>400</n32Skill1Time1>
 			<n32Skill1Time2>600</n32Skill1Time2>
 			<n32Skill2Time1>400</n32Skill2Time1>

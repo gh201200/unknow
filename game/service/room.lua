@@ -61,6 +61,7 @@ end
 
 function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
+	print("CMD.move")
 	player:setTargetPos(args.target)
 	response(true, nil)
 end
@@ -81,10 +82,11 @@ function CMD.lockTarget(response,agent, account_id, args)
 		print("target is not nil")
 		print(target.pos.x)	
 	end
-	if player.CastSkillId == 0 then
+	if player.ReadySkillId == 0 then
 		--默认设置普攻
-		player.CastSkillId = 30001
+		player.ReadySkillId = 30001
 	end
+	print("lockTarget",target:getType())
 	player:setTarget(target)
 	local err = 0
 	response(true, { errorcode =  err })
