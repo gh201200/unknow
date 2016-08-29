@@ -10,6 +10,9 @@ local EventStampHandle = {}
 
 function EventStampHandle.createHandleCoroutine(serverId, event, response)
 	local entity = EntityManager:getEntity( serverId )
+	if entity == nil then
+		print("==============create serverid",serverId)
+	end
 	if not entity.coroutine_pool[event] then
 		local co = coroutine.create(function(...)
 			repeat

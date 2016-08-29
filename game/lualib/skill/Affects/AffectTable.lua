@@ -78,7 +78,9 @@ function AffectTable:buildAffects(source,dataStr)
 		end
 		self:addAffect(source,data) 
 	end
+	print("buildAffects========================")
 	self.owner:advanceEventStamp(EventStampType.Affect)		
+	print("buildAffects========================i111")
 end
 
 
