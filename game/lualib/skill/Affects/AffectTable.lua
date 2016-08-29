@@ -77,7 +77,8 @@ function AffectTable:buildAffects(source,dataStr)
 			end 
 		end
 		self:addAffect(source,data) 
-	end	
+	end
+	self.owner:advanceEventStamp(EventStampType.Affect)		
 end
 
 

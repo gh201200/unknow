@@ -185,7 +185,9 @@ end
 function spell:onEnd()
 	if self.endTime < 0 then
 		print("onNone",skynet.now())
-		self.status = SpellStatus.None
+		self.status = SpellStatus.None	
+		self.source.CastSkillId = 0
+		self.source:enterIdle()	
 	end
 
 end

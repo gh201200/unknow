@@ -7,6 +7,7 @@ local vector3 = require "vector3"
 local EntityManager = class("EntityManager")
 
 function EntityManager:sendToAllPlayers(msg, val, except)
+	--if true then return end
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
 		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then

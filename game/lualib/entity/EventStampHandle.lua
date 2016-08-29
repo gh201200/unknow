@@ -46,7 +46,6 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
-		
 		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
 		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)},			
 		action = player.curActionState,	
@@ -58,10 +57,15 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
 	print("EventStampType.CastSkill",serverId,player.CastSkillId)
 	local skillid = player.CastSkillId
+	local targetId = 0
+	if player.target ~= nil and player.target:getType() ~= "transform" then
+		targetId = player.target.serverId
+	end
 	local errorCode = player.spell.errorCode
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		skillId = skillid,
+		targetId = targetId,
 		errorCode = errorCode 
 }
 	return r
@@ -122,16 +126,17 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 	print("EventStampHandle : EventStampType.Affect")
 	local player = EntityManager:getEntity(serverId)
 	local r = {
-		 event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
+		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		affectNum = 0,  
 		affectList = { }	 
 	}
-	r.affectNum = #player.AffectTable.affects
-	for i=#player.AffectTable.affects,1,-1 do
-		local v = player.AffectTable.affects[i]
+	r.affectNum = #(player.affectTable.affects)
+	for i=#player.affectTable.affects,1,-1 do
+		local v = player.affectTable.affects[i]
 		assert(v and v.effectId)
 		table.insert(r.affectList, {effectId = v.effectId , effectTime = v.effectTime })
 	end
+	print("EventStampType r3",r)
 	return r
 end
 

@@ -2,12 +2,12 @@
 <SkillDatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<info id="30001">
 		<bActive>1</bActive>
-		<bNeedTarget>0</bNeedTarget>
+		<bNeedTarget>1</bNeedTarget>
 		<bCommonSkill>1</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32Range>6</n32Range>
+		<n32Range>1</n32Range>
 		<n32MpCost>0</n32MpCost>
 		<n32CD>1000</n32CD>
 		<n32TriggerTime>400</n32TriggerTime>
@@ -18,7 +18,7 @@
 	</info>
 	<info id="30101">
 		<bActive>1</bActive>
-		<bNeedTarget>0</bNeedTarget>
+		<bNeedTarget>1</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
@@ -33,14 +33,14 @@
 	</info>
 	<info id="30102">
 		<bActive>1</bActive>
-		<bNeedTarget>0</bNeedTarget>
+		<bNeedTarget>1</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>1000</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>

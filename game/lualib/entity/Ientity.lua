@@ -34,21 +34,16 @@ local function register_stats(t, name)
 		return self['s_'..name] 
 	end
 end
-function Ientity:getType()
-        return "Ientity"
-end
 function Ientity:ctor(pos,dir)
 	--print("Ientity:ctor")
 	print("Ientity:ctor")
 	Ientity.super.ctor(self,pos,dir)
-	self.serverId = 0		--it is socket fd
 	--entity world data about
 	self.entityType = 0
 	self.serverId = 0
 	register_class_var(self, 'Level', 1)
 	self.modolId = 8888	--模型id	
 	
-
 	self.target =  nil --选中目标实体
 	self.moveSpeed = 0
 	self.curActionState = 0 
@@ -66,7 +61,8 @@ function Ientity:ctor(pos,dir)
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
-	self.CastSkillId = 0 --释放技能的id
+	self.CastSkillId = 0 	--正在释放技能的id
+	self.ReadySkillId = 0	--准备释放技能的iastSkillId
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
@@ -106,6 +102,9 @@ function Ientity:ctor(pos,dir)
 	self.StatsChange = false	--just for merging the resp of stats
 end
 
+function Ientity:getType()
+	return "Ientity"
+end
 
 function Ientity:advanceEventStamp(event)
 	if not self.serverEventStamps[event] then
@@ -153,7 +152,7 @@ function Ientity:setTarget(target)
 	if self.affectTable:canControl() == false then return end		--不受控制状态
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	if self.attackSpell:canBreak(ActionState.move) == false then return end	
-	if Map:get(target.pos.x, target.pos.z) == false then return end	
+	--if Map:get(target.pos.x, target.pos.z) == false then return end	
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
@@ -166,7 +165,6 @@ end
 function Ientity:setTargetPos(target)
 	target.x = target.x/GAMEPLAY_PERCENT
 	target.z = target.z/GAMEPLAY_PERCENT
-	
 	--self.target:set(target.x, 0, target.z)
 	local pos = vector3.create(target.x,0,target.z)
 	self:setTarget(transfrom.new(pos,nil))
@@ -178,13 +176,6 @@ function Ientity:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
-	--技能相关
-	if self.CastSkillId ~= 0 then	
-			print("self.CastSkillId" ,self.CastSkillId)
-			if self:canCast(self.CastSkillId) == 0 then
-			self:castSkill(self.CastSkillId)
-		end
-	end
 	--add code before this
 	if self.HpMpChange then
 		self:advanceEventStamp(EventStampType.Hp_Mp)
@@ -202,6 +193,12 @@ function Ientity:update(dt)
 		--站立状态
 		
 	end
+	--技能相关
+	if self.ReadySkillId ~= 0 then	
+		if self:canCast(self.ReadySkillId) == 0 then
+			self:castSkill(self.ReadySkillId)
+		end
+	end
 end
 
 function Ientity:move(dt)
@@ -216,8 +213,8 @@ function Ientity:move(dt)
 		--check iegal
 		if IS_SAME_GRID(self.pos, dst) == false then
 			if Map:get(dst.x, dst.z) == false then
-				self:stand()
-				break
+				--self:stand()
+				--break
 			end
 			-- mark the map
 			Map:set(self.pos.x, self.pos.z, true)
@@ -239,10 +236,17 @@ end
 --强制设置位置（闪现,击飞,回城等）
 function Ientity:forcePosition(des)
 	--先判定des位置是否超过地图范围
-	self:stand()
+	--self:stand()
 	self.pos:set(des.x,des.y,des.z)
+	self.curActionState = 8--ActionState.blink
+	--强制更新位置	
+	self:advanceEventStamp(EventStampType.Move)
 end
-
+--进入待机状态
+function Ientity:enterIdle()
+	self.curActionState =  ActionState.stand
+	self:advanceEventStamp(EventStampType.Move)
+end
 function Ientity:onDead()
 end
 
@@ -482,13 +486,11 @@ end
 
 
 function Ientity:canCast(id)
-	print("Ientity:canCast",id)
-	if id == 0 then return 0 end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if skilldata.bNeedTarget == true then
-		if self.target == nil and self.target:getType() ~= "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
-		if self.getDistance(target) > skilldata.n32range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
+		if self.target == nil or self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		if self:getDistance(self.target) > skilldata.n32Range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
 	end
 	
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
@@ -518,9 +520,7 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	print("111111",self.CastSkillId)
-	self.CastSkillId = id
-	print("",self.CastSkillId)
+	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
         print("castskill error",errorcode)
@@ -533,17 +533,18 @@ function Ientity:setCastSkillId(id)
 		if errorcode ~= 0 then
 			return errorcode
 		end
-		self.castSkill()
+		--self.castSkill()
 	end
 end
 function Ientity:castSkill()
+	self.CastSkillId = self.ReadySkillId
+	self.ReadySkillId = 0
 	local id = self.CastSkillId
-	self.CastSkillId = 0
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = g_shareData.heroModolRepository[self.modolId]
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
-	print("castskill error",errorcode)
+	print("cast castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}	
 	if skilldata.bCommonSkill == false then
@@ -559,13 +560,14 @@ function Ientity:castSkill()
 	local tmpSpell = self.spell
 	if skilldata.bCommonSkill == true then
 		tmpSpell = self.attackSpell
-		tmpSpell:init(skilldata,skillTimes)
-		print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
-		self.cooldown:addItem(id) --加入cd
-		tmpSpell:Cast(id,target,pos)
-		self:stand()
-		self:advanceEventStamp(EventStampType.CastSkill)
 	end
+	tmpSpell:init(skilldata,skillTimes)
+	print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
+	self.cooldown:addItem(id) --加入cd
+	tmpSpell:Cast(id,target,pos)
+	self:stand()
+	print("=============advanceEventStamp(EventStampType.CastSkill)")
+	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
 end
 

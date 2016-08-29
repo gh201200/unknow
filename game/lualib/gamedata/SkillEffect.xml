@@ -22,11 +22,11 @@
 </info>
 <info id="30102">
 		<n32Type>1</n32Type>
-		<szName>变羊</szName>
+		<szName>大招</szName>
 		<szDescribe>使目标变成小羊，没有护甲并缓慢移动
 等级1：持续1.5秒</szDescribe>
-		<szMyAffect>[mod_change:50001，1.5，60002],[def:-1],[mov:-0.8]</szMyAffect>
-		<szTargetAffect>[mod_change:50001，1.5，60002],[def:-1],[mov:-0.8]</szTargetAffect>
+		<szMyAffect>[blink:1,1,1]</szMyAffect>
+		<szTargetAffect></szTargetAffect>
 		<n32TargetType>1</n32TargetType>
 	</info>
 	<info id="30201">
