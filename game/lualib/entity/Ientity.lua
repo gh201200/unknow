@@ -44,7 +44,6 @@ function Ientity:ctor(pos,dir)
 	register_class_var(self, 'Level', 1)
 	self.modolId = 8888	--模型id	
 	
-
 	self.target =  nil --选中目标实体
 	self.moveSpeed = 0
 	self.curActionState = 0 
@@ -177,12 +176,6 @@ function Ientity:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
-	--技能相关
-	if self.ReadySkillId ~= 0 then	
-		if self:canCast(self.ReadySkillId) == 0 then
-			self:castSkill(self.ReadySkillId)
-		end
-	end
 	--add code before this
 	if self.HpMpChange then
 		self:advanceEventStamp(EventStampType.Hp_Mp)
@@ -200,6 +193,12 @@ function Ientity:update(dt)
 		--站立状态
 		
 	end
+	--技能相关
+	if self.ReadySkillId ~= 0 then	
+		if self:canCast(self.ReadySkillId) == 0 then
+			self:castSkill(self.ReadySkillId)
+		end
+	end
 end
 
 function Ientity:move(dt)
@@ -214,8 +213,8 @@ function Ientity:move(dt)
 		--check iegal
 		if IS_SAME_GRID(self.pos, dst) == false then
 			if Map:get(dst.x, dst.z) == false then
-				self:stand()
-				break
+				--self:stand()
+				--break
 			end
 			-- mark the map
 			Map:set(self.pos.x, self.pos.z, true)
