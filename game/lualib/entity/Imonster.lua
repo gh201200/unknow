@@ -15,6 +15,7 @@ function IMonster:ctor()
 	self.bornPos =  vector3.create()
 
 	register_class_var(self, "PreSkillData", nil)
+
 end
 
 function IMonster:getType()

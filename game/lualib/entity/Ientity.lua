@@ -63,6 +63,7 @@ function Ientity:ctor(pos,dir)
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
+
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
 	--stats about
@@ -252,7 +253,7 @@ end
 function Ientity:onDead()
 end
 
-function Ientity:addHp0(_hp, mask, source)
+function Ientity:addHp(_hp, mask, source)
 	if _hp < 0 then _hp = -1 end
 	print('addHp = '.._hp)
 	if _hp == 0 then return end

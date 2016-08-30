@@ -10,9 +10,6 @@ local EventStampHandle = {}
 
 function EventStampHandle.createHandleCoroutine(serverId, event, response)
 	local entity = EntityManager:getEntity( serverId )
-	if entity == nil then
-		print("==============create serverid",serverId)
-	end
 	if not entity.coroutine_pool[event] then
 		local co = coroutine.create(function(...)
 			repeat
@@ -139,7 +136,6 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 		assert(v and v.effectId)
 		table.insert(r.affectList, {effectId = v.effectId , effectTime = v.effectTime })
 	end
-	print("EventStampType r3",r)
 	return r
 end
 

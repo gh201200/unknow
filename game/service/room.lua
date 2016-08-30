@@ -38,13 +38,9 @@ local function register_query_event_func()
 	CMD.query_event_stats = query_event_func
 	CMD.query_event_hp_mp = query_event_func
 	CMD.query_event_CastSkill = query_event_func
-	--CMD.query_event_affect = query_event_func
+	CMD.query_event_affect = query_event_func
 end
 
-function CMD.query_event_affect(response,agent, account_id, args)
-	print("CMD.query_event_affect",args)
-	query_event_func(response,agent, account_id, args)
-end
 function CMD.hijack_msg(response,agent)
 	local ret = {}
 	for k, v in pairs(CMD) do
