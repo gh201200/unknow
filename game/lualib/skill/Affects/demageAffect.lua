@@ -2,7 +2,6 @@ local Affect = require "skill.Affects.Affect"
 local demageAffect = class("demageAffect",Affect)
 
 function demageAffect:ctor(entity,source,data)
-	print("demageAffect:ctor",entity:getType())
 	self.super.ctor(self,entity,source,data)
 	self.triggerTime = 0
 
@@ -16,8 +15,6 @@ function demageAffect:onEnter()
 	if self.data[4] == nil or self.data[5] == nil or self.data[5] == 0 then
 		--瞬发伤害
 		local demage = self:calDemage()
-		print('demage = '..demage)
-		print(self.owner.entityType)
 		self.owner:addHp(demage, HpMpMask.SkillHp, self.source)
 		self:onExit()
 		return
@@ -25,15 +22,12 @@ function demageAffect:onEnter()
 	
 end
 function demageAffect:onExec(dt)
-	print("demageAffect:onExec")
 	self.leftTime = self.leftTime -  dt
 	if self.leftTime <= 0 then
 		self:onExit()		
 		return
 	end
 	if self.triggerTime <= 0 then
-		print("demageAffect:onExec trgger")
-		print(self.data)
 		self.triggerTime = self.data[4]
 		local demage = self:calDemage()
 		self.owner:addHp(demage, HpMpMask.SkillHp, self.source)
@@ -42,7 +36,6 @@ end
 
 function demageAffect:onExit()
 	self.super.onExit(self)
-	print("demageAffect:onExit",self.status)
 end
 
 function demageAffect:calDemage()

@@ -1,5 +1,5 @@
 local EntityManager = require "entity.EntityManager"
-
+local Imonster = require "entity.Imonster"
 
 local SpawnNpcManager = class("SpawnNpcManager")
 
@@ -19,7 +19,7 @@ end
 local test = 0
 local spawnOver = false
 function SpawnNpcManager:update(dt)
-	if spawnOver then return end
+	if  spawnOver then return end
 	test = test + dt
 	if test < 1000 then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
@@ -35,12 +35,14 @@ function SpawnNpcManager:update(dt)
 				
 				for p, q in pairs(v.dat.szMonsterIds) do
 					local sid = assin_server_id()
-					EntityManager:createMonster(sid, {
+					EntityManager:addEntity( Imonster.create(sid, {
 						id = q, 
 						px = v.dat.szPosition[p].x/GAMEPLAY_PERCENT, 
 						pz = v.dat.szPosition[p].z/GAMEPLAY_PERCENT,
 						v.batch,			
-					})
+						})
+					)
+
 					local m = {
 						monsterId = q,
 						serverId = sid,
@@ -48,7 +50,6 @@ function SpawnNpcManager:update(dt)
 						posz = v.dat.szPosition[p].z,
 					}
 					table.insert(ret, m)
-					break
 				end
 					
 				--tell the clients

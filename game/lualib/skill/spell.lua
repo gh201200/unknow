@@ -58,9 +58,7 @@ end
 
 function spell:canBreak(ms)
 	if self:isSpellRunning() == false then return true end
-	print("spell:canBreak")
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
-		print("branking successful")
 		self.source.cooldown:resetCd(self.skilldata.id,0) 	
 		return true
 	end
@@ -146,14 +144,11 @@ end
 --触发目标效果
 function spell:trgggerAffect(datastr,targets)
 	for _k,_v in pairs(targets) do
-		--print("spell:trgggerAffect",_v:getType())		
 		_v.affectTable:buildAffects(self.source,datastr)
 	end
 end
 function spell:onBegin()
-	print("onBegin",skynet.now(),self.readyTime,self.castTime,self.endTime)
 	if self.readyTime > 0 then
-		print("onReady",skynet.now())
 		self.status = SpellStatus.Ready
 	else
 		self.status = SpellStatus.Cast
@@ -161,7 +156,6 @@ function spell:onBegin()
 end
 function spell:onReady()
 	if self.readyTime < 0 then
-		print("onCast",skynet.now())
 		self.status = SpellStatus.Cast
 	end
 
@@ -178,14 +172,12 @@ end
 
 function spell:onCast()
 	if self.castTime < 0 then
-		print("onEnd",skynet.now())
 		self.status = SpellStatus.End
 	end
 end
 
 function spell:onEnd()
 	if self.endTime < 0 then
-		print("onNone",skynet.now())
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
 		self.source:enterIdle()	

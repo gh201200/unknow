@@ -63,6 +63,7 @@ function Ientity:ctor(pos,dir)
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
+
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
 	--stats about
@@ -157,6 +158,7 @@ function Ientity:setTarget(target)
 	--if Map:get(target.pos.x, target.pos.z) == false then return end	
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
+
 	self.curActionState = ActionState.move
 end
 
@@ -189,7 +191,7 @@ function Ientity:update(dt)
 		self:advanceEventStamp(EventStampType.Stats)
 		self.StatsChange = false
 	end
-
+	
 	if self.curActionState == ActionState.move then
 		self:move(dt)
 	elseif self.curActionState == ActionState.stand then
@@ -211,7 +213,6 @@ function Ientity:move(dt)
 	self.dir:sub(self.pos)
 	self.dir:normalize(self.moveSpeed * dt)
 	local dst = self.pos:return_add(self.dir)
-		
 	repeat
 		--check iegal
 		if IS_SAME_GRID(self.pos, dst) == false then
@@ -247,15 +248,16 @@ function Ientity:forcePosition(des)
 end
 --进入待机状态
 function Ientity:enterIdle()
-	self.curActionState =  ActionState.stand
+	self:stand()
+	--self.curActionState =  ActionState.stand
 	self:advanceEventStamp(EventStampType.Move)
 end
 function Ientity:onDead()
+	print('Ientity:onDead')
 end
 
-function Ientity:addHp0(_hp, mask, source)
+function Ientity:addHp(_hp, mask, source)
 	if _hp < 0 then _hp = -1 end
-	print('addHp = '.._hp)
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
@@ -514,12 +516,10 @@ function Ientity:canSetCastSkill(id)
         local skilldata = g_shareData.skillRepository[id]
 	--cd状态
 	if self.cooldown:getCdTime(skilldata.id) > 0 then 
-		print("spell is cding",skilldata.id)
 		return ErrorCode.EC_Spell_SkillIsInCd
 	end
 	--技能正在释放状态
 	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then
-           print("spell is running",skilldata.id)
            return ErrorCode.EC_Spell_SkillIsRunning
         end
 	--被控制状态 
@@ -529,7 +529,6 @@ function Ientity:setCastSkillId(id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
-        print("castskill error",errorcode)
         if errorcode ~= 0 then return errorcode end 
 	local type_target = math.floor(skilldata.n32Type / 10)
 	local type_range = math.floor(skilldata.n32Type % 10)
@@ -550,7 +549,6 @@ function Ientity:castSkill()
 	local modoldata = g_shareData.heroModolRepository[self.modolId]
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
-	print("cast castskill error",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}	
 	if skilldata.bCommonSkill == false then
@@ -568,11 +566,9 @@ function Ientity:castSkill()
 		tmpSpell = self.attackSpell
 	end
 	tmpSpell:init(skilldata,skillTimes)
-	print("spellTime",tmpSpell.readyTime,tmpSpell.castTime,tmpSpell.endTime)
 	self.cooldown:addItem(id) --加入cd
 	tmpSpell:Cast(id,target,pos)
 	self:stand()
-	print("=============advanceEventStamp(EventStampType.CastSkill)")
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
 end

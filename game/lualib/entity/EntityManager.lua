@@ -1,7 +1,5 @@
 local skynet = require "skynet"
 require "globalDefine"
-local IMapPlayer = require "entity.IMapPlayer"
-local Imonster = require "entity.Imonster"
 local vector3 = require "vector3"
 
 local EntityManager = class("EntityManager")
@@ -45,27 +43,8 @@ function EntityManager:update(dt)
 	end
 end
 
-function EntityManager:createPlayer(arg)
-	--{ account = _v.account, pickedheroid = , nickname = _v.nickname, color = }	
-	local player = IMapPlayer.new()
-	player.serverId = assin_server_id() 
-	player.account_id= arg.account
-	player.agent = arg.agent
-	player.nickName = arg.nickname
-	player.color = arg.color 	--红方 蓝方 -1 -2 -3 和 1 2 3表示 以及出生位置
-	player:init(arg.pickedheroid)
-	table.insert(self.entityList, player)
-	return player
-end
-
-function EntityManager:createMonster(serverId, mt)
-	local monster = Imonster.new()
-	monster.serverId = serverId
-	monster.batch = mt.batch
-	monster:init(mt)
-
-	table.insert(self.entityList, monster)
-	return monster
+function EntityManager:addEntity(entity)
+	table.insert(self.entityList, entity)
 end
 
 function EntityManager:getEntity(serverId)

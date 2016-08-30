@@ -10,9 +10,6 @@ local EventStampHandle = {}
 
 function EventStampHandle.createHandleCoroutine(serverId, event, response)
 	local entity = EntityManager:getEntity( serverId )
-	if entity == nil then
-		print("==============create serverid",serverId)
-	end
 	if not entity.coroutine_pool[event] then
 		local co = coroutine.create(function(...)
 			repeat
@@ -26,8 +23,7 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 				else
 					syslog.errf("no %d handle defined", event)	
 				end
-				coroutine.yield()
-			until false
+			until true
 		end)
 		entity.coroutine_pool[event] =  co
 	end
@@ -39,12 +35,13 @@ end
 
 function respClientEventStamp(co, serverId, event)
 	coroutine.resume(co, serverId, event)
+	local entity = EntityManager:getEntity( serverId )
+	entity.coroutine_pool[event] =  nil
 end
 
 --------------------------------------------------------------------------------------------
 ----
 EventStampHandle[EventStampType.Move] = function (serverId, event)
---	print("EventStampHandle : EventStampType.Move")
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
@@ -57,7 +54,6 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 end
 EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
-	print("EventStampType.CastSkill",serverId,player.CastSkillId)
 	local skillid = player.CastSkillId
 	local targetId = 0
 	if player.target ~= nil and player.target:getType() ~= "transform" then
@@ -74,7 +70,6 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 end
 
 EventStampHandle[EventStampType.Stats] = function (serverId, event)
-	print("EventStampHandle : EventStampType.Stats")
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
@@ -112,7 +107,6 @@ EventStampHandle[EventStampType.Stats] = function (serverId, event)
 end
 
 EventStampHandle[EventStampType.Hp_Mp] = function (serverId, event)
-	print("EventStampHandle : EventStampType.Hp_Mp")
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
@@ -125,7 +119,6 @@ EventStampHandle[EventStampType.Hp_Mp] = function (serverId, event)
 end
 
 EventStampHandle[EventStampType.Affect] = function (serverId, event)
-	print("EventStampHandle : EventStampType.Affect")
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
@@ -138,7 +131,6 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 		assert(v and v.effectId)
 		table.insert(r.affectList, {effectId = v.effectId , effectTime = v.effectTime })
 	end
-	print("EventStampType r3",r)
 	return r
 end
 

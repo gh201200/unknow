@@ -42,9 +42,6 @@ end
 
 
 local function send_request (name, args)
-	print('hhhhhhhhhhhhhhhhhhhhhhhhhhh')
-	print(name)
-	print(args)
 	session_id = session_id + 1
 	local str = proto_request (name, args, session_id)
 	send_msg (user_fd, str)
@@ -94,8 +91,6 @@ local function handle_request (name, args, response)
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, skynet.self(), user.account.account_id, args)
 			if ret then
-				--print("ret handle_request ",user_fd,name,ret)
-				local s = response(ret)
 				send_msg (user_fd, response(ret))
 			end		
 		end)
