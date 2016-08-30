@@ -16,7 +16,7 @@
 		<szName>落雷</szName>
 		<szDescribe>轰击目标，对其造成伤害
 		等级1：造成150%攻击力+100+2倍智力的伤害</szDescribe>
-		<szMyAffect>[ap:1.5,100,0,0,60001],[inte:2]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szTargetAffect>[ap:1.5,100,0,0,60001],[inte:2]</szTargetAffect>
 		<n32TargetType>1</n32TargetType>
 </info>

@@ -17,7 +17,9 @@ function IMapPlayer:ctor()
 	
 	print("IMapPlayer:ctor()")
 end
-
+function IMapPlayer:getType()
+	return "IMapPlayer"
+end
 function IMapPlayer:update(dt)
 	if self:getHp() <= 0 then return end
 	

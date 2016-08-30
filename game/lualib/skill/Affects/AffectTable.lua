@@ -8,6 +8,7 @@ local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
 	self.owner = entity
+	print("ttttttttttttttttttt",self.owner:getType())
 	self.affects = {}
 	self.affectStates = 0
 end
@@ -40,7 +41,9 @@ function AffectTable:addAffect(source,data)
 	--print("addAffect",data)
 	local aff = nil
 	if data[1] == "ap" or data[1] == "str" or data[1] == "dex" or data[1] == "inte" then
+		print("mmmmmmmmmmim111" ,self.owner:getType())
 		aff = demageAffect.new(self.owner,source,data)
+		print("mmmmmmmmmmm" ,self.owner:getType())
 	elseif data[1] == "curehp" or data[1] == "curemp" then
 		aff = recoverAffect.new(self.owner,source,data)
 	elseif data[1] == "dizzy" then
@@ -67,6 +70,7 @@ end
 function AffectTable:buildAffects(source,dataStr)
 	local tb = {}
 	--print(dataStr)
+	print("AffectTable:buildAffects",self.owner:getType())
 	for v in string.gmatch(dataStr,"%[(.-)%]") do
 		local data = {}
 		for tp,vals in string.gmatch(v,"(%a+)%:(.+)") do
@@ -78,9 +82,7 @@ function AffectTable:buildAffects(source,dataStr)
 		end
 		self:addAffect(source,data) 
 	end
-	print("buildAffects========================")
 	self.owner:advanceEventStamp(EventStampType.Affect)		
-	print("buildAffects========================i111")
 end
 
 
