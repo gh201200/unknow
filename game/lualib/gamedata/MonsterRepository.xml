@@ -20,7 +20,7 @@
 		<n32Exp>0</n32Exp>
 		<n32Gold>0</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32Skill>30101</n32Skill>
 	</info>
 	<info id="20002">
 		<n32Grade>1</n32Grade>
@@ -42,7 +42,7 @@
 		<n32Exp>0</n32Exp>
 		<n32Gold>0</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32Skill>30101</n32Skill>
 	</info>
 	<info id="20003">
 		<n32Grade>1</n32Grade>
@@ -64,6 +64,6 @@
 		<n32Exp>0</n32Exp>
 		<n32Gold>0</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32Skill>30101</n32Skill>
 	</info>
 </MonsterRepository>

@@ -91,11 +91,6 @@ local function handle_request (name, args, response)
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, skynet.self(), user.account.account_id, args)
 			if ret then
-<<<<<<< HEAD
-=======
-				--print("ret handle_request ",user_fd,name,ret)
-				local s = response(ret)
->>>>>>> 6063e04ed4d590bacc594d45d29cca0d55b052d3
 				send_msg (user_fd, response(ret))
 			end		
 		end)

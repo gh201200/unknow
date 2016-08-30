@@ -6,11 +6,21 @@ local NpcAI = require "ai.NpcAI"
 
 local IMonster = class("IMonster", Ientity)
 
+function IMonster.create(serverId, mt)
+	local monster = IMonster.new()
+	
+	monster.serverId = serverId
+	monster.batch = mt.batch
+	monster:init(mt)
+
+	return monster
+end
+
 
 function IMonster:ctor()
 	IMonster.super.ctor(self)
 	self.entityType = EntityType.monster	
-	self.hateList = HateList.new()
+	self.hateList = HateList.new(self)
 	self.ai = NpcAI.new(self)
 	self.bornPos =  vector3.create()
 
@@ -35,7 +45,6 @@ end
 
 function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
-
 	self.ai:update(dt)
 
 	--add code before this
@@ -59,7 +68,7 @@ function IMonster:onDead()
 end
 
 function IMonster:preCastSkill()
-	self:setPreSkilldata(self.attDat.n32Skill)
+	self:setPreSkillData(g_shareData.skillRepository[self.attDat.n32Skill])
 end
 
 function IMonster:clearPreCastSkill()
@@ -67,7 +76,6 @@ function IMonster:clearPreCastSkill()
 end
 
 function IMonster:addHp(_hp, mask, source)
-	print('IMonster:addHp = ')
 	IMonster.super.addHp(self, _hp, mask, source)
 	
 	if self:getHp() <= 0 then                                             
@@ -75,7 +83,7 @@ function IMonster:addHp(_hp, mask, source)
      	else                                                                  
                 if _hp < 0 then                                               
 			if self.lastHp == self:getHpMax() then                
-				self.hateList:addHate(source, -_hp + math.floor(self.getHpMax()
+				self.hateList:addHate(source, -_hp + math.floor(self:getHpMax()
     * 0.1))             else                                                  
                         	self.hateList:addHate(source, -_hp)           
                         end                                                   

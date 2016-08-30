@@ -1,8 +1,10 @@
 local AIFsm = require "ai.AIFsm"
 local AIBase = class("AIBase", AIFsm)
 
-function AIBase:ctor()
-	self.source = nil
+function AIBase:ctor(entity)
+	print('AIBase:ctor')
+	AIBase.super.ctor(self, entity)
+	self.source = entity
 	self.target = nil	
 	self.followLen = 0
 end

@@ -5,6 +5,19 @@ local vector3 = require "vector3"
 
 local IMapPlayer = class("IMapPlayer", Ientity)
 
+function IMapPlayer.create(arg)
+	
+	local player = IMapPlayer.new()
+	
+	player.serverId = assin_server_id() 
+	player.account_id = arg.account
+	player.agent = arg.agent
+	player.nickName = arg.nickname
+	player.color = arg.color 	--红方 蓝方 -1 -2 -3 和 1 2 3表示 以及出生位置
+	player:init(arg.pickedheroid)
+
+	return player
+end	
 
 function IMapPlayer:ctor()
 	IMapPlayer.super.ctor(self)
@@ -57,6 +70,11 @@ function IMapPlayer:calcStats()
 	self:calcBaoji()
 	self:calcHit()
 	self:calcMiss()
+end
+
+function IMapPlayer:onDead()
+	IMapPlayer.super.onDead(self)
+	print('IMapPlayer:onDead')
 end
 
 return IMapPlayer

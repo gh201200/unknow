@@ -1,29 +1,25 @@
 local AIFsm = class("AIFsm")
 
-function AIFsm:ctor()
+function AIFsm:ctor(entity)
 	self.mCurrentAIState = ""
 	self.mNextAIState = ""
 	self.mCurrFsm = {}
 	self.Fsms = {}
 end
 
-function AIFsm:update()
+function AIFsm:update(dt)
 	if self.mCurrentAIState ~= self.mNextAIState then
 		if self.mCurrFsm ~= nil then
-			self.mCurrFsm:onExit()
+			self.mCurrFsm['onExit'](self)
 			self.mCurrFsm = self.Fsms[self.mNextAIState]
 			self.mCurrentAIState = self.mNextAIState
-			self.mCurrFsm:onEnter()
+			self.mCurrFsm['onEnter'](self)
 		end
 	else
 		if self.mCurrFsm ~= nil  then
-			self.mCurrFsm:onExec()
+			self.mCurrFsm['onExec'](self)
 		end
 	end
-end
-
-function AIFsm:Init()
-	print("AIFsm:Init")
 end
 
 function AIFsm:setNextAiState(_next)

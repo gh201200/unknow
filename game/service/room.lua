@@ -4,6 +4,7 @@ local syslog = require "syslog"
 local vector3 = require "vector3"
 local syslog = require "syslog"
 local EntityManager = require "entity.EntityManager"
+local IMapPlayer = require "entity.IMapPlayer"
 local EventStampHandle = require "entity.EventStampHandle"
 local SpawnNpcManager = require "entity.SpawnNpcManager"
 local sharedata = require "sharedata"
@@ -51,14 +52,6 @@ function CMD.hijack_msg(response,agent)
 	response(true, ret )
 end
 
-
-function CMD.entity_enter(response,agent,arg)
-	print('entity_enter: ',arg)
-	local p = EntityManager:createPlayer(agent,arg)
-	response(true, nil)
-end
-
-
 function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	player:setTargetPos(args.target)
@@ -104,12 +97,13 @@ function CMD.query_server_id(response,agent, account_id, args)
 end
 
 function CMD.start(response, args)
-
+	
 	for k, v in pairs (args) do
-		EntityManager:createPlayer(v)
+		local player = IMapPlayer.create(v)
+		EntityManager:addEntity(player)
 	end
 	
-	local ret = {}
+	local heros = {}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then
 			local LoadHero = {
@@ -118,14 +112,14 @@ function CMD.start(response, args)
 				name = v.nickName,
 				color = v.color
 			}
-			table.insert(ret, LoadHero)
+			table.insert(heros, LoadHero)
 		end
 	end
 
 	local roomId = 1
 	local ret = {
 		roomId = roomId,
-		heroInfoList = ret,
+		heroInfoList = heros,
 	}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then

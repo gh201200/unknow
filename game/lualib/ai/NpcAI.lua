@@ -1,14 +1,16 @@
 local AIBase = require "ai.AIBase"
+local EntityManager = require "entity.EntityManager"
+local vector3 = require "vector3"
+
 
 local NpcAI = class("NpcAI", AIBase)
 
 function NpcAI:ctor(entity)
-	self.source = entity
-	self.refreshTarget = 0
-end
 
-function NpcAI.Init()
-	super:Init()
+	NpcAI.super.ctor(self, entity)
+
+	self.refreshTarget = 0
+
 	self.Fsms["Idle"] = {["onEnter"] = self.onEnter_Idle, ["onExec"] = self.onExec_Idle,["onExit"] = self.onExit_Idle}
 	self.Fsms["Chase"] = {["onEnter"] = self.onEnter_Chase, ["onExec"] = self.onExec_Chase,["onExit"] = self.onExit_Chase}
 	self.Fsms["Battle"] = {["onEnter"] = self.onEnter_Battle, ["onExec"] = self.onExec_Battle,["onExit"] = self.onExit_Battle}
@@ -21,14 +23,15 @@ end
 
 function NpcAI:update(dt)
 	NpcAI.super.update(self,dt)
-	if self.refreshTarget > 0 then
+
+	if self.refreshTarget >= 0 then
 		self.refreshTarget = self.refreshTarget - dt
 		if self.refreshTarget < 0 then
 			local tId = self.source.hateList:getTopHate()
 			if tId > 0 then
 				self.source:setTarget(EntityManager:getEntity(tId))
-				self.refreashTarget = 2000
 			end
+			self.refreashTarget = 2000
 		end
 	end
 end
@@ -36,7 +39,8 @@ end
 function NpcAI:updatePreCast()
 	--decide whitch skill it will be cast
 	self.source:preCastSkill()
-	self.followLen = self.source:getPreSkillData().n32Range - 5
+	--self.followLen = self.source:getPreSkillData().n32Range
+	self.followLen = 2
 end
 
 function NpcAI:onEnter_Idle()
@@ -53,7 +57,7 @@ function NpcAI:onExec_Idle()
 		self.source:setTarget(EntityManager:getEntity(tId))
 		self:setNextAiState("Chase")
 		self.refreashTarget = 2000
-	elseif self.attDat.n32VisionRange > 0 then
+	elseif self.source.attDat.n32VisionRange > 0 then
 		local entity = EntityManager:getCloseEntityByType(self.source ,EntityType.player)
 		if entity then
 			self.source.hateList:addHate(entity, 1)
@@ -67,17 +71,17 @@ end
 function NpcAI:onEnter_Chase()
 	print("NpcAI:onEnter_Chase")	
 	self:updatePreCast()
+	self.source:setTarget(self.source:getTarget())
 end
 
 function NpcAI:onExec_Chase()
-
-	local dis = vector3.len(self.source.pos, self.bornPos)
-	if disVec > self.source.attDat.n32HateRange then
+	local dis = vector3.len(self.source.pos, self.source.bornPos)
+	if dis > self.source.attDat.n32HateRange then
 		self:setNextAiState("GoHome")
 		return
 	end
 	
-	if self.source:getDistance(self.getTarget()) <= self.followLen then
+	if self.source:getDistance(self.source:getTarget()) <= self.followLen then
 		self:setNextAiState("Battle")
 	end
 end
@@ -97,8 +101,8 @@ function NpcAI:onExec_Battle()
 		self:updatePreCast()
 	end
 
-	if self.source:getDistance(self.getTarget()) <= self.followLen then
-		self.source:castSkill(self.source:getPreSkillData().id)
+	if self.source:getDistance(self.source:getTarget()) <= self.followLen then
+		self.source:setCastSkillId(self.source:getPreSkillData().id)
 		self.source:clearPreCastSkill()
 	else
 		self:setNextAiState("Chase")

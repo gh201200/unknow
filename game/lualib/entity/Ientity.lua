@@ -158,6 +158,7 @@ function Ientity:setTarget(target)
 	--if Map:get(target.pos.x, target.pos.z) == false then return end	
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
+
 	self.curActionState = ActionState.move
 end
 
@@ -189,7 +190,7 @@ function Ientity:update(dt)
 		self:advanceEventStamp(EventStampType.Stats)
 		self.StatsChange = false
 	end
-
+	
 	if self.curActionState == ActionState.move then
 		self:move(dt)
 	elseif self.curActionState == ActionState.stand then
@@ -251,11 +252,11 @@ function Ientity:enterIdle()
 	self:advanceEventStamp(EventStampType.Move)
 end
 function Ientity:onDead()
+	print('Ientity:onDead')
 end
 
 function Ientity:addHp(_hp, mask, source)
 	if _hp < 0 then _hp = -1 end
-	print('addHp = '.._hp)
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then

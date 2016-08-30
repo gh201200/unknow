@@ -1,6 +1,8 @@
 local skynet = require "skynet"
 local HateList = class("HateList")
 
+local EntityManager = require "entity.EntityManager"
+
 function HateList:ctor(entity)
 	self.source = entity
 	self.hateList = {}
@@ -39,7 +41,7 @@ function HateList:addHate(entity,hateValue)
 	else
 		self.topHateId = entity.serverId
 	end
-	
+
 	--link the hate
 	for k, v in pairs(self.source.attDat.szLink) do
 		local lt = EntityManager:getMonsterById(v)
