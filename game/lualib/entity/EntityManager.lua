@@ -97,7 +97,7 @@ function EntityManager:getCloseEntityByType(source, _type)
 			end
 		end
 	end
-	return et
+	return et, minLen
 end
 
 function EntityManager:getSkillAttackEntitys(source,skilldata)

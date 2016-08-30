@@ -214,6 +214,7 @@ function Ientity:move(dt)
 	local dst = self.pos:return_add(self.dir)
 	repeat
 		--check iegal
+		--[[
 		if IS_SAME_GRID(self.pos, dst) == false then
 			if Map:get(dst.x, dst.z) == false then
 				--self:stand()
@@ -223,7 +224,7 @@ function Ientity:move(dt)
 			Map:set(self.pos.x, self.pos.z, true)
 			Map:set(dst.x, dst.z, false)
 		end	
-
+		--]]
 		--move
 		self.pos:set(dst.x, dst.y, dst.z)
 		if IS_SAME_GRID(self.target.pos,  dst) then
@@ -256,7 +257,7 @@ function Ientity:onDead()
 end
 
 function Ientity:addHp(_hp, mask, source)
-	if _hp < 0 then _hp = -1 end
+	if _hp < 0 then _hp = -5 end
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then

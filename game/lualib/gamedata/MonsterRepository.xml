@@ -36,7 +36,7 @@
 		<n32ASpeed>5000</n32ASpeed>
 		<n32MSpeed>10000</n32MSpeed>
 		<n32AttackRange>0</n32AttackRange>
-		<n32VisionRange>10000</n32VisionRange>
+		<n32VisionRange>1</n32VisionRange>
 		<n32HateRange>10000</n32HateRange>
 		<szLink>20002,20003</szLink>
 		<n32RecvHp>0</n32RecvHp>
@@ -59,7 +59,7 @@
 		<n32ASpeed>5000</n32ASpeed>
 		<n32MSpeed>10000</n32MSpeed>
 		<n32AttackRange>0</n32AttackRange>
-		<n32VisionRange>10000</n32VisionRange>
+		<n32VisionRange>500</n32VisionRange>
 		<n32HateRange>10000</n32HateRange>
 		<szLink>20002,20003</szLink>
 		<n32RecvHp>0</n32RecvHp>
