@@ -90,16 +90,12 @@ local traceback = debug.traceback
 local REQUEST
 
 local function handle_request (name, args, response)
-	print('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH')
-	print(args)
 	if hijack_msg[name] then
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, skynet.self(), user.account.account_id, args)
 			if ret then
-				print("ret handle_request ",user_fd,name,ret)
+				--print("ret handle_request ",user_fd,name,ret)
 				local s = response(ret)
-				print('GGGGGGGGGGGGGGGGGGGGGGGGGGGG')
-				print(s)
 				send_msg (user_fd, response(ret))
 			end		
 		end)

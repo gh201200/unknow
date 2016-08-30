@@ -2,6 +2,7 @@ local Affect = require "skill.Affects.Affect"
 local demageAffect = class("demageAffect",Affect)
 
 function demageAffect:ctor(entity,source,data)
+	print("demageAffect:ctor",entity:getType())
 	self.super.ctor(self,entity,source,data)
 	self.triggerTime = 0
 

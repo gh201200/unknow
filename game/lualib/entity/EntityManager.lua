@@ -125,6 +125,12 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	local type_range = math.floor(skilldata.n32Type % 10)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:目标点的矩形区域 
 	local type_target = math.floor(skilldata.n32Type / 10)  -- 1:自身 2:友方 3:敌方
 	local tmpTb = {}
+	if type_range == 1 then
+		if source.target ~= nil and source.target:getType() ~= "Transfrom" then
+			table.insert(tmpTb,source.target)
+			return tmpTb
+		end
+	end
 	--筛选出目标群体
 	for _k,_v in pairs(self.entityList) do
 		if type_target == 1 then
