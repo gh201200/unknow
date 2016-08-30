@@ -44,13 +44,11 @@ function NpcAI:updatePreCast()
 end
 
 function NpcAI:onEnter_Idle()
-	print("NpcAI:onEnter_Idle")
 	
 end
 
 
 function NpcAI:onExec_Idle()
-	print("NpcAI:onExec_Idle")
 	--更新目标 查找仇恨列表
 	local tId = self.source.hateList:getTopHate()
 	if tId > 0 then
@@ -69,7 +67,6 @@ function NpcAI:onExit_Idle()
 end
 
 function NpcAI:onEnter_Chase()
-	print("NpcAI:onEnter_Chase")	
 	self:updatePreCast()
 	self.source:setTarget(self.source:getTarget())
 end
@@ -87,11 +84,9 @@ function NpcAI:onExec_Chase()
 end
 
 function NpcAI:onExit_Chase()
-	print("NpcAI:onExit_Chase")
 end
 
 function NpcAI:onEnter_Battle()
-	print("NpcAI:onEnter_Battle")
 end
 
 function NpcAI:onExec_Battle()
@@ -110,11 +105,9 @@ function NpcAI:onExec_Battle()
 end
 
 function NpcAI:onExit_Battle()
-	print("NpcAI:onExit_Battle")
 end
 
 function NpcAI:onEnter_GoHome()
-	print("NpcAI:onEnter_GoHome")
 	self.source:clearPreCastSkill()
 end
 
@@ -123,7 +116,6 @@ function NpcAI:onExec_GoHome()
 end
 
 function NpcAI:onExit_GoHome()
-	print("NpcAI:onExit_GoHome")
 end
 
 return NpcAI

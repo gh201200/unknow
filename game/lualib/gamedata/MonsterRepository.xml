@@ -5,6 +5,7 @@
 		<szName>伏地龙</szName>
 		<n32Type>1</n32Type>
 		<szWord>吃俺老孙一棒</szWord>
+		<n32ModId>88888</n32ModId>
 		<n32Hp>200</n32Hp>
 		<n32Mp>50</n32Mp>
 		<n32Attack>10</n32Attack>
@@ -12,7 +13,7 @@
 		<n32ASpeed>5000</n32ASpeed>
 		<n32MSpeed>10000</n32MSpeed>
 		<n32AttackRange>0</n32AttackRange>
-		<n32VisionRange>10000</n32VisionRange>
+		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>10000</n32HateRange>
 		<szLink>20002,20003</szLink>
 		<n32RecvHp>0</n32RecvHp>
@@ -27,6 +28,7 @@
 		<szName>伏地龙</szName>
 		<n32Type>1</n32Type>
 		<szWord>吃俺老孙一棒</szWord>
+		<n32ModId>88888</n32ModId>
 		<n32Hp>200</n32Hp>
 		<n32Mp>50</n32Mp>
 		<n32Attack>10</n32Attack>
@@ -49,6 +51,7 @@
 		<szName>伏地龙</szName>
 		<n32Type>1</n32Type>
 		<szWord>吃俺老孙一棒</szWord>
+		<n32ModId>88888</n32ModId>
 		<n32Hp>200</n32Hp>
 		<n32Mp>50</n32Mp>
 		<n32Attack>10</n32Attack>

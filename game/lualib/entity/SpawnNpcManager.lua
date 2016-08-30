@@ -50,7 +50,6 @@ function SpawnNpcManager:update(dt)
 						posz = v.dat.szPosition[p].z,
 					}
 					table.insert(ret, m)
-					break
 				end
 					
 				--tell the clients
