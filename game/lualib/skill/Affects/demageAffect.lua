@@ -15,6 +15,8 @@ function demageAffect:onEnter()
 	if self.data[4] == nil or self.data[5] == nil or self.data[5] == 0 then
 		--瞬发伤害
 		local demage = self:calDemage()
+		print('demage = '..demage)
+		print(self.owner.entityType)
 		self.owner:addHp(demage, HpMpMask.SkillHp, self.source)
 		self:onExit()
 		return

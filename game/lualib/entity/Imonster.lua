@@ -13,7 +13,6 @@ function IMonster:ctor()
 	self.hateList = HateList.new()
 	self.ai = NpcAI.new(self)
 	self.bornPos =  vector3.create()
-	
 
 	register_class_var(self, "PreSkillData", nil)
 end
@@ -69,6 +68,7 @@ function IMonster:clearPreCastSkill()
 end
 
 function IMonster:addHp(_hp, mask, source)
+	print('IMonster:addHp = ')
 	IMonster.super.addHp(self, _hp, mask, source)
 	
 	if self:getHp() <= 0 then                                             

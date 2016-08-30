@@ -48,6 +48,7 @@ function SpawnNpcManager:update(dt)
 						posz = v.dat.szPosition[p].z,
 					}
 					table.insert(ret, m)
+					break
 				end
 					
 				--tell the clients
@@ -55,7 +56,7 @@ function SpawnNpcManager:update(dt)
 				
 				v.remaintime = v.dat.n32CDtime
 				v.dat = g_shareData.spawnMonsterResp[v.dat.n32NextBatch]
-				spawnOvrer = true
+				spawnOver = true
 				break
 			end
 		end

@@ -34,6 +34,8 @@ local function register_stats(t, name)
 		return self['s_'..name] 
 	end
 end
+
+
 function Ientity:ctor(pos,dir)
 	--print("Ientity:ctor")
 	print("Ientity:ctor")
@@ -250,7 +252,9 @@ end
 function Ientity:onDead()
 end
 
-function Ientity:addHp(_hp, mask, source)
+function Ientity:addHp0(_hp, mask, source)
+	if _hp < 0 then _hp = -1 end
+	print('addHp = '.._hp)
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
@@ -282,6 +286,7 @@ function Ientity:addMp(_mp, mask, source)
 end
 
 function Ientity:recvHpMp()
+	if true then return end
 	if self:getRecvHp() <= 0 and self:getRecvMp() <= 0 then return end
 	local curTime = skynet.now()
 	if self.recvTime == 0 then

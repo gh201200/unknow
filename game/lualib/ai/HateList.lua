@@ -24,6 +24,7 @@ end
 
 function HateList:addHate(entity,hateValue)
 	assert(entity)
+	print('hateValue = ' .. hateValue)
 	if self.hateList[entity.serverId] == nil then
 		self.hateList[entity.serverId] = { val = hateValue,upTime = skynet.now() }
 	else

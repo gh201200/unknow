@@ -24,6 +24,13 @@ function EntityManager:ctor(p)
 	g_entityManager = self
 end
 
+function EntityManager:dump()
+	for i=#self.entityList, 1, -1 do
+		print('server id = '..v.serverId)
+		print('entity type = '..v.entityType)
+	end
+end
+
 function EntityManager:update(dt)
 	for i=#self.entityList, 1, -1 do
 		local v = self.entityList[i]

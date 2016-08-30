@@ -259,11 +259,11 @@ function class(classname, super)
         cls.__cname = classname
         cls.__ctype = 2 -- lua
         cls.__index = cls
-
         function cls.new(...)
             local instance = setmetatable({}, cls)
             instance.class = cls
             instance:ctor(...)
+            
             return instance
         end
     end
