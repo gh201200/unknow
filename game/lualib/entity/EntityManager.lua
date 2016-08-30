@@ -126,7 +126,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	local type_target = math.floor(skilldata.n32Type / 10)  -- 1:自身 2:友方 3:敌方
 	local tmpTb = {}
 	if type_range == 1 then
-		if source.target ~= nil and source.target:getType() ~= "Transfrom" then
+		if source.target ~= nil and source.target:getType() ~= "transform" then
 			table.insert(tmpTb,source.target)
 			return tmpTb
 		end

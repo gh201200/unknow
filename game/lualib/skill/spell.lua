@@ -146,7 +146,7 @@ end
 --触发目标效果
 function spell:trgggerAffect(datastr,targets)
 	for _k,_v in pairs(targets) do
-		print("spell:trgggerAffect",_v:getType())
+		--print("spell:trgggerAffect",_v:getType())		
 		_v.affectTable:buildAffects(self.source,datastr)
 	end
 end

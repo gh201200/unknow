@@ -41,7 +41,6 @@ function respClientEventStamp(co, serverId, event)
 	coroutine.resume(co, serverId, event)
 end
 
-
 --------------------------------------------------------------------------------------------
 ----
 EventStampHandle[EventStampType.Move] = function (serverId, event)
