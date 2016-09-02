@@ -85,7 +85,13 @@ end
 
 function vector3:normalize(n)
 	if not n then n = 1 end
-	local invLen = 1.0 / vector3_length(self);
+	local len = vector3_length(self)
+	--assert(len > 0,len .. " len is 000000000000000000000")
+	if len <= 0 then 
+		invLen = 0 
+	else
+		invLen = 1.0 / len
+	end
 	self.x = self.x * invLen * n
 	self.y = self.y * invLen * n
 	self.z = self.z * invLen * n

@@ -203,6 +203,7 @@ function Ientity:update(dt)
 			self:castSkill(self.ReadySkillId)
 		end
 	end
+
 end
 
 function Ientity:move(dt)
@@ -232,7 +233,6 @@ function Ientity:move(dt)
 			break
 		end
 	until true
-
 	--advance move event stamp
 	self:advanceEventStamp(EventStampType.Move)
 end
