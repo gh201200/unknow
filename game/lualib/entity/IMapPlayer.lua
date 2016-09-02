@@ -52,6 +52,7 @@ function IMapPlayer:init(modleid)
 	self:setMp(self:getMpMax())
 	self.HpMpChange = true
 	self.StatsChange = true
+	self:dumpStats()
 end
 
 function IMapPlayer:calcStats()
@@ -70,6 +71,7 @@ function IMapPlayer:calcStats()
 	self:calcBaoji()
 	self:calcHit()
 	self:calcMiss()
+
 end
 
 function IMapPlayer:onDead()

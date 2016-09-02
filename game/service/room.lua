@@ -24,12 +24,12 @@ local function updateMapEvent()
 end
 
 local function query_event_func(response,agent, account_id, args)
-	local entity = EntityManager:getEntity( args.event_stamp.id )
+	local entity = EntityManager:getEntity( args.id )
 	if not entity then
-		syslog.warningf("client[%s] query_event server obj[%d] is null, type[%d]", platyerId, args.event_stamp.id, args.event_stamp.type)
+		syslog.warningf("client[%s] query_event server obj[%d] is null, type[%d]", platyerId, args.id, args.type)
 	end
-	EventStampHandle.createHandleCoroutine(args.event_stamp.id, args.event_stamp.type, response)
-	entity:checkeventStamp(args.event_stamp.type, args.event_stamp.stamp)
+	EventStampHandle.createHandleCoroutine(args.id, args.type, response)
+	entity:checkeventStamp(args.type, args.stamp)
 end
 
 local CMD = {}
@@ -54,31 +54,24 @@ end
 
 function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	player:setTargetPos(args.target)
+	player:setTargetPos(args)
 	response(true, nil)
 end
 
 function CMD.castskill(response,agent, account_id, args)
-	print("CMD.castskill",args.skillid)	
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local err = player:setCastSkillId(args.skillid)
 	response(true, { errorcode =  err })
 end
 
 function CMD.lockTarget(response,agent, account_id, args)
-	print("CMD.lockTarget",args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local serverid = args.serverid
 	local target = EntityManager:getEntity(serverid)
-	if target ~= nil then 
-		print("target is not nil")
-		print(target.pos.x)	
-	end
 	if player.ReadySkillId == 0 then
 		--默认设置普攻
 		player.ReadySkillId = 30001
 	end
-	print("lockTarget",target:getType())
 	player:setTarget(target)
 	local err = 0
 	response(true, { errorcode =  err })
@@ -97,10 +90,11 @@ function CMD.query_server_id(response,agent, account_id, args)
 end
 
 function CMD.start(response, args)
-	
+	local i = 0
 	for k, v in pairs (args) do
 		local player = IMapPlayer.create(v)
 		EntityManager:addEntity(player)
+		i = i + 1
 	end
 	
 	local heros = {}

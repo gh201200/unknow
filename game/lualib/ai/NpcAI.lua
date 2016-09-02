@@ -56,8 +56,8 @@ function NpcAI:onExec_Idle()
 		self:setNextAiState("Chase")
 		self.refreashTarget = 2000
 	elseif self.source.attDat.n32VisionRange > 0 then
-		local entity = EntityManager:getCloseEntityByType(self.source ,EntityType.player)
-		if entity then
+		local entity, len = EntityManager:getCloseEntityByType(self.source ,EntityType.player)
+		if entity and len < self.source.attDat.n32VisionRange then
 			self.source.hateList:addHate(entity, 1)
 		end
 	end

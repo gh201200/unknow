@@ -91,6 +91,7 @@ local function handle_request (name, args, response)
 		skynet.fork(function()
 			local ret = skynet.call(hijack_msg[name], "lua", name, skynet.self(), user.account.account_id, args)
 			if ret then
+				print(user_fd)
 				send_msg (user_fd, response(ret))
 			end		
 		end)
@@ -177,7 +178,6 @@ function CMD.Start (conf)
 		account = nil,
 		explore = nil,
 	}
-
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
@@ -204,7 +204,7 @@ function CMD.disconnect ()
 		character_handler:unregister (user)
 		--request_release_msg(user.MAP, "map")
 		user = nil
-		user_fd = niL
+		user_fd = nil
 		REQUEST = nil
 	end	
 	--skynet.call (gamed, "lua", "close", skynet.self (), account)

@@ -92,7 +92,9 @@ local c2s = [[
 
 query_event_move 1 {		#query event stamp
 	request {
-		event_stamp 0 : EventStamp
+		id 0 : integer
+		type 1 : integer
+		stamp 2 : integer
 	}
 	response {
 		event_stamp 0 : EventStamp
@@ -111,7 +113,9 @@ query_server_id 2 {
 
 query_event_CastSkill 3 {
 	request {
-		event_stamp 0 : EventStamp
+		id 0 : integer
+		type 1 : integer
+		stamp 2 : integer
 	}
 	response {
 		event_stamp 0 : EventStamp
@@ -122,7 +126,9 @@ query_event_CastSkill 3 {
 
 query_event_stats 4 {
 	request {
-		event_stamp 0 : EventStamp
+		id 0 : integer
+		type 1 : integer
+		stamp 2 : integer
 	}
 	response {
 		event_stamp 0 : EventStamp
@@ -132,7 +138,9 @@ query_event_stats 4 {
 
 query_event_hp_mp 5 {
 	request {
-		event_stamp 0 : EventStamp
+		id 0 : integer
+		type 1 : integer
+		stamp 2 : integer
 	}
 	response {
 		event_stamp 0 : EventStamp
@@ -144,7 +152,9 @@ query_event_hp_mp 5 {
 
 query_event_buff 6 {
 	request {
-		event_stamp 0 : EventStamp
+		id 0 : integer
+		type 1 : integer
+		stamp 2 : integer
 	}
 	response {
 		event_stamp 0 : EventStamp
@@ -154,7 +164,9 @@ query_event_buff 6 {
 
 query_event_affect 7 {
 	request {
-		event_stamp 0 : EventStamp
+		id 0 : integer
+		type 1 : integer
+		stamp 2 : integer
 	}
 	response {
 		event_stamp 0 : EventStamp
@@ -227,7 +239,9 @@ heart_beat_time 200{			#heartbeat,also for estimate ping time
 
 move 201 {			#client move
 	request {
-		target 0 : Vector3
+		x 0 : integer
+		y 1 : integer
+		z 2 : integer
 	}
 }
 
@@ -334,13 +348,13 @@ quitPick 104 {
 
 
 #战斗相关消息定义
-spawnMonsters 201 {
+spawnMonsters 2001 {
 	request {
 		spawnList 0 : *spawn
 	}
 }
 
-fightBegin 202 {
+fightBegin 2002 {
 }
 ]]
 
