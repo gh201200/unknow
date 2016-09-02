@@ -24,7 +24,7 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 					syslog.errf("no %d handle defined", event)	
 				end
 				coroutine.yield()
-			until true
+			until false
 		end)
 		entity.coroutine_pool[event] =  co
 	end

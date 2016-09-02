@@ -1,9 +1,9 @@
 skynet_root = "../3rd/skynet/"
 root = "./"
 thread = 8
--- logger = "$SERVER_NAME"
--- logservice = "syslog"
-logpath = "."
+--logger = "main_log"
+--logservice = "logger"
+--logpath = "."
 harbor = 0
 --address = "127.0.0.1:2526"
 --master = "127.0.0.1:2013"
