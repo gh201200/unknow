@@ -15,7 +15,7 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 			repeat
 				local f = EventStampHandle[event]
 				if f then
-					local r = f(...)
+					local s, r = pcall(f, ...)
 					for k, v in pairs(entity.coroutine_response[event]) do
 						v (true,  r)
 					end
@@ -23,6 +23,7 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 				else
 					syslog.errf("no %d handle defined", event)	
 				end
+				coroutine.yield()
 			until true
 		end)
 		entity.coroutine_pool[event] =  co
@@ -35,8 +36,6 @@ end
 
 function respClientEventStamp(co, serverId, event)
 	coroutine.resume(co, serverId, event)
-	local entity = EntityManager:getEntity( serverId )
-	entity.coroutine_pool[event] =  nil
 end
 
 
