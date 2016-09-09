@@ -43,7 +43,7 @@ end
 
 function IMapPlayer:init(modleid)
 		
-	self.pos:set(5,0,5)
+	self:setPos(5,0,5)
 	modleid = 100000001
 	--self.attDat =  g_shareData.heroRepository[100000001]
 	self.attDat = g_shareData.heroRepository[modleid]

@@ -8,6 +8,7 @@ local IMapPlayer = require "entity.IMapPlayer"
 local EventStampHandle = require "entity.EventStampHandle"
 local SpawnNpcManager = require "entity.SpawnNpcManager"
 local sharedata = require "sharedata"
+local Map = require "map.Map"
 local traceback  = debug.traceback
 
 local last_update_time = nil
@@ -90,6 +91,11 @@ function CMD.query_server_id(response,agent, account_id, args)
 end
 
 function CMD.start(response, args)
+	local roomId = 1
+	
+	--加载地图
+	Map:load("./lualib/map/" .. "terrain001.map")
+	
 	local i = 0
 	for k, v in pairs (args) do
 		local player = IMapPlayer.create(v)
@@ -110,7 +116,6 @@ function CMD.start(response, args)
 		end
 	end
 
-	local roomId = 1
 	local ret = {
 		roomId = roomId,
 		heroInfoList = heros,
@@ -120,6 +125,7 @@ function CMD.start(response, args)
 			skynet.call(v.agent, "lua", "enterMap", skynet.self(), ret)
 		end
 	end
+
 	
 	--这里跳过loading流程
 	EntityManager:sendToAllPlayers("fightBegin")

@@ -4,6 +4,10 @@ local function vector3_length(v)
 	return math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z )
 end
 
+vector3.normal_x = {x=1.0,y=0,z=0}
+vector3.normal_y = {x=0,y=1.0,z=0}
+vector3.normal_z = {x=0,y=0,z=1.0}
+
 function vector3.create(x, y, z)
 	local o = vector3.new()
 	o.x = x or 0
@@ -23,7 +27,7 @@ function vector3.dot(a, b)
 	return a.x * b.x + a.y * b.y + a.z * b.z;
 end
 
-function vector3.cross(a, b)
+function vector3:return_cross(a, b)
 	local x = a.y * b.z - a.z * b.y;
 	local y = a.z * b.x - a.x * b.z;
 	local z = a.x * b.y - a.y * b.x;
@@ -31,6 +35,13 @@ function vector3.cross(a, b)
 	local v = vector3.create(x, y, z);
 
 	return v;
+end
+
+function vector3:cross(b)
+	local x = self.y * b.z - self.z * b.y;
+	local y = self.z * b.x - self.x * b.z;
+	local z = self.x * b.y - self.y * b.x;
+	self:set(x, y, z)
 end
 
 function vector3:set(x, y ,z)
@@ -96,6 +107,14 @@ function vector3:normalize(n)
 	self.y = self.y * invLen * n
 	self.z = self.z * invLen * n
 end
+
+function vector3:rot(a)
+	local x = math.cos(math.rad(a))*self.x - self.z*math.sin(math.rad(a))
+	local z = math.sin(math.rad(a))*self.x + self.z*math.cos(math.rad(a))
+	self.x = x
+	self.z = z
+end
+
 
 return vector3
 

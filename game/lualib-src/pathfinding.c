@@ -49,43 +49,12 @@ map_set(struct map *m, int x, int y, int w) {
 
 static inline int
 map_get(struct map *m, int x, int y) {
+	if (x < 0 || x >= m->width || y < 0 || y >= m->height)
+		return BLOCK_WEIGHT;
+
 	return m->m[y * m->width + x];
 }
 
-static void
-addbuilding(lua_State *L, struct map *m, int x, int y, int size) {
-	//x = x * 2 + 1;
-	//y = y * 2 + 1;
-	//size = size * 2 - 1;
-	if (x < 0 || x + size >= m->width ||
-		y < 0 || y + size >= m->height) {
-		luaL_error(L, "building (%d,%d,%d) is out of map", (x-2)/2,(y-2)/2,(size+1)/2);
-	}
-	int i,j;
-	for (i=0;i<size;i++) {
-		for (j=0;j<size;j++) {
-			if (map_set(m, j + x, i + y, BLOCK_WEIGHT) != 0) {
-				luaL_error(L, "Can't add building (%d,%d,%d)", (x-2)/2,(y-2)/2,(size+1)/2);
-			}
-		}
-	}
-}
-static void 
-removebuliding(lua_State *L,struct map* m,int x,int y,int size)
-{
-        if (x < 0 || x + size >= m->width ||
-                y < 0 || y + size >= m->height) {
-                luaL_error(L, "building (%d,%d,%d) is out of map", (x-2)/2,(y-2)/2,(size+1)/2);
-        }   
-        int i,j;
-        for (i=0;i<size;i++) {
-                for (j=0;j<size;j++) {
-                        if (map_set(m, j + x, i + y,0) == 0) {
-                                luaL_error(L, "Can't remove building (%d,%d,%d)", (x-2)/2,(y-2)/2,(size+1)/2);
-                        }   
-                }   
-        }   	
-}
 static int
 getfield(lua_State *L, int index, const char *f) {
 	if (lua_getfield(L, -1, f) != LUA_TNUMBER) {
@@ -97,36 +66,25 @@ getfield(lua_State *L, int index, const char *f) {
 }
 
 static void
-addwall(lua_State *L, struct map *m, int line, const char *wall, size_t width) {
-	int y = line * 2 + 1;
+addobstacle(lua_State *L, struct map *m, int line, const char *obstacle, size_t width) {
+	int y = line;
 	int i;
-	if (y >= m->height - 1) {
-		luaL_error(L, "add wall (y = %d) fail", y);
+	if (y >= m->height) {
+		luaL_error(L, "add obstacle (y = %d) fail", y);
 	}
+	
 	for (i=0;i<width;i++) {
-		int x = i * 2 + 1;
-		if (x >= m->width -1) {
-			luaL_error(L, "add wall (%d, %d) fail", x, y);
+		int x = i;
+		if (x >= m->width) {
+			luaL_error(L, "add obstacle (%d, %d) fail", x, y);
 		}
-		char c = wall[i];
+		char c = obstacle[i];
 		if (c >= 'A' && c<='Z') {
 			int weight = (c - 'A' + 1);
-			int v = 0;
-			v |= map_set(m, x, y, weight);
-			if (i > 0) {
-				int w = map_get(m, x - 2, y);
-				if (w != 0 && w != BLOCK_WEIGHT) {
-					v |= map_set(m, x-1, y, weight);
-				}
-			}
-			if (y > 0) {
-				int w = map_get(m, x , y - 2);
-				if (w != 0 && w != BLOCK_WEIGHT) {
-					v |= map_set(m, x, y-1, weight);
-				}
-			}
+			weight = 1;
+			int v = map_set(m, x, y, weight);
 			if (v != 0) {
-				luaL_error(L, "add wall (%d, %d) fail", x, y);
+				luaL_error(L, "add obstacle (%d, %d) fail", x, y);
 			}
 		}
 	}
@@ -138,37 +96,17 @@ lnewmap(lua_State *L) {
 	lua_settop(L, 1);
 	int width = getfield(L, 0, "width");
 	int height = getfield(L, 0, "height");
-	width = width * 2 + 2;
-	height = height * 2 + 2;
 	struct map *m = lua_newuserdata(L, sizeof(struct map) + width * height * sizeof(m->m[0]));
 	m->width = width;
 	m->height = height;
 	memset(m->m, 0, width * height * sizeof(m->m[0]));
-	int i;
-	for (i=0;i<width;i++) {
-		map_set(m, i, 0, BLOCK_WEIGHT);
-		map_set(m, i, height-1, BLOCK_WEIGHT);
-	}
-	for (i=1;i<height-1;i++) {
-		map_set(m, 0, i, BLOCK_WEIGHT);
-		map_set(m, width-1, i, BLOCK_WEIGHT);
-	}
-	i = 1;
-	while (lua_geti(L, 1, i) == LUA_TTABLE) {
-		int x = getfield(L, i, "x");
-		int y = getfield(L, i, "y");
-		int size = getfield(L, i, "size");
-		lua_pop(L, 1);
-		addbuilding(L, m, x, y, size);
-		++i;
-	}
-	lua_pop(L, 1);
-	if (lua_getfield(L, 1, "wall") == LUA_TTABLE) {
+	if (lua_getfield(L, 1, "obstacle") == LUA_TTABLE) {
 		int i = 1;
 		while (lua_geti(L, -1, i) == LUA_TSTRING) {
 			size_t sz;
-			const char * wall = lua_tolstring(L, -1, &sz);
-			addwall(L, m, i-1, wall, sz);
+			const char * obstacle = lua_tolstring(L, -1, &sz);
+			printf("obstacle = %s\n", obstacle);
+			addobstacle(L, m, i-1, obstacle, sz);
 			lua_pop(L, 1);
 			++i;
 		}
@@ -197,6 +135,29 @@ lblock(lua_State *L) {
 		luaL_error(L, "Position (%d,%d) is out of map", x,y);
 	}
 	lua_pushinteger(L, map_get(m, x, y));
+
+	return 1;
+}
+
+static int
+ladd_weight(lua_State *L) {
+	luaL_checktype(L, 1, LUA_TUSERDATA);
+	struct map *m = lua_touserdata(L, 1);
+	int x = luaL_checkinteger(L, 2);
+	int y = luaL_checkinteger(L, 3);
+	int w = luaL_checkinteger(L, 4);
+	if (x < 0 || x >= m->width ||
+		y < 0 || y >= m->height) {
+		luaL_error(L, "Position (%d,%d) is out of map", x,y);
+	}
+	int ov = map_get(m, x, y);
+	w = (ov >> 1) + w;
+	if (w < 0 || w > 127) {
+		w = 0;
+	}
+	w = w << 1 | (ov & 0x1);
+	map_set(m, x, y, w);
+	lua_pushinteger(L, w);
 
 	return 1;
 }
@@ -347,6 +308,8 @@ path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x,
 			int x = pn->x + OFF[i].dx;
 			int y = pn->y + OFF[i].dy;
 			int weight = map_get(m, x, y);
+			if (weight > 0)
+				continue;
 			if (weight == BLOCK_WEIGHT)
 				continue;
 			if (in_closed(&ctx, x , y))
@@ -401,7 +364,7 @@ lpath(lua_State *L) {
 	check_position(L, m, end_x, end_y);
 
 	struct path P;
-	P.depth = luaL_optinteger(L, 6, 1024);
+	P.depth = luaL_optinteger(L, 6, SEARCH_DEPTH);
 	int stack_size = P.depth > SEARCH_DEPTH ? 0 : P.depth;
 	int set[stack_size];
 	struct pathnode pn[stack_size];
@@ -459,59 +422,30 @@ new_flowgraph(lua_State *L, struct map *m, int index) {
 	struct map * result = lua_newuserdata(L, sizeof(struct map) + m->width * m->height * sizeof(m->m[0]));
 	result->width = m->width;
 	result->height = m->height;
+	memset(result->m, 0, m->width * m->height * sizeof(result->m[0]));
 	return result;
 }
 
-static inline void
-target_init(struct map *m, int x, int y) {
-	if (x < 0 || x >= m->width || y < 0 || y >=m->height)
-		return;
-	m->m[y * m->width + x] = 1;
-}
 
 static void
-addtarget(lua_State *L, struct map *m, int x, int y, int size, int radius) {
-	int i,j;
-	radius += 1;
-	int limit = radius * 2 + 1;
-	limit *= limit;
-
-	x = x * 2 + 1;
-	y = y * 2 + 1;
-	size = size * 2 - 1;
-	for (i=1;i<=radius;i++) {
-		for (j=1;j<=radius;j++) {
-			int dist = (i*i+j*j) * 4;
-			if (dist <= limit) {
-				target_init(m, x-j, y-i);	// left-top
-				target_init(m, x+size-1+j, y-i);	// right-top
-				target_init(m, x-j, y+size-1+i);	// left-bottom
-				target_init(m, x+size-1+j, y+size-1+i);	// right-bottom
-			}
-		}
-	}
-	for (i=y-radius;i<y+size+radius;i++) {
-		if (i<0)
-			continue;
-		if (i>=m->height)
-			break;
-		for (j=x;j<x+size;j++) {
-			if (j<0)
-				continue;
-			if (j>=m->width)
+addtarget_map(lua_State *L, struct map *m, const char * target, char mark) {
+	int x=0,y=0;
+	int i;
+	char c;
+	for (i=0;(c=target[i]);i++) {
+		if (c == '\n') {
+			++y;
+			if (y >= m->height)
 				break;
-			m->m[i * m->width + j] = 1;
-		}
-	}
-	for (i=y;i<y+size;i++) {
-		if (i<0)
+			x=0;
 			continue;
-		if (i>=m->height)
-			break;
-		for (j=0;j<radius;j++) {
-			target_init(m, x - j - 1, i);
-			target_init(m, x + size + j , i);
 		}
+		if (c == '\r')
+			continue;
+		if (c == mark && x < m->width) {
+			m->m[y * m->width + x] = 1;
+		}
+		++x;
 	}
 }
 
@@ -566,7 +500,7 @@ init_route(struct map * block, struct map *m, int *route, struct route_queue *q)
 	int height = m->height;
 	int i,j;
 	for (i=0;i<height;i++) {
-		for (j=0;j<height;j++) {
+		for (j=0;j<width;j++) {
 			int w = m->m[i * width + j];
 			int b = block->m[i * width + j];
 			if (w && b != BLOCK_WEIGHT) {
@@ -581,6 +515,7 @@ static void
 gen_route(struct map *m, int *route, struct route_queue *q) {
 	struct route_coord *c = NULL;
 	int width = m->width;
+	int height = m->height;
 	while ((c=leave_queue(q))) {
 		int weight = m->m[c->y * width + c->x];
 		if (weight == BLOCK_WEIGHT)
@@ -590,16 +525,18 @@ gen_route(struct map *m, int *route, struct route_queue *q) {
 		for (i=0;i<8;i++) {
 			int x = c->x + OFF[i].dx;
 			int y = c->y + OFF[i].dy;
-			int dis = odis + OFF[i].distance +  m->m[y * width + x] * 5;
-			int w = route[y * width + x];
-			if (w == 0) {
-				route[y * width + x] = dis;
-				enter_queue(q, x, y);
-			} else {
-				if (w > dis) {
+			if (x >= 0 && x < width && y >= 0 && y < height) {
+				int dis = odis + OFF[i].distance +  m->m[y * width + x] * 5;
+				int w = route[y * width + x];
+				if (w == 0) {
 					route[y * width + x] = dis;
-					if (!queue_exist(q, x, y)) {
-						enter_queue(q, x, y);
+					enter_queue(q, x, y);
+				} else {
+					if (w > dis) {
+						route[y * width + x] = dis;
+						if (!queue_exist(q, x, y)) {
+							enter_queue(q, x, y);
+						}
 					}
 				}
 			}
@@ -618,14 +555,16 @@ convert_route(int *route, struct map *m) {
 			int min_id = 0;
 			if (w > 1) {
 				int k;
-				int min = w;
+				int min = w + 7;
 				for (k=0;k<8;k++) {
 					int x = j + OFF[k].dx;
 					int y = i + OFF[k].dy;
-					int weight = route[y*width+x];
-					if (weight > 0 && weight < min) {
-						min = weight;
-						min_id = k + 1;
+					if (x >= 0 && x < width && y >= 0 && y < height) {
+						int weight = route[y*width+x] + OFF[k].distance;
+						if (weight > 0 && weight < min) {
+							min = weight;
+							min_id = k + 1;
+						}
 					}
 				}
 			}
@@ -639,6 +578,9 @@ convert_route(int *route, struct map *m) {
 	table target {
 		{ x = , y = , size = , radius = },
 		...
+	} or table target {
+		string map
+		string mark
 	}
 	userdata flowmap (optinal: result)
 
@@ -652,19 +594,22 @@ lflowgraph(lua_State *L) {
 	struct map * result = new_flowgraph(L, m, 3);
 	int width = m->width;
 	int height = m->height;
-	memset(result->m, 0, width * height * sizeof(result->m[0]));
+
 	int i = 1;
-	while(lua_geti(L, 2, i) == LUA_TTABLE) {
-		int x = getfield(L, i, "x");
-		int y = getfield(L, i, "y");
-		int size = getfield(L, i, "size");
-		int radius = getfield(L, i, "radius");
-		addtarget(L, result, x, y, size, radius);
+	if (lua_geti(L, 2, i) == LUA_TSTRING) {
+		const char * target_map = lua_tostring(L, -1);
+		lua_pop(L, 1);	// the string is in the table
+		if (lua_geti(L, 2, i+1) != LUA_TSTRING) {
+			return luaL_error(L, "Invalid target map");
+		}
+		const char * mark = lua_tostring(L, -1);
 		lua_pop(L, 1);
-		++i;
+		addtarget_map(L, result, target_map, mark[0]);
+	} else {
+		lua_pop(L, 1);
 	}
-	lua_pop(L, 1);
 	int *route = malloc(width * height * sizeof(int));
+	memset(route, 0, width * height*sizeof(int));
 	struct route_queue *q = create_queue(width * height);
 	init_route(m, result, route, q);
 	gen_route(m, route, q);
@@ -675,54 +620,6 @@ lflowgraph(lua_State *L) {
 	return 1;
 }
 
-static int 
-laddbuilding(lua_State *L)
-{
-        luaL_checktype(L,1, LUA_TUSERDATA);
-        struct map * m = lua_touserdata(L, 1);
-        int x = luaL_checkinteger(L, 2);
-        int y = luaL_checkinteger(L, 3);
-        int size = luaL_checkinteger(L,4);
-	if (x < 0 || x >= m->width ||
-                y < 0 || y >= m->height) {
-                luaL_error(L, "Position (%d,%d) is out of map", x,y);
-        }
-	if((size + x) >= m->width || (size + y) >= m->height )
-	{
-		luaL_error(L,"Position(%d,%d) Size (%d) is out of map",x,y,size);
-	}	
-	addbuilding(L, m, x, y, size);		
-	return 1;
-}
-static int  
-lremovebuliding(lua_State *L)
-{
-        luaL_checktype(L,1, LUA_TUSERDATA);
-        struct map * m = lua_touserdata(L, 1);
-        int x = luaL_checkinteger(L, 2);
-        int y = luaL_checkinteger(L, 3);
-        int size = luaL_checkinteger(L,4);
-        if (x < 0 || x >= m->width ||
-                y < 0 || y >= m->height) {
-                luaL_error(L, "Position (%d,%d) is out of map", x,y);
-        }
-        if((size + x) >= m->width || (size + y) >= m->height )
-        {
-                luaL_error(L,"Position(%d,%d) Size (%d) is out of map",x,y,size);
-        }
-        removebuliding(L, m, x, y, size);
-	return 1;
-}
-static int
-lclear(lua_State *L)
-{
-        luaL_checktype(L,1, LUA_TUSERDATA);
-        struct map * m = lua_touserdata(L, 1);
-	memset(m->m, 0, m->width * m->height * sizeof(m->m[0]));		
-	return 1;
-}
-
-
 int
 luaopen_pathfinding(lua_State *L) {
 	luaL_checkversion(L);
@@ -731,13 +628,9 @@ luaopen_pathfinding(lua_State *L) {
 		{ "block", lblock },
 		{ "path", lpath },
 		{ "flowgraph", lflowgraph },
-		{ "clear",lclear },
-		{"removebuliding",lremovebuliding},
-		{"addbuilding", laddbuilding },
+		{ "add", ladd_weight },
 		{ NULL, NULL },
 	};
 	luaL_newlib(L,l);
 	return 1;
 }
-
-
