@@ -48,7 +48,10 @@ function Ientity:ctor(pos,dir)
 	
 	self.target =  nil --选中目标实体
 	self.moveSpeed = 0
-	self.curActionState = 0 
+	self.curActionState = 0
+	self.pathMove = nil
+	self.pathNodeIndex = -1
+	self.useAStar = false
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -149,17 +152,33 @@ function Ientity:stand()
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
 	self.state = "idle" --idle walk spell
+	self:clearPath()
+end
+
+function Ientity:clearPath()
+	self.pathNodeIndex = -1
+	self.useAStar = false
+	self.pathMove = nil
+end
+
+function Ientity:pathFind(dx, dz)
+	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz)
+	self.pathNodeIndex = 3
+	self.useAStar = true
+	return #self.pathMove > self.pathNodeIndex
 end
 
 function Ientity:setTarget(target)
 	if self.affectTable:canControl() == false then return end		--不受控制状态
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
-	if self.attackSpell:canBreak(ActionState.move) == false then return end	
-	--if Map:get(target.pos.x, target.pos.z) == false then return end	
+	if self.attackSpell:canBreak(ActionState.move) == false then return end
+
+	self.userAStar = false
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
-
 	self.curActionState = ActionState.move
+
+	--local r = self:pathFind(self.target.pos.x, self.target.pos.z)
 end
 
 function Ientity:getTarget()
@@ -207,29 +226,82 @@ function Ientity:update(dt)
 
 end
 
+--注意：修改entity位置，一律用此函数
+function Ientity:setPos(x, y, z)
+	Map:add(self.pos.x, self.pos.z, -1)
+	Map:add(x, z, 1)
+	self.pos:set(x, y, z)
+end
+
+local mv_dst = vector3.create()
+local mv_slep_dir = vector3.create()
 function Ientity:move(dt)
 	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
-	self.dir:set(self.target.pos.x, self.target.pos.y, self.target.pos.z)
+	if self.useAStar then
+		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
+	else
+		self.dir:set(self.target.pos.x, 0, self.target.pos.z)
+	end
 	self.dir:sub(self.pos)
-	self.dir:normalize(self.moveSpeed * dt)
-	local dst = self.pos:return_add(self.dir)
+	self.dir:normalize()
+	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
+	mv_dst:mul_num(self.moveSpeed * dt)
+	mv_dst:add(self.pos)
 	repeat
 		--check iegal
-		--[[
-		if IS_SAME_GRID(self.pos, dst) == false then
-			if Map:get(dst.x, dst.z) == false then
-				--self:stand()
-				--break
+		if Map.IS_SAME_GRID(self.pos, mv_dst) == false then
+			if Map:get(mv_dst.x, mv_dst.z) > 0 then
+				local nearBy = false
+				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
+				mv_slep_dir:rot(100)
+				mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				mv_dst:mul_num(self.moveSpeed * dt)
+				mv_dst:add(self.pos)
+				if Map.IS_SAME_GRID(self.pos, mv_dst) or  Map:get(mv_dst.x, mv_dst.z) == 0 then
+					nearBy = true
+					self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				end
+				if not nearBy and self.useAStar then
+					mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
+					mv_slep_dir:rot(-100)
+					mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+					mv_dst:mul_num(self.moveSpeed * dt)
+					mv_dst:add(self.pos)
+					if Map.IS_SAME_GRID(self.pos, mv_dst) or  Map:get(mv_dst.x, mv_dst.z) == 0 then
+						nearBy = true
+						self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+					end
+				end
+				
+				if not nearBy then
+					if not self.useAStar then
+						print('use a star to find a path')
+						nearBy = self:pathFind(self.target.pos.x, self.target.pos.z)
+					end
+				end
+				if not nearBy then
+					self:stand()
+					break
+				end
 			end
-			-- mark the map
-			Map:set(self.pos.x, self.pos.z, true)
-			Map:set(dst.x, dst.z, false)
-		end	
-		--]]
+			if self.useAStar then
+				--移动到下一节点
+				if self.pathMove[self.pathNodeIndex] == Map.POS_2_GRID(mv_dst.x) and self.pathMove[self.pathNodeIndex+1] == Map.POS_2_GRID(mv_dst.z) then
+					self.pathNodeIndex = self.pathNodeIndex + 2
+				end
+			end
+		end
 		--move
-		self.pos:set(dst.x, dst.y, dst.z)
-		if IS_SAME_GRID(self.target.pos,  dst) then
+		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
+		
+		--到达终点
+		if self.useAStar then
+			if self.pathNodeIndex >= #self.pathMove then
+				self:stand()
+				break
+			end
+		elseif Map.IS_SAME_GRID(self.pos, self.target.pos) then 
 			self:stand()
 			break
 		end
@@ -241,8 +313,8 @@ end
 --强制设置位置（闪现,击飞,回城等）
 function Ientity:forcePosition(des)
 	--先判定des位置是否超过地图范围
-	--self:stand()
-	self.pos:set(des.x,des.y,des.z)
+	self:stand()
+	self:setPos(des.x, des.y, des.z)
 	self.curActionState = 8--ActionState.blink
 	--强制更新位置	
 	self:advanceEventStamp(EventStampType.Move)

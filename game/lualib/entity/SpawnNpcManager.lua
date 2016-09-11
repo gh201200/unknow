@@ -19,7 +19,7 @@ end
 local test = 0
 local spawnOver = false
 function SpawnNpcManager:update(dt)
-	if  spawnOver then return end
+	if true or  spawnOver then return end
 	test = test + dt
 	if test < 1000 then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
