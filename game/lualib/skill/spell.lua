@@ -153,6 +153,7 @@ function spell:onBegin()
 	else
 		self.status = SpellStatus.Cast
 	end
+	self.source:callBackSpellBegin()
 end
 function spell:onReady()
 	if self.readyTime < 0 then
@@ -180,9 +181,9 @@ function spell:onEnd()
 	if self.endTime < 0 then
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
-		self.source:OnStand()	
+		self.source:OnStand()
+		self.source:callBackSpellEnd()
 	end
-
 end
 function spell:Cast(skillid,target,pos)
 	self.skilldata = g_shareData.skillRepository[skillid]

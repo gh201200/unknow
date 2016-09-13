@@ -68,6 +68,7 @@ function Ientity:ctor(pos,dir)
 	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
 
+	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
 	--stats about
@@ -564,11 +565,18 @@ end
 
 
 ---------------------------------------------------------------------------------技能相关------------------------------------------------------------------------------------------------------------------
+
+function Ientity:callBackSpellBegin()
+
+end
+
+function Ientity:callBackSpellEnd()
+
+end
 --设置人物状态
 function Ientity:setState(state)
 	self.state = state
 end
-
 
 function Ientity:canCast(id)
 	local skilldata = g_shareData.skillRepository[id]
