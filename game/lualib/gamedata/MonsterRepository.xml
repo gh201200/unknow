@@ -10,7 +10,7 @@
 		<n32Attack>100</n32Attack>
 		<n32Defence>10</n32Defence>
 		<n32ASpeed>10000</n32ASpeed>
-		<n32MSpeed>380</n32MSpeed>
+		<n32MSpeed>15405</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -20,7 +20,9 @@
 		<n32Exp>80</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>(31501, 5000)</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21002">
@@ -33,7 +35,7 @@
 		<n32Attack>50</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -43,7 +45,9 @@
 		<n32Exp>40</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21003">
@@ -56,7 +60,7 @@
 		<n32Attack>50</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -66,20 +70,22 @@
 		<n32Exp>40</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21004">
 		<n32Grade>1</n32Grade>
 		<szName>左下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>170</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>2</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -89,20 +95,22 @@
 		<n32Exp>20</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21005">
 		<n32Grade>1</n32Grade>
 		<szName>左下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>170</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>2</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -112,7 +120,9 @@
 		<n32Exp>20</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21006">
@@ -125,7 +135,7 @@
 		<n32Attack>30</n32Attack>
 		<n32Defence>3</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -135,20 +145,22 @@
 		<n32Exp>30</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21007">
 		<n32Grade>1</n32Grade>
 		<szName>右下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
 		<n32Hp>170</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>2</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -158,20 +170,22 @@
 		<n32Exp>20</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21008">
 		<n32Grade>1</n32Grade>
 		<szName>右下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
 		<n32Hp>170</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>2</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -181,7 +195,9 @@
 		<n32Exp>20</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="21009">
@@ -194,7 +210,7 @@
 		<n32Attack>30</n32Attack>
 		<n32Defence>3</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -204,7 +220,9 @@
 		<n32Exp>30</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22001">
@@ -217,7 +235,7 @@
 		<n32Attack>160</n32Attack>
 		<n32Defence>12</n32Defence>
 		<n32ASpeed>10000</n32ASpeed>
-		<n32MSpeed>380</n32MSpeed>
+		<n32MSpeed>15405</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -227,7 +245,9 @@
 		<n32Exp>160</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22002">
@@ -240,7 +260,7 @@
 		<n32Attack>86</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -250,7 +270,9 @@
 		<n32Exp>60</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22003">
@@ -263,7 +285,7 @@
 		<n32Attack>86</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -273,20 +295,22 @@
 		<n32Exp>60</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22004">
 		<n32Grade>2</n32Grade>
 		<szName>左下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>314</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>3</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -296,20 +320,22 @@
 		<n32Exp>30</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22005">
 		<n32Grade>2</n32Grade>
 		<szName>左下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>314</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>3</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -319,7 +345,9 @@
 		<n32Exp>30</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22006">
@@ -332,7 +360,7 @@
 		<n32Attack>42</n32Attack>
 		<n32Defence>4</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -342,20 +370,22 @@
 		<n32Exp>45</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22007">
 		<n32Grade>2</n32Grade>
 		<szName>右下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
 		<n32Hp>314</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>3</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -365,20 +395,22 @@
 		<n32Exp>30</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22008">
 		<n32Grade>2</n32Grade>
 		<szName>右下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
 		<n32Hp>314</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>3</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -388,7 +420,9 @@
 		<n32Exp>30</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="22009">
@@ -401,7 +435,7 @@
 		<n32Attack>42</n32Attack>
 		<n32Defence>4</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -411,7 +445,9 @@
 		<n32Exp>45</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23001">
@@ -424,7 +460,7 @@
 		<n32Attack>200</n32Attack>
 		<n32Defence>14</n32Defence>
 		<n32ASpeed>10000</n32ASpeed>
-		<n32MSpeed>380</n32MSpeed>
+		<n32MSpeed>15405</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -434,7 +470,9 @@
 		<n32Exp>240</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23002">
@@ -447,7 +485,7 @@
 		<n32Attack>110</n32Attack>
 		<n32Defence>7</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -457,7 +495,9 @@
 		<n32Exp>90</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23003">
@@ -470,7 +510,7 @@
 		<n32Attack>110</n32Attack>
 		<n32Defence>7</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -480,20 +520,22 @@
 		<n32Exp>90</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23004">
 		<n32Grade>3</n32Grade>
 		<szName>左下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>410</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>4</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -503,20 +545,22 @@
 		<n32Exp>45</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23005">
 		<n32Grade>3</n32Grade>
 		<szName>左下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>410</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>4</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -526,7 +570,9 @@
 		<n32Exp>45</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23006">
@@ -539,7 +585,7 @@
 		<n32Attack>50</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -549,20 +595,22 @@
 		<n32Exp>68</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23007">
 		<n32Grade>3</n32Grade>
 		<szName>右下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
 		<n32Hp>410</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>4</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -572,20 +620,22 @@
 		<n32Exp>45</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23008">
 		<n32Grade>3</n32Grade>
 		<szName>右下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
 		<n32Hp>410</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>4</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -595,7 +645,9 @@
 		<n32Exp>45</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="23009">
@@ -608,7 +660,7 @@
 		<n32Attack>50</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -618,7 +670,9 @@
 		<n32Exp>68</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24001">
@@ -631,7 +685,7 @@
 		<n32Attack>260</n32Attack>
 		<n32Defence>16</n32Defence>
 		<n32ASpeed>10000</n32ASpeed>
-		<n32MSpeed>380</n32MSpeed>
+		<n32MSpeed>15405</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -641,7 +695,9 @@
 		<n32Exp>320</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24002">
@@ -654,7 +710,7 @@
 		<n32Attack>146</n32Attack>
 		<n32Defence>8</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -664,7 +720,9 @@
 		<n32Exp>135</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24003">
@@ -677,7 +735,7 @@
 		<n32Attack>146</n32Attack>
 		<n32Defence>8</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -687,20 +745,22 @@
 		<n32Exp>135</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24004">
 		<n32Grade>4</n32Grade>
 		<szName>左下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>554</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -710,20 +770,22 @@
 		<n32Exp>68</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24005">
 		<n32Grade>4</n32Grade>
 		<szName>左下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>554</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -733,7 +795,9 @@
 		<n32Exp>68</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24006">
@@ -746,7 +810,7 @@
 		<n32Attack>62</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -756,20 +820,22 @@
 		<n32Exp>101</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24007">
 		<n32Grade>4</n32Grade>
 		<szName>右下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
 		<n32Hp>554</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -779,20 +845,22 @@
 		<n32Exp>68</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24008">
 		<n32Grade>4</n32Grade>
 		<szName>右下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
 		<n32Hp>554</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>5</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -802,7 +870,9 @@
 		<n32Exp>68</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="24009">
@@ -815,7 +885,7 @@
 		<n32Attack>62</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -825,7 +895,9 @@
 		<n32Exp>101</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25001">
@@ -838,7 +910,7 @@
 		<n32Attack>320</n32Attack>
 		<n32Defence>18</n32Defence>
 		<n32ASpeed>10000</n32ASpeed>
-		<n32MSpeed>380</n32MSpeed>
+		<n32MSpeed>15405</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -848,7 +920,9 @@
 		<n32Exp>400</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25002">
@@ -861,7 +935,7 @@
 		<n32Attack>182</n32Attack>
 		<n32Defence>9</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -871,7 +945,9 @@
 		<n32Exp>203</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25003">
@@ -884,7 +960,7 @@
 		<n32Attack>182</n32Attack>
 		<n32Defence>9</n32Defence>
 		<n32ASpeed>12000</n32ASpeed>
-		<n32MSpeed>370</n32MSpeed>
+		<n32MSpeed>15000</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -894,20 +970,22 @@
 		<n32Exp>203</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25004">
 		<n32Grade>5</n32Grade>
 		<szName>左下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>698</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -917,20 +995,22 @@
 		<n32Exp>101</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25005">
 		<n32Grade>5</n32Grade>
 		<szName>左下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
 		<n32Hp>698</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -940,7 +1020,9 @@
 		<n32Exp>101</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25006">
@@ -953,7 +1035,7 @@
 		<n32Attack>74</n32Attack>
 		<n32Defence>7</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -963,20 +1045,22 @@
 		<n32Exp>152</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25007">
 		<n32Grade>5</n32Grade>
 		<szName>右下C1</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
 		<n32Hp>698</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -986,20 +1070,22 @@
 		<n32Exp>101</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25008">
 		<n32Grade>5</n32Grade>
 		<szName>右下C2</szName>
-		<n32Type>3</n32Type>
+		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
 		<n32Hp>698</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>6</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -1009,7 +1095,9 @@
 		<n32Exp>101</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 	<item id="25009">
@@ -1022,7 +1110,7 @@
 		<n32Attack>74</n32Attack>
 		<n32Defence>7</n32Defence>
 		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>360</n32MSpeed>
+		<n32MSpeed>14595</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
@@ -1032,7 +1120,9 @@
 		<n32Exp>152</n32Exp>
 		<n32Gold>10</n32Gold>
 		<n32Drop>0</n32Drop>
-		<n32Skill>0</n32Skill>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
 		<n32ModelId>8888</n32ModelId>
 	</item>
 </info>

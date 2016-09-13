@@ -11,6 +11,7 @@ function IMonster.create(serverId, mt)
 	
 	monster.serverId = serverId
 	monster.batch = mt.batch
+
 	monster:init(mt)
 
 	return monster
@@ -22,6 +23,7 @@ function IMonster:ctor()
 	self.entityType = EntityType.monster	
 	self.hateList = HateList.new(self)
 	self.ai = NpcAI.new(self)
+	self.skillCD = 0
 
 	register_class_var(self, "PreSkillData", nil)
 
@@ -46,6 +48,7 @@ end
 function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
 	self.ai:update(dt)
+	
 
 	--add code before this
 	IMonster.super.update(self, dt)
@@ -68,9 +71,23 @@ function IMonster:onDead()
 end
 
 function IMonster:preCastSkill()
-	local castSkill = self.attDat.n32Skill1
-	if self.cooldown:getCdTime(self.attDat.n32Skill2) <= 0 then
-		castSkill = self.attDat.n32Skill2
+	local castSkill = self.attDat.n32CommonSkill
+	if self.skillCD < 0 then
+		local skills = {}
+		local sumPercent = 0
+		for k, v in pairs(self.attDat.szSkill) do
+			if self.cooldown:getCdTime(v.skillId) <= 0 then
+				sumPercent = sumPercent + v.percent
+				table.insert(skills, {skillId=v.skillId, percent=sumPercent})
+			end
+		end
+		local rd = math.random(1, sumPercent)
+		for k, v in pairs(skills) do
+			if rd <= v.percent then
+				castSkill = v.skillId
+				break
+			end
+		end
 	end
 	self:setPreSkillData(g_shareData.skillRepository[castSkill])
 end

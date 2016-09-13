@@ -19,8 +19,6 @@ xmlparser:parse(xmltext)
 local modolsTable = {}
 for k, p in pairs(xmlhandler.root.info.item) do
 	local tmpTb = {}
-	print(k)
-	print(p)
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then
 			tmpTb.id = tonumber(_v.id)
