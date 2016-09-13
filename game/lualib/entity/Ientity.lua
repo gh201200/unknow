@@ -189,6 +189,7 @@ function Ientity:getTarget()
 end
 
 function Ientity:setTargetPos(target)
+	if target == nil then return end
 	target.x = target.x/GAMEPLAY_PERCENT
 	target.z = target.z/GAMEPLAY_PERCENT
 	--self.target:set(target.x, 0, target.z)

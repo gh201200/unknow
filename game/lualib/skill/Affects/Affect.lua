@@ -1,10 +1,12 @@
 local Affect = class "Affect"
+local uuid = require "uuid"
 function Affect:ctor(entity,source,data)
 	self.status = "enter"
         self.owner =  entity  	--效果接受者
         self.source =  source	--效果来源
 	self.data = table.copy(data)
 	self.affectState = 0
+	self.pjectId = uuid.gen()
 end
 
 function Affect:onEnter()
