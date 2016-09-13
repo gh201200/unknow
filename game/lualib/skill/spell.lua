@@ -180,7 +180,7 @@ function spell:onEnd()
 	if self.endTime < 0 then
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
-		self.source:enterIdle()	
+		self.source:OnStand()	
 	end
 
 end

@@ -215,7 +215,7 @@ function Ientity:update(dt)
 	end
 	
 	if self.curActionState == ActionState.move then
-		self:move(dt)
+		self:onMove(dt)
 	elseif self.curActionState == ActionState.stand then
 		--站立状态
 		
@@ -238,7 +238,9 @@ end
 
 local mv_dst = vector3.create()
 local mv_slep_dir = vector3.create()
-function Ientity:move(dt)
+
+--进入移动状态
+function Ientity:onMove(dt)
 	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
 	if self.useAStar then
@@ -313,17 +315,17 @@ function Ientity:move(dt)
 	self:advanceEventStamp(EventStampType.Move)
 end
 
---强制设置位置（闪现,击飞,回城等）
-function Ientity:forcePosition(des)
+--进入强制移动状态（闪现,击飞,回城等）
+function Ientity:onForceMove(des)
 	--先判定des位置是否超过地图范围
 	self:stand()
 	self:setPos(des.x, des.y, des.z)
-	self.curActionState = 8--ActionState.blink
-	--强制更新位置	
+	self.curActionState = 8	--ActionState.blink	
 	self:advanceEventStamp(EventStampType.Move)
 end
---进入待机状态
-function Ientity:enterIdle()
+
+--进入站立状态
+function Ientity:OnStand()
 	self:stand()
 	--self.curActionState =  ActionState.stand
 	self:advanceEventStamp(EventStampType.Move)

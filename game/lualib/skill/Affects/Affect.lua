@@ -6,7 +6,7 @@ function Affect:ctor(entity,source,data)
         self.source =  source	--效果来源
 	self.data = table.copy(data)
 	self.affectState = 0
-	self.pjectId = uuid.gen()
+	self.projectId = uuid.gen()
 end
 
 function Affect:onEnter()

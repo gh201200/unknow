@@ -22,6 +22,7 @@ function AffectTable:update(dt)
 			--self.affects[i].status = "exec"
 			self.affects[i]:onEnter()			
 		elseif self.affects[i].status == "exit" then
+			print("remove...",i,#self.affects)
 			table.remove(self.affects,i)
 		end
 	end
@@ -41,13 +42,13 @@ function AffectTable:addAffect(source,data)
 	if data[1] == "ap" or data[1] == "str" or data[1] == "dex" or data[1] == "inte" then
 		aff = demageAffect.new(self.owner,source,data)
 	elseif data[1] == "curehp" or data[1] == "curemp" then
-		aff = recoverAffect.new(self.owner,source,data)
+	--	aff = recoverAffect.new(self.owner,source,data)
 	elseif data[1] == "dizzy" then
-		aff = dizzyAffect.new(self.owner,source,data)
+	--	aff = dizzyAffect.new(self.owner,source,data)
 	elseif data[1] == "blink" then
-		aff = blinkAffect.new(self.owner,source,data)
+	--	aff = blinkAffect.new(self.owner,source,data)
 	elseif data[1] == "invincible" then
-		aff = invincibleAffect.new(self.owner,source,data)
+	--	aff = invincibleAffect.new(self.owner,source,data)
 	end
 	if aff ~= nil then 
 		if data[1] == "dizzy" or data[1] == "invincible" or data[1] == "repel" then
