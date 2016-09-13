@@ -105,7 +105,6 @@ lnewmap(lua_State *L) {
 		while (lua_geti(L, -1, i) == LUA_TSTRING) {
 			size_t sz;
 			const char * obstacle = lua_tolstring(L, -1, &sz);
-			printf("obstacle = %s\n", obstacle);
 			addobstacle(L, m, i-1, obstacle, sz);
 			lua_pop(L, 1);
 			++i;
@@ -308,7 +307,7 @@ path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x,
 			int x = pn->x + OFF[i].dx;
 			int y = pn->y + OFF[i].dy;
 			int weight = map_get(m, x, y);
-			if (weight > 0)
+			if (weight > 0 && !(x == end_x && y == end_y))
 				continue;
 			if (weight == BLOCK_WEIGHT)
 				continue;

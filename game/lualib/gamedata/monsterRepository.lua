@@ -16,7 +16,7 @@ local xmlparser = xmlParser(xmlhandler)
 xmlparser:parse(xmltext)
 
 local modolsTable = {}
-for k, p in pairs(xmlhandler.root.MonsterRepository.info) do
+for k, p in pairs(xmlhandler.root.info.item) do
 	local tmpTb = {}
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then

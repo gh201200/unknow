@@ -3,7 +3,7 @@
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
 dofile("../3rd/LuaXMLlib/xml.lua")
 dofile("../3rd/LuaXMLlib/handler.lua")
-local filename = "./lualib/gamedata/SpawnMonster.xml"
+local filename = "./lualib/gamedata/MapRepository.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
 if f then
@@ -31,23 +31,14 @@ for k, p in pairs(xmlhandler.root.info.item) do
 					tmpTb[_i] = true
 				end
 			else
-				if _i == "szMonsterIds" then
-					tmpTb[_i] = {}
-					for w in string.gmatch(_v, "%d+") do
-						table.insert(tmpTb[_i], tonumber(w))		
-					end	
-				elseif _i == "szPosition" then
-					tmpTb[_i] = {}
-					for _x, _z in string.gmatch(_v, "(%d+),(%d+)") do
-						table.insert(tmpTb[_i], {x=_x,z=_z})
-					end
+				if string.find(_i, "Born") then
+					tmpTb[_i] = string.split(_v, ",")
 				else
 					tmpTb[_i] = _v
 				end
 			end 
 		end
 	end
-	assert(#tmpTb.szMonsterIds==#tmpTb.szPosition, 'wrong spawn monster data: '..tmpTb.id)
 	modolsTable[tmpTb.id] = tmpTb
 end
 --[[

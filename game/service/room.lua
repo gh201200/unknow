@@ -92,12 +92,14 @@ end
 
 function CMD.start(response, args)
 	local roomId = 1
-	
+	local mapDat = g_shareData.mapRepository[roomId]
+
 	--加载地图
-	Map:load("./lualib/map/" .. "terrain001.map")
-	
+	Map:load("./lualib/map/" .. mapDat.szScene)
+
 	local i = 0
 	for k, v in pairs (args) do
+		v.bornPos = mapDat['szBornPos'..v.color]
 		local player = IMapPlayer.create(v)
 		EntityManager:addEntity(player)
 		i = i + 1

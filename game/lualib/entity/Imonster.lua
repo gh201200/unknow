@@ -22,7 +22,6 @@ function IMonster:ctor()
 	self.entityType = EntityType.monster	
 	self.hateList = HateList.new(self)
 	self.ai = NpcAI.new(self)
-	self.bornPos =  vector3.create()
 
 	register_class_var(self, "PreSkillData", nil)
 
@@ -33,7 +32,8 @@ function IMonster:getType()
 end
 function IMonster:init(mt)
 	self.attDat = g_shareData.monsterRepository[mt.id]
-	self.pos:set(mt.px, 0, mt.pz)
+	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
+	self:setPos(mt.px, 0, mt.pz)
 	self.bornPos:set(mt.px, 0, mt.pz)
 	self:calcStats()
 	self:setHp(self:getHpMax())
@@ -68,7 +68,11 @@ function IMonster:onDead()
 end
 
 function IMonster:preCastSkill()
-	self:setPreSkillData(g_shareData.skillRepository[self.attDat.n32Skill])
+	local castSkill = self.attDat.n32Skill1
+	if self.cooldown:getCdTime(self.attDat.n32Skill2) <= 0 then
+		castSkill = self.attDat.n32Skill2
+	end
+	self:setPreSkillData(g_shareData.skillRepository[castSkill])
 end
 
 function IMonster:clearPreCastSkill()
@@ -79,7 +83,7 @@ function IMonster:addHp(_hp, mask, source)
 	IMonster.super.addHp(self, _hp, mask, source)
 	
 	if self:getHp() <= 0 then                                             
-                self.hateList:addHate(source, self.lstHp + math.floor(self:getHpMax() * 0.2))
+                self.hateList:addHate(source, self.lastHp + math.floor(self:getHpMax() * 0.2))
      	else                                                                  
                 if _hp < 0 then                                               
 			if self.lastHp == self:getHpMax() then                

@@ -6,14 +6,15 @@ local vector3 = require "vector3"
 local IMapPlayer = class("IMapPlayer", Ientity)
 
 function IMapPlayer.create(arg)
-	
+
 	local player = IMapPlayer.new()
 	
 	player.serverId = assin_server_id() 
 	player.account_id = arg.account
 	player.agent = arg.agent
 	player.nickName = arg.nickname
-	player.color = arg.color 	--红方 蓝方 -1 -2 -3 和 1 2 3表示 以及出生位置
+	player.color = arg.color 	--红方 蓝方 1 2 3 和 4 5 6表示 以及出生位置
+	player.bornPos:set(arg.bornPos[1]/GAMEPLAY_PERCENT, 0, arg.bornPos[2]/GAMEPLAY_PERCENT)
 	player:init(arg.pickedheroid)
 
 	return player
@@ -41,12 +42,10 @@ function IMapPlayer:update(dt)
 end
 
 
-function IMapPlayer:init(modleid)
-		
-	self:setPos(5,0,5)
-	modleid = 100000001
-	--self.attDat =  g_shareData.heroRepository[100000001]
-	self.attDat = g_shareData.heroRepository[modleid]
+function IMapPlayer:init(heroId)
+	self.attDat = g_shareData.heroRepository[heroId]
+	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
+	self:setPos(self.bornPos.x, 0, self.bornPos.z)
 	self:calcStats()
 	self:setHp(self:getHpMax())
 	self:setMp(self:getMpMax())

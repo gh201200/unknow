@@ -47,6 +47,17 @@ function Map:load(terrain)
  	}
 end
 
+function Map:dump()
+	local str = ''
+	for j=MAP_ZGRID_NUM-1,0,-1 do
+		str = ''
+		for i=0, MAP_XGRID_NUM-1 do
+			str = str .. ' ' .. pf.block(self.m, i, j)
+		end
+		print(str)
+	end  
+end
+
 function Map.legal(gx, gz)
 	if gz < 0 or gz >= MAP_ZGRID_NUM then return false end
 	if gx < 0 or gx >= MAP_XGRID_NUM then return false end

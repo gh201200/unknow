@@ -3,7 +3,7 @@
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
 dofile("../3rd/LuaXMLlib/xml.lua")
 dofile("../3rd/LuaXMLlib/handler.lua")
-local filename = "./lualib/gamedata/HeroModolDatas.xml"
+local filename = "./lualib/gamedata/HeroModelDatas.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
 if f then
@@ -16,7 +16,7 @@ local xmlparser = xmlParser(xmlhandler)
 xmlparser:parse(xmltext)
 
 local modolsTable = {}
-for k, p in pairs(xmlhandler.root.HeroModolDatas.info) do
+for k, p in pairs(xmlhandler.root.info.item) do
 	local tmpTb = {}
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then

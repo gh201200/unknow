@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SkillDatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<info id="30001">
+<?xml version="1.0" ?>
+<info>
+	<item id="30001">
 		<bActive>1</bActive>
 		<bNeedTarget>1</bNeedTarget>
 		<bCommonSkill>1</bCommonSkill>
@@ -15,13 +15,14 @@
 		<szAction>attack</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30101">
+	</item>
+	<item id="30101">
 		<bActive>1</bActive>
 		<bNeedTarget>1</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -30,13 +31,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30102">
+	</item>
+	<item id="30102">
 		<bActive>1</bActive>
 		<bNeedTarget>1</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -45,13 +47,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30201">
+	</item>
+	<item id="30201">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -60,13 +63,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30301">
+	</item>
+	<item id="30301">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -75,13 +79,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30401">
+	</item>
+	<item id="30401">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -90,13 +95,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30501">
+	</item>
+	<item id="30501">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>0</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -105,13 +111,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30601">
+	</item>
+	<item id="30601">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>0</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -120,13 +127,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30701">
+	</item>
+	<item id="30701">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>0</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -135,13 +143,14 @@
 		<szAction>skill2</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30801">
+	</item>
+	<item id="30801">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>99</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -150,13 +159,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="30901">
+	</item>
+	<item id="30901">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -165,13 +175,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31001">
+	</item>
+	<item id="31001">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -180,13 +191,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31101">
+	</item>
+	<item id="31101">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>0</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -195,13 +207,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31201">
+	</item>
+	<item id="31201">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -210,27 +223,30 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31301">
+	</item>
+	<item id="31301">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>0</n32Range>
 		<n32MpCost>0</n32MpCost>
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
+		<szAction></szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31401">
+	</item>
+	<item id="31401">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -239,13 +255,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31501">
+	</item>
+	<item id="31501">
 		<bActive>0</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -254,8 +271,8 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31601">
+	</item>
+	<item id="31601">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
@@ -270,13 +287,14 @@
 		<szAction>skill2</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31701">
+	</item>
+	<item id="31701">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -285,13 +303,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31801">
+	</item>
+	<item id="31801">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -300,13 +319,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="31901">
+	</item>
+	<item id="31901">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -315,13 +335,14 @@
 		<szAction>skill1</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-	<info id="32001">
+	</item>
+	<item id="32001">
 		<bActive>1</bActive>
 		<bNeedTarget>0</bNeedTarget>
 		<bCommonSkill>0</bCommonSkill>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
@@ -330,5 +351,5 @@
 		<szAction>skill3</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-	</info>
-</SkillDatas>
+	</item>
+</info>

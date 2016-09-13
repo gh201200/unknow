@@ -39,12 +39,10 @@ end
 function NpcAI:updatePreCast()
 	--decide whitch skill it will be cast
 	self.source:preCastSkill()
-	--self.followLen = self.source:getPreSkillData().n32Range
-	self.followLen = 2
+	self.followLen = self.source:getPreSkillData().n32Range - 0.05
 end
 
 function NpcAI:onEnter_Idle()
-	
 end
 
 
@@ -73,9 +71,13 @@ end
 
 function NpcAI:onExec_Chase()
 	local dis = vector3.len(self.source.pos, self.source.bornPos)
-	if dis > self.source.attDat.n32HateRange then
+	if  self.source.attDat.n32HateRange>0 and dis > self.source.attDat.n32HateRange then
 		self:setNextAiState("GoHome")
 		return
+	end
+
+	if self.source.moveSpeed==0 then
+		self.source:setTarget(self.source:getTarget())
 	end
 	
 	if self.source:getDistance(self.source:getTarget()) <= self.followLen then

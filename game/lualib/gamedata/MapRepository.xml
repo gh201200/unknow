@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="1">
+		<szBornPos1>20000,20000</szBornPos1>
+		<szBornPos2>25000,25000</szBornPos2>
+		<szBornPos3>30000,20000</szBornPos3>
+		<szBornPos4>20000,100000</szBornPos4>
+		<szBornPos5>25000,15000</szBornPos5>
+		<szBornPos6>30000,100000</szBornPos6>
+		<szScene>pvp001</szScene>
+	</item>
+	<item id="2">
+		<szBornPos1>20000,20000</szBornPos1>
+		<szBornPos2>25000,25000</szBornPos2>
+		<szBornPos3>30000,20000</szBornPos3>
+		<szBornPos4>20000,100000</szBornPos4>
+		<szBornPos5>25000,15000</szBornPos5>
+		<szBornPos6>30000,100000</szBornPos6>
+		<szScene>pvp002</szScene>
+	</item>
+</info>

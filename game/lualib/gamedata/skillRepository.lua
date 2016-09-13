@@ -16,7 +16,7 @@ local xmlparser = xmlParser(xmlhandler)
 xmlparser:parse(xmltext)
 
 local skillTable = {}
-for k, p in pairs(xmlhandler.root.SkillDatas.info) do
+for k, p in pairs(xmlhandler.root.info.item) do
 	local tmpTb = {}
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then
@@ -52,7 +52,7 @@ xmlhandler = simpleTreeHandler()
 xmlparser = xmlParser(xmlhandler)
 xmlparser:parse(xmltext)
 local skillEffectTable = {}
-for k, p in pairs(xmlhandler.root.SkillEffect.info) do
+for k, p in pairs(xmlhandler.root.info.item) do
 	local tmpTb = {}
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then

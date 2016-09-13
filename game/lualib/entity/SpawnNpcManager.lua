@@ -16,12 +16,11 @@ function SpawnNpcManager:init(mapId)
 		end
 	end
 end
-local test = 0
 local spawnOver = false
+local wait = 0
 function SpawnNpcManager:update(dt)
-	if true or  spawnOver then return end
-	test = test + dt
-	if test < 1000 then return end
+	wait = wait + dt
+	if wait < 2000 then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
 	spawnOver = false
 	for k ,v in pairs(self.groups) do
@@ -39,7 +38,7 @@ function SpawnNpcManager:update(dt)
 						id = q, 
 						px = v.dat.szPosition[p].x/GAMEPLAY_PERCENT, 
 						pz = v.dat.szPosition[p].z/GAMEPLAY_PERCENT,
-						v.batch,			
+						batch = v.batch,			
 						})
 					)
 
@@ -58,7 +57,6 @@ function SpawnNpcManager:update(dt)
 				v.remaintime = v.dat.n32CDtime
 				v.dat = g_shareData.spawnMonsterResp[v.dat.n32NextBatch]
 				spawnOver = true
-				break
 			end
 		end
 	end

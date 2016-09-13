@@ -44,7 +44,7 @@ function Ientity:ctor(pos,dir)
 	self.entityType = 0
 	self.serverId = 0
 	register_class_var(self, 'Level', 1)
-	self.modolId = 8888	--模型id	
+	self.bornPos =  vector3.create()
 	
 	self.target =  nil --选中目标实体
 	self.moveSpeed = 0
@@ -61,6 +61,7 @@ function Ientity:ctor(pos,dir)
 
 	--att data
 	self.attDat = nil
+	self.modelDat = nil
 	
 	--技能相关----
 	self.spell = spell.new(self)		 --技能
@@ -99,6 +100,7 @@ function Ientity:ctor(pos,dir)
 	register_stats(self, 'BaojiTimes')
 	register_stats(self, 'Hit')
 	register_stats(self, 'Miss')
+	self.lastHp = 0
 
 	self.recvTime = 0
 	--cooldown
@@ -164,21 +166,22 @@ end
 function Ientity:pathFind(dx, dz)
 	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz)
 	self.pathNodeIndex = 3
-	self.useAStar = true
-	return #self.pathMove > self.pathNodeIndex
+	self.useAStar = #self.pathMove > self.pathNodeIndex
+	return self.useAStar
 end
 
 function Ientity:setTarget(target)
+	if not target then self.target = nil return end
 	if self.affectTable:canControl() == false then return end		--不受控制状态
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	if self.attackSpell:canBreak(ActionState.move) == false then return end
-
+	
 	self.userAStar = false
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
 
-	--local r = self:pathFind(self.target.pos.x, self.target.pos.z)
+--	local r = self:pathFind(self.target.pos.x, self.target.pos.z)
 end
 
 function Ientity:getTarget()
@@ -329,7 +332,6 @@ function Ientity:onDead()
 end
 
 function Ientity:addHp(_hp, mask, source)
-	if _hp < 0 then _hp = -5 end
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
@@ -578,7 +580,7 @@ function Ientity:canCast(id)
 end
 
 function Ientity:getDistance(target)
-	assert(target)
+	if not target then return math.maxinteger end
 	local dis = vector3.len(self.pos, target.pos)
 	return dis
 end
@@ -618,7 +620,7 @@ function Ientity:castSkill()
 	self.ReadySkillId = 0
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
-	local modoldata = g_shareData.heroModolRepository[self.modolId]
+	local modoldata = self.modelDat
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
 	if errorcode ~= 0 then return errorcode end
