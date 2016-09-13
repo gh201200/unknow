@@ -12,6 +12,7 @@ else
   error(e)
 end
 local xmlhandler = simpleTreeHandler()
+xmlhandler.options = {noreduce={item=1}}
 local xmlparser = xmlParser(xmlhandler)
 xmlparser:parse(xmltext)
 
