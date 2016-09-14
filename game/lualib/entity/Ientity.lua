@@ -191,9 +191,6 @@ end
 
 function Ientity:setTargetPos(target)
 	if target == nil then return end
-	target.x = target.x/GAMEPLAY_PERCENT
-	target.z = target.z/GAMEPLAY_PERCENT
-	--self.target:set(target.x, 0, target.z)
 	local pos = vector3.create(target.x,0,target.z)
 	self:setTarget(transfrom.new(pos,nil))
 end
@@ -216,7 +213,11 @@ function Ientity:update(dt)
 	end
 	
 	if self.curActionState == ActionState.move then
-		self:onMove(dt)
+		if not self.target then 
+			self:stand()
+		else
+			self:onMove(dt)
+		end
 	elseif self.curActionState == ActionState.stand then
 		--站立状态
 		
@@ -259,15 +260,22 @@ function Ientity:onMove(dt)
 		if Map.IS_SAME_GRID(self.pos, mv_dst) == false then
 			if Map:get(mv_dst.x, mv_dst.z) > 0 then
 				local nearBy = false
-				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
-				mv_slep_dir:rot(100)
-				mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
-				mv_dst:mul_num(self.moveSpeed * dt)
-				mv_dst:add(self.pos)
-				if Map.IS_SAME_GRID(self.pos, mv_dst) or  Map:get(mv_dst.x, mv_dst.z) == 0 then
-					nearBy = true
-					self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
-				end
+				local angle = 60
+				repeat
+					mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
+					mv_slep_dir:rot(angle)
+					mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+					mv_dst:mul_num(self.moveSpeed * dt)
+					mv_dst:add(self.pos)
+					if Map.IS_SAME_GRID(self.pos, mv_dst) or  Map:get(mv_dst.x, mv_dst.z) == 0 then
+						nearBy = true
+						self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+					end
+					if nearBy then break end
+					angle = angle + 30
+
+				until angle > 150
+				
 				if not nearBy and self.useAStar then
 					mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
 					mv_slep_dir:rot(-100)
@@ -282,8 +290,8 @@ function Ientity:onMove(dt)
 				
 				if not nearBy then
 					if not self.useAStar then
-						print('use a star to find a path')
-						nearBy = self:pathFind(self.target.pos.x, self.target.pos.z)
+					--	print('use a star to find a path')
+					--	nearBy = self:pathFind(self.target.pos.x, self.target.pos.z)
 					end
 				end
 				if not nearBy then
@@ -368,6 +376,7 @@ end
 
 function Ientity:recvHpMp()
 	if true then return end
+	if self:getHp() <= 0 then return end
 	if self:getRecvHp() <= 0 and self:getRecvMp() <= 0 then return end
 	local curTime = skynet.now()
 	if self.recvTime == 0 then

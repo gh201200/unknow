@@ -27,7 +27,8 @@ end
 local function query_event_func(response,agent, account_id, args)
 	local entity = EntityManager:getEntity( args.id )
 	if not entity then
-		syslog.warningf("client[%s] query_event server obj[%d] is null, type[%d]", platyerId, args.id, args.type)
+		response(true, nil)
+		return
 	end
 	EventStampHandle.createHandleCoroutine(args.id, args.type, response)
 	entity:checkeventStamp(args.type, args.stamp)
@@ -55,6 +56,8 @@ end
 
 function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
+	args.x = args.x / GAMEPLAY_PERCENT
+	args.z = args.z / GAMEPLAY_PERCENT
 	player:setTargetPos(args)
 	response(true, nil)
 end

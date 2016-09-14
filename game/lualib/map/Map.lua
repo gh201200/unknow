@@ -110,6 +110,14 @@ function Map:find(s_px, s_pz, e_px, e_pz)
 	local gsz = Map.POS_2_GRID(s_pz)
 	local gex = Map.POS_2_GRID(e_px)
 	local gez = Map.POS_2_GRID(e_pz)
+	if not Map.legal(gsx, gsz) then 
+		print('非法寻经：', gsx, gsz, gex, gez)
+		return {} 
+	end
+	if not Map.legal(gex, gez) then 
+		print('非法寻经：', gsx, gsz, gex, gez)
+		return {} 
+	end
 	local path = { pf.path(self.m, gsx, gsz, gex, gez) }	
 	return path
 end
