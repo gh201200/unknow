@@ -137,10 +137,10 @@ function NpcAI:onExec_GoHome()
 	local bx = Map.POS_2_GRID(self.source.bornPos.x)
 	local bz = Map.POS_2_GRID(self.source.bornPos.z)
 	for i=0, 8 do
-		local x = Map.POS_2_GRID(self.source.pos.x) + dir[i][1]
-		local z = Map.POS_2_GRID(self.source.pos.z) + dir[i][2]
-		if x == bx and z == bz then
-			if Map:get(bx, bz) > 0 then
+		local x = Map.POS_2_GRID(self.source.pos.x)
+		local z = Map.POS_2_GRID(self.source.pos.z)
+		if x == bx+dir[i][1] and z == bz+dir[i][2] then
+			if Map:get(bx, bz) > 0 or i==8 then
 				self:setNextAiState("waitFBack")
 			end
 		end
