@@ -22,7 +22,6 @@ function AffectTable:update(dt)
 			--self.affects[i].status = "exec"
 			self.affects[i]:onEnter()			
 		elseif self.affects[i].status == "exit" then
-			print("remove...",i,#self.affects)
 			table.remove(self.affects,i)
 		end
 	end

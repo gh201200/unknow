@@ -12,6 +12,7 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 	local entity = EntityManager:getEntity( serverId )
 	if not entity then
 		print('createHandleCoroutine entity id null ,server id = ',serverId)
+		EntityManager:dump()
 	end
 	if not entity.coroutine_pool[event] then
 		local co = coroutine.create(function(...)
@@ -66,8 +67,8 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		skillId = skillid,
 		targetId = targetId,
-		errorCode = errorCode 
-}
+		pos = {x=math.ceil(player.target.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.target.pos.z*GAMEPLAY_PERCENT) }
+	}
 	return r
 end
 
@@ -131,7 +132,6 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 		assert(v and v.effectId)
 		table.insert(r.affectList, {effectId = v.effectId , projectId = v.projectId,effectTime = v.effectTime })
 	end
-	print("AAAAAAAAAAAAAAAAAA",r)
 	return r
 end
 

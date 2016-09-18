@@ -24,8 +24,9 @@ end
 
 function EntityManager:dump()
 	for i=#self.entityList, 1, -1 do
-		print('server id = '..v.serverId)
-		print('entity type = '..v.entityType)
+		local v = self.entityList[i]
+		print('server id = '.. v.serverId)
+		print('entity type = '.. v.entityType)
 	end
 end
 
@@ -110,7 +111,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 			return tmpTb
 		end
 	end
-	--筛选出目标群体
+	--根据势力筛选出目标对象
 	for _k,_v in pairs(self.entityList) do
 		if type_target == 1 then
 			table.insert(tmpTb,source)
@@ -120,7 +121,8 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 				table.insert(tmpTb,_v)
 			end
 		elseif type_target == 3 then
-			if _v.camp ~= source.camp then
+			--if _v.camp ~= source.camp then
+			if _v ~= source  then
 				table.insert(tmpTb,_v)
 			end
 		end
@@ -132,14 +134,15 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 			for _k,_v  in pairs(tab) do
 				local disVec = _v.pos:return_sub(basepos)
 				local disLen = disVec:length()	
-				if disLen >= range then
+				if disLen <= range then
 					table.insert(ret,_v)
 				end
 			end
 		end
+		return ret
 	end
 	local retTb = {}
-	--筛选区域内群体
+	--筛选区域内对象
 	if type_range  == 1 then
 		--assert(#tmpTb == 1)
 	elseif type_range  == 2 then
@@ -147,7 +150,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	elseif type_range == 3 then
 		
 	elseif type_range == 4 then
-		retTb = getRangeEntitys(tmpTb,source.targetpostion,skilldata.n32Radius)	
+		retTb = getRangeEntitys(tmpTb,source.target.pos,skilldata.n32Radius)	
 	elseif type_rang == 5 then	
 	
 	end

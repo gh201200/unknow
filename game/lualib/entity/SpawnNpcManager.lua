@@ -20,6 +20,7 @@ local spawnOver = false
 local wait = 0
 function SpawnNpcManager:update(dt)
 	wait = wait + dt
+	--if true then return end
 	if wait < 2000 then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
 	spawnOver = false

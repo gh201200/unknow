@@ -223,8 +223,11 @@ function Ientity:update(dt)
 	end
 	--技能相关
 	if self.ReadySkillId ~= 0 then	
-		if self:canCast(self.ReadySkillId) == 0 then
+		local err = self:canCast(self.ReadySkillId)
+		if err == 0 then
 			self:castSkill(self.ReadySkillId)
+		else
+			print("=====================update can castSkill",err)
 		end
 	end
 
@@ -336,6 +339,7 @@ function Ientity:onDead()
 end
 
 function Ientity:addHp(_hp, mask, source)
+	_hp = 0
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
@@ -579,13 +583,19 @@ function Ientity:setState(state)
 end
 
 function Ientity:canCast(id)
+	print("Ientity:canCast:",id)
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
+	if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
 	if skilldata.bNeedTarget == true then
-		if self.target == nil or self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
-		if self:getDistance(self.target) > skilldata.n32Range then return ErrorCode.EC_Spell_TargetOutDistance end	--目标距离过远
+		if self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 	end
-	
+	local dis = self:getDistance(self.target)
+	local dataDis = skilldata.n32Range / 10000
+	if dis > dataDis  then 
+		print("canCast error",dis,dataDis)
+		return ErrorCode.EC_Spell_TargetOutDistance 
+	end
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end
@@ -611,7 +621,9 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
+	
 	self.ReadySkillId = id
+	print("======>>setCastSkillId",id)
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
         if errorcode ~= 0 then return errorcode end 
@@ -619,10 +631,10 @@ function Ientity:setCastSkillId(id)
 	local type_range = math.floor(skilldata.n32Type % 10)
 	if  type_range == 3 or type_range  == 4 then
 		--立即释放
-		errorcode = self.canCast(id)
-		if errorcode ~= 0 then
-			return errorcode
-		end
+		--errorcode = self.canCast(id)
+		--if errorcode ~= 0 then
+		--	return errorcode
+		--end
 		--self.castSkill()
 	end
 end

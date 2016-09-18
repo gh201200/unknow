@@ -122,6 +122,7 @@ query_event_CastSkill 3 {
 		event_stamp 0 : EventStamp
 		skillId 1 : integer
 		targetId 2 : integer 
+		pos 3 : Vector3
 	}
 }
 
@@ -245,7 +246,7 @@ move 201 {			#client move
 	}
 }
 
-castskill 202 {
+requestCastSkill 202 {
 	request {
 		skillid 0 : integer
 	}
@@ -261,6 +262,16 @@ lockTarget 203 {
 		errorcode 0 : integer
 	}
  }
+
+requestLearnSkill 204 {
+	request {
+		skillid 0 : integer
+	}
+	response {
+		errorcode 0 : integer
+	}
+}
+
 explore_goFight 300 {
 	request {
 		uuid 0 : string
