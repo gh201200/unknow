@@ -25,7 +25,7 @@ function SpawnNpcManager:update(dt)
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
 	spawnOver = false
 	for k ,v in pairs(self.groups) do
-		if v.batch == self.batch then
+		if v.dat and v.batch == self.batch then
 			spawnOver = false
 			v.remainTime = v.remainTime - dt
 			if v.remainTime <= 0 then

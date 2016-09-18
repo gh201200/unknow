@@ -49,7 +49,7 @@ function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
 	--self.ai:update(dt)
 	
-
+	self.skillCD  = self.skillCD - dt
 	--add code before this
 	IMonster.super.update(self, dt)
 end
@@ -68,6 +68,17 @@ end
 
 function IMonster:onDead()
 	IMonster.super.onDead(self)	
+	
+	if self.HpMpChange then
+		self:advanceEventStamp(EventStampType.Hp_Mp)
+		self.HpMpChange = false
+	end
+
+	for k, v in pairs(self.coroutine_response) do
+		for p, q in pairs(v) do
+			q(true, nil)
+		end
+	end
 end
 
 function IMonster:preCastSkill()
@@ -81,11 +92,13 @@ function IMonster:preCastSkill()
 				table.insert(skills, {skillId=v.skillId, percent=sumPercent})
 			end
 		end
-		local rd = math.random(1, sumPercent)
-		for k, v in pairs(skills) do
-			if rd <= v.percent then
-				castSkill = v.skillId
-				break
+		if sumPercent > 0 then
+			local rd = math.random(1, sumPercent)
+			for k, v in pairs(skills) do
+				if rd <= v.percent then
+					castSkill = v.skillId
+					break
+				end
 			end
 		end
 	end

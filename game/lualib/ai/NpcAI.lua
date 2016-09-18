@@ -1,6 +1,7 @@
 local AIBase = require "ai.AIBase"
 local EntityManager = require "entity.EntityManager"
 local vector3 = require "vector3"
+local Map = require "map.Map"
 
 
 local NpcAI = class("NpcAI", AIBase)
@@ -10,11 +11,14 @@ function NpcAI:ctor(entity)
 	NpcAI.super.ctor(self, entity)
 
 	self.refreshTarget = 0
+	self.fightBackHate = 0
+
 
 	self.Fsms["Idle"] = {["onEnter"] = self.onEnter_Idle, ["onExec"] = self.onExec_Idle,["onExit"] = self.onExit_Idle}
 	self.Fsms["Chase"] = {["onEnter"] = self.onEnter_Chase, ["onExec"] = self.onExec_Chase,["onExit"] = self.onExit_Chase}
 	self.Fsms["Battle"] = {["onEnter"] = self.onEnter_Battle, ["onExec"] = self.onExec_Battle,["onExit"] = self.onExit_Battle}
 	self.Fsms["GoHome"] = {["onEnter"] = self.onEnter_GoHome, ["onExec"] = self.onExec_GoHome,["onExit"] = self.onExit_GoHome}
+	self.Fsms["waitFBack"] = {["onEnter"] = self.onEnter_FightBack, ["onExec"] = self.onExec_FightBack,["onExit"] = self.onExit_FightBack}
 	self.mCurrentAIState = "Idle"
 	self.mNextAIState = "Idle"
 	self.mCurrFsm = self.Fsms[self.mCurrentAIState]
@@ -111,14 +115,55 @@ end
 
 function NpcAI:onEnter_GoHome()
 	self.source:clearPreCastSkill()
-end
-
-function NpcAI:onExec_GoHome()
 	self.source:setTargetPos(self.source.bornPos)
 end
 
-function NpcAI:onExit_GoHome()
+local dir = {
+	[0] = {0,1},
+	[1] = {1,1},
+	[2] = {1,0},
+	[3] = {1,-1},
+	[4] = {0,-1},
+	[5] = {-1,-1},
+	[6] = {-1,0},
+	[7] = {-1,1},
+	[8] = {0,0}
+}
+
+function NpcAI:onExec_GoHome()
+	if self.source.moveSpeed==0 then
+		self.source:setTargetPos(self.source.bornPos)
+	end
+	local bx = Map.POS_2_GRID(self.source.bornPos.x)
+	local bz = Map.POS_2_GRID(self.source.bornPos.z)
+	for i=0, 8 do
+		local x = Map.POS_2_GRID(self.source.pos.x)
+		local z = Map.POS_2_GRID(self.source.pos.z)
+		if x == bx+dir[i][1] and z == bz+dir[i][2] then
+			if Map:get(bx, bz) > 0 or i==8 then
+				self:setNextAiState("waitFBack")
+			end
+		end
+	end
 end
+
+function NpcAI:onExit_GoHome()
+
+end
+
+function NpcAI:onEnter_FightBack()
+	self.fightBackHate = self.source.hateList:getTotalHate()
+end
+
+function NpcAI:onExec_FightBack()
+	if self.fightBackHate ~= self.source.hateList:getTotalHate() then
+		self:setNextAiState("Idle")
+	end
+end
+
+function NpcAI:onExit_FightBack()
+end
+
 
 return NpcAI
 
