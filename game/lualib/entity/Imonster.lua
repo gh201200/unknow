@@ -2,6 +2,7 @@ local Ientity = require "entity.Ientity"
 local vector3 =require "vector3"
 local HateList = require "ai.HateList" 
 local NpcAI = require "ai.NpcAI"
+local EntityManager = require "entity.EntityManager"
 
 
 local IMonster = class("IMonster", Ientity)
@@ -68,6 +69,13 @@ end
 
 function IMonster:onDead()
 	IMonster.super.onDead(self)	
+	
+	--drop
+	local sid = self.hateList:getTopHate()
+	local player = EntityManager:getEntity( sid )
+	player:addGold( self.attDat.n32Gold )
+	player:addExp( self.attDat.n32Exp )
+	
 	
 	if self.HpMpChange then
 		self:advanceEventStamp(EventStampType.Hp_Mp)

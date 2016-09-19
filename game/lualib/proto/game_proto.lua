@@ -367,6 +367,13 @@ spawnMonsters 2001 {
 
 fightBegin 2002 {
 }
+
+addGoldExp 2003 {
+	request {
+		gold 0 : integer
+		exp 1 : integer
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)
