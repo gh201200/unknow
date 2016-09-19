@@ -29,7 +29,9 @@ function IMapPlayer:ctor()
 	self.nickName = ''
 	self.color = 0
 	
-	raegister_class_var(self, 'Gold', 0, self.onGold)
+	register_class_var(self, 'LoadProgress', 0)
+	
+	register_class_var(self, 'Gold', 0, self.onGold)
 	register_class_var(self, 'Exp', 0, self.onExp)
 	self.GoldExpMask = false
 end
