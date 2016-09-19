@@ -43,7 +43,7 @@ end
 function NpcAI:updatePreCast()
 	--decide whitch skill it will be cast
 	self.source:preCastSkill()
-	self.followLen = self.source:getPreSkillData().n32Range - 0.05
+	self.followLen = self.source:getPreSkillData().n32Range/GAMEPLAY_PERCENT - 0.05
 end
 
 function NpcAI:onEnter_Idle()

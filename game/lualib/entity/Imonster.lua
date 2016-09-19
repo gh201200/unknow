@@ -3,6 +3,7 @@ local vector3 =require "vector3"
 local HateList = require "ai.HateList" 
 local NpcAI = require "ai.NpcAI"
 local EntityManager = require "entity.EntityManager"
+local Map = require "map.Map"
 
 
 local IMonster = class("IMonster", Ientity)
@@ -48,7 +49,7 @@ end
 
 function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
-	--self.ai:update(dt)
+	self.ai:update(dt)
 	
 	self.skillCD  = self.skillCD - dt
 	--add code before this
@@ -87,6 +88,8 @@ function IMonster:onDead()
 			q(true, nil)
 		end
 	end
+
+	Map:add(self.pos.x, self.pos.z, -1)
 end
 
 function IMonster:preCastSkill()
@@ -118,19 +121,19 @@ function IMonster:clearPreCastSkill()
 end
 
 function IMonster:addHp(_hp, mask, source)
-	IMonster.super.addHp(self, _hp, mask, source)
-	
-	if self:getHp() <= 0 then                                             
-                self.hateList:addHate(source, self.lastHp + math.floor(self:getHpMax() * 0.2))
+	if self:getHp()+_hp <= 0 then                                             
+                self.hateList:addHate(source, self:getHp() + math.floor(self:getHpMax() * 0.2))
      	else                                                                  
                 if _hp < 0 then                                               
-			if self.lastHp == self:getHpMax() then                
-				self.hateList:addHate(source, -_hp + math.floor(self:getHpMax()
-    * 0.1))             else                                                  
+			if self:getHp() == self:getHpMax() then                
+				self.hateList:addHate(source, -_hp + math.floor(self:getHpMax()* 0.1))             
+	else                                                  
                         	self.hateList:addHate(source, -_hp)           
                         end                                                   
-                 end                                                           
-         end    
+		end                                                           
+        end
+    
+	IMonster.super.addHp(self, _hp, mask, source)
 end
 
 return IMonster
