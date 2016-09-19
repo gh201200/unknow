@@ -71,8 +71,12 @@ function AffectTable:buildAffects(source,dataStr)
 		for tp,vals in string.gmatch(v,"(%a+)%:(.+)") do
 			vals = vals .. "," 
 			table.insert(data,tp)
-			for val in string.gmatch(vals,"(%d+)%,") do
-				table.insert(data,tonumber(val))
+		--	for val in string.gmatch(vals,"(%d+)%,") do
+			local valtb = string.split(vals,",")
+			for _,val in pairs(valtb) do
+				if val ~= "" then
+					table.insert(data,tonumber(val))
+				end
 			end 
 		end
 		self:addAffect(source,data) 
