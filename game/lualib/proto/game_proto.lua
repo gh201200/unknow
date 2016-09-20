@@ -87,6 +87,14 @@ local types = [[
 	name 2 : string
 	color 3 : integer
 }
+
+.DropItem {
+	itemId 0 : integer
+	itemNum 1 : integer
+	px 2 : integer
+	pz 3 : integer
+	sid 4 : integer
+}
 ]]
 
 local c2s = [[
@@ -374,7 +382,13 @@ addGoldExp 2003 {
 	}
 }
 
-emitFlyObj 2004 {
+makeDropItem 2004 {
+	request {
+		items 0 : *DropItem
+	}
+}
+
+emitFlyObj 2005 {
 	request {
 		serverId 0 : integer
 		effectId 1 : integer

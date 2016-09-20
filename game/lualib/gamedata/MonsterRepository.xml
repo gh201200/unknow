@@ -18,8 +18,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>80</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>80</n32Gold>
+		<n32Drop>1001, 1001, 1001, 1001, 1002</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>(31501, 5000)</szSkill>
@@ -43,8 +43,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>40</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>40</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -68,8 +68,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>40</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>40</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -93,8 +93,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>20</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>20</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -118,8 +118,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>20</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>20</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -143,8 +143,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>30</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>30</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -168,8 +168,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>20</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>20</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -193,8 +193,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>20</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>20</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -218,8 +218,8 @@
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>10000</n32RecvMp>
 		<n32Exp>30</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>30</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -243,8 +243,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>40000</n32RecvMp>
 		<n32Exp>160</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>160</n32Gold>
+		<n32Drop>1001, 1001, 1001, 1001, 1002</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -268,8 +268,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>60</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>60</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -293,8 +293,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>60</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>60</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -318,8 +318,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>30</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>30</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -343,8 +343,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>30</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>30</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -368,8 +368,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>45</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>45</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -393,8 +393,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>30</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>30</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -418,8 +418,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>30</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>30</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -443,8 +443,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>45</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>45</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -468,8 +468,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>40000</n32RecvMp>
 		<n32Exp>240</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>240</n32Gold>
+		<n32Drop>1001, 1001, 1001, 1001, 1002</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -493,8 +493,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>90</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>90</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -518,8 +518,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>90</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>90</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -543,8 +543,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>45</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>45</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -568,8 +568,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>45</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>45</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -593,8 +593,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>68</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>68</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -618,8 +618,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>45</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>45</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -643,8 +643,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>45</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>45</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -668,8 +668,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>68</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>68</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -693,8 +693,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>40000</n32RecvMp>
 		<n32Exp>320</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>320</n32Gold>
+		<n32Drop>1001, 1001, 1001, 1001, 1002</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -718,8 +718,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>135</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>135</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -743,8 +743,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>135</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>135</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -768,8 +768,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>68</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>68</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -793,8 +793,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>68</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>68</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -818,8 +818,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>101</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>101</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -843,8 +843,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>68</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>68</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -868,8 +868,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>68</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>68</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -893,8 +893,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>101</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>101</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -918,8 +918,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>40000</n32RecvMp>
 		<n32Exp>400</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>400</n32Gold>
+		<n32Drop>1001, 1001, 1001, 1001, 1002</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -943,8 +943,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>203</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>203</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -968,8 +968,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>203</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>203</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -993,8 +993,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>101</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>101</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -1018,8 +1018,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>101</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>101</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -1043,8 +1043,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>152</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>152</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -1068,8 +1068,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>101</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>101</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -1093,8 +1093,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>101</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>101</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
@@ -1118,8 +1118,8 @@
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>152</n32Exp>
-		<n32Gold>10</n32Gold>
-		<n32Drop>0</n32Drop>
+		<n32Gold>152</n32Gold>
+		<n32Drop>1001</n32Drop>
 		<n32CommonSkill>30001
 </n32CommonSkill>
 		<szSkill>31501</szSkill>
