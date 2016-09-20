@@ -1,7 +1,7 @@
 local skynet = require "skynet"
 require "globalDefine"
 local vector3 = require "vector3"
-
+local IflyObj = require "entity.IflyObj"
 local EntityManager = class("EntityManager")
 
 function EntityManager:sendToAllPlayers(msg, val, except)
@@ -37,6 +37,10 @@ function EntityManager:update(dt)
 			v:update(dt)		
 			if v.entityType == EntityType.monster then
 				if v:getHp() <= 0 then		--dead, remove it
+					table.remove(self.entityList, i)
+				end
+			elseif v.entityType == EntityType.flyObj then
+				if v.lifeTime <= 0 then
 					table.remove(self.entityList, i)
 				end	
 			end
@@ -100,9 +104,12 @@ function EntityManager:getCloseEntityByType(source, _type)
 	end
 	return et, minLen
 end
-
+function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
+	local obj = IflyObj.create(srcObj,targetPos,skilldata)	
+	self:addEntity(obj)
+end
 function EntityManager:getSkillAttackEntitys(source,skilldata)
-	local type_range = math.floor(skilldata.n32Type % 10)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:目标点的矩形区域 
+	local type_range = math.floor(skilldata.n32Type % 10)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:飞行物碰撞 
 	local type_target = math.floor(skilldata.n32Type / 10)  -- 1:自身 2:友方 3:敌方
 	local tmpTb = {}
 	if type_range == 1 then
@@ -156,6 +163,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	end
 	return retTb
 end
+
 return EntityManager.new()
 
 

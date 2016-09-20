@@ -9,4 +9,11 @@ end
 function transform:getType()
 	return "transform"
 end
+
+function transform:getDistance(target)
+	if not target then return math.maxinteger end
+	local dis = vector3.len(self.pos, target.pos)
+	return dis
+end
+
 return transform

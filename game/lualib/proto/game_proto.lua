@@ -367,6 +367,15 @@ spawnMonsters 2001 {
 
 fightBegin 2002 {
 }
+
+emitFlyObj 2003 {
+	request {
+		serverId 0 : integer
+		effectId 1 : integer
+		dirx 2  : string 
+		dirz 3  : string
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)

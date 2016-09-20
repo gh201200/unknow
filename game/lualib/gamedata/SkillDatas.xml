@@ -60,7 +60,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -70,8 +70,8 @@
 		<szName>大招</szName>
 		<szDescribe>使目标变成小羊，没有护甲并缓慢移动
 等级1：持续1.5秒</szDescribe>
-		<szMyAffect>[blink:1,1,1]</szMyAffect>
-		<szTargetAffect></szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<szTargetAffect>[changeMod:1,60002]</szTargetAffect>
 		<n32TargetType>1</n32TargetType>
 		<n32TargetEffect>0</n32TargetEffect>
 		<n32Radius>0</n32Radius>
@@ -87,12 +87,12 @@
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32Range>6</n32Range>
+		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>1000</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -124,24 +124,23 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
 	<item id="30301">
-		<n32Type>3</n32Type>
-		<szTypeInfo>对目标友方效果</szTypeInfo>
-		<szName>治疗</szName>
-		<szDescribe>治疗一名友方，使其回复生命
-等级1：回复20%攻击力+2倍智力的生命</szDescribe>
-		<szMyAffect>[cure_hp：0.2,2]</szMyAffect>
-		<szTargetAffect>[cure_hp：0.2,2]</szTargetAffect>
+		<n32Type>35</n32Type>
+		<szTypeInfo>控制球</szTypeInfo>
+		<szName>控制球</szName>
+		<szDescribe></szDescribe>
+		<szMyAffect></szMyAffect>
+		<szTargetAffect>[mov:0,0,1,60009]</szTargetAffect>
 		<n32TargetType>1</n32TargetType>
-		<n32TargetEffect>60004</n32TargetEffect>
-		<n32Radius>0</n32Radius>
+		<n32TargetEffect></n32TargetEffect>
+		<n32Radius>4</n32Radius>
 		<n32MyEffect>0</n32MyEffect>
 		<szAtkBe></szAtkBe>
-		<n32CubeEffect>0</n32CubeEffect>
+		<n32CubeEffect>60008</n32CubeEffect>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -151,12 +150,12 @@
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32Range>6</n32Range>
+		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -188,7 +187,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -220,7 +219,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -256,7 +255,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -322,7 +321,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -353,7 +352,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -384,7 +383,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -416,7 +415,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -447,7 +446,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -512,7 +511,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -548,7 +547,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -622,7 +621,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -654,7 +653,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
@@ -690,7 +689,7 @@
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
-		<szAction>skill1</szAction>
+		<szAction>Skill_01</szAction>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>

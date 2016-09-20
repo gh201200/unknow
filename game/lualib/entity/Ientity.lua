@@ -11,7 +11,7 @@ local coroutine = require "skynet.coroutine"
 
 local Ientity = class("Ientity" , transfrom)
 
-local StrengthEffect = { 50,0,2,0,0,0,1,0, }
+local StrengthEffect = { 49,0,2,0,0,0,1,0, }
 local MinjieEffect = { 0,0,2,0.5,0.05,1.2,0,0,}
 local ZhiliEffect = { 0,30,2,0,0,0,0,1, }
 local HP_MP_RECOVER_TIMELINE = 1000
@@ -227,8 +227,8 @@ function Ientity:update(dt)
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
 			self:castSkill(self.ReadySkillId)
-		else
-			print("=====================update can castSkill",err)
+		--else
+		--	print("=====================update can castSkill",err)
 		end
 	end
 
@@ -315,10 +315,12 @@ function Ientity:onMove(dt)
 		--到达终点
 		if self.useAStar then
 			if self.pathNodeIndex >= #self.pathMove then
+				self.target = nil
 				self:stand()
 				break
 			end
 		elseif Map.IS_SAME_GRID(self.pos, self.target.pos) then 
+			self.target = nil
 			self:stand()
 			break
 		end
@@ -592,7 +594,6 @@ function Ientity:setState(state)
 end
 
 function Ientity:canCast(id)
-	print("Ientity:canCast:",id)
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
@@ -602,18 +603,13 @@ function Ientity:canCast(id)
 	local dis = self:getDistance(self.target)
 	local dataDis = skilldata.n32Range / 10000
 	if dis > dataDis  then 
-		print("canCast error",dis,dataDis)
+	--	print("canCast error",dis,dataDis)
 		return ErrorCode.EC_Spell_TargetOutDistance 
 	end
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end
 
-function Ientity:getDistance(target)
-	if not target then return math.maxinteger end
-	local dis = vector3.len(self.pos, target.pos)
-	return dis
-end
 
 --是否能选中技能
 function Ientity:canSetCastSkill(id)
@@ -630,9 +626,8 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	
+	print("Ientity:setCastSkillId",id)	
 	self.ReadySkillId = id
-	print("======>>setCastSkillId",id)
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
         if errorcode ~= 0 then return errorcode end 
