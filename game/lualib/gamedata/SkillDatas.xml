@@ -23,7 +23,7 @@
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32Range>10000</n32Range>
+		<n32Range>1</n32Range>
 		<n32MpCost>0</n32MpCost>
 		<n32CD>1000</n32CD>
 		<n32TriggerTime>400</n32TriggerTime>
@@ -97,13 +97,13 @@
 		<bIngoreImmune>0</bIngoreImmune>
 	</item>
 	<item id="30201">
-		<n32Type>34</n32Type>
+		<n32Type>2</n32Type>
 		<szTypeInfo>对敌方坐标点周围圆形范围效果</szTypeInfo>
 		<szName>冰暴</szName>
 		<szDescribe>对目标周围敌军造成伤害并减速
 等级1：造成150%攻击力+100+2倍智力的伤害.攻速减少30%，移速减少20%,持续3秒</szDescribe>
-		<szMyAffect></szMyAffect>
-		<szTargetAffect>[ap:1,100,0,0,60007]</szTargetAffect>
+		<szMyAffect>[ap:1.5,100],[inte:2],[wps:0,-0.3,3,60007],[mov:-0.2,0,3]</szMyAffect>
+		<szTargetAffect>[ap:1.5,100],[inte:2],[wps:0,-0.3,3,60007],[mov:-0.2,0,3]</szTargetAffect>
 		<n32TargetType>3</n32TargetType>
 		<n32TargetEffect>60003</n32TargetEffect>
 		<n32Radius>2</n32Radius>
@@ -119,7 +119,7 @@
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32Range>60000</n32Range>
+		<n32Range>6</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
 		<n32TriggerTime>500</n32TriggerTime>

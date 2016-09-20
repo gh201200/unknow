@@ -87,6 +87,14 @@ local types = [[
 	name 2 : string
 	color 3 : integer
 }
+
+.DropItem {
+	itemId 0 : integer
+	itemNum 1 : integer
+	px 2 : integer
+	pz 3 : integer
+	sid 4 : integer
+}
 ]]
 
 local c2s = [[
@@ -372,6 +380,12 @@ addGoldExp 2003 {
 	request {
 		gold 0 : integer
 		exp 1 : integer
+	}
+}
+
+makeDropItem 2004 {
+	request {
+		items 0 : *DropItem
 	}
 }
 ]]

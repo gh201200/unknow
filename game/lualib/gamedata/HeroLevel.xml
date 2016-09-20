@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="1">
+		<n32Exp>0</n32Exp>
+	</item>
+	<item id="2">
+		<n32Exp>40</n32Exp>
+	</item>
+	<item id="3">
+		<n32Exp>100</n32Exp>
+	</item>
+	<item id="4">
+		<n32Exp>180</n32Exp>
+	</item>
+	<item id="5">
+		<n32Exp>280</n32Exp>
+	</item>
+	<item id="6">
+		<n32Exp>400</n32Exp>
+	</item>
+	<item id="7">
+		<n32Exp>540</n32Exp>
+	</item>
+	<item id="8">
+		<n32Exp>700</n32Exp>
+	</item>
+	<item id="9">
+		<n32Exp>880</n32Exp>
+	</item>
+	<item id="10">
+		<n32Exp>1080</n32Exp>
+	</item>
+	<item id="11">
+		<n32Exp>1300</n32Exp>
+	</item>
+	<item id="12">
+		<n32Exp>1540</n32Exp>
+	</item>
+	<item id="13">
+		<n32Exp>1800</n32Exp>
+	</item>
+	<item id="14">
+		<n32Exp>2080</n32Exp>
+	</item>
+	<item id="15">
+		<n32Exp>2380</n32Exp>
+	</item>
+	<item id="16">
+		<n32Exp>2700</n32Exp>
+	</item>
+	<item id="17">
+		<n32Exp>3034</n32Exp>
+	</item>
+	<item id="18">
+		<n32Exp>3400</n32Exp>
+	</item>
+	<item id="19">
+		<n32Exp>3780</n32Exp>
+	</item>
+	<item id="20">
+		<n32Exp>4180</n32Exp>
+	</item>
+</info>

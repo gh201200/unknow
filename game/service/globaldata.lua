@@ -6,7 +6,10 @@ local gdd  = {
 	heroRepository = require "heroRepository",
 	monsterRepository = require "monsterRepository",
 	spawnMonsterResp = require "spawnMonsterRepository",
-	mapRepository = require "mapRepository"
+	mapRepository = require "mapRepository",
+	itemRepository = require "itemRepository",
+	itemDropPackage = require "itemDropPackage",
+	heroLevel = require "heroLevel",
 	
 }
 skynet.start(function()

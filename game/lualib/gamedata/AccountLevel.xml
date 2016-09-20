@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="1">
+		<szName>青铜1</szName>
+		<n32Exp>0</n32Exp>
+	</item>
+	<item id="2">
+		<szName>青铜2</szName>
+		<n32Exp>40</n32Exp>
+	</item>
+	<item id="3">
+		<szName>青铜3</szName>
+		<n32Exp>100</n32Exp>
+	</item>
+	<item id="4">
+		<szName>白银1</szName>
+		<n32Exp>180</n32Exp>
+	</item>
+	<item id="5">
+		<szName>白银2</szName>
+		<n32Exp>280</n32Exp>
+	</item>
+	<item id="6">
+		<szName>白银3</szName>
+		<n32Exp>400</n32Exp>
+	</item>
+	<item id="7">
+		<szName>黄金1</szName>
+		<n32Exp>630</n32Exp>
+	</item>
+	<item id="8">
+		<szName>黄金2</szName>
+		<n32Exp>900</n32Exp>
+	</item>
+	<item id="9">
+		<szName>黄金3</szName>
+		<n32Exp>1210</n32Exp>
+	</item>
+	<item id="10">
+		<szName>钻石1</szName>
+		<n32Exp>1800</n32Exp>
+	</item>
+	<item id="11">
+		<szName>钻石2</szName>
+		<n32Exp>2210</n32Exp>
+	</item>
+	<item id="12">
+		<szName>钻石3</szName>
+		<n32Exp>2660</n32Exp>
+	</item>
+	<item id="13">
+		<szName>大师1</szName>
+		<n32Exp>3750</n32Exp>
+	</item>
+	<item id="14">
+		<szName>大师2</szName>
+		<n32Exp>4320</n32Exp>
+	</item>
+	<item id="15">
+		<szName>大师3</szName>
+		<n32Exp>5100</n32Exp>
+	</item>
+	<item id="16">
+		<szName>王者1</szName>
+		<n32Exp>7200</n32Exp>
+	</item>
+	<item id="17">
+		<szName>王者2</szName>
+		<n32Exp>8550</n32Exp>
+	</item>
+	<item id="18">
+		<szName>王者3</szName>
+		<n32Exp>10000</n32Exp>
+	</item>
+	<item id="19">
+		<szName>超神</szName>
+		<n32Exp>14700</n32Exp>
+	</item>
+</info>

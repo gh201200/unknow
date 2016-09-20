@@ -3,7 +3,7 @@
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
 dofile("../3rd/LuaXMLlib/xml.lua")
 dofile("../3rd/LuaXMLlib/handler.lua")
-local filename = "./lualib/gamedata/MonsterRepository.xml"
+local filename = "./lualib/gamedata/ItemDropPackage.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
 if f then
@@ -32,33 +32,20 @@ for k, p in pairs(xmlhandler.root.info.item) do
 					tmpTb[_i] = true
 				end
 			else
-				if _i == "szLink" then
-					tmpTb[_i] = {}
-					for w in string.gmatch(_v, "%d+") do
-						table.insert(tmpTb[_i], tonumber(w))
-					end
-				elseif _i == "szSkill" then
-					tmpTb[_i] = {}
-					for _skill, _percent in string.gmatch(_v, "(%d+),(%d+)") do
-                                                 table.insert(tmpTb[_i], {skillId=_skill,percent=_percent})
-                                        end
-				elseif _i == "szDrop" then
-					tmpTb[_i] = {}
-					for w in string.gmatch(_v, "%d+") do
-						table.insert(tmpTb[_i], tonumber(w))
-					end
-
-				else
-					tmpTb[_i] = _v
-				end
+				tmpTb[_i] = _v
 			end 
 		end
 	end
-	modolsTable[tmpTb.id] = tmpTb
+	if not modolsTable[tmpTb.id] then modolsTable[tmpTb.id] = {} end
+	table.insert(modolsTable[tmpTb.id], tmpTb)
 end
---[[
-for _k,_v in pairs(modolsTable) do
-	print(_k,_v.id,_v)
+for k, v in pairs(modolsTable) do
+	local tr = 0
+	for p, q in pairs(v) do
+		tr = tr + q.n32Rate
+		q.n32Rate = tr
+	end
+	v.totalRate = tr
 end
-]]
+
 return modolsTable

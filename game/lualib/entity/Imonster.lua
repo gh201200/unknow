@@ -4,6 +4,7 @@ local HateList = require "ai.HateList"
 local NpcAI = require "ai.NpcAI"
 local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
+local DropManager = require "drop.DropManager"
 
 
 local IMonster = class("IMonster", Ientity)
@@ -71,24 +72,27 @@ end
 function IMonster:onDead()
 	IMonster.super.onDead(self)	
 	
-	--drop
+	--make drop
 	local sid = self.hateList:getTopHate()
 	local player = EntityManager:getEntity( sid )
 	player:addGold( self.attDat.n32Gold )
 	player:addExp( self.attDat.n32Exp )
+	DropManager:makeDrop(self.attDat.szDrop)
 	
-	
+	--tell the client	
 	if self.HpMpChange then
 		self:advanceEventStamp(EventStampType.Hp_Mp)
 		self.HpMpChange = false
 	end
 
+	--response to agent
 	for k, v in pairs(self.coroutine_response) do
 		for p, q in pairs(v) do
 			q(true, nil)
 		end
 	end
 
+	--reset map
 	Map:add(self.pos.x, self.pos.z, -1)
 end
 

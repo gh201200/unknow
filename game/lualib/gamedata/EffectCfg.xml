@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="100001">
+		<n32type>1</n32type>
+		<szassert>Shanguang_skill_03_1</szassert>
+		<n32time>-1</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+	</item>
+	<item id="100002">
+		<n32type>2</n32type>
+		<szassert>Shanguang_skill_03_2</szassert>
+		<n32time>1000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+	</item>
+	<item id="100003">
+		<n32type>4</n32type>
+		<szassert>Bullet_01</szassert>
+		<n32time>-1</n32time>
+		<n32speed>5</n32speed>
+		<n32position>0</n32position>
+	</item>
+	<item id="100004">
+		<n32type>4</n32type>
+		<szassert>Bullet_01</szassert>
+		<n32time>-1</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+	</item>
+</info>

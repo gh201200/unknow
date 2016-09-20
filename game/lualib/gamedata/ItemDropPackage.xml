@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="1001">
+		<n32ItemId>60001</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60002</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60003</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>61001</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>5</n32MinNum>
+		<n32MaxNum>5</n32MaxNum>
+	</item>
+</info>

@@ -3,7 +3,7 @@
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
 dofile("../3rd/LuaXMLlib/xml.lua")
 dofile("../3rd/LuaXMLlib/handler.lua")
-local filename = "./lualib/gamedata/MonsterRepository.xml"
+local filename = "./lualib/gamedata/ItemRepository.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
 if f then
@@ -32,25 +32,7 @@ for k, p in pairs(xmlhandler.root.info.item) do
 					tmpTb[_i] = true
 				end
 			else
-				if _i == "szLink" then
-					tmpTb[_i] = {}
-					for w in string.gmatch(_v, "%d+") do
-						table.insert(tmpTb[_i], tonumber(w))
-					end
-				elseif _i == "szSkill" then
-					tmpTb[_i] = {}
-					for _skill, _percent in string.gmatch(_v, "(%d+),(%d+)") do
-                                                 table.insert(tmpTb[_i], {skillId=_skill,percent=_percent})
-                                        end
-				elseif _i == "szDrop" then
-					tmpTb[_i] = {}
-					for w in string.gmatch(_v, "%d+") do
-						table.insert(tmpTb[_i], tonumber(w))
-					end
-
-				else
-					tmpTb[_i] = _v
-				end
+				tmpTb[_i] = _v
 			end 
 		end
 	end
