@@ -1,7 +1,6 @@
 --local vector3 = require "vector3"
 local skynet = require "skynet"
 local spell = class("spell")
-
 require "globalDefine"
 
 local SpellStatus = {
@@ -113,7 +112,10 @@ function spell:advanceEffect(dt)
 		if self.triggerTime < 0 then
 			--扣除蓝消耗
 			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
-			if self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then
+			if self.skilldata.n32Type == 35 then
+				--产生可碰撞的飞行物
+				 g_entityManager:createFlyObj(self.source,self.source.target,self.skilldata)
+			elseif self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then
 				--触发目标效果
 				local selfEffects = self.skilldata.szMyAffect
 				if selfEffects ~= ""  then

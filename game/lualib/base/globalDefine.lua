@@ -12,6 +12,7 @@ EntityType = {
 	player				= 1,
 	monster				= 2,
 	building			= 3,
+	flyObj				= 4,
 }
 
 

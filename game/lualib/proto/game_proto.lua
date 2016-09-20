@@ -375,7 +375,6 @@ spawnMonsters 2001 {
 
 fightBegin 2002 {
 }
-
 addGoldExp 2003 {
 	request {
 		gold 0 : integer
@@ -386,6 +385,14 @@ addGoldExp 2003 {
 makeDropItem 2004 {
 	request {
 		items 0 : *DropItem
+}
+
+emitFlyObj 2005 {
+	request {
+		serverId 0 : integer
+		effectId 1 : integer
+		dirx 2  : string 
+		dirz 3  : string
 	}
 }
 ]]
