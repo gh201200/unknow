@@ -72,7 +72,7 @@ end
 
 function AffectTable:buildAffects(source,dataStr)
 	local tb = {}
-	print("affectTable dataStr",dataStr)
+	--print("affectTable dataStr",dataStr)
 	for v in string.gmatch(dataStr,"%[(.-)%]") do
 		local data = {}
 		for tp,vals in string.gmatch(v,"(%a+)%:(.+)") do
@@ -85,7 +85,6 @@ function AffectTable:buildAffects(source,dataStr)
 				end
 			end 
 		end
-		print("afftable datas",data)
 		self:addAffect(source,data) 
 	end
 	self.owner:advanceEventStamp(EventStampType.Affect)		

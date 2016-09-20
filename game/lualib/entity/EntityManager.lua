@@ -153,11 +153,11 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	if type_range  == 1 then
 		--assert(#tmpTb == 1)
 	elseif type_range  == 2 then
-		retTb = getRangeEntitys(tmpTb,source.pos,skilldata.n32Radius)
+		retTb = getRangeEntitys(tmpTb,source.pos,skilldata.n32Radius / 10000 )
 	elseif type_range == 3 then
 		
 	elseif type_range == 4 then
-		retTb = getRangeEntitys(tmpTb,source.target.pos,skilldata.n32Radius)	
+		retTb = getRangeEntitys(tmpTb,source.target.pos,skilldata.n32Radius / 10000)	
 	elseif type_rang == 5 then	
 	
 	end
