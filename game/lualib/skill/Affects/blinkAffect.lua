@@ -4,17 +4,14 @@ local blinkAffect = class("blinkAffect",Affect)
 function blinkAffect:ctor(entity,source,data)
 	self.super.ctor(self,entity,source,data)
 	self.distance = self.data[2] or 0
-	self.effectId = self.data[3]
-	self.effectTime = 1000
-	
-	self.effectId = 100002
-	self.distance = 1
+	self.effectTime = self.data[3] or 0 
+	self.effectId = self.data[4] or 0
 end
 
 function blinkAffect:onEnter()
 	--强制设置目标位置
 	self.super.onEnter(self)	
-	local distance  = 2 --闪现距离
+	local distance  = self.distance --闪现距离
 	local vec = self.owner.dir:return_mul_num(distance)
 	local  des = self.owner.target.pos--self.owner.pos:return_add(vec)
 	self.owner:onForceMove(des)
