@@ -33,6 +33,7 @@ function IMapPlayer:ctor()
 	
 	register_class_var(self, 'Gold', 0, self.onGold)
 	register_class_var(self, 'Exp', 0, self.onExp)
+	
 	self.GoldExpMask = false
 end
 
@@ -43,7 +44,7 @@ end
 function IMapPlayer:update(dt)
 	
 	if self.GoldExpMask then
-		local msg = { gold = self:getGold(), exp = self:getExp(), }
+		local msg = { gold = self:getGold(), exp = self:getExp(), level = self:getLevel()}
 		skynet.call(self.agent, "lua", "sendRequest", "addGoldExp", msg)
 		self.GoldExpMask = false
 	end	
@@ -94,6 +95,14 @@ end
 
 function IMapPlayer:onExp()
 	self.GoldExpMask = true
+	local lv = 1
+	for k, v in pairs(g_shareData.heroLevel) do
+		if self:getExp() < v.n32Exp then
+			lv = k
+			break
+		end
+	end
+	self:setLevel(lv)
 end
 
 

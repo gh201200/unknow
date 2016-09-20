@@ -11,9 +11,6 @@ local coroutine = require "skynet.coroutine"
 
 local Ientity = class("Ientity" , transfrom)
 
-local StrengthEffect = { 49,0,2,0,0,0,1,0, }
-local MinjieEffect = { 0,0,2,0.5,0.05,1.2,0,0,}
-local ZhiliEffect = { 0,30,2,0,0,0,0,1, }
 local HP_MP_RECOVER_TIMELINE = 1000
 
 local function register_stats(t, name)
@@ -369,7 +366,7 @@ function Ientity:addMp(_mp, mask, source)
 	if not mask then
 		mask = HpMpMask.SkillMp
 	end
-	self.lastMp = self.Stats.n32Mp
+	self.lastMp = self:getMp()
 	self:setMp(mClamp(self.lastMp+_mp, 0, self:getMpMax()))
 	if self.lastMp ~= self:getMp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
@@ -378,7 +375,6 @@ function Ientity:addMp(_mp, mask, source)
 end
 
 function Ientity:recvHpMp()
-	if true then return end
 	if self:getHp() <= 0 then return end
 	if self:getRecvHp() <= 0 and self:getRecvMp() <= 0 then return end
 	local curTime = skynet.now()
@@ -388,8 +384,8 @@ function Ientity:recvHpMp()
 	if (curTime - self.recvTime) * 100  > HP_MP_RECOVER_TIMELINE then
 		local cnt = math.ceil((curTime - self.recvTime) * 100 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
- 		self:addHp(self:getRecvHp() * cnt, HpMpMask.TimeLine)
- 		self:addMp(self:getRecvMp() * cnt, HpMpMask.TimeLine)
+ 		self:addHp(math.floor(self:getRecvHp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineHp)
+ 		self:addMp(math.floor(self:getRecvMp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineMp)
  	end
 end
 
@@ -479,9 +475,9 @@ function Ientity:calcHpMax()
 	self:setHpMax(math.floor(
 		self.attDat.n32Hp * (1.0 + self:getMidHpMaxPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidHpMax() 
-		+ self:getStrength() * StrengthEffect[1]
-		+ self:getZhili() * ZhiliEffect[1]
-		+ self:getMinjie() * MinjieEffect[1]
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Hp)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Hp)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Hp)
 	)
 end
 
@@ -489,9 +485,9 @@ function Ientity:calcMpMax()
 	self:setMpMax(math.floor(
 		self.attDat.n32Mp * (1.0 + self:getMidMpMaxPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidMpMax() 
-		+ self:getStrength() * StrengthEffect[2]
-		+ self:getZhili() * ZhiliEffect[2]
-		+ self:getMinjie() * MinjieEffect[2]
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Mp)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Mp)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Mp)
 	)
 end
 
@@ -499,9 +495,9 @@ function Ientity:calcAttack()
 	self:setAttack(math.floor(
 		self.attDat.n32Attack * (1.0 + self:getMidAttackPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidAttack() 
-		+ self:getStrength() * StrengthEffect[3]
-		+ self:getZhili() * ZhiliEffect[3]
-		+ self:getMinjie() * MinjieEffect[3]
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
 	)
 end
 
@@ -509,9 +505,9 @@ function Ientity:calcDefence()
 	self:setDefence(math.floor(
 		self.attDat.n32Defence * (1.0 + self:getMidDefencePc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidDefence() 
-		+ self:getStrength() * StrengthEffect[4]
-		+ self:getZhili() * ZhiliEffect[4]
-		+ self:getMinjie() * MinjieEffect[4]
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Defence)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Defence)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Defence)
 	)
 end
 
@@ -519,9 +515,9 @@ function Ientity:calcASpeed()
 	self:setASpeed(
 		self.attDat.n32ASpeed 
 		+ self:getMidASpeed() 
-		+ self:getStrength() * StrengthEffect[5]
-		+ self:getZhili() * ZhiliEffect[5]
-		+ self:getMinjie() * MinjieEffect[5]
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed)
 	)
 end
 
@@ -529,9 +525,6 @@ function Ientity:calcMSpeed()
 	self:setMSpeed(math.floor(
 		self.attDat.n32MSpeed * (1.0 + self:getMSpeedPc()/GAMEPLAY_PERCENT))
 		+ self:getMidMSpeed() 
-		+ self:getStrength() * StrengthEffect[6]
-		+ self:getZhili() * ZhiliEffect[6]
-		+ self:getMinjie() * MinjieEffect[6]
 	)
 end
 
@@ -539,9 +532,9 @@ function Ientity:calcRecvHp()
 	self:setRecvHp(math.floor(
 		self.attDat.n32RecvHp * (1.0 + self:getMidRecvHp()/GAMEPLAY_PERCENT))
 		+ self:getMidRecvHp()
-		+ self:getStrength() * StrengthEffect[7]
-		+ self:getZhili() * ZhiliEffect[7]
-		+ self:getMinjie() * MinjieEffect[7]
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32RecvHp)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32RecvHp)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32RecvHp)
 	)
 end
 
@@ -549,9 +542,9 @@ function Ientity:calcRecvMp()
 	self:setRecvMp(math.floor(
 		self.attDat.n32RecvMp * (1.0 + self:getMidRecvMp()/GAMEPLAY_PERCENT))
 		+ self:getMidRecvMp()
-		+ self:getStrength() * StrengthEffect[8]
-		+ self:getZhili() * ZhiliEffect[8]
-		+ self:getMinjie() * MinjieEffect[8]
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32RecvMp)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32RecvMp)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32RecvMp)
 	)
 end
 

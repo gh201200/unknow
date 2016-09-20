@@ -379,6 +379,7 @@ addGoldExp 2003 {
 	request {
 		gold 0 : integer
 		exp 1 : integer
+		level 2 : integer
 	}
 }
 
