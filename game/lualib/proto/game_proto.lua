@@ -385,6 +385,7 @@ addGoldExp 2003 {
 makeDropItem 2004 {
 	request {
 		items 0 : *DropItem
+	}
 }
 
 emitFlyObj 2005 {
