@@ -29,14 +29,24 @@ function IMapPlayer:ctor()
 	self.nickName = ''
 	self.color = 0
 	
-	print("IMapPlayer:ctor()")
+	register_class_var(self, 'LoadProgress', 0)
+	
+	register_class_var(self, 'Gold', 0, self.onGold)
+	register_class_var(self, 'Exp', 0, self.onExp)
+	self.GoldExpMask = false
 end
+
 function IMapPlayer:getType()
 	return "IMapPlayer"
 end
+
 function IMapPlayer:update(dt)
-	if self:getHp() <= 0 then return end
 	
+	if self.GoldExpMask then
+		local msg = { gold = self:getGold(), exp = self:getExp(), }
+		skynet.call(self.agent, "lua", "sendRequest", "addGoldExp", msg)
+		self.GoldExpMask = false
+	end	
 	--add code before this
 	IMapPlayer.super.update(self,dt)
 end
@@ -77,6 +87,15 @@ function IMapPlayer:onDead()
 	IMapPlayer.super.onDead(self)
 	print('IMapPlayer:onDead')
 end
+
+function IMapPlayer:onGold()
+	self.GoldExpMask = true
+end
+
+function IMapPlayer:onExp()
+	self.GoldExpMask = true
+end
+
 
 return IMapPlayer
 

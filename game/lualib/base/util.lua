@@ -46,14 +46,27 @@ function ptInRect(p,rectPts)
 end
 
 --------common func to register get set-----------
-function register_class_var(t, name, iv)
+function register_class_var(t, name, iv, callBack)
 	t['m_'..name] = iv
 	t['set'..name] = function(self, v)
 		t['m_'..name] = v
+		if callBack then
+			callBack(self)
+		end
 	end
 	t['get'..name] = function(self)
 		return t['m_'..name]
 	end
+	if type(iv) == "number" then
+		t['add'..name] = function(self, v)
+			if v == 0 then return end
+			t['m_'..name] = t['m_'..name] + v
+			if callBack then
+				callBack(self)
+			end
+		end
+	end
+	
 end
 
 local server_id = 0

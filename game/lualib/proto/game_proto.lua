@@ -367,8 +367,14 @@ spawnMonsters 2001 {
 
 fightBegin 2002 {
 }
+addGoldExp 2003 {
+	request {
+		gold 0 : integer
+		exp 1 : integer
+	}
+}
 
-emitFlyObj 2003 {
+emitFlyObj 2004 {
 	request {
 		serverId 0 : integer
 		effectId 1 : integer

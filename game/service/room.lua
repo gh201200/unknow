@@ -12,7 +12,7 @@ local Map = require "map.Map"
 local traceback  = debug.traceback
 
 local last_update_time = nil
-
+local room_id = 0
 
 
 --dt is ms
@@ -93,9 +93,39 @@ function CMD.query_server_id(response,agent, account_id, args)
 	end
 end
 
+function CMD.loadingRes(response, agent, account_id, args)
+	response( true, nil )
+	local player = EntityManager:getPlayerByPlayerId(account_id)
+	player:setLoadProgress(args.percent)
+	
+	local num = 0
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player  then
+			if v:getLoadProgress() >= 100 then
+				num = num + 1
+			end
+		end
+	end
+
+	--all 6 players load completed
+	if num == 1 then
+		EntityManager:sendToAllPlayers("fightBegin")
+
+		--every 0.03s update entity
+		skynet.timeout(3, updateMapEvent)
+		last_update_time = skynet.now()
+	
+		SpawnNpcManager:init(room_id)
+	end
+end
+
 function CMD.start(response, args)
+	response(true, nil)
+	
 	local roomId = 1
 	local mapDat = g_shareData.mapRepository[roomId]
+
+	room_id = roomId
 
 	--加载地图
 	Map:load("./lualib/map/" .. mapDat.szScene)
@@ -130,18 +160,6 @@ function CMD.start(response, args)
 			skynet.call(v.agent, "lua", "enterMap", skynet.self(), ret)
 		end
 	end
-
-	
-	--这里跳过loading流程
-	EntityManager:sendToAllPlayers("fightBegin")
-
-	--every 0.03s update entity
-	skynet.timeout(3, updateMapEvent)
-	last_update_time = skynet.now()
-
-	SpawnNpcManager:init(roomId)
-
-	response(true, nil)
 end
 
 local function init()

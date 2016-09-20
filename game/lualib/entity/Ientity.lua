@@ -227,8 +227,6 @@ function Ientity:update(dt)
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
 			self:castSkill(self.ReadySkillId)
-		--else
-		--	print("=====================update can castSkill",err)
 		end
 	end
 
@@ -349,7 +347,6 @@ function Ientity:onDead()
 end
 
 function Ientity:addHp(_hp, mask, source)
-	_hp = 0
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
