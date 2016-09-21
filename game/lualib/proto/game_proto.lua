@@ -397,6 +397,19 @@ emitFlyObj 2005 {
 		dirz 3  : string
 	}
 }
+
+pickDropItem 2006 {
+	request {
+		items 0 : *string
+	}
+}
+
+killEntity 2007 {
+	request {
+		sid 0 : integer
+	}
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)

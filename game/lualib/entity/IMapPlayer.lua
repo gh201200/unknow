@@ -40,6 +40,11 @@ function IMapPlayer:getType()
 	return "IMapPlayer"
 end
 
+function IMapPlayer:isRed()
+	return self.color < 4
+end
+
+
 function IMapPlayer:update(dt)
 	
 	if self.GoldExpMask then
