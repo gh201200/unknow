@@ -48,7 +48,7 @@ function DropManager:makeDrop(entity)
 			repeat
 				dropVec:set(entity.dir.x, entity.dir.y, entity.dir.z)
 				dropVec:rot(rotate[pindex])
-				dropVec:mul_num(2.5)
+				dropVec:mul_num(1.5)
 				dropVec:add(entity.pos)
 				pindex = pindex + 1
 				if pindex > 8 then pindex = 0 end

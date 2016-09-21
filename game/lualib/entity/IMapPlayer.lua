@@ -16,7 +16,6 @@ function IMapPlayer.create(arg)
 	player.color = arg.color 	--红方 蓝方 1 2 3 和 4 5 6表示 以及出生位置
 	player.bornPos:set(arg.bornPos[1]/GAMEPLAY_PERCENT, 0, arg.bornPos[2]/GAMEPLAY_PERCENT)
 	player:init(arg.pickedheroid)
-
 	return player
 end	
 
