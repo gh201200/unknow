@@ -159,10 +159,44 @@
 		<szName>闪杀</szName>
 		<szDescribe>闪杀技能描述</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>100001</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,100,0,0,60001]</szTargetAffect>
 		<szMyAffect>[blink:2,1000,100002]</szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="30011">
+		<bActive>1</bActive>
+		<bSoundSkill>0</bSoundSkill>
+		<bNeedTarget>1</bNeedTarget>
+		<bCommonSkill>0</bCommonSkill>
+		<icon>icon.png</icon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32Range>60000</n32Range>
+		<n32MpCost>0</n32MpCost>
+		<n32CD>1000</n32CD>
+		<n32TriggerTime>400</n32TriggerTime>
+		<n32ActionTime>1000</n32ActionTime>
+		<szAction>Skill_01</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>31</n32Type>
+		<szTypeInfo>对单体敌方目标效果</szTypeInfo>
+		<szName>小火球</szName>
+		<szDescribe>小火球描述</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>100003</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:1,100,0,0,60001]</szTargetAffect>
+		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
