@@ -102,6 +102,7 @@ function IMapPlayer:onExp()
 			break
 		end
 	end
+
 	self:setLevel(lv)
 end
 

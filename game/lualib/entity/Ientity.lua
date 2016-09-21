@@ -616,7 +616,6 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	print("Ientity:setCastSkillId",id)	
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 

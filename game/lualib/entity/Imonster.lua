@@ -82,7 +82,7 @@ function IMonster:onDead()
 	local player = EntityManager:getEntity( sid )
 	player:addGold( self.attDat.n32Gold )
 	player:addExp( self.attDat.n32Exp )
-	DropManager:makeDrop(self.attDat.szDrop)
+	DropManager:makeDrop(self)
 	
 	--tell the client	
 	if self.HpMpChange then

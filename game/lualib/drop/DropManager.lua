@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local syslog = require "syslog"
 local Map = require "map.Map"
 local vector3 = require "vector3"
+local EntityManager = require "entity.EntityManager"
 
 local DropManager = class("DropManager")
 
@@ -21,7 +22,6 @@ local rotate = {
 }
 
 local dropVec = vector3.create()
-local rotDir = vector3.create()
 function DropManager:makeDrop(entity)
 	local pindex = 0
 	local items = {}
@@ -48,7 +48,6 @@ function DropManager:makeDrop(entity)
 			repeat
 				dropVec:set(entity.dir.x, entity.dir.y, entity.dir.z)
 				dropVec:rot(rotate[pindex])
-				dropVec:set(rotDor.x, rotDit.y, rotdit.z)
 				dropVec:mul_num(2.5)
 				dropVec:add(entity.pos)
 				pindex = pindex + 1
@@ -61,17 +60,16 @@ function DropManager:makeDrop(entity)
 			if loop == 8 then
 				dropVec:set(entity.pos.x, entity.pos.y, entity.pos.z)
 			end
-			item.px = dropVec.x * GAMEPLAY_PERCENT
-			item.pZ = dropVec.z * GAMEPLAY_PERCENT
-			item.sid = assin_srever_id()
-			
+			item.px = math.floor(dropVec.x * GAMEPLAY_PERCENT)
+			item.pz = math.floor(dropVec.z * GAMEPLAY_PERCENT)
+			item.sid = assin_server_id()
 			self.drops[item.sid] = item
 			table.insert(items, item)
 		else
 			syslog.errf("make drop failed: package[%d], rd[%d]", v, rd)
 		end
 	end
-	if #items > 0 then	
+	if #items > 0 then
 		EntityManager:sendToAllPlayers("makeDropItem", {items = items})
 	end
 end
