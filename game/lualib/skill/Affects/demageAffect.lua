@@ -4,7 +4,6 @@ local demageAffect = class("demageAffect",Affect)
 function demageAffect:ctor(entity,source,data)
 	self.super.ctor(self,entity,source,data)
 	self.triggerTime = 0
-	print("demageAffect",data)
 	self.leftTime = data[5] or 0
 	self.effectId = data[6] or 0
 	self.effectTime = data[5] or 0
