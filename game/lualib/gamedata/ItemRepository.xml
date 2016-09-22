@@ -389,7 +389,7 @@
 	</item>
 	<item id="61001">
 		<szIcon>i61001</szIcon>
-		<szModule>m61001</szModule>
+		<szModule>m60001</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>1</n32Type>
 		<n32Retain1>0</n32Retain1>

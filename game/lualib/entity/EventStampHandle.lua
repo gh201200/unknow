@@ -37,7 +37,6 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 	end
 	table.insert(entity.coroutine_response[event], response)
 end
-
 function respClientEventStamp(co, serverId, event)
 	coroutine.resume(co, serverId, event)
 end

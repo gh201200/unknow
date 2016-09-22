@@ -6,7 +6,7 @@ local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
 local transfrom = require "entity.transfrom"
-
+local EntityManager = require "entity.EntityManager"
 local coroutine = require "skynet.coroutine"
 
 local Ientity = class("Ientity" , transfrom)
@@ -142,7 +142,7 @@ function Ientity:checkeventStamp(event, stamp)
 end
 
 function Ientity:onRespClientEventStamp(event)
-	if event == EventStampType.HP_Mp then
+	if event == EventStampType.Hp_Mp then
 		self.maskHpMpChange = 0
 	end
 end
@@ -340,7 +340,12 @@ function Ientity:OnStand()
 	self:advanceEventStamp(EventStampType.Move)
 end
 function Ientity:onDead()
-	print('Ientity:onDead')
+	print('Ientity:onDead', self.serverId)
+	for k, v in pairs(EntityManager.entityList) do
+		if v.target == self then
+			v:setTarget(nil)
+		end
+	end
 end
 
 function Ientity:addHp(_hp, mask, source)

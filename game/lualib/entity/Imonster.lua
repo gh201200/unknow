@@ -84,11 +84,8 @@ function IMonster:onDead()
 	player:addExp( self.attDat.n32Exp )
 	DropManager:makeDrop(self)
 	
-	--tell the client	
-	if self.HpMpChange then
-		self:advanceEventStamp(EventStampType.Hp_Mp)
-		self.HpMpChange = false
-	end
+	--tell the clients
+	EntityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
 
 	--response to agent
 	for k, v in pairs(self.coroutine_response) do
@@ -96,6 +93,7 @@ function IMonster:onDead()
 			q(true, nil)
 		end
 	end
+	self.coroutine_response = {}
 
 	--reset map
 	Map:add(self.pos.x, self.pos.z, -1)

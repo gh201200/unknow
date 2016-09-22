@@ -40,6 +40,11 @@ function IMapPlayer:getType()
 	return "IMapPlayer"
 end
 
+function IMapPlayer:isRed()
+	return self.color < 4
+end
+
+
 function IMapPlayer:update(dt)
 	
 	if self.GoldExpMask then
@@ -105,6 +110,18 @@ function IMapPlayer:onExp()
 	self:setLevel(lv)
 end
 
-
+function IMapPlayer:addSkill(skillId)
+	if self.skillTable[skillId] then
+		self.skillTable[skillId] = self.skillTable[skillId] + 1
+	else
+		self.skillTable[skillId] = 1
+	end
+	
+	local msg = {
+		skillId = skillId,
+		level = self.skillTable[skillId],
+	}
+	skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+end
 return IMapPlayer
 

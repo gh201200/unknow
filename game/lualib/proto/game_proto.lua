@@ -271,12 +271,12 @@ lockTarget 203 {
 	}
  }
 
-requestLearnSkill 204 {
+usePickItem 204 {
 	request {
-		skillid 0 : integer
+		sid 0 : integer
 	}
 	response {
-		errorcode 0 : integer
+		errorCode 0 : integer
 	}
 }
 
@@ -395,6 +395,25 @@ emitFlyObj 2005 {
 		effectId 1 : integer
 		dirx 2  : string 
 		dirz 3  : string
+	}
+}
+
+pickDropItem 2006 {
+	request {
+		items 0 : *string
+	}
+}
+
+killEntity 2007 {
+	request {
+		sid 0 : integer
+	}
+}
+
+addSkill 2008 {
+	request {
+		skillId 0 : integer
+		level 1 : integer
 	}
 }
 ]]

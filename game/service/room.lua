@@ -9,6 +9,7 @@ local EventStampHandle = require "entity.EventStampHandle"
 local SpawnNpcManager = require "entity.SpawnNpcManager"
 local sharedata = require "sharedata"
 local Map = require "map.Map"
+local DropManager = require "drop.DropManager"
 local traceback  = debug.traceback
 
 local last_update_time = nil
@@ -20,6 +21,7 @@ local function updateMapEvent()
 	local nt = skynet.now()
 	EntityManager:update( (nt - last_update_time) * 10)
 	SpawnNpcManager:update( (nt - last_update_time) * 10)
+	DropManager:update()
 	last_update_time = nt
 	skynet.timeout(2, updateMapEvent)
 end
@@ -117,6 +119,12 @@ function CMD.loadingRes(response, agent, account_id, args)
 	
 		SpawnNpcManager:init(room_id)
 	end
+end
+
+function CMD.usePickItem(response, agent, account_id, args)
+	local player = EntityManager:getPlayerByPlayerId(account_id)
+	local errorCode = DropManager:useItem(player, args.sid)
+	response(true, {errorCode = errorCode})
 end
 
 function CMD.start(response, args)

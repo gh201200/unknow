@@ -3,11 +3,39 @@ local syslog = require "syslog"
 local Map = require "map.Map"
 local vector3 = require "vector3"
 local EntityManager = require "entity.EntityManager"
+local dropVec = vector3.create()
 
 local DropManager = class("DropManager")
 
 function DropManager:ctor()
 	self.drops = {}
+	self.redItems = {}
+	self.blueItems = {}
+end
+
+local picks = {}
+function DropManager:update()
+	picks = {}
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player then
+			for i=#self.drops , 1, -1 do
+				local q = self.drops[i]
+				dropVec:set(q.px/GAMEPLAY_PERCENT,0,q.pz/GAMEPLAY_PERCENT)
+				if vector3.len(v.pos, dropVec) < 0.5 then
+					if v:isRed() then 	
+						table.insert(self.redItems, q)
+					else
+						table.insert(self.blueItems, q)
+					end
+					table.insert(picks, q.sid..','..v.serverId)
+					table.remove(self.drops, i)	
+				end
+			end
+		end
+	end
+	if #picks > 0 then
+		EntityManager:sendToAllPlayers("pickDropItem", {items = picks})
+	end
 end
 
 local rotate = {
@@ -21,7 +49,6 @@ local rotate = {
 	[7] = 315,
 }
 
-local dropVec = vector3.create()
 function DropManager:makeDrop(entity)
 	local pindex = 0
 	local items = {}
@@ -63,7 +90,7 @@ function DropManager:makeDrop(entity)
 			item.px = math.floor(dropVec.x * GAMEPLAY_PERCENT)
 			item.pz = math.floor(dropVec.z * GAMEPLAY_PERCENT)
 			item.sid = assin_server_id()
-			self.drops[item.sid] = item
+			table.insert(self.drops, item)
 			table.insert(items, item)
 		else
 			syslog.errf("make drop failed: package[%d], rd[%d]", v, rd)
@@ -74,5 +101,40 @@ function DropManager:makeDrop(entity)
 	end
 end
 
+
+function DropManager:useItem(player, sid)
+	local tb = self.blueItems
+	if player:isRed() then
+		tb = self.redItems
+	end
+	local item = nil
+	for k, v in pairs(tb) do
+		if v.sid == sid then
+			item = v
+			break
+		end
+	end
+	local errorCode = 0
+	repeat
+		if not item then
+			errorCode = 1	--已被使用
+			break
+		end
+	until true
+	if errorCode ~= 0 then
+		return errorCode
+	end
+	--使用道具
+	itemData = g_shareData.itemRepository[item.itemId]
+	if itemData.n32Type == 0 then
+		player:addSkill(itemData.n32Retain1)
+	elseif itemData.n32Type == 1 then
+		print('fuck')
+	elseif itemData.n32Type == 2 then
+		print('fuck')
+	end
+	
+	return errorCode
+end
 
 return DropManager.new()
