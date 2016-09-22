@@ -37,6 +37,11 @@ HpMpMask = {
 	BuffMp				= 1 << 17,
 	TimeLineMp			= 1 << 18,
 }
+ControledState = {
+	NoMove				= 1 << 0, --不能移动
+	NoAttack			= 1 << 1, --不能普攻
+	NoSpell				= 1 << 2, --不能放技能
+}
 AffectState = {
 	dizzy				= 1 << 0, --眩晕状态
 	repel				= 1 << 1, --击退状态
@@ -55,6 +60,7 @@ ErrorCode = {
 	EC_Spell_SkillIsInCd		= 1003, --技能在cd中
 	EC_Spell_NoTarget		= 1005, --目标不存在
 	EC_Spell_TargetOutDistance	= 1006, --目标距离过远
+	EC_Spell_Controled		= 1007,	--被控制住了
 	EC_Spell_Unkonw			= 1999, --技能未知错误
 }
 

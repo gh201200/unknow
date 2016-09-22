@@ -64,10 +64,10 @@ function Ientity:ctor(pos,dir)
 	self.spell = spell.new(self)		 --技能
 	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
-
 	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
+	self.controledState = 0
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
@@ -242,6 +242,7 @@ local mv_slep_dir = vector3.create()
 --进入移动状态
 function Ientity:onMove(dt)
 	dt = dt / 1000		--second
+	if self:canMove() ~= 0 then return end
 	if self.moveSpeed <= 0 then return end
 	if self.useAStar then
 		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
@@ -588,6 +589,12 @@ function Ientity:setState(state)
 	self.state = state
 end
 
+function Ientity:canMove()
+	if bit_and(self.controledState,ControledState.NoMove) ~= 0 then
+		return ErrorCode.EC_Spell_Controled
+	end
+	return 0
+end
 function Ientity:canCast(id)
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
@@ -600,6 +607,12 @@ function Ientity:canCast(id)
 	if dis > dataDis  then 
 	--	print("canCast error",dis,dataDis)
 		return ErrorCode.EC_Spell_TargetOutDistance 
+	end
+	if skilldata.bCommonSkill == false and  bit_and(self.controledState,ControledState.NoSpell) ~= 0 then 
+		return ErrorCode.EC_Spell_Controled
+	end
+	if bit_and(self.controledState,ControledState.NoAttack) ~= 0 then 
+		return ErrorCode.EC_Spell_Controled
 	end
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
