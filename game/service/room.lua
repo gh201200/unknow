@@ -121,6 +121,12 @@ function CMD.loadingRes(response, agent, account_id, args)
 	end
 end
 
+function CMD.usePickItem(response, agent, account_id, args)
+	local player = EntityManager:getPlayerByPlayerId(account_id)
+	local errorCode = DropManager:useItem(player, args.sid)
+	response(true, {errorCode = errorCode})
+end
+
 function CMD.start(response, args)
 	response(true, nil)
 	

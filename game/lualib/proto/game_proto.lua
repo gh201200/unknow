@@ -271,12 +271,12 @@ lockTarget 203 {
 	}
  }
 
-requestLearnSkill 204 {
+usePickItem 204 {
 	request {
-		skillid 0 : integer
+		sid 0 : integer
 	}
 	response {
-		errorcode 0 : integer
+		errorCode 0 : integer
 	}
 }
 
@@ -410,6 +410,12 @@ killEntity 2007 {
 	}
 }
 
+addSkill 2008 {
+	request {
+		skillId 0 : integer
+		level 1 : integer
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)

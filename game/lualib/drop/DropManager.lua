@@ -102,4 +102,39 @@ function DropManager:makeDrop(entity)
 end
 
 
+function DropManager:useItem(player, sid)
+	local tb = self.blueItems
+	if player:isRed() then
+		tb = self.redItems
+	end
+	local item = nil
+	for k, v in pairs(tb) do
+		if v.sid == sid then
+			item = v
+			break
+		end
+	end
+	local errorCode = 0
+	repeat
+		if not item then
+			errorCode = 1	--已被使用
+			break
+		end
+	until true
+	if errorCode ~= 0 then
+		return errorCode
+	end
+	--使用道具
+	itemData = g_shareData.itemRepository[item.itemId]
+	if itemData.n32Type == 0 then
+		player:addSkill(itemData.n32Retain1)
+	elseif itemData.n32Type == 1 then
+		print('fuck')
+	elseif itemData.n32Type == 2 then
+		print('fuck')
+	end
+	
+	return errorCode
+end
+
 return DropManager.new()
