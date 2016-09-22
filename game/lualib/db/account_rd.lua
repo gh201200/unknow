@@ -30,7 +30,7 @@ end
 function account.create (account_id, password, nick, icon)
 	assert (account_id and #account_id < 24 and password and #password < 24, "invalid argument")
 	
-	if not nick then nick = 'three hero' end
+	if not nick then nick = account_id  end
 	if not icon then icon = '1000.icon' end
 
 	local connection, key = make_key (account_id)

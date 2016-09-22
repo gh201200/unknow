@@ -106,8 +106,10 @@ local function update()
                         end
                         if _nk ~= nil then
                                 --if maxRange*baseRate + key >= _nk and key - maxRange*baseRate <= _k then
-                                        for _i,_ in pairs(matchTb) do 
-                                                requestMatchers[_i] = nil
+                                        for _i,_ in pairs(matchTb) do
+						local account = requestMatchers[_i].account 
+                                                reverseMatchers[account] = nil
+						requestMatchers[_i] = nil
                                         end             
                                         handleMatch(matchTb)
                                 --end
