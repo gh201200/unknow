@@ -14,7 +14,7 @@ local traceback  = debug.traceback
 
 local last_update_time = nil
 local room_id = 0
-
+local match_num = 1
 
 --dt is ms
 local function updateMapEvent()
@@ -110,7 +110,7 @@ function CMD.loadingRes(response, agent, account_id, args)
 	end
 
 	--all 6 players load completed
-	if num == 1 then
+	if num == match_num then
 		EntityManager:sendToAllPlayers("fightBegin")
 
 		--every 0.03s update entity
@@ -124,7 +124,7 @@ end
 function CMD.usePickItem(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local errorCode = DropManager:useItem(player, args.sid)
-	response(true, {errorCode = errorCode})
+	response(true, {errorCode = errorCode, sid = args.sid})
 end
 
 function CMD.start(response, args)

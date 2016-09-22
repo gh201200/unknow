@@ -277,6 +277,7 @@ usePickItem 204 {
 	}
 	response {
 		errorCode 0 : integer
+		sid 1 : integer
 	}
 }
 
