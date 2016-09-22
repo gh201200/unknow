@@ -11,7 +11,6 @@ local database
 
 local baseRate = 10000 --同一分数匹配人数不超过一万人
 local account_cors = {}
-
 local s_pickHeros = { } --选角色服务
 
 function CMD.hijack_msg(response)
@@ -77,7 +76,7 @@ local function handleMatch(t)
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-local MATCH_NUM = 2
+CMD.MATCH_NUM = 2
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 
@@ -94,7 +93,7 @@ local function update()
                         local maxRange = _nv.range
                         local matchTb = {}
                         matchTb[_nk] = _nv
-                        for i=1,MATCH_NUM -1,1 do
+                        for i=1,CMD.MATCH_NUM -1,1 do
                                 _nk,_nv = next(requestMatchers,_nk)
                                 if _nk == nil then
                                         break

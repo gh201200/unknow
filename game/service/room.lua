@@ -14,7 +14,6 @@ local traceback  = debug.traceback
 
 local last_update_time = nil
 local room_id = 0
-local match_num = 1
 
 --dt is ms
 local function updateMapEvent()
@@ -109,8 +108,8 @@ function CMD.loadingRes(response, agent, account_id, args)
 		end
 	end
 
-	--all 6 players load completed
-	if num == match_num then
+	--all players load completed
+	if num == #EntityManager.entityList then
 		EntityManager:sendToAllPlayers("fightBegin")
 
 		--every 0.03s update entity
@@ -138,12 +137,10 @@ function CMD.start(response, args)
 	--加载地图
 	Map:load("./lualib/map/" .. mapDat.szScene)
 
-	local i = 0
 	for k, v in pairs (args) do
 		v.bornPos = mapDat['szBornPos'..v.color]
 		local player = IMapPlayer.create(v)
 		EntityManager:addEntity(player)
-		i = i + 1
 	end
 	
 	local heros = {}
@@ -173,7 +170,6 @@ end
 local function init()
 	register_query_event_func()
 	g_shareData  = sharedata.query "gdd"
-
 end
 
 
