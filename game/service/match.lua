@@ -38,7 +38,7 @@ function CMD.requestMatch(response,agent)
 	for i = hash_key,hash_key + baseRate,1 do
 		if requestMatchers[i] == nil then
 			requestMatchers[i] = arg
-			reverseMatchers[arg.account] = i --反向表 便于查找
+			reverseMatchers[arg.account] = i 
 			break
 		end
 	end
@@ -77,51 +77,43 @@ local function handleMatch(t)
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-
+local MATCH_NUM = 2
 local function update()
-	skynet.timeout(100, update)  
-	dt = 1
-	---begin test-----
-	if next(requestMatchers) ~= nil then
-		print("update handlematch")
-		local tmp = requestMatchers
-		requestMatchers = {}
-		reverseMatchers = {}
-		handleMatch(tmp)
-	end
-	if true then return end
-	---end   test-----
-         for _k,_v in pairs(requestMatchers) do
-                 _v[4]  = _v[4] + dt
-                 _v[5] =  math.floor(_v[4]/10000)* 10 + 10
-         end 
-         for _k,_v in pairs(requestMatchers) do
-                 if _v ~= nil then
-                         local _nk,_nv = _k,_v
-                         local key = _nk
-                         local maxRange = _nv[5]
-                         local matchTb = {}
-                         matchTb[_nk] = _nv
-                         for i=1,5,1 do
-                                 _nk,_nv = next(requestMatchers,_k)
-                                 matchTb[_nk] = _nv
-                                 if _nk == nil then
-                                         break
-                                 end
-                                 if _nv[5] > maxRange then
-                                         key = _nk
-                                         maxRange = _nv[5]
-                                 end
-                         end
-                         if _nk ~= nil then
-                                 if maxRange*baseRate + key >= _nk and key - maxRange*baseRate <= _k then
-                                         for _i,_ in pairs(matchTb) do 
-                                                 requestMatchers[_i] = nil
-                                         end             
-                                         handleMatch(matchTb)
-                                 end
-                         end
-                 end
+	skynet.timeout(100, update) 
+	local dt = 1 
+	--{agent = ,account = ,modelid = ,nickname= ,score = ,time = ,range = }
+	--print(requestMatchers)
+        for _k,_v in pairs(requestMatchers) do
+                _v.time = _v.time + dt
+                --_v. =  math.floor(_v.time/10000)* 10 + 10
+        end 
+        for _k,_v in pairs(requestMatchers) do
+                if _v ~= nil then
+                        local _nk,_nv = _k,_v
+                        local key = _nk
+                        local maxRange = _nv.range
+                        local matchTb = {}
+                        matchTb[_nk] = _nv
+                        for i=1,MATCH_NUM -1,1 do
+                                _nk,_nv = next(requestMatchers,_nk)
+                                if _nk == nil then
+                                        break
+                                end
+                                matchTb[_nk] = _nv
+                                if _nv.range > maxRange then
+                                        key = _nk
+                                        maxRange = _nv.range
+                                end
+                        end
+                        if _nk ~= nil then
+                                --if maxRange*baseRate + key >= _nk and key - maxRange*baseRate <= _k then
+                                        for _i,_ in pairs(matchTb) do 
+                                                requestMatchers[_i] = nil
+                                        end             
+                                        handleMatch(matchTb)
+                                --end
+                        end
+                end
 	end
 end		
 local function init()
