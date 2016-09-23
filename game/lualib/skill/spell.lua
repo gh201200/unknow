@@ -186,6 +186,9 @@ function spell:onEnd()
 		self.source.CastSkillId = 0
 		self.source:OnStand()
 		self.source:callBackSpellEnd()
+		if self.source.target:getType() == "transform" then
+			self.source.target = nil
+		end
 	end
 end
 function spell:Cast(skillid,target,pos)
