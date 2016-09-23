@@ -585,7 +585,10 @@ function Ientity:callBackSpellBegin()
 end
 
 function Ientity:callBackSpellEnd()
-	self.ReadySkillId = 0
+	local data = g_shareData.skillRepository[self.ReadySkillId]
+	if data ~= nil and data.bCommonSkill == false then
+		self.ReadySkillId = 0
+	end
 end
 --设置人物状态
 function Ientity:setState(state)
@@ -656,7 +659,6 @@ function Ientity:setCastSkillId(id)
 end
 function Ientity:castSkill()
 	self.CastSkillId = self.ReadySkillId
-	self.ReadySkillId = 0
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat
