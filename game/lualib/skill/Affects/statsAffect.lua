@@ -6,8 +6,12 @@ function StatsAffect:ctor(entity,source,data)
 	self.effectTime = self.data[4] or 0
 end
 function StatsAffect:onEnter()
+	self.super.onEnter(self)
 	repeat
 		local lzm = false
+		if self.data[1] == 'ctrl' then
+			self.owner.controledState = bit_or(self.owner.controledState, self.data[2]) -- 控制类型
+		end
 		if self.data[1] == 'up_str' then
 			self.owner:addMidStrengthPc(self.data[2])
 			self.owner:addMidStrength(self.data[3])
@@ -141,10 +145,21 @@ function StatsAffect:onEnter()
 	self.leftTime =  self.effectTime
 end
 
+function StatsAffect:onExec(dt)
+	self.leftTime = self.leftTime -  dt
+	if self.leftTime <= 0 then
+		self:onExit()		
+		return
+	end
+end
 
 function StatsAffect:onExit()
 	repeat
 		local lzm = false
+		if self.data[1] == 'ctrl' then
+			-- 1: 不能移动 2:不能攻击 3:不能放技能
+			self.owner.controledState = bit_and(self.owner.controledState, bit_not(self.data[2])) -- 控制类型
+		end
 		if self.data[1] == 'up_str' then
 			self.owner:addMidStrengthPc(-self.data[2])
 			self.owner:addMidStrength(-self.data[3])
