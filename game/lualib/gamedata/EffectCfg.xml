@@ -57,7 +57,7 @@
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
-		<szModName>0</szModName>
+		<szModName></szModName>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="60007">
@@ -67,7 +67,7 @@
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<szshader>iceEffect</szshader>
-		<szModName>0</szModName>
+		<szModName></szModName>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="60008">
@@ -77,7 +77,7 @@
 		<n32speed>3</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
-		<szModName>0</szModName>
+		<szModName></szModName>
 		<n32Redius>1</n32Redius>
 	</item>
 	<item id="60009">
@@ -87,7 +87,7 @@
 		<n32speed>3</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
-		<szModName>0</szModName>
+		<szModName></szModName>
 		<n32Redius>0</n32Redius>
 	</item>
 </info>
