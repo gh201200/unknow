@@ -89,14 +89,12 @@ function CMD.confirmHero(response,agent,account,arg)
 	if isReady == true then
 		--全部选中英雄
 		max_pickTime =  -1
-		print("=========max_pickTime",max_pickTime)
 	end
 end
 
 
 local function update()
 	if max_pickTime < 0 then
-		
 		for _agent,_v in pairs(players) do
 			if _v.confirmheroid == 0 and _v.pickheroid == 0 then
 				quitPick()
@@ -110,9 +108,11 @@ local function update()
 	end
 	max_pickTime = max_pickTime - 1
 	skynet.timeout(100,update)
+	--[[
 	for _agent,_v in pairs(players) do
 		skynet.call(_agent,"lua","sendRequest","synPickTime",{ leftTime = max_pickTime } ) 
 	end
+	]]
 end
 local function init()
 	skynet.timeout(100, update)
