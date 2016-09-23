@@ -186,7 +186,7 @@ function spell:onEnd()
 		self.source.CastSkillId = 0
 		self.source:OnStand()
 		self.source:callBackSpellEnd()
-		if self.source.target:getType() == "transform" then
+		if self.source.target ~= nil and self.source.target:getType() == "transform" then
 			self.source.target = nil
 		end
 	end
