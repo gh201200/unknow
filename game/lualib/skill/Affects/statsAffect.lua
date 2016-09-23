@@ -141,7 +141,6 @@ function StatsAffect:onEnter()
 			break
 		end
 	until true
-	
 	self.leftTime =  self.effectTime
 end
 
@@ -154,6 +153,7 @@ function StatsAffect:onExec(dt)
 end
 
 function StatsAffect:onExit()
+	self.super.onExit(self)
 	repeat
 		local lzm = false
 		if self.data[1] == 'ctrl' then
