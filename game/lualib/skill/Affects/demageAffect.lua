@@ -8,7 +8,7 @@ function demageAffect:ctor(entity,source,data)
 	self.effectId = data[6] or 0
 	self.effectTime = data[5] or 0
 end
-function demageAffect:onEnter()
+function demageAffect:onEnter()	
 	--推送客户端开始效果1:类型  2:属性百分比 3：属性固定值 4：间隔时间 5：持续时间 6：特效id
 	self.super.onEnter(self)
 	if self.data[4] == nil or self.data[5] == nil or self.data[5] == 0 then

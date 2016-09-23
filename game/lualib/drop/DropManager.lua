@@ -50,7 +50,7 @@ local rotate = {
 }
 
 function DropManager:makeDrop(entity)
-	local pindex = 0
+	local pindex = math.random(0, 7)
 	local items = {}
 	for k, v in pairs(entity.attDat.szDrop) do
 		local drop = g_shareData.itemDropPackage[v]
@@ -75,10 +75,10 @@ function DropManager:makeDrop(entity)
 			repeat
 				dropVec:set(entity.dir.x, entity.dir.y, entity.dir.z)
 				dropVec:rot(rotate[pindex])
-				dropVec:mul_num(1.5)
+				dropVec:mul_num(0.8)
 				dropVec:add(entity.pos)
 				pindex = pindex + 1
-				if pindex > 8 then pindex = 0 end
+				if pindex > 7 then pindex = 0 end
 				if Map.legal(Map.POS_2_GRID(dropVec.x), Map.POS_2_GRID(dropVec.z)) then
 					break
 				end
