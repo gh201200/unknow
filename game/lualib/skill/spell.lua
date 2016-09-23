@@ -126,7 +126,6 @@ function spell:advanceEffect(dt)
 				local targetEffects = self.skilldata.szTargetAffect
 				local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
 				self.targets = targets
-				--print("spell:adcanceEffect targetsize = ",#targets)
 				if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
 					self:trgggerAffect(targetEffects,targets)
 				end

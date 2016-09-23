@@ -359,7 +359,9 @@ function Ientity:addHp(_hp, mask, source)
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	if self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
-		self.HpMpChange = true
+		--self.HpMpChange = true
+		self:advanceEventStamp(EventStampType.Hp_Mp)
+
 	end
 	if self:getHp() <= 0 then
 		self:onDead()
@@ -383,12 +385,13 @@ end
 function Ientity:recvHpMp()
 	if self:getHp() <= 0 then return end
 	if self:getRecvHp() <= 0 and self:getRecvMp() <= 0 then return end
+	if self:getHp() == self:getHpMax() then return end
 	local curTime = skynet.now()
 	if self.recvTime == 0 then
 		self.recvTime = curTime
 	end    
 	if (curTime - self.recvTime) * 100  > HP_MP_RECOVER_TIMELINE then
-		local cnt = math.ceil((curTime - self.recvTime) * 100 / HP_MP_RECOVER_TIMELINE)
+		local cnt = math.floor((curTime - self.recvTime) * 100 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
  		self:addHp(math.floor(self:getRecvHp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineHp)
  		self:addMp(math.floor(self:getRecvMp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineMp)
@@ -582,7 +585,7 @@ function Ientity:callBackSpellBegin()
 end
 
 function Ientity:callBackSpellEnd()
-
+	self.ReadySkillId = 0
 end
 --设置人物状态
 function Ientity:setState(state)
@@ -596,6 +599,8 @@ function Ientity:canMove()
 	return 0
 end
 function Ientity:canCast(id)
+	if self.spell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
+	if self.attackSpell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
