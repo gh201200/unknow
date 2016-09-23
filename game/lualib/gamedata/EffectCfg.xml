@@ -3,7 +3,7 @@
 	<item id="100001">
 		<n32type>1</n32type>
 		<szassert>Shanguang_skill_03_1</szassert>
-		<n32time>-1</n32time>
+		<n32time>1000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
@@ -23,7 +23,7 @@
 	<item id="100003">
 		<n32type>4</n32type>
 		<szassert>Bullet_01</szassert>
-		<n32time>-1</n32time>
+		<n32time>0</n32time>
 		<n32speed>5</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
@@ -33,7 +33,7 @@
 	<item id="100004">
 		<n32type>4</n32type>
 		<szassert>Bullet_01</szassert>
-		<n32time>-1</n32time>
+		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
@@ -49,7 +49,7 @@
 		<szshader></szshader>
 		<szModName>Houde</szModName>
 		<n32Redius>0</n32Redius>
-	</item>	
+	</item>
 	<item id="60003">
 		<n32type>4</n32type>
 		<szassert>Dingbao_1</szassert>
@@ -57,9 +57,9 @@
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
-		<szModName></szModName>
+		<szModName>0</szModName>
 		<n32Redius>0</n32Redius>
-	</item>	
+	</item>
 	<item id="60007">
 		<n32type>4</n32type>
 		<szassert>Dingbao_2</szassert>
@@ -67,9 +67,9 @@
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<szshader>iceEffect</szshader>
-		<szModName></szModName>
+		<szModName>0</szModName>
 		<n32Redius>0</n32Redius>
-	</item>	
+	</item>
 	<item id="60008">
 		<n32type>3</n32type>
 		<szassert>Kongzhiqiu_1</szassert>
@@ -77,17 +77,17 @@
 		<n32speed>3</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
-		<szModName></szModName>
-		<n32Redius>1.2</n32Redius>
-	</item>		
+		<szModName>0</szModName>
+		<n32Redius>1</n32Redius>
+	</item>
 	<item id="60009">
 		<n32type>3</n32type>
 		<szassert>Kongzhiqiu_2</szassert>
 		<n32time>1000</n32time>
-		<n32speed>0</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
-		<szModName></szModName>
-		<n32Redius></n32Redius>
-	</item>		
+		<szModName>0</szModName>
+		<n32Redius>0</n32Redius>
+	</item>
 </info>

@@ -46,7 +46,6 @@ end
 
 function spell:init(skilldata,skillTimes)
 	self.skilldata = skilldata
-	print("skillTimes",skillTimes)
 	self.readyTime = skillTimes[1]
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
@@ -185,7 +184,6 @@ function spell:onEnd()
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
 		self.source:OnStand()
-		print("skillTime",self.skillTimes)
 		self.source:callBackSpellEnd()
 		if self.source.target ~= nil and self.source.target:getType() == "transform" then
 			self.source.target = nil
