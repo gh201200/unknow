@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="111">
-		<szMonsterIds>21001, 21002, 21003</szMonsterIds>
+		<szMonsterIds>21001</szMonsterIds>
 		<n32NextBatch>121</n32NextBatch>
 		<n32CDTime>30</n32CDTime>
-		<szPosition>(34000,84000),(22300,84000),(45300,84000)</szPosition>
+		<szPosition>(34000,84000)</szPosition>
 		<n32MapId>1</n32MapId>
 	</item>
 	<item id="112">
@@ -12,35 +12,35 @@
 		<n32NextBatch>122</n32NextBatch>
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(8000,43100),(17200,43100),(12500,48800)</szPosition>
-		<n32MapId>1</n32MapId>
+		<n32MapId>0</n32MapId>
 	</item>
 	<item id="113">
 		<szMonsterIds>21007, 21008, 21009</szMonsterIds>
 		<n32NextBatch>123</n32NextBatch>
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(49900,43100),(59100,43100),(54400,48800)</szPosition>
-		<n32MapId>1</n32MapId>
+		<n32MapId>0</n32MapId>
 	</item>
 	<item id="114">
 		<szMonsterIds>21004, 21005, 21006</szMonsterIds>
 		<n32NextBatch>124</n32NextBatch>
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(59000,128800),(49800,128800),(54600,123100)</szPosition>
-		<n32MapId>1</n32MapId>
+		<n32MapId></n32MapId>
 	</item>
 	<item id="115">
 		<szMonsterIds>21007, 21008, 21009</szMonsterIds>
 		<n32NextBatch>125</n32NextBatch>
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(17100,128600),(7900,128600),(12500,122900)</szPosition>
-		<n32MapId>1</n32MapId>
+		<n32MapId></n32MapId>
 	</item>
 	<item id="121">
 		<szMonsterIds>22001, 22002, 22003</szMonsterIds>
 		<n32NextBatch>131</n32NextBatch>
 		<n32CDTime>30</n32CDTime>
 		<szPosition>(34000,84000),(22300,84000),(45300,84000)</szPosition>
-		<n32MapId>0</n32MapId>
+		<n32MapId></n32MapId>
 	</item>
 	<item id="122">
 		<szMonsterIds>22004, 22005, 22006</szMonsterIds>

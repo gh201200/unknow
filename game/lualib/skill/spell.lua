@@ -69,6 +69,7 @@ function spell:canBreak(ms)
 end
 
 function spell:breakSpell()
+	print("=====spell:breakspell")
 	if self.status == SpellStatus.Ready then
 		--技能准备阶段被打断 不计入cd
 		self.source.cooldown:resetCd(self.skilldata.id,0)
@@ -81,7 +82,7 @@ function spell:breakSpell()
 	end
 	
 	--打断后 进入站立状态
-	self.source:stand()
+	self.source:OnStand()
 	self:clear()
 end
 function spell:isSpellRunning()
@@ -159,7 +160,7 @@ function spell:onBegin()
 	self.source:callBackSpellBegin()
 end
 function spell:onReady()
-	self.source.ActionState = ActionState.attack1
+	--self.source.ActionState = ActionState.attack1
 	if self.readyTime < 0 then
 		self.status = SpellStatus.Cast
 	end
@@ -176,14 +177,14 @@ function spell:clear()
 end
 
 function spell:onCast()
-	self.source.curActionState = ActionState.attack2
+	--self.source.curActionState = ActionState.attack2
 	if self.castTime < 0 then
 		self.status = SpellStatus.End
 	end
 end
 
 function spell:onEnd()
-	self.source.curActionState = ActionState.attack3
+	--self.source.curActionState = ActionState.attack3
 	if self.endTime < 0 then
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0

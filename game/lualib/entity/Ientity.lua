@@ -169,9 +169,10 @@ end
 function Ientity:setTarget(target)
 	if not target then self.target = nil return end
 	if self.affectTable:canControl() == false then return end		--不受控制状态
-	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
-	if self.attackSpell:canBreak(ActionState.move) == false then return end
-	
+--	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
+--	if self.attackSpell:canBreak(ActionState.move) == false then return end
+--	self.attackSpell:breakSpell()
+--	self.attackSpell:breakSpell()	
 	self.userAStar = false
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
@@ -211,6 +212,7 @@ function Ientity:update(dt)
 		if not self.target then 
 			self:stand()
 		else
+			print("OnMove=======",self.serverId)
 			self:onMove(dt)
 		end
 	elseif self.curActionState == ActionState.stand then
@@ -221,6 +223,7 @@ function Ientity:update(dt)
 	if self.ReadySkillId ~= 0 then	
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
+			print("skynetnow  ===skillCastTime",skynet.now())
 			self:castSkill(self.ReadySkillId)
 		end
 	end
@@ -335,7 +338,7 @@ end
 --进入站立状态
 function Ientity:OnStand()
 	self:stand()
-	--self.curActionState =  ActionState.stand
+	self.curActionState =  ActionState.stand
 	self:advanceEventStamp(EventStampType.Move)
 end
 function Ientity:onDead()
@@ -602,8 +605,8 @@ function Ientity:canMove()
 	return 0
 end
 function Ientity:canCast(id)
-	if self.spell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
-	if self.attackSpell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
+	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
+	if self.attackSpell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
