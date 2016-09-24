@@ -149,7 +149,6 @@ end
 function Ientity:stand()
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
-	self.state = "idle" --idle walk spell
 	self:clearPath()
 end
 
@@ -212,7 +211,6 @@ function Ientity:update(dt)
 		if not self.target then 
 			self:stand()
 		else
-			print("OnMove=======",self.serverId)
 			self:onMove(dt)
 		end
 	elseif self.curActionState == ActionState.stand then
@@ -600,8 +598,11 @@ function Ientity:canMove()
 	if bit_and(self.controledState,ControledState.NoMove) ~= 0 then
 		return ErrorCode.EC_Spell_Controled
 	end
-	if self.spell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
-	if self.attackSpell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
+	--if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
+	if self.attackSpell:isSpellRunning() == true then 
+		print("CanNotMove status:",self.attackSpell.status)
+		return ErrorCode.EC_Spell_SkillIsRunning 
+	end
 	return 0
 end
 function Ientity:canCast(id)
@@ -686,6 +687,8 @@ function Ientity:castSkill()
 	tmpSpell:init(skilldata,skillTimes)
 	self.cooldown:addItem(id) --加入cd
 	self:stand()
+	self.moveSpeed  = 0
+        self.curActionState = 3
 	tmpSpell:Cast(id,target,pos)
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0

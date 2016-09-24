@@ -186,6 +186,7 @@ end
 function spell:onEnd()
 	--self.source.curActionState = ActionState.attack3
 	if self.endTime < 0 then
+		print("spell onEnd")
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
 		self.source:OnStand()
@@ -203,7 +204,8 @@ function spell:Cast(skillid,target,pos)
 		target = target or self.source.target
 		self.targets = {target}
 	end
-	self.source.curActionState = ActionState.attack1
+	--self.source:stand()
+	--self.source.curActionState = ActionState.attack1
 	self:onBegin()
 end
 return spell
