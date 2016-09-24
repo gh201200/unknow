@@ -184,7 +184,7 @@ function CMD.Start (conf)
 	RESPONSE = user.RESPONSE
        
  	last_heartbeat_time = skynet.now()
-	heartbeat_check()
+	--heartbeat_check()
 
 	--注册匹配服务
 	local matchserver = skynet.queryservice "match"
