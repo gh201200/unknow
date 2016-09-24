@@ -159,6 +159,7 @@ function spell:onBegin()
 	self.source:callBackSpellBegin()
 end
 function spell:onReady()
+	self.source.ActionState = ActionState.attack1
 	if self.readyTime < 0 then
 		self.status = SpellStatus.Cast
 	end
@@ -175,12 +176,14 @@ function spell:clear()
 end
 
 function spell:onCast()
+	self.source.curActionState = ActionState.attack2
 	if self.castTime < 0 then
 		self.status = SpellStatus.End
 	end
 end
 
 function spell:onEnd()
+	self.source.curActionState = ActionState.attack3
 	if self.endTime < 0 then
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
@@ -199,6 +202,7 @@ function spell:Cast(skillid,target,pos)
 		target = target or self.source.target
 		self.targets = {target}
 	end
+	self.source.curActionState = ActionState.attack1
 	self:onBegin()
 end
 return spell

@@ -12,7 +12,7 @@
 		<n32MpCost>0</n32MpCost>
 		<n32CD>1000</n32CD>
 		<n32TriggerTime>400</n32TriggerTime>
-		<n32ActionTime>1000</n32ActionTime>
+		<n32ActionTime>930</n32ActionTime>
 		<szAction>attack</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>

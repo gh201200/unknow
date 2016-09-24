@@ -34,8 +34,6 @@ end
 
 
 function Ientity:ctor(pos,dir)
-	--print("Ientity:ctor")
-	print("Ientity:ctor")
 	Ientity.super.ctor(self,pos,dir)
 	--entity world data about
 	self.entityType = 0
@@ -599,6 +597,8 @@ function Ientity:canMove()
 	if bit_and(self.controledState,ControledState.NoMove) ~= 0 then
 		return ErrorCode.EC_Spell_Controled
 	end
+	if self.spell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
+	if self.attackSpell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
 end
 function Ientity:canCast(id)
@@ -682,8 +682,8 @@ function Ientity:castSkill()
 	end
 	tmpSpell:init(skilldata,skillTimes)
 	self.cooldown:addItem(id) --加入cd
-	tmpSpell:Cast(id,target,pos)
 	self:stand()
+	tmpSpell:Cast(id,target,pos)
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
 end
