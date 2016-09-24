@@ -16,6 +16,7 @@ local hijack_msg = {}
 local hijack_msg_event_stamp = {}
 
 local database
+local WATCHDOG
 
 local host, proto_request = protoloader.load (protoloader.GAME)
 
@@ -49,7 +50,7 @@ local function send_request (name, args)
 end
 
 local function kick_self ()
-	skynet.call (gamed, "lua", "kick", skynet.self (), user_fd)
+	skynet.call (WATCHDOG, "lua", "close", user_fd)
 end
 
 local function registerToChatserver(name)
@@ -70,16 +71,16 @@ local function registerToChatserver(name)
 	c:subscribe()	
 end
 local last_heartbeat_time
-local HEARTBEAT_TIME_MAX = 0 -- 60 * 100
+local HEARTBEAT_TIME_MAX = 6 * 100
 local function heartbeat_check ()
-	if HEARTBEAT_TIME_MAX <= 0 or not user_fd then return end
+	if not user_fd then return end
 
 	local t = last_heartbeat_time + HEARTBEAT_TIME_MAX - skynet.now ()
 	if t <= 0 then
-		syslog.warning ("heatbeat check failed")
+		print('client time out')
 		kick_self ()
 	else
-		skynet.timeout (t, heartbeat_check)
+		skynet.timeout (HEARTBEAT_TIME_MAX, heartbeat_check)
 	end
 end
 
@@ -165,6 +166,7 @@ end
 local CMD = {}
 function CMD.Start (conf)
 	local gate = conf.gate
+	WATCHDOG = conf.watchdog
 	user = { 
 		fd = conf.client, 
 		REQUEST = {},
@@ -180,9 +182,9 @@ function CMD.Start (conf)
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
-        
-	--local map  = skynet.queryservice "room"
-        --request_hijack_msg(map)
+       
+ 	last_heartbeat_time = skynet.now()
+	--heartbeat_check()
 
 	--注册匹配服务
 	local matchserver = skynet.queryservice "match"
@@ -197,7 +199,7 @@ function CMD.Start (conf)
 end
 
 function CMD.disconnect ()
-	syslog.debug ("agent closed")
+	print("agent closed")
 	
 	if user then
 		character_handler:unregister (user)
@@ -205,8 +207,10 @@ function CMD.disconnect ()
 		user = nil
 		user_fd = nil
 		REQUEST = nil
-	end	
-	--skynet.call (gamed, "lua", "close", skynet.self (), account)
+	end
+
+	-- todo: do something before exit
+	skynet.exit()
 end
 
 function CMD.getmatchinfo()
