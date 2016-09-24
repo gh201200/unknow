@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <info>
-	<item id="8888">
-		<szName>testmode</szName>
+	<item id="50001">
+		<szName>闪光</szName>
 		<szMod_name>Shanguang</szMod_name>
-		<n32Hight>2000</n32Hight>
+		<n32Hight>Shanguang</n32Hight>
 		<n32Radius>500</n32Radius>
 		<n32AttackTime1>400</n32AttackTime1>
 		<n32AttackTime2>500</n32AttackTime2>
@@ -18,10 +18,46 @@
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
 	</item>
-	<item id="8889">
-		<szName>testmode</szName>
-		<szMod_name>gui_wu_shi_001_ty</szMod_name>
-		<n32Hight>2000</n32Hight>
+	<item id="50002">
+		<szName>厚德</szName>
+		<szMod_name>houde</szMod_name>
+		<n32Hight>houde</n32Hight>
+		<n32Radius>500</n32Radius>
+		<n32AttackTime1>400</n32AttackTime1>
+		<n32AttackTime2>500</n32AttackTime2>
+		<n32AttackTime3>500</n32AttackTime3>
+		<n32Skill1Time1>400</n32Skill1Time1>
+		<n32Skill1Time2>600</n32Skill1Time2>
+		<n32Skill2Time1>400</n32Skill2Time1>
+		<n32Skill2Time2>600</n32Skill2Time2>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+	</item>
+	<item id="50003">
+		<szName>小僵尸</szName>
+		<szMod_name>Monster_009</szMod_name>
+		<n32Hight>0</n32Hight>
+		<n32Radius>500</n32Radius>
+		<n32AttackTime1>400</n32AttackTime1>
+		<n32AttackTime2>500</n32AttackTime2>
+		<n32AttackTime3>500</n32AttackTime3>
+		<n32Skill1Time1>70</n32Skill1Time1>
+		<n32Skill1Time2>930</n32Skill1Time2>
+		<n32Skill2Time1>400</n32Skill2Time1>
+		<n32Skill2Time2>600</n32Skill2Time2>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+	</item>
+	<item id="50004">
+		<szName>僵尸弓手</szName>
+		<szMod_name>Monster_011</szMod_name>
+		<n32Hight>0</n32Hight>
 		<n32Radius>500</n32Radius>
 		<n32AttackTime1>400</n32AttackTime1>
 		<n32AttackTime2>500</n32AttackTime2>

@@ -40,7 +40,7 @@ function spell:ctor(entity)
 
 	self.effects = {}	--技能效果表
 	self.targets = {}
-	
+	self.totalTime = 0
 	self.attachAffact = {}	--普攻附加效果
 end
 
@@ -49,6 +49,7 @@ function spell:init(skilldata,skillTimes)
 	self.readyTime = skillTimes[1]
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
+	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
 	self.triggerTime = skilldata.n32TriggerTime
 	self.myEffectId = skilldata.n32MyEffect or 0  		 --自身绑定特效
 	self.targetEffectId = skilldata.n32TargetEffect or 0  	 --目标位置特效

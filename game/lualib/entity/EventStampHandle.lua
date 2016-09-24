@@ -57,15 +57,21 @@ end
 EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
 	local skillid = player.CastSkillId
+	local skilldata = g_shareData.skillRepository[skillid]
+	local spell = player.spell
+	if skilldata.bCommonSkill == true then
+		spell = player.attackSpell
+	end
 	local targetId = 0
 	if player.target ~= nil and player.target:getType() ~= "transform" then
 		targetId = player.target.serverId
 	end
-	local errorCode = player.spell.errorCode
+	local errorCode = spell.errorCode
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		skillId = skillid,
 		targetId = targetId,
+		skillTime = spell.totalTime,
 		pos = {x=math.ceil(player.target.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.target.pos.z*GAMEPLAY_PERCENT) }
 	}
 	return r

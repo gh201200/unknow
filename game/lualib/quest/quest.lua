@@ -2,7 +2,7 @@ local Quest = {
 	
 	--初始赠送英雄
 	AutoGainCards = {
-		11011,
+		12011,
 		11021,
 	},
 	

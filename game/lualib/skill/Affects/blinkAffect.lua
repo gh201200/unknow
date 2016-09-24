@@ -4,7 +4,7 @@ local blinkAffect = class("blinkAffect",Affect)
 function blinkAffect:ctor(entity,source,data)
 	self.super.ctor(self,entity,source,data)
 	self.distance = self.data[2] or 0
-	self.effectTime = self.data[3] or 0 
+	self.effectTime = self.data[3] or 0
 	self.effectId = self.data[4] or 0
 end
 
