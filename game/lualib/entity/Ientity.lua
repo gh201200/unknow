@@ -661,11 +661,11 @@ function Ientity:castSkill()
 	self.CastSkillId = self.ReadySkillId
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
-	local modoldata = self.modelDat
+	local modoldata = self.modelDat 
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
 	if errorcode ~= 0 then return errorcode end
-	local skillTimes = {}	
+	local skillTimes = {}
 	if skilldata.bCommonSkill == false then
 		skillTimes[1] 	= modoldata["n32Skill1" .. "Time1"] or 0  
 		skillTimes[2] 	= modoldata["n32Skill1" .. "Time2"] or  0 
