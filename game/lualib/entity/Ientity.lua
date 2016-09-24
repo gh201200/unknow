@@ -221,7 +221,6 @@ function Ientity:update(dt)
 	if self.ReadySkillId ~= 0 then	
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
-			print("skynetnow  ===skillCastTime",skynet.now())
 			self:castSkill(self.ReadySkillId)
 		end
 	end
@@ -241,7 +240,6 @@ local mv_slep_dir = vector3.create()
 --进入移动状态
 function Ientity:onMove(dt)
 	dt = dt / 1000		--second
-	if self:canMove() ~= 0 then return end
 	if self.moveSpeed <= 0 then return end
 	if self.useAStar then
 		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))

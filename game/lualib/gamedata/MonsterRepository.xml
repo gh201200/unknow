@@ -225,6 +225,156 @@
 		<szSkill>31501</szSkill>
 		<n32ModelId>50004</n32ModelId>
 	</item>
+	<item id="21010">
+		<n32Grade>1</n32Grade>
+		<szName>右上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>170</n32Hp>
+		<n32Mp>85</n32Mp>
+		<n32Attack>20</n32Attack>
+		<n32Defence>2</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>21011, 21012</szLink>
+		<n32RecvHp>10000</n32RecvHp>
+		<n32RecvMp>10000</n32RecvMp>
+		<n32Exp>20</n32Exp>
+		<n32Gold>20</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="21011">
+		<n32Grade>1</n32Grade>
+		<szName>右上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>170</n32Hp>
+		<n32Mp>85</n32Mp>
+		<n32Attack>20</n32Attack>
+		<n32Defence>2</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>21010, 21012</szLink>
+		<n32RecvHp>10000</n32RecvHp>
+		<n32RecvMp>10000</n32RecvMp>
+		<n32Exp>20</n32Exp>
+		<n32Gold>20</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="21012">
+		<n32Grade>1</n32Grade>
+		<szName>右上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>别吵吵</szWord>
+		<n32Hp>270</n32Hp>
+		<n32Mp>135</n32Mp>
+		<n32Attack>30</n32Attack>
+		<n32Defence>3</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>21010, 21011</szLink>
+		<n32RecvHp>10000</n32RecvHp>
+		<n32RecvMp>10000</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>30</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
+	<item id="21013">
+		<n32Grade>1</n32Grade>
+		<szName>左上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>对面的一起喝一杯</szWord>
+		<n32Hp>170</n32Hp>
+		<n32Mp>85</n32Mp>
+		<n32Attack>20</n32Attack>
+		<n32Defence>2</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>21014, 21015</szLink>
+		<n32RecvHp>10000</n32RecvHp>
+		<n32RecvMp>10000</n32RecvMp>
+		<n32Exp>20</n32Exp>
+		<n32Gold>20</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="21014">
+		<n32Grade>1</n32Grade>
+		<szName>左上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>你请客么</szWord>
+		<n32Hp>170</n32Hp>
+		<n32Mp>85</n32Mp>
+		<n32Attack>20</n32Attack>
+		<n32Defence>2</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>21013, 21015</szLink>
+		<n32RecvHp>10000</n32RecvHp>
+		<n32RecvMp>10000</n32RecvMp>
+		<n32Exp>20</n32Exp>
+		<n32Gold>20</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="21015">
+		<n32Grade>1</n32Grade>
+		<szName>左上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>没钱吵吵啥</szWord>
+		<n32Hp>270</n32Hp>
+		<n32Mp>135</n32Mp>
+		<n32Attack>30</n32Attack>
+		<n32Defence>3</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>21013, 21014</szLink>
+		<n32RecvHp>10000</n32RecvHp>
+		<n32RecvMp>10000</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>30</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
 	<item id="22001">
 		<n32Grade>2</n32Grade>
 		<szName>大魔王S</szName>
@@ -440,6 +590,156 @@
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22007, 22008</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>45</n32Exp>
+		<n32Gold>45</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
+	<item id="22010">
+		<n32Grade>2</n32Grade>
+		<szName>右上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>314</n32Hp>
+		<n32Mp>157</n32Mp>
+		<n32Attack>32</n32Attack>
+		<n32Defence>3</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>22011, 22012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>30</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="22011">
+		<n32Grade>2</n32Grade>
+		<szName>右上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>314</n32Hp>
+		<n32Mp>157</n32Mp>
+		<n32Attack>32</n32Attack>
+		<n32Defence>3</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>22010, 22012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>30</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="22012">
+		<n32Grade>2</n32Grade>
+		<szName>右上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>别吵吵</szWord>
+		<n32Hp>510</n32Hp>
+		<n32Mp>255</n32Mp>
+		<n32Attack>42</n32Attack>
+		<n32Defence>4</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>22010, 22011</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>45</n32Exp>
+		<n32Gold>45</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
+	<item id="22013">
+		<n32Grade>2</n32Grade>
+		<szName>左上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>对面的一起喝一杯</szWord>
+		<n32Hp>314</n32Hp>
+		<n32Mp>157</n32Mp>
+		<n32Attack>32</n32Attack>
+		<n32Defence>3</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>22014, 22015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>30</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="22014">
+		<n32Grade>2</n32Grade>
+		<szName>左上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>你请客么</szWord>
+		<n32Hp>314</n32Hp>
+		<n32Mp>157</n32Mp>
+		<n32Attack>32</n32Attack>
+		<n32Defence>3</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>22013, 22015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>30</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="22015">
+		<n32Grade>2</n32Grade>
+		<szName>左上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>没钱吵吵啥</szWord>
+		<n32Hp>510</n32Hp>
+		<n32Mp>255</n32Mp>
+		<n32Attack>42</n32Attack>
+		<n32Defence>4</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>22013, 22014</szLink>
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>45</n32Exp>
@@ -675,6 +975,156 @@
 		<szSkill>31501</szSkill>
 		<n32ModelId>50004</n32ModelId>
 	</item>
+	<item id="23010">
+		<n32Grade>3</n32Grade>
+		<szName>右上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>410</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>40</n32Attack>
+		<n32Defence>4</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>23011, 23012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>45</n32Exp>
+		<n32Gold>45</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="23011">
+		<n32Grade>3</n32Grade>
+		<szName>右上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>410</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>40</n32Attack>
+		<n32Defence>4</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>23010, 23012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>45</n32Exp>
+		<n32Gold>45</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="23012">
+		<n32Grade>3</n32Grade>
+		<szName>右上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>别吵吵</szWord>
+		<n32Hp>606</n32Hp>
+		<n32Mp>303</n32Mp>
+		<n32Attack>50</n32Attack>
+		<n32Defence>5</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>23010, 23011</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>68</n32Exp>
+		<n32Gold>68</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
+	<item id="23013">
+		<n32Grade>3</n32Grade>
+		<szName>左上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>对面的一起喝一杯</szWord>
+		<n32Hp>410</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>40</n32Attack>
+		<n32Defence>4</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>23014, 23015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>45</n32Exp>
+		<n32Gold>45</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="23014">
+		<n32Grade>3</n32Grade>
+		<szName>左上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>你请客么</szWord>
+		<n32Hp>410</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>40</n32Attack>
+		<n32Defence>4</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>23013, 23015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>45</n32Exp>
+		<n32Gold>45</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="23015">
+		<n32Grade>3</n32Grade>
+		<szName>左上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>没钱吵吵啥</szWord>
+		<n32Hp>606</n32Hp>
+		<n32Mp>303</n32Mp>
+		<n32Attack>50</n32Attack>
+		<n32Defence>5</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>23013, 23014</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>68</n32Exp>
+		<n32Gold>68</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
 	<item id="24001">
 		<n32Grade>4</n32Grade>
 		<szName>大魔王S</szName>
@@ -900,6 +1350,156 @@
 		<szSkill>31501</szSkill>
 		<n32ModelId>50004</n32ModelId>
 	</item>
+	<item id="24010">
+		<n32Grade>4</n32Grade>
+		<szName>右上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>554</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>52</n32Attack>
+		<n32Defence>5</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>24011, 24012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>68</n32Exp>
+		<n32Gold>68</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="24011">
+		<n32Grade>4</n32Grade>
+		<szName>右上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>554</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>52</n32Attack>
+		<n32Defence>5</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>24010, 24012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>68</n32Exp>
+		<n32Gold>68</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="24012">
+		<n32Grade>4</n32Grade>
+		<szName>右上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>别吵吵</szWord>
+		<n32Hp>750</n32Hp>
+		<n32Mp>303</n32Mp>
+		<n32Attack>62</n32Attack>
+		<n32Defence>6</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>24010, 24011</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>101</n32Exp>
+		<n32Gold>101</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
+	<item id="24013">
+		<n32Grade>4</n32Grade>
+		<szName>左上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>对面的一起喝一杯</szWord>
+		<n32Hp>554</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>52</n32Attack>
+		<n32Defence>5</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>24014, 24015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>68</n32Exp>
+		<n32Gold>68</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="24014">
+		<n32Grade>4</n32Grade>
+		<szName>左上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>你请客么</szWord>
+		<n32Hp>554</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>52</n32Attack>
+		<n32Defence>5</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>24013, 24015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>68</n32Exp>
+		<n32Gold>68</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="24015">
+		<n32Grade>4</n32Grade>
+		<szName>左上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>没钱吵吵啥</szWord>
+		<n32Hp>750</n32Hp>
+		<n32Mp>303</n32Mp>
+		<n32Attack>62</n32Attack>
+		<n32Defence>6</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>24013, 24014</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>101</n32Exp>
+		<n32Gold>101</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
 	<item id="25001">
 		<n32Grade>5</n32Grade>
 		<szName>大魔王S</szName>
@@ -1115,6 +1715,156 @@
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25007, 25008</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>152</n32Exp>
+		<n32Gold>152</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
+	<item id="25010">
+		<n32Grade>5</n32Grade>
+		<szName>右上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>698</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>64</n32Attack>
+		<n32Defence>6</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>25011, 25012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>101</n32Exp>
+		<n32Gold>101</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="25011">
+		<n32Grade>5</n32Grade>
+		<szName>右上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>来人打架啦</szWord>
+		<n32Hp>698</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>64</n32Attack>
+		<n32Defence>6</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>25010, 25012</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>101</n32Exp>
+		<n32Gold>101</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="25012">
+		<n32Grade>5</n32Grade>
+		<szName>右上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>别吵吵</szWord>
+		<n32Hp>894</n32Hp>
+		<n32Mp>303</n32Mp>
+		<n32Attack>74</n32Attack>
+		<n32Defence>7</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>25010, 25011</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>152</n32Exp>
+		<n32Gold>152</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50004</n32ModelId>
+	</item>
+	<item id="25013">
+		<n32Grade>5</n32Grade>
+		<szName>左上C1</szName>
+		<n32Type>4</n32Type>
+		<szWord>对面的一起喝一杯</szWord>
+		<n32Hp>698</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>64</n32Attack>
+		<n32Defence>6</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>25014, 25015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>101</n32Exp>
+		<n32Gold>101</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="25014">
+		<n32Grade>5</n32Grade>
+		<szName>左上C2</szName>
+		<n32Type>4</n32Type>
+		<szWord>你请客么</szWord>
+		<n32Hp>698</n32Hp>
+		<n32Mp>205</n32Mp>
+		<n32Attack>64</n32Attack>
+		<n32Defence>6</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>25013, 25015</szLink>
+		<n32RecvHp>20000</n32RecvHp>
+		<n32RecvMp>20000</n32RecvMp>
+		<n32Exp>101</n32Exp>
+		<n32Gold>101</n32Gold>
+		<szDrop>1001</szDrop>
+		<n32CommonSkill>30001
+</n32CommonSkill>
+		<szSkill>31501</szSkill>
+		<n32ModelId>50003</n32ModelId>
+	</item>
+	<item id="25015">
+		<n32Grade>5</n32Grade>
+		<szName>左上B</szName>
+		<n32Type>3</n32Type>
+		<szWord>没钱吵吵啥</szWord>
+		<n32Hp>894</n32Hp>
+		<n32Mp>303</n32Mp>
+		<n32Attack>74</n32Attack>
+		<n32Defence>7</n32Defence>
+		<n32ASpeed>15000</n32ASpeed>
+		<n32MSpeed>14595</n32MSpeed>
+		<n32AttackRange>5</n32AttackRange>
+		<n32VisionRange>0</n32VisionRange>
+		<n32HateRange>4</n32HateRange>
+		<szLink>25013, 25014</szLink>
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
 		<n32Exp>152</n32Exp>
