@@ -20,8 +20,12 @@ function EventStampHandle.createHandleCoroutine(serverId, event, response)
 				local f = EventStampHandle[event]
 				if f then
 					local s, r = pcall(f, ...)
+					if not s then
+						print(r)
+						--r = nil
+					end
 					for k, v in pairs(entity.coroutine_response[event]) do
-						v (true,  r)
+						v (true, r)
 					end
 					entity.coroutine_response[event] = {}
 				else
