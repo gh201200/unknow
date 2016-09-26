@@ -203,7 +203,8 @@ function spell:Cast(skillid,target,pos)
 		target = target or self.source.target
 		self.targets = {target}
 	end
-	self.source.curActionState = ActionState.attack1
+	--self.source:stand()
+	--self.source.curActionState = ActionState.attack1
 	self:onBegin()
 end
 return spell

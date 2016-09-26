@@ -60,12 +60,12 @@ function Ientity:ctor(pos,dir)
 	
 	--技能相关----
 	self.spell = spell.new(self)		 --技能
-	self.attackSpell = AttackSpell.new(self) --普攻技能
 	self.affectTable = AffectTable.new(self) --效果表
 	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
 	self.controledState = 0
+	self.triggerCast = true	 --是否触发技能
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
@@ -149,7 +149,6 @@ end
 function Ientity:stand()
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
-	self.state = "idle" --idle walk spell
 	self:clearPath()
 end
 
@@ -170,13 +169,14 @@ function Ientity:setTarget(target)
 	if not target then self.target = nil return end
 	if self.affectTable:canControl() == false then return end		--不受控制状态
 --	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
---	if self.attackSpell:canBreak(ActionState.move) == false then return end
---	self.attackSpell:breakSpell()
---	self.attackSpell:breakSpell()	
 	self.userAStar = false
 	self.target = target
 	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 	self.curActionState = ActionState.move
+	self.triggerCast = true
+	if target:getType() == "transform" and self.ReadySkillId == 0 then
+		self.triggerCast = false
+	end
 
 --	local r = self:pathFind(self.target.pos.x, self.target.pos.z)
 end
@@ -193,7 +193,6 @@ end
 
 function Ientity:update(dt)
 	self.spell:update(dt)
-	self.attackSpell:update(dt)
 	self.cooldown:update(dt)
 	self.affectTable:update(dt)
 	self:recvHpMp(dt)
@@ -219,7 +218,7 @@ function Ientity:update(dt)
 		
 	end
 	--技能相关
-	if self.ReadySkillId ~= 0 then	
+	if self.ReadySkillId ~= 0 and self.triggerCast == true then	
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
 			self:castSkill(self.ReadySkillId)
@@ -598,13 +597,11 @@ function Ientity:canMove()
 	if bit_and(self.controledState,ControledState.NoMove) ~= 0 then
 		return ErrorCode.EC_Spell_Controled
 	end
-	if self.spell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
-	if self.attackSpell:isSpellRunning() then return ErrorCode.EC_Spell_SkillIsRunning end
+	--if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
 end
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
-	if self.attackSpell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
@@ -649,14 +646,6 @@ function Ientity:setCastSkillId(id)
         if errorcode ~= 0 then return errorcode end 
 	local type_target = math.floor(skilldata.n32Type / 10)
 	local type_range = math.floor(skilldata.n32Type % 10)
-	if  type_range == 3 or type_range  == 4 then
-		--立即释放
-		--errorcode = self.canCast(id)
-		--if errorcode ~= 0 then
-		--	return errorcode
-		--end
-		--self.castSkill()
-	end
 end
 function Ientity:castSkill()
 	self.CastSkillId = self.ReadySkillId
@@ -678,12 +667,11 @@ function Ientity:castSkill()
 		skillTimes[3] = modoldata["n32Attack" .. "Time3"] or 0
 	end
 	local tmpSpell = self.spell
-	if skilldata.bCommonSkill == true then
-		tmpSpell = self.attackSpell
-	end
 	tmpSpell:init(skilldata,skillTimes)
 	self.cooldown:addItem(id) --加入cd
 	self:stand()
+	self.moveSpeed  = 0
+        self.curActionState = 3
 	tmpSpell:Cast(id,target,pos)
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0

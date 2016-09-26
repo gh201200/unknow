@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="111">
-		<szMonsterIds>21001, 21002, 21003</szMonsterIds>
+		<szMonsterIds>21002</szMonsterIds>
 		<n32NextBatch>121</n32NextBatch>
 		<n32CDTime>30</n32CDTime>
-		<szPosition>(34000,84000),(22300,84000),(45300,84000)</szPosition>
+		<szPosition>(22300,84000)</szPosition>
 		<n32MapId>1</n32MapId>
 	</item>
 	<item id="112">
