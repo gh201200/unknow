@@ -59,9 +59,6 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 	local skillid = player.CastSkillId
 	local skilldata = g_shareData.skillRepository[skillid]
 	local spell = player.spell
-	if skilldata.bCommonSkill == true then
-		spell = player.attackSpell
-	end
 	local targetId = 0
 	if player.target ~= nil and player.target:getType() ~= "transform" then
 		targetId = player.target.serverId
