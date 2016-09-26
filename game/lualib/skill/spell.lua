@@ -186,7 +186,6 @@ end
 function spell:onEnd()
 	--self.source.curActionState = ActionState.attack3
 	if self.endTime < 0 then
-		print("spell onEnd")
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
 		self.source:OnStand()

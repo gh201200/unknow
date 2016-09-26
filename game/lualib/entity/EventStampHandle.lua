@@ -134,7 +134,6 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 		assert(v and v.effectId)
 		table.insert(r.affectList, {effectId = v.effectId , projectId = v.projectId,effectTime = v.effectTime})
 	end
-	print("Affect r=",r)
 	return r
 end
 
