@@ -50,7 +50,7 @@ end
 
 function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
-	self.ai:update(dt)
+	--self.ai:update(dt)
 	
 	self.skillCD  = self.skillCD - dt
 	--add code before this

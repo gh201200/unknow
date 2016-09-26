@@ -21,6 +21,7 @@ function demageAffect:onEnter()
 	
 end
 function demageAffect:onExec(dt)
+	print("demageAffect:onExec")
 	self.leftTime = self.leftTime -  dt
 	if self.leftTime <= 0 then
 		self:onExit()		
