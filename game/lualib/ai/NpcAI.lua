@@ -103,6 +103,7 @@ function NpcAI:onExec_Battle()
 	end
 
 	if self.source:getDistance(self.source:getTarget()) <= self.followLen then
+		self.source:stand()
 		self.source:setCastSkillId(self.source:getPreSkillData().id)
 		self.source:clearPreCastSkill()
 	else

@@ -150,6 +150,8 @@ function Ientity:stand()
 	self.moveSpeed  = 0
 	self.curActionState = ActionState.stand
 	self:clearPath()
+	
+	self:advanceEventStamp(EventStampType.Move)
 end
 
 function Ientity:clearPath()
@@ -334,8 +336,6 @@ end
 --进入站立状态
 function Ientity:OnStand()
 	self:stand()
-	self.curActionState =  ActionState.stand
-	self:advanceEventStamp(EventStampType.Move)
 end
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
