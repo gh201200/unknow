@@ -19,6 +19,7 @@ local function getupvaluetable(u, func, unique)
 end
 
 return function(skynet, source, filename , ...)
+	print("=====inject",skynet,source,filename,"...",...)
 	if filename then
 		filename = "@" .. filename
 	else
