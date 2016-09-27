@@ -213,7 +213,9 @@ function Ientity:update(dt)
 		if not self.target then 
 			self:stand()
 		else
-			self:onMove(dt)
+			if self:canMove() == 0 then
+				self:onMove(dt)
+			end
 		end
 	elseif self.curActionState == ActionState.stand then
 		--站立状态
