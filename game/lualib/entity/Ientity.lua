@@ -145,13 +145,15 @@ function Ientity:onRespClientEventStamp(event)
 	end
 end
 
+function Ientity:setActionState(_speed, _action)
+	self.moveSpeed = _speed
+	self.curActionState = _action
+	self:advanceEventStamp(EventStampType.Move)
+end
 
 function Ientity:stand()
-	self.moveSpeed  = 0
-	self.curActionState = ActionState.stand
+	self:setActionState(0, ActionState.stand)
 	self:clearPath()
-	
-	self:advanceEventStamp(EventStampType.Move)
 end
 
 function Ientity:clearPath()
@@ -173,8 +175,7 @@ function Ientity:setTarget(target)
 --	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	self.userAStar = false
 	self.target = target
-	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
-	self.curActionState = ActionState.move
+	self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 	self.triggerCast = true
 	if target:getType() == "transform" and self.ReadySkillId == 0 then
 		self.triggerCast = false
@@ -329,10 +330,8 @@ end
 --进入强制移动状态（闪现,击飞,回城等）
 function Ientity:onForceMove(des)
 	--先判定des位置是否超过地图范围
-	self:stand()
 	self:setPos(des.x, des.y, des.z)
-	self.curActionState = 8	--ActionState.blink	
-	self:advanceEventStamp(EventStampType.Move)
+	self:setActionState(0, ActionState.blink) 
 end
 
 --进入站立状态
@@ -585,6 +584,10 @@ function Ientity:callBackSpellBegin()
 end
 
 function Ientity:callBackSpellEnd()
+	if self.entityType ~= EntityType.player	then
+		self.ReadySkillId = 0
+		return
+	end
 	local data = g_shareData.skillRepository[self.ReadySkillId]
 	if data ~= nil and data.bCommonSkill == false then
 		self.ReadySkillId = 0
@@ -671,9 +674,7 @@ function Ientity:castSkill()
 	local tmpSpell = self.spell
 	tmpSpell:init(skilldata,skillTimes)
 	self.cooldown:addItem(id) --加入cd
-	self:stand()
-	self.moveSpeed  = 0
-        self.curActionState = 3
+	self:setActionState(0, ActionState.attack2)
 	tmpSpell:Cast(id,target,pos)
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0

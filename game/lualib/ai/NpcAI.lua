@@ -93,9 +93,11 @@ function NpcAI:onExit_Chase()
 end
 
 function NpcAI:onEnter_Battle()
+	self.source:stand()
 end
 
 function NpcAI:onExec_Battle()
+
 	if self.source.spell:isSpellRunning() then return end
 
 	if self.source:getPreSkillData() == nil then
@@ -103,7 +105,6 @@ function NpcAI:onExec_Battle()
 	end
 
 	if self.source:getDistance(self.source:getTarget()) <= self.followLen then
-		self.source:stand()
 		self.source:setCastSkillId(self.source:getPreSkillData().id)
 		self.source:clearPreCastSkill()
 	else
