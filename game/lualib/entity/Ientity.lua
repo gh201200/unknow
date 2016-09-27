@@ -386,8 +386,9 @@ function Ientity:recvHpMp()
 	if self.recvTime == 0 then
 		self.recvTime = curTime
 	end    
-	if (curTime - self.recvTime) * 100  > HP_MP_RECOVER_TIMELINE then
-		local cnt = math.floor((curTime - self.recvTime) * 100 / HP_MP_RECOVER_TIMELINE)
+
+	if (curTime - self.recvTime) * 10  > HP_MP_RECOVER_TIMELINE then
+		local cnt = math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
  		self:addHp(math.floor(self:getRecvHp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineHp)
  		self:addMp(math.floor(self:getRecvMp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineMp)
