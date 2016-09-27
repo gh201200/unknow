@@ -216,6 +216,8 @@ function Ientity:update(dt)
 		else
 			if self:canMove() == 0 then
 				self:onMove(dt)
+			else
+				self:stand()
 			end
 		end
 	elseif self.curActionState == ActionState.stand then
