@@ -37,4 +37,11 @@ function cooldown:resetCd(id,time)
 	assert(self.coolDownTable[id] ~= nil)
 	self.coolDownTable[id] = time
 end
+function cooldown:getCdsMsg()
+	local r = { items = {}}
+	for _k,_v in pairs(self.coolDownTable) do                                                	 	local item = {skillId = _k,time = _v}
+		table.insert(r.items,item)
+	end	
+	return r
+end
 return cooldown

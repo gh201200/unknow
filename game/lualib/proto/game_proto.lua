@@ -95,6 +95,10 @@ local types = [[
 	pz 3 : integer
 	sid 4 : integer
 }
+.CdItem {
+	skillId 0 : integer
+	time	1 : integer
+}
 ]]
 
 local c2s = [[
@@ -416,6 +420,12 @@ addSkill 2008 {
 	request {
 		skillId 0 : integer
 		level 1 : integer
+	}
+}
+
+makeSkillCds 2009 {
+	request {
+	items 0 : *CdItem
 	}
 }
 ]]
