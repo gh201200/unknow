@@ -14,7 +14,6 @@ function EntityManager:sendToAllPlayers(msg, val, except)
 	end
 end
 
-
 function EntityManager:ctor(p)
 	--if you want to remove a entity, please set the entity's hp to 0
 	--do not use table.remove or set nil

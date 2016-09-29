@@ -172,7 +172,7 @@ end
 function Ientity:setTarget(target)
 	if not target then self.target = nil return end
 	if self.affectTable:canControl() == false then return end		--不受控制状态
---	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
+	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	self.userAStar = false
 	self.target = target
 	self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
