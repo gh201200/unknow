@@ -39,7 +39,7 @@ function account.create (account_id, password, nick, icon)
 	--local salt, verifier = srp.create_verifier (name, password)
 	connection:hmset (key, 
 		"nick", nick, 
-		"passsword", password, 
+		"password", password, 
 		"gold", 0, 
 		"money", 0,
 		"exp", 0,

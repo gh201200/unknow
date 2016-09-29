@@ -23,8 +23,35 @@ end
 
 local funcs = {}
 
+funcs['getAccountInfo'] = function (param)
+	local db = skynet.uniqueservice 'database'
+	local account = skynet.call(db, "lua", "account_rd","load",param["id"])
+	if not account.nick then return "" end
+	local r = {
+		nick = account.nick,
+		password = account.password,
+		gold = account.gold,
+		money = account.money,
+		exp = account.exp,
+		icon = account.icon,
+		flag = account.flag	
+	}
+	local jt = json.encode(r)
+	return jt
+end;
+
+funcs['getCardsInfo'] = function (param)
+	local db = skynet.uniqueservice 'database'
+	print(param)
+	local cards = skynet.call(db, "lua", "cards_rd","load",param["id"])
+	print(cards)
+	local jt = json.encode(cards)
+	return jt
+end;
+
 funcs['getHero'] = function (param)
 	local attDat = g_shareData.heroRepository[tonumber(param['id'])]
+	if not attDaat then return "" end
 	local r = {
 		id = attDat.id,
 		name = attDat.szName,
@@ -60,8 +87,6 @@ skynet.start(function()
 						end
 					end
 				end
-				print(params)
-				print(func)
 				if func then
 					local res = func(params)
 					print(res)
