@@ -5,6 +5,7 @@ local blinkAffect = require "skill.Affects.blinkAffect"
 local invincibleAffect = require "skill.Affects.invincibleAffect"
 local changeModAffect = require "skill.Affects.changeModAffect"
 local statsAffect = require "skill.Affects.statsAffect"
+local getnewAffect =  require "skill.Affects.getnewAffect"
 local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
@@ -54,7 +55,9 @@ function AffectTable:addAffect(source,data)
 	elseif data[1] == "ctrl" or data[1] == "up_str" or data[1] == "up_dex" or data[1] == "up_inte" or data[1] == "hp" or data[1] == "mp"  or 
 	       data[1] == "atk" or data[1] == "def" or data[1] == "wsp" or data[1] == "mov" or data[1] == "rng" or 
 	       data[1] == "re_hp" or data[1] == "re_mp" or data[1] == "crit_rate" or data[1] == "hit_rate" or data[1] == "dod_rate" then
-		aff = statsAffect.new(self.owner,source,data) 
+		aff = statsAffect.new(self.owner,source,data)
+	elseif data[1] == "getnew" then
+		aff = getnewAffect.new(self.owner,source,data)  
 	end
 	if aff ~= nil then 
 		if data[1] == "dizzy" or data[1] == "invincible" or data[1] == "repel" then

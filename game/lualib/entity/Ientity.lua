@@ -331,7 +331,6 @@ end
 
 --进入强制移动状态（闪现,击飞,回城等）
 function Ientity:onForceMove(des)
-	--先判定des位置是否超过地图范围
 	self:setPos(des.x, des.y, des.z)
 	self:setActionState(0, ActionState.blink) 
 end
@@ -612,15 +611,16 @@ function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
-	if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
-	if skilldata.bNeedTarget == true then
-		if self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
-	end
-	local dis = self:getDistance(self.target)
-	local dataDis = skilldata.n32Range / 10000
-	if dis > dataDis  then 
-	--	print("canCast error",dis,dataDis)
-		return ErrorCode.EC_Spell_TargetOutDistance 
+	if math.floor(skilldata.n32Type / 10) ~= 4 then
+		if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
+		if skilldata.bNeedTarget == true then
+			if self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		end
+		local dis = self:getDistance(self.target)
+		local dataDis = skilldata.n32Range / 10000
+		if dis > dataDis  then 
+			return ErrorCode.EC_Spell_TargetOutDistance 
+		end
 	end
 	if skilldata.bCommonSkill == false and  bit_and(self.controledState,ControledState.NoSpell) ~= 0 then 
 		return ErrorCode.EC_Spell_Controled
@@ -648,10 +648,14 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
+	print("setCastSkillId",id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
-        if errorcode ~= 0 then return errorcode end 
+        if errorcode ~= 0 then return errorcode end
+	if id == 32002 then
+		self:castSkill()
+	end 
 	local type_target = math.floor(skilldata.n32Type / 10)
 	local type_range = math.floor(skilldata.n32Type % 10)
 end
@@ -662,6 +666,7 @@ function Ientity:castSkill()
 	local modoldata = self.modelDat 
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
+	print("errorcode" .. errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}
 	if skilldata.bCommonSkill == false then

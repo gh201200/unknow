@@ -73,8 +73,10 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 		skillId = skillid,
 		targetId = targetId,
 		skillTime = spell.totalTime,
-		pos = {x=math.ceil(player.target.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.target.pos.z*GAMEPLAY_PERCENT) }
-	}
+		pos =  {x = 0,y = 0,z = 0} }
+	if player.target ~= nil then
+		r.pos =  {x=math.ceil(player.target.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.target.pos.z*GAMEPLAY_PERCENT) }
+	end
 	return r
 end
 
