@@ -82,6 +82,14 @@ function IMonster:onDead()
 	local player = EntityManager:getEntity( sid )
 	player:addGold( self.attDat.n32Gold )
 	player:addExp( self.attDat.n32Exp )
+	for k, v in pairs(EntityManager.entityList) do 
+		if v.entityType == EntityType.player and v.serverId ~= player.serverId then
+			if v.isSameCamp( player ) then
+				v:addGold( math.floor(self.attDat.n32Gold * Quest.ShareGoldPercent) )
+				v:addExp( math.floor(self.attDat.n32Exp * Quest.ShareExpPercent) )
+			end
+		end
+	end
 	DropManager:makeDrop(self)
 	
 	--tell the clients

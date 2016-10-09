@@ -24,6 +24,15 @@ local Quest = {
 		gains_money = {{10001, 1000}, {10002, 2000},},
 		power = 28800,
 	},
+		
+	--技能最高等级
+	SkillMaxLevel = 4,
+
+	--同阵营金币分享百分比
+	ShareGoldPercent = 0.4,
+	
+	--同阵营经验分享百分比
+	ShareExpPercent = 0.4,
 }
 
 

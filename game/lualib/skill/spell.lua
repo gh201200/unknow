@@ -116,7 +116,7 @@ function spell:advanceEffect(dt)
 			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
 			if self.skilldata.n32Type == 35 then
 				--产生可碰撞的飞行物
-				 g_entityManager:createFlyObj(self.source,self.source.target,self.skilldata)
+				 g_entityManager:createFlyObj(self.source,self.source:getTarget(),self.skilldata)
 			elseif self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then
 				--触发目标效果
 				local selfEffects = self.skilldata.szMyAffect
@@ -190,8 +190,8 @@ function spell:onEnd()
 		self.source.CastSkillId = 0
 		self.source:OnStand()
 		self.source:callBackSpellEnd()
-		if self.source.target ~= nil and self.source.target:getType() == "transform" then
-			self.source.target = nil
+		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
+			self.source:setTarget( nil )
 		end
 	end
 end
@@ -200,7 +200,7 @@ function spell:Cast(skillid,target,pos)
 	assert(self.skilldata)
 	self.targets = {} --清空目标列表
 	if self.skilldata.bNeedTarget == true then
-		target = target or self.source.target
+		target = target or self.source:getTarget()
 		self.targets = {target}
 	end
 	--self.source:stand()

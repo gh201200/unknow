@@ -33,6 +33,9 @@ function IMapPlayer:ctor()
 	register_class_var(self, 'Gold', 0, self.onGold)
 	register_class_var(self, 'Exp', 0, self.onExp)
 	
+	register_class_var(self, 'GodSkill', 0, self.onGodSkill)
+	register_class_var(self, 'CommonSkill', 0, self.onCommonSkill)
+
 	self.GoldExpMask = false
 end
 
@@ -42,6 +45,12 @@ end
 
 function IMapPlayer:isRed()
 	return self.color < 4
+end
+
+function IMapPlayer:isSameCamp(entity)
+	if self:isRed() and entity:isRed() then return true end
+	if not self:isRed() and not entity:isRed() then return true end
+	return false
 end
 
 
@@ -59,6 +68,10 @@ end
 
 function IMapPlayer:init(heroId)
 	self.attDat = g_shareData.heroRepository[heroId]
+	self.setGodSkill( self.attDat.n32GodSkillId )
+	self.setCommonSkill( self.attDat.n32CommonSkillId )
+	self.skillTable[self.attDat.n32GodSkillId] = 1
+	self.skillTable[self.attDat.n32CommonSkillId] = 1
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self:setPos(self.bornPos.x, 0, self.bornPos.z)
 	self:calcStats()

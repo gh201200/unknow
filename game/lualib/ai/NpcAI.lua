@@ -83,7 +83,6 @@ function NpcAI:onExec_Chase()
 	if self.source.moveSpeed==0 then
 		self.source:setTarget(self.source:getTarget())
 	end
-	
 	if self.source:getDistance(self.source:getTarget()) <= self.followLen then
 		self:setNextAiState("Battle")
 	end

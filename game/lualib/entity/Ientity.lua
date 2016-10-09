@@ -41,7 +41,7 @@ function Ientity:ctor(pos,dir)
 	register_class_var(self, 'Level', 1)
 	self.bornPos =  vector3.create()
 	
-	self.target =  nil --选中目标实体
+	register_class_var(self, 'TargetVar', nil)	--选中目标实体
 	self.moveSpeed = 0
 	self.curActionState = 0
 	self.pathMove = nil
@@ -170,11 +170,11 @@ function Ientity:pathFind(dx, dz)
 end
 
 function Ientity:setTarget(target)
-	if not target then self.target = nil return end
+	if not target then self:setTargetVar( nil ) return end
 	if self.affectTable:canControl() == false then return end		--不受控制状态
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	self.userAStar = false
-	self.target = target
+	self:setTargetVar( target )
 	self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 	self.triggerCast = true
 	if target:getType() == "transform" and self.ReadySkillId == 0 then
@@ -185,7 +185,7 @@ function Ientity:setTarget(target)
 end
 
 function Ientity:getTarget()
-	return self.target
+	return self:getTargetVar()
 end
 
 function Ientity:setTargetPos(target)
@@ -211,7 +211,7 @@ function Ientity:update(dt)
 	end
 	
 	if self.curActionState == ActionState.move then
-		if not self.target then 
+		if not self:getTarget() then 
 			self:stand()
 		else
 			if self:canMove() == 0 then
@@ -251,7 +251,7 @@ function Ientity:onMove(dt)
 	if self.useAStar then
 		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
 	else
-		self.dir:set(self.target.pos.x, 0, self.target.pos.z)
+		self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
 	end
 	self.dir:sub(self.pos)
 	self.dir:normalize()
@@ -315,12 +315,12 @@ function Ientity:onMove(dt)
 		--到达终点
 		if self.useAStar then
 			if self.pathNodeIndex >= #self.pathMove then
-				self.target = nil
+			--	self:setTarget( nil )
 				self:stand()
 				break
 			end
-		elseif Map.IS_SAME_GRID(self.pos, self.target.pos) then 
-			self.target = nil
+		elseif Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then 
+			--self:setTarget( nil )
 			self:stand()
 			break
 		end
@@ -343,7 +343,7 @@ end
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
 	for k, v in pairs(EntityManager.entityList) do
-		if v.target == self then
+		if v:getTarget() == self then
 			v:setTarget(nil)
 		end
 	end
@@ -612,11 +612,11 @@ function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
-	if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
+	if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
 	if skilldata.bNeedTarget == true then
-		if self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 	end
-	local dis = self:getDistance(self.target)
+	local dis = self:getDistance(self:getTarget())
 	local dataDis = skilldata.n32Range / 10000
 	if dis > dataDis  then 
 	--	print("canCast error",dis,dataDis)
