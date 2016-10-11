@@ -186,7 +186,6 @@ function Ientity:setTarget(target)
 	if target:getType() == "transform" and self.ReadySkillId == 0 then
 		self.triggerCast = false
 	end
-
 --	local r = self:pathFind(self.target.pos.x, self.target.pos.z)
 end
 
@@ -648,11 +647,11 @@ function Ientity:canCast(id)
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
 	if math.floor(skilldata.n32Type / 10) ~= 4 then
-		if self.target == nil then return ErrorCode.EC_Spell_NoTarget end
+		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
 		if skilldata.bNeedTarget == true then
-			if self.target:getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
 		end
-		local dis = self:getDistance(self.target)
+		local dis = self:getDistance(self:getTarget())
 		local dataDis = skilldata.n32Range / 10000
 		if dis > dataDis  then 
 			return ErrorCode.EC_Spell_TargetOutDistance 

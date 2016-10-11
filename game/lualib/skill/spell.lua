@@ -116,14 +116,14 @@ function spell:advanceEffect(dt)
 			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
 			if self.skilldata.bCommonSkill == true then
 				--普通攻击 触发普攻附加buff
-				self.source.affectTable:triggerAtkAffects(self.source.target,false)
-				if self.source.target:getType() ~= "transform" then 
-					self.source.target.affectTable:triggerAtkAffects(self.source,true)	
+				self.source.affectTable:triggerAtkAffects(self.source:getTarget(),false)
+				if self.source:getTarget():getType() ~= "transform" then 
+					self.source:getTarget().affectTable:triggerAtkAffects(self.source,true)	
 				end
 			end
 			if self.skilldata.n32Type == 35 then
 				--产生可碰撞的飞行物
-				 g_entityManager:createFlyObj(self.source,self.source.target,self.skilldata)
+				 g_entityManager:createFlyObj(self.source,self.source:getTarget(),self.skilldata)
 			end
 			--自身效果
 			local selfEffects = self.skilldata.szMyAffect

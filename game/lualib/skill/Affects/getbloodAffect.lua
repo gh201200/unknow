@@ -24,7 +24,7 @@ end
 
 function getbloodAffect:onExec(dt)
 	self.effectTime = self.effectTime - dt
-	self.owner.target = self.source
+	self.owner.setTargetVar(self.source)
 	if self.effectTime < 0 then
 		self:onExit()
 	end
