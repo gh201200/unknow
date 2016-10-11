@@ -336,7 +336,7 @@ function Ientity:onMove(dt)
 	--advance move event stamp
 	self:advanceEventStamp(EventStampType.Move)
 end
-
+--强制移动（魅惑 嘲讽等）
 function Ientity:onForceMove(dt)
 	dt = dt / 1000
 	local fSpeed = 2
@@ -353,11 +353,12 @@ function Ientity:onForceMove(dt)
 		self:advanceEventStamp(EventStampType.Move)
 	end	
 end
---进入强制移动状态（闪现,击飞,回城等）
---function Ientity:onForceMove(des)
---	self:setPos(des.x, des.y, des.z)
---	self:setActionState(0, ActionState.blink) 
---end
+--闪现
+function Ientity:onBlink(des)
+	self:setPos(des.x, des.y, des.z)
+	self:setActionState(0, ActionState.blink)
+	self:advanceEventStamp(EventStampType.Move)
+end
 
 --进入站立状态
 function Ientity:OnStand()
