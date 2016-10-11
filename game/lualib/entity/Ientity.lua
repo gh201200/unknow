@@ -40,7 +40,7 @@ function Ientity:ctor(pos,dir)
 	register_class_var(self, 'Level', 1)
 	self.bornPos =  vector3.create()
 	
-	self.target =  nil --选中目标实体
+	register_class_var(self, 'TargetVar', nil)	--选中目标实体
 	self.moveSpeed = 0
 	self.curActionState = 0
 	self.pathMove = nil
@@ -150,7 +150,15 @@ function Ientity:setActionState(_speed, _action)
 	self:advanceEventStamp(EventStampType.Move)
 end
 
+function Ientity:canStand()
+	if self:getHp() <= 0 then
+		return false
+	end
+	return true
+end
+
 function Ientity:stand()
+	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
 end
@@ -169,10 +177,10 @@ function Ientity:pathFind(dx, dz)
 end
 
 function Ientity:setTarget(target)
-	if not target then self.target = nil return end
+	if not target then self:setTargetVar( nil ) return end
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	self.userAStar = false
-	self.target = target
+	self:setTargetVar( target )
 	self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 	self.triggerCast = true
 	if target:getType() == "transform" and self.ReadySkillId == 0 then
@@ -183,7 +191,7 @@ function Ientity:setTarget(target)
 end
 
 function Ientity:getTarget()
-	return self.target
+	return self:getTargetVar()
 end
 
 function Ientity:setTargetPos(target)
@@ -209,7 +217,7 @@ function Ientity:update(dt)
 	end
 	
 	if self.curActionState == ActionState.move then
-		if not self.target then 
+		if not self:getTarget() then 
 			self:stand()
 		else
 			if self:canMove() == 0 then
@@ -252,7 +260,7 @@ function Ientity:onMove(dt)
 	if self.useAStar then
 		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
 	else
-		self.dir:set(self.target.pos.x, 0, self.target.pos.z)
+		self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
 	end
 	self.dir:sub(self.pos)
 	self.dir:normalize()
@@ -316,12 +324,12 @@ function Ientity:onMove(dt)
 		--到达终点
 		if self.useAStar then
 			if self.pathNodeIndex >= #self.pathMove then
-				self.target = nil
+			--	self:setTarget( nil )
 				self:stand()
 				break
 			end
-		elseif Map.IS_SAME_GRID(self.pos, self.target.pos) then 
-			self.target = nil
+		elseif Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then 
+			--self:setTarget( nil )
 			self:stand()
 			break
 		end
@@ -356,13 +364,24 @@ end
 function Ientity:OnStand()
 	self:stand()
 end
+
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
+	self.spell:breakSpell()
+
 	for k, v in pairs(EntityManager.entityList) do
-		if v.target == self then
+		if v:getTarget() == self then
 			v:setTarget(nil)
 		end
+		if v.entityType == EntityType.monster then
+			v.hateList:removeHate( self )
+		end
 	end
+end
+
+function Ientity:onRaise()
+	self:addHp(self:getHpMax(), HpMpMask.RaiseHp)
+	self:addMp(self:getMpMax(), HpMpMask.RaiseMp)
 end
 
 function Ientity:addHp(_hp, mask, source)
@@ -645,6 +664,7 @@ function Ientity:canCast(id)
 	if bit_and(self.affectState,AffectState.NoAttack) ~= 0 then 
 		return ErrorCode.EC_Spell_Controled
 	end
+	if self:getHp() <= 0 then return ErrorCode.EC_Dead end
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end

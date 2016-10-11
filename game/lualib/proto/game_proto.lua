@@ -425,9 +425,16 @@ addSkill 2008 {
 
 makeSkillCds 2009 {
 	request {
-	items 0 : *CdItem
+		items 0 : *CdItem
 	}
 }
+
+raiseHero 2010 {
+        request {
+		sid 0 : integer
+        }
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)

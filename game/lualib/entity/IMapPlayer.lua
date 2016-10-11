@@ -1,7 +1,8 @@
 local skynet = require "skynet"
 local Ientity = require "entity.Ientity"
 local vector3 = require "vector3"
-
+local Quest = require "quest.quest"
+local EntityManager = require "entity.EntityManager"
 
 local IMapPlayer = class("IMapPlayer", Ientity)
 
@@ -29,10 +30,15 @@ function IMapPlayer:ctor()
 	self.color = 0
 	
 	register_class_var(self, 'LoadProgress', 0)
+
+	register_class_var(self, 'RaiseTime', 0)
 	
 	register_class_var(self, 'Gold', 0, self.onGold)
 	register_class_var(self, 'Exp', 0, self.onExp)
 	
+	register_class_var(self, 'GodSkill', 0, self.onGodSkill)
+	register_class_var(self, 'CommonSkill', 0, self.onCommonSkill)
+
 	self.GoldExpMask = false
 end
 
@@ -44,9 +50,22 @@ function IMapPlayer:isRed()
 	return self.color < 4
 end
 
+function IMapPlayer:isSameCamp(entity)
+	if self:isRed() and entity:isRed() then return true end
+	if not self:isRed() and not entity:isRed() then return true end
+	return false
+end
+
 
 function IMapPlayer:update(dt)
 	
+	if self:getRaiseTime() > 0 then
+		self:setRaiseTime( self:getRaiseTime() - dt )
+		if self:getRaiseTime() <= 0 then
+			self:onRaise()
+		end
+	end	
+
 	if self.GoldExpMask then
 		local msg = { gold = self:getGold(), exp = self:getExp(), level = self:getLevel()}
 		skynet.call(self.agent, "lua", "sendRequest", "addGoldExp", msg)
@@ -59,6 +78,10 @@ end
 
 function IMapPlayer:init(heroId)
 	self.attDat = g_shareData.heroRepository[heroId]
+	self.setGodSkill( self.attDat.n32GodSkillId )
+	self.setCommonSkill( self.attDat.n32CommonSkillId )
+	self.skillTable[self.attDat.n32GodSkillId] = 1
+	self.skillTable[self.attDat.n32CommonSkillId] = 1
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self:setPos(self.bornPos.x, 0, self.bornPos.z)
 	self:calcStats()
@@ -91,6 +114,17 @@ end
 function IMapPlayer:onDead()
 	IMapPlayer.super.onDead(self)
 	print('IMapPlayer:onDead')
+	
+	self:setRaiseTime(self:getLevel() * Quest.RaiseTime)
+end
+
+function IMapPlayer:onRaise()
+	IMapPlayer.super.onRaise(self)
+	print('IMapPlayer:onRaise')
+	
+	self:setPos(self.bornPos.x, self.bornPos.y, self.bornPos.z)
+	local msg = { sid = self.serverId }
+	EntityManager:sendToAllPlayers("raiseHero" ,msg)
 end
 
 function IMapPlayer:onGold()
@@ -133,5 +167,6 @@ function IMapPlayer:SynSkillCds()
 	local msg = self.cooldown:getCdsMsg()	
 	skynet.call(self.agent,"lua","sendRequest","makeSkillCds",msg)	
 end
+	
 return IMapPlayer
 

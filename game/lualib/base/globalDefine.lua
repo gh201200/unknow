@@ -33,10 +33,12 @@ HpMpMask = {
 	SkillHp				= 1 << 0,
 	BuffHp				= 1 << 1,
 	TimeLineHp			= 1 << 2,
+	RaiseHp				= 1 << 3,
 
 	SkillMp				= 1 << 16,
 	BuffMp				= 1 << 17,
 	TimeLineMp			= 1 << 18,
+	RaiseMp				= 1 << 19,
 }
 AffectState = {
 	NoMove				= 1 << 0, --不能移动
@@ -55,6 +57,7 @@ ErrorCode = {
 	EC_Spell_NoTarget		= 1005, --目标不存在
 	EC_Spell_TargetOutDistance	= 1006, --目标距离过远
 	EC_Spell_Controled		= 1007,	--被控制住了
+	EC_Dead				= 1008,	--死亡
 	EC_Spell_Unkonw			= 1999, --技能未知错误
 }
 

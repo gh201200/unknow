@@ -4,6 +4,8 @@ local Map = require "map.Map"
 local vector3 = require "vector3"
 local EntityManager = require "entity.EntityManager"
 local dropVec = vector3.create()
+local Quest = require "quest.quest"
+
 
 local DropManager = class("DropManager")
 
@@ -115,23 +117,30 @@ function DropManager:useItem(player, sid)
 		end
 	end
 	local errorCode = 0
+	local itemData = g_shareData.itemRepository[item.itemId]
 	repeat
 		if not item then
 			errorCode = 1	--已被使用
 			break
+		end
+		
+		if itemData.n32Type == 0 or itemData.n32Type == 1 then
+			if player.skillTable[itemData.n32Retain1] == Quest.SkillMaxLevel then
+				errorCode = 2	--已达最高等级
+				break
+			end
 		end
 	until true
 	if errorCode ~= 0 then
 		return errorCode
 	end
 	--使用道具
-	itemData = g_shareData.itemRepository[item.itemId]
 	if itemData.n32Type == 0 then
 		player:addSkill(itemData.n32Retain1)
 	elseif itemData.n32Type == 1 then
-		print('fuck')
+		player:addSkill( player:getGodSkill() )
 	elseif itemData.n32Type == 2 then
-		print('fuck')
+		player.affectTable:buildEffect(player, itemData.szRetain3) 
 	end
 	
 	return errorCode

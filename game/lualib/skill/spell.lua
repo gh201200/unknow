@@ -133,7 +133,7 @@ function spell:advanceEffect(dt)
 			end
 			--目标效果
 			if self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then			
-				local targetEffects = self.skilldata.szTargetAffect
+			local targetEffects = self.skilldata.szTargetAffect
 				local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
 				self.targets = targets
 				if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
@@ -208,8 +208,8 @@ function spell:onEnd()
 		self.source.CastSkillId = 0
 		self.source:OnStand()
 		self.source:callBackSpellEnd()
-		if self.source.target ~= nil and self.source.target:getType() == "transform" then
-			self.source.target = nil
+		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
+			self.source:setTarget( nil )
 		end
 	end
 end
@@ -218,7 +218,7 @@ function spell:Cast(skillid,target,pos)
 	assert(self.skilldata)
 	self.targets = {} --清空目标列表
 	if self.skilldata.bNeedTarget == true then
-		target = target or self.source.target
+		target = target or self.source:getTarget()
 		self.targets = {target}
 	end
 	--self.source:stand()

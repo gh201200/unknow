@@ -112,8 +112,8 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	local type_target = math.floor(skilldata.n32Type / 10)  -- 1:自身 2:友方 3:敌方
 	local tmpTb = {}
 	if type_range == 1 then
-		if source.target ~= nil and source.target:getType() ~= "transform" then
-			table.insert(tmpTb,source.target)
+		if source:getTarget() ~= nil and source:getTarget():getType() ~= "transform" then
+			table.insert(tmpTb,source:getTarget())
 			return tmpTb
 		end
 	end
@@ -156,7 +156,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	elseif type_range == 3 then
 		
 	elseif type_range == 4 then
-		retTb = getRangeEntitys(tmpTb,source.target.pos,skilldata.n32Radius / 10000)	
+		retTb = getRangeEntitys(tmpTb,source:getTarget().pos,skilldata.n32Radius / 10000)	
 	elseif type_rang == 5 then	
 	
 	end
