@@ -1,18 +1,28 @@
+local vector3 = require "vector3"
 local Affect = require "skill.Affects.Affect"
 local repelAffect = class("repelAffect",Affect)
+local transfrom = require "entity.transfrom"
 
-function repelAffect:ctor(entity,source,data)
-	super.ctor(self,entity,source,data)
+function repelAffect:ctor(owner,source,data)
+	self.super.ctor(self,owner,source,data)
+	self.effectId = data[3] or 0
+	self.distance = data[2] or 0
+	self.speed = 6 
+	self.effectTime = math.floor(1000 * self.distance / self.speed) 
 end
 
 function repelAffect:onEnter()
-	super:onEnter()
-	self.effectId = self.data[3]
-	self.distance = self.data[2] or 0
-	self.speed = 2
-	self.effectTime = self.distance / self.speed 
-	--人物速度增加
-	
+	self.super.onEnter(self)
+	self.owner.curActionState = ActionState.forcemove
+	local dir = vector3.create()
+	dir:set(self.owner.pos.x,0,self.owner.pos.z)
+	dir:sub(self.source.pos)
+	dir:normalize()
+	dir:mul_num(self.distance)	
+	local dst = vector3.create()
+	dst:set(self.owner.pos.x,0,self.owner.pos.z)
+	dst:add(dir)
+	self.owner.target = transfrom.new(dst,nil)
 end
 
 function repelAffect:onExec(dt)
@@ -23,7 +33,8 @@ function repelAffect:onExec(dt)
 end
 
 function repelAffect:onExit()
-	--人物速度移除
-	super:onExit()
+	self.owner:stand()
+	self.super.onExit(self)
 end
 
+return repelAffect

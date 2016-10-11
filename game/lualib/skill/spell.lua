@@ -114,17 +114,25 @@ function spell:advanceEffect(dt)
 		if self.triggerTime < 0 then
 			--扣除蓝消耗
 			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
+			if self.skilldata.bCommonSkill == true then
+				--普通攻击 触发普攻附加buff
+				self.source.affectTable:triggerAtkAffects(self.source.target,false)
+				if self.source.target:getType() ~= "transform" then 
+					self.source.target.affectTable:triggerAtkAffects(self.source,true)	
+				end
+			end
 			if self.skilldata.n32Type == 35 then
 				--产生可碰撞的飞行物
 				 g_entityManager:createFlyObj(self.source,self.source.target,self.skilldata)
-			elseif self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then
-				--触发目标效果
-				local selfEffects = self.skilldata.szMyAffect
-				if selfEffects ~= ""  then
-					local targets = { self.source }
-					self:trgggerAffect(selfEffects,targets)
-				end
-				
+			end
+			--自身效果
+			local selfEffects = self.skilldata.szMyAffect
+			if selfEffects ~= ""  then
+				local targets = { self.source }
+				self:trgggerAffect(selfEffects,targets)
+			end
+			--目标效果
+			if self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then			
 				local targetEffects = self.skilldata.szTargetAffect
 				local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
 				self.targets = targets
@@ -132,14 +140,18 @@ function spell:advanceEffect(dt)
 					self:trgggerAffect(targetEffects,targets)
 				end
 			else
+				--在后续普攻过程中加成的效果
 				local tmpTb = {}
-				--加入普攻效果
-				for val in string.gmatch(vals,"(%d+)%,") do
-                                	table.insert(tmpTb,tonumber(val))
-                        	end 
-				table.insert(tmpTb,self.skilldata.szMyEffect)
-				table.insert(tmpTb,self.skilldata.szTargetEffect)
-				self.source.AttackSpell:addAttachdata(tmpTb)
+				local tmpTb = string.split(self.skilldata.szAtkBe,",")
+				local item = {}
+				item.rate = tonumber(tmpTb[2])
+				item.lifeTime = tonumber(tmpTb[3])
+				item.affdata = self.skilldata.szTargetAffect
+				if tonumber(tmpTb[1]) == 1 then
+					table.insert(self.source.affectTable.AtkAffects,item)
+				elseif tonumber(tmpTb[1]) == 0 then
+					table.insert(self.source.affectTable.bAtkAffacts,item)
+				end 
 			end
 		end
 		return
@@ -148,7 +160,13 @@ end
 --触发目标效果
 function spell:trgggerAffect(datastr,targets)
 	for _k,_v in pairs(targets) do
-		_v.affectTable:buildAffects(self.source,datastr)
+		if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
+			--无敌状态下
+		elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bCommonSkill ~= true then
+			--普攻 魔免状态
+		else
+			_v.affectTable:buildAffects(self.source,datastr)
+		end
 	end
 end
 function spell:onBegin()

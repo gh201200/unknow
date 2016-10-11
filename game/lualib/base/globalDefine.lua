@@ -26,6 +26,7 @@ ActionState = {
 	spell2				= 6,	--技能第二段
 	idle				= 7,	--controled by buff 
 	blink				= 8,
+	forcemove			= 9,	--强制移动
 }
 
 HpMpMask = {
@@ -37,19 +38,12 @@ HpMpMask = {
 	BuffMp				= 1 << 17,
 	TimeLineMp			= 1 << 18,
 }
-ControledState = {
+AffectState = {
 	NoMove				= 1 << 0, --不能移动
 	NoAttack			= 1 << 1, --不能普攻
 	NoSpell				= 1 << 2, --不能放技能
-}
-AffectState = {
-	dizzy				= 1 << 0, --眩晕状态
-	repel				= 1 << 1, --击退状态
-	fly				= 1 << 2, --击飞状态
-	jump				= 1 << 3, --跳跃状态
-	charge				= 1 << 4, --冲锋状态
-	inivincible			= 1 << 5, --无敌状态
-	noskill				= 1 << 6, --禁魔状态
+	Invincible			= 1 << 3, --无敌状态
+	OutSkill			= 1 << 4, --魔免状态
 }
 ErrorCode = {
 	EC_None				= 0,	--没有错误

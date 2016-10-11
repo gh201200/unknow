@@ -209,6 +209,10 @@ math.round = function(n, p)
         return math.floor(n * e + 0.5) / e
 end
 
+math.random_ext = function(n,p)
+	math.randomseed(tostring(os.time()):reverse():sub(1, 6))
+  	return math.random(n,p)
+end
 
 -- lua面向对象扩展
 function class(classname, super)
