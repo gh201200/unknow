@@ -139,9 +139,21 @@ function CMD.start(response, args)
 	--加载地图
 	Map:load("./lualib/map/" .. mapDat.szScene)
 
+	--创建基地
+	local redBuilding = IBuilding.create(0, mapDat)
+	EntityManager:addEntity(redBuilding)
+	local blueBuilding = IBuilding.create(1, mapDat)
+	EntityManager:addEntity(blueBuilding)
+	
+	--创建英雄
 	for k, v in pairs (args) do
 		v.bornPos = mapDat['szBornPos'..v.color]
 		local player = IMapPlayer.create(v)
+		if player:isRed() then
+			redBuilding:insertHero(player)
+		else
+			blueBuilding:insertHero(player)
+		end
 		EntityManager:addEntity(player)
 	end
 	
@@ -158,10 +170,6 @@ function CMD.start(response, args)
 		end
 	end
 
-	local redBuilding = IBuilding.create(0, mapDat)
-	EntityManager:addEntity(redBuilding)
-	local blueBuilding = IBuilding.create(1, mapDat)
-	EntityManager:addEntity(blueBuilding)
 	
 	local ret = {
 		roomId = roomId,

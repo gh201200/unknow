@@ -36,6 +36,12 @@ local Quest = {
 
 	--英雄复活时间系数(ms)
 	RaiseTime = 3000,
+
+	--英雄在基地恢复HP系数
+	BuildingRecvHp = 20,
+	
+	--英雄在基地恢复MP系数
+	BuildingRecvMp = 20,
 }
 
 

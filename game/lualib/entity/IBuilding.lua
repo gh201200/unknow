@@ -2,7 +2,7 @@ local Ientity = require "entity.Ientity"
 local vector3 =require "vector3"
 local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
-
+local Quest = require "quest.quest"
 
 local IBuilding = class("IBuilding", Ientity)
 
@@ -21,8 +21,8 @@ end
 function IBuilding:ctor()
 	IBuilding.super.ctor(self)
 	self.entityType = EntityType.building	
-
-
+	self.heroTable = {}
+	self.recvHpMpCD = {}
 end
 
 function IBuilding:getType()
@@ -45,9 +45,24 @@ function IBuilding:init(mapDat)
 	self.StatsChange = true
 end
 
+function IBuilding:insertHero(entity)
+	table.insert(self.heroTable, entity)
+	self.recvHpMpCD[entity.serverId] = 0
+end
 
 function IBuilding:update(dt)
-	
+
+	for k, v in pairs(self.heroTable) do
+		if v:getDistance( self ) <= self.attDat.n32AttackRange then
+			if self.recvHpMpCD[v.serverId] <= 0 then
+				v:addHp(v:getLevel() * Quest.BuildingRecvHp, HpMpMask.BuildingHp)
+				v:addMp(v:getLevel() * Quest.BuildingRecvMp, HpMpMask.BuildingMp)
+				self.recvHpMpCD[v.serverId] = 1000
+			end
+			self.recvHpMpCD[v.serverId] = self.recvHpMpCD[v.serverId] - dt
+		end 
+	end
+
 	--add code before this
 	IBuilding.super.update(self, dt)
 end
