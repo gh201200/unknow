@@ -151,7 +151,15 @@ function Ientity:setActionState(_speed, _action)
 	self:advanceEventStamp(EventStampType.Move)
 end
 
+function Ientity:canStand()
+	if self:getHp() <= 0 then
+		return false
+	end
+	return true
+end
+
 function Ientity:stand()
+	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
 end
@@ -340,13 +348,24 @@ end
 function Ientity:OnStand()
 	self:stand()
 end
+
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
+	self.spell:breakSpell()
+
 	for k, v in pairs(EntityManager.entityList) do
 		if v:getTarget() == self then
 			v:setTarget(nil)
 		end
+		if v.entityType == EntityType.monster then
+			v.hateList:removeHate( self )
+		end
 	end
+end
+
+function Ientity:onRaise()
+	self:addHp(self:getHpMax(), HpMpMask.RaiseHp)
+	self:addMp(self:getMpMax(), HpMpMask.RaiseMp)
 end
 
 function Ientity:addHp(_hp, mask, source)
@@ -628,6 +647,7 @@ function Ientity:canCast(id)
 	if bit_and(self.controledState,ControledState.NoAttack) ~= 0 then 
 		return ErrorCode.EC_Spell_Controled
 	end
+	if self:getHp() <= 0 then return ErrorCode.EC_Dead end
 	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
 	return 0
 end

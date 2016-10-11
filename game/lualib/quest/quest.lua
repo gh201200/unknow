@@ -33,6 +33,9 @@ local Quest = {
 	
 	--同阵营经验分享百分比
 	ShareExpPercent = 0.4,
+
+	--英雄复活时间系数(ms)
+	RaiseTime = 3000,
 }
 
 

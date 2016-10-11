@@ -40,6 +40,31 @@ function NpcAI:update(dt)
 	end
 end
 
+local dir = {
+	[0] = {0,1},
+	[1] = {1,1},
+	[2] = {1,0},
+	[3] = {1,-1},
+	[4] = {0,-1},
+	[5] = {-1,-1},
+	[6] = {-1,0},
+	[7] = {-1,1},
+	[8] = {0,0}
+}
+
+function NpcAI:isInBornPlace()	
+	local bx = Map.POS_2_GRID(self.source.bornPos.x)
+	local bz = Map.POS_2_GRID(self.source.bornPos.z)
+	for i=0, 8 do
+		local x = Map.POS_2_GRID(self.source.pos.x)
+		local z = Map.POS_2_GRID(self.source.pos.z)
+		if x == bx+dir[i][1] and z == bz+dir[i][2] then
+			return true
+		end
+	end
+	return false
+end
+
 function NpcAI:updatePreCast()
 	--decide whitch skill it will be cast
 	self.source:preCastSkill()
@@ -47,6 +72,7 @@ function NpcAI:updatePreCast()
 end
 
 function NpcAI:onEnter_Idle()
+	self.source:stand()
 end
 
 
@@ -62,6 +88,8 @@ function NpcAI:onExec_Idle()
 		if entity and len < self.source.attDat.n32VisionRange then
 			self.source.hateList:addHate(entity, 1)
 		end
+	elseif not self:isInBornPlace() then
+		self:setNextAiState("GoHome")
 	end
 end
 
@@ -96,11 +124,15 @@ function NpcAI:onEnter_Battle()
 end
 
 function NpcAI:onExec_Battle()
-
 	if self.source.spell:isSpellRunning() then return end
 
 	if self.source:getPreSkillData() == nil then
 		self:updatePreCast()
+	end
+
+	if self.source:getTarget() == nil then
+		self:setNextAiState("Idle")
+		return
 	end
 
 	if self.source:getDistance(self.source:getTarget()) <= self.followLen then
@@ -119,31 +151,15 @@ function NpcAI:onEnter_GoHome()
 	self.source:setTargetPos(self.source.bornPos)
 end
 
-local dir = {
-	[0] = {0,1},
-	[1] = {1,1},
-	[2] = {1,0},
-	[3] = {1,-1},
-	[4] = {0,-1},
-	[5] = {-1,-1},
-	[6] = {-1,0},
-	[7] = {-1,1},
-	[8] = {0,0}
-}
-
 function NpcAI:onExec_GoHome()
 	if self.source.moveSpeed==0 then
 		self.source:setTargetPos(self.source.bornPos)
 	end
-	local bx = Map.POS_2_GRID(self.source.bornPos.x)
-	local bz = Map.POS_2_GRID(self.source.bornPos.z)
-	for i=0, 8 do
-		local x = Map.POS_2_GRID(self.source.pos.x)
-		local z = Map.POS_2_GRID(self.source.pos.z)
-		if x == bx+dir[i][1] and z == bz+dir[i][2] then
-			if Map:get(bx, bz) > 0 or i==8 then
-				self:setNextAiState("waitFBack")
-			end
+	if self:isInBornPlace() then
+		local bx = Map.POS_2_GRID(self.source.bornPos.x)
+		local bz = Map.POS_2_GRID(self.source.bornPos.z)
+		if Map:get(bx, bz) > 0 then
+			self:setNextAiState("waitFBack")
 		end
 	end
 end
