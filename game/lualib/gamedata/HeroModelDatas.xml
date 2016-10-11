@@ -4,14 +4,14 @@
 		<szName>闪光</szName>
 		<szMod_name>Shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
-		<n32Radius>500</n32Radius>
-		<n32AttackTime1>400</n32AttackTime1>
-		<n32AttackTime2>500</n32AttackTime2>
-		<n32AttackTime3>500</n32AttackTime3>
+		<n32Radius>1</n32Radius>
+		<n32AttackTime1>226</n32AttackTime1>
+		<n32AttackTime2>323</n32AttackTime2>
+		<n32AttackTime3>446</n32AttackTime3>
 		<n32Skill1Time1>70</n32Skill1Time1>
-		<n32Skill1Time2>930</n32Skill1Time2>
-		<n32Skill2Time1>400</n32Skill2Time1>
-		<n32Skill2Time2>600</n32Skill2Time2>
+		<n32Skill1Time2>357</n32Skill1Time2>
+		<n32Skill2Time1>230</n32Skill2Time1>
+		<n32Skill2Time2>578</n32Skill2Time2>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -20,16 +20,16 @@
 	</item>
 	<item id="50002">
 		<szName>厚德</szName>
-		<szMod_name>houde</szMod_name>
+		<szMod_name>Houde</szMod_name>
 		<n32Hight>houde</n32Hight>
-		<n32Radius>500</n32Radius>
-		<n32AttackTime1>400</n32AttackTime1>
-		<n32AttackTime2>500</n32AttackTime2>
-		<n32AttackTime3>500</n32AttackTime3>
-		<n32Skill1Time1>400</n32Skill1Time1>
-		<n32Skill1Time2>600</n32Skill1Time2>
-		<n32Skill2Time1>400</n32Skill2Time1>
-		<n32Skill2Time2>600</n32Skill2Time2>
+		<n32Radius>0</n32Radius>
+		<n32AttackTime1>301</n32AttackTime1>
+		<n32AttackTime2>382</n32AttackTime2>
+		<n32AttackTime3>479</n32AttackTime3>
+		<n32Skill1Time1>125</n32Skill1Time1>
+		<n32Skill1Time2>400</n32Skill1Time2>
+		<n32Skill2Time1>477</n32Skill2Time1>
+		<n32Skill2Time2>776</n32Skill2Time2>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -40,7 +40,7 @@
 		<szName>小僵尸</szName>
 		<szMod_name>Monster_009</szMod_name>
 		<n32Hight>0</n32Hight>
-		<n32Radius>500</n32Radius>
+		<n32Radius>1</n32Radius>
 		<n32AttackTime1>400</n32AttackTime1>
 		<n32AttackTime2>500</n32AttackTime2>
 		<n32AttackTime3>500</n32AttackTime3>
@@ -58,7 +58,25 @@
 		<szName>僵尸弓手</szName>
 		<szMod_name>Monster_011</szMod_name>
 		<n32Hight>0</n32Hight>
-		<n32Radius>500</n32Radius>
+		<n32Radius>1</n32Radius>
+		<n32AttackTime1>400</n32AttackTime1>
+		<n32AttackTime2>500</n32AttackTime2>
+		<n32AttackTime3>500</n32AttackTime3>
+		<n32Skill1Time1>400</n32Skill1Time1>
+		<n32Skill1Time2>600</n32Skill1Time2>
+		<n32Skill2Time1>400</n32Skill2Time1>
+		<n32Skill2Time2>600</n32Skill2Time2>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+	</item>
+	<item id="90001">
+		<szName>红方基地</szName>
+		<szMod_name>Zhucheng_1</szMod_name>
+		<n32Hight>0</n32Hight>
+		<n32Radius>1</n32Radius>
 		<n32AttackTime1>400</n32AttackTime1>
 		<n32AttackTime2>500</n32AttackTime2>
 		<n32AttackTime3>500</n32AttackTime3>

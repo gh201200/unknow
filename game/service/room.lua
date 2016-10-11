@@ -5,6 +5,7 @@ local vector3 = require "vector3"
 local syslog = require "syslog"
 local EntityManager = require "entity.EntityManager"
 local IMapPlayer = require "entity.IMapPlayer"
+local IBuilding = require "entity.IBuilding"
 local EventStampHandle = require "entity.EventStampHandle"
 local SpawnNpcManager = require "entity.SpawnNpcManager"
 local sharedata = require "sharedata"
@@ -109,7 +110,7 @@ function CMD.loadingRes(response, agent, account_id, args)
 	end
 
 	--all players load completed
-	if num == #EntityManager.entityList then
+	if num == #EntityManager.entityList-2 then
 		EntityManager:sendToAllPlayers("fightBegin")
 
 		--every 0.03s update entity
@@ -117,6 +118,7 @@ function CMD.loadingRes(response, agent, account_id, args)
 		last_update_time = skynet.now()
 	
 		SpawnNpcManager:init(room_id)
+
 	end
 end
 
@@ -156,9 +158,16 @@ function CMD.start(response, args)
 		end
 	end
 
+	local redBuilding = IBuilding.create(0, mapDat)
+	EntityManager:addEntity(redBuilding)
+	local blueBuilding = IBuilding.create(1, mapDat)
+	EntityManager:addEntity(blueBuilding)
+	
 	local ret = {
 		roomId = roomId,
 		heroInfoList = heros,
+		rb_sid = redBuilding.serverId,
+		bb_sid = blueBuilding.serverId,
 	}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then

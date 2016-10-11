@@ -32,7 +32,7 @@ for k, p in pairs(xmlhandler.root.info.item) do
 					tmpTb[_i] = true
 				end
 			else
-				if string.find(_i, "Born") then
+				if string.find(_i, "Born") or string.find(_i, "HomePos") then
 					tmpTb[_i] = string.split(_v, ",")
 				else
 					tmpTb[_i] = _v

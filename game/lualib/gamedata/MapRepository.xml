@@ -8,5 +8,9 @@
 		<szBornPos5>24300,28200</szBornPos5>
 		<szBornPos6>43600,28200</szBornPos6>
 		<szScene>pvp001</szScene>
+		<n32RedMonsterId>90001</n32RedMonsterId>
+		<szRedHomePos>50000,133400</szRedHomePos>
+		<n32BlueMonsterId>90002</n32BlueMonsterId>
+		<szBlueHomePos>50000,38400</szBlueHomePos>
 	</item>
 </info>

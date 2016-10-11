@@ -352,6 +352,8 @@ beginEnterPvpMap 101 {
 	request {
 		roomId 0 : integer
 		heroInfoList 1 : *LoadHero
+		rb_sid 2 : integer
+		bb_sid 3 : integer
 	}
 }
 synPickTime 102 {
