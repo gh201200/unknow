@@ -1,7 +1,6 @@
 local skynet = require "skynet"
 local vector3 = require "vector3"
 local spell =  require "skill.spell"
-local AttackSpell = require "skill.AttackSpell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
@@ -64,7 +63,7 @@ function Ientity:ctor(pos,dir)
 	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
-	self.controledState = 0
+	self.affectState = 0
 	self.triggerCast = true	 --是否触发技能
 	--stats about
 	register_stats(self, 'Strength')
@@ -179,7 +178,6 @@ end
 
 function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
-	if self.affectTable:canControl() == false then return end		--不受控制状态
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	self.userAStar = false
 	self:setTargetVar( target )
@@ -188,7 +186,6 @@ function Ientity:setTarget(target)
 	if target:getType() == "transform" and self.ReadySkillId == 0 then
 		self.triggerCast = false
 	end
-
 --	local r = self:pathFind(self.target.pos.x, self.target.pos.z)
 end
 
@@ -230,7 +227,10 @@ function Ientity:update(dt)
 		end
 	elseif self.curActionState == ActionState.stand then
 		--站立状态
-		
+	elseif self.curActionState == ActionState.forcemove then
+		--强制移动
+		print("onForceMove")
+		self:onForceMove(dt)		
 	end
 	--技能相关
 	if self.ReadySkillId ~= 0 and self.triggerCast == true then	
@@ -336,12 +336,28 @@ function Ientity:onMove(dt)
 	--advance move event stamp
 	self:advanceEventStamp(EventStampType.Move)
 end
-
---进入强制移动状态（闪现,击飞,回城等）
-function Ientity:onForceMove(des)
-	--先判定des位置是否超过地图范围
+--强制移动（魅惑 嘲讽等）
+function Ientity:onForceMove(dt)
+	dt = dt / 1000
+	local fSpeed = 2
+	local mv_dst = vector3.create()
+	self.dir:set(self.target.pos.x, 0, self.target.pos.z)
+	self.dir:sub(self.pos)
+	self.dir:normalize()
+	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
+	mv_dst:mul_num(fSpeed * dt)
+	mv_dst:add(self.pos)
+	self:setPos(mv_dst.x, 0, mv_dst.z)
+	local len  = vector3.len(self.pos,self.target.pos)
+	if len >= 0.001 then 
+		self:advanceEventStamp(EventStampType.Move)
+	end	
+end
+--闪现
+function Ientity:onBlink(des)
 	self:setPos(des.x, des.y, des.z)
-	self:setActionState(0, ActionState.blink) 
+	self:setActionState(0, ActionState.blink)
+	self:advanceEventStamp(EventStampType.Move)
 end
 
 --进入站立状态
@@ -621,7 +637,7 @@ function Ientity:setState(state)
 end
 
 function Ientity:canMove()
-	if bit_and(self.controledState,ControledState.NoMove) ~= 0 then
+	if bit_and(self.affectState,AffectState.NoMove) ~= 0 then
 		return ErrorCode.EC_Spell_Controled
 	end
 	--if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
@@ -631,20 +647,21 @@ function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型
-	if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
-	if skilldata.bNeedTarget == true then
-		if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+	if math.floor(skilldata.n32Type / 10) ~= 4 then
+		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
+		if skilldata.bNeedTarget == true then
+			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+		end
+		local dis = self:getDistance(self:getTarget())
+		local dataDis = skilldata.n32Range / 10000
+		if dis > dataDis  then 
+			return ErrorCode.EC_Spell_TargetOutDistance 
+		end
 	end
-	local dis = self:getDistance(self:getTarget())
-	local dataDis = skilldata.n32Range / 10000
-	if dis > dataDis  then 
-	--	print("canCast error",dis,dataDis)
-		return ErrorCode.EC_Spell_TargetOutDistance 
-	end
-	if skilldata.bCommonSkill == false and  bit_and(self.controledState,ControledState.NoSpell) ~= 0 then 
+	if skilldata.bCommonSkill == false and  bit_and(self.affectState,AffectState.NoSpell) ~= 0 then 
 		return ErrorCode.EC_Spell_Controled
 	end
-	if bit_and(self.controledState,ControledState.NoAttack) ~= 0 then 
+	if bit_and(self.affectState,AffectState.NoAttack) ~= 0 then 
 		return ErrorCode.EC_Spell_Controled
 	end
 	if self:getHp() <= 0 then return ErrorCode.EC_Dead end
@@ -671,7 +688,10 @@ function Ientity:setCastSkillId(id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
-        if errorcode ~= 0 then return errorcode end 
+        if errorcode ~= 0 then return errorcode end
+	if id == 32002 then
+		self:castSkill()
+	end 
 	local type_target = math.floor(skilldata.n32Type / 10)
 	local type_range = math.floor(skilldata.n32Type % 10)
 end

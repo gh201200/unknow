@@ -31,12 +31,22 @@ function cooldown:getCdTime(id)
 --	print("getCdtime",self)
 	return self.coolDownTable[id] or 0
 end
+
 function cooldown:resetCd(id,time)
 	--print("cooldown:resetCd",id,time)
 	time = time or 0
 	assert(self.coolDownTable[id] ~= nil)
 	self.coolDownTable[id] = time
 end
+
+function cooldown:resetAll(except)
+	for _k,_v in pairs(self.coolDownTable) do
+		if _k ~= except then
+			self.coolDownTable[_k] = 0
+		end
+	end
+end
+
 function cooldown:getCdsMsg()
 	local r = { items = {}}
 	for _k,_v in pairs(self.coolDownTable) do                                                	 	local item = {skillId = _k,time = _v}
@@ -44,4 +54,5 @@ function cooldown:getCdsMsg()
 	end	
 	return r
 end
+
 return cooldown

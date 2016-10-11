@@ -51,7 +51,7 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)
 	local r = {
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
-		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
+		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y= math.ceil(player.pos.y*GAMEPLAY_PERCENT),z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
 		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)},			
 		action = player.curActionState,	
 		speed = math.ceil(player.moveSpeed * GAMEPLAY_PERCENT),
@@ -73,8 +73,10 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 		skillId = skillid,
 		targetId = targetId,
 		skillTime = spell.totalTime,
-		pos = {x=math.ceil(player:getTarget().pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player:getTarget().pos.z*GAMEPLAY_PERCENT) }
-	}
+		pos =  {x = 0,y = 0,z = 0} }
+	if player.target ~= nil then
+		r.pos =  {x=math.ceil(player.target.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.target.pos.z*GAMEPLAY_PERCENT) }
+	end
 	return r
 end
 
@@ -135,6 +137,7 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 	}
 	for i=#player.affectTable.affects,1,-1 do
 		local v = player.affectTable.affects[i]
+		print(v.effectId)
 		assert(v and v.effectId)
 		table.insert(r.affectList, {effectId = v.effectId , projectId = v.projectId,effectTime = v.effectTime})
 	end

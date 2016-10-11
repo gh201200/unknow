@@ -160,6 +160,10 @@ end
 
 function IMapPlayer:castSkill()
 	IMapPlayer.super.castSkill(self) 
+	self:SynSkillCds()
+end
+
+function IMapPlayer:SynSkillCds()
 	local msg = self.cooldown:getCdsMsg()	
 	skynet.call(self.agent,"lua","sendRequest","makeSkillCds",msg)	
 end
