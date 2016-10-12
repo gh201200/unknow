@@ -194,6 +194,7 @@ function Ientity:getTarget()
 end
 
 function Ientity:setTargetPos(target)
+	if self:isDead() then return end
 	if target == nil then return end
 	local pos = vector3.create(target.x,0,target.z)
 	self:setTarget(transfrom.new(pos,nil))
@@ -242,10 +243,11 @@ function Ientity:update(dt)
 
 end
 
+
 --注意：修改entity位置，一律用此函数
-function Ientity:setPos(x, y, z)
-	Map:add(self.pos.x, self.pos.z, -1)
-	Map:add(x, z, 1)
+function Ientity:setPos(x, y, z, r)
+	Map:add(self.pos.x, self.pos.z, -1, r)
+	Map:add(x, z, 1, r)
 	self.pos:set(x, y, z)
 end
 
@@ -365,6 +367,10 @@ function Ientity:OnStand()
 	self:stand()
 end
 
+function Ientity:isDead()
+	return self:getHp() <= 0
+end
+
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
 	self.spell:breakSpell()
@@ -385,6 +391,7 @@ function Ientity:onRaise()
 end
 
 function Ientity:addHp(_hp, mask, source)
+	_hp = math.floor(_hp)
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
@@ -405,6 +412,7 @@ end
 
 
 function Ientity:addMp(_mp, mask, source)
+	_mp = math.floor(_mp)
 	if _mp == 0 then return  end
 	if not mask then
 		mask = HpMpMask.SkillMp

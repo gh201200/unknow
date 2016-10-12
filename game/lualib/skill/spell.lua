@@ -117,7 +117,7 @@ function spell:advanceEffect(dt)
 			if self.skilldata.bCommonSkill == true then
 				--普通攻击 触发普攻附加buff
 				self.source.affectTable:triggerAtkAffects(self.source:getTarget(),false)
-				if self.source:getTarget():getType() ~= "transform" then 
+				if self.source:getTarget() and self.source:getTarget():getType() ~= "transform" then 
 					self.source:getTarget().affectTable:triggerAtkAffects(self.source,true)	
 				end
 			end
