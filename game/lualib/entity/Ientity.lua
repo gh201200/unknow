@@ -201,6 +201,7 @@ function Ientity:clearTarget(mask)
 	end
 end
 function Ientity:setTargetPos(target)
+	if self:isDead() then return end
 	if target == nil then return end
 	local pos = vector3.create(target.x,0,target.z)
 	self:setTarget(transfrom.new(pos,nil))
@@ -249,16 +250,18 @@ function Ientity:update(dt)
 
 end
 
+
 --注意：修改entity位置，一律用此函数
-function Ientity:setPos(x, y, z)
-	Map:add(self.pos.x, self.pos.z, -1)
-	Map:add(x, z, 1)
+function Ientity:setPos(x, y, z, r)
+	--print('set pos = ',x, y, z)
+	Map:add(self.pos.x, self.pos.z, -1, r)
+	Map:add(x, z, 1, r)
 	self.pos:set(x, y, z)
 end
 
 local mv_dst = vector3.create()
 local mv_slep_dir = vector3.create()
-
+local legal_pos = false
 --进入移动状态
 function Ientity:onMove(dt)
 	dt = dt / 1000		--second
@@ -274,9 +277,11 @@ function Ientity:onMove(dt)
 	mv_dst:mul_num(self.moveSpeed * dt)
 	mv_dst:add(self.pos)
 	repeat
+		legal_pos = true
 		--check iegal
 		if Map.IS_SAME_GRID(self.pos, mv_dst) == false then
 			if Map:get(mv_dst.x, mv_dst.z) > 0 then
+				legal_pos = false
 				local nearBy = false
 				local angle = 60
 				repeat
@@ -289,12 +294,16 @@ function Ientity:onMove(dt)
 						nearBy = true
 						self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
 					end
-					if nearBy then break end
+					if nearBy then 
+						legal_pos = true
+						break 
+					end
 					angle = angle + 30
 
 				until angle > 150
-				
+				--[[
 				if not nearBy and self.useAStar then
+					print('use')
 					mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
 					mv_slep_dir:rot(-100)
 					mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
@@ -305,11 +314,11 @@ function Ientity:onMove(dt)
 						self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
 					end
 				end
-				
+				--]]
 				if not nearBy then
 					if not self.useAStar then
-					--	print('use a star to find a path')
-					--	nearBy = self:pathFind(self.target.pos.x, self.target.pos.z)
+						print('use a star to find a path')
+						nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 					end
 				end
 				if not nearBy then
@@ -324,8 +333,6 @@ function Ientity:onMove(dt)
 				end
 			end
 		end
-		--move
-		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
 		
 		--到达终点
 		if self.useAStar then
@@ -339,9 +346,16 @@ function Ientity:onMove(dt)
 			self:stand()
 			break
 		end
+
+		
+
 	until true
-	--advance move event stamp
-	self:advanceEventStamp(EventStampType.Move)
+	if legal_pos then 
+		--move
+		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
+		--advance move event stamp
+		self:advanceEventStamp(EventStampType.Move)
+	end
 end
 --强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
@@ -372,6 +386,10 @@ function Ientity:OnStand()
 	self:stand()
 end
 
+function Ientity:isDead()
+	return self:getHp() <= 0
+end
+
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
 	self.spell:breakSpell()
@@ -392,6 +410,7 @@ function Ientity:onRaise()
 end
 
 function Ientity:addHp(_hp, mask, source)
+	_hp = math.floor(_hp)
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
 	if not mask then
@@ -412,6 +431,7 @@ end
 
 
 function Ientity:addMp(_mp, mask, source)
+	_mp = math.floor(_mp)
 	if _mp == 0 then return  end
 	if not mask then
 		mask = HpMpMask.SkillMp

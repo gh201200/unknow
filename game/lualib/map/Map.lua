@@ -8,6 +8,17 @@ local MAP_XGRID_NUM = 17
 local MAP_ZGRID_NUM = 39
 local MAP_GRID_SIZE = 0.4
 
+local dir = {
+	[0] = {0,1},
+	[1] = {1,1},
+	[2] = {1,0},
+	[3] = {1,-1},
+	[4] = {0,-1},
+	[5] = {-1,-1},
+	[6] = {-1,0},
+	[7] = {-1,1}
+}
+
 function Map.POS_2_GRID(p)
 	return math.floor(p/MAP_GRID_SIZE)
 
@@ -72,24 +83,22 @@ function Map:get(x, z)
 	return w
 end
 
-function Map:add(x, z, v)
+function Map:add(x, z, v, r)
 	local gx = Map.POS_2_GRID(x)
 	local gz = Map.POS_2_GRID(z)
 	if not Map.legal(gx, gz) then return 255 end
-	local w = pf.add(self.m, gx, gz, v)
-	return w
+	if not r then r = 0 end
+	for j=-r, r do
+		for k=-r, r do
+			if Map.legal(gx+j, gz+k) then
+				pf.add(self.m, gx+j, gz+k, v)					
+			end
+		end
+	end
+	return r
 end
 
-local dir = {
-	[0] = {0,1},
-	[1] = {1,1},
-	[2] = {1,0},
-	[3] = {1,-1},
-	[4] = {0,-1},
-	[5] = {-1,-1},
-	[6] = {-1,0},
-	[7] = {-1,1}
-}
+
 
 function Map:emptyTest(s_px, s_pz, e_px, e_pz)
 	local gx = Map.POS_2_GRID(s_px)
