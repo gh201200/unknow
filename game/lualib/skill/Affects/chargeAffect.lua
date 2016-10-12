@@ -1,0 +1,61 @@
+local vector3 = require "vector3"
+local Affect = require "skill.Affects.Affect"
+local chargeAffect = class("chargeAffect",Affect)
+local transfrom = require "entity.transfrom"
+require "globalDefine" 
+
+function chargeAffect:ctor(owner,source,data)
+	self.super.ctor(self,owner,source,data)
+	self.effectId = data[3] or 0
+	self.distance = data[2] or 0
+	self.speed = 3 -- 冲锋速度
+	self.skilldata = self.owner.spell.skilldata
+	self.effectTime = math.floor(1000 * self.distance / self.speed) 
+	local tgt = self.owner:getTarget()
+	self.tgtPos = vector3.create(tgt.pos.x,0,tgt.pos.z)
+	self.radius = self.skilldata.n32Radius / 10000
+	self.tgtBuff = self.skilldata.szTargetAffect
+	self.targets = {} 
+end
+
+function chargeAffect:onEnter()
+	self.super.onEnter(self)
+	local dir = vector3.create()
+	dir:set(self.tgtPos.x,0,self.tgtPos.z)
+	dir:sub(self.owner.pos)
+	dir:normalize()
+	dir:mul_num(self.distance)	
+	local dst = vector3.create()
+	dst:set(self.owner.pos.x,0,self.owner.pos.z)
+	dst:add(dir)
+	local tf = transfrom.new(dst,nil)
+	--进入持续施法状态
+	self.owner.spell:enterChannel(self.effectTime)
+	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
+end
+
+function chargeAffect:onExec(dt)
+	self.effectTime = self.effectTime - dt
+	if self.effectTime < 0 then
+		self:onExit()
+	end
+	for i=#g_entityManager.entityList, 1, -1 do
+		local v = g_entityManager.entityList[i]
+		if self.targets[v.serverId] == nil and v.serverId ~= self.source.serverId then
+			--if self.owner:isKind(v) == false then
+			local dis = self.owner:getDistance(v)
+			if dis <= self.radius then
+				self.targets[v.serverId] = 1
+				v.affectTable:buildAffects(self.owner,self.tgtBuff)
+			end	
+			--end
+		end	 
+	end
+end
+
+function chargeAffect:onExit()
+	--self.owner:stand()
+	self.super.onExit(self)
+end
+
+return chargeAffect

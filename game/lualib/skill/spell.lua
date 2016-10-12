@@ -34,6 +34,7 @@ function spell:ctor(entity)
 	self.castTime = 0	 --施放中
 	self.endTime = 0	 --施法后摇
 	
+	self.channelTime = 0	--持续施法	
 	self.triggerTime = -1 
 	self.errorCode = ErrorCode.None 
 	self.castingTime = 0
@@ -48,6 +49,7 @@ function spell:init(skilldata,skillTimes)
 	self.skilldata = skilldata
 	self.readyTime = skillTimes[1]
 	self.castTime = skillTimes[2]
+	self.channalTime = 0 --持续释放时间
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
 	self.triggerTime = skilldata.n32TriggerTime
@@ -68,6 +70,11 @@ function spell:canBreak(ms)
 	return false
 end
 
+function spell:enterChannel(time)
+	--进入持续施法
+	self.channelTime = time
+	self.status = SpellStatus.ChannelCast
+end
 function spell:breakSpell()
 	print("=====spell:breakspell")
 	if self.status == SpellStatus.Ready then
@@ -98,6 +105,7 @@ function spell:update(dt)
 		self.castTime =  self.castTime - dt
 		self:onCast()
 	elseif self.status == SpellStatus.ChannelCast then
+		self.channelTime = self.channelTime - dt
 		self:onChannelCast()
 	elseif self.status == SpellStatus.End then
 		self.endTime =  self.endTime - dt
@@ -106,7 +114,6 @@ function spell:update(dt)
 	--推进技能效果	
 	self:advanceEffect(dt)
 end
-
 --更新技能效果
 function spell:advanceEffect(dt)
 	if self.triggerTime >= 0  then 
@@ -131,30 +138,32 @@ function spell:advanceEffect(dt)
 				local targets = { self.source }
 				self:trgggerAffect(selfEffects,targets)
 			end
-			--目标效果
-			if self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then			
-			local targetEffects = self.skilldata.szTargetAffect
-				local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
-				self.targets = targets
-				if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
-					self:trgggerAffect(targetEffects,targets)
+			
+			if self.skilldata.n32Type ~= 35 and self.skilldata.n32Type ~= 36 then
+				--目标效果
+				if self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then
+					local targetEffects = self.skilldata.szTargetAffect
+					local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
+					self.targets = targets
+					if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
+						self:trgggerAffect(targetEffects,targets)
+					end
+				else
+					--在后续普攻过程中加成的效果
+					local tmpTb = {}
+					local tmpTb = string.split(self.skilldata.szAtkBe,",")
+					local item = {}
+					item.rate = tonumber(tmpTb[2])
+					item.lifeTime = tonumber(tmpTb[3])
+					item.affdata = self.skilldata.szTargetAffect
+					if tonumber(tmpTb[1]) == 1 then
+						table.insert(self.source.affectTable.AtkAffects,item)
+					elseif tonumber(tmpTb[1]) == 0 then
+						table.insert(self.source.affectTable.bAtkAffacts,item)
+					end 
 				end
-			else
-				--在后续普攻过程中加成的效果
-				local tmpTb = {}
-				local tmpTb = string.split(self.skilldata.szAtkBe,",")
-				local item = {}
-				item.rate = tonumber(tmpTb[2])
-				item.lifeTime = tonumber(tmpTb[3])
-				item.affdata = self.skilldata.szTargetAffect
-				if tonumber(tmpTb[1]) == 1 then
-					table.insert(self.source.affectTable.AtkAffects,item)
-				elseif tonumber(tmpTb[1]) == 0 then
-					table.insert(self.source.affectTable.bAtkAffacts,item)
-				end 
 			end
 		end
-		return
 	end
 end
 --触发目标效果
@@ -200,7 +209,11 @@ function spell:onCast()
 		self.status = SpellStatus.End
 	end
 end
-
+function spell:onChannelCast()
+	if self.channelTime < 0 then
+		self.status = SpellStatus.End
+	end
+end
 function spell:onEnd()
 	--self.source.curActionState = ActionState.attack3
 	if self.endTime < 0 then

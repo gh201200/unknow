@@ -13,7 +13,7 @@ end
 
 function repelAffect:onEnter()
 	self.super.onEnter(self)
-	self.owner.curActionState = ActionState.forcemove
+	self.owner:setActionState(self.speed, ActionState.repel)
 	local dir = vector3.create()
 	dir:set(self.owner.pos.x,0,self.owner.pos.z)
 	dir:sub(self.source.pos)

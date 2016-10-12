@@ -11,6 +11,7 @@ local flyAffect = require "skill.Affects.flyAffect"
 local repelAffect = require "skill.Affects.repelAffect"
 local loveAffect = require "skill.Affects.loveAffect"
 local getbloodAffect = require "skill.Affects.getbloodAffect"
+local chargeAffect = require "skill.Affects.chargeAffect"
 local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
@@ -85,6 +86,8 @@ function AffectTable:addAffect(source,data)
 		aff = flyAffect.new(self.owner,source,data)
 	elseif data[1] == "repel" then
 		aff = repelAffect.new(self.owner,source,data)
+	elseif data[1] == "charge" then
+		aff = chargeAffect.new(self.owner,source,data)
 	elseif data[1] == "love" then
 		aff = loveAffect.new(self.owner,source,data)
 	elseif data[1] == "getblood" then

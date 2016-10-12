@@ -306,4 +306,38 @@
 		<n32TimeEffect>0</n32TimeEffect>
 		<n32Pet>0</n32Pet>
 	</item>		
+	<item id="32006">
+		<bActive>1</bActive>
+		<bSoundSkill>0</bSoundSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<bCommonSkill>0</bCommonSkill>
+		<icon>icon.png</icon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32Range>60000</n32Range>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>6000</n32CD>
+		<n32TriggerTime>70</n32TriggerTime>
+		<n32ActionTime>1500</n32ActionTime>
+		<szAction>Skill_02_1</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>36</n32Type>
+		<szTypeInfo>冲锋</szTypeInfo>
+		<szName>冲锋</szName>
+		<szDescribe>冲锋技能描述</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:1,10,0,0,60001]</szTargetAffect>
+		<szMyAffect>[charge:5,0]</szMyAffect>
+		<n32Radius>5000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>		
 </info>
