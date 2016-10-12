@@ -31,10 +31,10 @@ end
 
 function IBuilding:init(mapDat)
 	local aid = mapDat.n32RedMonsterId
-	self:setPos(mapDat.szRedHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szRedHomePos[2]/GAMEPLAY_PERCENT, 4)
+	self:setPos(mapDat.szRedHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szRedHomePos[2]/GAMEPLAY_PERCENT, 1)
 	if self.camp == 1 then
 		aid = mapDat.n32BlueMonsterId
-		self:setPos(mapDat.szBlueHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szBlueHomePos[2]/GAMEPLAY_PERCENT, 4)
+		self:setPos(mapDat.szBlueHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szBlueHomePos[2]/GAMEPLAY_PERCENT, 1)
 	end
 	self.attDat = g_shareData.monsterRepository[aid]
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]

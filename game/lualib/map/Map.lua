@@ -87,17 +87,15 @@ function Map:add(x, z, v, r)
 	local gx = Map.POS_2_GRID(x)
 	local gz = Map.POS_2_GRID(z)
 	if not Map.legal(gx, gz) then return 255 end
-	local w = pf.add(self.m, gx, gz, v)
-	if r then
-		for i=0, 7 do
-			for j=1, r do
-				if Map.legal(gx+dir[i][1]*j, gz+dir[i][2]*j) then
-					pf.add(self.m, gx+dir[i][1]*j, gz+dir[i][2]*j, v)
-				end
-			end	
+	if not r then r = 0 end
+	for j=-r, r do
+		for k=-r, r do
+			if Map.legal(gx+j, gz+k) then
+				pf.add(self.m, gx+j, gz+k, v)					
+			end
 		end
 	end
-	return w
+	return r
 end
 
 
