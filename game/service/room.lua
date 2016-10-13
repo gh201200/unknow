@@ -128,6 +128,12 @@ function CMD.usePickItem(response, agent, account_id, args)
 	response(true, {errorCode = errorCode, sid = args.sid})
 end
 
+function CMD.upgradeSkill(response, agent, account_id, args)
+	local player = EntityManager:getPlayerByPlayerId(account_id)
+	local errorCode, lv = player:upgradeSkill(args.skillId)
+	response(true, {errorCode = errorCode, skillId = args.skillId, level = lv})
+end
+
 function CMD.start(response, args)
 	response(true, nil)
 	

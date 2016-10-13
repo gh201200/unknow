@@ -172,6 +172,7 @@ function Ientity:stand()
 	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
+	self:clearTarget(1)
 end
 
 function Ientity:clearPath()
@@ -205,10 +206,11 @@ function Ientity:getTarget()
 end
 
 function Ientity:clearTarget(mask)
+	if self:getTarget() == nil then return end
 	--清除目标，mask控制类型
 	mask = mask or 1
-	if bit_and(mask,1) ~= 0 and self:getTargetVar():getType() == "transform" then
-		self:setTargetVar(nil)
+	if bit_and(mask,1) ~= 0 and self:getTarget():getType() == "transform" then
+		self:setTarget(nil)
 	end
 end
 function Ientity:setTargetPos(target)
@@ -289,6 +291,7 @@ function Ientity:onMove(dt)
 	mv_dst:add(self.pos)
 	repeat
 		legal_pos = true
+		if self.useAStar then break end
 		--check iegal
 		if Map.IS_SAME_GRID(self.pos, mv_dst) == false then
 			if Map:get(mv_dst.x, mv_dst.z) > 0 then
@@ -312,55 +315,34 @@ function Ientity:onMove(dt)
 					angle = angle + 30
 
 				until angle > 150
-				--[[
-				if not nearBy and self.useAStar then
-					print('use')
-					mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
-					mv_slep_dir:rot(-100)
-					mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
-					mv_dst:mul_num(self.moveSpeed * dt)
-					mv_dst:add(self.pos)
-					if Map.IS_SAME_GRID(self.pos, mv_dst) or  Map:get(mv_dst.x, mv_dst.z) == 0 then
-						nearBy = true
-						self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
-					end
-				end
-				--]]
+				
 				if not nearBy then
-					if not self.useAStar then
-						print('use a star to find a path')
-						nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
-					end
+					print('use a star to find a path')
+					nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 				end
 				if not nearBy then
 					self:stand()
 					break
 				end
 			end
-			if self.useAStar then
-				--移动到下一节点
-				if self.pathMove[self.pathNodeIndex] == Map.POS_2_GRID(mv_dst.x) and self.pathMove[self.pathNodeIndex+1] == Map.POS_2_GRID(mv_dst.z) then
-					self.pathNodeIndex = self.pathNodeIndex + 2
-				end
-			end
 		end
-		
-		--到达终点
-		if self.useAStar then
-			if self.pathNodeIndex >= #self.pathMove then
-				self:clearTarget(1)
-				self:stand()
-				break
-			end
-		elseif Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then 
-			self:clearTarget(1)
-			self:stand()
-			break
-		end
-
-		
-
 	until true
+	
+	if self.useAStar then
+		--移动到下一节点
+		if self.pathMove[self.pathNodeIndex] == Map.POS_2_GRID(mv_dst.x) and self.pathMove[self.pathNodeIndex+1] == Map.POS_2_GRID(mv_dst.z) then
+			self.pathNodeIndex = self.pathNodeIndex + 2
+		end
+		if self.pathNodeIndex >= #self.pathMove then
+			self:stand()
+		end
+	end
+
+	--到达终点
+	if Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then 
+		self:stand()
+	end
+
 	if legal_pos then 
 		--move
 		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
@@ -404,6 +386,8 @@ end
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
 	self.spell:breakSpell()
+
+	self:setActionState(0, ActionState.die)
 
 	for k, v in pairs(EntityManager.entityList) do
 		if v:getTarget() == self then

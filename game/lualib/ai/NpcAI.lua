@@ -102,6 +102,11 @@ function NpcAI:onEnter_Chase()
 end
 
 function NpcAI:onExec_Chase()
+	if self.source:getTarget() == nil then
+		self:setNextAiState("GoHome")
+		return
+	end
+
 	local dis = vector3.len(self.source.pos, self.source.bornPos)
 	if  self.source.attDat.n32HateRange>0 and dis > self.source.attDat.n32HateRange then
 		self:setNextAiState("GoHome")
@@ -111,6 +116,8 @@ function NpcAI:onExec_Chase()
 	if self.source.moveSpeed==0 then
 		self.source:setTarget(self.source:getTarget())
 	end
+	
+
 	if self.source:getDistance(self.source:getTarget()) <= self.followLen then
 		self:setNextAiState("Battle")
 	end
@@ -158,7 +165,9 @@ function NpcAI:onExec_GoHome()
 	if self:isInBornPlace() then
 		local bx = Map.POS_2_GRID(self.source.bornPos.x)
 		local bz = Map.POS_2_GRID(self.source.bornPos.z)
-		if Map:get(bx, bz) > 0 then
+		if bx == Map.POS_2_GRID(self.source.pos.x) and bz == Map.POS_2_GRID(self.source.bornPos.z) then
+			self:setNextAiState("waitFBack")
+		elseif Map:get(bx, bz) > 0 then
 			self:setNextAiState("waitFBack")
 		end
 	end
@@ -169,6 +178,7 @@ function NpcAI:onExit_GoHome()
 end
 
 function NpcAI:onEnter_FightBack()
+	self.source:stand()
 	self.fightBackHate = self.source.hateList:getTotalHate()
 end
 

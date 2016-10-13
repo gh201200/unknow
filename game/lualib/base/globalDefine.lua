@@ -31,11 +31,12 @@ ActionState = {
 	charge				= 6,	--
 	idle				= 7,	--controled by buff 
 	blink				= 8,
-	--大于10都属于强制移动状态
-	forcemove			= 10,	--强制移动
-	repel				= 11,	--击退
-	chargeing			= 12,   --冲锋中
-	chargeed			= 13	--冲锋结束
+	die				= 9,	--死亡
+	--大于100都属于强制移动状态
+	forcemove			= 100,	--强制移动
+	repel				= 101,	--击退
+	chargeing			= 102,   --冲锋中
+	chargeed			= 103,	--冲锋结束
 }
 
 HpMpMask = {

@@ -286,6 +286,17 @@ usePickItem 204 {
 	}
 }
 
+upgradeSkill 205 {
+	request {
+		skillId 0 : integer
+	}
+	response {
+		errorCode 0 : integer
+		skillId 1 : integer
+		level 2 : integer
+	}
+}
+
 explore_goFight 300 {
 	request {
 		uuid 0 : string

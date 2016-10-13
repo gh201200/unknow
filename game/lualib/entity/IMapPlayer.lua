@@ -75,8 +75,8 @@ end
 
 function IMapPlayer:init(heroId)
 	self.attDat = g_shareData.heroRepository[heroId]
-	self.setGodSkill( self.attDat.n32GodSkillId )
-	self.setCommonSkill( self.attDat.n32CommonSkillId )
+	self:setGodSkill( self.attDat.n32GodSkillId )
+	self:setCommonSkill( self.attDat.n32CommonSkillId )
 	self.skillTable[self.attDat.n32GodSkillId] = 1
 	self.skillTable[self.attDat.n32CommonSkillId] = 1
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
@@ -165,5 +165,21 @@ function IMapPlayer:SynSkillCds()
 	skynet.call(self.agent,"lua","sendRequest","makeSkillCds",msg)	
 end
 	
+function IMapPlayer:upgradeSkill(skillId)
+	if self.skillTable[skillId] == nil then
+		return -1, 0
+	end
+	if self.skillTable[skillId] == Quest.SkillMaxLevel then
+		return -1, 0
+	end
+	local costGold = Quest.GoldSkilllLv[self.skillTable[skillId]]
+	if costGold > self:getGold() then
+		return -1, 0
+	end
+	--开始升级
+	self.skillTable[skillId] = self.skillTable[skillId] + 1
+	return 0, self.skillTable[skillId]
+end
+
 return IMapPlayer
 
