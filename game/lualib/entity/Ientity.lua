@@ -161,6 +161,7 @@ function Ientity:stand()
 	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
+	self:clearTarget(1)
 end
 
 function Ientity:clearPath()
@@ -193,6 +194,14 @@ function Ientity:getTarget()
 	return self:getTargetVar()
 end
 
+function Ientity:clearTarget(mask)
+	if self:getTarget() == nil then return end
+	--清除目标，mask控制类型
+	mask = mask or 1
+	if bit_and(mask,1) ~= 0 and self:getTarget():getType() == "transform" then
+		self:setTarget(nil)
+	end
+end
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
@@ -228,7 +237,7 @@ function Ientity:update(dt)
 		end
 	elseif self.curActionState == ActionState.stand then
 		--站立状态
-	elseif self.curActionState == ActionState.forcemove then
+	elseif self.curActionState >= ActionState.forcemove then
 		--强制移动
 		print("onForceMove")
 		self:onForceMove(dt)		
@@ -330,19 +339,19 @@ function Ientity:onMove(dt)
 		self:advanceEventStamp(EventStampType.Move)
 	end
 end
---强制移动（魅惑 嘲讽等）
+--强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
 	dt = dt / 1000
-	local fSpeed = 2
+	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
-	self.dir:set(self.target.pos.x, 0, self.target.pos.z)
+	self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
 	self.dir:sub(self.pos)
 	self.dir:normalize()
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
 	self:setPos(mv_dst.x, 0, mv_dst.z)
-	local len  = vector3.len(self.pos,self.target.pos)
+	local len  = vector3.len(self.pos,self:getTarget().pos)
 	if len >= 0.001 then 
 		self:advanceEventStamp(EventStampType.Move)
 	end	
@@ -648,7 +657,7 @@ end
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
-	--如果是有目标类型
+	--如果是有目标类型(4 针对自身立即释放)
 	if math.floor(skilldata.n32Type / 10) ~= 4 then
 		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
 		if skilldata.bNeedTarget == true then
@@ -719,7 +728,7 @@ function Ientity:castSkill()
 	local tmpSpell = self.spell
 	tmpSpell:init(skilldata,skillTimes)
 	self.cooldown:addItem(id) --加入cd
-	self:setActionState(0, ActionState.attack2)
+	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
 	self:advanceEventStamp(EventStampType.CastSkill)
 	return 0

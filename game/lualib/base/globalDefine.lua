@@ -19,15 +19,17 @@ EntityType = {
 ActionState = {
 	stand				= 0,
 	move				= 1,
-	attack1				= 2,	--普攻第一段 
-	attack2				= 3,	--普攻第二段 
-	attack3				= 4,	--普攻第三段 	
-	spell1				= 5,	--技能第一段 
-	spell2				= 6,	--技能第二段
+	attack				= 2,	-- 
+	spell				= 5,	-- 
+	charge				= 6,	--
 	idle				= 7,	--controled by buff 
 	blink				= 8,
-	forcemove			= 9,	--强制移动
-	die				= 10,	--死亡
+	die				= 9,	--死亡
+	--大于100都属于强制移动状态
+	forcemove			= 100,	--强制移动
+	repel				= 101,	--击退
+	chargeing			= 102,   --冲锋中
+	chargeed			= 103,	--冲锋结束
 }
 
 HpMpMask = {
