@@ -27,6 +27,7 @@ ActionState = {
 	idle				= 7,	--controled by buff 
 	blink				= 8,
 	forcemove			= 9,	--强制移动
+	die				= 10,	--死亡
 }
 
 HpMpMask = {
