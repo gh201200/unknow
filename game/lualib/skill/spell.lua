@@ -76,7 +76,6 @@ function spell:enterChannel(time)
 	self.status = SpellStatus.ChannelCast
 end
 function spell:breakSpell()
-	print("=====spell:breakspell")
 	if self.status == SpellStatus.Ready then
 		--技能准备阶段被打断 不计入cd
 		self.source.cooldown:resetCd(self.skilldata.id,0)

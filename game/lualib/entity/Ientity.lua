@@ -41,6 +41,7 @@ function Ientity:ctor(pos,dir)
 	self.bornPos =  vector3.create()
 	
 	register_class_var(self, 'TargetVar', nil)	--选中目标实体
+	self.camp = CampType.BAD  
 	self.moveSpeed = 0
 	self.curActionState = 0
 	self.pathMove = nil
@@ -109,6 +110,16 @@ function Ientity:getType()
 	return "Ientity"
 end
 
+function Ientity:isKind(entity)
+	if entity.camp == nil then return true end
+	if self.camp == CampType.KIND or entity.camp == CampType.KIND then
+		return true
+	end
+	if self.camp == CampType.BAD or entity.camp == CampType.BAD then
+		return false
+	end
+	return self.camp == entity.camp
+end
 function Ientity:advanceEventStamp(event)
 	if not self.serverEventStamps[event] then
 		self.serverEventStamps[event] = 0
@@ -670,14 +681,18 @@ function Ientity:canMove()
 	--if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
 end
+
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型(4 针对自身立即释放)
-	if math.floor(skilldata.n32Type / 10) ~= 4 then
+	local tgtType = GET_SkillTgtType(skilldata)
+	if tgtType ~= 4 then
 		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
 		if skilldata.bNeedTarget == true then
-			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end					--目标不存在
+			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end--目标不存在
+			if tgtType == 3	and self:getTarget():isKind(self) == true then return ErrorCode.EC_Spell_Camp_Friend end --不能对友方施法该技能
+			if tgtType == 2 and self:getTarget():isKind(self) == false then return ErrorCode.EC_Spell_Camp_Enemy end --不能对敌方施法该技能
 		end
 		local dis = self:getDistance(self:getTarget())
 		local dataDis = skilldata.n32Range / 10000
@@ -685,9 +700,15 @@ function Ientity:canCast(id)
 			return ErrorCode.EC_Spell_TargetOutDistance 
 		end
 	end
-	if skilldata.bCommonSkill == false and  bit_and(self.affectState,AffectState.NoSpell) ~= 0 then 
-		return ErrorCode.EC_Spell_Controled
+	if skilldata.bCommonSkill == false  then 
+		if bit_and(self.affectState,AffectState.NoSpell) ~= 0 then
+			return ErrorCode.EC_Spell_Controled
+		end
+		if self:getTarget() ~= nil and self:getTarget() == "IBuilding" then
+			return ErrorCode.EC_Spell_NoBuilding	
+		end
 	end
+
 	if bit_and(self.affectState,AffectState.NoAttack) ~= 0 then 
 		return ErrorCode.EC_Spell_Controled
 	end
@@ -708,11 +729,18 @@ function Ientity:canSetCastSkill(id)
 	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then
            return ErrorCode.EC_Spell_SkillIsRunning
         end
+	local tgtType = GET_SkillTgtType(skilldata)
+	if self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
+		if skilldata.bNeedTarget == true then
+			--单体目标施法技能
+			if tgtType == 3 and self:getTarget():isKind(self) == true then return ErrorCode.EC_Spell.EC_Spell_Camp_Friend end
+			if tgtType == 2 and self:getTarget():isKind(self) == false then return ErrorCode.EC_Spell.EC_Spell_Camp_Enemy end
+		end
+	end
 	--被控制状态 
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	print("setCastSkillId",id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
@@ -720,8 +748,6 @@ function Ientity:setCastSkillId(id)
 	if id == 32002 then
 		self:castSkill()
 	end 
-	local type_target = math.floor(skilldata.n32Type / 10)
-	local type_range = math.floor(skilldata.n32Type % 10)
 end
 function Ientity:castSkill()
 	self.CastSkillId = self.ReadySkillId

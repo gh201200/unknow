@@ -140,9 +140,9 @@ function CMD.start(response, args)
 	Map:load("./lualib/map/" .. mapDat.szScene)
 
 	--创建基地
-	local redBuilding = IBuilding.create(0, mapDat)
+	local redBuilding = IBuilding.create(CampType.RED, mapDat)
 	EntityManager:addEntity(redBuilding)
-	local blueBuilding = IBuilding.create(1, mapDat)
+	local blueBuilding = IBuilding.create(CampType.BLUE, mapDat)
 	EntityManager:addEntity(blueBuilding)
 	
 	--创建英雄

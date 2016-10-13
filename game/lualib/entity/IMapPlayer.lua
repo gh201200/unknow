@@ -9,7 +9,6 @@ local IMapPlayer = class("IMapPlayer", Ientity)
 function IMapPlayer.create(arg)
 
 	local player = IMapPlayer.new()
-	
 	player.serverId = assin_server_id() 
 	player.account_id = arg.account
 	player.agent = arg.agent
@@ -17,6 +16,11 @@ function IMapPlayer.create(arg)
 	player.color = arg.color 	--红方 蓝方 1 2 3 和 4 5 6表示 以及出生位置
 	player.bornPos:set(arg.bornPos[1]/GAMEPLAY_PERCENT, 0, arg.bornPos[2]/GAMEPLAY_PERCENT)
 	player:init(arg.pickedheroid)
+	if player:isRed() then
+		player.camp = CampType.RED
+	else
+		player.camp = CampType.BLUE
+	end
 	return player
 end	
 
@@ -28,7 +32,7 @@ function IMapPlayer:ctor()
 	self.agent = 0
 	self.nickName = ''
 	self.color = 0
-	
+	self.camp = 0
 	register_class_var(self, 'LoadProgress', 0)
 
 	register_class_var(self, 'RaiseTime', 0)
@@ -49,13 +53,6 @@ end
 function IMapPlayer:isRed()
 	return self.color < 4
 end
-
-function IMapPlayer:isSameCamp(entity)
-	if self:isRed() and entity:isRed() then return true end
-	if not self:isRed() and not entity:isRed() then return true end
-	return false
-end
-
 
 function IMapPlayer:update(dt)
 	

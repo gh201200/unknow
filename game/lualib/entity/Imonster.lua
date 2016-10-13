@@ -27,7 +27,7 @@ function IMonster:ctor()
 	self.hateList = HateList.new(self)
 	self.ai = NpcAI.new(self)
 	self.skillCD = 0
-
+	self.camp = CampType.MONSTER
 	register_class_var(self, "PreSkillData", nil)
 
 end

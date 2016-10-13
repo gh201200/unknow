@@ -127,8 +127,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 				table.insert(tmpTb,_v)
 			end
 		elseif type_target == 3 then
-			--if _v.camp ~= source.camp then
-			if _v ~= source  then
+			if _v.camp ~= source.camp and _v:getType() ~= "IBuilding" then
 				table.insert(tmpTb,_v)
 			end
 		end
