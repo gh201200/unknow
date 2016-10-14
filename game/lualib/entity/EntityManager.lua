@@ -5,13 +5,24 @@ local IflyObj = require "entity.IflyObj"
 local EntityManager = class("EntityManager")
 
 function EntityManager:sendToAllPlayers(msg, val, except)
-	--if true then return end
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
 		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then
 			skynet.call(v.agent, "lua", "sendRequest", msg, val)
 		end
 	end
+end
+
+function EntityManager:sendToAllPlayersByCamp(msg, val, entity, except)
+	if not except then except = "" end
+	for k, v in pairs(self.entityList) do
+		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then
+			if v:isSameCamp( entity ) then
+				skynet.call(v.agent, "lua", "sendRequest", msg, val)
+			end
+		end
+	end
+
 end
 
 function EntityManager:ctor(p)
