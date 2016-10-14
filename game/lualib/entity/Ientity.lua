@@ -172,7 +172,6 @@ function Ientity:stand()
 	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
-	self:clearTarget(1)
 end
 
 function Ientity:clearPath()
@@ -250,7 +249,6 @@ function Ientity:update(dt)
 		--站立状态
 	elseif self.curActionState >= ActionState.forcemove then
 		--强制移动
-		print("onForceMove")
 		self:onForceMove(dt)		
 	end
 	--技能相关
@@ -339,8 +337,9 @@ function Ientity:onMove(dt)
 	end
 
 	--到达终点
-	if Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then 
+	if self:getTarget() and Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then 
 		self:stand()
+		self:clearTarget(1)
 	end
 
 	if legal_pos then 

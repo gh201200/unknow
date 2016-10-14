@@ -37,6 +37,7 @@ ActionState = {
 	repel				= 101,	--击退
 	chargeing			= 102,   --冲锋中
 	chargeed			= 103,	--冲锋结束
+	loved				= 104,  --魅惑
 }
 
 HpMpMask = {

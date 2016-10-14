@@ -10,7 +10,7 @@ function StatsAffect:onEnter()
 	repeat
 		local lzm = false
 		if self.data[1] == 'ctrl' then
-			self.owner.controledState = bit_or(self.owner.controledState, self.data[2]) -- 控制类型
+			self.owner.affectState = bit_or(self.owner.affectState, self.data[2]) -- 控制类型
 		end
 		if self.data[1] == 'up_str' then
 			self.owner:addMidStrengthPc(self.data[2])
@@ -158,7 +158,7 @@ function StatsAffect:onExit()
 		local lzm = false
 		if self.data[1] == 'ctrl' then
 			-- 1: 不能移动 2:不能攻击 3:不能放技能
-			self.owner.controledState = bit_and(self.owner.controledState, bit_not(self.data[2])) -- 控制类型
+			self.owner.affectState = bit_and(self.owner.affectState, bit_not(self.data[2])) -- 控制类型
 		end
 		if self.data[1] == 'up_str' then
 			self.owner:addMidStrengthPc(-self.data[2])

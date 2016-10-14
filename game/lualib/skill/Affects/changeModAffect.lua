@@ -1,6 +1,7 @@
 local Affect = require "skill.Affects.Affect"
 local changeModAffect = class("changeModAffect",Affect)
 function changeModAffect:ctor( entity,source,data )
+	print("changeModAffect")
 	self.super.ctor(self,entity,source,data)
 	self.effectTime = self.data[2] or 0 
 	self.effectId = self.data[3] or 0

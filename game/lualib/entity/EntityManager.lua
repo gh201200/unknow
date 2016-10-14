@@ -108,8 +108,8 @@ function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
 	self:addEntity(obj)
 end
 function EntityManager:getSkillAttackEntitys(source,skilldata)
-	local type_range = math.floor(skilldata.n32Type % 10)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:飞行物碰撞 
-	local type_target = math.floor(skilldata.n32Type / 10)  -- 1:自身 2:友方 3:敌方
+	local type_range = GET_SkillTgtRange(skilldata)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:飞行物碰撞 
+	local type_target = GET_SkillTgtType(skilldata)  -- 1:自身 2:友方 3:敌方
 	local tmpTb = {}
 	if type_range == 1 then
 		if source:getTarget() ~= nil and source:getTarget():getType() ~= "transform" then
