@@ -4,11 +4,13 @@ local repelAffect = class("repelAffect",Affect)
 local transfrom = require "entity.transfrom"
 
 function repelAffect:ctor(owner,source,data)
+	print("repelAffect")
 	self.super.ctor(self,owner,source,data)
 	self.effectId = data[3] or 0
 	self.distance = data[2] or 0
 	self.speed = 6 
 	self.effectTime = math.floor(1000 * self.distance / self.speed) 
+	print("self.effectTime",self.effectTime)
 end
 
 function repelAffect:onEnter()
@@ -22,7 +24,7 @@ function repelAffect:onEnter()
 	local dst = vector3.create()
 	dst:set(self.owner.pos.x,0,self.owner.pos.z)
 	dst:add(dir)
-	self.owner.setTargetVar(transfrom.new(dst,nil))
+	self.owner:setTargetVar(transfrom.new(dst,nil))
 end
 
 function repelAffect:onExec(dt)
@@ -33,6 +35,7 @@ function repelAffect:onExec(dt)
 end
 
 function repelAffect:onExit()
+	print("repelAffect:onExit")
 	self.owner:stand()
 	self.super.onExit(self)
 end

@@ -15,6 +15,13 @@ EntityType = {
 	flyObj				= 4,
 }
 
+CampType = {
+	BAD = 1, 	--全部敌对
+	KIND = 2, 	--全部和平
+	MONSTER = 3,	--怪物
+	RED = 4,	--红方
+	BLUE = 5, 	--蓝方
+}
 
 ActionState = {
 	stand				= 0,
@@ -30,6 +37,7 @@ ActionState = {
 	repel				= 101,	--击退
 	chargeing			= 102,   --冲锋中
 	chargeed			= 103,	--冲锋结束
+	loved				= 104,  --魅惑
 }
 
 HpMpMask = {
@@ -63,6 +71,9 @@ ErrorCode = {
 	EC_Spell_TargetOutDistance	= 1006, --目标距离过远
 	EC_Spell_Controled		= 1007,	--被控制住了
 	EC_Dead				= 1008,	--死亡
+	EC_Spell_Camp_Enemy		= 1009, --不能对敌方释放该技能
+	EC_Spell_Camp_Friend		= 1010, --不能对友方释放该技能
+	EC_Spell_NoBuilding		= 1011, --不能使用技能攻击建筑物
 	EC_Spell_Unkonw			= 1999, --技能未知错误
 }
 
@@ -78,3 +89,16 @@ g_shareData = {}
 g_entityManager = nil
 GAMEPLAY_PERCENT = 10000
 
+
+
+function GET_SkillTgtType(data)
+	assert(data,"getskillTgtType data is null")
+	local t = math.floor(data.n32Type / 10)
+	return t
+end
+
+function GET_SkillTgtRange(data)
+	assert(data,"getskillTgtRange data is null")
+	local t = data.n32Type % 10
+	return t
+end

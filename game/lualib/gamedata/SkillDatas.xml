@@ -45,7 +45,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>1000</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -79,7 +79,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -113,7 +113,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -147,7 +147,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_03</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -181,7 +181,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_03</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -215,7 +215,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -249,7 +249,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -283,7 +283,7 @@
 		<n32Range>60000</n32Range>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>6000</n32CD>
-		<n32TriggerTime>500</n32TriggerTime>
+		<n32TriggerTime>200</n32TriggerTime>
 		<n32ActionTime>1500</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>

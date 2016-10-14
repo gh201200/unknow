@@ -27,7 +27,7 @@ function IMonster:ctor()
 	self.hateList = HateList.new(self)
 	self.ai = NpcAI.new(self)
 	self.skillCD = 0
-
+	self.camp = CampType.MONSTER
 	register_class_var(self, "PreSkillData", nil)
 
 end
@@ -50,7 +50,10 @@ end
 
 function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
-	self.ai:update(dt)
+	--强制移动状态 ai不更新	
+	if self.curActionState < ActionState.forcemove then
+		self.ai:update(dt)
+	end
 	
 	self.skillCD  = self.skillCD - dt
 	--add code before this
