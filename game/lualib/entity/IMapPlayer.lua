@@ -130,15 +130,21 @@ end
 
 function IMapPlayer:onExp()
 	self.GoldExpMask = true
-	local lv = 1
-	for k, v in pairs(g_shareData.heroLevel) do
-		if self:getExp() < v.n32Exp then
-			lv = k
+	local lv = 0
+	local sz = #g_shareData.heroLevel
+	for i=2, sz do
+		if self:getExp() < g_shareData.heroLevel[i].n32Exp then
+			lv = i 
 			break
 		end
 	end
+	if lv == 0 then
+		lv = sz + 1
+	end
 
-	self:setLevel(lv)
+	print('exp = ',self:getExp(), lv-1)
+
+	self:setLevel(lv - 1)
 end
 
 function IMapPlayer:addSkill(skillId)
