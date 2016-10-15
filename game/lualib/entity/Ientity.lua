@@ -40,7 +40,6 @@ function Ientity:ctor(pos,dir)
 	register_class_var(self, 'Level', 1)
 	self.bornPos =  vector3.create()
 	
-	register_class_var(self, 'TargetVar', nil)	--选中目标实体
 	self.camp = CampType.BAD  
 	self.moveSpeed = 0
 	self.curActionState = 0
@@ -200,9 +199,6 @@ function Ientity:setTarget(target)
 --	local r = self:pathFind(self.target.pos.x, self.target.pos.z)
 end
 
-function Ientity:getTarget()
-	return self:getTargetVar()
-end
 
 function Ientity:clearTarget(mask)
 	if self:getTarget() == nil then return end

@@ -142,8 +142,6 @@ function IMapPlayer:onExp()
 		lv = sz + 1
 	end
 
-	print('exp = ',self:getExp(), lv-1)
-
 	self:setLevel(lv - 1)
 end
 

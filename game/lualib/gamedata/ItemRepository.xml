@@ -2,7 +2,7 @@
 <info>
 	<item id="60001">
 		<szIcon>i60001</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>30102</n32Retain1>
@@ -11,7 +11,7 @@
 	</item>
 	<item id="60002">
 		<szIcon>i60002</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>30201</n32Retain1>
@@ -20,7 +20,7 @@
 	</item>
 	<item id="60003">
 		<szIcon>i60003</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>30301</n32Retain1>
@@ -29,7 +29,7 @@
 	</item>
 	<item id="60004">
 		<szIcon>i60004</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>32001</n32Retain1>
@@ -38,7 +38,7 @@
 	</item>
 	<item id="60005">
 		<szIcon>i60005</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -47,7 +47,7 @@
 	</item>
 	<item id="60006">
 		<szIcon>i60006</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -56,7 +56,7 @@
 	</item>
 	<item id="60007">
 		<szIcon>i60007</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -65,7 +65,7 @@
 	</item>
 	<item id="60008">
 		<szIcon>i60008</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -74,7 +74,7 @@
 	</item>
 	<item id="60009">
 		<szIcon>i60009</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -83,7 +83,7 @@
 	</item>
 	<item id="60010">
 		<szIcon>i60010</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -92,7 +92,7 @@
 	</item>
 	<item id="60011">
 		<szIcon>i60011</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -101,7 +101,7 @@
 	</item>
 	<item id="60012">
 		<szIcon>i60012</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -110,7 +110,7 @@
 	</item>
 	<item id="60013">
 		<szIcon>i60013</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -119,7 +119,7 @@
 	</item>
 	<item id="60014">
 		<szIcon>i60014</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -128,7 +128,7 @@
 	</item>
 	<item id="60015">
 		<szIcon>i60015</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -137,7 +137,7 @@
 	</item>
 	<item id="60016">
 		<szIcon>i60016</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -146,7 +146,7 @@
 	</item>
 	<item id="60017">
 		<szIcon>i60017</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -155,7 +155,7 @@
 	</item>
 	<item id="60018">
 		<szIcon>i60018</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -164,7 +164,7 @@
 	</item>
 	<item id="60019">
 		<szIcon>i60019</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -173,7 +173,7 @@
 	</item>
 	<item id="60020">
 		<szIcon>i60020</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -182,7 +182,7 @@
 	</item>
 	<item id="60021">
 		<szIcon>i60021</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -191,7 +191,7 @@
 	</item>
 	<item id="60022">
 		<szIcon>i60022</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -200,7 +200,7 @@
 	</item>
 	<item id="60023">
 		<szIcon>i60023</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -209,7 +209,7 @@
 	</item>
 	<item id="60024">
 		<szIcon>i60024</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -218,7 +218,7 @@
 	</item>
 	<item id="60025">
 		<szIcon>i60025</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -227,7 +227,7 @@
 	</item>
 	<item id="60026">
 		<szIcon>i60026</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -236,7 +236,7 @@
 	</item>
 	<item id="60027">
 		<szIcon>i60027</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -245,7 +245,7 @@
 	</item>
 	<item id="60028">
 		<szIcon>i60028</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -254,7 +254,7 @@
 	</item>
 	<item id="60029">
 		<szIcon>i60029</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -263,7 +263,7 @@
 	</item>
 	<item id="60030">
 		<szIcon>i60030</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -272,7 +272,7 @@
 	</item>
 	<item id="60031">
 		<szIcon>i60031</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -281,7 +281,7 @@
 	</item>
 	<item id="60032">
 		<szIcon>i60032</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -290,7 +290,7 @@
 	</item>
 	<item id="60033">
 		<szIcon>i60033</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -299,7 +299,7 @@
 	</item>
 	<item id="60034">
 		<szIcon>i60034</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -308,7 +308,7 @@
 	</item>
 	<item id="60035">
 		<szIcon>i60035</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -317,7 +317,7 @@
 	</item>
 	<item id="60036">
 		<szIcon>i60036</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -326,7 +326,7 @@
 	</item>
 	<item id="60037">
 		<szIcon>i60037</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -335,7 +335,7 @@
 	</item>
 	<item id="60038">
 		<szIcon>i60038</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -344,7 +344,7 @@
 	</item>
 	<item id="60039">
 		<szIcon>i60039</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -353,7 +353,7 @@
 	</item>
 	<item id="60040">
 		<szIcon>i60040</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -362,7 +362,7 @@
 	</item>
 	<item id="60041">
 		<szIcon>i60041</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -371,7 +371,7 @@
 	</item>
 	<item id="60042">
 		<szIcon>i60042</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -380,7 +380,7 @@
 	</item>
 	<item id="60043">
 		<szIcon>i60043</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -389,7 +389,7 @@
 	</item>
 	<item id="61001">
 		<szIcon>i61001</szIcon>
-		<szModule>m60001</szModule>
+		<szModule>JiNengshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>1</n32Type>
 		<n32Retain1>0</n32Retain1>

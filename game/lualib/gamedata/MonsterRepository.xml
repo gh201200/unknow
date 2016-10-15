@@ -1875,54 +1875,52 @@
 		<szSkill>31501</szSkill>
 		<n32ModelId>50004</n32ModelId>
 	</item>
-	<item id="90001">
+	<item id="200001">
 		<n32Grade>0</n32Grade>
 		<szName>红方基地</szName>
 		<n32Type>5</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>894</n32Hp>
-		<n32Mp>303</n32Mp>
-		<n32Attack>74</n32Attack>
-		<n32Defence>7</n32Defence>
-		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>12595</n32MSpeed>
+		<n32Hp>1000</n32Hp>
+		<n32Mp>1000</n32Mp>
+		<n32Attack>0</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>0</n32ASpeed>
+		<n32MSpeed>0</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
-		<n32HateRange>4</n32HateRange>
-		<szLink>25013, 25014</szLink>
+		<n32HateRange>0</n32HateRange>
+		<szLink></szLink>
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>152</n32Exp>
-		<n32Gold>152</n32Gold>
-		<szDrop>1001</szDrop>
-		<n32CommonSkill>30001
-</n32CommonSkill>
-		<szSkill>31501</szSkill>
+		<n32Exp>0</n32Exp>
+		<n32Gold>0</n32Gold>
+		<szDrop>0</szDrop>
+		<n32CommonSkill>0</n32CommonSkill>
+		<szSkill></szSkill>
 		<n32ModelId>90001</n32ModelId>
 	</item>
-	<item id="90002">
+	<item id="200002">
 		<n32Grade>0</n32Grade>
 		<szName>蓝方基地</szName>
 		<n32Type>5</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>894</n32Hp>
-		<n32Mp>303</n32Mp>
-		<n32Attack>74</n32Attack>
-		<n32Defence>7</n32Defence>
-		<n32ASpeed>15000</n32ASpeed>
-		<n32MSpeed>12595</n32MSpeed>
+		<n32Hp>1000</n32Hp>
+		<n32Mp>1000</n32Mp>
+		<n32Attack>0</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>0</n32ASpeed>
+		<n32MSpeed>0</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
-		<n32HateRange>4</n32HateRange>
-		<szLink>25013, 25014</szLink>
+		<n32HateRange>0</n32HateRange>
+		<szLink></szLink>
 		<n32RecvHp>20000</n32RecvHp>
 		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>152</n32Exp>
-		<n32Gold>152</n32Gold>
-		<szDrop>1001</szDrop>
-		<n32CommonSkill>30001
-</n32CommonSkill>
-		<szSkill>31501</szSkill>
+		<n32Exp>0</n32Exp>
+		<n32Gold>0</n32Gold>
+		<szDrop>0</szDrop>
+		<n32CommonSkill>0</n32CommonSkill>
+		<szSkill></szSkill>
 		<n32ModelId>90001</n32ModelId>
 	</item>
 </info>

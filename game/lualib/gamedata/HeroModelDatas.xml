@@ -76,14 +76,14 @@
 		<szName>红方基地</szName>
 		<szMod_name>Zhucheng_1</szMod_name>
 		<n32Hight>Zhucheng_1</n32Hight>
-		<n32Speed>10000</n32Speed>
-		<n32AttackTime1>400</n32AttackTime1>
-		<n32AttackTime2>500</n32AttackTime2>
-		<n32AttackTime3>500</n32AttackTime3>
-		<n32Skill1Time1>400</n32Skill1Time1>
-		<n32Skill1Time2>600</n32Skill1Time2>
-		<n32Skill2Time1>400</n32Skill2Time1>
-		<n32Skill2Time2>600</n32Skill2Time2>
+		<n32Speed>0</n32Speed>
+		<n32AttackTime1>0</n32AttackTime1>
+		<n32AttackTime2>0</n32AttackTime2>
+		<n32AttackTime3>0</n32AttackTime3>
+		<n32Skill1Time1>0</n32Skill1Time1>
+		<n32Skill1Time2>0</n32Skill1Time2>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>0</n32Skill2Time2>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>

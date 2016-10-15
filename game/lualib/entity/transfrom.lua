@@ -5,6 +5,7 @@ local transform = class("transform")
 function transform:ctor(pos, dir)
 	self.pos = pos or vector3.create()
 	self.dir = dir or vector3.create()
+	register_class_var(self, 'TargetVar', nil)	--选中目标实体
 end
 function transform:getType()
 	return "transform"
@@ -16,4 +17,7 @@ function transform:getDistance(target)
 	return dis
 end
 
+function transform:getTarget()
+	return self:getTargetVar()
+end
 return transform
