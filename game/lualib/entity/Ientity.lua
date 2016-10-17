@@ -341,7 +341,8 @@ function Ientity:onMove(dt)
 				self:stand()
 			end
 		else	
-			if Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then	--目标是地面
+			--if Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then	--目标是地面
+			if math.abs(self.pos.x-self:getTarget().pos.x) < 0.02 and math.abs(self.pos.z-self:getTarget().pos.z) < 0.02 then
 				self:stand()
 				self:clearTarget(1)
 			end
