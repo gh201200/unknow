@@ -30,11 +30,12 @@ function IBuilding:getType()
 end
 
 function IBuilding:init(mapDat)
+	self:setShapeSize(2)		--基地占据2*2
 	local aid = mapDat.n32RedMonsterId
-	self:setPos(mapDat.szRedHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szRedHomePos[2]/GAMEPLAY_PERCENT, 1)
+	self:setPos(mapDat.szRedHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szRedHomePos[2]/GAMEPLAY_PERCENT, self:getShapeSize())
 	if self.camp == CampType.BLUE then
 		aid = mapDat.n32BlueMonsterId
-		self:setPos(mapDat.szBlueHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szBlueHomePos[2]/GAMEPLAY_PERCENT, 1)
+		self:setPos(mapDat.szBlueHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szBlueHomePos[2]/GAMEPLAY_PERCENT, self:getShapeSize())
 	end
 	self.attDat = g_shareData.monsterRepository[aid]
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
