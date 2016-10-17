@@ -12,6 +12,7 @@ local repelAffect = require "skill.Affects.repelAffect"
 local loveAffect = require "skill.Affects.loveAffect"
 local getbloodAffect = require "skill.Affects.getbloodAffect"
 local chargeAffect = require "skill.Affects.chargeAffect"
+local electricAffect  = require "skill.Affects.electricAffect"
 local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
@@ -94,6 +95,8 @@ function AffectTable:addAffect(source,data)
 		aff = getbloodAffect.new(self.owner,source,data)
 	elseif data[1] == "changeMod" then
 		aff = changeModAffect.new(self.owner,source,data)
+	elseif data[1] == "electric" then
+		aff = electricAffect.new(self.owner,source,data)
 	elseif data[1] == "ctrl" or data[1] == "up_str" or data[1] == "up_dex" or data[1] == "up_inte" or data[1] == "hp" or data[1] == "mp"  or 
 	       data[1] == "atk" or data[1] == "def" or data[1] == "wsp" or data[1] == "mov" or data[1] == "rng" or 
 	       data[1] == "re_hp" or data[1] == "re_mp" or data[1] == "crit_rate" or data[1] == "hit_rate" or data[1] == "dod_rate" then
@@ -112,7 +115,12 @@ function AffectTable:addAffect(source,data)
 			end
 		end
 		table.insert(self.affects,aff)
-	 end
+	end
+end
+
+function AffectTable:addAffectSyn(aff)
+	table.insert(self.affects,aff)
+	self.owner:advanceEventStamp(EventStampType.Affect)
 end
 
 function AffectTable:buildAffects(source,dataStr)

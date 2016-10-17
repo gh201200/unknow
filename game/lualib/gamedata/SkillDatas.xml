@@ -339,5 +339,39 @@
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
 		<n32Pet>0</n32Pet>
+	</item>	
+	<item id="32007">
+		<bActive>1</bActive>
+		<bSoundSkill>0</bSoundSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<bCommonSkill>0</bCommonSkill>
+		<icon>icon.png</icon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32Range>60000</n32Range>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>6000</n32CD>
+		<n32TriggerTime>70</n32TriggerTime>
+		<n32ActionTime>1500</n32ActionTime>
+		<szAction>Skill_01</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>31</n32Type>
+		<szTypeInfo>闪电链</szTypeInfo>
+		<szName>闪电链</szName>
+		<szDescribe>闪电链技能描述</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[electric:1,2,3,1000,2000,60011]</szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<n32Radius>5000</n32Radius>
+		<szAtkBe>1,50,100000</szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
 	</item>		
 </info>

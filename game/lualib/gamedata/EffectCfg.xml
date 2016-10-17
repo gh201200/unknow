@@ -52,7 +52,7 @@
 	</item>
 	<item id="60003">
 		<n32type>4</n32type>
-		<szassert>Dingbao_1</szassert>
+		<szassert>Bingbao_1</szassert>
 		<n32time>1000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
@@ -62,7 +62,7 @@
 	</item>
 	<item id="60007">
 		<n32type>4</n32type>
-		<szassert>Dingbao_2</szassert>
+		<szassert>Bingbao_2</szassert>
 		<n32time>1000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
@@ -92,7 +92,7 @@
 	</item>
 	<item id="60010">
 		<n32type>4</n32type>
-		<szassert>Dingbao_2</szassert>
+		<szassert>Bingbao_2</szassert>
 		<n32time>1000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
@@ -100,4 +100,15 @@
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
 	</item>	
+	<item id="60011">
+		<n32type>2</n32type>
+		<szassert>Shandianlian_1</szassert>
+		<n32time>1000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>	
+	
 </info>
