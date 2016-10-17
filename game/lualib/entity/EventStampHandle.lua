@@ -138,7 +138,11 @@ EventStampHandle[EventStampType.Affect] = function (serverId, event)
 	for i=#player.affectTable.affects,1,-1 do
 		local v = player.affectTable.affects[i]
 		assert(v and v.effectId)
-		table.insert(r.affectList, {effectId = v.effectId , projectId = v.projectId,effectTime = v.effectTime})
+		local srcId = 0
+		if v.source ~= nil then
+			srcId = v.source.serverId
+		end 
+		table.insert(r.affectList, {effectId = v.effectId , projectId = v.projectId,effectTime = v.effectTime ,srcServerId = srcId})
 	end
 	return r
 end

@@ -59,7 +59,8 @@ local types = [[
 .Affect {
 	projectId 0 : string
 	effectId 1 : integer
-	effectTime 2 : integer 
+	effectTime 2 : integer
+	srcServerId 3 : integer 
 }
 .Matcher {
 	account 0 : string

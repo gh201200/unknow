@@ -122,7 +122,8 @@ function spell:advanceEffect(dt)
 			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
 			if self.skilldata.bCommonSkill == true then
 				--普通攻击 触发普攻附加buff
-				self.source.affectTable:triggerAtkAffects(self.source:getTarget(),false)
+				print("spell:trigger",self.source:getType(),self.srcTarget:getType())
+				self.source.affectTable:triggerAtkAffects(self.srcTarget,false)
 				if self.source:getTarget() and self.source:getTarget():getType() ~= "transform" then 
 					self.source:getTarget().affectTable:triggerAtkAffects(self.source,true)	
 				end
@@ -155,6 +156,7 @@ function spell:advanceEffect(dt)
 					item.rate = tonumber(tmpTb[2])
 					item.lifeTime = tonumber(tmpTb[3])
 					item.affdata = self.skilldata.szTargetAffect
+					print("============",item)
 					if tonumber(tmpTb[1]) == 1 then
 						table.insert(self.source.affectTable.AtkAffects,item)
 					elseif tonumber(tmpTb[1]) == 0 then
@@ -184,6 +186,7 @@ function spell:onBegin()
 		self.status = SpellStatus.Cast
 	end
 	self.source:callBackSpellBegin()
+	self.srcTarget = self.source:getTarget()
 end
 function spell:onReady()
 	--self.source.ActionState = ActionState.attack1
