@@ -6,7 +6,7 @@ local Map = class("Map")
 
 local MAP_XGRID_NUM = 17
 local MAP_ZGRID_NUM = 39
-local MAP_GRID_SIZE = 0.4
+Map.MAP_GRID_SIZE = 0.4
 
 local dir = {
 	[0] = {0,1},
@@ -20,12 +20,12 @@ local dir = {
 }
 
 function Map.POS_2_GRID(p)
-	return math.floor(p/MAP_GRID_SIZE)
+	return math.floor(p/Map.MAP_GRID_SIZE)
 
 end
 
 function Map.GRID_2_POS(g)
-	return g * MAP_GRID_SIZE + MAP_GRID_SIZE / 2 
+	return g * Map.MAP_GRID_SIZE + Map.MAP_GRID_SIZE / 2 
 end
 
 function Map.IS_SAME_GRID(v1, v2)
@@ -59,6 +59,7 @@ function Map:load(terrain)
 end
 
 function Map:dump()
+	print('map data==================================')
 	local str = ''
 	for j=MAP_ZGRID_NUM-1,0,-1 do
 		str = ''
@@ -67,6 +68,7 @@ function Map:dump()
 		end
 		print(str)
 	end  
+	print('map data----------------------------------')
 end
 
 function Map.legal(gx, gz)
@@ -83,15 +85,30 @@ function Map:get(x, z)
 	return w
 end
 
-function Map:add(x, z, v, r)
+function Map:add(x, z, v, s)
 	local gx = Map.POS_2_GRID(x)
 	local gz = Map.POS_2_GRID(z)
 	if not Map.legal(gx, gz) then return 255 end
-	if not r then r = 0 end
-	for j=-r, r do
-		for k=-r, r do
+	pf.add(self.m, gx, gz, v)
+	
+	if not s or s <= 1 then return end
+	--if not s then s = 1 end
+	local r = s * Map.MAP_GRID_SIZE/2
+	
+	s = math.ceil(s / 2)
+
+	local minX = x - r
+	local minZ = z - r
+	local maxX = x + r
+	local maxZ = z + r
+	for j=-s, s do
+		for k=-s, s do
 			if Map.legal(gx+j, gz+k) then
-				pf.add(self.m, gx+j, gz+k, v)					
+				local ox = Map.GRID_2_POS(gx+j)
+				local oz = Map.GRID_2_POS(gz+k)
+				if ox > minX and ox <= maxX and oz > minZ and oz <= maxZ then
+					pf.add(self.m, gx+j, gz+k, v)
+				end				
 			end
 		end
 	end

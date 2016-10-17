@@ -83,7 +83,7 @@
 	<item id="60009">
 		<n32type>3</n32type>
 		<szassert>Kongzhiqiu_2</szassert>
-		<n32time>1000</n32time>
+		<n32time>0</n32time>
 		<n32speed>3</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
@@ -110,5 +110,4 @@
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
 	</item>	
-	
 </info>

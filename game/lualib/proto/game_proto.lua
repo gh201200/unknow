@@ -449,6 +449,13 @@ raiseHero 2010 {
         }
 }
 
+delPickItem 2011 {
+	request {
+		item_sid 0 : integer
+		user_sid 1 : integer
+        }
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)

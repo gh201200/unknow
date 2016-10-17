@@ -142,6 +142,9 @@ function DropManager:useItem(player, sid)
 	elseif itemData.n32Type == 2 then
 		player.affectTable:buildEffect(player, itemData.szRetain3) 
 	end
+
+	--tell all teamers, inclue player self
+	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
 	
 	return errorCode
 end

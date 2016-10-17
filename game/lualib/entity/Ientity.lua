@@ -40,7 +40,6 @@ function Ientity:ctor(pos,dir)
 	register_class_var(self, 'Level', 1)
 	self.bornPos =  vector3.create()
 	
-	register_class_var(self, 'TargetVar', nil)	--选中目标实体
 	self.camp = CampType.BAD  
 	self.moveSpeed = 0
 	self.curActionState = 0
@@ -57,6 +56,7 @@ function Ientity:ctor(pos,dir)
 	--att data
 	self.attDat = nil
 	self.modelDat = nil
+	register_class_var(self, 'ShapeSize', 1)
 	
 	--技能相关----
 	self.spell = spell.new(self)		 --技能
@@ -200,9 +200,6 @@ function Ientity:setTarget(target)
 --	local r = self:pathFind(self.target.pos.x, self.target.pos.z)
 end
 
-function Ientity:getTarget()
-	return self:getTargetVar()
-end
 
 function Ientity:clearTarget(mask)
 	if self:getTarget() == nil then return end
@@ -333,13 +330,19 @@ function Ientity:onMove(dt)
 		end
 		if self.pathNodeIndex >= #self.pathMove then
 			self:stand()
+			self:clearTarget(1)
 		end
-	end
-
-	--到达终点
-	if self:getTarget() and Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then 
-		self:stand()
-		self:clearTarget(1)
+	elseif self:getTarget() then
+		if self:getTarget():getType() ~= "transform" then	--目标是物体
+			if self:getDistance(self:getTarget()) <= (self:getShapeSize()+self:getTarget():getShapeSize())/2*Map.MAP_GRID_SIZE + 0.05 then
+				self:stand()
+			end
+		else	
+			if Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then	--目标是地面
+				self:stand()
+				self:clearTarget(1)
+			end
+		end
 	end
 
 	if legal_pos then 
