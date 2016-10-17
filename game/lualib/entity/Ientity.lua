@@ -184,11 +184,14 @@ function Ientity:pathFind(dx, dz)
 	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz)
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
+	print(self.pathMove)
 	return self.useAStar
 end
 
 function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
+
+	if self:isDead() then return end
 	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
 	self.userAStar = false
 	self:setTargetVar( target )
@@ -571,13 +574,13 @@ function Ientity:calcAttack()
 end
 
 function Ientity:calcDefence()
-	self:setDefence(math.floor(
+	self:setDefence(math.floor((
 		math.floor(self.attDat.n32Defence * (1.0 + self:getMidDefencePc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidDefence() 
 		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Defence)
 		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Defence)
 		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Defence)
-		)/GAMEPLAY_PERCENT
+		)/GAMEPLAY_PERCENT)
 	)
 end
 

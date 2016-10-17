@@ -106,6 +106,9 @@ function IMapPlayer:calcStats()
 	self:calcHit()
 	self:calcMiss()
 
+	print(self.attDat)
+	print('+++++++++++++++++++')
+	print(g_shareData.lzmRepository)
 end
 
 function IMapPlayer:onDead()
@@ -176,7 +179,7 @@ function IMapPlayer:upgradeSkill(skillId)
 	if self.skillTable[skillId] == Quest.SkillMaxLevel then
 		return -1, 0
 	end
-	local costGold = Quest.GoldSkilllLv[self.skillTable[skillId]]
+	local costGold = Quest.GoldSkillLv[self.skillTable[skillId]]
 	if costGold > self:getGold() then
 		return -1, 0
 	end
