@@ -184,6 +184,8 @@ function IMapPlayer:upgradeSkill(skillId)
 		return -1, 0
 	end
 	--开始升级
+	--扣除金币
+	self:addGold(-costGold)
 	self.skillTable[skillId] = self.skillTable[skillId] + 1
 	return 0, self.skillTable[skillId]
 end
