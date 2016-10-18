@@ -144,8 +144,12 @@ function IMapPlayer:onExp()
 	if lv == 0 then
 		lv = sz + 1
 	end
-
+	local oldLv = self:getLevel()
 	self:setLevel(lv - 1)
+
+	if oldLv ~= self:getLevel() then
+		self:calcStats()
+	end
 end
 
 function IMapPlayer:addSkill(skillId)

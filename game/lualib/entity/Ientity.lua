@@ -11,6 +11,16 @@ local coroutine = require "skynet.coroutine"
 local Ientity = class("Ientity" , transfrom)
 
 local HP_MP_RECOVER_TIMELINE = 1000
+local UI_Stats_Show = {
+	Strength = true,
+	Minjie = true,
+	Zhili = true,
+	HpMax = true,
+	MpMax = true,
+	Attack = true,
+	Defence = true,
+	ASpeed = true,
+}
 
 local function register_stats(t, name)
 	t['s_mid_'..name] = 0
@@ -24,7 +34,9 @@ local function register_stats(t, name)
 	t['set' .. name] = function (self, v)
 		if v == self['s_'..name] then return end
 		self['s_'..name] = v
-		--self.StatsChange = true
+		if UI_Stats_Show[name] then
+			self.StatsChange = true
+		end
 	end
 	t['get' .. name] = function(self)
 		return self['s_'..name] 
