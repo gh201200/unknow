@@ -10,7 +10,6 @@ function recoverAffect:ctor(entity,source,data)
 end
 
 function recoverAffect:onEnter()
-	print("recoverAffect:onEnter()")
 	self.super.onEnter(self)
 	if self.data[4] == nil or self.data[5] == nil or self.data[5] == 0 then
 	--瞬发效果
@@ -29,13 +28,12 @@ function recoverAffect:onExec(dt)
 	end
 	self.triggerTime = self.triggerTime - dt
 	if self.triggerTime <= 0 then
-		self.triggerTime = self.data[3]
-		self:calRecover()
+	--	self.triggerTime = self.data[3]
+	--	self:calRecover()
 	end
 end
 
 function recoverAffect:onExit()
-	print("recoverAffect:onExit()")
 	self.super.onExit(self)
 end
 
@@ -44,10 +42,11 @@ function recoverAffect:calRecover()
 	local rateA = self.data[2] or 0
 	local rateB = self.data[3] or 0
 	local val = rateA * self.source:getAttack() + rateB * self.source:getZhili()
-	if self.data[1] == "cure_hp" then
-		self.owner.addHP(val)
-	elseif self.data[1] == "cure_mp" then
-		self.owner.addMP(val)
+	
+	if self.data[1] == "curehp" then
+		self.owner:addHp(val,HpMpMask.SkillHp)
+	elseif self.data[1] == "curemp" then
+		self.owner:addMp(val,HpMpMask.SkillHp)
 	end
 end
 

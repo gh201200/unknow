@@ -74,8 +74,12 @@ EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
 		targetId = targetId,
 		skillTime = spell.totalTime,
 		pos =  {x = 0,y = 0,z = 0} }
+	
 	if player:getTargetVar() ~= nil then
 		r.pos =  {x=math.ceil(player:getTargetVar().pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player:getTargetVar().pos.z*GAMEPLAY_PERCENT) }
+	end
+	if GET_SkillTgtRange(skilldata) == 2 or GET_SkillTgtRange(skilldata) == 3 then
+		r.pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT) }
 	end
 	return r
 end

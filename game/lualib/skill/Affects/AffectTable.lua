@@ -13,6 +13,10 @@ local loveAffect = require "skill.Affects.loveAffect"
 local getbloodAffect = require "skill.Affects.getbloodAffect"
 local chargeAffect = require "skill.Affects.chargeAffect"
 local electricAffect  = require "skill.Affects.electricAffect"
+local showAffect =  require "skill.Affects.showAffect"
+local profitAffect =  require "skill.Affects.profitAffect"
+local nodeadAffect = require "skill.Affects.nodeadAffect"
+
 local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
@@ -60,50 +64,57 @@ function AffectTable:triggerAtkAffects(tgt,bAtk)
 	end
 	for i = #affs,1,-1 do
 		local rdm = math.random_ext(1,100)
-		if affs[i].rate >= rdm then
+	--	if affs[i].rate >= rdm then
 			tgt.affectTable:buildAffects(self.owner,affs[i].affdata)	
-		end 
+	--	end 
 	end
 end
 
-function AffectTable:addAffect(source,data)
-	--print("addAffect",data)
+function AffectTable:addAffect(source,data,skillId)
 	local aff = nil
 	if data[1] == "ap" or data[1] == "str" or data[1] == "dex" or data[1] == "inte" then
-		aff = demageAffect.new(self.owner,source,data)
+		aff = demageAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "curehp" or data[1] == "curemp" then
-		aff = recoverAffect.new(self.owner,source,data)
+		aff = recoverAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "dizzy" then
-		aff = dizzyAffect.new(self.owner,source,data)
+		aff = dizzyAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "blink" then
-		aff = blinkAffect.new(self.owner,source,data)
+		aff = blinkAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "invincible" then
-		aff = invincibleAffect.new(self.owner,source,data)
+		aff = invincibleAffect.new(self.owner,source,data),skillId
 	elseif data[1] == "outskill" then
-		aff = outskillAffect.new(self.owner,source,data)
+		aff = outskillAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "noskill" then
-		aff = noskillAffect.new(self.owner,source,data)
+		aff = noskillAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "fly" then
-		aff = flyAffect.new(self.owner,source,data)
+		aff = flyAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "repel" then
-		aff = repelAffect.new(self.owner,source,data)
+		aff = repelAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "charge" then
-		aff = chargeAffect.new(self.owner,source,data)
+		aff = chargeAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "love" then
-		aff = loveAffect.new(self.owner,source,data)
+		aff = loveAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "getblood" then
-		aff = getbloodAffect.new(self.owner,source,data)
+		aff = getbloodAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "changeMod" then
-		aff = changeModAffect.new(self.owner,source,data)
+		aff = changeModAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "electric" then
-		aff = electricAffect.new(self.owner,source,data)
+		aff = electricAffect.new(self.owner,source,data,skillId)
+	elseif data[1] == "show" then
+		aff = showAffect.new(self.owner,source,data,skillId)
+	elseif data[1] == "nodead" then
+		aff = nodeadAffect.new(self.owner,source,data,skillId)
+	elseif data[1] == "profit" then
+		aff = profitAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "ctrl" or data[1] == "up_str" or data[1] == "up_dex" or data[1] == "up_inte" or data[1] == "hp" or data[1] == "mp"  or 
 	       data[1] == "atk" or data[1] == "def" or data[1] == "wsp" or data[1] == "mov" or data[1] == "rng" or 
 	       data[1] == "re_hp" or data[1] == "re_mp" or data[1] == "crit_rate" or data[1] == "hit_rate" or data[1] == "dod_rate" then
-		aff = statsAffect.new(self.owner,source,data)
+		aff = statsAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "getnew" then
-		aff = getnewAffect.new(self.owner,source,data)  
+		aff = getnewAffect.new(self.owner,source,data,skillId)  
 	end
+	return self:replaceAdd(aff)
+	--[[
 	if aff ~= nil then 
 		if data[1] == "dizzy" or data[1] == "invincible" or data[1] == "repel" then
 			--特殊效果 覆盖
@@ -116,16 +127,38 @@ function AffectTable:addAffect(source,data)
 		end
 		table.insert(self.affects,aff)
 	end
+	]]
 end
 
-function AffectTable:addAffectSyn(aff)
+function AffectTable:replaceAdd(aff)
+	for i=#self.affects,1,-1 do
+		if self.affects[i].data[1] == aff.data[1] and self.affects[i].source == aff.source then
+			if self.affects[i].skillId == aff.skillId and aff.effectTime > 0 then
+				table.remove(self.affects,i)
+			end
+		end 
+	end
 	table.insert(self.affects,aff)
+	return aff.projectId
+end
+function AffectTable:addAffectSyn(aff)
+	--table.insert(self.affects,aff)
+	self:replaceAdd(aff)
 	self.owner:advanceEventStamp(EventStampType.Affect)
 end
 
-function AffectTable:buildAffects(source,dataStr)
+function AffectTable:removeById(id)
+	for i=#self.affects,1,-1 do 
+		if self.affects[i].projectId == id then
+			self.affects[i]:onExit() --清除处理
+			table.remove(self.affects,i)
+		end
+	end
+end
+
+function AffectTable:buildAffects(source,dataStr,skillId)
 	local tb = {}
-	--print("affectTable dataStr",dataStr)
+	local projectids = {}
 	for v in string.gmatch(dataStr,"%[(.-)%]") do
 		local data = {}
 		for tp,vals in string.gmatch(v,"(%a+)%:(.+)") do
@@ -138,9 +171,11 @@ function AffectTable:buildAffects(source,dataStr)
 				end
 			end 
 		end
-		self:addAffect(source,data) 
+		local proId = self:addAffect(source,data,skillId) 
+		table.insert(projectids,proId)
 	end
-	self.owner:advanceEventStamp(EventStampType.Affect)		
+	self.owner:advanceEventStamp(EventStampType.Affect)
+	return projectids		
 end
 
 

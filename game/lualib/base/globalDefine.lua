@@ -59,6 +59,7 @@ AffectState = {
 	NoSpell				= 1 << 2, --不能放技能
 	Invincible			= 1 << 3, --无敌状态
 	OutSkill			= 1 << 4, --魔免状态
+	NoDead				= 1 << 5,
 }
 ErrorCode = {
 	EC_None				= 0,	--没有错误

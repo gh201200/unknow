@@ -357,6 +357,9 @@ function Ientity:onForceMove(dt)
 	dt = dt / 1000
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
+	if Map.IS_SAME_GRID(self.pos,self:getTarget().pos) then
+		self:stand()
+	end
 	self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
 	self.dir:sub(self.pos)
 	self.dir:normalize()
@@ -415,6 +418,12 @@ function Ientity:addHp(_hp, mask, source)
 	end
 	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
+	--不死状态
+	if self.affectState == AffectState.NoDead then
+		if self:getHp() <= 0 then
+			self:setHp(1)
+		end
+	end
 	if self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		--self.HpMpChange = true
@@ -593,7 +602,7 @@ end
 
 function Ientity:calcMSpeed()
 	self:setMSpeed(math.floor(
-		self.attDat.n32MSpeed * (1.0 + self:getMSpeedPc()/GAMEPLAY_PERCENT))
+		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc()/GAMEPLAY_PERCENT))
 		+ self:getMidMSpeed() 
 	)
 end
@@ -673,7 +682,8 @@ function Ientity:canCast(id)
 	local skilldata = g_shareData.skillRepository[id]
 	--如果是有目标类型(4 针对自身立即释放)
 	local tgtType = GET_SkillTgtType(skilldata)
-	if tgtType ~= 4 then
+	local tgtRange = GET_SkillTgtRange(skilldata)
+	if tgtType ~= 4 and tgtRange ~= 2 and tgtRange ~= 3 and tgtRange ~= 7 then
 		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
 		if skilldata.bNeedTarget == true then
 			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end--目标不存在
@@ -731,9 +741,15 @@ function Ientity:setCastSkillId(id)
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
         if errorcode ~= 0 then return errorcode end
-	if id == 32002 then
+	if skilldata.n32Type == 41 or skilldata.bActive == false then
 		self:castSkill()
 	end 
+	local type_range = GET_SkillTgtRange(skilldata)
+	local type_target = GET_SkillTgtType(skilldata)
+	if type_range == 2 then
+		print("setCastSkill",id)
+		self:castSkill()	
+	end
 end
 function Ientity:castSkill()
 	self.CastSkillId = self.ReadySkillId
@@ -742,6 +758,7 @@ function Ientity:castSkill()
 	local modoldata = self.modelDat 
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
+	print("castSkill",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}
 	if skilldata.bCommonSkill == false then

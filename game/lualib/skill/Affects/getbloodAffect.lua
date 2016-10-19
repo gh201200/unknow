@@ -15,6 +15,7 @@ end
 
 function getbloodAffect:onEnter()
 	self.super.onEnter(self)
+	print("getbloodAffect:onEnter")
 	local demage = self:calDemage()
 	--扣血
 	self.owner:addHp(demage, HpMpMask.SkillHp, self.source)

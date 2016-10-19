@@ -26,7 +26,7 @@ function electricAffect:onEnter()
 	if self.root == self.source then
 		local src = self.owner
 		self.tgts[self.owner.serverId] = 1
-		for i=1,3,1 do
+		for i=1,2,1 do
 			local tgt = self:findNearTgt(src)
 			if tgt == nil then break end
 			self.tgts[tgt.serverId] = 1

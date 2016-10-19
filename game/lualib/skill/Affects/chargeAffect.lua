@@ -4,7 +4,8 @@ local chargeAffect = class("chargeAffect",Affect)
 local transfrom = require "entity.transfrom"
 require "globalDefine" 
 
-function chargeAffect:ctor(owner,source,data)
+function chargeAffect:ctor(owner,source,data,skillId)
+	print("chargeAffect")
 	self.super.ctor(self,owner,source,data)
 	self.effectId = data[3] or 0
 	self.distance = data[2] or 0
