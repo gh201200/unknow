@@ -118,7 +118,7 @@
 		<n32position>0</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
-		<n32Redius>0</n32Redius>
+		<n32Redius>1</n32Redius>
 	</item>
 	<item id="20012">
 		<n32type>4</n32type>
