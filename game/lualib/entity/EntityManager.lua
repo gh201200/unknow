@@ -143,17 +143,41 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 			end
 		end
 	end
-	local getRangeEntitys = function(tab,basepos,range,tp)
-		tp = tp or "round" --默认圆形区域
+	local getRangeEntitys = function(tab,basepos,range)
 		local ret = {}
-		if tp == "round" then
-			for _k,_v  in pairs(tab) do
-				local disVec = _v.pos:return_sub(basepos)
-				local disLen = disVec:length()	
-				if disLen <= range then
-					table.insert(ret,_v)
-				end
+		for _k,_v  in pairs(tab) do
+			local disVec = _v.pos:return_sub(basepos)
+			local disLen = disVec:length()	
+			if disLen <= range then
+				table.insert(ret,_v)
 			end
+		end
+		return ret
+	end
+	local getEntityRectange = function(tab,basepos,tgtpos,range)
+	--	print("getEntityRectange",range)
+		local w = 2/2
+		local h = 2
+		local ret = {}
+		--basepos = vector3.create(0,0,0)
+		--tgtpos = vector3.create(1,0,0)
+		local dir1 = tgtpos:return_sub(basepos)
+		dir1:normalize()
+		local dir2 = vector3.create(dir1.z,0,-dir1.x)
+		local dot = {}
+		dot[0] = basepos:return_add( dir2:return_mul_num(w) )
+		dot[3] = basepos:return_sub( dir2:return_mul_num(w))
+		local basepos2 = basepos:return_add( dir1:return_mul_num(h))
+		dot[1] = basepos2:return_add( dir2:return_mul_num(w) )
+		dot[2] = basepos2:return_sub( dir2:return_mul_num(w))
+	--	for _k,_v in pairs(dot) do
+	--		print("dot",_k,_v.x,_v.y,_v.z)	
+	--	end
+		for _k,_v in pairs(tab) do
+			local isIn = ptInRect(_v.pos,dot) 
+			if isIn == true then
+				table.insert(ret,_v)		
+			end	
 		end
 		return ret
 	end
@@ -164,7 +188,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	elseif type_range  == 2 then
 		retTb = getRangeEntitys(tmpTb,source.pos,skilldata.n32Radius / 10000 )
 	elseif type_range == 3 then
-		
+		retTb = getEntityRectange(tmpTb,source.pos,source:getTarget().pos,skilldata.n32Radius)
 	elseif type_range == 4 then
 		if source:getTarget() ~= nil then
 			--print("gettarget is nil")

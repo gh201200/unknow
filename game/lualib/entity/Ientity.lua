@@ -776,7 +776,6 @@ function Ientity:castSkill()
 	local modoldata = self.modelDat 
 	assert(skilldata and modoldata)
 	local errorcode = self:canCast(id) 
-	print("castSkill",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}
 	if skilldata.bCommonSkill == false then
@@ -794,7 +793,7 @@ function Ientity:castSkill()
 	self.cooldown:addItem(id) --加入cd
 	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
-	self:advanceEventStamp(EventStampType.CastSkill)
+	--self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
 end
 

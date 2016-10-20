@@ -124,22 +124,6 @@ query_server_id 2 {
 		server_id 0 : integer
 	}
 }
-
-query_event_CastSkill 3 {
-	request {
-		id 0 : integer
-		type 1 : integer
-		stamp 2 : integer
-	}
-	response {
-		event_stamp 0 : EventStamp
-		skillId 1 : integer
-		skillTime 2 : integer
-		targetId 3 : integer 
-		pos 4 : Vector3
-	}
-}
-
 query_event_stats 4 {
 	request {
 		id 0 : integer
@@ -456,6 +440,16 @@ delPickItem 2011 {
         }
 }
 
+CastingSkill 3001 {
+	request {
+		srcId 0 : integer
+		skillId 1 : integer
+		state	2 : integer
+		actionTime 3 : integer
+		targetId 4 : integer
+		targetPos 5 : Vector3 
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)
