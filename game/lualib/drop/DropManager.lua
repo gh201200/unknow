@@ -134,16 +134,22 @@ function DropManager:useItem(player, sid)
 			errorCode = 1	--已被使用
 			break
 		end
+		local skillId = itemData.n32Retain1
+		
+		if itemData.n32Type == 1 then
+			skillId = player:getGodSkill()
+		end
 		
 		if itemData.n32Type == 0 or itemData.n32Type == 1 then
-			if player.skillTable[itemData.n32Retain1] == Quest.SkillMaxLevel then
+			if player.skillTable[skillId] == Quest.SkillMaxLevel then
 				errorCode = 2	--已达最高等级
 				break
 			end
-			if table.size(player.skillTable) == Quest.SkillMaxNum then
+			if not player.skillTable[skillId] and table.size(player.skillTable) == Quest.SkillMaxNum then
 				errorCode = 3
 			end
 		end
+		
 	until true
 	if errorCode ~= 0 then
 		return errorCode
