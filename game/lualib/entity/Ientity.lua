@@ -699,7 +699,7 @@ function Ientity:canCast(id)
 	--如果是有目标类型(4 针对自身立即释放)
 	local tgtType = GET_SkillTgtType(skilldata)
 	local tgtRange = GET_SkillTgtRange(skilldata)
-	if tgtType ~= 4 and tgtRange ~= 2 and tgtRange ~= 3 and tgtRange ~= 7 then
+	if tgtType ~= 4 and tgtRange ~= 2 and  tgtRange ~= 7 then
 		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
 		if skilldata.bNeedTarget == true then
 			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end--目标不存在
