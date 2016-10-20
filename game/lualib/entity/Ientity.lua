@@ -699,7 +699,7 @@ function Ientity:canCast(id)
 	--如果是有目标类型(4 针对自身立即释放)
 	local tgtType = GET_SkillTgtType(skilldata)
 	local tgtRange = GET_SkillTgtRange(skilldata)
-	if tgtType ~= 4 and tgtRange ~= 2 and tgtRange ~= 3 and tgtRange ~= 7 then
+	if tgtType ~= 4 and tgtRange ~= 2 and  tgtRange ~= 7 then
 		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
 		if skilldata.bNeedTarget == true then
 			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end--目标不存在
@@ -756,10 +756,16 @@ function Ientity:setCastSkillId(id)
 	print('set cast skill id = ', id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
+	if skilldata.bActive == false then	
+		--测试使用
+		self.spell:onCastNoActiveSkill(skilldata)
+		return
+	end
 	local errorcode = self:canSetCastSkill(id) 
         print('errorcode = ', errorcode)
 	if errorcode ~= 0 then return errorcode end
-	if skilldata.n32Type == 41 or skilldata.bActive == false then
+	if skilldata.n32Type == 41 then
+		--针对自身立即释放
 		self:castSkill()
 	end 
 	local type_range = GET_SkillTgtRange(skilldata)

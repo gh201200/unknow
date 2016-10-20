@@ -128,7 +128,7 @@ function spell:onTriggerSkillAffect()
 	end
 	--自身效果
 	local selfEffects = self.skilldata.szMyAffect
-	if selfEffects ~= ""  then
+	if selfEffects ~= ""  and selfEffects ~= nil then
 		local targets = { self.source }
 		self:trgggerAffect(selfEffects,targets)
 	end
@@ -172,9 +172,28 @@ end
 --释放被动技能
 function spell:onCastNoActiveSkill(skilldata)
 	if skilldata.bActive == false then
-		self:onTriggerSkillAffect()
-	else
-		print("主动技能不能当被动释放")
+		--print("noactive:",skilldata)
+		--自身效果
+		local selfEffects = self.skilldata.szMyAffect
+		if selfEffects ~= ""  and selfEffects ~= nil then
+			local targets = { self.source }
+			self:trgggerAffect(selfEffects,targets)
+		end
+		--目标效果
+		if self.skilldata.szAtkBe ~= "" and  self.skilldata.szAtkBe ~= nil then
+			--在后续普攻过程中加成的效果
+			local tmpTb = {}
+			local tmpTb = string.split(self.skilldata.szAtkBe,",")
+			local item = {}
+			item.rate = tonumber(tmpTb[2])
+			item.lifeTime = tonumber(tmpTb[3])
+			item.affdata = self.skilldata.szTargetAffect
+			if tonumber(tmpTb[1]) == 1 then
+				table.insert(self.source.affectTable.AtkAffects,item)
+			elseif tonumber(tmpTb[1]) == 0 then
+				table.insert(self.source.affectTable.bAtkAffacts,item)
+			end 
+		end
 	end
 end
 
