@@ -96,7 +96,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:1,-20,0,3000,20002]</szTargetAffect>
+		<szTargetAffect>[def:-1,-20,0,3000,20002]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -798,7 +798,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ctrl:1,0,0,2000,20028][ap:1,30,1,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>7500</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1004,10 +1004,10 @@
 		<szTypeInfo>变大</szTypeInfo>
 		<szDescribe>自身模型变大,攻血防增加</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20034</n32MyEffect>
+		<n32MyEffect>20038</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[hp:1.5,0,30000,20034][def:1.5,0,0,3000,20034]</szMyAffect>
+		<szMyAffect>[hp:1.5,0,30000,20039][def:1.5,0,0,3000,20039]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1112,7 +1112,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[blink:3,1000,20035]</szMyAffect>
+		<szMyAffect>[blink:3,1000,20046]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1147,7 +1147,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[def:1,300,0,4000,20035]</szMyAffect>
+		<szMyAffect>[def:1,300,0,4000,20007]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1426,7 +1426,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,20041]</szTargetAffect>
+		<szTargetAffect>[ap:1.5,0,0,0,20041][blink:2,0,20046]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1462,7 +1462,7 @@
 		<n32MyEffect>20042</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[def:1,5,0,0,3000,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[profit:3000,20047]</szMyAffect>
 		<n32Radius>5000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
