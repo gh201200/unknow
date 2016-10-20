@@ -23,7 +23,7 @@ function DropManager:update()
 			for i=#self.drops , 1, -1 do
 				local q = self.drops[i]
 				dropVec:set(q.px/GAMEPLAY_PERCENT,0,q.pz/GAMEPLAY_PERCENT)
-				if vector3.len(v.pos, dropVec) < 0.5 then
+				if vector3.len(v.pos, dropVec) < 0.3 then
 					if v:isRed() then 	
 						table.insert(self.redItems, q)
 					else
@@ -52,8 +52,12 @@ local rotate = {
 }
 
 function DropManager:makeDrop(entity)
-	local pindex = math.random(0, 7)
+	--local pindex = math.random(0, 7)
 	local items = {}
+	local offset = 8000
+	if entity.attDat.n32Type == 1 then
+		offset = 20000
+	end
 	for k, v in pairs(entity.attDat.szDrop) do
 		local drop = g_shareData.itemDropPackage[v]
 		local rd = math.random(1, drop.totalRate)
@@ -69,36 +73,43 @@ function DropManager:makeDrop(entity)
 		if r then
 			local itemId = r.n32ItemId
 			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
-			local item = {
-				itemId = itemId,
-				itemNum = itemNum,
-			}
-			local loop = 0
-			repeat
-				dropVec:set(entity.dir.x, entity.dir.y, entity.dir.z)
-				dropVec:rot(rotate[pindex])
-				dropVec:mul_num(0.8)
-				dropVec:add(entity.pos)
-				pindex = pindex + 1
-				if pindex > 7 then pindex = 0 end
-				if Map.legal(Map.POS_2_GRID(dropVec.x), Map.POS_2_GRID(dropVec.z)) then
-					break
+			for i=1, itemNum do
+				local item = {
+					itemId = itemId,
+					itemNum = 1,
+				}
+				local loop = 0
+				repeat
+					--dropVec:set(entity.dir.x, entity.dir.y, entity.dir.z)
+					--dropVec:rot(rotate[pindex])
+					--dropVec:mul_num(offset)
+					--local sp = math.random_ext(1, 360)
+					local sr_x = math.random(-offset, offset) / 10000
+					local sr_z = math.random(-offset, offset) / 10000
+					dropVec:set(entity.pos.x+sr_x, entity.pos.y, entity.pos.z+sr_z)
+					--pindex = pindex + 1
+					--if pindex > 7 then pindex = 0 end
+					if Map.legal(Map.POS_2_GRID(dropVec.x), Map.POS_2_GRID(dropVec.z)) then
+						break
+					end
+					loop = loop + 1
+				until loop >= 7
+
+				if loop == 8 then
+					dropVec:set(entity.pos.x, entity.pos.y, entity.pos.z)
 				end
-				loop = loop + 1
-			until loop >= 8
-			if loop == 8 then
-				dropVec:set(entity.pos.x, entity.pos.y, entity.pos.z)
+				item.px = math.floor(dropVec.x * GAMEPLAY_PERCENT)
+				item.pz = math.floor(dropVec.z * GAMEPLAY_PERCENT)
+				item.sid = assin_server_id()
+				table.insert(self.drops, item)
+				table.insert(items, item)
 			end
-			item.px = math.floor(dropVec.x * GAMEPLAY_PERCENT)
-			item.pz = math.floor(dropVec.z * GAMEPLAY_PERCENT)
-			item.sid = assin_server_id()
-			table.insert(self.drops, item)
-			table.insert(items, item)
 		else
 			syslog.errf("make drop failed: package[%d], rd[%d]", v, rd)
 		end
 	end
 	if #items > 0 then
+		print(items)
 		EntityManager:sendToAllPlayers("makeDropItem", {items = items})
 	end
 end
@@ -128,6 +139,9 @@ function DropManager:useItem(player, sid)
 			if player.skillTable[itemData.n32Retain1] == Quest.SkillMaxLevel then
 				errorCode = 2	--已达最高等级
 				break
+			end
+			if table.size(player.skillTable) == Quest.SkillMaxNum then
+				errorCode = 3
 			end
 		end
 	until true

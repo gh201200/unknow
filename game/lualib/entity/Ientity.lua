@@ -753,10 +753,12 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
+	print('set cast skill id = ', id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	local errorcode = self:canSetCastSkill(id) 
-        if errorcode ~= 0 then return errorcode end
+        print('errorcode = ', errorcode)
+	if errorcode ~= 0 then return errorcode end
 	if skilldata.n32Type == 41 or skilldata.bActive == false then
 		self:castSkill()
 	end 

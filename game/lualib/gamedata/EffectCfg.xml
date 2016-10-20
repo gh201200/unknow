@@ -252,7 +252,7 @@
 	</item>
 	<item id="20025">
 		<n32type>3</n32type>
-		<szassert>Quntizhiliao</szassert>
+		<szassert>Quntizhiliao_1</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
@@ -271,9 +271,9 @@
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20027">
-		<n32type>4</n32type>
+		<n32type>3</n32type>
 		<szassert>Zhenta_1</szassert>
-		<n32time>1000</n32time>
+		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<szshader></szshader>
