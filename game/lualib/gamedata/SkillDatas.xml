@@ -26,7 +26,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,0,0,0,60001]</szTargetAffect>
+		<szTargetAffect>[ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -43,7 +43,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>xixue.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -78,7 +78,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>pojia.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -113,7 +113,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>beiji.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -148,7 +148,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>icon.png.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -183,7 +183,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>shuangjiasu.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -202,7 +202,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[wsp:0.5,0,0,3600000,0][mov:1.5,0,0,3600000,20004]</szMyAffect>
+		<szMyAffect>[wsp:0.5,0,0,3600000,0][mov:0.5,0,0,3600000,20004]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -218,7 +218,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>shandianlian.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -253,7 +253,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>xiaolan.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -288,7 +288,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>zhican.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -306,7 +306,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:-1.5,0,0,3000,0][mov:-1.5,0,0,3000,20006]</szTargetAffect>
+		<szTargetAffect>[wsp:-0.5,0,0,3000,0][mov:-0.5,0,0,3000,20006]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,75,3600000</szAtkBe>
@@ -323,7 +323,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>shanbi.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -358,7 +358,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>duye.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -393,7 +393,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>fenshen.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -427,8 +427,8 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<n32Range>60000</n32Range>
+		<icon>kongzhiqiu.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -457,13 +457,13 @@
 	</item>
 	<item id="2000201">
 		<n32SeriId>20002</n32SeriId>
-		<szName>变羊</szName>
+		<szName>变猪</szName>
 		<n32Lv>1</n32Lv>
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
 		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<icon>bianzhu.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -498,7 +498,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<icon>jinmo.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -518,7 +518,7 @@
 		<n32TargetEffect>20013</n32TargetEffect>
 		<szTargetAffect>[ctrl:4,0,4000,20014]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>10000</n32Radius>
+		<n32Radius>5000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -533,7 +533,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<icon>bingbao.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>200</n32MpCost>
@@ -553,7 +553,7 @@
 		<n32TargetEffect>20015</n32TargetEffect>
 		<szTargetAffect>[inte:1,200,0,0,20016][mov:-1.5,0,3000,20016]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>10000</n32Radius>
+		<n32Radius>5000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -568,7 +568,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<icon>chongjibo.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20019</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -588,7 +588,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[charge:2,20018][inte:1.5,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>2,2</n32Radius>
+		<n32Radius>1,1</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -603,7 +603,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>30000</n32Range>
-		<icon>icon.png</icon>
+		<icon>huobao.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20020</n32WarningEffect>
 		<n32MpCost>150</n32MpCost>
@@ -623,7 +623,7 @@
 		<n32TargetEffect>20021</n32TargetEffect>
 		<szTargetAffect>[inte:1,200,0,1000,20022]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>7500</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -638,7 +638,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
 		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<icon>luolei.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -673,7 +673,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>quntizhiliao.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>200</n32MpCost>
@@ -693,7 +693,7 @@
 		<n32TargetEffect>20025</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -708,7 +708,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>zhaohuanshuanglang.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -743,7 +743,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>jinshen.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>200</n32MpCost>
@@ -778,7 +778,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>zhenta.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -798,7 +798,7 @@
 		<n32TargetEffect>20027</n32TargetEffect>
 		<szTargetAffect>[ctrl:1,0,0,2000,20028][ap:1,30,1,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>7500</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -807,13 +807,13 @@
 	</item>
 	<item id="3000201">
 		<n32SeriId>30002</n32SeriId>
-		<szName>辉耀</szName>
+		<szName>电场</szName>
 		<n32Lv>1</n32Lv>
 		<bActive>0</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>dianchang.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -833,7 +833,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,30,1,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>10000</n32Radius>
+		<n32Radius>5000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -842,13 +842,13 @@
 	</item>
 	<item id="3000301">
 		<n32SeriId>30003</n32SeriId>
-		<szName>反弹</szName>
+		<szName>反伤</szName>
 		<n32Lv>1</n32Lv>
 		<bActive>0</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>fanshang.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -883,7 +883,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>60000</n32Range>
-		<icon>icon.png</icon>
+		<icon>chongfeng.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -903,7 +903,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,30,0,0,0]</szTargetAffect>
 		<szMyAffect>[charge:3,20031]</szMyAffect>
-		<n32Radius>10000</n32Radius>
+		<n32Radius>5000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -918,7 +918,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>hujia.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -953,7 +953,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<icon>chaofeng.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -973,7 +973,7 @@
 		<n32TargetEffect>20033</n32TargetEffect>
 		<szTargetAffect>[love:2000,20034]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -988,7 +988,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>24000</n32Range>
-		<icon>icon.png</icon>
+		<icon>bianda.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -1023,7 +1023,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>busi.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -1058,7 +1058,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>30000</n32Range>
-		<icon>icon.png</icon>
+		<icon>zhaohuangouxiong.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
@@ -1093,7 +1093,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>shanshuo.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1128,7 +1128,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>hudun.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1163,7 +1163,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>jiagongji.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1183,7 +1183,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[atk：1,50,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1198,7 +1198,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>jiashuangsu.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1218,7 +1218,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[wsp:1.5,0,3600000,0][mov:1.5,0,3600000,20004]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1233,7 +1233,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>jiahujia.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1253,7 +1253,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[def:1,5,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1268,7 +1268,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>jianshuangsu.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1288,7 +1288,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[wsp:-0.5,0,0,3600000,0][mov:-0.5,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1303,7 +1303,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>jiangongji.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1323,7 +1323,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[atk：-1,-50,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1338,7 +1338,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
-		<icon>icon.png</icon>
+		<icon>jianhujia.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
@@ -1358,7 +1358,42 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[def:-1,-50,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
-		<n32Radius>20000</n32Radius>
+		<n32Radius>10000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="30002">
+		<n32SeriId>30001</n32SeriId>
+		<szName>远程普攻</szName>
+		<n32Lv>1</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>1</bCommonSkill>
+		<bNeedTarget>1</bNeedTarget>
+		<n32Range>20000</n32Range>
+		<icon>icon.png</icon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>0</n32MpCost>
+		<n32CD>1000</n32CD>
+		<n32TriggerTime>400</n32TriggerTime>
+		<n32ActionTime>1000</n32ActionTime>
+		<szAction>attack</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>31</n32Type>
+		<szTypeInfo>远程普攻</szTypeInfo>
+		<szDescribe>普攻</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:1,0,0,0,0]</szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>

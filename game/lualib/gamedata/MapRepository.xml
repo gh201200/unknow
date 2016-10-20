@@ -9,8 +9,8 @@
 		<szBornPos6>24300,144700</szBornPos6>
 		<szScene>pvp001</szScene>
 		<n32RedMonsterId>200001</n32RedMonsterId>
-		<szRedHomePos>34000,33000</szRedHomePos>
+		<szRedHomePos>34000,30000</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
-		<szBlueHomePos>34000,139000</szBlueHomePos>
+		<szBlueHomePos>34000,130000</szBlueHomePos>
 	</item>
 </info>

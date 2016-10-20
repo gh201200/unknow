@@ -234,7 +234,7 @@ function spell:Cast(skillid,target,pos)
 		target = target or self.source:getTarget()
 		self.targets = {target}
 	end
-	print("spell:cast")
+	print("spell:cast = ", skillid)
 	self:onBegin()
 end
 return spell

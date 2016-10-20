@@ -18,10 +18,454 @@
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 	</item>
+	<item id="1001">
+		<n32ItemId>60004</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60005</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60006</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60007</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60008</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60009</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60010</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1001">
+		<n32ItemId>60011</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
 	<item id="1002">
+		<n32ItemId>60012</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60013</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60014</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60015</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60016</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60017</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60018</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60019</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60020</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1002">
+		<n32ItemId>60021</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60022</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60023</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60024</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60025</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60026</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60027</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60028</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60029</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1003">
+		<n32ItemId>60030</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60031</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60032</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60033</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60034</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60035</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60036</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60037</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1004">
+		<n32ItemId>60038</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60001</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60002</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60003</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60004</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60005</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60006</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60007</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60008</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60009</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60010</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60011</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60012</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60013</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60014</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60015</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60016</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60017</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60018</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60019</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60020</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60021</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60022</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60023</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60024</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60025</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60026</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60027</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60028</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60029</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60030</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60031</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60032</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60033</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60034</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60035</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60036</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60037</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1005">
+		<n32ItemId>60038</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+	</item>
+	<item id="1101">
 		<n32ItemId>61001</n32ItemId>
 		<n32Rate>1000</n32Rate>
 		<n32MinNum>5</n32MinNum>
 		<n32MaxNum>5</n32MaxNum>
+	</item>
+	<item id="1102">
+		<n32ItemId>61001</n32ItemId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
 	</item>
 </info>

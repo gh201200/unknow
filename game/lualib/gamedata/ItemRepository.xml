@@ -1,395 +1,350 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="60001">
-		<szIcon>i60001</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>xixue.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>30102</n32Retain1>
-		<szRetain2>3, 1, 2</szRetain2>
+		<n32Retain1>1000101</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60002">
-		<szIcon>i60002</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>pojia.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>30201</n32Retain1>
-		<szRetain2>3</szRetain2>
+		<n32Retain1>1000201</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60003">
-		<szIcon>i60003</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>beiji.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>30301</n32Retain1>
-		<szRetain2>3, 1, 2</szRetain2>
+		<n32Retain1>1000301</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60004">
-		<szIcon>i60004</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>icon.png.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>32001</n32Retain1>
-		<szRetain2>2, 1</szRetain2>
+		<n32Retain1>1000401</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60005">
-		<szIcon>i60005</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>shuangjiasu.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>1000501</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60006">
-		<szIcon>i60006</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>shandianlian.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>1000601</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60007">
-		<szIcon>i60007</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>xiaolan.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>1000701</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60008">
-		<szIcon>i60008</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>zhican.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>1000801</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60009">
-		<szIcon>i60009</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>shanbi.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>1000901</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60010">
-		<szIcon>i60010</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>duye.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>1001001</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60011">
-		<szIcon>i60011</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>fenshen.png</szIcon>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>1001101</n32Retain1>
+		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60012">
-		<szIcon>i60012</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>kongzhiqiu.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000101</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60013">
-		<szIcon>i60013</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>bianzhu.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000201</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60014">
-		<szIcon>i60014</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jinmo.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000301</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60015">
-		<szIcon>i60015</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>bingbao.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000401</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60016">
-		<szIcon>i60016</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>chongjibo.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000501</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60017">
-		<szIcon>i60017</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>huobao.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000601</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60018">
-		<szIcon>i60018</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>luolei.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000701</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60019">
-		<szIcon>i60019</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>quntizhiliao.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000801</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60020">
-		<szIcon>i60020</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>zhaohuanshuanglang.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2000901</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60021">
-		<szIcon>i60021</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jinshen.png</szIcon>
+		<szModule>JiNengshi_Z</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>2001001</n32Retain1>
+		<szRetain2>3</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60022">
-		<szIcon>i60022</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>zhenta.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000101</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60023">
-		<szIcon>i60023</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>dianchang.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000201</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60024">
-		<szIcon>i60024</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>fanshang.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000301</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60025">
-		<szIcon>i60025</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>chongfeng.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000401</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60026">
-		<szIcon>i60026</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>hujia.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000501</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60027">
-		<szIcon>i60027</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>chaofeng.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000601</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60028">
-		<szIcon>i60028</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>bianda.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000701</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60029">
-		<szIcon>i60029</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>busi.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000801</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60030">
-		<szIcon>i60030</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>zhaohuangouxiong.png</szIcon>
+		<szModule>JiNengshi_L</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>3000901</n32Retain1>
+		<szRetain2>1</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60031">
-		<szIcon>i60031</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>shanshuo.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000101</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60032">
-		<szIcon>i60032</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>hudun.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000201</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60033">
-		<szIcon>i60033</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jiagongji.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000301</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60034">
-		<szIcon>i60034</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jiashuangsu.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000401</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60035">
-		<szIcon>i60035</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jiahujia.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000501</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60036">
-		<szIcon>i60036</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jianshuangsu.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000601</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60037">
-		<szIcon>i60037</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jiangongji.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000701</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60038">
-		<szIcon>i60038</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>jianhujia.png</szIcon>
+		<szModule>JiNengshi_T</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="60039">
-		<szIcon>i60039</szIcon>
-		<szModule>JiNengshi</szModule>
-		<szPickAni></szPickAni>
-		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="60040">
-		<szIcon>i60040</szIcon>
-		<szModule>JiNengshi</szModule>
-		<szPickAni></szPickAni>
-		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="60041">
-		<szIcon>i60041</szIcon>
-		<szModule>JiNengshi</szModule>
-		<szPickAni></szPickAni>
-		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="60042">
-		<szIcon>i60042</szIcon>
-		<szModule>JiNengshi</szModule>
-		<szPickAni></szPickAni>
-		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="60043">
-		<szIcon>i60043</szIcon>
-		<szModule>JiNengshi</szModule>
-		<szPickAni></szPickAni>
-		<n32Type>0</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
+		<n32Retain1>4000801</n32Retain1>
+		<szRetain2>4</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
 	<item id="61001">
-		<szIcon>i61001</szIcon>
-		<szModule>JiNengshi</szModule>
+		<szIcon>tianfushi.png</szIcon>
+		<szModule>Tianfushi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>1</n32Type>
 		<n32Retain1>0</n32Retain1>

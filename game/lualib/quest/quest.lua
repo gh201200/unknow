@@ -4,6 +4,10 @@ local Quest = {
 	AutoGainCards = {
 		12011,
 		11021,
+		13031,
+		13051,
+		14051,
+		14021,
 	},
 	
 	--英雄体力（分钟）
@@ -36,11 +40,14 @@ local Quest = {
 	--技能最高等级
 	SkillMaxLevel = 4,
 
+	--英雄技能数量
+	SkillMaxNum = 5,
+
 	--同阵营金币分享百分比
 	ShareGoldPercent = 0.4,
 	
 	--同阵营经验分享百分比
-	ShareExpPercent = 0.4,
+	ShareExpPercent = 0.67,
 
 	--英雄复活时间系数(ms)
 	RaiseTime = 3000,
