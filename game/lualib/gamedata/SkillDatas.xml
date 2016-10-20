@@ -7,7 +7,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>10000</n32Range>
+		<n32Range>6000</n32Range>
 		<icon>icon.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -1372,7 +1372,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>20000</n32Range>
+		<n32Range>30000</n32Range>
 		<icon>icon.png</icon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>

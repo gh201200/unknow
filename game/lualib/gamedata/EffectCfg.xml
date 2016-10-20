@@ -252,7 +252,7 @@
 	</item>
 	<item id="20025">
 		<n32type>3</n32type>
-		<szassert>Quntizhiliao_1</szassert>
+		<szassert>Quntizhiliao</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
@@ -393,6 +393,66 @@
 	<item id="20039">
 		<n32type>3</n32type>
 		<szassert>Bianda_2</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>
+	<item id="20040">
+		<n32type>3</n32type>
+		<szassert>Shanguang_hit_01</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>
+	<item id="20041">
+		<n32type>3</n32type>
+		<szassert>Shanguang_skill_03_2</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>
+	<item id="20042">
+		<n32type>3</n32type>
+		<szassert>Houde_skill_03_1</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>
+	<item id="20043">
+		<n32type>3</n32type>
+		<szassert>Wuya_skill_03_1</szassert>
+		<n32time>4000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>
+	<item id="20044">
+		<n32type>3</n32type>
+		<szassert>Wuya_skill_03_1_hit</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>
+	<item id="20045">
+		<n32type>3</n32type>
+		<szassert>Zhongbiaogong_skill_03_1</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
