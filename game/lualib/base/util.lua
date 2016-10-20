@@ -23,16 +23,16 @@ function mClamp(a, min, max)
 end
 
 function ptInRect(p,rectPts)
-	local size = #rectPts
+	local size = 4 
 	local ncross = 0
-	for i=1,size,1 do
+	for i=0,size-1,1 do
 		while true do
 			local p1 = rectPts[i]
 			local p2 = rectPts[(i+1)% size ]
-			if p1.y == p2.y then break end
-			if p.y >= math.max(p1.y,p2.y) then break end
-			if p.y < math.min(p1.y,p2.y) then break end
-			local x = (p.y - p1.y) * (p2.x - p1.x) / (p2.y - p1.y) + p1.x
+			if p1.z == p2.z then break end
+			if p.z >= math.max(p1.z,p2.z) then break end
+			if p.z < math.min(p1.z,p2.z) then break end
+			local x = (p.z - p1.z) * (p2.x - p1.x) / (p2.z - p1.z) + p1.x
 			if x > p.x then
 				ncross = ncross + 1
 			end

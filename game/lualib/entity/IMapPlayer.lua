@@ -105,10 +105,6 @@ function IMapPlayer:calcStats()
 	self:calcBaoji()
 	self:calcHit()
 	self:calcMiss()
-
-	print(self.attDat)
-	print('+++++++++++++++++++')
-	print(g_shareData.lzmRepository)
 end
 
 function IMapPlayer:onDead()
@@ -157,8 +153,11 @@ function IMapPlayer:addSkill(skillId)
 		self.skillTable[skillId] = self.skillTable[skillId] + 1
 	else
 		self.skillTable[skillId] = 1
-	end
-	
+		local skilldata = g_shareData.skillRepository[skillId]
+		if skilldata.bActive == 0 then	
+			self.spell:onCastNoActiveSkill(skilldata) --释放被动buff
+		end 
+	end		
 	local msg = {
 		skillId = skillId,
 		level = self.skillTable[skillId],

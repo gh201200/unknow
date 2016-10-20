@@ -24,7 +24,7 @@ for k, p in pairs(xmlhandler.root.info.item) do
 			tmpTb.id = tonumber(_v.id)
 		else
 			if string.match(_i,"n32%a+") then
-				tmpTb[_i] = tonumber(_v)
+					tmpTb[_i] = tonumber(_v)
 			elseif string.match(_i,"b%a+") then
 				if tonumber(_v) == 0 then
 					tmpTb[_i] = false

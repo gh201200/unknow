@@ -58,31 +58,6 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 	}
 	return r
 end
-EventStampHandle[EventStampType.CastSkill] = function (serverId, event)
-	local player = EntityManager:getEntity(serverId)
-	local skillid = player.CastSkillId
-	local skilldata = g_shareData.skillRepository[skillid]
-	local spell = player.spell
-	local targetId = 0
-	if player:getTarget() ~= nil and player:getTarget():getType() ~= "transform" then
-		targetId = player:getTarget().serverId
-	end
-	local errorCode = spell.errorCode
-	local r = {
-		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
-		skillId = skillid,
-		targetId = targetId,
-		skillTime = spell.totalTime,
-		pos =  {x = 0,y = 0,z = 0} }
-	
-	if player:getTargetVar() ~= nil then
-		r.pos =  {x=math.ceil(player:getTargetVar().pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player:getTargetVar().pos.z*GAMEPLAY_PERCENT) }
-	end
-	if GET_SkillTgtRange(skilldata) == 2 or GET_SkillTgtRange(skilldata) == 3 then
-		r.pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y=0,z=math.ceil(player.pos.z*GAMEPLAY_PERCENT) }
-	end
-	return r
-end
 
 EventStampHandle[EventStampType.Stats] = function (serverId, event)
 	local player = EntityManager:getEntity(serverId)

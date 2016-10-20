@@ -551,7 +551,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20015</n32TargetEffect>
-		<szTargetAffect>[inte:1,200,0,0,20016][mov:-1.5,0,3000,20016]</szTargetAffect>
+		<szTargetAffect>[inte:1,200,0,0,20016][mov:-1.5,0,0,3000,20016]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>10000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -580,13 +580,13 @@
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>35</n32Type>
+		<n32Type>33</n32Type>
 		<szTypeInfo>冲击波</szTypeInfo>
 		<szDescribe>对前方矩形范围内目标造成伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20017</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[charge:2,20018][inte:1.5,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:1.5,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>2,2</n32Radius>
 		<szAtkBe></szAtkBe>

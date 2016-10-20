@@ -113,58 +113,71 @@ function spell:update(dt)
 	--推进技能效果	
 	self:advanceEffect(dt)
 end
+function spell:onTriggerSkillAffect()
+	--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
+	if self.skilldata.bCommonSkill == true then
+		--普通攻击 触发普攻附加buff
+		self.source.affectTable:triggerAtkAffects(self.srcTarget,false)
+		if self.source:getTarget() and self.source:getTarget():getType() ~= "transform" then 
+			self.source:getTarget().affectTable:triggerAtkAffects(self.source,true)	
+		end
+	end
+	if self.skilldata.n32Type == 35 then
+		--产生可碰撞的飞行物
+		 g_entityManager:createFlyObj(self.source,self.source:getTarget(),self.skilldata)
+	end
+	--自身效果
+	local selfEffects = self.skilldata.szMyAffect
+	if selfEffects ~= ""  then
+		local targets = { self.source }
+		self:trgggerAffect(selfEffects,targets)
+	end
+	
+	if self.skilldata.n32Type ~= 35 and self.skilldata.n32Type ~= 36 then
+		--目标效果
+		if self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then
+			local targetEffects = self.skilldata.szTargetAffect
+			local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
+			self.targets = targets
+			if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
+				self:trgggerAffect(targetEffects,targets)
+			end
+		else
+			--在后续普攻过程中加成的效果
+			local tmpTb = {}
+			local tmpTb = string.split(self.skilldata.szAtkBe,",")
+			local item = {}
+			item.rate = tonumber(tmpTb[2])
+			item.lifeTime = tonumber(tmpTb[3])
+			item.affdata = self.skilldata.szTargetAffect
+			if tonumber(tmpTb[1]) == 1 then
+				table.insert(self.source.affectTable.AtkAffects,item)
+			elseif tonumber(tmpTb[1]) == 0 then
+				table.insert(self.source.affectTable.bAtkAffacts,item)
+			end 
+		end
+	end
+end
 --更新技能效果
 function spell:advanceEffect(dt)
 	if self.triggerTime >= 0  then 
 		self.triggerTime = self.triggerTime - dt
 		if self.triggerTime < 0 then
-			--扣除蓝消耗
-			--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
-			if self.skilldata.bCommonSkill == true then
-				--普通攻击 触发普攻附加buff
-				self.source.affectTable:triggerAtkAffects(self.srcTarget,false)
-				if self.source:getTarget() and self.source:getTarget():getType() ~= "transform" then 
-					self.source:getTarget().affectTable:triggerAtkAffects(self.source,true)	
-				end
-			end
-			if self.skilldata.n32Type == 35 then
-				--产生可碰撞的飞行物
-				 g_entityManager:createFlyObj(self.source,self.source:getTarget(),self.skilldata)
-			end
-			--自身效果
-			local selfEffects = self.skilldata.szMyAffect
-			if selfEffects ~= ""  then
-				local targets = { self.source }
-				self:trgggerAffect(selfEffects,targets)
-			end
-			
-			if self.skilldata.n32Type ~= 35 and self.skilldata.n32Type ~= 36 then
-				--目标效果
-				if self.skilldata.szAtkBe == "" or self.skilldata.szAtkBe == nil then
-					local targetEffects = self.skilldata.szTargetAffect
-					local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
-					self.targets = targets
-					if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
-						self:trgggerAffect(targetEffects,targets)
-					end
-				else
-					--在后续普攻过程中加成的效果
-					local tmpTb = {}
-					local tmpTb = string.split(self.skilldata.szAtkBe,",")
-					local item = {}
-					item.rate = tonumber(tmpTb[2])
-					item.lifeTime = tonumber(tmpTb[3])
-					item.affdata = self.skilldata.szTargetAffect
-					if tonumber(tmpTb[1]) == 1 then
-						table.insert(self.source.affectTable.AtkAffects,item)
-					elseif tonumber(tmpTb[1]) == 0 then
-						table.insert(self.source.affectTable.bAtkAffacts,item)
-					end 
-				end
-			end
+			self:synSpell()
+			self:onTriggerSkillAffect()
 		end
 	end
 end
+
+--释放被动技能
+function spell:onCastNoActiveSkill(skilldata)
+	if skilldata.bActive == false then
+		self:onTriggerSkillAffect()
+	else
+		print("主动技能不能当被动释放")
+	end
+end
+
 --触发目标效果
 function spell:trgggerAffect(datastr,targets)
 	for _k,_v in pairs(targets) do
@@ -178,21 +191,34 @@ function spell:trgggerAffect(datastr,targets)
 	end
 end
 function spell:onBegin()
-	if self.readyTime > 0 then
-		self.status = SpellStatus.Ready
-	else
-		self.status = SpellStatus.Cast
-	end
-	self.source:callBackSpellBegin()
+	self.status = SpellStatus.Ready
 	self.srcTarget = self.source:getTarget()
+	self:synSpell()
+	self.source:callBackSpellBegin()
 end
 function spell:onReady()
-	--self.source.ActionState = ActionState.attack1
 	if self.readyTime < 0 then
 		self.status = SpellStatus.Cast
 	end
-
 end
+--同步技能状态到客户端
+function spell:synSpell()
+	local t = {}
+	t.srcId = self.source.serverId
+	t.skillId = self.skilldata.id
+	t.state = self.status 
+	t.actionTime = self.totalTime
+	t.targetId = 0 
+	t.targetPos = {x= 0,y=0,z=0} 
+	if self.srcTarget ~= nil then
+		t.targetPos = {x = math.ceil(self.srcTarget.pos.x) * GAMEPLAY_PERCENT , 0 , z = math.ceil(self.srcTarget.pos.z)*GAMEPLAY_PERCENT }
+		if self.srcTarget:getType() ~= "transform" then
+			t.targetId = self.srcTarget.serverId
+		end
+	end
+	g_entityManager:sendToAllPlayers("CastingSkill",t)
+end
+
 function spell:clear()
 	--正在触发中 移除目标技能效果
 	self.triggerTime = 0
@@ -234,7 +260,6 @@ function spell:Cast(skillid,target,pos)
 		target = target or self.source:getTarget()
 		self.targets = {target}
 	end
-	print("spell:cast")
 	self:onBegin()
 end
 return spell
