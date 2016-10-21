@@ -2,7 +2,7 @@
 <info>
 	<item id="50001">
 		<szName>闪光</szName>
-		<szMod_name>Shanguang</szMod_name>
+		<szMod_name>shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
 		<n32Speed>11000</n32Speed>
 		<n32AttackTime1>226</n32AttackTime1>
@@ -20,7 +20,7 @@
 	</item>
 	<item id="50002">
 		<szName>厚德</szName>
-		<szMod_name>Houde</szMod_name>
+		<szMod_name>houde</szMod_name>
 		<n32Hight>Houde</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>301</n32AttackTime1>

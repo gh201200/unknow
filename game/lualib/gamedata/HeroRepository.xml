@@ -2253,7 +2253,7 @@
 	<item id="14051">
 		<n32Color>1</n32Color>
 		<szName>超鸦</szName>
-		<n32ModelId>50007</n32ModelId>
+		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
@@ -2278,7 +2278,7 @@
 	<item id="14052">
 		<n32Color>2</n32Color>
 		<szName>超鸦</szName>
-		<n32ModelId>50007</n32ModelId>
+		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
@@ -2303,7 +2303,7 @@
 	<item id="14053">
 		<n32Color>3</n32Color>
 		<szName>超鸦</szName>
-		<n32ModelId>50007</n32ModelId>
+		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
@@ -2328,7 +2328,7 @@
 	<item id="14054">
 		<n32Color>4</n32Color>
 		<szName>超鸦</szName>
-		<n32ModelId>50007</n32ModelId>
+		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
@@ -2353,7 +2353,7 @@
 	<item id="14055">
 		<n32Color>5</n32Color>
 		<szName>超鸦</szName>
-		<n32ModelId>50007</n32ModelId>
+		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
