@@ -30,11 +30,8 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.init(response,playerTb)
-	local i = 0
-	local colors = {1,4,2,5,3,6}
 	for _k,_v in pairs(playerTb) do
-		i = i + 1
-		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = colors[i]}
+		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color}
 	end
 	response(true,nil)
 end
