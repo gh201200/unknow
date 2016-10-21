@@ -73,7 +73,7 @@ local function handleMatch(t)
 	skynet.call(s_pickHero,"lua","init",t)
 	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
-		ret.matherNum = ret.matcherNum + 1
+		ret.matcherNum = ret.matcherNum + 1
 		local tmp = { account = _v.account,nickname = _v.nickname,color = _v.color }
 		table.insert(ret.matcherList,tmp)
 		skynet.call(_v.agent,"lua","enterPickHero",s_pickHero)
