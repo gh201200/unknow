@@ -154,7 +154,7 @@ function IMapPlayer:addSkill(skillId)
 	else
 		self.skillTable[skillId] = 1
 		local skilldata = g_shareData.skillRepository[skillId]
-		if skilldata.bActive == 0 then	
+		if skilldata.bActive == false then	
 			self.spell:onCastNoActiveSkill(skilldata) --释放被动buff
 		end 
 	end		
