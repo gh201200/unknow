@@ -61,6 +61,12 @@ end
 
 --处理匹配到的人 account nickname agent
 local function handleMatch(t)
+	--分配队组
+	local colors = {1,4,2,5,3,6}
+	local i = 1
+	for _k,_v in pairs(t) do
+		_v.color = colors[i]
+	end
 	--返回 分组信息
 	local s_pickHero =  skynet.newservice "pickHero"
 	table.insert(s_pickHeros,s_pickHero)
@@ -68,7 +74,7 @@ local function handleMatch(t)
 	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
 		ret.matherNum = ret.matcherNum + 1
-		local tmp = { account = _v.account,nickname = _v.nickname }
+		local tmp = { account = _v.account,nickname = _v.nickname,color = _v.color }
 		table.insert(ret.matcherList,tmp)
 		skynet.call(_v.agent,"lua","enterPickHero",s_pickHero)
 	end

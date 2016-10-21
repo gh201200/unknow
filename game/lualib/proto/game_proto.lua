@@ -65,6 +65,7 @@ local types = [[
 .Matcher {
 	account 0 : string
 	nickname 1 : string	
+	color 2 : integer
 }
 
 .card {
