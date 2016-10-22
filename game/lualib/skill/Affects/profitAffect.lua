@@ -7,11 +7,10 @@ function profitAffect:ctor(owner,source,data,skillId)
 	self.radius = skilldata.n32Radius / GAMEPLAY_PERCENT
 	self.affectdata = skilldata.szTargetAffect
 	self.skillId = skillId
-	self.effectId = self.data[2]
-	self.effectTime = self.data[3]
+	self.effectId = self.data[3]
+	self.effectTime = self.data[2]
 	self.tgts = {}
 	self.tgtType = GET_SkillTgtType(skilldata)
-	print("self.tgtType",self.tgtType)
 end
 
 
@@ -38,7 +37,7 @@ function profitAffect:trigger(v)
 	local dis = self.owner:getDistance(v)
 	if dis <= self.radius then
 		if self.tgts[v.serverId] == nil then
-		print("add trigger",self.affectdata,v.serverId)	
+		--print("add trigger",self.affectdata,v.serverId)	
 		local proIds = v.affectTable:buildAffects(self.owner,self.affectdata,self.skillId)
 			self.tgts[v.serverId] = proIds
 		end
@@ -46,7 +45,6 @@ function profitAffect:trigger(v)
 		if self.tgts[v.serverId] ~= nil then
 			--移除增益buff
 			local proIds = self.tgts[v.serverId]
-			print("----",proIds,v.serverId)
 			for _k,_id in pairs (proIds) do 
 				v.affectTable:removeById(_id)
 			end

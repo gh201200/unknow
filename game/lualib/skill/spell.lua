@@ -105,6 +105,7 @@ function spell:update(dt)
 		self:onCast()
 	elseif self.status == SpellStatus.ChannelCast then
 		self.channelTime = self.channelTime - dt
+		print("chanelCast===",dt)
 		self:onChannelCast()
 	elseif self.status == SpellStatus.End then
 		self.endTime =  self.endTime - dt
@@ -130,7 +131,7 @@ function spell:onTriggerSkillAffect()
 	local selfEffects = self.skilldata.szMyAffect
 	if selfEffects ~= ""  and selfEffects ~= nil then
 		local targets = { self.source }
-		self:trgggerAffect(selfEffects,targets)
+		self:trgggerAffect(selfEffects,targets,self.skilldata)
 	end
 	
 	if self.skilldata.n32Type ~= 35 and self.skilldata.n32Type ~= 36 then
@@ -140,12 +141,13 @@ function spell:onTriggerSkillAffect()
 			local targets = g_entityManager:getSkillAttackEntitys(self.source,self.skilldata)
 			self.targets = targets
 			if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
-				self:trgggerAffect(targetEffects,targets)
+				self:trgggerAffect(targetEffects,targets,self.skilldata)
 			end
 		else
 			--在后续普攻过程中加成的效果
 			local tmpTb = {}
 			local tmpTb = string.split(self.skilldata.szAtkBe,",")
+			print("tmpTb",tmpTb)
 			local item = {}
 			item.rate = tonumber(tmpTb[2])
 			item.lifeTime = tonumber(tmpTb[3])
@@ -153,7 +155,7 @@ function spell:onTriggerSkillAffect()
 			if tonumber(tmpTb[1]) == 1 then
 				table.insert(self.source.affectTable.AtkAffects,item)
 			elseif tonumber(tmpTb[1]) == 0 then
-				table.insert(self.source.affectTable.bAtkAffacts,item)
+				table.insert(self.source.affectTable.bAtkAffects,item)
 			end 
 		end
 	end
@@ -172,22 +174,23 @@ end
 --释放被动技能
 function spell:onCastNoActiveSkill(skilldata)
 	if skilldata.bActive == false then
-		--print("noactive:",skilldata)
 		--自身效果
-		local selfEffects = self.skilldata.szMyAffect
+		
+		print("onCastNoActionSkill",skilldata)
+		local selfEffects = skilldata.szMyAffect
 		if selfEffects ~= ""  and selfEffects ~= nil then
 			local targets = { self.source }
-			self:trgggerAffect(selfEffects,targets)
+			self:trgggerAffect(selfEffects,targets,skilldata)
 		end
 		--目标效果
-		if self.skilldata.szAtkBe ~= "" and  self.skilldata.szAtkBe ~= nil then
+		if skilldata.szAtkBe ~= "" and  skilldata.szAtkBe ~= nil then
 			--在后续普攻过程中加成的效果
 			local tmpTb = {}
-			local tmpTb = string.split(self.skilldata.szAtkBe,",")
+			local tmpTb = string.split(skilldata.szAtkBe,",")
 			local item = {}
 			item.rate = tonumber(tmpTb[2])
 			item.lifeTime = tonumber(tmpTb[3])
-			item.affdata = self.skilldata.szTargetAffect
+			item.affdata = skilldata.szTargetAffect
 			if tonumber(tmpTb[1]) == 1 then
 				table.insert(self.source.affectTable.AtkAffects,item)
 			elseif tonumber(tmpTb[1]) == 0 then
@@ -198,14 +201,14 @@ function spell:onCastNoActiveSkill(skilldata)
 end
 
 --触发目标效果
-function spell:trgggerAffect(datastr,targets)
+function spell:trgggerAffect(datastr,targets,skilldata)
 	for _k,_v in pairs(targets) do
 		if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
 			--无敌状态下
 		elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bCommonSkill ~= true then
 			--普攻 魔免状态
 		else
-			_v.affectTable:buildAffects(self.source,datastr,self.skilldata.id)
+			_v.affectTable:buildAffects(self.source,datastr,skilldata.id)
 		end
 	end
 end

@@ -106,7 +106,7 @@ function AffectTable:addAffect(source,data,skillId)
 		aff = nodeadAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "profit" then
 		aff = profitAffect.new(self.owner,source,data,skillId)
-	elseif data[1] == "ctrl" or data[1] == "up_str" or data[1] == "up_dex" or data[1] == "up_inte" or data[1] == "hp" or data[1] == "mp"  or 
+	elseif data[1] == "ctrl" or data[1] == "upstr" or data[1] == "updex" or data[1] == "upinte" or data[1] == "hp" or data[1] == "mp"  or 
 	       data[1] == "atk" or data[1] == "def" or data[1] == "wsp" or data[1] == "mov" or data[1] == "rng" or 
 	       data[1] == "rehp" or data[1] == "remp" or data[1] == "critrate" or data[1] == "hitrate" or data[1] == "dodrate" then
 		aff = statsAffect.new(self.owner,source,data,skillId)

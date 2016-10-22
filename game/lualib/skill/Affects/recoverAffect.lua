@@ -3,7 +3,7 @@ local recoverAffect = class("recoverAffect",Affect)
  
 function recoverAffect:ctor(entity,source,data)
 	self.super.ctor(self,entity,source,data)
-	self.triggerTime = 0
+	self.triggerTime = data[4] or 0 
 	self.leftTime = data[5] or 0
 	self.effectId = data[6] or 0
 	self.effectTime = data[5] or 0	
@@ -28,8 +28,8 @@ function recoverAffect:onExec(dt)
 	end
 	self.triggerTime = self.triggerTime - dt
 	if self.triggerTime <= 0 then
-	--	self.triggerTime = self.data[3]
-	--	self:calRecover()
+		self.triggerTime = self.data[3]
+		self:calRecover()
 	end
 end
 

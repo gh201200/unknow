@@ -540,8 +540,8 @@ end
 
 function Ientity:calcStrength()
 	self:setStrength(math.floor(
-		math.floor((self.attDat.n32Strength 
-		+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel()) 
+		math.floor((self.attDat.n32Strength
+		+ self.attDat.n32Strength/GAMEPLAY_PERCENT * self:getLevel()) 
 		* (1.0 + self:getMidStrengthPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidStrength())
 	)
@@ -621,6 +621,7 @@ function Ientity:calcMSpeed()
 		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc()/GAMEPLAY_PERCENT))
 		+ self:getMidMSpeed() 
 	)
+	self.moveSpeed = self:getMSpeed()
 end
 
 function Ientity:calcRecvHp()
@@ -753,7 +754,7 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	print('set cast skill id = ', id)
+	--print('set cast skill id = ', id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata.bActive == false then	
@@ -762,7 +763,7 @@ function Ientity:setCastSkillId(id)
 		return
 	end
 	local errorcode = self:canSetCastSkill(id) 
-        print('errorcode = ', errorcode)
+        --print('errorcode = ', errorcode)
 	if errorcode ~= 0 then return errorcode end
 	if skilldata.n32Type == 41 then
 		--针对自身立即释放
@@ -770,7 +771,7 @@ function Ientity:setCastSkillId(id)
 	end 
 	local type_range = GET_SkillTgtRange(skilldata)
 	local type_target = GET_SkillTgtType(skilldata)
-	if type_range == 2 then
+	if type_range == 2 or type_range == 7 then
 		print("setCastSkill",id)
 		self:castSkill()	
 	end

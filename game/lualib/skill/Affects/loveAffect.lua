@@ -6,7 +6,7 @@ function loveAffect:ctor(owner,source,data)
 	self.effectId = data[3] or 0
 	self.effectTime = data[2] or 0
 	--self.control = bit_or(AffectState.NoAttack,AffectState.NoSpell) 
-	self.speed = 3
+	self.speed = 1 
 end
 
 function loveAffect:onEnter()

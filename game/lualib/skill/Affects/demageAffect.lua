@@ -40,7 +40,7 @@ end
 
 function demageAffect:calDemage()
 	--计算伤害
-	local ap_pc,ap_val,str_pc,cure_pc,inte_pc =  1,0,1,1,1
+	local ap_pc,ap_val,str_pc,cure_pc,inte_pc =  0,0,0,0,0
 	if self.data[1] == "ap" then
 		ap_pc = self.data[2]
 		ap_val = self.data[3]

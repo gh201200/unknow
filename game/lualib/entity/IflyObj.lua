@@ -17,7 +17,8 @@ function IflyObj:ctor(src,tgtPos,skilldata)
 	self.pos:set(src.pos.x,0,src.pos.z)
 	self.skilldata = skilldata	
 	local effectdata = g_shareData.effectRepository[skilldata.n32CubeEffect]
-	self.radius = effectdata.n32Redius / 10000.0
+--	self.radius = effectdata.n32Redius / 10000.0
+	self.radius = skilldata.n32Radius / 10000.0
 	self.dir = vector3.new(0,0,0)
 	self.dir:set(self.target.pos.x, 0, self.target.pos.z)
         self.dir:sub(self.pos)
