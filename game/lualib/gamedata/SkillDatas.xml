@@ -12,17 +12,52 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>0</n32MpCost>
-		<n32CD>1000</n32CD>
-		<n32TriggerTime>400</n32TriggerTime>
+		<n32CD>0</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>attack</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>普攻</szTypeInfo>
 		<szDescribe>普通描述</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:1,0,0,0,0]</szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="30002">
+		<n32SeriId>30001</n32SeriId>
+		<szName>远程普攻</szName>
+		<n32Lv>1</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>1</bCommonSkill>
+		<bNeedTarget>1</bNeedTarget>
+		<n32Range>40000</n32Range>
+		<szIcon>icon.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>0</n32MpCost>
+		<n32CD>0</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionTime>1000</n32ActionTime>
+		<szAction>attack</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>31</n32Type>
+		<szTypeInfo>远程普攻</szTypeInfo>
+		<szDescribe>普攻</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -54,14 +89,14 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>吸血</szTypeInfo>
 		<szDescribe>普通攻击带有吸血</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[getblood:1,75,0,0]</szTargetAffect>
+		<szTargetAffect>[getblood:0.3,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -89,14 +124,14 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>破甲</szTypeInfo>
 		<szDescribe>普通攻击有破甲效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-1,-20,0,3000,20002]</szTargetAffect>
+		<szTargetAffect>[def:-0.5,0,0,3000,20002]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -124,7 +159,7 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>倍击</szTypeInfo>
 		<szDescribe>普通攻击加攻击力</szDescribe>
@@ -132,41 +167,6 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1.5,0,0,0,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
-		<szAtkBe>1,100,3600000</szAtkBe>
-		<n32Interval>0</n32Interval>
-		<n32Last>0</n32Last>
-		<n32TimeEffect>0</n32TimeEffect>
-		<n32Pet>0</n32Pet>
-	</item>
-	<item id="1000401">
-		<n32SeriId>10004</n32SeriId>
-		<szName>眩晕</szName>
-		<n32Lv>1</n32Lv>
-		<bActive>0</bActive>
-		<bCommonSkill>0</bCommonSkill>
-		<bNeedTarget>0</bNeedTarget>
-		<n32Range>0</n32Range>
-		<szIcon>icon.png.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>0</n32MpCost>
-		<n32CD>0</n32CD>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
-		<szSoundAttack>sound01.mp3</szSoundAttack>
-		<szSounHurted>sound01.mp3</szSounHurted>
-		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>41</n32Type>
-		<szTypeInfo>眩晕</szTypeInfo>
-		<szDescribe>普通攻击加眩晕效果</szDescribe>
-		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
-		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,2000,20003]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,50,3600000</szAtkBe>
@@ -194,7 +194,7 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>双加速</szTypeInfo>
 		<szDescribe>自身加速</szDescribe>
@@ -229,7 +229,7 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>闪电链</szTypeInfo>
 		<szDescribe>普通攻击附加闪电效果</szDescribe>
@@ -264,14 +264,14 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>削蓝</szTypeInfo>
 		<szDescribe>普通攻击附加削蓝效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curemp:1,-0.3,0,0,0]</szTargetAffect>
+		<szTargetAffect>[curemp:-0.1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,50,3600000</szAtkBe>
@@ -299,14 +299,14 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>致残</szTypeInfo>
 		<szDescribe>普通攻击附加致残效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:-0.5,0,0,3000,0][mov:-0.5,0,0,3000,20006]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.5,0,3000,0][mov:-0.5,0,0,3000,20006]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,75,3600000</szAtkBe>
@@ -334,7 +334,7 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>闪避</szTypeInfo>
 		<szDescribe>有概率躲避敌方的普通攻击</szDescribe>
@@ -369,7 +369,7 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>毒液</szTypeInfo>
 		<szDescribe>普通攻击附加致残效果</szDescribe>
@@ -404,8 +404,8 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>11</n32Type>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>41</n32Type>
 		<szTypeInfo>分身</szTypeInfo>
 		<szDescribe>释放自己的分身</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
@@ -427,13 +427,13 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>600000</n32Range>
 		<szIcon>kongzhiqiu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -448,7 +448,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ctrl:3,0,0,3000,20010]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>5000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -462,13 +462,13 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>24000</n32Range>
+		<n32Range>45000</n32Range>
 		<szIcon>bianzhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -476,12 +476,12 @@
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32Type>31</n32Type>
-		<szTypeInfo>变羊</szTypeInfo>
+		<szTypeInfo>变猪</szTypeInfo>
 		<szDescribe>变羊效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20012]</szTargetAffect>
+		<szTargetAffect>[changeMod:4000,20012][ctrl:6,0,2000,20049]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -497,13 +497,13 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>24000</n32Range>
+		<n32Range>45000</n32Range>
 		<szIcon>jinmo.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -515,8 +515,8 @@
 		<szDescribe>在圆形范围内无法使用技能</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
-		<n32TargetEffect>20013</n32TargetEffect>
-		<szTargetAffect>[ctrl:4,0,0,4000,20014]</szTargetAffect>
+		<n32TargetEffect>20014</n32TargetEffect>
+		<szTargetAffect>[ctrl:4,0,3000,20013]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -532,13 +532,13 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>24000</n32Range>
+		<n32Range>45000</n32Range>
 		<szIcon>bingbao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>200</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -551,7 +551,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20015</n32TargetEffect>
-		<szTargetAffect>[inte:1,200,0,0,20016][mov:-0.5,0,0,3000,20016]</szTargetAffect>
+		<szTargetAffect>[inte:1,0,0,0,0][mov:-0.5,0,0,3000,20016]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -567,13 +567,13 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>24000</n32Range>
+		<n32Range>600000</n32Range>
 		<szIcon>chongjibo.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20019</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>800</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -586,9 +586,9 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20017</n32TargetEffect>
-		<szTargetAffect>[inte:1.5,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:1.5,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,2</n32Radius>
+		<n32Radius>1,6</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -602,13 +602,13 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>30000</n32Range>
+		<n32Range>45000</n32Range>
 		<szIcon>huobao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20020</n32WarningEffect>
 		<n32MpCost>150</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>800</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -621,7 +621,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20021</n32TargetEffect>
-		<szTargetAffect>[inte:1,200,0,1000,20022]</szTargetAffect>
+		<szTargetAffect>[inte:1,20,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -637,13 +637,13 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>24000</n32Range>
+		<n32Range>50000</n32Range>
 		<szIcon>luolei.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -656,7 +656,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20023</n32TargetEffect>
-		<szTargetAffect>[inte:1,200,0,0,20024]</szTargetAffect>
+		<szTargetAffect>[inte:1,20,0,0,20024]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -689,9 +689,9 @@
 		<szTypeInfo>群体治疗</szTypeInfo>
 		<szDescribe></szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
-		<n32TargetEffect>20025</n32TargetEffect>
-		<szTargetAffect></szTargetAffect>
+		<n32MyEffect>20025</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[curehp:1,2,0,0,20051]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -704,23 +704,23 @@
 		<n32SeriId>20009</n32SeriId>
 		<szName>召唤霜狼</szName>
 		<n32Lv>1</n32Lv>
-		<bActive>0</bActive>
+		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
-		<bNeedTarget>1</bNeedTarget>
+		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
 		<szIcon>zhaohuanshuanglang.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>0</n32MpCost>
+		<n32MpCost>100</n32MpCost>
 		<n32CD>0</n32CD>
-		<n32TriggerTime>0</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>31</n32Type>
+		<n32Type>42</n32Type>
 		<szTypeInfo>召唤霜狼</szTypeInfo>
 		<szDescribe>召唤技能</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
@@ -746,11 +746,11 @@
 		<szIcon>jinshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>200</n32MpCost>
+		<n32MpCost>100</n32MpCost>
 		<n32CD>10000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>50</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -762,7 +762,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[curehp:0.3,0,0,4000,20026][invincible:4000,20026]</szMyAffect>
+		<szMyAffect>[curehp:0.3,1,500,3000,20026][invincible:3000,20026][ctrl:7,0,4000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -783,7 +783,7 @@
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>5000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -796,7 +796,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20027</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:1,0,0,2000,20028][ap:1,30,1,0,0]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,2000,20028][ap:1.5,0,0,0,0][upstr:1,20,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -825,14 +825,14 @@
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>32</n32Type>
-		<szTypeInfo>辉耀</szTypeInfo>
+		<n32Type>37</n32Type>
+		<szTypeInfo>电场</szTypeInfo>
 		<szDescribe>自身为圆点圆形范围造成每秒伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,30,1,0,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szTargetAffect>[ap:0.1,10,1000,360000,20024]</szTargetAffect>
+		<szMyAffect>[profit:360000,20050]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -859,16 +859,16 @@
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
-		<szTypeInfo>反弹</szTypeInfo>
+		<szTypeInfo>反伤</szTypeInfo>
 		<szDescribe>对普通攻击自己的目标造成伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20001</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,60,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:0.3,10,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -882,15 +882,15 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>600000</n32Range>
 		<szIcon>chongfeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>50</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -923,7 +923,7 @@
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -937,7 +937,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[def:1,200,0,4000,20032]</szMyAffect>
+		<szMyAffect>[def:1,10,0,4000,20032]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -952,26 +952,26 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>24000</n32Range>
+		<n32Range>0</n32Range>
 		<szIcon>chaofeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>32</n32Type>
 		<szTypeInfo>嘲讽</szTypeInfo>
 		<szDescribe>自身为圆点的圆形范围内目标被魅惑</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20033</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[love:2000,20034]</szTargetAffect>
+		<szTargetAffect>[love:4000,20034]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -984,23 +984,23 @@
 		<n32SeriId>30007</n32SeriId>
 		<szName>变大</szName>
 		<n32Lv>1</n32Lv>
-		<bActive>0</bActive>
+		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>24000</n32Range>
+		<n32Range>0</n32Range>
 		<szIcon>bianda.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>10000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>11</n32Type>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>41</n32Type>
 		<szTypeInfo>变大</szTypeInfo>
 		<szDescribe>自身模型变大,攻血防增加</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
@@ -1028,13 +1028,13 @@
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>不死</szTypeInfo>
 		<szDescribe>血量为0时不死几秒</szDescribe>
@@ -1054,23 +1054,23 @@
 		<n32SeriId>30009</n32SeriId>
 		<szName>召唤狗熊</szName>
 		<n32Lv>1</n32Lv>
-		<bActive>0</bActive>
+		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>30000</n32Range>
+		<n32Range>0</n32Range>
 		<szIcon>zhaohuangouxiong.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>5000</n32CD>
-		<n32TriggerTime>0</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>11</n32Type>
+		<n32Type>42</n32Type>
 		<szTypeInfo>召唤狗熊</szTypeInfo>
 		<szDescribe></szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
@@ -1092,20 +1092,20 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>30000</n32Range>
+		<n32Range>600000</n32Range>
 		<szIcon>shanshuo.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>0</n32MpCost>
+		<n32MpCost>50</n32MpCost>
 		<n32CD>0</n32CD>
-		<n32TriggerTime>0</n32TriggerTime>
+		<n32TriggerTime>50</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction>Skill_02_1</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>31</n32Type>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>11</n32Type>
 		<szTypeInfo>闪烁</szTypeInfo>
 		<szDescribe>向所选地点闪烁,有距离限制</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
@@ -1131,15 +1131,15 @@
 		<szIcon>hudun.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>0</n32MpCost>
+		<n32MpCost>100</n32MpCost>
 		<n32CD>0</n32CD>
-		<n32TriggerTime>0</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>41</n32Type>
 		<szTypeInfo>护盾</szTypeInfo>
 		<szDescribe>给自己制造一个吸收n点伤害的护盾</szDescribe>
@@ -1147,7 +1147,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[def:1,300,0,4000,20007]</szMyAffect>
+		<szMyAffect>[def:1,30,0,4000,20007]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1170,18 +1170,18 @@
 		<n32CD>0</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>27</n32Type>
 		<szTypeInfo>加攻光环</szTypeInfo>
 		<szDescribe>被动,增加范围内友方攻击力</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk：1,50,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk：0.2,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1205,18 +1205,18 @@
 		<n32CD>0</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>27</n32Type>
 		<szTypeInfo>双加速光环</szTypeInfo>
 		<szDescribe>被动,增加范围内友方攻速和移速</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:1.5,0,0,3600000,0][mov:1.5,0,0,3600000,20004]</szTargetAffect>
+		<szTargetAffect>[wsp:0,0.2,0,3600000,0][mov:0.2,0,0,3600000,20004]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1240,18 +1240,18 @@
 		<n32CD>0</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>27</n32Type>
 		<szTypeInfo>加甲光环</szTypeInfo>
 		<szDescribe>被动,增加范围内友方护甲</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:1,5,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:0.5,5,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1275,18 +1275,18 @@
 		<n32CD>0</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>37</n32Type>
 		<szTypeInfo>双减速光环</szTypeInfo>
 		<szDescribe>被动,减少范围内敌方攻速和移速</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:-0.5,0,0,3600000,0][mov:-0.5,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.2,0,3600000,0][mov:-0.2,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1310,18 +1310,18 @@
 		<n32CD>0</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>37</n32Type>
 		<szTypeInfo>减攻光环</szTypeInfo>
 		<szDescribe>被动,减少范围内敌方攻击力</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk：-1,-50,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk：-0.1,-10,0,0,3600000]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1345,18 +1345,18 @@
 		<n32CD>0</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>37</n32Type>
 		<szTypeInfo>减甲光环</szTypeInfo>
 		<szDescribe>被动,减少范围内敌方护甲</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-1,-50,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:-0.1,0,0,0,3600000]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1365,69 +1365,34 @@
 		<n32TimeEffect>0</n32TimeEffect>
 		<n32Pet>0</n32Pet>
 	</item>
-	<item id="30002">
-		<n32SeriId>30001</n32SeriId>
-		<szName>远程普攻</szName>
-		<n32Lv>1</n32Lv>
-		<bActive>1</bActive>
-		<bCommonSkill>1</bCommonSkill>
-		<bNeedTarget>1</bNeedTarget>
-		<n32Range>20000</n32Range>
-		<szIcon>icon.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>0</n32MpCost>
-		<n32CD>1000</n32CD>
-		<n32TriggerTime>400</n32TriggerTime>
-		<n32ActionTime>1000</n32ActionTime>
-		<szAction>attack</szAction>
-		<szSoundAttack>sound01.mp3</szSoundAttack>
-		<szSounHurted>sound01.mp3</szSounHurted>
-		<bAce>0</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>31</n32Type>
-		<szTypeInfo>远程普攻</szTypeInfo>
-		<szDescribe>普攻</szDescribe>
-		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
-		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,0,0,0,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
-		<szAtkBe></szAtkBe>
-		<n32Interval>0</n32Interval>
-		<n32Last>0</n32Last>
-		<n32TimeEffect>0</n32TimeEffect>
-		<n32Pet>0</n32Pet>
-	</item>
 	<item id="5000101">
 		<n32SeriId>50001</n32SeriId>
-		<szName>闪光</szName>
+		<szName>闪杀</szName>
 		<n32Lv>1</n32Lv>
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>20000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>Shansha.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>5000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>50</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction>attack</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
+		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
 		<szDescribe>闪烁至目标身边进行一次攻击，附加伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,20041][blink:2,0,20046]</szTargetAffect>
-		<szMyAffect>[blink:2,0,20046]</szMyAffect>
+		<szTargetAffect>[ap:1.5,0,0,0,20046]</szTargetAffect>
+		<szMyAffect>[blink:2,0,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1446,23 +1411,23 @@
 		<szIcon>fangweizhimen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
+		<n32MpCost>300</n32MpCost>
 		<n32CD>5000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction>Skill_03</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>32</n32Type>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>22</n32Type>
 		<szTypeInfo>防卫之门</szTypeInfo>
 		<szDescribe>区域内友方免伤50%</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20042</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:1,5,0,0,3000,0]</szTargetAffect>
-		<szMyAffect>[profit:3000,20047]</szMyAffect>
+		<szTargetAffect>[def:3,5,0,3000,20047]</szTargetAffect>
+		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1481,11 +1446,11 @@
 		<szIcon>baiyalaixi.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
+		<n32MpCost>500</n32MpCost>
 		<n32CD>5000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>400</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction>Skill_03</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
@@ -1494,10 +1459,10 @@
 		<szTypeInfo>百鸦来袭</szTypeInfo>
 		<szDescribe>使范围内敌方持续受到伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20043</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,60,1,0,0,20044]</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szTargetAffect>[ap:0.5,10,500,4000,20044]</szTargetAffect>
+		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1512,15 +1477,15 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
-		<n32Range>0</n32Range>
+		<n32Range>600000</n32Range>
 		<szIcon>shijianjingzhi.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
+		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
+		<n32MpCost>500</n32MpCost>
 		<n32CD>5000</n32CD>
-		<n32TriggerTime>200</n32TriggerTime>
+		<n32TriggerTime>25000</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
-		<szAction>Skill_01</szAction>
+		<szAction>Skill_03</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
@@ -1529,9 +1494,9 @@
 		<szTypeInfo>时间静止</szTypeInfo>
 		<szDescribe>延迟几秒后，全图敌方静止不动</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20045</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,3000,0]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,3000,20048]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>200000</n32Radius>
 		<szAtkBe></szAtkBe>
