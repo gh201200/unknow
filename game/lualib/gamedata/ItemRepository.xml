@@ -28,11 +28,11 @@
 		<szRetain3></szRetain3>
 	</item>
 	<item id="60004">
-		<szIcon>icon.png.png</szIcon>
+		<szIcon>beiji.png</szIcon>
 		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
-		<n32Retain1>1000401</n32Retain1>
+		<n32Retain1>1000301</n32Retain1>
 		<szRetain2>2</szRetain2>
 		<szRetain3></szRetain3>
 	</item>
