@@ -761,6 +761,7 @@ function Ientity:setCastSkillId(id)
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata.bActive == false then	
 		--测试使用
+		self.ReadySkillId = 0
 		self.spell:onCastNoActiveSkill(skilldata)
 		return
 	end
@@ -770,12 +771,14 @@ function Ientity:setCastSkillId(id)
 	if skilldata.n32Type == 41 then
 		--针对自身立即释放
 		self:castSkill()
+		self.ReadySkillId = 0
 	end 
 	local type_range = GET_SkillTgtRange(skilldata)
 	local type_target = GET_SkillTgtType(skilldata)
 	if type_range == 2 or type_range == 7 then
 		print("setCastSkill",id)
-		self:castSkill()	
+		self:castSkill()
+		self.ReadySkillId = 0	
 	end
 end
 function Ientity:castSkill()
@@ -794,8 +797,6 @@ function Ientity:castSkill()
 		skillTimes["trigger"] = modoldata["n32Skill1TriTime"] or 0
 	else
 		local Aspeed = self:getASpeed() or 0
-		print("Aspeed==",Aspeed)
-		print("data",self.attDat)
 		--普通攻击
 		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
 		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
