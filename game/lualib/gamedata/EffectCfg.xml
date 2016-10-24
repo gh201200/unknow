@@ -45,7 +45,7 @@
 		<szassert>Yidongjiasu</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
+		<n32position>1</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
@@ -506,6 +506,16 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
+		<szshader></szshader>
+		<szModName></szModName>
+		<n32Redius>0</n32Redius>
+	</item>
+	<item id="20051">
+		<n32type>3</n32type>
+		<szassert>Quntizhiliao_2</szassert>
+		<n32time>3000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>

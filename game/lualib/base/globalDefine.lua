@@ -61,6 +61,16 @@ AffectState = {
 	OutSkill			= 1 << 4, --魔免状态
 	NoDead				= 1 << 5,
 }
+
+SpellStatus = {
+	None 		= 0,	--无
+	Begin 		= 1, 	--开始
+	Ready 		= 2,	--吟唱
+	Cast 		= 3,	--释放
+	ChannelCast 	= 4,	--持续施法
+	End 		= 5,	--结束
+}
+
 ErrorCode = {
 	EC_None				= 0,	--没有错误
 ---------------技能-----------------

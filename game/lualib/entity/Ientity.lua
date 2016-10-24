@@ -788,12 +788,21 @@ function Ientity:castSkill()
 	if skilldata.bCommonSkill == false then
 		skillTimes[1] 	= modoldata["n32Skill1" .. "Time1"] or 0  
 		skillTimes[2] 	= modoldata["n32Skill1" .. "Time2"] or  0 
-		skillTimes[3] 	= modoldata["n32Skill1" .. "Time3"] or 0 
+		skillTimes[3]   = modoldata["n32Skill1" .. "Time3"] or  0
+		skillTimes["trigger"] = modoldata["n32Skill1TriTime"] or 0
 	else
+		local Aspeed = (self:getASpeed() or 0)/ GAMEPLAY_PERCENT
+		Aspeed = Aspeed * 1000
 		--普通攻击
 		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
 		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
 		skillTimes[3] = modoldata["n32Attack" .. "Time3"] or 0
+		local allTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
+		local pc =  Aspeed / allTime
+		for i=1,3,1 do
+			skillTimes[i] = math.floor(skillTimes[i] * pc)
+		end
+		skillTimes["trigger"] = math.floor((modoldata["n32AttackTriTime"] or 0)  * pc)
 	end
 	local tmpSpell = self.spell
 	tmpSpell:init(skilldata,skillTimes)
