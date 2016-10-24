@@ -608,11 +608,13 @@ end
 
 function Ientity:calcASpeed()
 	self:setASpeed(
-		self.attDat.n32ASpeed 
-		+ self:getMidASpeed() 
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed)
+		math.floor(self.attDat.n32ASpeed / ( 
+			1 + self:getMidASpeed() 
+			+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed /GAMEPLAY_PERCENT
+			+ self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed /GAMEPLAY_PERCENT
+			+ self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed /GAMEPLAY_PERCENT
+		)
+		)
 	)
 end
 
@@ -790,9 +792,11 @@ function Ientity:castSkill()
 		skillTimes[2] 	= modoldata["n32Skill1" .. "Time2"] or  0 
 		skillTimes[3]   = modoldata["n32Skill1" .. "Time3"] or  0
 		skillTimes["trigger"] = modoldata["n32Skill1TriTime"] or 0
+		print("====",skillTimes)
 	else
-		local Aspeed = (self:getASpeed() or 0)/ GAMEPLAY_PERCENT
-		Aspeed = Aspeed * 1000
+		local Aspeed = self:getASpeed() or 0
+		print("Aspeed==",Aspeed)
+		print("data",self.attDat)
 		--普通攻击
 		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
 		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
