@@ -623,7 +623,7 @@ function Ientity:calcMSpeed()
 		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc()/GAMEPLAY_PERCENT))
 		+ self:getMidMSpeed() 
 	)
-	self.moveSpeed = self:getMSpeed()
+	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 end
 
 function Ientity:calcRecvHp()
@@ -772,6 +772,7 @@ function Ientity:setCastSkillId(id)
 		--针对自身立即释放
 		self:castSkill()
 		self.ReadySkillId = 0
+		return
 	end 
 	local type_range = GET_SkillTgtRange(skilldata)
 	local type_target = GET_SkillTgtType(skilldata)
@@ -779,6 +780,7 @@ function Ientity:setCastSkillId(id)
 		print("setCastSkill",id)
 		self:castSkill()
 		self.ReadySkillId = 0	
+		return
 	end
 end
 function Ientity:castSkill()
