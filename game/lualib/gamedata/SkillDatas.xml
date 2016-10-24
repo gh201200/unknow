@@ -796,7 +796,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20027</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,2000,20028][ap:1.5,0,0,0,0][upstr:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,2000,20028][ap:1.5,0,0,0,0][str:1,20,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
