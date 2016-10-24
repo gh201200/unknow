@@ -196,7 +196,7 @@ function spell:onCastNoActiveSkill(skilldata)
 			if tonumber(tmpTb[1]) == 1 then
 				table.insert(self.source.affectTable.AtkAffects,item)
 			elseif tonumber(tmpTb[1]) == 0 then
-				table.insert(self.source.affectTable.bAtkAffacts,item)
+				table.insert(self.source.affectTable.bAtkAffects,item)
 			end 
 		end
 	end

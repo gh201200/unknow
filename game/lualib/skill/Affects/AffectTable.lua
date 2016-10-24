@@ -118,20 +118,6 @@ function AffectTable:addAffect(source,data,skillId)
 		print('skillid = ',skillId)
 	end
 	return self:replaceAdd(aff)
-	--[[
-	if aff ~= nil then 
-		if data[1] == "dizzy" or data[1] == "invincible" or data[1] == "repel" then
-			--特殊效果 覆盖
-			for i=#self.affects,1,-1 do
-				if self.affects[i].data[1] == data[1] then
-					self.affects[i]:onExit()
-					table.remove(self.affects,i)
-				end
-			end
-		end
-		table.insert(self.affects,aff)
-	end
-	]]
 end
 
 function AffectTable:replaceAdd(aff)
@@ -145,6 +131,7 @@ function AffectTable:replaceAdd(aff)
 	table.insert(self.affects,aff)
 	return aff.projectId
 end
+
 function AffectTable:addAffectSyn(aff)
 	--table.insert(self.affects,aff)
 	self:replaceAdd(aff)
@@ -155,6 +142,15 @@ function AffectTable:removeById(id)
 	for i=#self.affects,1,-1 do 
 		if self.affects[i].projectId == id then
 			self.affects[i]:onExit() --清除处理
+			table.remove(self.affects,i)
+		end
+	end
+end
+
+function AffectTable:removeBySkillId(skillId)
+	for i=#self.affects,1,-1 do 
+		if self.affects[i].skillId == skillId then
+			self.affects[i]:onExit()
 			table.remove(self.affects,i)
 		end
 	end
