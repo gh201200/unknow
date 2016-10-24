@@ -792,7 +792,6 @@ function Ientity:castSkill()
 		skillTimes[2] 	= modoldata["n32Skill1" .. "Time2"] or  0 
 		skillTimes[3]   = modoldata["n32Skill1" .. "Time3"] or  0
 		skillTimes["trigger"] = modoldata["n32Skill1TriTime"] or 0
-		print("====",skillTimes)
 	else
 		local Aspeed = self:getASpeed() or 0
 		print("Aspeed==",Aspeed)
