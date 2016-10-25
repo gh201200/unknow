@@ -77,7 +77,7 @@ function IMapPlayer:init(heroId)
 	self.attDat = g_shareData.heroRepository[heroId]
 	self:setGodSkill( self.attDat.n32GodSkillId )
 	self:setCommonSkill( self.attDat.n32CommonSkillId )
-	self.skillTable[self.attDat.n32GodSkillId] = 1
+	self.skillTable[self.attDat.n32GodSkillId] = 0
 	self.skillTable[self.attDat.n32CommonSkillId] = 1
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self:setPos(self.bornPos.x, 0, self.bornPos.z)
@@ -176,7 +176,7 @@ function IMapPlayer:SynSkillCds()
 end
 	
 function IMapPlayer:upgradeSkill(skillId)
-	if self.skillTable[skillId] == nil then
+	if self.skillTable[skillId] == nil or self.skillTable[skillId] == 0 then
 		return -1, 0
 	end
 	if self.skillTable[skillId] == Quest.SkillMaxLevel then
