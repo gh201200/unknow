@@ -587,12 +587,18 @@ function Ientity:calcMpMax()
 end
 
 function Ientity:calcAttack()
+	local addVal = 0
+	if self.attDat.n32MainAtt==1 then
+		addVal = math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
+	elseif self.attDat.n32MainAtt==2 then
+		addVal =  math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
+	elseif self.attDat.n32MainAtt==3 then
+		addVal =  math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
+	end
 	self:setAttack(math.floor(
 		self.attDat.n32Attack * (1.0 + self:getMidAttackPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidAttack() 
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
+		+ addVal
 	)
 end
 
