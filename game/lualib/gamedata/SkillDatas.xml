@@ -573,7 +573,7 @@
 		<n32WarningEffect>20019</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
-		<n32TriggerTime>0</n32TriggerTime>
+		<n32TriggerTime>1300</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -748,7 +748,7 @@
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>10000</n32CD>
-		<n32TriggerTime>0</n32TriggerTime>
+		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionTime>1000</n32ActionTime>
 		<szAction></szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
@@ -762,7 +762,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[curehp:0.3,1,500,3000,20026][invincible:3000,20026][ctrl:7,0,0,4000,0]</szMyAffect>
+		<szMyAffect>[curehp:0.3,1,500,3000,20026][invincible:3000,20026][ctrl:7,0,0,3000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1321,7 +1321,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk：-0.1,-10,0,0,3600000]</szTargetAffect>
+		<szTargetAffect>[atk:-0.1,-1,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1356,7 +1356,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.1,0,0,0,3600000]</szTargetAffect>
+		<szTargetAffect>[def:-0.1,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>

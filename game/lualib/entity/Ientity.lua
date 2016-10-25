@@ -762,7 +762,7 @@ function Ientity:setCastSkillId(id)
 	if skilldata.bActive == false then	
 		--测试使用
 		self.ReadySkillId = 0
-		self.spell:onCastNoActiveSkill(skilldata)
+		self.spell:onStudyPasstiveSkill(skilldata)
 		return
 	end
 	local errorcode = self:canSetCastSkill(id) 

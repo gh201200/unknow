@@ -154,7 +154,18 @@ function AffectTable:removeBySkillId(skillId)
 			table.remove(self.affects,i)
 		end
 	end
+	for i=#self.bAtkAffects,1,-1 do
+		if self.bAtkAffects[i].skillId == skillId then
+			table.remove(self.bAtkAffects,i)
+		end
+	end
+	for i=#self.AtkAffects,1,-1 do
+		if self.AtkAffects[i].skillId == skillId then
+			table.remove(self.AtkAffects,i)
+		end
+	end
 end
+
 
 function AffectTable:buildAffects(source,dataStr,skillId)
 	local tb = {}
