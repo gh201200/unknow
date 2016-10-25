@@ -7,6 +7,7 @@ local Map = require "map.Map"
 local transfrom = require "entity.transfrom"
 local EntityManager = require "entity.EntityManager"
 local coroutine = require "skynet.coroutine"
+local syslog = require "syslog"
 
 local Ientity = class("Ientity" , transfrom)
 
@@ -757,8 +758,13 @@ function Ientity:canSetCastSkill(id)
 end
 function Ientity:setCastSkillId(id)
 	--print('set cast skill id = ', id)
-	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
+	if not skilldata then
+		syslog.warning( 'setCastSkillId failed ' .. id )
+		return
+	end
+	
+	self.ReadySkillId = id
 	if skilldata.bActive == false then	
 		--测试使用
 		self.ReadySkillId = 0
