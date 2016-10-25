@@ -124,7 +124,11 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	local tmpTb = {}
 	if type_range == 1 then
 		if source:getTarget() ~= nil and source:getTarget():getType() ~= "transform" then
-			table.insert(tmpTb,source:getTarget())
+			if skilldata.bCommonSkill ~= true and source:getTarget():getType() == "IBuilding" then
+			
+			else
+				table.insert(tmpTb,source:getTarget())
+			end
 			return tmpTb
 		end
 	end
@@ -134,7 +138,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 			table.insert(tmpTb,source)
 			break
 		elseif type_target == 2 then
-			if _v.camp == source.camp and _v ~= source then
+			if _v.camp == source.camp then
 				table.insert(tmpTb,_v)
 			end
 		elseif type_target == 3 then

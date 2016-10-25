@@ -2,10 +2,8 @@ local Affect = require "skill.Affects.Affect"
 local StatsAffect = class("StatsAffect" ,Affect)
 function StatsAffect:ctor(entity,source,data,skillId)
         self.super.ctor(self,entity,source,data,skillId)
-	print("StatsAffect",self.data)
 	self.effectTime = self.data[5] or 0
 	self.effectId = self.data[6] or 0
-	print("self.effectTime",self.effectTime)
 end
 function StatsAffect:onEnter()
 	self.super.onEnter(self)
@@ -67,8 +65,8 @@ function StatsAffect:onEnter()
 		end
 		
 		if self.data[1] == 'atk' then
-			self.owner:addMidAttackPc(self.data[2])
-			self.owner:addMidAttack(self.data[3])
+			self.owner:addMidAttackPc(self.data[2] * GAMEPLAY_PERCENT)
+			self.owner:addMidAttack(self.data[3] * GAMEPLAY_PERCENT)
 			self.owner:calcAttack()
 			break
 		end
@@ -91,7 +89,6 @@ function StatsAffect:onEnter()
 		if self.data[1] == 'mov' then
 			self.owner:addMidMSpeedPc(self.data[2] * GAMEPLAY_PERCENT)
 			self.owner:addMidMSpeed(self.data[3] * GAMEPLAY_PERCENT)
-			print("...move",self.data[2],self.data[3])
 			self.owner:calcMSpeed()
 			break
 		end
@@ -136,7 +133,6 @@ function StatsAffect:onEnter()
 		end
 	
 		if self.data[1] == 'dodrate' then
-			print("doorate====")
 			self.owner:addMidMiss(self.data[2]* GAMEPLAY_PERCENT)
 			--self.effectTime = self.data[4]
 			self.owner:calcMiss()
@@ -213,8 +209,8 @@ function StatsAffect:onExit()
 		end
 		
 		if self.data[1] == 'atk' then
-			self.owner:addMidAttackPc(-self.data[2])
-			self.owner:addMidAttack(-self.data[3])
+			self.owner:addMidAttackPc(-self.data[2] * GAMEPLAY_PERCENT)
+			self.owner:addMidAttack(-self.data[3] * GAMEPLAY_PERCENT)
 			self.owner:calcAttack()
 			break
 		end
@@ -237,6 +233,7 @@ function StatsAffect:onExit()
 			self.owner:addMidMSpeed(-self.data[3] * GAMEPLAY_PERCENT)
 			self.owner:calcMSpeed()
 			break
+			
 		end
 		
 		if self.data[1] == 'rng' then

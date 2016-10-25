@@ -5,11 +5,11 @@ local transfrom = require "entity.transfrom"
 require "globalDefine" 
 
 function chargeAffect:ctor(owner,source,data,skillId)
-	print("chargeAffect")
+	print("chargeAffect",data)
 	self.super.ctor(self,owner,source,data)
 	self.effectId = data[3] or 0
 	self.distance = data[2] or 0
-	self.speed = 3 -- 冲锋速度
+	self.speed = 9 -- 冲锋速度
 	self.skilldata = self.owner.spell.skilldata
 	self.effectTime = math.floor(1000 * self.distance / self.speed) 
 	local tgt = self.owner:getTarget()
@@ -25,12 +25,16 @@ function chargeAffect:onEnter()
 	dir:set(self.tgtPos.x,0,self.tgtPos.z)
 	dir:sub(self.owner.pos)
 	dir:normalize()
-	dir:mul_num(self.distance)	
+	dir:mul_num(self.distance)
 	local dst = vector3.create()
 	dst:set(self.owner.pos.x,0,self.owner.pos.z)
 	dst:add(dir)
+	print("self.owner.pos",self.owner.pos.x,self.owner.pos.z)
+	print("dst pos",dst.x,dst.z)
+		
 	local tf = transfrom.new(dst,nil)
 	--进入持续施法状态
+	print("effectTime",self.effectTime)
 	self.owner.spell:enterChannel(self.effectTime)
 	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
 end
@@ -40,6 +44,7 @@ function chargeAffect:onExec(dt)
 	if self.effectTime < 0 then
 		self:onExit()
 	end
+	print("chargeAffect exec",dt)
 	for i=#g_entityManager.entityList, 1, -1 do
 		local v = g_entityManager.entityList[i]
 		if self.targets[v.serverId] == nil and v.serverId ~= self.source.serverId then

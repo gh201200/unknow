@@ -540,8 +540,8 @@ end
 
 function Ientity:calcStrength()
 	self:setStrength(math.floor(
-		math.floor((self.attDat.n32Strength 
-		+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel()) 
+		math.floor((self.attDat.n32Strength
+		+ self.attDat.n32Strength/GAMEPLAY_PERCENT * self:getLevel()) 
 		* (1.0 + self:getMidStrengthPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidStrength())
 	)
@@ -608,11 +608,13 @@ end
 
 function Ientity:calcASpeed()
 	self:setASpeed(
-		self.attDat.n32ASpeed 
-		+ self:getMidASpeed() 
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed)
+		math.floor(self.attDat.n32ASpeed / ( 
+			1 + self:getMidASpeed() 
+			+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed /GAMEPLAY_PERCENT
+			+ self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed /GAMEPLAY_PERCENT
+			+ self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed /GAMEPLAY_PERCENT
+		)
+		)
 	)
 end
 
@@ -621,6 +623,7 @@ function Ientity:calcMSpeed()
 		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc()/GAMEPLAY_PERCENT))
 		+ self:getMidMSpeed() 
 	)
+	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
 end
 
 function Ientity:calcRecvHp()
@@ -753,26 +756,31 @@ function Ientity:canSetCastSkill(id)
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	print('set cast skill id = ', id)
+	--print('set cast skill id = ', id)
 	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata.bActive == false then	
 		--测试使用
+		self.ReadySkillId = 0
 		self.spell:onCastNoActiveSkill(skilldata)
 		return
 	end
 	local errorcode = self:canSetCastSkill(id) 
-        print('errorcode = ', errorcode)
+        --print('errorcode = ', errorcode)
 	if errorcode ~= 0 then return errorcode end
 	if skilldata.n32Type == 41 then
 		--针对自身立即释放
 		self:castSkill()
+		self.ReadySkillId = 0
+		return
 	end 
 	local type_range = GET_SkillTgtRange(skilldata)
 	local type_target = GET_SkillTgtType(skilldata)
-	if type_range == 2 then
+	if type_range == 2 or type_range == 7 then
 		print("setCastSkill",id)
-		self:castSkill()	
+		self:castSkill()
+		self.ReadySkillId = 0	
+		return
 	end
 end
 function Ientity:castSkill()
@@ -787,12 +795,20 @@ function Ientity:castSkill()
 	if skilldata.bCommonSkill == false then
 		skillTimes[1] 	= modoldata["n32Skill1" .. "Time1"] or 0  
 		skillTimes[2] 	= modoldata["n32Skill1" .. "Time2"] or  0 
-		skillTimes[3] 	= modoldata["n32Skill1" .. "Time3"] or 0 
+		skillTimes[3]   = modoldata["n32Skill1" .. "Time3"] or  0
+		skillTimes["trigger"] = modoldata["n32Skill1TriTime"] or 0
 	else
+		local Aspeed = self:getASpeed() or 0
 		--普通攻击
 		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
 		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
 		skillTimes[3] = modoldata["n32Attack" .. "Time3"] or 0
+		local allTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
+		local pc =  Aspeed / allTime
+		for i=1,3,1 do
+			skillTimes[i] = math.floor(skillTimes[i] * pc)
+		end
+		skillTimes["trigger"] = math.floor((modoldata["n32AttackTriTime"] or 0)  * pc)
 	end
 	local tmpSpell = self.spell
 	tmpSpell:init(skilldata,skillTimes)

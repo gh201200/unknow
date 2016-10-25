@@ -106,7 +106,7 @@ function AffectTable:addAffect(source,data,skillId)
 		aff = nodeadAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "profit" then
 		aff = profitAffect.new(self.owner,source,data,skillId)
-	elseif data[1] == "ctrl" or data[1] == "up_str" or data[1] == "up_dex" or data[1] == "up_inte" or data[1] == "hp" or data[1] == "mp"  or 
+	elseif data[1] == "ctrl" or data[1] == "upstr" or data[1] == "updex" or data[1] == "upinte" or data[1] == "hp" or data[1] == "mp"  or 
 	       data[1] == "atk" or data[1] == "def" or data[1] == "wsp" or data[1] == "mov" or data[1] == "rng" or 
 	       data[1] == "rehp" or data[1] == "remp" or data[1] == "critrate" or data[1] == "hitrate" or data[1] == "dodrate" then
 		aff = statsAffect.new(self.owner,source,data,skillId)
@@ -118,20 +118,6 @@ function AffectTable:addAffect(source,data,skillId)
 		print('skillid = ',skillId)
 	end
 	return self:replaceAdd(aff)
-	--[[
-	if aff ~= nil then 
-		if data[1] == "dizzy" or data[1] == "invincible" or data[1] == "repel" then
-			--特殊效果 覆盖
-			for i=#self.affects,1,-1 do
-				if self.affects[i].data[1] == data[1] then
-					self.affects[i]:onExit()
-					table.remove(self.affects,i)
-				end
-			end
-		end
-		table.insert(self.affects,aff)
-	end
-	]]
 end
 
 function AffectTable:replaceAdd(aff)
@@ -145,6 +131,7 @@ function AffectTable:replaceAdd(aff)
 	table.insert(self.affects,aff)
 	return aff.projectId
 end
+
 function AffectTable:addAffectSyn(aff)
 	--table.insert(self.affects,aff)
 	self:replaceAdd(aff)
@@ -155,6 +142,15 @@ function AffectTable:removeById(id)
 	for i=#self.affects,1,-1 do 
 		if self.affects[i].projectId == id then
 			self.affects[i]:onExit() --清除处理
+			table.remove(self.affects,i)
+		end
+	end
+end
+
+function AffectTable:removeBySkillId(skillId)
+	for i=#self.affects,1,-1 do 
+		if self.affects[i].skillId == skillId then
+			self.affects[i]:onExit()
 			table.remove(self.affects,i)
 		end
 	end

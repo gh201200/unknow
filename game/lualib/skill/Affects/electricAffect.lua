@@ -18,6 +18,9 @@ function electricAffect:ctor(entity,source,data,root,index)
 	if self.root == nil then
 		self.root = self.source
 	end
+	if self.root == self.source then
+		self.effectId = 0
+	end
 	self.index = index or 1 
 end
 
