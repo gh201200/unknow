@@ -609,7 +609,7 @@ end
 function Ientity:calcASpeed()
 	self:setASpeed(
 		math.floor(self.attDat.n32ASpeed / ( 
-			1 + self:getMidASpeed() 
+			1 + self:getMidASpeed() / GAMEPLAY_PERCENT 
 			+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed /GAMEPLAY_PERCENT
 			+ self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed /GAMEPLAY_PERCENT
 			+ self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed /GAMEPLAY_PERCENT
