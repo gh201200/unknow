@@ -118,7 +118,7 @@ function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
 	local obj = IflyObj.create(srcObj,targetPos,skilldata)	
 	self:addEntity(obj)
 end
-function EntityManager:getSkillAttackEntitys(source,skilldata)
+function EntityManager:getSkillAttackEntitys(source,target,skilldata)
 	local type_range = GET_SkillTgtRange(skilldata)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:飞行物碰撞 
 	local type_target = GET_SkillTgtType(skilldata)  -- 1:自身 2:友方 3:敌方
 	local tmpTb = {}
@@ -192,7 +192,7 @@ function EntityManager:getSkillAttackEntitys(source,skilldata)
 	elseif type_range  == 2 then
 		retTb = getRangeEntitys(tmpTb,source.pos,skilldata.n32Radius / 10000 )
 	elseif type_range == 3 then
-		retTb = getEntityRectange(tmpTb,source.pos,source:getTarget().pos,skilldata.n32Radius)
+		retTb = getEntityRectange(tmpTb,source.pos,target.pos,skilldata.n32Radius)
 	elseif type_range == 4 then
 		if source:getTarget() ~= nil then
 			--print("gettarget is nil")

@@ -10,10 +10,10 @@
 		<n32AttackTime3>386</n32AttackTime3>
 		<n32AttackTriTime>298</n32AttackTriTime>
 		<n32Skill1Time1>250</n32Skill1Time1>
-		<n32Skill1Time2>816</n32Skill1Time2>
+		<n32Skill1Time2>616</n32Skill1Time2>
 		<n32Skill1TriTime>328</n32Skill1TriTime>
 		<n32Skill2Time1>143</n32Skill2Time1>
-		<n32Skill2Time2>857</n32Skill2Time2>
+		<n32Skill2Time2>657</n32Skill2Time2>
 		<n32Skill2TriTime>338</n32Skill2TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
@@ -31,10 +31,10 @@
 		<n32AttackTime3>393</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
-		<n32Skill1Time2>755</n32Skill1Time2>
+		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
 		<n32Skill2Time1>273</n32Skill2Time1>
-		<n32Skill2Time2>1093</n32Skill2Time2>
+		<n32Skill2Time2>893</n32Skill2Time2>
 		<n32Skill2TriTime>587</n32Skill2TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
@@ -52,10 +52,10 @@
 		<n32AttackTime3>441</n32AttackTime3>
 		<n32AttackTriTime>373</n32AttackTriTime>
 		<n32Skill1Time1>250</n32Skill1Time1>
-		<n32Skill1Time2>583</n32Skill1Time2>
+		<n32Skill1Time2>383</n32Skill1Time2>
 		<n32Skill1TriTime>597</n32Skill1TriTime>
 		<n32Skill2Time1>249</n32Skill2Time1>
-		<n32Skill2Time2>583</n32Skill2Time2>
+		<n32Skill2Time2>383</n32Skill2Time2>
 		<n32Skill2TriTime>597</n32Skill2TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
@@ -73,10 +73,10 @@
 		<n32AttackTime3>216</n32AttackTime3>
 		<n32AttackTriTime>543</n32AttackTriTime>
 		<n32Skill1Time1>192</n32Skill1Time1>
-		<n32Skill1Time2>1008</n32Skill1Time2>
+		<n32Skill1Time2>808</n32Skill1Time2>
 		<n32Skill1TriTime>684</n32Skill1TriTime>
 		<n32Skill2Time1>192</n32Skill2Time1>
-		<n32Skill2Time2>1008</n32Skill2Time2>
+		<n32Skill2Time2>808</n32Skill2Time2>
 		<n32Skill2TriTime>684</n32Skill2TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
@@ -94,7 +94,7 @@
 		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>303</n32AttackTriTime>
 		<n32Skill1Time1>113</n32Skill1Time1>
-		<n32Skill1Time2>1019</n32Skill1Time2>
+		<n32Skill1Time2>819</n32Skill1Time2>
 		<n32Skill1TriTime>405</n32Skill1TriTime>
 		<n32Skill2Time1>346</n32Skill2Time1>
 		<n32Skill2Time2>3986</n32Skill2Time2>
@@ -115,7 +115,7 @@
 		<n32AttackTime3>322</n32AttackTime3>
 		<n32AttackTriTime>391</n32AttackTriTime>
 		<n32Skill1Time1>229</n32Skill1Time1>
-		<n32Skill1Time2>1003</n32Skill1Time2>
+		<n32Skill1Time2>803</n32Skill1Time2>
 		<n32Skill1TriTime>431</n32Skill1TriTime>
 		<n32Skill2Time1>293</n32Skill2Time1>
 		<n32Skill2Time2>3000</n32Skill2Time2>

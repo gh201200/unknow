@@ -65,7 +65,8 @@ function IMonster:calcStats()
 	self.attDat.n32LStrength = 0
 	self.attDat.n32LZhili = 0
 	self.attDat.n32LMinjie = 0
-	
+	self.attDat.n32MainAtt = 0
+
 	self:calcHpMax()
 	self:calcMpMax()
 	self:calcAttack()

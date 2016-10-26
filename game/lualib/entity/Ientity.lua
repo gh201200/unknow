@@ -7,6 +7,7 @@ local Map = require "map.Map"
 local transfrom = require "entity.transfrom"
 local EntityManager = require "entity.EntityManager"
 local coroutine = require "skynet.coroutine"
+local syslog = require "syslog"
 
 local Ientity = class("Ientity" , transfrom)
 
@@ -586,12 +587,18 @@ function Ientity:calcMpMax()
 end
 
 function Ientity:calcAttack()
+	local addVal = 0
+	if self.attDat.n32MainAtt==1 then
+		addVal = math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
+	elseif self.attDat.n32MainAtt==2 then
+		addVal =  math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
+	elseif self.attDat.n32MainAtt==3 then
+		addVal =  math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
+	end
 	self:setAttack(math.floor(
 		self.attDat.n32Attack * (1.0 + self:getMidAttackPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidAttack() 
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
+		+ addVal
 	)
 end
 
@@ -609,7 +616,7 @@ end
 function Ientity:calcASpeed()
 	self:setASpeed(
 		math.floor(self.attDat.n32ASpeed / ( 
-			1 + self:getMidASpeed() 
+			1 + self:getMidASpeed() / GAMEPLAY_PERCENT 
 			+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed /GAMEPLAY_PERCENT
 			+ self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed /GAMEPLAY_PERCENT
 			+ self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed /GAMEPLAY_PERCENT
@@ -757,12 +764,17 @@ function Ientity:canSetCastSkill(id)
 end
 function Ientity:setCastSkillId(id)
 	--print('set cast skill id = ', id)
-	self.ReadySkillId = id
 	local skilldata = g_shareData.skillRepository[id]
+	if not skilldata then
+		syslog.warning( 'setCastSkillId failed ' .. id )
+		return
+	end
+	
+	self.ReadySkillId = id
 	if skilldata.bActive == false then	
 		--测试使用
 		self.ReadySkillId = 0
-		self.spell:onCastNoActiveSkill(skilldata)
+		self.spell:onStudyPasstiveSkill(skilldata)
 		return
 	end
 	local errorcode = self:canSetCastSkill(id) 

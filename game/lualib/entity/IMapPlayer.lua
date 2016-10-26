@@ -77,7 +77,7 @@ function IMapPlayer:init(heroId)
 	self.attDat = g_shareData.heroRepository[heroId]
 	self:setGodSkill( self.attDat.n32GodSkillId )
 	self:setCommonSkill( self.attDat.n32CommonSkillId )
-	self.skillTable[self.attDat.n32GodSkillId] = 1
+	self.skillTable[self.attDat.n32GodSkillId] = 0
 	self.skillTable[self.attDat.n32CommonSkillId] = 1
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self:setPos(self.bornPos.x, 0, self.bornPos.z)
@@ -148,21 +148,29 @@ function IMapPlayer:onExp()
 	end
 end
 
-function IMapPlayer:addSkill(skillId)
-	if self.skillTable[skillId] then
-		self.skillTable[skillId] = self.skillTable[skillId] + 1
-	else
+function IMapPlayer:addSkill(skillId, updateToClient)
+	
+	if self.skillTable[skillId]  == nil then
 		self.skillTable[skillId] = 1
-		local skilldata = g_shareData.skillRepository[skillId]
-		if skilldata.bActive == false then	
-			self.spell:onCastNoActiveSkill(skilldata) --释放被动buff
-		end 
-	end		
-	local msg = {
-		skillId = skillId,
-		level = self.skillTable[skillId],
-	}
-	skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	else
+		self.skillTable[skillId] = self.skillTable[skillId] + 1
+	end
+	
+	local skilldata = g_shareData.skillRepository[skillId + self.skillTable[skillId] - 1]	
+	if skilldata.bActive == false then	
+		local oldSkillId = skillId + self.skillTable[skillId] - 2
+		--移除旧技能带的buff效果
+		self.AffectTable:removeBySkillId(oldSkillId)
+		self.spell:onStudyPasstiveSkill(skilldata) --学习被动技能
+	end
+	
+	if updateToClient then
+		local msg = {
+			skillId = skillId,
+			level = self.skillTable[skillId] 
+		}
+		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	end
 end
 
 function IMapPlayer:castSkill()
@@ -176,7 +184,7 @@ function IMapPlayer:SynSkillCds()
 end
 	
 function IMapPlayer:upgradeSkill(skillId)
-	if self.skillTable[skillId] == nil then
+	if self.skillTable[skillId] == nil or self.skillTable[skillId] == 0 then
 		return -1, 0
 	end
 	if self.skillTable[skillId] == Quest.SkillMaxLevel then
@@ -189,7 +197,7 @@ function IMapPlayer:upgradeSkill(skillId)
 	--开始升级
 	--扣除金币
 	self:addGold(-costGold)
-	self.skillTable[skillId] = self.skillTable[skillId] + 1
+	self:addSkill(skillId, false)
 	return 0, self.skillTable[skillId]
 end
 
