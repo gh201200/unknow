@@ -148,28 +148,29 @@ function IMapPlayer:onExp()
 	end
 end
 
-function IMapPlayer:addSkill(skillId)
-	local skilldata = g_shareData.skillRepository[skillId]	
-	local seriId = skilldata.n32SeriId
-	local level = skilldata.n32Lv
+function IMapPlayer:addSkill(skillId, updateToClient)
 	
-	if self.skillTable[seriId]  == nil then
-		self.skillTable[seriId] = level
+	if self.skillTable[skillId]  == nil then
+		self.skillTable[skillId] = 1
 	else
-		local oldSkillId = seriId * 100 + self.skillTable[seriId]
-		--移除旧技能带的buff效果
-		self.affectTable:removeBySkillId(skillId)
-		self.skillTable[seriId] = level
+		self.skillTable[skillId] = self.skillTable[skillId] + 1
 	end
+	
+	local skilldata = g_shareData.skillRepository[skillId + self.skillTable[skillId] - 1]	
 	if skilldata.bActive == false then	
+		local oldSkillId = skillId + self.skillTable[skillId] - 2
+		--移除旧技能带的buff效果
+		self.affectTable:removeBySkillId(oldSkillId)
 		self.spell:onStudyPasstiveSkill(skilldata) --学习被动技能
 	end
-	local msg = {
-		skillId = skillId,
-		level = level,
-	}
-	print("addSkill msg",msg)
-	skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	
+	if updateToClient then
+		local msg = {
+			skillId = skillId,
+			level = self.skillTable[skillId] 
+		}
+		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	end
 end
 
 function IMapPlayer:castSkill()
@@ -196,7 +197,7 @@ function IMapPlayer:upgradeSkill(skillId)
 	--开始升级
 	--扣除金币
 	self:addGold(-costGold)
-	self.skillTable[skillId] = self.skillTable[skillId] + 1
+	self:addSkill(skillId, false)
 	return 0, self.skillTable[skillId]
 end
 

@@ -65,7 +65,8 @@ end
 
 function CMD.requestCastSkill(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local err = player:setCastSkillId(args.skillid)
+	local skillId = args.skillid + player.skillTable[args.skillid] - 1
+	local err = player:setCastSkillId(skillId)
 	response(true, { errorcode =  err })
 end
 

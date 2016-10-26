@@ -156,9 +156,9 @@ function DropManager:useItem(player, sid)
 	end
 	--使用道具
 	if itemData.n32Type == 0 then
-		player:addSkill(itemData.n32Retain1)
+		player:addSkill(itemData.n32Retain1, true)
 	elseif itemData.n32Type == 1 then
-		player:addSkill( player:getGodSkill() )
+		player:addSkill(player:getGodSkill(), true)
 	elseif itemData.n32Type == 2 then
 		player.affectTable:buildEffect(player, itemData.szRetain3) 
 	end
