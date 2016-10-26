@@ -43,6 +43,7 @@ function IMapPlayer:ctor()
 	register_class_var(self, 'GodSkill', 0, self.onGodSkill)
 	register_class_var(self, 'CommonSkill', 0, self.onCommonSkill)
 
+	register_class_var(self, 'ReplaceSkillTimes', 0)
 	self.GoldExpMask = false
 end
 
@@ -173,6 +174,13 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 	end
 end
 
+function IMapPlayer:removeSkill(skillId)
+	--移除旧技能带的buff效果
+	self.AffectTable:removeBySkillId(skillId)
+	
+	self.skillTable[skillId] = nil
+end
+
 function IMapPlayer:castSkill()
 	IMapPlayer.super.castSkill(self) 
 	self:SynSkillCds()
@@ -200,6 +208,6 @@ function IMapPlayer:upgradeSkill(skillId)
 	self:addSkill(skillId, false)
 	return 0, self.skillTable[skillId]
 end
-
+	
 return IMapPlayer
 

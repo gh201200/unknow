@@ -134,6 +134,12 @@ function CMD.upgradeSkill(response, agent, account_id, args)
 	response(true, {errorCode = errorCode, skillId = args.skillId, level = lv})
 end
 
+function CMD.replaceSkill(response, agent, account_id, args)
+	local player = EntityManager:getPlayerByPlayerId(account_id)
+	local errorCode = DropManager:replaceSkill(player, args.sid, args.skillId)
+	response(true, {errorCode = errorCode})
+end
+
 function CMD.start(response, args)
 	response(true, nil)
 	
