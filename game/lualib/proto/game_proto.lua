@@ -461,6 +461,13 @@ CastingSkill 3001 {
 		targetPos 5 : Vector3 
 	}
 }
+
+setPosition 3002 {
+	request {
+		srcId 0: integer
+		targetPos 1: Vector3
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)

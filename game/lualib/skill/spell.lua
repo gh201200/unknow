@@ -120,13 +120,6 @@ function spell:update(dt)
 end
 function spell:onTriggerSkillAffect(skilldata,source,srcTarget)
 	--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
-	if skilldata.bCommonSkill == true then
-		--普通攻击 触发普攻附加buff
-		source.affectTable:triggerAtkAffects(srcTarget,false)
-		if srcTarget and srcTarget:getType() ~= "transform" then 
-			srcTarget.affectTable:triggerAtkAffects(source,true)	
-		end
-	end
 	if skilldata.n32Type == 35 then
 		--产生可碰撞的飞行物
 		 g_entityManager:createFlyObj(source,srcTarget,skilldata)
@@ -136,7 +129,22 @@ function spell:onTriggerSkillAffect(skilldata,source,srcTarget)
 		local targets = { source }
 		self:trgggerAffect(selfEffects,targets,skilldata)
 	end
-	
+
+	if skilldata.bCommonSkill == true then
+		--普通攻击 触发普攻附加buff
+		if  srcTarget:getMiss() > math.random(1,100) then
+			--触发闪避
+			local shanbiEffect = "[show:500,20052]"
+			srcTarget.affectTable:buildAffects(source,shanbiEffect,skilldata.id)	
+			return
+		end
+		source.affectTable:triggerAtkAffects(srcTarget,false,skilldata)
+		if srcTarget and srcTarget:getType() ~= "transform" then 
+			srcTarget.affectTable:triggerAtkAffects(source,true)	
+		end
+		return
+	end
+
 	if skilldata.n32Type ~= 35 and skilldata.n32Type ~= 36 then
 		--目标效果
 		if self.skilldata.szAtkBe == "" then

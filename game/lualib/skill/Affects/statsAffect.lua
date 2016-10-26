@@ -133,7 +133,7 @@ function StatsAffect:onEnter()
 		end
 	
 		if self.data[1] == 'dodrate' then
-			self.owner:addMidMiss(self.data[2]* GAMEPLAY_PERCENT)
+			self.owner:addMidMiss(self.data[3]* GAMEPLAY_PERCENT)
 			--self.effectTime = self.data[4]
 			self.owner:calcMiss()
 			break
@@ -271,7 +271,7 @@ function StatsAffect:onExit()
 		end
 	
 		if self.data[1] == 'dodrate' then
-			self.owner:addMidMiss(-self.data[2] * GAMEPLAY_PERCENT)
+			self.owner:addMidMiss(-self.data[3] * GAMEPLAY_PERCENT)
 			self.owner:calcMiss()
 			break
 		end

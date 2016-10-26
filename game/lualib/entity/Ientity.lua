@@ -392,8 +392,9 @@ end
 --闪现
 function Ientity:onBlink(des)
 	self:setPos(des.x, des.y, des.z)
-	self:setActionState(0, ActionState.blink)
-	self:advanceEventStamp(EventStampType.Move)
+	local r = {srcId = self.serverId,targetPos = {}}
+	r.targetPos = {x=math.ceil(self.pos.x*GAMEPLAY_PERCENT), y= 0,z=math.ceil(self.pos.z*GAMEPLAY_PERCENT)}
+	g_entityManager:sendToAllPlayers("setPosition",r)	
 end
 
 --进入站立状态
@@ -408,9 +409,7 @@ end
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
 	self.spell:breakSpell()
-
 	self:setActionState(0, ActionState.die)
-
 	for k, v in pairs(EntityManager.entityList) do
 		if v:getTarget() == self then
 			v:setTarget(nil)
@@ -419,6 +418,7 @@ function Ientity:onDead()
 			v.hateList:removeHate( self )
 		end
 	end
+	self.affectTable:clear() --清除所有的buff
 end
 
 function Ientity:onRaise()
@@ -427,6 +427,7 @@ function Ientity:onRaise()
 end
 
 function Ientity:addHp(_hp, mask, source)
+	isDelay = isDelay or false 
 	_hp = math.floor(_hp)
 	if _hp == 0 then return end
 	assert(_hp > 0 or source, "you must set the source")
@@ -445,7 +446,6 @@ function Ientity:addHp(_hp, mask, source)
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		--self.HpMpChange = true
 		self:advanceEventStamp(EventStampType.Hp_Mp)
-
 	end
 	if self:getHp() <= 0 then
 		self:onDead()
@@ -597,7 +597,10 @@ function Ientity:calcAttack()
 	end
 	self:setAttack(math.floor(
 		self.attDat.n32Attack * (1.0 + self:getMidAttackPc()/GAMEPLAY_PERCENT)) 
-		+ self:getMidAttack() 
+		+ self:getMidAttack() /GAMEPLAY_PERCENT 
+		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
+		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
+		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
 		+ addVal
 	)
 end
@@ -670,7 +673,7 @@ function Ientity:calcHit()
 end
 
 function Ientity:calcMiss()
-	self:setMiss(self:getMidMiss())
+	self:setMiss(self:getMidMiss() / GAMEPLAY_PERCENT)
 end
 
 
@@ -804,23 +807,28 @@ function Ientity:castSkill()
 	local errorcode = self:canCast(id) 
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}
-	if skilldata.bCommonSkill == false then
-		skillTimes[1] 	= modoldata["n32Skill1" .. "Time1"] or 0  
-		skillTimes[2] 	= modoldata["n32Skill1" .. "Time2"] or  0 
-		skillTimes[3]   = modoldata["n32Skill1" .. "Time3"] or  0
-		skillTimes["trigger"] = modoldata["n32Skill1TriTime"] or 0
-	else
+	local action = ""
+	if skilldata.n32ActionType == 1 then
+		action = "Attack"
+	elseif skilldata.n32ActionType == 2 then
+		action = "Skill1"
+	elseif skilldata.n32ActionType == 3 then
+		action = "Skill2"
+	elseif skilldata.n32ActionType == 4 then
+		action = "Skill3"
+	end
+	skillTimes[1] 	= modoldata["n32" .. action  .. "Time1"] or 0  
+	skillTimes[2] 	= modoldata["n32" .. action .. "Time2"] or  0 
+	skillTimes[3]   = modoldata["n32" .. action  .. "Time3"] or  0
+	skillTimes["trigger"] = modoldata["n32".. action .. "TriTime"] or 0
+	if skilldata.bCommonSkill == true then --攻击动作
 		local Aspeed = self:getASpeed() or 0
-		--普通攻击
-		skillTimes[1] = modoldata["n32Attack" .. "Time1"] or 0
-		skillTimes[2] = modoldata["n32Attack" .. "Time2"] or  0
-		skillTimes[3] = modoldata["n32Attack" .. "Time3"] or 0
 		local allTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
 		local pc =  Aspeed / allTime
 		for i=1,3,1 do
 			skillTimes[i] = math.floor(skillTimes[i] * pc)
 		end
-		skillTimes["trigger"] = math.floor((modoldata["n32AttackTriTime"] or 0)  * pc)
+		skillTimes["trigger"] = math.floor(( skillTimes["trigger"] or 0)  * pc)
 	end
 	local tmpSpell = self.spell
 	tmpSpell:init(skilldata,skillTimes)

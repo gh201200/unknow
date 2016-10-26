@@ -161,7 +161,7 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 	if skilldata.bActive == false then	
 		local oldSkillId = skillId + self.skillTable[skillId] - 2
 		--移除旧技能带的buff效果
-		self.AffectTable:removeBySkillId(oldSkillId)
+		self.affectTable:removeBySkillId(oldSkillId)
 		self.spell:onStudyPasstiveSkill(skilldata) --学习被动技能
 	end
 	

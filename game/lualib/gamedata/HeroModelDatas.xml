@@ -2,7 +2,7 @@
 <info>
 	<item id="50001">
 		<szName>闪光</szName>
-		<szMod_name>shanguang</szMod_name>
+		<szMod_name>Shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
 		<n32Speed>11000</n32Speed>
 		<n32AttackTime1>230</n32AttackTime1>
@@ -12,9 +12,12 @@
 		<n32Skill1Time1>250</n32Skill1Time1>
 		<n32Skill1Time2>616</n32Skill1Time2>
 		<n32Skill1TriTime>328</n32Skill1TriTime>
-		<n32Skill2Time1>143</n32Skill2Time1>
-		<n32Skill2Time2>657</n32Skill2Time2>
-		<n32Skill2TriTime>338</n32Skill2TriTime>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>100</n32Skill2Time2>
+		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill3Time1>143</n32Skill3Time1>
+		<n32Skill3Time2>657</n32Skill3Time2>
+		<n32Skill3TriTime>338</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -23,7 +26,7 @@
 	</item>
 	<item id="50002">
 		<szName>厚德</szName>
-		<szMod_name>houde</szMod_name>
+		<szMod_name>Houde</szMod_name>
 		<n32Hight>Houde</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
@@ -33,9 +36,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>273</n32Skill2Time1>
-		<n32Skill2Time2>893</n32Skill2Time2>
-		<n32Skill2TriTime>587</n32Skill2TriTime>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>100</n32Skill2Time2>
+		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill3Time1>273</n32Skill3Time1>
+		<n32Skill3Time2>893</n32Skill3Time2>
+		<n32Skill3TriTime>587</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -54,9 +60,12 @@
 		<n32Skill1Time1>250</n32Skill1Time1>
 		<n32Skill1Time2>383</n32Skill1Time2>
 		<n32Skill1TriTime>597</n32Skill1TriTime>
-		<n32Skill2Time1>249</n32Skill2Time1>
-		<n32Skill2Time2>383</n32Skill2Time2>
-		<n32Skill2TriTime>597</n32Skill2TriTime>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>100</n32Skill2Time2>
+		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill3Time1>249</n32Skill3Time1>
+		<n32Skill3Time2>383</n32Skill3Time2>
+		<n32Skill3TriTime>597</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -75,9 +84,12 @@
 		<n32Skill1Time1>192</n32Skill1Time1>
 		<n32Skill1Time2>808</n32Skill1Time2>
 		<n32Skill1TriTime>684</n32Skill1TriTime>
-		<n32Skill2Time1>192</n32Skill2Time1>
-		<n32Skill2Time2>808</n32Skill2Time2>
-		<n32Skill2TriTime>684</n32Skill2TriTime>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>100</n32Skill2Time2>
+		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill3Time1>192</n32Skill3Time1>
+		<n32Skill3Time2>808</n32Skill3Time2>
+		<n32Skill3TriTime>684</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -96,9 +108,12 @@
 		<n32Skill1Time1>113</n32Skill1Time1>
 		<n32Skill1Time2>819</n32Skill1Time2>
 		<n32Skill1TriTime>405</n32Skill1TriTime>
-		<n32Skill2Time1>346</n32Skill2Time1>
-		<n32Skill2Time2>3986</n32Skill2Time2>
-		<n32Skill2TriTime>693</n32Skill2TriTime>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>100</n32Skill2Time2>
+		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill3Time1>346</n32Skill3Time1>
+		<n32Skill3Time2>3986</n32Skill3Time2>
+		<n32Skill3TriTime>693</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -117,9 +132,12 @@
 		<n32Skill1Time1>229</n32Skill1Time1>
 		<n32Skill1Time2>803</n32Skill1Time2>
 		<n32Skill1TriTime>431</n32Skill1TriTime>
-		<n32Skill2Time1>293</n32Skill2Time1>
-		<n32Skill2Time2>3000</n32Skill2Time2>
-		<n32Skill2TriTime>733</n32Skill2TriTime>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>100</n32Skill2Time2>
+		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill3Time1>293</n32Skill3Time1>
+		<n32Skill3Time2>3000</n32Skill3Time2>
+		<n32Skill3TriTime>733</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -141,6 +159,9 @@
 		<n32Skill2Time1>0</n32Skill2Time1>
 		<n32Skill2Time2>0</n32Skill2Time2>
 		<n32Skill2TriTime>0</n32Skill2TriTime>
+		<n32Skill3Time1>0</n32Skill3Time1>
+		<n32Skill3Time2>0</n32Skill3Time2>
+		<n32Skill3TriTime>0</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -162,6 +183,9 @@
 		<n32Skill2Time1>0</n32Skill2Time1>
 		<n32Skill2Time2>0</n32Skill2Time2>
 		<n32Skill2TriTime>0</n32Skill2TriTime>
+		<n32Skill3Time1>0</n32Skill3Time1>
+		<n32Skill3Time2>0</n32Skill3Time2>
+		<n32Skill3TriTime>0</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>

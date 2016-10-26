@@ -19,6 +19,11 @@ function profitAffect:onEnter()
 end
 
 function profitAffect:onExec(dt)
+	if self.source:getHp() <= 0 then 
+		
+		return
+	end
+	
 	self.effectTime = self.effectTime -  dt
 	if self.effectTime <= 0 then
 		self:onExit()
@@ -54,6 +59,16 @@ function profitAffect:trigger(v)
 end
 function profitAffect:onExit()
 	print("profitAffect:onExit")
+	for i=#g_entityManager.entityList, 1, -1 do
+		local v = g_entityManager.entityList[i]
+		if self.tgts[v.serverId] ~= nil then
+			local proIds = self.tgts[v.serverId]
+			for _k,_id in pairs (proIds) do 
+				v.affectTable:removeById(_id)
+			end
+			self.tgts[v.serverId] = nil
+		end
+	end
 	self.super.onExit(self)
 end
 
