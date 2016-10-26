@@ -54,20 +54,22 @@ function AffectTable:update(dt)
 	end
 end
 --触发普攻攻击和被攻击效果
-function AffectTable:triggerAtkAffects(tgt,bAtk)
+function AffectTable:triggerAtkAffects(tgt,bAtk,skilldata)
 	local affs = nil
 	if bAtk == true then
 	--触发被攻击效果
 		affs = self.bAtkAffects
 	else
+		tgt.affectTable:buildAffects(self.owner,skilldata.szTargetAffect)		
 		affs = self.AtkAffects
 	end
 	for i = #affs,1,-1 do
-		local rdm = math.random_ext(1,100)
-	--	if affs[i].rate >= rdm then
+		local rdm = math.random(1,100)
+		if affs[i].rate >= rdm then
 			tgt.affectTable:buildAffects(self.owner,affs[i].affdata)	
-	--	end 
+		end 
 	end
+	
 end
 
 function AffectTable:addAffect(source,data,skillId)
@@ -117,13 +119,17 @@ function AffectTable:addAffect(source,data,skillId)
 		print('data = ',data)
 		print('skillid = ',skillId)
 	end
+	aff:onEnter()
 	return self:replaceAdd(aff)
 end
 
 function AffectTable:replaceAdd(aff)
 	for i=#self.affects,1,-1 do
+		--print("replaceAdd===",self.affects[i].data[1],aff.data[1])
 		if self.affects[i].data[1] == aff.data[1] and self.affects[i].source == aff.source then
 			if self.affects[i].skillId == aff.skillId and aff.effectTime > 0 then
+				aff.projectId = self.affects[i].projectId
+				self.affects[i]:onExit()
 				table.remove(self.affects,i)
 			end
 		end 
@@ -146,7 +152,12 @@ function AffectTable:removeById(id)
 		end
 	end
 end
-
+function AffectTable:clear()
+	for i=#self.affects,1,-1 do
+		self.affects[i]:onExit() 
+		table.remove(self.affects,i)
+	end
+end
 function AffectTable:removeBySkillId(skillId)
 	for i=#self.affects,1,-1 do 
 		if self.affects[i].skillId == skillId then

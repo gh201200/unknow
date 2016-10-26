@@ -158,7 +158,7 @@ function IMapPlayer:addSkill(skillId)
 	else
 		local oldSkillId = seriId * 100 + self.skillTable[seriId]
 		--移除旧技能带的buff效果
-		self.AffectTable:removeBySkillId(skillId)
+		self.affectTable:removeBySkillId(skillId)
 		self.skillTable[seriId] = level
 	end
 	if skilldata.bActive == false then	

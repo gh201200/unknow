@@ -21,7 +21,7 @@ end
 
 function Affect:onExit()
 	--print("Affect:onExit")
-	self.status = "exit"
+	self.status = "exit"	
 end
 
 return Affect

@@ -46,12 +46,14 @@ HpMpMask = {
 	TimeLineHp			= 1 << 2,
 	RaiseHp				= 1 << 3,
 	BuildingHp			= 1 << 4,
+	BaojiHp				= 1 << 5,
 
 	SkillMp				= 1 << 16,
 	BuffMp				= 1 << 17,
 	TimeLineMp			= 1 << 18,
 	RaiseMp				= 1 << 19,
 	BuildingMp			= 1 << 20,
+	XuelanMp			= 1 << 21,
 }
 AffectState = {
 	NoMove				= 1 << 0, --不能移动
