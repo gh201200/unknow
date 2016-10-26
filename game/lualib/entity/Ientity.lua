@@ -597,15 +597,11 @@ function Ientity:calcAttack()
 	end
 	self:setAttack(math.floor(
 		self.attDat.n32Attack * (1.0 + self:getMidAttackPc()/GAMEPLAY_PERCENT)) 
-<<<<<<< HEAD
 		+ self:getMidAttack() /GAMEPLAY_PERCENT 
 		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
 		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
 		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
-=======
-		+ self:getMidAttack() 
 		+ addVal
->>>>>>> 7ea63669f2c9968b72240efc30a2ff64b5553978
 	)
 end
 
