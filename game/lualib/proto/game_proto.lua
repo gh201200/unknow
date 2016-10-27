@@ -283,6 +283,16 @@ upgradeSkill 205 {
 	}
 }
 
+replaceSkill 206 {
+	request {
+		sid 0 : integer
+		skillId 1 : integer
+	}
+	response {
+		errorCode 0 : integer
+	}
+}
+
 explore_goFight 300 {
 	request {
 		uuid 0 : string

@@ -121,19 +121,21 @@ function DropManager:useItem(player, sid)
 		tb = self.redItems
 	end
 	local item = nil
+	local index = 0
 	for k, v in pairs(tb) do
+		index = index + 1
 		if v.sid == sid then
 			item = v
 			break
 		end
+	end	
+	if not item then
+		return 1	--已被使用	
 	end
+	
 	local errorCode = 0
 	local itemData = g_shareData.itemRepository[item.itemId]
 	repeat
-		if not item then
-			errorCode = 1	--已被使用
-			break
-		end
 		local skillId = itemData.n32Retain1
 		
 		if itemData.n32Type == 1 then
@@ -155,6 +157,7 @@ function DropManager:useItem(player, sid)
 		return errorCode
 	end
 	--使用道具
+	table.remove(tb, index)
 	if itemData.n32Type == 0 then
 		player:addSkill(itemData.n32Retain1, true)
 	elseif itemData.n32Type == 1 then
@@ -162,6 +165,74 @@ function DropManager:useItem(player, sid)
 	elseif itemData.n32Type == 2 then
 		player.affectTable:buildEffect(player, itemData.szRetain3) 
 	end
+
+	--tell all teamers, inclue player self
+	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
+	
+	return errorCode
+end
+
+function DropManager:replaceSkill(player, sid, skillId)	
+	local tb = self.blueItems
+	if player:isRed() then
+		tb = self.redItems
+	end
+	local item = nil
+	local index = 0
+	for k, v in pairs(tb) do
+		index = index + 1
+		if v.sid == sid then
+			item = v
+			break
+		end
+	end	
+	if not item then
+		return 1	--已被使用
+	end
+
+	local errorCode = 0
+	local itemData = g_shareData.itemRepository[item.itemId]
+	repeat
+		if player:getReplaceSkillTimes() >= Quest.MaxReplaceSkillTimes then
+			errorCode = 4	--最多能替换三次技能
+		end
+		if itemData.n32Type ~= 0 then
+			errorCode = -1
+			break
+		end
+		
+		if not player.skillTable[itemData.n32Retain1] then
+			errorCode = -1
+			break
+		end
+
+		if skillId == player:getGodSkill() then
+			errorCode = -1
+			break
+		end
+		
+		local skillDat = g_shareData.skillRepository[skillId]
+		if skillDat.bActive then
+			if player.cooldown:getCdTime(skillId) > 0 then
+				errorCode = 2	--技能在CD中
+				break
+			end
+		else
+			if player:getCommonSkill() == player.ReadySkillId then
+				errorCode = 3	--普工释放中
+				break
+			end	
+		end
+		
+	until true
+	if errorCode ~= 0 then
+		return errorCode
+	end
+	--使用道具
+	player:addReplaceSkillTimes(1)
+	table.remove(tb, index)
+	player:removeSkill(skillId)
+	player:addSkill(itemData.n32Retain1, true)
 
 	--tell all teamers, inclue player self
 	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)

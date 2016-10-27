@@ -57,6 +57,9 @@ local Quest = {
 	
 	--英雄在基地恢复MP系数
 	BuildingRecvMp = 20,
+
+	--可替换技能次数
+	MaxReplaceSkillTimes = 3,
 }
 
 
