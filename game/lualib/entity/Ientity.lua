@@ -210,7 +210,10 @@ function Ientity:setTarget(target)
 		return 
 	else
 		--打断技能
-		self.spell:breakSpell()
+		if self.spell:isSpellRunning() == true then
+			self.spell:breakSpell()
+			self.ReadySkillId = 0
+		end
 	end
 	self.userAStar = false
 	self:setTargetVar( target )
