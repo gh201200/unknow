@@ -569,8 +569,8 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
 		<szIcon>chongjibo.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>20019</n32WarningEffect>
+		<n32SingEffect>20019</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>4000</n32CD>
 		<n32TriggerTime>1000</n32TriggerTime>
@@ -584,8 +584,8 @@
 		<szTypeInfo>冲击波</szTypeInfo>
 		<szDescribe>对前方矩形范围内目标造成伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
-		<n32TargetEffect>20017</n32TargetEffect>
+		<n32MyEffect>20017</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:1.5,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>1,6</n32Radius>
@@ -1444,7 +1444,7 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
 		<szIcon>baiyalaixi.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
+		<n32SingEffect>20053</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>500</n32MpCost>
 		<n32CD>5000</n32CD>
@@ -1483,7 +1483,7 @@
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>500</n32MpCost>
 		<n32CD>5000</n32CD>
-		<n32TriggerTime>3300</n32TriggerTime>
+		<n32TriggerTime>3000</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>

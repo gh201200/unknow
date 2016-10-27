@@ -33,6 +33,7 @@ function chargeAffect:onEnter()
 	print("dst pos",dst.x,dst.z)
 		
 	local tf = transfrom.new(dst,nil)
+	self.owner.targetPos = tf
 	--进入持续施法状态
 	print("effectTime",self.effectTime)
 	self.owner.spell:enterChannel(self.effectTime)

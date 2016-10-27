@@ -15,9 +15,9 @@
 		<n32Skill2Time1>0</n32Skill2Time1>
 		<n32Skill2Time2>100</n32Skill2Time2>
 		<n32Skill2TriTime>50</n32Skill2TriTime>
-		<n32Skill3Time1>143</n32Skill3Time1>
-		<n32Skill3Time2>657</n32Skill3Time2>
-		<n32Skill3TriTime>338</n32Skill3TriTime>
+		<n32Skill3Time1>0</n32Skill3Time1>
+		<n32Skill3Time2>100</n32Skill3Time2>
+		<n32Skill3TriTime>50</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -156,6 +156,30 @@
 		<n32Skill1Time1>0</n32Skill1Time1>
 		<n32Skill1Time2>0</n32Skill1Time2>
 		<n32Skill1TriTime>0</n32Skill1TriTime>
+		<n32Skill2Time1>0</n32Skill2Time1>
+		<n32Skill2Time2>0</n32Skill2Time2>
+		<n32Skill2TriTime>0</n32Skill2TriTime>
+		<n32Skill3Time1>0</n32Skill3Time1>
+		<n32Skill3Time2>0</n32Skill3Time2>
+		<n32Skill3TriTime>0</n32Skill3TriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+	</item>
+	<item id="50008">
+		<szName>召唤熊</szName>
+		<szMod_name>Xiong</szMod_name>
+		<n32Hight>Xiong</n32Hight>
+		<n32Speed>10000</n32Speed>
+		<n32AttackTime1>408</n32AttackTime1>
+		<n32AttackTime2>336</n32AttackTime2>
+		<n32AttackTime3>456</n32AttackTime3>
+		<n32AttackTriTime>540</n32AttackTriTime>
+		<n32Skill1Time1>498</n32Skill1Time1>
+		<n32Skill1Time2>1162</n32Skill1Time2>
+		<n32Skill1TriTime>913</n32Skill1TriTime>
 		<n32Skill2Time1>0</n32Skill2Time1>
 		<n32Skill2Time2>0</n32Skill2Time2>
 		<n32Skill2TriTime>0</n32Skill2TriTime>
