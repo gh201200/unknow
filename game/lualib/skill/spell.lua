@@ -245,7 +245,7 @@ function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 	local t = { srcId = source.serverId,skillId = skilldata.id ,state = state, actionTime = actionTime,targetId = 0,targetPos = nil}
 	t.targetPos = {x= 0,y=0,z=0} 
 	if srcTarget ~= nil then
-		t.targetPos = {x = math.ceil(srcTarget.pos.x) * GAMEPLAY_PERCENT ,y = 0 , z = math.ceil(srcTarget.pos.z)*GAMEPLAY_PERCENT }
+		t.targetPos = {x = math.ceil(srcTarget.pos.x * GAMEPLAY_PERCENT) ,y = 0 , z = math.ceil(srcTarget.pos.z*GAMEPLAY_PERCENT) }
 		if srcTarget:getType() ~= "transform" then
 			t.targetId = srcTarget.serverId
 		end
