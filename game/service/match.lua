@@ -65,6 +65,7 @@ local function handleMatch(t)
 	local colors = {1,4,2,5,3,6}
 	local i = 1
 	for _k,_v in pairs(t) do
+		i = i + 1
 		_v.color = colors[i]
 	end
 	--返回 分组信息
