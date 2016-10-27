@@ -79,6 +79,7 @@ function Ientity:ctor(pos,dir)
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
 	self.affectState = 0
 	self.triggerCast = true	 --是否触发技能
+	self.targetPos = nil
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
@@ -205,7 +206,12 @@ function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
 
 	if self:isDead() then return end
-	if self.spell:canBreak(ActionState.move) == false then return end	--技能释放状态=
+	if self.spell:canBreak(ActionState.move) == false then
+		return 
+	else
+		--打断技能
+		self.spell:breakSpell()
+	end
 	self.userAStar = false
 	self:setTargetVar( target )
 	self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
@@ -374,17 +380,18 @@ function Ientity:onForceMove(dt)
 	dt = dt / 1000
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
-	if Map.IS_SAME_GRID(self.pos,self:getTarget().pos) then
+	if Map.IS_SAME_GRID(self.pos,self.targetPos.pos) then
 		self:stand()
 	end
-	self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
+	self.dir:set(self.targetPos.pos.x, 0, self.targetPos.pos.z)
 	self.dir:sub(self.pos)
 	self.dir:normalize()
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
 	self:setPos(mv_dst.x, 0, mv_dst.z)
-	local len  = vector3.len(self.pos,self:getTarget().pos)
+
+	local len  = vector3.len(self.pos,self.targetPos.pos)
 	if len >= 0.001 then 
 		self:advanceEventStamp(EventStampType.Move)
 	end	
