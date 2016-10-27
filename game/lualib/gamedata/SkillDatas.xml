@@ -26,7 +26,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:1,0,0,0,20046]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -61,7 +61,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:1,0,0,0,20046]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -971,7 +971,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20033</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[love:4000,20034][ap:0,1,0,0,0]</szTargetAffect>
+		<szTargetAffect>[love:4000,20034][ap:0,1,0,0,0][ctrl:5,0,0,4000,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1109,10 +1109,10 @@
 		<szTypeInfo>闪烁</szTypeInfo>
 		<szDescribe>向所选地点闪烁,有距离限制</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[blink:3,1000,20046]</szMyAffect>
+		<szMyAffect>[blink:3,1000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>

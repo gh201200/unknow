@@ -75,7 +75,7 @@
 		<szassert>Hudun</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>1</n32position>
+		<n32position>0</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
@@ -115,7 +115,7 @@
 		<szassert>Kongzhiqiu_1</szassert>
 		<n32time>1500</n32time>
 		<n32speed>3</n32speed>
-		<n32position>0</n32position>
+		<n32position>9</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
@@ -175,7 +175,7 @@
 		<szassert>Chongjibo</szassert>
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
+		<n32position>9</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
@@ -325,7 +325,7 @@
 		<szassert>Hudun</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>1</n32position>
+		<n32position>0</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>

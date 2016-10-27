@@ -66,6 +66,7 @@ local function handleMatch(t)
 	local i = 1
 	for _k,_v in pairs(t) do
 		_v.color = colors[i]
+		i = i + 1
 	end
 	--返回 分组信息
 	local s_pickHero =  skynet.newservice "pickHero"

@@ -15,9 +15,9 @@
 		<n32Skill2Time1>0</n32Skill2Time1>
 		<n32Skill2Time2>100</n32Skill2Time2>
 		<n32Skill2TriTime>50</n32Skill2TriTime>
-		<n32Skill3Time1>0</n32Skill3Time1>
-		<n32Skill3Time2>100</n32Skill3Time2>
-		<n32Skill3TriTime>50</n32Skill3TriTime>
+		<n32Skill3Time1>130</n32Skill3Time1>
+		<n32Skill3Time2>502</n32Skill3Time2>
+		<n32Skill3TriTime>298</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>

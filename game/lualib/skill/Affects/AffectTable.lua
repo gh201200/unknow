@@ -157,6 +157,9 @@ function AffectTable:clear()
 		self.affects[i]:onExit() 
 		table.remove(self.affects,i)
 	end
+	self.bAtkAffects = {}
+	self.AtkAffects = {}
+	
 end
 function AffectTable:removeBySkillId(skillId)
 	for i=#self.affects,1,-1 do 

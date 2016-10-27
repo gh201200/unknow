@@ -13,6 +13,10 @@ function loveAffect:onEnter()
 	self.super.onEnter(self)
 	--self.owner.affectState = bit_or(self.owner.affectState,self.control)
 	self.owner:setTargetVar(self.source)
+	self.owner.targetPos = self.source
+	
+	self.owner.triggerCast = true
+	self.owner.ReadySkillId = 30001
 	self.owner:setActionState(self.speed, ActionState.loved)
 end
 

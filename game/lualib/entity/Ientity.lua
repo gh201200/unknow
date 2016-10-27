@@ -217,12 +217,13 @@ function Ientity:setTarget(target)
 	end
 	self.userAStar = false
 	self:setTargetVar( target )
-	self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 	self.triggerCast = true
 	if target:getType() == "transform" and self.ReadySkillId == 0 then
 		self.triggerCast = false
 	end
---	local r = self:pathFind(self.target.pos.x, self.target.pos.z)
+	if self:canMove() == 0 then
+		self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
+	end
 end
 
 
@@ -434,6 +435,14 @@ end
 function Ientity:onRaise()
 	self:addHp(self:getHpMax(), HpMpMask.RaiseHp)
 	self:addMp(self:getMpMax(), HpMpMask.RaiseMp)
+	--学习被动技能
+	for _k,_v in pairs(self.skillTable) do
+		local id = _k + _v - 1
+		local skilldata = g_shareData.skillRepository[id]	
+		if skilldata ~= nil and skilldata.bActive == false then
+			self.spell:onStudyPasstiveSkill(skilldata)	
+		end
+	end	
 end
 
 function Ientity:addHp(_hp, mask, source)
@@ -831,7 +840,7 @@ function Ientity:castSkill()
 	if skilldata.bCommonSkill == true then --攻击动作
 		local Aspeed = self:getASpeed() or 0
 		local allTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
-		local pc =  Aspeed / allTime
+		local pc =  1 --Aspeed / allTime
 		for i=1,3,1 do
 			skillTimes[i] = math.floor(skillTimes[i] * pc)
 		end
