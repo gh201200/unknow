@@ -22,13 +22,11 @@ local AffectTable = class("AffectTable")
 function AffectTable:ctor(entity)
 	self.owner = entity
 	self.affects = {}
-	self.affectStates = 0
 	self.AtkAffects = {}
-	self.bAtkAffects = {}
+	self.bAtkAffects = {} 
 end
 
 function AffectTable:update(dt)
-	self.affectStates = 0
 	for i=#self.affects,1,-1 do
 		if self.affects[i].status == "exec" then
 			self.affects[i]:onExec(dt)

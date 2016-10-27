@@ -808,7 +808,6 @@ function Ientity:setCastSkillId(id)
 	local type_range = GET_SkillTgtRange(skilldata)
 	local type_target = GET_SkillTgtType(skilldata)
 	if type_range == 2 or type_range == 7 then
-		print("setCastSkill",id)
 		self:castSkill()
 		self.ReadySkillId = 0	
 		return
