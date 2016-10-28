@@ -7,6 +7,7 @@ local SOCKET = {}
 local gate
 local agentfd = {}
 local agentPools = {}
+local agentAccount = {}
 local pid = 500001 
 
 function SOCKET.open(fd, addr)
@@ -41,6 +42,7 @@ end
 local function close_agent(fd)
 	local a = agentfd[fd]
 	agentfd[fd] = nil
+	agentAccount[fd] = nil
 	if a then
 		skynet.call(gate, "lua", "kick", fd)
 		-- disconnect never return
@@ -78,6 +80,10 @@ end
 
 function CMD.close(fd)
 	close_agent(fd)
+end
+
+function CMD.userEnter( accountId, fd )
+	agentAccount[fd] = accountId
 end
 
 skynet.start(function()

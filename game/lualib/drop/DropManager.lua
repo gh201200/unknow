@@ -237,7 +237,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 	--tell all teamers, inclue player self
 	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
 	
-	return errorCode
+	return errorCode, itemData.n32Retain1
 end
 
 return DropManager.new()

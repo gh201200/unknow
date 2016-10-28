@@ -170,7 +170,8 @@ local CMD = {}
 function CMD.Start (conf)
 	local gate = conf.gate
 	WATCHDOG = conf.watchdog
-	user = { 
+	user = {
+		watchdog = WATCHDOG,
 		fd = conf.client, 
 		REQUEST = {},
 		RESPONSE = {},
