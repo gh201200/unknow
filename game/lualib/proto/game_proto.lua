@@ -254,6 +254,7 @@ requestCastSkill 202 {
 		skillid 1 : integer
 	}
 }
+
 lockTarget 203 {
 	request {
 		serverid 0 : integer
@@ -261,15 +262,22 @@ lockTarget 203 {
 	response {
 		errorcode 0 : integer
 	}
- }
+}
 
 usePickItem 204 {
 	request {
 		sid 0 : integer
+		x1 1 : integer
+		y1 2 : integer
+		x2 3 : integer
+		y2 4 : integer
 	}
 	response {
 		errorCode 0 : integer
-		sid 1 : integer
+		x1 1 : integer
+		y1 2 : integer
+		x2 3 : integer
+		y2 4 : integer
 	}
 }
 
