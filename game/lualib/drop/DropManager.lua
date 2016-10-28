@@ -227,7 +227,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 	player:addReplaceSkillTimes(1)
 	table.remove(tb, index)
 	player:removeSkill(skillId)
-	player:addSkill(itemData.n32Retain1, true)
+	player:addSkill(itemData.n32Retain1)
 
 	--tell all teamers, inclue player self
 	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
