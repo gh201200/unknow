@@ -213,7 +213,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 				break
 			end
 		else
-			if player:getCommonSkill() == player.ReadySkillId then
+			if player.spell.skilldata and player:getCommonSkill() == player.spell.skilldata.id then
 				errorCode = 3	--普工释放中
 				break
 			end	

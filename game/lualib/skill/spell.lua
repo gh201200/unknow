@@ -13,7 +13,7 @@ function spell:ctor(entity)
 	self.source = entity
 	self.targets = {}
 	self.status = SpellStatus.None
-	self.skilldata = {}	
+	self.skilldata = nil
 
 	self.readyTime = 0 	 --施法前摇
 	self.castTime = 0	 --施放中
@@ -260,7 +260,8 @@ function spell:clear()
 	self.errorCode = ErrorCode.None
 	self.readyTime = 0
 	self.castTime = 0
-	self.endTime = 0 
+	self.endTime = 0
+	self.skilldata = nil
 end
 
 function spell:onCast()
