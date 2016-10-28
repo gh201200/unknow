@@ -788,7 +788,6 @@ function Ientity:setCastSkillId(id)
 		syslog.warning( 'setCastSkillId failed ' .. id )
 		return
 	end
-	
 	if skilldata.bActive == false then	
 		--测试使用
 		self.ReadySkillId = 0
@@ -801,6 +800,7 @@ function Ientity:setCastSkillId(id)
 	local type_target = GET_SkillTgtType(skilldata)
 	if type_target == 4 or type_range == 2 or type_range == 7  then
 		--可以立即释放
+		self.ReadySkillId = id
 		self:castSkill()
 		self.ReadySkillId = 0	
 	end
