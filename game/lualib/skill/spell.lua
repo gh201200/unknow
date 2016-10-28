@@ -291,6 +291,7 @@ function spell:onEnd()
 		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
 			self.source:setTarget( nil )
 		end
+		self:clear()
 	end
 end
 function spell:Cast(skillid,target,pos)

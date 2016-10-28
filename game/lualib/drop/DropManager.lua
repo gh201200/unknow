@@ -197,7 +197,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 			errorCode = 4	--最多能替换三次技能
 		end
 		if itemData.n32Type ~= 0 then
-			errorCode = -1
+			errorCode = 5
 			break
 		end
 		
