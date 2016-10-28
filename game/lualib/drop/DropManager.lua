@@ -201,11 +201,6 @@ function DropManager:replaceSkill(player, sid, skillId)
 			break
 		end
 		
-		if not player.skillTable[itemData.n32Retain1] then
-			errorCode = -1
-			break
-		end
-
 		if skillId == player:getGodSkill() then
 			errorCode = -1
 			break

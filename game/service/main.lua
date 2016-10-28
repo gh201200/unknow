@@ -25,13 +25,16 @@ skynet.start(function()
 	skynet.uniqueservice("chatserver")
 	--启动CD时间服务
 	snax.uniqueservice("cddown")
-	--启动GM服务
-	snax.uniqueservice("gm")
 
 
 	local loginserver = skynet.newservice("loginserver")
 	skynet.call(loginserver,"lua","open",login_config)
 	local watchdog = skynet.newservice("watchdog")
 	skynet.call(watchdog, "lua", "start", game_config)
+	
+	--启动GM服务
+	snax.uniqueservice("gm", watchdog)
+	
+
 	skynet.exit()
 end)
