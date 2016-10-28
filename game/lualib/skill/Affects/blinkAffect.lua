@@ -14,7 +14,7 @@ function blinkAffect:onEnter()
 	self.super.onEnter(self)
 	local distance  = self.distance --闪现距离
 	local vec = self.owner.dir:return_mul_num(distance)
-	local  des = self.target.pos--self.owner.pos:return_add(vec)
+	local  des = self.owner.pos:return_add(vec)
 	self.owner:onBlink(des)
 end
 

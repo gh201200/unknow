@@ -36,8 +36,12 @@ for k, p in pairs(xmlhandler.root.info.item) do
 			end 
 		end
 	end
+	if tmpTb.bCommonSkill ==  true then
+		tmpTb.demageData = tmpTb.szTargetAffect
+	end
 	skillTable[tmpTb.id] = tmpTb
 end
+
 
 --print("skillTable",skillTable)
 return skillTable

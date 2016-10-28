@@ -13,6 +13,11 @@ function loveAffect:onEnter()
 	self.super.onEnter(self)
 	--self.owner.affectState = bit_or(self.owner.affectState,self.control)
 	self.owner:setTargetVar(self.source)
+	self.owner.targetPos = self.source
+	if self.owner:getType() == "IMapPlayer"  then
+		self.owner.triggerCast = true
+		self.owner.ReadySkillId = self.owner:getCommonSkillId()
+	end
 	self.owner:setActionState(self.speed, ActionState.loved)
 end
 

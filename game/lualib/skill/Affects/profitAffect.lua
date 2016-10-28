@@ -30,10 +30,12 @@ function profitAffect:onExec(dt)
 	end
 	for i=#g_entityManager.entityList, 1, -1 do
 		local v = g_entityManager.entityList[i] 
-		if self.tgtType == 2 and self.owner:isKind(v) == true then
-			self:trigger(v)
-		elseif self.tgtType == 3 and self.owner:isKind(v) == false then
-			self:trigger(v)
+		if v:getType() ~= "IBuilding" then 
+			if self.tgtType == 2 and self.owner:isKind(v) == true then
+				self:trigger(v)
+			elseif self.tgtType == 3 and self.owner:isKind(v) == false then
+				self:trigger(v)
+			end
 		end
 	end
 end

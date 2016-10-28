@@ -90,6 +90,16 @@ function IMapPlayer:init(heroId)
 	self:dumpStats()
 end
 
+function IMapPlayer:getCommonSkillId()
+	for _k,_v in pairs(self.skillTable) do
+		local id = _k + _v - 1
+		local skilldata = g_shareData.skillRepository[id]
+		if skilldata and skilldata.bCommonSkill == true then
+			return id
+		end	
+	end
+	return 0
+end
 function IMapPlayer:calcStats()
 	self:calcStrength()
 	self:calcZhili()

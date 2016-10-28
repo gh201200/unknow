@@ -61,7 +61,10 @@ AffectState = {
 	NoSpell				= 1 << 2, --不能放技能
 	Invincible			= 1 << 3, --无敌状态
 	OutSkill			= 1 << 4, --魔免状态
-	NoDead				= 1 << 5,
+	NoDead				= 1 << 5, --不死状态
+	GoldBody			= 1 << 6, --金身状态
+	Loved				= 1 << 7, --魅惑状态
+	Crit				= 1 << 8, --暴击状态
 }
 
 SpellStatus = {
