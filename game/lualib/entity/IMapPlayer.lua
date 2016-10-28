@@ -186,7 +186,7 @@ end
 
 function IMapPlayer:removeSkill(skillId)
 	--移除旧技能带的buff效果
-	self.AffectTable:removeBySkillId(skillId)
+	self.affectTable:removeBySkillId(skillId)
 	
 	self.skillTable[skillId] = nil
 end
