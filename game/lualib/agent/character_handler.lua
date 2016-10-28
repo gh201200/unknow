@@ -7,6 +7,7 @@ local AccountMethod = require "agent.account_method"
 local ExploreMethod = require "agent.explore_method"
 local ExploreCharacter = require "agent.expand.explore_ch"
 local CardCharacter = require "agent.expand.card_ch"
+local Quest = require "quest.quest"
 
 local REQUEST = {}
 handler = handler.new (REQUEST)
