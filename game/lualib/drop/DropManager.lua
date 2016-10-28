@@ -197,7 +197,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 			errorCode = 4	--最多能替换三次技能
 		end
 		if itemData.n32Type ~= 0 then
-			errorCode = -1
+			errorCode = 5
 			break
 		end
 		
@@ -213,7 +213,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 				break
 			end
 		else
-			if player.spell.skilldata and player:getCommonSkill() == player.spell.skilldata.id then
+			if player.spell:isSpellRunning() and player:getCommonSkill() == player.spell.skilldata.id then
 				errorCode = 3	--普工释放中
 				break
 			end	
@@ -227,7 +227,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 	player:addReplaceSkillTimes(1)
 	table.remove(tb, index)
 	player:removeSkill(skillId)
-	player:addSkill(itemData.n32Retain1, true)
+	player:addSkill(itemData.n32Retain1)
 
 	--tell all teamers, inclue player self
 	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
