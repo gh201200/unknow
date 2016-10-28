@@ -269,7 +269,6 @@ function spell:clear()
 	self.readyTime = 0
 	self.castTime = 0
 	self.endTime = 0
-	self.skilldata = nil
 end
 
 function spell:onCast()
