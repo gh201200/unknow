@@ -136,8 +136,9 @@ end
 
 function CMD.replaceSkill(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local errorCode = DropManager:replaceSkill(player, args.sid, args.skillId)
-	response(true, {errorCode = errorCode})
+	local errorCode, skillId = DropManager:replaceSkill(player, args.sid, args.skillId)
+	if not skillId then skillId = 0 end
+	response(true, {errorCode = errorCode,skillId = skillId, beSkillId = args.skillId})
 end
 
 function CMD.start(response, args)

@@ -10,16 +10,23 @@ function handler.new (request, response, cmd)
 	}, mt)
 end
 
-function handler:init (f)
-	table.insert (self.init_func, f)
-end
-
 local function merge (dest, t)
 	if not dest or not t then return end
 	for k, v in pairs (t) do
 		dest[k] = v
 	end
 end
+
+function handler:add ( expand )
+	merge( self.request, expand.request )
+	merge( self.response, expand.response )
+	merge( self.cmd , expand.cmd )
+end
+
+function handler:init (f)
+	table.insert (self.init_func, f)
+end
+
 
 function handler:register (user)
 	for _, f in pairs (self.init_func) do

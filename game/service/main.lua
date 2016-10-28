@@ -18,14 +18,23 @@ skynet.start(function()
 	skynet.uniqueservice ("database")
 	-----------------------------------------------------------
 	------------
+	--启动web server 服务
 	skynet.uniqueservice("simpleweb")
 	skynet.uniqueservice("match")
 	--启动聊天服务
 	skynet.uniqueservice("chatserver")
+	--启动CD时间服务
 	snax.uniqueservice("cddown")
+
+
 	local loginserver = skynet.newservice("loginserver")
 	skynet.call(loginserver,"lua","open",login_config)
 	local watchdog = skynet.newservice("watchdog")
 	skynet.call(watchdog, "lua", "start", game_config)
+	
+	--启动GM服务
+	snax.uniqueservice("gm", watchdog)
+	
+
 	skynet.exit()
 end)

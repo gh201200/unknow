@@ -290,6 +290,8 @@ replaceSkill 206 {
 	}
 	response {
 		errorCode 0 : integer
+		skillId 1 : integer
+		beSkillId 2 : integer
 	}
 }
 

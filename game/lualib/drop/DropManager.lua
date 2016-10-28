@@ -201,11 +201,6 @@ function DropManager:replaceSkill(player, sid, skillId)
 			break
 		end
 		
-		if not player.skillTable[itemData.n32Retain1] then
-			errorCode = -1
-			break
-		end
-
 		if skillId == player:getGodSkill() then
 			errorCode = -1
 			break
@@ -237,7 +232,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 	--tell all teamers, inclue player self
 	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
 	
-	return errorCode
+	return errorCode, itemData.n32Retain1
 end
 
 return DropManager.new()
