@@ -229,6 +229,7 @@ function spell:onBegin()
 	self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
 	self.source:callBackSpellBegin()
 end
+
 function spell:onReady()
 	if self.readyTime < 0 then
 		if self.isSheule == true then
@@ -245,6 +246,7 @@ function spell:onReady()
 		self.status = SpellStatus.Cast
 	end
 end
+
 --同步技能状态到客户端
 function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 	actionTime = actionTime or 0
@@ -289,7 +291,9 @@ function spell:onEnd()
 		self.source:OnStand()
 		self.source:callBackSpellEnd()
 		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
-			self.source:setTarget( nil )
+			if self.source:getTarget() == self.srcTarget then
+				self.source:setTarget( nil )
+			end
 		end
 	end
 end

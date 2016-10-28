@@ -251,6 +251,7 @@ requestCastSkill 202 {
 	}
 	response {
 		errorcode 0 :integer
+		skillid 1 : integer
 	}
 }
 lockTarget 203 {

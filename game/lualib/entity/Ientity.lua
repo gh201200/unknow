@@ -789,29 +789,28 @@ function Ientity:setCastSkillId(id)
 		return
 	end
 	
-	self.ReadySkillId = id
 	if skilldata.bActive == false then	
 		--测试使用
 		self.ReadySkillId = 0
 		self.spell:onStudyPasstiveSkill(skilldata)
-		return
+		return 0
 	end
 	local errorcode = self:canSetCastSkill(id) 
-        --print('errorcode = ', errorcode)
 	if errorcode ~= 0 then return errorcode end
-	if skilldata.n32Type == 41 then
-		--针对自身立即释放
-		self:castSkill()
-		self.ReadySkillId = 0
-		return
-	end 
 	local type_range = GET_SkillTgtRange(skilldata)
 	local type_target = GET_SkillTgtType(skilldata)
-	if type_range == 2 or type_range == 7 then
+	if type_target == 4 or type_range == 2 or type_range == 7  then
+		--可以立即释放
 		self:castSkill()
 		self.ReadySkillId = 0	
-		return
 	end
+	if self.ReadySkillId == id then
+		--技能取消
+		self.ReadySkillId = 0
+		return -1
+	end
+	self.ReadySkillId = id
+	return 0
 end
 function Ientity:castSkill()
 	self.CastSkillId = self.ReadySkillId
