@@ -12,7 +12,7 @@ end
 function cooldown:addItem(skillid,cd)
 	local skilldata = g_shareData.skillRepository[skillid]
 	assert(skilldata)
-	local cdtime = cd or skilldata.n32CD  
+	local cdtime = cd or skilldata.n32CD 
 	self.coolDownTable[skillid] = cdtime
 end
 
@@ -49,7 +49,8 @@ end
 
 function cooldown:getCdsMsg()
 	local r = { items = {}}
-	for _k,_v in pairs(self.coolDownTable) do                                                	 	local item = {skillId = _k,time = _v}
+	for _k,_v in pairs(self.coolDownTable) do
+		local item = {skillId = _k,time = _v}
 		table.insert(r.items,item)
 	end	
 	return r
