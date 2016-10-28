@@ -149,6 +149,7 @@ function DropManager:useItem(player, sid)
 			end
 			if not player.skillTable[skillId] and table.size(player.skillTable) == Quest.SkillMaxNum then
 				errorCode = 3
+				break
 			end
 		end
 		
@@ -156,6 +157,7 @@ function DropManager:useItem(player, sid)
 	if errorCode ~= 0 then
 		return errorCode
 	end
+	
 	--使用道具
 	table.remove(tb, index)
 	if itemData.n32Type == 0 then
