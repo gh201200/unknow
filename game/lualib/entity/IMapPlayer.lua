@@ -192,11 +192,10 @@ function IMapPlayer:removeSkill(skillId)
 end
 
 function IMapPlayer:castSkill()
-	IMapPlayer.super.castSkill(self) 
-	self:SynSkillCds()
+	IMapPlayer.super.castSkill(self)
 end
 
-function IMapPlayer:SynSkillCds()
+function IMapPlayer:SynSkillCds(id)
 	local msg = self.cooldown:getCdsMsg()	
 	skynet.call(self.agent,"lua","sendRequest","makeSkillCds",msg)	
 end

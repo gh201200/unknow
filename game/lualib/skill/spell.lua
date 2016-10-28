@@ -119,7 +119,6 @@ function spell:update(dt)
 	self:advanceEffect(dt)
 end
 function spell:onTriggerSkillAffect(skilldata,source,srcTarget)
-	--self.source:addMp(self.skilldata.n32MpCost,HpMpMask.SkillMp)
 	if skilldata.n32Type == 35 then
 		--产生可碰撞的飞行物
 		 g_entityManager:createFlyObj(source,srcTarget,skilldata)
@@ -235,6 +234,13 @@ function spell:onReady()
 		if self.isSheule == true then
 			local ss = sheduleSpell.new(self.source,self.srcTarget,self.skilldata,self.triggerTime)
 			table.insert(self.sheduleSpells,ss)
+		end
+		--扣篮消耗
+
+		self.source:addMp(-self.skilldata.n32MpCost,HpMpMask.SkillMp)
+		self.source.cooldown:addItem(self.skilldata.id) --加入cd
+		if self.source:getType() == "IMapPlayer" then
+			self.source:SynSkillCds(self.skilldata.id)
 		end
 		self.status = SpellStatus.Cast
 	end

@@ -847,7 +847,6 @@ function Ientity:castSkill()
 	end
 	local tmpSpell = self.spell
 	tmpSpell:init(skilldata,skillTimes)
-	self.cooldown:addItem(id) --加入cd
 	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
 	--self:advanceEventStamp(EventStampType.CastSkill)
