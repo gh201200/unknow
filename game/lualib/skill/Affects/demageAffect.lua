@@ -1,12 +1,14 @@
 local Affect = require "skill.Affects.Affect"
 local demageAffect = class("demageAffect",Affect)
 
-function demageAffect:ctor(entity,source,data)
-	self.super.ctor(self,entity,source,data)
+function demageAffect:ctor(entity,source,data,skillId)
+	self.super.ctor(self,entity,source,data,skillId)
 	self.triggerTime = data[4] or 0 
 	self.leftTime = data[5] or 0
 	self.effectId = data[6] or 0
 	self.effectTime = data[5] or 0
+	
+	self.projectId = skillId * 100000 + self.effectId
 end
 function demageAffect:onEnter()	
 	--推送客户端开始效果1:类型  2:属性百分比 3：属性固定值 4：间隔时间 5：持续时间 6：特效id
