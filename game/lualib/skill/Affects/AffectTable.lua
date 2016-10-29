@@ -61,6 +61,9 @@ function AffectTable:triggerAtkAffects(tgt,bAtk,skilldata)
 		tgt.affectTable:buildAffects(self.owner,skilldata.szTargetAffect)		
 		affs = self.AtkAffects
 	end
+	if tgt:getType() == "IBuilding"  then
+		return 
+	end
 	for i = #affs,1,-1 do
 		local rdm = math.random(1,100)
 		if affs[i].rate >= rdm then

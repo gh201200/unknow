@@ -124,8 +124,14 @@ function Ientity:getType()
 	return "Ientity"
 end
 
-function Ientity:isKind(entity)
+function Ientity:isKind(entity,_atk)
 	if entity.camp == nil then return true end
+	_atk = _atk or false
+	if _atk == false then
+		if entity:getType() == "IBuilding" then
+			return true
+		end		
+	end
 	if self.camp == CampType.KIND or entity.camp == CampType.KIND then
 		return true
 	end
@@ -755,7 +761,7 @@ function Ientity:canCast(id)
 		if bit_and(self.affectState,AffectState.NoSpell) ~= 0 then
 			return ErrorCode.EC_Spell_Controled
 		end
-		if self:getTarget() ~= nil and self:getTarget() == "IBuilding" then
+		if self:getTarget() ~= nil and self:getTarget():getType() == "IBuilding" then
 			return ErrorCode.EC_Spell_NoBuilding	
 		end
 	end

@@ -159,9 +159,9 @@ function EntityManager:getSkillAttackEntitys(source,target,skilldata)
 		return ret
 	end
 	local getEntityRectange = function(tab,basepos,tgtpos,range)
-	--	print("getEntityRectange",range)
-		local w = 2/2
-		local h = 2
+		print("getEntityRectange",range)
+		local w = range[1] 
+		local h = range[2]
 		local ret = {}
 		--basepos = vector3.create(0,0,0)
 		--tgtpos = vector3.create(1,0,0)

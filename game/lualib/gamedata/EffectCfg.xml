@@ -6,8 +6,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20001">
@@ -16,8 +15,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20002">
@@ -26,8 +24,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>2</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20003">
@@ -36,8 +33,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>2</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20004">
@@ -46,18 +42,16 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20005">
-		<n32type>1</n32type>
+		<n32type>7</n32type>
 		<szassert>Shandianlian_1</szassert>
 		<n32time>1000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20006">
@@ -66,8 +60,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20007">
@@ -75,9 +68,8 @@
 		<szassert>Hudun</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20008">
@@ -86,8 +78,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20009">
@@ -96,8 +87,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20010">
@@ -106,8 +96,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20011">
@@ -116,8 +105,7 @@
 		<n32time>1500</n32time>
 		<n32speed>3</n32speed>
 		<n32position>9</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20012">
@@ -126,9 +114,8 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName>Pig</szModName>
-		<n32Redius>0</n32Redius>
+		<n32Extra>0</n32Extra>
+		<n32Redius>1</n32Redius>
 	</item>
 	<item id="20013">
 		<n32type>2</n32type>
@@ -136,8 +123,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20014">
@@ -146,8 +132,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20015">
@@ -156,8 +141,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20016">
@@ -166,9 +150,8 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader>iceEffect</szshader>
-		<szModName></szModName>
-		<n32Redius>0</n32Redius>
+		<n32Extra>2</n32Extra>
+		<n32Redius>2</n32Redius>
 	</item>
 	<item id="20017">
 		<n32type>1</n32type>
@@ -176,8 +159,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>9</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20018">
@@ -186,8 +168,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20019">
@@ -196,8 +177,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20020">
@@ -206,8 +186,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20021">
@@ -216,8 +195,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20022">
@@ -226,8 +204,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20023">
@@ -236,8 +213,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20024">
@@ -246,8 +222,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20025">
@@ -256,19 +231,17 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20026">
 		<n32type>2</n32type>
-		<szassert>Jinshenhuixue</szassert>
+		<szassert></szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
-		<n32Redius>0</n32Redius>
+		<n32Extra>3</n32Extra>
+		<n32Redius>3</n32Redius>
 	</item>
 	<item id="20027">
 		<n32type>1</n32type>
@@ -276,8 +249,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20028">
@@ -286,8 +258,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>2</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20029">
@@ -296,8 +267,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20030">
@@ -306,8 +276,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20031">
@@ -316,8 +285,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20032">
@@ -325,9 +293,8 @@
 		<szassert>Hudun</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20033">
@@ -336,8 +303,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20034">
@@ -346,8 +312,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>2</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20035">
@@ -356,8 +321,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20036">
@@ -366,8 +330,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20037">
@@ -376,8 +339,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20038">
@@ -386,8 +348,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20039">
@@ -396,8 +357,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20040">
@@ -406,8 +366,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20041">
@@ -416,8 +375,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20042">
@@ -426,8 +384,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20043">
@@ -436,8 +393,7 @@
 		<n32time>4000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20044">
@@ -446,8 +402,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20045">
@@ -456,8 +411,7 @@
 		<n32time>4000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20046">
@@ -466,8 +420,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20047">
@@ -476,8 +429,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20048">
@@ -486,18 +438,16 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20049">
-		<n32type>1</n32type>
-		<szassert>Bianzhu</szassert>
+		<n32type>2</n32type>
+		<szassert></szassert>
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>1</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20050">
@@ -506,8 +456,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20051">
@@ -516,8 +465,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20052">
@@ -526,8 +474,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20053">
@@ -536,8 +483,7 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<szshader></szshader>
-		<szModName></szModName>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 	</item>
 </info>
