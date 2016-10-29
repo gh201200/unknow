@@ -16,14 +16,14 @@ function SpawnNpcManager:init(mapId)
 		end
 	end
 end
-local spawnOver = false
+local spawnNum = 0
 function SpawnNpcManager:update(dt)
 	--if true then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
-	spawnOver = false
+	spawnNum = 0
 	for k ,v in pairs(self.groups) do
 		if v.dat and v.batch == self.batch then
-			spawnOver = false
+			spawnNum = spawnNum + 1
 			v.remainTime = v.remainTime - dt
 			if v.remainTime <= 0 then
 				print("begin spawn the monster: "..v.dat.id)
@@ -52,13 +52,13 @@ function SpawnNpcManager:update(dt)
 				--tell the clients
 				EntityManager:sendToAllPlayers("spawnMonsters", {spawnList = ret})
 				
-				v.remaintime = v.dat.n32CDtime
+				v.remainTime = v.dat.n32CDTime * 1000
 				v.dat = g_shareData.spawnMonsterResp[v.dat.n32NextBatch]
-				spawnOver = true
+				spawnNum = spawnNum - 1
 			end
 		end
 	end
-	if spawnOver then
+	if spawnNum == 0 then
 		self.batch = self.batch + 1
 	end
 	
