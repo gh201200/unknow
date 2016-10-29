@@ -109,7 +109,6 @@ function DropManager:makeDrop(entity)
 		end
 	end
 	if #items > 0 then
-		print(items)
 		EntityManager:sendToAllPlayers("makeDropItem", {items = items})
 	end
 end
