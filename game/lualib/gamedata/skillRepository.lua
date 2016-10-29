@@ -24,7 +24,14 @@ for k, p in pairs(xmlhandler.root.info.item) do
 			tmpTb.id = tonumber(_v.id)
 		else
 			if string.match(_i,"n32%a+") then
+				if _i == "n32Radius" and tonumber(_v) == nil then
+					local t = string.split(_v,",")	
+					tmpTb[_i] = {}
+					tmpTb[_i][1] = tonumber(t[1])	
+					tmpTb[_i][2] = tonumber(t[2])	
+				else
 					tmpTb[_i] = tonumber(_v)
+				end
 			elseif string.match(_i,"b%a+") then
 				if tonumber(_v) == 0 then
 					tmpTb[_i] = false

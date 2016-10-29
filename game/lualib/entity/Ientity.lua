@@ -751,7 +751,7 @@ function Ientity:canCast(id)
 		if bit_and(self.affectState,AffectState.NoSpell) ~= 0 then
 			return ErrorCode.EC_Spell_Controled
 		end
-		if self:getTarget() ~= nil and self:getTarget() == "IBuilding" then
+		if self:getTarget() ~= nil and self:getTarget():getType() == "IBuilding" then
 			return ErrorCode.EC_Spell_NoBuilding	
 		end
 	end

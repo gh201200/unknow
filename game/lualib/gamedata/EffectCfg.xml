@@ -236,7 +236,7 @@
 	</item>
 	<item id="20026">
 		<n32type>2</n32type>
-		<szassert>Jinshenhuixue</szassert>
+		<szassert></szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
@@ -442,8 +442,8 @@
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20049">
-		<n32type>1</n32type>
-		<szassert>Bianzhu</szassert>
+		<n32type>2</n32type>
+		<szassert></szassert>
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>

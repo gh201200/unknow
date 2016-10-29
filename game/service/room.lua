@@ -125,7 +125,7 @@ end
 function CMD.usePickItem(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local errorCode = DropManager:useItem(player, args.sid)
-	response(true, {errorCode = errorCode, sid = args.sid})
+	response(true, {errorCode = errorCode, x1=args.x1,y1=args.y1,x2=args.x2,y2=args.y2})
 end
 
 function CMD.upgradeSkill(response, agent, account_id, args)
