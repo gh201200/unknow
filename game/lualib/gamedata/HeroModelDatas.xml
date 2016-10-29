@@ -5,10 +5,10 @@
 		<szMod_name>Shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
 		<n32Speed>11000</n32Speed>
-		<n32AttackTime1>230</n32AttackTime1>
-		<n32AttackTime2>316</n32AttackTime2>
-		<n32AttackTime3>386</n32AttackTime3>
-		<n32AttackTriTime>298</n32AttackTriTime>
+		<n32AttackTime1>270</n32AttackTime1>
+		<n32AttackTime2>187</n32AttackTime2>
+		<n32AttackTime3>466</n32AttackTime3>
+		<n32AttackTriTime>307</n32AttackTriTime>
 		<n32Skill1Time1>250</n32Skill1Time1>
 		<n32Skill1Time2>616</n32Skill1Time2>
 		<n32Skill1TriTime>328</n32Skill1TriTime>

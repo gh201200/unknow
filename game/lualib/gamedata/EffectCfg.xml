@@ -51,7 +51,7 @@
 		<n32Redius>0</n32Redius>
 	</item>
 	<item id="20005">
-		<n32type>1</n32type>
+		<n32type>7</n32type>
 		<szassert>Shandianlian_1</szassert>
 		<n32time>1000</n32time>
 		<n32speed>0</n32speed>
@@ -75,7 +75,7 @@
 		<szassert>Hudun</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
+		<n32position>1</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
@@ -325,7 +325,7 @@
 		<szassert>Hudun</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
+		<n32position>1</n32position>
 		<szshader></szshader>
 		<szModName></szModName>
 		<n32Redius>0</n32Redius>
