@@ -137,11 +137,11 @@ function spell:onTriggerSkillAffect(skilldata,source,srcTarget)
 			srcTarget.affectTable:buildAffects(source,shanbiEffect,skilldata.id)	
 			return
 		end
-		source.affectTable:triggerAtkAffects(srcTarget,false,skilldata)
-		if srcTarget and srcTarget:getType() ~= "transform" then 
-			srcTarget.affectTable:triggerAtkAffects(source,true)	
-		end
-		return
+			source.affectTable:triggerAtkAffects(srcTarget,false,skilldata)
+			if srcTarget and srcTarget:getType() ~= "transform" then 
+				srcTarget.affectTable:triggerAtkAffects(source,true)	
+			end
+			return
 	end
 
 	if skilldata.n32Type ~= 35 and skilldata.n32Type ~= 36 then

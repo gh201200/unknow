@@ -4,7 +4,6 @@ local electricAffect = class("elecricAffect",Affect)
 function electricAffect:ctor(entity,source,data,root,index)
 	self.super.ctor(self,entity,source,data)
 	print("electricAffect:ctor",self.owner.serverId,self.source.serverId)
-	print("data",self.data)
 	self.atkMul = {}
 	self.atkMul[1] = self.data[2] or 0
 	self.atkMul[2] = self.data[3] or 0
@@ -56,8 +55,8 @@ end
 function electricAffect:findNearTgt(src)
 	for i=#g_entityManager.entityList, 1, -1 do
 		local v = g_entityManager.entityList[i]
-		if v:isKind(self.root) == false and  self.tgts[v.serverId] == nil then
-		 	local dis = self.owner:getDistance(v)
+		if self.root:isKind(v) == false and  self.tgts[v.serverId] == nil then 
+			local dis = self.owner:getDistance(v)
 			if self.radius >= dis then
 				return v
 			end

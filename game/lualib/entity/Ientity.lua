@@ -124,8 +124,14 @@ function Ientity:getType()
 	return "Ientity"
 end
 
-function Ientity:isKind(entity)
+function Ientity:isKind(entity,_atk)
 	if entity.camp == nil then return true end
+	_atk = _atk or false
+	if _atk == false then
+		if entity:getType() == "IBuilding" then
+			return true
+		end		
+	end
 	if self.camp == CampType.KIND or entity.camp == CampType.KIND then
 		return true
 	end
