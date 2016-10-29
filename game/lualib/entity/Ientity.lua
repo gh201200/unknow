@@ -218,9 +218,19 @@ function Ientity:setTarget(target)
 	self.userAStar = false
 	self:setTargetVar( target )
 	self.triggerCast = true
-	if target:getType() == "transform" and self.ReadySkillId == 0 then
-		self.triggerCast = false
+	if target:getType() == "transform" then 
+		if self.ReadySkillId == 0 then
+			self.triggerCast = false
+		end
+	else
+		if self.ReadySkillId ~= 0 and self.triggerCast == true then	
+			local err = self:canCast(self.ReadySkillId)
+			if err == 0 then
+				return
+			end
+		end
 	end
+
 	if self:canMove() == 0 then
 		self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 	end
@@ -372,7 +382,7 @@ function Ientity:onMove(dt)
 		end
 	end
 
-	if legal_pos then 
+	if legal_pos then
 		--move
 		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
 		--advance move event stamp

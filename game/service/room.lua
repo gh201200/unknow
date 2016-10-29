@@ -76,11 +76,10 @@ function CMD.lockTarget(response,agent, account_id, args)
 	local target = EntityManager:getEntity(serverid)
 	if player.ReadySkillId == 0 then
 		--默认设置普攻
-		player.ReadySkillId = 30001
+		player.ReadySkillId = player:getCommonSkill()
 	end
 	player:setTarget(target)
-	local err = 0
-	response(true, { errorcode =  err })
+	response(true, nil)
 end
 
 function CMD.query_server_id(response,agent, account_id, args)

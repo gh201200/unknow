@@ -86,6 +86,16 @@ function CMD.userEnter( accountId, fd )
 	agentAccount[fd] = accountId
 end
 
+function CMD.gm_cmd( accountId, gmFunc, args )
+	for k, v in pairs(agentAccount) do
+		if v and v == accountId then
+			skynet.call(k, "lua", gmFunc, args)
+			return true
+		end
+	end
+	return false
+end
+
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, cmd, subcmd, ...)
 		if cmd == "socket" then

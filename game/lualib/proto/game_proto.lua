@@ -259,9 +259,6 @@ lockTarget 203 {
 	request {
 		serverid 0 : integer
 	}
-	response {
-		errorcode 0 : integer
-	}
 }
 
 usePickItem 204 {
