@@ -210,7 +210,7 @@ end
 
 function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
-	if target == self:getTarget() then return end	
+--	if target == self:getTarget() then return end	
 	if self:isDead() then return end
 	if self.spell:canBreak(ActionState.move) == false then
 		return 
