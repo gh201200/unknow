@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+local snax = require "snax"
 local socket = require "socket"
 local httpd = require "http.httpd"
 local sockethelper = require "http.sockethelper"
@@ -61,40 +62,42 @@ funcs['getHero'] = function (param)
 	return jt
 end;
 
+funcs['gm_GET_opt'] = function (param)	
+	local gm = snax.queryservice 'gm'
+	local r = gm.req[param['func']](param)
+	local jt = json.encode(r)
+	return jt
+end;
+
+funcs['gm_POST_opt'] = function (param)	
+	local gm = snax.queryservice 'gm'
+	gm.post[param['func']](param)
+end;
+
 skynet.start(function()
 	g_shareData = sharedata.query "gdd"
 	skynet.dispatch("lua", function (_,_,id)
 		socket.start(id)
 		-- limit request body size to 8192 (you can pass nil to unlimit)
 		local code, url, method, header, body = httpd.read_request(sockethelper.readfunc(id), 8192)
-			
+		print(code, url, method)		
 		if code then
-			if method ~= "GET" then
-				skynet.error("only support get method")
-			elseif code ~= 200 then
+			if code ~= 200 then
 				response(id, code)
 			else
-				local func = nil
 				local params = {}
 				local path, query = urllib.parse(url)
 				if query then
 					local q = urllib.parse_query(query)
 					for k, v in pairs(q) do
-						if k=='func' then
-							func = funcs[v]
-						else
-							params[k] = v
-						end
+						params[k] = v
 					end
 				end
-				if func then
-					local res = func(params)
-					print(res)
-					response(id, code, res)
-				else
+				local func = funcs['gm_' .. method .. '_opt']
+				local res = func(params)
+				print(res)
+				response(id, code, res)
 					
-					response(id, code)
-				end
 			end
 		else
 			if url == sockethelper.socket_error then

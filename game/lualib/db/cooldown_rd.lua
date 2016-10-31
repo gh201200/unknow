@@ -36,6 +36,7 @@ end
 function cooldown.update(bl, ...)
 	
 	local connection, key = make_key (bl)
+	local p = { ... }
 	local t = {}
 	for k, v in pairs(...) do
 		t[2*k - 1] = v

@@ -49,10 +49,10 @@ function account.create (account_id, password, nick, icon)
 end
 
 function account.update(account, ...)
-	
+	local p = { ... }
 	local connection, key = make_key (account.account_id)
 	local t = {}
-	for k, v in pairs(...) do
+	for k, v in pairs(p) do
 		t[2*k - 1] = v
 		t[2*k] = account[v]
 	end
