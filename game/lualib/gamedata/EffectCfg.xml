@@ -236,7 +236,7 @@
 	</item>
 	<item id="20026">
 		<n32type>2</n32type>
-		<szassert></szassert>
+		<szassert>nothing</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
@@ -443,7 +443,7 @@
 	</item>
 	<item id="20049">
 		<n32type>2</n32type>
-		<szassert></szassert>
+		<szassert>nothing</szassert>
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>

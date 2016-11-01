@@ -3,7 +3,7 @@ require "globalDefine"
 local vector3 = require "vector3"
 local IflyObj = require "entity.IflyObj"
 local EntityManager = class("EntityManager")
-
+local IPet = require "entity.Ipet"
 function EntityManager:sendToAllPlayers(msg, val, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
@@ -114,10 +114,25 @@ function EntityManager:getCloseEntityByType(source, _type)
 	end
 	return et, minLen
 end
+
 function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
 	local obj = IflyObj.create(srcObj,targetPos,skilldata)	
 	self:addEntity(obj)
 end
+
+function EntityManager:createPet(id,master)
+	print("createPet")
+	local pet = IPet.new()
+	g_entityManager:addEntity(pet)
+	local pt = g_shareData.petRepository[id]
+	pet.serverId = assin_server_id()	
+	pet:init(pt,master)
+	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0}
+	_pet.posx = math.ceil(master.pos.x * GAMEPLAY_PERCENT)
+	_pet.posz = math.ceil(master.pos.z * GAMEPLAY_PERCENT)
+	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
+end
+
 function EntityManager:getSkillAttackEntitys(source,target,skilldata)
 	local type_range = GET_SkillTgtRange(skilldata)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:飞行物碰撞 
 	local type_target = GET_SkillTgtType(skilldata)  -- 1:自身 2:友方 3:敌方

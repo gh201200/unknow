@@ -11,7 +11,8 @@ local gdd  = {
 	itemDropPackage = require "itemDropPackage",
 	heroLevel = require "heroLevel",
 	effectRepository = require "effectRepository",
-	lzmRepository = require "lzmRepository"
+	lzmRepository = require "lzmRepository",
+	petRepository = require "petRepository"
 }
 skynet.start(function()
 	sharedata.new("gdd",gdd)

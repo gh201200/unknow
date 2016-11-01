@@ -1636,7 +1636,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20012][ctrl:6,0,0,2000,20049]</szTargetAffect>
+		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1671,7 +1671,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20012][ctrl:6,0,0,2000,20049]</szTargetAffect>
+		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1706,7 +1706,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20012][ctrl:6,0,0,2000,20049]</szTargetAffect>
+		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -1741,7 +1741,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20012][ctrl:6,0,0,2000,20049]</szTargetAffect>
+		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2610,7 +2610,7 @@
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
 		<bIngoreImmune>0</bIngoreImmune>
-		<n32Type>42</n32Type>
+		<n32Type>41</n32Type>
 		<szTypeInfo>召唤霜狼</szTypeInfo>
 		<szDescribe>召唤技能</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
@@ -2623,7 +2623,7 @@
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
-		<n32Pet>0</n32Pet>
+		<n32Pet>50001</n32Pet>
 	</item>
 	<item id="2000902">
 		<n32SeriId>20009</n32SeriId>
@@ -5250,6 +5250,146 @@
 		<n32TimeEffect>0</n32TimeEffect>
 		<n32Pet>0</n32Pet>
 	</item>
+	<item id="4000901">
+		<n32SeriId>40009</n32SeriId>
+		<szName>召唤蜘蛛</szName>
+		<n32Lv>1</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>zhaohuanzhizhu.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>42</n32Type>
+		<szTypeInfo>召唤蜘蛛</szTypeInfo>
+		<szDescribe></szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="4000902">
+		<n32SeriId>40009</n32SeriId>
+		<szName>召唤蜘蛛</szName>
+		<n32Lv>2</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>zhaohuanzhizhu.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>42</n32Type>
+		<szTypeInfo>召唤蜘蛛</szTypeInfo>
+		<szDescribe></szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="4000903">
+		<n32SeriId>40009</n32SeriId>
+		<szName>召唤蜘蛛</szName>
+		<n32Lv>3</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>zhaohuanzhizhu.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>42</n32Type>
+		<szTypeInfo>召唤蜘蛛</szTypeInfo>
+		<szDescribe></szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="4000904">
+		<n32SeriId>40009</n32SeriId>
+		<szName>召唤蜘蛛</szName>
+		<n32Lv>4</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>zhaohuanzhizhu.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>0</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>42</n32Type>
+		<szTypeInfo>召唤蜘蛛</szTypeInfo>
+		<szDescribe></szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect></szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
 	<item id="5000101">
 		<n32SeriId>50001</n32SeriId>
 		<szName>闪杀</szName>
@@ -5678,7 +5818,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
-		<szIcon>shijianjingzhi.png</szIcon>
+		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>500</n32MpCost>
@@ -5713,7 +5853,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
-		<szIcon>shijianjingzhi.png</szIcon>
+		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>500</n32MpCost>
@@ -5748,7 +5888,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
-		<szIcon>shijianjingzhi.png</szIcon>
+		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>500</n32MpCost>
@@ -5783,7 +5923,7 @@
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
-		<szIcon>shijianjingzhi.png</szIcon>
+		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>500</n32MpCost>
@@ -5804,6 +5944,146 @@
 		<szTargetAffect>[ctrl:7,0,0,3000,20048]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>200000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000501">
+		<n32SeriId>50005</n32SeriId>
+		<szName>神的恩赐</szName>
+		<n32Lv>1</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shendeenci.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>27</n32Type>
+		<szTypeInfo>神的恩赐</szTypeInfo>
+		<szDescribe>范围内给友方加血</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<n32Radius>30000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000502">
+		<n32SeriId>50005</n32SeriId>
+		<szName>神的恩赐</szName>
+		<n32Lv>2</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shendeenci.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>27</n32Type>
+		<szTypeInfo>神的恩赐</szTypeInfo>
+		<szDescribe>范围内给友方加血</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<n32Radius>30000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000503">
+		<n32SeriId>50005</n32SeriId>
+		<szName>神的恩赐</szName>
+		<n32Lv>3</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shendeenci.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>27</n32Type>
+		<szTypeInfo>神的恩赐</szTypeInfo>
+		<szDescribe>范围内给友方加血</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<n32Radius>30000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000504">
+		<n32SeriId>50005</n32SeriId>
+		<szName>神的恩赐</szName>
+		<n32Lv>4</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shendeenci.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32Type>27</n32Type>
+		<szTypeInfo>神的恩赐</szTypeInfo>
+		<szDescribe>范围内给友方加血</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
