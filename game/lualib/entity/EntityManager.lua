@@ -122,7 +122,9 @@ end
 
 function EntityManager:createPet(id,master)
 	print("createPet")
-	local pet = IPet.new()
+	local pos = vector3.create(master.pos.x,0,master.pos.z)
+	local dir = vector3.create(master.dir.x,0,master.dir.z)
+	local pet = IPet.new(pos,dir)
 	g_entityManager:addEntity(pet)
 	local pt = g_shareData.petRepository[id]
 	pet.serverId = assin_server_id()	
