@@ -24,44 +24,6 @@ end
 
 local funcs = {}
 
-funcs['getAccountInfo'] = function (param)
-	local db = skynet.uniqueservice 'database'
-	local account = skynet.call(db, "lua", "account_rd","load",param["id"])
-	if not account.nick then return "" end
-	local r = {
-		nick = account.nick,
-		password = account.password,
-		gold = account.gold,
-		money = account.money,
-		exp = account.exp,
-		icon = account.icon,
-		flag = account.flag	
-	}
-	local jt = json.encode(r)
-	return jt
-end;
-
-funcs['getCardsInfo'] = function (param)
-	local db = skynet.uniqueservice 'database'
-	print(param)
-	local cards = skynet.call(db, "lua", "cards_rd","load",param["id"])
-	print(cards)
-	local jt = json.encode(cards)
-	return jt
-end;
-
-funcs['getHero'] = function (param)
-	local attDat = g_shareData.heroRepository[tonumber(param['id'])]
-	if not attDaat then return "" end
-	local r = {
-		id = attDat.id,
-		name = attDat.szName,
-		attack = attDat.n32Attack,
-	}
-	local jt = json.encode(r)
-	return jt
-end;
-
 funcs['gm_GET_opt'] = function (param)	
 	local gm = snax.queryservice 'gm'
 	local r = gm.req[param['func']](param)
@@ -95,7 +57,7 @@ skynet.start(function()
 				end
 				local func = funcs['gm_' .. method .. '_opt']
 				local res = func(params)
-				print(res)
+				print('res = ', res)
 				response(id, code, res)
 					
 			end

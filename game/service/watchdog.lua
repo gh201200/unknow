@@ -42,7 +42,7 @@ end
 local function close_agent(fd)
 	local a = agentfd[fd]
 	agentfd[fd] = nil
-	agentAccount[fd] = nil
+	agentAccount[a] = nil
 	if a then
 		skynet.call(gate, "lua", "kick", fd)
 		-- disconnect never return
@@ -83,13 +83,13 @@ function CMD.close(fd)
 end
 
 function CMD.userEnter( accountId, fd )
-	agentAccount[fd] = accountId
+	agentAccount[agentfd[fd]] = accountId
 end
 
 function CMD.gm_cmd( accountId, gmFunc, args )
 	for k, v in pairs(agentAccount) do
 		if v and v == accountId then
-			skynet.call(k, "lua", gmFunc, args)
+			skynet.call(k, "lua", "gm_"..gmFunc, args)
 			return true
 		end
 	end

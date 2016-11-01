@@ -18,6 +18,9 @@ local function merge (dest, t)
 end
 
 function handler:add ( expand )
+	if not self.request and expand.request then self.request = {} end
+	if not self.response and expand.response then self.response = {} end
+	if not self.cmd and expand.cmd then self.cmd = {} end
 	merge( self.request, expand.request )
 	merge( self.response, expand.response )
 	merge( self.cmd , expand.cmd )

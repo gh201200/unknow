@@ -5,6 +5,7 @@ local snax = require "snax"
 local socket = require "socket"
 local mc = require "multicast"
 local dc = require "datacenter"
+local sharedata = require "sharedata"
 
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
@@ -168,6 +169,8 @@ end
 
 local CMD = {}
 function CMD.Start (conf)
+	g_shareData = sharedata.query 'gdd'
+
 	local gate = conf.gate
 	WATCHDOG = conf.watchdog
 	user = {
@@ -175,7 +178,7 @@ function CMD.Start (conf)
 		fd = conf.client, 
 		REQUEST = {},
 		RESPONSE = {},
-		CMD = CMD,
+		CMD = {},
 		MAP = nil,
 		send_request = send_request,
 		account_id = nil,
@@ -241,6 +244,9 @@ end
 skynet.start (function ()
 	skynet.dispatch ("lua", function (_, _, command, ...)
 		local f = CMD[command]
+		if not f and user then
+			f = user.CMD[command]
+		end
 		if not f then
 			syslog.warningf ("unhandled message(%s)", command) 
 			return skynet.ret ()

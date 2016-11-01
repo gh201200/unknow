@@ -311,6 +311,16 @@ explore_goFight 300 {
 	}
 }
 
+upgradeCardColorLevel 301 {
+	request {                                                             
+		uuid 0 : string                                       
+	}                                                                     
+	response {                                                            
+		errorCode 0 :integer
+		uuid 1 : string
+	}       
+}
+
 ]]
 
 local s2c = [[

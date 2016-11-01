@@ -59,10 +59,12 @@ skynet.start (function ()
 	skynet.dispatch ("lua", function (_, _, mod, cmd, ...)
 		local m = MODULE[mod]
 		if not m then
+			skynet.error("module is nil: " .. mod)
 			return skynet.ret ()
 		end
 		local f = m[cmd]
 		if not f then
+			skynet.error("cmd is nil: " .. cmd)
 			return skynet.ret ()
 		end
 		

@@ -7,12 +7,14 @@ local AccountMethod = require "agent.account_method"
 local ExploreMethod = require "agent.explore_method"
 local ExploreCharacter = require "agent.expand.explore_ch"
 local CardCharacter = require "agent.expand.card_ch"
+local GM = require "agent.expand.gm_ch"
 local Quest = require "quest.quest"
 
 local REQUEST = {}
 handler = handler.new (REQUEST)
 handler:add( ExploreCharacter )		--探索系统
 handler:add( CardCharacter )		--英雄系统
+handler:add( GM )			--GM功能接口
 
 local user
 local database
@@ -21,6 +23,7 @@ handler:init (function (u)
 	user = u
 	ExploreCharacter:init( user )
 	CardCharacter:init( user )
+	GM:init( user )
 end)
 
 local function sendAccountData()
@@ -70,10 +73,10 @@ function REQUEST.enterGame(args)
 	user.account = { account_id = account_id }
 	user.account.unit = skynet.call(database, "lua", "account_rd", "load", account_id)	
 	setmetatable(user.account, {__index = AccountMethod})
-	user.cards = {}
+	user.cards = { account_id = account_id }
 	user.cards.units =  skynet.call (database, "lua", "cards_rd", "load",account_id) --玩家拥有的卡牌
 	setmetatable(user.cards, {__index = CardsMethod})
-	user.explore = {}
+	user.explore = { account_id = account_id }
 	user.explore.unit = skynet.call (database, "lua", "explore_rd", "load", account_id) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
 
