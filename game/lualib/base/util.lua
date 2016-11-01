@@ -114,10 +114,10 @@ end
 
 ------------------------
 -- get card serial id
-function getCardSerialId(_id)
+function Macro_GetCardSerialId(_id)
 	return math.floor(_id / 10)
 end
 --get card color
-function getCardColor(_id)
+function Macro_GetCardColor(_id)
 	return _id%10
 end

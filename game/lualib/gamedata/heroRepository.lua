@@ -38,9 +38,6 @@ for k, p in pairs(xmlhandler.root.info.item) do
 	end
 	modolsTable[tmpTb.id] = tmpTb
 end
---[[
-for _k,_v in pairs(modolsTable) do
-	print(_k,_v.id,_v)
-end
-]]
+
+
 return modolsTable

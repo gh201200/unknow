@@ -11,7 +11,7 @@ local CardsMethod =
 	end;
 	--
 	geCardBySerialId = function(self, _serId)
-		for k, v in pairs(self.cards.units) do
+		for k, v in pairs(self.units) do
 			if v and Macro_GetCardSerialId(v.dataId) == _serId then
 				return v
 			end
@@ -20,26 +20,26 @@ local CardsMethod =
 	end;
 	--
 	getCardByUuid = function(self, _uuid)
-		return self.cards.units[_uuid]
+		return self.units[_uuid]
 	end;
 	--
-	addCard = function(self, dataId, num)
+	addCard = function(self, op, dataId, num)
 		if not num then num = 1 end
 		local v = self:getCardSerialId(Macro_GetCardSerialId(dataId))
 		if v then	--already has the kind of card
 			v.count = v.count + g_shareData.heroRepository[dataId].n32WCardNum * num
 		else
 			v = self.initCard(dataId)
-			self.cards.units[v.uuid] =  v
+			self.units[v.uuid] =  v
 		end
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "addCard", self.account_id, v)
 		
 		--log record
-		syslog.infof("player[%s]:addCard:%d", self.account_id, dataId)
+		syslog.infof("op[%s]player[%s]:addCard:%d", op, self.account_id, dataId)
 	end;
 	--
-	delCardByDataId = function(self, dataId, num)
+	delCardByDataId = function(self, op, dataId, num)
 		if num == 0 then return end
 		local v = self:getCardBySerialId(Macro_GetCardSerialId(dataId))
 		if not v then return end
@@ -47,13 +47,13 @@ local CardsMethod =
 		v.count = v.count - num
 
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "updateCard", self.account_id, v, "count")
+		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "count")
 		
 		--log record
-		syslog.infof("player[%s]:delCardByDataId:%d,%d", self.account_id, dataId, num)
+		syslog.infof("op[%s]player[%s]:delCardByDataId:%d,%d", op, self.account_id, dataId, num)
 	end;
 	--
-	delCardByUuid = function(self, uuid, num)
+	delCardByUuid = function(self, op, uuid, num)
 		if num == 0 then return end
 		local v = self:getCardByUuid(uuid)
 		if not v then return end
@@ -61,13 +61,13 @@ local CardsMethod =
 		v.count = v.count - num
 
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "updateCard", self.account_id, v, "count")
+		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "count")
 		
 		--log record
-		syslog.infof("player[%s]:delCardByUuid:%s,%d:dataId[%d]", self.account_id, uuid, num, v.dataId)
+		syslog.infof("op[%s]player[%s]:delCardByUuid:%s,%d:dataId[%d]", op, self.account_id, uuid, num, v.dataId)
 	end;
 	--
-	addPower = function(self, uuid, _power)
+	addPower = function(self, op, uuid, _power)
 		if _power == 0 then return end
 		local v = self:getCardByUuid(uuid)
 		if not v then return end
@@ -80,7 +80,19 @@ local CardsMethod =
 		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "power")
 		
 		--log record
-		syslog.infof("player[%s]:addPower:%s,%d:dataId[%d]", self.account_id, uuid, _power, v.dataId)
+		syslog.infof("op[%s]player[%s]:addPower:%s,%d:dataId[%d]", op, self.account_id, uuid, _power, v.dataId)
+	end;
+	--
+	updateDataId = function(self, op, uuid, _dataId)
+		local v = self:getCardByUuid(uuid)
+		local oldDataId = v.dataId
+		v.dataId = _dataId
+		
+		local database = skynet.uniqueservice ("database")
+		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "dataId")
+		
+		--log record
+		syslog.infof("op[%s]player[%s]:updateDataId:%s,dataId[%d][%d]", op, self.account_id, uuid, _dataId, oldDataId)
 	end;
 }
 

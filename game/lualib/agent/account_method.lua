@@ -5,79 +5,83 @@ local syslog = require "syslog"
 local AccountMethod = 
 {
 	--
-	setNickName = function(self, name)
+	setNickName = function(self, op, name)
 		self.unit.nick = name
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self, "nick")
+		skynet.call (database, "lua", "account_rd", "update", self.unit, "nick")
 		
 		--log record
-		syslog.infof("player[%s]:setNickName:%s", self.account_id, name)
+		syslog.infof("op[%s]player[%s]:setNickName:%s", op, self.account_id, name)
 	end;
 	--
 	getNickName = function(self)
 		return self.unit.nick
 	end;
 	--
-	addGold = function(self, _gold)
+	getGold = function(self)
+		return self.unit.gold
+	end;
+	--
+	addGold = function(self, op,  _gold)
 		local nv = self.unit.gold + _gold
 		if nv < 0 then return end
 		self.unit.gold = nv
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self, "gold")
+		skynet.call (database, "lua", "account_rd", "update", self.unit, "gold")
 		
 		--log record
-		syslog.infof("player[%s]:addGold:%d:%d", self.account_id, _gold, nv)
+		syslog.infof("op[%s]player[%s]:addGold:%d:%d", op, self.account_id, _gold, nv)
 	end;
 	--
-	addMoney = function(self, _money)
+	addMoney = function(self, op, _money)
 		local nv = self.unit.money + _money
 		if nv < 0 then return end
 		self.unit.money = nv
 
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self, "money")
+		skynet.call (database, "lua", "account_rd", "update", self.unit, "money")
 		
 		--log record
-		syslog.infof("player[%s]:addMoney:%d:%d", self.account_id, _money, nv)
+		syslog.infof("op[%s]player[%s]:addMoney:%d:%d", op,  self.account_id, _money, nv)
 	end;
 	--
-	addExp = function(self, _exp)
+	addExp = function(self, op,  _exp)
 		local nv = self.unit.exp + _exp
 		if nv < 0 then return end
 		self.unit.exp = nv
 
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self, "exp")
+		skynet.call (database, "lua", "account_rd", "update", self.unit, "exp")
 		
 		--log record
-		syslog.infof("player[%s]:addExp:%d:%d", self.account_id, _exp, nv)
+		syslog.infof("op[%s]player[%s]:addExp:%d:%d", op, self.account_id, _exp, nv)
 	end;
 	--
-	setIcon = function(self, _icon)
+	setIcon = function(self, op, _icon)
 		self.unit.icon = _icon		
 
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self, "icon")
+		skynet.call (database, "lua", "account_rd", "update", self.unit, "icon")
 		
 		--log record
-		syslog.infof("player[%s]:setIcon:%s", self.account_id, _icon)
+		syslog.infof("op[%s]player[%s]:setIcon:%s", op, self.account_id, _icon)
 	end;
 	--
-	setFlag = function(self, _flag)
+	setFlag = function(self, op, _flag)
 		self.unit.flag = _flag
 	
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self, "flag")
+		skynet.call (database, "lua", "account_rd", "update", self.unit, "flag")
 		
 		--log record
-		syslog.infof("player[%s]:setFlag:%d", self.account_id, _flag)
+		syslog.infof("op[%s]player[%s]:setFlag:%d", op, self.account_id, _flag)
 	end;
 	--
-	addFlag = function(self, _flag)
+	addFlag = function(self, op, _flag)
 		self.unit.flag = self.unit.flag | _flag
-		self:setFlag(self.flag)
+		self:setFlag(op, self.flag)
 	end;
 }
 

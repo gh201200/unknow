@@ -54,7 +54,7 @@ function cards.addCard (account_id, card)
 	)
 end
 
-function cards.delCard(acount_id, uuid)
+function cards.delCard(account_id, uuid)
 
 	local connection, key = make_key (account_id)
 
@@ -63,9 +63,9 @@ function cards.delCard(acount_id, uuid)
 	connection:del(uuid)
 end
 
-function cards.update(card, ...)
-	
-	local connection, key = make_key (card.account_id)
+function cards.update(account_id, card, ...)
+
+	local connection, key = make_key (account_id)
 	local p = { ... }
 
 	local t = {}
