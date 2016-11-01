@@ -38,6 +38,7 @@ end
 function explore.update(explore, ...)
 	
 	local connection, key = make_key (explore.account_id)
+	local p = { ... }	
 
 	local t = {}
 	for k, v in pairs(...) do

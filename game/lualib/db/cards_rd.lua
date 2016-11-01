@@ -66,9 +66,10 @@ end
 function cards.update(card, ...)
 	
 	local connection, key = make_key (card.account_id)
+	local p = { ... }
 
 	local t = {}
-	for k, v in pairs(...) do
+	for k, v in pairs(p) do
 		t[2*k - 1] = v
 		t[2*k] = card[v]
 	end
