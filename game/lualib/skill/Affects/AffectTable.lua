@@ -16,6 +16,7 @@ local electricAffect  = require "skill.Affects.electricAffect"
 local showAffect =  require "skill.Affects.showAffect"
 local profitAffect =  require "skill.Affects.profitAffect"
 local nodeadAffect = require "skill.Affects.nodeadAffect"
+local summonAffect =  require "skill.Affects.summonAffect"
 
 local AffectTable = class("AffectTable")
 
@@ -115,6 +116,8 @@ function AffectTable:addAffect(source,data,skillId)
 		aff = statsAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "getnew" then
 		aff = getnewAffect.new(self.owner,source,data,skillId)  
+	elseif data[1] == "summon" then
+		aff = summonAffect.new(self.owner,source,data,skillId)
 	end
 	if not aff then
 		print('data = ',data)

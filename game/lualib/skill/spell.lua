@@ -116,11 +116,6 @@ function spell:update(dt)
 	self:advanceEffect(dt)
 end
 function spell:onTriggerSkillAffect(skilldata,source,srcTarget)
-	if skilldata.n32Pet ~= 0 then
-		local petId = 50001
-		g_entityManager:createPet(petId,source)	
-		return
-	end
 	if skilldata.n32Type == 35 then
 		--产生可碰撞的飞行物
 		 g_entityManager:createFlyObj(source,srcTarget,skilldata)

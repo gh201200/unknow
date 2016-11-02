@@ -10,10 +10,11 @@ end
 function IPet:init(pt,master)
 	self.pt = pt 
 	self.master = master
+	table.insert(self.master.pets,self)
 	self.ai = PetAI.new(self,master)
 	self.camp = master.camp
 	self.lifeTime = 0
-	self.bornPos:set(master.pos.x, 0, master.pos.z)
+	self.bornPos:set(self.pos.x, 0, self.pos.z)
 	self.attDat = {}
         self:calcStats()
         self:setHp(self:getHpMax())
@@ -21,6 +22,7 @@ function IPet:init(pt,master)
         self.HpMpChange = true
         self.StatsChange = true
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
+	self.lifeTime = 30*1000 --存活时间
 end
 
 function IPet:getType()
@@ -80,8 +82,18 @@ function IPet:preCast()
 end
 
 function IPet:update(dt)
-	--if self:getHp() <= 0 then return end
+	if self:getHp() <= 0 then return end
+	self.lifeTime = self.lifeTime - dt
+	if self.lifeTime <= 0 then
+		self:setHp(-1)
+		self:onDead()
+	end
 	self.ai:update(dt)
 	IPet.super.update(self,dt)
+
+end
+function IPet:onDead()
+	IPet.super.onDead(self)
+	g_entityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
 end
 return IPet

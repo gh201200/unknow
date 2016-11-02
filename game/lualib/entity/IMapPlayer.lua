@@ -33,8 +33,8 @@ function IMapPlayer:ctor()
 	self.nickName = ''
 	self.color = 0
 	self.camp = 0
+	self.pets = {}
 	register_class_var(self, 'LoadProgress', 0)
-
 	register_class_var(self, 'RaiseTime', 0)
 	
 	register_class_var(self, 'Gold', 0, self.onGold)
