@@ -11,7 +11,7 @@ local agentAccount = {}
 local pid = 500001 
 
 function SOCKET.open(fd, addr)
-	skynet.error("New client from : " .. addr)
+	print("New client from : " .. addr)
 	if #agentPools == 0 then
 		agentfd[fd] = skynet.newservice ("agent")
 		syslog.noticef ("pool is empty, new agent(%d),fd(%d) created", agentfd[fd], fd)
@@ -42,8 +42,8 @@ end
 local function close_agent(fd)
 	local a = agentfd[fd]
 	agentfd[fd] = nil
-	agentAccount[a] = nil
 	if a then
+		agentAccount[a] = nil
 		skynet.call(gate, "lua", "kick", fd)
 		-- disconnect never return
 		skynet.send(a, "lua", "disconnect")

@@ -65,7 +65,6 @@ local function registerToChatserver(name)
 	local c = mc.new {
 	channel = channel ,
 		dispatch = function (channel,  ...)
-			print(string.format("%s", channel), ...)
 			--发给客户端
 		end
 	}
@@ -196,11 +195,9 @@ function CMD.Start (conf)
 	--注册匹配服务
 	local matchserver = skynet.queryservice "match"
 	request_hijack_msg(matchserver)
-
 	--user.MAP = map
 	character_handler:register (user)
 	skynet.call(gate, "lua", "forward", user_fd)
-	
 	--注册到聊天服务
 	registerToChatserver()
 end

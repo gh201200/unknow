@@ -327,6 +327,13 @@ upgradeCardColorLevel 301 {
 	}       
 }
 
+clientGMcmd 302 {
+	request {                                                             
+		gmcmd 0 : string
+		params 1 : *string
+	}                                                                        
+}
+
 ]]
 
 local s2c = [[
