@@ -35,7 +35,6 @@ local function sendHeroData()
 end
 
 local function sendExploreData()
-	print(user.explore:getTime())
 	local r = {
 		time = Quest.Explore.CD - (os.time() - user.explore:getTime()),
 		uuid0 = user.explore:getSlot(0),
