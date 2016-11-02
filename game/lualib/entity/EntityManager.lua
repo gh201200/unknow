@@ -121,8 +121,20 @@ function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
 end
 
 function EntityManager:createPet(id,master)
-	print("createPet")
-	local pos = vector3.create(master.pos.x,0,master.pos.z)
+	local pts = {}
+	pts[1] = vector3.create(master.pos.x + 1,0,master.pos.z - 1)
+	pts[2] = vector3.create(master.pos.x + 1,0,master.pos.z - 1)
+	pts[3] = vector3.create(master.pos.x - 1,0,master.pos.z + 1)
+	pts[4] = vector3.create(master.pos.x - 1,0,master.pos.z + 1)
+	local rPts = {}
+	for i = 1,4,1 do
+		if Map.legal(pts[1].x,pts[1].x) then
+			table.insert(rPts,pts[i])
+		end
+	end
+	local slt = math.random(1,#rPts)
+	print("slt==========",slt)
+	local pos = vector3.create(rPts[slt].x,0,rPts[slt].z)
 	local dir = vector3.create(master.dir.x,0,master.dir.z)
 	local pet = IPet.new(pos,dir)
 	g_entityManager:addEntity(pet)
