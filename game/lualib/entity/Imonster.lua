@@ -29,7 +29,6 @@ function IMonster:ctor()
 	self.skillCD = 0
 	self.camp = CampType.MONSTER
 	register_class_var(self, "PreSkillData", nil)
-
 end
 
 function IMonster:getType()

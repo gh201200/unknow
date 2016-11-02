@@ -5,7 +5,7 @@ local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
 local transfrom = require "entity.transfrom"
-local EntityManager = require "entity.EntityManager"
+--local EntityManager = require "entity.EntityManager"
 local coroutine = require "skynet.coroutine"
 local syslog = require "syslog"
 
@@ -46,6 +46,7 @@ end
 
 
 function Ientity:ctor(pos,dir)
+	print("Ientity:ctor")
 	Ientity.super.ctor(self,pos,dir)
 	--entity world data about
 	self.entityType = 0
@@ -437,7 +438,7 @@ function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
 	self.spell:breakSpell()
 	self:setActionState(0, ActionState.die)
-	for k, v in pairs(EntityManager.entityList) do
+	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
 			v:setTarget(nil)
 		end
@@ -670,7 +671,7 @@ end
 
 function Ientity:calcRecvHp()
 	self:setRecvHp(math.floor(
-		self.attDat.n32RecvHp * (1.0 + self:getMidRecvHp()/GAMEPLAY_PERCENT))
+		self.attDat.n32RecvHp * (1.0 + self:getMidRecvHpPc()/GAMEPLAY_PERCENT))
 		+ self:getMidRecvHp()
 		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32RecvHp)
 		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32RecvHp)
@@ -680,7 +681,7 @@ end
 
 function Ientity:calcRecvMp()
 	self:setRecvMp(math.floor(
-		self.attDat.n32RecvMp * (1.0 + self:getMidRecvMp()/GAMEPLAY_PERCENT))
+		self.attDat.n32RecvMp * (1.0 + self:getMidRecvMpPc()/GAMEPLAY_PERCENT))
 		+ self:getMidRecvMp()
 		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32RecvMp)
 		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32RecvMp)
@@ -690,7 +691,7 @@ end
 
 function Ientity:calcAttackRange()
 	self:setAttackRange(math.floor(
-		self.attDat.n32AttackRange * (1.0 +self:getMidAttackRange()/GAMEPLAY_PERCENT))
+		self.attDat.n32AttackRange * (1.0 +self:getMidAttackRangePc()/GAMEPLAY_PERCENT))
 		+ self:getMidAttackRange()
 	)
 end

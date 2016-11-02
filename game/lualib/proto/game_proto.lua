@@ -83,6 +83,12 @@ local types = [[
 
 }
 
+.pet {
+	petId 0 : integer
+	serverId 1 : integer
+	posx 2 : integer
+	posz 3 : integer
+}
 .LoadHero {
 	serverId 0 : integer
 	heroId 1 : integer
@@ -486,6 +492,13 @@ setPosition 3002 {
 		targetPos 1: Vector3
 	}
 }
+
+summonPet 3003 {
+	request {
+		pet 0 : pet
+	}
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)
