@@ -4,7 +4,6 @@ local vector3 = require "vector3"
 local IflyObj = require "entity.IflyObj"
 local EntityManager = class("EntityManager")
 local IPet = require "entity.Ipet"
-local Map = require "map.Map"
 function EntityManager:sendToAllPlayers(msg, val, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
@@ -121,32 +120,15 @@ function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
 	self:addEntity(obj)
 end
 
-function EntityManager:createPet(id,master)
-	local pts = {}
-	local minx,maxx,minz,maxz = master.pos.x,master.pos.x,master.pos.z,master.pos.z
-	if Map.legal(minx-1,master.pos.z) == true then
-		minx = minx - 1
-	end 	
-	if Map.legal(maxx + 1,master.pos.z) == true then
-		maxx =  maxx + 1
-	end 
-	if Map.legal(master.pos.x,minz-1) == true then
-		minz = minz - 1
-	end
-	if Map.legal(master.pos.x,maxz+1) == true then
-		maxz = maxz + 1
-	end
-	local rdx = math.random(math.ceil(minx*10000),math.ceil(maxx*10000)) / 10000
-	local rdz = math.random(math.ceil(minz*10000),math.ceil(maxz*10000)) / 10000
-	local pos = vector3.create(rdx,0,rdz)
+function EntityManager:createPet(id,master,pos,isbody)
+	isbody = isbody or 0
 	local dir = vector3.create(0,0,0)
 	local pet = IPet.new(pos,dir)
 	g_entityManager:addEntity(pet)
 	local pt = g_shareData.petRepository[id]
 	pet.serverId = assin_server_id()	
-	print("pet.serverId=====",pet.serverId)	
 	pet:init(pt,master)
-	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0}
+	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,isbody = isbody}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
