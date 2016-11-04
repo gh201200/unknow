@@ -46,7 +46,7 @@ function EntityManager:update(dt)
 		local v = self.entityList[i]
 		if v.update then
 			v:update(dt)		
-			if v.entityType == EntityType.monster then
+			if v.entityType == EntityType.monster or v.entityType == EntityType.pet  then
 				if v:getHp() <= 0 then		--dead, remove it
 					table.remove(self.entityList, i)
 				end
@@ -144,6 +144,7 @@ function EntityManager:createPet(id,master)
 	g_entityManager:addEntity(pet)
 	local pt = g_shareData.petRepository[id]
 	pet.serverId = assin_server_id()	
+	print("pet.serverId=====",pet.serverId)	
 	pet:init(pt,master)
 	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)

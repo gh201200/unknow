@@ -67,7 +67,6 @@ local function handleMatch(t)
 	for _k,_v in pairs(t) do
 		i = i + 1
 		_v.color = colors[i]
-		i = i + 1
 	end
 	--返回 分组信息
 	local s_pickHero =  skynet.newservice "pickHero"
@@ -84,7 +83,7 @@ local function handleMatch(t)
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-CMD.MATCH_NUM = 1 
+CMD.MATCH_NUM = 2  
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 

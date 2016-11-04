@@ -11,6 +11,7 @@ function IPet:init(pt,master)
 	self.pt = pt 
 	self.master = master
 	table.insert(self.master.pets,self)
+	self.entityType = EntityType.pet
 	self.ai = PetAI.new(self,master)
 	self.camp = master.camp
 	self.lifeTime = 0

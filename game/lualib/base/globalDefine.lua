@@ -13,6 +13,7 @@ EntityType = {
 	monster				= 2,
 	building			= 3,
 	flyObj				= 4,
+	pet				= 5,
 }
 
 CampType = {

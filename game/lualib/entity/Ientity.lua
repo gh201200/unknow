@@ -126,6 +126,7 @@ function Ientity:getType()
 end
 
 function Ientity:isKind(entity,_atk)
+	if entity == nil then return true end
 	if entity.camp == nil then return true end
 	_atk = _atk or false
 	if _atk == false then
