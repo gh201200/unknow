@@ -18,7 +18,7 @@
 		<Mspeed>0</Mspeed>
 		<n32HateRange>6</n32HateRange>
 		<n32CommonSkill>30001</n32CommonSkill>
-		<szSkill></szSkill>
+		<szSkill>30001</szSkill>
 		<modolId>50001</modolId>
 	</item>
 </info>

@@ -1264,7 +1264,7 @@
 		<n32Color>1</n32Color>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>Xiuxingzhe</szModelIcon>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Minjie>20</n32Minjie>
@@ -1281,7 +1281,7 @@
 		<n32AttackRange>550</n32AttackRange>
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>9000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
+		<n32GodSkillId>5000601</n32GodSkillId>
 		<n32WCardNum>1</n32WCardNum>
 		<n32CommonSkillId>30001</n32CommonSkillId>
 		<n32GoldNum>1</n32GoldNum>
@@ -1292,7 +1292,7 @@
 		<n32Color>2</n32Color>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>Xiuxingzhe</szModelIcon>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Minjie>20</n32Minjie>
@@ -1309,7 +1309,7 @@
 		<n32AttackRange>550</n32AttackRange>
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>9000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
+		<n32GodSkillId>5000601</n32GodSkillId>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CommonSkillId>30001</n32CommonSkillId>
 		<n32GoldNum>1</n32GoldNum>
@@ -1320,7 +1320,7 @@
 		<n32Color>3</n32Color>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>Xiuxingzhe</szModelIcon>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Minjie>20</n32Minjie>
@@ -1337,7 +1337,7 @@
 		<n32AttackRange>550</n32AttackRange>
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>9000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
+		<n32GodSkillId>5000601</n32GodSkillId>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CommonSkillId>30001</n32CommonSkillId>
 		<n32GoldNum>1</n32GoldNum>
@@ -1348,7 +1348,7 @@
 		<n32Color>4</n32Color>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>Xiuxingzhe</szModelIcon>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Minjie>20</n32Minjie>
@@ -1365,7 +1365,7 @@
 		<n32AttackRange>550</n32AttackRange>
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>9000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
+		<n32GodSkillId>5000601</n32GodSkillId>
 		<n32WCardNum>500</n32WCardNum>
 		<n32CommonSkillId>30001</n32CommonSkillId>
 		<n32GoldNum>1</n32GoldNum>
@@ -1376,7 +1376,7 @@
 		<n32Color>5</n32Color>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>Xiuxingzhe</szModelIcon>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Minjie>20</n32Minjie>
@@ -1393,7 +1393,7 @@
 		<n32AttackRange>550</n32AttackRange>
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>9000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
+		<n32GodSkillId>5000601</n32GodSkillId>
 		<n32WCardNum>2000</n32WCardNum>
 		<n32CommonSkillId>30001</n32CommonSkillId>
 		<n32GoldNum>1</n32GoldNum>
@@ -2513,146 +2513,6 @@
 		<n32AttackRange>550</n32AttackRange>
 		<n32RecvHp>10000</n32RecvHp>
 		<n32RecvMp>21000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
-		<n32WCardNum>2000</n32WCardNum>
-		<n32CommonSkillId>30001</n32CommonSkillId>
-		<n32GoldNum>1</n32GoldNum>
-		<bOpen>1</bOpen>
-		<szContent>hello</szContent>
-	</item>
-	<item id="14021">
-		<n32Color>1</n32Color>
-		<szName>大柱子</szName>
-		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
-		<n32MainAtt>1</n32MainAtt>
-		<n32Strength>26</n32Strength>
-		<n32Minjie>11</n32Minjie>
-		<n32Zhili>11</n32Zhili>
-		<n32LStrength>88000</n32LStrength>
-		<n32LMinjie>38000</n32LMinjie>
-		<n32LZhili>38000</n32LZhili>
-		<n32Hp>600</n32Hp>
-		<n32Mp>400</n32Mp>
-		<n32Attack>48</n32Attack>
-		<n32Defence>54000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>12783</n32MSpeed>
-		<n32AttackRange>150</n32AttackRange>
-		<n32RecvHp>12000</n32RecvHp>
-		<n32RecvMp>8000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
-		<n32WCardNum>1</n32WCardNum>
-		<n32CommonSkillId>30001</n32CommonSkillId>
-		<n32GoldNum>1</n32GoldNum>
-		<bOpen>1</bOpen>
-		<szContent>hello</szContent>
-	</item>
-	<item id="14022">
-		<n32Color>2</n32Color>
-		<szName>大柱子</szName>
-		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
-		<n32MainAtt>1</n32MainAtt>
-		<n32Strength>26</n32Strength>
-		<n32Minjie>11</n32Minjie>
-		<n32Zhili>11</n32Zhili>
-		<n32LStrength>92000</n32LStrength>
-		<n32LMinjie>40000</n32LMinjie>
-		<n32LZhili>40000</n32LZhili>
-		<n32Hp>600</n32Hp>
-		<n32Mp>400</n32Mp>
-		<n32Attack>48</n32Attack>
-		<n32Defence>54000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>12783</n32MSpeed>
-		<n32AttackRange>150</n32AttackRange>
-		<n32RecvHp>12000</n32RecvHp>
-		<n32RecvMp>8000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
-		<n32WCardNum>10</n32WCardNum>
-		<n32CommonSkillId>30001</n32CommonSkillId>
-		<n32GoldNum>1</n32GoldNum>
-		<bOpen>1</bOpen>
-		<szContent>hello</szContent>
-	</item>
-	<item id="14023">
-		<n32Color>3</n32Color>
-		<szName>大柱子</szName>
-		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
-		<n32MainAtt>1</n32MainAtt>
-		<n32Strength>26</n32Strength>
-		<n32Minjie>11</n32Minjie>
-		<n32Zhili>11</n32Zhili>
-		<n32LStrength>97000</n32LStrength>
-		<n32LMinjie>42000</n32LMinjie>
-		<n32LZhili>42000</n32LZhili>
-		<n32Hp>600</n32Hp>
-		<n32Mp>400</n32Mp>
-		<n32Attack>48</n32Attack>
-		<n32Defence>54000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>12783</n32MSpeed>
-		<n32AttackRange>150</n32AttackRange>
-		<n32RecvHp>12000</n32RecvHp>
-		<n32RecvMp>8000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
-		<n32WCardNum>100</n32WCardNum>
-		<n32CommonSkillId>30001</n32CommonSkillId>
-		<n32GoldNum>1</n32GoldNum>
-		<bOpen>1</bOpen>
-		<szContent>hello</szContent>
-	</item>
-	<item id="14024">
-		<n32Color>4</n32Color>
-		<szName>大柱子</szName>
-		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
-		<n32MainAtt>1</n32MainAtt>
-		<n32Strength>26</n32Strength>
-		<n32Minjie>11</n32Minjie>
-		<n32Zhili>11</n32Zhili>
-		<n32LStrength>101000</n32LStrength>
-		<n32LMinjie>44000</n32LMinjie>
-		<n32LZhili>44000</n32LZhili>
-		<n32Hp>600</n32Hp>
-		<n32Mp>400</n32Mp>
-		<n32Attack>48</n32Attack>
-		<n32Defence>54000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>12783</n32MSpeed>
-		<n32AttackRange>150</n32AttackRange>
-		<n32RecvHp>12000</n32RecvHp>
-		<n32RecvMp>8000</n32RecvMp>
-		<n32GodSkillId>0</n32GodSkillId>
-		<n32WCardNum>500</n32WCardNum>
-		<n32CommonSkillId>30001</n32CommonSkillId>
-		<n32GoldNum>1</n32GoldNum>
-		<bOpen>1</bOpen>
-		<szContent>hello</szContent>
-	</item>
-	<item id="14025">
-		<n32Color>5</n32Color>
-		<szName>大柱子</szName>
-		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
-		<n32MainAtt>1</n32MainAtt>
-		<n32Strength>26</n32Strength>
-		<n32Minjie>11</n32Minjie>
-		<n32Zhili>11</n32Zhili>
-		<n32LStrength>110000</n32LStrength>
-		<n32LMinjie>48000</n32LMinjie>
-		<n32LZhili>48000</n32LZhili>
-		<n32Hp>600</n32Hp>
-		<n32Mp>400</n32Mp>
-		<n32Attack>48</n32Attack>
-		<n32Defence>54000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>12783</n32MSpeed>
-		<n32AttackRange>150</n32AttackRange>
-		<n32RecvHp>12000</n32RecvHp>
-		<n32RecvMp>8000</n32RecvMp>
 		<n32GodSkillId>0</n32GodSkillId>
 		<n32WCardNum>2000</n32WCardNum>
 		<n32CommonSkillId>30001</n32CommonSkillId>

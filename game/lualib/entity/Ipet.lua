@@ -1,5 +1,6 @@
 local Ientity = require "entity.Ientity"
 local PetAI = require "ai.PetAI"
+local Map = require "map.Map"
 local IPet = class("IPet", Ientity)
 require "globalDefine"
 function IPet:ctor(pos,dir)
@@ -96,5 +97,16 @@ end
 function IPet:onDead()
 	IPet.super.onDead(self)
 	g_entityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
+	
+	--response to agent
+	for k, v in pairs(self.coroutine_response) do
+		for p, q in pairs(v) do
+			q(true, nil)
+		end
+	end
+	self.coroutine_response = {}
+
+	--reset map
+	Map:add(self.pos.x, self.pos.z, -1)
 end
 return IPet

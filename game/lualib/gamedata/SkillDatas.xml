@@ -2617,7 +2617,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[summon:50001,2,0,0]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -2652,7 +2652,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50001,2]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5405,19 +5405,19 @@
 		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
-		<szAction>attack</szAction>
+		<szAction>Attack</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>闪烁至目标身边进行一次攻击，附加伤害</szDescribe>
+		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=56&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;&lt;size=56&gt;攻击力*1.8+敏捷*2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1.5,0,0,0,20046]</szTargetAffect>
-		<szMyAffect>[blink:100,0,0]</szMyAffect>
+		<szMyAffect>[blink:2,0,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5440,14 +5440,14 @@
 		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
-		<szAction>attack</szAction>
+		<szAction>Attack</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>闪烁至目标身边进行一次攻击，附加伤害</szDescribe>
+		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=57&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;䄂୬஺䄂୬஺䄂୬঩ர䄂୬OĀ୬2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;  </szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -5475,14 +5475,14 @@
 		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
-		<szAction>attack</szAction>
+		<szAction>Attack</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>闪烁至目标身边进行一次攻击，附加伤害</szDescribe>
+		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=58&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;䄂୬஺䄂୬஺䄂୬঩ர䄂୬OĀ୬2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;  </szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -5510,14 +5510,14 @@
 		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
-		<szAction>attack</szAction>
+		<szAction>Attack</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>1</bAce>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>闪烁至目标身边进行一次攻击，附加伤害</szDescribe>
+		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=59&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;䄂୬஺䄂୬஺䄂୬঩ர䄂୬OĀ୬2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;  </szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -5977,7 +5977,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<szMyAffect>[profit:4000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6012,7 +6012,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<szMyAffect>[profit:4000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6047,7 +6047,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<szMyAffect>[profit:4000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6082,8 +6082,148 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,0]</szMyAffect>
+		<szMyAffect>[profit:4000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000601">
+		<n32SeriId>50006</n32SeriId>
+		<szName>神佑</szName>
+		<n32Lv>1</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shenyou.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>1</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>41</n32Type>
+		<szTypeInfo>神佑</szTypeInfo>
+		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000602">
+		<n32SeriId>50006</n32SeriId>
+		<szName>神佑</szName>
+		<n32Lv>2</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shenyou.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>1</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>41</n32Type>
+		<szTypeInfo>神佑</szTypeInfo>
+		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000603">
+		<n32SeriId>50006</n32SeriId>
+		<szName>神佑</szName>
+		<n32Lv>3</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shenyou.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>1</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>41</n32Type>
+		<szTypeInfo>神佑</szTypeInfo>
+		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000604">
+		<n32SeriId>50006</n32SeriId>
+		<szName>神佑</szName>
+		<n32Lv>4</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>shenyou.png</szIcon>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>5000</n32CD>
+		<n32TriggerTime>1</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>41</n32Type>
+		<szTypeInfo>神佑</szTypeInfo>
+		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect></szTargetAffect>
+		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>

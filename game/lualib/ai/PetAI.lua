@@ -81,7 +81,9 @@ function PetAI:canChase()
 	local petTgt = self.source:getTarget()
 	local masterTgt = self.master:getTarget()
 	if petTgt == nil and masterTgt ~= nil then return true end
-	if petTgt ~= nil and petTgt:getType() == "transform" then return true end
+	if petTgt ~= nil and petTgt:getType() == "transform" then 
+		return true 
+	end
 	if petTgt ~= nil and petTgt:getType() ~= "transform" and self.master:isKind(masterTgt,true) == false then
 		return true 
 	end

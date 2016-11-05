@@ -336,8 +336,13 @@ function Ientity:onMove(dt)
 			if Map:get(mv_dst.x, mv_dst.z) > 0 then
 				legal_pos = false
 				local nearBy = false
+				local doNotUseAstar = false
 				local angle = 60
 				repeat
+					if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
+						doNotUseAstar = true
+						break
+					end 
 					mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
 					mv_slep_dir:rot(angle)
 					mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
@@ -355,8 +360,8 @@ function Ientity:onMove(dt)
 
 				until angle > 150
 				
-				if not nearBy then
-					--print('use a star to find a path')
+				if not nearBy and not doNotUseAstar then
+					print('use a star to find a path')
 					nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 				end
 				if not nearBy then
@@ -736,6 +741,12 @@ function Ientity:canMove()
 	if bit_and(self.affectState,AffectState.NoMove) ~= 0 then
 		return ErrorCode.EC_Spell_Controled
 	end
+	if Map:get(self:getTarget().pos.x, self:getTarget().pos.z) > 0 then
+		if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
+			return 1001
+		end
+	end
+
 	--if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
 end

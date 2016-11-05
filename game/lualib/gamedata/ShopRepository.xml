@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="10001">
+		<n32Type>1</n32Type>
+		<n32Count>60</n32Count>
+		<n32Price>6</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>60钻石</szName>
+		<szIcon>10001.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="20001">
+		<n32Type>2</n32Type>
+		<n32Count>1000</n32Count>
+		<n32Price>60</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>一袋金币</szName>
+		<szIcon>10002.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="30001">
+		<n32Type>3</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>300</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>敏捷宝箱</szName>
+		<szIcon>10003.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>5001</n32GoodsID>
+	</item>
+	<item id="40001">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>8</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>50</n32Limit>
+		<szName>闪光</szName>
+		<szIcon>10004.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>12011</n32GoodsID>
+	</item>
+</info>

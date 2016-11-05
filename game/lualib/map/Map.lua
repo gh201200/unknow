@@ -37,6 +37,14 @@ function Map.IS_SAME_GRID(v1, v2)
 	return g1_x==g2_x and g1_z==g2_z
 end
 
+function Map.IS_NEIGHBOUR_GRID(v1, v2)
+	local g1_x = Map.POS_2_GRID(v1.x)
+	local g1_z = Map.POS_2_GRID(v1.z)
+	local g2_x = Map.POS_2_GRID(v2.x)
+	local g2_z = Map.POS_2_GRID(v2.z)
+	return math.abs(g1_x-g2_x) <= 1 and math.abs(g1_z-g2_z) <= 1
+end
+
 function Map:ctor(terrain)
 	self.m = nil
 end
