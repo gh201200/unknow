@@ -1,4 +1,5 @@
 local pf = require "pathfinding"
+local vector3 = require "vector3"
 local Map = class("Map")
 
 --width 6.8 = 17*0.4
@@ -77,6 +78,19 @@ function Map.legal(gx, gz)
 	return true
 end
 
+function Map:isWall(x, z)
+	local gx = Map.POS_2_GRID(x)
+	local gz = Map.POS_2_GRID(z)
+	if not Map.legal(gx, gz) then return true end
+	local w = pf.block(self.m, gx, gz)
+	if w == 255 then
+		return true
+	else
+		return false
+	end
+end
+
+
 function Map:get(x, z)
 	local gx = Map.POS_2_GRID(x)
 	local gz = Map.POS_2_GRID(z)
@@ -112,6 +126,7 @@ function Map:add(x, z, v, s)
 			end
 		end
 	end
+
 	return r
 end
 
@@ -147,5 +162,26 @@ function Map:find(s_px, s_pz, e_px, e_pz)
 	local path = { pf.path(self.m, gsx, gsz, gex, gez) }	
 	return path
 end
+
+function Map:lineTest(sp, ep)
+	local dir = vector3.create()
+	local dst = vector3.create()
+	dir:set(sp.x, sp.y, sp.z)
+	dir:sub( ep )
+	dir:normalize()
+	local set = 0.5
+	repeat
+		dst:set(dir.x, dir.y, dir.z)
+		dst:mul_num( set * Map.MAP_GRID_SIZE  )
+		dst:add( ep )
+		ep.x = dst.x
+		ep.z = dst.z
+		if self:isWall( dst.x, dst.z ) == false then
+			break
+		end
+		set = set + 0.5
+	until false
+end
+
 
 return Map.new()

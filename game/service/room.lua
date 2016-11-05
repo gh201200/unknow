@@ -59,6 +59,9 @@ function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	args.x = args.x / GAMEPLAY_PERCENT
 	args.z = args.z / GAMEPLAY_PERCENT
+	if Map:isWall( args.x, args.z ) then
+		Map:lineTest(player.pos, args)
+	end
 	player:setTargetPos(args)
 	response(true, nil)
 end
@@ -140,6 +143,7 @@ function CMD.replaceSkill(response, agent, account_id, args)
 	response(true, {errorCode = errorCode,skillId = skillId, beSkillId = args.skillId})
 end
 
+
 function CMD.start(response, args)
 	response(true, nil)
 	
@@ -201,11 +205,34 @@ local function init()
 	g_shareData  = sharedata.query "gdd"
 end
 
+--REQUEST 接受非网络消息服务调用
+local REQUEST = {}
+
+function REQUEST.addgold(response, args )
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	player:addGold( args.gold )
+end
+
+function REQUEST.addexp(response, args )
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	player:addExp( args.exp )
+end
+
+function REQUEST.addskill(response, args )
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	player:addSkill( args.skillId, true )
+end
 
 skynet.start(function ()
 	init()
 	skynet.dispatch("lua", function (_, _, command, ...)
 		local f = CMD[command]
+		if not f then
+			f = REQUEST[command]
+		end
 		if not f then
 			syslog.warningf("map service unhandled message[%s]", command)	
 			return skynet.ret()

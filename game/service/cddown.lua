@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local coroutine = require "skynet.coroutine"
 local Time = require "time"
+local Quest = require "quest.quest"
 
 local database = nil
 local CD = nil
@@ -80,7 +81,11 @@ local function cooldown_updatesys()
 			error(r1)
 		end
 		setDate('ResetCardPowertime', ResetCardPowertime)
-	end 
+	end
+
+	if isTimeout('RefreshShopCard') then
+		setTime('RefreshShopCard', Quest.ShopCardCD)
+	end
 
 	skynet.timeout(100,  cooldown_updatesys)
 end

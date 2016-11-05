@@ -355,7 +355,7 @@ function Ientity:onMove(dt)
 				until angle > 150
 				
 				if not nearBy then
-					print('use a star to find a path')
+					--print('use a star to find a path')
 					nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 				end
 				if not nearBy then

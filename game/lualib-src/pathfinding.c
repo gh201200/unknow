@@ -81,7 +81,7 @@ addobstacle(lua_State *L, struct map *m, int line, const char *obstacle, size_t 
 		char c = obstacle[i];
 		if (c >= 'A' && c<='Z') {
 			int weight = (c - 'A' + 1);
-			weight = 1;
+			weight = 255;
 			int v = map_set(m, x, y, weight);
 			if (v != 0) {
 				luaL_error(L, "add obstacle (%d, %d) fail", x, y);

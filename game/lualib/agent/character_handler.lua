@@ -106,10 +106,6 @@ function REQUEST.getCardsDatas()
 	return {cardNum = cardNum ,cardsList = cardsList }
 end
 
-function REQUEST.heart_beat_time()
-	return {}
-end
-
 
 return handler
 

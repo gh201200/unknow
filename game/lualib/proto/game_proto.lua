@@ -334,6 +334,16 @@ clientGMcmd 302 {
 	}                                                                        
 }
 
+buyShopItem 303 {
+	request {                                                             
+		id 0 : integer       
+	}                                                                     
+	response {                                                            
+		errorCode 0 :integer
+		ids 1 : *integer
+	} 
+}
+
 ]]
 
 local s2c = [[

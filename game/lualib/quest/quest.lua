@@ -60,6 +60,9 @@ local Quest = {
 
 	--可替换技能次数
 	MaxReplaceSkillTimes = 3,
+
+	--商城卡牌刷新CD(s)
+	ShopCardCD = 8*60*60,
 }
 
 

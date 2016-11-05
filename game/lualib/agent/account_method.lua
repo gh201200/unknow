@@ -4,10 +4,15 @@ local syslog = require "syslog"
 ----------------account func------------------
 local AccountMethod = 
 {
+	sendAccountData = function(self)
+		user.send_request("sendAccount", user.account.unit)
+	end;
 	--
 	setNickName = function(self, op, name)
 		self.unit.nick = name
 		
+		self:sendAccountData()
+
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self.unit, "nick")
 		
@@ -28,6 +33,8 @@ local AccountMethod =
 		if nv < 0 then return end
 		self.unit.gold = nv
 		
+		self:sendAccountData()
+		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self.unit, "gold")
 		
@@ -40,6 +47,8 @@ local AccountMethod =
 		if nv < 0 then return end
 		self.unit.money = nv
 
+		self:sendAccountData()
+		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self.unit, "money")
 		
@@ -52,6 +61,8 @@ local AccountMethod =
 		if nv < 0 then return end
 		self.unit.exp = nv
 
+		self:sendAccountData()
+		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self.unit, "exp")
 		
@@ -62,6 +73,8 @@ local AccountMethod =
 	setIcon = function(self, op, _icon)
 		self.unit.icon = _icon		
 
+		self:sendAccountData()
+		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self.unit, "icon")
 		
@@ -72,6 +85,8 @@ local AccountMethod =
 	setFlag = function(self, op, _flag)
 		self.unit.flag = _flag
 	
+		self:sendAccountData()
+		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account_rd", "update", self.unit, "flag")
 		

@@ -22,6 +22,7 @@ function cards.load (account_id)
 			cards[v].dataId = tonumber(connection:hget (v, "dataId"))
 			cards[v].power = tonumber(connection:hget (v, "power"))
 			cards[v].count = tonumber(connection:hget (v, "count"))
+			cards[v].buyNum = tonumber(connection:hget (v, "buyNum"))
 		end
 	end
 
@@ -37,7 +38,8 @@ function cards.create(account_id, _uuid, dataId)
 	connection:hmset (_uuid, 
 		"dataId", dataId, 
 		"power", Quest.CARD_INIT_POWER, 
-		"count", 0
+		"count", 0,
+		"buyNum", 0
 	)
 end
 
@@ -50,7 +52,8 @@ function cards.addCard (account_id, card)
 	connection:hmset (card.uuid, 
 		"dataId", card.dataId, 
 		"power", card.power, 
-		"count", card.count
+		"count", card.count,
+		"buyNum", card.buyNum
 	)
 end
 
