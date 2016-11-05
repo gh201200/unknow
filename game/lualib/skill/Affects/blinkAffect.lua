@@ -1,4 +1,5 @@
 local Affect = require "skill.Affects.Affect"
+local vector3 = require "vector3"
 local blinkAffect = class("blinkAffect",Affect)
 
 function blinkAffect:ctor(entity,source,data)
@@ -16,9 +17,12 @@ function blinkAffect:onEnter()
 	local vec_len = self.owner.pos:return_sub(self.target.pos)
 	local len = vec_len:length()
 	if len <= distance then
-		distance = len
+		local pos = vector3.create(self.target.pos.x,0,self.target.pos.z)
+		self.owner:onBlink(pos)
+		return
 	end
-	local vec = self.owner.dir:return_mul_num(distance)
+	vec_len:normalize()
+	local vec = vec_len:return_mul_num(-distance)
 	local  des = self.owner.pos:return_add(vec)
 	self.owner:onBlink(des)
 end

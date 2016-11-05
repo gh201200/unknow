@@ -2617,13 +2617,13 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50001,2,0,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
-		<n32Pet>50001</n32Pet>
+		<n32Pet>0</n32Pet>
 	</item>
 	<item id="2000902">
 		<n32SeriId>20009</n32SeriId>
@@ -5417,7 +5417,7 @@
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1.5,0,0,0,20046]</szTargetAffect>
-		<szMyAffect>[blink:2,0,0]</szMyAffect>
+		<szMyAffect>[blink:100,0,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>

@@ -45,7 +45,7 @@ function EntityManager:update(dt)
 		local v = self.entityList[i]
 		if v.update then
 			v:update(dt)		
-			if v.entityType == EntityType.monster then
+			if v.entityType == EntityType.monster or v.entityType == EntityType.pet  then
 				if v:getHp() <= 0 then		--dead, remove it
 					table.remove(self.entityList, i)
 				end
@@ -120,18 +120,17 @@ function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
 	self:addEntity(obj)
 end
 
-function EntityManager:createPet(id,master)
-	print("createPet")
-	local pos = vector3.create(master.pos.x,0,master.pos.z)
-	local dir = vector3.create(master.dir.x,0,master.dir.z)
+function EntityManager:createPet(id,master,pos,isbody)
+	isbody = isbody or 0
+	local dir = vector3.create(0,0,0)
 	local pet = IPet.new(pos,dir)
 	g_entityManager:addEntity(pet)
 	local pt = g_shareData.petRepository[id]
 	pet.serverId = assin_server_id()	
 	pet:init(pt,master)
-	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0}
-	_pet.posx = math.ceil(master.pos.x * GAMEPLAY_PERCENT)
-	_pet.posz = math.ceil(master.pos.z * GAMEPLAY_PERCENT)
+	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,isbody = isbody,camp = master.camp}
+	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
+	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
 end
 

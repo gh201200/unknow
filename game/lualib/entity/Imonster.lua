@@ -83,6 +83,9 @@ function IMonster:onDead()
 	--make drop
 	local sid = self.hateList:getTopHate()
 	local player = EntityManager:getEntity( sid )
+	if player:getType() == "IPet" then
+		player = player.master
+	end
 	player:addGold( self.attDat.n32Gold )
 	player:addExp( self.attDat.n32Exp )
 	for k, v in pairs(EntityManager.entityList) do 

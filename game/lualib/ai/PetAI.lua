@@ -16,7 +16,6 @@ function PetAI:ctor(entity,master)
 	self.mNextAIState = "Idle"
 	self.mCurrFsm = self.Fsms[self.mCurrentAIState]
 	self.mCurrFsm["onEnter"](self)
-
 end
 
 function PetAI:update(dt)
@@ -39,27 +38,28 @@ end
 
 
 function PetAI:onEnter_Chase()
-	self.source:setTarget(self.masterTgt)
+	self.source:setTarget(self.master:getTarget())
 end
 
 function PetAI:onExec_Chase()
-	local tgt = self.master:getTarget()
-	if tgt ~= null and self.masterTgt ~= tgt then
-		if self.master:isKind(tgt,true) == false then
-			self.masterTgt = tgt
-			self.source:setTarget(tgt)
-		end
-	end
 	if self.source:getTarget() == nil then
 		self:setNextAiState("Idle")
 		return
 	end
-
-	self.source:preCast()
+	if self.source:getTarget():getType() ~= "transform" and bit_and(self.source:getTarget().affectState,AffectState.Invincible) ~= 0  then
+		self:setNextAiState("Idle")
+		self.source:setTargetVar(nil)
+		return	
+	end
+	if self:canChase() == true then
+		self.source:setTarget(self.master:getTarget())
+	end
+	if self.source:getTarget() ~= nil and  self.source:getTarget():getType() ~= "transform" then
+		self.source:preCast()
+	end
 end
 
 function PetAI:onExit_Chase()
-	self.masterTgt = nil
 end
 
 function PetAI:onEnter_Battle()
@@ -78,11 +78,12 @@ function PetAI:onExit_Battle()
 end
 
 function PetAI:canChase()
-	local srcTarget = self.master:getTarget()
-	if srcTarget ~= nil then
-		if self.master:isKind(srcTarget,true) == false then
-			return true
-		end
+	local petTgt = self.source:getTarget()
+	local masterTgt = self.master:getTarget()
+	if petTgt == nil and masterTgt ~= nil then return true end
+	if petTgt ~= nil and petTgt:getType() == "transform" then return true end
+	if petTgt ~= nil and petTgt:getType() ~= "transform" and self.master:isKind(masterTgt,true) == false then
+		return true 
 	end
 	return false
 end
