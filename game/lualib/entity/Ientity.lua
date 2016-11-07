@@ -840,12 +840,13 @@ function Ientity:setCastSkillId(id)
 	if type_target == 4 or type_range == 2 or type_range == 7  then
 		--可以立即释放
 		if self.spell:canBreak(ActionState.move) == false then
+			print("can not break")	
 		else
 			if self.spell:isSpellRunning() == true then	
 				self.spell:breakSpell()
-				self:castSkill()
-				self.ReadySkillId = 0	
 			end
+			self:castSkill()
+			self.ReadySkillId = 0	
 		end
 	end
 	return 0
