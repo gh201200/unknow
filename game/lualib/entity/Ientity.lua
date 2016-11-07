@@ -219,7 +219,6 @@ function Ientity:setTarget(target)
 	else
 		--打断技能
 		if self.spell:isSpellRunning() == true then	
-			print("break spell===")
 			self.spell:breakSpell()
 			self.ReadySkillId = 0
 		end
