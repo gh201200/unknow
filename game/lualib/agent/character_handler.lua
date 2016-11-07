@@ -26,15 +26,19 @@ handler:init (function (u)
 	GM:init( user )
 end)
 
-local function sendAccountData()
+AccountMethod.sendAccountData = function(self)
 	user.send_request("sendAccount", user.account.unit)
-end
+end;
 
-local function sendHeroData()
-	user.send_request("sendHero", {cardsList = user.cards.units})
-end
+CardsMethod.sendHeroData = function(self, unit)
+	if unit then
+		user.send_request("sendHero", {cardsList = {unit}})
+	else
+		user.send_request("sendHero", {cardsList = user.cards.units})
+	end
+end;
 
-local function sendExploreData()
+ExploreMethod.sendExploreData = function(self)
 	local r = {
 		time = Quest.Explore.CD - (os.time() - user.explore:getTime()),
 		uuid0 = user.explore:getSlot(0),
@@ -44,13 +48,21 @@ local function sendExploreData()
 		uuid4 = user.explore:getSlot(4),
 	}
 	user.send_request("sendExplore", r)
-end
+end;
 
-local function sendCDTimeData()
+local function sendCDTimeData(key)
 	local cds = snax.queryservice "cddown"
-	local r = {
-		ResetCardPowertime = cds.req.getRemainingTime("ResetCardPowertime") - os.time()
-	}
+	local nowTime = os.time()
+	local r = { cds = {} }
+	if key then
+		local val = cds.req.getRemainingTime( key )
+		table.insert(r.cds,  {key=key, val=val-nowTime} )
+	else
+		local datas = cds.req.getCDDatas()
+		for k, v in pairs(datas) do
+			table.insert(r.cds, {key=k, val=v-nowTime})
+		end
+	end
 	user.send_request("sendCDTime", r)
 end
 
@@ -60,9 +72,9 @@ local function onEnterGame()
 	--tell watchdog
 	skynet.call(user.watchdog, "lua", "userEnter", user.account.account_id, user.fd)
 
-	sendAccountData()
-	sendHeroData()
-	sendExploreData()
+	user.account:sendAccountData()
+	user.cards:sendHeroData()
+	user.explore:sendExploreData()
 	sendCDTimeData()
 end
 

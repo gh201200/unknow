@@ -109,6 +109,12 @@ local types = [[
 	skillId 0 : integer
 	time	1 : integer
 }
+
+.CoolDown {
+	key 0 : string
+	val 1 : integer
+}
+
 ]]
 
 local c2s = [[
@@ -342,7 +348,8 @@ buyShopItem 303 {
 	}                                                                     
 	response {                                                            
 		errorCode 0 :integer
-		ids 1 : *integer
+		shopId 1 : integer
+		ids 2 : *integer
 	} 
 }
 
@@ -387,8 +394,8 @@ sendExplore 4 {
 #下发CD数据
 sendCDTime 5 {
 	request {
-		ResetCardPowertime 0 : integer
-	}
+		cds 0 : *CoolDown
+	}	
 }
 
 
