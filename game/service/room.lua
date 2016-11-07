@@ -42,7 +42,6 @@ local function register_query_event_func()
 	CMD.query_event_move = query_event_func
 	CMD.query_event_stats = query_event_func
 	CMD.query_event_hp_mp = query_event_func
-	CMD.query_event_affect = query_event_func
 end
 
 function CMD.hijack_msg(response,agent)

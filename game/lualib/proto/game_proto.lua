@@ -56,11 +56,12 @@ local types = [[
 	remainTime 2 : integer 
 }
 
-.Affect {
+.effect {
 	projectId 0 : string
 	effectId 1 : integer
 	effectTime 2 : integer
 	srcServerId 3 : integer 
+	mask 4 : integer
 }
 .Matcher {
 	account 0 : string
@@ -177,17 +178,7 @@ query_event_buff 6 {
 	}
 }
 
-query_event_affect 7 {
-	request {
-		id 0 : integer
-		type 1 : integer
-		stamp 2 : integer
-	}
-	response {
-		event_stamp 0 : EventStamp
-		affectList 1 : *Affect
-	}
-}
+
 login 101 {
          request {
                  name 0 : string    
@@ -522,6 +513,13 @@ setPosition 3002 {
 summonPet 3003 {
 	request {
 		pet 0 : pet
+	}
+}
+
+pushEffect 3004 {
+	request {
+		serverId 0 : integer
+		effect 1 : effect
 	}
 }
 

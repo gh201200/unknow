@@ -138,6 +138,8 @@ function AffectTable:replaceAdd(aff)
 			end
 		end 
 	end
+	
+	self:synClient(aff)
 	table.insert(self.affects,aff)
 	return aff.projectId
 end
@@ -145,7 +147,6 @@ end
 function AffectTable:addAffectSyn(aff)
 	--table.insert(self.affects,aff)
 	self:replaceAdd(aff)
-	self.owner:advanceEventStamp(EventStampType.Affect)
 end
 
 function AffectTable:removeById(id)
@@ -168,6 +169,7 @@ end
 function AffectTable:removeBySkillId(skillId)
 	for i=#self.affects,1,-1 do 
 		if self.affects[i].skillId == skillId then
+			self:synClient(self.affects[i],1)
 			self.affects[i]:onExit()
 			table.remove(self.affects,i)
 		end
@@ -203,10 +205,19 @@ function AffectTable:buildAffects(source,dataStr,skillId)
 		local proId = self:addAffect(source,data,skillId) 
 		table.insert(projectids,proId)
 	end
-	self.owner:advanceEventStamp(EventStampType.Affect)
+	
 	return projectids		
 end
 
-
+function AffectTable:synClient(aff,_remove)
+	_remove  = _remove or 0
+	local srcId = 0
+	if aff.source ~= 0 then
+		srcId = aff.source.serverId
+	end
+	local r = {serverId = self.owner.serverId, effect = {} }
+	r.effect ={effectId = aff.effectId , projectId = aff.projectId,effectTime = aff.effectTime ,srcServerId = srcId ,mask = _remove}
+	g_entityManager:sendToAllPlayers("pushEffect",r)
+end
 return AffectTable
 

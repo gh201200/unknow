@@ -102,11 +102,10 @@ function NpcAI:onEnter_Chase()
 end
 
 function NpcAI:onExec_Chase()
-	if self.source:getTarget() == nil then
+	if self.source:getTarget() == nil or bit_and(self.source:getTarget().affectState,AffectState.Invincible) ~= 0  then
 		self:setNextAiState("GoHome")
 		return
 	end
-
 	local dis = vector3.len(self.source.pos, self.source.bornPos)
 	if  self.source.attDat.n32HateRange>0 and dis > self.source.attDat.n32HateRange then
 		self:setNextAiState("GoHome")
@@ -137,7 +136,7 @@ function NpcAI:onExec_Battle()
 		self:updatePreCast()
 	end
 
-	if self.source:getTarget() == nil then
+	if self.source:getTarget() == nil or bit_and(self.source:getTarget().affectState,AffectState.Invincible) ~= 0 then
 		self:setNextAiState("Idle")
 		return
 	end

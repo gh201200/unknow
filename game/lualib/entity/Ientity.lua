@@ -215,10 +215,10 @@ function Ientity:setTarget(target)
 --	if target == self:getTarget() then return end	
 	if self:isDead() then return end
 	if self.spell:canBreak(ActionState.move) == false then
-		return 
+		--return 
 	else
 		--打断技能
-		if self.spell:isSpellRunning() == true then
+		if self.spell:isSpellRunning() == true then	
 			self.spell:breakSpell()
 			self.ReadySkillId = 0
 		end
@@ -727,9 +727,10 @@ function Ientity:callBackSpellEnd()
 		self.ReadySkillId = 0
 		return
 	end
+
 	local data = g_shareData.skillRepository[self.ReadySkillId]
-	if data ~= nil and data.bCommonSkill == false then
-		self.ReadySkillId = 0
+	if data ~= nil and data.bCommonSkill == false and self.spell.skilldata.id == self.ReadySkillId then
+			self.ReadySkillId = 0
 	end
 end
 --设置人物状态
@@ -823,22 +824,30 @@ function Ientity:setCastSkillId(id)
 		self.spell:onStudyPasstiveSkill(skilldata)
 		return 0
 	end
+	if self.ReadySkillId == id then
+		--技能取消
+		self.ReadySkillId = 0
+		print("cancel skill id ")
+		return -1
+	end
 	local errorcode = self:canSetCastSkill(id) 
 	if errorcode ~= 0 then return errorcode end
 	local type_range = GET_SkillTgtRange(skilldata)
 	local type_target = GET_SkillTgtType(skilldata)
+	
+	self.ReadySkillId = id
 	if type_target == 4 or type_range == 2 or type_range == 7  then
 		--可以立即释放
-		self.ReadySkillId = id
-		self:castSkill()
-		self.ReadySkillId = 0	
+		if self.spell:canBreak(ActionState.move) == false then
+			print("can not break")	
+		else
+			if self.spell:isSpellRunning() == true then	
+				self.spell:breakSpell()
+			end
+			self:castSkill()
+			self.ReadySkillId = 0	
+		end
 	end
-	if self.ReadySkillId == id then
-		--技能取消
-		self.ReadySkillId = 0
-		return -1
-	end
-	self.ReadySkillId = id
 	return 0
 end
 function Ientity:castSkill()
