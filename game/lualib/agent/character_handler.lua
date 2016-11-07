@@ -6,14 +6,14 @@ local CardsMethod = require "agent.cards_method"
 local AccountMethod = require "agent.account_method"
 local ExploreMethod = require "agent.explore_method"
 local ExploreCharacter = require "agent.expand.explore_ch"
-local CardCharacter = require "agent.expand.card_ch"
+local SystemCharacter = require "agent.expand.system_ch"
 local GM = require "agent.expand.gm_ch"
 local Quest = require "quest.quest"
 
 local REQUEST = {}
 handler = handler.new (REQUEST)
 handler:add( ExploreCharacter )		--探索系统
-handler:add( CardCharacter )		--英雄系统
+handler:add( SystemCharacter )		--子系统功能[卡牌升级，商城购买，]
 handler:add( GM )			--GM功能接口
 
 local user
@@ -22,7 +22,7 @@ local database
 handler:init (function (u)
 	user = u
 	ExploreCharacter:init( user )
-	CardCharacter:init( user )
+	SystemCharacter:init( user )
 	GM:init( user )
 end)
 
