@@ -6,8 +6,8 @@ local Quest = {
 		11021,
 		13031,
 		13051,
-		14051,
-		14021,
+		12041,
+		13011,
 	},
 	
 	--英雄体力（分钟）
@@ -50,7 +50,7 @@ local Quest = {
 	ShareExpPercent = 0.67,
 
 	--英雄复活时间系数(ms)
-	RaiseTime = 3000,
+	RaiseTime = 1000,
 
 	--英雄在基地恢复HP系数
 	BuildingRecvHp = 20,
