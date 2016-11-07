@@ -54,7 +54,7 @@ function spell:canBreak(ms)
 	if self:isSpellRunning() == false then return true end
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
 		self.source.cooldown:resetCd(self.skilldata.id,0) 	
-	--	return true
+		return true
 	end
 	if ms == ActionState.move and self.status == SpellStatus.End then 
 		return true	

@@ -61,12 +61,9 @@ end
 
 function HateList:removeHate(entity)
 	if not self.hateList[entity.serverId] then return end
-		
 	self.totalHate = self.totalHate - self.hateList[entity.serverId].val
-	self.hateList[entity.serverId] = nil
-	
 	if self.topHateId == entity.serverId then
-		self.topHateId = 0
+		--self.topHateId = 0
 		for k, v in pairs(self.hateList) do
 			if v then
 				if self.hateList[self.topHateId].val < v.val then
@@ -79,6 +76,7 @@ function HateList:removeHate(entity)
 			end
 		end
 	end
+	self.hateList[entity.serverId] = nil
 end
 
 
