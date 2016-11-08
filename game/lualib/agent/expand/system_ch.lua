@@ -48,10 +48,50 @@ function REQUEST.upgradeCardColorLevel( args )
 	return {errorCode = errorCode, uuid = args.uuid}
 end
 
+local function openPackage( itemId )
+	local itemDat = g_shareData.itemRepository[itemId]
+	if itemDat.n32Type ~= 4 then
+		return {}
+	end
+
+	local pkgIds = string.split(itemDat.szRetain3, ',')
+	local items = {}
+	for k, v in pairs(pkgIds) do
+		local drop = g_shareData.itemDropPackage[v]
+		local rd = math.random(1, drop.totalRate)
+		local r = nil
+		for p, q in pairs(drop) do
+			if type(q) == "table" then
+				if q.n32Rate >= rd then
+					r = q
+					break
+				end
+			end
+		end
+		if r then
+			local itemId = r.n32ItemId
+			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
+			local item = g_shareData.itemRepository[itemId]
+			if item.n32Type == 3 then
+				self.cards:addCard("buyShopItem-openPackage", item.n32Retain1, itemNum)
+			elseif item.n32Type == 4 then
+				self.account:addGold("buyShopItem-openPackage", item.n32Retain1 * itemNum)
+			elseif item.n32Type == 5 then
+				self.account:addMoney("buyShopItem-openPackage", item.n32Retain1 * itemNum)
+			end
+		
+			table.insert(items, {itemId = itemId, itemNum = itemNum})
+		end
+	end
+	return items
+end
+
+
 function REQUEST.buyShopitem( args )
 	local errorCode = 0
 	local costMoney = 0
 	local card = nil
+	local ids = {}
 	local shopDat = g_shareData.shopRepository[args.id]
 	repeat
 		if not shopDat then
@@ -73,7 +113,7 @@ function REQUEST.buyShopitem( args )
 			card = user.cards:getCardByDataId( args.id )
 			if card and card.buyNum >= shopDat.n32Limit then
 				errorCode = 3	--购买数量限制
-				break
+			 	break
 			end
 		end
 	
@@ -88,14 +128,19 @@ function REQUEST.buyShopitem( args )
 		if shopDat.n32Type == 2	then --金币
 			self.account:addGold("buyShopItem", shopDat.n32Count)
 		elseif shopDat.n32Type == 3 then	--宝箱
-			local dropIds = string,split(args.szGoodsID, ',')
-
+			local items = openPackage( args.n32GoodsID )
+			for k, v in pairs(items) do
+				ids[k] = v.itemId
+				ids[k+1] = v.itemNum
+			end
+			 
 		elseif shopDat.n32Type == 4 then	--卡牌
-			self.cards:addCard("buyShopItem", tonumber(args.szGoodsID), shopDat.n32Count, shopDat.n32Count)
+			self.cards:addCard("buyShopItem", shopdat.n32GoodsID, shopDat.n32Count, shopDat.n32Count)
 		end
 
 	until true
 	
+	return {errorCode = errorCode, shopId = args.id, ids = ids}
 end
 
 return SystemCh.new()

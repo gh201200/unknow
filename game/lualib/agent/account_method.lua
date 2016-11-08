@@ -4,9 +4,6 @@ local syslog = require "syslog"
 ----------------account func------------------
 local AccountMethod = 
 {
-	sendAccountData = function(self)
-		user.send_request("sendAccount", user.account.unit)
-	end;
 	--
 	setNickName = function(self, op, name)
 		self.unit.nick = name

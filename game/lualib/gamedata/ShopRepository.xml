@@ -6,19 +6,96 @@
 		<n32Price>6</n32Price>
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
-		<szName>60钻石</szName>
+		<szName>6元钻石</szName>
 		<szIcon>10001.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="10002">
+		<n32Type>1</n32Type>
+		<n32Count>300</n32Count>
+		<n32Price>30</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>30元钻石</szName>
+		<szIcon>10002.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="10003">
+		<n32Type>1</n32Type>
+		<n32Count>680</n32Count>
+		<n32Price>68</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>68元钻石</szName>
+		<szIcon>10003.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="10004">
+		<n32Type>1</n32Type>
+		<n32Count>1280</n32Count>
+		<n32Price>128</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>128元钻石</szName>
+		<szIcon>10004.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="10005">
+		<n32Type>1</n32Type>
+		<n32Count>3280</n32Count>
+		<n32Price>328</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>328元钻石</szName>
+		<szIcon>10005.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="10006">
+		<n32Type>1</n32Type>
+		<n32Count>6480</n32Count>
+		<n32Price>648</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>648元钻石</szName>
+		<szIcon>10006.icon</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
 	<item id="20001">
 		<n32Type>2</n32Type>
-		<n32Count>1000</n32Count>
+		<n32Count>10000</n32Count>
 		<n32Price>60</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
-		<szName>一袋金币</szName>
+		<szName>1w金币</szName>
 		<szIcon>10002.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="20002">
+		<n32Type>0</n32Type>
+		<n32Count>100000</n32Count>
+		<n32Price>600</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>10w金币</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>0</n32GoodsID>
+	</item>
+	<item id="20003">
+		<n32Type>0</n32Type>
+		<n32Count>1000000</n32Count>
+		<n32Price>6000</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>100w金币</szName>
+		<szIcon></szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -28,10 +105,32 @@
 		<n32Price>300</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
-		<szName>敏捷宝箱</szName>
+		<szName>力量宝箱</szName>
 		<szIcon>10003.icon</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>5001</n32GoodsID>
+		<n32GoodsID>62001</n32GoodsID>
+	</item>
+	<item id="30002">
+		<n32Type>3</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>300</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>敏捷宝箱</szName>
+		<szIcon>10004.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>62002</n32GoodsID>
+	</item>
+	<item id="30003">
+		<n32Type>3</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>300</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>智力宝箱</szName>
+		<szIcon>10005.icon</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>62003</n32GoodsID>
 	</item>
 	<item id="40001">
 		<n32Type>4</n32Type>

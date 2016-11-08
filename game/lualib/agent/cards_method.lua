@@ -6,14 +6,6 @@ local uuid = require "uuid"
 local CardsMethod = 
 {
 	--
-	sendCardData = function(self, _uuid)
-		local unit = self:getCardByUuid( _uuid )
-		if not unit then return end
-		local cardList = {}
-		table.insert(cardList, unit)
-		user.send_request("sendHero", {cardsList = cardList})
-	end;
-	--
 	initCard = function(self, _dataId)
 		return {uuid = uuid.gen(), dataId = _dataId, power=100, count=0, buyNum=0,}
 	end;
@@ -55,7 +47,7 @@ local CardsMethod =
 			self.units[v.uuid] =  v
 		end
 	
-		self:sendCardData( v.uuid )	
+		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "addCard", self.account_id, v)
@@ -71,7 +63,7 @@ local CardsMethod =
 		if v.count < num then return end
 		v.count = v.count - num
 
-		self:sendCardData( v.uuid )	
+		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "count")
@@ -87,7 +79,7 @@ local CardsMethod =
 		if v.count < num then return end
 		v.count = v.count - num
 
-		self:sendCardData( v.uuid )	
+		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "count")
@@ -105,7 +97,7 @@ local CardsMethod =
 			v.power = 0
 		end
 
-		self:sendCardData( v.uuid )	
+		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "power")
@@ -119,7 +111,7 @@ local CardsMethod =
 		local oldDataId = v.dataId
 		v.dataId = _dataId
 		
-		self:sendCardData( v.uuid )	
+		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "dataId")
@@ -138,7 +130,7 @@ local CardsMethod =
 		local v = self:getCardByUuid(uuid)
 		v.buyNum = mClamp(v.buyNum+num, 0, math.maxinteger)
 		
-		self:sendCardData( v.uuid )	
+		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "buyNum")

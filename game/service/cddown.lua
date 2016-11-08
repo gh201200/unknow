@@ -75,7 +75,7 @@ end
 
 local function cooldown_updatesys()
 
-	if isTimeout('ResetCardPowertime') then
+	if isTimeout('ResetCardPowertime') then		--探索重置
 		local r, r1  = pcall(ResetCardPowertime_TimeOut)
 		if not r then
 			error(r1)
@@ -83,7 +83,7 @@ local function cooldown_updatesys()
 		setDate('ResetCardPowertime', ResetCardPowertime)
 	end
 
-	if isTimeout('RefreshShopCard') then
+	if isTimeout('RefreshShopCard') then		--刷新卡牌商店
 		setTime('RefreshShopCard', Quest.ShopCardCD)
 	end
 
@@ -92,6 +92,10 @@ end
 
 function response.getRemainingTime(name)
 	return CD[name]
+end
+
+function response.getCDDatas()
+	return CD
 end
 
 function init()
