@@ -7,8 +7,16 @@ local IPet = require "entity.Ipet"
 function EntityManager:sendToAllPlayers(msg, val, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
-		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then
+		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil and v.agent ~= nil  then
 			skynet.call(v.agent, "lua", "sendRequest", msg, val)
+		end
+	end
+end
+
+function EntityManager:disconnectAgent(agent)
+	for k, v in pairs(self.entityList) do
+		if v.agent == agent then
+			v.agent = nil
 		end
 	end
 end
