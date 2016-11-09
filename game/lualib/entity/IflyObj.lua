@@ -39,6 +39,13 @@ function IflyObj:ctor(src,tgt,skilldata)
 end
 local dst = vector3.new(0,0,0)	
 
+function IflyObj:getTarget()
+	return self.target
+end
+
+function IflyObj:setTarget(t)
+	self.target = t
+end
 function IflyObj:update(dt)
 	dt = dt / 1000.0
 	if self.effectdata.n32type == 4 then

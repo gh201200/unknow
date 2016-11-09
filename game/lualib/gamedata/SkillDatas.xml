@@ -42,7 +42,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -63,7 +63,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20067]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -77,7 +77,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -98,7 +98,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20063]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -112,7 +112,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -133,7 +133,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -147,7 +147,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -168,7 +168,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20065]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -182,7 +182,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -203,7 +203,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -217,7 +217,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -238,7 +238,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -252,7 +252,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -273,7 +273,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -287,7 +287,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -308,7 +308,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -322,7 +322,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -343,7 +343,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -357,7 +357,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -378,7 +378,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -392,7 +392,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>60000</n32Range>
+		<n32Range>40000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -413,7 +413,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:1,0,0,0,20061]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>0</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
