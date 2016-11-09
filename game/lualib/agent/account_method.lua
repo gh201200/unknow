@@ -39,6 +39,10 @@ local AccountMethod =
 		syslog.infof("op[%s]player[%s]:addGold:%d:%d", op, self.account_id, _gold, nv)
 	end;
 	--
+	getMoney = function(self)
+		return self.unit.money
+	end;
+	--
 	addMoney = function(self, op, _money)
 		local nv = self.unit.money + _money
 		if nv < 0 then return end

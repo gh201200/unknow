@@ -87,7 +87,7 @@ local function openPackage( itemId )
 end
 
 
-function REQUEST.buyShopitem( args )
+function REQUEST.buyShopItem( args )
 	local errorCode = 0
 	local costMoney = 0
 	local card = nil
@@ -103,7 +103,7 @@ function REQUEST.buyShopitem( args )
 				errorCode = 1	--金币不足
 				break
 			end
-		elseif shopDat.n32MpneyType == 2 then	--钻石
+		elseif shopDat.n32MoneyType == 2 then	--钻石
 			if user.account:getMoney() < shopDat.n32Price then
 				errorCode  = 2	--钻石不足
 				break
@@ -120,13 +120,13 @@ function REQUEST.buyShopitem( args )
 		-------------开始购买
 		--扣除货币
 		if shopDat.n32MoneyType == 1 then	--金币
-			self.account:addGold("buyShopItem", -shopDat.n32Price)
+			user.account:addGold("buyShopItem", -shopDat.n32Price)
 		elseif shopDat.n32MpneyType == 2 then	--钻石
-			self.account:addMoney("buyShopItem", -shopDat.n32Price)
+			user.account:addMoney("buyShopItem", -shopDat.n32Price)
 		end
 		--开始购买
 		if shopDat.n32Type == 2	then --金币
-			self.account:addGold("buyShopItem", shopDat.n32Count)
+			user.account:addGold("buyShopItem", shopDat.n32Count)
 		elseif shopDat.n32Type == 3 then	--宝箱
 			local items = openPackage( args.n32GoodsID )
 			for k, v in pairs(items) do
@@ -135,7 +135,7 @@ function REQUEST.buyShopitem( args )
 			end
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
-			self.cards:addCard("buyShopItem", shopdat.n32GoodsID, shopDat.n32Count, shopDat.n32Count)
+			user.cards:addCard("buyShopItem", shopdat.n32GoodsID, shopDat.n32Count, shopDat.n32Count)
 		end
 
 	until true

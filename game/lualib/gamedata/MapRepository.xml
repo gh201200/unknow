@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="1">
-		<szBornPos1>34000,38400</szBornPos1>
-		<szBornPos2>24300,28200</szBornPos2>
-		<szBornPos3>43600,28200</szBornPos3>
-		<szBornPos4>34000,133400</szBornPos4>
-		<szBornPos5>43600,144700</szBornPos5>
-		<szBornPos6>24300,144700</szBornPos6>
+		<szBornPos1>34000,27000</szBornPos1>
+		<szBornPos2>25100,16900</szBornPos2>
+		<szBornPos3>42600,16900</szBornPos3>
+		<szBornPos4>34000,129400</szBornPos4>
+		<szBornPos5>42100,142200</szBornPos5>
+		<szBornPos6>25300,142200</szBornPos6>
 		<szScene>pvp001</szScene>
 		<n32RedMonsterId>200001</n32RedMonsterId>
-		<szRedHomePos>34000,30000</szRedHomePos>
+		<szRedHomePos>34000,13900</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
-		<szBlueHomePos>34000,130000</szBlueHomePos>
+		<szBlueHomePos>34000,142000</szBlueHomePos>
 	</item>
 </info>

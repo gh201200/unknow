@@ -1354,10 +1354,10 @@
 		<szTypeInfo>分身</szTypeInfo>
 		<szDescribe>释放自己的分身</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20009</n32MyEffect>
+		<n32MyEffect>20012</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:0,2,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1389,10 +1389,10 @@
 		<szTypeInfo>分身</szTypeInfo>
 		<szDescribe>释放自己的分身</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20009</n32MyEffect>
+		<n32MyEffect>20012</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:0,2,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1424,10 +1424,10 @@
 		<szTypeInfo>分身</szTypeInfo>
 		<szDescribe>释放自己的分身</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20009</n32MyEffect>
+		<n32MyEffect>20012</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:0,2,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1459,10 +1459,10 @@
 		<szTypeInfo>分身</szTypeInfo>
 		<szDescribe>释放自己的分身</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20009</n32MyEffect>
+		<n32MyEffect>20012</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:0,2,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -2617,7 +2617,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,2,20058]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -2652,7 +2652,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[summon:50001,2]</szMyAffect>
+		<szMyAffect>[summon:50008,2,20058]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -2687,7 +2687,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,2,20058]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -2722,7 +2722,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,2,20058]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4017,7 +4017,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,20057]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4052,7 +4052,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,20057]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4087,7 +4087,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,20057]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4122,7 +4122,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,20057]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5274,10 +5274,10 @@
 		<szTypeInfo>召唤蜘蛛</szTypeInfo>
 		<szDescribe></szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20059</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5309,10 +5309,10 @@
 		<szTypeInfo>召唤蜘蛛</szTypeInfo>
 		<szDescribe></szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20059</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5344,10 +5344,10 @@
 		<szTypeInfo>召唤蜘蛛</szTypeInfo>
 		<szDescribe></szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20059</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5379,10 +5379,10 @@
 		<szTypeInfo>召唤蜘蛛</szTypeInfo>
 		<szDescribe></szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20059</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[summon:50008,1,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5412,7 +5412,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=56&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;&lt;size=56&gt;攻击力*1.8+敏捷*2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;</szDescribe>
+		<szDescribe>&lt;color=orange&gt;&lt;size=55&gt;&lt;b&gt;闪 杀  &lt;/b&gt;&lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;主动  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;单体  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;伤害&lt;/size&gt;&lt;/color&gt;
+
+&lt;color=white&gt;&lt;size=40&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;&lt;size=40&gt;攻击力*1.8+敏捷*2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=40&gt;的伤害&lt;/size&gt;&lt;/color&gt;</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -5447,7 +5449,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=57&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;䄂୬஺䄂୬஺䄂୬঩ர䄂୬OĀ୬2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;  </szDescribe>
+		<szDescribe>&lt;color=orange&gt;&lt;size=55&gt;&lt;b&gt;闪 杀  &lt;/b&gt;&lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;主动  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;单体  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;伤害&lt;/size&gt;&lt;/color&gt;
+
+&lt;color=white&gt;&lt;size=40&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;&lt;size=40&gt;攻击力*1.8+敏捷*2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=40&gt;的伤害&lt;/size&gt;&lt;/color&gt;</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -5482,7 +5486,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=58&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;䄂୬஺䄂୬஺䄂୬঩ர䄂୬OĀ୬2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;  </szDescribe>
+		<szDescribe>&lt;color=orange&gt;&lt;size=55&gt;&lt;b&gt;闪 杀  &lt;/b&gt;&lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;主动  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;单体  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;伤害&lt;/size&gt;&lt;/color&gt;
+
+&lt;color=white&gt;&lt;size=40&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;&lt;size=40&gt;攻击力*1.8+敏捷*2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=40&gt;的伤害&lt;/size&gt;&lt;/color&gt;</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -5517,7 +5523,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32Type>31</n32Type>
 		<szTypeInfo>闪杀</szTypeInfo>
-		<szDescribe>&lt;color=blue&gt;&lt;size=66&gt;&lt;b&gt;闪杀&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;主动&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;单体&lt;/size&gt;&lt;/color&gt;  &lt;color=darkblue&gt;&lt;size=54&gt;伤害&lt;/size&gt;&lt;/color&gt;\n\n&lt;color=white&gt;&lt;size=59&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;䄂୬஺䄂୬஺䄂୬঩ர䄂୬OĀ୬2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=56&gt;的伤害&lt;/size&gt;&lt;/color&gt;  </szDescribe>
+		<szDescribe>&lt;color=orange&gt;&lt;size=55&gt;&lt;b&gt;闪 杀  &lt;/b&gt;&lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;主动  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;单体  &lt;/size&gt;&lt;/color&gt;&lt;color=aqua&gt;&lt;size=40&gt;伤害&lt;/size&gt;&lt;/color&gt;
+
+&lt;color=white&gt;&lt;size=40&gt;从远处立即出现在敌人面前挥出致命一刀，对其造成&lt;/size&gt;&lt;/color&gt;&lt;color=orange&gt;&lt;size=40&gt;攻击力*1.8+敏捷*2.38&lt;/size&gt;&lt;/color&gt;&lt;color=white&gt;&lt;size=40&gt;的伤害&lt;/size&gt;&lt;/color&gt;</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
@@ -6114,10 +6122,10 @@
 		<szTypeInfo>神佑</szTypeInfo>
 		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6149,10 +6157,10 @@
 		<szTypeInfo>神佑</szTypeInfo>
 		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6184,10 +6192,10 @@
 		<szTypeInfo>神佑</szTypeInfo>
 		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6219,10 +6227,10 @@
 		<szTypeInfo>神佑</szTypeInfo>
 		<szDescribe>使自己大幅提升移速并获得魔法免疫效果</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,0][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>

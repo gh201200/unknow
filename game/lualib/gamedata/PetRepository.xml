@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <info>
-	<item id="50001">
+	<item id="50008">
 		<n32Grade>1</n32Grade>
 		<szName>熊</szName>
 		<n32Type>6</n32Type>
-		<HpMaxPc>10000</HpMaxPc>
+		<HpMaxPc>1000</HpMaxPc>
 		<HpMax>100</HpMax>
-		<MpMaxPc>10000</MpMaxPc>
+		<MpMaxPc>1000</MpMaxPc>
 		<MpMax>100</MpMax>
-		<AttackPc>10000</AttackPc>
+		<AttackPc>5000</AttackPc>
 		<Attack>10</Attack>
 		<DefencePc>10000</DefencePc>
 		<Defence>1</Defence>
@@ -19,6 +19,6 @@
 		<n32HateRange>6</n32HateRange>
 		<n32CommonSkill>30001</n32CommonSkill>
 		<szSkill>30001</szSkill>
-		<modolId>50001</modolId>
+		<modolId>50008</modolId>
 	</item>
 </info>

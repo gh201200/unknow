@@ -5,9 +5,9 @@ local Map = class("Map")
 --width 6.8 = 17*0.4
 --height 15.6 = 39*0.4
 
-local MAP_XGRID_NUM = 17
-local MAP_ZGRID_NUM = 39
-Map.MAP_GRID_SIZE = 0.4
+local MAP_XGRID_NUM = 34
+local MAP_ZGRID_NUM = 78
+Map.MAP_GRID_SIZE = 0.2
 
 local dir = {
 	[0] = {0,1},
