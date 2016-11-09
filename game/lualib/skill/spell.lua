@@ -116,8 +116,9 @@ function spell:update(dt)
 	self:advanceEffect(dt)
 end
 function spell:onTriggerSkillAffect(skilldata,source,srcTarget)
-	if skilldata.n32Type == 35 then
+	if skilldata.n32CubeEffect ~= 0 then
 		 g_entityManager:createFlyObj(source,srcTarget,skilldata)
+		 return
 	end
 	local selfEffects = skilldata.szMyAffect
 	if selfEffects ~= "" then

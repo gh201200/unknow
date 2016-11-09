@@ -468,7 +468,7 @@
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
+		<n32layer>10</n32layer>
 	</item>
 	<item id="20047">
 		<n32type>2</n32type>
@@ -596,6 +596,86 @@
 		<n32time>3000</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20060">
+		<n32type>4</n32type>
+		<szassert>Tiannv_Bullet_01</szassert>
+		<n32time>0</n32time>
+		<n32speed>4</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20061">
+		<n32type>1</n32type>
+		<szassert>Tiannv_Bullet_hit_01</szassert>
+		<n32time>3000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20062">
+		<n32type>4</n32type>
+		<szassert>Wuya_Bullet_01</szassert>
+		<n32time>0</n32time>
+		<n32speed>4</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20063">
+		<n32type>1</n32type>
+		<szassert>Wuya_Bullet_hti_01</szassert>
+		<n32time>3000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20064">
+		<n32type>4</n32type>
+		<szassert>Xiuxingzhe_Bullet_01</szassert>
+		<n32time>0</n32time>
+		<n32speed>6</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20065">
+		<n32type>1</n32type>
+		<szassert>Xiuxingzhe_Bullet_hit_01</szassert>
+		<n32time>3000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20066">
+		<n32type>4</n32type>
+		<szassert>Zhongbiaogong_Bullet_01</szassert>
+		<n32time>0</n32time>
+		<n32speed>4</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+	</item>
+	<item id="20067">
+		<n32type>1</n32type>
+		<szassert>Zhongbiaogong_Bullet_hit_01</szassert>
+		<n32time>3000</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>

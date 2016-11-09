@@ -448,9 +448,10 @@ makeDropItem 2004 {
 emitFlyObj 2005 {
 	request {
 		serverId 0 : integer
-		effectId 1 : integer
-		dirx 2  : string 
-		dirz 3  : string
+		targetId 1 : integer
+		effectId 2 : integer
+		dirx 3  : string 
+		dirz 4  : string
 	}
 }
 

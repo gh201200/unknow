@@ -195,7 +195,7 @@
 	<item id="50009">
 		<szName>天女</szName>
 		<szMod_name>Tiannv</szMod_name>
-		<n32Hight>Tiannv</n32Hight>
+		<n32Hight>tiannv</n32Hight>
 		<n32Speed>10000</n32Speed>
 		<n32AttackTime1>428</n32AttackTime1>
 		<n32AttackTime2>292</n32AttackTime2>
