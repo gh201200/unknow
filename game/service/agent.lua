@@ -207,6 +207,9 @@ function CMD.disconnect ()
 	if user then
 		character_handler:unregister (user)
 		--request_release_msg(user.MAP, "map")
+		if user.MAP ~= nil then
+			skynet.call (user.MAP, "lua", "disconnect",skynet.self())
+		end
 		user = nil
 		user_fd = nil
 		REQUEST = nil

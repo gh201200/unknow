@@ -54,6 +54,10 @@ function CMD.hijack_msg(response,agent)
 	response(true, ret )
 end
 
+function CMD.disconnect(s,agent)
+	EntityManager:disconnectAgent(agent)	
+end
+
 function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	args.x = args.x / GAMEPLAY_PERCENT

@@ -46,9 +46,6 @@ function IflyObj:update(dt)
 		if v:getType() ~= "transform" then
 			if self.targets[v.serverId] == nil and v.serverId ~= self.source.serverId then
 				local dis = self:getDistance(v)
-				--print("entity ",v.serverId,v.pos.x,v.pos.z)
-				--print("self pos",self.pos.x,self.pos.z)
-				--print("dis",dis,self.radius)
 				if dis <= self.radius  then	
 					--添加buff
 					self.targets[v.serverId] = 1
@@ -60,4 +57,7 @@ function IflyObj:update(dt)
 	--print("--------------------------end-------------------------------------------------")
 end
 
+function IflyObj:updateTarget(dt)
+	
+end
 return IflyObj
