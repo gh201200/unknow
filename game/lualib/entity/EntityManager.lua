@@ -123,8 +123,8 @@ function EntityManager:getCloseEntityByType(source, _type)
 	return et, minLen
 end
 
-function EntityManager:createFlyObj(srcObj,targetPos,skilldata)
-	local obj = IflyObj.create(srcObj,targetPos,skilldata)	
+function EntityManager:createFlyObj(srcObj,target,skilldata)
+	local obj = IflyObj.create(srcObj,target,skilldata)	
 	self:addEntity(obj)
 end
 

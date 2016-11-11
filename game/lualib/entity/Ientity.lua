@@ -828,7 +828,7 @@ function Ientity:setCastSkillId(id)
 		--技能取消
 		self.ReadySkillId = 0
 		print("cancel skill id ")
-		return -1
+		return 0
 	end
 	local errorcode = self:canSetCastSkill(id) 
 	if errorcode ~= 0 then return errorcode end
@@ -847,6 +847,9 @@ function Ientity:setCastSkillId(id)
 			self:castSkill()
 			self.ReadySkillId = 0	
 		end
+	else
+		--技能不是立即释放的
+		return -1
 	end
 	return 0
 end
@@ -886,7 +889,6 @@ function Ientity:castSkill()
 	tmpSpell:init(skilldata,skillTimes)
 	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
-	--self:advanceEventStamp(EventStampType.CastSkill)
 	return 0
 end
 
