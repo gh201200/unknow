@@ -74,6 +74,7 @@ local types = [[
 	uuid 1 : string
 	count 2 : integer
 	power 3 : integer
+	buyNum 4 : integer
 }
 
 .spawn {
