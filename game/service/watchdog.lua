@@ -1,6 +1,9 @@
 local skynet = require "skynet"
 local netpack = require "netpack"
 local syslog = require "syslog"
+local socket = require "socket"
+local protoloader = require "proto.protoloader"
+local host, proto_request = protoloader.load (protoloader.GAME)
 
 local CMD = {}
 local SOCKET = {}
@@ -9,6 +12,12 @@ local agentfd = {}
 local agentPools = {}
 local agentAccount = {}
 local pid = 500001 
+
+local function send_msg (fd, msg)
+	local package = string.pack (">s2", msg)
+	socket.write (fd, package)
+end
+
 
 function SOCKET.open(fd, addr)
 	print("New client from : " .. addr)
@@ -23,7 +32,6 @@ function SOCKET.open(fd, addr)
 	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
 --	pid = pid + 1
 end
-
 
 
 local function create_agents(num)	
@@ -94,6 +102,17 @@ function CMD.gm_cmd( accountId, gmFunc, args )
 		end
 	end
 	return false
+end
+
+local session_id = 0
+function CMD.sendClients(name, args)
+	session_id = session_id + 1
+	local str = proto_request (name, args, session_id)
+	for k, v in pairs(agentfd) do
+		if v then
+			send_msg (k, str)
+		end
+	end
 end
 
 skynet.start(function()

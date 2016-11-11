@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+local snax = require "snax"
 
 local SystemCh = class("SystemCh")
 
@@ -53,8 +54,10 @@ local function openPackage( itemId )
 	if itemDat.n32Type ~= 4 then
 		return {}
 	end
-
-	local pkgIds = string.split(itemDat.szRetain3, ',')
+	local pkgIds = {}
+	for w in string.gmatch(itemDat.szRetain3, "%d+") do
+		table.insert(pkgIds, tonumber(w))
+	end
 	local items = {}
 	for k, v in pairs(pkgIds) do
 		local drop = g_shareData.itemDropPackage[v]
@@ -73,11 +76,11 @@ local function openPackage( itemId )
 			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
 			local item = g_shareData.itemRepository[itemId]
 			if item.n32Type == 3 then
-				self.cards:addCard("buyShopItem-openPackage", item.n32Retain1, itemNum)
+				user.cards:addCard("buyShopItem-openPackage", item.n32Retain1, itemNum)
 			elseif item.n32Type == 4 then
-				self.account:addGold("buyShopItem-openPackage", item.n32Retain1 * itemNum)
+				user.account:addGold("buyShopItem-openPackage", item.n32Retain1 * itemNum)
 			elseif item.n32Type == 5 then
-				self.account:addMoney("buyShopItem-openPackage", item.n32Retain1 * itemNum)
+				user.account:addMoney("buyShopItem-openPackage", item.n32Retain1 * itemNum)
 			end
 		
 			table.insert(items, {itemId = itemId, itemNum = itemNum})
@@ -121,26 +124,42 @@ function REQUEST.buyShopItem( args )
 		--扣除货币
 		if shopDat.n32MoneyType == 1 then	--金币
 			user.account:addGold("buyShopItem", -shopDat.n32Price)
-		elseif shopDat.n32MpneyType == 2 then	--钻石
+		elseif shopDat.n32MoneyType == 2 then	--钻石
 			user.account:addMoney("buyShopItem", -shopDat.n32Price)
 		end
 		--开始购买
 		if shopDat.n32Type == 2	then --金币
 			user.account:addGold("buyShopItem", shopDat.n32Count)
 		elseif shopDat.n32Type == 3 then	--宝箱
-			local items = openPackage( args.n32GoodsID )
+			local items = openPackage( shopDat.n32GoodsID )
+			local index = 1
 			for k, v in pairs(items) do
-				ids[k] = v.itemId
-				ids[k+1] = v.itemNum
+				ids[index] = v.itemId
+				ids[index+1] = v.itemNum
+				index = index + 2
 			end
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
-			user.cards:addCard("buyShopItem", shopdat.n32GoodsID, shopDat.n32Count, shopDat.n32Count)
+			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count, shopDat.n32Count)
 		end
 
 	until true
-	
 	return {errorCode = errorCode, shopId = args.id, ids = ids}
 end
+
+function REQUEST.updateCDData( args )
+	local uid = args.uid
+	local cooldown = snax.queryservice 'cddown'
+	local val = cooldown.req.getRemainingTime( uid )
+	return {uid=uid, value=val}
+end
+
+function REQUEST.updateActivityData( args )
+	local uid = args.uid
+	local activity = snax.queryservice 'activity'
+	local val = activity.req.getValue( uid )
+	return {uid=uid, value=val}
+end
+
 
 return SystemCh.new()

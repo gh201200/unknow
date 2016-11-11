@@ -6,7 +6,7 @@ local uuid = require "uuid"
 local CardsMethod = 
 {
 	--
-	initCard = function(self, _dataId)
+	initCard = function(_dataId)
 		return {uuid = uuid.gen(), dataId = _dataId, power=100, count=0, buyNum=0,}
 	end;
 	--
@@ -19,7 +19,7 @@ local CardsMethod =
 		return nil
 	end;
 	--
-	geCardByDataId = function(self, _dataId)
+	getCardByDataId = function(self, _dataId)
 		for k, v in pairs(self.units) do
 			if v and v.dataId == _dataId then
 				return v
@@ -41,19 +41,19 @@ local CardsMethod =
 			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32WCardNum * num, 0, math.maxinteger)
 			v.buyNum = mClamp(v.buyNum + buyNum, 0, math.maxinteger)
 		else
+			
 			v = self.initCard(dataId)
 			v.count = num * g_shareData.heroRepository[dataId].n32WCardNum - 1
 			v.buyNum = buyNum
 			self.units[v.uuid] =  v
 		end
-	
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards_rd", "addCard", self.account_id, v)
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:addCard:%d", op, self.account_id, dataId)
+		syslog.infof("op[%s]player[%s]:addCard:%d,%d,%d", op, self.account_id, dataId, num, buyNum)
 	end;
 	--
 	delCardByDataId = function(self, op, dataId, num)

@@ -24,8 +24,9 @@ skynet.start(function()
 	--启动聊天服务
 	skynet.uniqueservice("chatserver")
 	--启动CD时间服务
-	snax.uniqueservice("cddown")
-
+	local CD = snax.uniqueservice("cddown")
+	--启动activity活动服务
+	snax.uniqueservice("activity")
 
 	local loginserver = skynet.newservice("loginserver")
 	skynet.call(loginserver,"lua","open",login_config)
@@ -34,7 +35,9 @@ skynet.start(function()
 	
 	--启动GM服务
 	snax.uniqueservice("gm", watchdog)
+
 	
+	CD.post.Start()	
 
 	skynet.exit()
 end)
