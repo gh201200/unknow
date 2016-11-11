@@ -37,7 +37,7 @@ local user_fd
 local session = {}
 local session_id = 0
 
-function send_msg (fd, msg)
+local function send_msg (fd, msg)
 	local package = string.pack (">s2", msg)
 	socket.write (fd, package)
 end

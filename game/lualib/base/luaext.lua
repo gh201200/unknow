@@ -97,7 +97,18 @@ function table.calCross(tab1,tb2)
                 end
         end
         return mid,left,right
-end    
+end
+--打包为redis存储格式
+function table.packdb(key, unit, ...)
+	local r = {}
+	local p = { ... }
+	for k, v in pairs( p ) do
+		r[2*k-1] = v
+		r[2*k] = unit[v]
+	end
+	table.insert(r, 1, key)
+	return r
+end
 -- string扩展
 
 -- 下标运算

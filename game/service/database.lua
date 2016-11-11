@@ -5,6 +5,7 @@ local account = require "db.account_rd"
 local cards = require "db.cards_rd"
 local explore = require "db.explore_rd"
 local cooldown = require "db.cooldown_rd"
+local activity = require "db.activity_rd"
 
 local center
 local group = {}
@@ -49,6 +50,7 @@ skynet.start (function ()
 	module_init ("cards_rd", cards)
 	module_init ("explore_rd", explore)
 	module_init ("cooldown_rd", cooldown)
+	module_init ("activity_rd", activity)
 	
 	center = redis.connect (config.center)
 	ngroup = #config.group
