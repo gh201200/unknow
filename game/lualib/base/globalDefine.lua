@@ -119,3 +119,24 @@ function GET_SkillTgtRange(data)
 	local t = data.n32Type % 10
 	return t
 end
+
+ActivitySysType = 
+{
+	RefreshShopCard                 = 0,    --商城卡牌刷新批次
+}
+
+ActivityAccountType = 
+{
+}
+
+CoolDownSysType = 
+{
+	ResetCardPower		= 0,	--重置英雄体力
+	RefreshShopCard			= 1,	--刷新卡牌商店
+}
+
+CoolDownAccountType = 
+{
+}
+
+

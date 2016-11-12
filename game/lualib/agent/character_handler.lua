@@ -30,7 +30,7 @@ AccountMethod.sendAccountData = function(self)
 	user.send_request("sendAccount", user.account.unit)
 end;
 
-CardsMethod.sendHeroData = function(self, unit)
+CardsMethod.sendCardData = function(self, unit)
 	if unit then
 		user.send_request("sendHero", {cardsList = {unit}})
 	else
@@ -66,6 +66,28 @@ local function sendCDTimeData(key)
 	user.send_request("sendCDTime", r)
 end
 
+local function sendActivityData( atype )
+	local activity = snax.queryservice 'activity'
+	local r = { activitys = {} }
+	if atype then
+		local unit = activity.req.getValue(user.account.account_id, atype)
+		if unit then
+			table.insert(r.activitys, unit)
+		end
+	else
+		--系统活动
+		local units = activity.req.getAllSystem()
+		for k, v in pairs(units) do
+			table.insert(r.activitys, {accountId=v.accountId,value=tonumber(v.value),atype=tonumber(v.atype)})
+		end
+		--个人活动
+
+	end
+	if next(r.activitys) then
+		user.send_request("sendActivity", r)
+	end
+end
+
 
 local function onEnterGame()
 	
@@ -73,9 +95,10 @@ local function onEnterGame()
 	skynet.call(user.watchdog, "lua", "userEnter", user.account.account_id, user.fd)
 
 	user.account:sendAccountData()
-	user.cards:sendHeroData()
+	user.cards:sendCardData()
 	user.explore:sendExploreData()
-	sendCDTimeData()
+	--sendCDTimeData()
+	--sendActivityData()
 end
 
 function REQUEST.enterGame(args)

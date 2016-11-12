@@ -74,6 +74,7 @@ local types = [[
 	uuid 1 : string
 	count 2 : integer
 	power 3 : integer
+	buyNum 4 : integer
 }
 
 .spawn {
@@ -114,6 +115,12 @@ local types = [[
 .CoolDown {
 	key 0 : string
 	val 1 : integer
+}
+
+.activity {
+	accountId 0 : string
+        atype 1 : integer
+        value 2 : integer 
 }
 
 ]]
@@ -344,6 +351,26 @@ buyShopItem 303 {
 	} 
 }
 
+updateCDData 304 {
+	request {                                                             
+		uid 0 : string       
+	}	
+	response {                                                            
+		uid 0 : string
+       		value 1 : integer 
+	}                                                                     
+}
+
+updateActivityData 305 {
+	request {                                                             
+		uid 0 : string       
+	}                                                                     
+	response {                                                            
+		uid 0 : string
+       		value 1 : integer 
+	} 
+}
+
 ]]
 
 local s2c = [[
@@ -389,6 +416,12 @@ sendCDTime 5 {
 	}	
 }
 
+#下发活动数据
+sendActivity 6 {
+	request {
+		activitys 0 : *activity
+	}
+}
 
 pickedhero 100 {
 	request {

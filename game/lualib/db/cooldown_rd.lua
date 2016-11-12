@@ -5,45 +5,41 @@ function cooldown.init (ch)
 	connection_handler = ch
 end
 
-local function make_key (bl)
-	return connection_handler (bl), string.format ("cooldown:%s", bl)
+local function make_key (name)
+	return connection_handler (name), string.format ("cooldown:%s", name)
 end
 
-function cooldown.load (bl, tb)
+function cooldown.load (name)
+	local unit = {}
 
-	local CD = {}
-	
-	local connection, key = make_key (bl)
-	
-	if connection:exists (key) then
-		for k, v in pairs(tb) do
-			CD[v] = tonumber(connection:hget (key, v))
-		end
+	local connection, key = make_key (name)
+	if not connection:exists (key) then
+		return nil
 	end
 
-	return CD
+	unit.accountId = connection:hget (key, "accountId")
+	unit.atype = tonumber(connection:hget (key, "atype"))
+	unit.value = tonumber(connection:hget (key, "value"))
+
+	return unit
 end
 
-function cooldown.add (bl, name, time)
-	
-	local connection, key = make_key (bl)
+function cooldown.add(cooldown)
+	local connection, key = make_key( cooldown.uid )
 
-	connection:hmset (key, 
-		name, time
+	connection:hmset(key, 
+		'accountId', cooldown['accountId'],
+		'atype', cooldown['atype'],
+		'value', cooldown['value']
 	)
 end
 
-function cooldown.update(bl, ...)
-	
-	local connection, key = make_key (bl)
-	local p = { ... }
-	local t = {}
-	for k, v in pairs(...) do
-		t[2*k - 1] = v
-		t[2*k] = account[v]
-	end
-	connection:hmset(key, table.unpack(t))
+function cooldown.update(cooldown, ...)
+	local connection, key = make_key( cooldown.uid )
+	local r = table.packdb(key, cooldown, ...)
+	connection:hmset( r )
 end
+
 
 return cooldown
 
