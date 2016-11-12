@@ -64,7 +64,7 @@ function IflyObj:updateNoTarget(dt)
 	for i=#g_entityManager.entityList, 1, -1 do
                 local v = g_entityManager.entityList[i]
 		if v:getType() ~= "transform" then
-			if self.targets[v.serverId] == nil and v.serverId ~= self.source.serverId then
+			if self.targets[v.serverId] == nil and v.serverId ~= self.source.serverId and v.camp ~= self.source.camp then
 				local dis = self:getDistance(v)
 				if dis <= self.radius  then	
 					--添加buff
