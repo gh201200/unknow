@@ -7,8 +7,8 @@ local snax = require "snax"
 local database = nil
 local units = {}
 
-local ResetCardPowerTime = {{hour=9, min=0, sec = 0}}	--重置卡牌体力时间
-local RefreshShopCardCD = 8*60*60			--刷新商城卡牌CD
+local ResetCardPowerTime = {{hour=14, min=0, sec = 0}}	--重置卡牌体力时间
+local RefreshShopCardCD = 60				--刷新商城卡牌CD
 
 local function calcUid(name, atype)
 	return name .. '$' .. atype
@@ -103,7 +103,8 @@ end
 local function RefreshShopCard()
 	local activity = snax.queryservice 'activity'
 	local val = activity.req.getValue('system', ActivitySysType.RefreshShopCard)
-	val = (val + 1) % table.size(Quest.RefreshCardIds)
+	val = (val + 1) % (table.size(Quest.RefreshCardIds)+1)
+	if val == 0 then val = 1 end
 
 	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.RefreshShopCard, val)
 end
