@@ -62,21 +62,27 @@ end
 function HateList:removeHate(entity)
 	if not self.hateList[entity.serverId] then return end
 	self.totalHate = self.totalHate - self.hateList[entity.serverId].val
+	self.hateList[entity.serverId] = nil
 	if self.topHateId == entity.serverId then
-		--self.topHateId = 0
+		self.topHateId = 0
 		for k, v in pairs(self.hateList) do
 			if v then
-				if self.hateList[self.topHateId].val < v.val then
+				local topHateVal = 0
+				local topHateTime = 0
+				if self.topHateId ~= 0 then
+					topHateVal = self.hateList[self.topHateId].val
+					topHateTime = self.hateList[self.topHateId].upTime
+				end
+				if topHateVal < v.val then
 					self.topHateId = k
-				elseif self.hateList[self.topHateId].val == v.val then
-					if self.hateList[self.topHateId].upTime < v.upTime then
+				elseif topHateVal == v.val then
+					if topHateTime < v.upTime then
 						self.topHateId = k
 					end
 				end
 			end
 		end
 	end
-	self.hateList[entity.serverId] = nil
 end
 
 
