@@ -22,6 +22,18 @@ local function create_cd(uid, aid, atype, val)
 	return {uid=uid, accountId=aid, atype=atype, value=val}
 end
 
+local function loadSystem()
+	database = skynet.uniqueservice("database")
+	for k, v in pairs(CoolDownSysType) do
+		local uid = calcUid('system', v)
+		local unit  = skynet.call (database, "lua", "cooldown_rd", "load", uid)
+		if unit and unit.value > os.time() then
+			unit.uid  = uid
+			units[uid] = unit
+		end
+	end
+end
+
 local function calcNextTime(date)
 	local ret = false
 	for _,nextDate in pairs(date) do
@@ -117,6 +129,32 @@ local function cooldown_updatesys()
 end
 
 function response.getRemainingTime(uid)
+	if isTimeout( uid ) then
+		return 0
+	end
+	if units[uid] then 
+		return units[uid].value - os.time()
+	end
+	return 0
+end
+
+function response.getSysValue(atype)
+	local uid = calcUid('system', atype)
+	if units[uid] then 
+		return units[uid].value
+	end
+	return 0
+end
+
+function response.getValue(name, atype)
+	local uid = calcUid(name, atype)
+	if units[uid] then 
+		return units[uid].value
+	end
+	return 0
+end
+
+function response.getValueByUid( uid )
 	if units[uid] then 
 		return units[uid].value
 	end
@@ -127,14 +165,11 @@ function response.getCDDatas()
 	return units
 end
 
-function accept.Start()
-	cooldown_updatesys()
-end
-
-local function loadSystem()
-	database = skynet.uniqueservice("database")
-	for k, v in pairs(CoolDownSysType) do
-		local uid = calcUid('system', v)
+------------------------------------------------
+--POST
+function accept.loadAccount( aid )
+	for k, v in pairs(CoolDownAccountType) do
+		local uid = calcUid(aid, v)
 		local unit  = skynet.call (database, "lua", "cooldown_rd", "load", uid)
 		if unit then
 			unit.uid  = uid
@@ -143,6 +178,13 @@ local function loadSystem()
 	end
 end
 
+function accept.Start()
+	cooldown_updatesys()
+end
+
+
+---------------------------------------------------------------
+------------------------
 
 function init()
 	loadSystem()

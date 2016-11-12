@@ -96,40 +96,49 @@ function REQUEST.buyShopItem( args )
 	local card = nil
 	local ids = {}
 	local shopDat = g_shareData.shopRepository[args.id]
+	local atype = 0
+	local activity = snax.queryservice 'activity' 
 	repeat
 		if not shopDat then
 			errorCode = -1
 			break
 		end
 		if shopDat.n32MoneyType == 1 then	--金币
-			if user.account:getGold() < shopDat.n32Price then
+			if user.account:getGold() < shopDat.n32Price * args.num then
 				errorCode = 1	--金币不足
 				break
 			end
 		elseif shopDat.n32MoneyType == 2 then	--钻石
-			if user.account:getMoney() < shopDat.n32Price then
+			if user.account:getMoney() < shopDat.n32Price * args.num then
 				errorCode  = 2	--钻石不足
 				break
 			end
 		end
 		if shopDat.n32Limit > 0 then
-			card = user.cards:getCardByDataId( args.id )
-			if card and card.buyNum >= shopDat.n32Limit then
-				errorCode = 3	--购买数量限制
-			 	break
+			if shopDat.n32Type == 4 then	--卡牌
+				card = user.cards:getCardByDataId( args.id )
+				if card then
+					local index = args.id % 100
+					atype = ActivityAccountType["BuyShopCard"..index]
+					local val = activity.req.getValue(user.account.accountId, atype) + args.num
+					if val >= shopdat.n32Limit then
+						errorCode = 3	--购买数量限制
+			 			break
+					end
+				end
 			end
 		end
 	
 		-------------开始购买
 		--扣除货币
 		if shopDat.n32MoneyType == 1 then	--金币
-			user.account:addGold("buyShopItem", -shopDat.n32Price)
+			user.account:addGold("buyShopItem", -shopDat.n32Price * args.num)
 		elseif shopDat.n32MoneyType == 2 then	--钻石
-			user.account:addMoney("buyShopItem", -shopDat.n32Price)
+			user.account:addMoney("buyShopItem", -shopDat.n32Price * args.num)
 		end
 		--开始购买
 		if shopDat.n32Type == 2	then --金币
-			user.account:addGold("buyShopItem", shopDat.n32Count)
+			user.account:addGold("buyShopItem", shopDat.n32Count * args.num)
 		elseif shopDat.n32Type == 3 then	--宝箱
 			local items = openPackage( shopDat.n32GoodsID )
 			local index = 1
@@ -140,7 +149,10 @@ function REQUEST.buyShopItem( args )
 			end
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
-			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count, shopDat.n32Count)
+			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count * args.num)
+			local cooldown = snax.queryservice 'cooldown' 
+			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCaard )
+			activity.req.addValue('buyShopItem', user.account.accountId, atype, shopDat.n32Count * args.num, expire)
 		end
 
 	until true
@@ -157,7 +169,7 @@ end
 function REQUEST.updateActivityData( args )
 	local uid = args.uid
 	local activity = snax.queryservice 'activity'
-	local val = activity.req.getValue( uid )
+	local val = activity.req.getValueByUid( uid )
 	return {uid=uid, value=val}
 end
 

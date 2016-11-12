@@ -17,7 +17,8 @@ function activity.load (name)
 	if not connection:exists (key) then
 		return nil
 	end
-
+	
+	unit.expire = tonumber(connection:hget (key, "expire"))
 	unit.accountId = connection:hget (key, "accountId")
 	unit.atype = tonumber(connection:hget (key, "atype"))
 	unit.value = tonumber(connection:hget (key, "value"))
@@ -32,7 +33,13 @@ function activity.add(activity)
 		'accountId', activity['accountId'],
 		'atype', activity['atype'],
 		'value', activity['value']
+		'expire', activity['expire']
 	)
+end
+
+function activity:del( uid )
+	local connection, key = make_key( uid )
+	connection:del( key )	
 end
 
 function activity.update(activity, ...)
