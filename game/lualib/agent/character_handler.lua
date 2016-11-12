@@ -103,6 +103,8 @@ end
 
 function REQUEST.enterGame(args)
 	database = skynet.uniqueservice ("database")
+
+	--玩家数据加载
 	local account_id = args.account_id
 	user.account = { account_id = account_id }
 	user.account.unit = skynet.call(database, "lua", "account_rd", "load", account_id)	
@@ -113,7 +115,11 @@ function REQUEST.enterGame(args)
 	user.explore = { account_id = account_id }
 	user.explore.unit = skynet.call (database, "lua", "explore_rd", "load", account_id) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
-
+	local activity = snax.queryservice 'activity'
+	activity.post.loadAccount( account_id )
+	local cooldown = snax.queryservice 'cddown'
+	cooldown.post.loadAccount( account_id )
+	
 	onEnterGame()
 end
 

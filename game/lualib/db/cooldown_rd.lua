@@ -16,10 +16,10 @@ function cooldown.load (name)
 	if not connection:exists (key) then
 		return nil
 	end
-
+	
+	unit.value = tonumber(connection:hget (key, "value"))
 	unit.accountId = connection:hget (key, "accountId")
 	unit.atype = tonumber(connection:hget (key, "atype"))
-	unit.value = tonumber(connection:hget (key, "value"))
 
 	return unit
 end
@@ -31,7 +31,13 @@ function cooldown.add(cooldown)
 		'accountId', cooldown['accountId'],
 		'atype', cooldown['atype'],
 		'value', cooldown['value']
+		'expire', activity['expire']
 	)
+end
+
+function cooldown:del( uid )
+	local connection, key = make_key( uid )
+	connection:del( key )	
 end
 
 function cooldown.update(cooldown, ...)

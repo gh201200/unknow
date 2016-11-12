@@ -74,7 +74,6 @@ local types = [[
 	uuid 1 : string
 	count 2 : integer
 	power 3 : integer
-	buyNum 4 : integer
 }
 
 .spawn {
@@ -342,7 +341,8 @@ clientGMcmd 302 {
 
 buyShopItem 303 {
 	request {                                                             
-		id 0 : integer       
+		id 0 : integer     
+		num 1 : integer  
 	}                                                                     
 	response {                                                            
 		errorCode 0 :integer

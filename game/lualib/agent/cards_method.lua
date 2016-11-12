@@ -33,18 +33,15 @@ local CardsMethod =
 		return self.units[_uuid]
 	end;
 	--
-	addCard = function(self, op, dataId, num, buyNum)
+	addCard = function(self, op, dataId, num)
 		if not num then num = 1 end
-		if not buyNum then buyNum = 0 end
 		local v = self:getCardByDataId( dataId )
 		if v then	--already has the kind of card
 			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32WCardNum * num, 0, math.maxinteger)
-			v.buyNum = mClamp(v.buyNum + buyNum, 0, math.maxinteger)
 		else
 			
 			v = self.initCard(dataId)
 			v.count = num * g_shareData.heroRepository[dataId].n32WCardNum - 1
-			v.buyNum = buyNum
 			self.units[v.uuid] =  v
 		end
 		self:sendCardData( v )	
@@ -53,7 +50,7 @@ local CardsMethod =
 		skynet.call (database, "lua", "cards_rd", "addCard", self.account_id, v)
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:addCard:%d,%d,%d", op, self.account_id, dataId, num, buyNum)
+		syslog.infof("op[%s]player[%s]:addCard:%d,%d", op, self.account_id, dataId, num)
 	end;
 	--
 	delCardByDataId = function(self, op, dataId, num)
@@ -118,26 +115,6 @@ local CardsMethod =
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:updateDataId:%s,dataId[%d][%d]", op, self.account_id, uuid, _dataId, oldDataId)
-	end;
-	--
-	getBuyNum = function(self, uuid)
-		local v = self:getCardByUuid(uuid)
-		if v then return v.buyNum end
-		return 0
-	end;
-	--
-	addBuyNum = function(self, op, uuid, num)
-		local v = self:getCardByUuid(uuid)
-		v.buyNum = mClamp(v.buyNum+num, 0, math.maxinteger)
-		
-		self:sendCardData( v )	
-		
-		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "buyNum")
-		
-		--log record
-		syslog.infof("op[%s]player[%s]:addBuyNum:%s,%d:%d", op, self.account_id, uuid, num, v.buyNum)
-	
 	end;
 }
 
