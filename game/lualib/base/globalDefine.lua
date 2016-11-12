@@ -127,11 +127,17 @@ ActivitySysType =
 
 ActivityAccountType = 
 {
+	BuyShopCard1			= 1000,	--商城购买卡牌1次数
+	BuyShopCard2			= 1001,	--商城购买卡牌2次数
+	BuyShopCard3			= 1002,	--商城购买卡牌3次数
+	BuyShopCard4			= 1003,	--商城购买卡牌1次数
+	BuyShopCard5			= 1004,	--商城购买卡牌2次数
+	BuyShopCard6			= 1005,	--商城购买卡牌3次数
 }
 
 CoolDownSysType = 
 {
-	ResetCardPower		= 0,	--重置英雄体力
+	ResetCardPower			= 0,	--重置英雄体力
 	RefreshShopCard			= 1,	--刷新卡牌商店
 }
 

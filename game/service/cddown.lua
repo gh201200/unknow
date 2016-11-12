@@ -7,8 +7,8 @@ local snax = require "snax"
 local database = nil
 local units = {}
 
-local ResetCardPowerTime = {{hour=9, min=0, sec = 0}}	--重置卡牌体力时间
-local RefreshShopCardCD = 8*60*60			--刷新商城卡牌CD
+local ResetCardPowerTime = {{hour=14, min=0, sec = 0}}	--重置卡牌体力时间
+local RefreshShopCardCD = 60				--刷新商城卡牌CD
 
 local function calcUid(name, atype)
 	return name .. '$' .. atype
@@ -20,6 +20,18 @@ end
 
 local function create_cd(uid, aid, atype, val)
 	return {uid=uid, accountId=aid, atype=atype, value=val}
+end
+
+local function loadSystem()
+	database = skynet.uniqueservice("database")
+	for k, v in pairs(CoolDownSysType) do
+		local uid = calcUid('system', v)
+		local unit  = skynet.call (database, "lua", "cooldown_rd", "load", uid)
+		if unit and unit.value > os.time() then
+			unit.uid  = uid
+			units[uid] = unit
+		end
+	end
 end
 
 local function calcNextTime(date)
@@ -91,7 +103,8 @@ end
 local function RefreshShopCard()
 	local activity = snax.queryservice 'activity'
 	local val = activity.req.getValue('system', ActivitySysType.RefreshShopCard)
-	val = (val + 1) % table.size(Quest.RefreshCardIds)
+	val = (val + 1) % (table.size(Quest.RefreshCardIds)+1)
+	if val == 0 then val = 1 end
 
 	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.RefreshShopCard, val)
 end
@@ -117,6 +130,32 @@ local function cooldown_updatesys()
 end
 
 function response.getRemainingTime(uid)
+	if isTimeout( uid ) then
+		return 0
+	end
+	if units[uid] then 
+		return units[uid].value - os.time()
+	end
+	return 0
+end
+
+function response.getSysValue(atype)
+	local uid = calcUid('system', atype)
+	if units[uid] then 
+		return units[uid].value
+	end
+	return 0
+end
+
+function response.getValue(name, atype)
+	local uid = calcUid(name, atype)
+	if units[uid] then 
+		return units[uid].value
+	end
+	return 0
+end
+
+function response.getValueByUid( uid )
 	if units[uid] then 
 		return units[uid].value
 	end
@@ -127,14 +166,11 @@ function response.getCDDatas()
 	return units
 end
 
-function accept.Start()
-	cooldown_updatesys()
-end
-
-local function loadSystem()
-	database = skynet.uniqueservice("database")
-	for k, v in pairs(CoolDownSysType) do
-		local uid = calcUid('system', v)
+------------------------------------------------
+--POST
+function accept.loadAccount( aid )
+	for k, v in pairs(CoolDownAccountType) do
+		local uid = calcUid(aid, v)
 		local unit  = skynet.call (database, "lua", "cooldown_rd", "load", uid)
 		if unit then
 			unit.uid  = uid
@@ -143,6 +179,13 @@ local function loadSystem()
 	end
 end
 
+function accept.Start()
+	cooldown_updatesys()
+end
+
+
+---------------------------------------------------------------
+------------------------
 
 function init()
 	loadSystem()
