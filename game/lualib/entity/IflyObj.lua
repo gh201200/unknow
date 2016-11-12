@@ -91,7 +91,19 @@ function IflyObj:updateTarget(dt)
 	self.pos:set(dst.x,0,dst.z)
 	local dis = self:getDistance(self.target)
 	if dis <= self.radius then
-		self.target.affectTable:buildAffects(self.source,self.skilldata.szTargetAffect,self.skilldata.id)
+		if self.skilldata.bCommonSkill == true then
+			if self.target:getMiss() > math.random(1,100) then
+		 		local shanbiEffect = "[show:500,20052]"
+				self.target.affectTable:buildAffects(self.source,shanbiEffect,self.skilldata.id)
+			else
+			        self.source.affectTable:triggerAtkAffects(self.target,false,self.skilldata)
+				if self.target and self.target:getType() ~= "transform" then
+					self.target.affectTable:triggerAtkAffects(self.source,true,self.skilldata)
+				end
+			end	
+		else
+			self.target.affectTable:buildAffects(self.source,self.skilldata.szTargetAffect,self.skilldata.id)
+		end
 		self.lifeTime = -1
 	end
 end
