@@ -8,6 +8,10 @@ local function calcUid(name, atype)
 	return name .. '$' .. atype
 end
 
+local function calcNameType(uid)
+	local t =  string.split(uid, '$')
+	return t[1], tonumber(t[2])
+end
 
 local function create_activity(uid, aid, atype, val)
 	return {uid=uid, accountId=aid, atype=atype, value=val}
@@ -32,7 +36,7 @@ function response.getAllSystem()
 	local r = {}
 	for k, v in pairs(ActivitySysType) do
 		local uid = calcUid('system', v)
-		if units[uid] then
+		if units[uid] and units[uid].expire > os.time() then
 			table.insert(r, units[uid])
 		end
 	end
@@ -42,14 +46,14 @@ end
 
 function response.getValue(name, atype)
 	local uid = calcUid(name, atype)
-	if units[uid] then 
+	if units[uid] and units[uid].expire > os.time() then
 		return units[uid].value
 	end
 	return 0
 end
 
 function response.getValueByUid( uid )
-	if units[uid] then 
+	if units[uid] and units[uid].expire > os.time() then 
 		return units[uid].value
 	end
 	return 0
@@ -61,7 +65,7 @@ function response.addValue(op, name, atype, val, expire)
 		expire = math.maxinteger
 	end
 	if units[uid] then
-		units[uid].value = self.units[uid].value + val
+		units[uid].value = units[uid].value + val
 		units[uid].expire = expire
 		skynet.call (database, "lua", "activity_rd", "update", units[uid], 'value')
 	else
@@ -73,7 +77,7 @@ function response.addValue(op, name, atype, val, expire)
 	--log record
 	syslog.infof("op[%s]player[%s]:addValue:%d,%d", op, name, atype, val)
 	
-	return self.units[uid].value
+	return units[uid].value
 end
 
 function response.setValue(op, name, atype, val, expire)
@@ -111,6 +115,22 @@ function accept.loadAccount( aid )
 		end
 	end
 end
+
+function accept.resetAccountValue(op, types, expire )
+	for k, v in pairs(units) do
+		for p, q in pairs(types) do
+			if v.atype == q then
+				v.value = 0
+				v.expire = expire
+				break
+			end
+		end
+	end
+	
+	--log record
+	syslog.infof("op[%s]player[%s]:resetAccountValue:%d", op, 'system', types[1])
+end
+
 
 ----------------------------------------------------------------
 ----------------------
