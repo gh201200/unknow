@@ -214,6 +214,7 @@ function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
 --	if target == self:getTarget() then return end	
 	if self:isDead() then return end
+	self:setTargetVar( target )
 	if self.spell:canBreak(ActionState.move) == false then
 		return 
 	else
@@ -224,7 +225,7 @@ function Ientity:setTarget(target)
 		end
 	end
 	self.userAStar = false
-	self:setTargetVar( target )
+	--self:setTargetVar( target )
 	self.triggerCast = true
 	if target:getType() == "transform" then 
 		if self.ReadySkillId == 0 then
@@ -728,6 +729,9 @@ function Ientity:callBackSpellEnd()
 		return
 	end
 
+	if self:canMove() == 0 and self:getTarget() ~= nil  then
+		self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
+	end
 	local data = g_shareData.skillRepository[self.ReadySkillId]
 	if data ~= nil and data.bCommonSkill == false and self.spell.skilldata.id == self.ReadySkillId then
 			self.ReadySkillId = 0
