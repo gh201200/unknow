@@ -98,6 +98,7 @@ function REQUEST.buyShopItem( args )
 	local shopDat = g_shareData.shopRepository[args.id]
 	local atype = 0
 	local activity = snax.queryservice 'activity' 
+			print( args )
 	repeat
 		if not shopDat then
 			errorCode = -1
@@ -116,10 +117,10 @@ function REQUEST.buyShopItem( args )
 		end
 		if shopDat.n32Limit > 0 then
 			if shopDat.n32Type == 4 then	--卡牌
+				local index = args.id % 100
+				atype = ActivityAccountType["BuyShopCard"..index]
 				card = user.cards:getCardByDataId( args.id )
 				if card then
-					local index = args.id % 100
-					atype = ActivityAccountType["BuyShopCard"..index]
 					local val = activity.req.getValue(user.account.accountId, atype) + args.num
 					if val >= shopdat.n32Limit then
 						errorCode = 3	--购买数量限制
@@ -150,9 +151,9 @@ function REQUEST.buyShopItem( args )
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
 			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count * args.num)
-			local cooldown = snax.queryservice 'cooldown' 
-			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCaard )
-			activity.req.addValue('buyShopItem', user.account.accountId, atype, shopDat.n32Count * args.num, expire)
+			local cooldown = snax.queryservice 'cddown' 
+			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
+			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
 		end
 
 	until true

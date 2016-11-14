@@ -77,7 +77,7 @@ function response.addValue(op, name, atype, val, expire)
 	--log record
 	syslog.infof("op[%s]player[%s]:addValue:%d,%d", op, name, atype, val)
 	
-	return self.units[uid].value
+	return units[uid].value
 end
 
 function response.setValue(op, name, atype, val, expire)
