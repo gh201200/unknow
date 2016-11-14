@@ -23,25 +23,27 @@ function REQUEST.upgradeCardColorLevel( args )
 			break                                                                                                                               
         	end
 		local cardDat = g_shareData.heroRepository[card.dataId]
-        	if cardDat.n32WCardNum > card.count then
+		local nextCardDat = g_shareData.heroRepository[card.dataId+1]	
+		if not nextCardDat then
+			errorCode = 3	--已到最高品质
+			break
+		end
+	
+        	if nextCardDat.n32WCardNum > card.count then
 			errorCode = 1	--碎片数量不足
 			break
 		end
-		if cardDat.n32GoldNum > user.account:getGold() then
+		if nextCardDat.n32GoldNum > user.account:getGold() then
 			errorCode = 2	--金币不足
 			break
 		end
 	
-		if not g_shareData.heroRepository[cardDat.id+1] then
-			errorCode = 3	--已到最高品质
-			break
-		end
-		
+	
 		---------开始升级
 		--扣除金币
-		user.account:addGold("upgradeCardColorLevel", -cardDat.n32GoldNum)
+		user.account:addGold("upgradeCardColorLevel", -nextCardDat.n32GoldNum)
 		--扣除碎片
-		user.cards:delCardByUuid("upgradeCardColorLevel", args.uuid, cardDat.n32WCardNum)
+		user.cards:delCardByUuid("upgradeCardColorLevel", args.uuid, nextCardDat.n32WCardNum)
 		--开始升级
 		user.cards:updateDataId("upgradeCardColorLevel", args.uuid, cardDat.id+1)
 	until true
@@ -98,6 +100,7 @@ function REQUEST.buyShopItem( args )
 	local shopDat = g_shareData.shopRepository[args.id]
 	local atype = 0
 	local activity = snax.queryservice 'activity' 
+			print( args )
 	repeat
 		if not shopDat then
 			errorCode = -1
@@ -116,10 +119,10 @@ function REQUEST.buyShopItem( args )
 		end
 		if shopDat.n32Limit > 0 then
 			if shopDat.n32Type == 4 then	--卡牌
+				local index = args.id % 100
+				atype = ActivityAccountType["BuyShopCard"..index]
 				card = user.cards:getCardByDataId( args.id )
 				if card then
-					local index = args.id % 100
-					atype = ActivityAccountType["BuyShopCard"..index]
 					local val = activity.req.getValue(user.account.accountId, atype) + args.num
 					if val >= shopdat.n32Limit then
 						errorCode = 3	--购买数量限制
@@ -150,9 +153,9 @@ function REQUEST.buyShopItem( args )
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
 			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count * args.num)
-			local cooldown = snax.queryservice 'cooldown' 
-			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCaard )
-			activity.req.addValue('buyShopItem', user.account.accountId, atype, shopDat.n32Count * args.num, expire)
+			local cooldown = snax.queryservice 'cddown' 
+			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
+			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
 		end
 
 	until true

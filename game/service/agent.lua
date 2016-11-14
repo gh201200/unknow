@@ -70,16 +70,18 @@ local function registerToChatserver(name)
 	}
 	c:subscribe()	
 end
-local last_heartbeat_time
-local HEARTBEAT_TIME_MAX = 6 * 100
+local HEARTBEAT_TIME_MAX = 3 * 100
 local function heartbeat_check ()
 	if not user_fd then return end
 
-	local t = last_heartbeat_time + HEARTBEAT_TIME_MAX - skynet.now ()
-	if t <= 0 then
+	local t = os.time() - user.heartBeatTime
+	if t > 120 then
 		print('client time out')
 		kick_self ()
 	else
+		if t > 6 then		--掉线
+			user.offLineTime = user.offLineTime + 3	
+		end
 		skynet.timeout (HEARTBEAT_TIME_MAX, heartbeat_check)
 	end
 end
@@ -183,13 +185,13 @@ function CMD.Start (conf)
 		cards = nil,
 		account = nil,
 		explore = nil,
+		heartBeatTime = os.time(),
 	}
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
        
- 	last_heartbeat_time = skynet.now()
-	--heartbeat_check()
+	heartbeat_check()
 
 	--注册匹配服务
 	local matchserver = skynet.queryservice "match"

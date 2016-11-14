@@ -15,7 +15,8 @@ local function calcUid(name, atype)
 end
 
 local function calcNameType(uid)
-	return string.split(uid, '$')
+	local t =  string.split(uid, '$')
+	return t[1], tonumber(t[2])
 end
 
 local function create_cd(uid, aid, atype, val)
@@ -107,33 +108,41 @@ local function RefreshShopCard()
 	if val == 0 then val = 1 end
 
 	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.RefreshShopCard, val)
+	local types = {
+		ActivityAccountType.BuyShopCard1,
+		ActivityAccountType.BuyShopCard2,
+		ActivityAccountType.BuyShopCard3,
+		ActivityAccountType.BuyShopCard4,
+		ActivityAccountType.BuyShopCard5,
+		ActivityAccountType.BuyShopCard6,
+	}
+	local uid = calcUid('system', CoolDownSysType.RefreshShopCard)
+	activity.post.resetAccountValue('RefreshShopCard', types, units[uid].value)
 end
 
 local function cooldown_updatesys()
 
 	if isTimeout(calcUid('system', CoolDownSysType.ResetCardPower)) then		--探索重置
+		setDate('system', CoolDownSysType.ResetCardPower, ResetCardPowerTime)
+		
 		local r, r1  = pcall(ResetCardPowertime_TimeOut)
 		if not r then
 			error(r1)
 		end
-		setDate('system', CoolDownSysType.ResetCardPower, ResetCardPowerTime)
 	end
 	if isTimeout(calcUid('system', CoolDownSysType.RefreshShopCard)) then		--刷新卡牌商店	
+		setTime('system', CoolDownSysType.RefreshShopCard, RefreshShopCardCD)
+		
 		local r, r1  = pcall(RefreshShopCard)
 		if not r then
 			error(r1)
 		end
-
-		setTime('system', CoolDownSysType.RefreshShopCard, RefreshShopCardCD)
 	end
 	skynet.timeout(100,  cooldown_updatesys)
 end
 
 function response.getRemainingTime(uid)
-	if isTimeout( uid ) then
-		return 0
-	end
-	if units[uid] then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value - os.time()
 	end
 	return 0
@@ -141,7 +150,7 @@ end
 
 function response.getSysValue(atype)
 	local uid = calcUid('system', atype)
-	if units[uid] then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value
 	end
 	return 0
@@ -149,17 +158,27 @@ end
 
 function response.getValue(name, atype)
 	local uid = calcUid(name, atype)
-	if units[uid] then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value
 	end
 	return 0
 end
 
 function response.getValueByUid( uid )
-	if units[uid] then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value
 	end
 	return 0
+end
+
+function response.resetAccountValue( types, value )
+	for k, v in pairs(units) do
+		for p, q in pairs(types) do
+			if v.atype == q then	
+				v.value = value
+			end
+		end
+	end
 end
 
 function response.getCDDatas()

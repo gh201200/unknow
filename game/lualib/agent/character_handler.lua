@@ -131,6 +131,7 @@ end
 
 
 function REQUEST.heart_beat_time()
+	user.heartBeatTime = os.time()
 	return {}
 end
 
