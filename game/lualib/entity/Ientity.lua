@@ -215,7 +215,7 @@ function Ientity:setTarget(target)
 --	if target == self:getTarget() then return end	
 	if self:isDead() then return end
 	if self.spell:canBreak(ActionState.move) == false then
-		--return 
+		return 
 	else
 		--打断技能
 		if self.spell:isSpellRunning() == true then	

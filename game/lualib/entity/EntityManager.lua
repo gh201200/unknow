@@ -218,10 +218,7 @@ function EntityManager:getSkillAttackEntitys(source,target,skilldata)
 	elseif type_range == 3 then
 		retTb = getEntityRectange(tmpTb,source.pos,target.pos,skilldata.n32Radius)
 	elseif type_range == 4 then
-		if source:getTarget() ~= nil then
-			--print("gettarget is nil")
-			retTb = getRangeEntitys(tmpTb,source:getTarget().pos,skilldata.n32Radius / 10000)	
-		end
+		retTb = getRangeEntitys(tmpTb,target.pos,skilldata.n32Radius / 10000)	
 	elseif type_rang == 5 then	
 	
 	end
