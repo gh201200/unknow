@@ -65,7 +65,7 @@ function response.addValue(op, name, atype, val, expire)
 		expire = math.maxinteger
 	end
 	if units[uid] then
-		units[uid].value = self.units[uid].value + val
+		units[uid].value = units[uid].value + val
 		units[uid].expire = expire
 		skynet.call (database, "lua", "activity_rd", "update", units[uid], 'value')
 	else
