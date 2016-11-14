@@ -57,11 +57,10 @@ local types = [[
 }
 
 .effect {
-	projectId 0 : string
-	effectId 1 : integer
-	effectTime 2 : integer
-	srcServerId 3 : integer 
-	mask 4 : integer
+	effectId 0 : integer
+	effectTime 1 : integer
+	srcServerId 2 : integer 
+	mask 3 : integer
 }
 .Matcher {
 	account 0 : string
