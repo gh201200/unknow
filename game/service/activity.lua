@@ -36,7 +36,7 @@ function response.getAllSystem()
 	local r = {}
 	for k, v in pairs(ActivitySysType) do
 		local uid = calcUid('system', v)
-		if units[uid] and units[uid].expire < os.time() then
+		if units[uid] and units[uid].expire > os.time() then
 			table.insert(r, units[uid])
 		end
 	end
@@ -46,14 +46,14 @@ end
 
 function response.getValue(name, atype)
 	local uid = calcUid(name, atype)
-	if units[uid] and units[uid].expire < os.time() then
+	if units[uid] and units[uid].expire > os.time() then
 		return units[uid].value
 	end
 	return 0
 end
 
 function response.getValueByUid( uid )
-	if units[uid] and units[uid].expire < os.time() then 
+	if units[uid] and units[uid].expire > os.time() then 
 		return units[uid].value
 	end
 	return 0

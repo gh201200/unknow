@@ -142,7 +142,7 @@ local function cooldown_updatesys()
 end
 
 function response.getRemainingTime(uid)
-	if units[uid] and units[uid].value < os.time() then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value - os.time()
 	end
 	return 0
@@ -150,7 +150,7 @@ end
 
 function response.getSysValue(atype)
 	local uid = calcUid('system', atype)
-	if units[uid] and units[uid].value < os.time() then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value
 	end
 	return 0
@@ -158,14 +158,14 @@ end
 
 function response.getValue(name, atype)
 	local uid = calcUid(name, atype)
-	if units[uid] and units[uid].value < os.time() then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value
 	end
 	return 0
 end
 
 function response.getValueByUid( uid )
-	if units[uid] and units[uid].value < os.time() then 
+	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value
 	end
 	return 0
