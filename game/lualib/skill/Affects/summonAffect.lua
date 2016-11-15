@@ -50,21 +50,20 @@ end
 function summonAffect:randomPos(master)
 	local pts = {}
 	local minx,maxx,minz,maxz = master.pos.x,master.pos.x,master.pos.z,master.pos.z
-	if Map.legal(minx-1,master.pos.z) == true then
-		minx = minx - 1
-	end 	
-	if Map.legal(maxx + 1,master.pos.z) == true then
-		maxx =  maxx + 1
-	end 
-	if Map.legal(master.pos.x,minz-1) == true then
-		minz = minz - 1
+	local  dis = 1
+	local t = {{dis,0},{-dis,0},{0,dis},{0,-dis}}
+	local lt = {}
+	for _k,_v in pairs(t) do
+		if Map.legal(master.pos.x + _v[1],master.pos.z + _v[2]) == true then
+			table.insert(lt,_v)
+		end
 	end
-	if Map.legal(master.pos.x,maxz+1) == true then
-		maxz = maxz + 1
-	end
-	local rdx = math.random(math.ceil(minx*10000),math.ceil(maxx*10000)) / 10000
-	local rdz = math.random(math.ceil(minz*10000),math.ceil(maxz*10000)) / 10000
-	local pos = vector3.create(rdx,0,rdz)
+	local i = math.random(1,#lt)
+		
+	--local rdx = math.random(math.ceil(minx*10000),math.ceil(maxx*10000)) / 10000
+	--local rdz = math.random(math.ceil(minz*10000),math.ceil(maxz*10000)) / 10000
+	
+	local pos = vector3.create(master.pos.x + lt[i][1],0,master.pos.z + lt[i][2])
 	return pos
 end
 
