@@ -746,7 +746,7 @@ function Ientity:canMove()
 	if bit_and(self.affectState,AffectState.NoMove) ~= 0 then
 		return ErrorCode.EC_Spell_Controled
 	end
-	if Map:get(self:getTarget().pos.x, self:getTarget().pos.z) > 0 then
+	if self:getTarget() and  Map:get(self:getTarget().pos.x, self:getTarget().pos.z) > 0 then
 		if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 			return 1001
 		end
