@@ -121,3 +121,7 @@ end
 function Macro_GetCardColor(_id)
 	return _id%10
 end
+--Get card data id
+function Macro_GetCardDataId(serId, color)
+	return serId*10 + color
+end

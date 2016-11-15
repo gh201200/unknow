@@ -121,7 +121,7 @@ function REQUEST.buyShopItem( args )
 			if shopDat.n32Type == 4 then	--卡牌
 				local index = args.id % 100
 				atype = ActivityAccountType["BuyShopCard"..index]
-				card = user.cards:getCardByDataId( args.id )
+				card = user.cards:getCardBySerialId( Macro_GetCardSerialId(shopDat.n32GoodsID) )
 				if card then
 					local val = activity.req.getValue(user.account.accountId, atype) + args.num
 					if val >= shopdat.n32Limit then

@@ -35,13 +35,15 @@ local CardsMethod =
 	--
 	addCard = function(self, op, dataId, num)
 		if not num then num = 1 end
-		local v = self:getCardByDataId( dataId )
+		local serId = Macro_GetCardSerialId(dataId)
+		local v = self:getCardBySerialId( serId )
 		if v then	--already has the kind of card
 			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32WCardNum * num, 0, math.maxinteger)
 		else
 			
 			v = self.initCard(dataId)
-			v.count = num * g_shareData.heroRepository[dataId].n32WCardNum - 1
+			local bid = Macro_GetCardDataId(serId, 1)
+			v.count = num * (g_shareData.heroRepository[dataId].n32WCardNum - 1)
 			self.units[v.uuid] =  v
 		end
 		self:sendCardData( v )	
