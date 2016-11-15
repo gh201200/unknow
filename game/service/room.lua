@@ -229,6 +229,12 @@ function REQUEST.addskill(response, args )
 	player:addSkill( args.skillId, true )
 end
 
+function REQUEST.addOffLineTime(response, args)
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	player:addOffLineTime( args.time )
+end
+
 skynet.start(function ()
 	init()
 	skynet.dispatch("lua", function (_, _, command, ...)
