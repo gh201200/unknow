@@ -123,8 +123,8 @@ function REQUEST.buyShopItem( args )
 				atype = ActivityAccountType["BuyShopCard"..index]
 				card = user.cards:getCardBySerialId( Macro_GetCardSerialId(shopDat.n32GoodsID) )
 				if card then
-					local val = activity.req.getValue(user.account.accountId, atype) + args.num
-					if val >= shopdat.n32Limit then
+					local val = activity.req.getValue(user.account.account_id, atype) + args.num
+					if val >= shopDat.n32Limit then
 						errorCode = 3	--购买数量限制
 			 			break
 					end
