@@ -80,7 +80,10 @@ local function heartbeat_check ()
 		kick_self ()
 	else
 		if t > 6 then		--掉线
-			user.offLineTime = user.offLineTime + 3	
+			if user.MAP then
+				local args = {id = user.account.account_id, time=3}
+				skynet.call(user.MAP, "lua", "addOffLineTime", args)
+			end
 		end
 		skynet.timeout (HEARTBEAT_TIME_MAX, heartbeat_check)
 	end
@@ -186,6 +189,7 @@ function CMD.Start (conf)
 		account = nil,
 		explore = nil,
 		heartBeatTime = os.time(),
+		offLineTime = 0,
 	}
 	user_fd = user.fd
 	REQUEST = user.REQUEST

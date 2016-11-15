@@ -44,6 +44,9 @@ function IMapPlayer:ctor()
 	register_class_var(self, 'CommonSkill', 0, self.onCommonSkill)
 
 	register_class_var(self, 'ReplaceSkillTimes', 0)
+	
+	register_class_var(self, 'OffLineTime', 0)
+	
 	self.GoldExpMask = false
 end
 
