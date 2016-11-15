@@ -10,7 +10,7 @@ local CardsMethod =
 		return {uuid = uuid.gen(), dataId = _dataId, power=100, count=0, buyNum=0,}
 	end;
 	--
-	geCardBySerialId = function(self, _serId)
+	getCardBySerialId = function(self, _serId)
 		for k, v in pairs(self.units) do
 			if v and Macro_GetCardSerialId(v.dataId) == _serId then
 				return v
