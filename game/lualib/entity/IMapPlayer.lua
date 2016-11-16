@@ -34,6 +34,8 @@ function IMapPlayer:ctor()
 	self.color = 0
 	self.camp = 0
 	self.pets = {}
+	self.HonorData = {0,0,0} -- 输出伤害 承受伤害 助攻数
+	self.bAttackPlayers = {} --被攻击的玩家
 	register_class_var(self, 'LoadProgress', 0)
 	register_class_var(self, 'RaiseTime', 0)
 	
@@ -124,7 +126,10 @@ end
 function IMapPlayer:onDead()
 	IMapPlayer.super.onDead(self)
 	print('IMapPlayer:onDead')
-	
+	for _k,_v in pairs(self.bAttackPlayers) do
+		_v.HonorData[3] = _v.HonorData[3] + 1	
+	end
+	self.bAttackPlayers = {}
 	self:setRaiseTime(self:getLevel() * Quest.RaiseTime)
 end
 

@@ -12,5 +12,6 @@
 		<szRedHomePos>34000,13900</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
 		<szBlueHomePos>34000,142000</szBlueHomePos>
+		<n32Pattern>1</n32Pattern>
 	</item>
 </info>

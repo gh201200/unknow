@@ -212,37 +212,41 @@ end
 
 function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
---	if target == self:getTarget() then return end	
+	if target == self:getTarget() then 
+		print("目标为同一个")
+		return 
+	end	
 	if self:isDead() then return end
 	self:setTargetVar( target )
-	if self.spell:canBreak(ActionState.move) == false then
-		return 
-	else
-		--打断技能
-		if self.spell:isSpellRunning() == true then	
+	if self.spell:isSpellRunning() == true and self.spell:canBreak(ActionState.move) == false then	
+			return 
+	else		
+		if self.spell:isSpellRunning() == true then
 			self.spell:breakSpell()
-			self.ReadySkillId = 0
 		end
-	end
-	self.userAStar = false
-	--self:setTargetVar( target )
-	self.triggerCast = true
-	if target:getType() == "transform" then 
-		if self.ReadySkillId == 0 then
-			self.triggerCast = false
-		end
-	else
-		if self.ReadySkillId ~= 0 and self.triggerCast == true then	
-			local err = self:canCast(self.ReadySkillId)
-			if err == 0 then
-				return
+		self.userAStar = false
+		self.triggerCast = true
+		if target:getType() == "transform" then 
+			if self.ReadySkillId == 0 then
+				self.triggerCast = false
+			end
+		else
+			if self.ReadySkillId ~= 0 and self.triggerCast == true then	
+				local err = self:canCast(self.ReadySkillId)
+				if err == 0 then
+					return
+				end
 			end
 		end
-	end
 
-	if self:canMove() == 0 then
-		self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
-	end
+		if self:canMove() == 0 then
+			if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
+				
+			else
+				self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
+			end
+		end
+	 end
 end
 
 
@@ -294,7 +298,7 @@ function Ientity:update(dt)
 		self:onForceMove(dt)		
 	end
 	--技能相关
-	if self.ReadySkillId ~= 0 and self.triggerCast == true then	
+	if self.ReadySkillId ~= 0  and self.triggerCast == true then	
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
 			self:castSkill(self.ReadySkillId)
@@ -426,7 +430,24 @@ function Ientity:onForceMove(dt)
 end
 --闪现
 function Ientity:onBlink(des)
+	if Map:get(des.x,des.z)	~= 0 then
+		local gx =  Map.POS_2_GRID(des.x)
+		local gz = Map.POS_2_GRID(des.z)
+		local t = { {1,0},{-1,0},{0,1},{0,-1}}
+		local lt = {}
+		for _k,_v in pairs(t) do
+			if Map.legal(gx+ _v[1], gz +  _v[2]) then
+				table.insert(lt,_v)
+			end
+		end
+		local i = math.random(1,#lt)
+		gx = lt[i][1] + gx
+		gz = lt[i][2] + gz
+		des.x = Map.GRID_2_POS(gx)
+		des.z = Map.GRID_2_POS(gz)	
+	end
 	self:setPos(des.x, des.y, des.z)
+ 		
 	local r = {srcId = self.serverId,targetPos = {}}
 	r.targetPos = {x=math.ceil(self.pos.x*GAMEPLAY_PERCENT), y= 0,z=math.ceil(self.pos.z*GAMEPLAY_PERCENT)}
 	g_entityManager:sendToAllPlayers("setPosition",r)	
@@ -730,7 +751,12 @@ function Ientity:callBackSpellEnd()
 	end
 
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
-		self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
+		if self:canCast(self.ReadySkillId)  == 0 then
+			print("可以释放技能")
+		else
+			print("不可以释放技能")
+			self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
+		end
 	end
 	local data = g_shareData.skillRepository[self.ReadySkillId]
 	if data ~= nil and data.bCommonSkill == false and self.spell.skilldata.id == self.ReadySkillId then
@@ -752,7 +778,7 @@ function Ientity:canMove()
 		end
 	end
 
-	--if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
+	if self.spell.status == SpellStatus.Cast then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
 end
 
