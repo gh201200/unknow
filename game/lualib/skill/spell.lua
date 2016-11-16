@@ -230,12 +230,15 @@ end
 
 function spell:onReady()
 	if self.readyTime < 0 then
+		--扣篮消耗
+		if self.source:getMp() < self.skilldata.n32MpCost then
+			self:breakSpell()
+			return
+		end
 		if self.isSheule == true then
 			local ss = sheduleSpell.new(self.source,self.srcTarget,self.skilldata,self.triggerTime)
 			table.insert(self.sheduleSpells,ss)
 		end
-		--扣篮消耗
-
 		self.source:addMp(-self.skilldata.n32MpCost,HpMpMask.SkillMp)
 		self.source.cooldown:addItem(self.skilldata.id) --加入cd
 		if self.source:getType() == "IMapPlayer" then
