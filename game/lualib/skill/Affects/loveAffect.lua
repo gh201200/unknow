@@ -1,8 +1,8 @@
 local Affect = require "skill.Affects.Affect"
 local loveAffect = class("loveAffect",Affect)
 
-function loveAffect:ctor(owner,source,data)
-	self.super.ctor(self,owner,source,data)
+function loveAffect:ctor(owner,source,data,skillId)
+	self.super.ctor(self,owner,source,data,skillId)
 	self.effectId = data[3] or 0
 	self.effectTime = data[2] or 0
 	--self.control = bit_or(AffectState.NoAttack,AffectState.NoSpell) 

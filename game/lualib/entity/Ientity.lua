@@ -478,6 +478,7 @@ function Ientity:onDead()
 			v.hateList:removeHate( self )
 		end
 	end
+	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
 end
 
@@ -787,6 +788,7 @@ end
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
+	if skilldata == nil then return -1 end
 	--如果是有目标类型(4 针对自身立即释放)
 	local tgtType = GET_SkillTgtType(skilldata)
 	local tgtRange = GET_SkillTgtRange(skilldata)
