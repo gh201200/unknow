@@ -421,8 +421,11 @@ function Ientity:onForceMove(dt)
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
+	if Map:isWall(mv_dst.x,mv_dst.z) == true then
+		return
+	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
-
+	
 	local len  = vector3.len(self.pos,self.targetPos.pos)
 	if len >= 0.001 then 
 		self:advanceEventStamp(EventStampType.Move)
@@ -907,7 +910,7 @@ function Ientity:castSkill()
 	if skilldata.bCommonSkill == true then --攻击动作
 		local Aspeed = self:getASpeed() or 0
 		local allTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
-		local pc =  1 --Aspeed / allTime
+		local pc =  Aspeed / allTime
 		for i=1,3,1 do
 			skillTimes[i] = math.floor(skillTimes[i] * pc)
 		end
