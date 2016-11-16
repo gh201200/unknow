@@ -12,7 +12,7 @@
 	</item>
 	<item id="20001">
 		<n32type>2</n32type>
-		<szassert>Fantan </szassert>
+		<szassert>Fantan</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
@@ -302,7 +302,7 @@
 	</item>
 	<item id="20030">
 		<n32type>2</n32type>
-		<szassert>Fantan </szassert>
+		<szassert>Fantan</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>

@@ -34,7 +34,7 @@ function IMapPlayer:ctor()
 	self.color = 0
 	self.camp = 0
 	self.pets = {}
-	self.HonorData = {0,0,0} -- 输出伤害 承受伤害 助攻数
+	self.HonorData = {0,0,0,0,0,0,0} -- 输出伤害 承受伤害 助攻数
 	self.bAttackPlayers = {} --被攻击的玩家
 	register_class_var(self, 'LoadProgress', 0)
 	register_class_var(self, 'RaiseTime', 0)

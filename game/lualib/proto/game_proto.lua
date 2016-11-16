@@ -556,6 +556,20 @@ pushEffect 3004 {
 	}
 }
 
+battleOver 3005 {
+	request {
+		result 0 : integer
+		score 1 : integer
+		maxBeDamage 2 : integer
+		maxDamage 3 : integer
+		maxHelp 4 : integer
+		kills 5 : integer
+		deads 6 : integer
+		helps 7 : integer
+		items 8 : *Vector3
+	}
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)
