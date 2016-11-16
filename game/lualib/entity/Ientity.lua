@@ -213,7 +213,6 @@ end
 function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
 	if target == self:getTarget() then 
-		print("目标为同一个")
 		return 
 	end	
 	if self:isDead() then return end
@@ -288,6 +287,7 @@ function Ientity:update(dt)
 			if self:canMove() == 0 then
 				self:onMove(dt)
 			else
+				self:clearTarget(1)
 				self:stand()
 			end
 		end
@@ -421,8 +421,11 @@ function Ientity:onForceMove(dt)
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
+	if Map:isWall(mv_dst.x,mv_dst.z) == true then
+		return
+	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
-
+	
 	local len  = vector3.len(self.pos,self.targetPos.pos)
 	if len >= 0.001 then 
 		self:advanceEventStamp(EventStampType.Move)
@@ -752,9 +755,7 @@ function Ientity:callBackSpellEnd()
 
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
 		if self:canCast(self.ReadySkillId)  == 0 then
-			print("可以释放技能")
 		else
-			print("不可以释放技能")
 			self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 		end
 	end
@@ -909,7 +910,7 @@ function Ientity:castSkill()
 	if skilldata.bCommonSkill == true then --攻击动作
 		local Aspeed = self:getASpeed() or 0
 		local allTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
-		local pc =  1 --Aspeed / allTime
+		local pc =  Aspeed / allTime
 		for i=1,3,1 do
 			skillTimes[i] = math.floor(skillTimes[i] * pc)
 		end
