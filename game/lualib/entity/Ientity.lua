@@ -287,6 +287,7 @@ function Ientity:update(dt)
 			if self:canMove() == 0 then
 				self:onMove(dt)
 			else
+				self:clearTarget(1)
 				self:stand()
 			end
 		end
