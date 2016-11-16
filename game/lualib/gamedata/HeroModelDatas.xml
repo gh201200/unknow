@@ -5,9 +5,9 @@
 		<szMod_name>Shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
 		<n32Speed>11000</n32Speed>
-		<n32AttackTime1>270</n32AttackTime1>
-		<n32AttackTime2>187</n32AttackTime2>
-		<n32AttackTime3>466</n32AttackTime3>
+		<n32AttackTime1>280</n32AttackTime1>
+		<n32AttackTime2>113</n32AttackTime2>
+		<n32AttackTime3>540</n32AttackTime3>
 		<n32AttackTriTime>307</n32AttackTriTime>
 		<n32Skill1Time1>250</n32Skill1Time1>
 		<n32Skill1Time2>616</n32Skill1Time2>
@@ -29,9 +29,9 @@
 		<szMod_name>Houde</szMod_name>
 		<n32Hight>Houde</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime1>336</n32AttackTime1>
+		<n32AttackTime2>118</n32AttackTime2>
+		<n32AttackTime3>478</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -54,8 +54,8 @@
 		<n32Hight>Monster_009</n32Hight>
 		<n32Speed>10000</n32Speed>
 		<n32AttackTime1>209</n32AttackTime1>
-		<n32AttackTime2>283</n32AttackTime2>
-		<n32AttackTime3>441</n32AttackTime3>
+		<n32AttackTime2>383</n32AttackTime2>
+		<n32AttackTime3>341</n32AttackTime3>
 		<n32AttackTriTime>373</n32AttackTriTime>
 		<n32Skill1Time1>250</n32Skill1Time1>
 		<n32Skill1Time2>383</n32Skill1Time2>
@@ -78,8 +78,8 @@
 		<n32Hight>Monster_011</n32Hight>
 		<n32Speed>10000</n32Speed>
 		<n32AttackTime1>213</n32AttackTime1>
-		<n32AttackTime2>503</n32AttackTime2>
-		<n32AttackTime3>216</n32AttackTime3>
+		<n32AttackTime2>603</n32AttackTime2>
+		<n32AttackTime3>116</n32AttackTime3>
 		<n32AttackTriTime>543</n32AttackTriTime>
 		<n32Skill1Time1>192</n32Skill1Time1>
 		<n32Skill1Time2>808</n32Skill1Time2>
@@ -101,9 +101,9 @@
 		<szMod_name>Wuya</szMod_name>
 		<n32Hight>Wuya</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>242</n32AttackTime1>
-		<n32AttackTime2>396</n32AttackTime2>
-		<n32AttackTime3>293</n32AttackTime3>
+		<n32AttackTime1>260</n32AttackTime1>
+		<n32AttackTime2>260</n32AttackTime2>
+		<n32AttackTime3>480</n32AttackTime3>
 		<n32AttackTriTime>303</n32AttackTriTime>
 		<n32Skill1Time1>113</n32Skill1Time1>
 		<n32Skill1Time2>819</n32Skill1Time2>
@@ -125,9 +125,9 @@
 		<szMod_name>Zhongbiaogong</szMod_name>
 		<n32Hight>Zhongbiaogong</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>228</n32AttackTime1>
-		<n32AttackTime2>381</n32AttackTime2>
-		<n32AttackTime3>322</n32AttackTime3>
+		<n32AttackTime1>275</n32AttackTime1>
+		<n32AttackTime2>125</n32AttackTime2>
+		<n32AttackTime3>433</n32AttackTime3>
 		<n32AttackTriTime>391</n32AttackTriTime>
 		<n32Skill1Time1>229</n32Skill1Time1>
 		<n32Skill1Time2>803</n32Skill1Time2>
@@ -174,8 +174,8 @@
 		<n32Hight>Xiong</n32Hight>
 		<n32Speed>10000</n32Speed>
 		<n32AttackTime1>408</n32AttackTime1>
-		<n32AttackTime2>336</n32AttackTime2>
-		<n32AttackTime3>456</n32AttackTime3>
+		<n32AttackTime2>436</n32AttackTime2>
+		<n32AttackTime3>356</n32AttackTime3>
 		<n32AttackTriTime>540</n32AttackTriTime>
 		<n32Skill1Time1>498</n32Skill1Time1>
 		<n32Skill1Time2>1162</n32Skill1Time2>
@@ -197,9 +197,9 @@
 		<szMod_name>Tiannv</szMod_name>
 		<n32Hight>tiannv</n32Hight>
 		<n32Speed>10000</n32Speed>
-		<n32AttackTime1>428</n32AttackTime1>
-		<n32AttackTime2>292</n32AttackTime2>
-		<n32AttackTime3>480</n32AttackTime3>
+		<n32AttackTime1>331</n32AttackTime1>
+		<n32AttackTime2>281</n32AttackTime2>
+		<n32AttackTime3>588</n32AttackTime3>
 		<n32AttackTriTime>528</n32AttackTriTime>
 		<n32Skill1Time1>299</n32Skill1Time1>
 		<n32Skill1Time2>650</n32Skill1Time2>
@@ -222,8 +222,8 @@
 		<n32Hight>niuboshi</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -246,8 +246,8 @@
 		<n32Hight>longnv</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -270,8 +270,8 @@
 		<n32Hight>kuangseng</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -294,8 +294,8 @@
 		<n32Hight>jijiashaonv</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -318,8 +318,8 @@
 		<n32Hight>shenju</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -342,8 +342,8 @@
 		<n32Hight>dangongxiaozi</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -365,19 +365,19 @@
 		<szMod_name>xiuxingzhe</szMod_name>
 		<n32Hight>xiuxingzhe</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
-		<n32AttackTriTime>370</n32AttackTriTime>
-		<n32Skill1Time1>177</n32Skill1Time1>
-		<n32Skill1Time2>555</n32Skill1Time2>
-		<n32Skill1TriTime>438</n32Skill1TriTime>
+		<n32AttackTime1>234</n32AttackTime1>
+		<n32AttackTime2>246</n32AttackTime2>
+		<n32AttackTime3>387</n32AttackTime3>
+		<n32AttackTriTime>346</n32AttackTriTime>
+		<n32Skill1Time1>278</n32Skill1Time1>
+		<n32Skill1Time2>722</n32Skill1Time2>
+		<n32Skill1TriTime>315</n32Skill1TriTime>
 		<n32Skill2Time1>0</n32Skill2Time1>
 		<n32Skill2Time2>100</n32Skill2Time2>
 		<n32Skill2TriTime>50</n32Skill2TriTime>
-		<n32Skill3Time1>273</n32Skill3Time1>
-		<n32Skill3Time2>893</n32Skill3Time2>
-		<n32Skill3TriTime>587</n32Skill3TriTime>
+		<n32Skill3Time1>400</n32Skill3Time1>
+		<n32Skill3Time2>933</n32Skill3Time2>
+		<n32Skill3TriTime>533</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -390,8 +390,8 @@
 		<n32Hight>dipi</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -414,8 +414,8 @@
 		<n32Hight>anna</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -438,8 +438,8 @@
 		<n32Hight>fengzhilvren</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -462,8 +462,8 @@
 		<n32Hight>falao</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -486,8 +486,8 @@
 		<n32Hight>kejitiancai</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
@@ -510,8 +510,8 @@
 		<n32Hight>dianqianqishi</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>264</n32AttackTime2>
-		<n32AttackTime3>393</n32AttackTime3>
+		<n32AttackTime2>364</n32AttackTime2>
+		<n32AttackTime3>293</n32AttackTime3>
 		<n32AttackTriTime>370</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
