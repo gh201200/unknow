@@ -53,11 +53,22 @@ function demageAffect:calDemage()
 	elseif self.data[1] == "inte" then
 		inte_pc = self.data[2]
 	end
-	local apDem = ap_pc * self.source:getAttack() + ap_val -  self.owner:getDefence()	
+      	
+	local apDem = ap_pc * self.source:getAttack() + ap_val 
 	local strDem =  self.source:getStrength() * str_pc
 	local intDem =  self.source:getZhili() * inte_pc
 	local cureDem =  self.source:getMinjie() * cure_pc
-	local demage = apDem + strDem + intDem + cureDem
+	local demage = apDem + strDem + intDem + cureDem  
+	if self.source.HonorData ~= nil then
+		self.source.HonorData[1] = self.source.HonorData[1] + demage --输出伤害
+	end
+	if self.owner.HonorData ~= nil then
+		self.owner.HonorData[2] = self.owner.HonorData[2] + demage --承受伤害
+	end
+	if self.owner:getType() == "IMapPlayer" and self.source:getType() == "IMapPlayer" then
+		self.owner.bAttackPlayers[self.source.serverId] = self.source 
+	end
+	demage = demage - self.owner:getDefence()
 	if demage <= 0 then demage = 1 end
 	if self.data[1] == "ap" and ap_pc == 0  then
 		if demage < ap_val then

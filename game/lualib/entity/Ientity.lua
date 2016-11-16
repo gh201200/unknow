@@ -426,7 +426,24 @@ function Ientity:onForceMove(dt)
 end
 --闪现
 function Ientity:onBlink(des)
+	if Map:get(des.x,des.z)	~= 0 then
+		local gx =  Map.POS_2_GRID(des.x)
+		local gz = Map.POS_2_GRID(des.z)
+		local t = { {1,0},{-1,0},{0,1},{0,-1}}
+		local lt = {}
+		for _k,_v in pairs(t) do
+			if Map.legal(gx+ _v[1], gz +  _v[2]) then
+				table.insert(lt,_v)
+			end
+		end
+		local i = math.random(1,#lt)
+		gx = lt[i][1] + gx
+		gz = lt[i][2] + gz
+		des.x = Map.GRID_2_POS(gx)
+		des.z = Map.GRID_2_POS(gz)	
+	end
 	self:setPos(des.x, des.y, des.z)
+ 		
 	local r = {srcId = self.serverId,targetPos = {}}
 	r.targetPos = {x=math.ceil(self.pos.x*GAMEPLAY_PERCENT), y= 0,z=math.ceil(self.pos.z*GAMEPLAY_PERCENT)}
 	g_entityManager:sendToAllPlayers("setPosition",r)	

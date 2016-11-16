@@ -94,6 +94,10 @@ function IPet:update(dt)
 	IPet.super.update(self,dt)
 
 end
+
+function IPet:onMove()
+	IPet.suer.onMove()
+end
 function IPet:onDead()
 	IPet.super.onDead(self)
 	g_entityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
