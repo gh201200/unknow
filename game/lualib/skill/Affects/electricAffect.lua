@@ -1,8 +1,8 @@
 local Affect = require "skill.Affects.Affect"
 local electricAffect = class("elecricAffect",Affect)
 
-function electricAffect:ctor(entity,source,data,root,index)
-	self.super.ctor(self,entity,source,data)
+function electricAffect:ctor(entity,source,data,skillId,root,index)
+	self.super.ctor(self,entity,source,data,skillId)
 	print("electricAffect:ctor",self.owner.serverId,self.source.serverId)
 	self.atkMul = {}
 	self.atkMul[1] = self.data[2] or 0
@@ -32,7 +32,7 @@ function electricAffect:onEnter()
 			local tgt = self:findNearTgt(src)
 			if tgt == nil then break end
 			self.tgts[tgt.serverId] = 1
-			local aff = electricAffect.new(tgt,src,self.data,self.root,i+1)
+			local aff = electricAffect.new(tgt,src,self.data,self.skillId,self.root,i+1)
 			tgt.affectTable:addAffectSyn(aff)
 			src =  tgt
 		end

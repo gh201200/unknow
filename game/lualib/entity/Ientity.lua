@@ -213,7 +213,6 @@ end
 function Ientity:setTarget(target)
 	if not target then self:setTargetVar( nil ) return end
 	if target == self:getTarget() then 
-		print("目标为同一个")
 		return 
 	end	
 	if self:isDead() then return end
@@ -288,6 +287,7 @@ function Ientity:update(dt)
 			if self:canMove() == 0 then
 				self:onMove(dt)
 			else
+				self:clearTarget(1)
 				self:stand()
 			end
 		end
@@ -752,9 +752,7 @@ function Ientity:callBackSpellEnd()
 
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
 		if self:canCast(self.ReadySkillId)  == 0 then
-			print("可以释放技能")
 		else
-			print("不可以释放技能")
 			self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 		end
 	end
