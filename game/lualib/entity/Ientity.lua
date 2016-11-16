@@ -421,7 +421,8 @@ function Ientity:onForceMove(dt)
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
-	if Map:isWall(mv_dst.x,mv_dst.z) == true then
+	if Map:isWall(mv_dst.x ,mv_dst.z) == true then
+		self:stand()
 		return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
