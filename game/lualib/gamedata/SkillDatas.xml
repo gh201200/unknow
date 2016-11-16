@@ -446,7 +446,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[getblood:0.3,0,0]</szTargetAffect>
+		<szTargetAffect>[getblood:0.12,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -481,7 +481,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[getblood:0.3,0,0]</szTargetAffect>
+		<szTargetAffect>[getblood:0.14,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -516,7 +516,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[getblood:0.3,0,0]</szTargetAffect>
+		<szTargetAffect>[getblood:0.16,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -551,7 +551,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[getblood:0.3,0,0]</szTargetAffect>
+		<szTargetAffect>[getblood:0.18,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -621,7 +621,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.5,0,0,3000,20002]</szTargetAffect>
+		<szTargetAffect>[def:-0.6,0,0,3000,20002]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -656,7 +656,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.5,0,0,3000,20002]</szTargetAffect>
+		<szTargetAffect>[def:-0.8,0,0,3000,20002]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -691,7 +691,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.5,0,0,3000,20002]</szTargetAffect>
+		<szTargetAffect>[def:-1,0,0,3000,20002]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -726,10 +726,10 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[critrate:100,1.15,0,100,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
-		<szAtkBe>1,50,3600000</szAtkBe>
+		<szAtkBe>1,35,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -761,10 +761,10 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[critrate:100,1.25,0,100,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
-		<szAtkBe>1,50,3600000</szAtkBe>
+		<szAtkBe>1,35,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -796,10 +796,10 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[critrate:100,1.35,0,100,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
-		<szAtkBe>1,50,3600000</szAtkBe>
+		<szAtkBe>1,35,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -831,10 +831,10 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[critrate:100,1.45,0,100,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
-		<szAtkBe>1,50,3600000</szAtkBe>
+		<szAtkBe>1,35,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -867,7 +867,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[wsp:0.5,0,0,3600000,0][mov:0.5,0,0,3600000,20004]</szMyAffect>
+		<szMyAffect>[wsp:0.15,0,0,3600000,0][mov:0.06,0,0,3600000,20004]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -902,7 +902,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[wsp:0.5,0,0,3600000,0][mov:0.5,0,0,3600000,20004]</szMyAffect>
+		<szMyAffect>[wsp:0.2,0,0,3600000,0][mov:0.08,0,0,3600000,20004]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -937,7 +937,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[wsp:0.5,0,0,3600000,0][mov:0.5,0,0,3600000,20004]</szMyAffect>
+		<szMyAffect>[wsp:0.25,0,0,3600000,0][mov:0.10,0,0,3600000,20004]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -972,7 +972,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[wsp:0.5,0,0,3600000,0][mov:0.5,0,0,3600000,20004]</szMyAffect>
+		<szMyAffect>[wsp:0.3,0,0,3600000,0][mov:0.12,0,0,3600000,20004]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1006,7 +1006,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[electric:1,0.75,0.25,0,1000,20005]</szTargetAffect>
+		<szTargetAffect>[electric:0.9,0.65,0.4,0,1000,20005]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,50,3600000</szAtkBe>
@@ -1041,7 +1041,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[electric:1,0.75,0.25,0,1000,20005]</szTargetAffect>
+		<szTargetAffect>[electric:0.95,0.7,0.45,0,1000,20005]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,50,3600000</szAtkBe>
@@ -1076,7 +1076,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[electric:1,0.75,0.25,0,1000,20005]</szTargetAffect>
+		<szTargetAffect>[electric:1,0.75,0.5,0,1000,20005]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,50,3600000</szAtkBe>
@@ -1111,7 +1111,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[electric:1,0.75,0.25,0,1000,20005]</szTargetAffect>
+		<szTargetAffect>[electric:1.05,0.8,0.55,0,1000,20005]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,50,3600000</szAtkBe>
@@ -1146,7 +1146,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curemp:-0.1,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[curemp:-0.05,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -1181,7 +1181,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curemp:-0.1,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[curemp:-0.07,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -1216,7 +1216,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curemp:-0.1,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[curemp:-0.09,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -1251,7 +1251,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curemp:-0.1,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[curemp:-0.11,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -1286,10 +1286,10 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.5,0,3000,0][mov:-0.5,0,0,3000,20006]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.15,0,2000,0][mov:-0.15,0,0,2000,20006]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
-		<szAtkBe>1,35,3600000</szAtkBe>
+		<szAtkBe>1,25,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -1321,10 +1321,10 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.5,0,3000,0][mov:-0.5,0,0,3000,20006]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.2,0,2000,0][mov:-0.2,0,0,2000,20006]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
-		<szAtkBe>1,35,3600000</szAtkBe>
+		<szAtkBe>1,30,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -1356,7 +1356,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.5,0,3000,0][mov:-0.5,0,0,3000,20006]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.25,0,2000,0][mov:-0.3,0,0,2000,20006]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,35,3600000</szAtkBe>
@@ -1391,10 +1391,10 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.5,0,3000,0][mov:-0.5,0,0,3000,20006]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.3,0,2000,0][mov:-0.4,0,0,2000,20006]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
-		<szAtkBe>1,35,3600000</szAtkBe>
+		<szAtkBe>1,45,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
 		<n32TimeEffect>0</n32TimeEffect>
@@ -1427,7 +1427,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[dodrate:0,25,0,360000,0]</szMyAffect>
+		<szMyAffect>[dodrate:0,15,0,360000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1497,7 +1497,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[dodrate:0,25,0,360000,0]</szMyAffect>
+		<szMyAffect>[dodrate:0,35,0,360000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1532,7 +1532,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[dodrate:0,25,0,360000,0]</szMyAffect>
+		<szMyAffect>[dodrate:0,45,0,360000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -1601,7 +1601,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0,40,1000,5000,20008]</szTargetAffect>
+		<szTargetAffect>[ap:0,60,1000,5000,20008]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -1636,7 +1636,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0,40,1000,5000,20008]</szTargetAffect>
+		<szTargetAffect>[ap:0,80,1000,5000,20008]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -1671,7 +1671,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0,40,1000,5000,20008]</szTargetAffect>
+		<szTargetAffect>[ap:0,100,1000,5000,20008]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe>1,100,3600000</szAtkBe>
@@ -1691,8 +1691,8 @@
 		<szIcon>fenshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1726,8 +1726,8 @@
 		<szIcon>fenshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1761,8 +1761,8 @@
 		<szIcon>fenshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1796,8 +1796,8 @@
 		<szIcon>fenshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1831,8 +1831,8 @@
 		<szIcon>kongzhiqiu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1846,9 +1846,9 @@
 		<n32CubeEffect>20011</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:3,0,0,3000,20010]</szTargetAffect>
+		<szTargetAffect>[ctrl:3,0,0,1500,20010]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>5000</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1866,8 +1866,8 @@
 		<szIcon>kongzhiqiu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1881,9 +1881,9 @@
 		<n32CubeEffect>20011</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:3,0,0,3000,20010]</szTargetAffect>
+		<szTargetAffect>[ctrl:3,0,0,2000,20010]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>5000</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1901,8 +1901,8 @@
 		<szIcon>kongzhiqiu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1916,9 +1916,9 @@
 		<n32CubeEffect>20011</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:3,0,0,3000,20010]</szTargetAffect>
+		<szTargetAffect>[ctrl:3,0,0,2500,20010]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>5000</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1936,8 +1936,8 @@
 		<szIcon>kongzhiqiu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1953,7 +1953,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ctrl:3,0,0,3000,20010]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>5000</n32Radius>
+		<n32Radius>3000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -1971,8 +1971,8 @@
 		<szIcon>bianzhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -1986,7 +1986,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
+		<szTargetAffect>[changeMod:2000,20049][ctrl:6,0,0,2000,20012][mov:-0.8,0,0,2000,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2006,8 +2006,8 @@
 		<szIcon>bianzhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2021,7 +2021,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
+		<szTargetAffect>[changeMod:2500,20049][ctrl:6,0,0,2500,20012][mov:-0.8,0,0,2500,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2041,8 +2041,8 @@
 		<szIcon>bianzhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2056,7 +2056,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
+		<szTargetAffect>[changeMod:3000,20049][ctrl:6,0,0,3000,20012][mov:-0.8,0,0,3000,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2076,8 +2076,8 @@
 		<szIcon>bianzhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2091,7 +2091,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[changeMod:4000,20049][ctrl:6,0,0,2000,20012]</szTargetAffect>
+		<szTargetAffect>[changeMod:3500,20049][ctrl:6,0,0,3500,20012][mov:-0.8,0,0,3500,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2111,8 +2111,8 @@
 		<szIcon>jinmo.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2126,9 +2126,9 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20014</n32TargetEffect>
-		<szTargetAffect>[ctrl:4,0,0,3000,20013]</szTargetAffect>
+		<szTargetAffect>[ctrl:4,0,0,2000,20013]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>10500</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2146,8 +2146,8 @@
 		<szIcon>jinmo.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2161,9 +2161,9 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20014</n32TargetEffect>
-		<szTargetAffect>[ctrl:4,0,0,3000,20013]</szTargetAffect>
+		<szTargetAffect>[ctrl:4,0,0,2500,20013]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>12000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2181,8 +2181,8 @@
 		<szIcon>jinmo.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2198,7 +2198,7 @@
 		<n32TargetEffect>20014</n32TargetEffect>
 		<szTargetAffect>[ctrl:4,0,0,3000,20013]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>13500</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2216,8 +2216,8 @@
 		<szIcon>jinmo.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2231,7 +2231,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20014</n32TargetEffect>
-		<szTargetAffect>[ctrl:4,0,0,3000,20013]</szTargetAffect>
+		<szTargetAffect>[ctrl:4,0,0,3500,20013]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2252,7 +2252,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>200</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2266,7 +2266,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20015</n32TargetEffect>
-		<szTargetAffect>[inte:1,0,0,0,0][mov:-0.5,0,0,3000,20016]</szTargetAffect>
+		<szTargetAffect>[inte:1,0,0,0,0][mov:-0.3,0,0,3000,20016][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2286,8 +2286,8 @@
 		<szIcon>bingbao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>200</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2301,7 +2301,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20015</n32TargetEffect>
-		<szTargetAffect>[inte:1,0,0,0,0][mov:-0.5,0,0,3000,20016]</szTargetAffect>
+		<szTargetAffect>[inte:1.5,0,0,0,0][mov:-0.3,0,0,3000,20016][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2321,8 +2321,8 @@
 		<szIcon>bingbao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>200</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2336,7 +2336,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20015</n32TargetEffect>
-		<szTargetAffect>[inte:1,0,0,0,0][mov:-0.5,0,0,3000,20016]</szTargetAffect>
+		<szTargetAffect>[inte:2,0,0,0,0][mov:-0.3,0,0,3000,20016][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2356,8 +2356,8 @@
 		<szIcon>bingbao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>200</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2371,7 +2371,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20015</n32TargetEffect>
-		<szTargetAffect>[inte:1,0,0,0,0][mov:-0.5,0,0,3000,20016]</szTargetAffect>
+		<szTargetAffect>[inte:2.5,0,0,0,0][mov:-0.3,0,0,3000,20016][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2391,8 +2391,8 @@
 		<szIcon>chongjibo.png</szIcon>
 		<n32SingEffect>20019</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>5000</n32CD>
 		<n32TriggerTime>1000</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2406,7 +2406,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20017</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[inte:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:1,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>1,6</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2426,8 +2426,8 @@
 		<szIcon>chongjibo.png</szIcon>
 		<n32SingEffect>20019</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>1000</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2441,7 +2441,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20017</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[inte:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:1.5,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>1,6</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2461,8 +2461,8 @@
 		<szIcon>chongjibo.png</szIcon>
 		<n32SingEffect>20019</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>1000</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2476,7 +2476,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20017</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[inte:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:2,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>1,6</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2496,8 +2496,8 @@
 		<szIcon>chongjibo.png</szIcon>
 		<n32SingEffect>20019</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>1000</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2511,7 +2511,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20017</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[inte:1.5,0,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:2.5,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>1,6</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2531,8 +2531,8 @@
 		<szIcon>huobao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20020</n32WarningEffect>
-		<n32MpCost>150</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>5000</n32CD>
 		<n32TriggerTime>1300</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2546,9 +2546,9 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20021</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:1,0,0,0,0][ap:1,20,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>10500</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2566,8 +2566,8 @@
 		<szIcon>huobao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20020</n32WarningEffect>
-		<n32MpCost>150</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>1300</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2581,9 +2581,9 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20021</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:1.5,0,0,0,0][ap:1,40,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>12000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2601,8 +2601,8 @@
 		<szIcon>huobao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20020</n32WarningEffect>
-		<n32MpCost>150</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>1300</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2616,9 +2616,9 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20021</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:2,0,0,0,0][ap:1,80,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>15000</n32Radius>
+		<n32Radius>13500</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2636,8 +2636,8 @@
 		<szIcon>huobao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>20020</n32WarningEffect>
-		<n32MpCost>150</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>1300</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2651,7 +2651,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20021</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[inte:2.5,0,0,0,0][ap:1,100,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2671,8 +2671,8 @@
 		<szIcon>luolei.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2686,7 +2686,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20023</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,20024]</szTargetAffect>
+		<szTargetAffect>[inte:1,0,0,0,0][ap:1,20,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2706,8 +2706,8 @@
 		<szIcon>luolei.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2721,7 +2721,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20023</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,20024]</szTargetAffect>
+		<szTargetAffect>[inte:1.5,0,0,0,0][ap:1,40,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2741,8 +2741,8 @@
 		<szIcon>luolei.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2756,7 +2756,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20023</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,20024]</szTargetAffect>
+		<szTargetAffect>[inte:2,0,0,0,0][ap:1,80,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2776,8 +2776,8 @@
 		<szIcon>luolei.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2791,7 +2791,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>20023</n32TargetEffect>
-		<szTargetAffect>[inte:1,20,0,0,20024]</szTargetAffect>
+		<szTargetAffect>[inte:2.5,0,0,0,0][ap:1,100,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2826,7 +2826,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20025</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:1,2,0,0,20051]</szTargetAffect>
+		<szTargetAffect>[curehp:0.75,1.5,0,0,20051]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2846,8 +2846,8 @@
 		<szIcon>quntizhiliao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>200</n32MpCost>
-		<n32CD>8000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2861,7 +2861,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20025</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:1,2,0,0,20051]</szTargetAffect>
+		<szTargetAffect>[curehp:0.75,2,0,0,20051]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2881,8 +2881,8 @@
 		<szIcon>quntizhiliao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>200</n32MpCost>
-		<n32CD>8000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2896,7 +2896,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20025</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:1,2,0,0,20051]</szTargetAffect>
+		<szTargetAffect>[curehp:0.75,2.5,0,0,20051]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2916,8 +2916,8 @@
 		<szIcon>quntizhiliao.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>200</n32MpCost>
-		<n32CD>8000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2931,7 +2931,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20025</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:1,2,0,0,20051]</szTargetAffect>
+		<szTargetAffect>[curehp:0.75,3,0,0,20051]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -2951,8 +2951,8 @@
 		<szIcon>zhaohuanshuanglang.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -2986,8 +2986,8 @@
 		<szIcon>zhaohuanshuanglang.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3021,8 +3021,8 @@
 		<szIcon>zhaohuanshuanglang.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3056,8 +3056,8 @@
 		<szIcon>zhaohuanshuanglang.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3091,8 +3091,8 @@
 		<szIcon>jinshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>10000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction></szAction>
@@ -3107,7 +3107,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[curehp:0.3,1,500,3000,20026][invincible:3000,20026][ctrl:7,0,0,3000,0]</szMyAffect>
+		<szMyAffect>[curehp:0.2,0.5,500,1500,20026][invincible:1500,20026][ctrl:7,0,0,1500,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3126,8 +3126,8 @@
 		<szIcon>jinshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>10000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction></szAction>
@@ -3142,7 +3142,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[curehp:0.3,1,500,3000,20026][invincible:3000,20026][ctrl:7,0,0,3000,0]</szMyAffect>
+		<szMyAffect>[curehp:0.2,0.5,500,2000,20026][invincible:2000,20026][ctrl:7,0,0,2000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3161,7 +3161,7 @@
 		<szIcon>jinshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
+		<n32MpCost>400</n32MpCost>
 		<n32CD>10000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
@@ -3177,7 +3177,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[curehp:0.3,1,500,3000,20026][invincible:3000,20026][ctrl:7,0,0,3000,0]</szMyAffect>
+		<szMyAffect>[curehp:0.2,0.5,500,2500,20026][invincible:2500,20026][ctrl:7,0,0,2500,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3196,8 +3196,8 @@
 		<szIcon>jinshen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>10000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction></szAction>
@@ -3212,7 +3212,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[curehp:0.3,1,500,3000,20026][invincible:3000,20026][ctrl:7,0,0,3000,0]</szMyAffect>
+		<szMyAffect>[curehp:0.5,0.8,500,3000,20026][invincible:3000,20026][ctrl:7,0,0,3000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3231,7 +3231,7 @@
 		<szIcon>zhenta.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
+		<n32MpCost>200</n32MpCost>
 		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
@@ -3246,7 +3246,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20027</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,2000,20028][ap:1.5,0,0,0,0][str:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,1400,20028][ap:1,0,0,0,0][str:1,40,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3266,8 +3266,8 @@
 		<szIcon>zhenta.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3281,7 +3281,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20027</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,2000,20028][ap:1.5,0,0,0,0][str:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,1600,20028][ap:1,0,0,0,0][str:1.1,80,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3301,8 +3301,8 @@
 		<szIcon>zhenta.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3316,7 +3316,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20027</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,2000,20028][ap:1.5,0,0,0,0][str:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,1800,20028][ap:1,0,0,0,0][str:1.2,120,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3336,8 +3336,8 @@
 		<szIcon>zhenta.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>500</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3351,7 +3351,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20027</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,2000,20028][ap:1.5,0,0,0,0][str:1,20,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,2000,20028][ap:1,0,0,0,0][str:1.3,140,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3386,7 +3386,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.1,10,1000,360000,20024]</szTargetAffect>
+		<szTargetAffect>[ap:0.1,20,1000,120000,20024]</szTargetAffect>
 		<szMyAffect>[profit:360000,20050]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3421,7 +3421,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.1,10,1000,360000,20024]</szTargetAffect>
+		<szTargetAffect>[ap:0.12,24,1000,120000,20024]</szTargetAffect>
 		<szMyAffect>[profit:360000,20050]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3456,7 +3456,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.1,10,1000,360000,20024]</szTargetAffect>
+		<szTargetAffect>[ap:0.14,28,1000,120000,20024]</szTargetAffect>
 		<szMyAffect>[profit:360000,20050]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3491,7 +3491,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.1,10,1000,360000,20024]</szTargetAffect>
+		<szTargetAffect>[ap:0.16,32,1000,120000,20024]</szTargetAffect>
 		<szMyAffect>[profit:360000,20050]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3526,7 +3526,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20001</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.3,10,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:0.14,18,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
@@ -3561,7 +3561,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20001</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.3,10,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:0.18,24,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
@@ -3596,7 +3596,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20001</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.3,10,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:0.22,30,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
@@ -3631,7 +3631,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20001</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.3,10,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:0.26,36,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
@@ -3652,10 +3652,10 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>3</n32ActionType>
-		<szAction>Skill_02_1</szAction>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -3666,7 +3666,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,30,0,0,0]</szTargetAffect>
+		<szTargetAffect>[ap:1,50,0,0,0]</szTargetAffect>
 		<szMyAffect>[charge:3,20031]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3686,11 +3686,11 @@
 		<szIcon>chongfeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>3</n32ActionType>
-		<szAction>Skill_02_1</szAction>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -3701,8 +3701,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,30,0,0,0]</szTargetAffect>
-		<szMyAffect>[charge:3,20031]</szMyAffect>
+		<szTargetAffect>[ap:1,70,0,0,0]</szTargetAffect>
+		<szMyAffect>[charge:3.2,20031]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3721,11 +3721,11 @@
 		<szIcon>chongfeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>3</n32ActionType>
-		<szAction>Skill_02_1</szAction>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -3736,8 +3736,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,30,0,0,0]</szTargetAffect>
-		<szMyAffect>[charge:3,20031]</szMyAffect>
+		<szTargetAffect>[ap:1,90,0,0,0]</szTargetAffect>
+		<szMyAffect>[charge:3.4,20031]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3756,11 +3756,11 @@
 		<szIcon>chongfeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>3</n32ActionType>
-		<szAction>Skill_02_1</szAction>
+		<n32ActionType>2</n32ActionType>
+		<szAction>Skill_01</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -3771,8 +3771,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1,30,0,0,0]</szTargetAffect>
-		<szMyAffect>[charge:3,20031]</szMyAffect>
+		<szTargetAffect>[ap:1,110,0,0,0]</szTargetAffect>
+		<szMyAffect>[charge:3.6,20031]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3792,7 +3792,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3807,7 +3807,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[def:1,10,0,4000,20032]</szMyAffect>
+		<szMyAffect>[def:1,20,0,6000,20032]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3826,8 +3826,8 @@
 		<szIcon>hujia.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3842,7 +3842,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[def:1,10,0,4000,20032]</szMyAffect>
+		<szMyAffect>[def:1.1,40,0,6000,20032]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3861,8 +3861,8 @@
 		<szIcon>hujia.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3877,7 +3877,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[def:1,10,0,4000,20032]</szMyAffect>
+		<szMyAffect>[def:1.2,60,0,6000,20032]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3896,8 +3896,8 @@
 		<szIcon>hujia.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3912,7 +3912,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>0</szTargetAffect>
-		<szMyAffect>[def:1,10,0,4000,20032]</szMyAffect>
+		<szMyAffect>[def:1.3,80,0,6000,20032]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3932,7 +3932,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32CD>5000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3946,7 +3946,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20033</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[love:4000,20034][ap:0,1,0,0,0][ctrl:5,0,0,4000,0]</szTargetAffect>
+		<szTargetAffect>[love:2000,20034][ap:0,1,0,0,0][ctrl:5,0,0,2000,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -3966,8 +3966,8 @@
 		<szIcon>chaofeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>6000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -3981,7 +3981,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20033</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[love:4000,20034][ap:0,1,0,0,0][ctrl:5,0,0,4000,0]</szTargetAffect>
+		<szTargetAffect>[love:2500,20034][ap:0,1,0,0,0][ctrl:5,0,0,2500,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4001,8 +4001,8 @@
 		<szIcon>chaofeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>7000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4016,7 +4016,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20033</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[love:4000,20034][ap:0,1,0,0,0][ctrl:5,0,0,4000,0]</szTargetAffect>
+		<szTargetAffect>[love:3000,20034][ap:0,1,0,0,0][ctrl:5,0,0,3000,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4036,8 +4036,8 @@
 		<szIcon>chaofeng.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4051,7 +4051,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20033</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[love:4000,20034][ap:0,1,0,0,0][ctrl:5,0,0,4000,0]</szTargetAffect>
+		<szTargetAffect>[love:3500,20034][ap:0,1,0,0,0][ctrl:5,0,0,3500,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4087,7 +4087,7 @@
 		<n32MyEffect>20038</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[hp:1.5,0,30000,20039][def:1.5,0,0,3000,20039]</szMyAffect>
+		<szMyAffect>[hp:1.2,0,0,8000,20039][def:1.2,0,0,8000,20039]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4106,8 +4106,8 @@
 		<szIcon>bianda.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>10000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>15000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4122,7 +4122,7 @@
 		<n32MyEffect>20038</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[hp:1.5,0,30000,20039][def:1.5,0,0,3000,20039]</szMyAffect>
+		<szMyAffect>[hp:1.35,0,0,12000,20039][def:1.35,0,0,12000,20039]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4141,8 +4141,8 @@
 		<szIcon>bianda.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>10000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4157,7 +4157,7 @@
 		<n32MyEffect>20038</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[hp:1.5,0,30000,20039][def:1.5,0,0,3000,20039]</szMyAffect>
+		<szMyAffect>[hp:1.5,0,0,16000,20039][def:1.5,0,0,16000,20039]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4176,8 +4176,8 @@
 		<szIcon>bianda.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>10000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>25000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4192,7 +4192,7 @@
 		<n32MyEffect>20038</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[hp:1.5,0,30000,20039][def:1.5,0,0,3000,20039]</szMyAffect>
+		<szMyAffect>[hp:1.65,0,0,20000,20039][def:1.65,0,0,20000,20039]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4212,7 +4212,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction></szAction>
@@ -4246,8 +4246,8 @@
 		<szIcon>busi.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>12000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction></szAction>
@@ -4262,7 +4262,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[nodead:3000,20035]</szMyAffect>
+		<szMyAffect>[nodead:4000,20035]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4281,8 +4281,8 @@
 		<szIcon>busi.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>15000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction></szAction>
@@ -4297,7 +4297,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[nodead:3000,20035]</szMyAffect>
+		<szMyAffect>[nodead:5000,20035]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4316,8 +4316,8 @@
 		<szIcon>busi.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>4000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction></szAction>
@@ -4332,7 +4332,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[nodead:3000,20035]</szMyAffect>
+		<szMyAffect>[nodead:6000,20035]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4352,7 +4352,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4386,8 +4386,8 @@
 		<szIcon>zhaohuangouxiong.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>12000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4421,8 +4421,8 @@
 		<szIcon>zhaohuangouxiong.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>15000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4456,8 +4456,8 @@
 		<szIcon>zhaohuangouxiong.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4489,10 +4489,10 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
 		<szIcon>shanshuo.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
+		<n32SingEffect>20040</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>50</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>3</n32ActionType>
 		<szAction>Skill_02_1</szAction>
@@ -4504,10 +4504,10 @@
 		<szTypeInfo>闪烁</szTypeInfo>
 		<szDescribe>向所选地点闪烁,有距离限制</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20040</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[blink:3,1000,0]</szMyAffect>
+		<szMyAffect>[blink:2,800,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4524,10 +4524,10 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
 		<szIcon>shanshuo.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
+		<n32SingEffect>20040</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>50</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>12000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>3</n32ActionType>
 		<szAction>Skill_02_1</szAction>
@@ -4539,10 +4539,10 @@
 		<szTypeInfo>闪烁</szTypeInfo>
 		<szDescribe>向所选地点闪烁,有距离限制</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20040</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[blink:3,1000,0]</szMyAffect>
+		<szMyAffect>[blink:2.5,1000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4559,10 +4559,10 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
 		<szIcon>shanshuo.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
+		<n32SingEffect>20040</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>50</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>150</n32MpCost>
+		<n32CD>15000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>3</n32ActionType>
 		<szAction>Skill_02_1</szAction>
@@ -4574,10 +4574,10 @@
 		<szTypeInfo>闪烁</szTypeInfo>
 		<szDescribe>向所选地点闪烁,有距离限制</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20040</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[blink:3,1000,0]</szMyAffect>
+		<szMyAffect>[blink:3,1200,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4594,10 +4594,10 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>600000</n32Range>
 		<szIcon>shanshuo.png</szIcon>
-		<n32SingEffect>0</n32SingEffect>
+		<n32SingEffect>20040</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>50</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>3</n32ActionType>
 		<szAction>Skill_02_1</szAction>
@@ -4609,10 +4609,10 @@
 		<szTypeInfo>闪烁</szTypeInfo>
 		<szDescribe>向所选地点闪烁,有距离限制</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20040</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[blink:3,1000,0]</szMyAffect>
+		<szMyAffect>[blink:3.5,1400,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4632,7 +4632,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4647,7 +4647,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[def:1,30,0,4000,20007]</szMyAffect>
+		<szMyAffect>[def:0,10,0,6000,20007]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4666,8 +4666,8 @@
 		<szIcon>hudun.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4682,7 +4682,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[def:1,30,0,4000,20007]</szMyAffect>
+		<szMyAffect>[def:1,20,0,6000,20007]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4701,8 +4701,8 @@
 		<szIcon>hudun.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4717,7 +4717,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[def:1,30,0,4000,20007]</szMyAffect>
+		<szMyAffect>[def:1.2,30,0,6000,20007]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4736,8 +4736,8 @@
 		<szIcon>hudun.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>0</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -4752,7 +4752,7 @@
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[def:1,30,0,4000,20007]</szMyAffect>
+		<szMyAffect>[def:1.5,40,0,6000,20007]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -4786,7 +4786,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:0.1,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4821,7 +4821,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:0.12,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4856,7 +4856,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:0.14,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4891,7 +4891,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:0.16,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4926,7 +4926,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,0.2,0,3600000,0][mov:0.2,0,0,3600000,20004]</szTargetAffect>
+		<szTargetAffect>[wsp:0,0.06,0,3600000,0][mov:0.06,0,0,3600000,20004]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4961,7 +4961,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,0.2,0,3600000,0][mov:0.2,0,0,3600000,20004]</szTargetAffect>
+		<szTargetAffect>[wsp:0,0.07,0,3600000,0][mov:0.07,0,0,3600000,20004]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -4996,7 +4996,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,0.2,0,3600000,0][mov:0.2,0,0,3600000,20004]</szTargetAffect>
+		<szTargetAffect>[wsp:0,0.08,0,3600000,0][mov:0.08,0,0,3600000,20004]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5031,7 +5031,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,0.2,0,3600000,0][mov:0.2,0,0,3600000,20004]</szTargetAffect>
+		<szTargetAffect>[wsp:0,0.09,0,3600000,0][mov:0.09,0,0,3600000,20004]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5101,7 +5101,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:0.5,5,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:0.6,10,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5136,7 +5136,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:0.5,5,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:0.7,15,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5171,7 +5171,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:0.5,5,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:0.8,20,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20036]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5206,7 +5206,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.2,0,3600000,0][mov:-0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.05,0,3600000,0][mov:-0.05,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5241,7 +5241,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.2,0,3600000,0][mov:-0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.06,0,3600000,0][mov:-0.06,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5276,7 +5276,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.2,0,3600000,0][mov:-0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.07,0,3600000,0][mov:-0.07,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5311,7 +5311,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[wsp:0,-0.2,0,3600000,0][mov:-0.2,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[wsp:0,-0.08,0,3600000,0][mov:-0.08,0,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5346,7 +5346,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:-0.1,-1,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:-0.05,-15,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5381,7 +5381,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:-0.1,-1,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:-0.07,-21,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5416,7 +5416,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:-0.1,-1,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:-0.09,-27,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5451,7 +5451,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[atk:-0.1,-1,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[atk:-0.11,-33,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5486,7 +5486,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.1,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:-0.20,-10,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5521,7 +5521,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.1,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:-0.30,-15,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5556,7 +5556,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.1,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:-0.40,-20,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5591,7 +5591,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:-0.1,0,0,3600000,0]</szTargetAffect>
+		<szTargetAffect>[def:-0.50,-25,0,3600000,0]</szTargetAffect>
 		<szMyAffect>[profit:360000,20037]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5612,7 +5612,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -5646,8 +5646,8 @@
 		<szIcon>zhaohuanzhizhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -5681,8 +5681,8 @@
 		<szIcon>zhaohuanzhizhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -5716,8 +5716,8 @@
 		<szIcon>zhaohuanzhizhu.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>Skill_01</szAction>
@@ -5747,12 +5747,12 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>30000</n32Range>
+		<n32Range>20000</n32Range>
 		<szIcon>Shansha.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>50</n32MpCost>
+		<n32CD>2500</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>Attack</szAction>
@@ -5784,12 +5784,12 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>30000</n32Range>
+		<n32Range>22000</n32Range>
 		<szIcon>Shansha.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>60</n32MpCost>
+		<n32CD>2000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>Attack</szAction>
@@ -5805,8 +5805,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,20046]</szTargetAffect>
-		<szMyAffect>[blink:2,0,0]</szMyAffect>
+		<szTargetAffect>[ap:1.75,0,0,0,20046]</szTargetAffect>
+		<szMyAffect>[blink:2.2,0,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5821,12 +5821,12 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>30000</n32Range>
+		<n32Range>24000</n32Range>
 		<szIcon>Shansha.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>70</n32MpCost>
+		<n32CD>1500</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>Attack</szAction>
@@ -5842,8 +5842,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,20046]</szTargetAffect>
-		<szMyAffect>[blink:2,0,0]</szMyAffect>
+		<szTargetAffect>[ap:2,0,0,0,20046]</szTargetAffect>
+		<szMyAffect>[blink:2.4,0,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5858,12 +5858,12 @@
 		<bActive>1</bActive>
 		<bCommonSkill>0</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>30000</n32Range>
+		<n32Range>26000</n32Range>
 		<szIcon>Shansha.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>100</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>80</n32MpCost>
+		<n32CD>1000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>Attack</szAction>
@@ -5879,8 +5879,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20040</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:1.5,0,0,0,20046]</szTargetAffect>
-		<szMyAffect>[blink:2,0,0]</szMyAffect>
+		<szTargetAffect>[ap:2.25,0,0,0,20046]</szTargetAffect>
+		<szMyAffect>[blink:2.6,0,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -5899,8 +5899,8 @@
 		<szIcon>fangweizhimen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>300</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -5914,7 +5914,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20042</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:3,5,0,3000,20047]</szTargetAffect>
+		<szTargetAffect>[def:1,10,0,3000,20047]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5934,8 +5934,8 @@
 		<szIcon>fangweizhimen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>300</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>22000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -5949,7 +5949,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20042</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:3,5,0,3000,20047]</szTargetAffect>
+		<szTargetAffect>[def:1.3,20,0,4000,20047]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -5970,7 +5970,7 @@
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>300</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32CD>25000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -5984,7 +5984,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20042</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:3,5,0,3000,20047]</szTargetAffect>
+		<szTargetAffect>[def:1.5,30,0,5000,20047]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6004,8 +6004,8 @@
 		<szIcon>fangweizhimen.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>300</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>30000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6019,7 +6019,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>20042</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[def:3,5,0,3000,20047]</szTargetAffect>
+		<szTargetAffect>[def:1.8,40,0,6000,20047]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6039,8 +6039,8 @@
 		<szIcon>baiyalaixi.png</szIcon>
 		<n32SingEffect>20053</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6054,7 +6054,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.5,10,500,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.5,10,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6074,8 +6074,8 @@
 		<szIcon>baiyalaixi.png</szIcon>
 		<n32SingEffect>20053</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>22000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6089,7 +6089,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.5,10,500,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.6,15,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6109,8 +6109,8 @@
 		<szIcon>baiyalaixi.png</szIcon>
 		<n32SingEffect>20053</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>25000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6124,7 +6124,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.5,10,500,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.7,20,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6144,8 +6144,8 @@
 		<szIcon>baiyalaixi.png</szIcon>
 		<n32SingEffect>20053</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>30000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6159,7 +6159,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.5,10,500,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.8,25,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6179,8 +6179,8 @@
 		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>3000</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6194,7 +6194,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,3000,20048]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,1500,20048]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>200000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6214,8 +6214,8 @@
 		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>22000</n32CD>
 		<n32TriggerTime>3000</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6229,7 +6229,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,3000,20048]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,2000,20048]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>200000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6249,8 +6249,8 @@
 		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>25000</n32CD>
 		<n32TriggerTime>3000</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6264,7 +6264,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ctrl:7,0,0,3000,20048]</szTargetAffect>
+		<szTargetAffect>[ctrl:7,0,0,2500,20048]</szTargetAffect>
 		<szMyAffect></szMyAffect>
 		<n32Radius>200000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6284,8 +6284,8 @@
 		<szIcon>shijianjinzhi.png</szIcon>
 		<n32SingEffect>20045</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>30000</n32CD>
 		<n32TriggerTime>3000</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6319,8 +6319,8 @@
 		<szIcon>shendeenci.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6334,8 +6334,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20054]</szMyAffect>
+		<szTargetAffect>[curehp:0.15,0.35,500,3000,0]</szTargetAffect>
+		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6354,8 +6354,8 @@
 		<szIcon>shendeenci.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>22000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6369,8 +6369,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20054]</szMyAffect>
+		<szTargetAffect>[curehp:0.16,0.36,500,3000,0]</szTargetAffect>
+		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6389,8 +6389,8 @@
 		<szIcon>shendeenci.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>25000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6404,8 +6404,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20054]</szMyAffect>
+		<szTargetAffect>[curehp:0.17,0.37,500,3000,0]</szTargetAffect>
+		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6424,8 +6424,8 @@
 		<szIcon>shendeenci.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>400</n32MpCost>
+		<n32CD>30000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6439,8 +6439,8 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.5,1,1000,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20054]</szMyAffect>
+		<szTargetAffect>[curehp:0.18,0.38,500,3000,0]</szTargetAffect>
+		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6459,8 +6459,8 @@
 		<szIcon>shenyou.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6475,7 +6475,7 @@
 		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:0.25,0,0,4000,20056][outskill:4000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6494,8 +6494,8 @@
 		<szIcon>shenyou.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>150</n32MpCost>
+		<n32CD>22000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6510,7 +6510,7 @@
 		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:0.25,0,0,5000,20056][outskill:5000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6529,8 +6529,8 @@
 		<szIcon>shenyou.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>200</n32MpCost>
+		<n32CD>25000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6545,7 +6545,7 @@
 		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:0.25,0,0,6000,20056][outskill:6000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6564,8 +6564,8 @@
 		<szIcon>shenyou.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32MpCost>500</n32MpCost>
-		<n32CD>5000</n32CD>
+		<n32MpCost>300</n32MpCost>
+		<n32CD>30000</n32CD>
 		<n32TriggerTime>1</n32TriggerTime>
 		<n32ActionType>4</n32ActionType>
 		<szAction>Skill_03</szAction>
@@ -6580,7 +6580,7 @@
 		<n32MyEffect>20055</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect></szTargetAffect>
-		<szMyAffect>[mov:3,0,0,7000,20056][outskill:7000,0]</szMyAffect>
+		<szMyAffect>[mov:0.25,0,0,7000,20056][outskill:7000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
