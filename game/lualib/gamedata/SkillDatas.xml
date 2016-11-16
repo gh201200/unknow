@@ -2408,7 +2408,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:1,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,6</n32Radius>
+		<n32Radius>1,5</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2443,7 +2443,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:1.5,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,6</n32Radius>
+		<n32Radius>1,5</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2478,7 +2478,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:2,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,6</n32Radius>
+		<n32Radius>1,5</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2513,7 +2513,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:2.5,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,6</n32Radius>
+		<n32Radius>1,5</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
