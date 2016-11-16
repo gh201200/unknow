@@ -42,7 +42,6 @@ local CardsMethod =
 		else
 			
 			v = self.initCard(dataId)
-			local bid = Macro_GetCardDataId(serId, 1)
 			v.count = num * (g_shareData.heroRepository[dataId].n32WCardNum - 1)
 			self.units[v.uuid] =  v
 		end

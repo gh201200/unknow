@@ -12,6 +12,8 @@ local sharedata = require "sharedata"
 local Map = require "map.Map"
 local DropManager = require "drop.DropManager"
 local traceback  = debug.traceback
+local BattleOverManager = require "entity.BattleOverManager"
+
 
 local last_update_time = nil
 local room_id = 0
@@ -19,8 +21,9 @@ local room_id = 0
 --dt is ms
 local function updateMapEvent()
 	local nt = skynet.now()
-	EntityManager:update( (nt - last_update_time) * 10)
-	SpawnNpcManager:update( (nt - last_update_time) * 10)
+	EntityManager:update( (nt - last_update_time) * 10 )
+	SpawnNpcManager:update( (nt - last_update_time) * 10 )
+	BattleOverManager:update( (nt - last_update_time) * 10 )
 	DropManager:update()
 	last_update_time = nt
 	skynet.timeout(2, updateMapEvent)
@@ -73,7 +76,7 @@ function CMD.requestCastSkill(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local skillId = args.skillid + player.skillTable[args.skillid] - 1
 	local err = player:setCastSkillId(skillId)
-	response(true, { errorcode =  err ,skillid = skillId })
+	response(true, { errorcode =  err ,skillid = args.skillid })
 end
 
 function CMD.lockTarget(response,agent, account_id, args)
@@ -152,7 +155,9 @@ function CMD.start(response, args)
 	
 	local roomId = 1
 	local mapDat = g_shareData.mapRepository[roomId]
-
+	
+	BattleOverManager:init( mapDat )
+	
 	room_id = roomId
 
 	--加载地图
@@ -161,8 +166,10 @@ function CMD.start(response, args)
 	--创建基地
 	local redBuilding = IBuilding.create(CampType.RED, mapDat)
 	EntityManager:addEntity(redBuilding)
+	BattleOverManager.RedHomeBuilding = redBuilding
 	local blueBuilding = IBuilding.create(CampType.BLUE, mapDat)
 	EntityManager:addEntity(blueBuilding)
+	BattleOverManager.BlueHomeBuilding = blueBuilding
 	
 	--创建英雄
 	for k, v in pairs (args) do

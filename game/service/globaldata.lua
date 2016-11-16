@@ -14,6 +14,7 @@ local gdd  = {
 	lzmRepository = require "lzmRepository",
 	petRepository = require "petRepository",
 	shopRepository = require "shopRepository",
+	patternRepository = require "patternRepository",
 }
 skynet.start(function()
 	sharedata.new("gdd",gdd)

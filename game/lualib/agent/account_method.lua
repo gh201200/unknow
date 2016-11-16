@@ -26,6 +26,7 @@ local AccountMethod =
 	end;
 	--
 	addGold = function(self, op,  _gold)
+		if _gold == 0 then return end
 		local nv = self.unit.gold + _gold
 		if nv < 0 then return end
 		self.unit.gold = nv
@@ -44,6 +45,7 @@ local AccountMethod =
 	end;
 	--
 	addMoney = function(self, op, _money)
+		if _money == 0 then return end
 		local nv = self.unit.money + _money
 		if nv < 0 then return end
 		self.unit.money = nv
@@ -58,6 +60,7 @@ local AccountMethod =
 	end;
 	--
 	addExp = function(self, op,  _exp)
+		if _exp == 0 then return end
 		local nv = self.unit.exp + _exp
 		if nv < 0 then return end
 		self.unit.exp = nv

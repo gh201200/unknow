@@ -421,7 +421,8 @@ function Ientity:onForceMove(dt)
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
-	if Map:isWall(mv_dst.x,mv_dst.z) == true then
+	if Map:isWall(mv_dst.x ,mv_dst.z) == true then
+		self:stand()
 		return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
@@ -477,6 +478,7 @@ function Ientity:onDead()
 			v.hateList:removeHate( self )
 		end
 	end
+	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
 end
 
@@ -786,6 +788,7 @@ end
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
+	if skilldata == nil then return -1 end
 	--如果是有目标类型(4 针对自身立即释放)
 	local tgtType = GET_SkillTgtType(skilldata)
 	local tgtRange = GET_SkillTgtRange(skilldata)

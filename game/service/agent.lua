@@ -246,6 +246,14 @@ function CMD.enterMap(map,arg)
 	send_request("beginEnterPvpMap", arg) --开始准备切图
 end
 
+--战斗结束产出
+function CMD.giveBattleGains( args )
+	user.account:addExp("giveBattleGains", args.score)
+	for k, v in pairs(args.items) do
+		user.cards:addCard("giveBattleGains", v.itemId, v.itemNum)
+	end
+end
+
 skynet.start (function ()
 	skynet.dispatch ("lua", function (_, _, command, ...)
 		local f = CMD[command]

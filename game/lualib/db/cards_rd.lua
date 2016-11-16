@@ -29,6 +29,29 @@ function cards.load (account_id)
 	return cards
 end
 
+function cards.loadBySerialId (account_id, serId)
+	local card = nil
+	local connection, key = make_key (account_id)
+	
+	if connection:exists (key) then
+		local st = connection:smembers(key)
+		for k, v in pairs(st) do
+			local dataId = tonumber(connection:hget (v, "dataId"))
+			if serId == Macro_GetCardSerialId(card.dataId) then
+				card  = {uuid = v}	
+				card.dataId = dataId
+				card.power = tonumber(connection:hget (v, "power"))
+				card.count = tonumber(connection:hget (v, "count"))
+				card.buyNum = tonumber(connection:hget (v, "buyNum"))
+				break
+			end
+		end
+	end
+
+	return card
+end
+
+
 function cards.create(account_id, _uuid, dataId)
 	
 	local connection, key = make_key (account_id)
