@@ -81,6 +81,7 @@ function spell:breakSpell()
 	
 	--打断后 进入站立状态
 	self.source:OnStand()
+	self.source:callBackSpellEnd()	
 	self:clear()
 end
 function spell:isSpellRunning()
@@ -280,7 +281,10 @@ function spell:onChannelCast()
 	end
 end
 function spell:onEnd()
-	--self.source.curActionState = ActionState.attack3
+	if self.source:getTarget() ~= nil and self.srcTarget ~= nil and self.source:getTarget() ~= self.srcTarget  then
+		--切换目标打断后摇
+		self.endTime = -1
+	end
 	if self.endTime < 0 then
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
