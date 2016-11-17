@@ -511,12 +511,12 @@ function Ientity:addHp(_hp, mask, source)
 			self:setHp(1)
 		end
 	end
-	if self.lastHp ~= self:getHp() then	
+	if  self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		--self.HpMpChange = true
 		self:advanceEventStamp(EventStampType.Hp_Mp)
 	end
-	if self:getHp() <= 0 then
+	if self.lastHp > 0 and self:getHp() <= 0 then
 		self:onDead()
 	end
 end
