@@ -124,7 +124,7 @@
 		<szName>钟表匠</szName>
 		<szMod_name>Zhongbiaogong</szMod_name>
 		<n32Hight>Zhongbiaogong</n32Hight>
-		<n32Speed>9000</n32Speed>
+		<n32Speed>10000</n32Speed>
 		<n32AttackTime1>275</n32AttackTime1>
 		<n32AttackTime2>125</n32AttackTime2>
 		<n32AttackTime3>433</n32AttackTime3>
@@ -148,7 +148,7 @@
 		<szName>变猪</szName>
 		<szMod_name>Pig</szMod_name>
 		<n32Hight>Pig</n32Hight>
-		<n32Speed>10000</n32Speed>
+		<n32Speed>20000</n32Speed>
 		<n32AttackTime1>0</n32AttackTime1>
 		<n32AttackTime2>0</n32AttackTime2>
 		<n32AttackTime3>0</n32AttackTime3>
@@ -172,11 +172,11 @@
 		<szName>召唤熊</szName>
 		<szMod_name>Xiong</szMod_name>
 		<n32Hight>Xiong</n32Hight>
-		<n32Speed>10000</n32Speed>
-		<n32AttackTime1>408</n32AttackTime1>
-		<n32AttackTime2>436</n32AttackTime2>
-		<n32AttackTime3>356</n32AttackTime3>
-		<n32AttackTriTime>540</n32AttackTriTime>
+		<n32Speed>15000</n32Speed>
+		<n32AttackTime1>331</n32AttackTime1>
+		<n32AttackTime2>274</n32AttackTime2>
+		<n32AttackTime3>628</n32AttackTime3>
+		<n32AttackTriTime>580</n32AttackTriTime>
 		<n32Skill1Time1>498</n32Skill1Time1>
 		<n32Skill1Time2>1162</n32Skill1Time2>
 		<n32Skill1TriTime>913</n32Skill1TriTime>

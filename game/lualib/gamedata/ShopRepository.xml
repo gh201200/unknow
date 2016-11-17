@@ -73,7 +73,7 @@
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>1000金币</szName>
-		<szIcon>10007.png</szIcon>
+		<szIcon>Yiduijinbi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -84,7 +84,7 @@
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>1W金币</szName>
-		<szIcon>10008.png</szIcon>
+		<szIcon>Yidaijinbi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -95,7 +95,7 @@
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>10w金币</szName>
-		<szIcon>10009.png</szIcon>
+		<szIcon>Yixiangjinbi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -139,29 +139,29 @@
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
 		<szName>闪光</szName>
-		<szIcon>10013.png</szIcon>
+		<szIcon>Shangguang.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>12011</n32GoodsID>
 	</item>
-	<item id="40001">
+	<item id="40002">
 		<n32Type>4</n32Type>
 		<n32Count>1</n32Count>
 		<n32Price>200</n32Price>
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
 		<szName>厚德</szName>
-		<szIcon>10014.png</szIcon>
+		<szIcon>Houde.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>11021</n32GoodsID>
 	</item>
-	<item id="40001">
+	<item id="40003">
 		<n32Type>4</n32Type>
 		<n32Count>1</n32Count>
 		<n32Price>200</n32Price>
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
 		<szName>乌鸦</szName>
-		<szIcon>10015.png</szIcon>
+		<szIcon>Wuya.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>13051</n32GoodsID>
 	</item>
