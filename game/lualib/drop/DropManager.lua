@@ -89,7 +89,8 @@ function DropManager:makeDrop(entity)
 					dropVec:set(entity.pos.x+sr_x, entity.pos.y, entity.pos.z+sr_z)
 					--pindex = pindex + 1
 					--if pindex > 7 then pindex = 0 end
-					if Map.legal(Map.POS_2_GRID(dropVec.x), Map.POS_2_GRID(dropVec.z)) then
+					if Map:isWall(dropVec.x,dropVec.z) == true then
+					--if Map.legal(Map.POS_2_GRID(dropVec.x), Map.POS_2_GRID(dropVec.z)) then
 						break
 					end
 					loop = loop + 1
