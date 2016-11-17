@@ -125,6 +125,16 @@ function Ientity:getType()
 	return "Ientity"
 end
 
+function Ientity:clear_coroutine()
+	--response to agent
+	for k, v in pairs(self.coroutine_response) do
+		for p, q in pairs(v) do
+			q(true, nil)
+		end
+	end
+	self.coroutine_response = {}
+end
+
 function Ientity:isKind(entity,_atk)
 	if entity == nil then return true end
 	if entity.camp == nil then return true end

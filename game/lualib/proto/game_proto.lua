@@ -370,6 +370,9 @@ updateActivityData 305 {
 	} 
 }
 
+reEnterRoom 3006 {
+}
+
 ]]
 
 local s2c = [[
@@ -568,6 +571,9 @@ battleOver 3005 {
 		helps 7 : integer
 		items 8 : *Vector3
 	}
+}
+
+reEnterRoom 3006 {
 }
 
 ]]

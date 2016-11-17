@@ -176,5 +176,9 @@ function REQUEST.updateActivityData( args )
 	return {uid=uid, value=val}
 end
 
+function REQUEST.reEnterRoom( args )
+	print('re enter room')
+end
+
 
 return SystemCh.new()

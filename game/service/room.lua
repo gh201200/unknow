@@ -153,6 +153,9 @@ end
 function CMD.start(response, args)
 	response(true, nil)
 	
+	local match = skynet.uniqueservice 'match'
+	skynet.call(match, "lua", "roomstart", skynet.self(), args)
+	
 	local roomId = 1
 	local mapDat = g_shareData.mapRepository[roomId]
 	
@@ -210,6 +213,7 @@ function CMD.start(response, args)
 	end
 end
 
+
 local function init()
 	register_query_event_func()
 	g_shareData  = sharedata.query "gdd"
@@ -241,6 +245,13 @@ function REQUEST.addOffLineTime(response, args)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
 	player:addOffLineTime( args.time )
 end
+
+function REQUEST.getOffLineTime(response, args)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	local time = player:getOffLineTime()
+	response(true, time)
+end
+
 
 skynet.start(function ()
 	init()

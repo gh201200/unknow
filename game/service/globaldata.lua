@@ -15,6 +15,7 @@ local gdd  = {
 	petRepository = require "petRepository",
 	shopRepository = require "shopRepository",
 	patternRepository = require "patternRepository",
+	accountLevel = require "accountLevel",
 }
 skynet.start(function()
 	sharedata.new("gdd",gdd)
