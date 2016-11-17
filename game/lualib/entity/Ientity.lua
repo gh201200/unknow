@@ -233,14 +233,14 @@ function Ientity:setTarget(target)
 			if self.ReadySkillId ~= 0 and self.triggerCast == true then	
 				local err = self:canCast(self.ReadySkillId)
 				if err == 0 then
-					return
+					--return
 				end
 			end
 		end
 
 		if self:canMove() == 0 then
 			if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
-				
+				self:castSkill(self.ReadySkillId)			
 			else
 				self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 			end
@@ -843,6 +843,7 @@ function Ientity:canSetCastSkill(id)
 		end
 	end
 	--被控制状态 
+	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
 	return 0
 end
 function Ientity:setCastSkillId(id)
