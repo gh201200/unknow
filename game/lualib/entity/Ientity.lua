@@ -843,6 +843,7 @@ function Ientity:canSetCastSkill(id)
 		end
 	end
 	--被控制状态 
+	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
 	return 0
 end
 function Ientity:setCastSkillId(id)
