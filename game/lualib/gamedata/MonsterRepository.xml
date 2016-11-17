@@ -5,7 +5,7 @@
 		<szName>大魔王S</szName>
 		<n32Type>1</n32Type>
 		<szWord>谁敢犯我！</szWord>
-		<n32Hp>1600</n32Hp>
+		<n32Hp>3200</n32Hp>
 		<n32Mp>800</n32Mp>
 		<n32Attack>100</n32Attack>
 		<n32Defence>100000</n32Defence>
@@ -30,7 +30,7 @@
 		<szName>精英A1</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的对</szWord>
-		<n32Hp>540</n32Hp>
+		<n32Hp>1080</n32Hp>
 		<n32Mp>270</n32Mp>
 		<n32Attack>50</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -55,7 +55,7 @@
 		<szName>精英A2</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的有道理</szWord>
-		<n32Hp>540</n32Hp>
+		<n32Hp>1080</n32Hp>
 		<n32Mp>270</n32Mp>
 		<n32Attack>50</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -80,7 +80,7 @@
 		<szName>左下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -105,7 +105,7 @@
 		<szName>左下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -130,7 +130,7 @@
 		<szName>左下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>270</n32Hp>
+		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -155,7 +155,7 @@
 		<szName>右下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -180,7 +180,7 @@
 		<szName>右下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -205,7 +205,7 @@
 		<szName>右下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>270</n32Hp>
+		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -230,7 +230,7 @@
 		<szName>右上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -255,7 +255,7 @@
 		<szName>右上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -280,7 +280,7 @@
 		<szName>右上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>270</n32Hp>
+		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -305,7 +305,7 @@
 		<szName>左上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -330,7 +330,7 @@
 		<szName>左上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>170</n32Hp>
+		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
 		<n32Defence>20000</n32Defence>
@@ -355,7 +355,7 @@
 		<szName>左上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>270</n32Hp>
+		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -380,7 +380,7 @@
 		<szName>大魔王S</szName>
 		<n32Type>1</n32Type>
 		<szWord>谁敢犯我！</szWord>
-		<n32Hp>3040</n32Hp>
+		<n32Hp>6080</n32Hp>
 		<n32Mp>1520</n32Mp>
 		<n32Attack>160</n32Attack>
 		<n32Defence>120000</n32Defence>
@@ -405,7 +405,7 @@
 		<szName>精英A1</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的对</szWord>
-		<n32Hp>1020</n32Hp>
+		<n32Hp>2040</n32Hp>
 		<n32Mp>510</n32Mp>
 		<n32Attack>86</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -430,7 +430,7 @@
 		<szName>精英A2</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的有道理</szWord>
-		<n32Hp>1020</n32Hp>
+		<n32Hp>2040</n32Hp>
 		<n32Mp>510</n32Mp>
 		<n32Attack>86</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -455,7 +455,7 @@
 		<szName>左下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -480,7 +480,7 @@
 		<szName>左下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -505,7 +505,7 @@
 		<szName>左下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>510</n32Hp>
+		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -530,7 +530,7 @@
 		<szName>右下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -555,7 +555,7 @@
 		<szName>右下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -580,7 +580,7 @@
 		<szName>右下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>510</n32Hp>
+		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -605,7 +605,7 @@
 		<szName>右上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -630,7 +630,7 @@
 		<szName>右上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -655,7 +655,7 @@
 		<szName>右上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>510</n32Hp>
+		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -680,7 +680,7 @@
 		<szName>左上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -705,7 +705,7 @@
 		<szName>左上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>314</n32Hp>
+		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
 		<n32Defence>30000</n32Defence>
@@ -730,7 +730,7 @@
 		<szName>左上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>510</n32Hp>
+		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -755,7 +755,7 @@
 		<szName>大魔王S</szName>
 		<n32Type>1</n32Type>
 		<szWord>谁敢犯我！</szWord>
-		<n32Hp>4000</n32Hp>
+		<n32Hp>8000</n32Hp>
 		<n32Mp>2000</n32Mp>
 		<n32Attack>200</n32Attack>
 		<n32Defence>140000</n32Defence>
@@ -780,7 +780,7 @@
 		<szName>精英A1</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的对</szWord>
-		<n32Hp>1340</n32Hp>
+		<n32Hp>2680</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>110</n32Attack>
 		<n32Defence>70000</n32Defence>
@@ -805,7 +805,7 @@
 		<szName>精英A2</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的有道理</szWord>
-		<n32Hp>1340</n32Hp>
+		<n32Hp>2680</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>110</n32Attack>
 		<n32Defence>70000</n32Defence>
@@ -830,7 +830,7 @@
 		<szName>左下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -855,7 +855,7 @@
 		<szName>左下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -880,7 +880,7 @@
 		<szName>左下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>606</n32Hp>
+		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -905,7 +905,7 @@
 		<szName>右下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -930,7 +930,7 @@
 		<szName>右下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -955,7 +955,7 @@
 		<szName>右下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>606</n32Hp>
+		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -980,7 +980,7 @@
 		<szName>右上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -1005,7 +1005,7 @@
 		<szName>右上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -1030,7 +1030,7 @@
 		<szName>右上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>606</n32Hp>
+		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1055,7 +1055,7 @@
 		<szName>左上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -1080,7 +1080,7 @@
 		<szName>左上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>410</n32Hp>
+		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
 		<n32Defence>40000</n32Defence>
@@ -1105,7 +1105,7 @@
 		<szName>左上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>606</n32Hp>
+		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1130,7 +1130,7 @@
 		<szName>大魔王S</szName>
 		<n32Type>1</n32Type>
 		<szWord>谁敢犯我！</szWord>
-		<n32Hp>5440</n32Hp>
+		<n32Hp>10880</n32Hp>
 		<n32Mp>2000</n32Mp>
 		<n32Attack>260</n32Attack>
 		<n32Defence>160000</n32Defence>
@@ -1155,7 +1155,7 @@
 		<szName>精英A1</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的对</szWord>
-		<n32Hp>1820</n32Hp>
+		<n32Hp>3640</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>146</n32Attack>
 		<n32Defence>80000</n32Defence>
@@ -1180,7 +1180,7 @@
 		<szName>精英A2</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的有道理</szWord>
-		<n32Hp>1820</n32Hp>
+		<n32Hp>3640</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>146</n32Attack>
 		<n32Defence>80000</n32Defence>
@@ -1205,7 +1205,7 @@
 		<szName>左下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1230,7 +1230,7 @@
 		<szName>左下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1255,7 +1255,7 @@
 		<szName>左下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>750</n32Hp>
+		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1280,7 +1280,7 @@
 		<szName>右下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1305,7 +1305,7 @@
 		<szName>右下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1330,7 +1330,7 @@
 		<szName>右下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>750</n32Hp>
+		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1355,7 +1355,7 @@
 		<szName>右上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1380,7 +1380,7 @@
 		<szName>右上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1405,7 +1405,7 @@
 		<szName>右上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>750</n32Hp>
+		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1430,7 +1430,7 @@
 		<szName>左上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1455,7 +1455,7 @@
 		<szName>左上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>554</n32Hp>
+		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
 		<n32Defence>50000</n32Defence>
@@ -1480,7 +1480,7 @@
 		<szName>左上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>750</n32Hp>
+		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1505,7 +1505,7 @@
 		<szName>大魔王S</szName>
 		<n32Type>1</n32Type>
 		<szWord>谁敢犯我！</szWord>
-		<n32Hp>6880</n32Hp>
+		<n32Hp>13760</n32Hp>
 		<n32Mp>2000</n32Mp>
 		<n32Attack>320</n32Attack>
 		<n32Defence>180000</n32Defence>
@@ -1530,7 +1530,7 @@
 		<szName>精英A1</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的对</szWord>
-		<n32Hp>2300</n32Hp>
+		<n32Hp>4600</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>182</n32Attack>
 		<n32Defence>90000</n32Defence>
@@ -1555,7 +1555,7 @@
 		<szName>精英A2</szName>
 		<n32Type>2</n32Type>
 		<szWord>大王说的有道理</szWord>
-		<n32Hp>2300</n32Hp>
+		<n32Hp>4600</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>182</n32Attack>
 		<n32Defence>90000</n32Defence>
@@ -1580,7 +1580,7 @@
 		<szName>左下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1605,7 +1605,7 @@
 		<szName>左下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1630,7 +1630,7 @@
 		<szName>左下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>894</n32Hp>
+		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
 		<n32Defence>70000</n32Defence>
@@ -1655,7 +1655,7 @@
 		<szName>右下C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1680,7 +1680,7 @@
 		<szName>右下C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1705,7 +1705,7 @@
 		<szName>右下B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>894</n32Hp>
+		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
 		<n32Defence>70000</n32Defence>
@@ -1730,7 +1730,7 @@
 		<szName>右上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1755,7 +1755,7 @@
 		<szName>右上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>来人打架啦</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1780,7 +1780,7 @@
 		<szName>右上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>别吵吵</szWord>
-		<n32Hp>894</n32Hp>
+		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
 		<n32Defence>70000</n32Defence>
@@ -1805,7 +1805,7 @@
 		<szName>左上C1</szName>
 		<n32Type>4</n32Type>
 		<szWord>对面的一起喝一杯</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1830,7 +1830,7 @@
 		<szName>左上C2</szName>
 		<n32Type>4</n32Type>
 		<szWord>你请客么</szWord>
-		<n32Hp>698</n32Hp>
+		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
 		<n32Defence>60000</n32Defence>
@@ -1855,7 +1855,7 @@
 		<szName>左上B</szName>
 		<n32Type>3</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>894</n32Hp>
+		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
 		<n32Defence>70000</n32Defence>

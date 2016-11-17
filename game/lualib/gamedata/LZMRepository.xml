@@ -16,7 +16,7 @@
 		<n32Mp>0</n32Mp>
 		<n32Attack>2</n32Attack>
 		<n32Defence>7000</n32Defence>
-		<n32ASpeed>200</n32ASpeed>
+		<n32ASpeed>100</n32ASpeed>
 		<n32RecvHp>0</n32RecvHp>
 		<n32RecvMp>0</n32RecvMp>
 	</item>

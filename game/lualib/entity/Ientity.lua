@@ -243,14 +243,14 @@ function Ientity:setTarget(target)
 			if self.ReadySkillId ~= 0 and self.triggerCast == true then	
 				local err = self:canCast(self.ReadySkillId)
 				if err == 0 then
-					return
+					--return
 				end
 			end
 		end
 
 		if self:canMove() == 0 then
 			if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
-				
+				self:castSkill(self.ReadySkillId)			
 			else
 				self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
 			end
@@ -431,7 +431,8 @@ function Ientity:onForceMove(dt)
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
-	if Map:isWall(mv_dst.x,mv_dst.z) == true then
+	if Map:isWall(mv_dst.x ,mv_dst.z) == true then
+		self:stand()
 		return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
@@ -487,6 +488,7 @@ function Ientity:onDead()
 			v.hateList:removeHate( self )
 		end
 	end
+	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
 end
 
@@ -519,12 +521,12 @@ function Ientity:addHp(_hp, mask, source)
 			self:setHp(1)
 		end
 	end
-	if self.lastHp ~= self:getHp() then	
+	if  self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		--self.HpMpChange = true
 		self:advanceEventStamp(EventStampType.Hp_Mp)
 	end
-	if self:getHp() <= 0 then
+	if self.lastHp > 0 and self:getHp() <= 0 then
 		self:onDead()
 	end
 end
@@ -796,6 +798,7 @@ end
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
+	if skilldata == nil then return -1 end
 	--如果是有目标类型(4 针对自身立即释放)
 	local tgtType = GET_SkillTgtType(skilldata)
 	local tgtRange = GET_SkillTgtRange(skilldata)
@@ -825,7 +828,7 @@ function Ientity:canCast(id)
 		return ErrorCode.EC_Spell_Controled
 	end
 	if self:getHp() <= 0 then return ErrorCode.EC_Dead end
-	--if skilldata.n32MpCost > self.getMp() then return ErrorCode.EC_Spell_MpLow	end --蓝量不够
+	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
 	return 0
 end
 
@@ -850,6 +853,7 @@ function Ientity:canSetCastSkill(id)
 		end
 	end
 	--被控制状态 
+	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
 	return 0
 end
 function Ientity:setCastSkillId(id)

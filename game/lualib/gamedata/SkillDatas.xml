@@ -42,7 +42,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -77,7 +77,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -112,7 +112,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -147,7 +147,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -182,7 +182,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -217,7 +217,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -252,7 +252,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -287,7 +287,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -322,7 +322,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -357,7 +357,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -392,7 +392,7 @@
 		<bActive>1</bActive>
 		<bCommonSkill>1</bCommonSkill>
 		<bNeedTarget>1</bNeedTarget>
-		<n32Range>40000</n32Range>
+		<n32Range>30000</n32Range>
 		<szIcon>icon.png</szIcon>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
@@ -2408,7 +2408,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:1,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,5</n32Radius>
+		<n32Radius>1,3</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2443,7 +2443,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:1.5,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,5</n32Radius>
+		<n32Radius>1,3</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2478,7 +2478,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:2,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,5</n32Radius>
+		<n32Radius>1,3</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -2513,7 +2513,7 @@
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[inte:2.5,0,0,0,0][ap:1,0,0,0,0]</szTargetAffect>
 		<szMyAffect></szMyAffect>
-		<n32Radius>1,5</n32Radius>
+		<n32Radius>1,3</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>
@@ -3524,10 +3524,10 @@
 		<szTypeInfo>反伤</szTypeInfo>
 		<szDescribe>对普通攻击自己的目标造成伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20001</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:0.14,18,0,0,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[def:0,0,0,360000,20001]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3559,10 +3559,10 @@
 		<szTypeInfo>反伤</szTypeInfo>
 		<szDescribe>对普通攻击自己的目标造成伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20001</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:0.18,24,0,0,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[def:0,0,0,360000,20001]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3594,10 +3594,10 @@
 		<szTypeInfo>反伤</szTypeInfo>
 		<szDescribe>对普通攻击自己的目标造成伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20001</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:0.22,30,0,0,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[def:0,0,0,360000,20001]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -3629,10 +3629,10 @@
 		<szTypeInfo>反伤</szTypeInfo>
 		<szDescribe>对普通攻击自己的目标造成伤害</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>20001</n32MyEffect>
+		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
 		<szTargetAffect>[ap:0.26,36,0,0,0]</szTargetAffect>
-		<szMyAffect></szMyAffect>
+		<szMyAffect>[def:0,0,0,360000,20001]</szMyAffect>
 		<n32Radius>15000</n32Radius>
 		<szAtkBe>0,100,3600000</szAtkBe>
 		<n32Interval>0</n32Interval>

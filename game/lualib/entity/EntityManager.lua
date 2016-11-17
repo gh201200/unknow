@@ -183,7 +183,6 @@ function EntityManager:getSkillAttackEntitys(source,target,skilldata)
 		return ret
 	end
 	local getEntityRectange = function(tab,basepos,tgtpos,range)
-		print("getEntityRectange",range)
 		local w = range[1] 
 		local h = range[2]
 		local ret = {}

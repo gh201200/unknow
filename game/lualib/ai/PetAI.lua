@@ -23,6 +23,7 @@ function PetAI:update(dt)
 end
 function PetAI:onEnter_Idle()
 	self.source:stand()
+	self.source:setTarget(nil)
 end
 
 
@@ -80,8 +81,12 @@ end
 function PetAI:canChase()
 	local petTgt = self.source:getTarget()
 	local masterTgt = self.master:getTarget()
-	if petTgt == nil and masterTgt ~= nil then return true end
-	if petTgt ~= nil and petTgt:getType() == "transform" then 
+	if petTgt == nil and masterTgt ~= nil then
+		if self.master.spell:isSpellRunning() == false then
+			return true
+		end	
+	end
+	if petTgt ~= nil and masterTgt ~= nil and masterTgt ~= petTgt and petTgt:getType() == "transform" then 
 		return true 
 	end
 	if petTgt ~= nil and petTgt:getType() ~= "transform" and self.master:isKind(masterTgt,true) == false then

@@ -235,6 +235,7 @@ function BattleOverManager:sendResult()
 	r.result = self.OverRes
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
+			print("Result===",v.HonorData)
 			if not r.maxBeDamage then
 				r.maxBeDamage = v
 			elseif r.maxBeDamage.HonorData[2] < v.HonorData[2] then
