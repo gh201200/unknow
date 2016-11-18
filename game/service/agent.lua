@@ -119,7 +119,7 @@ local function handle_request (name, args, response)
 		end
 	else
 		syslog.warningf ("unhandled message : %s", name)
-		kick_self ()
+		--kick_self ()
 	end
 end
 

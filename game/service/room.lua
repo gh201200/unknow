@@ -50,7 +50,8 @@ local function playerReConnect(agent, aid)
 			end
 		end
 	end
-	skynet.call(agent, "lua", "sendRequest", "fightBegin")
+	local r = { resttime = BattleOverManager.RestTime }
+	skynet.call(agent, "lua", "sendRequest", "fightBegin", r)
 
 	--monsters
 	local monsters = { spawnList = {} }
@@ -168,7 +169,8 @@ function CMD.loadingRes(response, agent, account_id, args)
 
 	--all players load completed
 	if num == #EntityManager.entityList-2 then
-		EntityManager:sendToAllPlayers("fightBegin")
+		local r = { resttime = BattleOverManager.RestTime }
+		EntityManager:sendToAllPlayers("fightBegin", r)
 
 		--every 0.03s update entity
 		skynet.timeout(3, updateMapEvent)

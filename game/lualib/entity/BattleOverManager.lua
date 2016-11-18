@@ -120,7 +120,7 @@ function BattleOverManager:calcRes()
 		end	
 		for k, v in pairs(failers) do
 			v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-			v.BattleGains.score = -math.floor( v.Battle.score / #redRunAway / 2 )
+			v.BattleGains.score = -math.floor( v.BattleGains.score / #redRunAway / 2 )
 		end	
 		for k, v in pairs(redRunAway) do
 			v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
@@ -136,7 +136,7 @@ function BattleOverManager:calcRes()
 		end
 		for k, v in pairs(failers) do
 			v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-			v.BattleGains.score = - v.Battle.score
+			v.BattleGains.score = - v.BattleGains.score
 		end	
 	elseif #redRunAway > 0 then
 		if self.OverRes == 1 then	
@@ -148,20 +148,20 @@ function BattleOverManager:calcRes()
 			end
 			for k, v in pairs(redRunAway) do
 				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.Battle.score * 2
+				v.BattleGains.score = - v.BattleGains.score * 2
 			end
 		elseif self.OverRes == 2 then
 			for k, v in pairs(winners) do
 				v.BattleGains.score = v.accountLevel * 10 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = v.Battle.score * 2
+				v.BattleGains.score = v.BattleGains.score * 2
 			end
 			for k, v in pairs(failers) do
 				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.Battle.score
+				v.BattleGains.score = - v.BattleGains.score
 			end
 			for k, v in pairs(redRunAway) do
 				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.Battle.score * 2
+				v.BattleGains.score = - v.BattleGains.score * 2
 			end
 
 		end
@@ -175,20 +175,20 @@ function BattleOverManager:calcRes()
 			end
 			for k, v in pairs(redRunAway) do
 				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.Battle.score * 2
+				v.BattleGains.score = - v.BattleGains.score * 2
 			end
 		elseif self.OverRes == 1 then
 			for k, v in pairs(winners) do
 				v.BattleGains.score = v.accountLevel * 10 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = v.Battle.score * 2
+				v.BattleGains.score = v.BattleGains.score * 2
 			end
 			for k, v in pairs(failers) do
 				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.Battle.score
+				v.BattleGains.score = - v.BattleGains.score
 			end
 			for k, v in pairs(bluwRunAway) do
 				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.Battle.score * 2
+				v.BattleGains.score = - v.BattleGains.score * 2
 			end
 
 		end
