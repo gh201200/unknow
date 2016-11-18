@@ -13,7 +13,6 @@ local baseRate = 10000 --同一分数匹配人数不超过一万人
 local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
-local roomAccount = {}	--room account_id
 
 
 function CMD.hijack_msg(response)
@@ -136,35 +135,6 @@ local function init()
 end
 
 local REQUEST = {}
-function REQUEST.roomstart(response, room, players)
-	print('room start ', room)
-	response(true,nil)
-	roomAccount[room] = {}
-	for k, v in pairs(players) do
-		table.insert(roomAccount[room], v.account)
-	end
-end
-
-function REQUEST.roomend(response,room)
-	print('room end', room)
-	response(true,nil)
-	roomAccount[room] = nil
-end
-
-function REQUEST.getroom(response, aid)
-	for k, v in pairs(roomAccount) do
-		if v then
-			for p, q in pairs(v) do
-				if q == aid then
-					response(true, k)
-					return
-				end
-			end
-		end
-	end
-	response(true, -1)
-end
-
 skynet.start(function ()
 	init()
 	skynet.dispatch("lua", function (_, _, command, ...)

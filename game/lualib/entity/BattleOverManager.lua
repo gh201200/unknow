@@ -1,4 +1,6 @@
 local skynet = require "skynet"
+local snax = require "snax"
+
 local CardMethod = require "agent.cards_method"
 local EntityManager = require "entity.EntityManager"
 local DropManager = require "drop.DropManager"
@@ -195,15 +197,15 @@ function BattleOverManager:calcRes()
 end
 
 function BattleOverManager:giveResult()
-	local database = skynet.uniqueservice("database")		
+	local db = skynet.uniqueservice("database")		
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
 			if v.agent then
 				skynet.call(v.agent, "lua", "giveBattleGains", v.BattleGains)
 			else	
-				local account = skynet.call(database, "lua", "account_rd", "load", v.account_id)
+				local account = skynet.call(db, "lua", "account_rd", "load", v.account_id)
 				account.exp = mClamp(account.exp + v.BattleGains.score, 0, math.maxinteger)
-				skynet.call (database, "lua", "account_rd", "update", account, "exp")
+				skynet.call (db, "lua", "account_rd", "update", account, "exp")
 				for p, q in pairs(v.BattleGains.items) do
 					local itemDat = g_shareData.itemRepository[q.itemId]
 					if itemDat.n32Type == 3 then	
@@ -218,10 +220,10 @@ function BattleOverManager:giveResult()
 						skynet.call(db, "lua", "cards_rd","addCard", account_id, card)
 					elseif itemDat.n32Type == 5 then
 						account.gold = mClamp(account.gold + itemDat.n32Retain1*q.itemNum, 0, math.maxinteger)
-						skynet.call (database, "lua", "account_rd", "update", account, "gold")
+						skynet.call (db, "lua", "account_rd", "update", account, "gold")
 					elseif itemDat.n32Type == 6 then
 						account.money = mClamp(account.money + itemDat.n32Retain1*q.itemNum, 0, math.maxinteger)
-						skynet.call (database, "lua", "account_rd", "update", account, "money")
+						skynet.call (db, "lua", "account_rd", "update", account, "money")
 					end
 				end
 			end
@@ -235,7 +237,6 @@ function BattleOverManager:sendResult()
 	r.result = self.OverRes
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
-			print("Result===",v.HonorData)
 			if not r.maxBeDamage then
 				r.maxBeDamage = v
 			elseif r.maxBeDamage.HonorData[2] < v.HonorData[2] then
@@ -277,8 +278,10 @@ function BattleOverManager:sendResult()
 end
 
 function BattleOverManager:closeRoom()
-	local match = skynet.uniqueservice 'match'                                                                                                                     
-	skynet.call(match, "lua", "roomend", skynet.self())           
+ 	print("close room")
+	local sm = snax.uniqueservice("servermanager")
+        sm.post.roomend(skynet.self())
+
 	for k, v in pairs(EntityManager.entityList) do
 		v:clear_coroutine()
 		if v.entityType == EntityType.player then

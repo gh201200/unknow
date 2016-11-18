@@ -97,6 +97,8 @@ local types = [[
 	heroId 1 : integer
 	name 2 : string
 	color 3 : integer
+	posx 4 : integer
+	posz 5 : integer
 }
 
 .DropItem {
@@ -372,6 +374,12 @@ updateActivityData 305 {
 }
 
 reEnterRoom 3006 {
+	request { 
+		isin 0 : boolean
+	}
+	response {                                                            
+		errorCode 0 : integer
+	}
 }
 
 ]]
@@ -575,6 +583,9 @@ battleOver 3005 {
 }
 
 reEnterRoom 3006 {
+	request { 
+		isin 0 : boolean
+	}
 }
 
 ]]

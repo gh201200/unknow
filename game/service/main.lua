@@ -27,6 +27,8 @@ skynet.start(function()
 	local CD = snax.uniqueservice("cddown")
 	--启动activity活动服务
 	snax.uniqueservice("activity")
+	--启动服务管理服务
+	snax.uniqueservice("servermanager")
 
 	local loginserver = skynet.newservice("loginserver")
 	skynet.call(loginserver,"lua","open",login_config)

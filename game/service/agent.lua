@@ -201,7 +201,8 @@ function CMD.Start (conf)
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
-       
+        user.servicecmd = CMD
+
 	heartbeat_check()
 
 	--注册匹配服务
