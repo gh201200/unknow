@@ -474,6 +474,9 @@ spawnMonsters 2001 {
 }
 
 fightBegin 2002 {
+	request {
+		resttime 0 : integer 
+	}
 }
 addGoldExp 2003 {
 	request {

@@ -108,6 +108,11 @@ function IMapPlayer:init(heroId)
 	self:dumpStats()
 end
 
+function IMapPlayer:setTarget(target) 
+	if target == self:getTarget() then return end
+	IMapPlayer.super.setTarget(self,target)
+end
+
 function IMapPlayer:getCommonSkillId()
 	for _k,_v in pairs(self.skillTable) do
 		local id = _k + _v - 1
