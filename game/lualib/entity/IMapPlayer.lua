@@ -3,6 +3,7 @@ local Ientity = require "entity.Ientity"
 local vector3 = require "vector3"
 local Quest = require "quest.quest"
 local EntityManager = require "entity.EntityManager"
+local BattleOverManager = require "entity.BattleOverManager"
 
 local IMapPlayer = class("IMapPlayer", Ientity)
 
@@ -16,6 +17,7 @@ function IMapPlayer.create(arg)
 	player.color = arg.color 	--红方 蓝方 1 2 3 和 4 5 6表示 以及出生位置
 	player.bornPos:set(arg.bornPos[1]/GAMEPLAY_PERCENT, 0, arg.bornPos[2]/GAMEPLAY_PERCENT)
 	player:init(arg.pickedheroid)
+	player.accountLevel = getAccountLevel( arg.score )
 	if player:isRed() then
 		player.camp = CampType.RED
 	else
@@ -36,6 +38,7 @@ function IMapPlayer:ctor()
 	self.pets = {}
 	self.HonorData = {0,0,0,0,0,0,0} -- 输出伤害 承受伤害 助攻数 击杀数量 死亡数量
 	self.bAttackPlayers = {} --被攻击的玩家
+	self.accountLevel = 0
 	register_class_var(self, 'LoadProgress', 0)
 	register_class_var(self, 'RaiseTime', 0)
 	
@@ -141,6 +144,11 @@ function IMapPlayer:onDead()
 	end
 	self.bAttackPlayers = {}
 	self:setRaiseTime(self:getLevel() * Quest.RaiseTime)
+	if self:isRed() then
+		BattleOverManager.BlueKillNum = BattleOverManager.BlueKillNum + 1
+	else
+		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
+	end
 end
 
 function IMapPlayer:onRaise()

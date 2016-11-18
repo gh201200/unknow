@@ -39,6 +39,52 @@ local function query_event_func(response,agent, account_id, args)
 	entity:checkeventStamp(args.type, args.stamp)
 end
 
+local function playerReConnect(agent, aid)
+	print(' player re enter battle ', aid )
+	--player and building
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player then
+			if v.account_id == aid then
+				v.agent = agent
+				break
+			end
+		end
+	end
+	skynet.call(agent, "lua", "sendRequest", "fightBegin")
+
+	--monsters
+	local monsters = { spawnList = {} }
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.monster then
+			local sp = {}
+			sp.monsterId = v.attDat.id
+			sp.serverId = v.serverId
+			sp.posx = math.floor(v.pos.x * GAMEPLAY_PERCENT)
+			sp.posz = math.floor(v.pos.z * GAMEPLAY_PERCENT)
+			table.insert(monsters.spawnList, sp)
+		end
+	end
+	skynet.call(agent, "lua", "sendRequest", "spawnMonsters", monsters)
+
+	--pet
+	local pet = {}
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.pet then
+			pet.petId = v.pt.id
+			pet.serverId = v.serverId
+			pet.posx = math.floor(v.pos.x * GAMEPLAY_PERCENT)
+			pet.posz = math.floor(v.pos.z * GAMEPLAY_PERCENT)
+			pet.isbody = v.isbody
+			pet.camp = v.camp
+			skynet.call(agent, "lua", "sendRequest", "summonPet", {pet=pet})
+		end
+	end
+
+	--
+
+
+end
+
 local CMD = {}
 
 local function register_query_event_func()
@@ -55,10 +101,6 @@ function CMD.hijack_msg(response,agent)
 		end
 	end
 	response(true, ret )
-end
-
-function CMD.disconnect(s,agent)
-	EntityManager:disconnectAgent(agent)	
 end
 
 function CMD.move(response, agent, account_id, args)
@@ -106,6 +148,13 @@ end
 function CMD.loadingRes(response, agent, account_id, args)
 	response( true, nil )
 	local player = EntityManager:getPlayerByPlayerId(account_id)
+	
+	local pg = player:getLoadProgress()
+	if pg >= 100 then	--说明是重连
+		playerReConnect(agent, account_id)
+		return
+	end
+	
 	player:setLoadProgress(args.percent)
 	
 	local num = 0
@@ -153,6 +202,9 @@ end
 function CMD.start(response, args)
 	response(true, nil)
 	
+	local sm = snax.uniqueservice("servermanager")
+	sm.post.roomstart(skynet.self(), args)
+	
 	local roomId = 1
 	local mapDat = g_shareData.mapRepository[roomId]
 	
@@ -190,7 +242,9 @@ function CMD.start(response, args)
 				serverId = v.serverId,
 				heroId = v.attDat.id,
 				name = v.nickName,
-				color = v.color
+				color = v.color,
+				posx = math.floor(v.pos.x * GAMEPLAY_PERCENT),
+				posz = math.floor(v.pos.z * GAMEPLAY_PERCENT),
 			}
 			table.insert(heros, LoadHero)
 		end
@@ -209,6 +263,7 @@ function CMD.start(response, args)
 		end
 	end
 end
+
 
 local function init()
 	register_query_event_func()
@@ -241,6 +296,43 @@ function REQUEST.addOffLineTime(response, args)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
 	player:addOffLineTime( args.time )
 end
+
+function REQUEST.getOffLineTime(response, args)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	local time = player:getOffLineTime()
+	response(true, time)
+end
+
+function REQUEST.getRoomInfo(response)
+	local heros = {}
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player  then
+			local LoadHero = {
+				serverId = v.serverId,
+				heroId = v.attDat.id,
+				name = v.nickName,
+				color = v.color,
+				posx = math.floor(v.pos.x * GAMEPLAY_PERCENT),
+				posz = math.floor(v.pos.z * GAMEPLAY_PERCENT),
+			}
+			table.insert(heros, LoadHero)
+		end
+	end
+	
+	local ret = {
+		roomId = room_id,
+		heroInfoList = heros,
+		rb_sid = BattleOverManager.RedHomeBuilding.serverId,
+		bb_sid = BattleOverManager.BlueHomeBuilding.serverId,
+	}
+	response(true, ret)
+end
+
+function REQUEST.disconnect(response, agent)
+	response(true, nil)	
+	EntityManager:disconnectAgent(agent)
+end
+
 
 skynet.start(function ()
 	init()

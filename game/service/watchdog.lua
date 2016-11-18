@@ -50,8 +50,8 @@ end
 local function close_agent(fd)
 	local a = agentfd[fd]
 	agentfd[fd] = nil
+	agentAccount[fd] = nil
 	if a then
-		agentAccount[a] = nil
 		skynet.call(gate, "lua", "kick", fd)
 		-- disconnect never return
 		skynet.send(a, "lua", "disconnect")
@@ -79,6 +79,7 @@ function SOCKET.warning(fd, size)
 end
 
 function SOCKET.data(fd, msg)
+	print('socket data error = ',msg)
 end
 
 function CMD.start(conf)
@@ -91,13 +92,19 @@ function CMD.close(fd)
 end
 
 function CMD.userEnter( accountId, fd )
-	agentAccount[agentfd[fd]] = accountId
+	print('user enter ', accountId, fd)
+	for k, v in pairs(agentAccount) do
+		if v and v == accountId then	
+			close_agent( k )
+		end
+	end
+	agentAccount[fd] = accountId
 end
 
 function CMD.gm_cmd( accountId, gmFunc, args )
 	for k, v in pairs(agentAccount) do
 		if v and v == accountId then
-			skynet.call(k, "lua", "gm_"..gmFunc, args)
+			skynet.call(agentfd[k], "lua", "gm_"..gmFunc, args)
 			return true
 		end
 	end

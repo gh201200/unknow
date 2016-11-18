@@ -2,8 +2,9 @@
 <info>
 	<item id="1">
 		<szName>pvp001</szName>
-		<n32Time>300</n32Time>
-		<n32Kills>10</n32Kills>
-		<szDrops>1202,1203</szDrops>
+		<n32Time>60</n32Time>
+		<n32Kills>2</n32Kills>
+		<szWinDrops>1202,1203</szWinDrops>
+		<szFailDrops>1202</szFailDrops>
 	</item>
 </info>

@@ -164,10 +164,18 @@ skynet.register_protocol {
 		end
 	end
 }
+
 local function request_hijack_msg(handle)
 	local interface = skynet.call(handle, "lua", "hijack_msg")
 	for k, v in pairs(interface) do
 		hijack_msg[v] = handle
+	end
+end
+
+local function request_unhijack_msg(handle)
+	local interface = skynet.call(handle, "lua", "hijack_msg")
+	for k, v in pairs(interface) do
+		hijack_msg[v] = nil
 	end
 end
 
@@ -189,12 +197,12 @@ function CMD.Start (conf)
 		account = nil,
 		explore = nil,
 		heartBeatTime = os.time(),
-		offLineTime = 0,
 	}
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
-       
+        user.servicecmd = CMD
+
 	heartbeat_check()
 
 	--注册匹配服务
@@ -226,7 +234,7 @@ function CMD.disconnect ()
 end
 
 function CMD.getmatchinfo()
-	local tb = {agent = skynet.self(),account = user.account.account_id, score = 10, nickname = user.account:getNickName(),time = 0,range = 0}
+	local tb = {agent = skynet.self(),account = user.account.account_id, score = user.account:getExp(), nickname = user.account:getNickName(),time = 0,range = 0}
 	return tb
 end
 
@@ -244,6 +252,13 @@ function CMD.enterMap(map,arg)
 	request_hijack_msg(map)
 	user.MAP = map
 	send_request("beginEnterPvpMap", arg) --开始准备切图
+end
+
+--退出地图
+function CMD.leaveMap(map)
+	print("CMD.leaveMap")
+	request_unhijack_msg(map)
+	user.MAP = nil
 end
 
 --战斗结束产出

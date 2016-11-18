@@ -90,12 +90,15 @@ local types = [[
 	posz 3 : integer
 	isbody 4 : integer
 	camp 5 : integer
+	masterId 6 : integer
 }
 .LoadHero {
 	serverId 0 : integer
 	heroId 1 : integer
 	name 2 : string
 	color 3 : integer
+	posx 4 : integer
+	posz 5 : integer
 }
 
 .DropItem {
@@ -370,6 +373,15 @@ updateActivityData 305 {
 	} 
 }
 
+reEnterRoom 3006 {
+	request { 
+		isin 0 : boolean
+	}
+	response {                                                            
+		errorCode 0 : integer
+	}
+}
+
 ]]
 
 local s2c = [[
@@ -567,6 +579,12 @@ battleOver 3005 {
 		deads 6 : integer
 		helps 7 : integer
 		items 8 : *Vector3
+	}
+}
+
+reEnterRoom 3006 {
+	request { 
+		isin 0 : boolean
 	}
 }
 

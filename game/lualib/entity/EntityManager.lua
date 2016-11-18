@@ -132,11 +132,12 @@ function EntityManager:createPet(id,master,pos,isbody)
 	isbody = isbody or 0
 	local dir = vector3.create(0,0,0)
 	local pet = IPet.new(pos,dir)
+	pet.isbody = isbody
 	g_entityManager:addEntity(pet)
 	local pt = g_shareData.petRepository[id]
 	pet.serverId = assin_server_id()	
 	pet:init(pt,master)
-	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,isbody = isbody,camp = master.camp}
+	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,isbody = isbody,camp = master.camp,masterId = master.serverId}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )

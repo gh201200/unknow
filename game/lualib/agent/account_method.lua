@@ -59,6 +59,9 @@ local AccountMethod =
 		syslog.infof("op[%s]player[%s]:addMoney:%d:%d", op,  self.account_id, _money, nv)
 	end;
 	--
+	getExp = function(self)
+		return self.unit.exp
+	end;
 	addExp = function(self, op,  _exp)
 		if _exp == 0 then return end
 		local nv = self.unit.exp + _exp

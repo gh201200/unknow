@@ -125,6 +125,16 @@ function Ientity:getType()
 	return "Ientity"
 end
 
+function Ientity:clear_coroutine()
+	--response to agent
+	for k, v in pairs(self.coroutine_response) do
+		for p, q in pairs(v) do
+			q(true, nil)
+		end
+	end
+	self.coroutine_response = {}
+end
+
 function Ientity:isKind(entity,_atk)
 	if entity == nil then return true end
 	if entity.camp == nil then return true end
@@ -611,7 +621,7 @@ end
 function Ientity:calcStrength()
 	self:setStrength(math.floor(
 		math.floor((self.attDat.n32Strength
-		+ self.attDat.n32Strength/GAMEPLAY_PERCENT * self:getLevel()) 
+		+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel()) 
 		* (1.0 + self:getMidStrengthPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidStrength())
 	)

@@ -176,5 +176,18 @@ function REQUEST.updateActivityData( args )
 	return {uid=uid, value=val}
 end
 
+function REQUEST.reEnterRoom( args )
+	if args.isin then
+		local sm = snax.uniqueservice("servermanager")
+		local ret, room = sm.req.getroomif( user.account.account_id )
+		if ret then
+			user.servicecmd.enterMap(room, ret)
+			return {errorCode = 0}
+		else
+			return {errorCode = -1}
+		end
+	end
+end
+
 
 return SystemCh.new()

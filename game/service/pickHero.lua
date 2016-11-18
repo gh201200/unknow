@@ -31,7 +31,7 @@ end
 
 function CMD.init(response,playerTb)
 	for _k,_v in pairs(playerTb) do
-		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color}
+		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, score=_v.score}
 	end
 	response(true,nil)
 end

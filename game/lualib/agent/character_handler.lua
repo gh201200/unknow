@@ -90,18 +90,28 @@ end
 
 
 local function onEnterGame()
-	
 	--tell watchdog
 	skynet.call(user.watchdog, "lua", "userEnter", user.account.account_id, user.fd)
 
 	user.account:sendAccountData()
 	user.cards:sendCardData()
 	user.explore:sendExploreData()
-	--sendCDTimeData()
-	--sendActivityData()
+
+	--here, decide whether he is still in room 
+	local sm = snax.uniqueservice("servermanager")
+	local map = sm.req.getroomad( user.account.account_id )
+	local r = {isin=false}
+	if map then
+		local offLinetime = skynet.call(map, "lua", "getOffLineTime", {id=user.account.account_id})
+		if offLinetime < 90 then
+			r.isin = true
+		end
+	end
+	user.send_request('reEnterRoom', r)
 end
 
 function REQUEST.enterGame(args)
+	
 	database = skynet.uniqueservice ("database")
 
 	--玩家数据加载
