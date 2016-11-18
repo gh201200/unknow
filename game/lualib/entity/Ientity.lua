@@ -621,7 +621,7 @@ end
 function Ientity:calcStrength()
 	self:setStrength(math.floor(
 		math.floor((self.attDat.n32Strength
-		+ self.attDat.n32Strength/GAMEPLAY_PERCENT * self:getLevel()) 
+		+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel()) 
 		* (1.0 + self:getMidStrengthPc()/GAMEPLAY_PERCENT)) 
 		+ self:getMidStrength())
 	)
