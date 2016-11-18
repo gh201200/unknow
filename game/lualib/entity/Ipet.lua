@@ -25,6 +25,7 @@ function IPet:init(pt,master)
         self.StatsChange = true
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
 	self.lifeTime = 30*1000 --存活时间
+	self.isbody = 0
 end
 
 function IPet:getType()

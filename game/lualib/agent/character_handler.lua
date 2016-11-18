@@ -98,14 +98,16 @@ local function onEnterGame()
 	user.explore:sendExploreData()
 
 	--here, decide whether he is still in room 
-	local match = skynet.uniqueservice 'match'
-	local map = skynet.call(match, "lua", "getroom", user.account.account_id)
-	if map > 0 then
+	local sm = snax.uniqueservice("servermanager")
+	local map = sm.req.getroomad( user.account.account_id )
+	local r = {isin=false}
+	if map then
 		local offLinetime = skynet.call(map, "lua", "getOffLineTime", {id=user.account.account_id})
 		if offLinetime < 90 then
-			user.send_request("sendActivity")
+			r.isin = true
 		end
 	end
+	user.send_request('reEnterRoom', r)
 end
 
 function REQUEST.enterGame(args)
