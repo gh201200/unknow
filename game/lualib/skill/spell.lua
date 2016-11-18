@@ -295,7 +295,9 @@ function spell:onEnd()
 		self.source:callBackSpellEnd()
 		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
 			if self.source:getTarget() == self.srcTarget then
-				self.source:setTarget( nil )
+				if self.source:getType() == "IMapPlayer" then 
+					self.source:setTarget( nil )
+				end
 			end
 		end
 	end
