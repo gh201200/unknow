@@ -48,9 +48,11 @@ function BattleOverManager:update( dt )
 		end
 	until true
 	if self.OverRes ~= 0 then
+		print ('战斗结束')
 		local winners, failers, redRunAway, blueRunAway = self:calcRes()
 		self:giveResult()
 		self:sendResult(winners, failers)
+		self:closeRoom()
 	end
 end
 
@@ -272,6 +274,21 @@ function BattleOverManager:sendResult()
 			end
 		end
 	end
+end
+
+function BattleOverManager:closeRoom()
+	local match = skynet.uniqueservice 'match'                                                                                                                     
+	skynet.call(match, "lua", "roomend", skynet.self())           
+	for k, v in pairs(EntityManager.entityList) do
+		v:clear_coroutine()
+		if v.entityType == EntityType.player then
+			if v.agent then                                                                                                                                
+                                 skynet.call(v.agent, "lua", "leaveMap", skynet.self())                                                                            
+                         end     
+		end
+	end
+                                                                                               
+	skynet.exit()
 end
 
 return BattleOverManager.new()

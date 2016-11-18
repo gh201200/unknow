@@ -13,6 +13,9 @@ local baseRate = 10000 --同一分数匹配人数不超过一万人
 local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
+local roomAccount = {}	--room account_id
+
+
 function CMD.hijack_msg(response)
 	local ret = {}
 	for k, v in pairs(CMD) do
@@ -69,9 +72,12 @@ local function handleMatch(t)
 		_v.color = colors[i]
 	end
 	--返回 分组信息
-	local s_pickHero =  skynet.newservice "pickHero"
+	local s_pickHero =  skynet.newservice ("pickHero")
 	table.insert(s_pickHeros,s_pickHero)
 	skynet.call(s_pickHero,"lua","init",t)
+
+	
+	
 	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
 		ret.matcherNum = ret.matcherNum + 1
@@ -129,10 +135,43 @@ local function init()
 	skynet.timeout(100, update)
 end
 
+local REQUEST = {}
+function REQUEST.roomstart(response, room, players)
+	print('room start ', room)
+	response(true,nil)
+	roomAccount[room] = {}
+	for k, v in pairs(players) do
+		table.insert(roomAccount[room], v.account)
+	end
+end
+
+function REQUEST.roomend(response,room)
+	print('room end', room)
+	response(true,nil)
+	roomAccount[room] = nil
+end
+
+function REQUEST.getroom(response, aid)
+	for k, v in pairs(roomAccount) do
+		if v then
+			for p, q in pairs(v) do
+				if q == aid then
+					response(true, k)
+					return
+				end
+			end
+		end
+	end
+	response(true, -1)
+end
+
 skynet.start(function ()
 	init()
 	skynet.dispatch("lua", function (_, _, command, ...)
 		local f = CMD[command]
+		if not f then
+			f = REQUEST[command]
+		end
 		if not f then
 			syslog.warningf("match service unhandled message[%s]", command)	
 			return skynet.ret()

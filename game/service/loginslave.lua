@@ -86,7 +86,7 @@ function CMD.auth (fd, addr)
 	
 			firstRegister(account.account_id)
 		end
-		
+	
 		local msg = response {
 			user_exists = false,
 			account_id = account.account_id,

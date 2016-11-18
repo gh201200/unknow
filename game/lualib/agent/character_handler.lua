@@ -90,18 +90,26 @@ end
 
 
 local function onEnterGame()
-	
 	--tell watchdog
 	skynet.call(user.watchdog, "lua", "userEnter", user.account.account_id, user.fd)
 
 	user.account:sendAccountData()
 	user.cards:sendCardData()
 	user.explore:sendExploreData()
-	--sendCDTimeData()
-	--sendActivityData()
+
+	--here, decide whether he is still in room 
+	local match = skynet.uniqueservice 'match'
+	local map = skynet.call(match, "lua", "getroom", user.account.account_id)
+	if map > 0 then
+		local offLinetime = skynet.call(map, "lua", "getOffLineTime", {id=user.account.account_id})
+		if offLinetime < 90 then
+			user.send_request("sendActivity")
+		end
+	end
 end
 
 function REQUEST.enterGame(args)
+	
 	database = skynet.uniqueservice ("database")
 
 	--玩家数据加载

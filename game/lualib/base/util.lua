@@ -125,3 +125,14 @@ end
 function Macro_GetCardDataId(serId, color)
 	return serId*10 + color
 end
+
+function getAccountLevel( _exp )
+	local lv = 1
+	for k, v in pairs(g_shareData.accountLevel) do
+		if _exp <= v.n32Exp then
+			return v.id
+		end
+		lv = v.id
+	end
+	return lv
+end

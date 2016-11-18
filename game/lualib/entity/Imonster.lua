@@ -101,14 +101,8 @@ function IMonster:onDead()
 	--tell the clients
 	EntityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
 
-	--response to agent
-	for k, v in pairs(self.coroutine_response) do
-		for p, q in pairs(v) do
-			q(true, nil)
-		end
-	end
-	self.coroutine_response = {}
-
+	self:clear_coroutine()
+	
 	--reset map
 	Map:add(self.pos.x, self.pos.z, -1)
 end
