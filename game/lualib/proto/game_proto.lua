@@ -14,6 +14,12 @@ local types = [[
 	y 1 : integer
 	z 2 : integer
 }
+
+.Vector2 {
+	x 0 : integer
+	y 1 : integer
+}
+
 .EventStamp {
 	id 0 : integer
 	type 1 : integer
@@ -588,6 +594,18 @@ battleOver 3005 {
 reEnterRoom 3006 {
 	request { 
 		isin 0 : boolean
+	}
+}
+
+reSendSkills 3007 {
+	request { 
+		skills 0 : *Vector2
+	}
+}
+
+reSendHaveItems 3008 {
+	request { 
+		items 0 : *DropItem
 	}
 }
 

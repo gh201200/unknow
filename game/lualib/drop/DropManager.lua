@@ -29,6 +29,7 @@ function DropManager:update()
 					else
 						table.insert(self.blueItems, q)
 					end
+					q.belong = v.serverId
 					table.insert(picks, q.sid..','..v.serverId)
 					table.remove(self.drops, i)	
 				end
@@ -77,6 +78,7 @@ function DropManager:makeDrop(entity)
 				local item = {
 					itemId = itemId,
 					itemNum = 1,
+					belong = 0,
 				}
 				local loop = 0
 				repeat

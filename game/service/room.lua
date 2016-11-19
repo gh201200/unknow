@@ -41,6 +41,8 @@ end
 
 local function playerReConnect(agent, aid)
 	print(' player re enter battle ', aid )
+	local player = EntityManager:getPlayerByPlayerId( aid )
+	
 	--player and building
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
@@ -81,9 +83,25 @@ local function playerReConnect(agent, aid)
 		end
 	end
 
-	--
+	--skill have
+	local skills = {}
+	for k, v in pairs(player.skillTable) do
+		table.insert( skills, {x=k, y=v} )
+	end
+	skynet.call(agent, "lua", "sendRequest", "reSendSkills", {skills=skills})
 
-
+	--地图掉落
+	skynet.call(agent, "lua", "sendRequest", "makeDropItem", {items=DropManager.drops})
+	
+	--团队拾取掉落
+	local ditems = nil
+	if player:isRed() then
+		ditems = DropManager.redItems
+	else
+		ditems = DropManager.blueItems
+	end
+	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=ditems})
+	
 end
 
 local CMD = {}
