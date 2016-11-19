@@ -64,7 +64,7 @@ end
 --处理匹配到的人 account nickname agent
 local function handleMatch(t)
 	--分配队组
-	local colors = {1,4,2,5,3,6}
+	local colors = {1,2,4,2,5,3,6}
 	local i = 1
 	for _k,_v in pairs(t) do
 		_v.color = colors[i]
@@ -89,7 +89,7 @@ local function handleMatch(t)
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-CMD.MATCH_NUM = 6   
+CMD.MATCH_NUM = 2   
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 

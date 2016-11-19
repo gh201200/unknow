@@ -83,8 +83,8 @@ function IMapPlayer:update(dt)
 	end	
 
 	if self.GoldExpMask then
-		local msg = { gold = self:getGold(), exp = self:getExp(), level = self:getLevel()}
-		skynet.call(self.agent, "lua", "sendRequest", "addGoldExp", msg)
+		local msg = { gold = self:getGold(), exp = self:getExp(), level = self:getLevel(), sid = self.serverId}
+		EntityManager:sendToAllPlayers("addGoldExp", msg)
 		self.GoldExpMask = false
 	end	
 	--add code before this

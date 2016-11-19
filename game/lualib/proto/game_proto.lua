@@ -489,6 +489,7 @@ addGoldExp 2003 {
 		gold 0 : integer
 		exp 1 : integer
 		level 2 : integer
+		sid 3 : integer
 	}
 }
 
