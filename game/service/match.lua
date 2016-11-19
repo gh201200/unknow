@@ -82,14 +82,13 @@ local function handleMatch(t)
 		ret.matcherNum = ret.matcherNum + 1
 		local tmp = { account = _v.account,nickname = _v.nickname,color = _v.color }
 		table.insert(ret.matcherList,tmp)
-		print(_v,"enterPickHero")
 		skynet.call(_v.agent,"lua","enterPickHero",s_pickHero)
 	end
 	for _k,_v in pairs(t) do
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-CMD.MATCH_NUM = 6   
+CMD.MATCH_NUM = 1   
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 

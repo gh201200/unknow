@@ -30,7 +30,6 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.init(response,playerTb)
-	print("pickHero playerTb",playerTb)
 	for _k,_v in pairs(playerTb) do
 		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, score=_v.score}
 	end
@@ -77,7 +76,6 @@ function CMD.confirmHero(response,agent,account,arg)
 		end
 		--enterMap()
 	end
-	print("====pick",players)
 	local isReady = true
 	for _agent,_v in pairs(players) do
 		if players[_agent].confirmheroid == 0 then
