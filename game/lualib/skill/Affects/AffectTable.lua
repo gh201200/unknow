@@ -30,7 +30,7 @@ end
 function AffectTable:update(dt)
 --	print("AffectTable:update",self.owner.serverId,self.owner:getHp(),#self.affects)
 	for i=#self.affects,1,-1 do
-		if self.affects[i] ~= nil then
+	--	if self.affects[i] ~= nil then
 			if self.affects[i].status == "exec" then
 				self.affects[i]:onExec(dt)
 			elseif self.affects[i].status == "enter" then
@@ -39,7 +39,7 @@ function AffectTable:update(dt)
 			elseif self.affects[i].status == "exit" then
 				table.remove(self.affects,i)
 			end
-		end
+	--	end
 	end
 	for i=#self.AtkAffects,1,-1 do
 		self.AtkAffects[i].lifeTime = self.AtkAffects[i].lifeTime - dt
@@ -163,7 +163,7 @@ end
 function AffectTable:clear()
 	for i=#self.affects,1,-1 do
 		self.affects[i]:onExit() 
-		table.remove(self.affects,i)
+		--table.remove(self.affects,i)
 	end
 	self.bAtkAffects = {}
 	self.AtkAffects = {}
