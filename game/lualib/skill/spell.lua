@@ -212,12 +212,14 @@ end
 --触发目标效果
 function spell:trgggerAffect(datastr,targets,skilldata)
 	for _k,_v in pairs(targets) do
-		if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
-			--无敌状态下
-		elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bCommonSkill ~= true then
-			--普攻 魔免状态
-		else
-			_v.affectTable:buildAffects(self.source,datastr,skilldata.id)
+		if _v.affectState then
+			if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
+				--无敌状态下
+			elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bCommonSkill ~= true then
+				--普攻 魔免状态
+			else
+				_v.affectTable:buildAffects(self.source,datastr,skilldata.id)
+			end
 		end
 	end
 end
@@ -241,7 +243,7 @@ function spell:onReady()
 		end
 		self.source:addMp(-self.skilldata.n32MpCost,HpMpMask.SkillMp)
 		self.source.cooldown:addItem(self.skilldata.id) --加入cd
-		if self.source:getType() == "IMapPlayer" then
+		if self.source:getType() == "IMapPlayer" and self.skilldata.bCommonSkill == false then
 			self.source:SynSkillCds(self.skilldata.id)
 		end
 		self.status = SpellStatus.Cast

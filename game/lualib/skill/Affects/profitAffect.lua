@@ -43,7 +43,7 @@ end
 function profitAffect:trigger(v)
 	local dis = self.owner:getDistance(v)
 	if dis <= self.radius then
-		if self.tgts[v.serverId] == nil then
+		if self.tgts[v.serverId] == nil and v.affectTable ~= nil then
 		--print("add trigger",self.affectdata,v.serverId)	
 		local proIds = v.affectTable:buildAffects(self.owner,self.affectdata,self.skillId)
 			self.tgts[v.serverId] = proIds

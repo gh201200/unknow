@@ -42,11 +42,12 @@ function recoverAffect:calRecover()
 	local rateA = self.data[2] or 0
 	local rateB = self.data[3] or 0
 	local val = rateA * self.source:getAttack() + rateB * self.source:getZhili()
-	
-	if self.data[1] == "curehp" then
-		self.owner:addHp(val,HpMpMask.SkillHp)
-	elseif self.data[1] == "curemp" then
-		self.owner:addMp(val,HpMpMask.SkillHp)
+	if self.owner:getHp() > 0 then
+		if self.data[1] == "curehp" then
+			self.owner:addHp(val,HpMpMask.SkillHp)
+		elseif self.data[1] == "curemp" then
+			self.owner:addMp(val,HpMpMask.SkillHp)
+		end
 	end
 end
 

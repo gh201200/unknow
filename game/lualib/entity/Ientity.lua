@@ -272,9 +272,11 @@ function Ientity:setTargetPos(target)
 end
 
 function Ientity:update(dt)
-	self.spell:update(dt)
-	self.cooldown:update(dt)
-	self.affectTable:update(dt)
+	if self:isDead() == false then
+		self.spell:update(dt)
+		self.cooldown:update(dt)
+		self.affectTable:update(dt)	
+	end
 	self:recvHpMp(dt)
 	--add code before this
 	if self.HpMpChange then
@@ -900,7 +902,11 @@ function Ientity:castSkill()
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat 
-	assert(skilldata and modoldata)
+	if skilldata == nil then
+		print("´íÎóµÄ¼¼ÄÜ",id)
+		return 
+	end
+	assert( modoldata)
 	local errorcode = self:canCast(id) 
 	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}

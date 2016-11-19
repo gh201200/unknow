@@ -223,7 +223,9 @@ function IMapPlayer:removeSkill(skillId)
 end
 
 function IMapPlayer:castSkill()
-	IMapPlayer.super.castSkill(self)
+	if self:getHp() >= 0 then
+		IMapPlayer.super.castSkill(self)
+	end
 end
 
 function IMapPlayer:SynSkillCds(id)
