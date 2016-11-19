@@ -32,7 +32,9 @@ function CMD.requestMatch(response,agent)
 	local arg = skynet.call(agent,"lua","getmatchinfo")
 	print("arg",arg)
 	if reverseMatchers[arg.account] ~= nil then
-		print(arg.account,"already in match list")
+		print(arg.account,"already in match list")	
+		local i = reverseMatchers[arg.account]
+		requestMatchers[i].agent =  agent
 		return
 	end
 	local hash_key = arg.score * baseRate
@@ -89,7 +91,7 @@ local function handleMatch(t)
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-CMD.MATCH_NUM = 6
+CMD.MATCH_NUM = 2 
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 
