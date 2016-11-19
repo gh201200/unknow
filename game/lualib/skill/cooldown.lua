@@ -12,9 +12,11 @@ end
 function cooldown:addItem(skillid,cd)
 	local skilldata = g_shareData.skillRepository[skillid]
 	assert(skilldata)
-	local seriId = skilldata.n32SeriId
-	local cdtime = cd or skilldata.n32CD 
-	self.coolDownTable[seriId] = cdtime
+	if skilldata.bCommonSkill == false then
+		local seriId = skilldata.n32SeriId
+		local cdtime = cd or skilldata.n32CD 
+		self.coolDownTable[seriId] = cdtime
+	end
 end
 
 function cooldown:update(dt)
@@ -38,10 +40,11 @@ end
 function cooldown:resetCd(id,time)
 	--print("cooldown:resetCd",id,time)
         local skilldata = g_shareData.skillRepository[id]
-        local seriId = skilldata.n32SeriId	
-	time = time or 0
---	assert(self.coolDownTable[id] ~= nil)
-	self.coolDownTable[seriId] = time
+	if skilldata.bCommonSkill == false then
+        	local seriId = skilldata.n32SeriId	
+		time = time or 0
+		self.coolDownTable[seriId] = time
+	end
 end
 
 function cooldown:resetAll(except)

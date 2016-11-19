@@ -241,7 +241,7 @@ function spell:onReady()
 		end
 		self.source:addMp(-self.skilldata.n32MpCost,HpMpMask.SkillMp)
 		self.source.cooldown:addItem(self.skilldata.id) --加入cd
-		if self.source:getType() == "IMapPlayer" then
+		if self.source:getType() == "IMapPlayer" and self.skilldata.bCommonSkill == false then
 			self.source:SynSkillCds(self.skilldata.id)
 		end
 		self.status = SpellStatus.Cast
