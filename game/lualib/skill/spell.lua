@@ -212,12 +212,14 @@ end
 --触发目标效果
 function spell:trgggerAffect(datastr,targets,skilldata)
 	for _k,_v in pairs(targets) do
-		if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
-			--无敌状态下
-		elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bCommonSkill ~= true then
-			--普攻 魔免状态
-		else
-			_v.affectTable:buildAffects(self.source,datastr,skilldata.id)
+		if _v.affectState then
+			if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
+				--无敌状态下
+			elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bCommonSkill ~= true then
+				--普攻 魔免状态
+			else
+				_v.affectTable:buildAffects(self.source,datastr,skilldata.id)
+			end
 		end
 	end
 end

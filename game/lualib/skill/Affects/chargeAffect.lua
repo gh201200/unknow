@@ -51,7 +51,7 @@ function chargeAffect:onExec(dt)
 		if self.targets[v.serverId] == nil and v.serverId ~= self.source.serverId then
 			--if self.owner:isKind(v) == false then
 			local dis = self.owner:getDistance(v)
-			if dis <= self.radius then
+			if dis <= self.radius and v.serverId ~= nil then
 				self.targets[v.serverId] = 1
 				v.affectTable:buildAffects(self.owner,self.tgtBuff,self.skillId)
 			end	

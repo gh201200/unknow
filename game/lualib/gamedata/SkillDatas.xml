@@ -6054,7 +6054,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.5,10,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.2,10,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6089,7 +6089,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.6,15,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.3,15,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6124,7 +6124,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.7,20,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.4,20,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6159,7 +6159,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.8,25,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.5,25,100,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6582,6 +6582,146 @@
 		<szTargetAffect></szTargetAffect>
 		<szMyAffect>[mov:0.25,0,0,7000,20056][outskill:7000,0]</szMyAffect>
 		<n32Radius>0</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000701">
+		<n32SeriId>50007</n32SeriId>
+		<szName>牛王之力</szName>
+		<n32Lv>1</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>niuwangzhili.png</szIcon>
+		<n32SingEffect>20053</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_03</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>32</n32Type>
+		<szTypeInfo>牛王之力</szTypeInfo>
+		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:0.5,10,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<n32Radius>20000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000702">
+		<n32SeriId>50007</n32SeriId>
+		<szName>牛王之力</szName>
+		<n32Lv>2</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>niuwangzhili.png</szIcon>
+		<n32SingEffect>20053</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_04</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>32</n32Type>
+		<szTypeInfo>牛王之力</szTypeInfo>
+		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:0.6,15,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<n32Radius>20000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000703">
+		<n32SeriId>50007</n32SeriId>
+		<szName>牛王之力</szName>
+		<n32Lv>3</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>niuwangzhili.png</szIcon>
+		<n32SingEffect>20053</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_05</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>32</n32Type>
+		<szTypeInfo>牛王之力</szTypeInfo>
+		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:0.7,20,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<n32Radius>20000</n32Radius>
+		<szAtkBe></szAtkBe>
+		<n32Interval>0</n32Interval>
+		<n32Last>0</n32Last>
+		<n32TimeEffect>0</n32TimeEffect>
+		<n32Pet>0</n32Pet>
+	</item>
+	<item id="5000704">
+		<n32SeriId>50007</n32SeriId>
+		<szName>牛王之力</szName>
+		<n32Lv>4</n32Lv>
+		<bActive>1</bActive>
+		<bCommonSkill>0</bCommonSkill>
+		<bNeedTarget>0</bNeedTarget>
+		<n32Range>0</n32Range>
+		<szIcon>niuwangzhili.png</szIcon>
+		<n32SingEffect>20053</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32MpCost>100</n32MpCost>
+		<n32CD>20000</n32CD>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32ActionType>4</n32ActionType>
+		<szAction>Skill_06</szAction>
+		<szSoundAttack>sound01.mp3</szSoundAttack>
+		<szSounHurted>sound01.mp3</szSounHurted>
+		<bAce>1</bAce>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32Type>32</n32Type>
+		<szTypeInfo>牛王之力</szTypeInfo>
+		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
+		<n32CubeEffect>0</n32CubeEffect>
+		<n32MyEffect>0</n32MyEffect>
+		<n32TargetEffect>0</n32TargetEffect>
+		<szTargetAffect>[ap:0.8,25,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
+		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
 		<n32Last>0</n32Last>

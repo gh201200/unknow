@@ -67,8 +67,8 @@ local function handleMatch(t)
 	local colors = {1,4,2,5,3,6}
 	local i = 1
 	for _k,_v in pairs(t) do
-		i = i + 1
 		_v.color = colors[i]
+		i = i + 1
 	end
 	--返回 分组信息
 	local s_pickHero =  skynet.newservice ("pickHero")
@@ -82,13 +82,14 @@ local function handleMatch(t)
 		ret.matcherNum = ret.matcherNum + 1
 		local tmp = { account = _v.account,nickname = _v.nickname,color = _v.color }
 		table.insert(ret.matcherList,tmp)
+		print(_v,"enterPickHero")
 		skynet.call(_v.agent,"lua","enterPickHero",s_pickHero)
 	end
 	for _k,_v in pairs(t) do
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-CMD.MATCH_NUM = 1   
+CMD.MATCH_NUM = 6   
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 
