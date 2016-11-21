@@ -28,32 +28,16 @@ local types = [[
 
 .Stats {
 	Strength 0 : integer
-  	StrengthPc 1 : integer
- 	Minjie 2 : integer
-  	MinjiePc 3 : integer
-  	Zhili 4 : integer
-  	ZhiliPc 5 : integer
-	HpMax 6 : integer
-	HpMaxPc 7 : integer
-	MpMax 8 : integer
-	MpMaxPc 9 : integer
-  	Attack 10 : integer
-  	AttackPc 11 : integer
-  	Defence 12 : integer
-  	DefencePc 13 : integer
-  	ASpeed 14 : integer
-  	MSpeed 15 : integer
-  	MSpeedPc 16 : integer
-  	AttackRange 17 : integer
-  	AttackRangePc 18 : integer
-  	RecvHp 19 : integer
-  	RecvHpPc 20 : integer
-  	RecvMp 21 : integer
-  	RecvMpPc 22 : integer
-  	BaojiRate 23 : integer
-  	BaojiTimes 24 : integer
-  	Hit 25 : integer
-  	Miss 26 : integer
+ 	Minjie 1 : integer
+  	Zhili 2 : integer
+	HpMax 3 : integer
+	MpMax 4 : integer
+  	Attack 5 : integer
+  	Defence 6 : integer
+  	ASpeed 7 : integer
+	exp 8 : integer
+	gold 9 : integer
+	level 10 : integer
 }
 
 .Buff {

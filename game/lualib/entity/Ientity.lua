@@ -52,6 +52,8 @@ function Ientity:ctor(pos,dir)
 	self.entityType = 0
 	self.serverId = 0
 	register_class_var(self, 'Level', 1)
+	register_class_var(self, 'Gold', 0, self.onGold)
+	register_class_var(self, 'Exp', 0, self.onExp)
 	self.bornPos =  vector3.create()
 	
 	self.camp = CampType.BAD  

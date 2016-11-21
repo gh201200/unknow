@@ -42,8 +42,6 @@ function IMapPlayer:ctor()
 	register_class_var(self, 'LoadProgress', 0)
 	register_class_var(self, 'RaiseTime', 0)
 	
-	register_class_var(self, 'Gold', 0, self.onGold)
-	register_class_var(self, 'Exp', 0, self.onExp)
 	
 	register_class_var(self, 'GodSkill', 0, self.onGodSkill)
 	register_class_var(self, 'CommonSkill', 0, self.onCommonSkill)
@@ -81,12 +79,13 @@ function IMapPlayer:update(dt)
 			self:onRaise()
 		end
 	end	
-
+--[[
 	if self.GoldExpMask then
 		local msg = { gold = self:getGold(), exp = self:getExp(), level = self:getLevel(), sid = self.serverId}
 		EntityManager:sendToAllPlayers("addGoldExp", msg)
 		self.GoldExpMask = false
 	end	
+--]]
 	--add code before this
 	IMapPlayer.super.update(self,dt)
 end
@@ -166,11 +165,13 @@ function IMapPlayer:onRaise()
 end
 
 function IMapPlayer:onGold()
-	self.GoldExpMask = true
+	self.StatsChange = true
+	--self.GoldExpMask = true
 end
 
 function IMapPlayer:onExp()
-	self.GoldExpMask = true
+	self.StatsChange = true
+	--self.GoldExpMask = true
 	local lv = 0
 	local sz = #g_shareData.heroLevel
 	for i=2, sz do

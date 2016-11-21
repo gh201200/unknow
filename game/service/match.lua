@@ -89,7 +89,7 @@ local function handleMatch(t)
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-CMD.MATCH_NUM = 6
+CMD.MATCH_NUM = 1
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 
