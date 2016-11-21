@@ -32,7 +32,9 @@ function CMD.requestMatch(response,agent)
 	local arg = skynet.call(agent,"lua","getmatchinfo")
 	print("arg",arg)
 	if reverseMatchers[arg.account] ~= nil then
-		print(arg.account,"already in match list")
+		print(arg.account,"already in match list")	
+		local i = reverseMatchers[arg.account]
+		requestMatchers[i].agent =  agent
 		return
 	end
 	local hash_key = arg.score * baseRate

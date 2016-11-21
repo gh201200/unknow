@@ -4,7 +4,7 @@
 		<szName>闪光</szName>
 		<szMod_name>Shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
-		<n32Speed>11000</n32Speed>
+		<n32Speed>8000</n32Speed>
 		<n32AttackTime1>280</n32AttackTime1>
 		<n32AttackTime2>113</n32AttackTime2>
 		<n32AttackTime3>540</n32AttackTime3>
@@ -218,22 +218,22 @@
 	</item>
 	<item id="50010">
 		<szName>牛博士</szName>
-		<szMod_name>niuboshi</szMod_name>
-		<n32Hight>niuboshi</n32Hight>
+		<szMod_name>Niu</szMod_name>
+		<n32Hight>Niu</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>364</n32AttackTime2>
-		<n32AttackTime3>293</n32AttackTime3>
-		<n32AttackTriTime>370</n32AttackTriTime>
-		<n32Skill1Time1>177</n32Skill1Time1>
-		<n32Skill1Time2>555</n32Skill1Time2>
-		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
-		<n32Skill3Time1>273</n32Skill3Time1>
-		<n32Skill3Time2>893</n32Skill3Time2>
-		<n32Skill3TriTime>587</n32Skill3TriTime>
+		<n32AttackTime1>279</n32AttackTime1>
+		<n32AttackTime2>185</n32AttackTime2>
+		<n32AttackTime3>1236</n32AttackTime3>
+		<n32AttackTriTime>394</n32AttackTriTime>
+		<n32Skill1Time1>240</n32Skill1Time1>
+		<n32Skill1Time2>760</n32Skill1Time2>
+		<n32Skill1TriTime>368</n32Skill1TriTime>
+		<n32Skill2Time1>186</n32Skill2Time1>
+		<n32Skill2Time2>747</n32Skill2Time2>
+		<n32Skill2TriTime>345</n32Skill2TriTime>
+		<n32Skill3Time1>470</n32Skill3Time1>
+		<n32Skill3Time2>1097</n32Skill3Time2>
+		<n32Skill3TriTime>606</n32Skill3TriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>

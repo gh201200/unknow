@@ -6054,7 +6054,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.2,10,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.5,10,1000,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6089,7 +6089,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.3,15,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.6,15,1000,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6124,7 +6124,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.4,20,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.7,20,1000,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6159,7 +6159,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.5,25,100,4000,20044]</szTargetAffect>
+		<szTargetAffect>[ap:0.8,25,1000,4000,20044]</szTargetAffect>
 		<szMyAffect>[profit:4000,20043]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6334,7 +6334,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.15,0.35,500,3000,0]</szTargetAffect>
+		<szTargetAffect>[curehp:0.15,0.35,1000,3000,0]</szTargetAffect>
 		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6369,7 +6369,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.16,0.36,500,3000,0]</szTargetAffect>
+		<szTargetAffect>[curehp:0.16,0.36,1000,3000,0]</szTargetAffect>
 		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6404,7 +6404,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.17,0.37,500,3000,0]</szTargetAffect>
+		<szTargetAffect>[curehp:0.17,0.37,1000,3000,0]</szTargetAffect>
 		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6439,7 +6439,7 @@
 		<n32CubeEffect>0</n32CubeEffect>
 		<n32MyEffect>0</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[curehp:0.18,0.38,500,3000,0]</szTargetAffect>
+		<szTargetAffect>[curehp:0.18,0.38,1000,3000,0]</szTargetAffect>
 		<szMyAffect>[profit:3000,20054]</szMyAffect>
 		<n32Radius>30000</n32Radius>
 		<szAtkBe></szAtkBe>
@@ -6597,7 +6597,7 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
 		<szIcon>niuwangzhili.png</szIcon>
-		<n32SingEffect>20053</n32SingEffect>
+		<n32SingEffect>20068</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>20000</n32CD>
@@ -6612,10 +6612,10 @@
 		<szTypeInfo>牛王之力</szTypeInfo>
 		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20069</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.5,10,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<szTargetAffect>[ap:0.2,10,1000,4000,0][ctrl:7,0,1000,4000,20028]</szTargetAffect>
+		<szMyAffect>[profit:4000,20070][mov:0.5,0,0,4000,0]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6632,7 +6632,7 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
 		<szIcon>niuwangzhili.png</szIcon>
-		<n32SingEffect>20053</n32SingEffect>
+		<n32SingEffect>20068</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>20000</n32CD>
@@ -6647,10 +6647,10 @@
 		<szTypeInfo>牛王之力</szTypeInfo>
 		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20069</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.6,15,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<szTargetAffect>[ap:0.3,15,1000,4000,0][ctrl:7,0,1000,4000,20028]</szTargetAffect>
+		<szMyAffect>[profit:4000,20070][mov:0.5,0,0,4000,0]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6667,7 +6667,7 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
 		<szIcon>niuwangzhili.png</szIcon>
-		<n32SingEffect>20053</n32SingEffect>
+		<n32SingEffect>20068</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>20000</n32CD>
@@ -6682,10 +6682,10 @@
 		<szTypeInfo>牛王之力</szTypeInfo>
 		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20069</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.7,20,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<szTargetAffect>[ap:0.4,20,1000,4000,0][ctrl:7,0,1000,4000,20028]</szTargetAffect>
+		<szMyAffect>[profit:4000,20070][mov:0.5,0,0,4000,0]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
@@ -6702,7 +6702,7 @@
 		<bNeedTarget>0</bNeedTarget>
 		<n32Range>0</n32Range>
 		<szIcon>niuwangzhili.png</szIcon>
-		<n32SingEffect>20053</n32SingEffect>
+		<n32SingEffect>20068</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32MpCost>100</n32MpCost>
 		<n32CD>20000</n32CD>
@@ -6717,10 +6717,10 @@
 		<szTypeInfo>牛王之力</szTypeInfo>
 		<szDescribe>使范围内敌方持续受到伤害和眩晕</szDescribe>
 		<n32CubeEffect>0</n32CubeEffect>
-		<n32MyEffect>0</n32MyEffect>
+		<n32MyEffect>20069</n32MyEffect>
 		<n32TargetEffect>0</n32TargetEffect>
-		<szTargetAffect>[ap:0.8,25,100,4000,20044][mov:0.25,0,0,4000,0]</szTargetAffect>
-		<szMyAffect>[profit:4000,20043]</szMyAffect>
+		<szTargetAffect>[ap:0.5,25,1000,4000,0][ctrl:7,0,1000,4000,20028]</szTargetAffect>
+		<szMyAffect>[profit:4000,20070][mov:0.5,0,0,4000,0]</szMyAffect>
 		<n32Radius>20000</n32Radius>
 		<szAtkBe></szAtkBe>
 		<n32Interval>0</n32Interval>
