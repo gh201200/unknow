@@ -223,7 +223,11 @@ function Ientity:pathFind(dx, dz)
 end
 
 function Ientity:setTarget(target)
-	if not target then self:setTargetVar( nil ) return end
+	if not target then
+		self:stand()
+		self:setTargetVar( nil ) 
+	return end
+	
 	if self:isDead() then return end
 	self:setTargetVar( target )
 	if self.spell:isSpellRunning() == true and self.spell:canBreak(ActionState.move) == false then	
@@ -292,16 +296,7 @@ function Ientity:update(dt)
 	end
 
 	if self.curActionState == ActionState.move then
-		if not self:getTarget() then 
-			self:stand()
-		else
-			if self:canMove() == 0 then
-				self:onMove(dt)
-			else
-				self:clearTarget(1)
-				self:stand()
-			end
-		end
+		self:onMove(dt)
 	elseif self.curActionState == ActionState.stand then
 		--站立状态
 	elseif self.curActionState >= ActionState.forcemove then
@@ -905,7 +900,6 @@ function Ientity:castSkill()
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat 
 	if skilldata == nil then
-		print("\B4\ED\CE\F3\B5ļ\BC\C4\DC",id)
 		return 
 	end
 	assert( modoldata)

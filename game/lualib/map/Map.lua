@@ -177,7 +177,7 @@ function Map:lineTest(sp, ep)
 	dir:set(sp.x, sp.y, sp.z)
 	dir:sub( ep )
 	dir:normalize()
-	local set = 0.5
+	local set = 0.2
 	repeat
 		dst:set(dir.x, dir.y, dir.z)
 		dst:mul_num( set * Map.MAP_GRID_SIZE  )
@@ -187,7 +187,7 @@ function Map:lineTest(sp, ep)
 		if self:isWall( dst.x, dst.z ) == false then
 			break
 		end
-		set = set + 0.5
+		set = set + 0.2
 	until false
 end
 
