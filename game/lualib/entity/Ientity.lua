@@ -905,7 +905,7 @@ function Ientity:castSkill()
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat 
 	if skilldata == nil then
-		print("´íÎóµÄ¼¼ÄÜ",id)
+		print("\B4\ED\CE\F3\B5Ä¼\BC\C4\DC",id)
 		return 
 	end
 	assert( modoldata)
