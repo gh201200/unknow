@@ -225,6 +225,10 @@ math.random_ext = function(n,p)
   	return math.random(n,p)
 end
 
+math.pow2 = function(x)
+	return x * x
+end
+
 -- lua面向对象扩展
 function class(classname, super)
     local superType = type(super)

@@ -44,6 +44,9 @@ function IMonster:init(mt)
 	self:setMp(self:getMpMax())
 	self.HpMpChange = true
 	self.StatsChange = true
+	
+
+	IMonster.super.init(self)
 end
 
 

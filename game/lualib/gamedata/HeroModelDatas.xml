@@ -23,6 +23,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50002">
 		<szName>厚德</szName>
@@ -47,6 +48,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50003">
 		<szName>小僵尸</szName>
@@ -71,6 +73,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50004">
 		<szName>僵尸弓手</szName>
@@ -95,6 +98,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50005">
 		<szName>乌鸦</szName>
@@ -119,6 +123,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50006">
 		<szName>钟表匠</szName>
@@ -143,6 +148,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50007">
 		<szName>变猪</szName>
@@ -167,6 +173,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50008">
 		<szName>召唤熊</szName>
@@ -191,6 +198,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50009">
 		<szName>天女</szName>
@@ -215,6 +223,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50010">
 		<szName>牛博士</szName>
@@ -239,6 +248,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50011">
 		<szName>龙女</szName>
@@ -263,6 +273,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50012">
 		<szName>狂僧</szName>
@@ -287,6 +298,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50013">
 		<szName>机甲少女</szName>
@@ -311,6 +323,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50014">
 		<szName>神狙</szName>
@@ -335,6 +348,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50015">
 		<szName>弹弓小子</szName>
@@ -359,6 +373,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50016">
 		<szName>修行者</szName>
@@ -383,6 +398,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50017">
 		<szName>蒂皮</szName>
@@ -407,6 +423,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50018">
 		<szName>安娜</szName>
@@ -431,6 +448,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50019">
 		<szName>风之旅人</szName>
@@ -455,6 +473,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50020">
 		<szName>法老</szName>
@@ -479,6 +498,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50021">
 		<szName>科技天才</szName>
@@ -503,6 +523,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50022">
 		<szName>殿前骑士</szName>
@@ -527,6 +548,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="90001">
 		<szName>红方基地</szName>
@@ -551,5 +573,6 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 </info>

@@ -22,8 +22,10 @@ for k, p in pairs(xmlhandler.root.info.item) do
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then
 			tmpTb.id = tonumber(_v.id)
-		else
-			if string.match(_i,"n32%a+") then
+		else	
+			if _i == "n32BSize" then
+				tmpTb[_i] = tonumber(_v)
+			elseif string.match(_i,"n32%a+") then
 				tmpTb[_i] = tonumber(_v)
 			elseif string.match(_i,"b%a+") then
 				if tonumber(_v) == 0 then

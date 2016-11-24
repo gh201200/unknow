@@ -1,11 +1,11 @@
 local skynet = require "skynet"
 local vector3 = require "vector3"
+local Rect = require "rect"
 local spell =  require "skill.spell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
 local transfrom = require "entity.transfrom"
---local EntityManager = require "entity.EntityManager"
 local coroutine = require "skynet.coroutine"
 local syslog = require "syslog"
 
@@ -55,6 +55,7 @@ function Ientity:ctor(pos,dir)
 	register_class_var(self, 'Gold', 0, self.onGold)
 	register_class_var(self, 'Exp', 0, self.onExp)
 	self.bornPos =  vector3.create()
+	self.bbox = Rect.create()
 	
 	self.camp = CampType.BAD  
 	self.moveSpeed = 0
@@ -62,6 +63,7 @@ function Ientity:ctor(pos,dir)
 	self.pathMove = nil
 	self.pathNodeIndex = -1
 	self.useAStar = false
+	self.moveQuadrant = nil
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -72,7 +74,6 @@ function Ientity:ctor(pos,dir)
 	--att data
 	self.attDat = nil
 	self.modelDat = nil
-	register_class_var(self, 'ShapeSize', 1)
 	
 	--技能相关----
 	self.spell = spell.new(self)		 --技能
@@ -121,6 +122,12 @@ function Ientity:ctor(pos,dir)
 	self.maskHpMpChange = 0		--mask the reason why hp&mp changed 
 	self.HpMpChange = false 	--just for merging the resp of hp&mp
 	self.StatsChange = false	--just for merging the resp of stats
+end
+
+function Ientity:init()
+	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
+	self.bbox.width = self.modelDat.n32BSize
+	self.bbox.height = self.modelDat.n32BSize
 end
 
 function Ientity:getType()
@@ -206,6 +213,7 @@ function Ientity:stand()
 	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
+	self.moveQuadrant = nil
 end
 
 function Ientity:clearPath()
@@ -215,7 +223,18 @@ function Ientity:clearPath()
 end
 
 function Ientity:pathFind(dx, dz)
-	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz)
+	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	if self:getTarget():getType() ~= "transform" then	--目标是物体
+		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, -1, self:getTarget().modelDat.n32BSize)
+	end
+
+	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz, self.modelDat.n32BSize)
+	
+	Map:add(self.pos.x, self.pos.z, 1, self.modelDat.n32BSize)
+	if self:getTarget():getType() ~= "transform" then	--目标是物体
+		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, 1, self:getTarget().modelDat.n32BSize)
+	end
+	
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
 	print(self.pathMove)
@@ -226,12 +245,14 @@ function Ientity:setTarget(target)
 	if not target then
 		self:stand()
 		self:setTargetVar( nil ) 
-	return end
+		return 
+	end
 	
 	if self:isDead() then return end
+	
 	self:setTargetVar( target )
 	if self.spell:isSpellRunning() == true and self.spell:canBreak(ActionState.move) == false then	
-			return 
+		return 
 	else		
 		if self.spell:isSpellRunning() == true then
 			self.spell:breakSpell()
@@ -296,7 +317,7 @@ function Ientity:update(dt)
 	end
 
 	if self.curActionState == ActionState.move then
-		self:onMove(dt)
+		self:onMove2(dt)
 	elseif self.curActionState == ActionState.stand then
 		--站立状态
 	elseif self.curActionState >= ActionState.forcemove then
@@ -313,13 +334,58 @@ function Ientity:update(dt)
 
 end
 
+--是否与其他entity相交
+function Ientity:isCrossWith( pos )
+	local c = nil
+	self.bbox.center:set(pos.x , pos.y, pos.z)
+	for k, v in pairs( g_entityManager.entityList ) do
+		if v.serverId ~= self.serverId then
+			if self.bbox:isCrossRect( v.bbox ) then
+				c = v
+				break
+			end
+		end
+	end
+	self.bbox.center:set(self.pos.x , self.pos.y,self.pos.z)
+	return c
+end
+
+function Ientity:isCrossWithEntity( entity )
+	if vector3.len_2(self.pos, entity.pos) < math.pow2(self.modelDat.n32BSize + entity.modelDat.n32BSize) then
+		return true
+	end
+	return false
+end
+
+function Ientity:isLegalGrid( pos )
+	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	local gx = Map.POS_2_GRID( pos.x )
+	local gz = Map.POS_2_GRID( pos.z )
+
+	local legal = true
+	local s = math.floor(self.modelDat.n32BSize / 2)
+	for i=-s, s do
+		for j=-s, s do
+			local w =  Map:block(gx+i, gz+j)
+			if w > 0 then 
+				legal = false 
+				break 
+			end
+		end
+		if not legal then break end
+	end
+	Map:add(self.pos.x, self.pos.z, 1, self.modelDat.n32BSize)
+	--Map:dump()
+	return legal
+end
 
 --注意：修改entity位置，一律用此函数
 function Ientity:setPos(x, y, z, r)
 	--print('set pos = ',x, y, z)
-	Map:add(self.pos.x, self.pos.z, -1, r)
-	Map:add(x, z, 1, r)
+	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	Map:add(x, z, 1, self.modelDat.n32BSize)
 	self.pos:set(x, y, z)
+	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
 end
 
 local mv_dst = vector3.create()
@@ -413,6 +479,124 @@ function Ientity:onMove(dt)
 		self:advanceEventStamp(EventStampType.Move)
 	end
 end
+
+function Ientity:onMove2(dt)
+	dt = dt / 1000		--second
+	if self.moveSpeed <= 0 then return end
+	if self.useAStar then
+		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
+	else
+		self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
+	end
+	self.dir:sub(self.pos)
+	self.dir:normalize()
+	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
+	mv_dst:mul_num(self.moveSpeed * dt)
+	mv_dst:add(self.pos)
+	repeat
+		legal_pos = true
+		--check iegal
+		
+		if self.useAStar then
+			if self:isLegalGrid( mv_dst ) == false then
+				print('use a star to find a path again',self.serverId)
+				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
+				if not nearBy then
+					self:stand()
+					return
+				end
+			end
+			break	
+		end
+		
+		if self:isLegalGrid( mv_dst ) == false then
+			legal_pos = false
+			local nearBy = false
+			local doNotUseAstar = false
+			local angle = 30
+			if not self.moveQuadrant then
+				local quadrant = Map:quadrantTest( self.pos )
+				if quadrant == 1 or quadrant == 4 then
+					if self.dir.z > 0 then
+						self.moveQuadrant = 1
+					else
+						self.moveQuadrant = -1
+					end
+				else
+					if self.dir.z > 0 then
+						self.moveQuadrant = -1
+					else
+						self.moveQuadrant = 1
+					end
+				end
+			end
+			repeat
+				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
+					doNotUseAstar = true
+					break
+				end 
+				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
+				mv_slep_dir:rot(angle*self.moveQuadrant)
+				mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				mv_dst:mul_num(self.moveSpeed * dt)
+				mv_dst:add(self.pos)
+				if self:isLegalGrid( mv_dst ) then
+					nearBy = true
+					self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				end
+				if nearBy then 
+					legal_pos = true
+					break 
+				end
+				angle = angle + 30
+
+			until angle > 150
+
+			if not nearBy and not doNotUseAstar then
+				print('use a star to find a path',self.serverId)
+				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+				if not nearBy then
+					--Map:dump()
+					self:stand()
+					return
+				else
+					return
+				end
+			end
+			if not nearBy then
+				self:stand()
+				break
+			end
+		end
+	until true
+	
+	if self.useAStar then
+		--移动到下一节点
+		if self.pathMove[self.pathNodeIndex] == Map.POS_2_GRID(mv_dst.x) and self.pathMove[self.pathNodeIndex+1] == Map.POS_2_GRID(mv_dst.z) then
+			self.pathNodeIndex = self.pathNodeIndex + 2
+		end
+		if self.pathNodeIndex >= #self.pathMove then
+			self:stand()
+			self:clearTarget(1)
+		end
+	elseif self:getTarget() then
+		if self:getTarget():getType() == "transform" then	--目标是物体
+			--if Map.IS_SAME_GRID(self.pos, self:getTarget().pos) then	--目标是地面
+			if math.abs(self.pos.x-self:getTarget().pos.x) < 0.02 and math.abs(self.pos.z-self:getTarget().pos.z) < 0.02 then
+				self:stand()
+				self:clearTarget(1)
+			end
+		end
+	end
+
+	if legal_pos then
+		--move
+		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
+		--advance move event stamp
+		self:advanceEventStamp(EventStampType.Move)
+	end
+end
+
 --强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
 	dt = dt / 1000
@@ -781,12 +965,13 @@ function Ientity:canMove()
 	if bit_and(self.affectState,AffectState.NoMove) ~= 0 then
 		return ErrorCode.EC_Spell_Controled
 	end
+	--[[
 	if self:getTarget() and  Map:get(self:getTarget().pos.x, self:getTarget().pos.z) > 0 then
 		if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 			return 1001
 		end
 	end
-
+	--]]
 	if self.spell.status == SpellStatus.Cast then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
 end

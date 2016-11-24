@@ -285,9 +285,9 @@ function BattleOverManager:closeRoom()
 	for k, v in pairs(EntityManager.entityList) do
 		v:clear_coroutine()
 		if v.entityType == EntityType.player then
-			if v.agent then                                                                                                                                
-                                 skynet.call(v.agent, "lua", "leaveMap", skynet.self())                                                                            
-                         end     
+			if v.agent then
+				skynet.call(v.agent, "lua", "leaveMap", skynet.self())
+			end
 		end
 	end
                                                                                                

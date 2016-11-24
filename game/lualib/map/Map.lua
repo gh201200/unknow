@@ -20,6 +20,7 @@ local dir = {
 	[7] = {-1,1}
 }
 
+
 function Map.POS_2_GRID(p)
 	return math.floor(p/Map.MAP_GRID_SIZE)
 
@@ -46,6 +47,8 @@ function Map.IS_NEIGHBOUR_GRID(v1, v2)
 end
 
 function Map:ctor(terrain)
+	self.width = MAP_XGRID_NUM  * Map.MAP_GRID_SIZE
+	self.height = MAP_ZGRID_NUM * Map.MAP_GRID_SIZE
 	self.m = nil
 end
 
@@ -98,6 +101,11 @@ function Map:isWall(x, z)
 	end
 end
 
+function Map:block(gx, gz)
+	if not Map.legal(gx, gz) then return 255 end
+	local w = pf.block(self.m, gx, gz)
+	return w
+end
 
 function Map:get(x, z)
 	local gx = Map.POS_2_GRID(x)
@@ -114,28 +122,17 @@ function Map:add(x, z, v, s)
 	pf.add(self.m, gx, gz, v)
 	
 	if not s or s <= 1 then return end
-	--if not s then s = 1 end
-	local r = s * Map.MAP_GRID_SIZE/2
-	
-	s = math.ceil(s / 2)
+	s = math.floor( s / 2 )
 
-	local minX = x - r
-	local minZ = z - r
-	local maxX = x + r
-	local maxZ = z + r
-	for j=-s, s do
-		for k=-s, s do
-			if Map.legal(gx+j, gz+k) then
-				local ox = Map.GRID_2_POS(gx+j)
-				local oz = Map.GRID_2_POS(gz+k)
-				if ox > minX and ox <= maxX and oz > minZ and oz <= maxZ then
-					pf.add(self.m, gx+j, gz+k, v)
-				end				
+	for i=-s, s do
+		for j=-s, s do
+			if i ~= 0 or j ~= 0 then
+				if Map.legal(gx+i, gz+j) then
+					pf.add(self.m, gx+i, gz+j, v)
+				end
 			end
 		end
 	end
-
-	return r
 end
 
 
@@ -154,11 +151,12 @@ function Map:emptyTest(s_px, s_pz, e_px, e_pz)
 	return true
 end
 
-function Map:find(s_px, s_pz, e_px, e_pz)
+function Map:find(s_px, s_pz, e_px, e_pz, bsize)
 	local gsx = Map.POS_2_GRID(s_px)
 	local gsz = Map.POS_2_GRID(s_pz)
 	local gex = Map.POS_2_GRID(e_px)
 	local gez = Map.POS_2_GRID(e_pz)
+
 	if not Map.legal(gsx, gsz) then 
 		print('非法寻经：', gsx, gsz, gex, gez)
 		return {} 
@@ -167,7 +165,8 @@ function Map:find(s_px, s_pz, e_px, e_pz)
 		print('非法寻经：', gsx, gsz, gex, gez)
 		return {} 
 	end
-	local path = { pf.path(self.m, gsx, gsz, gex, gez) }	
+	bsize = math.floor( bsize / 2 )
+	local path = { pf.path(self.m, gsx, gsz, gex, gez, bsize) }	
 	return path
 end
 
@@ -189,6 +188,22 @@ function Map:lineTest(sp, ep)
 		end
 		set = set + 0.2
 	until false
+end
+
+function Map:quadrantTest( pos )
+	if pos.x > self.width / 2 then
+		if pos.z > self.height / 2 then
+			return 1
+		else
+			return 4
+		end	
+	else
+		if pos.z > self.height / 2 then
+			return 2
+		else
+			return 3
+		end	
+	end
 end
 
 
