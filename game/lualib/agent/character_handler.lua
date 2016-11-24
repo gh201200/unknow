@@ -107,6 +107,7 @@ local function onEnterGame()
 			r.isin = true
 		end
 	end
+	r.isin = false
 	user.send_request('reEnterRoom', r)
 end
 
