@@ -149,8 +149,11 @@ ladd_weight(lua_State *L) {
 		y < 0 || y >= m->height) {
 		luaL_error(L, "Position (%d,%d) is out of map", x,y);
 	}
-	int ow = map_get(m, x, y);
-	w = ow + w;
+	if (w < 0)
+		w = 0;
+	else if (w > 255)
+		w = 255;
+
 	map_set(m, x, y, w);
 	lua_pushinteger(L, w);
 
@@ -309,18 +312,18 @@ path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x,
 				continue;
 			
 			int p;
-			for(p=-bsize; p<bsize; p++) {
+			for(p=-bsize; p<=bsize; p++) {
 				int q;
-				for(q=-bsize; q<bsize; q++) {
+				for(q=-bsize; q<=bsize; q++) {
 					int weight = map_get(m, x+p, y+q);
 					if (weight > 0 && !(x+p == end_x && y+q == end_y))
 						break;
 				}
-				if( q < bsize )
+				if( q <= bsize )
 					break;
 			}
 			
-			if( p < bsize ) {
+			if( p <= bsize ) {
 				mask[i] = 1;
 				continue;
 			}

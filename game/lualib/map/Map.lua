@@ -118,6 +118,7 @@ end
 function Map:add(x, z, v, s)
 	local gx = Map.POS_2_GRID(x)
 	local gz = Map.POS_2_GRID(z)
+
 	if not Map.legal(gx, gz) then return 255 end
 	pf.add(self.m, gx, gz, v)
 	

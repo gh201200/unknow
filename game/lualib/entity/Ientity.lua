@@ -223,9 +223,9 @@ function Ientity:clearPath()
 end
 
 function Ientity:pathFind(dx, dz)
-	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	if self:getTarget():getType() ~= "transform" then	--目标是物体
-		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, -1, self:getTarget().modelDat.n32BSize)
+		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, 0, self:getTarget().modelDat.n32BSize)
 	end
 
 	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz, self.modelDat.n32BSize)
@@ -382,7 +382,7 @@ end
 --注意：修改entity位置，一律用此函数
 function Ientity:setPos(x, y, z, r)
 	--print('set pos = ',x, y, z)
-	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	Map:add(x, z, 1, self.modelDat.n32BSize)
 	self.pos:set(x, y, z)
 	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
@@ -499,6 +499,7 @@ function Ientity:onMove2(dt)
 		
 		if self.useAStar then
 			if self:isLegalGrid( mv_dst ) == false then
+				--legal_pos = false
 				print('use a star to find a path again',self.serverId)
 				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 				if not nearBy then
@@ -506,7 +507,7 @@ function Ientity:onMove2(dt)
 					return
 				end
 			end
-			break	
+			break
 		end
 		
 		if self:isLegalGrid( mv_dst ) == false then

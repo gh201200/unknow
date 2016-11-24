@@ -110,6 +110,6 @@ function IPet:onDead()
 	self.coroutine_response = {}
 
 	--reset map
-	Map:add(self.pos.x, self.pos.z, -1)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 end
 return IPet
