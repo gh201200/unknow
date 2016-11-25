@@ -146,7 +146,6 @@ local function handle_response (id, args)
 	end
 end
 
-
 skynet.register_protocol {
 	name = "client",
 	id = skynet.PTYPE_CLIENT,
@@ -268,6 +267,7 @@ function CMD.giveBattleGains( args )
 		user.cards:addCard("giveBattleGains", v.itemId, v.itemNum)
 	end
 end
+
 
 skynet.start (function ()
 	skynet.dispatch ("lua", function (_, _, command, ...)

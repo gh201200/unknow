@@ -13,6 +13,21 @@ function EntityManager:sendToAllPlayers(msg, val, except)
 	end
 end
 
+function EntityManager:sendPlayer(player, msg, val)
+	if player.agent then
+		skynet.call(player.agent, "lua", "sendRequest", msg, val)
+	end
+end
+
+function EntityManager:callAllAgents(msg, ...)
+	for k, v in pairs(self.entityList) do
+		if v.entityType == EntityType.player and v.agent then
+			skynet.call(v.agent, "lua", msg, ...)
+		end
+	end
+end
+
+
 function EntityManager:disconnectAgent(agent)
 	for k, v in pairs(self.entityList) do
 		if v.agent == agent then
