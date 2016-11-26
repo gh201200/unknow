@@ -11,17 +11,17 @@ end
 
 function explore.load (account_id)
 
-	local acc = { account_id = account_id }
+	local acc = {}
 
 	local connection, key = make_key (account_id)
 	if not connection:exists (key) then
 		connection:hmset (key, 
 			"time", 0, 
-			"slot0", "0", 
-			"slot1", "0", 
-			"slot2", "1",
-			"slot3", "1",
-			"slot4", "1"
+			"slot0", "", 
+			"slot1", "", 
+			"slot2", "",
+			"slot3", "",
+			"slot4", ""
 		)
 	end
 
@@ -35,18 +35,14 @@ function explore.load (account_id)
 	return acc
 end
 
+
 function explore.update(explore, ...)
 	
 	local connection, key = make_key (explore.account_id)
-	local p = { ... }	
+	
+	local t = table.packdb(key, explore, ...)	
 
-	local t = {}
-	for k, v in pairs(...) do
-		t[2*k - 1] = v
-		t[2*k] = explore[v]
-	end
-
-	connection:hmset(key, table.unpack(t))
+	connection:hmset(key, t)
 end
 
 

@@ -8,7 +8,7 @@ local ExploreMethod =
 		self.unit.time = _time
 		
 		local database = skybet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self, "time") 
+		skynet.call(database, "lua", "explore_rd", "update", self) 
 		
 		--log record
 		syslog.infof("player[%s]:setTime:%d", self.account_id, _time)
@@ -22,11 +22,11 @@ local ExploreMethod =
 		if index < 0 or index > 4 then return end 
 		self.unit["slot"..index] = val
 
-		local database = skybet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self, "slot"..index) 
+		--local database = skybet.uniqueservice("database")
+		--skynet.call(database, "lua", "explore_rd", "update", self, "slot"..index) 
 		
 		--log record
-		syslog.infof("player[%s]:setSlot:%d,%s", self.account_id, index, val)
+		--syslog.infof("player[%s]:setSlot:%d,%s", self.account_id, index, val)
 	end;
 	--
 	getSlot = function(self, index)

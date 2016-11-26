@@ -86,24 +86,6 @@ local CardsMethod =
 		syslog.infof("op[%s]player[%s]:delCardByUuid:%s,%d:dataId[%d]", op, self.account_id, uuid, num, v.dataId)
 	end;
 	--
-	addPower = function(self, op, uuid, _power)
-		if _power == 0 then return end
-		local v = self:getCardByUuid(uuid)
-		if not v then return end
-		v.power = v.power + _power
-		if v.power < 0 then
-			v.power = 0
-		end
-
-		self:sendCardData( v )	
-		
-		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "power")
-		
-		--log record
-		syslog.infof("op[%s]player[%s]:addPower:%s,%d:dataId[%d]", op, self.account_id, uuid, _power, v.dataId)
-	end;
-	--
 	updateDataId = function(self, op, uuid, _dataId)
 		local v = self:getCardByUuid(uuid)
 		local oldDataId = v.dataId

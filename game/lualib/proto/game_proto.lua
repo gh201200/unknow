@@ -62,7 +62,6 @@ local types = [[
 	dataId 0 : integer
 	uuid 1 : string
 	count 2 : integer
-	power 3 : integer
 }
 
 .spawn {

@@ -1,0 +1,603 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="1">
+		<n32SerLv>1</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>1</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>2</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>2</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>3</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>3</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>4</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>5</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>6</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>7</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>8</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>9</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>10</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>11</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>12</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>13</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>14</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="1">
+		<n32SerLv>15</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>1</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>1</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>2</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>2</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>3</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>3</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>4</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>5</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>6</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>7</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>8</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>9</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>10</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>11</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>12</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>13</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>14</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="2">
+		<n32SerLv>15</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>1</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>1</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>2</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>2</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>3</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>3</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>4</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>5</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>6</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>7</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>8</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>9</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>10</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>11</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>12</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>13</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>14</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="3">
+		<n32SerLv>15</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>1</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>1</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>2</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>2</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>3</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>3</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>4</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>5</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>6</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>7</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>8</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>9</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>10</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>11</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>12</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>13</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>14</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="4">
+		<n32SerLv>15</n32SerLv>
+		<n32Level>10</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>1</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>1</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>2</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>2</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>3</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>3</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>4</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>1</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>5</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>6</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>7</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>4</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>8</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>9</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>10</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>11</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>5</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>12</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>2</n32Value>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>13</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>3</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>14</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>4</n32Value>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+	<item id="5">
+		<n32SerLv>15</n32SerLv>
+		<n32Level>20</n32Level>
+		<n32Type>6</n32Type>
+		<n32Value>5</n32Value>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201,1202</szDrop>
+	</item>
+</info>

@@ -102,9 +102,18 @@ end
 function table.packdb(key, unit, ...)
 	local r = {}
 	local p = { ... }
-	for k, v in pairs( p ) do
-		r[2*k-1] = v
-		r[2*k] = unit[v]
+	if next(p) then
+		for k, v in pairs( p ) do
+			r[2*k-1] = v
+			r[2*k] = unit[v]
+		end
+	else
+		local i = 1
+		for k, v in pairs(unit) do
+			r[i] = k
+			r[i+1] = v
+			i = i + 2	
+		end
 	end
 	table.insert(r, 1, key)
 	return r
