@@ -310,6 +310,8 @@ explore_goFight 300 {
 	}
 	response {
 		errorCode 0 :integer
+		uuid 1 : string
+		index 2 : integer
 	}
 }
 
@@ -400,12 +402,16 @@ sendAccount 3 {
 #下发探索数据
 sendExplore 4 {
 	request {
-		time 0 : integer
-		uuid0 1 : string
-		uuid1 2 : string
-		uuid2 3 : string
-		uuid3 4 : string
-		uuid4 5 : string
+		uuid0 0 : string
+		uuid1 1 : string
+		uuid2 2 : string
+		uuid3 3 : string
+		uuid4 4 : string
+		con0 5 : integer
+		con1 6 : integer
+		con2 7 : integer
+		con3 8 : integer
+		con4 9 : integer
 	}
 }
 

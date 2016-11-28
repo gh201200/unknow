@@ -19,6 +19,7 @@ function cards.load (account_id)
 			cards[v]  = {uuid = v}	
 			cards[v].dataId = tonumber(connection:hget (v, "dataId"))
 			cards[v].count = tonumber(connection:hget (v, "count"))
+			cards[v].explore = tonumber(connection:hget (v, "explore"))
 		end
 	end
 
@@ -37,6 +38,7 @@ function cards.loadBySerialId (account_id, serId)
 				card  = {uuid = v}	
 				card.dataId = dataId
 				card.count = tonumber(connection:hget (v, "count"))
+				card.explore = tonumber(connection:hget (v, "explore"))
 				break
 			end
 		end
@@ -54,7 +56,8 @@ function cards.create(account_id, _uuid, dataId)
 
 	connection:hmset (_uuid, 
 		"dataId", dataId, 
-		"count", 0
+		"count", 0,
+		"explore", 0
 	)
 end
 
@@ -66,7 +69,8 @@ function cards.addCard (account_id, card)
 
 	connection:hmset (card.uuid, 
 		"dataId", card.dataId, 
-		"count", card.count
+		"count", card.count,
+		"explore", card.explore
 	)
 end
 

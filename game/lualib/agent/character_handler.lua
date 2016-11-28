@@ -40,12 +40,16 @@ end;
 
 ExploreMethod.sendExploreData = function(self)
 	local r = {
-		time = Quest.Explore.CD - (os.time() - user.explore:getTime()),
 		uuid0 = user.explore:getSlot(0),
 		uuid1 = user.explore:getSlot(1),
 		uuid2 = user.explore:getSlot(2),
 		uuid3 = user.explore:getSlot(3),
 		uuid4 = user.explore:getSlot(4),
+		con0 = user.explore:getCon(0),
+		con1 = user.explore:getCon(1),
+		con2 = user.explore:getCon(2),
+		con3 = user.explore:getCon(3),
+		con4 = user.explore:getCon(4),
 	}
 	user.send_request("sendExplore", r)
 end;
