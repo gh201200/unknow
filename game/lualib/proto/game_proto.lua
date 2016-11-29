@@ -62,6 +62,7 @@ local types = [[
 	dataId 0 : integer
 	uuid 1 : string
 	count 2 : integer
+	explore 3 : integer
 }
 
 .spawn {
@@ -402,16 +403,17 @@ sendAccount 3 {
 #下发探索数据
 sendExplore 4 {
 	request {
-		uuid0 0 : string
-		uuid1 1 : string
-		uuid2 2 : string
-		uuid3 3 : string
-		uuid4 4 : string
-		con0 5 : integer
-		con1 6 : integer
-		con2 7 : integer
-		con3 8 : integer
-		con4 9 : integer
+		time 0 : integer
+		uuid0 1 : string
+		uuid1 2 : string
+		uuid2 3 : string
+		uuid3 4 : string
+		uuid4 5 : string
+		con0 6: integer
+		con1 7 : integer
+		con2 8 : integer
+		con3 9 : integer
+		con4 10 : integer
 	}
 }
 

@@ -12,8 +12,6 @@ local Quest = {
 
 	},
 	
-	--探索后2个槽位开启等级
-	ExploreLevel = 2,
 	
 	--金币升级技能表
 	GoldSkillLv = {

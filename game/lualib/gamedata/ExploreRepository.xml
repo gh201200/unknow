@@ -3,601 +3,3001 @@
 	<item id="1">
 		<n32SerLv>1</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>1</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>2</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>2</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>3</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>3</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>4</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>多拉财团</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>5</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>菲斯教会</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>6</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>3</n32Value>
-		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>娜秋学院</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>7</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>8</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>9</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>3</n32Value>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>10</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>4</n32Value>
 		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>11</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>5</n32Value>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>12</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>2</n32Value>
-		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>13</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>3</n32Value>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>14</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="1">
 		<n32SerLv>15</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>5</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>16</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>17</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>18</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>19</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>20</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>21</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>22</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>23</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>24</n32SerLv>
+		<n32Level>0</n32Level>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>25</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>26</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>27</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>28</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>29</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>30</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>31</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>32</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>33</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>34</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>35</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>36</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>37</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>38</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>39</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>40</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>41</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>42</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>43</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>44</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>45</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>46</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>47</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>48</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>49</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="1">
+		<n32SerLv>50</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>1</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>1</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>2</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>2</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>3</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>3</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>4</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>多拉财团</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>5</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>菲斯教会</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>6</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>3</n32Value>
-		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>娜秋学院</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>7</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>8</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>9</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>3</n32Value>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>10</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>4</n32Value>
 		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>11</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>5</n32Value>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>12</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>2</n32Value>
-		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>13</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>3</n32Value>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>14</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="2">
 		<n32SerLv>15</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>5</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>16</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>17</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>18</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>19</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>20</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>21</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>22</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>23</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>24</n32SerLv>
+		<n32Level>0</n32Level>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>25</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>26</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>27</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>28</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>29</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>30</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>31</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>32</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>33</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>34</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>35</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>36</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>37</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>38</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>39</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>40</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>41</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>42</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>43</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>44</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>45</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>46</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>47</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>48</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>49</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="2">
+		<n32SerLv>50</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>1</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>1</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>2</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>2</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>3</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>3</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>4</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>1</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>多拉财团</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>5</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>菲斯教会</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>6</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>3</n32Value>
-		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>娜秋学院</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>7</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>8</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>2</n32Value>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>9</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>3</n32Value>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>10</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>4</n32Value>
 		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>11</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>5</n32Value>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>12</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>2</n32Value>
-		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>13</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>3</n32Value>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>14</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="3">
 		<n32SerLv>15</n32SerLv>
 		<n32Level>0</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>5</n32Value>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>16</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>17</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>18</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>19</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>20</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>21</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>22</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>23</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>24</n32SerLv>
+		<n32Level>0</n32Level>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>25</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>26</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>27</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>28</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>29</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>30</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>31</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>32</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>33</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>34</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>35</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>36</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>37</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>38</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>39</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>40</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>41</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>42</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>43</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>44</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>45</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>46</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>47</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>48</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>49</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="3">
+		<n32SerLv>50</n32SerLv>
+		<n32Level>0</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>1</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>1</n32Type>
-		<n32Value>1</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>2</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>2</n32Type>
-		<n32Value>1</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>3</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>3</n32Type>
-		<n32Value>2</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>4</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>1</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>多拉财团</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>5</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>2</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>菲斯教会</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>6</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>3</n32Value>
-		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>2</n32Level>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>娜秋学院</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>7</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>2</n32Level>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>8</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>2</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>9</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>3</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>10</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>4</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>11</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>5</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>12</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>2</n32Value>
-		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>13</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>3</n32Value>
+		<n32Level>2</n32Level>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>14</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="4">
 		<n32SerLv>15</n32SerLv>
-		<n32Level>10</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>5</n32Value>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>16</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>17</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>18</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>19</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>20</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>21</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>22</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>23</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>24</n32SerLv>
+		<n32Level>2</n32Level>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>25</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>26</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>27</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>28</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>29</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>30</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>31</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>32</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>33</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>34</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>35</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>36</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>37</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>38</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>39</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>40</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>41</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>42</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>43</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>44</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>45</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>46</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>47</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>48</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>49</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="4">
+		<n32SerLv>50</n32SerLv>
+		<n32Level>2</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>1</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>1</n32Type>
-		<n32Value>1</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>2</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>2</n32Type>
-		<n32Value>1</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>3</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>3</n32Type>
-		<n32Value>2</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>4</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>1</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>多拉财团</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>5</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>2</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>菲斯教会</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>6</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>3</n32Value>
-		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>3</n32Level>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>2</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>娜秋学院</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>7</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>4</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>3</n32Level>
+		<n32Gains>1</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>8</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>2</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>9</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>3</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>10</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>4</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>11</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>5</n32Type>
-		<n32Value>5</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>0</n32Type2>
+		<n32Value2>0</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2></szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>12</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>2</n32Value>
-		<n32Gains>1</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>13</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>3</n32Value>
+		<n32Level>3</n32Level>
 		<n32Gains>2</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>14</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>4</n32Value>
-		<n32Gains>3</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 	<item id="5">
 		<n32SerLv>15</n32SerLv>
-		<n32Level>20</n32Level>
-		<n32Type>6</n32Type>
-		<n32Value>5</n32Value>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>16</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>17</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>18</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>19</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>20</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>21</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>22</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>23</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>24</n32SerLv>
+		<n32Level>3</n32Level>
 		<n32Gains>4</n32Gains>
-		<szDrop>1201,1202</szDrop>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>25</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>力量</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>26</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>27</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>28</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>29</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>30</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>敏捷</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>31</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>普通</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>32</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>优秀</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>33</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>精品</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>34</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>4</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>稀世</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>35</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>1</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>3</n32Type2>
+		<n32Value2>5</n32Value2>
+		<szConShow1>智力</szConShow1>
+		<szConShow2>传奇</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>36</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>37</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>38</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>39</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>40</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>3</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>多拉财团</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>41</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>42</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>43</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>44</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>45</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>1</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>菲斯教会</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>46</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>1</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>普通</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>47</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>2</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>2</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>优秀</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>48</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>3</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>3</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>精品</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>49</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>4</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>4</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>稀世</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
+	</item>
+	<item id="5">
+		<n32SerLv>50</n32SerLv>
+		<n32Level>3</n32Level>
+		<n32Gains>5</n32Gains>
+		<szDrop>1201, 1201, 1201</szDrop>
+		<n32Type1>3</n32Type1>
+		<n32Value1>5</n32Value1>
+		<n32Type2>2</n32Type2>
+		<n32Value2>2</n32Value2>
+		<szConShow1>传奇</szConShow1>
+		<szConShow2>娜秋学院</szConShow2>
 	</item>
 </info>

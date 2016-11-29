@@ -137,7 +137,6 @@ ActivityAccountType =
 
 CoolDownSysType = 
 {
-	ResetCardPower			= 0,	--重置英雄体力
 	RefreshShopCard			= 1,	--刷新卡牌商店
 }
 

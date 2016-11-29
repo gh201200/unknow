@@ -3654,8 +3654,8 @@
 		<n32MpCost>100</n32MpCost>
 		<n32CD>8000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>Skill_01</szAction>
+		<n32ActionType>3</n32ActionType>
+		<szAction>Skill_02_2</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -3689,8 +3689,8 @@
 		<n32MpCost>200</n32MpCost>
 		<n32CD>9000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>Skill_01</szAction>
+		<n32ActionType>3</n32ActionType>
+		<szAction>Skill_02_2</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -3724,8 +3724,8 @@
 		<n32MpCost>300</n32MpCost>
 		<n32CD>10000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>Skill_01</szAction>
+		<n32ActionType>3</n32ActionType>
+		<szAction>Skill_02_2</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>
@@ -3759,8 +3759,8 @@
 		<n32MpCost>400</n32MpCost>
 		<n32CD>11000</n32CD>
 		<n32TriggerTime>0</n32TriggerTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>Skill_01</szAction>
+		<n32ActionType>3</n32ActionType>
+		<szAction>Skill_02_2</szAction>
 		<szSoundAttack>sound01.mp3</szSoundAttack>
 		<szSounHurted>sound01.mp3</szSounHurted>
 		<bAce>0</bAce>

@@ -4,17 +4,7 @@ local syslog = require "syslog"
 local ExploreMethod =
 {
 	--
-	setTime = function(self, _time)
-		self.unit.time = _time
-		
-		local database = skybet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self) 
-		
-		--log record
-		syslog.infof("player[%s]:setTime:%d", self.account_id, _time)
-	end;
-	--
-	getTime = function(self)
+	getTime = function(self, index, val)
 		return self.unit.time
 	end;
 	--
@@ -34,23 +24,24 @@ local ExploreMethod =
 		return self.unit["slot"..index]
 	end;
 	--
-	resetExplore = function(self, val0, val1, val2, val3, val4)
-		self.unit["con0"] = val0
-		self.unit["con1"] = val1
-		self.unit["con2"] = val2
-		self.unit["con3"] = val3
-		self.unit["con4"] = val4
+	resetExplore = function(self, rr, _time)
+		self.unit["con0"] = rr[1]
+		self.unit["con1"] = rr[2]
+		self.unit["con2"] = rr[3]
+		self.unit["con3"] = rr[4]
+		self.unit["con4"] = rr[5]
 		self.unit["slot0"] = ""
 		self.unit["slot1"] = ""
 		self.unit["slot3"] = ""
 		self.unit["slot3"] = ""
 		self.unit["slot4"] = ""
+		self.unit.time = _time
 
 		local database = skybet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "reset", self) 
+		skynet.call(database, "lua", "explore_rd", "update", self.unit, self.account_id) 
 		
 		--log record
-		syslog.infof("player[%s]:resetExplore:%d,%d,%d,%d,%d", self.account_id, val0, val1, val2, val3, val4)
+		syslog.infof("player[%s]:resetExplore:%d,%d,%d,%d,%d", self.account_id, rr[1], rr[2], rr[3], rr[4], rr[5])
 	end;
 	--
 	getCon = function(self, index)

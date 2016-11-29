@@ -15,6 +15,14 @@ function Explore:init( u )
 	user = u
 end
 
+function Explore.randcon()
+	local r = {}
+	for i = 1, 5 do
+		table.insert(r, math.random(#g_shareData.exploreRepository[i]))
+	end 
+	return r
+end
+
 function REQUEST.explore_goFight( args )
 	local errorCode = 0
 	repeat
