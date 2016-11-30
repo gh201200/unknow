@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+require "skynet.manager"	-- import skynet.monitor
 local traceback  = debug.traceback
 local syslog = require "syslog"
 
@@ -14,7 +15,9 @@ end
 
 local function quitPick()
 	for _agent,_v in pairs(players) do
-		skynet.call(_agent,"lua","quitPick")
+		if v.agent then
+			skynet.call(_agent,"lua","quitPick")
+		end
 	end
 	skynet.exit()
 end
@@ -30,8 +33,10 @@ function CMD.hijack_msg(response)
 end
 
 function CMD.init(response,playerTb)
+	local monitor = skynet.monitor "simplemonitor"
 	for _k,_v in pairs(playerTb) do
 		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, score=_v.score}
+		skynet.call(monitor, "lua", "watch", _v.agent)
 	end
 	response(true,nil)
 end
@@ -50,7 +55,9 @@ function CMD.pickHero(response, agent, account ,arg)
 		players[agent].pickedheroid = arg.heroid
 		local t = {account = account,heroid = arg.heroid}
 		for _agent,_v in pairs(players) do
-			skynet.call(_agent,"lua","sendRequest","pickedhero",t)
+			if _v.agent then
+				skynet.call(_agent,"lua","sendRequest","pickedhero",t)
+			end
 		end
 	end
 end
@@ -72,7 +79,9 @@ function CMD.confirmHero(response,agent,account,arg)
 		players[agent].confirmheroid = confirmid 
 		local t = { account = account, heroid = confirmid }
 		for _agent,_v in pairs(players) do
-			skynet.call(_agent,"lua","sendRequest","confirmedHero",t)
+			if _v.agent then
+				skynet.call(_agent,"lua","sendRequest","confirmedHero",t)
+			end
 		end
 		--enterMap()
 	end
@@ -113,10 +122,21 @@ end
 local function init()
 	skynet.timeout(100, update)
 end
+
 skynet.start(function ()
 	init()
+	skynet.dispatch("error", function (address, source, command, ...)
+		for _agent,_v in pairs (players) do
+			if _agent == source then
+				_v.agent = nil
+			end
+		end
+	end)
 	skynet.dispatch("lua", function (_, _, command, ...)
 		local f = CMD[command]
+		if not f then
+			f = REQUEST[command]
+		end
 		if not f then
 			syslog.warningf("match service unhandled message[%s]", command)	
 			return skynet.ret()

@@ -3,7 +3,7 @@
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
 dofile("../3rd/LuaXMLlib/xml.lua")
 dofile("../3rd/LuaXMLlib/handler.lua")
-local filename = "./lualib/gamedata/HeroModelDatas.xml"
+local filename = "./lualib/gamedata/ExploreRepository.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
 if f then
@@ -22,10 +22,8 @@ for k, p in pairs(xmlhandler.root.info.item) do
 	for _i,_v in pairs(p)do
 		if _i == "_attr" then
 			tmpTb.id = tonumber(_v.id)
-		else	
-			if _i == "n32BSize" then
-				tmpTb[_i] = tonumber(_v)
-			elseif string.match(_i,"n32%a+") then
+		else
+			if string.match(_i,"n32%a+") then
 				tmpTb[_i] = tonumber(_v)
 			elseif string.match(_i,"b%a+") then
 				if tonumber(_v) == 0 then
@@ -33,16 +31,18 @@ for k, p in pairs(xmlhandler.root.info.item) do
 				else
 					tmpTb[_i] = true
 				end
+			elseif _i == "szDrop" then
+				tmpTb[_i] = {}
+				for w in string.gmatch(_v, "%d+") do
+					table.insert(tmpTb[_i], tonumber(w))
+				end
 			else
 				tmpTb[_i] = _v
 			end 
 		end
 	end
-	modolsTable[tmpTb.id] = tmpTb
+	if not modolsTable[tmpTb.id] then modolsTable[tmpTb.id] = {} end
+	table.insert(modolsTable[tmpTb.id], tmpTb)
 end
---[[
-for _k,_v in pairs(modolsTable) do
-	print(_k,_v.id,_v)
-end
-]]
+
 return modolsTable

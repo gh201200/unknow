@@ -1,124 +1,115 @@
 local skynet = require "skynet"
+local snax = require "snax"
 local Quest = require "quest.quest"
 
-local ExploreCh = class("ExploreCh")
-
+local Explore = class("Explore")
 
 local user
 local REQUEST = {}
 
-function ExploreCh:ctor()
-	self.REQUEST = REQUEST
+function Explore:ctor()
+	self.request = REQUEST
 end
 
-function ExploreCh:init( u )
-	self.user = u
+function Explore:init( u )
+	user = u
 end
 
-local function begin_explore()
-	user.explore:setTime(os.time())
-	skynet.timeout(Quest.Explore.CD*100, explore_timeout)
+function Explore.getId(sid, slv)
+	return sid * 1000 + slv
 end
 
-
-local function explore_timeout()
-	local gains = Quest.Explore.gains_num
-	local stillHas = false
-	for i=0, 4 do 
-		if string.len(user.explore:getSlot(i)) > 1 then
-			stillHas = true
-			local card = user.cards:getCardByUuid(user.explore:getSlot(i))
-			
-			user.cards:addPower(user.explore:getSlot(i), -Quest.Explore.CD)
-			if card.power <= 0 then  
-				user.explore:setSlot(i, "0")	
-				stillHas = false
-			end
-			
-			local dat = g_shareData.heroRepository[card.dataId]
-			if dat.n32Color == CardColor.White then
-				gains = gains + Quest.Explore.gains_num_wt
-			elseif dat.n32Color == CardColor.Green then
-				gains = gains + Quest.Explore.gains_num_gr
-			elseif dat.n32Color == CardColor.Blue then
-				gains = gains + Quest.Explore.gains_num_bl
-			elseif dat.n32Color == CardColor.Purple then
-				gains = gains + Quest.Explore.gains_num_pu
-			elseif dat.n32Color == CardColor.Orange then
-				gains = gains + Quest.Explore.gains_num_or
-			end
-		end
-	end
-
-	local allRates = {}
-	local val = 0
-	for k, v in pairs(Quest.Explore.gains_free) do
-		allRates[v[1]] = val + v[2]*100
-		val = allRates[v[1]]
-	end
-		
-	for i=1, gains do
-		local rd = math.random(1, val)
-		for k, v in pairs(allRates) do
-			if rd <= v then
-				user.cards:addCard(k, 1)	
-			end
-		end
-	end
-	
-	if stillHas then	--begin a new explore
-		begin_explore()
-	end
+function Explore.getSerId( id )
+	return math.floor(id / 1000)
 end
 
-function REQUEST.explore_goFight(args)
-	local nowTime = os.time()
-	--check illegal
+function Explore.getSerLv( id )
+	return id % 1000
+end
+
+function Explore.randcon()
+	local r = {}
+	for i = 1, 5 do
+		table.insert(r, Explore.getId(i, math.random(#g_shareData.exploreRepository[i])))
+	end 
+	return r
+end
+
+function REQUEST.explore_goFight( args )
 	local errorCode = 0
 	repeat
-		local card = user.cards:getCardByUuid(args.uuid)
+		local card = user.cards:getCardByUuid( args.uuid )
 		if not card then
 			errorCode = -1
 			break
 		end
-		if args.index < 0 or args.index > 4 then 
+		if card.explore > os.time() then
 			errorCode = -1
 			break
 		end
+		if args.index > 4 or args.index < 0 then
+			errorCode = -1
+			break
+		end
+		local con = user.explore:getCon( args.index )
+		local serId = Explore.getSerId( con )
+		local serLv = Explore.getSerLv( con )
+		local dat = g_shareData.exploreRepository[serId][serLv]
+		if dat.n32Level > getAccountLevel( user.account:getExp() ) then
+			errorCode = -1
+			break
+		end
+
+		--
+		--user.explore:setUuid(index, args.uuid)
+		
+	until true
+	
+	return {errorCode=errorCode, uuid=args.uuid, index=args.index}
+end
+
+function REQUEST.exploreBegin( args )
+	local errorCode = 0
+	repeat
 		for i=0, 4 do
-			if user.explore:getSlot(i) == args.uuid then
-				errorCode = -1
+			local u = user.explore:getUuid( i )
+			if u then
+				errorCode = 0
 				break
+			else
+				errorCode = -1
 			end
 		end
 		if errorCode ~= 0 then break end
 
-		--the rule of 3 minites
-		local dt = user.explore:getTime() > 0 and nowTime - user.explore:getTime() or 0
-		if dt > 180 then	
-			errorCode = 1
+		if user.explore:getTime() ~= 0 then
+			errorCode = -1
 			break
 		end
-		--has enough power
-		if card.time < 0 then
-			errorCode = 2
-			break
-		end 
-	until true	
-	if errorCode ~= 0 then
-		return {errorCode = errorCode}
-	end
-	--ok
-	if user.explore:getTime() == 0 then
-		begin_explore()
-	end
-	if string.len(user.explore:getSlot(args.index)) > 1 then
-		user.cards:addPower(user.explore:geSlot(args.index), -(nowTime-user.explore:getTime()))
-	end
-	user.explore:setSlot(args.index, args.uuid)
+		--
+		local nextTime = calcNextTime( { {hour=24, min=0, sec=0} } )
+		user.cards:setExplore(args.uuid0, nexyTime)
+		user.cards:setExplore(args.uuid1, nexyTime)
+		user.cards:setExplore(args.uuid2, nexyTime)
+		user.cards:setExplore(args.uuid3, nexyTime)
+		user.cards:setExplore(args.uuid4, nexyTime)
+		user.explore:begin(args.uuid0, args.uuid1, args.uuid2, args.uuid3, args.uuid4)
+	until true
 	
-	return {errorCode = errorCode}
+	return {errorCode=errorCode}
 end
 
+function REQUEST.exploreEnd( args )
+	local errorCode = 0
+	repeat
+		if user.explore:getTime() < os.time() then
+			errorCode = -1
+			break
+		end
+		--
+		
+	until true
+	return {errorCode=errorCode}
+end
 
-return ExploreCh.new()
+return Explore.new()

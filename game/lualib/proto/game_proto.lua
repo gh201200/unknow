@@ -62,7 +62,7 @@ local types = [[
 	dataId 0 : integer
 	uuid 1 : string
 	count 2 : integer
-	power 3 : integer
+	explore 3 : integer
 }
 
 .spawn {
@@ -311,6 +311,8 @@ explore_goFight 300 {
 	}
 	response {
 		errorCode 0 :integer
+		uuid 1 : string
+		index 2 : integer
 	}
 }
 
@@ -372,6 +374,25 @@ reEnterRoom 3006 {
 	}
 }
 
+exploreBegin 3007 {
+	request { 
+		uuid0 0 : string
+		uuid1 1 : string
+		uuid2 2 : string
+		uuid3 3 : string
+		uuid4 4 : string
+	}
+	response {                                                            
+		errorCode 0 : integer
+	} 
+}
+
+exploreEnd 3008 {
+	response {                                                            
+		errorCode 0 : integer
+	} 
+}
+
 ]]
 
 local s2c = [[
@@ -407,6 +428,11 @@ sendExplore 4 {
 		uuid2 3 : string
 		uuid3 4 : string
 		uuid4 5 : string
+		con0 6: integer
+		con1 7 : integer
+		con2 8 : integer
+		con3 9 : integer
+		con4 10 : integer
 	}
 }
 

@@ -11,7 +11,7 @@ end
 
 function account.load (account_id)
 
-	local acc = { account_id = account_id }
+	local acc = { }
 
 	local connection, key = make_key (account_id)
 	if connection:exists (key) then

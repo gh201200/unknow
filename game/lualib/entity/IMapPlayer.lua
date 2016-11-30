@@ -105,6 +105,8 @@ function IMapPlayer:init(heroId)
 	self.HpMpChange = true
 	self.StatsChange = true
 	self:dumpStats()
+
+	IMapPlayer.super.init(self)
 end
 
 function IMapPlayer:setTarget(target) 

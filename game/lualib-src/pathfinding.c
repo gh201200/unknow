@@ -149,12 +149,11 @@ ladd_weight(lua_State *L) {
 		y < 0 || y >= m->height) {
 		luaL_error(L, "Position (%d,%d) is out of map", x,y);
 	}
-	int ov = map_get(m, x, y);
-	w = (ov >> 1) + w;
-	if (w < 0 || w > 127) {
+	if (w < 0)
 		w = 0;
-	}
-	w = w << 1 | (ov & 0x1);
+	else if (w > 255)
+		w = 255;
+
 	map_set(m, x, y, w);
 	lua_pushinteger(L, w);
 
@@ -276,18 +275,20 @@ static struct {
 	int dy;
 	int distance;
 } OFF[8] = {
-	{ -1, -1, 7 },	// up-left
-	{  0, -1, 5 },	// up
-	{  1, -1, 7 },	// up-right
-	{  1,  0, 5 },	// right
-	{  1,  1, 7 },	// bottom-right
-	{  0,  1, 5 },	// bottom
-	{  -1, 1, 7 },	// bottom-left
 	{  -1, 0, 5 },	// left
+	{  0,  1, 5 },	// bottom
+	{  1,  0, 5 },	// right
+	{  0, -1, 5 },	// up
+	{  1,  1, 7 },	// bottom-right
+	{  -1, 1, 7 },	// bottom-left
+	{ -1, -1, 7 },	// up-left
+	{  1, -1, 7 },	// up-right
 };
 
+int mask[8];
+
 static int
-path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x, int end_y) {
+path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x, int end_y, int bsize) {
 	struct context ctx;
 	ctx.P = P;
 	ctx.open = 0;
@@ -302,18 +303,39 @@ path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x,
 		if (pn->x == end_x && pn->y == end_y)
 			return current;
 		add_closed(&ctx, current);
+		memset(mask, 0, sizeof(mask));
 		int i;
 		for (i=0;i<8;i++) {
 			int x = pn->x + OFF[i].dx;
 			int y = pn->y + OFF[i].dy;
-			int weight = map_get(m, x, y);
-			if (weight > 0 && !(x == end_x && y == end_y))
-				continue;
-			if (weight == BLOCK_WEIGHT)
-				continue;
 			if (in_closed(&ctx, x , y))
 				continue;
-			int tentative_gscore = pn->gscore + OFF[i].distance + OFF[i].distance * weight;
+			
+			int p;
+			for(p=-bsize; p<=bsize; p++) {
+				int q;
+				for(q=-bsize; q<=bsize; q++) {
+					int weight = map_get(m, x+p, y+q);
+					if (weight > 0 && !(x+p == end_x && y+q == end_y))
+						break;
+				}
+				if( q <= bsize )
+					break;
+			}
+			
+			if( p <= bsize ) {
+				mask[i] = 1;
+				continue;
+			}
+			
+			if ( i > 3 ) {
+				if ( mask[i-3==4?0:i-4] || mask[i-4] ) {
+					continue;
+				}
+			}
+			
+			
+			int tentative_gscore = pn->gscore + OFF[i].distance + OFF[i].distance/* * weight*/;
 			struct pathnode * neighbor = find_open(&ctx, x, y);
 			if (neighbor) {
 				if (tentative_gscore < neighbor->gscore) {
@@ -358,12 +380,13 @@ lpath(lua_State *L) {
 	int start_y = luaL_checkinteger(L, 3);
 	int end_x = luaL_checkinteger(L, 4);
 	int end_y = luaL_checkinteger(L, 5);
+	int bsize = luaL_checkinteger(L, 6);
 
 	check_position(L, m, start_x, start_y);
 	check_position(L, m, end_x, end_y);
 
 	struct path P;
-	P.depth = luaL_optinteger(L, 6, SEARCH_DEPTH);
+	P.depth = luaL_optinteger(L, 7, SEARCH_DEPTH);
 	int stack_size = P.depth > SEARCH_DEPTH ? 0 : P.depth;
 	int set[stack_size];
 	struct pathnode pn[stack_size];
@@ -375,7 +398,7 @@ lpath(lua_State *L) {
 		P.n = pn;
 	}
 
-	int node = path_finding(m, &P, start_x, start_y, end_x, end_y);
+	int node = path_finding(m, &P, start_x, start_y, end_x, end_y, bsize);
 	int n = 1;
 	int idx = node;
 	while (P.n[idx].camefrom >= 0) {

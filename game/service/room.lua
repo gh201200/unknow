@@ -164,6 +164,26 @@ function CMD.query_server_id(response,agent, account_id, args)
 	end
 end
 
+function waitForLoadingCompleted()
+	
+	if last_update_time then return end
+
+	local r = { resttime = BattleOverManager.RestTime }
+	EntityManager:sendToAllPlayers("fightBegin", r)
+	
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player  then
+			v:setLoadProgress(100)
+		end
+	end
+
+	--every 0.03s update entity
+	skynet.timeout(3, updateMapEvent)
+	last_update_time = skynet.now()
+	
+	SpawnNpcManager:init(room_id)
+end
+
 function CMD.loadingRes(response, agent, account_id, args)
 	response( true, nil )
 	local player = EntityManager:getPlayerByPlayerId(account_id)
@@ -187,15 +207,7 @@ function CMD.loadingRes(response, agent, account_id, args)
 
 	--all players load completed
 	if num == #EntityManager.entityList-2 then
-		local r = { resttime = BattleOverManager.RestTime }
-		EntityManager:sendToAllPlayers("fightBegin", r)
-
-		--every 0.03s update entity
-		skynet.timeout(3, updateMapEvent)
-		last_update_time = skynet.now()
-	
-		SpawnNpcManager:init(room_id)
-
+		waitForLoadingCompleted()
 	end
 end
 
@@ -220,6 +232,7 @@ end
 
 
 function CMD.start(response, args)
+	print('room start', args)
 	response(true, nil)
 	
 	local sm = snax.uniqueservice("servermanager")
@@ -277,11 +290,11 @@ function CMD.start(response, args)
 		rb_sid = redBuilding.serverId,
 		bb_sid = blueBuilding.serverId,
 	}
-	for k, v in pairs(EntityManager.entityList) do
-		if v.entityType == EntityType.player  then
-			skynet.call(v.agent, "lua", "enterMap", skynet.self(), ret)
-		end
-	end
+	
+	EntityManager:callAllAgents("enterMap", skynet.self(), ret)
+
+	--开始等待客户端加载资源，最多等待6秒
+	skynet.timeout(600, waitForLoadingCompleted)
 end
 
 

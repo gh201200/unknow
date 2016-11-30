@@ -154,3 +154,28 @@ function getAccountLevel( _exp )
 	end
 	return lv
 end
+
+function calcNextTime(date)
+	local ret = false
+	for _,nextDate in pairs(date) do
+		local target = false
+		-- weak day or year day or month day
+		if nextDate.wday then
+			target = Time.nextWday(nextDate)
+		elseif nextDate.yday then
+			target = Time.nextYday(nextDate)
+		else
+			target = Time.nextDay(nextDate)
+		end
+		-- pick the near one
+		if target then
+			local nextRet = os.time(target)
+			
+			if not ret or ret > nextRet then ret = nextRet end
+		end
+	end
+	return ret
+end
+
+
+

@@ -4,36 +4,65 @@ local syslog = require "syslog"
 local ExploreMethod =
 {
 	--
-	setTime = function(self, _time)
-		self.unit.time = _time
-		
-		local database = skybet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self, "time") 
-		
-		--log record
-		syslog.infof("player[%s]:setTime:%d", self.account_id, _time)
-	end;
-	--
-	getTime = function(self)
+	getTime = function(self, index, val)
 		return self.unit.time
 	end;
 	--
-	setSlot = function(self, index, val)
+	setUuid = function(self, index, val)
 		if index < 0 or index > 4 then return end 
-		self.unit["slot"..index] = val
+		self.unit["uuid"..index] = val
 
-		local database = skybet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self, "slot"..index) 
+		--local database = skybet.uniqueservice("database")
+		--skynet.call(database, "lua", "explore_rd", "update", self, "slot"..index) 
 		
 		--log record
-		syslog.infof("player[%s]:setSlot:%d,%s", self.account_id, index, val)
+		--syslog.infof("player[%s]:setSlot:%d,%s", self.account_id, index, val)
 	end;
 	--
-	getSlot = function(self, index)
+	getUuid = function(self, index)
 		if index < 0 or index > 4 then return nil end 
-		return self.unit["slot"..index]
+		return self.unit["uuid"..index]
 	end;
+	--
+	reset = function(self, rr)
+		self.unit["con0"] = rr[1]
+		self.unit["con1"] = rr[2]
+		self.unit["con2"] = rr[3]
+		self.unit["con3"] = rr[4]
+		self.unit["con4"] = rr[5]
+		self.unit["uuid0"] = ""
+		self.unit["uuid1"] = ""
+		self.unit["uuid3"] = ""
+		self.unit["uuid3"] = ""
+		self.unit["uuid4"] = ""
+		self.unit.time = 0
 
+		local database = skybet.uniqueservice("database")
+		skynet.call(database, "lua", "explore_rd", "update", self.unit, self.account_id) 
+		
+		--log record
+		syslog.infof("player[%s]:resetExplore:%d,%d,%d,%d,%d", self.account_id, rr[1], rr[2], rr[3], rr[4], rr[5])
+	end;
+	--
+	getCon = function(self, index)
+		if index < 0 or index > 4 then return nil end 
+		return self.unit["con"..index]
+	end;
+	--
+	begin = function(self, uuid0, uuid1, uuid2, uuid3, uuid4)
+		self.unit.time = os.time() + Quest.ExploreTime
+		self.unit["uuid0"] = uuid0
+		self.unit["uuid1"] = uuid1
+		self.unit["uuid3"] = uuid2
+		self.unit["uuid3"] = uuid3
+		self.unit["uuid4"] = uuid4
+
+		local database = skybet.uniqueservice("database")
+		skynet.call(database, "lua", "explore_rd", "update", self.unit, self.account_id) 
+		
+		--log record
+		syslog.infof("player[%s]:begin:%d,%s,%s,%s,%s,$s", self.account_id, self.unit.time, uuid0, uuid1, uuid2, uuid3, uuid4)
+	end;
 }
 
 return ExploreMethod

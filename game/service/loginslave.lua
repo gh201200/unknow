@@ -79,10 +79,10 @@ function CMD.auth (fd, addr)
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")
 		local account = skynet.call (database, "lua", "account_rd", "load", args.name) or error ("load account " .. args.name .. " failed")
+		account.account_id = args.name
 		if account.nick == nil then
 			--自动注册账号
 			skynet.call (database, "lua", "account_rd", "create", args.name,"123456")
-			account.account_id = args.name
 	
 			firstRegister(account.account_id)
 		end

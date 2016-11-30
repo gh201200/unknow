@@ -44,6 +44,9 @@ function IMonster:init(mt)
 	self:setMp(self:getMpMax())
 	self.HpMpChange = true
 	self.StatsChange = true
+	
+
+	IMonster.super.init(self)
 end
 
 
@@ -104,7 +107,7 @@ function IMonster:onDead()
 	self:clear_coroutine()
 	
 	--reset map
-	Map:add(self.pos.x, self.pos.z, -1)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 end
 
 function IMonster:preCastSkill()

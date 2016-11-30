@@ -5,16 +5,19 @@
 		<szMod_name>Shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
 		<n32Speed>8000</n32Speed>
-		<n32AttackTime1>280</n32AttackTime1>
-		<n32AttackTime2>113</n32AttackTime2>
-		<n32AttackTime3>540</n32AttackTime3>
-		<n32AttackTriTime>307</n32AttackTriTime>
+		<n32AttackTime1>260</n32AttackTime1>
+		<n32AttackTime2>420</n32AttackTime2>
+		<n32AttackTime3>1020</n32AttackTime3>
+		<n32AttackTriTime>300</n32AttackTriTime>
 		<n32Skill1Time1>250</n32Skill1Time1>
 		<n32Skill1Time2>616</n32Skill1Time2>
 		<n32Skill1TriTime>328</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>367</n32Skill2Time1>
+		<n32Skill2Time2>600</n32Skill2Time2>
+		<n32Skill2TriTime>367</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>345</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>588</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>345</n32Skill2_2TriTime>
 		<n32Skill3Time1>130</n32Skill3Time1>
 		<n32Skill3Time2>502</n32Skill3Time2>
 		<n32Skill3TriTime>298</n32Skill3TriTime>
@@ -23,22 +26,26 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50002">
 		<szName>厚德</szName>
 		<szMod_name>Houde</szMod_name>
 		<n32Hight>Houde</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>336</n32AttackTime1>
-		<n32AttackTime2>118</n32AttackTime2>
-		<n32AttackTime3>478</n32AttackTime3>
-		<n32AttackTriTime>370</n32AttackTriTime>
+		<n32AttackTime1>323</n32AttackTime1>
+		<n32AttackTime2>267</n32AttackTime2>
+		<n32AttackTime3>1110</n32AttackTime3>
+		<n32AttackTriTime>382</n32AttackTriTime>
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -47,6 +54,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50003">
 		<szName>小僵尸</szName>
@@ -60,9 +68,12 @@
 		<n32Skill1Time1>250</n32Skill1Time1>
 		<n32Skill1Time2>383</n32Skill1Time2>
 		<n32Skill1TriTime>597</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>249</n32Skill3Time1>
 		<n32Skill3Time2>383</n32Skill3Time2>
 		<n32Skill3TriTime>597</n32Skill3TriTime>
@@ -71,6 +82,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50004">
 		<szName>僵尸弓手</szName>
@@ -84,9 +96,12 @@
 		<n32Skill1Time1>192</n32Skill1Time1>
 		<n32Skill1Time2>808</n32Skill1Time2>
 		<n32Skill1TriTime>684</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>192</n32Skill3Time1>
 		<n32Skill3Time2>808</n32Skill3Time2>
 		<n32Skill3TriTime>684</n32Skill3TriTime>
@@ -95,22 +110,26 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50005">
 		<szName>乌鸦</szName>
 		<szMod_name>Wuya</szMod_name>
 		<n32Hight>Wuya</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>260</n32AttackTime1>
-		<n32AttackTime2>260</n32AttackTime2>
-		<n32AttackTime3>480</n32AttackTime3>
-		<n32AttackTriTime>303</n32AttackTriTime>
+		<n32AttackTime1>267</n32AttackTime1>
+		<n32AttackTime2>345</n32AttackTime2>
+		<n32AttackTime3>1088</n32AttackTime3>
+		<n32AttackTriTime>314</n32AttackTriTime>
 		<n32Skill1Time1>113</n32Skill1Time1>
 		<n32Skill1Time2>819</n32Skill1Time2>
 		<n32Skill1TriTime>405</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>370</n32Skill2Time1>
+		<n32Skill2Time2>630</n32Skill2Time2>
+		<n32Skill2TriTime>370</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>355</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>578</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>354</n32Skill2_2TriTime>
 		<n32Skill3Time1>346</n32Skill3Time1>
 		<n32Skill3Time2>3986</n32Skill3Time2>
 		<n32Skill3TriTime>693</n32Skill3TriTime>
@@ -119,22 +138,26 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50006">
 		<szName>钟表匠</szName>
 		<szMod_name>Zhongbiaogong</szMod_name>
 		<n32Hight>Zhongbiaogong</n32Hight>
 		<n32Speed>10000</n32Speed>
-		<n32AttackTime1>275</n32AttackTime1>
-		<n32AttackTime2>125</n32AttackTime2>
-		<n32AttackTime3>433</n32AttackTime3>
-		<n32AttackTriTime>391</n32AttackTriTime>
+		<n32AttackTime1>272</n32AttackTime1>
+		<n32AttackTime2>237.99999999999997</n32AttackTime2>
+		<n32AttackTime3>1190</n32AttackTime3>
+		<n32AttackTriTime>340</n32AttackTriTime>
 		<n32Skill1Time1>229</n32Skill1Time1>
 		<n32Skill1Time2>803</n32Skill1Time2>
 		<n32Skill1TriTime>431</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>330</n32Skill2Time1>
+		<n32Skill2Time2>669.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>330</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>317</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>616</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>317</n32Skill2_2TriTime>
 		<n32Skill3Time1>293</n32Skill3Time1>
 		<n32Skill3Time2>3000</n32Skill3Time2>
 		<n32Skill3TriTime>733</n32Skill3TriTime>
@@ -143,6 +166,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50007">
 		<szName>变猪</szName>
@@ -156,9 +180,12 @@
 		<n32Skill1Time1>0</n32Skill1Time1>
 		<n32Skill1Time2>0</n32Skill1Time2>
 		<n32Skill1TriTime>0</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>0</n32Skill2Time2>
-		<n32Skill2TriTime>0</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>0</n32Skill3Time1>
 		<n32Skill3Time2>0</n32Skill3Time2>
 		<n32Skill3TriTime>0</n32Skill3TriTime>
@@ -167,22 +194,26 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50008">
 		<szName>召唤熊</szName>
 		<szMod_name>Xiong</szMod_name>
 		<n32Hight>Xiong</n32Hight>
 		<n32Speed>15000</n32Speed>
-		<n32AttackTime1>331</n32AttackTime1>
-		<n32AttackTime2>274</n32AttackTime2>
-		<n32AttackTime3>628</n32AttackTime3>
-		<n32AttackTriTime>580</n32AttackTriTime>
-		<n32Skill1Time1>498</n32Skill1Time1>
-		<n32Skill1Time2>1162</n32Skill1Time2>
-		<n32Skill1TriTime>913</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>0</n32Skill2Time2>
-		<n32Skill2TriTime>0</n32Skill2TriTime>
+		<n32AttackTime1>469</n32AttackTime1>
+		<n32AttackTime2>398</n32AttackTime2>
+		<n32AttackTime3>833</n32AttackTime3>
+		<n32AttackTriTime>850</n32AttackTriTime>
+		<n32Skill1Time1>177</n32Skill1Time1>
+		<n32Skill1Time2>555</n32Skill1Time2>
+		<n32Skill1TriTime>438</n32Skill1TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>0</n32Skill3Time1>
 		<n32Skill3Time2>0</n32Skill3Time2>
 		<n32Skill3TriTime>0</n32Skill3TriTime>
@@ -191,22 +222,26 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50009">
 		<szName>天女</szName>
 		<szMod_name>Tiannv</szMod_name>
 		<n32Hight>tiannv</n32Hight>
 		<n32Speed>10000</n32Speed>
-		<n32AttackTime1>331</n32AttackTime1>
-		<n32AttackTime2>281</n32AttackTime2>
-		<n32AttackTime3>588</n32AttackTime3>
-		<n32AttackTriTime>528</n32AttackTriTime>
+		<n32AttackTime1>340</n32AttackTime1>
+		<n32AttackTime2>471</n32AttackTime2>
+		<n32AttackTime3>889</n32AttackTime3>
+		<n32AttackTriTime>510</n32AttackTriTime>
 		<n32Skill1Time1>299</n32Skill1Time1>
 		<n32Skill1Time2>650</n32Skill1Time2>
 		<n32Skill1TriTime>480</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>250</n32Skill2Time1>
+		<n32Skill2Time2>750</n32Skill2Time2>
+		<n32Skill2TriTime>250</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>345</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>588</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>345</n32Skill2_2TriTime>
 		<n32Skill3Time1>222</n32Skill3Time1>
 		<n32Skill3Time2>3478</n32Skill3Time2>
 		<n32Skill3TriTime>225</n32Skill3TriTime>
@@ -215,6 +250,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50010">
 		<szName>牛博士</szName>
@@ -228,9 +264,12 @@
 		<n32Skill1Time1>240</n32Skill1Time1>
 		<n32Skill1Time2>760</n32Skill1Time2>
 		<n32Skill1TriTime>368</n32Skill1TriTime>
-		<n32Skill2Time1>186</n32Skill2Time1>
-		<n32Skill2Time2>747</n32Skill2Time2>
-		<n32Skill2TriTime>345</n32Skill2TriTime>
+		<n32Skill2Time1>364</n32Skill2Time1>
+		<n32Skill2Time2>636</n32Skill2Time2>
+		<n32Skill2TriTime>364</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>420</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>580.0000000000001</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>420</n32Skill2_2TriTime>
 		<n32Skill3Time1>470</n32Skill3Time1>
 		<n32Skill3Time2>1097</n32Skill3Time2>
 		<n32Skill3TriTime>606</n32Skill3TriTime>
@@ -239,6 +278,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50011">
 		<szName>龙女</szName>
@@ -252,9 +292,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -263,6 +306,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50012">
 		<szName>狂僧</szName>
@@ -276,9 +320,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -287,6 +334,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50013">
 		<szName>机甲少女</szName>
@@ -300,9 +348,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -311,6 +362,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50014">
 		<szName>神狙</szName>
@@ -324,9 +376,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -335,6 +390,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50015">
 		<szName>弹弓小子</szName>
@@ -348,9 +404,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>327</n32Skill2Time1>
+		<n32Skill2Time2>606</n32Skill2Time2>
+		<n32Skill2TriTime>327</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -359,22 +418,26 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50016">
 		<szName>修行者</szName>
 		<szMod_name>xiuxingzhe</szMod_name>
 		<n32Hight>xiuxingzhe</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32AttackTime1>234</n32AttackTime1>
-		<n32AttackTime2>246</n32AttackTime2>
-		<n32AttackTime3>387</n32AttackTime3>
-		<n32AttackTriTime>346</n32AttackTriTime>
+		<n32AttackTime1>170</n32AttackTime1>
+		<n32AttackTime2>595</n32AttackTime2>
+		<n32AttackTime3>935.0000000000001</n32AttackTime3>
+		<n32AttackTriTime>362</n32AttackTriTime>
 		<n32Skill1Time1>278</n32Skill1Time1>
 		<n32Skill1Time2>722</n32Skill1Time2>
 		<n32Skill1TriTime>315</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>340</n32Skill2Time1>
+		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>213</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>420</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>580.0000000000001</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>213</n32Skill2_2TriTime>
 		<n32Skill3Time1>400</n32Skill3Time1>
 		<n32Skill3Time2>933</n32Skill3Time2>
 		<n32Skill3TriTime>533</n32Skill3TriTime>
@@ -383,6 +446,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50017">
 		<szName>蒂皮</szName>
@@ -396,9 +460,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>340</n32Skill2Time1>
+		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>213</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -407,6 +474,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50018">
 		<szName>安娜</szName>
@@ -420,9 +488,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>340</n32Skill2Time1>
+		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>213</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -431,6 +502,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50019">
 		<szName>风之旅人</szName>
@@ -444,9 +516,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>340</n32Skill2Time1>
+		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>213</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -455,6 +530,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50020">
 		<szName>法老</szName>
@@ -468,9 +544,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>340</n32Skill2Time1>
+		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>213</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -479,6 +558,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50021">
 		<szName>科技天才</szName>
@@ -492,9 +572,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>340</n32Skill2Time1>
+		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>213</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -503,6 +586,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50022">
 		<szName>殿前骑士</szName>
@@ -516,9 +600,12 @@
 		<n32Skill1Time1>177</n32Skill1Time1>
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
-		<n32Skill2Time1>0</n32Skill2Time1>
-		<n32Skill2Time2>100</n32Skill2Time2>
-		<n32Skill2TriTime>50</n32Skill2TriTime>
+		<n32Skill2Time1>340</n32Skill2Time1>
+		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2TriTime>213</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>383</n32Skill2_2TriTime>
 		<n32Skill3Time1>273</n32Skill3Time1>
 		<n32Skill3Time2>893</n32Skill3Time2>
 		<n32Skill3TriTime>587</n32Skill3TriTime>
@@ -527,6 +614,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="90001">
 		<szName>红方基地</szName>
@@ -543,6 +631,9 @@
 		<n32Skill2Time1>0</n32Skill2Time1>
 		<n32Skill2Time2>0</n32Skill2Time2>
 		<n32Skill2TriTime>0</n32Skill2TriTime>
+		<n32Skill2_2TriTime1>0</n32Skill2_2TriTime1>
+		<n32Skill2_2TriTime2>0</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime>0</n32Skill2_2TriTime>
 		<n32Skill3Time1>0</n32Skill3Time1>
 		<n32Skill3Time2>0</n32Skill3Time2>
 		<n32Skill3TriTime>0</n32Skill3TriTime>
@@ -551,5 +642,6 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
 	</item>
 </info>

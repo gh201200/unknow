@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+require "skynet.manager"	-- import skynet.monitor
 local coroutine = require "skynet.coroutine"
 local syslog = require "syslog"
 local traceback  = debug.traceback
@@ -139,7 +140,10 @@ end
 
 local REQUEST = {}
 skynet.start(function ()
-	init()
+	init()	
+	skynet.dispatch("error", function (address, source, command, ...)
+	end)
+
 	skynet.dispatch("lua", function (_, _, command, ...)
 		local f = CMD[command]
 		if not f then

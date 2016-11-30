@@ -26,6 +26,7 @@ function IPet:init(pt,master)
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
 	self.lifeTime = 30*1000 --存活时间
 	self.isbody = 0
+	IPet.super.init(self)
 end
 
 function IPet:getType()
@@ -109,6 +110,6 @@ function IPet:onDead()
 	self.coroutine_response = {}
 
 	--reset map
-	Map:add(self.pos.x, self.pos.z, -1)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 end
 return IPet

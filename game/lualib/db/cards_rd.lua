@@ -1,5 +1,3 @@
-local Quest = require "quest.quest"
-
 local cards = {}
 local connection_handler
 
@@ -20,9 +18,8 @@ function cards.load (account_id)
 		for k, v in pairs(st) do
 			cards[v]  = {uuid = v}	
 			cards[v].dataId = tonumber(connection:hget (v, "dataId"))
-			cards[v].power = tonumber(connection:hget (v, "power"))
 			cards[v].count = tonumber(connection:hget (v, "count"))
-			cards[v].buyNum = tonumber(connection:hget (v, "buyNum"))
+			cards[v].explore = tonumber(connection:hget (v, "explore"))
 		end
 	end
 
@@ -40,9 +37,8 @@ function cards.loadBySerialId (account_id, serId)
 			if serId == Macro_GetCardSerialId(card.dataId) then
 				card  = {uuid = v}	
 				card.dataId = dataId
-				card.power = tonumber(connection:hget (v, "power"))
 				card.count = tonumber(connection:hget (v, "count"))
-				card.buyNum = tonumber(connection:hget (v, "buyNum"))
+				card.explore = tonumber(connection:hget (v, "explore"))
 				break
 			end
 		end
@@ -60,9 +56,8 @@ function cards.create(account_id, _uuid, dataId)
 
 	connection:hmset (_uuid, 
 		"dataId", dataId, 
-		"power", Quest.CARD_INIT_POWER, 
 		"count", 0,
-		"buyNum", 0
+		"explore", 0
 	)
 end
 
@@ -74,9 +69,8 @@ function cards.addCard (account_id, card)
 
 	connection:hmset (card.uuid, 
 		"dataId", card.dataId, 
-		"power", card.power, 
 		"count", card.count,
-		"buyNum", card.buyNum
+		"explore", card.explore
 	)
 end
 

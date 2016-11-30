@@ -7,7 +7,7 @@ local snax = require "snax"
 local database = nil
 local units = {}
 
-local ResetCardPowerTime = {{hour=14, min=0, sec = 0}}	--重置卡牌体力时间
+--local ResetCardPowerTime = {{hour=14, min=0, sec = 0}}	--重置卡牌体力时间
 local RefreshShopCardCD = 60				--刷新商城卡牌CD
 
 local function calcUid(name, atype)
@@ -33,28 +33,6 @@ local function loadSystem()
 			units[uid] = unit
 		end
 	end
-end
-
-local function calcNextTime(date)
-	local ret = false
-	for _,nextDate in pairs(date) do
-		local target = false
-		-- weak day or year day or month day
-		if nextDate.wday then
-			target = Time.nextWday(nextDate)
-		elseif nextDate.yday then
-			target = Time.nextYday(nextDate)
-		else
-			target = Time.nextDay(nextDate)
-		end
-		-- pick the near one
-		if target then
-			local nextRet = os.time(target)
-			
-			if not ret or ret > nextRet then ret = nextRet end
-		end
-	end
-	return ret
 end
 
 -- 设置XX秒的冷却时间
@@ -97,10 +75,6 @@ local function isTimeout(name)
 	return true
 end
 
-local function ResetCardPowertime_TimeOut()
-
-end
-
 local function RefreshShopCard()
 	local activity = snax.queryservice 'activity'
 	local val = activity.req.getValue('system', ActivitySysType.RefreshShopCard)
@@ -122,14 +96,6 @@ end
 
 local function cooldown_updatesys()
 
-	if isTimeout(calcUid('system', CoolDownSysType.ResetCardPower)) then		--探索重置
-		setDate('system', CoolDownSysType.ResetCardPower, ResetCardPowerTime)
-		
-		local r, r1  = pcall(ResetCardPowertime_TimeOut)
-		if not r then
-			error(r1)
-		end
-	end
 	if isTimeout(calcUid('system', CoolDownSysType.RefreshShopCard)) then		--刷新卡牌商店	
 		setTime('system', CoolDownSysType.RefreshShopCard, RefreshShopCardCD)
 		

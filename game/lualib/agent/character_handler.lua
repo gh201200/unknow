@@ -32,22 +32,26 @@ end;
 
 CardsMethod.sendCardData = function(self, unit)
 	if unit then
-		user.send_request("sendHero", {cardsList = {unit}})
+		local p = table.clone( unit )
+		p.explore = p.explore - os.time()
+		user.send_request("sendHero", {cardsList = {p}})
 	else
-		user.send_request("sendHero", {cardsList = user.cards.units})
+		local cardsList = {}
+		for k, v in pairs(user.cards.units) do
+			local p = table.clone( v )
+			p.explore = p.explore - os.time()
+			table.insert( cardsList, p )
+		end
+		user.send_request("sendHero", {cardsList = cardsList})
 	end
 end;
 
 ExploreMethod.sendExploreData = function(self)
-	local r = {
-		time = Quest.Explore.CD - (os.time() - user.explore:getTime()),
-		uuid0 = user.explore:getSlot(0),
-		uuid1 = user.explore:getSlot(1),
-		uuid2 = user.explore:getSlot(2),
-		uuid3 = user.explore:getSlot(3),
-		uuid4 = user.explore:getSlot(4),
-	}
-	user.send_request("sendExplore", r)
+	local explore = table.clone( user.explore.unit )
+	if explore.time ~= 0 then
+		explore.time = explore.time - os.time()
+	end
+	user.send_request("sendExplore", explore)
 end;
 
 local function sendCDTimeData(key)
@@ -107,6 +111,7 @@ local function onEnterGame()
 			r.isin = true
 		end
 	end
+	--r.isin = false
 	user.send_request('reEnterRoom', r)
 end
 
@@ -123,7 +128,7 @@ function REQUEST.enterGame(args)
 	user.cards.units =  skynet.call (database, "lua", "cards_rd", "load",account_id) --玩家拥有的卡牌
 	setmetatable(user.cards, {__index = CardsMethod})
 	user.explore = { account_id = account_id }
-	user.explore.unit = skynet.call (database, "lua", "explore_rd", "load", account_id) --explore
+	user.explore.unit = skynet.call (database, "lua", "explore_rd", "load", account_id, ExploreCharacter.randcon()) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
 	local activity = snax.queryservice 'activity'
 	activity.post.loadAccount( account_id )
