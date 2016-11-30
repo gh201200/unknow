@@ -15,11 +15,16 @@ function Explore:init( u )
 	user = u
 end
 
+function Explore.getId(sid, slv)
+	return sid * 1000 + slv
+end
+
 function Explore.randcon()
 	local r = {}
 	for i = 1, 5 do
-		table.insert(r, math.random(#g_shareData.exploreRepository[i]))
+		table.insert(r, Explore.getId(i, math.random(#g_shareData.exploreRepository[i])))
 	end 
+	print( r )
 	return r
 end
 
