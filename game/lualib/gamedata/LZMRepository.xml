@@ -4,19 +4,19 @@
 		<name>力量</name>
 		<n32Hp>20</n32Hp>
 		<n32Mp>0</n32Mp>
-		<n32Attack>2</n32Attack>
+		<n32Attack>1</n32Attack>
 		<n32Defence>0</n32Defence>
 		<n32ASpeed>0</n32ASpeed>
-		<n32RecvHp>1000</n32RecvHp>
+		<n32RecvHp>0.05</n32RecvHp>
 		<n32RecvMp>0</n32RecvMp>
 	</item>
 	<item id="2">
 		<name>敏捷</name>
 		<n32Hp>0</n32Hp>
 		<n32Mp>0</n32Mp>
-		<n32Attack>2</n32Attack>
-		<n32Defence>7000</n32Defence>
-		<n32ASpeed>100</n32ASpeed>
+		<n32Attack>1</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>0.01</n32ASpeed>
 		<n32RecvHp>0</n32RecvHp>
 		<n32RecvMp>0</n32RecvMp>
 	</item>
@@ -24,10 +24,10 @@
 		<name>智力</name>
 		<n32Hp>0</n32Hp>
 		<n32Mp>15</n32Mp>
-		<n32Attack>2</n32Attack>
+		<n32Attack>1</n32Attack>
 		<n32Defence>0</n32Defence>
 		<n32ASpeed>0</n32ASpeed>
 		<n32RecvHp>0</n32RecvHp>
-		<n32RecvMp>1000</n32RecvMp>
+		<n32RecvMp>0.05</n32RecvMp>
 	</item>
 </info>
