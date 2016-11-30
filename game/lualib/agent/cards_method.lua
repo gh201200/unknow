@@ -99,6 +99,17 @@ local CardsMethod =
 		--log record
 		syslog.infof("op[%s]player[%s]:updateDataId:%s,dataId[%d][%d]", op, self.account_id, uuid, _dataId, oldDataId)
 	end;
+	--
+	setExplore = function(self, uuid, _time)
+		local v = self:getCardByUuid(uuid)
+		if not v then return end
+		v.explore = _time
+	
+		self:sendCardData( v )	
+		
+		local database = skynet.uniqueservice ("database")
+		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "explore")
+	end;
 }
 
 return CardsMethod

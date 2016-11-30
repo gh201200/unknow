@@ -374,6 +374,25 @@ reEnterRoom 3006 {
 	}
 }
 
+exploreBegin 3007 {
+	request { 
+		uuid0 0 : string
+		uuid1 1 : string
+		uuid2 2 : string
+		uuid3 3 : string
+		uuid4 4 : string
+	}
+	response {                                                            
+		errorCode 0 : integer
+	} 
+}
+
+exploreEnd 3008 {
+	response {                                                            
+		errorCode 0 : integer
+	} 
+}
+
 ]]
 
 local s2c = [[
