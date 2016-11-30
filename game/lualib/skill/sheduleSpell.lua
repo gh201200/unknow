@@ -13,7 +13,7 @@ function sheduleSpell:update(dt)
 	if self.lifetime < 0 and self.isDead == false then
 		--触发效果
 		self.spell:synSpell(self.source,self.target,self.skilldata,SpellStatus.Cast,0)
-		self.spell:onTriggerSkillAffect(self.skilldata,self.source,self.target)
+		self.spell:onTrigger(self.skilldata,self.source,self.target)
 		self.isDead = true	
 	end	
 end

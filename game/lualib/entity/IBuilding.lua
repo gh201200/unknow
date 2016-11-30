@@ -72,8 +72,8 @@ end
 function IBuilding:calcStats()
 	--仅仅是为了和player保持一样
 	self.attDat.n32LStrength = 0
-	self.attDat.n32LZhili = 0
-	self.attDat.n32LMinjie = 0
+	self.attDat.n32LIntelligence = 0
+	self.attDat.n32LAgility = 0
 	
 	self:calcHpMax()
 	self:calcMpMax()

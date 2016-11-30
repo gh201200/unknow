@@ -14,8 +14,8 @@ local Ientity = class("Ientity" , transfrom)
 local HP_MP_RECOVER_TIMELINE = 1000
 local UI_Stats_Show = {
 	Strength = true,
-	Minjie = true,
-	Zhili = true,
+	Agility = true,
+	Intelligence = true,
 	HpMax = true,
 	MpMax = true,
 	Attack = true,
@@ -86,10 +86,10 @@ function Ientity:ctor(pos,dir)
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
-	register_stats(self, 'Minjie')
-	register_stats(self, 'MinjiePc')
-	register_stats(self, 'Zhili')
-	register_stats(self, 'ZhiliPc')
+	register_stats(self, 'Agility')
+	register_stats(self, 'AgilityPc')
+	register_stats(self, 'Intelligence')
+	register_stats(self, 'IntelligencePc')
 	register_stats(self, 'Hp')
 	register_stats(self, 'HpMax')
 	register_stats(self, 'HpMaxPc')
@@ -226,39 +226,22 @@ function Ientity:setTarget(target)
 	if not target then
 		self:stand()
 		self:setTargetVar( nil ) 
-	return end
+		return 
+	end
 	
 	if self:isDead() then return end
 	self:setTargetVar( target )
-	if self.spell:isSpellRunning() == true and self.spell:canBreak(ActionState.move) == false then	
-			return 
-	else		
-		if self.spell:isSpellRunning() == true then
-			self.spell:breakSpell()
-		end
-		self.userAStar = false
-		self.triggerCast = true
-		if target:getType() == "transform" then 
-			if self.ReadySkillId == 0 then
-				self.triggerCast = false
-			end
+	--打断技能
+	if self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
+		self.spell:breakSpell()
+	end
+	if self:canMove() == 0 then
+		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
+			self:castSkill(self.ReadySkillId)
 		else
-			if self.ReadySkillId ~= 0 and self.triggerCast == true then	
-				local err = self:canCast(self.ReadySkillId)
-				if err == 0 then
-					--return
-				end
-			end
+			self:setActionState( self:getMSpeed(), ActionState.move)
 		end
-
-		if self:canMove() == 0 then
-			if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
-				self:castSkill(self.ReadySkillId)			
-			else
-				self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
-			end
-		end
-	 end
+	end
 end
 
 
@@ -304,7 +287,7 @@ function Ientity:update(dt)
 		self:onForceMove(dt)		
 	end
 	--技能相关
-	if self.ReadySkillId ~= 0  and self.triggerCast == true then	
+	if self.ReadySkillId ~= 0  then	
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
 			self:castSkill(self.ReadySkillId)
@@ -312,7 +295,6 @@ function Ientity:update(dt)
 	end
 
 end
-
 
 --注意：修改entity位置，一律用此函数
 function Ientity:setPos(x, y, z, r)
@@ -562,8 +544,8 @@ end
 ---------------------------------------stats about---------------------------------
 function Ientity:dumpStats()
 	print('Strength = '..self:getStrength())
-	print('Minjie = '..self:getMinjie())
-	print('Zhili = '..self:getZhili())
+	print('Agility = '..self:getAgility())
+	print('Intelligence = '..self:getIntelligence())
 	print('Hp = '..self:getHp())
 	print('HpMax = '..self:getHpMax())
 	print('Mp = '..self:getMp())
@@ -585,10 +567,10 @@ end
 function Ientity:dumpMidStats()
 	print('Mid Strength = '..self:getMidStrength())
 	print('Mid StrengthPc = '..self:getMidStrengthPc ())
-	print('Mid Minjie = '..self:getMidMinjie ())
-	print('Mid MinjiePc = '..self:getMidMinjiePc ())
-	print('Mid Zhili = '..self:getMidZhili ())
-	print('Mid ZhiliPc = '..self:getMidZhiliPc ())
+	print('Mid Agility = '..self:getMidAgility ())
+	print('Mid AgilityPc = '..self:getMidAgilityPc ())
+	print('Mid Intelligence = '..self:getMidIntelligence ())
+	print('Mid IntelligencePc = '..self:getMidIntelligencePc ())
 	print('Mid Hp = '..self:getMidHp ())
 	print('Mid HpMax = '..self:getMidHpMax ())
 	print('Mid HpMaxPc = '..self:getMidHpMaxPc ())
@@ -617,122 +599,123 @@ end
 function Ientity:calcStrength()
 	self:setStrength(math.floor(
 		math.floor((self.attDat.n32Strength
-		+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel()) 
-		* (1.0 + self:getMidStrengthPc()/GAMEPLAY_PERCENT)) 
+		+ self.attDat.n32LStrength * self:getLevel()) 
+		* (1.0 + self:getMidStrengthPc())) 
 		+ self:getMidStrength())
 	)
 end
 
-function Ientity:calcMinjie()
-	self:setMinjie(math.floor(
-		math.floor((self.attDat.n32Minjie 
-		+ self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel()) 
-		* (1.0 + self:getMidMinjiePc()/GAMEPLAY_PERCENT)) 
-		+ self:getMidMinjie())
+function Ientity:calcAgility()
+	self:setAgility(math.floor(
+		math.floor((self.attDat.n32Agility 
+		+ self.attDat.n32LAgility * self:getLevel()) 
+		* (1.0 + self:getMidAgilityPc())) 
+		+ self:getMidAgility())
 	)
 end
 
-function Ientity:calcZhili()
-	self:setZhili(math.floor(
-		math.floor((self.attDat.n32Zhili 
-		+ self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel()) 
-		* (1.0 + self:getMidZhiliPc()/GAMEPLAY_PERCENT)) 
-		+ self:getMidZhili())
+function Ientity:calcIntelligence()
+	self:setIntelligence(math.floor(
+		math.floor((self.attDat.n32Intelligence 
+		+ self.attDat.n32LIntelligence * self:getLevel()) 
+		* (1.0 + self:getMidIntelligencePc())) 
+		+ self:getMidIntelligence())
 	)
 end
 
 function Ientity:calcHpMax()
 	self:setHpMax(math.floor(
-		self.attDat.n32Hp * (1.0 + self:getMidHpMaxPc()/GAMEPLAY_PERCENT)) 
+		self.attDat.n32Hp * (1.0 + self:getMidHpMaxPc())) 
 		+ self:getMidHpMax() 
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Hp)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Hp)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Hp)
+		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Hp)
+		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Hp)
+		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Hp)
 	)
 end
 
 function Ientity:calcMpMax()
 	self:setMpMax(math.floor(
-		self.attDat.n32Mp * (1.0 + self:getMidMpMaxPc()/GAMEPLAY_PERCENT)) 
+		self.attDat.n32Mp * (1.0 + self:getMidMpMaxPc())) 
 		+ self:getMidMpMax() 
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Mp)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Mp)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Mp)
+		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Mp)
+		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Mp)
+		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Mp)
 	)
 end
 
 function Ientity:calcAttack()
 	local addVal = 0
 	if self.attDat.n32MainAtt==1 then
-		addVal = math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
+		addVal = math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
 	elseif self.attDat.n32MainAtt==2 then
-		addVal =  math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
+		addVal =  math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
 	elseif self.attDat.n32MainAtt==3 then
-		addVal =  math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
+		addVal =  math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
 	end
 	self:setAttack(math.floor(
-		self.attDat.n32Attack * (1.0 + self:getMidAttackPc()/GAMEPLAY_PERCENT)) 
-		+ self:getMidAttack() /GAMEPLAY_PERCENT 
+		self.attDat.n32Attack * (1.0 + self:getMidAttackPc())) 
+		+ self:getMidAttack() 
 		+ addVal
 	)
 end
 
 function Ientity:calcDefence()
-	self:setDefence(math.floor((
-		math.floor(self.attDat.n32Defence * (1.0 + self:getMidDefencePc()/GAMEPLAY_PERCENT)) 
+	self:setDefence(math.floor(
+		math.floor(self.attDat.n32Defence * (1.0 + self:getMidDefencePc())) 
 		+ self:getMidDefence() 
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32Defence)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32Defence)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32Defence)
-		)/GAMEPLAY_PERCENT)
+		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Defence)
+		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Defence)
+		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Defence)
+		)
 	)
 end
 
 function Ientity:calcASpeed()
 	self:setASpeed(
-		math.floor(self.attDat.n32ASpeed / ( 
-			1 + self:getMidASpeed() / GAMEPLAY_PERCENT 
-			+ self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed /GAMEPLAY_PERCENT
-			+ self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed /GAMEPLAY_PERCENT
-			+ self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed /GAMEPLAY_PERCENT
-		)
+		self.attDat.n32ASpeed / ( 
+			1 + self:getMidASpeed() 
+			+ self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed /GAMEPLAY_PERCENT
+			+ self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed /GAMEPLAY_PERCENT
+			+ self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed /GAMEPLAY_PERCENT
 		)
 	)
 end
 
 function Ientity:calcMSpeed()
-	self:setMSpeed(math.floor(
-		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc()/GAMEPLAY_PERCENT))
+	self:setMSpeed(
+		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc())
 		+ self:getMidMSpeed() 
 	)
-	self.moveSpeed = self:getMSpeed() / GAMEPLAY_PERCENT
+	self.moveSpeed = self:getMSpeed()
 end
 
 function Ientity:calcRecvHp()
 	self:setRecvHp(math.floor(
-		self.attDat.n32RecvHp * (1.0 + self:getMidRecvHpPc()/GAMEPLAY_PERCENT))
+		self.attDat.n32RecvHp * (1.0 + self:getMidRecvHpPc()))
 		+ self:getMidRecvHp()
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32RecvHp)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32RecvHp)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32RecvHp)
+		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32RecvHp)
+		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32RecvHp)
+		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32RecvHp)
 	)
 end
 
 function Ientity:calcRecvMp()
 	self:setRecvMp(math.floor(
-		self.attDat.n32RecvMp * (1.0 + self:getMidRecvMpPc()/GAMEPLAY_PERCENT))
+		self.attDat.n32RecvMp * (1.0 + self:getMidRecvMpPc()))
 		+ self:getMidRecvMp()
-		+ math.floor(self.attDat.n32LStrength/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[1].n32RecvMp)
-		+ math.floor(self.attDat.n32LMinjie/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[2].n32RecvMp)
-		+ math.floor(self.attDat.n32LZhili/GAMEPLAY_PERCENT * self:getLevel() * g_shareData.lzmRepository[3].n32RecvMp)
+		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32RecvMp)
+		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32RecvMp)
+		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32RecvMp)
 	)
 end
 
 function Ientity:calcAttackRange()
+	--[[
 	self:setAttackRange(math.floor(
 		self.attDat.n32AttackRange * (1.0 +self:getMidAttackRangePc()/GAMEPLAY_PERCENT))
 		+ self:getMidAttackRange()
 	)
+	]]--
 end
 
 function Ientity:calcBaoji()
@@ -745,7 +728,7 @@ function Ientity:calcHit()
 end
 
 function Ientity:calcMiss()
-	self:setMiss(self:getMidMiss() / GAMEPLAY_PERCENT)
+	self:setMiss(self:getMidMiss())
 end
 
 
@@ -764,11 +747,11 @@ function Ientity:callBackSpellEnd()
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
 		if self:canCast(self.ReadySkillId)  == 0 then
 		else
-			self:setActionState( self:getMSpeed() / GAMEPLAY_PERCENT, ActionState.move)
+			self:setActionState( self:getMSpeed(), ActionState.move)
 		end
 	end
 	local data = g_shareData.skillRepository[self.ReadySkillId]
-	if data ~= nil and data.bCommonSkill == false and self.spell.skilldata.id == self.ReadySkillId then
+	if data ~= nil and data.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
 			self.ReadySkillId = 0
 	end
 end
@@ -786,8 +769,8 @@ function Ientity:canMove()
 			return 1001
 		end
 	end
-
-	if self.spell.status == SpellStatus.Cast then return ErrorCode.EC_Spell_SkillIsRunning end
+	if self.spell.status == SpellStatus.Cast and self.spell.skilldata.n32NeedCasting == 0 then return ErrorCode.EC_Spell_SkillIsRunning end
+	
 	return 0
 end
 
@@ -795,36 +778,44 @@ function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata == nil then return -1 end
-	--如果是有目标类型(4 针对自身立即释放)
-	local tgtType = GET_SkillTgtType(skilldata)
-	local tgtRange = GET_SkillTgtRange(skilldata)
-	if tgtType ~= 4 and tgtRange ~= 2 and  tgtRange ~= 7 then
-		if self:getTarget() == nil then return ErrorCode.EC_Spell_NoTarget end
-		if skilldata.bNeedTarget == true then
-			if self:getTarget():getType() == "transform" then return ErrorCode.EC_Spell_NoTarget end--目标不存在
-			if tgtType == 3	and self:getTarget():isKind(self) == true then return ErrorCode.EC_Spell_Camp_Friend end --不能对友方施法该技能
-			if tgtType == 2 and self:getTarget():isKind(self) == false then return ErrorCode.EC_Spell_Camp_Enemy end --不能对敌方施法该技能
+	
+	--技能目标类型为敌方
+	if skilldata.n32SkillTargetType == 3 then
+		if self:getTarget() == nil or  self:getTarget():getType() == "transform" or self:getTarget():isKind(self) == true then
+			return ErrorCode.EC_Spell_NoTarget
 		end
-		local dis = self:getDistance(self:getTarget())
-		local dataDis = skilldata.n32Range / 10000
-		if dis > dataDis  then 
-			return ErrorCode.EC_Spell_TargetOutDistance 
+	--目标类型为地点或者方向
+	elseif skilldata.n32SkillTargetType == 4 or skilldata.n32SkillTargetType == 5 then
+		if self:getTarget() == nil then
+			return ErrorCode.EC_Spell_NoTarget
 		end
 	end
-	if skilldata.bCommonSkill == false  then 
+	
+	if skilldata.n32Range ~= 0 then
+		local dis = self:getDistance(self:getTarget())
+		if dis > skilldata.n32Range then
+			return ErrorCode.EC_Spell_TargetOutDistance
+		end
+	end
+	--不是普攻
+	if skilldata.n32SkillType ~= 0  then 
 		if bit_and(self.affectState,AffectState.NoSpell) ~= 0 then
 			return ErrorCode.EC_Spell_Controled
 		end
-		if self:getTarget() ~= nil and self:getTarget():getType() == "IBuilding" then
-			return ErrorCode.EC_Spell_NoBuilding	
+		
+		if skilldata.n32SkillTargetType ~= 6 and skilldata.n32SkillTargetType ~= 0 then
+			if self:getTarget() ~= nil and self:getTarget():getType() == "IBuilding" then
+				return ErrorCode.EC_Spell_NoBuilding	
+			end
 		end
 	end
-
+	
 	if bit_and(self.affectState,AffectState.NoAttack) ~= 0 then 
 		return ErrorCode.EC_Spell_Controled
 	end
 	if self:getHp() <= 0 then return ErrorCode.EC_Dead end
-	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
+--	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
+	if self.spell:canCost(skilldata) == false then return ErrorCode.EC_Spell_MpLow end 	
 	return 0
 end
 
@@ -840,20 +831,20 @@ function Ientity:canSetCastSkill(id)
 	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then
            return ErrorCode.EC_Spell_SkillIsRunning
         end
-	local tgtType = GET_SkillTgtType(skilldata)
-	if self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
-		if skilldata.bNeedTarget == true then
-			--单体目标施法技能
-			if tgtType == 3 and self:getTarget():isKind(self) == true then return ErrorCode.EC_Spell.EC_Spell_Camp_Friend end
-			if tgtType == 2 and self:getTarget():isKind(self) == false then return ErrorCode.EC_Spell.EC_Spell_Camp_Enemy end
+	--[[技能目标类型为敌方
+	if skilldata.n32SkillTargetType == 3 then
+	--目标类型为地点
+	elseif skilldata.n32SkillTargetType == 4 or skilldata.n32SkillTargetType == 5 then
+		if self:getTarget() == nil then
+			return ErrorCode.EC_Spell_NoTarget
 		end
-	end
-	--被控制状态 
+	end]]--
+	--蓝量不够 
 	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
 	return 0
 end
 function Ientity:setCastSkillId(id)
-	--print('set cast skill id = ', id)
+	print('set cast skill id = ', id)
 	local skilldata = g_shareData.skillRepository[id]
 	if not skilldata then
 		syslog.warning( 'setCastSkillId failed ' .. id )
@@ -872,12 +863,11 @@ function Ientity:setCastSkillId(id)
 		return 0
 	end
 	local errorcode = self:canSetCastSkill(id) 
+	print("errorcode===",errorcode)
 	if errorcode ~= 0 then return errorcode end
-	local type_range = GET_SkillTgtRange(skilldata)
-	local type_target = GET_SkillTgtType(skilldata)
-	
 	self.ReadySkillId = id
-	if type_target == 4 or type_range == 2 or type_range == 7  then
+	--[[
+	if   then
 		--可以立即释放
 		if self.spell:canBreak(ActionState.move) == false then
 			print("can not break")	
@@ -891,7 +881,7 @@ function Ientity:setCastSkillId(id)
 	else
 		--技能不是立即释放的
 		return -1
-	end
+	end]]
 	return 0
 end
 function Ientity:castSkill()
@@ -920,8 +910,8 @@ function Ientity:castSkill()
 	skillTimes[2] 	= modoldata["n32" .. action .. "Time2"] or  0 
 	skillTimes[3]   = modoldata["n32" .. action  .. "Time3"] or  0
 	skillTimes["trigger"] = modoldata["n32".. action .. "TriTime"] or 0
-	if skilldata.bCommonSkill == true then --攻击动作
-		local Aspeed = self:getASpeed() or 0
+	if skilldata.n32SkillType == 0 then --攻击动作
+		local Aspeed = self:getASpeed()*1000 or 0
 		local allTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
 		local pc =  Aspeed / allTime
 		for i=1,3,1 do

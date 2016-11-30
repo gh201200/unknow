@@ -41,8 +41,8 @@ function IPet:calcStats()
 	self.attDat.n32MSpeed = self.master:getMSpeed()
 	self.attDat.n32AttackRange = self.master:getAttackRange()	
 	self.attDat.n32LStrength = 0
-	self.attDat.n32LZhili = 0
-	self.attDat.n32LMinjie = 0
+	self.attDat.n32LIntelligence = 0
+	self.attDat.n32LAgility = 0
 	self.attDat.n32MainAtt = 0
 	
 	local funs = {"HpMaxPc","HpMax","AttackPc","Attack","DefencePc","Defence","ASpeed","MSpeedPc","MSpeed","AttackRangePc","AttackRange"}

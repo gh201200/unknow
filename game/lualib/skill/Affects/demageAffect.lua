@@ -56,8 +56,8 @@ function demageAffect:calDemage()
       	
 	local apDem = ap_pc * self.source:getAttack() + ap_val 
 	local strDem =  self.source:getStrength() * str_pc
-	local intDem =  self.source:getZhili() * inte_pc
-	local cureDem =  self.source:getMinjie() * cure_pc
+	local intDem =  self.source:getIntelligence() * inte_pc
+	local cureDem =  self.source:getAgility() * cure_pc
 	local demage = apDem + strDem + intDem + cureDem  
 	if self.source.HonorData ~= nil then
 		self.source.HonorData[1] = self.source.HonorData[1] + demage --输出伤害

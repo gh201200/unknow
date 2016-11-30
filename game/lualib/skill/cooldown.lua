@@ -40,7 +40,7 @@ end
 function cooldown:resetCd(id,time)
 	--print("cooldown:resetCd",id,time)
         local skilldata = g_shareData.skillRepository[id]
-	if skilldata.bCommonSkill == false then
+	if skilldata.n32SkillType ~= 0 then
         	local seriId = skilldata.n32SeriId	
 		time = time or 0
 		self.coolDownTable[seriId] = time

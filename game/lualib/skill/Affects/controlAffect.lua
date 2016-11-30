@@ -54,8 +54,8 @@ function demageAffect:calDemage()
 	local apDem = ap_pc * self.source:getAttack() + ap_val -  self.owner:getDefence() 
 	if apDem < 0 then apDem = 1 end
 	local strDem =  self.source:getStrength() * str_pc
-	local intDem =  self.source:getZhili() * inte_pc
-	local cureDem =  self.source:getMinjie() * cure_pc
+	local intDem =  self.source:getIntelligence() * inte_pc
+	local cureDem =  self.source:getAgility() * cure_pc
 	local demage = apDem + strDem + intDem + cureDem
 	return -demage
 end

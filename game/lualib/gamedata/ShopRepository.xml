@@ -117,7 +117,7 @@
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>敏捷宝箱</szName>
-		<szIcon>Minjiebaoxiang.png</szIcon>
+		<szIcon>Agilitybaoxiang.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>62002</n32GoodsID>
 	</item>
@@ -128,7 +128,7 @@
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>智力宝箱</szName>
-		<szIcon>Zhilibaoxiang.png</szIcon>
+		<szIcon>Intelligencebaoxiang.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>62003</n32GoodsID>
 	</item>

@@ -147,6 +147,24 @@ string.trim = function(s, c)
     return string.rtrim(string.ltrim(s, c), c)
 end
 
+string.parserskillStr = function(s)
+	local t = {}
+	for v in string.gmatch(s,"%[(.-)%]") do
+		local data = {}
+		for tp,vals in string.gmatch(v,"(%a+)%:(.+)") do
+			vals = vals .. "," 
+			table.insert(data,tp)
+			local valtb = string.split(vals,",")
+			for _,val in pairs(valtb) do
+				if val ~= "" then
+					table.insert(data,tonumber(val))
+				end
+			end 
+		end
+		table.insert(t,data)
+	end
+	return t 
+end
 local function dump(obj)
     local getIndent, quoteStr, wrapKey, wrapVal, dumpObj
     getIndent = function(level)

@@ -77,7 +77,7 @@ function AffectTable:triggerAtkAffects(tgt,bAtk,skilldata)
 	
 end
 
-function AffectTable:addAffect(source,data,skillId)
+function AffectTable:addAffect(source,data,skillId,extra)
 	local aff = nil
 	if data[1] == "ap" or data[1] == "str" or data[1] == "dex" or data[1] == "inte" then
 		aff = demageAffect.new(self.owner,source,data,skillId)
@@ -190,22 +190,10 @@ function AffectTable:removeBySkillId(skillId)
 end
 
 
-function AffectTable:buildAffects(source,dataStr,skillId)
-	local tb = {}
+function AffectTable:buildAffects(source,datas,skillId,extra)
 	local projectids = {}
-	for v in string.gmatch(dataStr,"%[(.-)%]") do
-		local data = {}
-		for tp,vals in string.gmatch(v,"(%a+)%:(.+)") do
-			vals = vals .. "," 
-			table.insert(data,tp)
-			local valtb = string.split(vals,",")
-			for _,val in pairs(valtb) do
-				if val ~= "" then
-					table.insert(data,tonumber(val))
-				end
-			end 
-		end
-		local proId = self:addAffect(source,data,skillId) 
+	for _k,_v in pairs(datas) do
+		local proId = self:addAffect(source,_v,skillId,extra)
 		table.insert(projectids,proId)
 	end
 	
@@ -218,8 +206,7 @@ function AffectTable:synClient(aff,_remove)
 	if aff.source ~= 0 then
 		srcId = aff.source.serverId
 	end
-	local r = {serverId = self.owner.serverId, effect = {} }
-	r.effect ={effectId = aff.effectId , effectTime = aff.effectTime ,srcServerId = srcId ,mask = _remove}
+	local r = {acceperId = self.owner.serverId,producerId = srcId,effectId = aff.effectId,effectTime = aff.effectTime,flag = _remove}
 	g_entityManager:sendToAllPlayers("pushEffect",r)
 end
 return AffectTable

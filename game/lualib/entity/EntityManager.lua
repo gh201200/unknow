@@ -58,7 +58,7 @@ function EntityManager:update(dt)
 					table.remove(self.entityList, i)
 				end
 			elseif v.entityType == EntityType.flyObj then
-				if v.lifeTime <= 0 then
+				if v.isDead == true then
 					table.remove(self.entityList, i)
 				end	
 			end
@@ -123,8 +123,8 @@ function EntityManager:getCloseEntityByType(source, _type)
 	return et, minLen
 end
 
-function EntityManager:createFlyObj(srcObj,target,skilldata)
-	local obj = IflyObj.create(srcObj,target,skilldata)	
+function EntityManager:createFlyObj(srcObj,target,skilldata,extra1,extra2)
+	local obj = IflyObj.create(srcObj,target,skilldata,extra1,extra2)	
 	self:addEntity(obj)
 end
 
@@ -143,88 +143,133 @@ function EntityManager:createPet(id,master,pos,isbody)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
 end
 
-function EntityManager:getSkillAttackEntitys(source,target,skilldata)
-	local type_range = GET_SkillTgtRange(skilldata)   -- 1:单体 2:自身点的圆形区域 3:自身点的矩形区域 4:目标点的圆形区域 5:飞行物碰撞 
-	local type_target = GET_SkillTgtType(skilldata)  -- 1:自身 2:友方 3:敌方
-	local tmpTb = {}
-	if type_range == 1 then
-		if source:getTarget() ~= nil and source:getTarget():getType() ~= "transform" then
-			if skilldata.bCommonSkill ~= true and source:getTarget():getType() == "IBuilding" then
-			
-			else
-				table.insert(tmpTb,source:getTarget())
-			end
-			return tmpTb
+--获取施法目标的范围的目标
+function EntityManager:getSkillSelectsEntitys(source,target,skilldata)
+	local tgt = target 
+	if skilldata.n32SkillTargetType == 0 then
+		tgt = source
+	end
+	local typeTargets = {}
+	for _ek,_ev in pairs(self.entityList) do
+		--友方（包含自己）
+		if skilldata.n32SkillTargetType  == 1 and source:isKind(_ev) == true then
+			table.insert(typeTargets,_ev)
+		--友方（除掉自己）
+		elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
+			table.insert(typeTargets,_ev)
+		--敌方
+		elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev) == false then	
+			table.insert(typeTargets,_ev)
 		end
 	end
-	--根据势力筛选出目标对象
-	for _k,_v in pairs(self.entityList) do
-		if type_target == 1 then
-			table.insert(tmpTb,source)
-			break
-		elseif type_target == 2 then
-			if _v.camp == source.camp then
-				table.insert(tmpTb,_v)
-			end
-		elseif type_target == 3 then
-			if _v.camp ~= source.camp and _v:getType() ~= "IBuilding" then
-				table.insert(tmpTb,_v)
+	local selects = {}
+	if skilldata.szSelectRange[1] == 'single' then
+		table.insert(selects,tgt)
+	elseif skilldata.szSelectRange[1] == 'circle' then
+		local radius = 	skilldata.szSelectRange[2]
+		local target_uplimit = skilldata.szSelectRange[3]
+		local select_mod = skilldata.szSelectRange[4]
+		local tSelects = {}
+		local tNum = 0
+		for _k,_v in pairs(typeTargets) do
+			local disVec = tgt.pos:return_sub(_v.pos)
+			local disLen = disVec:length()
+			if disLen <= radius then
+				tNum = tNum + 1
+				--tSelects[int_disLen] = _v
+				table.insert(tSelects,{key = disLen,value = _v})
 			end
 		end
-	end
-	local getRangeEntitys = function(tab,basepos,range)
+		if select_mod == 0 then
+			table.sort(tSelects,function(a,b) return a.key > b.key end)
+		else
+			table.sort(tSelects,function(a,b) return a.key > b.key end)
+		end
+		local num  = 1 
+		for _k,_v in pairs(tSelects) do
+			if num <= target_uplimit or target_uplimit == -1 then
+				table.insert(selects,_v.value)
+				num  =  num + 1
+			end
+		end		
+	--	print("#slects===",#selects)	
+	elseif skilldata.szSelectRange[1] == 'sector' then
+		
+	elseif skilldata.szSelectRange[1] == 'rectangle' then
+		local w = skilldata.szSelectRange[3]
+		local h = skilldata.szSelectRange[2]
 		local ret = {}
-		for _k,_v  in pairs(tab) do
-			local disVec = _v.pos:return_sub(basepos)
-			local disLen = disVec:length()	
-			if disLen <= range then
-				table.insert(ret,_v)
-			end
-		end
-		return ret
-	end
-	local getEntityRectange = function(tab,basepos,tgtpos,range)
-		local w = range[1] 
-		local h = range[2]
-		local ret = {}
-		--basepos = vector3.create(0,0,0)
-		--tgtpos = vector3.create(1,0,0)
-		local dir1 = tgtpos:return_sub(basepos)
+		local dir1 = target.pos:return_sub(source.pos)
 		dir1:normalize()
 		local dir2 = vector3.create(dir1.z,0,-dir1.x)
 		local dot = {}
-		dot[0] = basepos:return_add( dir2:return_mul_num(w) )
-		dot[3] = basepos:return_sub( dir2:return_mul_num(w))
-		local basepos2 = basepos:return_add( dir1:return_mul_num(h))
-		dot[1] = basepos2:return_add( dir2:return_mul_num(w) )
-		dot[2] = basepos2:return_sub( dir2:return_mul_num(w))
-	--	for _k,_v in pairs(dot) do
-	--		print("dot",_k,_v.x,_v.y,_v.z)	
-	--	end
-		for _k,_v in pairs(tab) do
+		dot[0] = source.pos:return_add( dir2:return_mul_num(w) )
+		dot[3] = source.pos:return_sub( dir2:return_mul_num(w))
+		local pos2 = source.pos:return_add( dir1:return_mul_num(h))
+		dot[1] = pos2:return_add( dir2:return_mul_num(w) )
+		dot[2] = pos2:return_sub( dir2:return_mul_num(w))
+		for _k,_v in pairs(self.typeTargets) do
 			local isIn = ptInRect(_v.pos,dot) 
 			if isIn == true then
-				table.insert(ret,_v)		
+				table.insert(selects,_v)		
 			end	
 		end
-		return ret
 	end
-	local retTb = {}
-	--筛选区域内对象
-	if type_range  == 1 then
-		--assert(#tmpTb == 1)
-	elseif type_range  == 2 then
-		retTb = getRangeEntitys(tmpTb,source.pos,skilldata.n32Radius / 10000 )
-	elseif type_range == 3 then
-		retTb = getEntityRectange(tmpTb,source.pos,target.pos,skilldata.n32Radius)
-	elseif type_range == 4 then
-		retTb = getRangeEntitys(tmpTb,target.pos,skilldata.n32Radius / 10000)	
-	elseif type_rang == 5 then	
-	
-	end
-	return retTb
+	return selects
 end
 
+--获取效果范围的目标
+function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
+	local affects = {}
+	if skilldata.n32AffectTargetType == 0 then
+		table.insert(affects,source)
+		return affects
+	end
+	local typeTargets = {}
+	for _ek,_ev in pairs(self.entityList) do
+		--友方（包含自己）
+		if skilldata.n32AffectTargetType  == 1 and source:isKind(_ev) == true then
+			table.insert(typeTargets,_ev)
+		--友方（除掉自己）
+		elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
+			table.insert(typeTargets,_ev)
+		--敌方
+		elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev) == false then	
+			table.insert(typeTargets,_ev)
+		--除自己所有人
+		elseif skilldata.n32AffectTargetType  == 4 and source ~= _ev then
+			table.insert(typeTargets,_ev)
+		--所有人
+		elseif skilldata.n32AffectTargetType  == 5 then
+			table.insert(typeTargets,_ev)
+		end
+	end
+	--print("#typeTargets",#typeTargets)
+	for _tk,_tv in pairs(typeTargets) do
+		for _sk,_sv in pairs(selects) do
+			--print("sv:",_sv.serverId,"tv",_tv.serverId)
+			if skilldata.szAffectRange[1] == "single" and _sv == _tv then
+				--print("111111111")
+				table.insert(affects,_tv)
+			elseif skilldata.szAffectRange[1] == "circle" then
+				local disVec = _tv.pos:return_sub(_sv.pos)
+				if disVec <= skilldata.szAffectRange[2] then
+					table.insert(affects,_tv)
+				end
+			elseif skilldata.szAffectRange[1] == "sector" then
+			--	print("get secotr",_sv.pos.x,_sv.pos.z)
+				local center = _sv.pos
+				local uDir = extra --附加参数方向
+				local r = skilldata.szAffectRange[2]
+				local theta = skilldata.szAffectRange[3]
+				if ptInSector(_tv.pos,_sv.pos,uDir,r,theta) then
+					table.insert(affects,_tv)
+				end	
+			end
+		end 
+	end
+	return affects
+end
 return EntityManager.new()
 
 

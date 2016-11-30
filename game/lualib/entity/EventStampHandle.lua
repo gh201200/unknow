@@ -65,8 +65,8 @@ EventStampHandle[EventStampType.Stats] = function (serverId, event)
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		stats = {
 			Strength = math.floor(player:getStrength()),
-			Minjie = math.floor(player:getMinjie()),
-			Zhili = math.floor(player:getZhili()),
+			Agility = math.floor(player:getAgility()),
+			Intelligence = math.floor(player:getIntelligence()),
 			HpMax = math.floor(player:getHpMax()),
 			MpMax = math.floor(player:getMpMax()),
 			Attack = math.floor(player:getAttack()),

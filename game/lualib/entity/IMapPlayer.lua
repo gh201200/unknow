@@ -4,7 +4,7 @@ local vector3 = require "vector3"
 local Quest = require "quest.quest"
 local EntityManager = require "entity.EntityManager"
 local BattleOverManager = require "entity.BattleOverManager"
-
+local passtiveSpell =  require "skill.passtiveSpell"
 local IMapPlayer = class("IMapPlayer", Ientity)
 
 function IMapPlayer.create(arg)
@@ -124,8 +124,8 @@ function IMapPlayer:getCommonSkillId()
 end
 function IMapPlayer:calcStats()
 	self:calcStrength()
-	self:calcZhili()
-	self:calcMinjie()
+	self:calcIntelligence()
+	self:calcAgility()
 	self:calcHpMax()
 	self:calcMpMax()
 	self:calcAttack()
@@ -200,11 +200,12 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 	end
 	
 	local skilldata = g_shareData.skillRepository[skillId + self.skillTable[skillId] - 1]	
-	if skilldata.bActive == false then	
-		local oldSkillId = skillId + self.skillTable[skillId] - 2
+	--被动技能
+	if skilldata.n32Active == 1 then	
+		--local oldSkillId = skillId + self.skillTable[skillId] - 2
 		--移除旧技能带的buff效果
-		self.affectTable:removeBySkillId(oldSkillId)
-		self.spell:onStudyPasstiveSkill(skilldata) --学习被动技能
+		--self.affectTable:removeBySkillId(oldSkillId)
+		self.spell.passtiveSpells[skilldata.n32SeriId] = passtiveSpell.new(self,skilldata)
 	end
 	
 	if updateToClient then

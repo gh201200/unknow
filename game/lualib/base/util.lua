@@ -21,7 +21,7 @@ function mClamp(a, min, max)
 	if a > max then return max end
 	return a
 end
-
+--判断点是否在矩形范围
 function ptInRect(p,rectPts)
 	local size = 4 
 	local ncross = 0
@@ -45,6 +45,24 @@ function ptInRect(p,rectPts)
 	return false
 end
 
+--判断点是否在扇形范围内
+function ptInSector(pt,center,udir,r,theta)
+	--print("ptInSector pt:",pt.x,pt.z)
+	--print("ptInSector center:",center.x,center.z)
+	--print("ptInSector udir:",udir.x,udir.z)
+	--print("ptInSector r:",r,"theta",theta)
+	local dx = pt.x - center.x
+	local dz = pt.z - center.z
+	local length = math.sqrt(dx * dx + dz * dz)
+	if length > r then
+		return false
+	end
+	dx = dx / length
+	dz = dz / length
+	local deg = math.deg(math.acos(dx * udir.x + dz * udir.z))
+	--print("deg======:",deg,"theta",theta)
+	return deg < theta
+end
 --------common func to register get set-----------
 function register_class_var(t, name, iv, callBack)
 	t['m_'..name] = iv

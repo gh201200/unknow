@@ -117,7 +117,7 @@
 		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>0.7</n32Redius>
 		<n32layer>0</n32layer>
 	</item>
 	<item id="20012">
@@ -607,7 +607,7 @@
 		<n32speed>4</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 	</item>
 	<item id="20061">
@@ -627,7 +627,7 @@
 		<n32speed>4</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 	</item>
 	<item id="20063">
@@ -647,7 +647,7 @@
 		<n32speed>8</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 	</item>
 	<item id="20065">
@@ -667,7 +667,7 @@
 		<n32speed>5</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 	</item>
 	<item id="20067">

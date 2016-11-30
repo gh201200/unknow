@@ -41,7 +41,7 @@ function recoverAffect:calRecover()
 	assert(self.data and self.data[1])
 	local rateA = self.data[2] or 0
 	local rateB = self.data[3] or 0
-	local val = rateA * self.source:getAttack() + rateB * self.source:getZhili()
+	local val = rateA * self.source:getAttack() + rateB * self.source:getIntelligence()
 	if self.owner:getHp() > 0 then
 		if self.data[1] == "curehp" then
 			self.owner:addHp(val,HpMpMask.SkillHp)
