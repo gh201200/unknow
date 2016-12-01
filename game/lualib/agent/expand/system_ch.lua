@@ -126,6 +126,7 @@ function REQUEST.buyShopItem( args )
 			end
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
+			print(shopDat)
 			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count * args.num)
 			local cooldown = snax.queryservice 'cddown' 
 			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
