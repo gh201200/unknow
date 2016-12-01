@@ -1,10 +1,11 @@
 local skynet = require "skynet"
 local syslog = require "syslog"
+local Quest = require "quest.quest"
 
 local ExploreMethod =
 {
 	--
-	getTime = function(self, index, val)
+	getTime = function(self)
 		return self.unit.time
 	end;
 	--
@@ -24,7 +25,7 @@ local ExploreMethod =
 		return self.unit["uuid"..index]
 	end;
 	--
-	reset = function(self, rr)
+	resetExplore = function(self, rr)
 		self.unit["con0"] = rr[1]
 		self.unit["con1"] = rr[2]
 		self.unit["con2"] = rr[3]
@@ -37,7 +38,7 @@ local ExploreMethod =
 		self.unit["uuid4"] = ""
 		self.unit.time = 0
 
-		local database = skybet.uniqueservice("database")
+		local database = skynet.uniqueservice("database")
 		skynet.call(database, "lua", "explore_rd", "update", self.unit, self.account_id) 
 		
 		--log record
@@ -49,7 +50,7 @@ local ExploreMethod =
 		return self.unit["con"..index]
 	end;
 	--
-	begin = function(self, uuid0, uuid1, uuid2, uuid3, uuid4)
+	beginExplore = function(self, uuid0, uuid1, uuid2, uuid3, uuid4)
 		self.unit.time = os.time() + Quest.ExploreTime
 		self.unit["uuid0"] = uuid0
 		self.unit["uuid1"] = uuid1
@@ -57,11 +58,11 @@ local ExploreMethod =
 		self.unit["uuid3"] = uuid3
 		self.unit["uuid4"] = uuid4
 
-		local database = skybet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self.unit, self.account_id) 
+		local database = skynet.uniqueservice("database")
+		skynet.call(database, "lua", "explore_rd", "update", self.unit, self.account_id, "time", "uuid0", "uuid1", "uuid2", "uuid3", "uuid4") 
 		
 		--log record
-		syslog.infof("player[%s]:begin:%d,%s,%s,%s,%s,$s", self.account_id, self.unit.time, uuid0, uuid1, uuid2, uuid3, uuid4)
+		syslog.infof("player[%s]:beginExplore:%d,%s,%s,%s,%s,$s", self.account_id, self.unit.time, uuid0, uuid1, uuid2, uuid3, uuid4)
 	end;
 }
 

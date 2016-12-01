@@ -2,7 +2,9 @@ local skynet = require "skynet"
 local syslog = require "syslog"
 local uuid = require "uuid"
 local sharedata = require "sharedata"
+local CardMethod = require "agent.cards_method"
 
+local database
 local WATCHDOG
 local FUNCS_POST = {}
 local FUNCS_GET = {}
@@ -10,6 +12,7 @@ local FUNCS_GET = {}
 function init( watchdog )
 	WATCHDOG = watchdog
 	g_shareData  = sharedata.query "gdd"
+	database = skynet.uniqueservice 'database'
 end
 
 function exit()
@@ -23,11 +26,10 @@ function accept.add_money( param )
 	local ret = skynet.call(WATCHDOG, "lua", "gm_cmd", account_id, 'add_money', {money=add_money,gold=add_gold})
 	--说明玩家是离线状态，这里直接操作数据库
 	if not ret then
-		local db = skynet.uniqueservice 'database'
-		local account = skynet.call(db, "lua", "account_rd","load", account_id)
+		local account = skynet.call(database, "lua", "account_rd","load", account_id)
 		account.money = mClamp(account.money + add_money, 0, math.maxinteger)
 		account.gold = mClamp(account.gold + add_gold, 0, math.maxinteger)
-		skynet.call(db, "lua", "account_rd","update", account, "money", "gold")
+		skynet.call(database, "lua", "account_rd","update", account, "money", "gold")
 
 		syslog.infof("GM[%s]:add_money:%d,%d", account_id, add_money, add_gold)
 	end
@@ -42,32 +44,55 @@ function accept.add_card( param )
 	local ret = skynet.call(WATCHDOG, "lua", "gm_cmd", account_id, 'add_card', {dataId=dataId,cardNum=cardNum})
 	--说明玩家是离线状态，这里直接操作数据库
 	if not ret then
-		local db = skynet.uniqueservice 'database'
-		local cards = skynet.call(db, "lua", "cards_rd","load", account_id)
-		local card = nil
-		local _serId = Macro_GetCardSerialId( dataId )
-		for k, v in pairs(cards) do
-			if Macro_GetCardSerialId(v.dataId) == _serId then
-				card = v
-				break
-			end
-		end
-		if card then
-			card.count = mClamp(card.count + cardNum * g_shareData.heroRepository[dataId].n32WCardNum, 0, math.maxinteger)
+		local _serId = Macro_GetCardSerialId( itemDat.n32Retain1 )
+		local card = skynet.call(database, "lua", "cards_rd", "loadBySerialId", v.account_id, _serId) 
+		if not card then
+			card = CardMethod.initCard( itemDat.n32Retain1 )
+			card.count = (q-1) * g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
 		else
-			card = {uuid = uuid.gen(), dataId = dataId, power = 100, count = cardNum}
+			card.count = card.count + q *  g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
 		end
-		skynet.call(db, "lua", "cards_rd","addCard", account_id, card)
+		skynet.call(database, "lua", "cards_rd","addCard", account_id, card)
 
 		syslog.infof("GM[%s]:add_card:%d, %d", account_id, dataId, cardNum)
+	end
+end
+
+function accept.addItems( param )
+	print("gm add items ", param)
+
+	local items = param['items']
+	local account_id = param['account_id']
+	for p, q in pairs(items) do
+		local itemDat = g_shareData.itemRepository[p]
+		if itemDat.n32Type == 3 then	
+			local _serId = Macro_GetCardSerialId( itemDat.n32Retain1 )
+			local card = skynet.call(database, "lua", "cards_rd", "loadBySerialId", account_id, _serId) 
+			if not card then
+				card = CardMethod.initCard( itemDat.n32Retain1 )
+				card.count = (q-1) * g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
+			else
+				card.count = card.count + q *  g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
+			end
+			skynet.call(database, "lua", "cards_rd","addCard", account_id, card)
+		elseif itemDat.n32Type == 4 then
+			syslog.err("gm addItems: can not add packages["..p.."]")
+		elseif itemDat.n32Type == 5 then
+			account.gold = mClamp(account.gold + itemDat.n32Retain1*q, 0, math.maxinteger)
+			skynet.call (database, "lua", "account_rd", "update", account, "gold")
+		elseif itemDat.n32Type == 6 then
+			account.money = mClamp(account.money + itemDat.n32Retain1*q, 0, math.maxinteger)
+			skynet.call (database, "lua", "account_rd", "update", account, "money")
+		elseif itemDat.n32Type == 7 then
+			
+		end
 	end
 end
 
 -----------------------------------------------------
 --GET
 function response.getAccountInfo( param )
-	local db = skynet.uniqueservice 'database'
-	local account = skynet.call(db, "lua", "account_rd","load",param["id"])
+	local account = skynet.call(database, "lua", "account_rd","load",param["id"])
 	if not account.nick then return "" end
 	local r = {
 		nick = account.nick,
@@ -82,8 +107,7 @@ function response.getAccountInfo( param )
 end
 
 function response.getCardsInfo( param )
-	local db = skynet.uniqueservice 'database'
-	local cards = skynet.call(db, "lua", "cards_rd","load",param["id"])
+	local cards = skynet.call(database, "lua", "cards_rd","load",param["id"])
 	return cards
 end
 

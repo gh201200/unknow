@@ -263,8 +263,48 @@ end
 --战斗结束产出
 function CMD.giveBattleGains( args )
 	user.account:addExp("giveBattleGains", args.score)
-	for k, v in pairs(args.items) do
-		user.cards:addCard("giveBattleGains", v.itemId, v.itemNum)
+	CMD.addItems("giveBattleGains", args.items)
+end
+
+--添加道具
+function CMD.addItems(op, items)
+	local gold = 0
+	local money = 0
+	local cards = {}
+	local skillMats = {}
+	for k, v in pairs(items) do
+		local item = g_shareData.itemRepository[k]
+		if item.n32Type == 3 then	--英雄卡
+			if not cards[item.n32Retain1] then
+				cards[item.n32Retain1] = v
+			else
+				cards[item.n32Retain1] = cards[item.n32Retain1] + v
+			end
+		elseif item.n32Type == 4 then	--礼包宝箱
+			syslog.err("addItems: can not add package["..v.itemId.."]")
+		elseif item.n32Type == 5 then	--战斗外金币
+			gold = gold + item.n32Retain1 * v
+		elseif item.n32Type == 6 then	--钻石
+			money = money + item.n32Retain1 * v
+		elseif itemn32Type == 7 then	--技能材料
+			if not skillMats[item.n32Retain1] then
+				skillMats[item.n32Retain1] = v
+			else
+				skillMats[item.n32Retain1] = skillMats[item.n32Retain1] + v
+			end
+		end
+	end
+	if gold > 0 then
+		user.account:addGold(op, gold)
+	end
+	if money > 0 then
+		user.account:addMoney(op, money)
+	end
+	for k, v in pairs(cards) do
+		user.cards:addCard(op, k, v)
+	end
+	for k, v in pairs(skillMats) do
+		user.skills:addSkill(op, k, v)
 	end
 end
 

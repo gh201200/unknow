@@ -137,27 +137,31 @@ function getAccountLevel( _exp )
 	return lv
 end
 
-function calcNextTime(date)
-	local ret = false
-	for _,nextDate in pairs(date) do
-		local target = false
-		-- weak day or year day or month day
-		if nextDate.wday then
-			target = Time.nextWday(nextDate)
-		elseif nextDate.yday then
-			target = Time.nextYday(nextDate)
-		else
-			target = Time.nextDay(nextDate)
+function openPackage( pkgIds )
+	local items = {}
+	for k, v in pairs(pkgIds) do
+		local drop = g_shareData.itemDropPackage[v]
+		local rd = math.random(1, drop.totalRate)
+		local r = nil
+		for p, q in pairs(drop) do
+			if type(q) == "table" then
+				if q.n32Rate >= rd then
+					r = q
+					break
+				end
+			end
 		end
-		-- pick the near one
-		if target then
-			local nextRet = os.time(target)
-			
-			if not ret or ret > nextRet then ret = nextRet end
+		if r then
+			local itemId = r.n32ItemId
+			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
+			if items[itemId] then
+				items[itemId] = items[itemId] + itemNum
+			else
+				items[itemId] = itemNum
+			end
 		end
 	end
-	return ret
+	return items
 end
-
 
 

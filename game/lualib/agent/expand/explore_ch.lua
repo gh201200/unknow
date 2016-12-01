@@ -1,11 +1,19 @@
 local skynet = require "skynet"
 local snax = require "snax"
 local Quest = require "quest.quest"
+local Time = require "time"
 
 local Explore = class("Explore")
 
 local user
 local REQUEST = {}
+
+local ExploreType = {
+	MainAtt = 1,
+	Camp = 2,
+	Colr = 3,
+}
+
 
 function Explore:ctor()
 	self.request = REQUEST
@@ -87,28 +95,94 @@ function REQUEST.exploreBegin( args )
 			break
 		end
 		--
-		local nextTime = calcNextTime( { {hour=24, min=0, sec=0} } )
-		user.cards:setExplore(args.uuid0, nexyTime)
-		user.cards:setExplore(args.uuid1, nexyTime)
-		user.cards:setExplore(args.uuid2, nexyTime)
-		user.cards:setExplore(args.uuid3, nexyTime)
-		user.cards:setExplore(args.uuid4, nexyTime)
-		user.explore:begin(args.uuid0, args.uuid1, args.uuid2, args.uuid3, args.uuid4)
+		local nextTime = Time.nextDay({hour=24, min=0, sec=0})
+		nextTime = os.time( nextTime )
+		user.cards:setExplore(args.uuid0, nextTime)
+		user.cards:setExplore(args.uuid1, nextTime)
+		user.cards:setExplore(args.uuid2, nextTime)
+		user.cards:setExplore(args.uuid3, nextTime)
+		user.cards:setExplore(args.uuid4, nextTime)
+		user.explore:beginExplore(args.uuid0, args.uuid1, args.uuid2, args.uuid3, args.uuid4)
 	until true
 	
 	return {errorCode=errorCode}
 end
 
+
+local function isOkForExploreCon(card, conDat)
+	local cardDat = g_shareData.heroRepository[card.dataId]
+	if conDat.n32Type1 == ExploreType.MainAtt then
+		if cardDat.n32MainAtt ~= conDat.n32Value1 then
+			return false
+		end
+	end
+
+	if conDat.n32Type1 == ExploreType.Camp then
+		if cardDat.n32Camp ~= conDat.n32Value1 then
+			return false
+		end
+	end
+	
+	if conDat.n32Type1 == ExploreType.Color then
+		if cardDat.n32Color < conDat.n32Value1 then
+			return false
+		end
+	end
+	
+	if conDat.n32Type2 == ExploreType.MainAtt then
+		if cardDat.n32MainAtt ~= conDat.n32Value2 then
+			return false
+		end
+	end
+
+	if conDat.n32Type2 == ExploreType.Camp then
+		if cardDat.n32Camp ~= conDat.n32Value2 then
+			return false
+		end
+	end
+	
+	if conDat.n32Type2 == ExploreType.Color then
+		if cardDat.n32Color < conDat.n32Value2 then
+			return false
+		end
+	end
+	
+	return true
+end
+
 function REQUEST.exploreEnd( args )
 	local errorCode = 0
 	repeat
-		if user.explore:getTime() < os.time() then
+		if user.explore:getTime() > os.time() then
 			errorCode = -1
 			break
 		end
 		--
-		
+		local gains = {}
+		for i=0, 4 do
+			local uuid = user.explore:getUuid( i )
+			local card =  user.cards:getCardByUuid( uuid )
+			if card then
+				local con = user.explore:getCon( i )
+				local serLv = Explore.getSerLv( con )
+				local conDat = g_shareData.exploreRepository[i+1][serLv]
+				if not isOkForExploreCon(card, conDat) then
+					conDat = g_shareData.exploreRepository[i+1][1]
+				end
+				local items = openPackage( conDat.szDrop )
+				for k, v in pairs(items) do
+					if not gains[k] then
+						gains[k] = v
+					else
+						gains[k] = gains[k] + v
+					end
+				end		
+			end
+		end
+		user.servicecmd.addItems("exploreEnd", gains)
+		user.explore:resetExplore(Explore.randcon())	
 	until true
+
 	return {errorCode=errorCode}
 end
 

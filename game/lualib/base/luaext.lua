@@ -99,7 +99,7 @@ function table.calCross(tab1,tb2)
         return mid,left,right
 end
 --打包为redis存储格式
-function table.packdb(key, unit, ...)
+function table.packdb(unit, ...)
 	local r = {}
 	local p = { ... }
 	if next(p) then
@@ -115,8 +115,7 @@ function table.packdb(key, unit, ...)
 			i = i + 2	
 		end
 	end
-	table.insert(r, 1, key)
-	return r
+	return table.unpack(r)
 end
 -- string扩展
 

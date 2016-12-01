@@ -7,7 +7,7 @@ local CardsMethod =
 {
 	--
 	initCard = function(_dataId)
-		return {uuid = uuid.gen(), dataId = _dataId, power=100, count=0, buyNum=0,}
+		return {uuid = uuid.gen(), dataId = _dataId, count=0, explore=0,}
 	end;
 	--
 	getCardBySerialId = function(self, _serId)
@@ -104,7 +104,7 @@ local CardsMethod =
 		local v = self:getCardByUuid(uuid)
 		if not v then return end
 		v.explore = _time
-	
+		
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
