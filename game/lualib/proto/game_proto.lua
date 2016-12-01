@@ -28,8 +28,8 @@ local types = [[
 
 .Stats {
 	Strength 0 : integer
- 	Minjie 1 : integer
-  	Zhili 2 : integer
+ 	Agility 1 : integer
+  	Intelligence 2 : integer
 	HpMax 3 : integer
 	MpMax 4 : integer
   	Attack 5 : integer
@@ -583,8 +583,15 @@ summonPet 3003 {
 
 pushEffect 3004 {
 	request {
-		serverId 0 : integer
-		effect 1 : effect
+		acceperId 0 : integer
+		producerId 1 : integer
+		effectId 2 : integer
+		effectTime 3 : integer
+		flag 4 : integer
+		posX 5 : string
+		posZ 6: string
+		dirX 7 : string
+		dirZ 8: string
 	}
 }
 

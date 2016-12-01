@@ -1,9 +1,10 @@
 --local vector3 = require "vector3"
 local skynet = require "skynet"
 local spell = class("spell")
+local transfrom = require "entity.transfrom"
 local sheduleSpell = require "skill.sheduleSpell"
+local passtiveSpell = require "skill.passtiveSpell"
 require "globalDefine"
-
 
 function spell:ctor(entity)
 	--print("spell:ctor()")
@@ -11,33 +12,27 @@ function spell:ctor(entity)
 	self.targets = {}
 	self.status = SpellStatus.None
 	self.skilldata = nil
-
 	self.readyTime = 0 	 --施法前摇
 	self.castTime = 0	 --施放中
 	self.endTime = 0	 --施法后摇
 	
 	self.channelTime = 0	--持续施法	
 	self.triggerTime = -1 
-	self.errorCode = ErrorCode.None 
-	self.castingTime = 0
-
 	self.effects = {}	--技能效果表
 	self.targets = {}
 	self.totalTime = 0
-	self.attachAffact = {}	--普攻附加效果
 	self.sheduleSpells = {} --延迟效果
-	
 	self.isSheule = false
+	self.passtiveSpells = {} --被动技能
 end
 
 function spell:init(skilldata,skillTimes)
 	self.skilldata = skilldata
 	self.readyTime = skillTimes[1]
 	self.castTime = skillTimes[2]
-	self.channalTime = 0 --持续释放时间
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
-	self.triggerTime = skilldata.n32TriggerTime
+	self.triggerTime = skilldata.n32TriggerTime or 0
 	if self.triggerTime == 0 then
 		self.triggerTime = skillTimes["trigger"]
 	end
@@ -45,13 +40,15 @@ function spell:init(skilldata,skillTimes)
 		self.isSheule = true
 		self.triggerTime = self.triggerTime - self.readyTime
 	end
-	self.myEffectId = skilldata.n32MyEffect or 0  		 --自身绑定特效
-	self.targetEffectId = skilldata.n32TargetEffect or 0  	 --目标位置特效
-	self.targetEffectPos = nil				 --目标特效位置
+	--持续施法
+	if self.skilldata.n32NeedCasting ~= 0 then
+		self.channalTime = self.skilldata.n32AffectTime
+	end
 end
 
 function spell:canBreak(ms)
 	if self:isSpellRunning() == false then return true end
+	if self.skilldata.n32NeedCasting == 2 then return false end	--持续施法不能被打断
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
 		self.source.cooldown:resetCd(self.skilldata.id,0) 	
 		return true
@@ -97,156 +94,164 @@ function spell:updatesheduleSpell(dt)
 		end
 	end 
 end
+
 function spell:update(dt)
 	self:updatesheduleSpell(dt)
 	if self:isSpellRunning() == false then return end --技能不推进
 	if self.status == SpellStatus.Ready then
-		self.readyTime =  self.readyTime - dt
-		self:onReady()
+		self:onReady(dt)
 	elseif self.status == SpellStatus.Cast then
-		self.castTime =  self.castTime - dt
-		self:onCast()
+		self:onCast(dt)
 	elseif self.status == SpellStatus.ChannelCast then
-		self.channelTime = self.channelTime - dt
-		self:onChannelCast()
+		self:onChannelCast(dt)
 	elseif self.status == SpellStatus.End then
-		self.endTime =  self.endTime - dt
-		self:onEnd()
+		self:onEnd(dt)
 	end
 	--推进技能效果	
 	self:advanceEffect(dt)
 end
-function spell:onTriggerSkillAffect(skilldata,source,srcTarget)
-	if skilldata.n32CubeEffect ~= 0 then
-		 g_entityManager:createFlyObj(source,srcTarget,skilldata)
-		 return
-	end
-	local selfEffects = skilldata.szMyAffect
-	if selfEffects ~= "" then
-		local targets = { source }
-		self:trgggerAffect(selfEffects,targets,skilldata)
-	end
 
-	if skilldata.bCommonSkill == true then
-		--普通攻击 触发普攻附加buff
-		if  srcTarget:getMiss() > math.random(1,100) then
-			--触发闪避
-			local shanbiEffect = "[show:500,20052]"
-			srcTarget.affectTable:buildAffects(source,shanbiEffect,skilldata.id)	
-			return
-		end
-			source.affectTable:triggerAtkAffects(srcTarget,false,skilldata)
-			if srcTarget and srcTarget:getType() ~= "transform" then 
-				srcTarget.affectTable:triggerAtkAffects(source,true)	
-			end
-			return
-	end
-
-	if skilldata.n32Type ~= 35 and skilldata.n32Type ~= 36 then
-		--目标效果
-		if self.skilldata.szAtkBe == "" then
-			local targetEffects = skilldata.szTargetAffect
-			local targets = g_entityManager:getSkillAttackEntitys(source,srcTarget,skilldata)
-			--self.targets = targets
-			if targets ~= nil and #targets ~= 0 and targetEffects ~= "" then
-				self:trgggerAffect(targetEffects,targets,skilldata)
-			end
-		else
-			--在后续普攻过程中加成的效果
-			local tmpTb = {}
-			local tmpTb = string.split(skilldata.szAtkBe,",")
-			local item = {}
-			item.rate = tonumber(tmpTb[2])
-			item.lifeTime = tonumber(tmpTb[3])
-			item.affdata = skilldata.szTargetAffect
-			item.skillId = skilldata.id
-			if tonumber(tmpTb[1]) == 1 then
-				table.insert(source.affectTable.AtkAffects,item)
-			elseif tonumber(tmpTb[1]) == 0 then
-				table.insert(source.affectTable.bAtkAffects,item)
-			end 
-		end
+--触发被动技能
+function spell:onTriggerPasstives(_cond)
+	for _k,_v in pairs(self.passtiveSpells) do
+		_v:trigger(_cond)	
 	end
 end
---更新技能效果
+
+--触发效果
+function spell:onTrigger(skilldata,source,srcTarget)
+	local skillTgt = srcTarget
+	--普通攻击
+	if skilldata.n32SkillType == 0 then
+		--攻击概率出发
+		self:onTriggerPasstives(1)
+		--攻击次数触发
+		self:onTriggerPasstives(2)
+		if srcTarget then
+			--受击概率触发
+			srcTarget.spell:onTriggerPasstives(3)
+			--受击概率触发
+			srcTarget.spell:onTriggerPasstives(4)
+		end
+	end
+	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
+	local targets = {}
+	--子弹普通弹道
+	--print("selects===",#selects)
+	if skilldata.n32BulletType ~= 0 then
+		for _k,_v in pairs(selects) do
+			g_entityManager:createFlyObj(source,_v,skilldata)
+		end
+	else
+		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)	
+		--print("targets ==",#targets)	
+		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
+		
+			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
+		end
+	end
+	if skilldata.szMyAffect ~= "" then
+		--print("===targets=",#targets)
+		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
+	end
+
+end
+
+--推进技能效果
 function spell:advanceEffect(dt)
 	if self.triggerTime >= 0  then 
 		self.triggerTime = self.triggerTime - dt
 		if self.triggerTime < 0 then
 			if self.isSheule ~= true then
 				self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
-				self:onTriggerSkillAffect(self.skilldata,self.source,self.srcTarget)
+				self:onTrigger(self.skilldata,self.source,self.srcTarget)
 			end
-		end
-	end
-end
-
---释放被动技能
-function spell:onStudyPasstiveSkill(skilldata)
-	if skilldata.bActive == false then
-		--自身效果
-		local selfEffects = skilldata.szMyAffect
-		if selfEffects ~= ""  and selfEffects ~= nil then
-			local targets = { self.source }
-			self:trgggerAffect(selfEffects,targets,skilldata)
-		end
-		--目标效果
-		if skilldata.szAtkBe ~= "" and  skilldata.szAtkBe ~= nil then
-			--在后续普攻过程中加成的效果
-			local tmpTb = {}
-			local tmpTb = string.split(skilldata.szAtkBe,",")
-			local item = {}
-			item.rate = tonumber(tmpTb[2])
-			item.lifeTime = tonumber(tmpTb[3])
-			item.affdata = skilldata.szTargetAffect
-			item.skillId = skilldata.id 
-			if tonumber(tmpTb[1]) == 1 then
-				table.insert(self.source.affectTable.AtkAffects,item)
-			elseif tonumber(tmpTb[1]) == 0 then
-				table.insert(self.source.affectTable.bAtkAffects,item)
-			end 
 		end
 	end
 end
 
 --触发目标效果
-function spell:trgggerAffect(datastr,targets,skilldata)
-	for _k,_v in pairs(targets) do
-		if _v.affectState then
-			if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
-				--无敌状态下
-			elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bCommonSkill ~= true then
-				--普攻 魔免状态
-			else
-				_v.affectTable:buildAffects(self.source,datastr,skilldata.id)
+function spell:trgggerAffect(datas,targets,skilldata,isSelf)
+	isSelf = isSelf or false
+	if isSelf == true then
+		self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
+	else
+		for _k,_v in pairs(targets) do
+			if _v.affectState then
+				if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
+					--无敌状态下
+				elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bcommonskill ~= true then
+					--普攻 魔免状态
+				else
+					_v.affectTable:buildAffects(self.source,datas,skilldata.id)
+				end
 			end
 		end
 	end
 end
+
 function spell:onBegin()
 	self.status = SpellStatus.Ready
 	self.srcTarget = self.source:getTarget()
+	--方向性技
+	if self.skilldata.n32SkillTargetType == 6 then
+		local pos = self.source.pos:return_add(self.source.dir)
+		self.srcTarget = transfrom.new(pos,nil)
+	end
 	self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
 	self.source:callBackSpellBegin()
 end
 
-function spell:onReady()
-	if self.readyTime < 0 then
-		--扣篮消耗
-		if self.source:getMp() < self.skilldata.n32MpCost then
-			self:breakSpell()
-			return
+--红蓝消耗是否足够
+function spell:canCost(skilldata)
+	local MpCost,HpCost = 0,0
+	if skilldata.n32MpCost ~= 0 or skilldata.n32MpCostPercent ~= 0 then
+		MpCost = skilldata.n32MpCostPercent / 100 * self.source:getMp() + skilldata.n32MpCost
+		if MpCost > self.source:getMp() then 
+			return false
 		end
+	end
+	if skilldata.n32HpCost ~= 0 or skilldata.n32HpCostPercent ~= 0 then
+		HpCost = skilldata.n32HpCostPercent / 100 * self.source:getHp() + skilldata.n32HpCost
+		if HpCost > self.source:getHp() then 
+			return false
+		end
+	end
+	return true
+end
+
+--扣除蓝耗
+function spell:costMpHp(skilldata)
+	--蓝消耗
+	local MpCost,HpCost = 0,0
+	MpCost = skilldata.n32MpCostPercent / 100 * self.source:getMp() + skilldata.n32MpCost
+	HpCost = skilldata.n32HpCostPercent / 100 * self.source:getHp() + skilldata.n32HpCost
+	if MpCost ~= 0 then self.source:addMp(-MpCost,HpMpMask.SkillMp,self.source) end
+	if HpCost ~= 0 then self.source:addHp(-HpCost,HpMpMask.SkillHp,self.source) end
+end
+
+function spell:onReady(dt)
+	self.readyTime =  self.readyTime - dt
+	if self.readyTime < 0 then
+		--扣除消耗
+		if self:canCost(self.skilldata) == false then
+			self:breakSpell()
+			return 
+		end
+		self:costMpHp(self.skilldata)
 		if self.isSheule == true then
 			local ss = sheduleSpell.new(self.source,self.srcTarget,self.skilldata,self.triggerTime)
 			table.insert(self.sheduleSpells,ss)
 		end
-		self.source:addMp(-self.skilldata.n32MpCost,HpMpMask.SkillMp)
 		self.source.cooldown:addItem(self.skilldata.id) --加入cd
 		if self.source:getType() == "IMapPlayer" and self.skilldata.bCommonSkill == false then
 			self.source:SynSkillCds(self.skilldata.id)
 		end
-		self.status = SpellStatus.Cast
+		if self.skilldata.n32NeedCasting == 0 then
+			self.status = SpellStatus.Cast
+		elseif self.skilldata.n32NeedCasting == 2 then
+			self.status = SpellStatus.ChannelCast
+		end
 	end
 end
 
@@ -268,24 +273,35 @@ function spell:clear()
 	--正在触发中 移除目标技能效果
 	self.triggerTime = 0
 	self.status = SpellStatus.None
-	self.errorCode = ErrorCode.None
 	self.readyTime = 0
 	self.castTime = 0
 	self.endTime = 0
 end
 
-function spell:onCast()
+function spell:onCast(dt)
+	self.castTime =  self.castTime - dt
 	--self.source.curActionState = ActionState.attack2
 	if self.castTime < 0 then
 		self.status = SpellStatus.End
 	end
 end
-function spell:onChannelCast()
+
+function spell:onChannelCast(dt)
+	self.channelTime = self.channelTime - dt
 	if self.channelTime < 0 then
 		self.status = SpellStatus.End
+		return
+	end
+	--持续施法中
+	self.CTriggerTime = self.CTriggerTime - dt
+	if self.CTriggerTime <= 0 then
+		self.CTriggerTime = self.skilldata.n32AffectGap --间隔时间
+		self:onTrigger(self.skilldata,self.source,self.srcTarget)
 	end
 end
-function spell:onEnd()
+
+function spell:onEnd(dt)
+	self.endTime =  self.endTime - dt
 	if self.source:getTarget() ~= nil and self.srcTarget ~= nil and self.source:getTarget() ~= self.srcTarget  then
 		--切换目标打断后摇
 		self.endTime = -1
@@ -304,6 +320,7 @@ function spell:onEnd()
 		end
 	end
 end
+
 function spell:Cast(skillid,target,pos)
 	self.skilldata = g_shareData.skillRepository[skillid]
 	assert(self.skilldata)

@@ -1,8 +1,9 @@
 local Affect = require "skill.Affects.Affect"
 local getbloodAffect = class("getbloodAffect",Affect)
 
-function getbloodAffect:ctor(owner,source,data)
+function getbloodAffect:ctor(owner,source,data,skillId)
 	self.super.ctor(self,owner,source,data)
+	--print("getbloodAffect",data)
 	self.effectId = data[4] or 0
 	self.mul = data[2] or 0
 	self.val = data[3] or 0 
@@ -15,7 +16,7 @@ end
 
 function getbloodAffect:onEnter()
 	self.super.onEnter(self)
-	print("getbloodAffect:onEnter")
+	--print("getbloodAffect:onEnter")
 	local demage = self:calDemage()
 	--扣血
 	self.owner:addHp(demage, HpMpMask.SkillHp, self.source)

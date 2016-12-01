@@ -21,19 +21,19 @@ function StatsAffect:onEnter()
 			lzm = true
 		end
 		if self.data[1] == 'updex' then
-			self.owner:addMidMinjiePc(self.data[2])
-			self.owner:addMidMinjie(self.data[3])
+			self.owner:addMidAgilityPc(self.data[2])
+			self.owner:addMidAgility(self.data[3])
 			--self.effectTime = self.data[4]
 			--calc minjie again
-			self.owner:calcMinjie()
+			self.owner:calcAgility()
 			lzm = true
 		end
 		if self.data[1] == 'upinte' then
-			self.owner:addMidZhiliPc(self.data[2])
+			self.owner:addMidIntelligencePc(self.data[2])
 			self.owner:addMidZhiLi(self.data[3])
 			--self.effectTime = self.data[4]
 			--calc zhili again
-			self.owner:calcZhili()
+			self.owner:calcIntelligence()
 			lzm = true
 		end
 		if lzm then	
@@ -166,18 +166,18 @@ function StatsAffect:onExit()
 			break
 		end
 		if self.data[1] == 'updex' then
-			self.owner:addMidMinjiePc(-self.data[2])
-			self.owner:addMidMinjie(-self.data[3])
+			self.owner:addMidAgilityPc(-self.data[2])
+			self.owner:addMidAgility(-self.data[3])
 			--calc minjie again
-			self.owner:calcMinjie()
+			self.owner:calcAgility()
 			lzm = true
 			break
 		end
 		if self.data[1] == 'upinte' then
-			self.owner:addMidZhiliPc(-self.data[2])
+			self.owner:addMidIntelligencePc(-self.data[2])
 			self.owner:addMidZhiLi(-self.data[3])
 			--calc zhili again
-			self.owner:calcZhili()
+			self.owner:calcIntelligence()
 			lzm = true
 			break
 		end
