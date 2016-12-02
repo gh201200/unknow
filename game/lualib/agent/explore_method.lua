@@ -58,6 +58,8 @@ local ExploreMethod =
 		self.unit["uuid3"] = uuid3
 		self.unit["uuid4"] = uuid4
 
+		self:sendExploreData()
+
 		local database = skynet.uniqueservice("database")
 		skynet.call(database, "lua", "explore_rd", "update", self.unit, self.account_id, "time", "uuid0", "uuid1", "uuid2", "uuid3", "uuid4") 
 		
