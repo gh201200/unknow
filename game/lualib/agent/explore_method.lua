@@ -56,7 +56,7 @@ local ExploreMethod =
 		self.unit.time = os.time() + Quest.ExploreTime
 		self.unit["uuid0"] = uuid0
 		self.unit["uuid1"] = uuid1
-		self.unit["uuid3"] = uuid2
+		self.unit["uuid2"] = uuid2
 		self.unit["uuid3"] = uuid3
 		self.unit["uuid4"] = uuid4
 
