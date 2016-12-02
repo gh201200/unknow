@@ -182,8 +182,11 @@ function REQUEST.exploreEnd( args )
 		user.servicecmd.addItems("exploreEnd", gains)
 		user.explore:resetExplore(Explore.randcon())	
 	until true
-
-	return {errorCode=errorCode}
+	local vecs = {}
+	for k, v in pairs(gains) do
+		table.insert(vecs, {x=k,y=v})
+	end
+	return {errorCode=errorCode,items=vecs}
 end
 
 return Explore.new()

@@ -390,6 +390,7 @@ exploreBegin 3007 {
 exploreEnd 3008 {
 	response {                                                            
 		errorCode 0 : integer
+		items 1 : *Vector2
 	} 
 }
 
