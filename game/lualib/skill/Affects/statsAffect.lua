@@ -2,37 +2,51 @@ local Affect = require "skill.Affects.Affect"
 local StatsAffect = class("StatsAffect" ,Affect)
 function StatsAffect:ctor(entity,source,data,skillId)
         self.super.ctor(self,entity,source,data,skillId)
-	self.effectTime = self.data[5] or 0
-	self.effectId = self.data[6] or 0
+	self.effectTime = self.data[6] or 0
+	self.effectId = self.data[7] or 0
 end
-function StatsAffect:onEnter()
-	self.super.onEnter(self)
+
+function StatsAffect:onTrigger(_add)
+	if _add ~= 1 or _add ~= -1 then return end
 	repeat
 		local lzm = false
 		if self.data[1] == 'ctrl' then
-			self.owner.affectState = bit_or(self.owner.affectState, self.data[2]) -- 控制类型
+			if _add == 1 then
+				self.owner.affectState = bit_or(self.owner.affectState, self.data[2]) -- 控制类型
+			else
+				self.owner.affectState = bit_and(self.owner.affectState, bit_not(self.data[2]))
+			end
 		end
 		if self.data[1] == 'upstr' then
-			self.owner:addMidStrengthPc(self.data[2])
-			self.owner:addMidStrength(self.data[3])
-			--self.effectTime = self.data[4]
-			--calc strength again
+			if self.data[2] == 0 then
+				self.owner:addMidStrengthPc(_add * self.data[3])
+				self.owner:addMidStrength(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidStrength(_add * r)
+			end	
 			self.owner:calcStrength()
 			lzm = true
 		end
 		if self.data[1] == 'updex' then
-			self.owner:addMidAgilityPc(self.data[2])
-			self.owner:addMidAgility(self.data[3])
-			--self.effectTime = self.data[4]
-			--calc minjie again
+			if self.data[2] == 0 then
+				self.owner:addMidAgilityPc(_add * self.data[3])
+				self.owner:addMidAgility(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidAgility(_add * r)
+			end
 			self.owner:calcAgility()
 			lzm = true
 		end
 		if self.data[1] == 'upinte' then
-			self.owner:addMidIntelligencePc(self.data[2])
-			self.owner:addMidZhiLi(self.data[3])
-			--self.effectTime = self.data[4]
-			--calc zhili again
+			if self.data[2] == 0 then
+				self.owner:addMidIntelligencePc(_add * self.data[3])
+				self.owner:addMidIntelligence(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidIntelligence(_add * r)
+			end		
 			self.owner:calcIntelligence()
 			lzm = true
 		end
@@ -49,96 +63,136 @@ function StatsAffect:onEnter()
 			break
 		end
 		if self.data[1] == 'hp' then
-			self.owner:addMidHpMaxPc(self.data[2])
-			self.owner:addMidHpMax(self.data[3])
-			--self.effectTime = self.data[4]	
+			if self.data[2] == 0 then
+				self.owner:addMidHpMaxPc(_add * self.data[3])
+				self.owner:addMidHpMax(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidHpMax(_add * r)
+			end			
 			self.owner:calcHpMax()
 			break
 		end
 
 		if self.data[1] == 'mp' then
-			self.owner:addMidMpMaxPc(self.data[2])
-			self.owner:addMidMpMax(self.data[3])
-			--self.effectTime = self.data[4]
+			if self.data[2] == 0 then
+				self.owner:addMidMpMaxPc(_add * self.data[3])
+				self.owner:addMidMpMax(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidMpMax(_add * r)
+			end		 
 			self.owner:calcMpMax()
 			break
 		end
 		
 		if self.data[1] == 'atk' then
-			self.owner:addMidAttackPc(self.data[2] * GAMEPLAY_PERCENT)
-			self.owner:addMidAttack(self.data[3] * GAMEPLAY_PERCENT)
+			if self.data[2] == 0 then
+				self.owner:addMidAttackPc(_add * self.data[3])
+				self.owner:addMidAttack(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidAttack(_add * r)
+			end	
 			self.owner:calcAttack()
 			break
 		end
 		
 		if self.data[1] == 'def' then
-			self.owner:addMidDefencePc(self.data[2] * GAMEPLAY_PERCENT)
-			self.owner:addMidDefence(self.data[3] * GAMEPLAY_PERCENT)
-			--self.effectTime = self.data[4]
+			if self.data[2] == 0 then
+				self.owner:addMidDefencePc(_add * self.data[3])
+				self.owner:addMidDefence(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidDefence(_add * r)
+			end		
 			self.owner:calcDefence()
 			break
 		end
 		
 		if self.data[1] == 'wsp' then
-			self.owner:addMidASpeed(self.data[2] * GAMEPLAY_PERCENT)
-			--self.effectTime = self.data[4]
+			if self.data[2] == 0 then
+				self.owner:addMidASpeedPc(_add * self.data[3])
+				self.owner:addMidASpeed(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidASpeed(_add * r)
+			end		
 			self.owner:calcASpeed()
 			break
 		end
 	
 		if self.data[1] == 'mov' then
-			self.owner:addMidMSpeedPc(self.data[2] * GAMEPLAY_PERCENT)
-			self.owner:addMidMSpeed(self.data[3] * GAMEPLAY_PERCENT)
+			if self.data[2] == 0 then
+				self.owner:addMidMSpeedPc(_add * self.data[3])
+				self.owner:addMidMSpeed(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidMSpeed(_add * r)
+			end
 			self.owner:calcMSpeed()
 			break
 		end
 		
-		if self.data[1] == 'rng' then
-			self.owner:addMidAttackRangePc(self.data[2])
-			self.owner:addMidAttackRange(self.data[3])
-			--self.effectTime = self.data[4]
-			self.owner:calcAttackRange()
-			break
-		end
-		
 		if self.data[1] == 'rehp' then
-			self.owner:addMidRecvHpPc(self.data[2])
-			self.owner:addMidRecvHp(self.data[3])
-			--self.effectTime = self.data[4]
+			if self.data[2] == 0 then
+				self.owner:addMidRecvHpPc(_add * self.data[3])
+				self.owner:addMidRecvHp(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidRecvHp(_add * r)
+			end
 			self.owner:calcRecvHp()
 			break
 		end
 		
 		if self.data[1] == 'remp' then
-			self.owner:addMidRecvMpPc(self.data[2])
-			self.owner:addMidRecvMp(self.data[3])
-			--self.effectTime = self.data[4]
+			if self.data[2] == 0 then
+				self.owner:addMidRecvMpPc(_add * self.data[3])
+				self.owner:addMidRecvMp(_add * self.data[4])
+			else
+				local r = self:getBaseAttributeValue(self.data)
+				self.owner:addMidRecvMp(_add * r)
+			end
 			self.owner:calcRecvMp()
 			break
 		end
 		
 		if self.data[1] == 'critrate' then
-			self.owner:addMidBaojiRate(self.data[2])
-			self.owner:addMidBaojiTimes(self.data[3])
-		--	self.effectTime = self.data[4]
+			self.owner:addMidBaojiRate(_add * self.data[3])
+			self.owner:addMidBaojiTimes(_add * self.data[4])
 			self.owner:calcBaoji()
 			break
 		end
 
 		if self.data[1] == 'hitrate' then
-			self.owner:addMidHit(self.data[2])
-			--self.effectTime = self.data[4]
+			self.owner:addMidHit(_add * self.data[3])
 			self.owner:calcHit()
 			break
 		end
 	
 		if self.data[1] == 'dodrate' then
-			self.owner:addMidMiss(self.data[3]* GAMEPLAY_PERCENT)
-			--self.effectTime = self.data[4]
+			self.owner:addMidMiss(_add * self.data[3])
 			self.owner:calcMiss()
 			break
 		end
+		
+		if self.data[1] == "updamage" then
+			self.owner:addMidUpdamage(_add * self.data[3])
+			break
+		end
+		
+		if self.data[1] == "shield" then
+			local r = self:getAttributeValue(self.data)
+			self.owner:addMidShield(r * _add)
+		end
 	until true
+
+end
+
+function StatsAffect:onEnter()
+	seelf.super.onEnter(self)
+	self:onTrigger(1)
 end
 
 function StatsAffect:onExec(dt)
@@ -151,133 +205,7 @@ end
 
 function StatsAffect:onExit()
 	self.super.onExit(self)
-	repeat
-		local lzm = false
-		if self.data[1] == 'ctrl' then
-			-- 1: 不能移动 2:不能攻击 3:不能放技能
-			self.owner.affectState = bit_and(self.owner.affectState, bit_not(self.data[2])) -- 控制类型
-		end
-		if self.data[1] == 'upstr' then
-			self.owner:addMidStrengthPc(-self.data[2])
-			self.owner:addMidStrength(-self.data[3])
-			--calc strength again
-			self.owner:calcStrength()
-			lzm = true
-			break
-		end
-		if self.data[1] == 'updex' then
-			self.owner:addMidAgilityPc(-self.data[2])
-			self.owner:addMidAgility(-self.data[3])
-			--calc minjie again
-			self.owner:calcAgility()
-			lzm = true
-			break
-		end
-		if self.data[1] == 'upinte' then
-			self.owner:addMidIntelligencePc(-self.data[2])
-			self.owner:addMidZhiLi(-self.data[3])
-			--calc zhili again
-			self.owner:calcIntelligence()
-			lzm = true
-			break
-		end
-		if lzm then	
-			--effect other stats
-			self.owner:calcHpMax()
-			self.owner:calcMpMax()
-			self.owner:calcAttack()
-			self.owner:calcDefence()
-			self.owner:calcASpeed()
-			self.owner:calcMSpeed()
-			self.owner:calcRecvHp()
-			self.owner:calcRecvMp()
-			break
-		end
-
-		if self.data[1] == 'hp' then
-			self.owner:addMidHpMaxPc(-self.data[2])
-			self.owner:addMidHpMax(-self.data[3])
-			self.owner:calcHpMax()
-			break
-		end
-
-		if self.data[1] == 'mp' then
-			self.owner:addMidMpMaxPc(-self.data[2])
-			self.owner:addMidMpMax(-self.data[3])
-			self.owner:calcMpMax()
-			break
-		end
-		
-		if self.data[1] == 'atk' then
-			self.owner:addMidAttackPc(-self.data[2] * GAMEPLAY_PERCENT)
-			self.owner:addMidAttack(-self.data[3] * GAMEPLAY_PERCENT)
-			self.owner:calcAttack()
-			break
-		end
-		
-		if self.data[1] == 'def' then
-			self.owner:addMidDefencePc(-self.data[2] * GAMEPLAY_PERCENT)
-			self.owner:addMidDefence(-self.data[3] * GAMEPLAY_PERCENT)
-			self.owner:calcDefence()
-			break
-		end
-		
-		if self.data[1] == 'wsp' then
-			self.owner:addMidASpeed(-self.data[2] * GAMEPLAY_PERCENT)
-			self.owner:calcASpeed()
-			break
-		end
-	
-		if self.data[1] == 'mov' then
-			self.owner:addMidMSpeedPc(-self.data[2] * GAMEPLAY_PERCENT)
-			self.owner:addMidMSpeed(-self.data[3] * GAMEPLAY_PERCENT)
-			self.owner:calcMSpeed()
-			break
-			
-		end
-		
-		if self.data[1] == 'rng' then
-			self.owner:addMidAttackRangePc(-self.data[2])
-			self.owner:addMidAttackRange(-self.data[3])
-			self.owner:calcAttackRange()
-			break
-		end
-		
-		if self.data[1] == 'rehp' then
-			self.owner:addMidRecvHpPc(-self.data[2])
-			self.owner:addMidRecvHp(-self.data[3])
-			self.owner:calcRecvHp()
-			break
-		end
-		
-		if self.data[1] == 'remp' then
-			self.owner:addMidRecvMpPc(-self.data[2])
-			self.owner:addMidRecvMp(-self.data[3])
-			self.owner:calcRecvMp()
-			break
-		end
-		
-		if self.data[1] == 'critrate' then
-			self.owner:addMidBaojiRate(-self.data[2])
-			self.owner:addMidBaojiTimes(-self.data[3])
-			self.owner:calcBaiji()
-			break
-		end
-
-		if self.data[1] == 'hitrate' then
-			self.owner:addMidHit(-self.data[2])
-			self.owner:calcHit()
-			break
-		end
-	
-		if self.data[1] == 'dodrate' then
-			self.owner:addMidMiss(-self.data[3] * GAMEPLAY_PERCENT)
-			self.owner:calcMiss()
-			break
-		end
-	until true
-
+	self:onTrigger(-1)
 end
-
 
 return StatsAffect

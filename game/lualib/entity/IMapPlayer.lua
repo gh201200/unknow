@@ -140,6 +140,8 @@ function IMapPlayer:calcStats()
 	self:calcBaoji()
 	self:calcHit()
 	self:calcMiss()
+	self:calUpdamage()
+	self:calShield()	
 end
 
 function IMapPlayer:onDead()

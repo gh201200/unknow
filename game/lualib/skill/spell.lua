@@ -176,14 +176,22 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 	if isSelf == true then
 		self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
 	else
+		if skilldata.n32SkillType == 0 and self.source:getHit()*100 < math.random(0,100) then
+			--未命中
+			return
+		end	
 		for _k,_v in pairs(targets) do
 			if _v.affectState then
 				if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
 					--无敌状态下
-				elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and self.skilldata.bcommonskill ~= true then
+				elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and skilldata.n32SkillType == 0 then
 					--普攻 魔免状态
 				else
-					_v.affectTable:buildAffects(self.source,datas,skilldata.id)
+					if skilldata.n32SkillType == 0 and self.source:getMiss()*100 > math.random(0,100) then
+						--闪避
+					else
+						_v.affectTable:buildAffects(self.source,datas,skilldata.id)
+					end
 				end
 			end
 		end
