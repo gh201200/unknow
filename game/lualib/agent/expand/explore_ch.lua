@@ -152,13 +152,13 @@ end
 
 function REQUEST.exploreEnd( args )
 	local errorCode = 0
+	local gains = {}
 	repeat
 		if user.explore:getTime() > os.time() then
 			errorCode = -1
 			break
 		end
 		--
-		local gains = {}
 		for i=0, 4 do
 			local uuid = user.explore:getUuid( i )
 			local card =  user.cards:getCardByUuid( uuid )
