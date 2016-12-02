@@ -60,8 +60,8 @@ local function usePackageItem( itemId )
 	for w in string.gmatch(itemDat.szRetain3, "%d+") do
 		table.insert(pkgIds, tonumber(w))
 	end
-	local items = openPackage( pkgIds )
-	user.servicecmd:addItems("buyShopItem", items)
+	local items = openPackage( pkgIds )	
+	user.servicecmd.addItems("buyShopItem", items)
 	return items
 end
 
@@ -126,7 +126,6 @@ function REQUEST.buyShopItem( args )
 			end
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
-			print(shopDat)
 			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count * args.num)
 			local cooldown = snax.queryservice 'cddown' 
 			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )

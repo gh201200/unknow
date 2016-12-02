@@ -48,15 +48,10 @@ function account.create (account_id, password, nick, icon)
 		)
 end
 
-function account.update(account, ...)
-	local p = { ... }
-	local connection, key = make_key (account.account_id)
-	local t = {}
-	for k, v in pairs(p) do
-		t[2*k - 1] = v
-		t[2*k] = account[v]
-	end
-	connection:hmset(key, table.unpack(t))
+function account.update(account_id, account, ...)
+	local connection, key = make_key (account_id)
+	
+	connection:hmset(key, table.packdb(account, ...))
 end
 
 return account

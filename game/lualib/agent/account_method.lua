@@ -11,7 +11,7 @@ local AccountMethod =
 		self:sendAccountData()
 
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self.unit, "nick")
+		skynet.call (database, "lua", "account_rd", "update", self.account_id, self.unit, "nick")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:setNickName:%s", op, self.account_id, name)
@@ -34,7 +34,7 @@ local AccountMethod =
 		self:sendAccountData()
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self.unit, "gold")
+		skynet.call (database, "lua", "account_rd", "update", self.account_id, self.unit, "gold")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:addGold:%d:%d", op, self.account_id, _gold, nv)
@@ -53,7 +53,7 @@ local AccountMethod =
 		self:sendAccountData()
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self.unit, "money")
+		skynet.call (database, "lua", "account_rd", "update", self.account_id, self.unit, "money")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:addMoney:%d:%d", op,  self.account_id, _money, nv)
@@ -71,7 +71,7 @@ local AccountMethod =
 		self:sendAccountData()
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self.unit, "exp")
+		skynet.call (database, "lua", "account_rd", "update", self.account_id, self.unit, "exp")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:addExp:%d:%d", op, self.account_id, _exp, nv)
@@ -83,7 +83,7 @@ local AccountMethod =
 		self:sendAccountData()
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self.unit, "icon")
+		skynet.call (database, "lua", "account_rd", "update", self.account_id, self.unit, "icon")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:setIcon:%s", op, self.account_id, _icon)
@@ -95,7 +95,7 @@ local AccountMethod =
 		self:sendAccountData()
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account_rd", "update", self.unit, "flag")
+		skynet.call (database, "lua", "account_rd", "update", self.account_id, self.unit, "flag")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:setFlag:%d", op, self.account_id, _flag)
