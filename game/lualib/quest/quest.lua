@@ -52,7 +52,7 @@
 	},
 	
 	--探索CD(s)
-	ExploreTime = 2*60,
+	ExploreTime = 60,
 }
 
 
