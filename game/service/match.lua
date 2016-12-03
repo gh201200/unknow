@@ -93,6 +93,17 @@ local function handleMatch(t)
 	end
 end
 CMD.MATCH_NUM = 1
+
+local function removeDirty()
+	local tmp_requestMatchers = {}
+	for _k,_v in pairs(requestMatchers) do
+		if _v ~= nil then
+			tmp_requestMatchers[_k] = _v
+		end
+	end
+	requestMatchers = tmp_requestMatchers
+end	
+
 local function update()
 	skynet.timeout(100, update) 
 	local dt = 1 
@@ -101,38 +112,41 @@ local function update()
         for _k,_v in pairs(requestMatchers) do
                 _v.time = _v.time + dt
                 --_v. =  math.floor(_v.time/10000)* 10 + 10
-        end 
-        for _k,_v in pairs(requestMatchers) do
-                if _v ~= nil then
-                        local _nk,_nv = _k,_v
-                        local key = _nk
-                        local maxRange = _nv.range
-                        local matchTb = {}
-                        matchTb[_nk] = _nv
-                        for i=1,CMD.MATCH_NUM -1,1 do
-                                _nk,_nv = next(requestMatchers,_nk)
-                                if _nk == nil then
-                                        break
-                                end
-                                matchTb[_nk] = _nv
-                                if _nv.range > maxRange then
-                                        key = _nk
-                                        maxRange = _nv.range
-                                end
-                        end
-                        if _nk ~= nil then
-                                --if maxRange*baseRate + key >= _nk and key - maxRange*baseRate <= _k then
-                                        for _i,_ in pairs(matchTb) do
-						local account = requestMatchers[_i].account 
-                                                reverseMatchers[account] = nil
-						requestMatchers[_i] = nil
-                                        end             
-                                        handleMatch(matchTb)
-                                --end
-                        end
-                end
+        end
+	local isMatch = false
+	for _k,_v in next,requestMatchers do
+		if _v ~= nil then
+			local k,v = _k,_v
+			local maxRange = _v.range
+			local matchTb = {}
+			matchTb[k] = v
+			for i=1,CMD.MATCH_NUM -1,1 do
+				k,v = next(requestMatchers,k)
+				if v == nil then
+					return
+				end	
+				matchTb[k] = v
+				if _v.range > maxRange then
+					maxRange = _v.range
+				end
+			
+			end
+			if maxRange*baseRate >= (k - _k) then
+				for _i,_ in pairs(matchTb) do
+					local account = requestMatchers[_i].account
+					reverseMatchers[account] = nil
+					requestMatchers[_i] = nil
+				end
+				isMatch = true
+				handleMatch(matchTb)
+			end			
+		end
 	end
-end		
+	if isMatch == true then
+		removeDirty()
+	end
+end
+	
 local function init()
 	--every 1s update entity
 	skynet.timeout(100, update)
@@ -142,6 +156,14 @@ local REQUEST = {}
 skynet.start(function ()
 	init()	
 	skynet.dispatch("error", function (address, source, command, ...)
+		for _k,_v in pairs(requestMatchers) do
+			if _v ~= nil and _v.agent == source then
+				reverseMatchers[_v.account] = nil
+				requestMatchers[k] = nil
+				break
+			end
+		end
+		removeDirty()
 	end)
 
 	skynet.dispatch("lua", function (_, _, command, ...)

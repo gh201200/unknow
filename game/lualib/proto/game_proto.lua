@@ -160,7 +160,8 @@ query_event_hp_mp 5 {
 		event_stamp 0 : EventStamp
 		n32Hp 1 : integer
 		n32Mp 2 : integer
-		mask 3 : integer
+		n32Shield 3 : integer
+		mask 4 : integer
 	}
 }
 

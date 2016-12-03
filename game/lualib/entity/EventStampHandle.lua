@@ -87,7 +87,8 @@ EventStampHandle[EventStampType.Hp_Mp] = function (serverId, event)
 
 		n32Hp = math.floor(player:getHp()),
 		n32Mp = math.floor(player:getMp()),
-		mask = player.maskHpMpChange,
+		n32Shield = math.floor(player:getShield()),
+		mask = player.maskHpMpChange
 	}
 	return r
 end

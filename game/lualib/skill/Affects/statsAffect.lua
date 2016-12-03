@@ -184,7 +184,15 @@ function StatsAffect:onTrigger(_add)
 		
 		if self.data[1] == "shield" then
 			local r = self:getAttributeValue(self.data)
-			self.owner:addMidShield(r * _add)
+			if _add == -1 then
+				if self.owner:getShield() < r then
+					self.owner:addMidShield(-1 * self.owner:getShield())
+				else
+					self.owner:addMidShield(-1 * _add)
+				end
+			else
+				self.owner:addMidShield(1 * _add)
+			end
 		end
 	until true
 
@@ -200,6 +208,9 @@ function StatsAffect:onExec(dt)
 	if self.effectTime <= 0 then
 		self:onExit()		
 		return
+	end
+	if self.data[1] == "shield" and self.owner:getShield() <= 0 then
+		self:onExit()
 	end
 end
 
