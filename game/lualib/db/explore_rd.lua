@@ -43,13 +43,10 @@ function explore.load (account_id, rr)
 	return acc
 end
 
-function explore.update(explore, aid, ...)
-	
-	local connection, key = make_key (id)
-	
-	local t = table.packdb(key, explore, ...)	
-
-	connection:hmset(key, t)
+function explore.update(account_id, explore, ...)
+	local connection, key = make_key (account_id)
+		
+	connection:hmset(key, table.packdb(explore, ...))
 end
 
 

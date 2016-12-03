@@ -18,6 +18,7 @@ skynet.start(function()
 	skynet.newservice("debug_console",8000)
 	skynet.uniqueservice("globaldata")
 	--启动数据库服务
+	--skynet.uniqueservice ("bgsavemysql")
 	skynet.uniqueservice ("database")
 	-----------------------------------------------------------
 	------------

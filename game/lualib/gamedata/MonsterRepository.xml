@@ -8,15 +8,15 @@
 		<n32Hp>3200</n32Hp>
 		<n32Mp>800</n32Mp>
 		<n32Attack>100</n32Attack>
-		<n32Defence>100000</n32Defence>
-		<n32ASpeed>1000</n32ASpeed>
-		<n32MSpeed>12405</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21002, 21003</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>120</n32Exp>
 		<n32Gold>80</n32Gold>
 		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
@@ -33,15 +33,15 @@
 		<n32Hp>1080</n32Hp>
 		<n32Mp>270</n32Mp>
 		<n32Attack>50</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>60</n32Exp>
 		<n32Gold>40</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
@@ -58,15 +58,15 @@
 		<n32Hp>1080</n32Hp>
 		<n32Mp>270</n32Mp>
 		<n32Attack>50</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>60</n32Exp>
 		<n32Gold>40</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
@@ -83,15 +83,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21005, 21006</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1001</szDrop>
@@ -108,15 +108,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21004, 21006</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1002</szDrop>
@@ -133,15 +133,15 @@
 		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21004, 21005</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -158,15 +158,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21008, 21009</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1001</szDrop>
@@ -183,15 +183,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21007, 21009</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1002</szDrop>
@@ -208,15 +208,15 @@
 		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21007, 21008</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -233,15 +233,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21011, 21012</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1001</szDrop>
@@ -258,15 +258,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21010, 21012</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1002</szDrop>
@@ -283,15 +283,15 @@
 		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21010, 21011</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -308,15 +308,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21014, 21015</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1001</szDrop>
@@ -333,15 +333,15 @@
 		<n32Hp>340</n32Hp>
 		<n32Mp>85</n32Mp>
 		<n32Attack>20</n32Attack>
-		<n32Defence>20000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21013, 21015</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
 		<szDrop>1002</szDrop>
@@ -358,15 +358,15 @@
 		<n32Hp>540</n32Hp>
 		<n32Mp>135</n32Mp>
 		<n32Attack>30</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>21013, 21014</szLink>
-		<n32RecvHp>10000</n32RecvHp>
-		<n32RecvMp>10000</n32RecvMp>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -383,15 +383,15 @@
 		<n32Hp>6080</n32Hp>
 		<n32Mp>1520</n32Mp>
 		<n32Attack>160</n32Attack>
-		<n32Defence>120000</n32Defence>
-		<n32ASpeed>1000</n32ASpeed>
-		<n32MSpeed>12405</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22002, 22003</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>40000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>240</n32Exp>
 		<n32Gold>160</n32Gold>
 		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
@@ -408,15 +408,15 @@
 		<n32Hp>2040</n32Hp>
 		<n32Mp>510</n32Mp>
 		<n32Attack>86</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>90</n32Exp>
 		<n32Gold>60</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
@@ -433,15 +433,15 @@
 		<n32Hp>2040</n32Hp>
 		<n32Mp>510</n32Mp>
 		<n32Attack>86</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>90</n32Exp>
 		<n32Gold>60</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
@@ -458,15 +458,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22005, 22006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1001</szDrop>
@@ -483,15 +483,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22004, 22006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1002</szDrop>
@@ -508,16 +508,16 @@
 		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22004, 22005</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -533,15 +533,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22008, 22009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1001</szDrop>
@@ -558,15 +558,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22007, 22009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1002</szDrop>
@@ -583,16 +583,16 @@
 		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22007, 22008</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -608,15 +608,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22011, 22012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1001</szDrop>
@@ -633,15 +633,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22010, 22012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1002</szDrop>
@@ -658,16 +658,16 @@
 		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22010, 22011</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -683,15 +683,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22014, 22015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1001</szDrop>
@@ -708,15 +708,15 @@
 		<n32Hp>628</n32Hp>
 		<n32Mp>157</n32Mp>
 		<n32Attack>32</n32Attack>
-		<n32Defence>30000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22013, 22015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
 		<szDrop>1002</szDrop>
@@ -733,16 +733,16 @@
 		<n32Hp>1020</n32Hp>
 		<n32Mp>255</n32Mp>
 		<n32Attack>42</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>22013, 22014</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -758,15 +758,15 @@
 		<n32Hp>8000</n32Hp>
 		<n32Mp>2000</n32Mp>
 		<n32Attack>200</n32Attack>
-		<n32Defence>140000</n32Defence>
-		<n32ASpeed>1000</n32ASpeed>
-		<n32MSpeed>12405</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23002, 23003</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>40000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>360</n32Exp>
 		<n32Gold>240</n32Gold>
 		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
@@ -783,15 +783,15 @@
 		<n32Hp>2680</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>110</n32Attack>
-		<n32Defence>70000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>135</n32Exp>
 		<n32Gold>90</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
@@ -808,15 +808,15 @@
 		<n32Hp>2680</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>110</n32Attack>
-		<n32Defence>70000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>135</n32Exp>
 		<n32Gold>90</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
@@ -833,16 +833,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23005, 23006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -858,16 +858,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23004, 23006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -883,15 +883,15 @@
 		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23004, 23005</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -908,16 +908,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23008, 23009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -933,16 +933,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23007, 23009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -958,15 +958,15 @@
 		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23007, 23008</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -983,16 +983,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23011, 23012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -1008,16 +1008,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23010, 23012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -1033,15 +1033,15 @@
 		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23010, 23011</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -1058,16 +1058,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23014, 23015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -1083,16 +1083,16 @@
 		<n32Hp>820</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>40</n32Attack>
-		<n32Defence>40000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23013, 23015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>67.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -1108,15 +1108,15 @@
 		<n32Hp>1212</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>50</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>23013, 23014</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -1133,15 +1133,15 @@
 		<n32Hp>10880</n32Hp>
 		<n32Mp>2000</n32Mp>
 		<n32Attack>260</n32Attack>
-		<n32Defence>160000</n32Defence>
-		<n32ASpeed>1000</n32ASpeed>
-		<n32MSpeed>12405</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24002, 24003</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>40000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>480</n32Exp>
 		<n32Gold>320</n32Gold>
 		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
@@ -1158,16 +1158,16 @@
 		<n32Hp>3640</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>146</n32Attack>
-		<n32Defence>80000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>202.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>202</n32Exp>
 		<n32Gold>135</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
 		<n32CommonSkill>30001
@@ -1183,16 +1183,16 @@
 		<n32Hp>3640</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>146</n32Attack>
-		<n32Defence>80000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>202.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>202</n32Exp>
 		<n32Gold>135</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
 		<n32CommonSkill>30001
@@ -1208,15 +1208,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24005, 24006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1001</szDrop>
@@ -1233,15 +1233,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24004, 24006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1002</szDrop>
@@ -1258,16 +1258,16 @@
 		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24004, 24005</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>152</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -1283,15 +1283,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24008, 24009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1001</szDrop>
@@ -1308,15 +1308,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24007, 24009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1002</szDrop>
@@ -1333,16 +1333,16 @@
 		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24007, 24008</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -1358,15 +1358,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24011, 24012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1001</szDrop>
@@ -1383,15 +1383,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24010, 24012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1002</szDrop>
@@ -1408,16 +1408,16 @@
 		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24010, 24011</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -1433,15 +1433,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24014, 24015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1001</szDrop>
@@ -1458,15 +1458,15 @@
 		<n32Hp>1108</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>52</n32Attack>
-		<n32Defence>50000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24013, 24015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
 		<szDrop>1002</szDrop>
@@ -1483,16 +1483,16 @@
 		<n32Hp>1500</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>62</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>24013, 24014</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1003, 1004</szDrop>
 		<n32CommonSkill>30001
@@ -1508,15 +1508,15 @@
 		<n32Hp>13760</n32Hp>
 		<n32Mp>2000</n32Mp>
 		<n32Attack>320</n32Attack>
-		<n32Defence>180000</n32Defence>
-		<n32ASpeed>1000</n32ASpeed>
-		<n32MSpeed>12405</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25002, 25003</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>40000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>600</n32Exp>
 		<n32Gold>400</n32Gold>
 		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
@@ -1533,16 +1533,16 @@
 		<n32Hp>4600</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>182</n32Attack>
-		<n32Defence>90000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>304.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>304</n32Exp>
 		<n32Gold>203</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
 		<n32CommonSkill>30001
@@ -1558,16 +1558,16 @@
 		<n32Hp>4600</n32Hp>
 		<n32Mp>670</n32Mp>
 		<n32Attack>182</n32Attack>
-		<n32Defence>90000</n32Defence>
-		<n32ASpeed>1200</n32ASpeed>
-		<n32MSpeed>12000</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>304.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>304</n32Exp>
 		<n32Gold>203</n32Gold>
 		<szDrop>1005, 1005, 1102 </szDrop>
 		<n32CommonSkill>30001
@@ -1583,16 +1583,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25005, 25006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -1608,16 +1608,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25004, 25006</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -1633,15 +1633,15 @@
 		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
-		<n32Defence>70000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25004, 25005</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -1658,16 +1658,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25008, 25009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -1683,16 +1683,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25007, 25009</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -1708,15 +1708,15 @@
 		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
-		<n32Defence>70000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25007, 25008</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -1733,16 +1733,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25011, 25012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -1758,16 +1758,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25010, 25012</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -1783,15 +1783,15 @@
 		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
-		<n32Defence>70000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25010, 25011</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -1808,16 +1808,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25014, 25015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1001</szDrop>
 		<n32CommonSkill>30001
@@ -1833,16 +1833,16 @@
 		<n32Hp>1396</n32Hp>
 		<n32Mp>205</n32Mp>
 		<n32Attack>64</n32Attack>
-		<n32Defence>60000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>2</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25013, 25015</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
-		<n32Exp>151.5</n32Exp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
+		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
 		<szDrop>1002</szDrop>
 		<n32CommonSkill>30001
@@ -1858,15 +1858,15 @@
 		<n32Hp>1788</n32Hp>
 		<n32Mp>303</n32Mp>
 		<n32Attack>74</n32Attack>
-		<n32Defence>70000</n32Defence>
-		<n32ASpeed>1500</n32ASpeed>
-		<n32MSpeed>11595</n32MSpeed>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.6</n32MSpeed>
 		<n32AttackRange>5</n32AttackRange>
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>4</n32HateRange>
 		<szLink>25013, 25014</szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
 		<szDrop>1003, 1004</szDrop>
@@ -1890,8 +1890,8 @@
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>0</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>0</n32Exp>
 		<n32Gold>0</n32Gold>
 		<szDrop>0</szDrop>
@@ -1914,8 +1914,8 @@
 		<n32VisionRange>0</n32VisionRange>
 		<n32HateRange>0</n32HateRange>
 		<szLink></szLink>
-		<n32RecvHp>20000</n32RecvHp>
-		<n32RecvMp>20000</n32RecvMp>
+		<n32RecvHp>2</n32RecvHp>
+		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>0</n32Exp>
 		<n32Gold>0</n32Gold>
 		<szDrop>0</szDrop>

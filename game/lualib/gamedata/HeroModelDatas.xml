@@ -146,14 +146,14 @@
 		<n32Hight>Zhongbiaogong</n32Hight>
 		<n32Speed>10000</n32Speed>
 		<n32AttackTime1>272</n32AttackTime1>
-		<n32AttackTime2>237.99999999999997</n32AttackTime2>
+		<n32AttackTime2>238</n32AttackTime2>
 		<n32AttackTime3>1190</n32AttackTime3>
 		<n32AttackTriTime>340</n32AttackTriTime>
 		<n32Skill1Time1>229</n32Skill1Time1>
 		<n32Skill1Time2>803</n32Skill1Time2>
 		<n32Skill1TriTime>431</n32Skill1TriTime>
 		<n32Skill2Time1>330</n32Skill2Time1>
-		<n32Skill2Time2>669.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>670</n32Skill2Time2>
 		<n32Skill2TriTime>330</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>317</n32Skill2_2TriTime1>
 		<n32Skill2_2TriTime2>616</n32Skill2_2TriTime2>
@@ -268,7 +268,7 @@
 		<n32Skill2Time2>636</n32Skill2Time2>
 		<n32Skill2TriTime>364</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>420</n32Skill2_2TriTime1>
-		<n32Skill2_2TriTime2>580.0000000000001</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime2>580</n32Skill2_2TriTime2>
 		<n32Skill2_2TriTime>420</n32Skill2_2TriTime>
 		<n32Skill3Time1>470</n32Skill3Time1>
 		<n32Skill3Time2>1097</n32Skill3Time2>
@@ -427,16 +427,16 @@
 		<n32Speed>9000</n32Speed>
 		<n32AttackTime1>170</n32AttackTime1>
 		<n32AttackTime2>595</n32AttackTime2>
-		<n32AttackTime3>935.0000000000001</n32AttackTime3>
+		<n32AttackTime3>935</n32AttackTime3>
 		<n32AttackTriTime>362</n32AttackTriTime>
 		<n32Skill1Time1>278</n32Skill1Time1>
 		<n32Skill1Time2>722</n32Skill1Time2>
 		<n32Skill1TriTime>315</n32Skill1TriTime>
 		<n32Skill2Time1>340</n32Skill2Time1>
-		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>660</n32Skill2Time2>
 		<n32Skill2TriTime>213</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>420</n32Skill2_2TriTime1>
-		<n32Skill2_2TriTime2>580.0000000000001</n32Skill2_2TriTime2>
+		<n32Skill2_2TriTime2>580</n32Skill2_2TriTime2>
 		<n32Skill2_2TriTime>213</n32Skill2_2TriTime>
 		<n32Skill3Time1>400</n32Skill3Time1>
 		<n32Skill3Time2>933</n32Skill3Time2>
@@ -461,7 +461,7 @@
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
 		<n32Skill2Time1>340</n32Skill2Time1>
-		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>660</n32Skill2Time2>
 		<n32Skill2TriTime>213</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
 		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
@@ -489,7 +489,7 @@
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
 		<n32Skill2Time1>340</n32Skill2Time1>
-		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>660</n32Skill2Time2>
 		<n32Skill2TriTime>213</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
 		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
@@ -517,7 +517,7 @@
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
 		<n32Skill2Time1>340</n32Skill2Time1>
-		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>660</n32Skill2Time2>
 		<n32Skill2TriTime>213</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
 		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
@@ -545,7 +545,7 @@
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
 		<n32Skill2Time1>340</n32Skill2Time1>
-		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>660</n32Skill2Time2>
 		<n32Skill2TriTime>213</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
 		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
@@ -573,7 +573,7 @@
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
 		<n32Skill2Time1>340</n32Skill2Time1>
-		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>660</n32Skill2Time2>
 		<n32Skill2TriTime>213</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
 		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>
@@ -601,7 +601,7 @@
 		<n32Skill1Time2>555</n32Skill1Time2>
 		<n32Skill1TriTime>438</n32Skill1TriTime>
 		<n32Skill2Time1>340</n32Skill2Time1>
-		<n32Skill2Time2>659.9999999999999</n32Skill2Time2>
+		<n32Skill2Time2>660</n32Skill2Time2>
 		<n32Skill2TriTime>213</n32Skill2TriTime>
 		<n32Skill2_2TriTime1>383</n32Skill2_2TriTime1>
 		<n32Skill2_2TriTime2>550</n32Skill2_2TriTime2>

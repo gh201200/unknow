@@ -51,7 +51,7 @@ function REQUEST.upgradeCardColorLevel( args )
 	return {errorCode = errorCode, uuid = args.uuid}
 end
 
-local function openPackage( itemId )
+local function usePackageItem( itemId )
 	local itemDat = g_shareData.itemRepository[itemId]
 	if itemDat.n32Type ~= 4 then
 		return {}
@@ -60,34 +60,8 @@ local function openPackage( itemId )
 	for w in string.gmatch(itemDat.szRetain3, "%d+") do
 		table.insert(pkgIds, tonumber(w))
 	end
-	local items = {}
-	for k, v in pairs(pkgIds) do
-		local drop = g_shareData.itemDropPackage[v]
-		local rd = math.random(1, drop.totalRate)
-		local r = nil
-		for p, q in pairs(drop) do
-			if type(q) == "table" then
-				if q.n32Rate >= rd then
-					r = q
-					break
-				end
-			end
-		end
-		if r then
-			local itemId = r.n32ItemId
-			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
-			local item = g_shareData.itemRepository[itemId]
-			if item.n32Type == 3 then
-				user.cards:addCard("buyShopItem-openPackage", item.n32Retain1, itemNum)
-			elseif item.n32Type == 4 then
-				user.account:addGold("buyShopItem-openPackage", item.n32Retain1 * itemNum)
-			elseif item.n32Type == 5 then
-				user.account:addMoney("buyShopItem-openPackage", item.n32Retain1 * itemNum)
-			end
-		
-			table.insert(items, {itemId = itemId, itemNum = itemNum})
-		end
-	end
+	local items = openPackage( pkgIds )	
+	user.servicecmd.addItems("buyShopItem", items)
 	return items
 end
 
@@ -143,11 +117,11 @@ function REQUEST.buyShopItem( args )
 		if shopDat.n32Type == 2	then --金币
 			user.account:addGold("buyShopItem", shopDat.n32Count * args.num)
 		elseif shopDat.n32Type == 3 then	--宝箱
-			local items = openPackage( shopDat.n32GoodsID )
+			local items = usePackageItem( shopDat.n32GoodsID )
 			local index = 1
 			for k, v in pairs(items) do
-				ids[index] = v.itemId
-				ids[index+1] = v.itemNum
+				ids[index] = k
+				ids[index+1] = v
 				index = index + 2
 			end
 			 

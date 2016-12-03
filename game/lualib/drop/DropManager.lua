@@ -116,30 +116,6 @@ function DropManager:makeDrop(entity)
 	end
 end
 
-function DropManager:openPackage( pkgIds )
-	local items = {}
-	for k, v in pairs(pkgIds) do
-		local drop = g_shareData.itemDropPackage[v]
-		local rd = math.random(1, drop.totalRate)
-		local r = nil
-		for p, q in pairs(drop) do
-			if type(q) == "table" then
-				if q.n32Rate >= rd then
-					r = q
-					break
-				end
-			end
-		end
-		if r then
-			local itemId = r.n32ItemId
-			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
-			table.insert(items, {itemId = itemId, itemNum = itemNum})
-		end
-	end
-	return items
-end
-
-
 function DropManager:useItem(player, sid)
 	local tb = self.blueItems
 	if player:isRed() then

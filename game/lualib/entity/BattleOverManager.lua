@@ -82,8 +82,8 @@ function BattleOverManager:calcRes()
 		end
 	end
 	local winners, faliers
-	local win_items = DropManager:openPackage( self.PatternDat.szWinDrops )
-	local fail_items = DropManager:openPackage( self.PatternDat.szFailDrops )
+	local win_items = openPackage( self.PatternDat.szWinDrops )
+	local fail_items = openPackage( self.PatternDat.szFailDrops )
 	if self.OverRes == 1 then
 		winners = bluePlayers
 		for k, v in pairs(winners) do
@@ -197,35 +197,16 @@ function BattleOverManager:calcRes()
 end
 
 function BattleOverManager:giveResult()
-	local db = skynet.uniqueservice("database")		
+	local gm = snax.uniqueservice("gm")
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
 			if v.agent then
 				skynet.call(v.agent, "lua", "giveBattleGains", v.BattleGains)
-			else	
-				local account = skynet.call(db, "lua", "account_rd", "load", v.account_id)
-				account.exp = mClamp(account.exp + v.BattleGains.score, 0, math.maxinteger)
-				skynet.call (db, "lua", "account_rd", "update", account, "exp")
-				for p, q in pairs(v.BattleGains.items) do
-					local itemDat = g_shareData.itemRepository[q.itemId]
-					if itemDat.n32Type == 3 then	
-						local _serId = Macro_GetCardSerialId( itemDat.n32Retain1 )
-						local card = skynet.call(db, "lua", "cards_rd", "loadBySerialId", v.account_id, _serId) 
-						if not card then
-							card = CardMethod.initCard( itemDat.n32Retain1 )
-							card.count = (q.itemNum-1) *  g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
-						else
-							card.count = card.count + q.itemNum *  g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
-						end
-						skynet.call(db, "lua", "cards_rd","addCard", account_id, card)
-					elseif itemDat.n32Type == 5 then
-						account.gold = mClamp(account.gold + itemDat.n32Retain1*q.itemNum, 0, math.maxinteger)
-						skynet.call (db, "lua", "account_rd", "update", account, "gold")
-					elseif itemDat.n32Type == 6 then
-						account.money = mClamp(account.money + itemDat.n32Retain1*q.itemNum, 0, math.maxinteger)
-						skynet.call (db, "lua", "account_rd", "update", account, "money")
-					end
-				end
+			else
+				local param = {}
+				param["items"] = v.BattleGains.items
+				param["account_id"] = v.account_id
+				gm.post.addItems( param )
 			end
 		end
 	end

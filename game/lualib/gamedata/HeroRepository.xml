@@ -1,7 +1,9 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="110001">
+		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -29,7 +31,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110002">
-		<n32Color>2</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -57,7 +61,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110003">
-		<n32Color>3</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -85,7 +91,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110004">
-		<n32Color>4</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -113,7 +121,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110005">
-		<n32Color>5</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -141,7 +151,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110006">
-		<n32Color>6</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -169,7 +181,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110007">
-		<n32Color>7</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -197,7 +211,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110008">
-		<n32Color>8</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -225,7 +241,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110009">
-		<n32Color>9</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -253,7 +271,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110010">
-		<n32Color>10</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -281,7 +301,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110011">
-		<n32Color>11</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -309,7 +331,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110012">
-		<n32Color>12</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -337,7 +361,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110013">
-		<n32Color>13</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -365,7 +391,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110014">
-		<n32Color>14</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -393,7 +421,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110015">
-		<n32Color>15</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -421,7 +451,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110016">
-		<n32Color>16</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -449,7 +481,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110017">
-		<n32Color>17</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -477,7 +511,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110018">
-		<n32Color>18</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -505,7 +541,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110019">
-		<n32Color>19</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -533,7 +571,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110020">
-		<n32Color>20</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -561,7 +601,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110021">
-		<n32Color>21</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -589,7 +631,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110022">
-		<n32Color>22</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -617,7 +661,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110023">
-		<n32Color>23</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -645,7 +691,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110024">
-		<n32Color>24</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -673,7 +721,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110025">
-		<n32Color>25</n32Color>
+		<n32SeriId>1100</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
 		<szModelIcon>houde</szModelIcon>
@@ -701,7 +751,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110101">
+		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -729,7 +781,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110102">
-		<n32Color>2</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -757,7 +811,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110103">
-		<n32Color>3</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -785,7 +841,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110104">
-		<n32Color>4</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -813,7 +871,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110105">
-		<n32Color>5</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -841,7 +901,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110106">
-		<n32Color>6</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -869,7 +931,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110107">
-		<n32Color>7</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -897,7 +961,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110108">
-		<n32Color>8</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -925,7 +991,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110109">
-		<n32Color>9</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -953,7 +1021,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110110">
-		<n32Color>10</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -981,7 +1051,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110111">
-		<n32Color>11</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1009,7 +1081,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110112">
-		<n32Color>12</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1037,7 +1111,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110113">
-		<n32Color>13</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1065,7 +1141,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110114">
-		<n32Color>14</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1093,7 +1171,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110115">
-		<n32Color>15</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1121,7 +1201,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110116">
-		<n32Color>16</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1149,7 +1231,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110117">
-		<n32Color>17</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1177,7 +1261,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110118">
-		<n32Color>18</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1205,7 +1291,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110119">
-		<n32Color>19</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1233,7 +1321,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110120">
-		<n32Color>20</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1261,7 +1351,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110121">
-		<n32Color>21</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1289,7 +1381,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110122">
-		<n32Color>22</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1317,7 +1411,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110123">
-		<n32Color>23</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1345,7 +1441,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110124">
-		<n32Color>24</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1373,7 +1471,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="110125">
-		<n32Color>25</n32Color>
+		<n32SeriId>1101</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>殿前骑士</szName>
 		<n32ModelId>50022</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -1401,7 +1501,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120001">
+		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1429,7 +1531,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120002">
-		<n32Color>2</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1457,7 +1561,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120003">
-		<n32Color>3</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1485,7 +1591,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120004">
-		<n32Color>4</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1513,7 +1621,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120005">
-		<n32Color>5</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1541,7 +1651,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120006">
-		<n32Color>6</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1569,7 +1681,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120007">
-		<n32Color>7</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1597,7 +1711,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120008">
-		<n32Color>8</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1625,7 +1741,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120009">
-		<n32Color>9</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1653,7 +1771,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120010">
-		<n32Color>10</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1681,7 +1801,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120011">
-		<n32Color>11</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1709,7 +1831,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120012">
-		<n32Color>12</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1737,7 +1861,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120013">
-		<n32Color>13</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1765,7 +1891,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120014">
-		<n32Color>14</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1793,7 +1921,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120015">
-		<n32Color>15</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1821,7 +1951,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120016">
-		<n32Color>16</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1849,7 +1981,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120017">
-		<n32Color>17</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1877,7 +2011,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120018">
-		<n32Color>18</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1905,7 +2041,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120019">
-		<n32Color>19</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1933,7 +2071,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120020">
-		<n32Color>20</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1961,7 +2101,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120021">
-		<n32Color>21</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -1989,7 +2131,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120022">
-		<n32Color>22</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -2017,7 +2161,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120023">
-		<n32Color>23</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -2045,7 +2191,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120024">
-		<n32Color>24</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -2073,7 +2221,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="120025">
-		<n32Color>25</n32Color>
+		<n32SeriId>1200</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
 		<szModelIcon>shanguang</szModelIcon>
@@ -2100,8 +2250,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120026">
+	<item id="120101">
+		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2128,8 +2280,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120027">
-		<n32Color>2</n32Color>
+	<item id="120102">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2156,8 +2310,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120028">
-		<n32Color>3</n32Color>
+	<item id="120103">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2184,8 +2340,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120029">
-		<n32Color>4</n32Color>
+	<item id="120104">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2212,8 +2370,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120030">
-		<n32Color>5</n32Color>
+	<item id="120105">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2240,8 +2400,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120031">
-		<n32Color>6</n32Color>
+	<item id="120106">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2268,8 +2430,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120032">
-		<n32Color>7</n32Color>
+	<item id="120107">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2296,8 +2460,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120033">
-		<n32Color>8</n32Color>
+	<item id="120108">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2324,8 +2490,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120034">
-		<n32Color>9</n32Color>
+	<item id="120109">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2352,8 +2520,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120035">
-		<n32Color>10</n32Color>
+	<item id="120110">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2380,8 +2550,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120036">
-		<n32Color>11</n32Color>
+	<item id="120111">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2408,8 +2580,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120037">
-		<n32Color>12</n32Color>
+	<item id="120112">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2436,8 +2610,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120038">
-		<n32Color>13</n32Color>
+	<item id="120113">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2464,8 +2640,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120039">
-		<n32Color>14</n32Color>
+	<item id="120114">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2492,8 +2670,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120040">
-		<n32Color>15</n32Color>
+	<item id="120115">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2520,8 +2700,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120041">
-		<n32Color>16</n32Color>
+	<item id="120116">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2548,8 +2730,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120042">
-		<n32Color>17</n32Color>
+	<item id="120117">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2576,8 +2760,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120043">
-		<n32Color>18</n32Color>
+	<item id="120118">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2604,8 +2790,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120044">
-		<n32Color>19</n32Color>
+	<item id="120119">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2632,8 +2820,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120045">
-		<n32Color>20</n32Color>
+	<item id="120120">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2660,8 +2850,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120046">
-		<n32Color>21</n32Color>
+	<item id="120121">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2688,8 +2880,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120047">
-		<n32Color>22</n32Color>
+	<item id="120122">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2716,8 +2910,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120048">
-		<n32Color>23</n32Color>
+	<item id="120123">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2744,8 +2940,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120049">
-		<n32Color>24</n32Color>
+	<item id="120124">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2772,8 +2970,10 @@
 		<n32RecvMp>1</n32RecvMp>
 		<szContent></szContent>
 	</item>
-	<item id="120050">
-		<n32Color>25</n32Color>
+	<item id="120125">
+		<n32SeriId>1201</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>弹弓</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -2801,7 +3001,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130001">
+		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -2829,7 +3031,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130002">
-		<n32Color>2</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -2857,7 +3061,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130003">
-		<n32Color>3</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -2885,7 +3091,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130004">
-		<n32Color>4</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -2913,7 +3121,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130005">
-		<n32Color>5</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -2941,7 +3151,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130006">
-		<n32Color>6</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -2969,7 +3181,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130007">
-		<n32Color>7</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -2997,7 +3211,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130008">
-		<n32Color>8</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3025,7 +3241,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130009">
-		<n32Color>9</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3053,7 +3271,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130010">
-		<n32Color>10</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3081,7 +3301,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130011">
-		<n32Color>11</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3109,7 +3331,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130012">
-		<n32Color>12</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3137,7 +3361,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130013">
-		<n32Color>13</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3165,7 +3391,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130014">
-		<n32Color>14</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3193,7 +3421,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130015">
-		<n32Color>15</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3221,7 +3451,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130016">
-		<n32Color>16</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3249,7 +3481,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130017">
-		<n32Color>17</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3277,7 +3511,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130018">
-		<n32Color>18</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3305,7 +3541,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130019">
-		<n32Color>19</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3333,7 +3571,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130020">
-		<n32Color>20</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3361,7 +3601,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130021">
-		<n32Color>21</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3389,7 +3631,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130022">
-		<n32Color>22</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3417,7 +3661,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130023">
-		<n32Color>23</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3445,7 +3691,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130024">
-		<n32Color>24</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3473,7 +3721,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130025">
-		<n32Color>25</n32Color>
+		<n32SeriId>1300</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>Tiannv</szModelIcon>
@@ -3501,7 +3751,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130101">
+		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3529,7 +3781,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130102">
-		<n32Color>2</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3557,7 +3811,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130103">
-		<n32Color>3</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3585,7 +3841,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130104">
-		<n32Color>4</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3613,7 +3871,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130105">
-		<n32Color>5</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3641,7 +3901,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130106">
-		<n32Color>6</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3669,7 +3931,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130107">
-		<n32Color>7</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3697,7 +3961,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130108">
-		<n32Color>8</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3725,7 +3991,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130109">
-		<n32Color>9</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3753,7 +4021,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130110">
-		<n32Color>10</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3781,7 +4051,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130111">
-		<n32Color>11</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3809,7 +4081,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130112">
-		<n32Color>12</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3837,7 +4111,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130113">
-		<n32Color>13</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3865,7 +4141,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130114">
-		<n32Color>14</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3893,7 +4171,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130115">
-		<n32Color>15</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3921,7 +4201,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130116">
-		<n32Color>16</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3949,7 +4231,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130117">
-		<n32Color>17</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -3977,7 +4261,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130118">
-		<n32Color>18</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4005,7 +4291,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130119">
-		<n32Color>19</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4033,7 +4321,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130120">
-		<n32Color>20</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4061,7 +4351,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130121">
-		<n32Color>21</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4089,7 +4381,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130122">
-		<n32Color>22</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4117,7 +4411,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130123">
-		<n32Color>23</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4145,7 +4441,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130124">
-		<n32Color>24</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4173,7 +4471,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="130125">
-		<n32Color>25</n32Color>
+		<n32SeriId>1301</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>Zhongbiaogong</szModelIcon>
@@ -4201,7 +4501,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210001">
+		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4229,7 +4531,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210002">
-		<n32Color>2</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4257,7 +4561,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210003">
-		<n32Color>3</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4285,7 +4591,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210004">
-		<n32Color>4</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4313,7 +4621,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210005">
-		<n32Color>5</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4341,7 +4651,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210006">
-		<n32Color>6</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4369,7 +4681,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210007">
-		<n32Color>7</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4397,7 +4711,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210008">
-		<n32Color>8</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4425,7 +4741,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210009">
-		<n32Color>9</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4453,7 +4771,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210010">
-		<n32Color>10</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4481,7 +4801,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210011">
-		<n32Color>11</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4509,7 +4831,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210012">
-		<n32Color>12</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4537,7 +4861,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210013">
-		<n32Color>13</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4565,7 +4891,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210014">
-		<n32Color>14</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4593,7 +4921,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210015">
-		<n32Color>15</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4621,7 +4951,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210016">
-		<n32Color>16</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4649,7 +4981,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210017">
-		<n32Color>17</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4677,7 +5011,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210018">
-		<n32Color>18</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4705,7 +5041,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210019">
-		<n32Color>19</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4733,7 +5071,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210020">
-		<n32Color>20</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4761,7 +5101,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210021">
-		<n32Color>21</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4789,7 +5131,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210022">
-		<n32Color>22</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4817,7 +5161,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210023">
-		<n32Color>23</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4845,7 +5191,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210024">
-		<n32Color>24</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4873,7 +5221,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210025">
-		<n32Color>25</n32Color>
+		<n32SeriId>2100</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>狂僧</szName>
 		<n32ModelId>50012</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4901,7 +5251,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210101">
+		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4929,7 +5281,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210102">
-		<n32Color>2</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4957,7 +5311,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210103">
-		<n32Color>3</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -4985,7 +5341,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210104">
-		<n32Color>4</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5013,7 +5371,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210105">
-		<n32Color>5</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5041,7 +5401,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210106">
-		<n32Color>6</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5069,7 +5431,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210107">
-		<n32Color>7</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5097,7 +5461,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210108">
-		<n32Color>8</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5125,7 +5491,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210109">
-		<n32Color>9</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5153,7 +5521,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210110">
-		<n32Color>10</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5181,7 +5551,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210111">
-		<n32Color>11</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5209,7 +5581,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210112">
-		<n32Color>12</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5237,7 +5611,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210113">
-		<n32Color>13</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5265,7 +5641,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210114">
-		<n32Color>14</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5293,7 +5671,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210115">
-		<n32Color>15</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5321,7 +5701,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210116">
-		<n32Color>16</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5349,7 +5731,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210117">
-		<n32Color>17</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5377,7 +5761,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210118">
-		<n32Color>18</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5405,7 +5791,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210119">
-		<n32Color>19</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5433,7 +5821,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210120">
-		<n32Color>20</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5461,7 +5851,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210121">
-		<n32Color>21</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5489,7 +5881,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210122">
-		<n32Color>22</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5517,7 +5911,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210123">
-		<n32Color>23</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5545,7 +5941,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210124">
-		<n32Color>24</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5573,7 +5971,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="210125">
-		<n32Color>25</n32Color>
+		<n32SeriId>2101</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>龙女</szName>
 		<n32ModelId>50011</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -5601,7 +6001,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220001">
+		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5629,7 +6031,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220002">
-		<n32Color>2</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5657,7 +6061,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220003">
-		<n32Color>3</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5685,7 +6091,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220004">
-		<n32Color>4</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5713,7 +6121,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220005">
-		<n32Color>5</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5741,7 +6151,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220006">
-		<n32Color>6</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5769,7 +6181,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220007">
-		<n32Color>7</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5797,7 +6211,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220008">
-		<n32Color>8</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5825,7 +6241,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220009">
-		<n32Color>9</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5853,7 +6271,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220010">
-		<n32Color>10</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5881,7 +6301,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220011">
-		<n32Color>11</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5909,7 +6331,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220012">
-		<n32Color>12</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5937,7 +6361,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220013">
-		<n32Color>13</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5965,7 +6391,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220014">
-		<n32Color>14</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -5993,7 +6421,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220015">
-		<n32Color>15</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6021,7 +6451,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220016">
-		<n32Color>16</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6049,7 +6481,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220017">
-		<n32Color>17</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6077,7 +6511,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220018">
-		<n32Color>18</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6105,7 +6541,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220019">
-		<n32Color>19</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6133,7 +6571,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220020">
-		<n32Color>20</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6161,7 +6601,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220021">
-		<n32Color>21</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6189,7 +6631,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220022">
-		<n32Color>22</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6217,7 +6661,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220023">
-		<n32Color>23</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6245,7 +6691,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220024">
-		<n32Color>24</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6273,7 +6721,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220025">
-		<n32Color>25</n32Color>
+		<n32SeriId>2200</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
 		<szModelIcon>Xiuxingzhe</szModelIcon>
@@ -6301,7 +6751,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220101">
+		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6329,7 +6781,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220102">
-		<n32Color>2</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6357,7 +6811,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220103">
-		<n32Color>3</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6385,7 +6841,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220104">
-		<n32Color>4</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6413,7 +6871,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220105">
-		<n32Color>5</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6441,7 +6901,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220106">
-		<n32Color>6</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6469,7 +6931,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220107">
-		<n32Color>7</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6497,7 +6961,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220108">
-		<n32Color>8</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6525,7 +6991,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220109">
-		<n32Color>9</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6553,7 +7021,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220110">
-		<n32Color>10</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6581,7 +7051,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220111">
-		<n32Color>11</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6609,7 +7081,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220112">
-		<n32Color>12</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6637,7 +7111,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220113">
-		<n32Color>13</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6665,7 +7141,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220114">
-		<n32Color>14</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6693,7 +7171,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220115">
-		<n32Color>15</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6721,7 +7201,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220116">
-		<n32Color>16</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6749,7 +7231,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220117">
-		<n32Color>17</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6777,7 +7261,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220118">
-		<n32Color>18</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6805,7 +7291,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220119">
-		<n32Color>19</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6833,7 +7321,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220120">
-		<n32Color>20</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6861,7 +7351,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220121">
-		<n32Color>21</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6889,7 +7381,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220122">
-		<n32Color>22</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6917,7 +7411,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220123">
-		<n32Color>23</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6945,7 +7441,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220124">
-		<n32Color>24</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -6973,7 +7471,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="220125">
-		<n32Color>25</n32Color>
+		<n32SeriId>2201</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>蒂皮</szName>
 		<n32ModelId>50017</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7001,7 +7501,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230001">
+		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7029,7 +7531,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230002">
-		<n32Color>2</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7057,7 +7561,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230003">
-		<n32Color>3</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7085,7 +7591,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230004">
-		<n32Color>4</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7113,7 +7621,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230005">
-		<n32Color>5</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7141,7 +7651,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230006">
-		<n32Color>6</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7169,7 +7681,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230007">
-		<n32Color>7</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7197,7 +7711,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230008">
-		<n32Color>8</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7225,7 +7741,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230009">
-		<n32Color>9</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7253,7 +7771,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230010">
-		<n32Color>10</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7281,7 +7801,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230011">
-		<n32Color>11</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7309,7 +7831,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230012">
-		<n32Color>12</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7337,7 +7861,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230013">
-		<n32Color>13</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7365,7 +7891,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230014">
-		<n32Color>14</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7393,7 +7921,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230015">
-		<n32Color>15</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7421,7 +7951,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230016">
-		<n32Color>16</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7449,7 +7981,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230017">
-		<n32Color>17</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7477,7 +8011,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230018">
-		<n32Color>18</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7505,7 +8041,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230019">
-		<n32Color>19</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7533,7 +8071,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230020">
-		<n32Color>20</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7561,7 +8101,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230021">
-		<n32Color>21</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7589,7 +8131,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230022">
-		<n32Color>22</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7617,7 +8161,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230023">
-		<n32Color>23</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7645,7 +8191,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230024">
-		<n32Color>24</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7673,7 +8221,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230025">
-		<n32Color>25</n32Color>
+		<n32SeriId>2300</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>风女</szName>
 		<n32ModelId>50019</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -7701,7 +8251,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230101">
+		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7729,7 +8281,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230102">
-		<n32Color>2</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7757,7 +8311,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230103">
-		<n32Color>3</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7785,7 +8341,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230104">
-		<n32Color>4</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7813,7 +8371,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230105">
-		<n32Color>5</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7841,7 +8401,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230106">
-		<n32Color>6</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7869,7 +8431,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230107">
-		<n32Color>7</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7897,7 +8461,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230108">
-		<n32Color>8</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7925,7 +8491,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230109">
-		<n32Color>9</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7953,7 +8521,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230110">
-		<n32Color>10</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -7981,7 +8551,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230111">
-		<n32Color>11</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8009,7 +8581,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230112">
-		<n32Color>12</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8037,7 +8611,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230113">
-		<n32Color>13</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8065,7 +8641,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230114">
-		<n32Color>14</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8093,7 +8671,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230115">
-		<n32Color>15</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8121,7 +8701,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230116">
-		<n32Color>16</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8149,7 +8731,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230117">
-		<n32Color>17</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8177,7 +8761,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230118">
-		<n32Color>18</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8205,7 +8791,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230119">
-		<n32Color>19</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8233,7 +8821,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230120">
-		<n32Color>20</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8261,7 +8851,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230121">
-		<n32Color>21</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8289,7 +8881,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230122">
-		<n32Color>22</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8317,7 +8911,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230123">
-		<n32Color>23</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8345,7 +8941,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230124">
-		<n32Color>24</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8373,7 +8971,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="230125">
-		<n32Color>25</n32Color>
+		<n32SeriId>2301</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
 		<szModelIcon>Wuya</szModelIcon>
@@ -8401,7 +9001,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310001">
+		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8429,7 +9031,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310002">
-		<n32Color>2</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8457,7 +9061,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310003">
-		<n32Color>3</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8485,7 +9091,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310004">
-		<n32Color>4</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8513,7 +9121,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310005">
-		<n32Color>5</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8541,7 +9151,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310006">
-		<n32Color>6</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8569,7 +9181,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310007">
-		<n32Color>7</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8597,7 +9211,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310008">
-		<n32Color>8</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8625,7 +9241,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310009">
-		<n32Color>9</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8653,7 +9271,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310010">
-		<n32Color>10</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8681,7 +9301,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310011">
-		<n32Color>11</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8709,7 +9331,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310012">
-		<n32Color>12</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8737,7 +9361,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310013">
-		<n32Color>13</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8765,7 +9391,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310014">
-		<n32Color>14</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8793,7 +9421,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310015">
-		<n32Color>15</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8821,7 +9451,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310016">
-		<n32Color>16</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8849,7 +9481,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310017">
-		<n32Color>17</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8877,7 +9511,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310018">
-		<n32Color>18</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8905,7 +9541,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310019">
-		<n32Color>19</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8933,7 +9571,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310020">
-		<n32Color>20</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8961,7 +9601,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310021">
-		<n32Color>21</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -8989,7 +9631,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310022">
-		<n32Color>22</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -9017,7 +9661,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310023">
-		<n32Color>23</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -9045,7 +9691,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310024">
-		<n32Color>24</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -9073,7 +9721,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310025">
-		<n32Color>25</n32Color>
+		<n32SeriId>3100</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
 		<szModelIcon>niuboshi</szModelIcon>
@@ -9101,7 +9751,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310101">
+		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9129,7 +9781,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310102">
-		<n32Color>2</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9157,7 +9811,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310103">
-		<n32Color>3</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9185,7 +9841,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310104">
-		<n32Color>4</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9213,7 +9871,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310105">
-		<n32Color>5</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9241,7 +9901,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310106">
-		<n32Color>6</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9269,7 +9931,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310107">
-		<n32Color>7</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9297,7 +9961,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310108">
-		<n32Color>8</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9325,7 +9991,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310109">
-		<n32Color>9</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9353,7 +10021,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310110">
-		<n32Color>10</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9381,7 +10051,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310111">
-		<n32Color>11</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9409,7 +10081,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310112">
-		<n32Color>12</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9437,7 +10111,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310113">
-		<n32Color>13</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9465,7 +10141,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310114">
-		<n32Color>14</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9493,7 +10171,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310115">
-		<n32Color>15</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9521,7 +10201,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310116">
-		<n32Color>16</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9549,7 +10231,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310117">
-		<n32Color>17</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9577,7 +10261,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310118">
-		<n32Color>18</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9605,7 +10291,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310119">
-		<n32Color>19</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9633,7 +10321,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310120">
-		<n32Color>20</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9661,7 +10351,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310121">
-		<n32Color>21</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9689,7 +10381,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310122">
-		<n32Color>22</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9717,7 +10411,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310123">
-		<n32Color>23</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9745,7 +10441,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310124">
-		<n32Color>24</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9773,7 +10471,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="310125">
-		<n32Color>25</n32Color>
+		<n32SeriId>3101</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>机甲少女</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9801,7 +10501,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320001">
+		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9829,7 +10531,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320002">
-		<n32Color>2</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9857,7 +10561,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320003">
-		<n32Color>3</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9885,7 +10591,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320004">
-		<n32Color>4</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9913,7 +10621,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320005">
-		<n32Color>5</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9941,7 +10651,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320006">
-		<n32Color>6</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9969,7 +10681,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320007">
-		<n32Color>7</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -9997,7 +10711,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320008">
-		<n32Color>8</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10025,7 +10741,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320009">
-		<n32Color>9</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10053,7 +10771,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320010">
-		<n32Color>10</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10081,7 +10801,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320011">
-		<n32Color>11</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10109,7 +10831,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320012">
-		<n32Color>12</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10137,7 +10861,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320013">
-		<n32Color>13</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10165,7 +10891,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320014">
-		<n32Color>14</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10193,7 +10921,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320015">
-		<n32Color>15</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10221,7 +10951,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320016">
-		<n32Color>16</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10249,7 +10981,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320017">
-		<n32Color>17</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10277,7 +11011,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320018">
-		<n32Color>18</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10305,7 +11041,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320019">
-		<n32Color>19</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10333,7 +11071,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320020">
-		<n32Color>20</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10361,7 +11101,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320021">
-		<n32Color>21</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10389,7 +11131,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320022">
-		<n32Color>22</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10417,7 +11161,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320023">
-		<n32Color>23</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10445,7 +11191,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320024">
-		<n32Color>24</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10473,7 +11221,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320025">
-		<n32Color>25</n32Color>
+		<n32SeriId>3200</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>神狙</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10501,7 +11251,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320101">
+		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10529,7 +11281,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320102">
-		<n32Color>2</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10557,7 +11311,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320103">
-		<n32Color>3</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10585,7 +11341,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320104">
-		<n32Color>4</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10613,7 +11371,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320105">
-		<n32Color>5</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10641,7 +11401,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320106">
-		<n32Color>6</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10669,7 +11431,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320107">
-		<n32Color>7</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10697,7 +11461,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320108">
-		<n32Color>8</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10725,7 +11491,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320109">
-		<n32Color>9</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10753,7 +11521,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320110">
-		<n32Color>10</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10781,7 +11551,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320111">
-		<n32Color>11</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10809,7 +11581,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320112">
-		<n32Color>12</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10837,7 +11611,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320113">
-		<n32Color>13</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10865,7 +11641,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320114">
-		<n32Color>14</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10893,7 +11671,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320115">
-		<n32Color>15</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10921,7 +11701,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320116">
-		<n32Color>16</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10949,7 +11731,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320117">
-		<n32Color>17</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -10977,7 +11761,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320118">
-		<n32Color>18</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11005,7 +11791,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320119">
-		<n32Color>19</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11033,7 +11821,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320120">
-		<n32Color>20</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11061,7 +11851,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320121">
-		<n32Color>21</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11089,7 +11881,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320122">
-		<n32Color>22</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11117,7 +11911,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320123">
-		<n32Color>23</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11145,7 +11941,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320124">
-		<n32Color>24</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11173,7 +11971,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="320125">
-		<n32Color>25</n32Color>
+		<n32SeriId>3201</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>安娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11201,7 +12001,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330001">
+		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11229,7 +12031,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330002">
-		<n32Color>2</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11257,7 +12061,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330003">
-		<n32Color>3</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11285,7 +12091,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330004">
-		<n32Color>4</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11313,7 +12121,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330005">
-		<n32Color>5</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11341,7 +12151,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330006">
-		<n32Color>6</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11369,7 +12181,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330007">
-		<n32Color>7</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11397,7 +12211,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330008">
-		<n32Color>8</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11425,7 +12241,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330009">
-		<n32Color>9</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11453,7 +12271,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330010">
-		<n32Color>10</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11481,7 +12301,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330011">
-		<n32Color>11</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11509,7 +12331,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330012">
-		<n32Color>12</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11537,7 +12361,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330013">
-		<n32Color>13</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11565,7 +12391,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330014">
-		<n32Color>14</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11593,7 +12421,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330015">
-		<n32Color>15</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11621,7 +12451,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330016">
-		<n32Color>16</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11649,7 +12481,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330017">
-		<n32Color>17</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11677,7 +12511,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330018">
-		<n32Color>18</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11705,7 +12541,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330019">
-		<n32Color>19</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11733,7 +12571,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330020">
-		<n32Color>20</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11761,7 +12601,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330021">
-		<n32Color>21</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11789,7 +12631,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330022">
-		<n32Color>22</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11817,7 +12661,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330023">
-		<n32Color>23</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11845,7 +12691,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330024">
-		<n32Color>24</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11873,7 +12721,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330025">
-		<n32Color>25</n32Color>
+		<n32SeriId>3300</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>法老</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11901,7 +12751,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330101">
+		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
+		<n32Quality>1</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11929,7 +12781,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330102">
-		<n32Color>2</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>2</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11957,7 +12811,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330103">
-		<n32Color>3</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>3</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -11985,7 +12841,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330104">
-		<n32Color>4</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>4</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12013,7 +12871,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330105">
-		<n32Color>5</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>5</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12041,7 +12901,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330106">
-		<n32Color>6</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>1</n32Color>
+		<n32Quality>6</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12069,7 +12931,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330107">
-		<n32Color>7</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>7</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12097,7 +12961,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330108">
-		<n32Color>8</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>8</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12125,7 +12991,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330109">
-		<n32Color>9</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>9</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12153,7 +13021,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330110">
-		<n32Color>10</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>10</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12181,7 +13051,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330111">
-		<n32Color>11</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>11</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12209,7 +13081,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330112">
-		<n32Color>12</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>2</n32Color>
+		<n32Quality>12</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12237,7 +13111,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330113">
-		<n32Color>13</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>13</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12265,7 +13141,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330114">
-		<n32Color>14</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>14</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12293,7 +13171,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330115">
-		<n32Color>15</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>15</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12321,7 +13201,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330116">
-		<n32Color>16</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>16</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12349,7 +13231,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330117">
-		<n32Color>17</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>17</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12377,7 +13261,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330118">
-		<n32Color>18</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>3</n32Color>
+		<n32Quality>18</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12405,7 +13291,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330119">
-		<n32Color>19</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>19</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12433,7 +13321,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330120">
-		<n32Color>20</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>20</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12461,7 +13351,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330121">
-		<n32Color>21</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>21</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12489,7 +13381,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330122">
-		<n32Color>22</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>22</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12517,7 +13411,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330123">
-		<n32Color>23</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>23</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12545,7 +13441,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330124">
-		<n32Color>24</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>4</n32Color>
+		<n32Quality>24</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
@@ -12573,7 +13471,9 @@
 		<szContent></szContent>
 	</item>
 	<item id="330125">
-		<n32Color>25</n32Color>
+		<n32SeriId>3301</n32SeriId>
+		<n32Color>5</n32Color>
+		<n32Quality>25</n32Quality>
 		<szName>天才</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
