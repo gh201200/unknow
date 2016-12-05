@@ -104,18 +104,44 @@ function table.packdb(unit, ...)
 	local p = { ... }
 	if next(p) then
 		for k, v in pairs( p ) do
-			r[2*k-1] = v
-			r[2*k] = unit[v]
+			if v then
+				r[2*k-1] = v
+				r[2*k] = unit[v]
+			end
 		end
 	else
 		local i = 1
 		for k, v in pairs(unit) do
-			r[i] = k
-			r[i+1] = v
-			i = i + 2	
+			if v then
+				r[i] = k
+				r[i+1] = v
+				i = i + 2	
+			end
 		end
 	end
 	return table.unpack(r)
+end
+--打包为sql格式
+function table.packsql(unit)
+	local keys = ""
+	local bk = false
+	local values = ""
+	local bv = false
+	for k, v in pairs(unit) do
+		if bk then
+			keys = keys .. "," .. k
+		else
+			keys = k
+			bk = true
+		end
+		if bv then
+			values = values .. "," .. v
+		else
+			values = v
+			bv = true
+		end	
+	end
+	return keys, values
 end
 -- string扩展
 

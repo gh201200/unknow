@@ -11,15 +11,16 @@ local max_client = 64
 skynet.start(function()
 			
 	math.randomseed(skynet.now())
-	skynet.monitor "simplemonitor"
+	local monitor = skynet.monitor "simplemonitor"
 	
 	skynet.uniqueservice("protod")
 	local console = skynet.newservice("console")
 	skynet.newservice("debug_console",8000)
 	skynet.uniqueservice("globaldata")
 	--启动数据库服务
-	--skynet.uniqueservice ("bgsavemysql")
-	skynet.uniqueservice ("database")
+	local database = skynet.uniqueservice ("database")
+	--local bg = skynet.uniqueservice ("bgsavemysql", database)
+	--skynet.call(monitor, "lua", "watch", bg)
 	-----------------------------------------------------------
 	------------
 	--启动web server 服务

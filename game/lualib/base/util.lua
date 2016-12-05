@@ -182,4 +182,16 @@ function openPackage( pkgIds )
 	return items
 end
 
+function hash_str (str)
+	local hash = 0
+	string.gsub (str, "(%w)", function (c)
+		hash = hash + string.byte (c)
+	end)
+	return hash
+end
+
+function hash_num (num)
+	local hash = num << 8
+	return hash
+end
 
