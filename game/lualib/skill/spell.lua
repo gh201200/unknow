@@ -146,7 +146,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)	
 		print("targets ==",#targets)	
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
-		
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end
 	end
@@ -178,6 +177,8 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 	else
 		if skilldata.n32SkillType == 0 and self.source:getHit()*100 < math.random(0,100) then
 			--未命中
+			self.source:dumpStats()	
+			print("can not hit")
 			return
 		end	
 		for _k,_v in pairs(targets) do

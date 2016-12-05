@@ -30,18 +30,19 @@ function Affect:getAttributeValue(data)
 	local entity = self.source
 	local r = 0
 	local attIdToFuns = {
-		[0] = "getAttack",[1] = "getStrength",[2] = "getAgility",
-		[3] = "getIntelligence",[4] = "getDefence",[5] = "getHpMax",
-		[6] = "getMpMax",[7] = "getHp",[8] = "getMp"};
-	if attId <= 8 then
+		[1] = "getAttack",[2] = "getStrength",[3] = "getAgility",
+		[4] = "getIntelligence",[5] = "getDefence",[6] = "getHpMax",
+		[7] = "getMpMax",[8] = "getHp",[9] = "getMp"};
+	if attId <= 9 then
 		r = entity[attIdToFuns[attId]](entity) * rate + value
-	elseif attId == 9 then
-		r = (entity:getHpMax() - entity:getHp()) * rate + value	
 	elseif attId == 10 then
+		r = (entity:getHpMax() - entity:getHp()) * rate + value	
+	elseif attId == 11 then
 		r = (entity:getMpMax() - entity:getMp()) * rate + value	
 	else
 		assert(0,"error attId:" .. attId)
 	end
+	return math.floor(r)
 end
 
 function Affect:getBaseAttributeValue(data)
