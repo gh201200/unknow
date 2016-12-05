@@ -1,5 +1,4 @@
-local demageAffect = require "skill.Affects.demageAffect"
-local recoverAffect = require "skill.Affects.recoverAffect"
+local skillAffect = require "skill.Affects.skillAffect"
 local dizzyAffect = require "skill.Affects.dizzyAffect"
 local blinkAffect = require "skill.Affects.blinkAffect"
 local invincibleAffect = require "skill.Affects.invincibleAffect"
@@ -7,14 +6,11 @@ local outskillAffect = require "skill.Affects.outskillAffect"
 local changeModAffect = require "skill.Affects.changeModAffect"
 local statsAffect = require "skill.Affects.statsAffect"
 local getnewAffect =  require "skill.Affects.getnewAffect"
-local flyAffect = require "skill.Affects.flyAffect"
 local repelAffect = require "skill.Affects.repelAffect"
 local loveAffect = require "skill.Affects.loveAffect"
 local getbloodAffect = require "skill.Affects.getbloodAffect"
 local chargeAffect = require "skill.Affects.chargeAffect"
-local electricAffect  = require "skill.Affects.electricAffect"
 local showAffect =  require "skill.Affects.showAffect"
-local profitAffect =  require "skill.Affects.profitAffect"
 local nodeadAffect = require "skill.Affects.nodeadAffect"
 local summonAffect =  require "skill.Affects.summonAffect"
 
@@ -79,10 +75,8 @@ end
 
 function AffectTable:addAffect(source,data,skillId,extra)
 	local aff = nil
-	if data[1] == "ap" or data[1] == "str" or data[1] == "dex" or data[1] == "inte" then
-		aff = demageAffect.new(self.owner,source,data,skillId)
-	elseif data[1] == "curehp" or data[1] == "curemp" then
-		aff = recoverAffect.new(self.owner,source,data,skillId)
+	if data[1] == "curehp" or data[1] == "curemp" or data[1] == "damage" or data[1] == "shield" or data[1] == "burnmp" then
+		aff = skillAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "dizzy" then
 		aff = dizzyAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "blink" then
@@ -93,8 +87,6 @@ function AffectTable:addAffect(source,data,skillId,extra)
 		aff = outskillAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "noskill" then
 		aff = noskillAffect.new(self.owner,source,data,skillId)
-	elseif data[1] == "fly" then
-		aff = flyAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "repel" then
 		aff = repelAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "charge" then
@@ -105,17 +97,13 @@ function AffectTable:addAffect(source,data,skillId,extra)
 		aff = getbloodAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "changeMod" then
 		aff = changeModAffect.new(self.owner,source,data,skillId)
-	elseif data[1] == "electric" then
-		aff = electricAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "show" then
 		aff = showAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "nodead" then
 		aff = nodeadAffect.new(self.owner,source,data,skillId)
-	elseif data[1] == "profit" then
-		aff = profitAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "ctrl" or data[1] == "upstr" or data[1] == "updex" or data[1] == "upinte" or data[1] == "hp" or data[1] == "mp"  or 
 	       data[1] == "atk" or data[1] == "def" or data[1] == "wsp" or data[1] == "mov" or data[1] == "rng" or 
-	       data[1] == "rehp" or data[1] == "remp" or data[1] == "critrate" or data[1] == "hitrate" or data[1] == "dodrate" then
+	       data[1] == "rehp" or data[1] == "remp" or data[1] == "critrate" or data[1] == "hitrate" or data[1] == "dodrate" or data[1] == "updamage" then
 		aff = statsAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "getnew" then
 		aff = getnewAffect.new(self.owner,source,data,skillId)  

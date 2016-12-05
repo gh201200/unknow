@@ -23,15 +23,16 @@ local UI_Stats_Show = {
 	ASpeed = true,
 }
 
-local function register_stats(t, name)
-	t['s_mid_'..name] = 0
+local function register_stats(t, name,dft)
+	dft = dft or 0
+	t['s_mid_'..name] = 0 
 	t['addMid' .. name] = function(self, v)
 		self['s_mid_'..name] = self['s_mid_'..name] + v
 	end
 	t['getMid'..name] = function(self)
 		return t['s_mid_'..name]
 	end
-	t['s_'..name] = 0
+	t['s_'..name] = dft
 	t['set' .. name] = function (self, v)
 		if v == self['s_'..name] then return end
 		self['s_'..name] = v
@@ -111,9 +112,12 @@ function Ientity:ctor(pos,dir)
 	register_stats(self, 'RecvMp')
 	register_stats(self, 'RecvMpPc')
 	register_stats(self, 'BaojiRate') 
-	register_stats(self, 'BaojiTimes')
-	register_stats(self, 'Hit')
+	register_stats(self, 'BaojiTimes',1.0)
+	register_stats(self, 'Hit',1.0)
 	register_stats(self, 'Miss')
+	register_stats(self, 'Shield')
+	register_stats(self, 'Updamage',1.0)
+
 	self.lastHp = 0
 
 	self.recvTime = 0
@@ -838,9 +842,8 @@ function Ientity:calcAttack()
 		addVal =  math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
 	end
 	self:setAttack(math.floor(
-		self.attDat.n32Attack * (1.0 + self:getMidAttackPc())) 
+		(self.attDat.n32Attack  + addVal)* (1.0 + self:getMidAttackPc())) 
 		+ self:getMidAttack() 
-		+ addVal
 	)
 end
 
@@ -916,6 +919,13 @@ function Ientity:calcMiss()
 	self:setMiss(self:getMidMiss())
 end
 
+function Ientity:calUpdamage()
+	self:setUpdamage(self:getMidUpdamage())
+end
+
+function Ientity:calShield()
+	self:setShield(self:getMidShield())
+end
 
 ---------------------------------------------------------------------------------技能相关------------------------------------------------------------------------------------------------------------------
 
