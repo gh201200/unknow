@@ -27,8 +27,8 @@ local AccountMethod =
 	--
 	addGold = function(self, op,  _gold)
 		if _gold == 0 then return end
-		local nv = self.unit.gold + _gold
-		if nv < 0 then return end
+		local nv = mClamp(self.unit.gold + _gold, 0, math.maxint32)
+		
 		self.unit.gold = nv
 		
 		self:sendAccountData()
@@ -46,8 +46,7 @@ local AccountMethod =
 	--
 	addMoney = function(self, op, _money)
 		if _money == 0 then return end
-		local nv = self.unit.money + _money
-		if nv < 0 then return end
+		local nv = mClamp(self.unit.money + _money, 0, math.maxint32)
 		self.unit.money = nv
 
 		self:sendAccountData()
