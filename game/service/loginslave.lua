@@ -3,7 +3,8 @@ local socket = require "socket"
 local Quest = require "quest.quest"
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
-local uuid = require "uuid"
+local SkillsMethod = require "agent.skills_method"
+local CardsMethod = require "agent.cards_method"
 local traceback = debug.traceback
 
 
@@ -54,8 +55,14 @@ end
 
 local function firstRegister(account_id)
 	--添加默认赠送卡牌数据
-	for k, v in pairs(Quest.AutoGainCards) do 
-		skynet.call(database, "lua", "cards", "create", account_id, uuid.gen(), v)
+	for k, v in pairs(Quest.AutoGainCards) do
+		local card = CardsMethod.initCard( v )
+		skynet.call(database, "lua", "cards", "addCard", account_id, card)
+	end
+	--添加默认赠送技能数据
+	for k, v in pairs(Quest.AutoGainSkills) do 
+		local skill = SkillsMethod.initSkill( v )
+		skynet.call(database, "lua", "skills", "addSkill", account_id, skill)
 	end
 end
 

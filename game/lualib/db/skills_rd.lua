@@ -19,7 +19,6 @@ function skills.load (account_id)
 			skills[v] = {uuid = v}
 			skills[v].dataId = tonumber(connection:hget (v, "dataId"))
 			skills[v].count = tonumber(connection:hget (v, "count"))
-			skills[v].flag = tonumber(connection:hget (v, "flag"))
 		end
 	end
 
@@ -38,27 +37,12 @@ function skills.loadBySerialId (account_id, serId)
 				skill = {uuid = v}
 				skill.dataId = dataId
 				skill.count = tonumber(connection:hget (v, "count"))
-				skill.flag = tonumber(connection:hget (v, "flag"))
 				break
 			end
 		end
 	end
 
 	return skill
-end
-
-
-function skills.create(account_id, _uuid, dataId)
-	
-	local connection, key = make_key (account_id)
-	
-	connection:sadd(key, _uuid) 
-
-	connection:hmset (_uuid, 
-		"dataId", dataId, 
-		"count", 0,
-		"flag", 0
-	)
 end
 
 function skills.addSkill (account_id, skill)
@@ -69,8 +53,7 @@ function skills.addSkill (account_id, skill)
 
 	connection:hmset (skill.uuid, 
 		"dataId", skill.dataId, 
-		"count", skill.count,
-		"flag", skill.flag
+		"count", skill.count
 	)
 end
 

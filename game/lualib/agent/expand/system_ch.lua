@@ -163,5 +163,66 @@ function REQUEST.reEnterRoom( args )
 	end
 end
 
+function REQUEST.bindSkill( args )
+	local errorCode = 0
+	local card = user.cards.getCardByUuid( args.uuidcard )
+	local skill = user.skills.getSkillByUuid( args.uuidskill )
+	repeat
+		if not card then
+			errorCode = -1
+			break
+		end
+		if not skill then
+			errorCode = -1
+			break
+		end
+		if args.slot < 0 or args.slot > 7 then
+			errorCode = -1
+			break
+		end
+		local cardDat = g_shareData.heroRespository[card.dataId]
+		local skillDat = g_shareData.skillRespository[skill.dataId]
+		if bit_and(bit(cardDat.n32Camp), skillDat.n32Faction) == 0 then
+			errorCode = -1
+			break
+		end
+		--
+		user.cards:setSkill("bindSkill", args.uuid, args.slot, Macro_GetSkillSerialId(card.dataId))
+	until true
+	return {errorCode=errorCode,uuidcard=args.uuidcard,uuidskil=args.uuidskill,slot=args.slot}
+end
+
+
+function REQUEST.strengthSkill( args )
+	local errorCode = 0
+	local skill = user.skills:getSkillByUuid(args.uuid)
+	repeat                                                                                 
+        	if not skill then
+			errorCode = -1
+			break
+		end
+		local skillDat = g_shareData.skillRepository[skill.dataId]
+		local nextId = Macro_AddSkillGrade(skill.dataId)
+		local nextSkillDat = g_shareData.skillRepository[nextId]	
+		if not nextskillDat then
+			errorCode = 3	--已到最高品质
+			break
+		end
+	
+        	if skillDat.n32NeedStuff > skill.count then
+			errorCode = 1	--碎片数量不足
+			break
+		end
+	
+		---------开始升级
+		--扣除碎片
+		user.skills:delSkillByUuid("strengthSkill", args.uuid, skillDat.n32NeedStuff)
+		--开始升级
+		user.skills:updateDataId("strengthSkill", args.uuid, nextId)
+	until true
+	
+	return {errorCode = errorCode, uuid = args.uuid}
+
+end
 
 return SystemCh.new()

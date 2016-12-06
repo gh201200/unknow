@@ -20,6 +20,9 @@ function cards.load (account_id)
 			cards[v].dataId = tonumber(connection:hget (v, "dataId"))
 			cards[v].count = tonumber(connection:hget (v, "count"))
 			cards[v].explore = tonumber(connection:hget (v, "explore"))
+			for i=0, 7 do
+				cards[v]["skill"..i] = tonumber(connection:hget (v, "skill"..i))
+			end
 		end
 	end
 
@@ -39,26 +42,15 @@ function cards.loadBySerialId (account_id, serId)
 				card.dataId = dataId
 				card.count = tonumber(connection:hget (v, "count"))
 				card.explore = tonumber(connection:hget (v, "explore"))
+				for i=0, 7 do
+					cards["skill"..i] = tonumber(connection:hget (v, "skill"..i))
+				end
 				break
 			end
 		end
 	end
 
 	return card
-end
-
-
-function cards.create(account_id, _uuid, dataId)
-	
-	local connection, key = make_key (account_id)
-	
-	connection:sadd(key, _uuid) 
-
-	connection:hmset (_uuid, 
-		"dataId", dataId, 
-		"count", 0,
-		"explore", 0
-	)
 end
 
 function cards.addCard (account_id, card)
@@ -70,7 +62,16 @@ function cards.addCard (account_id, card)
 	connection:hmset (card.uuid, 
 		"dataId", card.dataId, 
 		"count", card.count,
-		"explore", card.explore
+		"explore", card.explore,
+		"skill0", card.skill0,
+		"skill1", card.skill1,
+		"skill2", card.skill2,
+		"skill3", card.skill3,
+		"skill4", card.skill4,
+		"skill5", card.skill5,
+		"skill6", card.skill6,
+		"skill7", card.skill7
+	
 	)
 end
 

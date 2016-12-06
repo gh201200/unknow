@@ -145,7 +145,7 @@ function Macro_GetCardDataId(serId, color)
 end
 --Get skill serial id
 function Macro_GetSkillSerialId(_id)
-	return math.floor(_id / 100)
+	return math.floor(_id / 1000)
 end
 --Get skill grade
 function Macro_GetSkillGrade( _id )
