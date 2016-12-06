@@ -25,14 +25,14 @@ local UI_Stats_Show = {
 
 local function register_stats(t, name,dft)
 	dft = dft or 0
-	t['s_mid_'..name] = 0 
+	t['s_mid_'..name] = dft 
 	t['addMid' .. name] = function(self, v)
 		self['s_mid_'..name] = self['s_mid_'..name] + v
 	end
 	t['getMid'..name] = function(self)
 		return t['s_mid_'..name]
 	end
-	t['s_'..name] = dft
+	t['s_'..name] = dft 
 	t['set' .. name] = function (self, v)
 		if v == self['s_'..name] then return end
 		self['s_'..name] = v

@@ -40,7 +40,6 @@ local CardsMethod =
 		if v then	--already has the kind of card
 			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32WCardNum * num, 0, math.maxinteger)
 		else
-			print (dataId)
 			v = self.initCard(dataId)
 			v.count = num * (g_shareData.heroRepository[dataId].n32WCardNum - 1)
 			self.units[v.uuid] =  v

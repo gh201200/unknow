@@ -7,10 +7,10 @@ local uuid = require "uuid"
 
 local CMD = {}
 local requestMatchers = {}
-local reverseMatchers = {}
+--local reverseMatchers = {}
 local database
 
-local baseRate = 10000 --同一分数匹配人数不超过一万人
+--local baseRate = 10000 --同一分数匹配人数不超过一万人
 local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
@@ -32,20 +32,24 @@ function CMD.requestMatch(response,agent)
 	print("CMD.requestMatch")
 	local arg = skynet.call(agent,"lua","getmatchinfo")
 	print("arg",arg)
-	if reverseMatchers[arg.account] ~= nil then
-		print(arg.account,"already in match list")	
-		local i = reverseMatchers[arg.account]
-		requestMatchers[i].agent =  agent
-		return
-	end
-	local hash_key = arg.score * baseRate
-	for i = hash_key,hash_key + baseRate,1 do
-		if requestMatchers[i] == nil then
-			requestMatchers[i] = arg
-			reverseMatchers[arg.account] = i 
-			break
+	for _k,_v in ipairs(requestMatchers) do
+		if arg.account == _v.account then
+			print(arg.account,"already in match list")	
+			requestMatchers[_k] = arg 
+			return
 		end
 	end
+	local  isinsert = false
+	for _k,_v in ipairs(requestMatchers) do
+		if arg.score > _v.score and requestMatchers[_k+1] ~= nil and requestMatchers[_k+1].score >= arg.score  then
+			table.insert(requestMatchers,_k+1,arg)
+			isinsert = true
+		end		
+	end
+	if isinsert == false then
+		table.insert(requestMatchers,arg)	
+	end
+
 	account_cors[arg.account] = coroutine.create(function(ret)
 		response(true,ret)
 	end)
@@ -53,11 +57,13 @@ end
 
 --取消匹配
 function CMD.cancelMatch(response,account)
-	local hashkey = reverseMatchers[account]
-	if hashkey ~= nil then
-		table.remove(reverseMatchers,account)
-		table.remove(requestMatchers,hashkey)
-		table.remove(account_cors,account)
+	local bHit = false
+	for i = #requestMatchers,1,-1 do
+		if requestMatchers[i].account == account then
+			table.remove(requestMatchers,i)
+			table.remove(account_cors,account)
+			break
+		end
 	end
 	local ret = { errorcode = 0 }
 	response(true,ret)
@@ -79,7 +85,6 @@ local function handleMatch(t)
 	skynet.call(s_pickHero,"lua","init",t)
 
 	
-	
 	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
 		ret.matcherNum = ret.matcherNum + 1
@@ -96,9 +101,9 @@ CMD.MATCH_NUM = 1
 
 local function removeDirty()
 	local tmp_requestMatchers = {}
-	for _k,_v in pairs(requestMatchers) do
+	for _k,_v in ipairs(requestMatchers) do
 		if _v ~= nil then
-			tmp_requestMatchers[_k] = _v
+			table.insert(tmp_requestMatchers,_v)
 		end
 	end
 	requestMatchers = tmp_requestMatchers
@@ -114,27 +119,25 @@ local function update()
                 --_v. =  math.floor(_v.time/10000)* 10 + 10
         end
 	local isMatch = false
-	for _k,_v in next,requestMatchers do
+	for _k,_v in ipairs(requestMatchers) do
 		if _v ~= nil then
 			local k,v = _k,_v
 			local maxRange = _v.range
 			local matchTb = {}
 			matchTb[k] = v
 			for i=1,CMD.MATCH_NUM -1,1 do
-				k,v = next(requestMatchers,k)
+				v = requestMatchers[k + i]
 				if v == nil then
 					return
-				end	
-				matchTb[k] = v
-				if _v.range > maxRange then
-					maxRange = _v.range
 				end
-			
+				matchTb[k + i] = v
+				if v.range > maxRange then
+					maxRange = v.range
+				end
 			end
-			if maxRange*baseRate >= (k - _k) then
+			
+			if maxRange >= requestMatchers[_k + CMD.MATCH_NUM -1].score - requestMatchers[k].score  then
 				for _i,_ in pairs(matchTb) do
-					local account = requestMatchers[_i].account
-					reverseMatchers[account] = nil
 					requestMatchers[_i] = nil
 				end
 				isMatch = true
@@ -156,14 +159,12 @@ local REQUEST = {}
 skynet.start(function ()
 	init()	
 	skynet.dispatch("error", function (address, source, command, ...)
-		for _k,_v in pairs(requestMatchers) do
-			if _v ~= nil and _v.agent == source then
-				reverseMatchers[_v.account] = nil
-				requestMatchers[k] = nil
+		for i= #requestMatchers,1,-1 do
+			if requestMatchers[i] ~= nil and requestMatchers[i].agent == source then
+				table.remove(requestMatchers,i)
 				break
 			end
 		end
-		removeDirty()
 	end)
 
 	skynet.dispatch("lua", function (_, _, command, ...)
