@@ -27,6 +27,7 @@ function IflyObj:ctor(src,tgt,skilldata,extra1,extra2)
 	self.radius = self.effectdata.n32Redius
 	self.isDead = false
 	self.flyDistance = 0    --飞行距离
+	self.flyTime = 0
 	--链式弹道
 	if self.skilldata.n32BulletType == 2 then
 		self.lifeTime = 1 --链式弹道检测一次
@@ -39,6 +40,12 @@ function IflyObj:ctor(src,tgt,skilldata,extra1,extra2)
 			self.parent = extra2 --父弹道
 			self.linkIndex = self.parent.linkIndex + 1
 			print("linkIndex==",self.linkIndex)
+		end
+		local dis = self.source:getDistance(self.target)
+		if self.moveSpeed == -1 then
+			self.flyTime = 0
+		else
+			self.flyTime = dis * 1000 / self.moveSpeed
 		end
 	end
 	local r = {acceperId = 0,producerId = self.source.serverId,effectId = self.skilldata.n32BulletId,effectTime = 0,flag = 0}
@@ -91,6 +98,8 @@ end
 --链式弹道
 function IflyObj:updateLink(dt)
 	--推送给客户端特效
+	self.flyTime = self.flyTime - dt
+	if self.flyTime >= 0 then return end --未生效
 	if self.lifeTime <= 0 then return end
 	self.lifeTime = self.lifeTime - dt
 	local targets = {self.target}
