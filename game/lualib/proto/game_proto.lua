@@ -63,13 +63,20 @@ local types = [[
 	uuid 1 : string
 	count 2 : integer
 	explore 3 : integer
+	skill0 4 : integer
+	skill1 5 : integer
+	skill2 6 : integer
+	skill3 7 : integer
+	skill4 8 : integer
+	skill5 9 : integer
+	skill6 10 : integer
+	skill7 11 : integer
 }
 
 .Skill {
 	dataId 0 : integer
 	uuid 1 : string
 	count 2 : integer
-	flag 3 : integer
 }
 
 .spawn {
@@ -462,7 +469,7 @@ sendActivity 6 {
 #下发技能数据
 sendSkill 7 {
 	request {
-		skillList 0 : *Skill(uuid)
+		skillsList 0 : *Skill(uuid)
 	}
 }
 
@@ -640,6 +647,30 @@ reSendSkills 3007 {
 reSendHaveItems 3008 {
 	request { 
 		items 0 : *DropItem
+	}
+}
+
+strengthSkill 3009 {
+	request {                                                             
+		uuid 0 : string                                       
+	}                                                                     
+	response {                                                            
+		errorCode 0 :integer
+		uuid 1 : string
+	}
+}
+
+bindSkill 3010 {
+	request {                                                             
+		uuidcard 0 : string
+		uuidskill 1 : string
+		slot 2 : integer
+	}                                                                     
+	response {                                                            
+		errorCode 0 :integer
+		uuidcard 1 : string
+		uuidskill 2 : string
+		slot 3 : integer
 	}
 }
 

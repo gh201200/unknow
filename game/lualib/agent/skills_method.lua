@@ -99,15 +99,15 @@ local SkillsMethod =
 		syslog.infof("op[%s]player[%s]:updateDataId:%s,dataId[%d][%d]", op, self.account_id, uuid, _dataId, oldDataId)
 	end;
 	--
-	setFlag = function(self, uuid, _flag)
+	setSlot = function(self, uuid, _slot)
 		local v = self:getSkillByUuid(uuid)
 		if not v then return end
-		v.flag = _flag
+		v.slot = _slot
 		
 		self:sendSkillData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "skills", "update", self.account_id, v, "flag")
+		skynet.call (database, "lua", "skills", "update", self.account_id, v, "slot")
 	end;
 }
 

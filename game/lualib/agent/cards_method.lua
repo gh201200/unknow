@@ -7,7 +7,21 @@ local CardsMethod =
 {
 	--
 	initCard = function(_dataId)
-		return {uuid = uuid.gen(), dataId = _dataId, count=0, explore=0,}
+		return 
+		{
+			uuid = uuid.gen(), 
+			dataId = _dataId, 
+			count=0, 
+			explore=0,
+			skill0=0,
+			skill1=0,
+			skill2=0,
+			skill3=0,
+			skill4=0,
+			skill5=0,
+			skill6=0,
+			skill7=0
+		}
 	end;
 	--
 	getCardBySerialId = function(self, _serId)
@@ -108,6 +122,19 @@ local CardsMethod =
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "explore")
+	end;
+	--
+	setSkill = function(self, op, uuid, slot, serId)
+		if slot < 0 or slot > 7 then return end
+		local v = self:getCardByUuid(uuid)
+		if not v then return end
+
+		v["slot"..slot] = serId
+
+		self:sendCardData( v )	
+		
+		local database = skynet.uniqueservice ("database")
+		skynet.call (database, "lua", "cards", "update", self.account_id, v, "slot"..slot)
 	end;
 }
 
