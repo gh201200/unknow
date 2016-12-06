@@ -281,6 +281,8 @@ math.pow2 = function(x)
 	return x * x
 end
 
+math.maxint32 = 0xffffffff
+
 -- lua面向对象扩展
 function class(classname, super)
     local superType = type(super)
