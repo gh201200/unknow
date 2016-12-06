@@ -11,7 +11,6 @@ function skillAffect:ctor(entity,source,data,skillId)
 end
 function skillAffect:onEnter()	
 	self.super.onEnter(self)
-	self:calAffect()
 	if self.triggerTime  == 0 then
 		--瞬发伤害
 		self:calAffect()
@@ -38,6 +37,7 @@ function skillAffect:onExit()
 end
 
 function skillAffect:calAffect()
+	
 	local r = self:getAttributeValue(self.data)
 	if self.data[1] == "damage" then
 		local demage = r - self.owner:getDefence()

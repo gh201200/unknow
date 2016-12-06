@@ -137,7 +137,7 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
 	local targets = {}
 	--子弹普通弹道
-	print("selects===",#selects)
+--	print("selects===",#selects)
 	if skilldata.n32BulletType ~= 0 then
 		for _k,_v in pairs(selects) do
 			g_entityManager:createFlyObj(source,_v,skilldata)
