@@ -105,7 +105,7 @@ CardColor = {
 g_shareData = {}
 g_entityManager = nil
 GAMEPLAY_PERCENT = 10000
-
+NOW_SERVER_VERSION = 1		--服务器版本号
 
 
 function GET_SkillTgtType(data)

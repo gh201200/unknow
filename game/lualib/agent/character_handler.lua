@@ -5,6 +5,7 @@ local handler = require "agent.handler"
 local CardsMethod = require "agent.cards_method"
 local AccountMethod = require "agent.account_method"
 local ExploreMethod = require "agent.explore_method"
+local SkillsMethod = require "agent.skills_method"
 local ExploreCharacter = require "agent.expand.explore_ch"
 local SystemCharacter = require "agent.expand.system_ch"
 local GM = require "agent.expand.gm_ch"
@@ -46,6 +47,14 @@ CardsMethod.sendCardData = function(self, unit)
 	end
 end;
 
+SkillsMethod.sendSkillData = function(self, unit)
+	if unit then
+		user.send_request("sendSkill", {skillsList = {unit}})
+	else
+		user.send_request("sendSkill", {skillsList = user.skills.units})
+	end
+end;
+
 ExploreMethod.sendExploreData = function(self)
 	local explore = table.clone( user.explore.unit )
 	if explore.time ~= 0 then
@@ -80,10 +89,7 @@ local function sendActivityData( atype )
 		end
 	else
 		--系统活动
-		local units = activity.req.getAllSystem()
-		for k, v in pairs(units) do
-			table.insert(r.activitys, {accountId=v.accountId,value=tonumber(v.value),atype=tonumber(v.atype)})
-		end
+		r.activitys = activity.req.getAllSystem()
 		--个人活动
 
 	end
@@ -100,6 +106,7 @@ local function onEnterGame()
 	user.account:sendAccountData()
 	user.cards:sendCardData()
 	user.explore:sendExploreData()
+	user.skills:sendSkillData()
 
 	--here, decide whether he is still in room 
 	local sm = snax.uniqueservice("servermanager")
@@ -122,13 +129,16 @@ function REQUEST.enterGame(args)
 	--玩家数据加载
 	local account_id = args.account_id
 	user.account = { account_id = account_id }
-	user.account.unit = skynet.call(database, "lua", "account_rd", "load", account_id)	
+	user.account.unit = skynet.call(database, "lua", "account", "load", account_id)	
 	setmetatable(user.account, {__index = AccountMethod})
 	user.cards = { account_id = account_id }
-	user.cards.units =  skynet.call (database, "lua", "cards_rd", "load",account_id) --玩家拥有的卡牌
+	user.cards.units =  skynet.call (database, "lua", "cards", "load",account_id) --玩家拥有的卡牌
 	setmetatable(user.cards, {__index = CardsMethod})
+	user.skills = { account_id = account_id }
+	user.skills.units =  skynet.call (database, "lua", "skills", "load",account_id) --玩家拥有的技能
+	setmetatable(user.skills, {__index = SkillsMethod})
 	user.explore = { account_id = account_id }
-	user.explore.unit = skynet.call (database, "lua", "explore_rd", "load", account_id, ExploreCharacter.randcon()) --explore
+	user.explore.unit = skynet.call (database, "lua", "explore", "load", account_id, ExploreCharacter.randcon()) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
 	local activity = snax.queryservice 'activity'
 	activity.post.loadAccount( account_id )

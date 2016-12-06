@@ -22,8 +22,10 @@ local mysql = {
 	password = "123456",
 	max_packet_size = 1024*1024,
 	ncard = 5,		--card表切割数
+	nskill = 5,		--skill表切割数
 	savecd = 2,		--保存间隔(s)
 	savenum = 10000,	--单次保存数目
+	expire = 2*24*60*60,	--过期时间
 }
 
 local database_config = { center = center, group = group, mysql = mysql }

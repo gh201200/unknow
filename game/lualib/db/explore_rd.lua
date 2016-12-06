@@ -45,7 +45,6 @@ end
 
 function explore.update(account_id, explore, ...)
 	local connection, key = make_key (account_id)
-		
 	connection:hmset(key, table.packdb(explore, ...))
 end
 

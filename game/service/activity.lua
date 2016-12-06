@@ -13,17 +13,16 @@ local function calcNameType(uid)
 	return t[1], tonumber(t[2])
 end
 
-local function create_activity(uid, aid, atype, val)
-	return {uid=uid, accountId=aid, atype=atype, value=val}
+local function create_activity(aid, atype, val, expire)
+	return {accountId=aid, atype=atype, value=val, expire=expire}
 end
 
 local function loadSystem()
 	database = skynet.uniqueservice("database")
 	for k, v in pairs(ActivitySysType) do
 		local uid = calcUid('system', v)
-		local unit  = skynet.call (database, "lua", "activity_rd", "load", uid)
+		local unit  = skynet.call (database, "lua", "activity", "load", uid)
 		if unit then
-			unit.uid  = uid
 			units[uid] = unit
 		end
 	end
@@ -67,11 +66,10 @@ function response.addValue(op, name, atype, val, expire)
 	if units[uid] then
 		units[uid].value = units[uid].value + val
 		units[uid].expire = expire
-		skynet.call (database, "lua", "activity_rd", "update", units[uid], 'value')
+		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'value')
 	else
-		units[uid] = create_activity(uid, name, atype, val)
-		units[uid].expire = expire
-		skynet.call (database, "lua", "activity_rd", "update", units[uid], 'accountId', 'atype', 'value', 'expire')
+		units[uid] = create_activity(name, atype, val, expire)
+		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'accountId', 'atype', 'value', 'expire')
 	end
 
 	--log record
@@ -89,11 +87,10 @@ function response.setValue(op, name, atype, val, expire)
 	if units[uid] then
 		units[uid].value = val
 		units[uid].expire = expire
-		skynet.call (database, "lua", "activity_rd", "update", units[uid], 'value')
+		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'value')
 	else
-		units[uid] = create_activity(uid, name, atype, val)
-		units[uid].expire = expire
-		skynet.call (database, "lua", "activity_rd", "update", units[uid], 'accountId', 'atype', 'value', 'expire')
+		units[uid] = create_activity(name, atype, val, expire)
+		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'accountId', 'atype', 'value', 'expire')
 	end
 
 	--log record
@@ -107,10 +104,9 @@ end
 function accept.loadAccount( aid )
 	for k, v in pairs(ActivityAccountType) do
 		local uid = calcUid(aid, v)
-		local unit  = skynet.call (database, "lua", "activity_rd", "load", uid)
+		local unit  = skynet.call (database, "lua", "activity", "load", uid)
 		
 		if unit and unit.expire > os.time() then
-			unit.uid  = uid
 			units[uid] = unit
 		end
 	end

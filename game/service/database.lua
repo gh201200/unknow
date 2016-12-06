@@ -6,6 +6,7 @@ local cards = require "db.cards_rd"
 local explore = require "db.explore_rd"
 local cooldown = require "db.cooldown_rd"
 local activity = require "db.activity_rd"
+local skills = require "db.skills_rd"
 
 local center
 local group = {}
@@ -30,14 +31,25 @@ local function module_init (name, mod)
 	mod.init (connection_handler)
 end
 
+local CMD = {}
+function CMD.flushdb()
+	for k, v in pairs(group) do
+		v:flushdb()
+	end
+end
+
+MODULE['CMD'] = CMD
+
+
 local traceback = debug.traceback
 
 skynet.start (function ()
-	module_init ("account_rd", account)
-	module_init ("cards_rd", cards)
-	module_init ("explore_rd", explore)
-	module_init ("cooldown_rd", cooldown)
-	module_init ("activity_rd", activity)
+	module_init ("account", account)
+	module_init ("cards", cards)
+	module_init ("explore", explore)
+	module_init ("cooldown", cooldown)
+	module_init ("activity", activity)
+	module_init ("skills", skills)
 	
 	center = redis.connect (config.center)
 	ngroup = #config.group

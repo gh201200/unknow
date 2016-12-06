@@ -55,7 +55,7 @@ end
 local function firstRegister(account_id)
 	--添加默认赠送卡牌数据
 	for k, v in pairs(Quest.AutoGainCards) do 
-		skynet.call(database, "lua", "cards_rd", "create", account_id, uuid.gen(), v)
+		skynet.call(database, "lua", "cards", "create", account_id, uuid.gen(), v)
 	end
 end
 
@@ -78,11 +78,11 @@ function CMD.auth (fd, addr)
 	print("auth",type,name,args)
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")
-		local account = skynet.call (database, "lua", "account_rd", "load", args.name) or error ("load account " .. args.name .. " failed")
+		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		account.account_id = args.name
 		if account.nick == nil then
 			--自动注册账号
-			skynet.call (database, "lua", "account_rd", "create", args.name,"123456")
+			skynet.call (database, "lua", "account", "create", args.name,"123456")
 	
 			firstRegister(account.account_id)
 		end

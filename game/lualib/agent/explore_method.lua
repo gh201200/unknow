@@ -14,7 +14,7 @@ local ExploreMethod =
 		self.unit["uuid"..index] = val
 
 		--local database = skybet.uniqueservice("database")
-		--skynet.call(database, "lua", "explore_rd", "update", self, "slot"..index) 
+		--skynet.call(database, "lua", "explore", "update", self, "slot"..index) 
 		
 		--log record
 		--syslog.infof("player[%s]:setSlot:%d,%s", self.account_id, index, val)
@@ -41,7 +41,7 @@ local ExploreMethod =
 		self:sendExploreData()
 		
 		local database = skynet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self.account_id, self.unit) 
+		skynet.call(database, "lua", "explore", "update", self.account_id, self.unit) 
 		
 		--log record
 		syslog.infof("player[%s]:resetExplore:%d,%d,%d,%d,%d", self.account_id, rr[1], rr[2], rr[3], rr[4], rr[5])
@@ -63,7 +63,7 @@ local ExploreMethod =
 		self:sendExploreData()
 
 		local database = skynet.uniqueservice("database")
-		skynet.call(database, "lua", "explore_rd", "update", self.account_id, self.unit, "time", "uuid0", "uuid1", "uuid2", "uuid3", "uuid4") 
+		skynet.call(database, "lua", "explore", "update", self.account_id, self.unit, "time", "uuid0", "uuid1", "uuid2", "uuid3", "uuid4") 
 		
 		--log record
 		syslog.infof("player[%s]:beginExplore:%d,%s,%s,%s,%s,$s", self.account_id, self.unit.time, uuid0, uuid1, uuid2, uuid3, uuid4)

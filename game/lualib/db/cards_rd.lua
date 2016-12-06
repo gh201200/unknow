@@ -34,7 +34,7 @@ function cards.loadBySerialId (account_id, serId)
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
 			local dataId = tonumber(connection:hget (v, "dataId"))
-			if serId == Macro_GetCardSerialId(card.dataId) then
+			if serId == Macro_GetCardSerialId(dataId) then
 				card  = {uuid = v}	
 				card.dataId = dataId
 				card.count = tonumber(connection:hget (v, "count"))
@@ -84,17 +84,8 @@ function cards.delCard(account_id, uuid)
 end
 
 function cards.update(account_id, card, ...)
-
 	local connection, key = make_key (account_id)
-	local p = { ... }
-
-	local t = {}
-	for k, v in pairs(p) do
-		t[2*k - 1] = v
-		t[2*k] = card[v]
-	end
-
-	connection:hmset(card.uuid, table.unpack(t))
+	connection:hmset(card.uuid, table.packdb(card, ...))
 end
 
 return cards

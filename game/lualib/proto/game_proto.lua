@@ -65,6 +65,13 @@ local types = [[
 	explore 3 : integer
 }
 
+.Skill {
+	dataId 0 : integer
+	uuid 1 : string
+	count 2 : integer
+	flag 3 : integer
+}
+
 .spawn {
 	monsterId 0 : integer
 	serverId 1 : integer
@@ -108,7 +115,7 @@ local types = [[
 	val 1 : integer
 }
 
-.activity {
+.Activity {
 	accountId 0 : string
         atype 1 : integer
         value 2 : integer 
@@ -448,7 +455,14 @@ sendCDTime 5 {
 #下发活动数据
 sendActivity 6 {
 	request {
-		activitys 0 : *activity
+		activitys 0 : *Activity
+	}
+}
+
+#下发技能数据
+sendSkill 7 {
+	request {
+		skillList 0 : *Skill(uuid)
 	}
 }
 

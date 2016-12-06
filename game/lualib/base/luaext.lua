@@ -112,7 +112,7 @@ function table.packdb(unit, ...)
 	else
 		local i = 1
 		for k, v in pairs(unit) do
-			if v then
+			if k ~= "uuid" and v then
 				r[i] = k
 				r[i+1] = v
 				i = i + 2	

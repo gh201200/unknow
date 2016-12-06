@@ -26,8 +26,8 @@ function activity.load (name)
 	return unit
 end
 
-function activity.add(activity)
-	local connection, key = make_key( activity.uid )
+function activity.add(uuid, activity)
+	local connection, key = make_key( uuid )
 
 	connection:hmset(key, 
 		'accountId', activity['accountId'],
@@ -37,25 +37,17 @@ function activity.add(activity)
 	)
 end
 
-function activity:del( uid )
-	local connection, key = make_key( uid )
+function activity:del( uuid )
+	local connection, key = make_key( uuid )
 	connection:del( key )	
 end
 
-function activity.update(activity, ...)
-	
-	local connection, key = make_key( activity.uid )
-	local p = { ... }	
-
-	local t = {}
-	for k, v in pairs(p) do
-		t[2*k - 1] = v
-		t[2*k] = activity[v]
-	end
-
-	connection:hmset(key, table.unpack(t))
+function activity.update(uuid, activity, ...)
+	local connection, key = make_key( uuid )
+	connection:hmset(key, table.packdb(activity, ...))
 end
 
 
 return activity
+
 

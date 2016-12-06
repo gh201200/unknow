@@ -143,7 +143,18 @@ end
 function Macro_GetCardDataId(serId, color)
 	return serId*10 + color
 end
-
+--Get skill serial id
+function Macro_GetSkillSerialId(_id)
+	return math.floor(_id / 100)
+end
+--Get skill grade
+function Macro_GetSkillGrade( _id )
+	return math.floor(_id % 1000 / 10)
+end
+--add skill grade
+function Macro_AddSkillGrade( _id, grade )
+	return _id + grade * 10
+end
 function getAccountLevel( _exp )
 	local lv = 1
 	for k, v in pairs(g_shareData.accountLevel) do

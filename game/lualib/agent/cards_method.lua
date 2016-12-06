@@ -40,7 +40,7 @@ local CardsMethod =
 		if v then	--already has the kind of card
 			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32WCardNum * num, 0, math.maxinteger)
 		else
-			
+			print (dataId)
 			v = self.initCard(dataId)
 			v.count = num * (g_shareData.heroRepository[dataId].n32WCardNum - 1)
 			self.units[v.uuid] =  v
@@ -48,7 +48,7 @@ local CardsMethod =
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "addCard", self.account_id, v)
+		skynet.call (database, "lua", "cards", "addCard", self.account_id, v)
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:addCard:%d,%d", op, self.account_id, dataId, num)
@@ -64,7 +64,7 @@ local CardsMethod =
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "count")
+		skynet.call (database, "lua", "cards", "update", self.account_id, v, "count")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:delCardByDataId:%d,%d", op, self.account_id, dataId, num)
@@ -80,7 +80,7 @@ local CardsMethod =
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "count")
+		skynet.call (database, "lua", "cards", "update", self.account_id, v, "count")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:delCardByUuid:%s,%d:dataId[%d]", op, self.account_id, uuid, num, v.dataId)
@@ -94,7 +94,7 @@ local CardsMethod =
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "dataId")
+		skynet.call (database, "lua", "cards", "update", self.account_id, v, "dataId")
 		
 		--log record
 		syslog.infof("op[%s]player[%s]:updateDataId:%s,dataId[%d][%d]", op, self.account_id, uuid, _dataId, oldDataId)
@@ -108,7 +108,7 @@ local CardsMethod =
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards_rd", "update", self.account_id, v, "explore")
+		skynet.call (database, "lua", "cards", "update", self.account_id, v, "explore")
 	end;
 }
 

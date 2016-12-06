@@ -19,17 +19,16 @@ local function calcNameType(uid)
 	return t[1], tonumber(t[2])
 end
 
-local function create_cd(uid, aid, atype, val)
-	return {uid=uid, accountId=aid, atype=atype, value=val}
+local function create_cd(aid, atype, val)
+	return {accountId=aid, atype=atype, value=val}
 end
 
 local function loadSystem()
 	database = skynet.uniqueservice("database")
 	for k, v in pairs(CoolDownSysType) do
 		local uid = calcUid('system', v)
-		local unit  = skynet.call (database, "lua", "cooldown_rd", "load", uid)
+		local unit  = skynet.call (database, "lua", "cooldown", "load", uid)
 		if unit and unit.value > os.time() then
-			unit.uid  = uid
 			units[uid] = unit
 		end
 	end
@@ -64,13 +63,13 @@ local function setTime(name, atype, time)
 	local uid = calcUid(name, atype)
 	if not units[uid] then
 		-- not exist
-		units[uid] = create_cd(uid, name, atype, now + time)
-		skynet.call(database, "lua", "cooldown_rd", "update", units[uid], 'accountId', 'atype', 'value')
+		units[uid] = create_cd(name, atype, now + time)
+		skynet.call(database, "lua", "cooldown", "update", units[uid], 'accountId', 'atype', 'value')
 	else
 		-- exist
 		if units[uid].value < now + time then
 			units[uid].value = now + time
-			skynet.call(database, "lua", "cooldown_rd", "update", units[uid], 'value')
+			skynet.call(database, "lua", "cooldown", "update", units[uid], 'value')
 		end
 	end
 end
@@ -83,12 +82,12 @@ local function setDate(name, atype, date)
 	
 	if not units[uid] then
 		-- not exist
-		units[uid] = create_cd(uid, name, atype, time)
-		skynet.call(database, "lua", "cooldown_rd", "update", units[uid], 'accountId', 'atype', 'value')
+		units[uid] = create_cd(name, atype, time)
+		skynet.call(database, "lua", "cooldown", "update",uid, units[uid], 'accountId', 'atype', 'value')
 	elseif units[uid].value < time then
 		-- exist
 		units[uid].value = time
-		skynet.call(database, "lua", "cooldown_rd", "update", units[uid], 'value')
+		skynet.call(database, "lua", "cooldown", "update", uid, units[uid], 'value')
 	end
 end
 
@@ -178,9 +177,8 @@ end
 function accept.loadAccount( aid )
 	for k, v in pairs(CoolDownAccountType) do
 		local uid = calcUid(aid, v)
-		local unit  = skynet.call (database, "lua", "cooldown_rd", "load", uid)
+		local unit  = skynet.call (database, "lua", "cooldown", "load", uid)
 		if unit then
-			unit.uid  = uid
 			units[uid] = unit
 		end
 	end

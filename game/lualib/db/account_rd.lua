@@ -22,6 +22,8 @@ function account.load (account_id)
 		acc.exp = tonumber(connection:hget (key, "exp"))
 		acc.icon = connection:hget (key, "icon")
 		acc.flag = tonumber(connection:hget (key, "flag"))
+		acc.expire = tonumber(connection:hget (key, "expire"))
+		acc.version = tonumber(connection:hget (key, "version"))
 	end
 
 	return acc
@@ -44,13 +46,14 @@ function account.create (account_id, password, nick, icon)
 		"money", 0,
 		"exp", 0,
 		"icon", icon,
-		"flag", 0
+		"flag", 0,
+		"expire", 0,
+		"version", NOW_SERVER_VERSION
 		)
 end
 
 function account.update(account_id, account, ...)
 	local connection, key = make_key (account_id)
-	
 	connection:hmset(key, table.packdb(account, ...))
 end
 

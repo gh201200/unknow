@@ -7,7 +7,7 @@
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>6元钻石</szName>
-		<szIcon>Yiduizuanshi.png</szIcon>
+		<szIcon>UI/Textures/Shop/Yiduizuanshi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -18,7 +18,7 @@
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>30元钻石</szName>
-		<szIcon>Yidaizuanshi.png</szIcon>
+		<szIcon>UI/Textures/Shop/Yidaizuanshi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -29,7 +29,7 @@
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>68元钻石</szName>
-		<szIcon>Yidahezuanshi.png</szIcon>
+		<szIcon>UI/Textures/Shop/Yidahezuanshi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -40,7 +40,7 @@
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>128元钻石</szName>
-		<szIcon>Yiduizuanshi.png</szIcon>
+		<szIcon>UI/Textures/Shop/Yiduizuanshi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -51,7 +51,7 @@
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>328元钻石</szName>
-		<szIcon>Yidaizuanshi.png</szIcon>
+		<szIcon>UI/Textures/Shop/Yidaizuanshi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -62,7 +62,7 @@
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
 		<szName>648元钻石</szName>
-		<szIcon>Yidahezuanshi.png</szIcon>
+		<szIcon>UI/Textures/Shop/Yidahezuanshi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -141,7 +141,7 @@
 		<szName>闪光</szName>
 		<szIcon>Shangguang.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>120001</n32GoodsID>
+		<n32GoodsID>12011</n32GoodsID>
 	</item>
 	<item id="40002">
 		<n32Type>4</n32Type>
@@ -152,7 +152,7 @@
 		<szName>厚德</szName>
 		<szIcon>Houde.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>110001</n32GoodsID>
+		<n32GoodsID>11021</n32GoodsID>
 	</item>
 	<item id="40003">
 		<n32Type>4</n32Type>
@@ -163,6 +163,6 @@
 		<szName>乌鸦</szName>
 		<szIcon>Wuya.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>230001</n32GoodsID>
+		<n32GoodsID>13051</n32GoodsID>
 	</item>
 </info>

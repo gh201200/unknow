@@ -24,26 +24,24 @@ function cooldown.load (name)
 	return unit
 end
 
-function cooldown.add(cooldown)
-	local connection, key = make_key( cooldown.uid )
+function cooldown.add(uuid, cooldown)
+	local connection, key = make_key( uuid )
 
 	connection:hmset(key, 
 		'accountId', cooldown['accountId'],
 		'atype', cooldown['atype'],
 		'value', cooldown['value']
-		'expire', activity['expire']
 	)
 end
 
-function cooldown:del( uid )
-	local connection, key = make_key( uid )
+function cooldown:del( uuid )
+	local connection, key = make_key( uuid )
 	connection:del( key )	
 end
 
-function cooldown.update(cooldown, ...)
-	local connection, key = make_key( cooldown.uid )
-	local r = table.packdb(key, cooldown, ...)
-	connection:hmset( r )
+function cooldown.update(uuid, cooldown, ...)
+	local connection, key = make_key( uuid )
+	connection:hmset( key,  table.packdb(cooldown, ...))
 end
 
 
