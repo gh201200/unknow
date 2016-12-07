@@ -8,6 +8,7 @@ local cooldown = require "db.cooldown_rd"
 local activity = require "db.activity_rd"
 local skills = require "db.skills_rd"
 
+local bgservice
 local center
 local group = {}
 local ngroup
@@ -23,6 +24,14 @@ function connection_handler (key)
 
 	return group[hash % ngroup + 1]
 end
+
+function sendBgevent(name, key, _type)
+	if not bgservice then
+		bgservice = skynet.uniqueservice ("bgsavemysql")
+	end
+	skynet.call(bgservice, "lua", "addevent", name, key, _type)
+end
+
 
 
 local MODULE = {}

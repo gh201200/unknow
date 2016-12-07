@@ -102,7 +102,7 @@ function REQUEST.exploreBegin( args )
 		user.cards:setExplore(args.uuid2, nextTime)
 		user.cards:setExplore(args.uuid3, nextTime)
 		user.cards:setExplore(args.uuid4, nextTime)
-		user.explore:beginExplore(args.uuid0, args.uuid1, args.uuid2, args.uuid3, args.uuid4)
+		user.explore:beginExplore("exploreBegin", args.uuid0, args.uuid1, args.uuid2, args.uuid3, args.uuid4)
 	until true
 	
 	return {errorCode=errorCode}
@@ -180,7 +180,7 @@ function REQUEST.exploreEnd( args )
 			end
 		end
 		user.servicecmd.addItems("exploreEnd", gains)
-		user.explore:resetExplore(Explore.randcon())	
+		user.explore:resetExplore("exploreEnd", Explore.randcon())	
 	until true
 	local vecs = {}
 	for k, v in pairs(gains) do

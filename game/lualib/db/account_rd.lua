@@ -49,12 +49,20 @@ function account.create (account_id, password, nick, icon)
 		"flag", 0,
 		"expire", 0,
 		"version", NOW_SERVER_VERSION
-		)
+	)
+
+	--bgsave
+	sendBgevent("account", account_id, "R")
 end
 
 function account.update(account_id, account, ...)
 	local connection, key = make_key (account_id)
 	connection:hmset(key, table.packdb(account, ...))
+	
+	--bgsave
+	if not account.uuid then	--带uuid时为mysql回存redis
+		sendBgevent("account", account_id, "R")
+	end
 end
 
 return account

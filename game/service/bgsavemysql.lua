@@ -1,7 +1,8 @@
 local skynet = require "skynet"
 local mysql = require "mysql"
-
 local config = require "config.database"
+
+local use_sqldb = false
 
 local database = ...
 
@@ -10,13 +11,18 @@ local CMD = {}
 local dbcmd = { head = 1, tail = 1 }
 local savenum
 local savethread
+local opevent = {}
+
 
 local function push(v)
 	dbcmd[dbcmd.tail] = v
 	dbcmd.tail = dbcmd.tail + 1
+
+	print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
 end
 
 local function pop()
+	
 	if dbcmd.head == dbcmd.tail then
 		return
 	end
@@ -27,21 +33,23 @@ local function pop()
 		dbcmd.head = 1
 		dbcmd.tail = 1
 	end
+	
+	print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
 	return v
 end
 
-local function tablename( table, key )
-	if table == "card" then
-		 table = table .. (hash_num( key ) % config.mysql.ncard + 1)
-	elseif table == "skill" then
-		 table = table .. (hash_num( key ) % config.mysql.nskill + 1)
+local function tablename( name, key )
+	if name == "card" then
+		 name = name .. (hash_num( key ) % config.mysql.ncard + 1)
+	elseif name == "skill" then
+		 name = name .. (hash_num( key ) % config.mysql.nskill + 1)
 	end
-	return table
+	return name
 end
 
-local function formatsql( key, table, unit )
+local function formatsql( key, name, unit )
 	local keys, values = table.packsql( unit )
-	return "replace into ".. tablename(table, key) .. " ( uid,"..keys..") values(" .. key ..",".. values .. ")"
+	return "replace into ".. tablename(name, key) .. " ( uuid,"..keys..") values('" .. key .."',".. values .. ")"
 end
 
 local function dealevent()
@@ -52,7 +60,7 @@ local function dealevent()
 			if not cmd then break end
 			if cmd.type == "R" then
 				local unit = skynet.call(database, "lua", cmd.table, "load", cmd.key)
-				local sql = formatsql( cmd.key, cmd,table, unit )
+				local sql = formatsql( cmd.key, cmd.table, unit )
 				print( sql )
 				db:query( sql )
 			elseif cmd.type == "D" then
@@ -74,7 +82,14 @@ local function saveall()
 end
 
 
-function CMD.addevent( ev )
+function CMD.addevent(table, key, _type)
+	for i = dbcmd.head, dbcmd.tail-1 do
+		if dbcmd[i].table==table and dbcmd.key==key then
+			dbcmd[i].type = _type
+			return
+		end
+	end
+	local ev = { table=table, key=key, type=_type }
 	push( ev )
 end
 
@@ -120,17 +135,19 @@ local function loadSkills( account_id )
 end
 
 local function loadAllAccount()
-	local res = db.query("select * from acount where expire < "..(os.time()-config.mysql.expire))
+	local res = db:query("select * from account where expire < "..(os.time()-config.mysql.expire))
+	print('account ',res)
 	for k, v in pairs(res) do
-		skynet.call(database, "lua", "account", "update", v)
+		skynet.call(database, "lua", "account", "update", v.uuid, v)
 	end
 end
 
 local function loadAllCards()
 	for i=1, config.mysql.ncard do
-		local sql = "select a.* from card"..i.."as a, account as b where a.account_id=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+		local sql = "select a.* from card"..i.." as a, account as b where a.account_id=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
 
-		local res = db.query( sql )
+		local res = db:query( sql )
+		print('cards ',res)
 		for k, v in pairs(res) do
 			skynet.call(database, "lua", "card", "addCard", v.account_id, v)
 		end
@@ -139,8 +156,8 @@ end
 
 local function loadAllSkills()
 	for i=1, config.mysql.nskill do
-		local sql = "select a.* from skill"..i.."as a, account as b where a.account_id=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
-		local res = db.query( sql )
+		local sql = "select a.* from skill"..i.." as a, account as b where a.account_id=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+		local res = db:query( sql )
 		for k, v in pairs(res) do
 			skynet.call(database, "lua", "card", "addSkill", v.account_id, v)
 		end
@@ -148,14 +165,14 @@ local function loadAllSkills()
 end
 
 local function loadAllCooldown()
-	local res = db.query("select a.* from cooldown as a, account as b where a.account_id=b.uuid or a.account_id=\'system\'")
+	local res = db:query("select a.* from cooldown as a, account as b where a.account_id=b.uuid or a.account_id=\'system\'")
 	for k, v in pairs(res) do
 		skynet.call(database, "lua", "cooldown", "add", v)
 	end
 end
 
 local function loadAllActivity()
-	local res = db.query("select a.* from activity as a, account as b where a.account_id=b.uuid or a.account_id=\'system\'")
+	local res = db:query("select a.* from activity as a, account as b where a.account_id=b.uuid or a.account_id=\'system\'")
 	for k, v in pairs(res) do
 		skynet.call(database, "lua", "activity", "add", v)
 	end
@@ -169,9 +186,14 @@ function CMD.loadAccountdata( account_id )
 end
 
 local function loadAllDatas()
-	--loadAllAccount()
-	--loadAllCards()
-	--loadAllSkills()
+	
+	--玩家数据
+	loadAllAccount()
+	loadAllCards()
+	loadAllSkills()
+	
+
+	--系统数据
 	loadAllCooldown()
 	loadAllActivity()
 end
@@ -181,7 +203,7 @@ end
 local function init()
 
 	--清空redis
-	--skynet.call(database, "lua", "CMD", "flushdb")
+	skynet.call(database, "lua", "CMD", "flushdb")
 	
 	--加载数据
 	loadAllDatas()
@@ -190,11 +212,19 @@ local function init()
 end
 
 skynet.start(function()
+	if not use_sqldb then
+		print('未启用mysql save db')
+		skynet.dispatch("lua", function(_,_, command, ...)
+			skynet.retpack({})
+		end)
+
+		return 
+	end
 
 	local function on_connect(db)
 		db:query("set charset utf8");
 	end
-	mysqldb=mysql.connect({
+	db=mysql.connect({
 		host=config.mysql.host,
 		port=config.mysql.port,
 		database=config.mysql.database,
@@ -203,12 +233,13 @@ skynet.start(function()
 		max_packet_size = config.mysql.max_packet_size,
 		on_connect = on_connect
 	})
-	if not mysqldb then
+	if not db then
 		print("failed to connect")
 	end
 	print("success to connect to mysql server")
 	
 	skynet.dispatch("error", function (address, source, command, ...)
+		print('数据保存服务退出')
 		saveall()	
 	end)
 

@@ -19,8 +19,8 @@ skynet.start(function()
 	skynet.uniqueservice("globaldata")
 	--启动数据库服务
 	local database = skynet.uniqueservice ("database")
-	--local bg = skynet.uniqueservice ("bgsavemysql", database)
-	--skynet.call(monitor, "lua", "watch", bg)
+	local bg = skynet.uniqueservice ("bgsavemysql", database)
+	skynet.call(monitor, "lua", "watch", bg)
 	-----------------------------------------------------------
 	------------
 	--启动web server 服务

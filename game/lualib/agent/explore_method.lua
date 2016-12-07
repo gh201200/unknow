@@ -25,7 +25,7 @@ local ExploreMethod =
 		return self.unit["uuid"..index]
 	end;
 	--
-	resetExplore = function(self, rr)
+	resetExplore = function(self, op, rr)
 		self.unit["con0"] = rr[1]
 		self.unit["con1"] = rr[2]
 		self.unit["con2"] = rr[3]
@@ -44,7 +44,7 @@ local ExploreMethod =
 		skynet.call(database, "lua", "explore", "update", self.account_id, self.unit) 
 		
 		--log record
-		syslog.infof("player[%s]:resetExplore:%d,%d,%d,%d,%d", self.account_id, rr[1], rr[2], rr[3], rr[4], rr[5])
+		syslog.infof("op[%s]player[%s]:resetExplore:%d,%d,%d,%d,%d", op, self.account_id, rr[1], rr[2], rr[3], rr[4], rr[5])
 	end;
 	--
 	getCon = function(self, index)
@@ -52,7 +52,7 @@ local ExploreMethod =
 		return self.unit["con"..index]
 	end;
 	--
-	beginExplore = function(self, uuid0, uuid1, uuid2, uuid3, uuid4)
+	beginExplore = function(self, op, uuid0, uuid1, uuid2, uuid3, uuid4)
 		self.unit.time = os.time() + Quest.ExploreTime
 		self.unit["uuid0"] = uuid0
 		self.unit["uuid1"] = uuid1
@@ -66,7 +66,7 @@ local ExploreMethod =
 		skynet.call(database, "lua", "explore", "update", self.account_id, self.unit, "time", "uuid0", "uuid1", "uuid2", "uuid3", "uuid4") 
 		
 		--log record
-		syslog.infof("player[%s]:beginExplore:%d,%s,%s,%s,%s,$s", self.account_id, self.unit.time, uuid0, uuid1, uuid2, uuid3, uuid4)
+		syslog.infof("op[%s]player[%s]:beginExplore:%d,%s,%s,%s,%s,$s",op, self.account_id, self.unit.time, uuid0, uuid1, uuid2, uuid3, uuid4)
 	end;
 }
 

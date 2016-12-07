@@ -135,9 +135,17 @@ function table.packsql(unit)
 			bk = true
 		end
 		if bv then
-			values = values .. "," .. v
+			if type(v) == 'string' then
+				values = values .. ",\'" .. v .."\'"
+			else
+				values = values .. "," .. v
+			end
 		else
-			values = v
+			if type(v) == 'string' then
+				values = "\'" .. v .. "\'"
+			else
+				values = v
+			end
 			bv = true
 		end	
 	end
