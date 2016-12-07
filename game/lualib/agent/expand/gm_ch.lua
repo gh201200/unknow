@@ -36,6 +36,13 @@ CLIENT_GM_CMD['addcard'] = function( args )
 	CMD.gm_add_card( p )
 end;
 
+CLIENT_GM_CMD['additem'] = function( args )
+	local items = {}
+	items[tonumber(args.params[1])] = tonumber(args.params[2])
+	CMD.gm_add_items( items )
+end;
+
+
 CLIENT_GM_CMD['addgold'] = function( args )
 	local p = { id=user.account.account_id, gold=args.params[1] }
 	skynet.call(user.MAP, "lua", "addgold", p)
@@ -58,6 +65,10 @@ end
 
 function CMD.gm_add_card( args )
 	user.cards:addCard("gm_add_card", args.dataId, args.cardNum)
+end
+
+function CMD.gm_add_items( args )
+	user.servicecmd.addItems("gm_add_items", args)
 end
 
 

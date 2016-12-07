@@ -7,7 +7,7 @@ local SkillsMethod =
 {
 	--
 	initSkill = function(_dataId)
-		return {uuid = uuid.gen(), dataId = _dataId, count=0, flag=0,}
+		return {uuid = uuid.gen(), dataId = _dataId, count=100, flag=0,}
 	end;
 	--
 	getSkillBySerialId = function(self, _serId)

@@ -202,9 +202,9 @@ function REQUEST.strengthSkill( args )
 			break
 		end
 		local skillDat = g_shareData.skillRepository[skill.dataId]
-		local nextId = Macro_AddSkillGrade(skill.dataId)
+		local nextId = Macro_AddSkillGrade(skill.dataId, 1)
 		local nextSkillDat = g_shareData.skillRepository[nextId]	
-		if not nextskillDat then
+		if not nextSkillDat then
 			errorCode = 3	--已到最高品质
 			break
 		end
