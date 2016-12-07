@@ -157,7 +157,9 @@ function EntityManager:createPet(id,master,pos,isbody)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
 end
+local function getEntityListByType(list,_type)
 
+end
 --获取施法目标的范围的目标
 function EntityManager:getSkillSelectsEntitys(source,target,skilldata)
 	local tgt = target 
@@ -167,13 +169,19 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata)
 	local typeTargets = {}
 	for _ek,_ev in pairs(self.entityList) do
 		--友方（包含自己）
-		if skilldata.n32SkillTargetType  == 1 and source:isKind(_ev) == true then
+		if skilldata.n32SelectTargetType  == 1 and source:isKind(_ev) == true then
 			table.insert(typeTargets,_ev)
 		--友方（除掉自己）
-		elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
+		elseif skilldata.n32SelectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
 			table.insert(typeTargets,_ev)
 		--敌方
-		elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev) == false then	
+		elseif skilldata.n32SelectTargetType  == 3 and source:isKind(_ev) == false then	
+			table.insert(typeTargets,_ev)
+		--除自己所有人
+		elseif skilldata.n32SelectTargetType  == 4 and source ~= _ev then
+			table.insert(typeTargets,_ev)
+		--所有人
+		elseif skilldata.n32SelectTargetType  == 5 then
 			table.insert(typeTargets,_ev)
 		end
 	end
