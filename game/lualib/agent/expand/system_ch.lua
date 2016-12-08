@@ -5,13 +5,25 @@ local SystemCh = class("SystemCh")
 
 local user
 local REQUEST = {}
-
+local CMD = {}
 function SystemCh:ctor()
 	self.request = REQUEST
+	self.cmd = CMD
 end
 
 function SystemCh:init( u )
 	user = u
+end
+
+function CMD.isBindSkills( heroId )
+	local v = user.cards:getCardByDataId( heroId )
+	if not v then return false end
+	for i=0,7 do
+		if v['skill'..i] == 0 then
+			return false
+		end
+	end
+	return true
 end
 
 function REQUEST.upgradeCardColorLevel( args )
@@ -24,16 +36,18 @@ function REQUEST.upgradeCardColorLevel( args )
         	end
 		local cardDat = g_shareData.heroRepository[card.dataId]
 		local nextCardDat = g_shareData.heroRepository[card.dataId+1]	
+		
 		if not nextCardDat then
 			errorCode = 3	--已到最高品质
 			break
 		end
 	
-        	if nextCardDat.n32WCardNum > card.count then
+        	if cardDat.n32WCardNum > card.count then
 			errorCode = 1	--碎片数量不足
 			break
 		end
-		if nextCardDat.n32GoldNum > user.account:getGold() then
+		
+		if cardDat.n32GoldNum > user.account:getGold() then
 			errorCode = 2	--金币不足
 			break
 		end
@@ -41,9 +55,9 @@ function REQUEST.upgradeCardColorLevel( args )
 	
 		---------开始升级
 		--扣除金币
-		user.account:addGold("upgradeCardColorLevel", -nextCardDat.n32GoldNum)
+		user.account:addGold("upgradeCardColorLevel", -cardDat.n32GoldNum)
 		--扣除碎片
-		user.cards:delCardByUuid("upgradeCardColorLevel", args.uuid, nextCardDat.n32WCardNum)
+		user.cards:delCardByUuid("upgradeCardColorLevel", args.uuid, cardDat.n32WCardNum)
 		--开始升级
 		user.cards:updateDataId("upgradeCardColorLevel", args.uuid, cardDat.id+1)
 	until true
@@ -73,8 +87,7 @@ function REQUEST.buyShopItem( args )
 	local ids = {}
 	local shopDat = g_shareData.shopRepository[args.id]
 	local atype = 0
-	local activity = snax.queryservice 'activity' 
-			print( args )
+	local activity = snax.queryservice 'activity'
 	repeat
 		if not shopDat then
 			errorCode = -1
@@ -187,7 +200,7 @@ function REQUEST.bindSkill( args )
 			break
 		end
 		--
-		user.cards:setSkill("bindSkill", args.uuid, args.slot, Macro_GetSkillSerialId(card.dataId))
+		user.cards:setSkill("bindSkill", args.uuidcard, args.slot, Macro_GetSkillSerialId(skill.dataId))
 	until true
 	return {errorCode=errorCode,uuidcard=args.uuidcard,uuidskill=args.uuidskill,slot=args.slot}
 end

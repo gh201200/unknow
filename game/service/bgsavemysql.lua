@@ -39,16 +39,24 @@ local function pop()
 end
 
 local function tablename( name, key )
+	--[[
 	if name == "card" then
 		 name = name .. (hash_num( key ) % config.mysql.ncard + 1)
 	elseif name == "skill" then
 		 name = name .. (hash_num( key ) % config.mysql.nskill + 1)
 	end
+	--]]
 	return name
 end
 
 local function formatsql( key, name, unit )
-	local keys, values = table.packsql( unit )
+	local keys, values
+	if name == "cards" or name == "skills" then
+		keys="blobdata"
+		values = serialize(unit)
+	else
+		keys, values = table.packsql( unit )
+	end
 	return "replace into ".. tablename(name, key) .. " ( uuid,"..keys..") values('" .. key .."',".. values .. ")"
 end
 
@@ -61,10 +69,17 @@ local function dealevent()
 			if cmd.type == "R" then
 				local unit = skynet.call(database, "lua", cmd.table, "load", cmd.key)
 				local sql = formatsql( cmd.key, cmd.table, unit )
-				print( sql )
-				db:query( sql )
+				local ret = db:query( sql )
+				if ret.errno then
+					print('sql = '..sql)
+					print(ret)
+				end
 			elseif cmd.type == "D" then
-				db:query("delete from " .. tablename(cmd.table, cmd.key) .. " where uid = " .. cmd.key)
+				local ret = db:query("delete from " .. tablename(cmd.table, cmd.key) .. " where uid = '" .. cmd.key.."'")
+				if ret.errno then
+					print('sql = '..sql)
+					print(ret)
+				end
 			end
 		end
 	end
@@ -94,18 +109,18 @@ function CMD.addevent(table, key, _type)
 end
 
 function CMD.isAccountexist( account_id )
-	local res = db.query("select uid from account where uuid = "..account_id)
+	local res = db.query("select uid from account where uuid = '"..account_id.."'")
 	return next(res)
 end
 
 local function loadAccount( account_id )
-	local res = db.query("select * from account where udid = "..account_id)
+	local res = db.query("select * from account where udid = '"..account_id.."'")
 	skynet.call(database, "lua", "account", "update", account_id, res)
 end
 
 local function loadCards( account_id )
 	for i=1, config.mysql.ncard do
-		local sql = "select * from card"..i.."where account_id = "..account_id
+		local sql = "select * from cards"..i.."where account_id = "..account_id
 		local res = db.query( sql )
 		if next(res) then
 			for k, v in pairs(res) do
@@ -117,14 +132,14 @@ local function loadCards( account_id )
 end
 
 local function loadExplore( account_id )
-	local res = db.query("select * from explore where account_id = "..account_id)
+	local res = db:query("select * from explore where account_id = '"..account_id.."'")
 	skynet.call(database, "lua", "explore", "update", account_id, res)
 end
 
 local function loadSkills( account_id )
 	for i=1, config.mysql.nskill do
-		local sql = "select * from skill"..i.."where account_id = "..account_id
-		local res = db.query( sql )
+		local sql = "select * from skills"..i.."where account_id = "..account_id
+		local res = db:query( sql )
 		if next(res) then
 			for k, v in pairs(res) do
 				skynet.call(database, "lua", "skill", "addSkill", account_id, res)
@@ -134,47 +149,71 @@ local function loadSkills( account_id )
 	end
 end
 
+
+
 local function loadAllAccount()
 	local res = db:query("select * from account where expire < "..(os.time()-config.mysql.expire))
-	print('account ',res)
 	for k, v in pairs(res) do
-		skynet.call(database, "lua", "account", "update", v.uuid, v)
+		local account_id = v.uuid
+		v.uuid = nil
+		v.doNotSavebg = 1
+		skynet.call(database, "lua", "account", "update", account_id, v)
 	end
 end
 
 local function loadAllCards()
-	for i=1, config.mysql.ncard do
-		local sql = "select a.* from card"..i.." as a, account as b where a.account_id=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+	local sql = "select a.* from cards as a, account as b where a.uuid=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
 
-		local res = db:query( sql )
-		print('cards ',res)
-		for k, v in pairs(res) do
-			skynet.call(database, "lua", "card", "addCard", v.account_id, v)
+	local res = db:query( sql )
+	for k, v in pairs(res) do
+		local unit = load(v['blobdata'])()
+		local account_id = v['uuid']
+		for p, q in pairs( unit ) do
+			q.doNotSavebg = 1
+			skynet.call(database, "lua", "cards", "addCard", account_id, q)
 		end
 	end
 end
 
 local function loadAllSkills()
-	for i=1, config.mysql.nskill do
-		local sql = "select a.* from skill"..i.." as a, account as b where a.account_id=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
-		local res = db:query( sql )
-		for k, v in pairs(res) do
-			skynet.call(database, "lua", "card", "addSkill", v.account_id, v)
+	local sql = "select a.* from skills as a, account as b where a.uuid=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+
+	local res = db:query( sql )
+	for k, v in pairs(res) do
+		local unit = load(v['blobdata'])()
+		local account_id = v['uuid']
+		for p, q in pairs(unit) do
+			q.doNotSavebg = 1
+			skynet.call(database, "lua", "skills", "addSkill", account_id, q)
 		end
 	end
 end
 
-local function loadAllCooldown()
-	local res = db:query("select a.* from cooldown as a, account as b where a.account_id=b.uuid or a.account_id=\'system\'")
+local function loadAllExplore()
+	local sql = "select a.* from explore as a, account as b where a.uuid=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+
+	local res = db:query( sql )
 	for k, v in pairs(res) do
-		skynet.call(database, "lua", "cooldown", "add", v)
+		local account_id = v.uuid
+		v.uuid = nil
+		v.doNotSavebg = 1
+		skynet.call(database, "lua", "explore", "update", account_id, v)
+	end
+end
+
+local function loadAllCooldown()
+	local res = db:query("select a.* from cooldown as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..(os.time()-config.mysql.expire)..")")
+	for k, v in pairs(res) do
+		v.doNotSavebg = 1
+		skynet.call(database, "lua", "cooldown", "add", v.uuid, v)
 	end
 end
 
 local function loadAllActivity()
-	local res = db:query("select a.* from activity as a, account as b where a.account_id=b.uuid or a.account_id=\'system\'")
+	local res = db:query("select a.* from activity as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..(os.time()-config.mysql.expire)..")")
 	for k, v in pairs(res) do
-		skynet.call(database, "lua", "activity", "add", v)
+		v.doNotSavebg = 1
+		skynet.call(database, "lua", "activity", "add", v.uuid, v)
 	end
 end
 
@@ -186,7 +225,6 @@ function CMD.loadAccountdata( account_id )
 end
 
 local function loadAllDatas()
-	
 	--玩家数据
 	loadAllAccount()
 	loadAllCards()

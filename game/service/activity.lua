@@ -59,6 +59,7 @@ function response.getValueByUid( uid )
 end
 
 function response.addValue(op, name, atype, val, expire)
+
 	local uid = calcUid(name, atype)
 	if not expire then
 		expire = math.maxinteger
@@ -69,7 +70,7 @@ function response.addValue(op, name, atype, val, expire)
 		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'value')
 	else
 		units[uid] = create_activity(name, atype, val, expire)
-		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'accountId', 'atype', 'value', 'expire')
+		skynet.call (database, "lua", "activity", "update", uid, units[uid])
 	end
 
 	--log record
@@ -81,7 +82,7 @@ end
 function response.setValue(op, name, atype, val, expire)
 	local uid = calcUid(name, atype)	
 	if not expire then
-		expire = math.maxinteger
+		expire = math.maxint32
 	end
 
 	if units[uid] then
@@ -90,7 +91,7 @@ function response.setValue(op, name, atype, val, expire)
 		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'value')
 	else
 		units[uid] = create_activity(name, atype, val, expire)
-		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'accountId', 'atype', 'value', 'expire')
+		skynet.call (database, "lua", "activity", "update", uid, units[uid])
 	end
 
 	--log record

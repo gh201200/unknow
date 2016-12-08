@@ -60,7 +60,7 @@ function account.update(account_id, account, ...)
 	connection:hmset(key, table.packdb(account, ...))
 	
 	--bgsave
-	if not account.uuid then	--带uuid时为mysql回存redis
+	if not account.doNotSavebg then
 		sendBgevent("account", account_id, "R")
 	end
 end

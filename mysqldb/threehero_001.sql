@@ -16,14 +16,14 @@ create table account(uuid varchar(50) primary key,
 	expire int not null,
 	version int not null);
 desc account;
-select "创建card表";
-create table card1(uuid varchar(50) primary key,
-	account_id varchar(50) not null,
-	dataId int not null,
-	count int not null,
-	explore int not null,
-	index card_accountid(account_id));
-desc card1;
+select "创建cards表";
+create table cards(uuid varchar(50) primary key,
+	blobdata text not null);
+desc cards;
+select "创建skills表";
+create table skills(uuid varchar(50) primary key,
+	blobdata text not null);
+desc skills;
 select "创建explore表";
 create table explore(uuid varchar(50) primary key,
 	uuid0 varchar(50) not null,
@@ -38,13 +38,6 @@ create table explore(uuid varchar(50) primary key,
 	con4 int not null,
 	time int not null);
 desc explore;
-select "创建skill能表";
-create table skill1(uuid varchar(50) primary key,
-	account_id varchar(50) not null,
-	dataId int not null,
-	count int not null,
-	index skill_accountid(account_id));
-desc skill1;
 select "创建CD表";
 create table cooldown(uuid varchar(50) primary key,
 	accountId varchar(50) not null,

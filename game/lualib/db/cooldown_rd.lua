@@ -32,16 +32,32 @@ function cooldown.add(uuid, cooldown)
 		'atype', cooldown['atype'],
 		'value', cooldown['value']
 	)
+	
+	--bgsave
+	if not cooldown.doNotSavebg then
+		sendBgevent("cooldown", uuid, "R")
+	end
+	
 end
 
 function cooldown:del( uuid )
 	local connection, key = make_key( uuid )
-	connection:del( key )	
+	connection:del( key )		
+
+	--bgsave
+	if not cooldown.doNotSavebg then
+		sendBgevent("cooldown", uuid, "D")
+	end
 end
 
 function cooldown.update(uuid, cooldown, ...)
 	local connection, key = make_key( uuid )
 	connection:hmset( key,  table.packdb(cooldown, ...))
+
+	--bgsave
+	if not cooldown.doNotSavebg then
+		sendBgevent("cooldown", uuid, "R")
+	end
 end
 
 

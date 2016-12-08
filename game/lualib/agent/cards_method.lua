@@ -52,13 +52,13 @@ local CardsMethod =
 		local serId = Macro_GetCardSerialId(dataId)
 		local v = self:getCardBySerialId( serId )
 		if v then	--already has the kind of card
-			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32WCardNum * num, 0, math.maxinteger)
+			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32CCardNum * num, 0, math.maxint32)
 		else
 			v = self.initCard(dataId)
-			v.count = num * (g_shareData.heroRepository[dataId].n32WCardNum - 1)
+			v.count = mClamp((num-1) * g_shareData.heroRepository[dataId].n32CCardNum, 0, math.maxint32)
 			self.units[v.uuid] =  v
 		end
-		self:sendCardData( v )	
+		self:sendCardData( v )
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "addCard", self.account_id, v)
@@ -125,16 +125,20 @@ local CardsMethod =
 	end;
 	--
 	setSkill = function(self, op, uuid, slot, serId)
+		print(op, uuid, slot, serId)
 		if slot < 0 or slot > 7 then return end
 		local v = self:getCardByUuid(uuid)
 		if not v then return end
 
-		v["slot"..slot] = serId
+		v["skill"..slot] = serId
 
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards", "update", self.account_id, v, "slot"..slot)
+		skynet.call (database, "lua", "cards", "update", self.account_id, v, "skill"..slot)
+		
+		--log record
+		syslog.infof("op[%s]player[%s]:setSkill:%s,%d,%d", op, self.account_id, uuid, slot, serId)
 	end;
 }
 
