@@ -33,24 +33,15 @@
 		<n32layer>0</n32layer>
 		<szillustration>和平之歌</szillustration>
 	</item>
-<<<<<<< HEAD
 	<item id="20001">
 		<n32type>4</n32type>
 		<szassert>Tiannv_Bullet_01</szassert>
 		<n32time>0</n32time>
 		<n32speed>4</n32speed>
-=======
-	<item id="10004">
-		<n32type>1</n32type>
-		<szassert>Chongjibo</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>天女普通攻击弹道</szillustration>
 	</item>
 	<item id="20002">
@@ -59,20 +50,9 @@
 		<n32time>0</n32time>
 		<n32speed>4</n32speed>
 		<n32position>9</n32position>
-=======
-		<szillustration>冲击波</szillustration>
-	</item>
-	<item id="12001">
-		<n32type>1</n32type>
-		<szassert>Houde_skill_03_1</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>乌鸦普通攻击弹道</szillustration>
 	</item>
 	<item id="20003">
@@ -81,20 +61,9 @@
 		<n32time>0</n32time>
 		<n32speed>8</n32speed>
 		<n32position>9</n32position>
-=======
-		<szillustration>厚德大招</szillustration>
-	</item>
-	<item id="12002">
-		<n32type>1</n32type>
-		<szassert>Shanguang_skill_03_1</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>修行者普通攻击弹道</szillustration>
 	</item>
 	<item id="20004">
@@ -103,39 +72,19 @@
 		<n32time>0</n32time>
 		<n32speed>5</n32speed>
 		<n32position>9</n32position>
-=======
-		<szillustration>闪光大招</szillustration>
-	</item>
-	<item id="12003">
-		<n32type>2</n32type>
-		<szassert>Wuya_skill_03_1</szassert>
-		<n32time>4</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>钟表匠普通攻击弹道</szillustration>
 	</item>
 	<item id="30001">
 		<n32type>2</n32type>
 		<szassert>Tiannv_Bullet_hit_01</szassert>
 		<n32time>3</n32time>
-=======
-		<szillustration></szillustration>
-	</item>
-	<item id="12004">
-		<n32type>1</n32type>
-		<szassert>Zhongbiaogong_skill_03_1</szassert>
-		<n32time>4</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>10</n32layer>
 		<szillustration>天女普通攻击击中特效</szillustration>
 	</item>
@@ -176,75 +125,10 @@
 		<n32type>2</n32type>
 		<szassert>Shanguang_hit_01</szassert>
 		<n32time>3</n32time>
-=======
-		<n32layer>0</n32layer>
-		<szillustration></szillustration>
-	</item>
-	<item id="20001">
-		<n32type>4</n32type>
-		<szassert>Tiannv_Bullet_01</szassert>
-		<n32time>0</n32time>
-		<n32speed>4</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>天女普通攻击弹道</szillustration>
-	</item>
-	<item id="20002">
-		<n32type>4</n32type>
-		<szassert>Wuya_Bullet_01</szassert>
-		<n32time>0</n32time>
-		<n32speed>4</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>乌鸦普通攻击弹道</szillustration>
-	</item>
-	<item id="20003">
-		<n32type>4</n32type>
-		<szassert>Xiuxingzhe_Bullet_01</szassert>
-		<n32time>0</n32time>
-		<n32speed>8</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>修行者普通攻击弹道</szillustration>
-	</item>
-	<item id="20004">
-		<n32type>4</n32type>
-		<szassert>Zhongbiaogong_Bullet_01</szassert>
-		<n32time>0</n32time>
-		<n32speed>5</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>钟表匠普通攻击弹道</szillustration>
-	</item>
-	<item id="20005">
-		<n32type>3</n32type>
-		<szassert>Kongzhiqiu_1</szassert>
-		<n32time>1.5</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.7</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>控制球</szillustration>
-	</item>
-	<item id="20006">
-		<n32type>7</n32type>
-		<szassert>Shandianlian_1</szassert>
-		<n32time>1</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>10</n32layer>
 		<szillustration>闪光普通攻击击中特效</szillustration>
 	</item>
@@ -262,116 +146,59 @@
 	<item id="30102">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<n32layer>0</n32layer>
-		<szillustration>闪电链</szillustration>
-	</item>
-	<item id="20007">
-		<n32type>7</n32type>
-		<szassert>nothing</szassert>
-		<n32time>3</n32time>
-		<n32speed>2</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>空弹道</szillustration>
-	</item>
-	<item id="30001">
-		<n32type>2</n32type>
-		<szassert>Tiannv_Bullet_hit_01</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到圣光打击</szillustration>
 	</item>
 	<item id="30103">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<szillustration>天女普通攻击击中特效</szillustration>
-	</item>
-	<item id="30002">
-		<n32type>2</n32type>
-		<szassert>Wuya_Bullet_hti_01</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到削蓝打击</szillustration>
 	</item>
 	<item id="30104">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<szillustration>乌鸦普通攻击击中特效</szillustration>
-	</item>
-	<item id="30003">
-		<n32type>2</n32type>
-		<szassert>Xiuxingzhe_Bullet_hit_01</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到寒冰打击</szillustration>
 	</item>
 	<item id="30105">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<szillustration>修行者普通攻击击中特效</szillustration>
-	</item>
-	<item id="30004">
-		<n32type>2</n32type>
-		<szassert>Zhongbiaogong_Bullet_hit_01</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到毒液打击</szillustration>
 	</item>
 	<item id="30106">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<szillustration>钟表匠普通攻击击中特效</szillustration>
-	</item>
-	<item id="30005">
-		<n32type>2</n32type>
-		<szassert>Shanguang_hit_01</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到拳头打击</szillustration>
 	</item>
 	<item id="30107">
-=======
-		<szillustration>闪光普通攻击击中特效</szillustration>
-	</item>
-	<item id="30101">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -380,15 +207,9 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到土块打击</szillustration>
 	</item>
 	<item id="30108">
-=======
-		<szillustration>受到刀剑打击</szillustration>
-	</item>
-	<item id="30102">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -397,55 +218,31 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到魔法打击</szillustration>
 	</item>
 	<item id="30109">
 		<n32type>2</n32type>
 		<szassert>Luolei_2</szassert>
-=======
-		<szillustration>受到圣光打击</szillustration>
-	</item>
-	<item id="30103">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>受到雷电打击</szillustration>
 	</item>
 	<item id="30110">
 		<n32type>2</n32type>
 		<szassert>Hit_01</szassert>
-=======
-		<n32layer>10</n32layer>
-		<szillustration>受到削蓝打击</szillustration>
-	</item>
-	<item id="30104">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>受到火焰打击</szillustration>
 	</item>
 	<item id="30111">
-=======
-		<n32layer>10</n32layer>
-		<szillustration>受到寒冰打击</szillustration>
-	</item>
-	<item id="30105">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -454,21 +251,14 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到爆炸打击</szillustration>
 	</item>
 	<item id="30112">
-=======
-		<szillustration>受到毒液打击</szillustration>
-	</item>
-	<item id="30106">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-<<<<<<< HEAD
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
@@ -488,32 +278,15 @@
 	<item id="31002">
 		<n32type>2</n32type>
 		<szassert>Xixue</szassert>
-=======
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>受到拳头打击</szillustration>
-	</item>
-	<item id="30107">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>受到圣光的治疗（弱）</szillustration>
 	</item>
 	<item id="31003">
-=======
-		<n32layer>10</n32layer>
-		<szillustration>受到土块打击</szillustration>
-	</item>
-	<item id="30108">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -522,55 +295,31 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到自然能量的治疗（强）</szillustration>
 	</item>
 	<item id="31004">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<szillustration>受到魔法打击</szillustration>
-	</item>
-	<item id="30109">
-		<n32type>2</n32type>
-		<szassert>Luolei_2</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>10</n32layer>
 		<szillustration>受到自然能量的治疗（弱）</szillustration>
 	</item>
 	<item id="31005">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<n32layer>0</n32layer>
-		<szillustration>受到雷电打击</szillustration>
-	</item>
-	<item id="30110">
-		<n32type>2</n32type>
-		<szassert>Hit_01</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>10</n32layer>
 		<szillustration>受到科技的治疗（强）</szillustration>
 	</item>
 	<item id="31006">
-=======
-		<n32layer>0</n32layer>
-		<szillustration>受到火焰打击</szillustration>
-	</item>
-	<item id="30111">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -579,15 +328,9 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到科技的治疗（弱）</szillustration>
 	</item>
 	<item id="31011">
-=======
-		<szillustration>受到爆炸打击</szillustration>
-	</item>
-	<item id="30112">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -596,7 +339,6 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>接受圣光回复魔法</szillustration>
 	</item>
 	<item id="31012">
@@ -613,40 +355,15 @@
 	<item id="31013">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<szillustration>受到子弹打击</szillustration>
-	</item>
-	<item id="31001">
-		<n32type>1</n32type>
-		<szassert>Quntizhiliao_2</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>受到圣光的治疗（强）</szillustration>
-	</item>
-	<item id="31002">
-		<n32type>2</n32type>
-		<szassert>Xixue</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>10</n32layer>
 		<szillustration>接受科技回复魔法</szillustration>
 	</item>
 	<item id="31014">
-=======
-		<n32layer>0</n32layer>
-		<szillustration>受到圣光的治疗（弱）</szillustration>
-	</item>
-	<item id="31003">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -655,15 +372,9 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>接受科技回复生命和魔法</szillustration>
 	</item>
 	<item id="31015">
-=======
-		<szillustration>受到自然能量的治疗（强）</szillustration>
-	</item>
-	<item id="31004">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>3</n32time>
@@ -672,76 +383,38 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-<<<<<<< HEAD
 		<szillustration>科技护盾</szillustration>
 	</item>
 	<item id="40001">
 		<n32type>1</n32type>
 		<szassert>Luolei_1</szassert>
-=======
-		<szillustration>受到自然能量的治疗（弱）</szillustration>
-	</item>
-	<item id="31005">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
-		<n32position>1</n32position>
+		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>受到科技的治疗（强）</szillustration>
-	</item>
-	<item id="31006">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>落雷</szillustration>
 	</item>
 	<item id="40002">
 		<n32type>1</n32type>
 		<szassert>Zhenta_1</szassert>
-=======
-		<n32layer>10</n32layer>
-		<szillustration>受到科技的治疗（弱）</szillustration>
-	</item>
-	<item id="31011">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>震踏</szillustration>
 	</item>
 	<item id="40003">
 		<n32type>1</n32type>
 		<szassert>Bingbao_1</szassert>
-=======
-		<n32layer>10</n32layer>
-		<szillustration>接受圣光回复魔法</szillustration>
-	</item>
-	<item id="31012">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
-		<n32position>1</n32position>
+		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>冰暴</szillustration>
 	</item>
@@ -760,31 +433,10 @@
 		<n32type>2</n32type>
 		<szassert>JInmo_2</szassert>
 		<n32time>0</n32time>
-=======
-		<n32layer>10</n32layer>
-		<szillustration>接受自然回复魔法</szillustration>
-	</item>
-	<item id="31013">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
-		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>接受科技回复魔法</szillustration>
-	</item>
-	<item id="31014">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
-		<n32time>3</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>沉默（改成头顶的特效）</szillustration>
 	</item>
@@ -792,40 +444,21 @@
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>0</n32time>
-=======
-		<n32layer>10</n32layer>
-		<szillustration>接受科技回复生命和魔法</szillustration>
-	</item>
-	<item id="31015">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
-		<n32time>3</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>2</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>此处应有缴械（头顶特效）</szillustration>
 	</item>
 	<item id="50004">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<n32layer>10</n32layer>
-		<szillustration>科技护盾</szillustration>
-	</item>
-	<item id="32001">
-		<n32type>2</n32type>
-		<szassert>Houde_skill_03_2</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>被蔓藤缠住</szillustration>
 	</item>
@@ -833,20 +466,10 @@
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>0</n32time>
-=======
-		<n32layer>10</n32layer>
-		<szillustration>厚德大招</szillustration>
-	</item>
-	<item id="32002">
-		<n32type>2</n32type>
-		<szassert>Shanguang_hit_01</szassert>
-		<n32time>3</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>被网住</szillustration>
 	</item>
@@ -854,29 +477,14 @@
 		<n32type>2</n32type>
 		<szassert>Chaofeng_2</szassert>
 		<n32time>0</n32time>
-=======
-		<n32layer>10</n32layer>
-		<szillustration></szillustration>
-	</item>
-	<item id="32003">
-		<n32type>2</n32type>
-		<szassert>Wuya_skill_03_1_hit</szassert>
-		<n32time>3</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>2</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>受到嘲讽</szillustration>
 	</item>
 	<item id="50011">
-=======
-		<szillustration></szillustration>
-	</item>
-	<item id="32004">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>Duye_1</szassert>
 		<n32time>0</n32time>
@@ -885,7 +493,6 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>中毒</szillustration>
 	</item>
 	<item id="50012">
@@ -914,42 +521,11 @@
 		<n32type>2</n32type>
 		<szassert>Huiyao_1</szassert>
 		<n32time>0</n32time>
-=======
-		<szillustration></szillustration>
-	</item>
-	<item id="40001">
-		<n32type>1</n32type>
-		<szassert>Luolei_1</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>落雷</szillustration>
-	</item>
-	<item id="40002">
-		<n32type>1</n32type>
-		<szassert>Zhenta_1</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>震踏</szillustration>
-	</item>
-	<item id="40003">
-		<n32type>1</n32type>
-		<szassert>Bingbao_1</szassert>
-		<n32time>3</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>震晕（双减速）</szillustration>
 	</item>
 	<item id="50015">
@@ -966,77 +542,37 @@
 	<item id="51001">
 		<n32type>2</n32type>
 		<szassert>test</szassert>
-=======
-		<szillustration>冰暴</szillustration>
-	</item>
-	<item id="40004">
-		<n32type>1</n32type>
-		<szassert>Huobao</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>火爆</szillustration>
-	</item>
-	<item id="50001">
-		<n32type>2</n32type>
-		<szassert>Xuanyun</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>2</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>持续回复生命</szillustration>
 	</item>
 	<item id="51002">
 		<n32type>2</n32type>
 		<szassert>Hudun</szassert>
-=======
-		<szillustration>晕眩</szillustration>
-	</item>
-	<item id="50002">
-		<n32type>2</n32type>
-		<szassert>JInmo_2</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>护盾</szillustration>
 	</item>
 	<item id="51003">
 		<n32type>2</n32type>
 		<szassert>Yidongjiasu</szassert>
-=======
-		<szillustration>沉默（改成头顶的特效）</szillustration>
-	</item>
-	<item id="50003">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>2</n32position>
+		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>增加移动速度</szillustration>
 	</item>
 	<item id="51004">
-=======
-		<szillustration>此处应有缴械（头顶特效）</szillustration>
-	</item>
-	<item id="50004">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>0</n32time>
@@ -1045,15 +581,9 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>增加攻击速度</szillustration>
 	</item>
 	<item id="51005">
-=======
-		<szillustration>被蔓藤缠住</szillustration>
-	</item>
-	<item id="50005">
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32type>2</n32type>
 		<szassert>test</szassert>
 		<n32time>0</n32time>
@@ -1062,7 +592,6 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>魔法免疫</szillustration>
 	</item>
 	<item id="10004">
@@ -1080,31 +609,11 @@
 		<n32type>1</n32type>
 		<szassert>Huobao</szassert>
 		<n32time>3</n32time>
-=======
-		<szillustration>被网住</szillustration>
-	</item>
-	<item id="50006">
-		<n32type>2</n32type>
-		<szassert>Chaofeng_2</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>2</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>受到嘲讽</szillustration>
-	</item>
-	<item id="50011">
-		<n32type>2</n32type>
-		<szassert>Duye_1</szassert>
-		<n32time>0</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration>火爆</szillustration>
 	</item>
 	<item id="20005">
@@ -1121,19 +630,11 @@
 	<item id="32001">
 		<n32type>2</n32type>
 		<szassert>Houde_skill_03_2</szassert>
-=======
-		<szillustration>中毒</szillustration>
-	</item>
-	<item id="50012">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>10</n32layer>
 		<szillustration>厚德大招</szillustration>
 	</item>
@@ -1152,31 +653,10 @@
 		<n32type>1</n32type>
 		<szassert>Shanguang_skill_03_1</szassert>
 		<n32time>3</n32time>
-=======
-		<n32layer>0</n32layer>
-		<szillustration>击退</szillustration>
-	</item>
-	<item id="50013">
-		<n32type>2</n32type>
-		<szassert>Bingbao_2</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>2</n32Extra>
-		<n32Redius>2</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>霜冻（双减速）</szillustration>
-	</item>
-	<item id="50014">
-		<n32type>2</n32type>
-		<szassert>Huiyao_1</szassert>
-		<n32time>0</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration>闪光大招</szillustration>
 	</item>
@@ -1184,31 +664,10 @@
 		<n32type>2</n32type>
 		<szassert>Wuya_skill_03_1</szassert>
 		<n32time>4</n32time>
-=======
-		<n32layer>0</n32layer>
-		<szillustration>震晕（双减速）</szillustration>
-	</item>
-	<item id="50015">
-		<n32type>2</n32type>
-		<szassert>Puojia</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>2</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>受到伤害增加</szillustration>
-	</item>
-	<item id="51001">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
-		<n32time>0</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>0</n32layer>
 		<szillustration></szillustration>
 	</item>
@@ -1227,20 +686,10 @@
 		<n32type>2</n32type>
 		<szassert>Shanguang_hit_01</szassert>
 		<n32time>3</n32time>
-=======
-		<n32layer>0</n32layer>
-		<szillustration>持续回复生命</szillustration>
-	</item>
-	<item id="51002">
-		<n32type>2</n32type>
-		<szassert>Hudun</szassert>
-		<n32time>0</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-<<<<<<< HEAD
 		<n32layer>10</n32layer>
 		<szillustration></szillustration>
 	</item>
@@ -1248,40 +697,22 @@
 		<n32type>1</n32type>
 		<szassert>Zhongbiaogong_skill_03_1</szassert>
 		<n32time>4</n32time>
-=======
-		<n32layer>0</n32layer>
-		<szillustration>护盾</szillustration>
-	</item>
-	<item id="51003">
-		<n32type>2</n32type>
-		<szassert>Yidongjiasu</szassert>
-		<n32time>0</n32time>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration></szillustration>
 	</item>
 	<item id="32004">
 		<n32type>2</n32type>
 		<szassert>Zhongbiaogong_skill_03_2</szassert>
-=======
-		<szillustration>增加移动速度</szillustration>
-	</item>
-	<item id="51004">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>1</n32position>
+		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-<<<<<<< HEAD
 		<szillustration></szillustration>
 	</item>
 	<item id="51006">
@@ -1305,30 +736,5 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>闪电链</szillustration>
-=======
-		<szillustration>增加攻击速度</szillustration>
-	</item>
-	<item id="51005">
-		<n32type>2</n32type>
-		<szassert>test</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>魔法免疫</szillustration>
-	</item>
-	<item id="51006">
-		<n32type>2</n32type>
-		<szassert>nothing</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>3</n32Extra>
-		<n32Redius>3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>金身</szillustration>
->>>>>>> f5da3f8375e55944feb4102ea0d4d604ccfda9aa
 	</item>
 </info>

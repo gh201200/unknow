@@ -139,7 +139,7 @@
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
 		<szName>闪光</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Shanguang.png</szIcon>
+		<szIcon>Shangguang.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>120001</n32GoodsID>
 	</item>
@@ -150,7 +150,7 @@
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
 		<szName>厚德</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Houde.png</szIcon>
+		<szIcon>Houde.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>110001</n32GoodsID>
 	</item>
@@ -161,7 +161,7 @@
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
 		<szName>乌鸦</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szIcon>
+		<szIcon>Wuya.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>230001</n32GoodsID>
 	</item>
