@@ -40,7 +40,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -70,7 +70,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -100,7 +100,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -130,7 +130,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -160,7 +160,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -190,7 +190,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -220,7 +220,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -250,7 +250,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -280,7 +280,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -310,7 +310,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -340,7 +340,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -370,7 +370,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -400,7 +400,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -430,7 +430,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -460,7 +460,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -490,7 +490,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -520,7 +520,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -550,7 +550,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -580,7 +580,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -610,7 +610,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -640,7 +640,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -670,7 +670,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -700,7 +700,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -730,7 +730,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
 		<n32GodSkillId>51100251</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -790,7 +790,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -820,7 +820,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -850,7 +850,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -880,7 +880,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -910,7 +910,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -940,7 +940,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -970,7 +970,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1000,7 +1000,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1030,7 +1030,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1060,7 +1060,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1090,7 +1090,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1120,7 +1120,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1150,7 +1150,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1180,7 +1180,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1210,7 +1210,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1240,7 +1240,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1270,7 +1270,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1300,7 +1300,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1330,7 +1330,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1360,7 +1360,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1390,7 +1390,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1420,7 +1420,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1450,7 +1450,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1480,7 +1480,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
 		<n32GodSkillId>51101251</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -1540,7 +1540,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1570,7 +1570,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1600,7 +1600,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1630,7 +1630,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1660,7 +1660,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1690,7 +1690,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1720,7 +1720,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1750,7 +1750,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1780,7 +1780,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1810,7 +1810,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1840,7 +1840,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1870,7 +1870,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1900,7 +1900,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1930,7 +1930,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1960,7 +1960,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -1990,7 +1990,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2020,7 +2020,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2050,7 +2050,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2080,7 +2080,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2110,7 +2110,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2140,7 +2140,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2170,7 +2170,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2200,7 +2200,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2230,7 +2230,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
 		<n32GodSkillId>51200251</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2290,7 +2290,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2320,7 +2320,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2350,7 +2350,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2380,7 +2380,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2410,7 +2410,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2440,7 +2440,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2470,7 +2470,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2500,7 +2500,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2530,7 +2530,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2560,7 +2560,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2590,7 +2590,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2620,7 +2620,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2650,7 +2650,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2680,7 +2680,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2710,7 +2710,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2740,7 +2740,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2770,7 +2770,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2800,7 +2800,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2830,7 +2830,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2860,7 +2860,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2890,7 +2890,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2920,7 +2920,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2950,7 +2950,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -2980,7 +2980,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
 		<n32GodSkillId>51201251</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -3040,7 +3040,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3070,7 +3070,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3100,7 +3100,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3130,7 +3130,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3160,7 +3160,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3190,7 +3190,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3220,7 +3220,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3250,7 +3250,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3280,7 +3280,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3310,7 +3310,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3340,7 +3340,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3370,7 +3370,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3400,7 +3400,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3430,7 +3430,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3460,7 +3460,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3490,7 +3490,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3520,7 +3520,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3550,7 +3550,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3580,7 +3580,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3610,7 +3610,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3640,7 +3640,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3670,7 +3670,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3700,7 +3700,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3730,7 +3730,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
 		<n32GodSkillId>51300251</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3790,7 +3790,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3820,7 +3820,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3850,7 +3850,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3880,7 +3880,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3910,7 +3910,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3940,7 +3940,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -3970,7 +3970,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4000,7 +4000,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4030,7 +4030,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4060,7 +4060,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4090,7 +4090,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4120,7 +4120,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4150,7 +4150,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4180,7 +4180,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4210,7 +4210,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4240,7 +4240,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4270,7 +4270,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4300,7 +4300,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4330,7 +4330,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4360,7 +4360,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4390,7 +4390,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4420,7 +4420,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4450,7 +4450,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4480,7 +4480,7 @@
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
 		<n32GodSkillId>51301251</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -4540,7 +4540,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4570,7 +4570,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4600,7 +4600,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4630,7 +4630,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4660,7 +4660,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4690,7 +4690,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4720,7 +4720,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4750,7 +4750,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4780,7 +4780,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4810,7 +4810,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4840,7 +4840,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4870,7 +4870,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4900,7 +4900,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4930,7 +4930,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4960,7 +4960,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -4990,7 +4990,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5020,7 +5020,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5050,7 +5050,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5080,7 +5080,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5110,7 +5110,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5140,7 +5140,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5170,7 +5170,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5200,7 +5200,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5230,7 +5230,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
 		<n32GodSkillId>52100251</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5290,7 +5290,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5320,7 +5320,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5350,7 +5350,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5380,7 +5380,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5410,7 +5410,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5440,7 +5440,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5470,7 +5470,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5500,7 +5500,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5530,7 +5530,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5560,7 +5560,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5590,7 +5590,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5620,7 +5620,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5650,7 +5650,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5680,7 +5680,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5710,7 +5710,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5740,7 +5740,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5770,7 +5770,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5800,7 +5800,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5830,7 +5830,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5860,7 +5860,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5890,7 +5890,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5920,7 +5920,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5950,7 +5950,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -5980,7 +5980,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
 		<n32GodSkillId>52101251</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -6040,7 +6040,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6070,7 +6070,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6100,7 +6100,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6130,7 +6130,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6160,7 +6160,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6190,7 +6190,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6220,7 +6220,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6250,7 +6250,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6280,7 +6280,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6310,7 +6310,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6340,7 +6340,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6370,7 +6370,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6400,7 +6400,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6430,7 +6430,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6460,7 +6460,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6490,7 +6490,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6520,7 +6520,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6550,7 +6550,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6580,7 +6580,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6610,7 +6610,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6640,7 +6640,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6670,7 +6670,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6700,7 +6700,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6730,7 +6730,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
 		<n32GodSkillId>52201251</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6790,7 +6790,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6820,7 +6820,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6850,7 +6850,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6880,7 +6880,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6910,7 +6910,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6940,7 +6940,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -6970,7 +6970,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7000,7 +7000,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7030,7 +7030,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7060,7 +7060,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7090,7 +7090,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7120,7 +7120,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7150,7 +7150,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7180,7 +7180,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7210,7 +7210,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7240,7 +7240,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7270,7 +7270,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7300,7 +7300,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7330,7 +7330,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7360,7 +7360,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7390,7 +7390,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7420,7 +7420,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7450,7 +7450,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7480,7 +7480,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
 		<n32GodSkillId>52201251</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -7540,7 +7540,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7570,7 +7570,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7600,7 +7600,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7630,7 +7630,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7660,7 +7660,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7690,7 +7690,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7720,7 +7720,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7750,7 +7750,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7780,7 +7780,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7810,7 +7810,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7840,7 +7840,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7870,7 +7870,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7900,7 +7900,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7930,7 +7930,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7960,7 +7960,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -7990,7 +7990,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8020,7 +8020,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8050,7 +8050,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8080,7 +8080,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8110,7 +8110,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8140,7 +8140,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8170,7 +8170,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8200,7 +8200,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8230,7 +8230,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
 		<n32GodSkillId>52300251</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8290,7 +8290,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8320,7 +8320,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8350,7 +8350,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8380,7 +8380,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8410,7 +8410,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8440,7 +8440,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8470,7 +8470,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8500,7 +8500,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8530,7 +8530,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8560,7 +8560,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8590,7 +8590,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8620,7 +8620,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8650,7 +8650,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8680,7 +8680,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8710,7 +8710,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8740,7 +8740,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8770,7 +8770,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8800,7 +8800,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8830,7 +8830,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8860,7 +8860,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8890,7 +8890,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8920,7 +8920,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8950,7 +8950,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -8980,7 +8980,7 @@
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
 		<n32GodSkillId>52301251</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -9040,7 +9040,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9070,7 +9070,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9100,7 +9100,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9130,7 +9130,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9160,7 +9160,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9190,7 +9190,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9220,7 +9220,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9250,7 +9250,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9280,7 +9280,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9310,7 +9310,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9340,7 +9340,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9370,7 +9370,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9400,7 +9400,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9430,7 +9430,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9460,7 +9460,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9490,7 +9490,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9520,7 +9520,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9550,7 +9550,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9580,7 +9580,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9610,7 +9610,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9640,7 +9640,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9670,7 +9670,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9700,7 +9700,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9730,7 +9730,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
 		<n32GodSkillId>53100251</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9790,7 +9790,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9820,7 +9820,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9850,7 +9850,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9880,7 +9880,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9910,7 +9910,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9940,7 +9940,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -9970,7 +9970,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10000,7 +10000,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10030,7 +10030,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10060,7 +10060,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10090,7 +10090,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10120,7 +10120,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10150,7 +10150,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10180,7 +10180,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10210,7 +10210,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10240,7 +10240,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10270,7 +10270,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10300,7 +10300,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10330,7 +10330,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10360,7 +10360,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10390,7 +10390,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10420,7 +10420,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10450,7 +10450,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10480,7 +10480,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
 		<n32GodSkillId>53101251</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
@@ -10540,7 +10540,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10570,7 +10570,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10600,7 +10600,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10630,7 +10630,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10660,7 +10660,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10690,7 +10690,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10720,7 +10720,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10750,7 +10750,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10780,7 +10780,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10810,7 +10810,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10840,7 +10840,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10870,7 +10870,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10900,7 +10900,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10930,7 +10930,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10960,7 +10960,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -10990,7 +10990,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11020,7 +11020,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11050,7 +11050,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11080,7 +11080,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11110,7 +11110,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11140,7 +11140,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11170,7 +11170,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11200,7 +11200,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11230,7 +11230,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
 		<n32GodSkillId>53200251</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11290,7 +11290,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11320,7 +11320,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11350,7 +11350,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11380,7 +11380,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11410,7 +11410,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11440,7 +11440,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11470,7 +11470,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11500,7 +11500,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11530,7 +11530,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11560,7 +11560,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11590,7 +11590,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11620,7 +11620,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11650,7 +11650,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11680,7 +11680,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11710,7 +11710,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11740,7 +11740,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11770,7 +11770,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11800,7 +11800,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11830,7 +11830,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11860,7 +11860,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11890,7 +11890,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11920,7 +11920,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11950,7 +11950,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -11980,7 +11980,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
 		<n32GodSkillId>53201251</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
@@ -12040,7 +12040,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12070,7 +12070,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12100,7 +12100,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12130,7 +12130,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12160,7 +12160,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12190,7 +12190,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12220,7 +12220,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12250,7 +12250,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12280,7 +12280,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12310,7 +12310,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12340,7 +12340,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12370,7 +12370,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12400,7 +12400,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12430,7 +12430,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12460,7 +12460,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12490,7 +12490,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12520,7 +12520,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12550,7 +12550,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12580,7 +12580,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12610,7 +12610,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12640,7 +12640,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12670,7 +12670,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12700,7 +12700,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12730,7 +12730,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
 		<n32GodSkillId>53300251</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12790,7 +12790,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
-		<n32GoldNum>10</n32GoldNum>
+		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12820,7 +12820,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
-		<n32GoldNum>20</n32GoldNum>
+		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12850,7 +12850,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
-		<n32GoldNum>40</n32GoldNum>
+		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12880,7 +12880,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
-		<n32GoldNum>80</n32GoldNum>
+		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12910,7 +12910,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
-		<n32GoldNum>120</n32GoldNum>
+		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12940,7 +12940,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
-		<n32GoldNum>200</n32GoldNum>
+		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -12970,7 +12970,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
-		<n32GoldNum>400</n32GoldNum>
+		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13000,7 +13000,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
-		<n32GoldNum>800</n32GoldNum>
+		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13030,7 +13030,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
-		<n32GoldNum>1200</n32GoldNum>
+		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13060,7 +13060,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
-		<n32GoldNum>2000</n32GoldNum>
+		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13090,7 +13090,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
-		<n32GoldNum>4000</n32GoldNum>
+		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13120,7 +13120,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
-		<n32GoldNum>8000</n32GoldNum>
+		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13150,7 +13150,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
-		<n32GoldNum>12000</n32GoldNum>
+		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13180,7 +13180,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
-		<n32GoldNum>20000</n32GoldNum>
+		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13210,7 +13210,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
-		<n32GoldNum>40000</n32GoldNum>
+		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13240,7 +13240,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
-		<n32GoldNum>80000</n32GoldNum>
+		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13270,7 +13270,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
-		<n32GoldNum>120000</n32GoldNum>
+		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13300,7 +13300,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
-		<n32GoldNum>200000</n32GoldNum>
+		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13330,7 +13330,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
-		<n32GoldNum>400000</n32GoldNum>
+		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13360,7 +13360,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
-		<n32GoldNum>800000</n32GoldNum>
+		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13390,7 +13390,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
-		<n32GoldNum>1200000</n32GoldNum>
+		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13420,7 +13420,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
-		<n32GoldNum>2000000</n32GoldNum>
+		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13450,7 +13450,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
-		<n32GoldNum>4000000</n32GoldNum>
+		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
@@ -13480,7 +13480,7 @@
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
-		<n32GoldNum>8000000</n32GoldNum>
+		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
 		<n32GodSkillId>53301251</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>

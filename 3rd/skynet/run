@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./skynet ./examples/main_mysql.lua 

@@ -165,4 +165,48 @@
 		<szContent></szContent>
 		<n32GoodsID>230001</n32GoodsID>
 	</item>
+	<item id="50001">
+		<n32Type>5</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>288</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>开一次</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>70001</n32GoodsID>
+	</item>
+	<item id="50002">
+		<n32Type>5</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>2880</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>开十次</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>70002</n32GoodsID>
+	</item>
+	<item id="50003">
+		<n32Type>5</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>144</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>开一次</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>70003</n32GoodsID>
+	</item>
+	<item id="50004">
+		<n32Type>5</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>1440</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<szName>开十次</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>70004</n32GoodsID>
+	</item>
 </info>

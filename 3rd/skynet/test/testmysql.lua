@@ -76,9 +76,9 @@ skynet.start(function()
 	local db=mysql.connect({
 		host="127.0.0.1",
 		port=3306,
-		database="skynet",
+		database="quoteDB",
 		user="root",
-		password="1",
+		password="123456",
 		max_packet_size = 1024 * 1024,
 		on_connect = on_connect
 	})
@@ -86,6 +86,17 @@ skynet.start(function()
 		print("failed to connect")
 	end
 	print("testmysql success to connect to mysql server")
+	local ret  = db:query("show tables;")
+	local tbs = {}
+	for k,v in pairs(ret) do
+		tbs[v["Tables_in_quoteDB"]] = {}
+	end
+	for k,v in pairs(tbs) do
+		print("out put sql table" .. k)
+		tbs[k] = db:query("select * from " .. k)
+		print( dump(tbs[k]) )
+	end
+	if true then return end
 
 	local res = db:query("drop table if exists cats")
 	res = db:query("create table cats "
@@ -100,8 +111,10 @@ skynet.start(function()
 	print ( dump( res ) )
 
     -- test in another coroutine
+
 	skynet.fork( test2, db)
-    skynet.fork( test3, db)
+  
+  skynet.fork( test3, db)
 	-- multiresultset test
 	res = db:query("select * from cats order by id asc ; select * from cats")
 	print ("multiresultset test result=", dump( res ) )
