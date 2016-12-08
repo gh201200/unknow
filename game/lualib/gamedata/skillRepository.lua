@@ -15,7 +15,9 @@ lub.search(data, function(node)
     if node.xml == "item" then
     	--print("---------begin-------")
     	--print(node.id)
-	t[node.id] = {["id"] = node.id}
+	local id = tonumber(node.id)
+	t[id] = {}
+	t[id].id = id
 	for _k,_v in pairs(node) do
 	--	print("=================")
 		if _v.xml ~= nil then
@@ -24,16 +26,18 @@ lub.search(data, function(node)
 			if tonumber(v) == nil then
 				if  _v.xml == "szSelectRange" or _v.xml == "szAffectRange" or _v.xml == "szAffectTargetAffect" or _v.xml == "szSelectTargetAffect" or _v.xml == "szMyAffect" then
 					if v ~= nil then
-						t[node.id][_v.xml] = string.parserskillStr(v)
+						t[id][_v.xml] = string.parserskillStr(v)
 						if _v.xml == "szSelectRange" or _v.xml == "szAffectRange" then
-							t[node.id][_v.xml] = t[node.id][_v.xml][1]
+							t[id][_v.xml] = t[id][_v.xml][1]
 						end
+					else
+						t[id][_v.xml] = ""
 					end
 				else
-					t[node.id][_v.xml] = v
+					t[id][_v.xml] = v
 				end
 			else
-				t[node.id][_v.xml] = tonumber(v)
+				t[id][_v.xml] = tonumber(v)
 			end
 		end
 	end
