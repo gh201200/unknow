@@ -12,8 +12,8 @@ bootstrap = "snlua bootstrap"	-- The service for bootstrap
 --standalone = "0.0.0.0:2013"
 
 lua_path = skynet_root.."lualib/?.lua;"..root.."lualib/?.lua;"..root.."lualib/base/?.lua;"..root.."lualib/gamedata/?.lua;"
-lua_path = lua_path..root.."../3rd/xml/?.lua;"
-lua_cpath = skynet_root.."luaclib/?.so;"..root.."luaclib/?.so;"..root.."../3rd/xml/?.so;"
+lua_path = lua_path..root.."../3rd/xmllib/?.lua;"
+lua_cpath = skynet_root.."luaclib/?.so;"..root.."luaclib/?.so;"..root.."../3rd/xmllib/?.so;"
 cpath = skynet_root.."cservice/?.so;"..root.."cservice/?.so"
 luaservice = skynet_root.."service/?.lua;"..root.."service/?.lua"
 lualoader = skynet_root.."lualib/loader.lua"

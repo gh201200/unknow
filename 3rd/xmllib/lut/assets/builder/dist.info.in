@@ -1,0 +1,16 @@
+{% local description = DESCRIPTION %}
+name = "{{type}}"
+version = "{{VERSION}}"
+
+desc = "{{DESCRIPTION.summary}}"
+author = "{{DESCRIPTION.author}}"
+license = "{{DESCRIPTION.license}}"
+url = "{{DESCRIPTION.homepage}}"
+maintainer = "{{DESCRIPTION.maintainer or DESCRIPTION.author}}"
+
+depends = {
+{% for _, v in ipairs(DEPENDS) do %}
+  "{{v}}",
+{% end %}
+}
+

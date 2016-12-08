@@ -1,0 +1,113 @@
+{% 
+local lfs = require 'lfs'
+local lub = require 'lub'
+local platkeys = BUILD.platkeys or {}
+local platlibs = BUILD.platlibs or {}
+local platdefs = BUILD.platdefs or {}
+%}
+package = "{{type}}"
+version = "{{VERSION}}-1"
+source = {
+{% if BUILD.url then %}
+  url = '{{BUILD.url}}',
+{% if BUILD.tag then %}
+  tag = '{{BUILD.tag}}',
+{% else %}
+  dir = '{{BUILD.dir}}',
+{% end %}
+{% else %}
+  url = 'git://github.com/{{BUILD.github}}/{{type}}',
+  tag = 'REL-{{VERSION}}',
+  dir = '{{type}}',
+{% end %}
+}
+description = {
+  summary = "{{DESCRIPTION.summary}}",
+  detailed = [[
+{{DESCRIPTION.detailed}}]],
+  homepage = "{{DESCRIPTION.homepage}}",
+  license = "{{DESCRIPTION.license}}"
+}
+
+dependencies = {
+{% for _, v in ipairs(DEPENDS) do %}
+  "{{v}}",
+{% end %}
+}
+build = {
+  type = '{{BUILD.type or 'builtin'}}',
+{% if BUILD.type == 'cmake' then %}
+  variables = {
+    LUA_INSTALL_DIR    = '/usr/local/share/lua/5.1',
+    LUA_INSTALL_BINDIR = '/usr/local/lib/lua/5.1',
+  },
+{% else %}
+  modules = {
+    -- Plain Lua files
+    {{string.format("[%-17s] = '%s/%s.lua'", "'"..type.."'", type, 'init')}},
+{% for file in lfs.dir(type) do %}
+{% if file ~= 'init.lua' and file:match('.lua$') then file = file:sub(1, -5) %}
+    {{string.format("[%-17s] = '%s/%s.lua'", "'"..type..'.'..file.."'", type, file)}},
+{% end %}
+{% end %}
+{% if not BUILD.pure_lua then
+  sources_count = 0
+  %}
+    -- C module
+    {{string.format("[%-17s] = ", "'"..type..".core'")}}{
+      sources = {
+{% for _, path in ipairs(BUILD.rsources) do
+  sources_count = sources_count + 1 %}
+        '{{path}}',
+{% end %}
+      },
+{% if BUILD.includes and #BUILD.includes > 0 then %}
+      incdirs   = {'{{ lub.join(BUILD.includes, "', '") }}'},
+{% end %}
+{% if BUILD.libraries and #BUILD.libraries > 0 then %}
+      libraries = {'{{ lub.join(BUILD.libraries, "', '") }}'},
+{% end %}
+    },
+{% end %}
+  },
+{% if lub.exist(type..'/assets') then %}
+  install = {
+    -- Assets needed by library.
+    lua = {
+{% for path in lub.Dir(type..'/assets'):glob() do %}
+      {{string.format("[%-32s] = '%s'", "'"..string.gsub(string.gsub(path, '%.', '_'), '/', '.').."'", path)}},
+{% end %}
+    },
+  },
+{% end %}
+{% if not BUILD.pure_lua and #platkeys > 0 then %}
+  platforms = {
+{% for _, plat in ipairs(platkeys) do 
+  local idx = sources_count
+%}
+    {{plat}} = {
+      modules = {
+        ['{{type}}.core'] = {
+{% if BUILD.rpsources[plat] then %}
+          sources = {
+{% for _, path in ipairs(BUILD.rpsources[plat]) do 
+idx = idx + 1 %}
+            [{{idx}}] = '{{path}}',
+{% end %}
+          },
+{% end %}
+{% if platlibs[plat] then %}
+          libraries = {'{{ lub.join(platlibs[plat], "', '") }}'},
+{% end %}
+{% if platdefs and platdefs[plat] then %}
+          defines   = {'{{ lub.join(platdefs[plat], "', '") }}'},
+{% end %}
+        },
+      },
+    },
+{% end %}
+  },
+{% end %}
+{% end %}
+}
+
