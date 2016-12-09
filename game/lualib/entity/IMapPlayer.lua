@@ -206,10 +206,8 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 	local skilldata = g_shareData.skillRepository[skillId + self.skillTable[skillId] - 1]	
 	--被动技能
 	if skilldata.n32Active == 1 then	
-		--local oldSkillId = skillId + self.skillTable[skillId] - 2
-		--移除旧技能带的buff效果
-		--self.affectTable:removeBySkillId(oldSkillId)
-		self.spell.passtiveSpells[skilldata.n32SeriId] = passtiveSpell.new(self,skilldata)
+		local ps = passtiveSpell.new(self,skilldata)
+		table.insert(self.spell.passtiveSpells,ps)
 	end
 	
 	if updateToClient then
@@ -217,6 +215,7 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 			skillId = skillId,
 			level = self.skillTable[skillId] 
 		}
+		print("msg:",msg)
 		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
 	end
 end

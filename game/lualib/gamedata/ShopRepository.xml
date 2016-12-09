@@ -138,10 +138,10 @@
 		<n32Price>200</n32Price>
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
-		<szName>闪光</szName>
-		<szIcon>Shangguang.png</szIcon>
+		<szName>殿前骑士碎片</szName>
+		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>120001</n32GoodsID>
+		<n32GoodsID>1110101</n32GoodsID>
 	</item>
 	<item id="40002">
 		<n32Type>4</n32Type>
@@ -149,10 +149,10 @@
 		<n32Price>200</n32Price>
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
-		<szName>厚德</szName>
-		<szIcon>Houde.png</szIcon>
+		<szName>厚德碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Houde.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>110001</n32GoodsID>
+		<n32GoodsID>1110001</n32GoodsID>
 	</item>
 	<item id="40003">
 		<n32Type>4</n32Type>
@@ -160,13 +160,178 @@
 		<n32Price>200</n32Price>
 		<n32MoneyType>1</n32MoneyType>
 		<n32Limit>10</n32Limit>
-		<szName>乌鸦</szName>
-		<szIcon>Wuya.png</szIcon>
+		<szName>机甲少女碎片</szName>
+		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>230001</n32GoodsID>
+		<n32GoodsID>1310101</n32GoodsID>
+	</item>
+	<item id="40004">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>狂僧碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1210001</n32GoodsID>
+	</item>
+	<item id="40005">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>龙女碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1210101</n32GoodsID>
+	</item>
+	<item id="40006">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>牛博士碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1310001</n32GoodsID>
+	</item>
+	<item id="40007">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>闪光碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Shanguang.png</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1120001</n32GoodsID>
+	</item>
+	<item id="40008">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>神狙碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1320001</n32GoodsID>
+	</item>
+	<item id="40009">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>弹弓碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1120101</n32GoodsID>
+	</item>
+	<item id="40010">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>修行者碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1220001</n32GoodsID>
+	</item>
+	<item id="40011">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>蒂皮碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1220101</n32GoodsID>
+	</item>
+	<item id="40012">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>安娜碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1320101</n32GoodsID>
+	</item>
+	<item id="40013">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>天女碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1130001</n32GoodsID>
+	</item>
+	<item id="40014">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>风女碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1230001</n32GoodsID>
+	</item>
+	<item id="40015">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>钟表匠碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1130101</n32GoodsID>
+	</item>
+	<item id="40016">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>法老碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1330001</n32GoodsID>
+	</item>
+	<item id="40017">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>乌鸦鬼碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1230101</n32GoodsID>
+	</item>
+	<item id="40018">
+		<n32Type>4</n32Type>
+		<n32Count>1</n32Count>
+		<n32Price>200</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<szName>天才碎片</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>1330101</n32GoodsID>
 	</item>
 	<item id="50001">
-		<n32Type>5</n32Type>
+		<n32Type>3</n32Type>
 		<n32Count>1</n32Count>
 		<n32Price>288</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -177,7 +342,7 @@
 		<n32GoodsID>70001</n32GoodsID>
 	</item>
 	<item id="50002">
-		<n32Type>5</n32Type>
+		<n32Type>3</n32Type>
 		<n32Count>1</n32Count>
 		<n32Price>2880</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -188,7 +353,7 @@
 		<n32GoodsID>70002</n32GoodsID>
 	</item>
 	<item id="50003">
-		<n32Type>5</n32Type>
+		<n32Type>3</n32Type>
 		<n32Count>1</n32Count>
 		<n32Price>144</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -199,7 +364,7 @@
 		<n32GoodsID>70003</n32GoodsID>
 	</item>
 	<item id="50004">
-		<n32Type>5</n32Type>
+		<n32Type>3</n32Type>
 		<n32Count>1</n32Count>
 		<n32Price>1440</n32Price>
 		<n32MoneyType>2</n32MoneyType>

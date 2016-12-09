@@ -41,13 +41,16 @@ function passtiveSpell:update(dt)
 		end
 		--adds添加buff
 		if #adds > 0 then
-			self.source.spell:trgggerAffect(self.szAffectTargetAffect,adds,self.skilldata)
+			print("trigger spell")
+			self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,adds,self.skilldata)
 		end
 		--dels移除buff
 		if #dels > 0 then
 			local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
 			for _dk,_dv in pairs(dels) do
-				_dv.affectTable:removeById(uuid)
+				if _dv.affectTable then
+					_dv.affectTable:removeById(uuid)
+				end
 			end	
 		end 
 		self.targets = targets	

@@ -19,7 +19,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>120</n32Exp>
 		<n32Gold>80</n32Gold>
-		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
+		<szDrop>1001, 1001, 1101</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -43,7 +43,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>60</n32Exp>
 		<n32Gold>40</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -67,7 +67,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>60</n32Exp>
 		<n32Gold>40</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -115,7 +115,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -139,7 +139,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -187,7 +187,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -211,7 +211,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -259,7 +259,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -283,7 +283,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -331,7 +331,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>30</n32Exp>
 		<n32Gold>20</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -355,7 +355,7 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -379,7 +379,7 @@
 		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>240</n32Exp>
 		<n32Gold>160</n32Gold>
-		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
+		<szDrop>1001, 1001, 1101</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -403,7 +403,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>90</n32Exp>
 		<n32Gold>60</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -427,7 +427,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>90</n32Exp>
 		<n32Gold>60</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -475,7 +475,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -499,7 +499,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -547,7 +547,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -571,7 +571,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -619,7 +619,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -643,7 +643,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -691,7 +691,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>45</n32Exp>
 		<n32Gold>30</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -715,7 +715,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -739,7 +739,7 @@
 		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>360</n32Exp>
 		<n32Gold>240</n32Gold>
-		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
+		<szDrop>1001, 1001, 1101</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -763,7 +763,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>135</n32Exp>
 		<n32Gold>90</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -787,7 +787,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>135</n32Exp>
 		<n32Gold>90</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -835,7 +835,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -859,7 +859,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -907,7 +907,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -931,7 +931,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -979,7 +979,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1003,7 +1003,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1051,7 +1051,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>67</n32Exp>
 		<n32Gold>45</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1075,7 +1075,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1099,7 +1099,7 @@
 		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>480</n32Exp>
 		<n32Gold>320</n32Gold>
-		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
+		<szDrop>1001, 1001, 1101</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1123,7 +1123,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>202</n32Exp>
 		<n32Gold>135</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1147,7 +1147,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>202</n32Exp>
 		<n32Gold>135</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1195,7 +1195,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1219,7 +1219,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>152</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1267,7 +1267,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1291,7 +1291,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1339,7 +1339,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1363,7 +1363,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1411,7 +1411,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>102</n32Exp>
 		<n32Gold>68</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1435,7 +1435,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1459,7 +1459,7 @@
 		<n32RecvMp>4</n32RecvMp>
 		<n32Exp>600</n32Exp>
 		<n32Gold>400</n32Gold>
-		<szDrop>1001, 1002, 1003, 1004, 1101</szDrop>
+		<szDrop>1001, 1001, 1101</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1483,7 +1483,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>304</n32Exp>
 		<n32Gold>203</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1507,7 +1507,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>304</n32Exp>
 		<n32Gold>203</n32Gold>
-		<szDrop>1005, 1005, 1102 </szDrop>
+		<szDrop>1001, 1102 </szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1555,7 +1555,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1579,7 +1579,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1627,7 +1627,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1651,7 +1651,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1699,7 +1699,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1723,7 +1723,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>
@@ -1771,7 +1771,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>151</n32Exp>
 		<n32Gold>101</n32Gold>
-		<szDrop>1002</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50003</n32ModelId>
@@ -1795,7 +1795,7 @@
 		<n32RecvMp>2</n32RecvMp>
 		<n32Exp>228</n32Exp>
 		<n32Gold>152</n32Gold>
-		<szDrop>1003, 1004</szDrop>
+		<szDrop>1001</szDrop>
 		<n32CommonSkill>810001</n32CommonSkill>
 		<szSkill></szSkill>
 		<n32ModelId>50004</n32ModelId>

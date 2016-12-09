@@ -68,7 +68,7 @@ end
 function NpcAI:updatePreCast()
 	--decide whitch skill it will be cast
 	self.source:preCastSkill()
-	self.followLen = self.source:getPreSkillData().n32Range/GAMEPLAY_PERCENT - 0.05
+	self.followLen = self.source:getPreSkillData().n32Range
 end
 
 function NpcAI:onEnter_Idle()
@@ -126,6 +126,7 @@ function NpcAI:onExit_Chase()
 end
 
 function NpcAI:onEnter_Battle()
+	print("onEnter_Battle")
 	self.source:stand()
 end
 

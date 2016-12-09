@@ -231,7 +231,7 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata)
 		local pos2 = source.pos:return_add( dir1:return_mul_num(h))
 		dot[1] = pos2:return_add( dir2:return_mul_num(w) )
 		dot[2] = pos2:return_sub( dir2:return_mul_num(w))
-		for _k,_v in pairs(self.typeTargets) do
+		for _k,_v in pairs(typeTargets) do
 			local isIn = ptInRect(_v.pos,dot) 
 			if isIn == true then
 				table.insert(selects,_v)		
@@ -276,7 +276,8 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 				table.insert(affects,_tv)
 			elseif skilldata.szAffectRange[1] == "circle" then
 				local disVec = _tv.pos:return_sub(_sv.pos)
-				if disVec <= skilldata.szAffectRange[2] then
+				local disLen = disVec:length()
+				if disLen <= skilldata.szAffectRange[2] then
 					table.insert(affects,_tv)
 				end
 			elseif skilldata.szAffectRange[1] == "sector" then
