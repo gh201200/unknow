@@ -129,12 +129,15 @@ local CardsMethod =
 		local v = self:getCardByUuid(uuid)
 		if not v then return end
 
-		v["slot"..slot] = serId
+		v["skill"..slot] = serId
 
 		self:sendCardData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards", "update", self.account_id, v, "slot"..slot)
+		skynet.call (database, "lua", "cards", "update", self.account_id, v, "skill"..slot)
+		
+		--log record
+		syslog.infof("op[%s]player[%s]:setSkill:%s,%d,%d", op, self.account_id, uuid, slot, serId)
 	end;
 }
 

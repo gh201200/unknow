@@ -55,6 +55,12 @@ function skills.addSkill (account_id, skill)
 		"dataId", skill.dataId, 
 		"count", skill.count
 	)
+	
+	--bgsave
+	if not skill.doNotSavebg  then
+		sendBgevent("skills", account_id, "R")
+	end
+
 end
 
 function skills.delSkill(account_id, uuid)
@@ -64,11 +70,21 @@ function skills.delSkill(account_id, uuid)
 	connection:srem(key, uuid)
 	
 	connection:del(uuid)
+	
+	--bgsave
+	if not skill.doNotSavebg  then
+		sendBgevent("skills", account_id, "R")
+	end
 end
 
 function skills.update(account_id, skill, ...)
 	local connection, key = make_key (account_id)
 	connection:hmset(skill.uuid, table.packdb(skill, ...))
+
+	--bgsave
+	if not skill.doNotSavebg  then
+		sendBgevent("skills", account_id, "R")
+	end
 end
 
 return skills

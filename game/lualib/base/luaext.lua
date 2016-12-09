@@ -112,7 +112,7 @@ function table.packdb(unit, ...)
 	else
 		local i = 1
 		for k, v in pairs(unit) do
-			if k ~= "uuid" and v then
+			if k ~= "doNotSavebg" and v then
 				r[i] = k
 				r[i+1] = v
 				i = i + 2	
@@ -289,7 +289,8 @@ math.pow2 = function(x)
 	return x * x
 end
 
-math.maxint32 = 0xffffffff
+math.maxint32 = 0x7fffffff
+math.maxuint32 = 0xffffffff
 
 -- lua面向对象扩展
 function class(classname, super)

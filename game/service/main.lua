@@ -7,7 +7,6 @@ local game_config = require "config.gameserver"
 local login_config = require "config.loginserver"
 local max_client = 64
 
-
 skynet.start(function()
 			
 	math.randomseed(skynet.now())

@@ -73,6 +73,11 @@ function cards.addCard (account_id, card)
 		"skill7", card.skill7
 	
 	)
+	
+	--bgsave
+	if not card.doNotSavebg then
+		sendBgevent("cards", account_id, "R")
+	end
 end
 
 function cards.delCard(account_id, uuid)
@@ -82,12 +87,21 @@ function cards.delCard(account_id, uuid)
 	connection:srem(key, uuid)
 	
 	connection:del(uuid)
+
+	--bgsave
+	if not card.doNotSavebg then
+		sendBgevent("cards", account_id, "R")
+	end
 end
 
 function cards.update(account_id, card, ...)
 	local connection, key = make_key (account_id)
 	connection:hmset(card.uuid, table.packdb(card, ...))
+
+	--bgsave
+	if not card.doNotSavebg then
+		sendBgevent("cards", account_id, "R")
+	end
 end
 
 return cards
-

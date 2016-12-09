@@ -27,6 +27,9 @@ function explore.load (account_id, rr)
 		connection:hset( key, "con2", rr[3])
 		connection:hset( key, "con3", rr[4])
 		connection:hset( key, "con4", rr[5])
+
+		--bgsave
+		sendBgevent("explore", account_id, "R")
 	end
 	acc.time = tonumber(connection:hget (key, "time"))
 	acc.uuid0 = connection:hget (key, "uuid0")
@@ -46,6 +49,11 @@ end
 function explore.update(account_id, explore, ...)
 	local connection, key = make_key (account_id)
 	connection:hmset(key, table.packdb(explore, ...))
+	
+	--bgsave
+	if not explore.doNotSavebg then
+		sendBgevent("explore", account_id, "R")
+	end
 end
 
 

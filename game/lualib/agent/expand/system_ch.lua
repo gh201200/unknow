@@ -74,7 +74,6 @@ function REQUEST.buyShopItem( args )
 	local shopDat = g_shareData.shopRepository[args.id]
 	local atype = 0
 	local activity = snax.queryservice 'activity' 
-			print( args )
 	repeat
 		if not shopDat then
 			errorCode = -1
