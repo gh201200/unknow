@@ -164,8 +164,8 @@ end
 
 function REQUEST.bindSkill( args )
 	local errorCode = 0
-	local card = user.cards.getCardByUuid( args.uuidcard )
-	local skill = user.skills.getSkillByUuid( args.uuidskill )
+	local card = user.cards:getCardByUuid( args.uuidcard )
+	local skill = user.skills:getSkillByUuid( args.uuidskill )
 	repeat
 		if not card then
 			errorCode = -1
@@ -179,16 +179,16 @@ function REQUEST.bindSkill( args )
 			errorCode = -1
 			break
 		end
-		local cardDat = g_shareData.heroRespository[card.dataId]
-		local skillDat = g_shareData.skillRespository[skill.dataId]
-		if bit_and(bit(cardDat.n32Camp), skillDat.n32Faction) == 0 then
+		local cardDat = g_shareData.heroRepository[card.dataId]
+		local skillDat = g_shareData.skillRepository[skill.dataId]
+		if bit_and(cardDat.n32Camp, skillDat.n32Faction) == 0 then
 			errorCode = -1
 			break
 		end
 		--
 		user.cards:setSkill("bindSkill", args.uuid, args.slot, Macro_GetSkillSerialId(card.dataId))
 	until true
-	return {errorCode=errorCode,uuidcard=args.uuidcard,uuidskil=args.uuidskill,slot=args.slot}
+	return {errorCode=errorCode,uuidcard=args.uuidcard,uuidskill=args.uuidskill,slot=args.slot}
 end
 
 
