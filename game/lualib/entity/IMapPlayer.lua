@@ -71,6 +71,10 @@ function IMapPlayer:isRed()
 	return self.color < 4
 end
 
+function IMapPlayer:isSameCamp( v )
+	return (self.color < 4 and c.color < 4) or (self.color > 3 and self.color > 3)
+end
+
 function IMapPlayer:update(dt)
 	
 	if self:getRaiseTime() > 0 then
