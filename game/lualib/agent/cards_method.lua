@@ -125,6 +125,7 @@ local CardsMethod =
 	end;
 	--
 	setSkill = function(self, op, uuid, slot, serId)
+		print(op, uuid, slot, serId)
 		if slot < 0 or slot > 7 then return end
 		local v = self:getCardByUuid(uuid)
 		if not v then return end

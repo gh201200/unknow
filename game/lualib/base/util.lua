@@ -161,15 +161,15 @@ end
 ------------------------
 -- get card serial id
 function Macro_GetCardSerialId(_id)
-	return math.floor(_id / 10)
+	return math.floor(_id / 100)
 end
 --get card color
 function Macro_GetCardColor(_id)
-	return _id%10
+	return _id%100
 end
 --Get card data id
 function Macro_GetCardDataId(serId, color)
-	return serId*10 + color
+	return serId*100 + color
 end
 --Get skill serial id
 function Macro_GetSkillSerialId(_id)

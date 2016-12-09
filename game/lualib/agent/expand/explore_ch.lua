@@ -7,7 +7,6 @@ local Explore = class("Explore")
 
 local user
 local REQUEST = {}
-
 local ExploreType = {
 	MainAtt = 1,
 	Camp = 2,

@@ -5,13 +5,25 @@ local SystemCh = class("SystemCh")
 
 local user
 local REQUEST = {}
-
+local CMD = {}
 function SystemCh:ctor()
 	self.request = REQUEST
+	self.cmd = CMD
 end
 
 function SystemCh:init( u )
 	user = u
+end
+
+function CMD.isBindSkills( heroId )
+	local v = user.cards:getCardByDataId( heroId )
+	if not v then return false end
+	for i=0,7 do
+		if v['skill'..i] == 0 then
+			return false
+		end
+	end
+	return true
 end
 
 function REQUEST.upgradeCardColorLevel( args )
@@ -186,7 +198,7 @@ function REQUEST.bindSkill( args )
 			break
 		end
 		--
-		user.cards:setSkill("bindSkill", args.uuid, args.slot, Macro_GetSkillSerialId(card.dataId))
+		user.cards:setSkill("bindSkill", args.uuidcard, args.slot, Macro_GetSkillSerialId(skill.dataId))
 	until true
 	return {errorCode=errorCode,uuidcard=args.uuidcard,uuidskill=args.uuidskill,slot=args.slot}
 end
