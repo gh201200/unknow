@@ -52,13 +52,13 @@ local CardsMethod =
 		local serId = Macro_GetCardSerialId(dataId)
 		local v = self:getCardBySerialId( serId )
 		if v then	--already has the kind of card
-			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32WCardNum * num, 0, math.maxinteger)
+			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32CCardNum * num, 0, math.maxint32)
 		else
 			v = self.initCard(dataId)
-			v.count = num * (g_shareData.heroRepository[dataId].n32WCardNum - 1)
+			v.count = mClamp((num-1) * g_shareData.heroRepository[dataId].n32CCardNum, 0, math.maxint32)
 			self.units[v.uuid] =  v
 		end
-		self:sendCardData( v )	
+		self:sendCardData( v )
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "addCard", self.account_id, v)
