@@ -24,7 +24,7 @@ local function updateMapEvent()
 	EntityManager:update( (nt - last_update_time) * 10 )
 	SpawnNpcManager:update( (nt - last_update_time) * 10 )
 	BattleOverManager:update( (nt - last_update_time) * 10 )
-	DropManager:update()
+	--DropManager:update()
 	last_update_time = nt
 	skynet.timeout(2, updateMapEvent)
 end
