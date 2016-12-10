@@ -15,22 +15,36 @@ function DropManager:ctor()
 	self.blueItems = {}
 end
 
-local picks = {}
+
+local function givePlayerItem( player, drop )
+	local itemData = g_shareData.itemRepository[drop.itemId]
+	if itemData.n32Type == 1 then
+		local picks = {}
+		table.insert(player.pickItems, {sid = drop.sid, itemId = drop.itemId, skillId = 0})
+		table.insert(picks, drop.sid..','..player.serverId..",0")
+		EntityManager:sendPlayer("pickDropItem", {items = picks})
+	else
+		for k, v in pairs(EntityManager.entityList) do
+			if v.entityType == EntityType.player and v:isSameCamp(player) then
+				local skillId = v.bindSkills[math.random(1, 8)]
+				table.insert(v.pickItems, {sid = drop.sid, itemId = drop.itemId, skillId = skillId})
+				local picks = {}
+				table.insert(picks, drop.sid..','..v.serverId..","..skillId)
+				EntityManager:sendPlayer("pickDropItem", {items = picks})
+			end
+		end
+	end
+end
+	
 function DropManager:update()
-	picks = {}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
 			for i=#self.drops , 1, -1 do
 				local q = self.drops[i]
 				dropVec:set(q.px/GAMEPLAY_PERCENT,0,q.pz/GAMEPLAY_PERCENT)
 				if vector3.len(v.pos, dropVec) < 0.3 then
-					if v:isRed() then 	
-						table.insert(self.redItems, q)
-					else
-						table.insert(self.blueItems, q)
-					end
-					q.belong = v.serverId
-					table.insert(picks, q.sid..','..v.serverId)
+					givePlayerItem( v, q )
+					table.insert(picks, q.sid..','..v.serverId..","..q.belong)
 					table.remove(self.drops, i)	
 				end
 			end
@@ -59,56 +73,42 @@ function DropManager:makeDrop(entity)
 	if entity.attDat.n32Type == 1 then
 		offset = 20000
 	end
-	for k, v in pairs(entity.attDat.szDrop) do
-		local drop = g_shareData.itemDropPackage[v]
-		local rd = math.random(1, drop.totalRate)
-		local r = nil
-		for p, q in pairs(drop) do
-			if type(q) == "table" then
-				if q.n32Rate >= rd then
-					r = q
+	local items = openPackage(entity.attDat.szDrop)
+	for k, v in pairs(items) do
+		local itemId = k
+		local itemNum = v
+		for i=1, itemNum do
+			local item = {
+				itemId = itemId,
+				itemNum = 1,
+				belong = 0,
+			}
+			local loop = 0
+			repeat
+				--dropVec:set(entity.dir.x, entity.dir.y, entity.dir.z)
+				--dropVec:rot(rotate[pindex])
+				--dropVec:mul_num(offset)
+				--local sp = math.random_ext(1, 360)
+				local sr_x = math.random(-offset, offset) / 10000
+				local sr_z = math.random(-offset, offset) / 10000
+				dropVec:set(entity.pos.x+sr_x, entity.pos.y, entity.pos.z+sr_z)
+				--pindex = pindex + 1
+				--if pindex > 7 then pindex = 0 end
+				if Map:isWall(dropVec.x,dropVec.z) == true then
+				--if Map.legal(Map.POS_2_GRID(dropVec.x), Map.POS_2_GRID(dropVec.z)) then
 					break
 				end
-			end
-		end
-		if r then
-			local itemId = r.n32ItemId
-			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
-			for i=1, itemNum do
-				local item = {
-					itemId = itemId,
-					itemNum = 1,
-					belong = 0,
-				}
-				local loop = 0
-				repeat
-					--dropVec:set(entity.dir.x, entity.dir.y, entity.dir.z)
-					--dropVec:rot(rotate[pindex])
-					--dropVec:mul_num(offset)
-					--local sp = math.random_ext(1, 360)
-					local sr_x = math.random(-offset, offset) / 10000
-					local sr_z = math.random(-offset, offset) / 10000
-					dropVec:set(entity.pos.x+sr_x, entity.pos.y, entity.pos.z+sr_z)
-					--pindex = pindex + 1
-					--if pindex > 7 then pindex = 0 end
-					if Map:isWall(dropVec.x,dropVec.z) == true then
-					--if Map.legal(Map.POS_2_GRID(dropVec.x), Map.POS_2_GRID(dropVec.z)) then
-						break
-					end
-					loop = loop + 1
-				until loop >= 7
+				loop = loop + 1
+			until loop >= 7
 
-				if loop == 8 then
-					dropVec:set(entity.pos.x, entity.pos.y, entity.pos.z)
-				end
-				item.px = math.floor(dropVec.x * GAMEPLAY_PERCENT)
-				item.pz = math.floor(dropVec.z * GAMEPLAY_PERCENT)
-				item.sid = assin_server_id()
-				table.insert(self.drops, item)
-				table.insert(items, item)
+			if loop == 8 then
+				dropVec:set(entity.pos.x, entity.pos.y, entity.pos.z)
 			end
-		else
-			syslog.errf("make drop failed: package[%d], rd[%d]", v, rd)
+			item.px = math.floor(dropVec.x * GAMEPLAY_PERCENT)
+			item.pz = math.floor(dropVec.z * GAMEPLAY_PERCENT)
+			item.sid = assin_server_id()
+			table.insert(self.drops, item)
+			table.insert(items, item)
 		end
 	end
 	if #items > 0 then

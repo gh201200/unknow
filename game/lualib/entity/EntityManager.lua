@@ -40,7 +40,7 @@ function EntityManager:sendToAllPlayersByCamp(msg, val, entity, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
 		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil  then
-			if v:isKind( entity ) then
+			if v:isSameCamp( entity ) then
 				skynet.call(v.agent, "lua", "sendRequest", msg, val)
 			end
 		end
