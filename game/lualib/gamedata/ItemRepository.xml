@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="60001">
-		<szIcon>xixue.png</szIcon>
+		<szIcon></szIcon>
 		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
@@ -1247,7 +1247,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>110101</n32Retain1>
+		<n32Retain1>110100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1256,7 +1256,7 @@
 		<szModule>houde</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>110001</n32Retain1>
+		<n32Retain1>110000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1265,7 +1265,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>310101</n32Retain1>
+		<n32Retain1>310100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1274,7 +1274,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>210001</n32Retain1>
+		<n32Retain1>210000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1283,7 +1283,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>210101</n32Retain1>
+		<n32Retain1>210100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1292,7 +1292,7 @@
 		<szModule>niuboshi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>310001</n32Retain1>
+		<n32Retain1>310000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1301,7 +1301,7 @@
 		<szModule>shanguang</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>120001</n32Retain1>
+		<n32Retain1>120000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1310,7 +1310,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>320001</n32Retain1>
+		<n32Retain1>320000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1319,7 +1319,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>120101</n32Retain1>
+		<n32Retain1>120100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1328,7 +1328,7 @@
 		<szModule>Xiuxingzhe</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>220001</n32Retain1>
+		<n32Retain1>220000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1337,7 +1337,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>220101</n32Retain1>
+		<n32Retain1>220100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1346,7 +1346,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>320101</n32Retain1>
+		<n32Retain1>320100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1355,7 +1355,7 @@
 		<szModule>Tiannv</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>130001</n32Retain1>
+		<n32Retain1>130000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1364,7 +1364,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>230001</n32Retain1>
+		<n32Retain1>230000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1373,7 +1373,7 @@
 		<szModule>Zhongbiaogong</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>130101</n32Retain1>
+		<n32Retain1>130100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1382,7 +1382,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>330001</n32Retain1>
+		<n32Retain1>330000</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1391,7 +1391,7 @@
 		<szModule>Wuya</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>230101</n32Retain1>
+		<n32Retain1>230100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1400,7 +1400,7 @@
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>3</n32Type>
-		<n32Retain1>330101</n32Retain1>
+		<n32Retain1>330100</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
