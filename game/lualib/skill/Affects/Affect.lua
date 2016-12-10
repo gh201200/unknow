@@ -5,7 +5,7 @@ function Affect:ctor(entity,source,data,skillId)
         skillId = skillId or 0
 	self.owner =  entity  	--效果接受者
         self.source =  source	--效果来源
-	self.data = table.copy(data)
+	self.data = data
 	self.affectState = 0
 	self.projectId = uuid.gen()
 	self.skillId = skillId

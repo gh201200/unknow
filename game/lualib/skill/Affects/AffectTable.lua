@@ -105,6 +105,7 @@ function AffectTable:addAffect(source,data,skillId,extra)
 	       data[1] == "atk" or data[1] == "def" or data[1] == "wsp" or data[1] == "mov" or data[1] == "rng" or 
 	       data[1] == "rehp" or data[1] == "remp" or data[1] == "critrate" or data[1] == "hitrate" or data[1] == "dodrate" or data[1] == "updamage" then
 		aff = statsAffect.new(self.owner,source,data,skillId)
+		
 	elseif data[1] == "getnew" then
 		aff = getnewAffect.new(self.owner,source,data,skillId)  
 	elseif data[1] == "summon" then

@@ -241,7 +241,7 @@ function Ientity:pathFind(dx, dz)
 	
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
-	print(self.pathMove)
+	--print(self.pathMove)
 	return self.useAStar
 end
 
@@ -486,7 +486,7 @@ function Ientity:onMove2(dt)
 		if self.useAStar then
 			if self:isLegalGrid( mv_dst ) == false then
 				--legal_pos = false
-				print('use a star to find a path again',self.serverId)
+				--print('use a star to find a path again',self.serverId)
 				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 				if not nearBy then
 					self:stand()
@@ -725,8 +725,8 @@ function Ientity:recvHpMp()
 	if (curTime - self.recvTime) * 10  > HP_MP_RECOVER_TIMELINE then
 		local cnt = math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
- 		self:addHp(math.floor(self:getRecvHp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineHp)
- 		self:addMp(math.floor(self:getRecvMp() * cnt / GAMEPLAY_PERCENT), HpMpMask.TimeLineMp)
+ 		self:addHp(self:getRecvHp() * cnt , HpMpMask.TimeLineHp)
+ 		self:addMp(self:getRecvMp() * cnt , HpMpMask.TimeLineMp)
  	end
 end
 

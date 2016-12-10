@@ -24,7 +24,7 @@ function repelAffect:onEnter()
 	local dst = vector3.create()
 	dst:set(self.owner.pos.x,0,self.owner.pos.z)
 	dst:add(dir)
-	self.owner:setTargetVar(transfrom.new(dst,nil))
+        self.owner.targetPos = transfrom.new(dst,nil)  
 end
 
 function repelAffect:onExec(dt)

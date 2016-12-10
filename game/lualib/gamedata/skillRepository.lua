@@ -8,7 +8,6 @@ local lub    = require 'lub.init'
 local lut    = require 'lut.init'
 local xml    = require 'xml.init'
 local data = xml.loadpath(lub.path('|./SkillDatas.xml'))
---local data = xml.loadpath(lub.path('|./s.xml'))
 local t = {}
 lub.search(data, function(node)
     --print("------------------")
@@ -38,6 +37,9 @@ lub.search(data, function(node)
 				end
 			else
 				t[id][_v.xml] = tonumber(v)
+				if _v.xml == "n32CD" then
+					t[id][_v.xml] = t[id][_v.xml] * 1000
+				end
 			end
 		end
 	end

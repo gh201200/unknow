@@ -136,6 +136,7 @@ function StatsAffect:onTrigger(_add)
 		
 		if self.data[1] == 'rehp' then
 			if self.data[2] == 0 then
+				print("self.data",self.data)
 				self.owner:addMidRecvHpPc(_add * self.data[3])
 				self.owner:addMidRecvHp(_add * self.data[4])
 			else
@@ -199,7 +200,7 @@ function StatsAffect:onTrigger(_add)
 end
 
 function StatsAffect:onEnter()
-	seelf.super.onEnter(self)
+	self.super.onEnter(self)
 	self:onTrigger(1)
 end
 

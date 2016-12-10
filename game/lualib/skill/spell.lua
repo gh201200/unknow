@@ -95,8 +95,18 @@ function spell:updatesheduleSpell(dt)
 	end 
 end
 
+function spell:updatePasstiveSpells(dt)
+	for i= #self.passtiveSpells,1,-1 do
+		if self.passtiveSpells[i].isDead == true then
+			table.remove(self.passtiveSpells,i)
+		else
+			self.passtiveSpells[i]:update(dt)
+		end
+	end
+end
 function spell:update(dt)
 	self:updatesheduleSpell(dt)
+	self:updatePasstiveSpells(dt)
 	if self:isSpellRunning() == false then return end --技能不推进
 	if self.status == SpellStatus.Ready then
 		self:onReady(dt)
