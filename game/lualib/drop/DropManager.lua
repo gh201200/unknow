@@ -11,29 +11,25 @@ local DropManager = class("DropManager")
 
 function DropManager:ctor()
 	self.drops = {}
-	self.redItems = {}
-	self.blueItems = {}
 end
 
 
 local function givePlayerItem( player, drop )
 	local itemData = g_shareData.itemRepository[drop.itemId]
+	local picks = {}
 	if itemData.n32Type == 1 then
-		local picks = {}
-		table.insert(player.pickItems, {sid = drop.sid, itemId = drop.itemId, skillId = 0})
+		v.pickItems[drop.sid] = {itemId = drop.itemId, skillId = 0}
 		table.insert(picks, drop.sid..','..player.serverId..",0")
-		EntityManager:sendPlayer("pickDropItem", {items = picks})
 	else
 		for k, v in pairs(EntityManager.entityList) do
 			if v.entityType == EntityType.player and v:isSameCamp(player) then
 				local skillId = v.bindSkills[math.random(1, 8)]
-				table.insert(v.pickItems, {sid = drop.sid, itemId = drop.itemId, skillId = skillId})
-				local picks = {}
+				v.pickItems[drop.sid] = {itemId = drop.itemId, skillId = skillId}
 				table.insert(picks, drop.sid..','..v.serverId..","..skillId)
-				EntityManager:sendPlayer("pickDropItem", {items = picks})
 			end
 		end
 	end
+	EntityManager:sendToAllPlayers("pickDropItem", {items = picks})
 end
 	
 function DropManager:update()
@@ -44,14 +40,10 @@ function DropManager:update()
 				dropVec:set(q.px/GAMEPLAY_PERCENT,0,q.pz/GAMEPLAY_PERCENT)
 				if vector3.len(v.pos, dropVec) < 0.3 then
 					givePlayerItem( v, q )
-					table.insert(picks, q.sid..','..v.serverId..","..q.belong)
 					table.remove(self.drops, i)	
 				end
 			end
 		end
-	end
-	if #picks > 0 then
-		EntityManager:sendToAllPlayers("pickDropItem", {items = picks})
 	end
 end
 
@@ -117,19 +109,7 @@ function DropManager:makeDrop(entity)
 end
 
 function DropManager:useItem(player, sid)
-	local tb = self.blueItems
-	if player:isRed() then
-		tb = self.redItems
-	end
-	local item = nil
-	local index = 0
-	for k, v in pairs(tb) do
-		index = index + 1
-		if v.sid == sid then
-			item = v
-			break
-		end
-	end	
+	local item = player.pickItems[sid]
 	if not item then
 		return 1	--已被使用	
 	end
@@ -137,10 +117,12 @@ function DropManager:useItem(player, sid)
 	local errorCode = 0
 	local itemData = g_shareData.itemRepository[item.itemId]
 	repeat
-		local skillId = itemData.n32Retain1
+		local skillId
 		
 		if itemData.n32Type == 1 then
 			skillId = player:getGodSkill()
+		else
+			skillId = item.skillId
 		end
 		
 		if itemData.n32Type == 0 or itemData.n32Type == 1 then
@@ -160,9 +142,8 @@ function DropManager:useItem(player, sid)
 	end
 	
 	--使用道具
-	table.remove(tb, index)
 	if itemData.n32Type == 0 then
-		player:addSkill(itemData.n32Retain1, true)
+		player:addSkill(item.skillId, true)
 	elseif itemData.n32Type == 1 then
 		player:addSkill(player:getGodSkill(), true)
 	elseif itemData.n32Type == 2 then
@@ -170,29 +151,16 @@ function DropManager:useItem(player, sid)
 	end
 
 	--tell all teamers, inclue player self
-	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
+	EntityManager:sendPlayer("delPickItem", {item_sid = sid, user_sid = player.serverId})
 	
 	return errorCode
 end
 
 function DropManager:replaceSkill(player, sid, skillId)	
-	local tb = self.blueItems
-	if player:isRed() then
-		tb = self.redItems
-	end
-	local item = nil
-	local index = 0
-	for k, v in pairs(tb) do
-		index = index + 1
-		if v.sid == sid then
-			item = v
-			break
-		end
-	end	
+	local item = player.pickItems[sid]
 	if not item then
 		return 1	--已被使用
 	end
-
 	local errorCode = 0
 	local itemData = g_shareData.itemRepository[item.itemId]
 	repeat
@@ -228,14 +196,13 @@ function DropManager:replaceSkill(player, sid, skillId)
 	end
 	--使用道具
 	player:addReplaceSkillTimes(1)
-	table.remove(tb, index)
 	player:removeSkill(skillId)
-	player:addSkill(itemData.n32Retain1)
+	player:addSkill(item.skillId)
 
 	--tell all teamers, inclue player self
-	EntityManager:sendToAllPlayersByCamp("delPickItem", {item_sid = sid, user_sid = player.serverId}, player)
+	EntityManager:sendPlayer("delPickItem", {item_sid = sid, user_sid = player.serverId})
 	
-	return errorCode, itemData.n32Retain1
+	return errorCode, item.skillId
 end
 
 return DropManager.new()

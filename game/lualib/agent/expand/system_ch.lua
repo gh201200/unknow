@@ -26,6 +26,16 @@ function CMD.isBindSkills( heroId )
 	return true
 end
 
+function CMD.getBindSkills( heroId )
+	local r = {}
+	local v = user.cards:getCardByDataId( heroId )
+	for i=0, 7 do
+		local skill = user.skills:getSkillBySerialId( v["skill"..i] )
+		r[i] = skill.dataId
+	end
+	return r
+end
+
 function REQUEST.upgradeCardColorLevel( args )
 	local errorCode = 0
 	local card = user.cards:getCardByUuid(args.uuid)

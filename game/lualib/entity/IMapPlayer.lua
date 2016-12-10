@@ -23,6 +23,7 @@ function IMapPlayer.create(arg)
 	else
 		player.camp = CampType.BLUE
 	end
+	player.bindSkills = skynet.call(player.agent, "lua", "getBindSkills", arg.pickedheroid)
 	return player
 end	
 
@@ -50,6 +51,9 @@ function IMapPlayer:ctor()
 	
 	register_class_var(self, 'OffLineTime', 0)
 	
+	self.bindSkills = nil
+	self.pickItems = {}
+	
 	self.GoldExpMask = false
 end
 
@@ -72,7 +76,7 @@ function IMapPlayer:isRed()
 end
 
 function IMapPlayer:isSameCamp( v )
-	return (self.color < 4 and c.color < 4) or (self.color > 3 and self.color > 3)
+	return (self.color < 4 and v.color < 4) or (self.color > 3 and v.color > 3)
 end
 
 function IMapPlayer:update(dt)

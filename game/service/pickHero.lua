@@ -67,21 +67,19 @@ function CMD.confirmHero(response,agent,account,arg)
 	local ret = { errorcode = 0 }
 	local confirmid = players[agent].pickedheroid
 
-	
 	repeat
-		local bind = skynet.call(agent,"lua","isBindSkills", confirmid)
-		bind = true
-		if not bind then
-			ret.errorcode = 3
+		if confirmid == 0 then
+			ret.errorcode = -1
 			break
 		end
-		if confirmid == 0 then
-			ret.errorcode = 2
+		local bind = skynet.call(agent,"lua","isBindSkills", confirmid)
+		if not bind then
+			ret.errorcode = 1
 			break
 		end
 		for _agent,_v in pairs (players) do
 			if _agent ~= agent and Macro_GetCardSerialId(confirmid) == Macro_GetCardSerialId(_v.pickhedheroid) then
-				ret.errorcode = 1
+				ret.errorcode = 2
 				break
 			end
 		end
