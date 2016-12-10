@@ -12,9 +12,6 @@ local AccountMethod =
 
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "nick")
-		
-		--log record
-		syslog.infof("op[%s]player[%s]:setNickName:%s", op, self.account_id, name)
 	end;
 	--
 	getNickName = function(self)
@@ -83,9 +80,6 @@ local AccountMethod =
 		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "icon")
-		
-		--log record
-		syslog.infof("op[%s]player[%s]:setIcon:%s", op, self.account_id, _icon)
 	end;
 	--
 	setFlag = function(self, op, _flag)
@@ -95,9 +89,6 @@ local AccountMethod =
 		
 		local database = skynet.uniqueservice("database")		
 		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "flag")
-		
-		--log record
-		syslog.infof("op[%s]player[%s]:setFlag:%d", op, self.account_id, _flag)
 	end;
 	--
 	addFlag = function(self, op, _flag)
