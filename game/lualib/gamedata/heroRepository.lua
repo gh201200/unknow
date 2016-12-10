@@ -39,5 +39,6 @@ for k, p in pairs(xmlhandler.root.info.item) do
 	modolsTable[tmpTb.id] = tmpTb
 end
 
-
+--print("===============")
+--print(modolsTable)
 return modolsTable
