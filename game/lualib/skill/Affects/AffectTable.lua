@@ -195,7 +195,7 @@ function AffectTable:synClient(aff,_remove)
 	if aff.source ~= 0 then
 		srcId = aff.source.serverId
 	end
-	local r = {acceperId = self.owner.serverId,producerId = srcId,effectId = aff.effectId,effectTime = aff.effectTime,flag = _remove}
+	local r = {acceperId = self.owner.serverId,producerId = srcId,effectId = aff.effectId,effectTime = aff.effectTime * 1000,flag = _remove}
 	g_entityManager:sendToAllPlayers("pushEffect",r)
 end
 return AffectTable

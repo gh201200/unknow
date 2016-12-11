@@ -2,8 +2,13 @@ local Affect = require "skill.Affects.Affect"
 local StatsAffect = class("StatsAffect" ,Affect)
 function StatsAffect:ctor(entity,source,data,skillId)
         self.super.ctor(self,entity,source,data,skillId)
-	self.effectTime = self.data[6] or 0
-	self.effectId = self.data[7] or 0
+	if self.data[1] == 'ctrl' then
+		self.effectTime = self.data[5] or 0
+		self.effectId = self.data[6] or 0
+	else
+		self.effectTime = self.data[6] or 0
+		self.effectId = self.data[7] or 0
+	end
 end
 
 function StatsAffect:onTrigger(_add)
