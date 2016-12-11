@@ -9,6 +9,7 @@ function StatsAffect:ctor(entity,source,data,skillId)
 		self.effectTime = self.data[6] or 0
 		self.effectId = self.data[7] or 0
 	end
+	self.effectTime = self.effectTime * 1000
 end
 
 function StatsAffect:onTrigger(_add)
