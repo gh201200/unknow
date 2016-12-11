@@ -9,11 +9,14 @@ function StatsAffect:ctor(entity,source,data,skillId)
 		self.effectTime = self.data[6] or 0
 		self.effectId = self.data[7] or 0
 	end
+	if self.effectTime == -1 then
+		self.effectTime = 99999
+	end
 	self.effectTime = self.effectTime * 1000
 end
 
 function StatsAffect:onTrigger(_add)
-	if _add ~= 1 or _add ~= -1 then return end
+	if _add ~= 1 and _add ~= -1 then return end
 	repeat
 		local lzm = false
 		if self.data[1] == 'ctrl' then
@@ -142,7 +145,6 @@ function StatsAffect:onTrigger(_add)
 		
 		if self.data[1] == 'rehp' then
 			if self.data[2] == 0 then
-				print("self.data",self.data)
 				self.owner:addMidRecvHpPc(_add * self.data[3])
 				self.owner:addMidRecvHp(_add * self.data[4])
 			else

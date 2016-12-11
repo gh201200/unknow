@@ -8,6 +8,10 @@ function passtiveSpell:ctor(src,skilldata)
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition ==8 then
 		self.targets = {}
 	end
+	if self.skilldata.n32TriggerCondition == 9 then
+		--学习时候触发
+		self:trigger(9)
+	end
 end
 
 function passtiveSpell:update(dt)
@@ -41,7 +45,6 @@ function passtiveSpell:update(dt)
 		end
 		--adds添加buff
 		if #adds > 0 then
-			print("trigger spell")
 			self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,adds,self.skilldata)
 		end
 		--dels移除buff
@@ -58,7 +61,7 @@ function passtiveSpell:update(dt)
 end
 
 function passtiveSpell:onDead()
-	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 then
+	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 or self.skilldata.n32TriggerCondition == 9 then
 		local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
 		for _dk,_dv in pairs(dels) do
 			_dv.affectTable:removeById(uuid)
@@ -104,6 +107,8 @@ function passtiveSpell:trigger(_cond)
 	--友方碰撞触发
 	elseif self.skilldata.n32TriggerCondition == 8 and _cond == 8 then
 		isTrigger =  true
+	elseif self.skilldata.n32TriggerCondition == 9  and _cond == 9 then
+		isTrigger = true
 	end	
 	if self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
 		if isTrigger == true then
@@ -115,7 +120,7 @@ function passtiveSpell:trigger(_cond)
 			end
 			self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
 			local _type = self.skilldata.szSelectRange[1]
-			self.source.spell:onTrigger(self.skilldata,self.source,self.source:getTarget())
+			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
 		end
 	end
 end
