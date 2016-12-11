@@ -145,6 +145,10 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
+	if skilldata.szSelectTargetAffect ~= "" then
+		print("==========")
+		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
+	end
 	local targets = {}
 	--子弹普通弹道
 	print("selects===",#selects)
