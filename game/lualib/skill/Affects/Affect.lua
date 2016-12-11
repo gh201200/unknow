@@ -54,7 +54,7 @@ function Affect:getBaseAttributeValue(data)
 		[7] = "MpMax",[8] = "Hp",[9] = "Mp"};
 	local midValue = entity["getMid" .. attIdToFuns[attId]](entity)
 	local midPecent =  entity["getMid" .. attIdToFuns[attId] .. "Pc"](entity)
-	local finalValue = self:getAttributeValue(attId,rate,value)	
+	local finalValue = self:getAttributeValue(data)	
 	local originValue = (finalValue - midValue) * (1.0 / (1 + midPecent))
 	return math.floor(originValue)
 end

@@ -121,7 +121,6 @@ function StatsAffect:onTrigger(_add)
 		
 		if self.data[1] == 'wsp' then
 			if self.data[2] == 0 then
-				self.owner:addMidASpeedPc(_add * self.data[3])
 				self.owner:addMidASpeed(_add * self.data[4])
 			else
 				local r = self:getBaseAttributeValue(self.data)
