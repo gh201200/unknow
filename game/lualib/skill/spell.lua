@@ -145,16 +145,20 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
+	if skilldata.szSelectTargetAffect ~= "" then
+		print("==========")
+		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
+	end
 	local targets = {}
 	--子弹普通弹道
---	print("selects===",#selects)
+	print("selects===",#selects)
 	if skilldata.n32BulletType ~= 0 then
 		for _k,_v in pairs(selects) do
 			g_entityManager:createFlyObj(source,_v,skilldata)
 		end
 	else
 		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)	
-		--print("targets ==",#targets)	
+		print("targets ==",#targets)	
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end
@@ -278,7 +282,7 @@ end
 function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 	actionTime = actionTime or 0
 	local t = { srcId = source.serverId,skillId = skilldata.id ,state = state, actionTime = actionTime,targetId = 0,targetPos = nil}
-	t.targetPos = {x= 0,y=0,z=0} 
+	t.targetPos = { x = math.ceil(source.pos.x * GAMEPLAY_PERCENT) ,y = 0 , z = math.ceil(source.pos.z*GAMEPLAY_PERCENT) } 
 	if srcTarget ~= nil then
 		t.targetPos = {x = math.ceil(srcTarget.pos.x * GAMEPLAY_PERCENT) ,y = 0 , z = math.ceil(srcTarget.pos.z*GAMEPLAY_PERCENT) }
 		if srcTarget:getType() ~= "transform" then

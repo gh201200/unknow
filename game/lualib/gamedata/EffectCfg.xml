@@ -2,7 +2,7 @@
 <info>
 	<item id="10001">
 		<n32type>2</n32type>
-		<szassert>Chongfeng</szassert>
+		<szassert>Chongfeng111</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
@@ -574,7 +574,7 @@
 	</item>
 	<item id="50002">
 		<n32type>2</n32type>
-		<szassert>JInmo_2</szassert>
+		<szassert>Jinmo_2</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>

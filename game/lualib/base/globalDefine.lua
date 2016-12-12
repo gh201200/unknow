@@ -55,6 +55,8 @@ HpMpMask = {
 	RaiseMp				= 1 << 19,
 	BuildingMp			= 1 << 20,
 	XuelanMp			= 1 << 21,
+	UpgradeHp			= 1 << 22,
+	UpgradeMp			= 1 << 23,  
 }
 AffectState = {
 	NoMove				= 1 << 0, --不能移动
