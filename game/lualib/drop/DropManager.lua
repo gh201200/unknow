@@ -19,7 +19,7 @@ local function givePlayerItem( player, drop )
 	local picks = {}
 	print ( drop )
 	if itemData.n32Type == 1 then
-		v.pickItems[drop.sid] = {itemId = drop.itemId, skillId = 0}
+		player.pickItems[drop.sid] = {itemId = drop.itemId, skillId = 0}
 		table.insert(picks, drop.sid..','..player.serverId..",0")
 	else
 		for k, v in pairs(EntityManager.entityList) do
@@ -152,6 +152,7 @@ function DropManager:useItem(player, sid)
 		player.affectTable:buildEffect(player, itemData.szRetain3) 
 	end
 
+	player.pickItems[sid] = nil
 	--tell all teamers, inclue player self
 	EntityManager:sendPlayer(player, "delPickItem", {item_sid = sid, user_sid = player.serverId})
 	
@@ -201,6 +202,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 	player:removeSkill(skillId)
 	player:addSkill(item.skillId)
 
+	player.pickItems[sid] = nil
 	--tell all teamers, inclue player self
 	EntityManager:sendPlayer(player, "delPickItem", {item_sid = sid, user_sid = player.serverId})
 	

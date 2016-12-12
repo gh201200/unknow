@@ -24,7 +24,7 @@ local function updateMapEvent()
 	EntityManager:update( (nt - last_update_time) * 10 )
 	SpawnNpcManager:update( (nt - last_update_time) * 10 )
 	BattleOverManager:update( (nt - last_update_time) * 10 )
-	--DropManager:update()
+	DropManager:update()
 	last_update_time = nt
 	skynet.timeout(2, updateMapEvent)
 end
@@ -94,8 +94,11 @@ local function playerReConnect(agent, aid)
 	skynet.call(agent, "lua", "sendRequest", "makeDropItem", {items=DropManager.drops})
 	
 	--拾取掉落
-	for k, v in pairs(player.dropItems) do
-		table.insert(picks, { x=v.itemId,y=v.skillId,z=k })
+	local picks = {}
+	for k, v in pairs(player.pickItems) do
+		if v then
+			table.insert(picks, { x=v.itemId,y=v.skillId,z=k })
+		end
 	end
 	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=picks})
 	

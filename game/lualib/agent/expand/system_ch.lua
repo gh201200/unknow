@@ -178,7 +178,6 @@ function REQUEST.reEnterRoom( args )
 	if args.isin then
 		local sm = snax.uniqueservice("servermanager")
 		local ret, room = sm.req.getroomif( user.account.account_id )
-		ret = false
 		if ret then
 			user.servicecmd.enterMap(room, ret)
 			return {errorCode = 0}
