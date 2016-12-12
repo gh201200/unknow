@@ -303,6 +303,7 @@ function CMD.addItems(op, items)
 	for k, v in pairs(cards) do
 		user.cards:addCard(op, k, v)
 	end
+	print( skillMats )
 	for k, v in pairs(skillMats) do
 		user.skills:addSkill(op, k, v)
 	end

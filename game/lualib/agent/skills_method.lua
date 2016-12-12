@@ -44,6 +44,7 @@ local SkillsMethod =
 			v.count = num
 			self.units[v.uuid] =  v
 		end
+		print ( v )
 		self:sendSkillData( v )	
 		
 		local database = skynet.uniqueservice ("database")

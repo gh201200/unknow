@@ -168,14 +168,7 @@ function REQUEST.exploreEnd( args )
 				if not isOkForExploreCon(card, conDat) then
 					conDat = g_shareData.exploreRepository[i+1][1]
 				end
-				local items = openPackage( conDat.szDrop )
-				for k, v in pairs(items) do
-					if not gains[k] then
-						gains[k] = v
-					else
-						gains[k] = gains[k] + v
-					end
-				end		
+				gains = openPackage( conDat.szDrop )
 			end
 		end
 		user.servicecmd.addItems("exploreEnd", gains)
@@ -183,7 +176,7 @@ function REQUEST.exploreEnd( args )
 	until true
 	local vecs = {}
 	for k, v in pairs(gains) do
-		table.insert(vecs, {x=k,y=v})
+		table.insert(vecs, {x=v.itemId,y=v.itemNum})
 	end
 	return {errorCode=errorCode,items=vecs}
 end
