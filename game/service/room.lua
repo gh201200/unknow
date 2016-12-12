@@ -93,14 +93,11 @@ local function playerReConnect(agent, aid)
 	--地图掉落
 	skynet.call(agent, "lua", "sendRequest", "makeDropItem", {items=DropManager.drops})
 	
-	--团队拾取掉落
-	local ditems = nil
-	if player:isRed() then
-		ditems = DropManager.redItems
-	else
-		ditems = DropManager.blueItems
+	--拾取掉落
+	for k, v in pairs(player.dropItems) do
+		table.insert(picks, { x=v.itemId,y=v.skillId,z=k })
 	end
-	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=ditems})
+	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=picks})
 	
 end
 

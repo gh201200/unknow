@@ -670,7 +670,7 @@ reSendSkills 3007 {
 
 reSendHaveItems 3008 {
 	request { 
-		items 0 : *DropItem
+		items 0 : *Vector3
 	}
 }
 

@@ -42,6 +42,8 @@ skynet.start(function()
 	--启动GM服务
 	snax.uniqueservice("gm", watchdog)
 
+	--启动log服务
+	snax.uniqueservice("mylog")
 	
 	CD.post.Start()	
 

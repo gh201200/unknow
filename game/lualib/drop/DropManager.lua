@@ -17,6 +17,7 @@ end
 local function givePlayerItem( player, drop )
 	local itemData = g_shareData.itemRepository[drop.itemId]
 	local picks = {}
+	print ( drop )
 	if itemData.n32Type == 1 then
 		v.pickItems[drop.sid] = {itemId = drop.itemId, skillId = 0}
 		table.insert(picks, drop.sid..','..player.serverId..",0")
@@ -29,6 +30,7 @@ local function givePlayerItem( player, drop )
 			end
 		end
 	end
+	print("give player item", picks )
 	EntityManager:sendToAllPlayers("pickDropItem", {items = picks})
 end
 	
@@ -65,10 +67,10 @@ function DropManager:makeDrop(entity)
 	if entity.attDat.n32Type == 1 then
 		offset = 20000
 	end
-	local items = openPackage(entity.attDat.szDrop)
-	for k, v in pairs(items) do
-		local itemId = k
-		local itemNum = v
+	local pkgs = openPackage(entity.attDat.szDrop)
+	for k, v in pairs(pkgs) do
+		local itemId = v.itemId
+		local itemNum = v.itemNum
 		for i=1, itemNum do
 			local item = {
 				itemId = itemId,
@@ -151,7 +153,7 @@ function DropManager:useItem(player, sid)
 	end
 
 	--tell all teamers, inclue player self
-	EntityManager:sendPlayer("delPickItem", {item_sid = sid, user_sid = player.serverId})
+	EntityManager:sendPlayer(player, "delPickItem", {item_sid = sid, user_sid = player.serverId})
 	
 	return errorCode
 end
@@ -200,7 +202,7 @@ function DropManager:replaceSkill(player, sid, skillId)
 	player:addSkill(item.skillId)
 
 	--tell all teamers, inclue player self
-	EntityManager:sendPlayer("delPickItem", {item_sid = sid, user_sid = player.serverId})
+	EntityManager:sendPlayer(player, "delPickItem", {item_sid = sid, user_sid = player.serverId})
 	
 	return errorCode, item.skillId
 end

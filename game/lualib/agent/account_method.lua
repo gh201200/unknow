@@ -34,7 +34,7 @@ local AccountMethod =
 		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "gold")
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:addGold:%d:%d", op, self.account_id, _gold, nv)
+		syslog.logmy("account", {opt=op, account=self.account_id, atype=2, val=_gold})
 	end;
 	--
 	getMoney = function(self)
@@ -52,7 +52,7 @@ local AccountMethod =
 		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "money")
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:addMoney:%d:%d", op,  self.account_id, _money, nv)
+		syslog.logmy("account", {opt=op, account=self.account_id, atype=3, val=_money})
 	end;
 	--
 	getExp = function(self)
@@ -70,7 +70,7 @@ local AccountMethod =
 		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "exp")
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:addExp:%d:%d", op, self.account_id, _exp, nv)
+		syslog.logmy("account", {opt=op, account=self.account_id, atype=1, val=_exp})
 	end;
 	--
 	setIcon = function(self, op, _icon)

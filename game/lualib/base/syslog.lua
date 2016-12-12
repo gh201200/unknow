@@ -1,6 +1,8 @@
 local skynet = require "skynet"
-
+local snax = require "snax"
 local config = require "config.system"
+
+local mylog
 
 local syslog = {
 	prefix = {
@@ -69,8 +71,13 @@ function syslog.errf (...)
 	writef (5, ...)
 end
 
-
+function syslog.logmy( str )
+	if not mylog then
+		mylog = snax.uniqueservice("mylog")
+	end
+end
 
 syslog.level (tonumber (config.log_level) or 3)
+
 
 return syslog
