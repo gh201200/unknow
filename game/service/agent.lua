@@ -286,7 +286,7 @@ function CMD.addItems(op, items)
 			gold = gold + item.n32Retain1 * v.itemNum
 		elseif item.n32Type == 6 then	--钻石
 			money = money + item.n32Retain1 * v.itemNum
-		elseif itemn32Type == 7 then	--技能材料
+		elseif item.n32Type == 7 then	--技能材料
 			if not skillMats[item.n32Retain1] then
 				skillMats[item.n32Retain1] = v.itemNum
 			else
@@ -303,7 +303,6 @@ function CMD.addItems(op, items)
 	for k, v in pairs(cards) do
 		user.cards:addCard(op, k, v)
 	end
-	print( skillMats )
 	for k, v in pairs(skillMats) do
 		user.skills:addSkill(op, k, v)
 	end

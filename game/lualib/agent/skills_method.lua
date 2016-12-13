@@ -44,12 +44,11 @@ local SkillsMethod =
 			v.count = num
 			self.units[v.uuid] =  v
 		end
-		print ( v )
 		self:sendSkillData( v )	
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "skills", "addSkill", self.account_id, v)
-		
+		local data = g_shareData.skillRepository[dataId]
 		--log record
 		syslog.infof("op[%s]player[%s]:addSkill:%d,%d", op, self.account_id, dataId, num)
 	end;

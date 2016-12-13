@@ -84,7 +84,6 @@ local function usePackageItem( itemId )
 	for w in string.gmatch(itemDat.szRetain3, "%d+") do
 		table.insert(pkgIds, tonumber(w))
 	end
-	print( pkgIds )
 	local items = openPackage( pkgIds )
 	user.servicecmd.addItems("buyShopItem", items)
 	return items

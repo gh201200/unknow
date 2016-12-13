@@ -6,14 +6,14 @@
 		<n32Quality>0</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100011</n32GodSkillId>
+		<n32GodSkillId>51100001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -37,14 +37,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100011</n32GodSkillId>
+		<n32GodSkillId>51100001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -68,14 +68,14 @@
 		<n32Quality>2</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100021</n32GodSkillId>
+		<n32GodSkillId>51100011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -99,14 +99,14 @@
 		<n32Quality>3</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100031</n32GodSkillId>
+		<n32GodSkillId>51100021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -130,14 +130,14 @@
 		<n32Quality>4</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100041</n32GodSkillId>
+		<n32GodSkillId>51100031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>40</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -161,14 +161,14 @@
 		<n32Quality>5</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100051</n32GodSkillId>
+		<n32GodSkillId>51100041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>9</n32Agility>
@@ -192,14 +192,14 @@
 		<n32Quality>6</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100061</n32GodSkillId>
+		<n32GodSkillId>51100051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>9</n32Agility>
@@ -223,14 +223,14 @@
 		<n32Quality>7</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100071</n32GodSkillId>
+		<n32GodSkillId>51100061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>9</n32Agility>
@@ -254,14 +254,14 @@
 		<n32Quality>8</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100081</n32GodSkillId>
+		<n32GodSkillId>51100071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>49</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -285,14 +285,14 @@
 		<n32Quality>9</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100091</n32GodSkillId>
+		<n32GodSkillId>51100081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>51</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -316,14 +316,14 @@
 		<n32Quality>10</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100101</n32GodSkillId>
+		<n32GodSkillId>51100091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>54</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -347,14 +347,14 @@
 		<n32Quality>11</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100111</n32GodSkillId>
+		<n32GodSkillId>51100101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>56</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -378,14 +378,14 @@
 		<n32Quality>12</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100121</n32GodSkillId>
+		<n32GodSkillId>51100111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>59</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -409,14 +409,14 @@
 		<n32Quality>13</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100131</n32GodSkillId>
+		<n32GodSkillId>51100121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>61</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -440,14 +440,14 @@
 		<n32Quality>14</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100141</n32GodSkillId>
+		<n32GodSkillId>51100131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>64</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -471,14 +471,14 @@
 		<n32Quality>15</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100151</n32GodSkillId>
+		<n32GodSkillId>51100141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>66</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -502,14 +502,14 @@
 		<n32Quality>16</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100161</n32GodSkillId>
+		<n32GodSkillId>51100151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>69</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -533,14 +533,14 @@
 		<n32Quality>17</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100171</n32GodSkillId>
+		<n32GodSkillId>51100161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>72</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -564,14 +564,14 @@
 		<n32Quality>18</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100181</n32GodSkillId>
+		<n32GodSkillId>51100171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>74</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -595,14 +595,14 @@
 		<n32Quality>19</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100191</n32GodSkillId>
+		<n32GodSkillId>51100181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>77</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -626,14 +626,14 @@
 		<n32Quality>20</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100201</n32GodSkillId>
+		<n32GodSkillId>51100191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>80</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -657,14 +657,14 @@
 		<n32Quality>21</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100211</n32GodSkillId>
+		<n32GodSkillId>51100201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>82</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -688,14 +688,14 @@
 		<n32Quality>22</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100221</n32GodSkillId>
+		<n32GodSkillId>51100211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>85</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -719,14 +719,14 @@
 		<n32Quality>23</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100231</n32GodSkillId>
+		<n32GodSkillId>51100221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>88</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -750,14 +750,14 @@
 		<n32Quality>24</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100241</n32GodSkillId>
+		<n32GodSkillId>51100231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>91</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -781,14 +781,14 @@
 		<n32Quality>25</n32Quality>
 		<szName>厚德</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>houde</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>911001</n32CommonSkillId>
-		<n32GodSkillId>51100251</n32GodSkillId>
+		<n32GodSkillId>51100241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>94</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -819,7 +819,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101011</n32GodSkillId>
+		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -850,7 +850,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101011</n32GodSkillId>
+		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -881,7 +881,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101021</n32GodSkillId>
+		<n32GodSkillId>51101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -912,7 +912,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101031</n32GodSkillId>
+		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -943,7 +943,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101041</n32GodSkillId>
+		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -974,7 +974,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101051</n32GodSkillId>
+		<n32GodSkillId>51101041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -1005,7 +1005,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101061</n32GodSkillId>
+		<n32GodSkillId>51101051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -1036,7 +1036,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101071</n32GodSkillId>
+		<n32GodSkillId>51101061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -1067,7 +1067,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101081</n32GodSkillId>
+		<n32GodSkillId>51101071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>43</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -1098,7 +1098,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101091</n32GodSkillId>
+		<n32GodSkillId>51101081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -1129,7 +1129,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101101</n32GodSkillId>
+		<n32GodSkillId>51101091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -1160,7 +1160,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101111</n32GodSkillId>
+		<n32GodSkillId>51101101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>49</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -1191,7 +1191,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101121</n32GodSkillId>
+		<n32GodSkillId>51101111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>51</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -1222,7 +1222,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101131</n32GodSkillId>
+		<n32GodSkillId>51101121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>53</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -1253,7 +1253,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101141</n32GodSkillId>
+		<n32GodSkillId>51101131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>56</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -1284,7 +1284,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101151</n32GodSkillId>
+		<n32GodSkillId>51101141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>58</n32Strength>
 		<n32Agility>33</n32Agility>
@@ -1315,7 +1315,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101161</n32GodSkillId>
+		<n32GodSkillId>51101151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>60</n32Strength>
 		<n32Agility>35</n32Agility>
@@ -1346,7 +1346,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101171</n32GodSkillId>
+		<n32GodSkillId>51101161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>62</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -1377,7 +1377,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101181</n32GodSkillId>
+		<n32GodSkillId>51101171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>65</n32Strength>
 		<n32Agility>38</n32Agility>
@@ -1408,7 +1408,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101191</n32GodSkillId>
+		<n32GodSkillId>51101181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>67</n32Strength>
 		<n32Agility>39</n32Agility>
@@ -1439,7 +1439,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101201</n32GodSkillId>
+		<n32GodSkillId>51101191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>69</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -1470,7 +1470,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101211</n32GodSkillId>
+		<n32GodSkillId>51101201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>72</n32Strength>
 		<n32Agility>43</n32Agility>
@@ -1501,7 +1501,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101221</n32GodSkillId>
+		<n32GodSkillId>51101211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>74</n32Strength>
 		<n32Agility>44</n32Agility>
@@ -1532,7 +1532,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101231</n32GodSkillId>
+		<n32GodSkillId>51101221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>77</n32Strength>
 		<n32Agility>46</n32Agility>
@@ -1563,7 +1563,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101241</n32GodSkillId>
+		<n32GodSkillId>51101231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>79</n32Strength>
 		<n32Agility>48</n32Agility>
@@ -1594,7 +1594,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>911002</n32CommonSkillId>
-		<n32GodSkillId>51101251</n32GodSkillId>
+		<n32GodSkillId>51101241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>81</n32Strength>
 		<n32Agility>50</n32Agility>
@@ -1618,14 +1618,14 @@
 		<n32Quality>0</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200011</n32GodSkillId>
+		<n32GodSkillId>51200001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -1649,14 +1649,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200011</n32GodSkillId>
+		<n32GodSkillId>51200001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -1680,14 +1680,14 @@
 		<n32Quality>2</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200021</n32GodSkillId>
+		<n32GodSkillId>51200011</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -1711,14 +1711,14 @@
 		<n32Quality>3</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200031</n32GodSkillId>
+		<n32GodSkillId>51200021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -1742,14 +1742,14 @@
 		<n32Quality>4</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200041</n32GodSkillId>
+		<n32GodSkillId>51200031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -1773,14 +1773,14 @@
 		<n32Quality>5</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200051</n32GodSkillId>
+		<n32GodSkillId>51200041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -1804,14 +1804,14 @@
 		<n32Quality>6</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200061</n32GodSkillId>
+		<n32GodSkillId>51200051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -1835,14 +1835,14 @@
 		<n32Quality>7</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200071</n32GodSkillId>
+		<n32GodSkillId>51200061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -1866,14 +1866,14 @@
 		<n32Quality>8</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200081</n32GodSkillId>
+		<n32GodSkillId>51200071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>37</n32Agility>
@@ -1897,14 +1897,14 @@
 		<n32Quality>9</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200091</n32GodSkillId>
+		<n32GodSkillId>51200081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>39</n32Agility>
@@ -1928,14 +1928,14 @@
 		<n32Quality>10</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200101</n32GodSkillId>
+		<n32GodSkillId>51200091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -1959,14 +1959,14 @@
 		<n32Quality>11</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200111</n32GodSkillId>
+		<n32GodSkillId>51200101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>43</n32Agility>
@@ -1990,14 +1990,14 @@
 		<n32Quality>12</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200121</n32GodSkillId>
+		<n32GodSkillId>51200111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>45</n32Agility>
@@ -2021,14 +2021,14 @@
 		<n32Quality>13</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200131</n32GodSkillId>
+		<n32GodSkillId>51200121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>47</n32Agility>
@@ -2052,14 +2052,14 @@
 		<n32Quality>14</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200141</n32GodSkillId>
+		<n32GodSkillId>51200131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>50</n32Agility>
@@ -2083,14 +2083,14 @@
 		<n32Quality>15</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200151</n32GodSkillId>
+		<n32GodSkillId>51200141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>52</n32Agility>
@@ -2114,14 +2114,14 @@
 		<n32Quality>16</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200161</n32GodSkillId>
+		<n32GodSkillId>51200151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>54</n32Agility>
@@ -2145,14 +2145,14 @@
 		<n32Quality>17</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200171</n32GodSkillId>
+		<n32GodSkillId>51200161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>56</n32Agility>
@@ -2176,14 +2176,14 @@
 		<n32Quality>18</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200181</n32GodSkillId>
+		<n32GodSkillId>51200171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>58</n32Agility>
@@ -2207,14 +2207,14 @@
 		<n32Quality>19</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200191</n32GodSkillId>
+		<n32GodSkillId>51200181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>60</n32Agility>
@@ -2238,14 +2238,14 @@
 		<n32Quality>20</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200201</n32GodSkillId>
+		<n32GodSkillId>51200191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>62</n32Agility>
@@ -2269,14 +2269,14 @@
 		<n32Quality>21</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200211</n32GodSkillId>
+		<n32GodSkillId>51200201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>65</n32Agility>
@@ -2300,14 +2300,14 @@
 		<n32Quality>22</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200221</n32GodSkillId>
+		<n32GodSkillId>51200211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>67</n32Agility>
@@ -2331,14 +2331,14 @@
 		<n32Quality>23</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200231</n32GodSkillId>
+		<n32GodSkillId>51200221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>69</n32Agility>
@@ -2362,14 +2362,14 @@
 		<n32Quality>24</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200241</n32GodSkillId>
+		<n32GodSkillId>51200231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>49</n32Strength>
 		<n32Agility>72</n32Agility>
@@ -2393,14 +2393,14 @@
 		<n32Quality>25</n32Quality>
 		<szName>闪光</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>shanguang</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>912001</n32CommonSkillId>
-		<n32GodSkillId>51200251</n32GodSkillId>
+		<n32GodSkillId>51200241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>50</n32Strength>
 		<n32Agility>74</n32Agility>
@@ -2431,7 +2431,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201011</n32GodSkillId>
+		<n32GodSkillId>51201001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -2462,7 +2462,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201011</n32GodSkillId>
+		<n32GodSkillId>51201001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -2493,7 +2493,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201021</n32GodSkillId>
+		<n32GodSkillId>51201011</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -2524,7 +2524,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201031</n32GodSkillId>
+		<n32GodSkillId>51201021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -2555,7 +2555,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201041</n32GodSkillId>
+		<n32GodSkillId>51201031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -2586,7 +2586,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201051</n32GodSkillId>
+		<n32GodSkillId>51201041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -2617,7 +2617,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201061</n32GodSkillId>
+		<n32GodSkillId>51201051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -2648,7 +2648,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201071</n32GodSkillId>
+		<n32GodSkillId>51201061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -2679,7 +2679,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201081</n32GodSkillId>
+		<n32GodSkillId>51201071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -2710,7 +2710,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201091</n32GodSkillId>
+		<n32GodSkillId>51201081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>37</n32Agility>
@@ -2741,7 +2741,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201101</n32GodSkillId>
+		<n32GodSkillId>51201091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>39</n32Agility>
@@ -2772,7 +2772,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201111</n32GodSkillId>
+		<n32GodSkillId>51201101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -2803,7 +2803,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201121</n32GodSkillId>
+		<n32GodSkillId>51201111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>43</n32Agility>
@@ -2834,7 +2834,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201131</n32GodSkillId>
+		<n32GodSkillId>51201121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>45</n32Agility>
@@ -2865,7 +2865,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201141</n32GodSkillId>
+		<n32GodSkillId>51201131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>47</n32Agility>
@@ -2896,7 +2896,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201151</n32GodSkillId>
+		<n32GodSkillId>51201141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>49</n32Agility>
@@ -2927,7 +2927,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201161</n32GodSkillId>
+		<n32GodSkillId>51201151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>51</n32Agility>
@@ -2958,7 +2958,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201171</n32GodSkillId>
+		<n32GodSkillId>51201161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>53</n32Agility>
@@ -2989,7 +2989,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201181</n32GodSkillId>
+		<n32GodSkillId>51201171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>55</n32Agility>
@@ -3020,7 +3020,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201191</n32GodSkillId>
+		<n32GodSkillId>51201181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>57</n32Agility>
@@ -3051,7 +3051,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201201</n32GodSkillId>
+		<n32GodSkillId>51201191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>59</n32Agility>
@@ -3082,7 +3082,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201211</n32GodSkillId>
+		<n32GodSkillId>51201201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>61</n32Agility>
@@ -3113,7 +3113,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201221</n32GodSkillId>
+		<n32GodSkillId>51201211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>63</n32Agility>
@@ -3144,7 +3144,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201231</n32GodSkillId>
+		<n32GodSkillId>51201221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>66</n32Agility>
@@ -3175,7 +3175,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201241</n32GodSkillId>
+		<n32GodSkillId>51201231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>68</n32Agility>
@@ -3206,7 +3206,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>912101</n32CommonSkillId>
-		<n32GodSkillId>51201251</n32GodSkillId>
+		<n32GodSkillId>51201241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>49</n32Strength>
 		<n32Agility>70</n32Agility>
@@ -3230,14 +3230,14 @@
 		<n32Quality>0</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300011</n32GodSkillId>
+		<n32GodSkillId>51300001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>7</n32Agility>
@@ -3261,14 +3261,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300011</n32GodSkillId>
+		<n32GodSkillId>51300001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>7</n32Agility>
@@ -3292,14 +3292,14 @@
 		<n32Quality>2</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300021</n32GodSkillId>
+		<n32GodSkillId>51300011</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>7</n32Agility>
@@ -3323,14 +3323,14 @@
 		<n32Quality>3</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300031</n32GodSkillId>
+		<n32GodSkillId>51300021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>7</n32Agility>
@@ -3354,14 +3354,14 @@
 		<n32Quality>4</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300041</n32GodSkillId>
+		<n32GodSkillId>51300031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -3385,14 +3385,14 @@
 		<n32Quality>5</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300051</n32GodSkillId>
+		<n32GodSkillId>51300041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -3416,14 +3416,14 @@
 		<n32Quality>6</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300061</n32GodSkillId>
+		<n32GodSkillId>51300051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>8</n32Agility>
@@ -3447,14 +3447,14 @@
 		<n32Quality>7</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300071</n32GodSkillId>
+		<n32GodSkillId>51300061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>9</n32Agility>
@@ -3478,14 +3478,14 @@
 		<n32Quality>8</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300081</n32GodSkillId>
+		<n32GodSkillId>51300071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>9</n32Agility>
@@ -3509,14 +3509,14 @@
 		<n32Quality>9</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300091</n32GodSkillId>
+		<n32GodSkillId>51300081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -3540,14 +3540,14 @@
 		<n32Quality>10</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300101</n32GodSkillId>
+		<n32GodSkillId>51300091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -3571,14 +3571,14 @@
 		<n32Quality>11</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300111</n32GodSkillId>
+		<n32GodSkillId>51300101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -3602,14 +3602,14 @@
 		<n32Quality>12</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300121</n32GodSkillId>
+		<n32GodSkillId>51300111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -3633,14 +3633,14 @@
 		<n32Quality>13</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300131</n32GodSkillId>
+		<n32GodSkillId>51300121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -3664,14 +3664,14 @@
 		<n32Quality>14</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300141</n32GodSkillId>
+		<n32GodSkillId>51300131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -3695,14 +3695,14 @@
 		<n32Quality>15</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300151</n32GodSkillId>
+		<n32GodSkillId>51300141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -3726,14 +3726,14 @@
 		<n32Quality>16</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300161</n32GodSkillId>
+		<n32GodSkillId>51300151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -3757,14 +3757,14 @@
 		<n32Quality>17</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300171</n32GodSkillId>
+		<n32GodSkillId>51300161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -3788,14 +3788,14 @@
 		<n32Quality>18</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300181</n32GodSkillId>
+		<n32GodSkillId>51300171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>40</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -3819,14 +3819,14 @@
 		<n32Quality>19</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300191</n32GodSkillId>
+		<n32GodSkillId>51300181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -3850,14 +3850,14 @@
 		<n32Quality>20</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300201</n32GodSkillId>
+		<n32GodSkillId>51300191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -3881,14 +3881,14 @@
 		<n32Quality>21</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300211</n32GodSkillId>
+		<n32GodSkillId>51300201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -3912,14 +3912,14 @@
 		<n32Quality>22</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300221</n32GodSkillId>
+		<n32GodSkillId>51300211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -3943,14 +3943,14 @@
 		<n32Quality>23</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300231</n32GodSkillId>
+		<n32GodSkillId>51300221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -3974,14 +3974,14 @@
 		<n32Quality>24</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300241</n32GodSkillId>
+		<n32GodSkillId>51300231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>48</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -4005,14 +4005,14 @@
 		<n32Quality>25</n32Quality>
 		<szName>天女</szName>
 		<n32ModelId>50009</n32ModelId>
-		<szModelIcon>Tiannv</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>913001</n32CommonSkillId>
-		<n32GodSkillId>51300251</n32GodSkillId>
+		<n32GodSkillId>51300241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>50</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -4036,14 +4036,14 @@
 		<n32Quality>0</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301011</n32GodSkillId>
+		<n32GodSkillId>51301001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -4067,14 +4067,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301011</n32GodSkillId>
+		<n32GodSkillId>51301001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -4098,14 +4098,14 @@
 		<n32Quality>2</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301021</n32GodSkillId>
+		<n32GodSkillId>51301011</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -4129,14 +4129,14 @@
 		<n32Quality>3</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301031</n32GodSkillId>
+		<n32GodSkillId>51301021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -4160,14 +4160,14 @@
 		<n32Quality>4</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301041</n32GodSkillId>
+		<n32GodSkillId>51301031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -4191,14 +4191,14 @@
 		<n32Quality>5</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301051</n32GodSkillId>
+		<n32GodSkillId>51301041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -4222,14 +4222,14 @@
 		<n32Quality>6</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301061</n32GodSkillId>
+		<n32GodSkillId>51301051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -4253,14 +4253,14 @@
 		<n32Quality>7</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301071</n32GodSkillId>
+		<n32GodSkillId>51301061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -4284,14 +4284,14 @@
 		<n32Quality>8</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301081</n32GodSkillId>
+		<n32GodSkillId>51301071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -4315,14 +4315,14 @@
 		<n32Quality>9</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301091</n32GodSkillId>
+		<n32GodSkillId>51301081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -4346,14 +4346,14 @@
 		<n32Quality>10</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301101</n32GodSkillId>
+		<n32GodSkillId>51301091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -4377,14 +4377,14 @@
 		<n32Quality>11</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301111</n32GodSkillId>
+		<n32GodSkillId>51301101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -4408,14 +4408,14 @@
 		<n32Quality>12</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301121</n32GodSkillId>
+		<n32GodSkillId>51301111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -4439,14 +4439,14 @@
 		<n32Quality>13</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301131</n32GodSkillId>
+		<n32GodSkillId>51301121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -4470,14 +4470,14 @@
 		<n32Quality>14</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301141</n32GodSkillId>
+		<n32GodSkillId>51301131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -4501,14 +4501,14 @@
 		<n32Quality>15</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301151</n32GodSkillId>
+		<n32GodSkillId>51301141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -4532,14 +4532,14 @@
 		<n32Quality>16</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301161</n32GodSkillId>
+		<n32GodSkillId>51301151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -4563,14 +4563,14 @@
 		<n32Quality>17</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301171</n32GodSkillId>
+		<n32GodSkillId>51301161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -4594,14 +4594,14 @@
 		<n32Quality>18</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301181</n32GodSkillId>
+		<n32GodSkillId>51301171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -4625,14 +4625,14 @@
 		<n32Quality>19</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301191</n32GodSkillId>
+		<n32GodSkillId>51301181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -4656,14 +4656,14 @@
 		<n32Quality>20</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301201</n32GodSkillId>
+		<n32GodSkillId>51301191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -4687,14 +4687,14 @@
 		<n32Quality>21</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301211</n32GodSkillId>
+		<n32GodSkillId>51301201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -4718,14 +4718,14 @@
 		<n32Quality>22</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301221</n32GodSkillId>
+		<n32GodSkillId>51301211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>40</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -4749,14 +4749,14 @@
 		<n32Quality>23</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301231</n32GodSkillId>
+		<n32GodSkillId>51301221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -4780,14 +4780,14 @@
 		<n32Quality>24</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301241</n32GodSkillId>
+		<n32GodSkillId>51301231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>43</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -4811,14 +4811,14 @@
 		<n32Quality>25</n32Quality>
 		<szName>钟表匠</szName>
 		<n32ModelId>50006</n32ModelId>
-		<szModelIcon>Zhongbiaogong</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>913101</n32CommonSkillId>
-		<n32GodSkillId>51301251</n32GodSkillId>
+		<n32GodSkillId>51301241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -4849,7 +4849,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100011</n32GodSkillId>
+		<n32GodSkillId>52100001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -4880,7 +4880,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100011</n32GodSkillId>
+		<n32GodSkillId>52100001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -4911,7 +4911,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100021</n32GodSkillId>
+		<n32GodSkillId>52100011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -4942,7 +4942,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100031</n32GodSkillId>
+		<n32GodSkillId>52100021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -4973,7 +4973,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100041</n32GodSkillId>
+		<n32GodSkillId>52100031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -5004,7 +5004,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100051</n32GodSkillId>
+		<n32GodSkillId>52100041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -5035,7 +5035,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100061</n32GodSkillId>
+		<n32GodSkillId>52100051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -5066,7 +5066,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100071</n32GodSkillId>
+		<n32GodSkillId>52100061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -5097,7 +5097,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100081</n32GodSkillId>
+		<n32GodSkillId>52100071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>43</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -5128,7 +5128,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100091</n32GodSkillId>
+		<n32GodSkillId>52100081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -5159,7 +5159,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100101</n32GodSkillId>
+		<n32GodSkillId>52100091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>46</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -5190,7 +5190,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100111</n32GodSkillId>
+		<n32GodSkillId>52100101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>48</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -5221,7 +5221,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100121</n32GodSkillId>
+		<n32GodSkillId>52100111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>51</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -5252,7 +5252,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100131</n32GodSkillId>
+		<n32GodSkillId>52100121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>53</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -5283,7 +5283,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100141</n32GodSkillId>
+		<n32GodSkillId>52100131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>55</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -5314,7 +5314,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100151</n32GodSkillId>
+		<n32GodSkillId>52100141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>57</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -5345,7 +5345,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100161</n32GodSkillId>
+		<n32GodSkillId>52100151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>59</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -5376,7 +5376,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100171</n32GodSkillId>
+		<n32GodSkillId>52100161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>61</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -5407,7 +5407,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100181</n32GodSkillId>
+		<n32GodSkillId>52100171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>63</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -5438,7 +5438,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100191</n32GodSkillId>
+		<n32GodSkillId>52100181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>65</n32Strength>
 		<n32Agility>35</n32Agility>
@@ -5469,7 +5469,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100201</n32GodSkillId>
+		<n32GodSkillId>52100191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>68</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -5500,7 +5500,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100211</n32GodSkillId>
+		<n32GodSkillId>52100201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>70</n32Strength>
 		<n32Agility>38</n32Agility>
@@ -5531,7 +5531,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100221</n32GodSkillId>
+		<n32GodSkillId>52100211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>72</n32Strength>
 		<n32Agility>39</n32Agility>
@@ -5562,7 +5562,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100231</n32GodSkillId>
+		<n32GodSkillId>52100221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>74</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -5593,7 +5593,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100241</n32GodSkillId>
+		<n32GodSkillId>52100231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>77</n32Strength>
 		<n32Agility>42</n32Agility>
@@ -5624,7 +5624,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>921001</n32CommonSkillId>
-		<n32GodSkillId>52100251</n32GodSkillId>
+		<n32GodSkillId>52100241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>79</n32Strength>
 		<n32Agility>44</n32Agility>
@@ -5655,7 +5655,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101011</n32GodSkillId>
+		<n32GodSkillId>52101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -5686,7 +5686,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101011</n32GodSkillId>
+		<n32GodSkillId>52101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -5717,7 +5717,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101021</n32GodSkillId>
+		<n32GodSkillId>52101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -5748,7 +5748,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101031</n32GodSkillId>
+		<n32GodSkillId>52101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -5779,7 +5779,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101041</n32GodSkillId>
+		<n32GodSkillId>52101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -5810,7 +5810,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101051</n32GodSkillId>
+		<n32GodSkillId>52101041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -5841,7 +5841,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101061</n32GodSkillId>
+		<n32GodSkillId>52101051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -5872,7 +5872,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101071</n32GodSkillId>
+		<n32GodSkillId>52101061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -5903,7 +5903,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101081</n32GodSkillId>
+		<n32GodSkillId>52101071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -5934,7 +5934,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101091</n32GodSkillId>
+		<n32GodSkillId>52101081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -5965,7 +5965,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101101</n32GodSkillId>
+		<n32GodSkillId>52101091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -5996,7 +5996,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101111</n32GodSkillId>
+		<n32GodSkillId>52101101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -6027,7 +6027,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101121</n32GodSkillId>
+		<n32GodSkillId>52101111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>43</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -6058,7 +6058,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101131</n32GodSkillId>
+		<n32GodSkillId>52101121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -6089,7 +6089,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101141</n32GodSkillId>
+		<n32GodSkillId>52101131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -6120,7 +6120,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101151</n32GodSkillId>
+		<n32GodSkillId>52101141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>49</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -6151,7 +6151,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101161</n32GodSkillId>
+		<n32GodSkillId>52101151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>51</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -6182,7 +6182,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101171</n32GodSkillId>
+		<n32GodSkillId>52101161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>53</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -6213,7 +6213,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101181</n32GodSkillId>
+		<n32GodSkillId>52101171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>55</n32Strength>
 		<n32Agility>33</n32Agility>
@@ -6244,7 +6244,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101191</n32GodSkillId>
+		<n32GodSkillId>52101181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>57</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -6275,7 +6275,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101201</n32GodSkillId>
+		<n32GodSkillId>52101191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>59</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -6306,7 +6306,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101211</n32GodSkillId>
+		<n32GodSkillId>52101201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>61</n32Strength>
 		<n32Agility>37</n32Agility>
@@ -6337,7 +6337,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101221</n32GodSkillId>
+		<n32GodSkillId>52101211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>63</n32Strength>
 		<n32Agility>38</n32Agility>
@@ -6368,7 +6368,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101231</n32GodSkillId>
+		<n32GodSkillId>52101221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>66</n32Strength>
 		<n32Agility>40</n32Agility>
@@ -6399,7 +6399,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101241</n32GodSkillId>
+		<n32GodSkillId>52101231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>68</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -6430,7 +6430,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>921101</n32CommonSkillId>
-		<n32GodSkillId>52101251</n32GodSkillId>
+		<n32GodSkillId>52101241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>70</n32Strength>
 		<n32Agility>42</n32Agility>
@@ -6454,14 +6454,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201011</n32GodSkillId>
+		<n32GodSkillId>52200001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -6485,14 +6485,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201011</n32GodSkillId>
+		<n32GodSkillId>52200001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -6516,14 +6516,14 @@
 		<n32Quality>2</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201021</n32GodSkillId>
+		<n32GodSkillId>52200011</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -6547,14 +6547,14 @@
 		<n32Quality>3</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201031</n32GodSkillId>
+		<n32GodSkillId>52200021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -6578,14 +6578,14 @@
 		<n32Quality>4</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201041</n32GodSkillId>
+		<n32GodSkillId>52200031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -6609,14 +6609,14 @@
 		<n32Quality>5</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201051</n32GodSkillId>
+		<n32GodSkillId>52200041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -6640,14 +6640,14 @@
 		<n32Quality>6</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201061</n32GodSkillId>
+		<n32GodSkillId>52200051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -6671,14 +6671,14 @@
 		<n32Quality>7</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201071</n32GodSkillId>
+		<n32GodSkillId>52200061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -6702,14 +6702,14 @@
 		<n32Quality>8</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201081</n32GodSkillId>
+		<n32GodSkillId>52200071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>37</n32Agility>
@@ -6733,14 +6733,14 @@
 		<n32Quality>9</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201091</n32GodSkillId>
+		<n32GodSkillId>52200081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>39</n32Agility>
@@ -6764,14 +6764,14 @@
 		<n32Quality>10</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201101</n32GodSkillId>
+		<n32GodSkillId>52200091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -6795,14 +6795,14 @@
 		<n32Quality>11</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201111</n32GodSkillId>
+		<n32GodSkillId>52200101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>43</n32Agility>
@@ -6826,14 +6826,14 @@
 		<n32Quality>12</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201121</n32GodSkillId>
+		<n32GodSkillId>52200111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>45</n32Agility>
@@ -6857,14 +6857,14 @@
 		<n32Quality>13</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201131</n32GodSkillId>
+		<n32GodSkillId>52200121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>47</n32Agility>
@@ -6888,14 +6888,14 @@
 		<n32Quality>14</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201141</n32GodSkillId>
+		<n32GodSkillId>52200131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>50</n32Agility>
@@ -6919,14 +6919,14 @@
 		<n32Quality>15</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201151</n32GodSkillId>
+		<n32GodSkillId>52200141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>52</n32Agility>
@@ -6950,14 +6950,14 @@
 		<n32Quality>16</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201161</n32GodSkillId>
+		<n32GodSkillId>52200151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>54</n32Agility>
@@ -6981,14 +6981,14 @@
 		<n32Quality>17</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201171</n32GodSkillId>
+		<n32GodSkillId>52200161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>40</n32Strength>
 		<n32Agility>56</n32Agility>
@@ -7012,14 +7012,14 @@
 		<n32Quality>18</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201181</n32GodSkillId>
+		<n32GodSkillId>52200171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>58</n32Agility>
@@ -7043,14 +7043,14 @@
 		<n32Quality>19</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201191</n32GodSkillId>
+		<n32GodSkillId>52200181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>43</n32Strength>
 		<n32Agility>60</n32Agility>
@@ -7074,14 +7074,14 @@
 		<n32Quality>20</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201201</n32GodSkillId>
+		<n32GodSkillId>52200191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>62</n32Agility>
@@ -7105,14 +7105,14 @@
 		<n32Quality>21</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201211</n32GodSkillId>
+		<n32GodSkillId>52200201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>65</n32Agility>
@@ -7136,14 +7136,14 @@
 		<n32Quality>22</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201221</n32GodSkillId>
+		<n32GodSkillId>52200211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>48</n32Strength>
 		<n32Agility>67</n32Agility>
@@ -7167,14 +7167,14 @@
 		<n32Quality>23</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201231</n32GodSkillId>
+		<n32GodSkillId>52200221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>50</n32Strength>
 		<n32Agility>69</n32Agility>
@@ -7198,14 +7198,14 @@
 		<n32Quality>24</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201241</n32GodSkillId>
+		<n32GodSkillId>52200231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>52</n32Strength>
 		<n32Agility>72</n32Agility>
@@ -7229,14 +7229,14 @@
 		<n32Quality>25</n32Quality>
 		<szName>修行者</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>Xiuxingzhe</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>922001</n32CommonSkillId>
-		<n32GodSkillId>52201251</n32GodSkillId>
+		<n32GodSkillId>52200241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>54</n32Strength>
 		<n32Agility>74</n32Agility>
@@ -7267,7 +7267,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201011</n32GodSkillId>
+		<n32GodSkillId>52201001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>14</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -7298,7 +7298,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201011</n32GodSkillId>
+		<n32GodSkillId>52201001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>14</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -7329,7 +7329,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201021</n32GodSkillId>
+		<n32GodSkillId>52201011</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -7360,7 +7360,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201031</n32GodSkillId>
+		<n32GodSkillId>52201021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -7391,7 +7391,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201041</n32GodSkillId>
+		<n32GodSkillId>52201031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>33</n32Agility>
@@ -7422,7 +7422,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201051</n32GodSkillId>
+		<n32GodSkillId>52201041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>35</n32Agility>
@@ -7453,7 +7453,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201061</n32GodSkillId>
+		<n32GodSkillId>52201051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>37</n32Agility>
@@ -7484,7 +7484,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201071</n32GodSkillId>
+		<n32GodSkillId>52201061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>39</n32Agility>
@@ -7515,7 +7515,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201081</n32GodSkillId>
+		<n32GodSkillId>52201071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -7546,7 +7546,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201091</n32GodSkillId>
+		<n32GodSkillId>52201081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>43</n32Agility>
@@ -7577,7 +7577,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201101</n32GodSkillId>
+		<n32GodSkillId>52201091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>45</n32Agility>
@@ -7608,7 +7608,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201111</n32GodSkillId>
+		<n32GodSkillId>52201101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>47</n32Agility>
@@ -7639,7 +7639,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201121</n32GodSkillId>
+		<n32GodSkillId>52201111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>49</n32Agility>
@@ -7670,7 +7670,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201131</n32GodSkillId>
+		<n32GodSkillId>52201121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>52</n32Agility>
@@ -7701,7 +7701,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201141</n32GodSkillId>
+		<n32GodSkillId>52201131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>54</n32Agility>
@@ -7732,7 +7732,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201151</n32GodSkillId>
+		<n32GodSkillId>52201141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>56</n32Agility>
@@ -7763,7 +7763,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201161</n32GodSkillId>
+		<n32GodSkillId>52201151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>58</n32Agility>
@@ -7794,7 +7794,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201171</n32GodSkillId>
+		<n32GodSkillId>52201161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>61</n32Agility>
@@ -7825,7 +7825,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201181</n32GodSkillId>
+		<n32GodSkillId>52201171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>63</n32Agility>
@@ -7856,7 +7856,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201191</n32GodSkillId>
+		<n32GodSkillId>52201181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>65</n32Agility>
@@ -7887,7 +7887,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201201</n32GodSkillId>
+		<n32GodSkillId>52201191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>68</n32Agility>
@@ -7918,7 +7918,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201211</n32GodSkillId>
+		<n32GodSkillId>52201201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>70</n32Agility>
@@ -7949,7 +7949,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201221</n32GodSkillId>
+		<n32GodSkillId>52201211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>40</n32Strength>
 		<n32Agility>73</n32Agility>
@@ -7980,7 +7980,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201231</n32GodSkillId>
+		<n32GodSkillId>52201221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>75</n32Agility>
@@ -8011,7 +8011,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201241</n32GodSkillId>
+		<n32GodSkillId>52201231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>43</n32Strength>
 		<n32Agility>78</n32Agility>
@@ -8042,7 +8042,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>922101</n32CommonSkillId>
-		<n32GodSkillId>52201251</n32GodSkillId>
+		<n32GodSkillId>52201241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>80</n32Agility>
@@ -8073,7 +8073,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300011</n32GodSkillId>
+		<n32GodSkillId>52300001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>10</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -8104,7 +8104,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300011</n32GodSkillId>
+		<n32GodSkillId>52300001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>10</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -8135,7 +8135,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300021</n32GodSkillId>
+		<n32GodSkillId>52300011</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>11</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -8166,7 +8166,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300031</n32GodSkillId>
+		<n32GodSkillId>52300021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>12</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -8197,7 +8197,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300041</n32GodSkillId>
+		<n32GodSkillId>52300031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>13</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -8228,7 +8228,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300051</n32GodSkillId>
+		<n32GodSkillId>52300041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>14</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -8259,7 +8259,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300061</n32GodSkillId>
+		<n32GodSkillId>52300051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -8290,7 +8290,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300071</n32GodSkillId>
+		<n32GodSkillId>52300061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -8321,7 +8321,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300081</n32GodSkillId>
+		<n32GodSkillId>52300071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -8352,7 +8352,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300091</n32GodSkillId>
+		<n32GodSkillId>52300081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -8383,7 +8383,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300101</n32GodSkillId>
+		<n32GodSkillId>52300091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -8414,7 +8414,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300111</n32GodSkillId>
+		<n32GodSkillId>52300101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -8445,7 +8445,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300121</n32GodSkillId>
+		<n32GodSkillId>52300111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -8476,7 +8476,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300131</n32GodSkillId>
+		<n32GodSkillId>52300121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -8507,7 +8507,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300141</n32GodSkillId>
+		<n32GodSkillId>52300131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -8538,7 +8538,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300151</n32GodSkillId>
+		<n32GodSkillId>52300141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -8569,7 +8569,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300161</n32GodSkillId>
+		<n32GodSkillId>52300151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -8600,7 +8600,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300171</n32GodSkillId>
+		<n32GodSkillId>52300161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -8631,7 +8631,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300181</n32GodSkillId>
+		<n32GodSkillId>52300171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -8662,7 +8662,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300191</n32GodSkillId>
+		<n32GodSkillId>52300181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -8693,7 +8693,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300201</n32GodSkillId>
+		<n32GodSkillId>52300191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -8724,7 +8724,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300211</n32GodSkillId>
+		<n32GodSkillId>52300201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -8755,7 +8755,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300221</n32GodSkillId>
+		<n32GodSkillId>52300211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -8786,7 +8786,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300231</n32GodSkillId>
+		<n32GodSkillId>52300221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -8817,7 +8817,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300241</n32GodSkillId>
+		<n32GodSkillId>52300231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -8848,7 +8848,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>923001</n32CommonSkillId>
-		<n32GodSkillId>52300251</n32GodSkillId>
+		<n32GodSkillId>52300241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -8872,14 +8872,14 @@
 		<n32Quality>0</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301011</n32GodSkillId>
+		<n32GodSkillId>52301001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -8903,14 +8903,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301011</n32GodSkillId>
+		<n32GodSkillId>52301001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -8934,14 +8934,14 @@
 		<n32Quality>2</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301021</n32GodSkillId>
+		<n32GodSkillId>52301011</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -8965,14 +8965,14 @@
 		<n32Quality>3</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301031</n32GodSkillId>
+		<n32GodSkillId>52301021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -8996,14 +8996,14 @@
 		<n32Quality>4</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301041</n32GodSkillId>
+		<n32GodSkillId>52301031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -9027,14 +9027,14 @@
 		<n32Quality>5</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301051</n32GodSkillId>
+		<n32GodSkillId>52301041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -9058,14 +9058,14 @@
 		<n32Quality>6</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301061</n32GodSkillId>
+		<n32GodSkillId>52301051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -9089,14 +9089,14 @@
 		<n32Quality>7</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301071</n32GodSkillId>
+		<n32GodSkillId>52301061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -9120,14 +9120,14 @@
 		<n32Quality>8</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301081</n32GodSkillId>
+		<n32GodSkillId>52301071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -9151,14 +9151,14 @@
 		<n32Quality>9</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301091</n32GodSkillId>
+		<n32GodSkillId>52301081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -9182,14 +9182,14 @@
 		<n32Quality>10</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301101</n32GodSkillId>
+		<n32GodSkillId>52301091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -9213,14 +9213,14 @@
 		<n32Quality>11</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301111</n32GodSkillId>
+		<n32GodSkillId>52301101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -9244,14 +9244,14 @@
 		<n32Quality>12</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301121</n32GodSkillId>
+		<n32GodSkillId>52301111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -9275,14 +9275,14 @@
 		<n32Quality>13</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301131</n32GodSkillId>
+		<n32GodSkillId>52301121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -9306,14 +9306,14 @@
 		<n32Quality>14</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301141</n32GodSkillId>
+		<n32GodSkillId>52301131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -9337,14 +9337,14 @@
 		<n32Quality>15</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301151</n32GodSkillId>
+		<n32GodSkillId>52301141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -9368,14 +9368,14 @@
 		<n32Quality>16</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301161</n32GodSkillId>
+		<n32GodSkillId>52301151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -9399,14 +9399,14 @@
 		<n32Quality>17</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301171</n32GodSkillId>
+		<n32GodSkillId>52301161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -9430,14 +9430,14 @@
 		<n32Quality>18</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301181</n32GodSkillId>
+		<n32GodSkillId>52301171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -9461,14 +9461,14 @@
 		<n32Quality>19</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301191</n32GodSkillId>
+		<n32GodSkillId>52301181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -9492,14 +9492,14 @@
 		<n32Quality>20</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301201</n32GodSkillId>
+		<n32GodSkillId>52301191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -9523,14 +9523,14 @@
 		<n32Quality>21</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301211</n32GodSkillId>
+		<n32GodSkillId>52301201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -9554,14 +9554,14 @@
 		<n32Quality>22</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301221</n32GodSkillId>
+		<n32GodSkillId>52301211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>36</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -9585,14 +9585,14 @@
 		<n32Quality>23</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301231</n32GodSkillId>
+		<n32GodSkillId>52301221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -9616,14 +9616,14 @@
 		<n32Quality>24</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301241</n32GodSkillId>
+		<n32GodSkillId>52301231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -9647,14 +9647,14 @@
 		<n32Quality>25</n32Quality>
 		<szName>乌鸦鬼</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>Wuya</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>923101</n32CommonSkillId>
-		<n32GodSkillId>52301251</n32GodSkillId>
+		<n32GodSkillId>52301241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -9678,14 +9678,14 @@
 		<n32Quality>0</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100011</n32GodSkillId>
+		<n32GodSkillId>53100001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -9709,14 +9709,14 @@
 		<n32Quality>1</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100011</n32GodSkillId>
+		<n32GodSkillId>53100001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -9740,14 +9740,14 @@
 		<n32Quality>2</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100021</n32GodSkillId>
+		<n32GodSkillId>53100011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -9771,14 +9771,14 @@
 		<n32Quality>3</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100031</n32GodSkillId>
+		<n32GodSkillId>53100021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -9802,14 +9802,14 @@
 		<n32Quality>4</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100041</n32GodSkillId>
+		<n32GodSkillId>53100031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -9833,14 +9833,14 @@
 		<n32Quality>5</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100051</n32GodSkillId>
+		<n32GodSkillId>53100041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -9864,14 +9864,14 @@
 		<n32Quality>6</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100061</n32GodSkillId>
+		<n32GodSkillId>53100051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -9895,14 +9895,14 @@
 		<n32Quality>7</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100071</n32GodSkillId>
+		<n32GodSkillId>53100061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -9926,14 +9926,14 @@
 		<n32Quality>8</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100081</n32GodSkillId>
+		<n32GodSkillId>53100071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -9957,14 +9957,14 @@
 		<n32Quality>9</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100091</n32GodSkillId>
+		<n32GodSkillId>53100081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>46</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -9988,14 +9988,14 @@
 		<n32Quality>10</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100101</n32GodSkillId>
+		<n32GodSkillId>53100091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>48</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -10019,14 +10019,14 @@
 		<n32Quality>11</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100111</n32GodSkillId>
+		<n32GodSkillId>53100101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>50</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -10050,14 +10050,14 @@
 		<n32Quality>12</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100121</n32GodSkillId>
+		<n32GodSkillId>53100111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>52</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -10081,14 +10081,14 @@
 		<n32Quality>13</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100131</n32GodSkillId>
+		<n32GodSkillId>53100121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>54</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -10112,14 +10112,14 @@
 		<n32Quality>14</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100141</n32GodSkillId>
+		<n32GodSkillId>53100131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>57</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -10143,14 +10143,14 @@
 		<n32Quality>15</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100151</n32GodSkillId>
+		<n32GodSkillId>53100141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>59</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -10174,14 +10174,14 @@
 		<n32Quality>16</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100161</n32GodSkillId>
+		<n32GodSkillId>53100151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>61</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -10205,14 +10205,14 @@
 		<n32Quality>17</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100171</n32GodSkillId>
+		<n32GodSkillId>53100161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>63</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -10236,14 +10236,14 @@
 		<n32Quality>18</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100181</n32GodSkillId>
+		<n32GodSkillId>53100171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>65</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -10267,14 +10267,14 @@
 		<n32Quality>19</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100191</n32GodSkillId>
+		<n32GodSkillId>53100181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>68</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -10298,14 +10298,14 @@
 		<n32Quality>20</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100201</n32GodSkillId>
+		<n32GodSkillId>53100191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>70</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -10329,14 +10329,14 @@
 		<n32Quality>21</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100211</n32GodSkillId>
+		<n32GodSkillId>53100201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>72</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -10360,14 +10360,14 @@
 		<n32Quality>22</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100221</n32GodSkillId>
+		<n32GodSkillId>53100211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>74</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -10391,14 +10391,14 @@
 		<n32Quality>23</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100231</n32GodSkillId>
+		<n32GodSkillId>53100221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>77</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -10422,14 +10422,14 @@
 		<n32Quality>24</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100241</n32GodSkillId>
+		<n32GodSkillId>53100231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>79</n32Strength>
 		<n32Agility>33</n32Agility>
@@ -10453,14 +10453,14 @@
 		<n32Quality>25</n32Quality>
 		<szName>牛博士</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>niuboshi</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>931001</n32CommonSkillId>
-		<n32GodSkillId>53100251</n32GodSkillId>
+		<n32GodSkillId>53100241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>82</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -10491,7 +10491,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101011</n32GodSkillId>
+		<n32GodSkillId>53101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -10522,7 +10522,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101011</n32GodSkillId>
+		<n32GodSkillId>53101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -10553,7 +10553,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101021</n32GodSkillId>
+		<n32GodSkillId>53101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>10</n32Agility>
@@ -10584,7 +10584,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101031</n32GodSkillId>
+		<n32GodSkillId>53101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>11</n32Agility>
@@ -10615,7 +10615,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101041</n32GodSkillId>
+		<n32GodSkillId>53101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -10646,7 +10646,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101051</n32GodSkillId>
+		<n32GodSkillId>53101041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -10677,7 +10677,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101061</n32GodSkillId>
+		<n32GodSkillId>53101051</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -10708,7 +10708,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101071</n32GodSkillId>
+		<n32GodSkillId>53101061</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -10739,7 +10739,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101081</n32GodSkillId>
+		<n32GodSkillId>53101071</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -10770,7 +10770,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101091</n32GodSkillId>
+		<n32GodSkillId>53101081</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>40</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -10801,7 +10801,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101101</n32GodSkillId>
+		<n32GodSkillId>53101091</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -10832,7 +10832,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101111</n32GodSkillId>
+		<n32GodSkillId>53101101</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -10863,7 +10863,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101121</n32GodSkillId>
+		<n32GodSkillId>53101111</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>46</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -10894,7 +10894,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101131</n32GodSkillId>
+		<n32GodSkillId>53101121</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>48</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -10925,7 +10925,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101141</n32GodSkillId>
+		<n32GodSkillId>53101131</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>50</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -10956,7 +10956,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101151</n32GodSkillId>
+		<n32GodSkillId>53101141</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>52</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -10987,7 +10987,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101161</n32GodSkillId>
+		<n32GodSkillId>53101151</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>54</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -11018,7 +11018,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101171</n32GodSkillId>
+		<n32GodSkillId>53101161</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>56</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -11049,7 +11049,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101181</n32GodSkillId>
+		<n32GodSkillId>53101171</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>58</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -11080,7 +11080,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101191</n32GodSkillId>
+		<n32GodSkillId>53101181</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>60</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -11111,7 +11111,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101201</n32GodSkillId>
+		<n32GodSkillId>53101191</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>62</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -11142,7 +11142,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101211</n32GodSkillId>
+		<n32GodSkillId>53101201</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>64</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -11173,7 +11173,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101221</n32GodSkillId>
+		<n32GodSkillId>53101211</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>66</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -11204,7 +11204,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101231</n32GodSkillId>
+		<n32GodSkillId>53101221</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>69</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -11235,7 +11235,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101241</n32GodSkillId>
+		<n32GodSkillId>53101231</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>71</n32Strength>
 		<n32Agility>35</n32Agility>
@@ -11266,7 +11266,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>931101</n32CommonSkillId>
-		<n32GodSkillId>53101251</n32GodSkillId>
+		<n32GodSkillId>53101241</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>73</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -11297,7 +11297,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200011</n32GodSkillId>
+		<n32GodSkillId>53200001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -11328,7 +11328,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200011</n32GodSkillId>
+		<n32GodSkillId>53200001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -11359,7 +11359,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200021</n32GodSkillId>
+		<n32GodSkillId>53200011</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -11390,7 +11390,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200031</n32GodSkillId>
+		<n32GodSkillId>53200021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -11421,7 +11421,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200041</n32GodSkillId>
+		<n32GodSkillId>53200031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -11452,7 +11452,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200051</n32GodSkillId>
+		<n32GodSkillId>53200041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -11483,7 +11483,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200061</n32GodSkillId>
+		<n32GodSkillId>53200051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -11514,7 +11514,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200071</n32GodSkillId>
+		<n32GodSkillId>53200061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>33</n32Agility>
@@ -11545,7 +11545,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200081</n32GodSkillId>
+		<n32GodSkillId>53200071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>35</n32Agility>
@@ -11576,7 +11576,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200091</n32GodSkillId>
+		<n32GodSkillId>53200081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>37</n32Agility>
@@ -11607,7 +11607,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200101</n32GodSkillId>
+		<n32GodSkillId>53200091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>39</n32Agility>
@@ -11638,7 +11638,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200111</n32GodSkillId>
+		<n32GodSkillId>53200101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>41</n32Agility>
@@ -11669,7 +11669,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200121</n32GodSkillId>
+		<n32GodSkillId>53200111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>43</n32Agility>
@@ -11700,7 +11700,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200131</n32GodSkillId>
+		<n32GodSkillId>53200121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>45</n32Agility>
@@ -11731,7 +11731,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200141</n32GodSkillId>
+		<n32GodSkillId>53200131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>47</n32Agility>
@@ -11762,7 +11762,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200151</n32GodSkillId>
+		<n32GodSkillId>53200141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>49</n32Agility>
@@ -11793,7 +11793,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200161</n32GodSkillId>
+		<n32GodSkillId>53200151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>51</n32Agility>
@@ -11824,7 +11824,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200171</n32GodSkillId>
+		<n32GodSkillId>53200161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>53</n32Agility>
@@ -11855,7 +11855,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200181</n32GodSkillId>
+		<n32GodSkillId>53200171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>55</n32Agility>
@@ -11886,7 +11886,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200191</n32GodSkillId>
+		<n32GodSkillId>53200181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>57</n32Agility>
@@ -11917,7 +11917,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200201</n32GodSkillId>
+		<n32GodSkillId>53200191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>59</n32Agility>
@@ -11948,7 +11948,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200211</n32GodSkillId>
+		<n32GodSkillId>53200201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>61</n32Agility>
@@ -11979,7 +11979,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200221</n32GodSkillId>
+		<n32GodSkillId>53200211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>63</n32Agility>
@@ -12010,7 +12010,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200231</n32GodSkillId>
+		<n32GodSkillId>53200221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>66</n32Agility>
@@ -12041,7 +12041,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200241</n32GodSkillId>
+		<n32GodSkillId>53200231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>68</n32Agility>
@@ -12072,7 +12072,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>932001</n32CommonSkillId>
-		<n32GodSkillId>53200251</n32GodSkillId>
+		<n32GodSkillId>53200241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>70</n32Agility>
@@ -12103,7 +12103,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201011</n32GodSkillId>
+		<n32GodSkillId>53201001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -12134,7 +12134,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201011</n32GodSkillId>
+		<n32GodSkillId>53201001</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -12165,7 +12165,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201021</n32GodSkillId>
+		<n32GodSkillId>53201011</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -12196,7 +12196,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201031</n32GodSkillId>
+		<n32GodSkillId>53201021</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -12227,7 +12227,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201041</n32GodSkillId>
+		<n32GodSkillId>53201031</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -12258,7 +12258,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201051</n32GodSkillId>
+		<n32GodSkillId>53201041</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -12289,7 +12289,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201061</n32GodSkillId>
+		<n32GodSkillId>53201051</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -12320,7 +12320,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201071</n32GodSkillId>
+		<n32GodSkillId>53201061</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -12351,7 +12351,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201081</n32GodSkillId>
+		<n32GodSkillId>53201071</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -12382,7 +12382,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201091</n32GodSkillId>
+		<n32GodSkillId>53201081</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>38</n32Agility>
@@ -12413,7 +12413,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201101</n32GodSkillId>
+		<n32GodSkillId>53201091</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>40</n32Agility>
@@ -12444,7 +12444,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201111</n32GodSkillId>
+		<n32GodSkillId>53201101</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>42</n32Agility>
@@ -12475,7 +12475,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201121</n32GodSkillId>
+		<n32GodSkillId>53201111</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>44</n32Agility>
@@ -12506,7 +12506,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201131</n32GodSkillId>
+		<n32GodSkillId>53201121</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>30</n32Strength>
 		<n32Agility>47</n32Agility>
@@ -12537,7 +12537,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201141</n32GodSkillId>
+		<n32GodSkillId>53201131</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>49</n32Agility>
@@ -12568,7 +12568,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201151</n32GodSkillId>
+		<n32GodSkillId>53201141</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>51</n32Agility>
@@ -12599,7 +12599,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201161</n32GodSkillId>
+		<n32GodSkillId>53201151</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>53</n32Agility>
@@ -12630,7 +12630,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201171</n32GodSkillId>
+		<n32GodSkillId>53201161</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>56</n32Agility>
@@ -12661,7 +12661,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201181</n32GodSkillId>
+		<n32GodSkillId>53201171</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>58</n32Agility>
@@ -12692,7 +12692,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201191</n32GodSkillId>
+		<n32GodSkillId>53201181</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>60</n32Agility>
@@ -12723,7 +12723,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201201</n32GodSkillId>
+		<n32GodSkillId>53201191</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>63</n32Agility>
@@ -12754,7 +12754,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201211</n32GodSkillId>
+		<n32GodSkillId>53201201</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>65</n32Agility>
@@ -12785,7 +12785,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201221</n32GodSkillId>
+		<n32GodSkillId>53201211</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>42</n32Strength>
 		<n32Agility>68</n32Agility>
@@ -12816,7 +12816,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201231</n32GodSkillId>
+		<n32GodSkillId>53201221</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>44</n32Strength>
 		<n32Agility>70</n32Agility>
@@ -12847,7 +12847,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201241</n32GodSkillId>
+		<n32GodSkillId>53201231</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>45</n32Strength>
 		<n32Agility>73</n32Agility>
@@ -12878,7 +12878,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>932101</n32CommonSkillId>
-		<n32GodSkillId>53201251</n32GodSkillId>
+		<n32GodSkillId>53201241</n32GodSkillId>
 		<n32MainAtt>2</n32MainAtt>
 		<n32Strength>47</n32Strength>
 		<n32Agility>75</n32Agility>
@@ -12909,7 +12909,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300011</n32GodSkillId>
+		<n32GodSkillId>53300001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>12</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -12940,7 +12940,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300011</n32GodSkillId>
+		<n32GodSkillId>53300001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>12</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -12971,7 +12971,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300021</n32GodSkillId>
+		<n32GodSkillId>53300011</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>12</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -13002,7 +13002,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300031</n32GodSkillId>
+		<n32GodSkillId>53300021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>13</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -13033,7 +13033,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300041</n32GodSkillId>
+		<n32GodSkillId>53300031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>13</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -13064,7 +13064,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300051</n32GodSkillId>
+		<n32GodSkillId>53300041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>14</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -13095,7 +13095,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300061</n32GodSkillId>
+		<n32GodSkillId>53300051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>14</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -13126,7 +13126,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300071</n32GodSkillId>
+		<n32GodSkillId>53300061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -13157,7 +13157,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300081</n32GodSkillId>
+		<n32GodSkillId>53300071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -13188,7 +13188,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300091</n32GodSkillId>
+		<n32GodSkillId>53300081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -13219,7 +13219,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300101</n32GodSkillId>
+		<n32GodSkillId>53300091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -13250,7 +13250,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300111</n32GodSkillId>
+		<n32GodSkillId>53300101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -13281,7 +13281,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300121</n32GodSkillId>
+		<n32GodSkillId>53300111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -13312,7 +13312,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300131</n32GodSkillId>
+		<n32GodSkillId>53300121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -13343,7 +13343,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300141</n32GodSkillId>
+		<n32GodSkillId>53300131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -13374,7 +13374,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300151</n32GodSkillId>
+		<n32GodSkillId>53300141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>26</n32Agility>
@@ -13405,7 +13405,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300161</n32GodSkillId>
+		<n32GodSkillId>53300151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>27</n32Agility>
@@ -13436,7 +13436,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300171</n32GodSkillId>
+		<n32GodSkillId>53300161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>28</n32Agility>
@@ -13467,7 +13467,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300181</n32GodSkillId>
+		<n32GodSkillId>53300171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>29</n32Agility>
@@ -13498,7 +13498,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300191</n32GodSkillId>
+		<n32GodSkillId>53300181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>30</n32Agility>
@@ -13529,7 +13529,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300201</n32GodSkillId>
+		<n32GodSkillId>53300191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>31</n32Agility>
@@ -13560,7 +13560,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300211</n32GodSkillId>
+		<n32GodSkillId>53300201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>32</n32Agility>
@@ -13591,7 +13591,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300221</n32GodSkillId>
+		<n32GodSkillId>53300211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>34</n32Agility>
@@ -13622,7 +13622,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300231</n32GodSkillId>
+		<n32GodSkillId>53300221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>35</n32Agility>
@@ -13653,7 +13653,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300241</n32GodSkillId>
+		<n32GodSkillId>53300231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>36</n32Agility>
@@ -13684,7 +13684,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>933001</n32CommonSkillId>
-		<n32GodSkillId>53300251</n32GodSkillId>
+		<n32GodSkillId>53300241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>37</n32Agility>
@@ -13715,7 +13715,7 @@
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301011</n32GodSkillId>
+		<n32GodSkillId>53301001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -13746,7 +13746,7 @@
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301011</n32GodSkillId>
+		<n32GodSkillId>53301001</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -13777,7 +13777,7 @@
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301021</n32GodSkillId>
+		<n32GodSkillId>53301011</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>15</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -13808,7 +13808,7 @@
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301031</n32GodSkillId>
+		<n32GodSkillId>53301021</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>16</n32Strength>
 		<n32Agility>12</n32Agility>
@@ -13839,7 +13839,7 @@
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301041</n32GodSkillId>
+		<n32GodSkillId>53301031</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>17</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -13870,7 +13870,7 @@
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301051</n32GodSkillId>
+		<n32GodSkillId>53301041</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>18</n32Strength>
 		<n32Agility>13</n32Agility>
@@ -13901,7 +13901,7 @@
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301061</n32GodSkillId>
+		<n32GodSkillId>53301051</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>19</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -13932,7 +13932,7 @@
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301071</n32GodSkillId>
+		<n32GodSkillId>53301061</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>20</n32Strength>
 		<n32Agility>14</n32Agility>
@@ -13963,7 +13963,7 @@
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301081</n32GodSkillId>
+		<n32GodSkillId>53301071</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>21</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -13994,7 +13994,7 @@
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301091</n32GodSkillId>
+		<n32GodSkillId>53301081</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>22</n32Strength>
 		<n32Agility>15</n32Agility>
@@ -14025,7 +14025,7 @@
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301101</n32GodSkillId>
+		<n32GodSkillId>53301091</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>23</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -14056,7 +14056,7 @@
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301111</n32GodSkillId>
+		<n32GodSkillId>53301101</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>24</n32Strength>
 		<n32Agility>16</n32Agility>
@@ -14087,7 +14087,7 @@
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301121</n32GodSkillId>
+		<n32GodSkillId>53301111</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>25</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -14118,7 +14118,7 @@
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301131</n32GodSkillId>
+		<n32GodSkillId>53301121</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>26</n32Strength>
 		<n32Agility>17</n32Agility>
@@ -14149,7 +14149,7 @@
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301141</n32GodSkillId>
+		<n32GodSkillId>53301131</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>27</n32Strength>
 		<n32Agility>18</n32Agility>
@@ -14180,7 +14180,7 @@
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301151</n32GodSkillId>
+		<n32GodSkillId>53301141</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>28</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -14211,7 +14211,7 @@
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301161</n32GodSkillId>
+		<n32GodSkillId>53301151</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>29</n32Strength>
 		<n32Agility>19</n32Agility>
@@ -14242,7 +14242,7 @@
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301171</n32GodSkillId>
+		<n32GodSkillId>53301161</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>31</n32Strength>
 		<n32Agility>20</n32Agility>
@@ -14273,7 +14273,7 @@
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301181</n32GodSkillId>
+		<n32GodSkillId>53301171</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>32</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -14304,7 +14304,7 @@
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301191</n32GodSkillId>
+		<n32GodSkillId>53301181</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>33</n32Strength>
 		<n32Agility>21</n32Agility>
@@ -14335,7 +14335,7 @@
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301201</n32GodSkillId>
+		<n32GodSkillId>53301191</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>34</n32Strength>
 		<n32Agility>22</n32Agility>
@@ -14366,7 +14366,7 @@
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301211</n32GodSkillId>
+		<n32GodSkillId>53301201</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>35</n32Strength>
 		<n32Agility>23</n32Agility>
@@ -14397,7 +14397,7 @@
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301221</n32GodSkillId>
+		<n32GodSkillId>53301211</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>37</n32Strength>
 		<n32Agility>24</n32Agility>
@@ -14428,7 +14428,7 @@
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301231</n32GodSkillId>
+		<n32GodSkillId>53301221</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>38</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -14459,7 +14459,7 @@
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301241</n32GodSkillId>
+		<n32GodSkillId>53301231</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>39</n32Strength>
 		<n32Agility>25</n32Agility>
@@ -14490,7 +14490,7 @@
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
 		<n32CommonSkillId>933101</n32CommonSkillId>
-		<n32GodSkillId>53301251</n32GodSkillId>
+		<n32GodSkillId>53301241</n32GodSkillId>
 		<n32MainAtt>3</n32MainAtt>
 		<n32Strength>41</n32Strength>
 		<n32Agility>26</n32Agility>
