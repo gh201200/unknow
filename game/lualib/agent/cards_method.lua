@@ -55,7 +55,11 @@ local CardsMethod =
 			v.count = mClamp(v.count + g_shareData.heroRepository[dataId].n32CCardNum * num, 0, math.maxint32)
 		else
 			v = self.initCard(dataId)
-			v.count = mClamp((num-1) * g_shareData.heroRepository[dataId].n32CCardNum, 0, math.maxint32)
+			if Macro_GetCardColor(dataId) == 0 then
+				v.count = mClamp(num * g_shareData.heroRepository[dataId].n32CCardNum, 0, math.maxint32)
+			else
+				v.count = mClamp((num-1) * g_shareData.heroRepository[dataId].n32CCardNum, 0, math.maxint32)
+			end
 			self.units[v.uuid] =  v
 		end
 		self:sendCardData( v )

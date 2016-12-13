@@ -46,6 +46,10 @@ function REQUEST.explore_goFight( args )
 	local errorCode = 0
 	repeat
 		local card = user.cards:getCardByUuid( args.uuid )
+		if Macro_GetCardColor( card.dataId ) == 0 then
+			errorCode = -1
+			break
+		end
 		if not card then
 			errorCode = -1
 			break
