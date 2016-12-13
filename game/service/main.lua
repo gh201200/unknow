@@ -11,10 +11,13 @@ skynet.start(function()
 			
 	math.randomseed(skynet.now())
 	local monitor = skynet.monitor "simplemonitor"
-	
-	skynet.uniqueservice("protod")
 	local console = skynet.newservice("console")
 	skynet.newservice("debug_console",8000)
+	
+	--启动mylog服务
+	snax.uniqueservice("mylog")
+	
+	skynet.uniqueservice("protod")
 	skynet.uniqueservice("globaldata")
 	--启动数据库服务
 	local database = skynet.uniqueservice ("database")
@@ -42,8 +45,6 @@ skynet.start(function()
 	--启动GM服务
 	snax.uniqueservice("gm", watchdog)
 
-	--启动log服务
-	snax.uniqueservice("mylog")
 	
 	CD.post.Start()	
 

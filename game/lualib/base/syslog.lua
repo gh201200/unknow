@@ -71,10 +71,11 @@ function syslog.errf (...)
 	writef (5, ...)
 end
 
-function syslog.logmy( str )
+function syslog.logmy( name, args )
 	if not mylog then
 		mylog = snax.uniqueservice("mylog")
 	end
+	mylog.post.log(name, args)
 end
 
 syslog.level (tonumber (config.log_level) or 3)
