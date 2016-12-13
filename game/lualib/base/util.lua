@@ -211,11 +211,7 @@ function openPackage( pkgIds )
 		if r then
 			local itemId = r.n32ItemId
 			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
-			if items[itemId] then
-				items[itemId] = items[itemId] + itemNum
-			else
-				items[itemId] = itemNum
-			end
+			table.insert(items, { itemId=itemId, itemNum=itemNum })
 		end
 	end
 	return items

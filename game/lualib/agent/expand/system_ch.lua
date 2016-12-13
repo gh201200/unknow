@@ -29,8 +29,8 @@ end
 function CMD.getBindSkills( heroId )
 	local r = {}
 	local v = user.cards:getCardByDataId( heroId )
-	for i=0, 7 do
-		local skill = user.skills:getSkillBySerialId( v["skill"..i] )
+	for i=1, 8 do
+		local skill = user.skills:getSkillBySerialId( v["skill"..(i-1)] )
 		r[i] = skill.dataId
 	end
 	return r
@@ -84,7 +84,7 @@ local function usePackageItem( itemId )
 	for w in string.gmatch(itemDat.szRetain3, "%d+") do
 		table.insert(pkgIds, tonumber(w))
 	end
-	local items = openPackage( pkgIds )	
+	local items = openPackage( pkgIds )
 	user.servicecmd.addItems("buyShopItem", items)
 	return items
 end
@@ -143,8 +143,8 @@ function REQUEST.buyShopItem( args )
 			local items = usePackageItem( shopDat.n32GoodsID )
 			local index = 1
 			for k, v in pairs(items) do
-				ids[index] = k
-				ids[index+1] = v
+				ids[index] = v.itemId
+				ids[index+1] = v.itemNum
 				index = index + 2
 			end
 			 
@@ -177,7 +177,6 @@ function REQUEST.reEnterRoom( args )
 	if args.isin then
 		local sm = snax.uniqueservice("servermanager")
 		local ret, room = sm.req.getroomif( user.account.account_id )
-		ret = false
 		if ret then
 			user.servicecmd.enterMap(room, ret)
 			return {errorCode = 0}

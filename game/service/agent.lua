@@ -273,24 +273,24 @@ function CMD.addItems(op, items)
 	local cards = {}
 	local skillMats = {}
 	for k, v in pairs(items) do
-		local item = g_shareData.itemRepository[k]
+		local item = g_shareData.itemRepository[v.itemId]
 		if item.n32Type == 3 then	--英雄卡
 			if not cards[item.n32Retain1] then
-				cards[item.n32Retain1] = v
+				cards[item.n32Retain1] = v.itemNum
 			else
-				cards[item.n32Retain1] = cards[item.n32Retain1] + v
+				cards[item.n32Retain1] = cards[item.n32Retain1] + v.itemNum
 			end
 		elseif item.n32Type == 4 then	--礼包宝箱
 			syslog.err("addItems: can not add package["..v.itemId.."]")
 		elseif item.n32Type == 5 then	--战斗外金币
-			gold = gold + item.n32Retain1 * v
+			gold = gold + item.n32Retain1 * v.itemNum
 		elseif item.n32Type == 6 then	--钻石
-			money = money + item.n32Retain1 * v
-		elseif itemn32Type == 7 then	--技能材料
+			money = money + item.n32Retain1 * v.itemNum
+		elseif item.n32Type == 7 then	--技能材料
 			if not skillMats[item.n32Retain1] then
-				skillMats[item.n32Retain1] = v
+				skillMats[item.n32Retain1] = v.itemNum
 			else
-				skillMats[item.n32Retain1] = skillMats[item.n32Retain1] + v
+				skillMats[item.n32Retain1] = skillMats[item.n32Retain1] + v.itemNum
 			end
 		end
 	end
