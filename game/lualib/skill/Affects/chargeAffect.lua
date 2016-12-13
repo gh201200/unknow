@@ -9,14 +9,12 @@ function chargeAffect:ctor(owner,source,data,skillId)
 	self.super.ctor(self,owner,source,data)
 	self.effectId = data[3] or 0
 	--self.distance = data[2] or 0
-	self.speed = 9 -- 冲锋速度
-	--self.skilldata = self.owner.spell.skilldata
-	local tgt = self.source
+	self.speed = 4 -- 冲锋速度
+	local tgt = self.owner:getTarget()
 	self.distance = self.owner:getDistance(tgt) 
 	self.effectTime = math.floor(1000 * self.distance / self.speed) 
 	self.tgtPos = vector3.create(tgt.pos.x,0,tgt.pos.z)
 	self.radius = 0.1 --self.skilldata.n32Radius / 10000
-	--self.tgtBuff = self.skilldata.szTargetAffect
 	self.target = tgt
 end
 
