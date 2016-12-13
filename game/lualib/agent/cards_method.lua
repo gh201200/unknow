@@ -1,13 +1,15 @@
 local skynet = require "skynet"
 local syslog = require "syslog"
 local uuid = require "uuid"
+local Quest = require "quest.quest"
 
 ----------------cards func---------------------
 local CardsMethod = 
 {
 	--
 	initCard = function(_dataId)
-		return 
+		local cardDat = g_shareData.heroRepository[_dataId]
+		local card = 
 		{
 			uuid = uuid.gen(), 
 			dataId = _dataId, 
@@ -22,6 +24,16 @@ local CardsMethod =
 			skill6=0,
 			skill7=0
 		}
+		
+		local index = 0
+		for k, v in pairs(Quest.AutoGainSkills) do
+			local skillDat = g_shareData.skillRepository[v]
+			if bit_and(cardDat.n32Camp, skillDat.n32Faction) ~= 0 then
+				card["skill"..index] = Macro_GetSkillSerialId(v)
+				index = index + 1
+			end
+		end
+		return card
 	end;
 	--
 	getCardBySerialId = function(self, _serId)

@@ -190,6 +190,7 @@ function REQUEST.bindSkill( args )
 	local errorCode = 0
 	local card = user.cards:getCardByUuid( args.uuidcard )
 	local skill = user.skills:getSkillByUuid( args.uuidskill )
+	print( user.skills.units )
 	repeat
 		if not card then
 			errorCode = -1
