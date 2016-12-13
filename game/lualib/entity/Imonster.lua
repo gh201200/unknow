@@ -54,7 +54,7 @@ function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
 	--强制移动状态 ai不更新	
 	if self.curActionState < ActionState.forcemove then
-		--self.ai:update(dt)
+		self.ai:update(dt)
 	end
 	
 	self.skillCD  = self.skillCD - dt
@@ -68,6 +68,9 @@ function IMonster:calcStats()
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
 	self.attDat.n32MainAtt = 0
+	self.attDat.n32Strength = 0
+	self.attDat.n32Intelligence = 0
+	self.attDat.n32Agility = 0
 
 	self:calcHpMax()
 	self:calcMpMax()

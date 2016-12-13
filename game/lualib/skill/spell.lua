@@ -24,6 +24,7 @@ function spell:ctor(entity)
 	self.sheduleSpells = {} --延迟效果
 	self.isSheule = false
 	self.passtiveSpells = {} --被动技能
+--	self.dir = vector3.create(0,0,0)  
 end
 
 function spell:init(skilldata,skillTimes)
@@ -145,27 +146,24 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
+--	print("selects===",#selects)
 	if skilldata.szSelectTargetAffect ~= "" then
-		print("==========")
 		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
 	end
 	local targets = {}
-	--子弹普通弹道
-	print("selects===",#selects)
+	if skilldata.szMyAffect ~= "" then
+		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
+	end
 	if skilldata.n32BulletType ~= 0 then
 		for _k,_v in pairs(selects) do
 			g_entityManager:createFlyObj(source,_v,skilldata)
 		end
 	else
-		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)	
-		print("targets ==",#targets)	
+		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
+	--	print("targets ==",#targets)	
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end
-	end
-	if skilldata.szMyAffect ~= "" then
-		--print("===targets=",#targets)
-		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
 	end
 
 end

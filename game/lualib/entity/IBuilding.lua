@@ -78,7 +78,10 @@ function IBuilding:calcStats()
 	self.attDat.n32LStrength = 0
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
-	
+	self.attDat.n32Strength = 0
+	self.attDat.n32Intelligence = 0
+	self.attDat.n32Agility = 0
+
 	self:calcHpMax()
 	self:calcMpMax()
 	self:calcAttack()

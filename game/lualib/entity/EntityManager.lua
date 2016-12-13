@@ -161,7 +161,8 @@ local function getEntityListByType(list,_type)
 
 end
 --获取施法目标的范围的目标
-function EntityManager:getSkillSelectsEntitys(source,target,skilldata)
+function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
+	extra = extra or source.dir
 	local tgt = target 
 	if skilldata.n32SkillTargetType == 0 then
 		tgt = source
@@ -217,7 +218,15 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata)
 		end		
 	--	print("#slects===",#selects)	
 	elseif skilldata.szSelectRange[1] == 'sector' then
-		
+		for _k,_v in pairs(typeTargets) do
+			local center = source.pos
+			local uDir = extra --附加参数方向
+			local r = skilldata.szSelectRange[2]
+			local theta = skilldata.szSelectRange[3]
+			if ptInSector(_v.pos,center,uDir,r,theta) then
+				table.insert(selects,_v)
+			end
+		end		
 	elseif skilldata.szSelectRange[1] == 'rectangle' then
 		local w = skilldata.szSelectRange[3]
 		local h = skilldata.szSelectRange[2]
@@ -270,9 +279,8 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 	--print("#typeTargets",#typeTargets)
 	for _tk,_tv in pairs(typeTargets) do
 		for _sk,_sv in pairs(selects) do
-			--print("sv:",_sv.serverId,"tv",_tv.serverId)
+		--	print("sv:",_sv.serverId,"tv",_tv.serverId)
 			if skilldata.szAffectRange[1] == "single" and _sv == _tv then
-				--print("111111111")
 				table.insert(affects,_tv)
 			elseif skilldata.szAffectRange[1] == "circle" then
 				local disVec = _tv.pos:return_sub(_sv.pos)

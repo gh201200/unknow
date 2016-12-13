@@ -165,17 +165,6 @@
 		<n32layer>0</n32layer>
 		<szillustration>空弹道</szillustration>
 	</item>
-	<item id="20008">
-		<n32type>3</n32type>
-		<szassert>Zhongbiaogong_Bullet_01</szassert>
-		<n32time>1.5</n32time>
-		<n32speed>3</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>钟表匠普通攻击弹道</szillustration>
-	</item>
 	<item id="30001">
 		<n32type>2</n32type>
 		<szassert>Tiannv_Bullet_hit_01</szassert>
@@ -362,17 +351,6 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
 		<szillustration>受到子弹打击</szillustration>
-	</item>
-	<item id="30113">
-		<n32type>2</n32type>
-		<szassert>Luolei_1</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>落雷</szillustration>
 	</item>
 	<item id="31001">
 		<n32type>1</n32type>

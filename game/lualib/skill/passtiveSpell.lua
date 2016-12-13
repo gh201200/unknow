@@ -118,6 +118,7 @@ function passtiveSpell:trigger(_cond)
 			elseif self.skilldata.n32SkillTargetType == 1 then
 				tgt = self.target
 			end
+			print("trigger ===",self.skilldata.n32CD)
 			self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
 			local _type = self.skilldata.szSelectRange[1]
 			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
