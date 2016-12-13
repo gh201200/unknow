@@ -204,7 +204,6 @@ function IMapPlayer:onExp()
 end
 
 function IMapPlayer:addSkill(skillId, updateToClient)
-	
 	if self.skillTable[skillId]  == nil then
 		self.skillTable[skillId] = 1
 	else
@@ -213,7 +212,15 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 	
 	local skilldata = g_shareData.skillRepository[skillId + self.skillTable[skillId] - 1]	
 	--被动技能
-	if skilldata.n32Active == 1 then	
+	if skilldata.n32Active == 1 then
+		for i=#(self.spell.passtiveSpells),1,-1 do
+			local v = self.spell.passtiveSpells[i]
+			if v.skilldata.n32SeriId == skilldata.n32SeriId then
+				--移除旧的被动技能
+				v:onDead()
+				table.remove(self.spell.passtiveSpells,i)
+			end
+		end	
 		local ps = passtiveSpell.new(self,skilldata)
 		table.insert(self.spell.passtiveSpells,ps)
 	end

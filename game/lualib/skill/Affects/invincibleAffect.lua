@@ -4,6 +4,7 @@ local invincibleAffect = class("invincibleAffect",Affect)
 function invincibleAffect:ctor(entity,source,data)
 	self.super.ctor(self,entity,source,data)
 	self.effectTime = self.data[2] or 0
+	self.effectTime = self.effectTime * 1000
 	self.effectId = self.data[3]
 	self.control = AffectState.Invincible 
 end

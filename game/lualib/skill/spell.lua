@@ -34,6 +34,7 @@ function spell:init(skilldata,skillTimes)
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
 	self.triggerTime = skilldata.n32TriggerTime or 0
+	self.CTriggerTime = self.skilldata.n32AffectGap * 1000 
 	if self.triggerTime == 0 then
 		self.triggerTime = skillTimes["trigger"]
 	end
@@ -43,7 +44,7 @@ function spell:init(skilldata,skillTimes)
 	end
 	--持续施法
 	if self.skilldata.n32NeedCasting ~= 0 then
-		self.channalTime = self.skilldata.n32AffectTime
+		self.channelTime = self.skilldata.n32AffectTime * 1000
 	end
 end
 
@@ -272,6 +273,8 @@ function spell:onReady(dt)
 			self.status = SpellStatus.Cast
 		elseif self.skilldata.n32NeedCasting == 2 then
 			self.status = SpellStatus.ChannelCast
+		elseif self.skilldata.n32NeedCasting == 1 then
+			self.status = SpellStatus.ChannelCast
 		end
 	end
 end
@@ -311,12 +314,14 @@ function spell:onChannelCast(dt)
 	self.channelTime = self.channelTime - dt
 	if self.channelTime < 0 then
 		self.status = SpellStatus.End
+		print("持续 ---结束")
 		return
 	end
 	--持续施法中
 	self.CTriggerTime = self.CTriggerTime - dt
+	print("CTriggerTime<=0:",self.CTriggerTime,dt)
 	if self.CTriggerTime <= 0 then
-		self.CTriggerTime = self.skilldata.n32AffectGap --间隔时间
+		self.CTriggerTime = self.skilldata.n32AffectGap  * 1000--间隔时间
 		self:onTrigger(self.skilldata,self.source,self.srcTarget)
 	end
 end

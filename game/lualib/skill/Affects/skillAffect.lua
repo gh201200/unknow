@@ -10,7 +10,6 @@ function skillAffect:ctor(entity,source,data,skillId)
 	self.effectId = data[7] or 0
 	self.effectTime = self.leftTime 
 --	self.projectId = skillId * 100000 + self.effectId
-	self:onEnter()
 end
 function skillAffect:onEnter()	
 	self.super.onEnter(self)

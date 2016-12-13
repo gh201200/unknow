@@ -788,7 +788,7 @@ end
 function Ientity:calcStrength()
 	self:setStrength(math.floor(
 		math.floor((self.attDat.n32Strength
-		+ self.attDat.n32LStrength * self:getLevel()) 
+		+ self.attDat.n32LStrength * (self:getLevel()-1)) 
 		* (1.0 + self:getMidStrengthPc())) 
 		+ self:getMidStrength())
 	)
@@ -797,7 +797,7 @@ end
 function Ientity:calcAgility()
 	self:setAgility(math.floor(
 		math.floor((self.attDat.n32Agility 
-		+ self.attDat.n32LAgility * self:getLevel()) 
+		+ self.attDat.n32LAgility * (self:getLevel() - 1)) 
 		* (1.0 + self:getMidAgilityPc())) 
 		+ self:getMidAgility())
 	)
@@ -806,7 +806,7 @@ end
 function Ientity:calcIntelligence()
 	self:setIntelligence(math.floor(
 		math.floor((self.attDat.n32Intelligence 
-		+ self.attDat.n32LIntelligence * self:getLevel()) 
+		+ self.attDat.n32LIntelligence * (self:getLevel() - 1)) 
 		* (1.0 + self:getMidIntelligencePc())) 
 		+ self:getMidIntelligence())
 	)
@@ -840,11 +840,11 @@ end
 function Ientity:calcAttack()
 	local addVal = 0
 	if self.attDat.n32MainAtt==1 then
-		addVal = math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Attack)
+		addVal = math.floor((self.attDat.n32Strength + self.attDat.n32LStrength * (self:getLevel()-1)) * g_shareData.lzmRepository[1].n32Attack)
 	elseif self.attDat.n32MainAtt==2 then
-		addVal =  math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Attack)
+		addVal =  math.floor((self.attDat.n32Agility + self.attDat.n32LAgility * (self:getLevel() - 1)) * g_shareData.lzmRepository[2].n32Attack)
 	elseif self.attDat.n32MainAtt==3 then
-		addVal =  math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Attack)
+		addVal =  math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32Attack)
 	end
 	self:setAttack(math.floor(
 		(self.attDat.n32Attack  + addVal)* (1.0 + self:getMidAttackPc())) 
@@ -856,9 +856,9 @@ function Ientity:calcDefence()
 	self:setDefence(math.floor(
 		math.floor(self.attDat.n32Defence * (1.0 + self:getMidDefencePc())) 
 		+ self:getMidDefence() 
-		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Defence)
-		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Defence)
-		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Defence)
+		+ math.floor((self.attDat.n32Strength + self.attDat.n32LStrength * (self:getLevel() - 1) ) * g_shareData.lzmRepository[1].n32Defence)
+		+ math.floor((self.attDat.n32Agility + self.attDat.n32LAgility * (self:getLevel() - 1) ) * g_shareData.lzmRepository[2].n32Defence)
+		+ math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1) ) * g_shareData.lzmRepository[3].n32Defence)
 		)
 	)
 end
@@ -867,9 +867,9 @@ function Ientity:calcASpeed()
 	self:setASpeed(
 		self.attDat.n32ASpeed / ( 
 			1 + self:getMidASpeed() 
-			+ self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32ASpeed 
-			+ self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32ASpeed
-			+ self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32ASpeed
+                	+ (self.attDat.n32Strength + self.attDat.n32LStrength * (self:getLevel() - 1)) * g_shareData.lzmRepository[1].n32ASpeed
+                	+ (self.attDat.n32Agility + self.attDat.n32LAgility * (self:getLevel() - 1 )) * g_shareData.lzmRepository[2].n32ASpeed
+                	+ (self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32ASpeed
 		)
 	)
 end
@@ -886,9 +886,9 @@ function Ientity:calcRecvHp()
 	self:setRecvHp(math.floor(
 		self.attDat.n32RecvHp * (1.0 + self:getMidRecvHpPc()))
 		+ self:getMidRecvHp()
-		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32RecvHp)
-		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32RecvHp)
-		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32RecvHp)
+                + math.floor((self.attDat.n32Strength + self.attDat.n32LStrength * (self:getLevel() - 1)) * g_shareData.lzmRepository[1].n32RecvHp)
+                + math.floor((self.attDat.n32Agility + self.attDat.n32LAgility * (self:getLevel() - 1 )) * g_shareData.lzmRepository[2].n32RecvHp)
+                + math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32RecvHp)
 	)
 end
 
@@ -896,9 +896,9 @@ function Ientity:calcRecvMp()
 	self:setRecvMp(math.floor(
 		self.attDat.n32RecvMp * (1.0 + self:getMidRecvMpPc()))
 		+ self:getMidRecvMp()
-		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32RecvMp)
-		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32RecvMp)
-		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32RecvMp)
+                + math.floor((self.attDat.n32Strength + self.attDat.n32LStrength * (self:getLevel() - 1)) * g_shareData.lzmRepository[1].n32RecvMp)
+                + math.floor((self.attDat.n32Agility + self.attDat.n32LAgility * (self:getLevel() - 1 )) * g_shareData.lzmRepository[2].n32RecvMp)
+                + math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32RecvMp)	
 	)
 end
 
