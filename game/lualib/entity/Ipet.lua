@@ -45,7 +45,10 @@ function IPet:calcStats()
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
 	self.attDat.n32MainAtt = 0
-	
+	self.attDat.n32Strength = 0
+	self.attDat.n32Intelligence = 0
+	self.attDat.n32Agility = 0
+
 	local funs = {"HpMaxPc","HpMax","AttackPc","Attack","DefencePc","Defence","ASpeed","MSpeedPc","MSpeed","AttackRangePc","AttackRange"}
 	for _k,_v in pairs(funs) do
 		local f = self["add" .. _v]

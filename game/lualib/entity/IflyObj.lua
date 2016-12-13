@@ -22,7 +22,7 @@ function IflyObj:ctor(src,tgt,skilldata,extra1,extra2)
         self.dir:normalize()
 	self.moveSpeed = self.effectdata.n32speed
 	self.targets = {}
-	self.lifeTime = self.effectdata.n32time / 1000.0
+	self.lifeTime = self.effectdata.n32time
 	self.entityType = EntityType.flyObj 
 	self.radius = self.effectdata.n32Redius
 	self.isDead = false
@@ -39,7 +39,7 @@ function IflyObj:ctor(src,tgt,skilldata,extra1,extra2)
 			self.caster = extra1 --施法者
 			self.parent = extra2 --父弹道
 			self.linkIndex = self.parent.linkIndex + 1
-			print("linkIndex==",self.linkIndex)
+			--print("linkIndex==",self.linkIndex)
 		end
 		local dis = self.source:getDistance(self.target)
 		if self.moveSpeed == -1 then
@@ -56,7 +56,6 @@ function IflyObj:ctor(src,tgt,skilldata,extra1,extra2)
 	if self.target:getType() ~= "transform" then
 		r.acceperId = self.target.serverId
 	end
---	print("r====",self.caster.serverId,self.source.serverId,self.target.serverId)
 	g_entityManager:sendToAllPlayers("pushEffect",r)
 
 end
@@ -91,6 +90,7 @@ local function isInParentLinkTarget(_link,tgt)
 end
 local function deadParentLink(_link)
 	if _link ~= nil then
+		print("deadParentLink")
 		_link.isDead =  true
 		deadParentLink(_link.parent)
 	end
@@ -101,16 +101,14 @@ function IflyObj:updateLink(dt)
 	self.flyTime = self.flyTime - dt
 	if self.flyTime >= 0 then return end --未生效
 	if self.lifeTime <= 0 then return end
-	self.lifeTime = self.lifeTime - dt
-	local targets = {self.target}
-	self.caster.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,targets,self.skilldata)
+	self.lifeTime = -1 --self.lifeTime - dt
 	--print("updateLink",self.skilldata.szAffectRange)
 	local tgt = nil
 	if self.linkIndex < self.skilldata.szAffectRange[3] then
 	   for i=#g_entityManager.entityList, 1, -1 do
 		local v = g_entityManager.entityList[i]
 		if v:getType() ~= "transform" and self.caster:isKind(v) == false then
-			local dis = self.source:getDistance(v)
+			local dis = self.target:getDistance(v)
 			if isInParentLinkTarget(self,v) == false and self.skilldata.szAffectRange[2] >= dis then
 				tgt = v
 				break
@@ -119,12 +117,13 @@ function IflyObj:updateLink(dt)
 	    end	
 	end
 	if tgt ~= nil then
-		print("创建新的弹道")
 		g_entityManager:createFlyObj(self.target,tgt,self.skilldata,self.caster,self)
 	else
 		--清除所有的父节点
 		deadParentLink(self)	
 	end
+	local targets = {self.target}
+	self.caster.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,targets,self.skilldata)
 end
 --碰撞弹道
 function IflyObj:updateCollider(dt)
@@ -136,12 +135,13 @@ function IflyObj:updateCollider(dt)
 	self.pos:set(dst.x,0,dst.z)
 	local _kind = true
 	local _bomb = false
-	if self.skilldata.n32BulleTarget == 0 then _kind = false end --敌方
+	if self.skilldata.n32BulletTarget == 0 then _kind = false end --敌方
 	
 	if self.flyDistance >= self.skilldata.n32BulletRange then
 		print("outof distance===")
 		_bomb = true	
 	end
+	local tgt = nil
 	if _bomb == false then
 		for i=#g_entityManager.entityList, 1, -1 do
 			local v = g_entityManager.entityList[i]
@@ -150,35 +150,40 @@ function IflyObj:updateCollider(dt)
 					local dis  = self:getDistance(v)
 					if dis <= self.radius then
 						_bomb = true
-						print("collider bomm",v.serverId)
+						tgt = v
 						break
 					end
 				end
 			end
 		end
 	end
-	if _bomb == true then
-		--推送爆炸特效	
+	if _bomb == true  then
 		local d = {acceperId = 0,producerId = self.source.serverId,effectId = self.skilldata.n32BulletId,effectTime = 0,flag = 1}
 		g_entityManager:sendToAllPlayers("pushEffect",d)
 
-		local r = {acceperId = 0,producerId = self.source.serverId,effectId = self.skilldata.n32BulletBombId,effectTime = 0,flag = 0}
-		r.posX = tostring(self.pos.x)
-		r.posZ = tostring(self.pos.z)
-		r.dirX = tostring(self.dir.x)
-		r.dirZ = tostring(self.dir.z)
-		g_entityManager:sendToAllPlayers("pushEffect",r)
-				
-		local selects = { self }
-		local targets = g_entityManager:getSkillAffectEntitys(self.source,selects,self.skilldata,self.dir)
-		print("target===",#targets)
-		self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,targets,self.skilldata)
+		if self.skilldata.n32BulletBombId ~= nil then
+			--推送爆炸特效	
+			local r = {acceperId = 0,producerId = self.source.serverId,effectId = self.skilldata.n32BulletBombId,effectTime = 0,flag = 0}
+			r.posX = tostring(self.pos.x)
+			r.posZ = tostring(self.pos.z)
+			r.dirX = tostring(self.dir.x)
+			r.dirZ = tostring(self.dir.z)
+			g_entityManager:sendToAllPlayers("pushEffect",r)
+		end
+                local selects = { tgt }
+                local targets = g_entityManager:getSkillAffectEntitys(self.source,selects,self.skilldata,self.dir)
+                self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,targets,self.skilldata)	
 		self.isDead = true
 	end
 	
 end
 
 function IflyObj:updateNoTarget(dt)
+	if self.lifeTime <= 0 then
+		self.isDead = true
+		return
+	end
+	dt = dt / 1000
 	self.lifeTime = self.lifeTime - dt
 	dst:set(self.dir.x, self.dir.y, self.dir.z)
         dst:mul_num(self.moveSpeed * dt)
@@ -192,7 +197,7 @@ function IflyObj:updateNoTarget(dt)
 				if dis <= self.radius  then	
 					--添加buff
 					self.targets[v.serverId] = 1
-					v.affectTable:buildAffects(self.source,self.skilldata.szTargetAffect)	
+					v.affectTable:buildAffects(self.source,self.skilldata.szAffectTargetAffect,self.skilldata.id)	
 				end
 			end				
 		end

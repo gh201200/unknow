@@ -5,9 +5,12 @@ function skillAffect:ctor(entity,source,data,skillId)
 	self.super.ctor(self,entity,source,data,skillId)
 	self.triggerTime = data[5] or 0 
 	self.leftTime = data[6] or 0
+	self.triggerTime = self.triggerTime * 1000
+	self.leftTime = self.leftTime * 1000
 	self.effectId = data[7] or 0
 	self.effectTime = self.leftTime 
 --	self.projectId = skillId * 100000 + self.effectId
+	self:onEnter()
 end
 function skillAffect:onEnter()	
 	self.super.onEnter(self)
@@ -27,7 +30,7 @@ function skillAffect:onExec(dt)
 	end
 	self.triggerTime = self.triggerTime - dt
 	if self.triggerTime <= 0 then
-		self.triggerTime = self.data[5]
+		self.triggerTime = self.data[5] * 1000
 		self:calAffect()
 	end
 end

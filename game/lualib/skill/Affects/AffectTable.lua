@@ -193,7 +193,7 @@ end
 function AffectTable:synClient(aff,_remove)
 	_remove  = _remove or 0
 	local srcId = 0
-	if aff.source ~= 0 then
+	if aff.source ~= nil   and aff.source.serverId ~= nil then
 		srcId = aff.source.serverId
 	end
 	local r = {acceperId = self.owner.serverId,producerId = srcId,effectId = aff.effectId,effectTime = aff.effectTime,flag = _remove}

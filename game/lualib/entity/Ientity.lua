@@ -605,7 +605,7 @@ function Ientity:onForceMove(dt)
 	self:setPos(mv_dst.x, 0, mv_dst.z)
 	
 	local len  = vector3.len(self.pos,self.targetPos.pos)
-	if len >= 0.001 then 
+	if len >= 0.001 then
 		self:advanceEventStamp(EventStampType.Move)
 	end	
 end
@@ -817,10 +817,10 @@ function Ientity:calcHpMax()
 	self:setHpMax(math.floor(
 		self.attDat.n32Hp * (1.0 + self:getMidHpMaxPc())) 
 		+ self:getMidHpMax() 
-		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Hp)
-		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Hp)
-		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Hp)
-	)
+		+ math.floor((self.attDat.n32Strength + self.attDat.n32LStrength * (self:getLevel() - 1)) * g_shareData.lzmRepository[1].n32Hp)
+                + math.floor((self.attDat.n32Agility + self.attDat.n32LAgility * (self:getLevel() - 1 )) * g_shareData.lzmRepository[2].n32Hp)
+                + math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32Hp)
+		)
 
 	self:addHp(math.floor(pc * self:getHpMax()) - self:getHp(),HpMpMask.UpgradeHp,self)
 end
@@ -830,9 +830,9 @@ function Ientity:calcMpMax()
 	self:setMpMax(math.floor(
 		self.attDat.n32Mp * (1.0 + self:getMidMpMaxPc())) 
 		+ self:getMidMpMax() 
-		+ math.floor(self.attDat.n32LStrength * self:getLevel() * g_shareData.lzmRepository[1].n32Mp)
-		+ math.floor(self.attDat.n32LAgility * self:getLevel() * g_shareData.lzmRepository[2].n32Mp)
-		+ math.floor(self.attDat.n32LIntelligence * self:getLevel() * g_shareData.lzmRepository[3].n32Mp)
+		+ math.floor((self.attDat.n32Strength + self.attDat.n32LStrength * (self:getLevel() - 1)) * g_shareData.lzmRepository[1].n32Mp)
+		+ math.floor((self.attDat.n32Agility + self.attDat.n32LAgility * (self:getLevel() - 1 )) * g_shareData.lzmRepository[2].n32Mp)
+		+ math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32Mp)
 	)
 	self:addMp(math.floor(pc * self:getMpMax()) - self:getMp(),HpMpMask.UpgradeMp,self)
 end
@@ -1064,7 +1064,6 @@ function Ientity:setCastSkillId(id)
 		return 0
 	end
 	local errorcode = self:canSetCastSkill(id) 
-	print("errorcode===",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	self.ReadySkillId = id
 	--[[
