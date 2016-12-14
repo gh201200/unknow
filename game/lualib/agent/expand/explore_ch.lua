@@ -172,7 +172,10 @@ function REQUEST.exploreEnd( args )
 				if not isOkForExploreCon(card, conDat) then
 					conDat = g_shareData.exploreRepository[i+1][1]
 				end
-				gains = openPackage( conDat.szDrop )
+				local pkgs = openPackage( conDat.szDrop )
+				for k, v in pairs(pkgs) do
+					table.insert(gains, {itemId=v.itemId, itemNum=v.itemNum})
+				end
 			end
 		end
 		user.servicecmd.addItems("exploreEnd", gains)
