@@ -58,6 +58,14 @@ CLIENT_GM_CMD['addskill'] = function( args )
 	skynet.call(user.MAP, "lua", "addskill", p)
 end;
 
+CLIENT_GM_CMD['endbattle'] = function( args )
+	if user.MAP then
+		local p = { id=user.account.account_id, code=tonumber(args.params[1]) }
+		skynet.call(user.MAP, "lua", "endbattle", p)
+	end
+end;
+
+
 function CMD.gm_add_money( args )
 	user.account:addGold("gm_add_money", args.gold)
 	user.account:addMoney("gm_add_money", args.money)

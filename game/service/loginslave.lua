@@ -17,6 +17,7 @@ local session_expire_time_in_second
 local connection = {}
 local saved_session = {}
 
+local sharedata = require "sharedata"
 local slaved = {}
 
 local CMD = {}
@@ -28,6 +29,8 @@ function CMD.init (m, id, conf)
 	auth_timeout = conf.auth_timeout * 100
 	session_expire_time = conf.session_expire_time * 100
 	session_expire_time_in_second = conf.session_expire_time
+
+	g_shareData  = sharedata.query "gdd"
 end
 
 local function close (fd)

@@ -5,9 +5,9 @@ local Map = class("Map")
 --width 6.8 = 17*0.4
 --height 15.6 = 39*0.4
 
-local MAP_XGRID_NUM = 34
-local MAP_ZGRID_NUM = 78
-Map.MAP_GRID_SIZE = 0.2
+local MAP_XGRID_NUM = 68
+local MAP_ZGRID_NUM = 156
+Map.MAP_GRID_SIZE = 0.1
 
 local dir = {
 	[0] = {0,1},
@@ -68,6 +68,8 @@ function Map:load(terrain)
          	height = MAP_ZGRID_NUM,
          	obstacle = obstacle,
  	}
+
+--	self:dump()
 end
 
 function Map:dump()

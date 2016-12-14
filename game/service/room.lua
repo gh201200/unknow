@@ -366,6 +366,27 @@ function REQUEST.disconnect(response, agent)
 	EntityManager:disconnectAgent(agent)
 end
 
+function REQUEST.endbattle(response, args)
+	local player = EntityManager:getPlayerByPlayerId(args.id)
+	local res = args.code
+	if res == 1 then	--we win
+		if player:isRed() then
+			BattleOverManager.BlueHomeBuilding:addHp(-math.maxint32, nil, player)
+		else
+			BattleOverManager.RedHomeBuilding:addHp(-math.maxint32, nil, player)
+		end
+	elseif res == 2 then	--they win
+		if player:isRed() then
+			BattleOverManager.RedHomeBuilding:addHp(-math.maxint32, nil, player)
+		else
+			BattleOverManager.BlueHomeBuilding:addHp(-math.maxint32, nil, player)
+		end
+	elseif res == 3 then	--peace
+		BattleOverManager.RestTime = 0
+	end
+	response(true, nil)
+end
+
 
 skynet.start(function ()
 	init()

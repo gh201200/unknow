@@ -230,7 +230,6 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 			skillId = skillId,
 			level = self.skillTable[skillId] 
 		}
-		print("msg:",msg)
 		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
 	end
 end
