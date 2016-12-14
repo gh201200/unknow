@@ -48,10 +48,15 @@ function accept.add_card( param )
 		local card = skynet.call(database, "lua", "cards", "loadBySerialId", v.account_id, _serId) 
 		if not card then
 			card = CardMethod.initCard( itemDat.n32Retain1 )
-			card.count = (q-1) * g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
+			if Macro_GetCardColor( itemDat.n32Retain1 ) == 0 then 
+				card.count = mClamp(q.itemNum * g_shareData.heroRepository[itemDat.n32Retain1].n32CCardNum, 0, math.maxint32)
+			else
+				card.count = mClamp((q.itemNum-1) * g_shareData.heroRepository[itemDat.n32Retain1].n32CCardNum, 0, math.maxint32)
+			end
 		else
-			card.count = card.count + q *  g_shareData.heroRepository[itemDat.n32Retain1].n32WCardNum 
+			card.count = mClamp(card.count + q.itemNum *  g_shareData.heroRepository[itemDat.n32Retain1].n32CCardNum, 0, math.maxint32) 
 		end
+		
 		skynet.call(database, "lua", "cards","addCard", account_id, card)
 
 		syslog.infof("GM[%s]:add_card:%d, %d", account_id, dataId, cardNum)
