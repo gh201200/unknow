@@ -5,7 +5,7 @@ function passtiveSpell:ctor(src,skilldata)
 	self.isDead = false
 	self.attackTicks = 0
 	self.bAttackTicks = 0
-	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition ==8 then
+	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition ==8 or self.skilldata.n32TriggerCondition == 9 then
 		self.targets = {}
 	end
 	if self.skilldata.n32TriggerCondition == 9 then
@@ -63,7 +63,7 @@ end
 function passtiveSpell:onDead()
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 or self.skilldata.n32TriggerCondition == 9 then
 		local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
-		for _dk,_dv in pairs(dels) do
+		for _dk,_dv in pairs(self.targets) do
 			_dv.affectTable:removeById(uuid)
 		end	
 	end
