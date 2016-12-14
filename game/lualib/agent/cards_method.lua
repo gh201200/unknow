@@ -24,7 +24,6 @@ local CardsMethod =
 			skill6=0,
 			skill7=0
 		}
-		
 		local index = 0
 		for k, v in pairs(Quest.AutoGainSkills) do
 			local skillDat = g_shareData.skillRepository[v]

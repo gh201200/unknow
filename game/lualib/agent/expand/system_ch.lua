@@ -118,7 +118,8 @@ function REQUEST.buyShopItem( args )
 			if shopDat.n32Type == 4 then	--卡牌
 				local index = args.id % 100
 				atype = ActivityAccountType["BuyShopCard"..index]
-				card = user.cards:getCardBySerialId( Macro_GetCardSerialId(shopDat.n32GoodsID) )
+				local itemDat = g_shareData.itemRepository[shopDat.n32GoodsID]
+				card = user.cards:getCardBySerialId( Macro_GetCardSerialId(itemDat.n32Retain1) )
 				if card then
 					local val = activity.req.getValue(user.account.account_id, atype) + args.num
 					if val > shopDat.n32Limit then
@@ -149,7 +150,7 @@ function REQUEST.buyShopItem( args )
 			end
 			 
 		elseif shopDat.n32Type == 4 then	--卡牌
-			user.cards:addCard("buyShopItem", shopDat.n32GoodsID, shopDat.n32Count * args.num)
+			user.servicecmd.addItems("buyShopItem", {{itemId=shopDat.n32GoodsID, itemNum=shopDat.n32Count * args.num}})
 			local cooldown = snax.queryservice 'cddown' 
 			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
 			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
