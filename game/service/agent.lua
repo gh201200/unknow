@@ -268,6 +268,7 @@ end
 
 --添加道具
 function CMD.addItems(op, items)
+	print( items )
 	local gold = 0
 	local money = 0
 	local cards = {}
