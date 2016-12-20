@@ -4,7 +4,7 @@ require "skynet.manager"	-- import skynet.monitor
 local sprotoloader = require "sprotoloader"
 
 local game_config = require "config.gameserver"
-local login_config = require "config.loginserver"
+--local login_config = require "config.loginserver"
 local max_client = 64
 
 skynet.start(function()
@@ -37,8 +37,8 @@ skynet.start(function()
 	--启动服务管理服务
 	snax.uniqueservice("servermanager")
 
-	local loginserver = skynet.newservice("loginserver")
-	skynet.call(loginserver,"lua","open",login_config)
+	--local loginserver = skynet.newservice("loginserver")
+	--skynet.call(loginserver,"lua","open",login_config)
 	local watchdog = skynet.newservice("watchdog")
 	skynet.call(watchdog, "lua", "start", game_config)
 	

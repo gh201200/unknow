@@ -181,8 +181,8 @@ end
 local CMD = {}
 function CMD.Start (conf)
 	g_shareData = sharedata.query 'gdd'
-
 	local gate = conf.gate
+	local account = conf.account
 	WATCHDOG = conf.watchdog
 	user = {
 		watchdog = WATCHDOG,
@@ -193,7 +193,7 @@ function CMD.Start (conf)
 		MAP = nil,
 		send_request = send_request,
 		cards = nil,
-		account = nil,
+		account = { account_id = conf.account },
 		explore = nil,
 		heartBeatTime = os.time(),
 	}

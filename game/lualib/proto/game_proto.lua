@@ -199,14 +199,11 @@ login 101 {
          }
          response {
 		 user_exists 0 : boolean
-                 account_id 1 : string
-                 gameserver_port 2 : integer
          }
 }
 
 enterGame 102 {
 	request {
-		account_id 0 : string
 	}
 }
 
