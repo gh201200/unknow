@@ -2,30 +2,59 @@ local skynet = require "skynet"
 local Time = require "time"
 local json = require "cjson"
 
+local WRITE_NUM = 2
+local SAVE_NUM = 10
 
-local accountfile = "account"
+local accountfile = "../logdb/account"
 local accountHandler
 local accountLogNum = 0
 
+local cardfile = "../logdb/card"
+local cardHandler
+local cardLogNum = 0
+
 function init()
-	local tm = Time.GetCurTableTime()
-	local timeStr = tm.year.."-"..tm.month.."-"..tm.day
-	accountfile = accountfile .. timeStr .. ".log"
+	local timeStr = os.date("%Y-%m-%d-%H-%M")
 	
+	accountfile = accountfile .."_" .. timeStr .. ".log"
 	accountHandler = io.open(accountfile, "a+")
+	
+	cardfile = cardfile .. "_" .. timeStr .. ".log"
+	cardHandler = io.open(cardfile, "a+")
 end
 
 function exit()
 	io.close( accountHandler )
+	io.close( cardHandler )
 end
 
 local function writeAccount( txt )
-	print ( txt )
-	accountHandler:write( string.format("0x%08x:%s\n", accountLogNum, txt))
-	accountLogNum = accountLogNum + 1
-	if accountLogNum % 2 == 0 then
+	accountHandler:write( string.format("[:%08x] %s\n", accountLogNum, txt))
+	accountLogNum = accountLogNum + 1 
+	if accountLogNum >= SAVE_NUM then
+		io.close( accountHandler )
+		local timeStr = os.date("%Y-%m-%d-%H-%M")
+		accountfile = accountfile .."_" .. timeStr .. ".log"
+		accountHandler = io.open(accountfile, "a+")
+		accountLogNum = 0
+	elseif accountLogNum % WRITE_NUM == 0 then
 		accountHandler:flush()
 	end
+end
+
+local function writeCard( txt )
+	cardHandler:write( string.format("[:%08x] %s\n", cardLogNum, txt))
+	cardLogNum = cardLogNum + 1
+	if cardLogNum >= SAVE_NUM then
+		io.close( cardHandler )
+		local timeStr = os.date("%Y-%m-%d-%H-%M")
+		cardfile = cardfile .. "_" .. timeStr .. ".log"
+		cardHandler = io.open(cardfile, "a+")
+		cardLogNum = 0
+	elseif cardLogNum % WRITE_NUM == 0 then
+		cardHandler:flush()
+	end
+
 end
 
 ---------------------------------------------------
@@ -34,8 +63,13 @@ end
 ---------------------------------------------------
 --POST
 function accept.log( name, args )
+	args.time = Time.GetCurStringTime()
 	local jt = json.encode( args )
 	if name == "account" then
 		writeAccount( jt )
+	elseif name == "card" then
+		writeCard( jt )
 	end
 end
+
+

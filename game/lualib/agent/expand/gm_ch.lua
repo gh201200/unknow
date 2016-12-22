@@ -1,5 +1,5 @@
 local skynet = require "skynet"
-
+local snax = require "snax"
 
 local GMCH = class("GMCH")
 

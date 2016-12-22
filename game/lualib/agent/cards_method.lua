@@ -79,7 +79,7 @@ local CardsMethod =
 		skynet.call (database, "lua", "cards", "addCard", self.account_id, v)
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:addCard:%d,%d", op, self.account_id, dataId, num)
+		syslog.logmy("card", {opt=op,account=self.account_id,cardId=dataId,cardNum=num,uuid=v.uuid})
 	end;
 	--
 	delCardByDataId = function(self, op, dataId, num)
@@ -95,7 +95,7 @@ local CardsMethod =
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "count")
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:delCardByDataId:%d,%d", op, self.account_id, dataId, num)
+		syslog.logmy("card", {opt=op,account=self.account_id,cardId=dataId,cardNum=num,uuid=v.uuid})
 	end;
 	--
 	delCardByUuid = function(self, op, uuid, num)
@@ -111,7 +111,7 @@ local CardsMethod =
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "count")
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:delCardByUuid:%s,%d:dataId[%d]", op, self.account_id, uuid, num, v.dataId)
+		syslog.logmy("card", {opt=op,account=self.account_id,cardId=v.dataId,cardNum=num,uuid=v.uuid})
 	end;
 	--
 	updateDataId = function(self, op, uuid, _dataId)
@@ -125,7 +125,7 @@ local CardsMethod =
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "dataId")
 		
 		--log record
-		syslog.infof("op[%s]player[%s]:updateDataId:%s,dataId[%d][%d]", op, self.account_id, uuid, _dataId, oldDataId)
+		syslog.logmy("card", {opt=op,account=self.account_id,cardId=v.dataId,cardNum=v.dataNum,uuid=v.uuid})
 	end;
 	--
 	setExplore = function(self, uuid, _time)
@@ -151,9 +151,6 @@ local CardsMethod =
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "skill"..slot)
-		
-		--log record
-		syslog.infof("op[%s]player[%s]:setSkill:%s,%d,%d", op, self.account_id, uuid, slot, serId)
 	end;
 }
 

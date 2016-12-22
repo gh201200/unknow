@@ -15,7 +15,8 @@ skynet.start(function()
 	skynet.newservice("debug_console",8000)
 	
 	--启动mylog服务
-	snax.uniqueservice("mylog")
+	local mylog = snax.uniqueservice("mylog")
+	skynet.call(monitor, "lua", "watch", mylog)
 	
 	skynet.uniqueservice("protod")
 	skynet.uniqueservice("globaldata")
