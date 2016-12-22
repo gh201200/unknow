@@ -253,6 +253,7 @@ end
 --获取效果范围的目标
 function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 	local affects = {}
+	local isAttack = (skilldata.n32SkillType == 0)
 	if skilldata.n32AffectTargetType == 0 then
 		table.insert(affects,source)
 		return affects
@@ -260,13 +261,13 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 	local typeTargets = {}
 	for _ek,_ev in pairs(self.entityList) do
 		--友方（包含自己）
-		if skilldata.n32AffectTargetType  == 1 and source:isKind(_ev) == true then
+		if skilldata.n32AffectTargetType  == 1 and source:isKind(_ev,isAttack) == true then
 			table.insert(typeTargets,_ev)
 		--友方（除掉自己）
-		elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
+		elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev,isAttack) == true and source ~= _ev then
 			table.insert(typeTargets,_ev)
 		--敌方
-		elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev) == false then	
+		elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev,isAttack) == false then	
 			table.insert(typeTargets,_ev)
 		--除自己所有人
 		elseif skilldata.n32AffectTargetType  == 4 and source ~= _ev then

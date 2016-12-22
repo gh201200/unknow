@@ -4,6 +4,7 @@ local syslog = require "syslog"
 local socket = require "socket"
 local protoloader = require "proto.protoloader"
 local host, proto_request = protoloader.load (protoloader.GAME)
+local login_config = require "config.loginserver"
 
 local CMD = {}
 local SOCKET = {}
@@ -12,7 +13,10 @@ local agentfd = {}
 local agentPools = {}
 local agentAccount = {}
 local pid = 500001 
-
+local slave = {}
+local nslave
+local balance = 1
+ 
 local function send_msg (fd, msg)
 	local package = string.pack (">s2", msg)
 	socket.write (fd, package)
@@ -21,6 +25,11 @@ end
 
 function SOCKET.open(fd, addr)
 	print("New client from : " .. addr)
+	local s = slave[balance]
+	balance = balance + 1
+	if balance > nslave then balance = 1 end
+	skynet.call (s, "lua", "auth", fd, addr)
+	--[[
 	if #agentPools == 0 then
 		agentfd[fd] = skynet.newservice ("agent")
 		syslog.noticef ("pool is empty, new agent(%d),fd(%d) created", agentfd[fd], fd)
@@ -31,6 +40,7 @@ function SOCKET.open(fd, addr)
 	print("SOCET.open",fd)
 	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
 --	pid = pid + 1
+]]
 end
 
 
@@ -82,9 +92,21 @@ function SOCKET.data(fd, msg)
 	print('socket data error = ',msg)
 end
 
+function CMD.agentEnter(agent,fd,account)
+	print("CMD.agentEnter",agent,fd,account)
+	agentfd[fd] = agent
+	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd,account = account, watchdog = skynet.self() })
+end
+
 function CMD.start(conf)
-	create_agents(conf.agent_pool)
+	--create_agents(conf.agent_pool)
 	skynet.call(gate, "lua", "open" , conf)
+	for i=1,5,1 do
+		local s = skynet.newservice ("loginslave")
+		skynet.call (s, "lua", "init", skynet.self (), i, login_config)
+		table.insert (slave, s)
+	end
+	nslave = #slave
 end
 
 function CMD.close(fd)

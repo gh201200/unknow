@@ -19,7 +19,6 @@ local saved_session = {}
 
 local sharedata = require "sharedata"
 local slaved = {}
-
 local CMD = {}
 
 function CMD.init (m, id, conf)
@@ -29,7 +28,6 @@ function CMD.init (m, id, conf)
 	auth_timeout = conf.auth_timeout * 100
 	session_expire_time = conf.session_expire_time * 100
 	session_expire_time_in_second = conf.session_expire_time
-
 	g_shareData  = sharedata.query "gdd"
 end
 
@@ -73,19 +71,23 @@ end
 function CMD.auth (fd, addr)
 	print("loginslave auth",fd)
 	connection[fd] = addr
+	local isread = false
 	skynet.timeout (auth_timeout, function ()
 		if connection[fd] == addr then
-			syslog.warningf ("connection %d from %s auth timeout!", fd, addr)
-			close (fd)
+			if isread == false then
+				syslog.warningf ("connection %d from %s auth timeout!", fd, addr)
+				close (fd)
+			end
+			
 		end
 	end)
 
 	socket.start (fd)
 	socket.limit (fd, 8192)
-
 	local type, name, args, response = read_msg (fd)
 	assert (type == "REQUEST")
 	print("auth",type,name,args)
+	isread = true
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")
 		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
@@ -93,19 +95,17 @@ function CMD.auth (fd, addr)
 		if account.nick == nil then
 			--自动注册账号
 			skynet.call (database, "lua", "account", "create", args.name,"123456")
-	
 			firstRegister(account.account_id)
 		end
+		
+		local agent = skynet.newservice ("agent")
+		skynet.call(master,"lua","agentEnter",agent,fd,account.account_id)
 	
 		local msg = response {
 			user_exists = false,
-			account_id = account.account_id,
-			gameserver_port = 8888 --网关的端口
 		}
 		send_msg (fd, msg)
 	end
-
-	close (fd)
 end
 
 skynet.start (function ()

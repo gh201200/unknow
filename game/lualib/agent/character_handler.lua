@@ -123,12 +123,10 @@ local function onEnterGame()
 end
 
 function REQUEST.enterGame(args)
-	
 	database = skynet.uniqueservice ("database")
-
 	--玩家数据加载
-	local account_id = args.account_id
-	user.account = { account_id = account_id }
+	local account_id = user.account.account_id 
+	--user.account = { account_id = account_id }
 	user.account.unit = skynet.call(database, "lua", "account", "load", account_id)	
 	setmetatable(user.account, {__index = AccountMethod})
 	user.cards = { account_id = account_id }
