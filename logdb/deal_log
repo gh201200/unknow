@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo 开始导入日志
+
+python writeToDB.py
+
+echo 日志导入完毕

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/bin/mongo --dbpath=/data/mongodb/data --logpath=/data/mongodb/log/md.log --logappend --fork --port 32017
