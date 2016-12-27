@@ -33,9 +33,7 @@ end
 --请求匹配 arg = {agent = ,account = ,modelid = ,nickname= ,time = 
 --eloValue stepTime fightLevel failNum
 function CMD.requestMatch(response,agent)
-	print("CMD.requestMatch")
 	local p = skynet.call(agent,"lua","getmatchinfo")
-	print(p)
 	addtoKeeplist(p)
 	response(true)
 	--[[
@@ -74,7 +72,6 @@ function handleMatch(t)
 	local colors = {1,4,5,2,3,6}
 	local i = 1
 	for _k,_v in pairs(t) do
-		print("k,v:",_k,_v.account)
 		_v.src_list = nil
 		_v.color = colors[i]
 		i = i + 1
@@ -89,7 +86,6 @@ function handleMatch(t)
 		ret.matcherNum = ret.matcherNum + 1
 		local tmp = { account = _v.account,nickname = _v.nickname,color = _v.color }
 		table.insert(ret.matcherList,tmp)
-		print(_v,"enterPickHero")
 		skynet.call(_v.agent,"lua","enterPickHero",s_pickHero)
 	end
 
@@ -257,6 +253,7 @@ function addtoLooselist(p)
 		p.src_list = loose_list
 		print("玩家" .. p.account .. "宽松队列里匹配失败,失败次数" .. p.failNum)	
 		table.insert(loose_list,p)
+		p.index_list = #loose_list
 	else
 		print("玩家" .. p.account .. "宽松队列里匹配成功")	
 		local matchers = {}

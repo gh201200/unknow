@@ -112,7 +112,7 @@ function IMapPlayer:init(heroId)
 	self:setMp(self:getMpMax())
 	self.HpMpChange = true
 	self.StatsChange = true
-	self:dumpStats()
+	--self:dumpStats()
 
 	IMapPlayer.super.init(self)
 end

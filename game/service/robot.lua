@@ -67,7 +67,6 @@ end
 local last = ""
 
 local function handle_request(name, args)
-	print("REQUEST", name)
 	if REQUEST[name] ~= nil then
 		REQUEST[name](args)
 	end
@@ -90,7 +89,6 @@ end
 -------------------消息的请求处理---------------------
 REQUEST.reEnterRoom = function(...)
 	local t = ...
-	print(t)
 	if t.isin == false then
 		print(account .. "进入游戏 准备匹配")
 		send_request("requestMatch")
@@ -103,7 +101,6 @@ REQUEST.requestPickHero= function(arg)
 	--print("matchlist:",matcherList)
 	 for k,v in pairs(cardList) do
 	 	if v.ispicked == nil or v.ispicked == false then
-			print("v==",v)
 			send_request("pickHero",{heroid = v.dataId})
 			break
 		end
@@ -113,8 +110,6 @@ end
 REQUEST.sendHero = function(arg)
 	print(account .. "收到卡牌列表")
 	cardList = arg["cardsList"]
-	print("cardList:",cardList)	
-
 end
 
 REQUEST.pickedhero = function(arg)
@@ -136,7 +131,7 @@ REQUEST.confirmedHero = function(arg)
 end
 -------------------消息的回复处理----------------------
 RESPONSE.login = function(...)
-	print("RESPONSE.login")
+	print(account .."登录校验成功")
 	--开始匹配
 	send_request("enterGame")
 end
@@ -149,7 +144,6 @@ RESPONSE.pickHero = function(arg)
 	else
 		 print(account .. "重新选择英雄")
 		 for k,v in pairs(cardList) do
-		 	print("v====",v)
 			if v.ispicked == nil or v.ispicked == false then
 				send_request("pickHero",{ heroid = v.dataId})
 				break

@@ -66,7 +66,6 @@ end
 function CMD.confirmHero(response,agent,account,arg)
 	local ret = { errorcode = 0 }
 	local confirmid = players[agent].pickedheroid
-	print("confirmid=",confirmid)
 	repeat
 		if confirmid == 0 then
 			ret.errorcode = -1
@@ -78,7 +77,6 @@ function CMD.confirmHero(response,agent,account,arg)
 			break
 		end
 		for _agent,_v in pairs (players) do
-			print("====",_v,confirmid)
 			if _agent ~= agent and Macro_GetCardSerialId(confirmid) == Macro_GetCardSerialId(_v.pickedheroid) then
 				ret.errorcode = 2
 				break
