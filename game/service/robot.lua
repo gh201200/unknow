@@ -1,6 +1,4 @@
 local skynet = require "skynet"
---local netpack = require "netpack"
---local socket = require "socket"
 local sproto = require "sproto"
 local sprotoloader = require "sprotoloader"
 local socket = require "clientsocket"
@@ -12,9 +10,12 @@ local fd
 local host
 local request
 
-
 local req_sessionToFun = {}
 local resp_sessionToFun = {}
+
+local account		--玩家账号		
+local cardList = {} 	--玩家卡牌列表
+local matcherList = {}  --匹配玩家列表
 
 local function send_package(fd, pack)
 	local package = string.pack(">s2", pack)
@@ -45,7 +46,9 @@ local function recv_package(last)
 		return nil, last
 	end
 	if r == "" then
-		error "Server closed"
+		--error "Server closed"
+		print("服务器socket 断开 自动关闭机器人")
+		skynet.exit()
 	end
 	return unpack_package(last .. r)
 end
@@ -58,7 +61,7 @@ local function send_request(name, args)
 	if RESPONSE[name] ~= nil then 
 		resp_sessionToFun[session] = RESPONSE[name]
 	end
-	print("Request:", session,name)
+	--print("Request:", session,name)
 end
 
 local last = ""
@@ -66,30 +69,14 @@ local last = ""
 local function handle_request(name, args)
 	print("REQUEST", name)
 	if REQUEST[name] ~= nil then
-		print("333333")
 		REQUEST[name](args)
 	end
-	--[[
-	if args then
-		for k,v in pairs(args) do
-			print(k,v)
-		end
-	end
-	]]
 end
 
 local function handle_response(session, args)
 	if resp_sessionToFun[session] ~= nil then
 		resp_sessionToFun[session](args)
 	end
-	--[[	
-	print("RESPONSE", session)
-	if args then
-		for k,v in pairs(args) do
-			print(k,v)
-		end
-	end
-	]]--
 end
 
 local function handle_package(t, ...)
@@ -102,12 +89,49 @@ local function handle_package(t, ...)
 end
 -------------------消息的请求处理---------------------
 REQUEST.reEnterRoom = function(...)
-	print("REQUEST.reEnterRoom")
 	local t = ...
 	print(t)
 	if t.isin == false then
-		print("玩家进入游戏 准备匹配")
+		print(account .. "进入游戏 准备匹配")
 		send_request("requestMatch")
+	end
+end
+
+REQUEST.requestPickHero= function(arg)
+	matcherList = arg.matcherList
+	print(account .. "收到匹配列表")
+	--print("matchlist:",matcherList)
+	 for k,v in pairs(cardList) do
+	 	if v.ispicked == nil or v.ispicked == false then
+			print("v==",v)
+			send_request("pickHero",{heroid = v.dataId})
+			break
+		end
+	 end
+end
+
+REQUEST.sendHero = function(arg)
+	print(account .. "收到卡牌列表")
+	cardList = arg["cardsList"]
+	print("cardList:",cardList)	
+
+end
+
+REQUEST.pickedhero = function(arg)
+	print(account .. "接受到" .. arg.account .. "选择英雄" .. arg.heroid)
+	for k,v in pairs(cardList) do
+		if v.dataId == arg.heroid then
+			v.ispicked = true
+		end
+	end
+end
+
+REQUEST.confirmedHero = function(arg)
+	print(account .. "接受到" .. arg.account .. "确认英雄" .. arg.heroid)
+	for k,v in pairs(cardList) do
+		if v.dataId == arg.heroid then
+			v.isconfirmed = true
+		end
 	end
 end
 -------------------消息的回复处理----------------------
@@ -115,6 +139,23 @@ RESPONSE.login = function(...)
 	print("RESPONSE.login")
 	--开始匹配
 	send_request("enterGame")
+end
+
+RESPONSE.pickHero = function(arg)
+	print(account .. "收到选择英雄返回码:" .. arg.errorcode)
+	if arg.errorcode == 0 then
+		 print(account .. "确认选择的英雄")
+		 send_request("confirmHero")
+	else
+		 print(account .. "重新选择英雄")
+		 for k,v in pairs(cardList) do
+		 	print("v====",v)
+			if v.ispicked == nil or v.ispicked == false then
+				send_request("pickHero",{ heroid = v.dataId})
+				break
+			end
+		 end
+	end
 end
 
 local function dispatch_package()
@@ -129,7 +170,7 @@ local function dispatch_package()
 end
 
 function CMD.start(conf)
-	fd = assert(socket.connect("192.168.0.150", 8888))
+	fd = assert(socket.connect(conf.ip, conf.port))
 	host = sproto.new(proto.s2c):host "package"	
 	request = host:attach(sproto.new(proto.c2s)) 
 	skynet.fork(function()
@@ -138,7 +179,8 @@ function CMD.start(conf)
 			skynet.sleep(500)
 		end
 	end)
-	send_request("login", {name = conf.account ,client_pub = "123456"})	
+	account = conf.account
+	send_request("login", {name = account ,client_pub = "123456"})	
 end
 
 function CMD.disconnect()

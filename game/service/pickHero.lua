@@ -56,7 +56,7 @@ function CMD.pickHero(response, agent, account ,arg)
 		local t = {account = account,heroid = arg.heroid}
 		for _agent,_v in pairs(players) do
 			if _v.agent then
-				skynet.call(_agent,"lua","sendRequest","pickedhero",t)
+				skynet.call(_v.agent,"lua","sendRequest","pickedhero",t)
 			end
 		end
 	end
@@ -66,7 +66,7 @@ end
 function CMD.confirmHero(response,agent,account,arg)
 	local ret = { errorcode = 0 }
 	local confirmid = players[agent].pickedheroid
-
+	print("confirmid=",confirmid)
 	repeat
 		if confirmid == 0 then
 			ret.errorcode = -1
@@ -78,7 +78,8 @@ function CMD.confirmHero(response,agent,account,arg)
 			break
 		end
 		for _agent,_v in pairs (players) do
-			if _agent ~= agent and Macro_GetCardSerialId(confirmid) == Macro_GetCardSerialId(_v.pickhedheroid) then
+			print("====",_v,confirmid)
+			if _agent ~= agent and Macro_GetCardSerialId(confirmid) == Macro_GetCardSerialId(_v.pickedheroid) then
 				ret.errorcode = 2
 				break
 			end

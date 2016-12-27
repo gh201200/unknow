@@ -12,7 +12,7 @@ local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
 
-CMD.MATCH_NUM = 1 
+CMD.MATCH_NUM = 6  
 
 local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
@@ -37,9 +37,13 @@ function CMD.requestMatch(response,agent)
 	local p = skynet.call(agent,"lua","getmatchinfo")
 	print(p)
 	addtoKeeplist(p)
+	response(true)
+	--[[
 	account_cors[p.account] = coroutine.create(function(ret)
 		response(true,ret)
 	end)
+	]]--
+
 end
 
 --取消匹配
@@ -66,10 +70,12 @@ function handleMatch(t)
 		end
 		return false
 	end
-	table.sort(t,comp_elo)
+	--table.sort(t,comp_elo)
 	local colors = {1,4,5,2,3,6}
 	local i = 1
 	for _k,_v in pairs(t) do
+		print("k,v:",_k,_v.account)
+		_v.src_list = nil
 		_v.color = colors[i]
 		i = i + 1
 	end
@@ -77,7 +83,7 @@ function handleMatch(t)
 	local s_pickHero =  skynet.newservice ("pickHero")
 	table.insert(s_pickHeros,s_pickHero)
 	skynet.call(s_pickHero,"lua","init",t)
-
+	
 	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
 		ret.matcherNum = ret.matcherNum + 1
@@ -86,8 +92,9 @@ function handleMatch(t)
 		print(_v,"enterPickHero")
 		skynet.call(_v.agent,"lua","enterPickHero",s_pickHero)
 	end
+
 	for _k,_v in pairs(t) do
-		coroutine.resume(account_cors[_v.account],ret)
+		skynet.call(_v.agent,"lua","sendRequest","requestPickHero",ret)
 	end
 end
 
@@ -198,7 +205,9 @@ function addtoStictlist(p)
 		p.src_list = strict_list
 		print("玩家" .. p.account .. "严格队列里匹配失败,失败次数" .. p.failNum)	
 		table.insert(strict_list,p)
+		p.index_list =  #strict_list
 	else
+		print("玩家" .. p.account .. "严格队列里匹配成功")
 		local matchers = {}
 		for i=1,#tmp,1 do
 			if i <= searchNum then
@@ -207,12 +216,16 @@ function addtoStictlist(p)
 				break
 			end
 		end
-		for k,v in pairs(matchers) do
-			--v.src_list = nil
-			--v.index_list = nil
+		local function indexCmp(a,b)
+			if a.index_list >= b.index_list then
+				return true
+			end
+			return false
+		end
+		table.sort(matchers,indexCmp)
+		for k,v in ipairs(matchers) do
 			table.remove(v.src_list,v.index_list)
 		end
-		print("玩家" .. p.account .. "严格队列里匹配成功")
 		table.insert(matchers,p)	
 		handleMatch(matchers)		
 	end	
@@ -248,7 +261,7 @@ function addtoLooselist(p)
 		print("玩家" .. p.account .. "宽松队列里匹配成功")	
 		local matchers = {}
 		for i=1,#tmp,1 do
-			if i >= searchNum then
+			if i <= searchNum then
 				table.insert(matchers,tmp[i])
 			else
 				break
@@ -297,6 +310,8 @@ local function update()
 	updateKeeplist(dt)
 	updateStictlist(dt)
 	updateLooselist(dt)
+	
+
 end
 	
 local function init()
