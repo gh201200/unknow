@@ -7,15 +7,18 @@ local uuid = require "uuid"
 
 local CMD = {}
 local requestMatchers = {}
---local reverseMatchers = {}
 local database
-
---local baseRate = 10000 --同一分数匹配人数不超过一万人
 local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
 
+CMD.MATCH_NUM = 1 
 
+local keep_list = {} 	--保持队列
+local strict_list = {}	--严格队列
+local loose_list = {}	--宽松队列
+local listTimeouts = {["keep"] = 4 * 1000,["strict"] = 4 * 1000,["loose"] = 6 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000} --超时时长
+local matchConfig = {["eloStrict"] = 500,["eloLoose"] = 500,["eloStep"] = 10} --匹配配置
 function CMD.hijack_msg(response)
 	local ret = {}
 	for k, v in pairs(CMD) do
@@ -27,30 +30,14 @@ function CMD.hijack_msg(response)
 end
 
 
---请求匹配 arg = {agent = ,account = ,modelid = ,nickname= ,score = ,time = ,range = }
+--请求匹配 arg = {agent = ,account = ,modelid = ,nickname= ,time = 
+--eloValue stepTime fightLevel failNum
 function CMD.requestMatch(response,agent)
 	print("CMD.requestMatch")
-	local arg = skynet.call(agent,"lua","getmatchinfo")
-	print("arg",arg)
-	for _k,_v in ipairs(requestMatchers) do
-		if arg.account == _v.account then
-			print(arg.account,"already in match list")	
-			requestMatchers[_k] = arg 
-			return
-		end
-	end
-	local  isinsert = false
-	for _k,_v in ipairs(requestMatchers) do
-		if arg.score > _v.score and requestMatchers[_k+1] ~= nil and requestMatchers[_k+1].score >= arg.score  then
-			table.insert(requestMatchers,_k+1,arg)
-			isinsert = true
-		end		
-	end
-	if isinsert == false then
-		table.insert(requestMatchers,arg)	
-	end
-
-	account_cors[arg.account] = coroutine.create(function(ret)
+	local p = skynet.call(agent,"lua","getmatchinfo")
+	print(p)
+	addtoKeeplist(p)
+	account_cors[p.account] = coroutine.create(function(ret)
 		response(true,ret)
 	end)
 end
@@ -71,9 +58,16 @@ end
 
 
 --处理匹配到的人 account nickname agent
-local function handleMatch(t)
+function handleMatch(t)
 	--分配队组
-	local colors = {1,4,2,5,3,6}
+	local function comp_elo(a,b) 
+		if a.eloValue >= b.eloValue then
+			return true
+		end
+		return false
+	end
+	table.sort(t,comp_elo)
+	local colors = {1,4,5,2,3,6}
 	local i = 1
 	for _k,_v in pairs(t) do
 		_v.color = colors[i]
@@ -84,7 +78,6 @@ local function handleMatch(t)
 	table.insert(s_pickHeros,s_pickHero)
 	skynet.call(s_pickHero,"lua","init",t)
 
-	
 	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
 		ret.matcherNum = ret.matcherNum + 1
@@ -97,57 +90,213 @@ local function handleMatch(t)
 		coroutine.resume(account_cors[_v.account],ret)
 	end
 end
-CMD.MATCH_NUM = 1
 
-local function removeDirty()
-	local tmp_requestMatchers = {}
-	for _k,_v in ipairs(requestMatchers) do
-		if _v ~= nil then
-			table.insert(tmp_requestMatchers,_v)
+--更新保持队列
+function updateKeeplist(dt)
+	for i=#(keep_list),1,-1 do
+		local p = keep_list[i]
+		p.time = p.time + dt
+		if p.time > listTimeouts["keep"] then
+			print("玩家" .. p.account .. "在保持队列超时")
+			p.time = 0
+			p.failNum = 0
+			table.remove(keep_list,i)   --移除保持队列
+			addtoStictlist(p)
+		end 
+	end 
+end
+-- 添加到保持队列
+function addtoKeeplist(p)
+	print("玩家" .. p.account .. "加入保持队列")
+	if #strict_list == 0 then
+		table.insert(keep_list,p)
+	else
+		addtoStictlist(p)
+	end
+end
+--更新严格队列
+function updateStictlist(dt)
+	local relist = {}
+	for i = #strict_list,1,-1 do
+		local p = strict_list[i]
+		p.time =  p.time + dt
+		p.stepTime = p.stepTime +  dt
+		if p.time > listTimeouts["strict"] then
+			print("玩家" .. p.account .. "在严格队列超时")
+			p.failNum = 0
+			p.time = 0
+			addtoLooselist(p)
+			table.remove(strict_list,i)   --移除严格队列
+		else
+			if p.stepTime > listTimeouts["strictStep"] then
+				print("玩家" .. p.account .. "在严格列表超过步长时间,准备重新插入")
+				table.insert(relist,p)	
+			end
 		end
 	end
-	requestMatchers = tmp_requestMatchers
-end	
-
-local function update()
-	skynet.timeout(100, update) 
-	local dt = 1 
-	--{agent = ,account = ,modelid = ,nickname= ,score = ,time = ,range = }
-	--print(requestMatchers)
-        for _k,_v in pairs(requestMatchers) do
-                _v.time = _v.time + dt
-                --_v. =  math.floor(_v.time/10000)* 10 + 10
-        end
-	local isMatch = false
-	for _k,_v in ipairs(requestMatchers) do
-		if _v ~= nil then
-			local k,v = _k,_v
-			local maxRange = _v.range
-			local matchTb = {}
-			matchTb[k] = v
-			for i=1,CMD.MATCH_NUM -1,1 do
-				v = requestMatchers[k + i]
-				if v == nil then
-					return
-				end
-				matchTb[k + i] = v
-				if v.range > maxRange then
-					maxRange = v.range
+	for k,v in pairs(relist) do
+		if v.src_list ~= nil then
+			for i=#strict_list,1,-1 do
+				if strict_list[i].account == v.account then
+					print("玩家" .. v.account .. "从严格队列删除")
+					table.remove(strict_list,i)
 				end
 			end
-			
-			if maxRange >= requestMatchers[_k + CMD.MATCH_NUM -1].score - requestMatchers[k].score  then
-				for _i,_ in pairs(matchTb) do
-					requestMatchers[_i] = nil
-				end
-				isMatch = true
-				handleMatch(matchTb)
-			end			
+			addtoStictlist(v)
+		end		
+	end
+end
+
+--添加到严格队列列表
+function addtoStictlist(p)
+	print("玩家" .. p.account .. "加入严格队列")
+	local range = p.failNum * matchConfig["eloStep"] + matchConfig["eloStrict"]
+	local up = p.eloValue + range
+	local down = p.eloValue - range 
+	local tmp = {}
+	for i=1,#(strict_list),1 do
+		local v = strict_list[i]
+		if v.eloValue >= down and v.eloValue <= up then
+			v.src_list = strict_list
+			v.index_list = i
+			if v.fightLevel == p.fightLevel then
+				table.insert(tmp,1,v)
+			else
+				table.insert(tmp,v)
+			end
+		end	
+	end
+	for i=1,#(keep_list),1 do
+		local v = keep_list[i]
+		if v.eloValue >= down and v.eloValue <= up then
+			v.src_list = keep_list
+			v.index_list = i
+			if v.fightLevel == p.fightLevel then
+				table.insert(tmp,1,v)
+			else
+				table.insert(tmp,v)
+			end
+		end	
+	end
+	for i=1,#(loose_list),1 do
+		local v = loose_list[i]
+		if v.eloValue >= down and v.eloValue <= up then
+			v.src_list = strict_list
+			v.index_list = i
+			if v.fightLevel == p.fightLevel then
+				table.insert(tmp,1,v)
+			else
+				table.insert(tmp,v)
+			end
+		end	
+	end
+	local searchNum = CMD.MATCH_NUM	- 1
+	if #tmp < searchNum then
+		--匹配失败
+		p.failNum = p.failNum + 1
+		p.stepTime = 0
+		p.src_list = strict_list
+		print("玩家" .. p.account .. "严格队列里匹配失败,失败次数" .. p.failNum)	
+		table.insert(strict_list,p)
+	else
+		local matchers = {}
+		for i=1,#tmp,1 do
+			if i <= searchNum then
+				table.insert(matchers,tmp[i])
+			else
+				break
+			end
+		end
+		for k,v in pairs(matchers) do
+			--v.src_list = nil
+			--v.index_list = nil
+			table.remove(v.src_list,v.index_list)
+		end
+		print("玩家" .. p.account .. "严格队列里匹配成功")
+		table.insert(matchers,p)	
+		handleMatch(matchers)		
+	end	
+end
+--添加到宽松队列
+function addtoLooselist(p) 
+	print("玩家" .. p.account .. "加入宽松队列")
+	local range = p.failNum * matchConfig["eloStep"] + matchConfig["eloLoose"]
+	local up = p.eloValue + range
+	local down = p.eloValue - range 
+	local tmp = {}
+	for i=1,#(loose_list),1 do
+		local v = loose_list[i]
+		if v.eloValue >= down and v.eloValue <= up then
+			v.src_list = loose_list
+			v.index_list = i
+			if v.fightLevel == p.fightLevel then
+				table.insert(tmp,1,v)
+			else
+				table.insert(tmp,v)
+			end
+		end	
+	end
+	local searchNum = CMD.MATCH_NUM	- 1
+	if #tmp < searchNum then
+		--匹配失败
+		p.failNum = p.failNum + 1
+		p.stepTime = 0
+		p.src_list = loose_list
+		print("玩家" .. p.account .. "宽松队列里匹配失败,失败次数" .. p.failNum)	
+		table.insert(loose_list,p)
+	else
+		print("玩家" .. p.account .. "宽松队列里匹配成功")	
+		local matchers = {}
+		for i=1,#tmp,1 do
+			if i >= searchNum then
+				table.insert(matchers,tmp[i])
+			else
+				break
+			end
+		end
+		for k,v in pairs(matchers) do
+			--v.src_list = nil
+			--v.index_list = nil
+			table.remove(v.src_list,v.index_list)
+		end
+		table.insert(mathers,p)	
+		handleMatch(matchers)
+	end	
+end
+function updateLooselist(dt)
+	local relist = {}
+	for i = #loose_list,1,-1 do
+		local p = loose_list[i]
+		p.time =  p.time + dt
+		p.stepTime = p.stepTime +  dt
+		if p.time > listTimeouts["loose"] then
+			print("玩家" .. p.account .."宽松队列里超时，彻底匹配失败")
+		else
+			if p.stepTime >= listTimeouts["looseStep"] then
+				print("玩家" .. p.account .."在宽松队列超过步长时间,准备重新插入")
+				table.insert(relist,p)	
+			end
 		end
 	end
-	if isMatch == true then
-		removeDirty()
+	for k,v in pairs(relist) do
+		if v.src_list ~= nil then
+			for i=#loose_list,1,-1 do
+				if loose_list[i].account == v.account then
+					print("玩家"  .. v.account .. "从宽松队列移除")	
+					table.remove(loose_list,i)
+				end
+			end
+			addtoLooselist(v)
+		end		
 	end
+end
+
+local function update()
+	skynet.timeout(20, update) 
+	local dt = 200 
+	updateKeeplist(dt)
+	updateStictlist(dt)
+	updateLooselist(dt)
 end
 	
 local function init()
@@ -159,12 +308,14 @@ local REQUEST = {}
 skynet.start(function ()
 	init()	
 	skynet.dispatch("error", function (address, source, command, ...)
+		--[[
 		for i= #requestMatchers,1,-1 do
 			if requestMatchers[i] ~= nil and requestMatchers[i].agent == source then
 				table.remove(requestMatchers,i)
 				break
 			end
 		end
+		]]--
 	end)
 
 	skynet.dispatch("lua", function (_, _, command, ...)

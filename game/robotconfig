@@ -1,0 +1,21 @@
+skynet_root = "../3rd/skynet/"
+root = "./"
+thread = 8
+--logger = "main_log"
+--logservice = "logger"
+--logpath = "."
+harbor = 0
+--address = "127.0.0.1:2526"
+--master = "127.0.0.1:2013"
+start = "robotmain"	-- main script
+bootstrap = "snlua bootstrap"	-- The service for bootstrap
+--standalone = "0.0.0.0:2013"
+
+lua_path = skynet_root.."lualib/?.lua;"..root.."lualib/?.lua;"..root.."lualib/base/?.lua;"..root.."lualib/gamedata/?.lua;"
+lua_path = lua_path..root.."../3rd/xmllib/?.lua;"
+lua_cpath = skynet_root.."luaclib/?.so;"..root.."luaclib/?.so;"..root.."../3rd/xmllib/?.so;"
+cpath = skynet_root.."cservice/?.so;"..root.."cservice/?.so"
+luaservice = skynet_root.."service/?.lua;"..root.."service/?.lua"
+lualoader = skynet_root.."lualib/loader.lua"
+preload = root.."lualib/base/preload.lua"	-- run preload.lua before every lua service run
+snax = skynet_root.."?.lua;"..root.."service/?.lua"

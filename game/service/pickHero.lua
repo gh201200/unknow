@@ -35,7 +35,7 @@ end
 function CMD.init(response,playerTb)
 	local monitor = skynet.monitor "simplemonitor"
 	for _k,_v in pairs(playerTb) do
-		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, score=_v.score}
+		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, eloValue=_v.eloValue}
 		skynet.call(monitor, "lua", "watch", _v.agent)
 	end
 	response(true,nil)

@@ -233,7 +233,8 @@ function CMD.disconnect ()
 end
 
 function CMD.getmatchinfo()
-	local tb = {agent = skynet.self(),account = user.account.account_id, score = user.account:getExp(), nickname = user.account:getNickName(),time = 0,range = 0}
+	local tb = {agent = skynet.self(),account = user.account.account_id, eloValue = user.account:getExp(),
+		 nickname = user.account:getNickName(),time = 0,stepTime = 0,fightLevel = 0,failNum = 0 }
 	return tb
 end
 
