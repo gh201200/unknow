@@ -17,7 +17,14 @@ CMD.MATCH_NUM = 6
 local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
 local loose_list = {}	--宽松队列
-local listTimeouts = {["keep"] = 4 * 1000,["strict"] = 4 * 1000,["loose"] = 6 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000} --超时时长
+local listTimeoutConfig = {
+	[1] = {["playerNum"] = 20,["keep"] = 40 * 1000,["strict"] = 20 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	[2] = {["playerNum"] = 50,["keep"] = 30 * 1000,["strict"] = 15 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	[3] = {["playerNum"] = 100,["keep"] = 20 * 1000,["strict"] = 10 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	[3] = {["playerNum"] = math.maxinteger,["keep"] = 10 * 1000,["strict"] = 5 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000}
+}
+local listTimeouts = listTimeoutConfig[1] --超时时长
+
 local matchConfig = {["eloStrict"] = 500,["eloLoose"] = 500,["eloStep"] = 10} --匹配配置
 function CMD.hijack_msg(response)
 	local ret = {}
@@ -113,6 +120,8 @@ function addtoKeeplist(p)
 	print("玩家" .. p.account .. "加入保持队列")
 	if #strict_list == 0 then
 		table.insert(keep_list,p)
+		p.src_list = keep_list
+		p.index_list = #keep_list
 	else
 		addtoStictlist(p)
 	end
@@ -280,7 +289,11 @@ function updateLooselist(dt)
 		p.time =  p.time + dt
 		p.stepTime = p.stepTime +  dt
 		if p.time > listTimeouts["loose"] then
-			print("玩家" .. p.account .."宽松队列里超时，彻底匹配失败")
+			if p.time <= (listTimeouts["loose"] + dt) then
+				print("玩家" .. p.account .."宽松队列里超时，彻底匹配失败")
+			else
+				
+			end
 		else
 			if p.stepTime >= listTimeouts["looseStep"] then
 				print("玩家" .. p.account .."在宽松队列超过步长时间,准备重新插入")
@@ -307,13 +320,21 @@ local function update()
 	updateKeeplist(dt)
 	updateStictlist(dt)
 	updateLooselist(dt)
-	
-
 end
-	
+local function updateListTimeout()
+	skynet.timeout(100 * 10 * 60, updateListTimeout)
+	local playerNum = #loose_list + #strict_list + #keep_list 
+	for k,v in ipairs(listTimeoutConfig) do
+		if v["playerNum"] > playerNum then
+			listTimeouts = v
+			break
+		end
+	end 
+end
 local function init()
 	--every 1s update entity
 	skynet.timeout(100, update)
+	skynet.timeout(100 * 10 * 60, updateListTimeout)
 end
 
 local REQUEST = {}

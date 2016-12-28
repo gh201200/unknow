@@ -85,7 +85,7 @@ local function heartbeat_check ()
 				skynet.call(user.MAP, "lua", "addOffLineTime", args)
 			end
 		end
-		skynet.timeout (HEARTBEAT_TIME_MAX, heartbeat_check)
+	--	skynet.timeout (HEARTBEAT_TIME_MAX, heartbeat_check)
 	end
 end
 
