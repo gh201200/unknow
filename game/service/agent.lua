@@ -16,6 +16,8 @@ local IAgentplayer = require "entity.IAgentPlayer"
 local hijack_msg = {}
 local hijack_msg_event_stamp = {}
 
+local ref_connect = 0 --连接的引用计数
+
 local database
 local WATCHDOG
 
@@ -202,9 +204,8 @@ function CMD.Start (conf)
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
         user.servicecmd = CMD
-
+	ref_connect = 1
 	heartbeat_check()
-
 	--注册匹配服务
 	local matchserver = skynet.queryservice "match"
 	request_hijack_msg(matchserver)
@@ -215,20 +216,30 @@ function CMD.Start (conf)
 	registerToChatserver()
 end
 
+function CMD.reconnect(conf)
+	print("重新登录，重置fd:",conf.client)
+	CMD.addConnectRef(1)
+	user_fd	= conf.client
+	skynet.call(conf.gate, "lua", "forward", user_fd)
+end
+
+function CMD.addConnectRef(r)
+	print("agent add connectRef",r)
+	ref_connect = ref_connect + r
+	return ref_connect
+end
+
 function CMD.disconnect ()
 	print("agent closed")
-	
 	if user then
 		character_handler:unregister (user)
-		--request_release_msg(user.MAP, "map")
-		if user.MAP ~= nil then
-			skynet.call (user.MAP, "lua", "disconnect",skynet.self())
-		end
+		--if user.MAP ~= nil then
+		--	skynet.call (user.MAP, "lua", "disconnect",skynet.self())
+		--end
 		user = nil
 		user_fd = nil
 		REQUEST = nil
 	end
-
 	-- todo: do something before exit
 	skynet.exit()
 end

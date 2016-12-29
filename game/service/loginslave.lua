@@ -6,7 +6,7 @@ local protoloader = require "proto.protoloader"
 local SkillsMethod = require "agent.skills_method"
 local CardsMethod = require "agent.cards_method"
 local traceback = debug.traceback
-
+local snax = require "snax"
 
 local master
 local database
@@ -20,10 +20,11 @@ local saved_session = {}
 local sharedata = require "sharedata"
 local slaved = {}
 local CMD = {}
-
+local sm
 function CMD.init (m, id, conf)
 	master = m
 	database = skynet.uniqueservice ("database")
+	sm = snax.uniqueservice("servermanager") 
 	host = protoloader.load (protoloader.GAME)
 	auth_timeout = conf.auth_timeout * 100
 	session_expire_time = conf.session_expire_time * 100
@@ -107,10 +108,13 @@ function CMD.auth (fd, addr)
 			skynet.call (database, "lua", "account", "create", args.name,"123456")
 			firstRegister(account.account_id)
 		end
-		
-		local agent = skynet.newservice ("agent")
-		skynet.call(master,"lua","agentEnter",agent,fd,account.account_id)
-	
+		local agent = sm.req.getAgent(account.account_id)
+		local reconnect = true
+		if agent == nil then
+			reconnect = false
+			agent = skynet.newservice ("agent")
+		end
+		skynet.call(master,"lua","agentEnter",agent,fd,account.account_id,reconnect)
 		local msg = response {
 			user_exists = false,
 		}

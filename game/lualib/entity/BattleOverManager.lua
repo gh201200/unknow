@@ -26,7 +26,7 @@ end
 function BattleOverManager:update( dt )
 	if self.OverRes ~= 0 then return end
 	self.RestTime = self.RestTime - dt
-
+	if true then return end
 	repeat
 		if self.RedHomeBuilding:isDead() then
 			self.OverRes = 1	--蓝方胜
@@ -261,8 +261,6 @@ end
 function BattleOverManager:closeRoom()
  	print("close room")
 	local sm = snax.uniqueservice("servermanager")
-        sm.post.roomend(skynet.self())
-
 	for k, v in pairs(EntityManager.entityList) do
 		v:clear_coroutine()
 		if v.entityType == EntityType.player then
@@ -272,6 +270,7 @@ function BattleOverManager:closeRoom()
 		end
 	end
                                                                                                
+        sm.post.roomend(skynet.self())
 	skynet.exit()
 end
 

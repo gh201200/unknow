@@ -203,6 +203,14 @@ function CMD.start(conf)
 		end
 	end)
 	account = conf.account
+	--[[
+	skynet.fork(function()
+		while true do
+			skynet.sleep(50)
+			send_package(fd, "fsdffsdfjsndfsdnfnjsnfsdkjfksfkjsfjslfjsfdsfsfsdfdf")
+		end
+	end)
+	]]--
 	send_request("login", {name = account ,client_pub = "123456"})	
 end
 
