@@ -95,12 +95,17 @@ local MAP_XPOS = Map.MAP_GRID_SIZE * MAP_XGRID_NUM
 local MAP_ZPOS = Map.MAP_GRID_SIZE * MAP_ZGRID_NUM
 function robot_update(dt)
 	robot_moveTest()	
+	robot_skillTest()
 end
 
 function robot_moveTest()
 	local x = math.random(1,MAP_XPOS * 10000 )
 	local z = math.random(1,MAP_ZPOS * 10000 )
 	send_request("move",{x = x,y = 0,z = z})
+end
+
+function robot_skillTest()
+
 end
 -------------------消息的请求处理---------------------
 REQUEST.reEnterRoom = function(...)
