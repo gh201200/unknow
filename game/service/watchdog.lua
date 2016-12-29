@@ -11,7 +11,6 @@ local CMD = {}
 local SOCKET = {}
 local gate
 local agentfd = {}
-local agentPools = {}
 local agentAccount = {}
 local pid = 500001 
 local slave = {}
@@ -32,20 +31,6 @@ function SOCKET.open(fd, addr)
 	skynet.call (s, "lua", "auth", fd, addr)
 end
 
-
-local function create_agents(num)	
-	print("agentPools num = " .. #agentPools)
-	--every five minites to check agent pools
-	skynet.timeout(30000, function() create_agents(100) end)
-
-	if #agentPools > 100 then return end
-
-	for i = 1, num do
-		table.insert (agentPools, skynet.newservice ("agent"))
-	end
-end
-
-
 local function close_agent(fd)
 	local a = agentfd[fd]
 	local account = agentAccount[fd]
@@ -60,11 +45,6 @@ local function close_agent(fd)
 			print("agent还处于战斗服务中,agent继续保留")
 		end
 	end
-end
-
-local function timeout(t)
-	if #agentPools > 100 then return end
-	print(t)
 end
 
 function SOCKET.close(fd)
@@ -98,7 +78,6 @@ function CMD.agentEnter(agent,fd,account,reconnect)
 end
 
 function CMD.start(conf)
-	--create_agents(conf.agent_pool)
 	sm = snax.uniqueservice("servermanager")
 	skynet.call(gate, "lua", "open" , conf)
 	for i=1,login_config.slave,1 do
