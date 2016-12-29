@@ -42,12 +42,6 @@ for k, p in pairs(xmlhandler.root.info.item) do
 					for _skill, _percent in string.gmatch(_v, "(%d+),(%d+)") do
                                                  table.insert(tmpTb[_i], {skillId=_skill,percent=_percent})
                                         end
-				elseif _i == "szDrop" then
-					tmpTb[_i] = {}
-					for w in string.gmatch(_v, "%d+") do
-						table.insert(tmpTb[_i], tonumber(w))
-					end
-
 				else
 					tmpTb[_i] = _v
 				end

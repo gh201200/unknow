@@ -17,7 +17,6 @@ end
 local function givePlayerItem( player, drop )
 	local itemData = g_shareData.itemRepository[drop.itemId]
 	local picks = {}
-	print ( drop )
 	if itemData.n32Type == 1 then
 		player.pickItems[drop.sid] = {itemId = drop.itemId, skillId = 0}
 		table.insert(picks, drop.sid..','..player.serverId..",0")
@@ -67,10 +66,10 @@ function DropManager:makeDrop(entity)
 	if entity.attDat.n32Type == 1 then
 		offset = 20000
 	end
-	local pkgs = openPackage(entity.attDat.szDrop)
+	local pkgs = usePackageItem( entity.attDat.n32Drop )
 	for k, v in pairs(pkgs) do
-		local itemId = v.itemId
-		local itemNum = v.itemNum
+		local itemId = k
+		local itemNum = v
 		for i=1, itemNum do
 			local item = {
 				itemId = itemId,

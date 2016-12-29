@@ -3,6 +3,7 @@ local coroutine = require "skynet.coroutine"
 local Time = require "time"
 local Quest = require "quest.quest"
 local snax = require "snax"
+local sharedata = require "sharedata"
 
 local database = nil
 local units = {}
@@ -98,18 +99,33 @@ end
 
 local function RefreshShopCard()
 	local activity = snax.queryservice 'activity'
-	local val = activity.req.getValue('system', ActivitySysType.RefreshShopCard)
-	val = (val + 1) % (table.size(Quest.RefreshCardIds)+1)
-	if val == 0 then val = 1 end
 
-	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.RefreshShopCard, val)
+	local st1 = {}
+	local st2 = {}
+	local st3 = {}
+	
+	for k, v in pairs(g_shareData.shopRepository) do
+		if v.n32Type == 4 then
+			if v.n32Site == 1 then
+				table.insert(st1, v.id)
+			elseif v.n32Site == 2 then
+				table.insert(st2, v.id)
+			elseif v.n32Site == 3 then
+				table.insert(st3, v.id)
+			end
+		end		
+	end
+	local idx = math.random(1, #st1)
+	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.ShopCardId1, st1[idx])
+	idx = math.random(1, #st2)
+	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.ShopCardId2, st2[idx])
+	idx = math.random(1, #st3)
+	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.ShopCardId3, st3[idx])
+
 	local types = {
 		ActivityAccountType.BuyShopCard1,
 		ActivityAccountType.BuyShopCard2,
 		ActivityAccountType.BuyShopCard3,
-		ActivityAccountType.BuyShopCard4,
-		ActivityAccountType.BuyShopCard5,
-		ActivityAccountType.BuyShopCard6,
 	}
 	local uid = calcUid('system', CoolDownSysType.RefreshShopCard)
 	activity.post.resetAccountValue('RefreshShopCard', types, units[uid].value)
@@ -125,9 +141,13 @@ local function cooldown_updatesys()
 			error(r1)
 		end
 	end
+
 	skynet.timeout(100,  cooldown_updatesys)
 end
 
+
+----------------------------------------------------
+--REQ
 function response.getRemainingTime(uid)
 	if units[uid] and units[uid].value > os.time() then 
 		return units[uid].value - os.time()
@@ -184,6 +204,10 @@ function accept.loadAccount( aid )
 	end
 end
 
+function accept.setValue(name, atype, val)
+	setTime(name, atype, val)
+end
+
 function accept.Start()
 	cooldown_updatesys()
 end
@@ -193,6 +217,9 @@ end
 ------------------------
 
 function init()
+
+	g_shareData = sharedata.query "gdd"
+	
 	loadSystem()
 end
 

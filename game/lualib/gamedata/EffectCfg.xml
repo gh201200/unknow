@@ -88,6 +88,39 @@
 		<n32layer>0</n32layer>
 		<szillustration></szillustration>
 	</item>
+	<item id="12005">
+		<n32type>2</n32type>
+		<szassert>Niu_skill_03_juqi</szassert>
+		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>4</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>10</n32layer>
+		<szillustration>牛大招</szillustration>
+	</item>
+	<item id="12006">
+		<n32type>2</n32type>
+		<szassert>Niu_skill_03_1</szassert>
+		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration></szillustration>
+	</item>
+	<item id="12007">
+		<n32type>2</n32type>
+		<szassert>Niu_skill_03_2</szassert>
+		<n32time>4</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration></szillustration>
+	</item>
 	<item id="20001">
 		<n32type>4</n32type>
 		<szassert>Tiannv_Bullet_01</szassert>
@@ -135,7 +168,7 @@
 	<item id="20005">
 		<n32type>3</n32type>
 		<szassert>Kongzhiqiu_1</szassert>
-		<n32time>1.5</n32time>
+		<n32time>0</n32time>
 		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
@@ -155,9 +188,9 @@
 		<szillustration>闪电链</szillustration>
 	</item>
 	<item id="20007">
-		<n32type>7</n32type>
-		<szassert>nothing</szassert>
-		<n32time>3</n32time>
+		<n32type>4</n32type>
+		<szassert></szassert>
+		<n32time>0</n32time>
 		<n32speed>2</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
@@ -168,7 +201,7 @@
 	<item id="20008">
 		<n32type>3</n32type>
 		<szassert>Zhongbiaogong_Bullet_01</szassert>
-		<n32time>1.5</n32time>
+		<n32time>0</n32time>
 		<n32speed>3</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>

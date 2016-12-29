@@ -107,34 +107,20 @@ CardColor = {
 g_shareData = {}
 g_entityManager = nil
 GAMEPLAY_PERCENT = 10000
-NOW_SERVER_VERSION = 1		--服务器版本号
-
-
-function GET_SkillTgtType(data)
-	assert(data,"getskillTgtType data is null")
-	local t = math.floor(data.n32Type / 10)
-	return t
-end
-
-function GET_SkillTgtRange(data)
-	assert(data,"getskillTgtRange data is null")
-	local t = data.n32Type % 10
-	return t
-end
+NOW_SERVER_VERSION = '1.0.0.1'		--服务器版本号(xx.xx.xx.xxxx)
 
 ActivitySysType = 
 {
-	RefreshShopCard                 = 0,    --商城卡牌刷新批次
+	ShopCardId1                 	= 0,    --金币商城道具id1
+	ShopCardId2                	= 1,    --金币商城道具id2
+	ShopCardId3                	= 2,    --金币商城道具id3
 }
 
 ActivityAccountType = 
 {
-	BuyShopCard1			= 1001,	--商城购买卡牌1次数
-	BuyShopCard2			= 1002,	--商城购买卡牌2次数
-	BuyShopCard3			= 1003,	--商城购买卡牌3次数
-	BuyShopCard4			= 1004,	--商城购买卡牌1次数
-	BuyShopCard5			= 1005,	--商城购买卡牌2次数
-	BuyShopCard6			= 1006,	--商城购买卡牌3次数
+	BuyShopCard1			= 1001,	--金币商城购买1次数
+	BuyShopCard2			= 1002,	--金币商城购买2次数
+	BuyShopCard3			= 1003,	--金币商城购买3次数
 }
 
 CoolDownSysType = 
@@ -144,6 +130,7 @@ CoolDownSysType =
 
 CoolDownAccountType = 
 {
+	TimeLimitSale			= 1001, --限时特惠商品
 }
 
 

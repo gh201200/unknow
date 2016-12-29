@@ -64,6 +64,8 @@ local AccountMethod =
 		if nv < 0 then return end
 		self.unit.exp = nv
 
+		self:onExp()
+
 		self:sendAccountData()
 		
 		local database = skynet.uniqueservice("database")		

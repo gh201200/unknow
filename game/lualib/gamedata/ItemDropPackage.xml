@@ -1,2031 +1,1641 @@
 <?xml version="1.0" ?>
 <info>
-	<item id="1001">
-		<n32ItemId>60001</n32ItemId>
+	<item id="2001">
+		<n32ItemId>1110000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>厚德碎片</szInfo>
 	</item>
-	<item id="1101">
-		<n32ItemId>61001</n32ItemId>
+	<item id="2001">
+		<n32ItemId>1120000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪光碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1220000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>修行者碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1230100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>乌鸦鬼碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1310000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>牛博士碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1330000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>法老碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1130000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天女碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1210000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>狂僧碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1320100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>安娜碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1120100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹弓碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1230000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>风女碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1310100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>机甲少女碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1110100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>殿前骑士碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1220100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>蒂皮碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1330100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天才碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1130100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钟表匠碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1210100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>龙女碎片</szInfo>
+	</item>
+	<item id="2001">
+		<n32ItemId>1320000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神狙碎片</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>10001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>银刃击</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>10002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>自愈术</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>10003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>践踏</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>10101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>聪智光辉</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>10102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>轻装上阵</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>11001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>盾牌猛击</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>12001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>裂空斩</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>13001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>皎月之辉</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>20001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>石肤术</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>20002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>剧毒吹箭</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>20101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>生机盎然</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>20102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>蓄力</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>21101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>活力祝福</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>22001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>穿云箭</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>23001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>蛊术药剂</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>30001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>高爆手雷</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>30002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>快速补给</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>30003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>雷电打击</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>30101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>轻型材料</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>31001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>火焰喷射器I型</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>32001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射弹</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>12102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>抑制光环</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>13003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>寒霜爆发</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>21002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>绊倒</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>22002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>孢子粉尘</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>31002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>11003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>日蚀波纹</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>13004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>霜月之环</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>22102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>狩猎本能</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>23004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>魔法鹰隼</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>31003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>无敌铁拳</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>32102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>瞄准训练</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>11004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>破晓审判</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>21004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>23005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>须根缠绕</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>23006001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>新绿绽华</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>32003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>破甲弹</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>32004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>4#霰弹</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>33003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>能量护盾</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>10103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣洁光环</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>11101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>勇气赠礼</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>12101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>热血赞歌</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>13002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>沉寂之风</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>20103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战斗直觉</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>22101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>灵巧</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>23002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>回春祭礼</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>30004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>短距跃迁</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>31101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>增压排气管</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>32101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>10004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣疗术</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>10104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>采撷妙想</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>20104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>自然援助</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>30103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>重型装备</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>13005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>霜冻新星</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>31004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>11005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>英勇冲锋</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>12104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>净化锋刃</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
+	</item>
+	<item id="2013">
+		<n32ItemId>11002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神圣干预</szInfo>
+	</item>
+	<item id="2013">
+		<n32ItemId>23003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>疗愈春风</szInfo>
+	</item>
+	<item id="2013">
+		<n32ItemId>32002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>超距打击</szInfo>
+	</item>
+	<item id="2013">
+		<n32ItemId>21003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>巨龙振翅</szInfo>
+	</item>
+	<item id="2013">
+		<n32ItemId>33002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2013">
+		<n32ItemId>13006001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>和平之歌</szInfo>
+	</item>
+	<item id="3001">
+		<n32ItemId>1120001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪光</szInfo>
+	</item>
+	<item id="3001">
+		<n32ItemId>1230101</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>乌鸦鬼</szInfo>
+	</item>
+	<item id="3001">
+		<n32ItemId>1310001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>牛博士</szInfo>
+	</item>
+	<item id="3002">
+		<n32ItemId>1130001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天女</szInfo>
+	</item>
+	<item id="3002">
+		<n32ItemId>1210001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>狂僧</szInfo>
+	</item>
+	<item id="3002">
+		<n32ItemId>1320101</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>安娜</szInfo>
+	</item>
+	<item id="3003">
+		<n32ItemId>1120101</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹弓</szInfo>
+	</item>
+	<item id="3003">
+		<n32ItemId>1230001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>风女</szInfo>
+	</item>
+	<item id="3003">
+		<n32ItemId>1310101</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>机甲少女</szInfo>
+	</item>
+	<item id="3004">
+		<n32ItemId>1110101</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>殿前骑士</szInfo>
+	</item>
+	<item id="3004">
+		<n32ItemId>1220101</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>蒂皮</szInfo>
+	</item>
+	<item id="3004">
+		<n32ItemId>1330101</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天才</szInfo>
+	</item>
+	<item id="3005">
+		<n32ItemId>1130100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>65</n32MinNum>
+		<n32MaxNum>65</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钟表匠</szInfo>
+	</item>
+	<item id="3005">
+		<n32ItemId>1210100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>65</n32MinNum>
+		<n32MaxNum>65</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>龙女</szInfo>
+	</item>
+	<item id="3005">
+		<n32ItemId>1320000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>65</n32MinNum>
+		<n32MaxNum>65</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神狙</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1110000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>厚德碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1120000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪光碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1220000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>修行者碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1230100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>乌鸦鬼碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1310000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>牛博士碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1330000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>法老碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1130000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天女碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1210000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>狂僧碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1320100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>安娜碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1120100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹弓碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1230000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>风女碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1310100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>机甲少女碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1110100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>殿前骑士碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1220100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>蒂皮碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1330100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天才碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1130100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钟表匠碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1210100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>龙女碎片</szInfo>
+	</item>
+	<item id="3006">
+		<n32ItemId>1320000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>140</n32MinNum>
+		<n32MaxNum>140</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神狙碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1110000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>厚德碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1120000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪光碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1220000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>修行者碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1230100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>乌鸦鬼碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1310000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>牛博士碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1330000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>法老碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1130000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天女碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1210000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>狂僧碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1320100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>安娜碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1120100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹弓碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1230000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>风女碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1310100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>机甲少女碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1110100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>殿前骑士碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1220100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>蒂皮碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1330100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>天才碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1130100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钟表匠碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1210100</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>龙女碎片</szInfo>
+	</item>
+	<item id="3007">
+		<n32ItemId>1320000</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>260</n32MinNum>
+		<n32MaxNum>260</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神狙碎片</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>10103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣洁光环</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>11101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>勇气赠礼</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>12101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>热血赞歌</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>13002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>沉寂之风</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>20103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战斗直觉</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>22101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>灵巧</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>23002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>回春祭礼</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>30004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>短距跃迁</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>31101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>增压排气管</szInfo>
+	</item>
+	<item id="3011">
+		<n32ItemId>32101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>凶残</szInfo>
+	</item>
+	<item id="3013">
+		<n32ItemId>10004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>38</n32MinNum>
+		<n32MaxNum>38</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣疗术</szInfo>
+	</item>
+	<item id="3013">
+		<n32ItemId>10104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>38</n32MinNum>
+		<n32MaxNum>38</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>采撷妙想</szInfo>
+	</item>
+	<item id="3013">
+		<n32ItemId>20104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>38</n32MinNum>
+		<n32MaxNum>38</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>自然援助</szInfo>
+	</item>
+	<item id="3013">
+		<n32ItemId>30103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>38</n32MinNum>
+		<n32MaxNum>38</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>重型装备</szInfo>
+	</item>
+	<item id="3021">
+		<n32ItemId>10002</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>300</n32MinNum>
+		<n32MaxNum>300</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钻石*300</szInfo>
+	</item>
+	<item id="3022">
+		<n32ItemId>10001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>10000</n32MinNum>
+		<n32MaxNum>10000</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>金币*10000</szInfo>
+	</item>
+	<item id="3014">
+		<n32ItemId>10001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>50000</n32MinNum>
+		<n32MaxNum>50000</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>金币*50000</szInfo>
+	</item>
+	<item id="3015">
+		<n32ItemId>11002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>3</n32MinNum>
+		<n32MaxNum>3</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神圣干预</szInfo>
+	</item>
+	<item id="3015">
+		<n32ItemId>23003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>3</n32MinNum>
+		<n32MaxNum>3</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>疗愈春风</szInfo>
+	</item>
+	<item id="3015">
+		<n32ItemId>32002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>3</n32MinNum>
+		<n32MaxNum>3</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>超距打击</szInfo>
+	</item>
+	<item id="3015">
+		<n32ItemId>21003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>3</n32MinNum>
+		<n32MaxNum>3</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>巨龙振翅</szInfo>
+	</item>
+	<item id="3015">
+		<n32ItemId>33002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>3</n32MinNum>
+		<n32MaxNum>3</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="3016">
+		<n32ItemId>11002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神圣干预</szInfo>
+	</item>
+	<item id="3016">
+		<n32ItemId>23003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>疗愈春风</szInfo>
+	</item>
+	<item id="3016">
+		<n32ItemId>32002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>超距打击</szInfo>
+	</item>
+	<item id="3016">
+		<n32ItemId>21003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>巨龙振翅</szInfo>
+	</item>
+	<item id="3016">
+		<n32ItemId>33002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="3017">
+		<n32ItemId>11002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>18</n32MinNum>
+		<n32MaxNum>18</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神圣干预</szInfo>
+	</item>
+	<item id="3017">
+		<n32ItemId>23003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>18</n32MinNum>
+		<n32MaxNum>18</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>疗愈春风</szInfo>
+	</item>
+	<item id="3017">
+		<n32ItemId>32002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>18</n32MinNum>
+		<n32MaxNum>18</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>超距打击</szInfo>
+	</item>
+	<item id="3017">
+		<n32ItemId>21003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>18</n32MinNum>
+		<n32MaxNum>18</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>巨龙振翅</szInfo>
+	</item>
+	<item id="3017">
+		<n32ItemId>33002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>18</n32MinNum>
+		<n32MaxNum>18</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="3017">
+		<n32ItemId>13006001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>18</n32MinNum>
+		<n32MaxNum>18</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>和平之歌</szInfo>
+	</item>
+	<item id="3023">
+		<n32ItemId>10002</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>720</n32MinNum>
+		<n32MaxNum>720</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钻石*720</szInfo>
+	</item>
+	<item id="3024">
+		<n32ItemId>10002</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1350</n32MinNum>
+		<n32MaxNum>1350</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钻石*1350</szInfo>
+	</item>
+	<item id="3026">
+		<n32ItemId>10002</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1350</n32MinNum>
+		<n32MaxNum>1350</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钻石*3600</szInfo>
+	</item>
+	<item id="3027">
+		<n32ItemId>10002</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1350</n32MinNum>
+		<n32MaxNum>1350</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>钻石*7500</szInfo>
+	</item>
+	<item id="1001">
+		<n32ItemId>10003</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战场掉落技能书</szInfo>
+	</item>
+	<item id="1002">
+		<n32ItemId>10003</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战场掉落技能书</szInfo>
+	</item>
+	<item id="1003">
+		<n32ItemId>10004</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战场掉落天赋石</szInfo>
+	</item>
+	<item id="1004">
+		<n32ItemId>10004</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>5</n32MinNum>
 		<n32MaxNum>5</n32MaxNum>
-	</item>
-	<item id="1102">
-		<n32ItemId>61001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1201">
-		<n32ItemId>1110101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1201">
-		<n32ItemId>1110001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1201">
-		<n32ItemId>1310101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1201">
-		<n32ItemId>1210001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1201">
-		<n32ItemId>1210101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1201">
-		<n32ItemId>1310001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1202">
-		<n32ItemId>1120001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1202">
-		<n32ItemId>1320001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1202">
-		<n32ItemId>1120101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1202">
-		<n32ItemId>1220001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1202">
-		<n32ItemId>1220101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1202">
-		<n32ItemId>1320101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1203">
-		<n32ItemId>1130001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1203">
-		<n32ItemId>1230001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1203">
-		<n32ItemId>1130101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1203">
-		<n32ItemId>1330001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1203">
-		<n32ItemId>1230101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1203">
-		<n32ItemId>1330101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1204">
-		<n32ItemId>1320001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1204">
-		<n32ItemId>1320101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1204">
-		<n32ItemId>1330001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1204">
-		<n32ItemId>1230101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1204">
-		<n32ItemId>1310001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1204">
-		<n32ItemId>1310101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1205">
-		<n32ItemId>1120101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1205">
-		<n32ItemId>1120001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1205">
-		<n32ItemId>1130001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1205">
-		<n32ItemId>1130101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1205">
-		<n32ItemId>1110001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1205">
-		<n32ItemId>1110101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1206">
-		<n32ItemId>1220001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1206">
-		<n32ItemId>1220101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1206">
-		<n32ItemId>1230001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1206">
-		<n32ItemId>1330101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1206">
-		<n32ItemId>1210101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1110101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1110001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1310101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1210001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1210101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1310001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1120001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1320001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1120101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1220001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1220101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1320101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1130001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1230001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1130101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1330001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1230101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1207">
-		<n32ItemId>1330101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>10001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>10002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>10003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>10101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>10102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>11001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>11003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>11004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>12001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>12102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>13001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>13003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>13004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>20001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>20002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>20101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>20102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>21002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>21101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>22001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>22002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>22102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>23001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>23004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>23005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>30001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>30002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>30003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>30101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>31001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>31002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>31003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>32001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>32003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>32004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>32102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>33001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1208">
-		<n32ItemId>33003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>10004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>10103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>10104001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>11005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>11101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>12101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>12103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>12104001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>13002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>13005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>20103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>20104001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>22101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>23002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>30004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>30103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>31004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>31101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>32101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1209">
-		<n32ItemId>33101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>11002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>13006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>21003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>23003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>32002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>33002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>51100001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>51200001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>51300001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>51301001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1210">
-		<n32ItemId>52301001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10002001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10101001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10102001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>11001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>11003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>11004001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>12001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>12102001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>13001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>13003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>13004001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>20001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>20002001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>20101001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>20102001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>21002001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>21101001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>22001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>22002001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>22102001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>23001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>23004001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>23005001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>30001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>30002001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>30003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>30101001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>31001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>31002001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>31003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>32001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>32003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>32004001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>32102001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>33001001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>33003001</n32ItemId>
-		<n32Rate>10</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10004001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10103001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>10104001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>11005001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>11101001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>12101001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>12103001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>12104001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>13002001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>13005001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>20103001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>20104001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>22101001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>23002001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>30004001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>30103001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>31004001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>31101001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>32101001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>33101001</n32ItemId>
-		<n32Rate>5</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>11002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>13006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>21003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>23003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>32002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>33002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>51100001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>51200001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>51300001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>51301001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1211">
-		<n32ItemId>52301001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1110101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1110001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1310101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1210001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1210101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1310001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1120001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1320001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1120101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1220001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1220101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1320101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1130001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1230001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1130101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1330001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1230101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1212">
-		<n32ItemId>1330101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>110101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>110001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>310101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>210001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>210101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>310001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>120001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>320001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>120101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>220001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>220101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>320101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>130001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>230001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>130101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>330001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>230101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1213">
-		<n32ItemId>330101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1110101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1110001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1310101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1210001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1210101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1310001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1120001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1320001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1120101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1220001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1220101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1320101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1130001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1230001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1130101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1330001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1230101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1214">
-		<n32ItemId>1330101</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>5</n32MinNum>
-		<n32MaxNum>7</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>10001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>10002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>10003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>10101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>10102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>11001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>11003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>11004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>12001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>12102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>13001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>13003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>13004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>20001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>20002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>20101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>20102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>21002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>21101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>22001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>22002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>22102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>23001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>23004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>23005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>30001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>30002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>30003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>30101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>31001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>31002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>31003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>32001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>32003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>32004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>32102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>33001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1215">
-		<n32ItemId>33003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>10004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>10103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>10104001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>11005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>11101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>12101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>12103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>12104001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>13002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>13005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>20103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>20104001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>22101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>23002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>30004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>30103001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>31004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>31101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>32101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1216">
-		<n32ItemId>33101001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>11002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>13006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>21003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>23003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>32002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>33002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>51100001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>51200001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>51300001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>51301001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
-	</item>
-	<item id="1217">
-		<n32ItemId>52301001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>6</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战场掉落天赋石</szInfo>
 	</item>
 </info>

@@ -15,12 +15,12 @@ function bit_not(a)
 	return ~a
 end
 
-
 function mClamp(a, min, max)
 	if a < min then return min end
 	if a > max then return max end
 	return a
 end
+
 --判断点是否在矩形范围
 function ptInRect(p,rectPts)
 	local size = 4 
@@ -194,7 +194,43 @@ function getAccountLevel( _exp )
 	return lv
 end
 
-function openPackage( pkgIds )
+function openPackage( strPkg )
+	local drops = {}
+	print( strPkg )
+	local str1 = string.split(strPkg, ";")
+	print( str1 )
+	for k, v in pairs( str1 ) do
+		local str2 = string.split(v, ",")
+		drops[tonumber(str2[1])] = tonumber(str2[2])
+	end
+	print( drops )
+
+	local pkgIds = {}
+	
+	for k, v in pairs(drops) do
+		for i=1, v do
+			local dropDat = g_shareData.dropPackage[k]
+			print ( dropDat )
+			local num = math.random(dropDat[1].n32MinNum, dropDat[1].n32MaxNum)
+			print("num = " .. num)
+			for j=1, num do
+				local r = 0
+				local rd = math.random(1, dropDat.totalRate)
+				for p, q in pairs(dropDat) do
+					if type(q) == "table" then
+						if q.n32Rate >= rd then
+							r = q.n32DropId
+							break
+						end
+					end
+				end
+				table.insert(pkgIds, r)
+			end
+		end
+	end
+
+	print(pkdIds)
+	
 	local items = {}
 	for k, v in pairs(pkgIds) do
 		local drop = g_shareData.itemDropPackage[v]
@@ -210,8 +246,22 @@ function openPackage( pkgIds )
 		end
 		local itemId = r.n32ItemId
 		local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
-		table.insert(items, { itemId=itemId, itemNum=itemNum })
+		if not items[itemId]  then
+			items[itemId] = itemNum
+		else
+			items[itemId] = items[itemId] + itemNum
+		end
 	end
+	print( items )
+	return items
+end
+
+function usePackageItem( itemId )
+	local itemDat = g_shareData.itemRepository[itemId]
+	if itemDat.n32Type ~= 4 then
+		return {}
+	end
+	local items = openPackage( itemDat.szRetain3 )
 	return items
 end
 
@@ -227,4 +277,22 @@ function hash_num (num)
 	local hash = num << 8
 	return hash
 end
+
+function GET_SkillTgtType(data)
+	assert(data,"getskillTgtType data is null")
+	local t = math.floor(data.n32Type / 10)
+	return t
+end
+
+function GET_SkillTgtRange(data)
+	assert(data,"getskillTgtRange data is null")
+	local t = data.n32Type % 10
+	return t
+end
+
+function calcVersionCode( version )
+	local codes = string.split(version, ".")
+	return codes[1] * 100000000 + codes[2] * 1000000 + codes[3] * 10000 + codes[4]
+end
+
 

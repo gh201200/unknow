@@ -194,6 +194,7 @@ function CMD.Start (conf)
 		send_request = send_request,
 		cards = nil,
 		account = { account_id = conf.account },
+		level = 0,
 		explore = nil,
 		heartBeatTime = os.time(),
 	}
@@ -274,24 +275,25 @@ function CMD.addItems(op, items)
 	local cards = {}
 	local skillMats = {}
 	for k, v in pairs(items) do
-		local item = g_shareData.itemRepository[v.itemId]
+		local item = g_shareData.itemRepository[k]
 		if item.n32Type == 3 then	--英雄卡
 			if not cards[item.n32Retain1] then
-				cards[item.n32Retain1] = v.itemNum
+				cards[item.n32Retain1] = v
 			else
-				cards[item.n32Retain1] = cards[item.n32Retain1] + v.itemNum
+				cards[item.n32Retain1] = cards[item.n32Retain1] + v
 			end
 		elseif item.n32Type == 4 then	--礼包宝箱
-			syslog.err("addItems: can not add package["..v.itemId.."]")
+			local items = usePackageItem( k )
+			CMD.addItems(op, items)
 		elseif item.n32Type == 5 then	--战斗外金币
-			gold = gold + item.n32Retain1 * v.itemNum
+			gold = gold + item.n32Retain1 * v
 		elseif item.n32Type == 6 then	--钻石
-			money = money + item.n32Retain1 * v.itemNum
+			money = money + item.n32Retain1 * v
 		elseif item.n32Type == 7 then	--技能材料
 			if not skillMats[item.n32Retain1] then
-				skillMats[item.n32Retain1] = v.itemNum
+				skillMats[item.n32Retain1] = v
 			else
-				skillMats[item.n32Retain1] = skillMats[item.n32Retain1] + v.itemNum
+				skillMats[item.n32Retain1] = skillMats[item.n32Retain1] + v
 			end
 		end
 	end

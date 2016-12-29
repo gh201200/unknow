@@ -2,10 +2,13 @@
 <info>
 	<item id="10001">
 		<n32Type>1</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>60</n32Count>
 		<n32Price>6</n32Price>
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>6元钻石</szName>
 		<szIcon>UI/Textures/Shop/Yiduizuanshi.png</szIcon>
 		<szContent></szContent>
@@ -13,10 +16,13 @@
 	</item>
 	<item id="10002">
 		<n32Type>1</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>300</n32Count>
 		<n32Price>30</n32Price>
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>30元钻石</szName>
 		<szIcon>UI/Textures/Shop/Yidaizuanshi.png</szIcon>
 		<szContent></szContent>
@@ -24,10 +30,13 @@
 	</item>
 	<item id="10003">
 		<n32Type>1</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>680</n32Count>
 		<n32Price>68</n32Price>
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>68元钻石</szName>
 		<szIcon>UI/Textures/Shop/Yidahezuanshi.png</szIcon>
 		<szContent></szContent>
@@ -35,10 +44,13 @@
 	</item>
 	<item id="10004">
 		<n32Type>1</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>1280</n32Count>
 		<n32Price>128</n32Price>
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>128元钻石</szName>
 		<szIcon>UI/Textures/Shop/Yiduizuanshi.png</szIcon>
 		<szContent></szContent>
@@ -46,10 +58,13 @@
 	</item>
 	<item id="10005">
 		<n32Type>1</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>3280</n32Count>
 		<n32Price>328</n32Price>
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>328元钻石</szName>
 		<szIcon>UI/Textures/Shop/Yidaizuanshi.png</szIcon>
 		<szContent></szContent>
@@ -57,10 +72,13 @@
 	</item>
 	<item id="10006">
 		<n32Type>1</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>6480</n32Count>
 		<n32Price>648</n32Price>
 		<n32MoneyType>0</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>648元钻石</szName>
 		<szIcon>UI/Textures/Shop/Yidahezuanshi.png</szIcon>
 		<szContent></szContent>
@@ -68,10 +86,13 @@
 	</item>
 	<item id="20001">
 		<n32Type>2</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>1000</n32Count>
 		<n32Price>6</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>1000金币</szName>
 		<szIcon>UI/Textures/Shop/Yiduijinbi.png</szIcon>
 		<szContent></szContent>
@@ -79,10 +100,13 @@
 	</item>
 	<item id="20002">
 		<n32Type>2</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>10000</n32Count>
 		<n32Price>60</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>1W金币</szName>
 		<szIcon>UI/Textures/Shop/Yidaijinbi.png</szIcon>
 		<szContent></szContent>
@@ -90,54 +114,27 @@
 	</item>
 	<item id="20003">
 		<n32Type>2</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>100000</n32Count>
 		<n32Price>600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>10w金币</szName>
 		<szIcon>UI/Textures/Shop/Yixiangjinbi.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
-	<item id="30001">
-		<n32Type>3</n32Type>
-		<n32Count>1</n32Count>
-		<n32Price>300</n32Price>
-		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
-		<szName>力量宝箱</szName>
-		<szIcon>UI/Textures/SequenceTextures/red1.png</szIcon>
-		<szContent></szContent>
-		<n32GoodsID>62001</n32GoodsID>
-	</item>
-	<item id="30002">
-		<n32Type>3</n32Type>
-		<n32Count>1</n32Count>
-		<n32Price>300</n32Price>
-		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
-		<szName>敏捷宝箱</szName>
-		<szIcon>UI/Textures/SequenceTextures/green1.png</szIcon>
-		<szContent></szContent>
-		<n32GoodsID>62002</n32GoodsID>
-	</item>
-	<item id="30003">
-		<n32Type>3</n32Type>
-		<n32Count>1</n32Count>
-		<n32Price>300</n32Price>
-		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
-		<szName>智力宝箱</szName>
-		<szIcon>UI/Textures/SequenceTextures/blue1.png</szIcon>
-		<szContent></szContent>
-		<n32GoodsID>62003</n32GoodsID>
-	</item>
 	<item id="40001">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>殿前骑士碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -145,10 +142,13 @@
 	</item>
 	<item id="40002">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>厚德碎片</szName>
 		<szIcon>UI/Textures/HeadPortraits_Square/Houde.png</szIcon>
 		<szContent></szContent>
@@ -156,10 +156,13 @@
 	</item>
 	<item id="40003">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>机甲少女碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -167,10 +170,13 @@
 	</item>
 	<item id="40004">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>狂僧碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -178,10 +184,13 @@
 	</item>
 	<item id="40005">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>龙女碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -189,10 +198,13 @@
 	</item>
 	<item id="40006">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>牛博士碎片</szName>
 		<szIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szIcon>
 		<szContent></szContent>
@@ -200,10 +212,13 @@
 	</item>
 	<item id="40007">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>闪光碎片</szName>
 		<szIcon>UI/Textures/HeadPortraits_Square/Shanguang.png</szIcon>
 		<szContent></szContent>
@@ -211,10 +226,13 @@
 	</item>
 	<item id="40008">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>神狙碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -222,10 +240,13 @@
 	</item>
 	<item id="40009">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>弹弓碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -233,10 +254,13 @@
 	</item>
 	<item id="40010">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>修行者碎片</szName>
 		<szIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szIcon>
 		<szContent></szContent>
@@ -244,10 +268,13 @@
 	</item>
 	<item id="40011">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>蒂皮碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -255,10 +282,13 @@
 	</item>
 	<item id="40012">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>安娜碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -266,10 +296,13 @@
 	</item>
 	<item id="40013">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>天女碎片</szName>
 		<szIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szIcon>
 		<szContent></szContent>
@@ -277,10 +310,13 @@
 	</item>
 	<item id="40014">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>风女碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -288,10 +324,13 @@
 	</item>
 	<item id="40015">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>钟表匠碎片</szName>
 		<szIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szIcon>
 		<szContent></szContent>
@@ -299,10 +338,13 @@
 	</item>
 	<item id="40016">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>法老碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
@@ -310,10 +352,13 @@
 	</item>
 	<item id="40017">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>乌鸦鬼碎片</szName>
 		<szIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szIcon>
 		<szContent></szContent>
@@ -321,57 +366,1416 @@
 	</item>
 	<item id="40018">
 		<n32Type>4</n32Type>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>200</n32Price>
+		<n32Price>500</n32Price>
 		<n32MoneyType>1</n32MoneyType>
-		<n32Limit>10</n32Limit>
+		<n32Limit>3</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>天才碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
 		<n32GoodsID>1330101</n32GoodsID>
 	</item>
-	<item id="50001">
+	<item id="30001">
 		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>288</n32Price>
+		<n32Price>600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
-		<szName>开一次</szName>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
+		<szName>一阶英雄宝箱</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>70001</n32GoodsID>
+		<n32GoodsID>60001</n32GoodsID>
 	</item>
-	<item id="50002">
+	<item id="30002">
 		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>2880</n32Price>
+		<n32Price>3000</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
-		<szName>开十次</szName>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
+		<szName>一阶高级英雄宝箱</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>70002</n32GoodsID>
+		<n32GoodsID>60002</n32GoodsID>
 	</item>
-	<item id="50003">
+	<item id="30011">
 		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>1</n32Count>
-		<n32Price>144</n32Price>
+		<n32Price>840</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
-		<szName>开一次</szName>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
+		<szName>二阶英雄宝箱</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>70003</n32GoodsID>
+		<n32GoodsID>60011</n32GoodsID>
 	</item>
-	<item id="50004">
+	<item id="30012">
 		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>4200</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
+		<szName>二阶高级英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60012</n32GoodsID>
+	</item>
+	<item id="30021">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>960</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
+		<szName>三阶英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60021</n32GoodsID>
+	</item>
+	<item id="30022">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>4800</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
+		<szName>三阶高级英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60022</n32GoodsID>
+	</item>
+	<item id="30031">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>1080</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
+		<szName>四阶英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60031</n32GoodsID>
+	</item>
+	<item id="30032">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>5400</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
+		<szName>四阶高级英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60032</n32GoodsID>
+	</item>
+	<item id="30041">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>1200</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
+		<szName>五阶英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60041</n32GoodsID>
+	</item>
+	<item id="30042">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>6000</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
+		<szName>五阶高级英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60042</n32GoodsID>
+	</item>
+	<item id="30051">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>1320</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
+		<szName>六阶英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60051</n32GoodsID>
+	</item>
+	<item id="30052">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>6600</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
+		<szName>六阶高级英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60052</n32GoodsID>
+	</item>
+	<item id="30061">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>1440</n32Price>
 		<n32MoneyType>2</n32MoneyType>
 		<n32Limit>0</n32Limit>
-		<szName>开十次</szName>
+		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
+		<szName>七阶英雄宝箱</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>70004</n32GoodsID>
+		<n32GoodsID>60061</n32GoodsID>
+	</item>
+	<item id="30062">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>7200</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
+		<szName>七阶高级英雄宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>60062</n32GoodsID>
+	</item>
+	<item id="31001">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>390</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
+		<szName>一阶技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61001</n32GoodsID>
+	</item>
+	<item id="31002">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>2340</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
+		<szName>一阶高级技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61002</n32GoodsID>
+	</item>
+	<item id="31011">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>460</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
+		<szName>二阶技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61011</n32GoodsID>
+	</item>
+	<item id="31012">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>2760</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
+		<szName>二阶高级技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61012</n32GoodsID>
+	</item>
+	<item id="31021">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>530</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
+		<szName>三阶技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61021</n32GoodsID>
+	</item>
+	<item id="31022">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>3180</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
+		<szName>三阶高级技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61022</n32GoodsID>
+	</item>
+	<item id="31031">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>600</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
+		<szName>四阶技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61031</n32GoodsID>
+	</item>
+	<item id="31032">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>3600</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
+		<szName>四阶高级技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61032</n32GoodsID>
+	</item>
+	<item id="31041">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>680</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
+		<szName>五阶技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61041</n32GoodsID>
+	</item>
+	<item id="31042">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>4080</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
+		<szName>五阶高级技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61042</n32GoodsID>
+	</item>
+	<item id="31051">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>760</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
+		<szName>六阶技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61051</n32GoodsID>
+	</item>
+	<item id="31052">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>4560</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
+		<szName>六阶高级技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61052</n32GoodsID>
+	</item>
+	<item id="31061">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>900</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
+		<szName>七阶技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61061</n32GoodsID>
+	</item>
+	<item id="31062">
+		<n32Type>3</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>5400</n32Price>
+		<n32MoneyType>2</n32MoneyType>
+		<n32Limit>0</n32Limit>
+		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
+		<szName>七阶高级技能宝箱</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>61062</n32GoodsID>
+	</item>
+	<item id="710001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10001001</n32GoodsID>
+	</item>
+	<item id="710002">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10002001</n32GoodsID>
+	</item>
+	<item id="710003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10003001</n32GoodsID>
+	</item>
+	<item id="710101">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10101001</n32GoodsID>
+	</item>
+	<item id="710102">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10102001</n32GoodsID>
+	</item>
+	<item id="711001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>11001001</n32GoodsID>
+	</item>
+	<item id="712001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>12001001</n32GoodsID>
+	</item>
+	<item id="713001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>13001001</n32GoodsID>
+	</item>
+	<item id="720001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>20001001</n32GoodsID>
+	</item>
+	<item id="720002">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>20002001</n32GoodsID>
+	</item>
+	<item id="720101">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>20101001</n32GoodsID>
+	</item>
+	<item id="720102">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>20102001</n32GoodsID>
+	</item>
+	<item id="721001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>21001001</n32GoodsID>
+	</item>
+	<item id="721101">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>21101001</n32GoodsID>
+	</item>
+	<item id="722001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>22001001</n32GoodsID>
+	</item>
+	<item id="723001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>23001001</n32GoodsID>
+	</item>
+	<item id="730001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>30001001</n32GoodsID>
+	</item>
+	<item id="730002">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>30002001</n32GoodsID>
+	</item>
+	<item id="730003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>30003001</n32GoodsID>
+	</item>
+	<item id="730101">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>30101001</n32GoodsID>
+	</item>
+	<item id="731001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>31001001</n32GoodsID>
+	</item>
+	<item id="732001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>32001001</n32GoodsID>
+	</item>
+	<item id="733001">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>33001001</n32GoodsID>
+	</item>
+	<item id="712102">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>12102001</n32GoodsID>
+	</item>
+	<item id="713003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>13003001</n32GoodsID>
+	</item>
+	<item id="721002">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>21002001</n32GoodsID>
+	</item>
+	<item id="722002">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>22002001</n32GoodsID>
+	</item>
+	<item id="731002">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>31002001</n32GoodsID>
+	</item>
+	<item id="711003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>11003001</n32GoodsID>
+	</item>
+	<item id="713004">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>13004001</n32GoodsID>
+	</item>
+	<item id="722102">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>22102001</n32GoodsID>
+	</item>
+	<item id="723004">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>23004001</n32GoodsID>
+	</item>
+	<item id="731003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>31003001</n32GoodsID>
+	</item>
+	<item id="732102">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>32102001</n32GoodsID>
+	</item>
+	<item id="711004">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>11004001</n32GoodsID>
+	</item>
+	<item id="712002">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>12002001</n32GoodsID>
+	</item>
+	<item id="721004">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>21004001</n32GoodsID>
+	</item>
+	<item id="723005">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>23005001</n32GoodsID>
+	</item>
+	<item id="722003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>22003001</n32GoodsID>
+	</item>
+	<item id="723006">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>23006001</n32GoodsID>
+	</item>
+	<item id="731005">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>31005001</n32GoodsID>
+	</item>
+	<item id="732003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>32003001</n32GoodsID>
+	</item>
+	<item id="732004">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>32004001</n32GoodsID>
+	</item>
+	<item id="733003">
+		<n32Type>4</n32Type>
+		<n32Site>3</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>50</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>10</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>33003001</n32GoodsID>
+	</item>
+	<item id="610103">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10103001</n32GoodsID>
+	</item>
+	<item id="611101">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>11101001</n32GoodsID>
+	</item>
+	<item id="612101">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>12101001</n32GoodsID>
+	</item>
+	<item id="613002">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>13002001</n32GoodsID>
+	</item>
+	<item id="620103">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>20103001</n32GoodsID>
+	</item>
+	<item id="622101">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>22101001</n32GoodsID>
+	</item>
+	<item id="623002">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>23002001</n32GoodsID>
+	</item>
+	<item id="630004">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>30004001</n32GoodsID>
+	</item>
+	<item id="630102">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>30102001</n32GoodsID>
+	</item>
+	<item id="631101">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>31101001</n32GoodsID>
+	</item>
+	<item id="632101">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城一星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>32101001</n32GoodsID>
+	</item>
+	<item id="610004">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10004001</n32GoodsID>
+	</item>
+	<item id="610104">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>10104001</n32GoodsID>
+	</item>
+	<item id="620104">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>20104001</n32GoodsID>
+	</item>
+	<item id="630103">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>30103001</n32GoodsID>
+	</item>
+	<item id="612103">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>12103001</n32GoodsID>
+	</item>
+	<item id="613005">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>13005001</n32GoodsID>
+	</item>
+	<item id="631004">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>31004001</n32GoodsID>
+	</item>
+	<item id="611005">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>11005001</n32GoodsID>
+	</item>
+	<item id="612104">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>12104001</n32GoodsID>
+	</item>
+	<item id="633101">
+		<n32Type>4</n32Type>
+		<n32Site>2</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>400</n32Price>
+		<n32MoneyType>1</n32MoneyType>
+		<n32Limit>5</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szName>金币商城二星技能</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>33101001</n32GoodsID>
+	</item>
+	<item id="50001">
+		<n32Type>5</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>30</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>28800</n32Limit>
+		<n32ArenaLvUpLimit>1</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
+		<szName>一阶竞技场特惠</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>50001</n32GoodsID>
+	</item>
+	<item id="50011">
+		<n32Type>5</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>30</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>28800</n32Limit>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
+		<szName>二阶竞技场特惠</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>50011</n32GoodsID>
+	</item>
+	<item id="50021">
+		<n32Type>5</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>68</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>28800</n32Limit>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
+		<szName>三阶竞技场特惠</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>50021</n32GoodsID>
+	</item>
+	<item id="50031">
+		<n32Type>5</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>128</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>28800</n32Limit>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
+		<szName>四阶竞技场特惠</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>50031</n32GoodsID>
+	</item>
+	<item id="50041">
+		<n32Type>5</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>128</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>28800</n32Limit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
+		<szName>五阶竞技场特惠</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>50041</n32GoodsID>
+	</item>
+	<item id="50051">
+		<n32Type>5</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>328</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>28800</n32Limit>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
+		<szName>六阶竞技场特惠</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>50051</n32GoodsID>
+	</item>
+	<item id="50061">
+		<n32Type>5</n32Type>
+		<n32Site>0</n32Site>
+		<n32Count>1</n32Count>
+		<n32Price>648</n32Price>
+		<n32MoneyType>0</n32MoneyType>
+		<n32Limit>28800</n32Limit>
+		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
+		<szName>七阶竞技场特惠</szName>
+		<szIcon></szIcon>
+		<szContent></szContent>
+		<n32GoodsID>50061</n32GoodsID>
 	</item>
 </info>
