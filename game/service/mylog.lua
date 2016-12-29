@@ -14,6 +14,7 @@ local cardHandler
 local cardLogNum = 0
 
 function init()
+	if true then return end
 	local timeStr = os.date("%Y-%m-%d-%H-%M")
 	
 	accountfile = accountfile .."_" .. timeStr .. ".log"
@@ -43,7 +44,7 @@ local function writeAccount( txt )
 end
 
 local function writeCard( txt )
-	cardHandler:write( string.format("[:%08x] %s\n", cardLogNum, txt))
+	cardHandler:write( txt .. "\n" )
 	cardLogNum = cardLogNum + 1
 	if cardLogNum >= SAVE_NUM then
 		io.close( cardHandler )
@@ -65,6 +66,7 @@ end
 function accept.log( name, args )
 	args.time = Time.GetCurStringTime()
 	local jt = json.encode( args )
+	print( jt )
 	if name == "account" then
 		writeAccount( jt )
 	elseif name == "card" then

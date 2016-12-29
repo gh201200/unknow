@@ -23,7 +23,7 @@ local function updateMapEvent()
 	local nt = skynet.now()
 	EntityManager:update( (nt - last_update_time) * 10 )
 	SpawnNpcManager:update( (nt - last_update_time) * 10 )
-	BattleOverManager:update( (nt - last_update_time) * 10 )
+	--BattleOverManager:update( (nt - last_update_time) * 10 )
 	DropManager:update()
 	last_update_time = nt
 	skynet.timeout(2, updateMapEvent)
@@ -241,7 +241,7 @@ function CMD.start(response, args)
 	local roomId = 1
 	local mapDat = g_shareData.mapRepository[roomId]
 	
-	BattleOverManager:init( mapDat )
+	--BattleOverManager:init( mapDat )
 	
 	room_id = roomId
 

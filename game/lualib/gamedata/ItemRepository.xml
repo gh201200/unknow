@@ -20,7 +20,7 @@
 	</item>
 	<item id="10003">
 		<szIcon></szIcon>
-		<szModule></szModule>
+		<szModule>JiNengshi_M</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>0</n32Type>
 		<n32Retain1>0</n32Retain1>
@@ -29,7 +29,7 @@
 	</item>
 	<item id="10004">
 		<szIcon></szIcon>
-		<szModule></szModule>
+		<szModule>Tianfushi</szModule>
 		<szPickAni></szPickAni>
 		<n32Type>1</n32Type>
 		<n32Retain1>0</n32Retain1>

@@ -12,7 +12,8 @@
 		<szRedHomePos>34000,13900</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
 		<szBlueHomePos>34000,142000</szBlueHomePos>
-		<n32Pattern>1</n32Pattern>
+		<n32Time>600</n32Time>
+		<n32Kills>20</n32Kills>
 	</item>
 	<item id="2">
 		<szBornPos1>34000,27000</szBornPos1>
@@ -26,6 +27,7 @@
 		<szRedHomePos>34000,13900</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
 		<szBlueHomePos>34000,142000</szBlueHomePos>
-		<n32Pattern>1</n32Pattern>
+		<n32Time>600</n32Time>
+		<n32Kills>20</n32Kills>
 	</item>
 </info>
