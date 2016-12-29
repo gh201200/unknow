@@ -229,7 +229,7 @@ function openPackage( strPkg )
 		end
 	end
 
-	print(pkdIds)
+	print(pkgIds)
 	
 	local items = {}
 	for k, v in pairs(pkgIds) do
