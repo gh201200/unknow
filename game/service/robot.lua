@@ -47,7 +47,7 @@ local function recv_package(last)
 	end
 	if r == "" then
 		--error "Server closed"
-		print("服务器socket 断开 自动关闭机器人")
+		print("服务器socket 断开 自动关闭机器人" .. account)
 		skynet.exit()
 	end
 	return unpack_package(last .. r)
@@ -85,6 +85,22 @@ local function handle_package(t, ...)
 		assert(t == "RESPONSE")
 		handle_response(...)
 	end
+end
+-------------------机器人逻辑------------------------
+local Map = {}
+Map.MAP_GRID_SIZE = 0.1
+local MAP_XGRID_NUM = 68
+local MAP_ZGRID_NUM = 156
+local MAP_XPOS = Map.MAP_GRID_SIZE * MAP_XGRID_NUM
+local MAP_ZPOS = Map.MAP_GRID_SIZE * MAP_ZGRID_NUM
+function robot_update(dt)
+	robot_moveTest()	
+end
+
+function robot_moveTest()
+	local x = math.random(1,MAP_XPOS * 10000 )
+	local z = math.random(1,MAP_ZPOS * 10000 )
+	send_request("move",{x = x,y = 0,z = z})
 end
 -------------------消息的请求处理---------------------
 REQUEST.reEnterRoom = function(...)
@@ -129,6 +145,15 @@ REQUEST.confirmedHero = function(arg)
 		end
 	end
 end
+REQUEST.fightBegin = function(arg)
+	print(account .. "开始进入地图,进入机器人主逻辑")
+	skynet.fork(function()
+		while true do
+			robot_update()	
+			skynet.sleep(500)
+		end
+	end)
+end
 -------------------消息的回复处理----------------------
 RESPONSE.login = function(...)
 	print(account .."登录校验成功")
@@ -162,7 +187,6 @@ local function dispatch_package()
 		handle_package(host:dispatch(v))
 	end
 end
-
 function CMD.start(conf)
 	fd = assert(socket.connect(conf.ip, conf.port))
 	host = sproto.new(proto.s2c):host "package"	

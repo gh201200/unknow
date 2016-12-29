@@ -18,9 +18,9 @@ local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
 local loose_list = {}	--宽松队列
 local listTimeoutConfig = {
-	[1] = {["playerNum"] = 20,["keep"] = 40 * 1000,["strict"] = 20 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
-	[2] = {["playerNum"] = 50,["keep"] = 30 * 1000,["strict"] = 15 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
-	[3] = {["playerNum"] = 100,["keep"] = 20 * 1000,["strict"] = 10 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	[1] = {["playerNum"] = 20,["keep"] = 4 * 1000,["strict"] = 20 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	[2] = {["playerNum"] = 50,["keep"] = 3 * 1000,["strict"] = 15 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	[3] = {["playerNum"] = 100,["keep"] = 2 * 1000,["strict"] = 10 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
 	[3] = {["playerNum"] = math.maxinteger,["keep"] = 10 * 1000,["strict"] = 5 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000}
 }
 local listTimeouts = listTimeoutConfig[1] --超时时长
@@ -103,6 +103,7 @@ end
 
 --更新保持队列
 function updateKeeplist(dt)
+	local relist = {}
 	for i=#(keep_list),1,-1 do
 		local p = keep_list[i]
 		p.time = p.time + dt
@@ -111,9 +112,20 @@ function updateKeeplist(dt)
 			p.time = 0
 			p.failNum = 0
 			table.remove(keep_list,i)   --移除保持队列
-			addtoStictlist(p)
+			table.insert(relist,p)
 		end 
 	end 
+	for k,v in ipairs(relist) do
+		if v.src_list ~= nil then
+			for i=#keep_list,1,-1 do
+				if keep_list[i].account == v.account then
+					print("玩家" .. v.account .. "从严格队列删除")
+					table.remove(keep_list,i)
+				end
+			end
+			addtoStictlist(v)
+		end			
+	end
 end
 -- 添加到保持队列
 function addtoKeeplist(p)
@@ -222,7 +234,7 @@ function addtoStictlist(p)
 			end
 		end
 		local function indexCmp(a,b)
-			if a.index_list >= b.index_list then
+			if a.index_list > b.index_list then
 				return true
 			end
 			return false

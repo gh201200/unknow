@@ -391,6 +391,7 @@ function Ientity:onMove(dt)
 	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
 	mv_dst:mul_num(self.moveSpeed * dt)
 	mv_dst:add(self.pos)
+	
 	repeat
 		legal_pos = true
 		if self.useAStar then break end
@@ -401,7 +402,7 @@ function Ientity:onMove(dt)
 				local nearBy = false
 				local doNotUseAstar = false
 				local angle = 60
-				repeat
+				--repeat
 					if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 						doNotUseAstar = true
 						break
@@ -421,11 +422,11 @@ function Ientity:onMove(dt)
 					end
 					angle = angle + 30
 
-				until angle > 150
+				--until angle > 150
 				
 				if not nearBy and not doNotUseAstar then
 					print('use a star to find a path')
-					nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
+					--nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 				end
 				if not nearBy then
 					self:stand()
@@ -541,7 +542,7 @@ function Ientity:onMove2(dt)
 
 			if not nearBy and not doNotUseAstar then
 				print('use a star to find a path',self.serverId)
-				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+			--	nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
 				if not nearBy then
 					--Map:dump()
 					self:stand()
@@ -556,7 +557,6 @@ function Ientity:onMove2(dt)
 			end
 		end
 	until true
-	
 	if self.useAStar then
 		--移动到下一节点
 		if self.pathMove[self.pathNodeIndex] == Map.POS_2_GRID(mv_dst.x) and self.pathMove[self.pathNodeIndex+1] == Map.POS_2_GRID(mv_dst.z) then
