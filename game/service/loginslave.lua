@@ -81,7 +81,6 @@ end
 
 
 function CMD.auth (fd, addr)
-	print("loginslave auth",fd)
 	connection[fd] = addr
 	local isread = false
 	skynet.timeout (auth_timeout, function ()
@@ -98,7 +97,6 @@ function CMD.auth (fd, addr)
 	socket.limit (fd, 8192)
 	local type, name, args, response = read_msg (fd)
 	assert (type == "REQUEST")
-	print("auth",type,name,args)
 	isread = true
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")

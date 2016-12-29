@@ -210,11 +210,6 @@ enterGame 102 {
 requestMatch 103 {
 	request {
 	}
-	response {
-		errorcode 0 : integer
-		matcherNum 1 : integer
-		matcherList 2 : *Matcher
-	}
 }
 
 cancelMatch 104 {
@@ -224,6 +219,7 @@ cancelMatch 104 {
 		errorcode 0 : integer
 	}
 }
+
 pickHero 110 {
 	request {
 		heroid 0 : integer
@@ -524,6 +520,13 @@ quitPick 104 {
 	}
 }
 
+requestPickHero 105 {
+	 request {
+		errorcode 0 : integer
+		matcherNum 1 : integer
+		matcherList 2 : *Matcher
+        }
+}
 
 
 #战斗相关消息定义

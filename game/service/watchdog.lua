@@ -101,7 +101,7 @@ end
 function CMD.start(conf)
 	--create_agents(conf.agent_pool)
 	skynet.call(gate, "lua", "open" , conf)
-	for i=1,5,1 do
+	for i=1,login_config.slave,1 do
 		local s = skynet.newservice ("loginslave")
 		skynet.call (s, "lua", "init", skynet.self (), i, login_config)
 		table.insert (slave, s)

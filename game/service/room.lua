@@ -232,7 +232,7 @@ end
 
 
 function CMD.start(response, args)
-	print('room start', args)
+	--print('room start', args)
 	response(true, nil)
 	
 	local sm = snax.uniqueservice("servermanager")

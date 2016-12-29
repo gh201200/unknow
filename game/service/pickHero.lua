@@ -35,7 +35,7 @@ end
 function CMD.init(response,playerTb)
 	local monitor = skynet.monitor "simplemonitor"
 	for _k,_v in pairs(playerTb) do
-		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, score=_v.score}
+		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, eloValue=_v.eloValue}
 		skynet.call(monitor, "lua", "watch", _v.agent)
 	end
 	response(true,nil)
@@ -56,7 +56,7 @@ function CMD.pickHero(response, agent, account ,arg)
 		local t = {account = account,heroid = arg.heroid}
 		for _agent,_v in pairs(players) do
 			if _v.agent then
-				skynet.call(_agent,"lua","sendRequest","pickedhero",t)
+				skynet.call(_v.agent,"lua","sendRequest","pickedhero",t)
 			end
 		end
 	end
@@ -66,7 +66,6 @@ end
 function CMD.confirmHero(response,agent,account,arg)
 	local ret = { errorcode = 0 }
 	local confirmid = players[agent].pickedheroid
-
 	repeat
 		if confirmid == 0 then
 			ret.errorcode = -1
@@ -78,7 +77,7 @@ function CMD.confirmHero(response,agent,account,arg)
 			break
 		end
 		for _agent,_v in pairs (players) do
-			if _agent ~= agent and Macro_GetCardSerialId(confirmid) == Macro_GetCardSerialId(_v.pickhedheroid) then
+			if _agent ~= agent and Macro_GetCardSerialId(confirmid) == Macro_GetCardSerialId(_v.pickedheroid) then
 				ret.errorcode = 2
 				break
 			end

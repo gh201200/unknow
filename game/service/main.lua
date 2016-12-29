@@ -5,7 +5,7 @@ local sprotoloader = require "sprotoloader"
 
 local game_config = require "config.gameserver"
 --local login_config = require "config.loginserver"
-local max_client = 64
+local max_client = 24 
 
 skynet.start(function()
 			
