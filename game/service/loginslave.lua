@@ -65,6 +65,18 @@ local function firstRegister(account_id)
 		local skill = SkillsMethod.initSkill( v )
 		skynet.call(database, "lua", "skills", "addSkill", account_id, skill)
 	end
+	--添加商城特惠数据
+	for k, v in pairs(g_shareData.shopRepository) do
+		if v.n32Type == 5 then
+			if v.n32ArenaLvUpLimit == 1 then
+				local cd = {accountId=account_id, atype=CoolDownAccountType.TimeLimitSale, value=v.n32Limit}
+				print( cd )
+				skynet.call(database, "lua", "cooldown", "add", cd)
+                        	break
+                        end
+                 end
+        end
+
 end
 
 

@@ -17,6 +17,7 @@ local gdd  = {
 	patternRepository = require "patternRepository",
 	accountLevel = require "accountLevel",
 	exploreRepository = require "exploreRepository",
+	dropPackage = require "dropPackage",
 }
 skynet.start(function()
 	sharedata.new("gdd",gdd)

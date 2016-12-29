@@ -66,7 +66,7 @@ function REQUEST.explore_goFight( args )
 		local serId = Explore.getSerId( con )
 		local serLv = Explore.getSerLv( con )
 		local dat = g_shareData.exploreRepository[serId][serLv]
-		if dat.n32Level > getAccountLevel( user.account:getExp() ) then
+		if dat.n32Level > user.level then
 			errorCode = -1
 			break
 		end

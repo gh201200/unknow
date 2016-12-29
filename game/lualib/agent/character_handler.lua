@@ -31,6 +31,22 @@ AccountMethod.sendAccountData = function(self)
 	user.send_request("sendAccount", user.account.unit)
 end;
 
+AccountMethod.onExp = function(self)
+	local lv = getAccountLevel( self.unit.exp )
+	if user.level ~= lv then
+		local cd = snax.queryservice 'cddown'
+		for k, v in pairs(g_shareData.shopRepository) do
+			if v.n32Type == 5 then
+				if v.n32ArenaLvUpLimit == lv then
+					cd.post.setTime( user.account.account_id, CoolDownAccountType.TimeLimitSale, v.n32Limit) 
+					break
+				end
+			end
+		end
+		user.level = lv
+	end
+end;
+
 CardsMethod.sendCardData = function(self, unit)
 	if unit then
 		local p = table.clone( unit )
@@ -62,6 +78,10 @@ ExploreMethod.sendExploreData = function(self)
 	end
 	user.send_request("sendExplore", explore)
 end;
+
+local function onDataLoadCompleted()
+	user.level = getAccountLevel( user.account:getExp() )
+end
 
 local function sendCDTimeData(key)
 	local cds = snax.queryservice "cddown"
@@ -126,7 +146,6 @@ function REQUEST.enterGame(args)
 	database = skynet.uniqueservice ("database")
 	--玩家数据加载
 	local account_id = user.account.account_id 
-	--user.account = { account_id = account_id }
 	user.account.unit = skynet.call(database, "lua", "account", "load", account_id)	
 	setmetatable(user.account, {__index = AccountMethod})
 	user.cards = { account_id = account_id }
@@ -143,6 +162,8 @@ function REQUEST.enterGame(args)
 	local cooldown = snax.queryservice 'cddown'
 	cooldown.post.loadAccount( account_id )
 	
+	onDataLoadCompleted()
+
 	onEnterGame()
 end
 

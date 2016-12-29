@@ -1,0 +1,311 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="10001">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>30</n32MinNum>
+		<n32MaxNum>30</n32MaxNum>
+		<szInfo>一阶英雄宝箱</szInfo>
+	</item>
+	<item id="10002">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>180</n32MinNum>
+		<n32MaxNum>180</n32MaxNum>
+		<szInfo>一阶高级英雄宝箱</szInfo>
+	</item>
+	<item id="10011">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>42</n32MinNum>
+		<n32MaxNum>42</n32MaxNum>
+		<szInfo>二阶英雄宝箱</szInfo>
+	</item>
+	<item id="10012">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>252</n32MinNum>
+		<n32MaxNum>252</n32MaxNum>
+		<szInfo>二阶高级英雄宝箱</szInfo>
+	</item>
+	<item id="10021">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>48</n32MinNum>
+		<n32MaxNum>48</n32MaxNum>
+		<szInfo>三阶英雄宝箱</szInfo>
+	</item>
+	<item id="10022">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>288</n32MinNum>
+		<n32MaxNum>288</n32MaxNum>
+		<szInfo>三阶高级英雄宝箱</szInfo>
+	</item>
+	<item id="10031">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>54</n32MinNum>
+		<n32MaxNum>54</n32MaxNum>
+		<szInfo>四阶英雄宝箱</szInfo>
+	</item>
+	<item id="10032">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>324</n32MinNum>
+		<n32MaxNum>324</n32MaxNum>
+		<szInfo>四阶高级英雄宝箱</szInfo>
+	</item>
+	<item id="10041">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>60</n32MinNum>
+		<n32MaxNum>60</n32MaxNum>
+		<szInfo>五阶英雄宝箱</szInfo>
+	</item>
+	<item id="10042">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>360</n32MinNum>
+		<n32MaxNum>360</n32MaxNum>
+		<szInfo>五阶高级英雄宝箱</szInfo>
+	</item>
+	<item id="10051">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>66</n32MinNum>
+		<n32MaxNum>66</n32MaxNum>
+		<szInfo>六阶英雄宝箱</szInfo>
+	</item>
+	<item id="10052">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>396</n32MinNum>
+		<n32MaxNum>396</n32MaxNum>
+		<szInfo>六阶高级英雄宝箱</szInfo>
+	</item>
+	<item id="10061">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>72</n32MinNum>
+		<n32MaxNum>72</n32MaxNum>
+		<szInfo>七阶英雄宝箱</szInfo>
+	</item>
+	<item id="10062">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>432</n32MinNum>
+		<n32MaxNum>432</n32MaxNum>
+		<szInfo>七阶高级英雄宝箱</szInfo>
+	</item>
+	<item id="11001">
+		<n32DropId>2001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包</szInfo>
+	</item>
+	<item id="20001">
+		<n32DropId>2011</n32DropId>
+		<n32Rate>1000</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>普通技能包</szInfo>
+	</item>
+	<item id="20001">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>40</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>普通技能包</szInfo>
+	</item>
+	<item id="20001">
+		<n32DropId>2013</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>普通技能包</szInfo>
+	</item>
+	<item id="20011">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>100</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能包</szInfo>
+	</item>
+	<item id="20011">
+		<n32DropId>2013</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能包</szInfo>
+	</item>
+	<item id="20021">
+		<n32DropId>2013</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能包</szInfo>
+	</item>
+	<item id="30001">
+		<n32DropId>3001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一阶竞技场特惠英雄掉落</szInfo>
+	</item>
+	<item id="30002">
+		<n32DropId>3002</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二阶竞技场特惠英雄掉落</szInfo>
+	</item>
+	<item id="30003">
+		<n32DropId>3003</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三阶竞技场特惠英雄掉落</szInfo>
+	</item>
+	<item id="30004">
+		<n32DropId>3004</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>四阶竞技场特惠英雄掉落</szInfo>
+	</item>
+	<item id="30005">
+		<n32DropId>3005</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>五阶竞技场特惠英雄碎片</szInfo>
+	</item>
+	<item id="30006">
+		<n32DropId>3006</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>六阶竞技场特惠英雄碎片</szInfo>
+	</item>
+	<item id="30007">
+		<n32DropId>3007</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>七阶竞技场特惠英雄碎片</szInfo>
+	</item>
+	<item id="30011">
+		<n32DropId>3011</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一阶特惠二星技能*8</szInfo>
+	</item>
+	<item id="30013">
+		<n32DropId>3013</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三阶特惠二星技能*38</szInfo>
+	</item>
+	<item id="30021">
+		<n32DropId>3021</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一阶特惠钻石*300</szInfo>
+	</item>
+	<item id="30022">
+		<n32DropId>3022</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二阶特惠金币*10000</szInfo>
+	</item>
+	<item id="30014">
+		<n32DropId>3014</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>四阶特惠金币*50000</szInfo>
+	</item>
+	<item id="30015">
+		<n32DropId>3015</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>五阶特惠三星技能*3</szInfo>
+	</item>
+	<item id="30016">
+		<n32DropId>3016</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>六阶特惠三星技能*8</szInfo>
+	</item>
+	<item id="30017">
+		<n32DropId>3017</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>七阶特惠三星技能*18</szInfo>
+	</item>
+	<item id="30023">
+		<n32DropId>3023</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三阶特惠钻石*720</szInfo>
+	</item>
+	<item id="30024">
+		<n32DropId>3024</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>四阶特惠钻石*1350</szInfo>
+	</item>
+	<item id="30026">
+		<n32DropId>3026</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>六阶特惠钻石*3600</szInfo>
+	</item>
+	<item id="30027">
+		<n32DropId>3027</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>七阶特惠钻石*7500</szInfo>
+	</item>
+	<item id="90001">
+		<n32DropId>1001</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>战场掉落技能书</szInfo>
+	</item>
+	<item id="90002">
+		<n32DropId>1002</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>战场掉落技能书*2</szInfo>
+	</item>
+	<item id="90003">
+		<n32DropId>1003</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>战场掉落天赋石</szInfo>
+	</item>
+	<item id="90004">
+		<n32DropId>1004</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>战场掉落天赋石*5</szInfo>
+	</item>
+</info>

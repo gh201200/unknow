@@ -75,21 +75,6 @@ function REQUEST.upgradeCardColorLevel( args )
 	return {errorCode = errorCode, uuid = args.uuid}
 end
 
-local function usePackageItem( itemId )
-	local itemDat = g_shareData.itemRepository[itemId]
-	if itemDat.n32Type ~= 4 then
-		return {}
-	end
-	local pkgIds = {}
-	for w in string.gmatch(itemDat.szRetain3, "%d+") do
-		table.insert(pkgIds, tonumber(w))
-	end
-	local items = openPackage( pkgIds )
-	user.servicecmd.addItems("buyShopItem", items)
-	return items
-end
-
-
 function REQUEST.buyShopItem( args )
 	local errorCode = 0
 	local costMoney = 0
@@ -97,63 +82,82 @@ function REQUEST.buyShopItem( args )
 	local ids = {}
 	local shopDat = g_shareData.shopRepository[args.id]
 	local atype = 0
+	local hasBuy = 0
 	local activity = snax.queryservice 'activity'
+	local cooldown = snax.queryservice 'cddown'
+	local costPrice = 0
+	print( args )
 	repeat
 		if not shopDat then
 			errorCode = -1
 			break
 		end
+		costPrice = shopDat.n32Price * args.num
+	
+		if shopDat.n32Type == 4 then	--材料
+			atype = ActivityAccountType["BuyShopCard"..shopdat.n32Site]
+			hasBuy = activity.req.getValue(user.account.account_id, atype) 
+			costPrice = shopDat.n32Price *(1 + hasBuy) * args.num
+		end
 		if shopDat.n32MoneyType == 1 then	--金币
-			if user.account:getGold() < shopDat.n32Price * args.num then
+			if user.account:getGold() < costPrice then
 				errorCode = 1	--金币不足
 				break
 			end
 		elseif shopDat.n32MoneyType == 2 then	--钻石
-			if user.account:getMoney() < shopDat.n32Price * args.num then
+			if user.account:getMoney() < costPrice then
 				errorCode  = 2	--钻石不足
 				break
 			end
 		end
 		if shopDat.n32Limit > 0 then
-			if shopDat.n32Type == 4 then	--卡牌
-				local index = args.id % 100
-				atype = ActivityAccountType["BuyShopCard"..index]
-				local itemDat = g_shareData.itemRepository[shopDat.n32GoodsID]
-				card = user.cards:getCardBySerialId( Macro_GetCardSerialId(itemDat.n32Retain1) )
-				if card then
-					local val = activity.req.getValue(user.account.account_id, atype) + args.num
-					if val > shopDat.n32Limit then
-						errorCode = 3	--购买数量限制
-			 			break
-					end
+			if shopDat.n32Type == 4 then	--材料
+				if hasBuy + args.num > shopDat.n32Limit then
+					errorCode = 3	--购买数量限制
+			 		break
 				end
+			elseif shopDat.n32Type == 5 then	--特惠	
+				local val = cooldown.req.getValue(user.account.account_id, CoolDownAccountType.TimeLimitSale)
+				if val == 0 then
+					errorCode = -1
+					break
+				end 
 			end
 		end
 	
 		-------------开始购买
 		--扣除货币
 		if shopDat.n32MoneyType == 1 then	--金币
-			user.account:addGold("buyShopItem", -shopDat.n32Price * args.num)
+			user.account:addGold("buyShopItem", -costPrice)
 		elseif shopDat.n32MoneyType == 2 then	--钻石
-			user.account:addMoney("buyShopItem", -shopDat.n32Price * args.num)
+			user.account:addMoney("buyShopItem", -costPrice)
 		end
 		--开始购买
 		if shopDat.n32Type == 2	then --金币
 			user.account:addGold("buyShopItem", shopDat.n32Count * args.num)
 		elseif shopDat.n32Type == 3 then	--宝箱
 			local items = usePackageItem( shopDat.n32GoodsID )
+			user.servicecmd.addItems("buyShopItem", items)
 			local index = 1
 			for k, v in pairs(items) do
-				ids[index] = v.itemId
-				ids[index+1] = v.itemNum
+				ids[index] = k
+				ids[index+1] = v
 				index = index + 2
 			end
-			 
-		elseif shopDat.n32Type == 4 then	--卡牌
+		elseif shopDat.n32Type == 4 then	--材料
 			user.servicecmd.addItems("buyShopItem", {{itemId=shopDat.n32GoodsID, itemNum=shopDat.n32Count * args.num}})
-			local cooldown = snax.queryservice 'cddown' 
 			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
 			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
+		elseif shopDat.n32Type == 5 then 	--特惠
+			local items = usePackageItem( shopDat.n32GoodsID )
+			user.servicecmd.addItems("buyShopItem", items)
+			local index = 1
+			for k, v in pairs(items) do
+				ids[index] = k
+				ids[index+1] = v
+				index = index + 2
+			end
+			cooldown.post.setValue(user.account.account_id, CoolDownAccountType.TimeLimitSale, 0)
 		end
 
 	until true
