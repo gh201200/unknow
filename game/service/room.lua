@@ -21,12 +21,14 @@ local room_id = 0
 --dt is ms
 local function updateMapEvent()
 	local nt = skynet.now()
+		
 	EntityManager:update( (nt - last_update_time) * 10 )
 	SpawnNpcManager:update( (nt - last_update_time) * 10 )
 	BattleOverManager:update( (nt - last_update_time) * 10 )
 	DropManager:update()
-	last_update_time = nt
-	skynet.timeout(2, updateMapEvent)
+
+	last_update_time = nt 
+	skynet.timeout(3, updateMapEvent)
 end
 
 local function query_event_func(response,agent, account_id, args)
@@ -259,6 +261,9 @@ function CMD.start(response, args)
 	--创建英雄
 	for k, v in pairs (args) do
 		v.bornPos = mapDat['szBornPos'..v.color]
+		if v.pickedheroid > 900000 then
+			print("args==",args)
+		end
 		local player = IMapPlayer.create(v)
 		if player:isRed() then
 			redBuilding:insertHero(player)

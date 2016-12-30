@@ -5,18 +5,18 @@ local socket = require "socket"
 local protoloader = require "proto.protoloader"
 local host, proto_request = protoloader.load (protoloader.GAME)
 local login_config = require "config.loginserver"
+local snax = require "snax"
 
 local CMD = {}
 local SOCKET = {}
 local gate
 local agentfd = {}
-local agentPools = {}
 local agentAccount = {}
 local pid = 500001 
 local slave = {}
 local nslave
 local balance = 1
- 
+local sm
 local function send_msg (fd, msg)
 	local package = string.pack (">s2", msg)
 	socket.write (fd, package)
@@ -29,48 +29,22 @@ function SOCKET.open(fd, addr)
 	balance = balance + 1
 	if balance > nslave then balance = 1 end
 	skynet.call (s, "lua", "auth", fd, addr)
-	--[[
-	if #agentPools == 0 then
-		agentfd[fd] = skynet.newservice ("agent")
-		syslog.noticef ("pool is empty, new agent(%d),fd(%d) created", agentfd[fd], fd)
-	else
-		agentfd[fd] = table.remove (agentPools, 1)
-		syslog.debugf ("agent(%d),fd(%d) assigned, %d remain in pool", agentfd[fd], fd, #agentPools)
-	end
-	print("SOCET.open",fd)
-	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd, watchdog = skynet.self() })
---	pid = pid + 1
-]]
 end
-
-
-local function create_agents(num)	
-	print("agentPools num = " .. #agentPools)
-	--every five minites to check agent pools
-	skynet.timeout(30000, function() create_agents(100) end)
-
-	if #agentPools > 100 then return end
-
-	for i = 1, num do
-		table.insert (agentPools, skynet.newservice ("agent"))
-	end
-end
-
 
 local function close_agent(fd)
 	local a = agentfd[fd]
+	local account = agentAccount[fd]
 	agentfd[fd] = nil
 	agentAccount[fd] = nil
 	if a then
 		skynet.call(gate, "lua", "kick", fd)
-		-- disconnect never return
-		skynet.send(a, "lua", "disconnect")
+		local ref = skynet.call(a, "lua", "addConnectRef",-1)
+		if ref <= 0 then
+			skynet.send(a, "lua", "disconnect",agent)
+		else	
+			print("agent还处于战斗服务中,agent继续保留")
+		end
 	end
-end
-
-local function timeout(t)
-	if #agentPools > 100 then return end
-	print(t)
 end
 
 function SOCKET.close(fd)
@@ -92,14 +66,19 @@ function SOCKET.data(fd, msg)
 	print('socket data error = ',msg)
 end
 
-function CMD.agentEnter(agent,fd,account)
-	print("CMD.agentEnter",agent,fd,account)
+function CMD.agentEnter(agent,fd,account,reconnect)
+	print("CMD.agentEnter",agent,fd,account,reconnect)
 	agentfd[fd] = agent
-	skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd,account = account, watchdog = skynet.self() })
+	if reconnect == true then
+		--重连重置句柄值
+		skynet.call(agentfd[fd],"lua","reconnect",{ gate = gate, client = fd,account = account, watchdog = skynet.self() })
+	else
+		skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd,account = account, watchdog = skynet.self() })
+	end 
 end
 
 function CMD.start(conf)
-	--create_agents(conf.agent_pool)
+	sm = snax.uniqueservice("servermanager")
 	skynet.call(gate, "lua", "open" , conf)
 	for i=1,login_config.slave,1 do
 		local s = skynet.newservice ("loginslave")
@@ -121,6 +100,10 @@ function CMD.userEnter( accountId, fd )
 		end
 	end
 	agentAccount[fd] = accountId
+end
+
+function CMD.getAgent(account)
+	return 	
 end
 
 function CMD.gm_cmd( accountId, gmFunc, args )

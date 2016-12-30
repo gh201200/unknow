@@ -1,7 +1,7 @@
 local skynet = require "skynet"
 
 local roomAccount = {}	
-
+local roomAgent = {}
 function init()
 end
 
@@ -22,23 +22,34 @@ function response.getroomif(aid)
 	return ret, roomAccount[aid] 
 end
 
+function response.getAgent(account)
+	return roomAgent[account]
+end
+
 
 -------------------------------------------------------
 --POST
+function accept.roomend(room)
+	print('room end ', room)
+	for k, v in pairs(roomAccount) do
+		if v == room then
+			local ref = skynet.call(roomAgent[k],"lua","addConnectRef",-1) 
+			if ref <=  0 then
+				skynet.send(roomAgent[k],"lua","disconnect")
+			end
+			roomAgent[k] = nil
+			roomAccount[k] = nil
+		end
+	end
+end
 
 function accept.roomstart(room, players)
 	print('room start ', room)
 	for k, v in pairs(players) do
 		roomAccount[v.account] =  room
+		roomAgent[v.account] = v.agent 
+		skynet.call(v.agent,"lua","addConnectRef",1)
 	end
 end
 
-function accept.roomend(room)
-	print('room end ', room)
-	for k, v in pairs(roomAccount) do
-		if v == room then
-			roomAccount[k] = nil
-		end
-	end
-end
 

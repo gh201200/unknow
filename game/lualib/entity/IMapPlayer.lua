@@ -102,7 +102,7 @@ end
 
 function IMapPlayer:init(heroId)
 	self.attDat = g_shareData.heroRepository[heroId]
-	self:setGodSkill( self.attDat.n32GodSkillId )
+	self:setGodSkill( self.attDat.n32GodSkillId)
 	self:setCommonSkill( self.attDat.n32CommonSkillId )
 	self.skillTable[self.attDat.n32GodSkillId] = 0
 	self.skillTable[self.attDat.n32CommonSkillId] = 1
