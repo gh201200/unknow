@@ -103,7 +103,6 @@ end
 
 --更新保持队列
 function updateKeeplist(dt)
-	local relist = {}
 	for i=#(keep_list),1,-1 do
 		local p = keep_list[i]
 		p.time = p.time + dt
@@ -112,20 +111,9 @@ function updateKeeplist(dt)
 			p.time = 0
 			p.failNum = 0
 			table.remove(keep_list,i)   --移除保持队列
-			table.insert(relist,p)
+			addtoStictlist(p)
 		end 
 	end 
-	for k,v in ipairs(relist) do
-		if v.src_list ~= nil then
-			for i=#keep_list,1,-1 do
-				if keep_list[i].account == v.account then
-					print("玩家" .. v.account .. "从严格队列删除")
-					table.remove(keep_list,i)
-				end
-			end
-			addtoStictlist(v)
-		end			
-	end
 end
 -- 添加到保持队列
 function addtoKeeplist(p)
@@ -234,7 +222,7 @@ function addtoStictlist(p)
 			end
 		end
 		local function indexCmp(a,b)
-			if a.index_list > b.index_list then
+			if a.index_list >= b.index_list then
 				return true
 			end
 			return false

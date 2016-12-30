@@ -44,7 +44,7 @@ function account.create (account_id, password, nick, icon)
 		"password", password, 
 		"gold", 0, 
 		"money", 0,
-		"exp", 1500,
+		"exp", 0,
 		"icon", icon,
 		"flag", 0,
 		"expire", 0,

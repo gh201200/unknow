@@ -653,6 +653,7 @@ battleOver 3005 {
 		deads 6 : integer
 		helps 7 : integer
 		items 8 : *Vector3
+		gold 9 : integer
 	}
 }
 

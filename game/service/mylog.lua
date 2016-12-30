@@ -2,6 +2,8 @@ local skynet = require "skynet"
 local Time = require "time"
 local json = require "cjson"
 
+local enable = true
+
 local WRITE_NUM = 2
 local SAVE_NUM = 10
 
@@ -14,7 +16,7 @@ local cardHandler
 local cardLogNum = 0
 
 function init()
-	if true then return end
+	if enable then return end
 	local timeStr = os.date("%Y-%m-%d-%H-%M")
 	
 	accountfile = accountfile .."_" .. timeStr .. ".log"
@@ -67,6 +69,7 @@ function accept.log( name, args )
 	args.time = Time.GetCurStringTime()
 	local jt = json.encode( args )
 	print( jt )
+	if enable then return end
 	if name == "account" then
 		writeAccount( jt )
 	elseif name == "card" then

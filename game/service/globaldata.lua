@@ -15,7 +15,6 @@ local gdd  = {
 	petRepository = require "petRepository",
 	shopRepository = require "shopRepository",
 	patternRepository = require "patternRepository",
-	accountLevel = require "accountLevel",
 	exploreRepository = require "exploreRepository",
 	dropPackage = require "dropPackage",
 }

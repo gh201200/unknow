@@ -234,8 +234,8 @@ end
 
 
 function CMD.start(response, args)
-	--print('room start', args)
 	response(true, nil)
+	print( args )
 	
 	local sm = snax.uniqueservice("servermanager")
 	sm.post.roomstart(skynet.self(), args)
@@ -243,7 +243,7 @@ function CMD.start(response, args)
 	local roomId = 1
 	local mapDat = g_shareData.mapRepository[roomId]
 	
-	--BattleOverManager:init( mapDat )
+	BattleOverManager:init( mapDat )
 	
 	room_id = roomId
 

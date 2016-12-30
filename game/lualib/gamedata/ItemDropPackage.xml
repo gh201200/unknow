@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="2001">
-		<n32ItemId>1110000</n32ItemId>
+		<n32ItemId>110000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -10,7 +10,7 @@
 		<szInfo>厚德碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1120000</n32ItemId>
+		<n32ItemId>120000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -19,7 +19,7 @@
 		<szInfo>闪光碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1220000</n32ItemId>
+		<n32ItemId>220000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -28,7 +28,7 @@
 		<szInfo>修行者碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1230100</n32ItemId>
+		<n32ItemId>230100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -37,7 +37,7 @@
 		<szInfo>乌鸦鬼碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1310000</n32ItemId>
+		<n32ItemId>310000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -46,7 +46,7 @@
 		<szInfo>牛博士碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1330000</n32ItemId>
+		<n32ItemId>330000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -55,7 +55,7 @@
 		<szInfo>法老碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1130000</n32ItemId>
+		<n32ItemId>130000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -64,7 +64,7 @@
 		<szInfo>天女碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1210000</n32ItemId>
+		<n32ItemId>210000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -73,7 +73,7 @@
 		<szInfo>狂僧碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1320100</n32ItemId>
+		<n32ItemId>320100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -82,7 +82,7 @@
 		<szInfo>安娜碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1120100</n32ItemId>
+		<n32ItemId>120100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -91,7 +91,7 @@
 		<szInfo>弹弓碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1230000</n32ItemId>
+		<n32ItemId>230000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -100,7 +100,7 @@
 		<szInfo>风女碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1310100</n32ItemId>
+		<n32ItemId>310100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -109,7 +109,7 @@
 		<szInfo>机甲少女碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1110100</n32ItemId>
+		<n32ItemId>110100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -118,7 +118,7 @@
 		<szInfo>殿前骑士碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1220100</n32ItemId>
+		<n32ItemId>220100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -127,7 +127,7 @@
 		<szInfo>蒂皮碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1330100</n32ItemId>
+		<n32ItemId>330100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -136,7 +136,7 @@
 		<szInfo>天才碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1130100</n32ItemId>
+		<n32ItemId>130100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -145,7 +145,7 @@
 		<szInfo>钟表匠碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1210100</n32ItemId>
+		<n32ItemId>210100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -154,7 +154,7 @@
 		<szInfo>龙女碎片</szInfo>
 	</item>
 	<item id="2001">
-		<n32ItemId>1320000</n32ItemId>
+		<n32ItemId>320000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -802,7 +802,7 @@
 		<szInfo>和平之歌</szInfo>
 	</item>
 	<item id="3001">
-		<n32ItemId>1120001</n32ItemId>
+		<n32ItemId>120001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -811,7 +811,7 @@
 		<szInfo>闪光</szInfo>
 	</item>
 	<item id="3001">
-		<n32ItemId>1230101</n32ItemId>
+		<n32ItemId>230101</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -820,7 +820,7 @@
 		<szInfo>乌鸦鬼</szInfo>
 	</item>
 	<item id="3001">
-		<n32ItemId>1310001</n32ItemId>
+		<n32ItemId>310001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -829,7 +829,7 @@
 		<szInfo>牛博士</szInfo>
 	</item>
 	<item id="3002">
-		<n32ItemId>1130001</n32ItemId>
+		<n32ItemId>130001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -838,7 +838,7 @@
 		<szInfo>天女</szInfo>
 	</item>
 	<item id="3002">
-		<n32ItemId>1210001</n32ItemId>
+		<n32ItemId>210001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -847,7 +847,7 @@
 		<szInfo>狂僧</szInfo>
 	</item>
 	<item id="3002">
-		<n32ItemId>1320101</n32ItemId>
+		<n32ItemId>320101</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -856,7 +856,7 @@
 		<szInfo>安娜</szInfo>
 	</item>
 	<item id="3003">
-		<n32ItemId>1120101</n32ItemId>
+		<n32ItemId>120101</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -865,7 +865,7 @@
 		<szInfo>弹弓</szInfo>
 	</item>
 	<item id="3003">
-		<n32ItemId>1230001</n32ItemId>
+		<n32ItemId>230001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -874,7 +874,7 @@
 		<szInfo>风女</szInfo>
 	</item>
 	<item id="3003">
-		<n32ItemId>1310101</n32ItemId>
+		<n32ItemId>310101</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -883,7 +883,7 @@
 		<szInfo>机甲少女</szInfo>
 	</item>
 	<item id="3004">
-		<n32ItemId>1110101</n32ItemId>
+		<n32ItemId>110101</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -892,7 +892,7 @@
 		<szInfo>殿前骑士</szInfo>
 	</item>
 	<item id="3004">
-		<n32ItemId>1220101</n32ItemId>
+		<n32ItemId>220101</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -901,7 +901,7 @@
 		<szInfo>蒂皮</szInfo>
 	</item>
 	<item id="3004">
-		<n32ItemId>1330101</n32ItemId>
+		<n32ItemId>330101</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
@@ -910,7 +910,7 @@
 		<szInfo>天才</szInfo>
 	</item>
 	<item id="3005">
-		<n32ItemId>1130100</n32ItemId>
+		<n32ItemId>130100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>65</n32MinNum>
 		<n32MaxNum>65</n32MaxNum>
@@ -919,7 +919,7 @@
 		<szInfo>钟表匠</szInfo>
 	</item>
 	<item id="3005">
-		<n32ItemId>1210100</n32ItemId>
+		<n32ItemId>210100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>65</n32MinNum>
 		<n32MaxNum>65</n32MaxNum>
@@ -928,7 +928,7 @@
 		<szInfo>龙女</szInfo>
 	</item>
 	<item id="3005">
-		<n32ItemId>1320000</n32ItemId>
+		<n32ItemId>320000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>65</n32MinNum>
 		<n32MaxNum>65</n32MaxNum>
@@ -937,7 +937,7 @@
 		<szInfo>神狙</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1110000</n32ItemId>
+		<n32ItemId>110000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -946,7 +946,7 @@
 		<szInfo>厚德碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1120000</n32ItemId>
+		<n32ItemId>120000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -955,7 +955,7 @@
 		<szInfo>闪光碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1220000</n32ItemId>
+		<n32ItemId>220000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -964,7 +964,7 @@
 		<szInfo>修行者碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1230100</n32ItemId>
+		<n32ItemId>230100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -973,7 +973,7 @@
 		<szInfo>乌鸦鬼碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1310000</n32ItemId>
+		<n32ItemId>310000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -982,7 +982,7 @@
 		<szInfo>牛博士碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1330000</n32ItemId>
+		<n32ItemId>330000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -991,7 +991,7 @@
 		<szInfo>法老碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1130000</n32ItemId>
+		<n32ItemId>130000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1000,7 +1000,7 @@
 		<szInfo>天女碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1210000</n32ItemId>
+		<n32ItemId>210000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1009,7 +1009,7 @@
 		<szInfo>狂僧碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1320100</n32ItemId>
+		<n32ItemId>320100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1018,7 +1018,7 @@
 		<szInfo>安娜碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1120100</n32ItemId>
+		<n32ItemId>120100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1027,7 +1027,7 @@
 		<szInfo>弹弓碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1230000</n32ItemId>
+		<n32ItemId>230000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1036,7 +1036,7 @@
 		<szInfo>风女碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1310100</n32ItemId>
+		<n32ItemId>310100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1045,7 +1045,7 @@
 		<szInfo>机甲少女碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1110100</n32ItemId>
+		<n32ItemId>110100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1054,7 +1054,7 @@
 		<szInfo>殿前骑士碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1220100</n32ItemId>
+		<n32ItemId>220100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1063,7 +1063,7 @@
 		<szInfo>蒂皮碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1330100</n32ItemId>
+		<n32ItemId>330100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1072,7 +1072,7 @@
 		<szInfo>天才碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1130100</n32ItemId>
+		<n32ItemId>130100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1081,7 +1081,7 @@
 		<szInfo>钟表匠碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1210100</n32ItemId>
+		<n32ItemId>210100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1090,7 +1090,7 @@
 		<szInfo>龙女碎片</szInfo>
 	</item>
 	<item id="3006">
-		<n32ItemId>1320000</n32ItemId>
+		<n32ItemId>320000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>140</n32MinNum>
 		<n32MaxNum>140</n32MaxNum>
@@ -1099,7 +1099,7 @@
 		<szInfo>神狙碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1110000</n32ItemId>
+		<n32ItemId>110000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1108,7 +1108,7 @@
 		<szInfo>厚德碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1120000</n32ItemId>
+		<n32ItemId>120000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1117,7 +1117,7 @@
 		<szInfo>闪光碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1220000</n32ItemId>
+		<n32ItemId>220000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1126,7 +1126,7 @@
 		<szInfo>修行者碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1230100</n32ItemId>
+		<n32ItemId>230100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1135,7 +1135,7 @@
 		<szInfo>乌鸦鬼碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1310000</n32ItemId>
+		<n32ItemId>310000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1144,7 +1144,7 @@
 		<szInfo>牛博士碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1330000</n32ItemId>
+		<n32ItemId>330000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1153,7 +1153,7 @@
 		<szInfo>法老碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1130000</n32ItemId>
+		<n32ItemId>130000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1162,7 +1162,7 @@
 		<szInfo>天女碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1210000</n32ItemId>
+		<n32ItemId>210000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1171,7 +1171,7 @@
 		<szInfo>狂僧碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1320100</n32ItemId>
+		<n32ItemId>320100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1180,7 +1180,7 @@
 		<szInfo>安娜碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1120100</n32ItemId>
+		<n32ItemId>120100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1189,7 +1189,7 @@
 		<szInfo>弹弓碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1230000</n32ItemId>
+		<n32ItemId>230000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1198,7 +1198,7 @@
 		<szInfo>风女碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1310100</n32ItemId>
+		<n32ItemId>310100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1207,7 +1207,7 @@
 		<szInfo>机甲少女碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1110100</n32ItemId>
+		<n32ItemId>110100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1216,7 +1216,7 @@
 		<szInfo>殿前骑士碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1220100</n32ItemId>
+		<n32ItemId>220100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1225,7 +1225,7 @@
 		<szInfo>蒂皮碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1330100</n32ItemId>
+		<n32ItemId>330100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1234,7 +1234,7 @@
 		<szInfo>天才碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1130100</n32ItemId>
+		<n32ItemId>130100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1243,7 +1243,7 @@
 		<szInfo>钟表匠碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1210100</n32ItemId>
+		<n32ItemId>210100</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>
@@ -1252,7 +1252,7 @@
 		<szInfo>龙女碎片</szInfo>
 	</item>
 	<item id="3007">
-		<n32ItemId>1320000</n32ItemId>
+		<n32ItemId>320000</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>260</n32MinNum>
 		<n32MaxNum>260</n32MaxNum>

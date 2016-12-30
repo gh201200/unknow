@@ -82,12 +82,15 @@ local function heartbeat_check ()
 		kick_self ()
 	else
 		if t > 6 then		--掉线
+			user.isOnLine = false
 			if user.MAP then
 				local args = {id = user.account.account_id, time=3}
 				skynet.call(user.MAP, "lua", "addOffLineTime", args)
 			end
+		else
+			user.isOnLine = true
 		end
-	--	skynet.timeout (HEARTBEAT_TIME_MAX, heartbeat_check)
+		skynet.timeout (HEARTBEAT_TIME_MAX, heartbeat_check)
 	end
 end
 
@@ -199,6 +202,7 @@ function CMD.Start (conf)
 		level = 0,
 		explore = nil,
 		heartBeatTime = os.time(),
+		isOnLine = true,
 	}
 	user_fd = user.fd
 	REQUEST = user.REQUEST
@@ -246,7 +250,7 @@ end
 
 function CMD.getmatchinfo()
 	local tb = {agent = skynet.self(),account = user.account.account_id, eloValue = user.account:getExp(),
-		 nickname = user.account:getNickName(),time = 0,stepTime = 0,fightLevel = 0,failNum = 0 }
+		 nickname = user.account:getNickName(),time = 0,stepTime = 0,fightLevel = user.level, failNum = 0 }
 	return tb
 end
 
@@ -275,7 +279,8 @@ end
 
 --战斗结束产出
 function CMD.giveBattleGains( args )
-	user.account:addExp("giveBattleGains", args.score)
+	user.account:addExp("giveBattleGains", args.exp)
+	user.account:addGold("giveBattleGains", args.gold)
 	CMD.addItems("giveBattleGains", args.items)
 end
 
@@ -323,6 +328,10 @@ function CMD.addItems(op, items)
 	end
 end
 
+--是否在线
+function CMD.isOnLine()
+	return user.isOnline
+end
 
 skynet.start (function ()
 	skynet.dispatch ("lua", function (_, _, command, ...)

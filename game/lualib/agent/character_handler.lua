@@ -20,6 +20,15 @@ handler:add( GM )			--GM功能接口
 local user
 local database
 
+local function getAccountLevel( _exp )
+	for k, v in pairs( Quest.Arena ) do
+		if v.EloLimit > _exp then
+			return k - 1
+		end
+	end
+	return #Quest.Arena
+end
+
 handler:init (function (u)
 	user = u
 	ExploreCharacter:init( user )
@@ -78,6 +87,7 @@ ExploreMethod.sendExploreData = function(self)
 	end
 	user.send_request("sendExplore", explore)
 end;
+
 
 local function onDataLoadCompleted()
 	user.level = getAccountLevel( user.account:getExp() )
