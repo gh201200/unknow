@@ -183,16 +183,6 @@ end
 function Macro_AddSkillGrade( _id, grade )
 	return _id + grade * 10
 end
-function getAccountLevel( _exp )
-	local lv = 1
-	for k, v in pairs(g_shareData.accountLevel) do
-		if _exp <= v.n32Exp then
-			return v.id
-		end
-		lv = v.id
-	end
-	return lv
-end
 
 function openPackage( strPkg )
 	local drops = {}

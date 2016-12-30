@@ -4,9 +4,13 @@ local snax = require "snax"
 local CardMethod = require "agent.cards_method"
 local EntityManager = require "entity.EntityManager"
 local DropManager = require "drop.DropManager"
-
+local Quest = require "quest.quest"
 
 local BattleOverManager = class("BattleOverManager")
+
+local S = 300
+local N = 32
+local K = 1
 
 function BattleOverManager:ctor()
 	self.RedHomeBuilding = nil
@@ -15,12 +19,12 @@ function BattleOverManager:ctor()
 	self.BlueKillNum = 0
 	self.RestTime = 0
 	self.OverRes = 0
-	self.PatternDat = nil
+	self.MapDat = nil
 end
 
 function BattleOverManager:init( mapDat )
-	self.PatternDat = g_shareData.patternRepository[mapDat.n32Pattern]
-	self.RestTime = self.PatternDat.n32Time * 1000
+	self.MapDat = mapDat
+	self.RestTime = self.MapDat.n32Time * 1000
 end
 
 function BattleOverManager:update( dt )
@@ -36,16 +40,22 @@ function BattleOverManager:update( dt )
 			self.OverRes = 2	--红方胜
 			break
 		end
-		if self.RedKillNum >= self.PatternDat.n32Kills then
+		if self.RedKillNum >= self.MapDat.n32Kills then
 			self.OverRes = 2	--红方胜
 			break
 		end
-		if self.BlueKillNum >= self.PatternDat.n32Kills then
+		if self.BlueKillNum >= self.MapDat.n32Kills then
 			self.OverRes = 1	--蓝方胜
 			break
 		end
 		if self.RestTime <= 0 then
-			self.OverRes = 3	--平局
+			if self.RedKillNum > self.BlueKillNum then
+				self.OverRes = 2	--红方胜
+			elseif self.RedKillNum < self.BlueKillNum then
+				self.OverRes = 1	--蓝方胜
+			else
+				self.OverRes = 3	--平局
+			end
 			break
 		end
 	until true
@@ -65,149 +75,110 @@ function BattleOverManager:calcRes()
 	local blueRunAway = {}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
-			v.BattleGains = {items = {}, score=0}
+			v.BattleGains = {items = {}, exp=0, gold=0}
 			if v:isRed() then
 				if v:getOffLineTime() > 90 then
 					table.insert(redRunAway, v)
+				elseif v:getOffLineTime() > 15 then
+					local isOnLine = skynet.call(v.agent, "lua", "isOnLine")
+					if not isOnLine then
+						table.insert(redRunAway, v)
+					else
+						table.insert(redPlayers, v)
+					end
 				else
 					table.insert(redPlayers, v)
 				end
 			else
 				if v:getOffLineTime() > 90 then
 					table.insert(blueRunAway, v)
+				elseif v:getOffLineTime() > 15 then
+					local isOnLine = skynet.call(v.agent, "lua", "isOnLine")
+					if not isOnLine then
+						table.insert(blueRunAway, v)
+					else
+						table.insert(bluePlayers, v)
+					end
+
 				else
 					table.insert(bluePlayers, v)
 				end
 			end
 		end
 	end
-	local winners, faliers
-	local win_items = openPackage( self.PatternDat.szWinDrops )
-	local fail_items = openPackage( self.PatternDat.szFailDrops )
+	local winners = {}
+	local failers = {}
 	if self.OverRes == 1 then
 		winners = bluePlayers
-		for k, v in pairs(winners) do
-			v.BattleGains.items = win_items
-		end	
 		failers = redPlayers
-		for k, v in pairs(failers) do
-			v.BattleGains.items = fail_items
-		end	
 	elseif self.OverRes == 2 then
 		winners = redPlayers
-		for k, v in pairs(winners) do
-			v.BattleGains.items = win_items
-		end	
 		failers = bluePlayers
-		for k, v in pairs(failers) do
-			v.BattleGains.items = fail_items
-		end	winners = redPlayers
-	else
-		for k, v in pairs(redPlayers) do
-			v.BattleGains.items = fail_items
-		end	
-		for k, v in pairs(bluePlayers) do
-			v.BattleGains.items = fail_items
-		end	
+	end
+	--道具
+	local activity = snax.uniqueservice("activity")
+	for k, v in pairs(winners) do
+		local arena = Quest.Arena[v.accountLevel]
+		local val = activity.req.getValue(v.account_id, ActivityAccountType.PvpWinTimes)
+		if val < arena.VictoryRewardLimit then
+			v.BattleGains.items = usePackageItem(arena.VictoryReward)
+		end
+	end
+	--金币
+	for k, v in pairs(redPlayers) do
+		local arena = Quest.Arena[v.accountLevel]
+		local val = activity.req.getValue(v.account_id, ActivityAccountType.PvpTimes)
+		if val < arena.GoldRewardLimit then
+			v.BattleGains.gold = arena.GoldReward
+		end
+	end
+	for k, v in pairs(bluePlayers) do
+		local arena = Quest.Arena[v.accountLevel]
+		local val = activity.req.getValue(v.account_id, ActivityAccountType.PvpTimes)
+		if val < arena.GoldRewardLimit then
+			v.BattleGains.gold = arena.GoldReward
+		end
+	end
+	--经验
+	local redScore = 0
+	local blueScore = 0
+	for k, v in pairs(redPlayers) do
+		redScore = redScore + v.accountExp
+	end
+	for k, v in pairs(redRunAway) do
+		redScore = redScore + v.accountExp
 	end
 
-	if self.OverRes == 3 then return end
-
-	local winScore, failScore, runAwayScore
-	if #redRunAway > 0 and #blueRunAway > 0 then
-		for k, v in pairs(winners) do
-			v.BattleGains.score = v.accountLevel * 10 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-		end	
-		for k, v in pairs(failers) do
-			v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-			v.BattleGains.score = -math.floor( v.BattleGains.score / #redRunAway / 2 )
-		end	
-		for k, v in pairs(redRunAway) do
-			v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-			v.BattleGains.score = -v.BattleGains.score * 2
-		end	
-		for k, v in pairs(blueRunAway) do
-			v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-			v.BattleGains.score = -v.BattleGains.score * 2
-		end	
-	elseif #redRunAway == 0 and  #blueRunAway == 0 then
-		for k, v in pairs(winners) do
-			v.BattleGains.score = v.accountLevel * 10 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-		end
-		for k, v in pairs(failers) do
-			v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-			v.BattleGains.score = - v.BattleGains.score
-		end	
-	elseif #redRunAway > 0 then
-		if self.OverRes == 1 then	
-			for k, v in pairs(winners) do
-				v.BattleGains.score = v.accountLevel * 10
-			end
-			for k, v in pairs(failers) do
-				v.BattleGains.score = math.floor( v.accountLevel * 9 / (#redRunAway * 2))
-			end
-			for k, v in pairs(redRunAway) do
-				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.BattleGains.score * 2
-			end
-		elseif self.OverRes == 2 then
-			for k, v in pairs(winners) do
-				v.BattleGains.score = v.accountLevel * 10 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = v.BattleGains.score * 2
-			end
-			for k, v in pairs(failers) do
-				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.BattleGains.score
-			end
-			for k, v in pairs(redRunAway) do
-				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.BattleGains.score * 2
-			end
-
-		end
-	elseif #blueRunAway > 0 then
-		if self.OverRes == 2 then	
-			for k, v in pairs(winners) do
-				v.BattleGains.score = v.accountLevel * 10
-			end
-			for k, v in pairs(failers) do
-				v.BattleGains.score = math.floor( v.accountLevel * 9 / (#redRunAway * 2))
-			end
-			for k, v in pairs(redRunAway) do
-				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.BattleGains.score * 2
-			end
-		elseif self.OverRes == 1 then
-			for k, v in pairs(winners) do
-				v.BattleGains.score = v.accountLevel * 10 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = v.BattleGains.score * 2
-			end
-			for k, v in pairs(failers) do
-				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.BattleGains.score
-			end
-			for k, v in pairs(bluwRunAway) do
-				v.BattleGains.score = v.accountLevel * 9 + math.floor((600 - self.PatternDat.n32Time + self.RestTime)/10)
-				v.BattleGains.score = - v.BattleGains.score * 2
-			end
-
-		end
+	for k, v in pairs(bluePlayers) do
+		blueScore = blueScore + v.accountExp
+	end
+	for k, v in pairs(blueRunAway) do
+		blueScore = blueScore + v.accountExp
+	end
+	local pRedStar = 1 / (1 + 10 ^ ((blueScore - redScore) / S))
+	local pBlueStar = 1 / (1 + 10 ^ ((redScore - blueScore) / S))
+	local winExp, failExp
+	if self.OverRes == 1 then
+		winExp = 2 * N * K * (1 - pBlueStar)
+		failExp = 2 * N * K * (-pRedStar)
+	elseif self.OverRes == 2 then
+		winExp = 2 * N * K * (1 - pRedStar)
+		failExp = 2 * N * K * (-pBlueStar)
+	end
+	for k, v in pairs(winners) do
+		v.BattleGains.exp = math.ceil( winExp )
+	end
+	for k, v in pairs(failers) do
+		v.BattleGains.exp = math.ceil( failExp )
 	end
 	return winners, failers, redRunAway, blueRunAway
 end
 
 function BattleOverManager:giveResult()
-	local gm = snax.uniqueservice("gm")
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
-			if v.agent then
-				skynet.call(v.agent, "lua", "giveBattleGains", v.BattleGains)
-			else
-				local param = {}
-				param["items"] = v.BattleGains.items
-				param["account_id"] = v.account_id
-				gm.post.addItems( param )
-			end
+			print('结算 :', v.BattleGains)
+			skynet.call(v.agent, "lua", "giveBattleGains", v.BattleGains)
 		end
 	end
 end
@@ -243,17 +214,16 @@ function BattleOverManager:sendResult()
 	r.maxHelp = r.maxHelp.serverId
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
-			r.score = v.BattleGains.score
+			r.score = v.BattleGains.exp
+			r.gold = v.BattleGains.gold
 			r.kills = v.HonorData[4]
 			r.deads = v.HonorData[5]
 			r.helps = v.HonorData[3]
 			r.items = {}
 			for p, q in pairs(v.BattleGains.items) do
-				table.insert(r.items, {x=q.itemId,y=q.itemNum})
+				table.insert(r.items, {x=p,y=q})
 			end
-			if v.agent then
-				skynet.call(v.agent, "lua", "sendRequest", "battleOver", r)
-			end
+			skynet.call(v.agent, "lua", "sendRequest", "battleOver", r)
 		end
 	end
 end

@@ -12,7 +12,7 @@ local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
 
-CMD.MATCH_NUM = 1
+CMD.MATCH_NUM = 6
 
 local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
