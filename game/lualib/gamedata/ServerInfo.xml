@@ -25,4 +25,9 @@
 		<szIp>192.168.0.161</szIp>
 		<n32Port>8888</n32Port>
 	</item>
+	<item id="6">
+		<szName>罗汉武</szName>
+		<szIp>192.168.0.155</szIp>
+		<n32Port>8888</n32Port>
+	</item>
 </info>
