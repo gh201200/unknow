@@ -12,7 +12,7 @@ local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
 
-CMD.MATCH_NUM = 1 
+CMD.MATCH_NUM = 6 
 
 local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
@@ -205,7 +205,7 @@ function addtoStictlist(p)
 	for i=1,#(loose_list),1 do
 		local v = loose_list[i]
 		if v.eloValue >= down and v.eloValue <= up then
-			v.src_list = strict_list
+			v.src_list = loose_list
 			v.index_list = i
 			if v.fightLevel == p.fightLevel then
 				table.insert(tmp,1,v)
