@@ -12,7 +12,7 @@ local account_cors = {}
 local s_pickHeros = { } --选角色服务
 
 
-CMD.MATCH_NUM = 6 
+CMD.MATCH_NUM = 1 
 
 local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
@@ -43,25 +43,41 @@ function CMD.requestMatch(response,agent)
 	local p = skynet.call(agent,"lua","getmatchinfo")
 	addtoKeeplist(p)
 	response(true)
-	--[[
-	account_cors[p.account] = coroutine.create(function(ret)
-		response(true,ret)
-	end)
-	]]--
-
 end
 
 --取消匹配
-function CMD.cancelMatch(response,account)
-	local bHit = false
-	for i = #requestMatchers,1,-1 do
-		if requestMatchers[i].account == account then
-			table.remove(requestMatchers,i)
-			table.remove(account_cors,account)
-			break
+function CMD.cancelMatch(response,agent)	
+	local errorcode = -1
+	repeat 
+		local hit = false
+		for i=#(keep_list),1,-1 do
+			local p = keep_list[i]
+			if p.agent == agent then
+				table.remove(keep_list,i)
+				errorcode = 0 
+				break
+			end
 		end
-	end
-	local ret = { errorcode = 0 }
+		if hit == true then break end
+		for i=#(strict_list),1,-1 do
+			local p = strict_list[i]
+			if p.agent == agent then
+				table.remove(strict_list,i)
+				errorcode = 0 
+				break
+			end
+		end
+		if hit == true then break end
+		for i=#(loose_list),1,-1 do
+			local p = loose_list[i]
+			if p.agent == agent then
+				table.remove(loose_list,i)
+				errorcode = 0
+				break
+			end
+		end	
+	until true
+	local ret = { errorcode = errorcode }
 	response(true,ret)
 end
 
