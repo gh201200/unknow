@@ -164,6 +164,12 @@ RESPONSE.login = function(...)
 	print(account .."登录校验成功")
 	--开始匹配
 	send_request("enterGame")
+	skynet.fork(function()
+		while true do
+			send_request("heart_beat_time")
+			skynet.sleep(300)
+		end
+	end)
 end
 
 RESPONSE.pickHero = function(arg)
