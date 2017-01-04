@@ -30,7 +30,6 @@ end
 function BattleOverManager:update( dt )
 	if self.OverRes ~= 0 then return end
 	self.RestTime = self.RestTime - dt
-	if true then return end
 	repeat
 		if self.RedHomeBuilding:isDead() then
 			self.OverRes = 1	--蓝方胜
