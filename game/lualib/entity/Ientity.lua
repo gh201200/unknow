@@ -301,14 +301,15 @@ function Ientity:update(dt)
 		self:advanceEventStamp(EventStampType.Stats)
 		self.StatsChange = false
 	end
-
-	if self.curActionState == ActionState.move then
-		self:onMove2(dt)
-	elseif self.curActionState == ActionState.stand then
-		--站立状态
-	elseif self.curActionState >= ActionState.forcemove then
-		--强制移动
-		self:onForceMove(dt)		
+	if self.entityType ~= EntityType.building then
+		if self.curActionState == ActionState.move then
+			self:onMove2(dt)
+		elseif self.curActionState == ActionState.stand then
+			--站立状态
+		elseif self.curActionState >= ActionState.forcemove then
+			--强制移动
+			self:onForceMove(dt)	
+		end
 	end
 	--技能相关
 	if self.ReadySkillId ~= 0  then	

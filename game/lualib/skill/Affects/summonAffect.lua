@@ -25,11 +25,6 @@ function summonAffect:onEnter()
 		self.source:onBlink(pos)
 		isbody = 1
 	end	
-
-	for _k,_v in pairs(self.source.pets) do
-		_v.lifeTime = -1 --杀死召唤怪物
-	end
-	self.source.pets = {}
 	for i = 1,self.petNum,1 do
 		local pos = self:randomPos(self.source)
 		g_entityManager:createPet(self.petId,self.source,pos,isbody)	

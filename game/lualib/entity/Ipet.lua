@@ -11,7 +11,6 @@ end
 function IPet:init(pt,master)
 	self.pt = pt 
 	self.master = master
-	table.insert(self.master.pets,self)
 	self.entityType = EntityType.pet
 	self.ai = PetAI.new(self,master)
 	self.camp = master.camp
@@ -26,6 +25,7 @@ function IPet:init(pt,master)
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
 	self.lifeTime = 30*1000 --存活时间
 	self.isbody = 0
+	self.petType = 0--召唤物类型
 	IPet.super.init(self)
 end
 
@@ -34,30 +34,24 @@ function IPet:getType()
 end
 
 function IPet:calcStats()
-	self.attDat.n32Hp = self.master:getHpMax()
-	self.attDat.n32Mp = self.master:getMpMax()
-	self.attDat.n32Attack = self.master:getAttack()
-	self.attDat.n32Defence = self.master:getDefence()
-	self.attDat.n32ASpeed = self.master:getASpeed()
-	self.attDat.n32MSpeed = self.master:getMSpeed()
-	self.attDat.n32AttackRange = self.master:getAttackRange()	
-	self.attDat.n32LStrength = 0
+	self.attDat.n32Hp = self.pt["HpMax"] 
+	self.attDat.n32Mp = self.pt["MpMax"]
+	self.attDat.n32Attack = self.pt["Attack"]
+	self.attDat.n32Defence = self.pt["Defence"]
+	self.attDat.n32ASpeed = self.pt["Aspeed"]
+	self.attDat.n32MSpeed = self.pt["Mspeed"]
+	self.attDat.n32AttackRange = 0	
+	self.attDat.n32LStrength =  0 
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
 	self.attDat.n32MainAtt = 0
-	self.attDat.n32Strength = 0
-	self.attDat.n32Intelligence = 0
-	self.attDat.n32Agility = 0
-
-	local funs = {"HpMaxPc","HpMax","AttackPc","Attack","DefencePc","Defence","ASpeed","MSpeedPc","MSpeed","AttackRangePc","AttackRange"}
-	for _k,_v in pairs(funs) do
-		local f = self["add" .. _v]
-		if f ~= nil then
-			print("add" .. _v)
-			f(self.pt[_v])
-		end
-	end
-	
+	self.attDat.n32Strength = self.master:getStrength() * self.pt["StrPc"] + self.pt["Str"]  
+	self.attDat.n32Intelligence = self.master:getIntelligence() * self.pt["IntPc"] + self.pt["Int"]
+	self.attDat.n32Agility = self.master:getAgility() * self.pt["AglPc"] + self.pt["Agl"]
+		
+	self:calcStrength()
+	self:calcIntelligence()
+	self:calcAgility()
 	self:calcHpMax()
 	self:calcMpMax()
 	self:calcAttack()
