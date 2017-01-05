@@ -27,6 +27,23 @@ function IPet:init(pt,master)
 	self.isbody = 0
 	self.petType = 0--召唤物类型
 	IPet.super.init(self)
+	for i=1,3,1 do
+		local skillId = pt["n32Skill0" .. i]
+		if skillId ~= 0 then
+			local skilldata = g_shareData.skillRepository[skillId]	
+			if skilldata.n32Active == 1 then
+				for i=#(self.spell.passtiveSpells),1,-1 do
+				local v = self.spell.passtiveSpells[i]
+				if v.skilldata.n32SeriId == skilldata.n32SeriId then
+					--移除旧的被动技能
+					v:onDead()
+					table.remove(self.spell.passtiveSpells,i)
+				end
+			end	
+			local ps = passtiveSpell.new(self,skilldata)
+			table.insert(self.spell.passtiveSpells,ps)
+		end
+	end
 end
 
 function IPet:getType()
