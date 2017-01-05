@@ -154,12 +154,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	local targets = {}
 	if skilldata.szMyAffect ~= "" then
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
-	else
-		if skilldata.n32SkillType ~= 0 then
-			targets = {source}
-			local test = {[1] =  {[1] = "summon",[2] = 50008,[3] = 1} }
-			self:trgggerAffect(test,targets,skilldata,true)
-		end
 	end
 	if skilldata.n32BulletType ~= 0 then
 		for _k,_v in pairs(selects) do
