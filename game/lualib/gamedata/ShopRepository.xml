@@ -135,10 +135,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>殿前骑士碎片</szName>
-		<szIcon></szIcon>
+		<szName>奥斯顿碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Alston.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1110101</n32GoodsID>
+		<n32GoodsID>110100</n32GoodsID>
 	</item>
 	<item id="40002">
 		<n32Type>4</n32Type>
@@ -149,10 +149,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>厚德碎片</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Houde.png</szIcon>
+		<szName>厚多碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1110001</n32GoodsID>
+		<n32GoodsID>110000</n32GoodsID>
 	</item>
 	<item id="40003">
 		<n32Type>4</n32Type>
@@ -163,10 +163,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>机甲少女碎片</szName>
+		<szName>米娅碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1310101</n32GoodsID>
+		<n32GoodsID>310100</n32GoodsID>
 	</item>
 	<item id="40004">
 		<n32Type>4</n32Type>
@@ -177,10 +177,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>狂僧碎片</szName>
-		<szIcon></szIcon>
+		<szName>柯克.李碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1210001</n32GoodsID>
+		<n32GoodsID>210000</n32GoodsID>
 	</item>
 	<item id="40005">
 		<n32Type>4</n32Type>
@@ -191,10 +191,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>龙女碎片</szName>
-		<szIcon></szIcon>
+		<szName>格萝利娅碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1210101</n32GoodsID>
+		<n32GoodsID>210100</n32GoodsID>
 	</item>
 	<item id="40006">
 		<n32Type>4</n32Type>
@@ -205,10 +205,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>牛博士碎片</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szIcon>
+		<szName>柏德温碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1310001</n32GoodsID>
+		<n32GoodsID>310000</n32GoodsID>
 	</item>
 	<item id="40007">
 		<n32Type>4</n32Type>
@@ -219,10 +219,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>闪光碎片</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Shanguang.png</szIcon>
+		<szName>凯文碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1120001</n32GoodsID>
+		<n32GoodsID>120000</n32GoodsID>
 	</item>
 	<item id="40008">
 		<n32Type>4</n32Type>
@@ -233,10 +233,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>神狙碎片</szName>
+		<szName>肖恩碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1320001</n32GoodsID>
+		<n32GoodsID>320000</n32GoodsID>
 	</item>
 	<item id="40009">
 		<n32Type>4</n32Type>
@@ -247,10 +247,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>弹弓碎片</szName>
+		<szName>尼尔碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1120101</n32GoodsID>
+		<n32GoodsID>120100</n32GoodsID>
 	</item>
 	<item id="40010">
 		<n32Type>4</n32Type>
@@ -261,10 +261,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>修行者碎片</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szIcon>
+		<szName>夕巴斯汀碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1220001</n32GoodsID>
+		<n32GoodsID>220000</n32GoodsID>
 	</item>
 	<item id="40011">
 		<n32Type>4</n32Type>
@@ -275,10 +275,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>蒂皮碎片</szName>
-		<szIcon></szIcon>
+		<szName>若拉碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Zora.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1220101</n32GoodsID>
+		<n32GoodsID>220100</n32GoodsID>
 	</item>
 	<item id="40012">
 		<n32Type>4</n32Type>
@@ -289,10 +289,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>安娜碎片</szName>
+		<szName>尤娜碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1320101</n32GoodsID>
+		<n32GoodsID>320100</n32GoodsID>
 	</item>
 	<item id="40013">
 		<n32Type>4</n32Type>
@@ -303,10 +303,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>天女碎片</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szIcon>
+		<szName>菲碧碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1130001</n32GoodsID>
+		<n32GoodsID>130000</n32GoodsID>
 	</item>
 	<item id="40014">
 		<n32Type>4</n32Type>
@@ -317,10 +317,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>风女碎片</szName>
-		<szIcon></szIcon>
+		<szName>西维娅碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1230001</n32GoodsID>
+		<n32GoodsID>230000</n32GoodsID>
 	</item>
 	<item id="40015">
 		<n32Type>4</n32Type>
@@ -331,10 +331,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>钟表匠碎片</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szIcon>
+		<szName>撒缪尔碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1130101</n32GoodsID>
+		<n32GoodsID>130100</n32GoodsID>
 	</item>
 	<item id="40016">
 		<n32Type>4</n32Type>
@@ -345,10 +345,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>法老碎片</szName>
+		<szName>莫顿碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1330001</n32GoodsID>
+		<n32GoodsID>330000</n32GoodsID>
 	</item>
 	<item id="40017">
 		<n32Type>4</n32Type>
@@ -359,10 +359,10 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>乌鸦鬼碎片</szName>
-		<szIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szIcon>
+		<szName>麦斯威尔碎片</szName>
+		<szIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1230101</n32GoodsID>
+		<n32GoodsID>230100</n32GoodsID>
 	</item>
 	<item id="40018">
 		<n32Type>4</n32Type>
@@ -373,14 +373,14 @@
 		<n32Limit>3</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>天才碎片</szName>
+		<szName>修碎片</szName>
 		<szIcon></szIcon>
 		<szContent></szContent>
-		<n32GoodsID>1330101</n32GoodsID>
+		<n32GoodsID>330100</n32GoodsID>
 	</item>
 	<item id="30001">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -388,13 +388,13 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60001</n32GoodsID>
 	</item>
 	<item id="30002">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>2</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>3000</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -402,13 +402,13 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶高级英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60002</n32GoodsID>
 	</item>
 	<item id="30011">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>840</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -416,13 +416,13 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60011</n32GoodsID>
 	</item>
 	<item id="30012">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>2</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>4200</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -430,13 +430,13 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶高级英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60012</n32GoodsID>
 	</item>
 	<item id="30021">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>960</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -444,13 +444,13 @@
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60021</n32GoodsID>
 	</item>
 	<item id="30022">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>2</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>4800</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -458,13 +458,13 @@
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶高级英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60022</n32GoodsID>
 	</item>
 	<item id="30031">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>1080</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -472,13 +472,13 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60031</n32GoodsID>
 	</item>
 	<item id="30032">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>2</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>5400</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -486,13 +486,13 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶高级英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60032</n32GoodsID>
 	</item>
 	<item id="30041">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>1200</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -500,13 +500,13 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60041</n32GoodsID>
 	</item>
 	<item id="30042">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>2</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>6000</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -514,13 +514,13 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶高级英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60042</n32GoodsID>
 	</item>
 	<item id="30051">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>1320</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -528,13 +528,13 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60051</n32GoodsID>
 	</item>
 	<item id="30052">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>2</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>6600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -542,13 +542,13 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶高级英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60052</n32GoodsID>
 	</item>
 	<item id="30061">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>1</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>1440</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -556,13 +556,13 @@
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60061</n32GoodsID>
 	</item>
 	<item id="30062">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>2</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>7200</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -570,13 +570,13 @@
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶高级英雄宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>60062</n32GoodsID>
 	</item>
 	<item id="31001">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>3</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>390</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -584,13 +584,13 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61001</n32GoodsID>
 	</item>
 	<item id="31002">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>4</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>2340</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -598,13 +598,13 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶高级技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61002</n32GoodsID>
 	</item>
 	<item id="31011">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>3</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>460</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -612,13 +612,13 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61011</n32GoodsID>
 	</item>
 	<item id="31012">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>4</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>2760</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -626,13 +626,13 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶高级技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61012</n32GoodsID>
 	</item>
 	<item id="31021">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>3</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>530</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -640,13 +640,13 @@
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61021</n32GoodsID>
 	</item>
 	<item id="31022">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>4</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>3180</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -654,13 +654,13 @@
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶高级技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61022</n32GoodsID>
 	</item>
 	<item id="31031">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>3</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -668,13 +668,13 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61031</n32GoodsID>
 	</item>
 	<item id="31032">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>4</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>3600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -682,13 +682,13 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶高级技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61032</n32GoodsID>
 	</item>
 	<item id="31041">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>3</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>680</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -696,13 +696,13 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61041</n32GoodsID>
 	</item>
 	<item id="31042">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>4</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>4080</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -710,13 +710,13 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶高级技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61042</n32GoodsID>
 	</item>
 	<item id="31051">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>3</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>760</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -724,13 +724,13 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61051</n32GoodsID>
 	</item>
 	<item id="31052">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>4</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>4560</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -738,13 +738,13 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶高级技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61052</n32GoodsID>
 	</item>
 	<item id="31061">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>3</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>900</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -752,13 +752,13 @@
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61061</n32GoodsID>
 	</item>
 	<item id="31062">
 		<n32Type>3</n32Type>
-		<n32Site>0</n32Site>
+		<n32Site>4</n32Site>
 		<n32Count>1</n32Count>
 		<n32Price>5400</n32Price>
 		<n32MoneyType>2</n32MoneyType>
@@ -766,7 +766,7 @@
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶高级技能宝箱</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61062</n32GoodsID>
 	</item>

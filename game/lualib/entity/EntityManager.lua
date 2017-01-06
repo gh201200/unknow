@@ -143,7 +143,7 @@ function EntityManager:createFlyObj(srcObj,target,skilldata,extra1,extra2)
 	self:addEntity(obj)
 end
 
-function EntityManager:createPet(id,master,pos,isbody)
+function EntityManager:createPet(id,master,pos)
 	local dir = vector3.create(0,0,0)
 	local pt = g_shareData.petRepository[id]
 	local limitNum = pt.n32SummonLimit
@@ -163,7 +163,7 @@ function EntityManager:createPet(id,master,pos,isbody)
 	pet.serverId = assin_server_id()	
 	pet:init(pt,master)
 	table.insert(master.pets,pet)	
-	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,isbody = isbody,camp = master.camp,masterId = master.serverId}
+	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,camp = master.camp,masterId = master.serverId}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )

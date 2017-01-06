@@ -77,7 +77,6 @@ function PetAI:onExit_Battle()
 end
 
 function PetAI:canChase()
-	print("canChase")
 	for k, v in pairs( g_entityManager.entityList ) do 
 		if self.master:isKind(v,true) == false then
 			if self.source:getDistance(v) <= self.source.pt["n32HateRange"] then

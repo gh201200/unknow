@@ -1,6 +1,7 @@
 local Ientity = require "entity.Ientity"
 local PetAI = require "ai.PetAI"
 local Map = require "map.Map"
+local passtiveSpell =  require "skill.passtiveSpell"
 local IPet = class("IPet", Ientity)
 require "globalDefine"
 function IPet:ctor(pos,dir)
@@ -12,8 +13,15 @@ function IPet:init(pt,master)
 	self.pt = pt 
 	self.master = master
 	self.entityType = EntityType.pet
+	if pt.n32Type == 2 then
+		self.entityType = EntityType.building
+	end
+	if pt.n32Type ==  3 then
+		self.pt.n32CommonSkill = master.attDat.n32CommonSkillId 
+		self.pt.modolId = master.modelDat.id
+	end
 	self.ai = PetAI.new(self,master)
-	self.camp = master.camp
+	self.camp =  master.camp
 	self.lifeTime = 0
 	self.bornPos:set(self.pos.x, 0, self.pos.z)
 	self.attDat = {}
@@ -23,9 +31,8 @@ function IPet:init(pt,master)
         self.HpMpChange = true
         self.StatsChange = true
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
-	self.lifeTime = 30*1000 --存活时间
+	self.lifeTime = self.pt.n32LifeTime * 1000 --存活时间
 	self.isbody = 0
-	self.petType = 0--召唤物类型
 	IPet.super.init(self)
 	for i=1,3,1 do
 		local skillId = pt["n32Skill0" .. i]
@@ -33,11 +40,12 @@ function IPet:init(pt,master)
 			local skilldata = g_shareData.skillRepository[skillId]	
 			if skilldata.n32Active == 1 then
 				for i=#(self.spell.passtiveSpells),1,-1 do
-				local v = self.spell.passtiveSpells[i]
-				if v.skilldata.n32SeriId == skilldata.n32SeriId then
-					--移除旧的被动技能
-					v:onDead()
-					table.remove(self.spell.passtiveSpells,i)
+					local v = self.spell.passtiveSpells[i]
+					if v.skilldata.n32SeriId == skilldata.n32SeriId then
+						--移除旧的被动技能
+						v:onDead()
+						table.remove(self.spell.passtiveSpells,i)
+					end
 				end
 			end	
 			local ps = passtiveSpell.new(self,skilldata)

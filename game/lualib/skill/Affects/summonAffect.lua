@@ -8,10 +8,10 @@ function summonAffect:ctor(entity,source,data,skillId)
 	self.super.ctor(self,entity,source,data) 
 	self.petId = data[2] or 0
 	self.petNum = data[3] or 0
-	if self.petId == 0 then
+	--if self.petId == 0 then
 		--召唤分身体
-		self.petId = self.source.modelDat.id
-	end
+	--	self.petId = self.source.modelDat.id
+	--end
 	self.effectId =  0
 	self.effectTime = 0
 end
@@ -19,12 +19,12 @@ end
 function summonAffect:onEnter()
 	self.super.onEnter(self)
 	local isbody = 0
-	if self.petId == self.source.modelDat.id then
+	--if self.petId == self.source.modelDat.id then
 		--召唤分身
-		local pos = self:randomPos(self.source)
-		self.source:onBlink(pos)
-		isbody = 1
-	end	
+	--	local pos = self:randomPos(self.source)
+	--	self.source:onBlink(pos)
+	--	isbody = 1
+	--end	
 	for i = 1,self.petNum,1 do
 		local pos = self:randomPos(self.source)
 		g_entityManager:createPet(self.petId,self.source,pos,isbody)	
