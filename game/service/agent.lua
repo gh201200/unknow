@@ -186,6 +186,9 @@ end
 local CMD = {}
 function CMD.Start (conf)
 	g_shareData = sharedata.query 'gdd'
+	DEF = g_shareData.DEF
+	Quest = g_shareData.Quest
+
 	local gate = conf.gate
 	local account = conf.account
 	WATCHDOG = conf.watchdog

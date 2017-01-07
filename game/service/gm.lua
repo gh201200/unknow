@@ -12,6 +12,8 @@ local FUNCS_GET = {}
 function init( watchdog )
 	WATCHDOG = watchdog
 	g_shareData  = sharedata.query "gdd"
+	DEF = g_shareData.DEF
+	Quest = g_shareData.Quest
 	database = skynet.uniqueservice 'database'
 end
 

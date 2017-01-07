@@ -1,6 +1,5 @@
 local skynet = require "skynet"
 local socket = require "socket"
-local Quest = require "quest.quest"
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
 local SkillsMethod = require "agent.skills_method"
@@ -31,6 +30,8 @@ function CMD.init (m, id, conf)
 	session_expire_time = conf.session_expire_time * 100
 	session_expire_time_in_second = conf.session_expire_time
 	g_shareData  = sharedata.query "gdd"
+	DEf = g_shareData.DEF
+	Quest = g_shareData.Quest
 end
 
 local function close (fd)

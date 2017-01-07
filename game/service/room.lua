@@ -306,6 +306,8 @@ end
 local function init()
 	register_query_event_func()
 	g_shareData  = sharedata.query "gdd"
+	DEF = g_shareData.DEF
+	Quest = g_shareData.Quest
 end
 
 --REQUEST 接受非网络消息服务调用

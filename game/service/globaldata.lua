@@ -1,6 +1,8 @@
 local skynet = require "skynet"
 local sharedata = require "sharedata"
 local gdd  = {
+	DEF = require "vardefine",
+	Quest = require "quest",
 	skillRepository = require "skillRepository",	
 	heroModelRepository = require "heroModelRepository",
 	heroRepository = require "heroRepository",

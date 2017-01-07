@@ -5,7 +5,6 @@ local NpcAI = require "ai.NpcAI"
 local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
 local DropManager = require "drop.DropManager"
-local Quest = require "quest.quest"
 
 local IMonster = class("IMonster", Ientity)
 

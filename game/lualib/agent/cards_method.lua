@@ -1,7 +1,6 @@
 local skynet = require "skynet"
 local syslog = require "syslog"
 local uuid = require "uuid"
-local Quest = require "quest.quest"
 
 ----------------cards func---------------------
 local CardsMethod = 
