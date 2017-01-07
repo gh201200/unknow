@@ -1,16 +1,5 @@
 local Mission = class("Mission")
 
-local MissionType = {
-	daily 		= 0,
-	achivement 	= 1,
-}
-
-local GoalCon = {
-	greater 	= bit(0),
-	equal 		= bit(1),
-	less		= bit(2)	 	
-}
-
 local user
 local REQUEST = {}
 

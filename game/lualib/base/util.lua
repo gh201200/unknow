@@ -191,7 +191,10 @@ end
 function Macro_GetMissionSerialId( _id )
 	return math.floor(_id / 1000)
 end
-
+--get mission data id
+function Macro_GetMissionDataId( _serId, lv )
+	return _serId * 1000 + lv
+end
 function openPackage( strPkg, userLv )
 	local drops = {}
 	print( strPkg )

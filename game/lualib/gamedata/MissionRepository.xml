@@ -364,8 +364,8 @@
 		<n32Goal>24</n32Goal>
 		<szAwards>10002,300</szAwards>
 	</item>
-	<item id="20009001">
-		<n32SerId>20009</n32SerId>
+	<item id="20010001">
+		<n32SerId>20010</n32SerId>
 		<szName>纷争大师</szName>
 		<szContent>拥有3个三星技能</szContent>
 		<n32Type>1</n32Type>
@@ -377,8 +377,8 @@
 		<n32Goal>3</n32Goal>
 		<szAwards>10002,100</szAwards>
 	</item>
-	<item id="20009002">
-		<n32SerId>20009</n32SerId>
+	<item id="20010002">
+		<n32SerId>20010</n32SerId>
 		<szName>纷争大师</szName>
 		<szContent>拥有6个三星技能</szContent>
 		<n32Type>1</n32Type>
@@ -390,8 +390,8 @@
 		<n32Goal>6</n32Goal>
 		<szAwards>10002,300</szAwards>
 	</item>
-	<item id="20009003">
-		<n32SerId>20009</n32SerId>
+	<item id="20010003">
+		<n32SerId>20010</n32SerId>
 		<szName>纷争大师</szName>
 		<szContent>拥有9个三星技能</szContent>
 		<n32Type>1</n32Type>
@@ -403,788 +403,8 @@
 		<n32Goal>9</n32Goal>
 		<szAwards>10002,500</szAwards>
 	</item>
-	<item id="20010001">
-		<n32SerId>20010</n32SerId>
-		<szName>猎头人</szName>
-		<szContent>累计完成击杀100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>0</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1006</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20010002">
-		<n32SerId>20010</n32SerId>
-		<szName>猎头人</szName>
-		<szContent>累计完成击杀1000次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>0</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1006</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1000</n32Goal>
-		<szAwards>10002,100</szAwards>
-	</item>
-	<item id="20010003">
-		<n32SerId>20010</n32SerId>
-		<szName>猎头人</szName>
-		<szContent>累计完成击杀10000次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>0</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1006</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10000</n32Goal>
-		<szAwards>10002,300</szAwards>
-	</item>
 	<item id="20011001">
 		<n32SerId>20011</n32SerId>
-		<szName>炮灰</szName>
-		<szContent>累计死亡100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>0</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1007</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,30</szAwards>
-	</item>
-	<item id="20011002">
-		<n32SerId>20011</n32SerId>
-		<szName>炮灰</szName>
-		<szContent>累计死亡1000次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>0</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1007</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1000</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20011003">
-		<n32SerId>20011</n32SerId>
-		<szName>炮灰</szName>
-		<szContent>累计死亡10000次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>0</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1007</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10000</n32Goal>
-		<szAwards>10002,100</szAwards>
-	</item>
-	<item id="20012001">
-		<n32SerId>20012</n32SerId>
-		<szName>独行传教士</szName>
-		<szContent>使用厚多获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>1100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20012002">
-		<n32SerId>20012</n32SerId>
-		<szName>独行传教士</szName>
-		<szContent>使用厚多获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>1100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20012003">
-		<n32SerId>20012</n32SerId>
-		<szName>独行传教士</szName>
-		<szContent>使用厚多获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>1100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20013001">
-		<n32SerId>20013</n32SerId>
-		<szName>首席骑士</szName>
-		<szContent>使用奥斯顿获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>1101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20013002">
-		<n32SerId>20013</n32SerId>
-		<szName>首席骑士</szName>
-		<szContent>使用奥斯顿获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>1101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20013003">
-		<n32SerId>20013</n32SerId>
-		<szName>首席骑士</szName>
-		<szContent>使用奥斯顿获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>1101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20014001">
-		<n32SerId>20014</n32SerId>
-		<szName>破晓之光</szName>
-		<szContent>使用凯文获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>1200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20014002">
-		<n32SerId>20014</n32SerId>
-		<szName>破晓之光</szName>
-		<szContent>使用凯文获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>1200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20014003">
-		<n32SerId>20014</n32SerId>
-		<szName>破晓之光</szName>
-		<szContent>使用凯文获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>1200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20015001">
-		<n32SerId>20015</n32SerId>
-		<szName>灵巧斗客</szName>
-		<szContent>使用尼尔获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>1201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20015002">
-		<n32SerId>20015</n32SerId>
-		<szName>灵巧斗客</szName>
-		<szContent>使用尼尔获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>1201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20015003">
-		<n32SerId>20015</n32SerId>
-		<szName>灵巧斗客</szName>
-		<szContent>使用尼尔获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>1201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20016001">
-		<n32SerId>20016</n32SerId>
-		<szName>辉夜惩黯使</szName>
-		<szContent>使用菲碧获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>1300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20016002">
-		<n32SerId>20016</n32SerId>
-		<szName>辉夜惩黯使</szName>
-		<szContent>使用菲碧获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>1300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20016003">
-		<n32SerId>20016</n32SerId>
-		<szName>辉夜惩黯使</szName>
-		<szContent>使用菲碧获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>1300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20017001">
-		<n32SerId>20017</n32SerId>
-		<szName>曲时大师</szName>
-		<szContent>使用撒缪尔获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>1301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20017002">
-		<n32SerId>20017</n32SerId>
-		<szName>曲时大师</szName>
-		<szContent>使用撒缪尔获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>1301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20017003">
-		<n32SerId>20017</n32SerId>
-		<szName>曲时大师</szName>
-		<szContent>使用撒缪尔获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>1301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20018001">
-		<n32SerId>20018</n32SerId>
-		<szName>不驯狂僧</szName>
-		<szContent>使用柯克.李获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>2100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20018002">
-		<n32SerId>20018</n32SerId>
-		<szName>不驯狂僧</szName>
-		<szContent>使用柯克.李获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>2100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20018003">
-		<n32SerId>20018</n32SerId>
-		<szName>不驯狂僧</szName>
-		<szContent>使用柯克.李获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>2100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20019001">
-		<n32SerId>20019</n32SerId>
-		<szName>盾鳞之影</szName>
-		<szContent>使用格萝利娅获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>2101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20019002">
-		<n32SerId>20019</n32SerId>
-		<szName>盾鳞之影</szName>
-		<szContent>使用格萝利娅获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>2101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20019003">
-		<n32SerId>20019</n32SerId>
-		<szName>盾鳞之影</szName>
-		<szContent>使用格萝利娅获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>2101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20020001">
-		<n32SerId>20020</n32SerId>
-		<szName>蛮荒隐者</szName>
-		<szContent>使用夕巴斯汀获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>2200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20020002">
-		<n32SerId>20020</n32SerId>
-		<szName>蛮荒隐者</szName>
-		<szContent>使用夕巴斯汀获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>2200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20020003">
-		<n32SerId>20020</n32SerId>
-		<szName>蛮荒隐者</szName>
-		<szContent>使用夕巴斯汀获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>2200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20021001">
-		<n32SerId>20021</n32SerId>
-		<szName>广林漫游者</szName>
-		<szContent>使用若拉获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>2201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20021002">
-		<n32SerId>20021</n32SerId>
-		<szName>广林漫游者</szName>
-		<szContent>使用若拉获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>2201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20021003">
-		<n32SerId>20021</n32SerId>
-		<szName>广林漫游者</szName>
-		<szContent>使用若拉获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>2201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20022001">
-		<n32SerId>20022</n32SerId>
-		<szName>云游诗人</szName>
-		<szContent>使用西维娅获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>2300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20022002">
-		<n32SerId>20022</n32SerId>
-		<szName>云游诗人</szName>
-		<szContent>使用西维娅获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>2300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20022003">
-		<n32SerId>20022</n32SerId>
-		<szName>云游诗人</szName>
-		<szContent>使用西维娅获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>2300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20023001">
-		<n32SerId>20023</n32SerId>
-		<szName>影羽送葬人</szName>
-		<szContent>使用麦斯威尔获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>2301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20023002">
-		<n32SerId>20023</n32SerId>
-		<szName>影羽送葬人</szName>
-		<szContent>使用麦斯威尔获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>2301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20023003">
-		<n32SerId>20023</n32SerId>
-		<szName>影羽送葬人</szName>
-		<szContent>使用麦斯威尔获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>2301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20024001">
-		<n32SerId>20024</n32SerId>
-		<szName>文雅学者</szName>
-		<szContent>使用柏德温获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>3100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20024002">
-		<n32SerId>20024</n32SerId>
-		<szName>文雅学者</szName>
-		<szContent>使用柏德温获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>3100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20024003">
-		<n32SerId>20024</n32SerId>
-		<szName>文雅学者</szName>
-		<szContent>使用柏德温获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>3100</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20025001">
-		<n32SerId>20025</n32SerId>
-		<szName>抹杀烈炬</szName>
-		<szContent>使用米娅获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>3101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20025002">
-		<n32SerId>20025</n32SerId>
-		<szName>抹杀烈炬</szName>
-		<szContent>使用米娅获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>3101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20025003">
-		<n32SerId>20025</n32SerId>
-		<szName>抹杀烈炬</szName>
-		<szContent>使用米娅获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>3101</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20026001">
-		<n32SerId>20026</n32SerId>
-		<szName>送终罗刹</szName>
-		<szContent>使用肖恩获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>3200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20026002">
-		<n32SerId>20026</n32SerId>
-		<szName>送终罗刹</szName>
-		<szContent>使用肖恩获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>3200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20026003">
-		<n32SerId>20026</n32SerId>
-		<szName>送终罗刹</szName>
-		<szContent>使用肖恩获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>3200</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20027001">
-		<n32SerId>20027</n32SerId>
-		<szName>匿迹渗透者</szName>
-		<szContent>使用尤娜获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>3201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20027002">
-		<n32SerId>20027</n32SerId>
-		<szName>匿迹渗透者</szName>
-		<szContent>使用尤娜获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>3201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20027003">
-		<n32SerId>20027</n32SerId>
-		<szName>匿迹渗透者</szName>
-		<szContent>使用尤娜获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>3201</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20028001">
-		<n32SerId>20028</n32SerId>
-		<szName>冥河引渡人</szName>
-		<szContent>使用莫顿获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>3300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20028002">
-		<n32SerId>20028</n32SerId>
-		<szName>冥河引渡人</szName>
-		<szContent>使用莫顿获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>3300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20028003">
-		<n32SerId>20028</n32SerId>
-		<szName>冥河引渡人</szName>
-		<szContent>使用莫顿获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>3300</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20029001">
-		<n32SerId>20029</n32SerId>
-		<szName>筑造奇才</szName>
-		<szContent>使用修获胜1次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>1</n32Degree>
-		<n32Con1>3301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>1</n32Goal>
-		<szAwards>10002,5</szAwards>
-	</item>
-	<item id="20029002">
-		<n32SerId>20029</n32SerId>
-		<szName>筑造奇才</szName>
-		<szContent>使用修获胜10次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>2</n32Degree>
-		<n32Con1>3301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>10</n32Goal>
-		<szAwards>10002,10</szAwards>
-	</item>
-	<item id="20029003">
-		<n32SerId>20029</n32SerId>
-		<szName>筑造奇才</szName>
-		<szContent>使用修获胜100次</szContent>
-		<n32Type>1</n32Type>
-		<n32Degree>3</n32Degree>
-		<n32Con1>3301</n32Con1>
-		<n32Con2>0</n32Con2>
-		<n32Content>1005</n32Content>
-		<n32GoalCon>3</n32GoalCon>
-		<n32Goal>100</n32Goal>
-		<szAwards>10002,50</szAwards>
-	</item>
-	<item id="20030001">
-		<n32SerId>20030</n32SerId>
 		<szName>训练大师</szName>
 		<szContent>将1个一星技能升至10阶</szContent>
 		<n32Type>1</n32Type>
@@ -1196,8 +416,8 @@
 		<n32Goal>10</n32Goal>
 		<szAwards>10002,50</szAwards>
 	</item>
-	<item id="20030002">
-		<n32SerId>20030</n32SerId>
+	<item id="20011002">
+		<n32SerId>20011</n32SerId>
 		<szName>训练大师</szName>
 		<szContent>将1个二星技能升至10阶</szContent>
 		<n32Type>1</n32Type>
@@ -1209,8 +429,8 @@
 		<n32Goal>10</n32Goal>
 		<szAwards>10002,200</szAwards>
 	</item>
-	<item id="20030003">
-		<n32SerId>20030</n32SerId>
+	<item id="20011003">
+		<n32SerId>20011</n32SerId>
 		<szName>训练大师</szName>
 		<szContent>将1个三星技能升至10阶</szContent>
 		<n32Type>1</n32Type>
@@ -1221,5 +441,785 @@
 		<n32GoalCon>3</n32GoalCon>
 		<n32Goal>10</n32Goal>
 		<szAwards>10002,500</szAwards>
+	</item>
+	<item id="20012001">
+		<n32SerId>20012</n32SerId>
+		<szName>猎头人</szName>
+		<szContent>累计完成击杀100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>0</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1006</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="20012002">
+		<n32SerId>20012</n32SerId>
+		<szName>猎头人</szName>
+		<szContent>累计完成击杀1000次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>0</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1006</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1000</n32Goal>
+		<szAwards>10002,100</szAwards>
+	</item>
+	<item id="20012003">
+		<n32SerId>20012</n32SerId>
+		<szName>猎头人</szName>
+		<szContent>累计完成击杀10000次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>0</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1006</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10000</n32Goal>
+		<szAwards>10002,300</szAwards>
+	</item>
+	<item id="20013001">
+		<n32SerId>20013</n32SerId>
+		<szName>炮灰</szName>
+		<szContent>累计死亡100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>0</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1007</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,30</szAwards>
+	</item>
+	<item id="20013002">
+		<n32SerId>20013</n32SerId>
+		<szName>炮灰</szName>
+		<szContent>累计死亡1000次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>0</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1007</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1000</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="20013003">
+		<n32SerId>20013</n32SerId>
+		<szName>炮灰</szName>
+		<szContent>累计死亡10000次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>0</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1007</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10000</n32Goal>
+		<szAwards>10002,100</szAwards>
+	</item>
+	<item id="21001001">
+		<n32SerId>21001</n32SerId>
+		<szName>独行传教士</szName>
+		<szContent>使用厚多获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>1100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21001002">
+		<n32SerId>21001</n32SerId>
+		<szName>独行传教士</szName>
+		<szContent>使用厚多获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>1100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21001003">
+		<n32SerId>21001</n32SerId>
+		<szName>独行传教士</szName>
+		<szContent>使用厚多获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>1100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21002001">
+		<n32SerId>21002</n32SerId>
+		<szName>首席骑士</szName>
+		<szContent>使用奥斯顿获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>1101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21002002">
+		<n32SerId>21002</n32SerId>
+		<szName>首席骑士</szName>
+		<szContent>使用奥斯顿获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>1101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21002003">
+		<n32SerId>21002</n32SerId>
+		<szName>首席骑士</szName>
+		<szContent>使用奥斯顿获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>1101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21003001">
+		<n32SerId>21003</n32SerId>
+		<szName>破晓之光</szName>
+		<szContent>使用凯文获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>1200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21003002">
+		<n32SerId>21003</n32SerId>
+		<szName>破晓之光</szName>
+		<szContent>使用凯文获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>1200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21003003">
+		<n32SerId>21003</n32SerId>
+		<szName>破晓之光</szName>
+		<szContent>使用凯文获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>1200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21004001">
+		<n32SerId>21004</n32SerId>
+		<szName>灵巧斗客</szName>
+		<szContent>使用尼尔获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>1201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21004002">
+		<n32SerId>21004</n32SerId>
+		<szName>灵巧斗客</szName>
+		<szContent>使用尼尔获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>1201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21004003">
+		<n32SerId>21004</n32SerId>
+		<szName>灵巧斗客</szName>
+		<szContent>使用尼尔获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>1201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21005001">
+		<n32SerId>21005</n32SerId>
+		<szName>辉夜惩黯使</szName>
+		<szContent>使用菲碧获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>1300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21005002">
+		<n32SerId>21005</n32SerId>
+		<szName>辉夜惩黯使</szName>
+		<szContent>使用菲碧获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>1300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21005003">
+		<n32SerId>21005</n32SerId>
+		<szName>辉夜惩黯使</szName>
+		<szContent>使用菲碧获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>1300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21006001">
+		<n32SerId>21006</n32SerId>
+		<szName>曲时大师</szName>
+		<szContent>使用撒缪尔获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>1301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21006002">
+		<n32SerId>21006</n32SerId>
+		<szName>曲时大师</szName>
+		<szContent>使用撒缪尔获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>1301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21006003">
+		<n32SerId>21006</n32SerId>
+		<szName>曲时大师</szName>
+		<szContent>使用撒缪尔获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>1301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21007001">
+		<n32SerId>21007</n32SerId>
+		<szName>不驯狂僧</szName>
+		<szContent>使用柯克.李获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>2100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21007002">
+		<n32SerId>21007</n32SerId>
+		<szName>不驯狂僧</szName>
+		<szContent>使用柯克.李获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>2100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21007003">
+		<n32SerId>21007</n32SerId>
+		<szName>不驯狂僧</szName>
+		<szContent>使用柯克.李获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>2100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21008001">
+		<n32SerId>21008</n32SerId>
+		<szName>盾鳞之影</szName>
+		<szContent>使用格萝利娅获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>2101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21008002">
+		<n32SerId>21008</n32SerId>
+		<szName>盾鳞之影</szName>
+		<szContent>使用格萝利娅获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>2101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21008003">
+		<n32SerId>21008</n32SerId>
+		<szName>盾鳞之影</szName>
+		<szContent>使用格萝利娅获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>2101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21009001">
+		<n32SerId>21009</n32SerId>
+		<szName>蛮荒隐者</szName>
+		<szContent>使用夕巴斯汀获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>2200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21009002">
+		<n32SerId>21009</n32SerId>
+		<szName>蛮荒隐者</szName>
+		<szContent>使用夕巴斯汀获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>2200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21009003">
+		<n32SerId>21009</n32SerId>
+		<szName>蛮荒隐者</szName>
+		<szContent>使用夕巴斯汀获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>2200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21010001">
+		<n32SerId>21010</n32SerId>
+		<szName>广林漫游者</szName>
+		<szContent>使用若拉获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>2201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21010002">
+		<n32SerId>21010</n32SerId>
+		<szName>广林漫游者</szName>
+		<szContent>使用若拉获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>2201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21010003">
+		<n32SerId>21010</n32SerId>
+		<szName>广林漫游者</szName>
+		<szContent>使用若拉获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>2201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21011001">
+		<n32SerId>21011</n32SerId>
+		<szName>云游诗人</szName>
+		<szContent>使用西维娅获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>2300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21011002">
+		<n32SerId>21011</n32SerId>
+		<szName>云游诗人</szName>
+		<szContent>使用西维娅获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>2300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21011003">
+		<n32SerId>21011</n32SerId>
+		<szName>云游诗人</szName>
+		<szContent>使用西维娅获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>2300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21012001">
+		<n32SerId>21012</n32SerId>
+		<szName>影羽送葬人</szName>
+		<szContent>使用麦斯威尔获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>2301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21012002">
+		<n32SerId>21012</n32SerId>
+		<szName>影羽送葬人</szName>
+		<szContent>使用麦斯威尔获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>2301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21012003">
+		<n32SerId>21012</n32SerId>
+		<szName>影羽送葬人</szName>
+		<szContent>使用麦斯威尔获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>2301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21013001">
+		<n32SerId>21013</n32SerId>
+		<szName>文雅学者</szName>
+		<szContent>使用柏德温获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>3100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21013002">
+		<n32SerId>21013</n32SerId>
+		<szName>文雅学者</szName>
+		<szContent>使用柏德温获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>3100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21013003">
+		<n32SerId>21013</n32SerId>
+		<szName>文雅学者</szName>
+		<szContent>使用柏德温获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>3100</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21014001">
+		<n32SerId>21014</n32SerId>
+		<szName>抹杀烈炬</szName>
+		<szContent>使用米娅获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>3101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21014002">
+		<n32SerId>21014</n32SerId>
+		<szName>抹杀烈炬</szName>
+		<szContent>使用米娅获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>3101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21014003">
+		<n32SerId>21014</n32SerId>
+		<szName>抹杀烈炬</szName>
+		<szContent>使用米娅获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>3101</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21015001">
+		<n32SerId>21015</n32SerId>
+		<szName>送终罗刹</szName>
+		<szContent>使用肖恩获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>3200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21015002">
+		<n32SerId>21015</n32SerId>
+		<szName>送终罗刹</szName>
+		<szContent>使用肖恩获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>3200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21015003">
+		<n32SerId>21015</n32SerId>
+		<szName>送终罗刹</szName>
+		<szContent>使用肖恩获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>3200</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21016001">
+		<n32SerId>21016</n32SerId>
+		<szName>匿迹渗透者</szName>
+		<szContent>使用尤娜获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>3201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21016002">
+		<n32SerId>21016</n32SerId>
+		<szName>匿迹渗透者</szName>
+		<szContent>使用尤娜获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>3201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21016003">
+		<n32SerId>21016</n32SerId>
+		<szName>匿迹渗透者</szName>
+		<szContent>使用尤娜获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>3201</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21017001">
+		<n32SerId>21017</n32SerId>
+		<szName>冥河引渡人</szName>
+		<szContent>使用莫顿获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>3300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21017002">
+		<n32SerId>21017</n32SerId>
+		<szName>冥河引渡人</szName>
+		<szContent>使用莫顿获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>3300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21017003">
+		<n32SerId>21017</n32SerId>
+		<szName>冥河引渡人</szName>
+		<szContent>使用莫顿获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>3300</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
+	</item>
+	<item id="21018001">
+		<n32SerId>21018</n32SerId>
+		<szName>筑造奇才</szName>
+		<szContent>使用修获胜1次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>1</n32Degree>
+		<n32Con1>3301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>1</n32Goal>
+		<szAwards>10002,5</szAwards>
+	</item>
+	<item id="21018002">
+		<n32SerId>21018</n32SerId>
+		<szName>筑造奇才</szName>
+		<szContent>使用修获胜10次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>2</n32Degree>
+		<n32Con1>3301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>10</n32Goal>
+		<szAwards>10002,10</szAwards>
+	</item>
+	<item id="21018003">
+		<n32SerId>21018</n32SerId>
+		<szName>筑造奇才</szName>
+		<szContent>使用修获胜100次</szContent>
+		<n32Type>1</n32Type>
+		<n32Degree>3</n32Degree>
+		<n32Con1>3301</n32Con1>
+		<n32Con2>0</n32Con2>
+		<n32Content>1005</n32Content>
+		<n32GoalCon>3</n32GoalCon>
+		<n32Goal>100</n32Goal>
+		<szAwards>10002,50</szAwards>
 	</item>
 </info>

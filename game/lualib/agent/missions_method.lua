@@ -2,6 +2,18 @@ local skynet = require "skynet"
 local Quest = require "quest.quest"
 local Time = require "time"
 
+MissionType = {
+	daily           = 0,                               
+        achivement      = 1,
+}
+   
+GoalCon = {                                          
+	greater         = bit(0),                          
+        equal           = bit(1),
+        less            = bit(2)                           
+}
+
+
 ----------------skills func---------------------
 local MissionsMethod = 
 {
@@ -20,6 +32,16 @@ local MissionsMethod =
 	getMissionByDataId = function(self, _dataId)
 		local _serId = Macro_GetMissionSerialId(_dataId)
 		return self:getMissionBySerialId( _serId )
+	end;
+	--
+	getAchivementsNum = function(self)
+		local cnt = 0
+		for k, v in pairs(self.units) do
+			if g_shareData.missionRepository[v.id].n32Type == MissionType.achivement then
+				cnt = cnt + 1
+			end
+		end
+		return cnt
 	end;
 
 	--

@@ -123,8 +123,8 @@ local function onDataLoadCompleted()
 	user.missions:getDailyMission()
 	--新的成就
 	local num = user.missions:getAchivementsNum()
-	if num < (Quset.AchivementsId[2] - Quset.AchivementsId[1])/1000 + 1 then
-		for i=Quset.AchivementsId[1], Quset.AchivementsId[2] do
+	if num < (Quest.AchivementsId[2] - Quest.AchivementsId[1])/1000 + 1 then
+		for i=Quest.AchivementsId[1], Quest.AchivementsId[2] do
 			local serId = Macro_GetMissionSerialId( i )
 			local unit = user.missions:getMissionBySerialId( serId )
 			if not unit then
