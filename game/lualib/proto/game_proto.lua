@@ -99,9 +99,8 @@ local types = [[
 	serverId 1 : integer
 	posx 2 : integer
 	posz 3 : integer
-	isbody 4 : integer
-	camp 5 : integer
-	masterId 6 : integer
+	camp 4 : integer
+	masterId 5 : integer
 }
 .LoadHero {
 	serverId 0 : integer

@@ -1,6 +1,7 @@
 local Ientity = require "entity.Ientity"
 local PetAI = require "ai.PetAI"
 local Map = require "map.Map"
+local passtiveSpell =  require "skill.passtiveSpell"
 local IPet = class("IPet", Ientity)
 require "globalDefine"
 function IPet:ctor(pos,dir)
@@ -11,10 +12,16 @@ end
 function IPet:init(pt,master)
 	self.pt = pt 
 	self.master = master
-	table.insert(self.master.pets,self)
 	self.entityType = EntityType.pet
+	if pt.n32Type == 2 then
+		self.entityType = EntityType.building
+	end
+	if pt.n32Type ==  3 then
+		self.pt.n32CommonSkill = master.attDat.n32CommonSkillId 
+		self.pt.modolId = master.modelDat.id
+	end
 	self.ai = PetAI.new(self,master)
-	self.camp = master.camp
+	self.camp =  master.camp
 	self.lifeTime = 0
 	self.bornPos:set(self.pos.x, 0, self.pos.z)
 	self.attDat = {}
@@ -24,9 +31,27 @@ function IPet:init(pt,master)
         self.HpMpChange = true
         self.StatsChange = true
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
-	self.lifeTime = 30*1000 --存活时间
+	self.lifeTime = self.pt.n32LifeTime * 1000 --存活时间
 	self.isbody = 0
 	IPet.super.init(self)
+	for i=1,3,1 do
+		local skillId = pt["n32Skill0" .. i]
+		if skillId ~= 0 then
+			local skilldata = g_shareData.skillRepository[skillId]	
+			if skilldata.n32Active == 1 then
+				for i=#(self.spell.passtiveSpells),1,-1 do
+					local v = self.spell.passtiveSpells[i]
+					if v.skilldata.n32SeriId == skilldata.n32SeriId then
+						--移除旧的被动技能
+						v:onDead()
+						table.remove(self.spell.passtiveSpells,i)
+					end
+				end
+			end	
+			local ps = passtiveSpell.new(self,skilldata)
+			table.insert(self.spell.passtiveSpells,ps)
+		end
+	end
 end
 
 function IPet:getType()
@@ -34,30 +59,24 @@ function IPet:getType()
 end
 
 function IPet:calcStats()
-	self.attDat.n32Hp = self.master:getHpMax()
-	self.attDat.n32Mp = self.master:getMpMax()
-	self.attDat.n32Attack = self.master:getAttack()
-	self.attDat.n32Defence = self.master:getDefence()
-	self.attDat.n32ASpeed = self.master:getASpeed()
-	self.attDat.n32MSpeed = self.master:getMSpeed()
-	self.attDat.n32AttackRange = self.master:getAttackRange()	
-	self.attDat.n32LStrength = 0
+	self.attDat.n32Hp = self.pt["HpMax"] 
+	self.attDat.n32Mp = self.pt["MpMax"]
+	self.attDat.n32Attack = self.pt["Attack"]
+	self.attDat.n32Defence = self.pt["Defence"]
+	self.attDat.n32ASpeed = self.pt["Aspeed"]
+	self.attDat.n32MSpeed = self.pt["Mspeed"]
+	self.attDat.n32AttackRange = 0	
+	self.attDat.n32LStrength =  0 
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
 	self.attDat.n32MainAtt = 0
-	self.attDat.n32Strength = 0
-	self.attDat.n32Intelligence = 0
-	self.attDat.n32Agility = 0
-
-	local funs = {"HpMaxPc","HpMax","AttackPc","Attack","DefencePc","Defence","ASpeed","MSpeedPc","MSpeed","AttackRangePc","AttackRange"}
-	for _k,_v in pairs(funs) do
-		local f = self["add" .. _v]
-		if f ~= nil then
-			print("add" .. _v)
-			f(self.pt[_v])
-		end
-	end
-	
+	self.attDat.n32Strength = self.master:getStrength() * self.pt["StrPc"] + self.pt["Str"]  
+	self.attDat.n32Intelligence = self.master:getIntelligence() * self.pt["IntPc"] + self.pt["Int"]
+	self.attDat.n32Agility = self.master:getAgility() * self.pt["AglPc"] + self.pt["Agl"]
+		
+	self:calcStrength()
+	self:calcIntelligence()
+	self:calcAgility()
 	self:calcHpMax()
 	self:calcMpMax()
 	self:calcAttack()

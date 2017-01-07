@@ -143,16 +143,27 @@ function EntityManager:createFlyObj(srcObj,target,skilldata,extra1,extra2)
 	self:addEntity(obj)
 end
 
-function EntityManager:createPet(id,master,pos,isbody)
-	isbody = isbody or 0
+function EntityManager:createPet(id,master,pos)
 	local dir = vector3.create(0,0,0)
-	local pet = IPet.new(pos,dir)
-	pet.isbody = isbody
-	g_entityManager:addEntity(pet)
 	local pt = g_shareData.petRepository[id]
+	local limitNum = pt.n32SummonLimit
+	local pets = master.pets
+	for i=#(pets),1,-1 do
+		local v = pets[i]
+		print("v:",v.pt)
+		if v.pt.Serid == pt.Serid then
+			limitNum = limitNum - 1
+			if limitNum <= 0 then
+				v.lifeTime = -1
+			end
+		end
+	end
+	local pet = IPet.new(pos,dir)
+	g_entityManager:addEntity(pet)
 	pet.serverId = assin_server_id()	
 	pet:init(pt,master)
-	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,isbody = isbody,camp = master.camp,masterId = master.serverId}
+	table.insert(master.pets,pet)	
+	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,camp = master.camp,masterId = master.serverId}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
