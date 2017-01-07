@@ -9,7 +9,6 @@ local database = nil
 local units = {}
 
 --local ResetCardPowerTime = {{hour=14, min=0, sec = 0}}	--重置卡牌体力时间
-local RefreshShopCardCD = 60				--刷新商城卡牌CD
 
 local function calcUid(name, atype)
 	return name .. '$' .. atype
@@ -134,7 +133,7 @@ end
 local function cooldown_updatesys()
 
 	if isTimeout(calcUid('system', CoolDownSysType.RefreshShopCard)) then		--刷新卡牌商店	
-		setTime('system', CoolDownSysType.RefreshShopCard, RefreshShopCardCD)
+		setTime('system', CoolDownSysType.RefreshShopCard, Quest.RefreshShopCardCD)
 		
 		local r, r1  = pcall(RefreshShopCard)
 		if not r then

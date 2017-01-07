@@ -53,8 +53,10 @@ local function formatsql( key, name, unit )
 	local keys, values
 	if name == "cards" or name == "skills" then
 		keys="blobdata"
-		values = serialize(unit)
+		values = "\'" .. serialize(unit) .. "\'"
+		print("blob =" .. values)
 	else
+		print(unit)
 		keys, values = table.packsql( unit )
 	end
 	return "replace into ".. tablename(name, key) .. " ( uuid,"..keys..") values('" .. key .."',".. values .. ")"
@@ -167,6 +169,8 @@ local function loadAllCards()
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
+		print(v['blobdata'])
+		print(unit)
 		local account_id = v['uuid']
 		for p, q in pairs( unit ) do
 			q.doNotSavebg = 1
@@ -181,6 +185,8 @@ local function loadAllSkills()
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
+		print(v['blobdata'])
+		print(unit)
 		local account_id = v['uuid']
 		for p, q in pairs(unit) do
 			q.doNotSavebg = 1

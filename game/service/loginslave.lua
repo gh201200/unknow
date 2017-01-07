@@ -5,6 +5,7 @@ local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
 local SkillsMethod = require "agent.skills_method"
 local CardsMethod = require "agent.cards_method"
+local MissionsMethod = require "agent.missions_method"
 local traceback = debug.traceback
 local snax = require "snax"
 
@@ -76,7 +77,21 @@ local function firstRegister(account_id)
                         end
                  end
         end
-
+	--添加任务数据
+	local mission = MissionsMethod.initMission( Quest.DailyMissionId )
+	skynet.call(database, "lua", "missions", "add", account_id, mission)
+	for i=Quest.AchivementsId[1], Quest.AchivementsId[2] do
+		local id = Macro_GetMissionDataId( i, 1 )
+		local mission = MissionsMethod.initMission( id )
+		mission.flag = id
+		skynet.call(database, "lua", "missions", "add", account_id, mission)
+	end
+	for i=Quest.AchivementsId[3], Quest.AchivementsId[4] do
+		local id = Macro_GetMissionDataId( i, 1 )
+		local mission = MissionsMethod.initMission( id )
+		mission.flag = id
+		skynet.call(database, "lua", "missions", "add", account_id, mission)
+	end
 end
 
 

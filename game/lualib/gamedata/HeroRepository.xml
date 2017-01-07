@@ -4,9 +4,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -35,9 +35,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -66,9 +66,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -97,9 +97,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -128,9 +128,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -159,9 +159,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -190,9 +190,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -221,9 +221,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -252,9 +252,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -283,9 +283,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -314,9 +314,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -345,9 +345,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -376,9 +376,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -407,9 +407,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -438,9 +438,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -469,9 +469,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -500,9 +500,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -531,9 +531,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -562,9 +562,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -593,9 +593,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -624,9 +624,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -655,9 +655,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -686,9 +686,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -717,9 +717,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -748,9 +748,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -779,9 +779,9 @@
 		<n32SeriId>1100</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<n32ModelId>50002</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/houde.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -810,9 +810,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -841,9 +841,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -872,9 +872,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -903,9 +903,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -934,9 +934,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -965,9 +965,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -996,9 +996,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -1027,9 +1027,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -1058,9 +1058,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -1089,9 +1089,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -1120,9 +1120,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -1151,9 +1151,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -1182,9 +1182,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -1213,9 +1213,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -1244,9 +1244,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -1275,9 +1275,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -1306,9 +1306,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -1337,9 +1337,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -1368,9 +1368,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -1399,9 +1399,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -1430,9 +1430,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -1461,9 +1461,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -1492,9 +1492,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -1523,9 +1523,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -1554,9 +1554,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -1585,9 +1585,9 @@
 		<n32SeriId>1101</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<n32ModelId>50022</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -1616,9 +1616,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -1647,9 +1647,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -1678,9 +1678,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -1709,9 +1709,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -1740,9 +1740,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -1771,9 +1771,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -1802,9 +1802,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -1833,9 +1833,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -1864,9 +1864,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -1895,9 +1895,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -1926,9 +1926,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -1957,9 +1957,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -1988,9 +1988,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -2019,9 +2019,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -2050,9 +2050,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -2081,9 +2081,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -2112,9 +2112,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -2143,9 +2143,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -2174,9 +2174,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -2205,9 +2205,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -2236,9 +2236,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -2267,9 +2267,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -2298,9 +2298,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -2329,9 +2329,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -2360,9 +2360,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -2391,9 +2391,9 @@
 		<n32SeriId>1200</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<n32ModelId>50001</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/shanguang.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -2422,7 +2422,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2453,7 +2453,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2484,7 +2484,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2515,7 +2515,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2546,7 +2546,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2577,7 +2577,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2608,7 +2608,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2639,7 +2639,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2670,7 +2670,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2701,7 +2701,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2732,7 +2732,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2763,7 +2763,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2794,7 +2794,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2825,7 +2825,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2856,7 +2856,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2887,7 +2887,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2918,7 +2918,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2949,7 +2949,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -2980,7 +2980,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3011,7 +3011,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3042,7 +3042,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3073,7 +3073,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3104,7 +3104,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3135,7 +3135,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3166,7 +3166,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3197,7 +3197,7 @@
 		<n32SeriId>1201</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>弹弓</szName>
+		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3228,7 +3228,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3259,7 +3259,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3290,7 +3290,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3321,7 +3321,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3352,7 +3352,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3383,7 +3383,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3414,7 +3414,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3445,7 +3445,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3476,7 +3476,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3507,7 +3507,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3538,7 +3538,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3569,7 +3569,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3600,7 +3600,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3631,7 +3631,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3662,7 +3662,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3693,7 +3693,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3724,7 +3724,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3755,7 +3755,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3786,7 +3786,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3817,7 +3817,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3848,7 +3848,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3879,7 +3879,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3910,7 +3910,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3941,7 +3941,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -3972,7 +3972,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4003,7 +4003,7 @@
 		<n32SeriId>1300</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<n32ModelId>50009</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Tiannv.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4034,7 +4034,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4065,7 +4065,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4096,7 +4096,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4127,7 +4127,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4158,7 +4158,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4189,7 +4189,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4220,7 +4220,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4251,7 +4251,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4282,7 +4282,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4313,7 +4313,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4344,7 +4344,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4375,7 +4375,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4406,7 +4406,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4437,7 +4437,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4468,7 +4468,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4499,7 +4499,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4530,7 +4530,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4561,7 +4561,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4592,7 +4592,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4623,7 +4623,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4654,7 +4654,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4685,7 +4685,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4716,7 +4716,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4747,7 +4747,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4778,7 +4778,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4809,7 +4809,7 @@
 		<n32SeriId>1301</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>钟表匠</szName>
+		<szName>撒缪尔</szName>
 		<n32ModelId>50006</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zhongbiaogong.png</szModelIcon>
 		<n32Camp>1</n32Camp>
@@ -4840,9 +4840,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -4871,9 +4871,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -4902,9 +4902,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -4933,9 +4933,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -4964,9 +4964,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -4995,9 +4995,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -5026,9 +5026,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -5057,9 +5057,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -5088,9 +5088,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -5119,9 +5119,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -5150,9 +5150,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -5181,9 +5181,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -5212,9 +5212,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -5243,9 +5243,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -5274,9 +5274,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -5305,9 +5305,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -5336,9 +5336,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -5367,9 +5367,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -5398,9 +5398,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -5429,9 +5429,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -5460,9 +5460,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -5491,9 +5491,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -5522,9 +5522,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -5553,9 +5553,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -5584,9 +5584,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -5615,9 +5615,9 @@
 		<n32SeriId>2100</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>狂僧</szName>
+		<szName>柯克.李</szName>
 		<n32ModelId>50012</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -5646,9 +5646,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -5677,9 +5677,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -5708,9 +5708,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -5739,9 +5739,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -5770,9 +5770,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -5801,9 +5801,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -5832,9 +5832,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -5863,9 +5863,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -5894,9 +5894,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -5925,9 +5925,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -5956,9 +5956,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -5987,9 +5987,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -6018,9 +6018,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -6049,9 +6049,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -6080,9 +6080,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -6111,9 +6111,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -6142,9 +6142,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -6173,9 +6173,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -6204,9 +6204,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -6235,9 +6235,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -6266,9 +6266,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -6297,9 +6297,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -6328,9 +6328,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -6359,9 +6359,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -6390,9 +6390,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -6421,9 +6421,9 @@
 		<n32SeriId>2101</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<n32ModelId>50011</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -6452,9 +6452,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -6483,9 +6483,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -6514,9 +6514,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -6545,9 +6545,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -6576,9 +6576,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -6607,9 +6607,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -6638,9 +6638,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -6669,9 +6669,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -6700,9 +6700,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -6731,9 +6731,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -6762,9 +6762,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -6793,9 +6793,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -6824,9 +6824,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -6855,9 +6855,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -6886,9 +6886,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -6917,9 +6917,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -6948,9 +6948,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -6979,9 +6979,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -7010,9 +7010,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -7041,9 +7041,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -7072,9 +7072,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -7103,9 +7103,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -7134,9 +7134,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -7165,9 +7165,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -7196,9 +7196,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -7227,9 +7227,9 @@
 		<n32SeriId>2200</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<n32ModelId>50016</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Xiuxingzhe.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -7258,9 +7258,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -7289,9 +7289,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -7320,9 +7320,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -7351,9 +7351,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -7382,9 +7382,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -7413,9 +7413,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -7444,9 +7444,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -7475,9 +7475,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -7506,9 +7506,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -7537,9 +7537,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -7568,9 +7568,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -7599,9 +7599,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -7630,9 +7630,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -7661,9 +7661,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -7692,9 +7692,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -7723,9 +7723,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -7754,9 +7754,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -7785,9 +7785,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -7816,9 +7816,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -7847,9 +7847,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -7878,9 +7878,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -7909,9 +7909,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -7940,9 +7940,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -7971,9 +7971,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -8002,9 +8002,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -8033,9 +8033,9 @@
 		<n32SeriId>2201</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<n32ModelId>50017</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -8064,9 +8064,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -8095,9 +8095,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -8126,9 +8126,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -8157,9 +8157,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -8188,9 +8188,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -8219,9 +8219,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -8250,9 +8250,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -8281,9 +8281,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -8312,9 +8312,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -8343,9 +8343,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -8374,9 +8374,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -8405,9 +8405,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -8436,9 +8436,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -8467,9 +8467,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -8498,9 +8498,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -8529,9 +8529,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -8560,9 +8560,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -8591,9 +8591,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -8622,9 +8622,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -8653,9 +8653,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -8684,9 +8684,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -8715,9 +8715,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -8746,9 +8746,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -8777,9 +8777,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -8808,9 +8808,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -8839,9 +8839,9 @@
 		<n32SeriId>2300</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>风女</szName>
+		<szName>西维娅</szName>
 		<n32ModelId>50019</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -8870,9 +8870,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -8901,9 +8901,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -8932,9 +8932,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -8963,9 +8963,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -8994,9 +8994,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -9025,9 +9025,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -9056,9 +9056,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -9087,9 +9087,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -9118,9 +9118,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -9149,9 +9149,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -9180,9 +9180,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -9211,9 +9211,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -9242,9 +9242,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -9273,9 +9273,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -9304,9 +9304,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -9335,9 +9335,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -9366,9 +9366,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -9397,9 +9397,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -9428,9 +9428,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -9459,9 +9459,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -9490,9 +9490,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -9521,9 +9521,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -9552,9 +9552,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -9583,9 +9583,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -9614,9 +9614,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -9645,9 +9645,9 @@
 		<n32SeriId>2301</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>乌鸦鬼</szName>
+		<szName>麦斯威尔</szName>
 		<n32ModelId>50005</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/Wuya.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -9676,9 +9676,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -9707,9 +9707,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -9738,9 +9738,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -9769,9 +9769,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -9800,9 +9800,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -9831,9 +9831,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -9862,9 +9862,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -9893,9 +9893,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -9924,9 +9924,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -9955,9 +9955,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -9986,9 +9986,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -10017,9 +10017,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -10048,9 +10048,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -10079,9 +10079,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -10110,9 +10110,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -10141,9 +10141,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -10172,9 +10172,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -10203,9 +10203,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -10234,9 +10234,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -10265,9 +10265,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -10296,9 +10296,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -10327,9 +10327,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -10358,9 +10358,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -10389,9 +10389,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -10420,9 +10420,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -10451,9 +10451,9 @@
 		<n32SeriId>3100</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<n32ModelId>50010</n32ModelId>
-		<szModelIcon>UI/Textures/HeadPortraits_Square/niuboshi.png</szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -10482,7 +10482,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10513,7 +10513,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10544,7 +10544,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10575,7 +10575,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10606,7 +10606,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10637,7 +10637,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10668,7 +10668,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10699,7 +10699,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10730,7 +10730,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10761,7 +10761,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10792,7 +10792,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10823,7 +10823,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10854,7 +10854,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10885,7 +10885,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10916,7 +10916,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10947,7 +10947,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -10978,7 +10978,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11009,7 +11009,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11040,7 +11040,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11071,7 +11071,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11102,7 +11102,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11133,7 +11133,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11164,7 +11164,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11195,7 +11195,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11226,7 +11226,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11257,7 +11257,7 @@
 		<n32SeriId>3101</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11288,7 +11288,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11319,7 +11319,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11350,7 +11350,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11381,7 +11381,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11412,7 +11412,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11443,7 +11443,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11474,7 +11474,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11505,7 +11505,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11536,7 +11536,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11567,7 +11567,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11598,7 +11598,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11629,7 +11629,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11660,7 +11660,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11691,7 +11691,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11722,7 +11722,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11753,7 +11753,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11784,7 +11784,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11815,7 +11815,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11846,7 +11846,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11877,7 +11877,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11908,7 +11908,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11939,7 +11939,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -11970,7 +11970,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12001,7 +12001,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12032,7 +12032,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12063,7 +12063,7 @@
 		<n32SeriId>3200</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<n32ModelId>50014</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12094,7 +12094,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12125,7 +12125,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12156,7 +12156,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12187,7 +12187,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12218,7 +12218,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12249,7 +12249,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12280,7 +12280,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12311,7 +12311,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12342,7 +12342,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12373,7 +12373,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12404,7 +12404,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12435,7 +12435,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12466,7 +12466,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12497,7 +12497,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12528,7 +12528,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12559,7 +12559,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12590,7 +12590,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12621,7 +12621,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12652,7 +12652,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12683,7 +12683,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12714,7 +12714,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12745,7 +12745,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12776,7 +12776,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12807,7 +12807,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12838,7 +12838,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12869,7 +12869,7 @@
 		<n32SeriId>3201</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<n32ModelId>50018</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12900,7 +12900,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12931,7 +12931,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12962,7 +12962,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -12993,7 +12993,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13024,7 +13024,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13055,7 +13055,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13086,7 +13086,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13117,7 +13117,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13148,7 +13148,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13179,7 +13179,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13210,7 +13210,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13241,7 +13241,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13272,7 +13272,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13303,7 +13303,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13334,7 +13334,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13365,7 +13365,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13396,7 +13396,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13427,7 +13427,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13458,7 +13458,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13489,7 +13489,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13520,7 +13520,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13551,7 +13551,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13582,7 +13582,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13613,7 +13613,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13644,7 +13644,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13675,7 +13675,7 @@
 		<n32SeriId>3300</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<n32ModelId>50020</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13706,7 +13706,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13737,7 +13737,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13768,7 +13768,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13799,7 +13799,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13830,7 +13830,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13861,7 +13861,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13892,7 +13892,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13923,7 +13923,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13954,7 +13954,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -13985,7 +13985,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14016,7 +14016,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14047,7 +14047,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14078,7 +14078,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14109,7 +14109,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14140,7 +14140,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14171,7 +14171,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14202,7 +14202,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14233,7 +14233,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14264,7 +14264,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14295,7 +14295,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14326,7 +14326,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14357,7 +14357,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14388,7 +14388,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14419,7 +14419,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14450,7 +14450,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>
@@ -14481,7 +14481,7 @@
 		<n32SeriId>3301</n32SeriId>
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
-		<szName>天才</szName>
+		<szName>修</szName>
 		<n32ModelId>50021</n32ModelId>
 		<szModelIcon></szModelIcon>
 		<n32Camp>4</n32Camp>

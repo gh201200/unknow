@@ -77,7 +77,9 @@ local CardsMethod =
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "addCard", self.account_id, v)
-		
+	
+		--推进任务
+		agentPlayer.missions:AdvanceMission(Quest.MissionContent.GetCard)	
 		--log record
 		syslog.logmy("card", {opt=op,account=self.account_id,cardId=dataId,cardNum=num,uuid=v.uuid})
 	end;
@@ -124,6 +126,8 @@ local CardsMethod =
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "dataId")
 		
+		--推进任务
+		agentPlayer.missions:AdvanceMission(Quest.MissionContent.GetCard)	
 		--log record
 		syslog.logmy("card", {opt=op,account=self.account_id,cardId=v.dataId,cardNum=v.dataNum,uuid=v.uuid})
 	end;

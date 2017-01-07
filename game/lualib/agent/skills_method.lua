@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local syslog = require "syslog"
 local uuid = require "uuid"
+local Quest = require "quest.quest"
 
 ----------------skills func---------------------
 local SkillsMethod = 
@@ -48,7 +49,10 @@ local SkillsMethod =
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "skills", "addSkill", self.account_id, v)
-		local data = g_shareData.skillRepository[dataId]
+		--推进任务
+		agentPlayer.missions:AdvanceMission(Quest.MissionContent.GetSkill)
+		agentPlayer.missions:AdvanceMission(Quest.MissionContent.UpgradeSkill, dataId)
+		
 		--log record
 		syslog.infof("op[%s]player[%s]:addSkill:%d,%d", op, self.account_id, dataId, num)
 	end;
@@ -94,7 +98,9 @@ local SkillsMethod =
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "skills", "update", self.account_id, v, "dataId")
-		
+		--推进任务
+		agentPlayer.missions:AdvanceMission(Quest.MissionContent.GetSkill)
+		agentPlayer.missions:AdvanceMission(Quest.MissionContent.UpgradeSkill, _dataId)
 		--log record
 		syslog.infof("op[%s]player[%s]:updateDataId:%s,dataId[%d][%d]", op, self.account_id, uuid, _dataId, oldDataId)
 	end;
