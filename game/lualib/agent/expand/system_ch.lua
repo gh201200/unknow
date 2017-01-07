@@ -95,7 +95,7 @@ function REQUEST.buyShopItem( args )
 		costPrice = shopDat.n32Price * args.num
 	
 		if shopDat.n32Type == 4 then	--材料
-			atype = ActivityAccountType["BuyShopCard"..shopdat.n32Site]
+			atype = ActivityAccountType["BuyShopCard"..shopDat.n32Site]
 			hasBuy = activity.req.getValue(user.account.account_id, atype) 
 			costPrice = shopDat.n32Price *(1 + hasBuy) * args.num
 		end
@@ -136,7 +136,7 @@ function REQUEST.buyShopItem( args )
 		if shopDat.n32Type == 2	then --金币
 			user.account:addGold("buyShopItem", shopDat.n32Count * args.num)
 		elseif shopDat.n32Type == 3 then	--宝箱
-			local items = usePackageItem( shopDat.n32GoodsID )
+			local items = usePackageItem( shopDat.n32GoodsID, user.level )
 			user.servicecmd.addItems("buyShopItem", items)
 			local index = 1
 			for k, v in pairs(items) do
@@ -145,11 +145,13 @@ function REQUEST.buyShopItem( args )
 				index = index + 2
 			end
 		elseif shopDat.n32Type == 4 then	--材料
-			user.servicecmd.addItems("buyShopItem", {{itemId=shopDat.n32GoodsID, itemNum=shopDat.n32Count * args.num}})
+			local items = {}
+			items[shopDat.n32GoodsID] = shopDat.n32Count * args.num
+			user.servicecmd.addItems("buyShopItem", items)
 			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
 			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
 		elseif shopDat.n32Type == 5 then 	--特惠
-			local items = usePackageItem( shopDat.n32GoodsID )
+			local items = usePackageItem( shopDat.n32GoodsID, user.level )
 			user.servicecmd.addItems("buyShopItem", items)
 			local index = 1
 			for k, v in pairs(items) do

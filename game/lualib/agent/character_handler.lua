@@ -6,8 +6,10 @@ local CardsMethod = require "agent.cards_method"
 local AccountMethod = require "agent.account_method"
 local ExploreMethod = require "agent.explore_method"
 local SkillsMethod = require "agent.skills_method"
+local MissionsMethod = require "agent.missions_method"
 local ExploreCharacter = require "agent.expand.explore_ch"
 local SystemCharacter = require "agent.expand.system_ch"
+local MissionCharacter = require "agent.expand.mission_ch"
 local GM = require "agent.expand.gm_ch"
 local Quest = require "quest.quest"
 
@@ -15,6 +17,7 @@ local REQUEST = {}
 handler = handler.new (REQUEST)
 handler:add( ExploreCharacter )		--探索系统
 handler:add( SystemCharacter )		--子系统功能[卡牌升级，商城购买，]
+handler:add( MissionCharacter )		--任务系统
 handler:add( GM )			--GM功能接口
 
 local user
@@ -33,6 +36,7 @@ handler:init (function (u)
 	user = u
 	ExploreCharacter:init( user )
 	SystemCharacter:init( user )
+	MissionCharacter:init( user )
 	GM:init( user )
 end)
 
@@ -88,9 +92,46 @@ ExploreMethod.sendExploreData = function(self)
 	user.send_request("sendExplore", explore)
 end;
 
+MissionsMethod.sendMissionData = function(self, unit)
+	if unit then
+		if self.isDailyMission( unit ) then
+			local p = table.clone( unit )
+			p.time = p.time - os.time()
+			user.send_request("sendMission", {missionsList = {p}})
+		else
+			user.send_request("sendMission", {missionsList = {unit}})
+		end
+	else
+		local missionsList = {}
+		for k, v in pairs(user.missions.units) do
+			if self.isDailyMission( v ) then
+				local p = table.clone( v )
+				p.time = p.time - os.time()
+				table.insert( missionsList, p )
+			else
+				table.insert( missionsList, v )
+			end
+		end
+		user.send_request("sendMission", {missionsList = missionsList})
+	end
+end;
 
 local function onDataLoadCompleted()
+	--计算竞技场等级
 	user.level = getAccountLevel( user.account:getExp() )
+	--判断每日任务重置
+	user.missions:getDailyMission()
+	--新的成就
+	local num = user.missions:getAchivementsNum()
+	if num < (Quset.AchivementsId[2] - Quset.AchivementsId[1])/1000 + 1 then
+		for i=Quset.AchivementsId[1], Quset.AchivementsId[2] do
+			local serId = Macro_GetMissionSerialId( i )
+			local unit = user.missions:getMissionBySerialId( serId )
+			if not unit then
+				user.missions:addMission("onDataLoadCompleted", i)	
+			end 
+		end
+	end
 end
 
 local function sendCDTimeData(key)
@@ -137,6 +178,7 @@ local function onEnterGame()
 	user.cards:sendCardData()
 	user.explore:sendExploreData()
 	user.skills:sendSkillData()
+	user.missions:sendMissionData()
 
 	--here, decide whether he is still in room 
 	local sm = snax.uniqueservice("servermanager")
@@ -164,6 +206,9 @@ function REQUEST.enterGame(args)
 	user.skills = { account_id = account_id }
 	user.skills.units =  skynet.call (database, "lua", "skills", "load",account_id) --玩家拥有的技能
 	setmetatable(user.skills, {__index = SkillsMethod})
+	user.missions = { account_id = account_id }
+	user.missions.units =  skynet.call (database, "lua", "missions", "load",account_id) --玩家拥有的任务
+	setmetatable(user.missions, {__index = MissionsMethod})
 	user.explore = { account_id = account_id }
 	user.explore.unit = skynet.call (database, "lua", "explore", "load", account_id, ExploreCharacter.randcon()) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})

@@ -79,6 +79,13 @@ local types = [[
 	count 2 : integer
 }
 
+.Mission {
+	id 0 : integer
+	progress 1 : integer                                                                                
+    	flag 2 : integer
+	time 3 : integer
+}
+
 .spawn {
 	monsterId 0 : integer
 	serverId 1 : integer
@@ -373,6 +380,12 @@ updateActivityData 305 {
 	} 
 }
 
+updateMissionData 306 {
+	request {                                                             
+		dataId 0 : integer       
+	} 
+}
+
 reEnterRoom 3006 {
 	request { 
 		isin 0 : boolean
@@ -489,6 +502,13 @@ sendSkill 7 {
 		skillsList 0 : *Skill(uuid)
 	}
 }
+
+#下发任务数据                                                                                          
+sendMission 8 {                                                                                          
+	request {                                                                                      
+        	missionsList 0 : *Mission(id)                                                             
+	}                                                                                              
+}  
 
 pickedhero 100 {
 	request {

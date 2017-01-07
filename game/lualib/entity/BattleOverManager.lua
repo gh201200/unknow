@@ -62,7 +62,8 @@ function BattleOverManager:update( dt )
 		print ('战斗结束')
 		local winners, failers, redRunAway, blueRunAway = self:calcRes()
 		self:giveResult()
-		self:sendResult(winners, failers)
+		self:sendResult()
+		--任务推进
 		self:closeRoom()
 	end
 end
@@ -120,7 +121,7 @@ function BattleOverManager:calcRes()
 		local arena = Quest.Arena[v.accountLevel]
 		local val = activity.req.getValue(v.account_id, ActivityAccountType.PvpWinTimes)
 		if val < arena.VictoryRewardLimit then
-			v.BattleGains.items = usePackageItem(arena.VictoryReward)
+			v.BattleGains.items = usePackageItem(arena.VictoryReward, v.accountLevel)
 		end
 	end
 	--金币
@@ -164,10 +165,19 @@ function BattleOverManager:calcRes()
 		winExp = 2 * N * K * (1 - pRedStar)
 		failExp = 2 * N * K * (-pBlueStar)
 	end
+
 	for k, v in pairs(winners) do
+		v.BattleGains.win = true
+		v.BattleGains.kills = v.HonorData[4]
+		v.BattleGains.deads = v.HonorData[5]
+		v.BattleGains.cardId = v.attDat.id
 		v.BattleGains.exp = math.ceil( winExp )
 	end
 	for k, v in pairs(failers) do
+		v.BattleGains.win = false
+		v.BattleGains.kills = v.HonorData[4]
+		v.BattleGains.deads = v.HonorData[5]
+		v.BattleGains.cardId = v.attDat.id
 		v.BattleGains.exp = math.ceil( failExp )
 	end
 	return winners, failers, redRunAway, blueRunAway

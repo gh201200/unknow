@@ -11,7 +11,7 @@ local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
 local character_handler = require "agent.character_handler"
 
-local IAgentplayer = require "entity.IAgentPlayer"
+agentPlayer = nil
 
 local hijack_msg = {}
 local hijack_msg_event_stamp = {}
@@ -201,9 +201,11 @@ function CMD.Start (conf)
 		account = { account_id = conf.account },
 		level = 0,
 		explore = nil,
+		missions = nil,
 		heartBeatTime = os.time(),
 		isOnLine = true,
 	}
+	agentPlayer = user
 	user_fd = user.fd
 	REQUEST = user.REQUEST
 	RESPONSE = user.RESPONSE
@@ -282,6 +284,13 @@ function CMD.giveBattleGains( args )
 	user.account:addExp("giveBattleGains", args.exp)
 	user.account:addGold("giveBattleGains", args.gold)
 	CMD.addItems("giveBattleGains", args.items)
+	--推进任务
+	if args.win then
+		user.missions:AdvanceMission(Quest.MissionContent.WinFight)
+		user.missions:AdvanceMission(Quest.MissionContent.WinWithHero, args.cardId)
+	end
+	user.missions:AdvanceMission(Quest.MissionContent.Kills, args.kills)
+	user.missions:AdvanceMission(Quest.MissionContent.Deads, args.deads)
 end
 
 --添加道具
@@ -300,7 +309,7 @@ function CMD.addItems(op, items)
 				cards[item.n32Retain1] = cards[item.n32Retain1] + v
 			end
 		elseif item.n32Type == 4 then	--礼包宝箱
-			local items = usePackageItem( k )
+			local items = usePackageItem( k, user.level )
 			CMD.addItems(op, items)
 		elseif item.n32Type == 5 then	--战斗外金币
 			gold = gold + item.n32Retain1 * v

@@ -137,25 +137,29 @@ function serialize(t)
 		mark[tbl]=parent
 		local tmp={}
 		for k,v in pairs(tbl) do
-			local key= type(k)=="number" and "["..k.."]" or "[\\\""..k.."\\\"]"
+			repeat
+				if k == "doNotSavebg" then break end
+	
+				local key = type(k)=="number" and "["..k.."]" or "[\""..k.."\"]"
 			
-			if type(v)=="table" then
-				local dotkey= parent..(type(k)=="number" and key or "."..key)
-				if mark[v] then
-					table.insert(assign,dotkey.."="..mark[v])
+				if type(v)=="table" then
+					local dotkey= parent..(type(k)=="number" and key or "."..key)
+					if mark[v] then
+						table.insert(assign,dotkey.."="..mark[v])
+					else
+						table.insert(tmp, key.."="..ser_table(v,dotkey))
+					end
+				elseif type(v) == "string" then
+					table.insert(tmp, key.."=\""..v.."\"")
 				else
-					table.insert(tmp, key.."="..ser_table(v,dotkey))
+					table.insert(tmp, key.."="..v)
 				end
-			elseif type(v) == "string" then
-				table.insert(tmp, key.."=\\\""..v.."\\\"")
-			else
-				table.insert(tmp, key.."="..v)
-			end
+			until true
 		end
 		return "{"..table.concat(tmp,",").."}"
 	end
  
-	return "\'do local ret="..ser_table(t,"ret")..table.concat(assign," ").." return ret end\'"
+	return "do local ret="..ser_table(t,"ret")..table.concat(assign," ").." return ret end"
 end
 
 ------------------------
@@ -183,8 +187,12 @@ end
 function Macro_AddSkillGrade( _id, grade )
 	return _id + grade * 10
 end
+--get mission serial id
+function Macro_GetMissionSerialId( _id )
+	return math.floor(_id / 1000)
+end
 
-function openPackage( strPkg )
+function openPackage( strPkg, userLv )
 	local drops = {}
 	print( strPkg )
 	local str1 = string.split(strPkg, ";")
@@ -224,9 +232,20 @@ function openPackage( strPkg )
 	local items = {}
 	for k, v in pairs(pkgIds) do
 		local drop = g_shareData.itemDropPackage[v]
-		local rd = math.random(1, drop.totalRate)
+		local filterdrops = {}
+		if userLv then
+			for p, q in pairs(drop) do
+				if q.n32ArenaLvUpLimit <= userLv and q.n32ArenaLvLwLimit >= userLv then
+					table.insert(filterdrops, q)
+					filterdrops.totalRate = filterdrops.totalRate + q.n32Rate	
+				end
+			end
+		else
+			filterdrops = drop
+		end
+		local rd = math.random(1, filterdrops.totalRate)
 		local r = nil
-		for p, q in pairs(drop) do
+		for p, q in pairs(filterdrops) do
 			if type(q) == "table" then
 				if q.n32Rate >= rd then
 					r = q
@@ -246,12 +265,12 @@ function openPackage( strPkg )
 	return items
 end
 
-function usePackageItem( itemId )
+function usePackageItem( itemId, lv )
 	local itemDat = g_shareData.itemRepository[itemId]
 	if itemDat.n32Type ~= 4 then
 		return {}
 	end
-	local items = openPackage( itemDat.szRetain3 )
+	local items = openPackage( itemDat.szRetain3, lv )
 	return items
 end
 

@@ -173,7 +173,7 @@ function REQUEST.exploreEnd( args )
 					conDat = g_shareData.exploreRepository[i+1][1]
 				end
 
-				local pkgs = openPackage( conDat.szDrop )
+				local pkgs = usePackageItem( conDat.n32Drop, user.level )
 				for k, v in pairs(pkgs) do
 					table.insert(gains, {itemId=v.itemId, itemNum=v.itemNum})
 				end
