@@ -179,9 +179,9 @@ end
 
 local header_tmp = {}
 
-local function gen_response(self, response, session)
+local function gen_response(self, response, session ,type)
 	return function(args, ud)
-		header_tmp.type = nil
+		header_tmp.type = type
 		header_tmp.session = session
 		header_tmp.ud = ud
 		local header = core.encode(self.__package, header_tmp)
@@ -209,7 +209,7 @@ function host:dispatch(...)
 			result = core.decode(proto.request, content)
 		end
 		if header_tmp.session and proto.response then
-			return "REQUEST", proto.name, result, gen_response(self, proto.response, header_tmp.session), header.ud
+			return "REQUEST", proto.name, result, gen_response(self, proto.response, header_tmp.session,header.type + 10000), header.ud
 		else
 			return "REQUEST", proto.name, result, nil, header.ud
 		end

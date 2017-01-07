@@ -24,7 +24,7 @@ end
 
 function BattleOverManager:init( mapDat )
 	self.MapDat = mapDat
-	self.RestTime = self.MapDat.n32Time * 1000
+	self.RestTime = 30 * 1000 --self.MapDat.n32Time * 1000
 end
 
 function BattleOverManager:update( dt )
