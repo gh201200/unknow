@@ -2,7 +2,6 @@ local Ientity = require "entity.Ientity"
 local vector3 =require "vector3"
 local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
-local Quest = require "quest.quest"
 
 local IBuilding = class("IBuilding", Ientity)
 

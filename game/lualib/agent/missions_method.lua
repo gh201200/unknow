@@ -1,17 +1,5 @@
 local skynet = require "skynet"
-local Quest = require "quest.quest"
 local Time = require "time"
-
-MissionType = {
-	daily           = 0,                               
-        achivement      = 1,
-}
-   
-GoalCon = {                                          
-	greater         = bit(0),                          
-        equal           = bit(1),
-        less            = bit(2)                           
-}
 
 
 ----------------skills func---------------------
@@ -37,7 +25,7 @@ local MissionsMethod =
 	getAchivementsNum = function(self)
 		local cnt = 0
 		for k, v in pairs(self.units) do
-			if g_shareData.missionRepository[v.id].n32Type == MissionType.achivement then
+			if g_shareData.missionRepository[v.id].n32Type == DEF.MissionType.achivement then
 				cnt = cnt + 1
 			end
 		end
@@ -56,7 +44,7 @@ local MissionsMethod =
 	--
 	updateMission = function(self, op, v)
 		local dat = g_shareData.missionRepository[v.id]
-		if dat.n32Type == MissionType.achivement then
+		if dat.n32Type == DEF.MissionType.achivement then
 			if self.isMissionCompleted( v ) then
 				dat = g_shareData.missionRepository[v.id + 1]
 				if dat then
@@ -96,18 +84,18 @@ local MissionsMethod =
 	--
 	isMissionCompleted = function( unit )
 		local dat = g_shareData.missionRepository[unit.id]
-		if dat.n32Type == MissionType.achivement then
+		if dat.n32Type == DEF.MissionType.achivement then
 			if unit.flag < unit.id then return true end
 		end
 
 		if dat.n32GoalCon ~= 0 then
-			if bit_and(GoalCon.greater, dat.n32GoalCon) then
+			if bit_and(DEF.MissionGoalCon.greater, dat.n32GoalCon) then
 				if unit.progress > dat.n32Goal then return true end
 			end
-			if bit_and(GoalCon.equal, dat.n32GoalCon) then
+			if bit_and(DEF.MissionGoalCon.equal, dat.n32GoalCon) then
 				if unit.progress == dat.n32Goal then return true end
 			end
-			if bit_and(GoalCon.less, dat.n32GoalCon) then
+			if bit_and(DEF.MissionGoalCon.less, dat.n32GoalCon) then
 				if unit.progress < dat.n32Goal then return true end
 			end
 		else

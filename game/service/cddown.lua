@@ -1,7 +1,6 @@
 local skynet = require "skynet"
 local coroutine = require "skynet.coroutine"
 local Time = require "time"
-local Quest = require "quest.quest"
 local snax = require "snax"
 local sharedata = require "sharedata"
 
@@ -218,7 +217,8 @@ end
 function init()
 
 	g_shareData = sharedata.query "gdd"
-	
+	DEF = g_shareData.DEF
+	Quest = g_shareData.Quest
 	loadSystem()
 end
 

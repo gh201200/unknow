@@ -11,7 +11,6 @@ local ExploreCharacter = require "agent.expand.explore_ch"
 local SystemCharacter = require "agent.expand.system_ch"
 local MissionCharacter = require "agent.expand.mission_ch"
 local GM = require "agent.expand.gm_ch"
-local Quest = require "quest.quest"
 
 local REQUEST = {}
 handler = handler.new (REQUEST)

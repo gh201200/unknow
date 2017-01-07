@@ -1,7 +1,6 @@
 local skynet = require "skynet"
 local Ientity = require "entity.Ientity"
 local vector3 = require "vector3"
-local Quest = require "quest.quest"
 local EntityManager = require "entity.EntityManager"
 local BattleOverManager = require "entity.BattleOverManager"
 local passtiveSpell =  require "skill.passtiveSpell"

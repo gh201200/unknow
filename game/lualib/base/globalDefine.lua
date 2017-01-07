@@ -104,7 +104,9 @@ CardColor = {
 	Orange = 5,
 }
 
-g_shareData = {}
+Quest = nil				--策划配置数据全局定义
+DEF = nil				--服务器全局宏定义
+g_shareData = nil
 g_entityManager = nil
 GAMEPLAY_PERCENT = 10000
 NOW_SERVER_VERSION = '1.0.0.1'		--服务器版本号(xx.xx.xx.xxxx)

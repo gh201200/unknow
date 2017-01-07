@@ -1,6 +1,5 @@
 local skynet = require "skynet"
 local snax = require "snax"
-local Quest = require "quest.quest"
 local Time = require "time"
 
 local Explore = class("Explore")

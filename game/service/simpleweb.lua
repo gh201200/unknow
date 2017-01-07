@@ -38,6 +38,8 @@ end;
 
 skynet.start(function()
 	g_shareData = sharedata.query "gdd"
+	DEF = g_shareData.DEF
+	Quest = g_shareData.Quest
 	skynet.dispatch("lua", function (_,_,id)
 		socket.start(id)
 		-- limit request body size to 8192 (you can pass nil to unlimit)

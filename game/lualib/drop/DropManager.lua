@@ -4,7 +4,6 @@ local Map = require "map.Map"
 local vector3 = require "vector3"
 local EntityManager = require "entity.EntityManager"
 local dropVec = vector3.create()
-local Quest = require "quest.quest"
 
 
 local DropManager = class("DropManager")

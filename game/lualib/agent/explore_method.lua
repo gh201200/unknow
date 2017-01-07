@@ -1,6 +1,5 @@
 local skynet = require "skynet"
 local syslog = require "syslog"
-local Quest = require "quest.quest"
 
 local ExploreMethod =
 {

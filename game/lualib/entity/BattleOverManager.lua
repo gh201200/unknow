@@ -4,7 +4,6 @@ local snax = require "snax"
 local CardMethod = require "agent.cards_method"
 local EntityManager = require "entity.EntityManager"
 local DropManager = require "drop.DropManager"
-local Quest = require "quest.quest"
 
 local BattleOverManager = class("BattleOverManager")
 

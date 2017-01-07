@@ -30,12 +30,12 @@ function REQUEST.recvMissionAward( args )
 			errorCode = 1	--任务未完成
 			break
 		end
-		if dat.n32Type == MissionType.daily then
+		if dat.n32Type == DEF.MissionType.daily then
 			if unit.flag > 0 then
 				errorCode = -1	--奖励已经领取过了
 				break
 			end
-		elseif dat.n32Type == MissionType.achivement then
+		elseif dat.n32Type == DEF.MissionType.achivement then
 			if unit.flag > unit.id then
 				errorCode = -1	--成就已完成
 				break
@@ -52,12 +52,12 @@ function REQUEST.recvMissionAward( args )
 	unit.flag = unit.flag + 1
 	user.missions:updateMission("recvMissionAward", unit)
 	local items = {}
-	if dat.n32Type == MissionType.daily then
+	if dat.n32Type == DEF.MissionType.daily then
 		items = usePackageItem( Quest.Arena[user.level].DailyReward, user.level )
 		for k, v in pairs(items) do
 			table.insert(ret.ids, {x=k, y=v})
 		end
-	elseif dat.n32Type == MissionType.achivement then
+	elseif dat.n32Type == DEF.MissionType.achivement then
 		local st = string.split(dat.szAwards, ",")
 		items[tonumber(st[1])] = tonumber(st[2])
 	end
