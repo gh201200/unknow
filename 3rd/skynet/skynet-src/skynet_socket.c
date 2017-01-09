@@ -127,6 +127,7 @@ check_wsz(struct skynet_context *ctx, int id, void *buffer, int64_t wsz) {
 int
 skynet_socket_send(struct skynet_context *ctx, int id, void *buffer, int sz) {
 	int64_t wsz = socket_server_send(SOCKET_SERVER, id, buffer, sz);
+	
 	return check_wsz(ctx, id, buffer, wsz);
 }
 

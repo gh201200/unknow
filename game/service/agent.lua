@@ -6,7 +6,7 @@ local socket = require "socket"
 local mc = require "multicast"
 local dc = require "datacenter"
 local sharedata = require "sharedata"
-
+local json = require "cjson"
 local syslog = require "syslog"
 local protoloader = require "proto.protoloader"
 local character_handler = require "agent.character_handler"
@@ -15,14 +15,15 @@ agentPlayer = nil
 
 local hijack_msg = {}
 local hijack_msg_event_stamp = {}
-
 local ref_connect = 0 --连接的引用计数
 
 local database
 local WATCHDOG
 
 local host, proto_request = protoloader.load (protoloader.GAME)
-
+local fightRecorder
+local recordState = 0
+local fightRecords = {}
 --[[
 .user = { 
 		fd = conf.client, 
@@ -39,8 +40,30 @@ local user_fd
 local session = {}
 local session_id = 0
 
+local function writebytes(f,x)
+    local b4=string.char(x%256) x=(x-x%256)/256
+    local b3=string.char(x%256) x=(x-x%256)/256
+    local b2=string.char(x%256) x=(x-x%256)/256
+    local b1=string.char(x%256) x=(x-x%256)/256
+    f:write(b4,b3,b2,b1)
+end 
 local function send_msg (fd, msg)
 	local package = string.pack (">s2", msg)
+	--开始战斗记录
+	if recordState ==  1 then
+		local time = skynet.now()
+		--table.insert(fightRecords,{time = time,buff = package})	
+		--print("=======fightRecords:",#fightRecords)
+		print("time:",time)
+		writebytes(fightRecorder,time)
+		fightRecorder:write(package)
+	elseif recordState == 2 then
+		--停止记录
+	--	local jt = json.encode( fightRecords )
+	--	fightRecorder:write(jt)
+		fightRecorder:flush()
+		recordState = 0
+	end
 	socket.write (fd, package)
 end
 
@@ -130,6 +153,7 @@ end
 
 local RESPONSE
 local function handle_response (id, args)
+	print("handle_response")
 	local s = session[id]
 	if not s then
 		syslog.warningf ("session %d not found", id)
@@ -254,6 +278,8 @@ function CMD.disconnect ()
 end
 
 function CMD.getmatchinfo()
+	--测试
+	
 	local tb = {agent = skynet.self(),account = user.account.account_id, eloValue = user.account:getExp(),
 		 nickname = user.account:getNickName(),time = 0,stepTime = 0,fightLevel = user.level, failNum = 0 }
 	return tb
@@ -270,6 +296,8 @@ end
 --进入地图
 function CMD.enterMap(map,arg)
 	print("CMD.enterMap")
+	recordState = 1
+	fightRecorder = io.open("./testRecorder.bytes", "wb") 	
 	request_hijack_msg(map)
 	user.MAP = map
 	send_request("beginEnterPvpMap", arg) --开始准备切图
@@ -280,10 +308,11 @@ function CMD.leaveMap(map)
 	print("CMD.leaveMap")
 	request_unhijack_msg(map)
 	user.MAP = nil
+	recordState = 2 --开始停止记录
 end
 
 --战斗结束产出
-function CMD.giveBattleGains( args )
+function CMD.giveBattleGains( args )	
 	user.account:addExp("giveBattleGains", args.exp)
 	user.account:addGold("giveBattleGains", args.gold)
 	CMD.addItems("giveBattleGains", args.items)
