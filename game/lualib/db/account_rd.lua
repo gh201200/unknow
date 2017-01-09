@@ -20,6 +20,7 @@ function account.load (account_id)
 		acc.gold = tonumber(connection:hget (key, "gold"))
 		acc.money = tonumber(connection:hget (key, "money"))
 		acc.exp = tonumber(connection:hget (key, "exp"))
+		acc.topexp = tonumber(connection:hget (key, "topexp"))
 		acc.icon = connection:hget (key, "icon")
 		acc.flag = tonumber(connection:hget (key, "flag"))
 		acc.expire = tonumber(connection:hget (key, "expire"))
@@ -45,6 +46,7 @@ function account.create (account_id, password, nick, icon)
 		"gold", 0, 
 		"money", 0,
 		"exp", 0,
+		"topexp", 0,
 		"icon", icon,
 		"flag", 0,
 		"expire", 0,

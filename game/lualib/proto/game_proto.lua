@@ -461,6 +461,7 @@ sendAccount 3 {
 		exp 3 : integer
 		icon 4 : string
 		flag 5 : integer
+		topexp 6 : integer
 	}
 }
 

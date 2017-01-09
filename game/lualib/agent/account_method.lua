@@ -62,6 +62,10 @@ local AccountMethod =
 		if _exp == 0 then return end
 		local nv = self.unit.exp + _exp
 		if nv < 0 then return end
+			
+		if self.unit.topexp < nv then
+			self.unit.topexp = nv
+		end
 		self.unit.exp = nv
 
 		self:onExp()
@@ -69,7 +73,7 @@ local AccountMethod =
 		self:sendAccountData()
 		
 		local database = skynet.uniqueservice("database")		
-		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "exp")
+		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "exp", "topexp")
 		
 		--log record
 		syslog.logmy("account", {opt=op, account=self.account_id, atype=1, val=_exp})
