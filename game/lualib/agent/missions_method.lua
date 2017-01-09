@@ -107,14 +107,14 @@ local MissionsMethod =
 	AdvanceMission = function(self, content, ...)
 		local unit = nil
 		for k, v in pairs(self.units) do
-			if g_shareData.missionRepository[k].n32content == content then
+			if g_shareData.missionRepository[Macro_GetMissionDataId(k,1)].n32Content == content then
 				unit = v
 				break
 			end
 		end
 		if not unit then return end
 		
-		local ret = self[Advance.."_"..content](v, ...)
+		local ret = self["Advance_"..content](self, unit, ...)
 		if ret then
 			self:updateMission("AdvanceMission", unit)
 		end
