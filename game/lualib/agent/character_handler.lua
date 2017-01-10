@@ -50,7 +50,7 @@ AccountMethod.onExp = function(self)
 		for k, v in pairs(g_shareData.shopRepository) do
 			if v.n32Type == 5 then
 				if v.n32ArenaLvUpLimit == lv then
-					cd.post.setTime( user.account.account_id, CoolDownAccountType.TimeLimitSale, v.n32Limit) 
+					cd.post.setValue( user.account.account_id, CoolDownAccountType.TimeLimitSale, v.n32Limit) 
 					break
 				end
 			end
@@ -131,6 +131,7 @@ local function onDataLoadCompleted()
 			end 
 		end
 	end
+	user.account:addExp( "test", math.random(1, 2400) )
 end
 
 local function sendCDTimeData(key)

@@ -256,4 +256,12 @@ function REQUEST.strengthSkill( args )
 
 end
 
+function REQUEST.reqTopRank( args )
+	local toprank = snax.uniqueservice("toprank")
+	local items = toprank.req.load( args )
+	print( items )
+	return {items = items, atype = args.atype}
+end
+
+
 return SystemCh.new()

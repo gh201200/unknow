@@ -9,22 +9,27 @@ local function make_key (name)
 	return connection_handler (name), string.format ("account:%s", name)
 end
 
-function account.load (account_id)
+function account.load (account_id, ...)
 
-	local acc = { }
+	local acc = {}
 
 	local connection, key = make_key (account_id)
 	if connection:exists (key) then
-		acc.nick = connection:hget (key, "nick")
-		acc.password = connection:hget (key, "password")
-		acc.gold = tonumber(connection:hget (key, "gold"))
-		acc.money = tonumber(connection:hget (key, "money"))
-		acc.exp = tonumber(connection:hget (key, "exp"))
-		acc.topexp = tonumber(connection:hget (key, "topexp"))
-		acc.icon = connection:hget (key, "icon")
-		acc.flag = tonumber(connection:hget (key, "flag"))
-		acc.expire = tonumber(connection:hget (key, "expire"))
-		acc.version = tonumber(connection:hget (key, "version"))
+		local n = select('#', ...)
+		if n == 0 then
+			acc.nick = connection:hget (key, "nick")
+			acc.password = connection:hget (key, "password")
+			acc.gold = tonumber(connection:hget (key, "gold"))
+			acc.money = tonumber(connection:hget (key, "money"))
+			acc.exp = tonumber(connection:hget (key, "exp"))
+			acc.topexp = tonumber(connection:hget (key, "topexp"))
+			acc.icon = connection:hget (key, "icon")
+			acc.flag = tonumber(connection:hget (key, "flag"))
+			acc.expire = tonumber(connection:hget (key, "expire"))
+			acc.version = tonumber(connection:hget (key, "version"))
+		else
+			acc = connection:hmget(key, ...)
+		end
 	end
 
 	return acc

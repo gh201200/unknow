@@ -134,6 +134,14 @@ local types = [[
         value 2 : integer 
 }
 
+.RankItem {
+	head 0 : string
+	nick 1 : string
+	factionicon 2 : string
+	factionname 3 : string
+	score 4 : integer
+}
+
 ]]
 
 local c2s = [[
@@ -435,6 +443,18 @@ bindSkill 3010 {
 		uuidcard 1 : string
 		uuidskill 2 : string
 		slot 3 : integer
+	}
+}
+
+reqTopRank 3011 {
+	request {      
+		atype 0 : integer
+		start 1 : integer
+		num 2 : integer
+	}
+	response {     
+		atype 0 : integer
+		items 1 : *RankItem
 	}
 }
 
