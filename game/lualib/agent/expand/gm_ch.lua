@@ -7,10 +7,7 @@ local user
 local REQUEST = {}
 local CMD = {}
 
-local CLIENT_GM_CMD = {
-}
-
-
+local CLIENT_GM_CMD = {}
 
 function GMCH:ctor()
 	self.request = REQUEST
@@ -65,6 +62,14 @@ CLIENT_GM_CMD['endbattle'] = function( args )
 	end
 end;
 
+CLIENT_GM_CMD['endmission'] = function( args )
+	for k, v in pairs(user.missions.units) do
+		if g_shareData.missionRepository[v.id].n32Content == tonumber(args.params[1]) then
+			v.progress = g_shareData.missionRepository[v.id].n32Goal
+			self:updateMission("endmission", v)
+		end
+	end
+end;
 
 function CMD.gm_add_money( args )
 	user.account:addGold("gm_add_money", args.gold)

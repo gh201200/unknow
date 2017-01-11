@@ -31,7 +31,6 @@ local MissionsMethod =
 		end
 		return cnt
 	end;
-
 	--
 	addMission = function(self, op, _dataId)
 		local v = self.initMission(_dataId)
@@ -43,6 +42,7 @@ local MissionsMethod =
 	end;
 	--
 	updateMission = function(self, op, v)
+		print(op, v)
 		local dat = g_shareData.missionRepository[v.id]
 		if dat.n32Type == DEF.MissionType.achivement then
 			if self.isMissionCompleted( v ) then
@@ -105,18 +105,13 @@ local MissionsMethod =
 	end;
 	--
 	AdvanceMission = function(self, content, ...)
-		local unit = nil
 		for k, v in pairs(self.units) do
-			if g_shareData.missionRepository[Macro_GetMissionDataId(k,1)].n32Content == content then
-				unit = v
-				break
+			if g_shareData.missionRepository[v.id].n32Content == content then
+				local ret = self["Advance_"..content](self, v, ...)
+				if ret then
+					self:updateMission("AdvanceMission", v)
+				end
 			end
-		end
-		if not unit then return end
-		
-		local ret = self["Advance_"..content](self, unit, ...)
-		if ret then
-			self:updateMission("AdvanceMission", unit)
 		end
 	end;
 	

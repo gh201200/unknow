@@ -57,9 +57,10 @@ function Ientity:ctor(pos,dir)
 	register_class_var(self, 'Exp', 0, self.onExp)
 	self.bornPos =  vector3.create()
 	self.bbox = Rect.create()
-	
+	self.lastMoveDir =  vector3.create()
 	self.camp = CampType.BAD  
 	self.moveSpeed = 0
+	self.lastMoveSpeed = 0
 	self.curActionState = 0
 	self.pathMove = nil
 	self.pathNodeIndex = -1
@@ -580,8 +581,23 @@ function Ientity:onMove2(dt)
 	if legal_pos then
 		--move
 		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
-		--advance move event stamp
-		self:advanceEventStamp(EventStampType.Move)
+		local statechange = true
+		local xx = 0
+		local yy = 0
+		repeat
+			if self.lastMoveSpeed ~= self.moveSpeed then break end
+			xx = math.ceil(self.dir.x * GAMEPLAY_PERCENT) 
+			yy = math.ceil(self.dir.y * GAMEPLAY_PERCENT) 
+			if self.lastMoveDir.x ~= xx then break end
+			if self.lastMoveDir.y ~= yy then break end
+			statechange = false
+		until true
+		if statechange then
+			self.lastMoveDir:set(xx, 0, yy)
+			self.lastMoveSpeed = self.moveSpeed
+			--advance move event stamp
+			self:advanceEventStamp(EventStampType.Move)
+		end
 	end
 end
 
