@@ -14,7 +14,7 @@ local center
 local group = {}
 local ngroup
 
-function connection_handler (key)
+local function connection_handler (key)
 	local hash
 	local t = type (key)
 	if t == "string" then
@@ -47,7 +47,9 @@ function CMD.flushdb()
 		v:flushdb()
 	end
 end
-
+function CMD.getconnection( name )
+	return connection_handler(name)
+end
 MODULE['CMD'] = CMD
 
 

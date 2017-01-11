@@ -45,7 +45,9 @@ skynet.start(function()
 	
 	--启动GM服务
 	snax.uniqueservice("gm", watchdog)
-
+	--启动排行榜服务
+	snax.uniqueservice("toprank")
+	
 	
 	CD.post.Start()	
 

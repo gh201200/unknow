@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+local snax = require "snax"
 local syslog = require "syslog"
 
 ----------------account func------------------
@@ -61,7 +62,11 @@ local AccountMethod =
 	addExp = function(self, op,  _exp)
 		if _exp == 0 then return end
 		local nv = self.unit.exp + _exp
-		if nv < 0 then return end
+		
+		nv = mClamp(nv, 0, 100000)
+		
+		local toprank = snax.uniqueservice("toprank")
+		toprank.post.add(Quest.RankType.Exp, nv, self.account_id)
 			
 		if self.unit.topexp < nv then
 			self.unit.topexp = nv

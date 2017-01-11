@@ -103,6 +103,11 @@
 	--刷新商城卡牌CD(s)
 	RefreshShopCardCD = 60,
 	
+	--排行榜类
+	RankType = {
+		Exp					= 1001,		--经验
+	},
+	
 	--竞技场数据
 	Arena = {
 		[1] = {
