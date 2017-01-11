@@ -200,6 +200,13 @@ function REQUEST.enterGame(args)
 	local account_id = user.account.account_id 
 	user.account.unit = skynet.call(database, "lua", "account", "load", account_id)	
 	setmetatable(user.account, {__index = AccountMethod})
+	local dbVersion = calcVersionCode( user.account:getVersion() )
+	local nowVersion = calcVersionCode( NOW_SERVER_VERSION )
+	print('version code = ', dbVersion, nowVersion)
+	if dbVersion < nowVersion then	--处理版本升级数据一致性问题
+	
+	end
+
 	user.cards = { account_id = account_id }
 	user.cards.units =  skynet.call (database, "lua", "cards", "load",account_id) --玩家拥有的卡牌
 	setmetatable(user.cards, {__index = CardsMethod})
