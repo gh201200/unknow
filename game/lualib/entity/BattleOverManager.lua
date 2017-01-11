@@ -75,6 +75,8 @@ function BattleOverManager:calcRes()
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
 			v.BattleGains = {items = {}, exp=0, gold=0}
+			v.BattleGains.kills = v.HonorData[4]
+			v.BattleGains.deads = v.HonorData[5]
 			if v:isRed() then
 				if v:getOffLineTime() > 90 then
 					table.insert(redRunAway, v)
@@ -167,15 +169,11 @@ function BattleOverManager:calcRes()
 
 	for k, v in pairs(winners) do
 		v.BattleGains.win = true
-		v.BattleGains.kills = v.HonorData[4]
-		v.BattleGains.deads = v.HonorData[5]
 		v.BattleGains.cardId = v.attDat.id
 		v.BattleGains.exp = math.ceil( winExp )
 	end
 	for k, v in pairs(failers) do
 		v.BattleGains.win = false
-		v.BattleGains.kills = v.HonorData[4]
-		v.BattleGains.deads = v.HonorData[5]
 		v.BattleGains.cardId = v.attDat.id
 		v.BattleGains.exp = math.ceil( failExp )
 	end

@@ -312,7 +312,7 @@ function CMD.leaveMap(map)
 end
 
 --战斗结束产出
-function CMD.giveBattleGains( args )	
+function CMD.giveBattleGains( args )
 	user.account:addExp("giveBattleGains", args.exp)
 	user.account:addGold("giveBattleGains", args.gold)
 	CMD.addItems("giveBattleGains", args.items)
