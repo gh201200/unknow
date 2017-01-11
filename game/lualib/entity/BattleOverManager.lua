@@ -236,6 +236,28 @@ function BattleOverManager:sendResult()
 	end
 end
 
+--战斗记录
+function BattleOverManager:recordResult()
+	local tb = {}
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player then
+			local item  = {}
+			item.account_id = self.account_id --账号id
+			item.nickName = self.nickName --昵称
+			item.color = self.color    --颜色
+			item.heroId = self.attDat.id --英雄id
+			item.skillTable = {}
+			for k,v in pairs(self.skillTable) do
+				table.insert(item.skillTable,k)
+			end
+			item.assistNum = self.HonorData[3] --助攻数
+			item.killNum = self.HonorData[4] --击杀数
+			item.deadthNum = self.HonorData[5] --死亡数
+			table.insert(tb,item)	
+		end
+	end
+		
+end
 function BattleOverManager:closeRoom()
  	print("close room")
 	local sm = snax.uniqueservice("servermanager")
