@@ -1,5 +1,5 @@
 local skynet = require "skynet"
-local sproto = require "sproto"
+local sproto = require "robotsproto"
 local sprotoloader = require "sprotoloader"
 local socket = require "clientsocket"
 local proto = require "proto.game_proto"
@@ -16,6 +16,8 @@ local resp_sessionToFun = {}
 local account		--玩家账号		
 local cardList = {} 	--玩家卡牌列表
 local matcherList = {}  --匹配玩家列表
+
+--local host, proto_request = protoloader.load (protoloader.GAME)
 
 local function send_package(fd, pack)
 	local package = string.pack(">s2", pack)
@@ -72,10 +74,13 @@ local function handle_request(name, args)
 	end
 end
 
-local function handle_response(session, args)
-	if resp_sessionToFun[session] ~= nil then
-		resp_sessionToFun[session](args)
+local function handle_response(name, args)
+	if RESPONSE[name] then
+		RESPONSE[name](args)
 	end
+	--if resp_sessionToFun[session] ~= nil then
+	--	resp_sessionToFun[session](args)
+	--end
 end
 
 local function handle_package(t, ...)
@@ -194,7 +199,7 @@ local function dispatch_package()
 		v, last = recv_package(last)
 		if not v then
 			break
-		end
+		end	
 		handle_package(host:dispatch(v))
 	end
 end
@@ -205,7 +210,7 @@ function CMD.start(conf)
 	skynet.fork(function()
 		while true do
 			dispatch_package()	
-			skynet.sleep(500)
+			skynet.sleep(200)
 		end
 	end)
 	account = conf.account
