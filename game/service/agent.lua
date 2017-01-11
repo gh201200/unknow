@@ -52,15 +52,10 @@ local function send_msg (fd, msg)
 	--开始战斗记录
 	if recordState ==  1 then
 		local time = skynet.now()
-		--table.insert(fightRecords,{time = time,buff = package})	
-		--print("=======fightRecords:",#fightRecords)
-		print("time:",time)
 		writebytes(fightRecorder,time)
 		fightRecorder:write(package)
 	elseif recordState == 2 then
 		--停止记录
-	--	local jt = json.encode( fightRecords )
-	--	fightRecorder:write(jt)
 		fightRecorder:flush()
 		recordState = 0
 	end
