@@ -47,13 +47,10 @@ local function writebytes(f,x)
     local b1=string.char(x%256) x=(x-x%256)/256
     f:write(b4,b3,b2,b1)
 end
-local packageNum = 0 
 local function send_msg (fd, msg)
 	local package = string.pack (">s2", msg)
 	--开始战斗记录
 	if recordState ==  1 then
-		packageNum = packageNum + 1
-		print("packageNum:",packageNum)
 		local time = skynet.now()
 		writebytes(fightRecorder,time)
 		fightRecorder:write(package)
