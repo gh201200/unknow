@@ -61,7 +61,7 @@ function BattleOverManager:update( dt )
 		print ('战斗结束')
 		local winners, failers, redRunAway, blueRunAway = self:calcRes()
 		self:giveResult()
-		self:sendResult()
+		self:sendResult(winners, failers)
 		--任务推进
 		self:closeRoom()
 	end
@@ -190,48 +190,42 @@ function BattleOverManager:giveResult()
 end
 
 
-function BattleOverManager:sendResult()
-	local r = {}
-	r.result = self.OverRes
-	for k, v in pairs(EntityManager.entityList) do
-		if v.entityType == EntityType.player then
-			if not r.maxBeDamage then
-				r.maxBeDamage = v
-			elseif r.maxBeDamage.HonorData[2] < v.HonorData[2] then
-				r.maxBeDamage = v
-			end
-			
-			if not r.maxDamage then
-				r.maxDamage = v
-			elseif r.maxDamage.HonorData[1] < v.HonorData[1] then
-				r.maxDamage = v
-			end
-			
-			if not r.maxHelp then
-				r.maxHelp = v
-			elseif r.maxHelp.HonorData[3] < v.HonorData[3] then
-				r.maxHelp = v
-			end
+function BattleOverManager:sendResult(winners, failers)
+	local ret = {}
+	for k, v in pairs(winners) do
+		local r = {accountid = v.account_id, serverid=v.serverId}
+		r.result = 1
+		r.beDamage = v.HonorData[2]
+		r.damage = v.HonorData[1]
+		r.score = v.BattleGains.exp
+		r.gold = v.BattleGains.gold
+		r.kills = v.HonorData[4]
+		r.deads = v.HonorData[5]
+		r.helps = v.HonorData[3]
+		r.items = {}
+		for p, q in pairs(v.BattleGains.items) do
+			table.insert(r.items, {x=p,y=q})
 		end
+		table.insert(ret , r)
 	end
-	
-	r.maxBeDamage  = r.maxBeDamage.serverId
-	r.maxDamage = r.maxDamage.serverId
-	r.maxHelp = r.maxHelp.serverId
-	for k, v in pairs(EntityManager.entityList) do
-		if v.entityType == EntityType.player then
-			r.score = v.BattleGains.exp
-			r.gold = v.BattleGains.gold
-			r.kills = v.HonorData[4]
-			r.deads = v.HonorData[5]
-			r.helps = v.HonorData[3]
-			r.items = {}
-			for p, q in pairs(v.BattleGains.items) do
-				table.insert(r.items, {x=p,y=q})
-			end
-			skynet.call(v.agent, "lua", "sendRequest", "battleOver", r)
+	for k, v in pairs(failers) do
+		local r = {accountid = v.account_id, serverid=v.serverId}
+		r.result = 0
+		r.beDamage = v.HonorData[2]
+		r.damage = v.HonorData[1]
+		r.score = v.BattleGains.exp
+		r.gold = v.BattleGains.gold
+		r.kills = v.HonorData[4]
+		r.deads = v.HonorData[5]
+		r.helps = v.HonorData[3]
+		r.items = {}
+		for p, q in pairs(v.BattleGains.items) do
+			table.insert(r.items, {x=p,y=q})
 		end
+		table.insert(ret , r)
 	end
+	print( ret )
+	EntityManager:sendToAllPlayers("battleOver", {accounts = ret})
 end
 
 --战斗记录
