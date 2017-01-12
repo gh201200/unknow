@@ -587,9 +587,9 @@ function Ientity:onMove2(dt)
 		repeat
 			xx = math.ceil(self.dir.x * GAMEPLAY_PERCENT) 
 			zz = math.ceil(self.dir.z * GAMEPLAY_PERCENT) 
-			if self.lastMoveSpeed ~= self.moveSpeed then  print("moveSpeed:",self.moveSpeed,self.lastMoveSpeed) break end
-			if self.lastMoveDir.x ~= xx then print("xx:",self.lastMoveDir.x,xx) break end
-			if self.lastMoveDir.z ~= zz then print("zz:",self.lastMoveDir.z,zz) break end
+			if self.lastMoveSpeed ~= self.moveSpeed then break end
+			if self.lastMoveDir.x ~= xx then break end
+			if self.lastMoveDir.z ~= zz then break end
 			statechange = false
 		until true
 		if statechange then
