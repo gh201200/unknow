@@ -210,7 +210,7 @@ function CMD.start(conf)
 	skynet.fork(function()
 		while true do
 			dispatch_package()	
-			skynet.sleep(200)
+			skynet.sleep(500)
 		end
 	end)
 	account = conf.account
