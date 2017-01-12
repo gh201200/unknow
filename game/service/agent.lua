@@ -127,7 +127,6 @@ local function handle_request (name, args, response)
 				if type(ret) ~= "table" then
 					print(ret)
 				end
-				print("req-name:" .. name)
 				send_msg (user_fd, response(ret))
 			end		
 		end)
@@ -142,7 +141,6 @@ local function handle_request (name, args, response)
 		else
 			last_heartbeat_time = skynet.now ()
 			if response and ret then
-				print("res-name:" .. name)
 				send_msg (user_fd, response (ret))
 			end
 		end
