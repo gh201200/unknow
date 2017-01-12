@@ -197,23 +197,18 @@ function Macro_GetMissionDataId( _serId, lv )
 end
 function openPackage( strPkg, userLv )
 	local drops = {}
-	print( strPkg )
 	local str1 = string.split(strPkg, ";")
-	print( str1 )
 	for k, v in pairs( str1 ) do
 		local str2 = string.split(v, ",")
 		drops[tonumber(str2[1])] = tonumber(str2[2])
 	end
-	print( drops )
 
 	local pkgIds = {}
 	
 	for k, v in pairs(drops) do
 		for i=1, v do
 			local dropDat = g_shareData.dropPackage[k]
-			print ( dropDat )
 			local num = math.random(dropDat[1].n32MinNum, dropDat[1].n32MaxNum)
-			print("num = " .. num)
 			for j=1, num do
 				local r = 0
 				local rd = math.random(1, dropDat.totalRate)
@@ -230,19 +225,23 @@ function openPackage( strPkg, userLv )
 		end
 	end
 
-	print(pkgIds)
-	
 	local items = {}
 	for k, v in pairs(pkgIds) do
 		local drop = g_shareData.itemDropPackage[v]
+		print( drop )
 		local filterdrops = {}
 		if userLv then
+			local tr = 0
 			for p, q in pairs(drop) do
-				if q.n32ArenaLvUpLimit <= userLv and q.n32ArenaLvLwLimit >= userLv then
-					table.insert(filterdrops, q)
-					filterdrops.totalRate = filterdrops.totalRate + q.n32Rate	
+				if type(q) == "table" then
+					if q.n32ArenaLvUpLimit <= userLv and q.n32ArenaLvLwLimit >= userLv then
+						table.insert(filterdrops, q)
+						tr = tr + q.n32Rate
+						q.n32Rate = tr
+					end
 				end
 			end
+			filterdrops.totalRate = tr
 		else
 			filterdrops = drop
 		end
@@ -264,7 +263,6 @@ function openPackage( strPkg, userLv )
 			items[itemId] = items[itemId] + itemNum
 		end
 	end
-	print( items )
 	return items
 end
 

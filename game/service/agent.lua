@@ -322,7 +322,7 @@ end
 
 --添加道具
 function CMD.addItems(op, items)
-	print( items )
+	print(op, items )
 	local gold = 0
 	local money = 0
 	local cards = {}
@@ -339,9 +339,9 @@ function CMD.addItems(op, items)
 			local items = usePackageItem( k, user.level )
 			CMD.addItems(op, items)
 		elseif item.n32Type == 5 then	--战斗外金币
-			gold = gold + item.n32Retain1 * v
+			gold = gold + v
 		elseif item.n32Type == 6 then	--钻石
-			money = money + item.n32Retain1 * v
+			money = money + v
 		elseif item.n32Type == 7 then	--技能材料
 			if not skillMats[item.n32Retain1] then
 				skillMats[item.n32Retain1] = v

@@ -393,6 +393,17 @@ updateMissionData 306 {
 	} 
 }
 
+recvMissionAward 307 {
+	request {                                                             
+		dataId 0 : integer
+	}                                                                     
+	response {                                                            
+		errorCode 0 :integer
+		dataId 1 : integer
+		ids 2 : *Vector2
+	} 
+}
+
 reEnterRoom 3006 {
 	request { 
 		isin 0 : boolean
