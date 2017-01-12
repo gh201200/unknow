@@ -106,6 +106,10 @@ local AccountMethod =
 		self.unit.flag = self.unit.flag | _flag
 		self:setFlag(op, self.flag)
 	end;
+	--
+	getVersion = function(self)
+		return self.unit.version
+	end;
 }
 
 return AccountMethod

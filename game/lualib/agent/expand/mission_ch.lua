@@ -17,6 +17,7 @@ function REQUEST.updateMissionData( args )
 end
 
 function REQUEST.recvMissionAward( args )
+	print( args )
 	local unit = user.missions:getMissionByDataId( args.dataId )
 	local dat = g_shareData.missionRepository[unit.id]
 	
@@ -61,7 +62,7 @@ function REQUEST.recvMissionAward( args )
 		local st = string.split(dat.szAwards, ",")
 		items[tonumber(st[1])] = tonumber(st[2])
 	end
-	user.servicecmd:addItems("recvMissionAward", items)
+	user.servicecmd.addItems("recvMissionAward", items)
 
 	return ret
 end

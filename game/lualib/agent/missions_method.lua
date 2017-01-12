@@ -89,13 +89,13 @@ local MissionsMethod =
 		end
 
 		if dat.n32GoalCon ~= 0 then
-			if bit_and(DEF.MissionGoalCon.greater, dat.n32GoalCon) then
+			if bit_and(DEF.MissionGoalCon.greater, dat.n32GoalCon) ~= 0 then
 				if unit.progress > dat.n32Goal then return true end
 			end
-			if bit_and(DEF.MissionGoalCon.equal, dat.n32GoalCon) then
+			if bit_and(DEF.MissionGoalCon.equal, dat.n32GoalCon) ~= 0 then
 				if unit.progress == dat.n32Goal then return true end
 			end
-			if bit_and(DEF.MissionGoalCon.less, dat.n32GoalCon) then
+			if bit_and(DEF.MissionGoalCon.less, dat.n32GoalCon) ~= 0 then
 				if unit.progress < dat.n32Goal then return true end
 			end
 		else
@@ -158,7 +158,7 @@ end
 function MissionsMethod:Advance_1004(unit, ...)
 	local dataId = ...
 	local missionDat = g_shareData.missionRepository[unit.id]
-	local dat = g_shareData.skillrepository[dataId]
+	local dat = g_shareData.skillRepository[dataId]
 	if dat.n32Quality == missionDat.n32Con1 then
 		if dat.n32Upgrade >= missionDat.n32Goal then
 			unit.progress = missionDat.n32Goal 

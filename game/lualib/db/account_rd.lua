@@ -26,12 +26,11 @@ function account.load (account_id, ...)
 			acc.icon = connection:hget (key, "icon")
 			acc.flag = tonumber(connection:hget (key, "flag"))
 			acc.expire = tonumber(connection:hget (key, "expire"))
-			acc.version = tonumber(connection:hget (key, "version"))
+			acc.version = connection:hget (key, "version")
 		else
 			acc = connection:hmget(key, ...)
 		end
 	end
-
 	return acc
 end
 
