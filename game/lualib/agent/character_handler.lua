@@ -131,7 +131,7 @@ local function onDataLoadCompleted()
 			end 
 		end
 	end
-	user.account:addExp( "test", math.random(1, 2400) )
+--	user.account:addExp( "test", math.random(1, 2400) )
 end
 
 local function sendCDTimeData(key)

@@ -204,7 +204,7 @@ end
 function Ientity:setActionState(_speed, _action)
 	self.moveSpeed = _speed
 	self.curActionState = _action
-	self:advanceEventStamp(EventStampType.Move)
+	--self:advanceEventStamp(EventStampType.Move)
 end
 
 function Ientity:canStand()
@@ -583,17 +583,17 @@ function Ientity:onMove2(dt)
 		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
 		local statechange = true
 		local xx = 0
-		local yy = 0
+		local zz = 0
 		repeat
-			if self.lastMoveSpeed ~= self.moveSpeed then break end
 			xx = math.ceil(self.dir.x * GAMEPLAY_PERCENT) 
-			yy = math.ceil(self.dir.y * GAMEPLAY_PERCENT) 
-			if self.lastMoveDir.x ~= xx then break end
-			if self.lastMoveDir.y ~= yy then break end
+			zz = math.ceil(self.dir.z * GAMEPLAY_PERCENT) 
+			if self.lastMoveSpeed ~= self.moveSpeed then  print("moveSpeed:",self.moveSpeed,self.lastMoveSpeed) break end
+			if self.lastMoveDir.x ~= xx then print("xx:",self.lastMoveDir.x,xx) break end
+			if self.lastMoveDir.z ~= zz then print("zz:",self.lastMoveDir.z,zz) break end
 			statechange = false
 		until true
 		if statechange then
-			self.lastMoveDir:set(xx, 0, yy)
+			self.lastMoveDir:set(xx, 0, zz)
 			self.lastMoveSpeed = self.moveSpeed
 			--advance move event stamp
 			self:advanceEventStamp(EventStampType.Move)

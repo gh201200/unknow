@@ -46,16 +46,20 @@ local function writebytes(f,x)
     local b2=string.char(x%256) x=(x-x%256)/256
     local b1=string.char(x%256) x=(x-x%256)/256
     f:write(b4,b3,b2,b1)
-end 
+end
+local packageNum = 0 
 local function send_msg (fd, msg)
 	local package = string.pack (">s2", msg)
 	--开始战斗记录
 	if recordState ==  1 then
+		packageNum = packageNum + 1
+		print("packageNum:",packageNum)
 		local time = skynet.now()
 		writebytes(fightRecorder,time)
 		fightRecorder:write(package)
 	elseif recordState == 2 then
 		--停止记录
+		print("停止记录")
 		fightRecorder:flush()
 		recordState = 0
 	end
@@ -123,6 +127,7 @@ local function handle_request (name, args, response)
 				if type(ret) ~= "table" then
 					print(ret)
 				end
+				print("req-name:" .. name)
 				send_msg (user_fd, response(ret))
 			end		
 		end)
@@ -137,6 +142,7 @@ local function handle_request (name, args, response)
 		else
 			last_heartbeat_time = skynet.now ()
 			if response and ret then
+				print("res-name:" .. name)
 				send_msg (user_fd, response (ret))
 			end
 		end
@@ -277,6 +283,7 @@ function CMD.getmatchinfo()
 	
 	local tb = {agent = skynet.self(),account = user.account.account_id, eloValue = user.account:getExp(),
 		 nickname = user.account:getNickName(),time = 0,stepTime = 0,fightLevel = user.level, failNum = 0 }
+	print("tb===",tb)
 	return tb
 end
 
@@ -292,7 +299,7 @@ end
 function CMD.enterMap(map,arg)
 	print("CMD.enterMap")
 	recordState = 1
-	fightRecorder = io.open("./testRecorder.bytes", "wb") 	
+	fightRecorder = io.open(user.account.account_id .. "testRecorder.bytes", "wb") 	
 	request_hijack_msg(map)
 	user.MAP = map
 	send_request("beginEnterPvpMap", arg) --开始准备切图
