@@ -23,6 +23,7 @@ function account.load (account_id, ...)
 			acc.money = tonumber(connection:hget (key, "money"))
 			acc.exp = tonumber(connection:hget (key, "exp"))
 			acc.topexp = tonumber(connection:hget (key, "topexp"))
+			acc.star = tonumber(connection:hget (key, "star"))
 			acc.icon = connection:hget (key, "icon")
 			acc.flag = tonumber(connection:hget (key, "flag"))
 			acc.expire = tonumber(connection:hget (key, "expire"))
@@ -53,6 +54,7 @@ function account.create (account_id, password, nick, icon)
 		"topexp", 0,
 		"icon", icon,
 		"flag", 0,
+		"star", 0,
 		"expire", 0,
 		"version", NOW_SERVER_VERSION
 	)
@@ -70,6 +72,15 @@ function account.update(account_id, account, ...)
 		sendBgevent("account", account_id, "R")
 	end
 end
+
+function account.hincrby(account_id, field, inc)
+	local connection, key = make_key (account_id)
+	connection:hincrby(key, field, inc)
+	
+	--bgsave
+	sendBgevent("account", account_id, "R")
+end
+
 
 return account
 

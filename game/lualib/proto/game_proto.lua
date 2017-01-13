@@ -142,6 +142,21 @@ local types = [[
 	score 4 : integer
 }
 
+.BattleResult {
+	result 0 : integer
+	score 1 : integer
+	beDamage 2 : integer
+	damage 3 : integer
+	kills 4 : integer
+	deads 5 : integer
+	helps 6 : integer
+	items 7 : *Vector3
+	gold 8 : integer
+	accountid 9 : string
+	serverid 10 : integer
+}
+
+
 ]]
 
 local c2s = [[
@@ -477,6 +492,12 @@ reqTopRank 3011 {
 	}
 }
 
+givePlayerStar 3012 {
+	request {      
+		accountid 0 : string
+	}
+}
+
 ]]
 
 local s2c = [[
@@ -501,6 +522,7 @@ sendAccount 3 {
 		icon 4 : string
 		flag 5 : integer
 		topexp 6 : integer
+		star 7 : integer
 	}
 }
 
@@ -703,16 +725,7 @@ pushEffect 3004 {
 
 battleOver 3005 {
 	request {
-		result 0 : integer
-		score 1 : integer
-		maxBeDamage 2 : integer
-		maxDamage 3 : integer
-		maxHelp 4 : integer
-		kills 5 : integer
-		deads 6 : integer
-		helps 7 : integer
-		items 8 : *Vector3
-		gold 9 : integer
+		accounts 0 : *BattleResult
 	}
 }
 

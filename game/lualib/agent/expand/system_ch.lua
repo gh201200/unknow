@@ -36,6 +36,10 @@ function CMD.getBindSkills( heroId )
 	return r
 end
 
+function CMD.givePlayerStar()
+	user.account:addStar( 1 )
+end
+
 function REQUEST.upgradeCardColorLevel( args )
 	local errorCode = 0
 	local card = user.cards:getCardByUuid(args.uuid)
@@ -259,9 +263,22 @@ end
 function REQUEST.reqTopRank( args )
 	local toprank = snax.uniqueservice("toprank")
 	local items = toprank.req.load( args )
-	print( items )
 	return {items = items, atype = args.atype}
 end
 
+function REQUEST.givePlayerStar( args )
+	local serverm = snax.uniqueservice("servermanager")
+	local agent = serverm.req.getAgent( args.accountid )
+	if agent == skynet.self() then 
+		syslog.err('can not give star to self')
+		return 
+	end
+	if agent then
+		skynet.call(agent, "lua", "givePlayerStar")	
+	else
+		local database = skynet.uniqueservice ("database")
+		skynet.call(database, "lua", "account", "hincrby", args.accountid, "star", 1)
+	end
+end
 
 return SystemCh.new()

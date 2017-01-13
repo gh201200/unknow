@@ -110,6 +110,14 @@ local AccountMethod =
 	getVersion = function(self)
 		return self.unit.version
 	end;
+	--
+	getStar = function(self)
+		return self.unit.star
+	end;
+	--
+	addStar = function(self, num)
+		self.unit.star = self.unit.star + num
+	end;
 }
 
 return AccountMethod
