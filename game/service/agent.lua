@@ -322,6 +322,12 @@ function CMD.giveBattleGains( args )
 	user.missions:AdvanceMission(Quest.MissionContent.Deads, args.deads)
 end
 
+--记录战斗记录
+function CMD.recordResult(tb)
+	--开始记录战斗记录
+			
+end
+
 --添加道具
 function CMD.addItems(op, items)
 	print(op, items )

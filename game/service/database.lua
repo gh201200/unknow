@@ -8,7 +8,7 @@ local cooldown = require "db.cooldown_rd"
 local activity = require "db.activity_rd"
 local skills = require "db.skills_rd"
 local missions = require "db.missions_rd"
-
+local fightRecords = require "db.fightRecords_rd"
 local bgservice
 local center
 local group = {}
@@ -63,7 +63,7 @@ skynet.start (function ()
 	module_init ("activity", activity)
 	module_init ("skills", skills)
 	module_init ("missions", missions)
-	
+	module_init ("fightRecords",fightRecords)
 	center = redis.connect (config.center)
 	ngroup = #config.group
 	for _, c in ipairs (config.group) do
