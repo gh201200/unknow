@@ -14,18 +14,9 @@ end
 function fightRecords.load(account_id)
 	local records = {}
 	local connection, key = make_key (account_id)
-	print("===load")
 	if connection:exists (key) then
 		local st = connection:zrevrange(key,0,20)
 		return st
-		--[[
-		for k, v in ipairs(st) do
-			print("kv:",k,v)
-			local record = load( v )()
-			print("record.load===",record)
-			--records[Macro_GetMissionSerialId(mission.id)] = mission
-		end
-		]]--
 	end
 	return {}	
 end
@@ -34,10 +25,8 @@ function fightRecords.add(accounts,record)
 	local time = os.time()
 	for k,account_id in pairs(accounts) do
 		local connection, key = make_key (account_id)
-		print("fightRecords.add",key,time)
 		connection:zadd(key,time, serialize(record))
 		connection:EXPIRE(key,expireTime)
-		fightRecords.load(account_id)
 	end
 	
 end
