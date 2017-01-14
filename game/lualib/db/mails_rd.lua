@@ -13,18 +13,18 @@ end
 
 function mails.load (account_id)
 	local mails = {}
-
+	print( "mail laod ", account_id)
 	local connection, key = make_key (account_id)
 	if connection:exists (key) then
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
 			mails[v]  = {uuid = v}	
-			mails[v].title = connection:hget (key, "title")
-			mails[v].content = connection:hget (key, "content")
-			mails[v].sender = connection:hget (key, "sender")
-			mails[v].items = connection:hget (key, "items")
-			mails[v].flag = tonumber(connection:hget (key, "flag"))
-			mails[v].time = tonumber(connection:hget (key, "time"))
+			mails[v].title = connection:hget (v, "title")
+			mails[v].content = connection:hget (v, "content")
+			mails[v].sender = connection:hget (v, "sender")
+			mails[v].items = connection:hget (v, "items")
+			mails[v].flag = tonumber(connection:hget (v, "flag"))
+			mails[v].time = tonumber(connection:hget (v, "time"))
 		end
 	end
 	return mails

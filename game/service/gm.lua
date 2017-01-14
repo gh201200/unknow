@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+local snax = require "snax"
 local syslog = require "syslog"
 local uuid = require "uuid"
 local sharedata = require "sharedata"
@@ -21,9 +22,9 @@ function exit()
 
 end
 local CONSOLE = {}
-function CONSOLE.sendmail( title, content, items, who )
+function CONSOLE.sendmail(who, title, content, sender, stitem)
 	local mail = snax.uniqueservice("centermail")
-	mail.post.sendmail({who}, title, content, "system", items)
+	mail.post.sendmail({who}, title, content, sender, items)
 end
 
 -------------------------------------------------------
@@ -120,6 +121,18 @@ function accept.addItems( param )
 			skynet.call(database, "lua", "skills","addskill", account_id, skill)
 		end
 	end
+end
+
+function accept.sendMail( param )
+	print("gm send mail", param)
+	local who = param["who"]
+	local title = param["title"]
+	local content = param["content"]
+	local sender =  param["sender"]
+	local stitems = param["stitems"]
+	local centermail = snax.uniqueservice("centermail")
+	local recver = string.split(who, ",")
+	centermail.post.sendmail(recver, title, content, sender, stitems)
 end
 
 -----------------------------------------------------

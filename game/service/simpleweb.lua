@@ -24,7 +24,7 @@ end
 
 local funcs = {}
 
-funcs['gm_GET_opt'] = function (param)	
+funcs['gm_GET_opt'] = function (param)
 	local gm = snax.queryservice 'gm'
 	local r = gm.req[param['func']](param)
 	local jt = json.encode(r)

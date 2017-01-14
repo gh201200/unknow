@@ -332,14 +332,21 @@ function CMD.recordResult(tb)
 end
 
 --添加道具
-function CMD.addItems(op, items)
-	print(op, items )
+function CMD.addItems(op, items, dep)
+	if not dep then dep = 1 end
+	if dep > 2 then
+		print('for ui: package should not include package')
+		print(op, items )
+		return
+	end
 	local gold = 0
 	local money = 0
 	local cards = {}
 	local skillMats = {}
+	local rets = {}
 	for k, v in pairs(items) do
 		local item = g_shareData.itemRepository[k]
+		if not item then return end
 		if item.n32Type == 3 then	--英雄卡
 			if not cards[item.n32Retain1] then
 				cards[item.n32Retain1] = v
@@ -347,8 +354,8 @@ function CMD.addItems(op, items)
 				cards[item.n32Retain1] = cards[item.n32Retain1] + v
 			end
 		elseif item.n32Type == 4 then	--礼包宝箱
-			local items = usePackageItem( k, user.level )
-			CMD.addItems(op, items)
+			rets = usePackageItem( k, user.level )
+			CMD.addItems(op, rets, dep+1)
 		elseif item.n32Type == 5 then	--战斗外金币
 			gold = gold + v
 		elseif item.n32Type == 6 then	--钻石
@@ -373,6 +380,7 @@ function CMD.addItems(op, items)
 	for k, v in pairs(skillMats) do
 		user.skills:addSkill(op, k, v)
 	end
+	return rets
 end
 
 --是否在线

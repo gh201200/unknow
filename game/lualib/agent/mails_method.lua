@@ -9,7 +9,7 @@ local MailsMethod =
 		if unit then
 			agentPlayer.send_request("sendMail", {mailsList = {unit}})	
 		else
-			agentPlayer.send_request("sendMail", {mailsList = units})	
+			agentPlayer.send_request("sendMail", {mailsList = self.units})	
 		end
 	end;
 	--
@@ -29,22 +29,26 @@ local MailsMethod =
 		return self.units[_uuid]
 	end;
 	--
-	addMail = function(self, op, mail)
+	addMail = function(self, mail)
 		self.units[mail.uuid] = mail
 		self:sendMailData( mail )
 		--log record
 	end;
 	--
-	delMail = function(self, op, uuid)
+	delMail = function(self, uuid)
 		self.units[uuid].flag = bit(2)
 		self:sendMailData( self.units[uuid] )
 		self.units[uuid] = nil
 		--log record
 	end;
 	--
-	setFlag = function(self, op, uuid, flag)
-		self.units[uuid].flag = flag
+	addFlag = function(self, uuid, flag)
+		self.units[uuid].flag = bit_or(self.units[uuid].flag,flag)
 		self:sendMailData( self.units[uuid] )
+		
+		local database = skynet.uniqueservice ("database")
+		skynet.call (database, "lua", "mails", "update", self.account_id, self.units[uuid], "flag")
+	
 		--log record
 	end;
 }

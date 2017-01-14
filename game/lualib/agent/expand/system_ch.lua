@@ -285,4 +285,40 @@ function REQUEST.givePlayerStar( args )
 	end
 end
 
+function REQUEST.recvMailItems( args )
+	local mail = user.mails:getMail( args.uuid )
+	local errorCode = 0
+	print( mail )
+	repeat
+		if not mail then
+			errorCode = -1
+			break
+		end
+		if bit_and(mail.flag, bit(1)) ~= 0 then
+			errorCode = -1
+			break
+		end
+		if string.len(mail.items) == 0 then
+			errorCode = -1
+			break
+		end
+	until true
+	if errorCode ~= 0 then
+		return {errorCode=errorCode,uuid=args.uuid,items = {}}
+	end
+	--
+	user.mails:addFlag(args.uuid, bit(1))
+	local arr = string.split(mail.items, ",")
+	local items = {}
+	for i=1, #arr, 2 do
+		items[tonumber(arr[i])] = tonumber(arr[i+1])
+	end
+	local rets = user.servicecmd.addItems("recv mails", items)
+	local ret = {errorCode=errorCode,uuid=args.uuid,items = {}}
+	for k, v in pairs(rets) do
+		table.insert(ret.items, {x=k,y=v})
+	end
+	return ret
+end
+
 return SystemCh.new()
