@@ -274,11 +274,8 @@ function CMD.disconnect ()
 end
 
 function CMD.getmatchinfo()
-	--测试
-	
 	local tb = {agent = skynet.self(),account = user.account.account_id, eloValue = user.account:getExp(),
 		 nickname = user.account:getNickName(),time = 0,stepTime = 0,fightLevel = user.level, failNum = 0 }
-	print("tb===",tb)
 	return tb
 end
 
