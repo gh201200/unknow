@@ -262,6 +262,8 @@ end
 
 function CMD.disconnect ()
 	print("agent closed")
+	local centermail = snax.uniqueservice("centermail")
+	centermail.post.listen(user.account.account_id, skynet.self(), false)
 	if user then
 		character_handler:unregister (user)
 		--if user.MAP ~= nil then
@@ -272,9 +274,7 @@ function CMD.disconnect ()
 		REQUEST = nil
 	end
 	
-	local centermail = snax.uniqueservice("centermail")
-	centermail.post.listen(user.account.account_id, skynet.self(), false)
-	
+
 	-- todo: do something before exit
 	skynet.exit()
 end

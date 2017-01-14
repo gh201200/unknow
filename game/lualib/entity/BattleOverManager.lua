@@ -61,8 +61,8 @@ function BattleOverManager:update( dt )
 	if self.OverRes ~= 0 then
 		print ('战斗结束')
 		local winners, failers, redRunAway, blueRunAway = self:calcRes()
-		--self:giveResult()
-		--self:sendResult()
+		self:giveResult()
+		self:sendResult()
 		self:recordResult(self.OverRes)
 		--任务推进
 		self:closeRoom()
