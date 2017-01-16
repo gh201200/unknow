@@ -156,6 +156,15 @@ local types = [[
 	serverid 10 : integer
 }
 
+.MailItem {
+	uuid 0 : string
+	title 1 : string
+	content	2 : string
+	sender 3 :string
+	items 4 : string
+	flag 5 : integer
+	time 6 : integer
+}
 
 ]]
 
@@ -490,6 +499,24 @@ givePlayerStar 3012 {
 	}
 }
 
+readMail 3013 {
+	request {      
+		uuid 0 : string
+	}
+}
+
+
+recvMailItems 3014 {
+	request {      
+		uuid 0 : string
+	}
+	response {     
+		uuid 0 : string
+		items 1 : *Vector2
+	}
+}
+
+
 ]]
 
 local s2c = [[
@@ -561,7 +588,14 @@ sendMission 8 {
 	request {                                                                                      
         	missionsList 0 : *Mission(id)                                                             
 	}                                                                                              
-}  
+}
+
+#下发邮件数据                                                                                          
+sendMail 9 {                                                                                          
+	request {                                                                                      
+        	mailsList 0 : *MailItem(uuid)                                                      
+    	}                                                                                              
+}   
 
 pickedhero 100 {
 	request {
@@ -735,7 +769,7 @@ reSendSkills 3007 {
 
 reSendHaveItems 3008 {
 	request { 
-		items 0 : *Vector3
+		items 0 : *Vector2
 	}
 }
 

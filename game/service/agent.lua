@@ -208,7 +208,6 @@ function CMD.Start (conf)
 	g_shareData = sharedata.query 'gdd'
 	DEF = g_shareData.DEF
 	Quest = g_shareData.Quest
-
 	local gate = conf.gate
 	local account = conf.account
 	WATCHDOG = conf.watchdog
@@ -243,6 +242,9 @@ function CMD.Start (conf)
 	skynet.call(gate, "lua", "forward", user_fd)
 	--注册到聊天服务
 	registerToChatserver()
+	--注册到邮件服务
+	local centermail = snax.uniqueservice("centermail")
+	centermail.post.listen(user.account.account_id, skynet.self(), true)
 end
 
 function CMD.reconnect(conf)
@@ -269,6 +271,10 @@ function CMD.disconnect ()
 		user_fd = nil
 		REQUEST = nil
 	end
+	
+	local centermail = snax.uniqueservice("centermail")
+	centermail.post.listen(user.account.account_id, skynet.self(), false)
+	
 	-- todo: do something before exit
 	skynet.exit()
 end

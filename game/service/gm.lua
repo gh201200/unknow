@@ -20,9 +20,23 @@ end
 function exit()
 
 end
+local CONSOLE = {}
+function CONSOLE.sendmail( title, content, items, who )
+	local mail = snax.uniqueservice("centermail")
+	mail.post.sendmail({who}, title, content, "system", items)
+end
 
 -------------------------------------------------------
 --POST
+function accept.console_cmd( cmd, ... )
+	local cmd = CONSOLE[cmd]
+	if cmd then
+		pcall(cmd, ...)
+	else
+		print("Invalid gm cmd: " .. cmd)
+	end
+end
+
 function accept.add_money( param )
 	local account_id, add_money, add_gold = param['id'], tonumber(param['money']), tonumber(param['gold'])
 	local ret = skynet.call(WATCHDOG, "lua", "gm_cmd", account_id, 'add_money', {money=add_money,gold=add_gold})

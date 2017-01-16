@@ -20,8 +20,19 @@ local gdd  = {
 	dropPackage = require "dropPackage",
 	missionRepository = require "missionRepository",
 }
+
+local CMD = {}
+
+function CMD.newdata(key, data)
+	sharedata.new(key, data)
+end
+
 skynet.start(function()
 	sharedata.new("gdd",gdd)
+	skynet.dispatch("lua", function(_,_, command, ...)
+		local f = CMD[command]
+		f(...)
+	end)
 end
 )
 

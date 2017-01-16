@@ -40,6 +40,10 @@ function CMD.givePlayerStar()
 	user.account:addStar( 1 )
 end
 
+function CMD.newmails( mail )
+	user.mails:addMail( table.clone(mail) )
+end
+
 function REQUEST.upgradeCardColorLevel( args )
 	local errorCode = 0
 	local card = user.cards:getCardByUuid(args.uuid)

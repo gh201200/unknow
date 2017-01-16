@@ -15,6 +15,9 @@ function account.load (account_id, ...)
 
 	local connection, key = make_key (account_id)
 	if connection:exists (key) then
+		local connset = connection_handler("accountlist")
+		connset:zadd("accountlist", os.time(), account_id)
+		
 		local n = select('#', ...)
 		if n == 0 then
 			acc.nick = connection:hget (key, "nick")
@@ -26,13 +29,17 @@ function account.load (account_id, ...)
 			acc.star = tonumber(connection:hget (key, "star"))
 			acc.icon = connection:hget (key, "icon")
 			acc.flag = tonumber(connection:hget (key, "flag"))
-			acc.expire = tonumber(connection:hget (key, "expire"))
 			acc.version = connection:hget (key, "version")
 		else
 			acc = connection:hmget(key, ...)
 		end
 	end
 	return acc
+end
+
+function account.loadlist()
+	local connset = connection_handler("accountlist")
+	return connset:zrange("accountlist", os.time()-ACCOUNT_KEEPTIME, os.time())
 end
 
 function account.create (account_id, password, nick, icon)
@@ -45,6 +52,9 @@ function account.create (account_id, password, nick, icon)
 	assert (connection:hsetnx (key, "account_id", account_id) ~= 0, "create account failed")
 
 	--local salt, verifier = srp.create_verifier (name, password)
+	local connset = connection_handler("accountlist")
+	connset:zadd("accountlist", os.time(), account_id)
+	
 	connection:hmset (key, 
 		"nick", nick, 
 		"password", password, 
@@ -55,7 +65,6 @@ function account.create (account_id, password, nick, icon)
 		"icon", icon,
 		"flag", 0,
 		"star", 0,
-		"expire", 0,
 		"version", NOW_SERVER_VERSION
 	)
 

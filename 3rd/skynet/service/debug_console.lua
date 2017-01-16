@@ -143,6 +143,7 @@ function COMMAND.help()
 		cmem = "Show C memory info",
 		shrtbl = "Show shared short string table info",
 		ping = "ping address",
+		gm = "gm func param ... : exec a gm cmd by gm service",
 	}
 end
 
@@ -300,4 +301,9 @@ function COMMAND.ping(fd, address)
 	skynet.call(address, "debug", "PING")
 	ti = skynet.now() - ti
 	return tostring(ti)
+end
+
+function COMMAND.gm(fd, func, ...)
+	local gm = snax.uniqueservice("gm")
+	gm.post.console_cmd(func, ... )
 end

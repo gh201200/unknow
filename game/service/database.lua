@@ -8,6 +8,9 @@ local cooldown = require "db.cooldown_rd"
 local activity = require "db.activity_rd"
 local skills = require "db.skills_rd"
 local missions = require "db.missions_rd"
+local mails = require "db.mails_rd"
+
+ACCOUNT_KEEPTIME = 3 * 30 * 24 * 60 * 60
 
 local bgservice
 local center
@@ -63,6 +66,7 @@ skynet.start (function ()
 	module_init ("activity", activity)
 	module_init ("skills", skills)
 	module_init ("missions", missions)
+	module_init ("mails", mails)
 	
 	center = redis.connect (config.center)
 	ngroup = #config.group

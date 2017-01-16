@@ -7,6 +7,7 @@ local AccountMethod = require "agent.account_method"
 local ExploreMethod = require "agent.explore_method"
 local SkillsMethod = require "agent.skills_method"
 local MissionsMethod = require "agent.missions_method"
+local MailsMethod = require "agent.mails_method"
 local ExploreCharacter = require "agent.expand.explore_ch"
 local SystemCharacter = require "agent.expand.system_ch"
 local MissionCharacter = require "agent.expand.mission_ch"
@@ -178,6 +179,7 @@ local function onEnterGame()
 	user.explore:sendExploreData()
 	user.skills:sendSkillData()
 	user.missions:sendMissionData()
+	user.mails:sendMailData()
 
 	--here, decide whether he is still in room 
 	local sm = snax.uniqueservice("servermanager")
@@ -209,15 +211,23 @@ function REQUEST.enterGame(args)
 	user.cards = { account_id = account_id }
 	user.cards.units =  skynet.call (database, "lua", "cards", "load",account_id) --玩家拥有的卡牌
 	setmetatable(user.cards, {__index = CardsMethod})
+
 	user.skills = { account_id = account_id }
 	user.skills.units =  skynet.call (database, "lua", "skills", "load",account_id) --玩家拥有的技能
 	setmetatable(user.skills, {__index = SkillsMethod})
+
 	user.missions = { account_id = account_id }
 	user.missions.units =  skynet.call (database, "lua", "missions", "load",account_id) --玩家拥有的任务
 	setmetatable(user.missions, {__index = MissionsMethod})
+
 	user.explore = { account_id = account_id }
 	user.explore.unit = skynet.call (database, "lua", "explore", "load", account_id, ExploreCharacter.randcon()) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
+
+	user.mails = { account_id = account_id }
+	user.mails.units =  skynet.call (database, "lua", "mails", "load", account_id) --玩家拥有的邮件
+	setmetatable(user.mails, {__index = MailsMethod})
+
 	local activity = snax.queryservice 'activity'
 	activity.post.loadAccount( account_id )
 	local cooldown = snax.queryservice 'cddown'

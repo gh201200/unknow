@@ -40,16 +40,20 @@ skynet.start(function()
 
 	--local loginserver = skynet.newservice("loginserver")
 	--skynet.call(loginserver,"lua","open",login_config)
-	local watchdog = skynet.newservice("watchdog")
-	skynet.call(watchdog, "lua", "start", game_config)
 	
 	--启动GM服务
 	snax.uniqueservice("gm", watchdog)
 	--启动排行榜服务
 	snax.uniqueservice("toprank")
+	--启动邮件中心服务
+	snax.uniqueservice("centermail", database)
 	
+	--开启网关
+	local watchdog = skynet.newservice("watchdog")
+	skynet.call(watchdog, "lua", "start", game_config)
 	
-	CD.post.Start()	
-
+	--CD开始计时
+	CD.post.Start()
+	
 	skynet.exit()
 end)
