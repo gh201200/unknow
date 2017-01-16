@@ -63,7 +63,7 @@ function BattleOverManager:update( dt )
 		local winners, failers, redRunAway, blueRunAway = self:calcRes()
 		self:giveResult()
 		self:sendResult()
-		self:recordResult()
+		self:recordResult(self.OverRes)
 		--任务推进
 		self:closeRoom()
 	end
@@ -231,7 +231,8 @@ function BattleOverManager:sendResult(winners, failers)
 end
 
 --战斗记录
-function BattleOverManager:recordResult()
+function BattleOverManager:recordResult(winflag)
+	--winflag 1 蓝方胜利 2 红方胜利 3 平局
 	local tb = {}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
@@ -239,6 +240,21 @@ function BattleOverManager:recordResult()
 			item.account_id = v.account_id --账号id
 			item.nickName = v.nickName --昵称
 			item.color = v.color    --颜色
+			if winflag == 1 then
+				if item:isRed() == false then
+					item.winflag = 1
+				else
+					item.winflag = 2
+				end
+			elseif winflag == 2 then
+				if item:isRed() == true then
+					item.winflag = 1
+				else
+					item.winflag = 2
+				end
+			else
+				item.winflag = 3
+			end
 			item.heroId = v.attDat.id --英雄id
 			item.skillTable = {}
 			for k,v in pairs(v.skillTable) do
