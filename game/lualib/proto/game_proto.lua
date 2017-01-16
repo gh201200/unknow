@@ -518,9 +518,10 @@ recvMailItems 3014 {
 	request {      
 		uuid 0 : string
 	}
-	response {     
-		uuid 0 : string
-		items 1 : *Vector2
+	response {    
+		errorCode 0 : integer 
+		uuid 1 : string
+		items 2 : *Vector2
 	}
 }
 

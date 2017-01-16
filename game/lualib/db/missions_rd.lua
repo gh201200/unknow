@@ -16,9 +16,7 @@ function missions.load (account_id)
 	if connection:exists (key) then
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
-			print( v )
 			local mission = load( v )()
-			print( mission )
 			missions[Macro_GetMissionSerialId(mission.id)] = mission
 		end
 	end

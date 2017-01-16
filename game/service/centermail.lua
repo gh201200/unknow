@@ -11,7 +11,7 @@ local function newmail(title, content, sender, stitem)
 		content = content,
 		sender = sender,
 		items = stitem,
-		flag = 0,
+		flag = 1,
 		time = os.time(),
 	}
 	return mailitem 
@@ -21,9 +21,7 @@ end
 --POST
 function accept.sendmail(who, title, content, sender, stitem)
 	local mail = newmail(title, content, sender, stitem)
-	print( who )
-	print( mail )
-	skynet.call(database, "lua", "mail", "add", who, mail)
+	skynet.call(database, "lua", "mails", "add", who, mail)
 	
 	if #who == 0 then	--全服邮件
 		for k, v in pairs(listeners) do
