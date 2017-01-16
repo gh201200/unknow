@@ -22,7 +22,6 @@ end
 function accept.sendmail(who, title, content, sender, stitem)
 	local mail = newmail(title, content, sender, stitem)
 	skynet.call(database, "lua", "mails", "add", who, mail)
-	
 	if #who == 0 then	--全服邮件
 		for k, v in pairs(listeners) do
 			skynet.call(listeners[v], "lua", "newmails", mail)

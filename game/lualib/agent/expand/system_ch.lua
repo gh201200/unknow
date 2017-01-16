@@ -41,7 +41,7 @@ function CMD.givePlayerStar()
 end
 
 function CMD.newmails( mail )
-	user.mails:addMail( table.clone(mail) )
+	user.mails:addMail( mail)
 end
 
 function REQUEST.upgradeCardColorLevel( args )
