@@ -62,7 +62,7 @@ function BattleOverManager:update( dt )
 		print ('战斗结束')
 		local winners, failers, redRunAway, blueRunAway = self:calcRes()
 		self:giveResult()
-		self:sendResult()
+		self:sendResult(winners, failers)
 		self:recordResult(self.OverRes)
 		--任务推进
 		self:closeRoom()
@@ -76,7 +76,8 @@ function BattleOverManager:calcRes()
 	local blueRunAway = {}
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
-			v.BattleGains = {items = {}, exp=0, gold=0}
+			v.BattleGains = {items = {}, exp=0, gold=0,win=2}
+			--win 0:胜 1:负 2:平局 3:逃跑
 			v.BattleGains.kills = v.HonorData[4]
 			v.BattleGains.deads = v.HonorData[5]
 			if v:isRed() then
@@ -150,6 +151,7 @@ function BattleOverManager:calcRes()
 	end
 	for k, v in pairs(redRunAway) do
 		redScore = redScore + v.accountExp
+		v.BattleGains.win = 3
 	end
 
 	for k, v in pairs(bluePlayers) do
@@ -157,6 +159,7 @@ function BattleOverManager:calcRes()
 	end
 	for k, v in pairs(blueRunAway) do
 		blueScore = blueScore + v.accountExp
+		v.BattleGains.win = 3
 	end
 	local pRedStar = 1 / (1 + 10 ^ ((blueScore - redScore) / S))
 	local pBlueStar = 1 / (1 + 10 ^ ((redScore - blueScore) / S))
@@ -170,14 +173,25 @@ function BattleOverManager:calcRes()
 	end
 
 	for k, v in pairs(winners) do
-		v.BattleGains.win = true
+		v.BattleGains.win = 0
 		v.BattleGains.cardId = v.attDat.id
 		v.BattleGains.exp = math.ceil( winExp )
 	end
 	for k, v in pairs(failers) do
-		v.BattleGains.win = false
+		v.BattleGains.win = 1
 		v.BattleGains.cardId = v.attDat.id
 		v.BattleGains.exp = math.ceil( failExp )
+	end
+	if self.OverRes == 1 then
+		for k, v in pairs(redRunAway) do
+			v.BattleGains.cardId = v.attDat.id
+			v.BattleGains.exp = math.ceil( failExp )
+		end
+	else
+		for k, v in pairs(blueRunAway) do
+			v.BattleGains.cardId = v.attDat.id
+			v.BattleGains.exp = math.ceil( failExp )
+		end
 	end
 	return winners, failers, redRunAway, blueRunAway
 end
@@ -194,37 +208,23 @@ end
 
 function BattleOverManager:sendResult(winners, failers)
 	local ret = {}
-	for k, v in pairs(winners) do
-		local r = {accountid = v.account_id, serverid=v.serverId}
-		r.result = 1
-		r.beDamage = v.HonorData[2]
-		r.damage = v.HonorData[1]
-		r.score = v.BattleGains.exp
-		r.gold = v.BattleGains.gold
-		r.kills = v.HonorData[4]
-		r.deads = v.HonorData[5]
-		r.helps = v.HonorData[3]
-		r.items = {}
-		for p, q in pairs(v.BattleGains.items) do
-			table.insert(r.items, {x=p,y=q})
+	for k, v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player then
+			local r = {accountid = v.account_id, serverid=v.serverId}
+			r.result = v.BattleGains.win
+			r.beDamage = v.HonorData[2]
+			r.damage = v.HonorData[1]
+			r.score = v.BattleGains.exp
+			r.gold = v.BattleGains.gold
+			r.kills = v.HonorData[4]
+			r.deads = v.HonorData[5]
+			r.helps = v.HonorData[3]
+			r.items = {}
+			for p, q in pairs(v.BattleGains.items) do
+				table.insert(r.items, {x=p,y=q})
+			end
+			table.insert(ret , r)
 		end
-		table.insert(ret , r)
-	end
-	for k, v in pairs(failers) do
-		local r = {accountid = v.account_id, serverid=v.serverId}
-		r.result = 0
-		r.beDamage = v.HonorData[2]
-		r.damage = v.HonorData[1]
-		r.score = v.BattleGains.exp
-		r.gold = v.BattleGains.gold
-		r.kills = v.HonorData[4]
-		r.deads = v.HonorData[5]
-		r.helps = v.HonorData[3]
-		r.items = {}
-		for p, q in pairs(v.BattleGains.items) do
-			table.insert(r.items, {x=p,y=q})
-		end
-		table.insert(ret , r)
 	end
 	print( ret )
 	EntityManager:sendToAllPlayers("battleOver", {accounts = ret})

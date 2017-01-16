@@ -312,16 +312,24 @@ end
 
 --战斗结束产出
 function CMD.giveBattleGains( args )
-	user.account:addExp("giveBattleGains", args.exp)
-	user.account:addGold("giveBattleGains", args.gold)
-	CMD.addItems("giveBattleGains", args.items)
+	if args.exp then
+		user.account:addExp("giveBattleGains", args.exp)
+	end
+	if args.gold then
+		user.account:addGold("giveBattleGains", args.gold)
+	end
+	if args.items then
+		CMD.addItems("giveBattleGains", args.items)
+	end
 	--推进任务
-	if args.win then
+	if args.win==0 then
 		user.missions:AdvanceMission(Quest.MissionContent.WinFight)
 		user.missions:AdvanceMission(Quest.MissionContent.WinWithHero, args.cardId)
 	end
-	user.missions:AdvanceMission(Quest.MissionContent.Kills, args.kills)
-	user.missions:AdvanceMission(Quest.MissionContent.Deads, args.deads)
+	if args.win ~= 3 then
+		user.missions:AdvanceMission(Quest.MissionContent.Kills, args.kills)
+		user.missions:AdvanceMission(Quest.MissionContent.Deads, args.deads)
+	end
 end
 
 --记录战斗记录
