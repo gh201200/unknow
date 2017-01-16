@@ -9,6 +9,7 @@ local activity = require "db.activity_rd"
 local skills = require "db.skills_rd"
 local missions = require "db.missions_rd"
 local mails = require "db.mails_rd"
+local fightRecords = require "db.fightRecords_rd"
 
 ACCOUNT_KEEPTIME = 3 * 30 * 24 * 60 * 60
 
@@ -67,6 +68,7 @@ skynet.start (function ()
 	module_init ("skills", skills)
 	module_init ("missions", missions)
 	module_init ("mails", mails)
+	module_init ("fightRecords",fightRecords)
 	
 	center = redis.connect (config.center)
 	ngroup = #config.group

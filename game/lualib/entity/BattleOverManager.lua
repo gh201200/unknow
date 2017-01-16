@@ -10,7 +10,7 @@ local BattleOverManager = class("BattleOverManager")
 local S = 300
 local N = 32
 local K = 1
-
+local database
 function BattleOverManager:ctor()
 	self.RedHomeBuilding = nil
 	self.BlueHomeBuilding = nil
@@ -22,8 +22,9 @@ function BattleOverManager:ctor()
 end
 
 function BattleOverManager:init( mapDat )
+	database = skynet.uniqueservice("database")
 	self.MapDat = mapDat
-	self.RestTime = self.MapDat.n32Time * 1000
+	self.RestTime = 10 * 1000--self.MapDat.n32Time * 1000
 end
 
 function BattleOverManager:update( dt )
@@ -61,7 +62,8 @@ function BattleOverManager:update( dt )
 		print ('战斗结束')
 		local winners, failers, redRunAway, blueRunAway = self:calcRes()
 		self:giveResult()
-		self:sendResult(winners, failers)
+		self:sendResult()
+		self:recordResult()
 		--任务推进
 		self:closeRoom()
 	end
@@ -234,21 +236,28 @@ function BattleOverManager:recordResult()
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player then
 			local item  = {}
-			item.account_id = self.account_id --账号id
-			item.nickName = self.nickName --昵称
-			item.color = self.color    --颜色
-			item.heroId = self.attDat.id --英雄id
+			item.account_id = v.account_id --账号id
+			item.nickName = v.nickName --昵称
+			item.color = v.color    --颜色
+			item.heroId = v.attDat.id --英雄id
 			item.skillTable = {}
-			for k,v in pairs(self.skillTable) do
+			for k,v in pairs(v.skillTable) do
 				table.insert(item.skillTable,k)
 			end
-			item.assistNum = self.HonorData[3] --助攻数
-			item.killNum = self.HonorData[4] --击杀数
-			item.deadthNum = self.HonorData[5] --死亡数
+			item.assistNum = v.HonorData[3] --助攻数
+			item.killNum = v.HonorData[4] --击杀数
+			item.deadthNum = v.HonorData[5] --死亡数
+			item.time = os.time()
 			table.insert(tb,item)	
 		end
 	end
-		
+	local accounts = {}
+	for k,v in pairs(EntityManager.entityList) do
+		if v.entityType == EntityType.player then
+			table.insert(accounts,v.account_id)
+		end
+	end			
+	skynet.call(database, "lua", "fightRecords", "add", accounts,tb)
 end
 function BattleOverManager:closeRoom()
  	print("close room")

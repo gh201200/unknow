@@ -263,6 +263,11 @@ function REQUEST.getCardsDatas()
 	return {cardNum = cardNum ,cardsList = cardsList }
 end
 
+function REQUEST.requestFightRecords()
+	local str = skynet.call(database, "lua", "fightRecords", "load",user.account.account_id)	
+	return {records = str}
+end
+
 
 return handler
 

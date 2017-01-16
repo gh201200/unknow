@@ -258,6 +258,14 @@ cancelMatch 104 {
 	}
 }
 
+requestFightRecords 105 
+{
+	request {
+	}
+	response {
+		records 0 : *string
+	} 
+}
 pickHero 110 {
 	request {
 		heroid 0 : integer
