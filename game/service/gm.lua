@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local snax = require "snax"
+require "skynet.manager"	-- import skynet.abort
 local syslog = require "syslog"
 local uuid = require "uuid"
 local sharedata = require "sharedata"
@@ -122,13 +123,17 @@ function accept.addItems( param )
 		end
 	end
 end
-
 function accept.exit()
-	local list = skynet.call(".launcher", "lua", "LIST")
-	print(list)
-	for k, v in pairs(list) do
-		skynet.call(".launcher", "lua", "KILL", k)
-	end
+	print('收到关服命令')
+	print('开始关闭服务器...')
+	local bg = skynet.uniqueservice ("bgsavemysql")
+	print('关闭数据保存服务: bgsavemysql')
+	skynet.call(bg, "lua", "saveall")
+	print('关闭网关')
+	skynet.send(".launcher", "lua", "REMOVE", WATCHDOG, false)
+
+	print('关闭服务器...')
+	skynet.abort()
 end
 
 function accept.sendMail( param )

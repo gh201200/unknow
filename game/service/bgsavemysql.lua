@@ -64,7 +64,6 @@ end
 
 local function dealevent()
 	while true do
-		skynet.sleep(config.mysql.savecd*100)
 		for i=1, savenum do
 			local cmd = pop()
 			if not cmd then break end
@@ -84,6 +83,7 @@ local function dealevent()
 				end
 			end
 		end
+		skynet.sleep(config.mysql.savecd*100)
 	end
 end
 
@@ -93,11 +93,19 @@ local function dispatcher()
 end
 
 local function saveall()
-	savethread = nil
-	savenum = math.maxinteger
-	dealevent()
+	print('bgmysql save all')
+	savenum = math.maxint32
+	local res = skynet.response()
+	skynet.fork(function()
+		while true do
+			if dbcmd.tail - dbcmd.head == 0 then
+				break
+			end
+			skynet.sleep(100)
+		end
+		res(true)
+	end)
 end
-
 
 function CMD.addevent(table, key, _type)
 	for i = dbcmd.head, dbcmd.tail-1 do
@@ -282,14 +290,16 @@ skynet.start(function()
 	end
 	print("success to connect to mysql server")
 	
-	skynet.dispatch("error", function (address, source, command, ...)
-		print('数据保存服务退出')
-		saveall()	
-	end)
-
 	skynet.dispatch("lua", function(_,_, command, ...)
 		local f = CMD[command]
-		skynet.ret(skynet.pack(f(...)))
+		if f then
+			skynet.ret(skynet.pack(f(...)))
+		elseif command == 'saveall' then
+			saveall()
+		else
+			print('invalid command ', command)
+			skynet.retpack()
+		end
 	end)
 
 	init()
