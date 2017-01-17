@@ -123,6 +123,14 @@ function accept.addItems( param )
 	end
 end
 
+function accept.exit()
+	local list = skynet.call(".launcher", "lua", "LIST")
+	print(list)
+	for k, v in pairs(list) do
+		skynet.call(".launcher", "lua", "KILL", k)
+	end
+end
+
 function accept.sendMail( param )
 	print("gm send mail", param)
 	local who = param["who"]
