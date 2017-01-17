@@ -134,12 +134,28 @@ end
 function accept.sendMail( param )
 	print("gm send mail", param)
 	local who = param["who"]
-	local title = param["title"]
-	local content = param["content"]
-	local sender =  param["sender"]
-	local stitems = param["stitems"]
-	local centermail = snax.uniqueservice("centermail")
+	local title = param["title"] or "Empty Title"
+	local content = param["content"] or "Empty Content"
+	local sender =  param["sender"] or "system"
+	local stitems = param["stitems"] or ""
 	local recver = string.split(who, ",")
+	if string.len(stitems) > 0 then
+		local items = string.split(stitems , ",")
+		for i=1, #items, 2 do
+			local itemid = tonumber(items[i])
+			local itemnum = tonumber(items[i+1])
+			if not itemid or not g_shareData.itemRepository[itemid] then
+				print('Invald item id '.. items[i])
+				return
+			end
+			if not itemnum or itemnum < 0 or itemnum > math.maxint32 then
+				print('Invald item num '.. items[i+1])
+				return
+			end
+		end
+	end
+	
+	local centermail = snax.uniqueservice("centermail")
 	centermail.post.sendmail(recver, title, content, sender, stitems)
 end
 
