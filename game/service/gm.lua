@@ -133,7 +133,7 @@ end
 
 function accept.sendMail( param )
 	print("gm send mail", param)
-	local who = param["who"]
+	local who = param["who"] or ""
 	local title = param["title"] or "Empty Title"
 	local content = param["content"] or "Empty Content"
 	local sender =  param["sender"] or "system"
@@ -148,13 +148,12 @@ function accept.sendMail( param )
 				print('Invald item id '.. items[i])
 				return
 			end
-			if not itemnum or itemnum < 0 or itemnum > math.maxint32 then
+			if not itemnum or itemnum <= 0 or itemnum > math.maxint32 then
 				print('Invald item num '.. items[i+1])
 				return
 			end
 		end
 	end
-	
 	local centermail = snax.uniqueservice("centermail")
 	centermail.post.sendmail(recver, title, content, sender, stitems)
 end
