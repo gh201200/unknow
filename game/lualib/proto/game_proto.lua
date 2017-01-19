@@ -150,10 +150,11 @@ local types = [[
 	kills 4 : integer
 	deads 5 : integer
 	helps 6 : integer
-	items 7 : *Vector3
+	items 7 : *Vector2
 	gold 8 : integer
 	accountid 9 : string
 	serverid 10 : integer
+	skills 11 : *Vector2
 }
 
 .MailItem {

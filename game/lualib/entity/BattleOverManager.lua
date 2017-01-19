@@ -223,6 +223,11 @@ function BattleOverManager:sendResult(winners, failers)
 			for p, q in pairs(v.BattleGains.items) do
 				table.insert(r.items, {x=p,y=q})
 			end
+			r.skills = {}
+			for p, q in pairs(v.skillTable) do
+				table.insert(r.skills, {x=p,y=q})
+			end
+		
 			table.insert(ret , r)
 		end
 	end
