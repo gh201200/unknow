@@ -140,7 +140,7 @@ function serialize(t)
 			repeat
 				if k == "doNotSavebg" then break end
 	
-				local key = type(k)=="number" and "["..k.."]" or "[\""..k.."\"]"
+				local key = type(k)=="number" and "["..k.."]" or k
 			
 				if type(v)=="table" then
 					local dotkey= parent..(type(k)=="number" and key or "."..key)

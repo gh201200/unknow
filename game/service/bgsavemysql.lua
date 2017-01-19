@@ -16,6 +16,7 @@ local opevent = {}
 
 local function push(v)
 	dbcmd[dbcmd.tail] = v
+	opevent[v.table..v.key] = v
 	dbcmd.tail = dbcmd.tail + 1
 
 	print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
@@ -28,6 +29,7 @@ local function pop()
 	end
 	local v = dbcmd[dbcmd.head]
 	dbcmd[dbcmd.head] = nil
+	opevent[v.table..v.key] = nil
 	dbcmd.head = dbcmd.head + 1
 	if dbcmd.head == dbcmd.tail then
 		dbcmd.head = 1
@@ -76,7 +78,7 @@ local function dealevent()
 					print(ret)
 				end
 			elseif cmd.type == "D" then
-				local ret = db:query("delete from " .. tablename(cmd.table, cmd.key) .. " where uid = '" .. cmd.key.."'")
+				local ret = db:query("delete from " .. tablename(cmd.table, cmd.key) .. " where uuid = '" .. cmd.key.."'")
 				if ret.errno then
 					print('sql = '..sql)
 					print(ret)
@@ -108,11 +110,10 @@ local function saveall()
 end
 
 function CMD.addevent(table, key, _type)
-	for i = dbcmd.head, dbcmd.tail-1 do
-		if dbcmd[i].table==table and dbcmd.key==key then
-			dbcmd[i].type = _type
-			return
-		end
+	local r = table .. key
+	if opevent[r] then
+		opevent[r].type = _type
+		return
 	end
 	local ev = { table=table, key=key, type=_type }
 	push( ev )
