@@ -134,10 +134,11 @@ local function handle_request (name, args, response)
 		local ok, ret = xpcall (f, traceback, args)
 		if not ok then
 			syslog.warningf ("handle message(%s) failed : %s", name, ret) 
-			kick_self ()
+			--kick_self ()
 		else
 			last_heartbeat_time = skynet.now ()
-			if response and ret then
+			
+			if response then
 				send_msg (user_fd, response (ret))
 			end
 		end
@@ -206,6 +207,7 @@ end
 local CMD = {}
 function CMD.Start (conf)
 	g_shareData = sharedata.query 'gdd'
+	
 	DEF = g_shareData.DEF
 	Quest = g_shareData.Quest
 	local gate = conf.gate

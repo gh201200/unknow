@@ -1,8 +1,8 @@
 skynet_root = "../3rd/skynet/"
 root = "./"
 thread = 8
---logger = "main_log"
---logservice = "logger"
+logger = "main_log"
+logservice = "logger"
 --logpath = "."
 harbor = 0
 --address = "127.0.0.1:2526"

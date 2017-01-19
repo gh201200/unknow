@@ -41,9 +41,13 @@ logger_cb(struct skynet_context * context, void *ud, int type, int session, uint
 		break;
 	case PTYPE_TEXT:
 		fprintf(inst->handle, "[:%08x] ",source);
+		fprintf(stdout, "[:%08x] ",source);
 		fwrite(msg, sz , 1, inst->handle);
+		fwrite(msg, sz , 1, stdout);
 		fprintf(inst->handle, "\n");
+		fprintf(stdout, "\n");
 		fflush(inst->handle);
+		fflush(stdout);
 		break;
 	}
 
