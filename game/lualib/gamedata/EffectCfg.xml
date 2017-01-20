@@ -34,15 +34,125 @@
 		<szillustration>和平之歌</szillustration>
 	</item>
 	<item id="10004">
-		<n32type>1</n32type>
-		<szassert>Chongjibo</szassert>
+		<n32type>4</n32type>
+		<szassert>liekongzhan_bullet_body</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>冲击波</szillustration>
+		<szillustration>裂空斩</szillustration>
+	</item>
+	<item id="10005">
+		<n32type>1</n32type>
+		<szassert>chenjizhifeng_cast_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>沉寂之风-施法</szillustration>
+	</item>
+	<item id="10006">
+		<n32type>2</n32type>
+		<szassert>huichunjili_cast_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>回春祭礼-施法身体</szillustration>
+	</item>
+	<item id="10007">
+		<n32type>2</n32type>
+		<szassert>huichunjili_cast_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>回春祭礼-施法脚底</szillustration>
+	</item>
+	<item id="10008">
+		<n32type>2</n32type>
+		<szassert>huichunjili_cast_hand</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>4</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>回春祭礼-施法手部</szillustration>
+	</item>
+	<item id="10009">
+		<n32type>2</n32type>
+		<szassert>zengyapaiqiguan_cast_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>增压排气管-施法</szillustration>
+	</item>
+	<item id="10010">
+		<n32type>2</n32type>
+		<szassert>jienengtuijinqi_cast_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>节能推进器</szillustration>
+	</item>
+	<item id="10011">
+		<n32type>2</n32type>
+		<szassert>ziyushu_cast_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>自愈术施法</szillustration>
+	</item>
+	<item id="10012">
+		<n32type>2</n32type>
+		<szassert>jianta_cast_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>践踏施法</szillustration>
+	</item>
+	<item id="10013">
+		<n32type>2</n32type>
+		<szassert>dunpaimengji_cast_lhand</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>3</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>盾牌猛击施法</szillustration>
+	</item>
+	<item id="10014">
+		<n32type>2</n32type>
+		<szassert>jiaoyuezhihui_cast_rhand</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>4</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>皎月之辉施法</szillustration>
 	</item>
 	<item id="12001">
 		<n32type>1</n32type>
@@ -244,18 +354,18 @@
 	</item>
 	<item id="30004">
 		<n32type>2</n32type>
-		<szassert>Zhongbiaogong_Bullet_hit_01</szassert>
+		<szassert>jianta_hit_bottom</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-		<szillustration>钟表匠普通攻击击中特效</szillustration>
+		<szillustration>践踏受击特效</szillustration>
 	</item>
 	<item id="30005">
 		<n32type>2</n32type>
-		<szassert>Shanguang_hit_01</szassert>
+		<szassert>dunpaimengji_hit_body</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
@@ -263,6 +373,17 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
 		<szillustration>闪光普通攻击击中特效</szillustration>
+	</item>
+	<item id="30006">
+		<n32type>2</n32type>
+		<szassert>liekongzhan_hit_body</szassert>
+		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>10</n32layer>
+		<szillustration>盾牌猛击击中特效</szillustration>
 	</item>
 	<item id="30101">
 		<n32type>2</n32type>
@@ -273,7 +394,7 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-		<szillustration>受到刀剑打击</szillustration>
+		<szillustration>裂空斩击中特效</szillustration>
 	</item>
 	<item id="30102">
 		<n32type>2</n32type>
@@ -407,38 +528,82 @@
 		<n32layer>0</n32layer>
 		<szillustration>落雷</szillustration>
 	</item>
-	<item id="31001">
-		<n32type>1</n32type>
-		<szassert>Quntizhiliao_2</szassert>
+	<item id="30114">
+		<n32type>2</n32type>
+		<szassert>chenjizhifeng_hit_body</szassert>
 		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>沉寂之风-受击</szillustration>
+	</item>
+	<item id="30115">
+		<n32type>2</n32type>
+		<szassert>zengyapaiqiguan_hit_body</szassert>
+		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>增压排气管-受击</szillustration>
+	</item>
+	<item id="30116">
+		<n32type>2</n32type>
+		<szassert>liemofeiren_hit_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>猎魔飞刃-受击身体</szillustration>
+	</item>
+	<item id="30117">
+		<n32type>2</n32type>
+		<szassert>liemofeiren_hit_bottom</szassert>
+		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>受到圣光的治疗（强）</szillustration>
+		<szillustration>猎魔飞刃-受击脚底</szillustration>
 	</item>
-	<item id="31002">
-		<n32type>2</n32type>
-		<szassert>Xixue</szassert>
+	<item id="31001">
+		<n32type>1</n32type>
+		<szassert>jiaoyuezhihui_hit_body</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>受到圣光的治疗（弱）</szillustration>
+		<szillustration>皎月之辉受击</szillustration>
 	</item>
-	<item id="31003">
+	<item id="31002">
 		<n32type>2</n32type>
-		<szassert>test</szassert>
+		<szassert>ziyushu_hit_body</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>受到自愈术的治疗</szillustration>
+	</item>
+	<item id="31003">
+		<n32type>2</n32type>
+		<szassert>jiaoyuezhihui_hit_bottom</szassert>
+		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-		<szillustration>受到自然能量的治疗（强）</szillustration>
+		<szillustration>皎月之辉受击--脚底</szillustration>
 	</item>
 	<item id="31004">
 		<n32type>2</n32type>
@@ -528,16 +693,38 @@
 		<n32layer>10</n32layer>
 		<szillustration>科技护盾</szillustration>
 	</item>
-	<item id="32001">
+	<item id="31016">
 		<n32type>2</n32type>
-		<szassert>Houde_skill_03_2</szassert>
-		<n32time>0</n32time>
+		<szassert>huichunjili_hit_body</szassert>
+		<n32time>3</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-		<szillustration>厚德大招</szillustration>
+		<szillustration>回春祭礼-受击身体</szillustration>
+	</item>
+	<item id="31017">
+		<n32type>2</n32type>
+		<szassert>huichunjili_hit_bottom</szassert>
+		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>10</n32layer>
+		<szillustration>回春祭礼-受击脚底</szillustration>
+	</item>
+	<item id="32001">
+		<n32type>2</n32type>
+		<szassert>dunpaimengji_buff_top</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>2</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>10</n32layer>
+		<szillustration>盾牌猛击-头顶</szillustration>
 	</item>
 	<item id="32002">
 		<n32type>2</n32type>
@@ -629,10 +816,10 @@
 	</item>
 	<item id="50002">
 		<n32type>2</n32type>
-		<szassert>Jinmo_2</szassert>
+		<szassert>chenjizhifeng_buff_top</szassert>
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>1</n32position>
+		<n32position>2</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -802,5 +989,49 @@
 		<n32Redius>3</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>金身</szillustration>
+	</item>
+	<item id="51007">
+		<n32type>2</n32type>
+		<szassert>huichunjili_buff_bottom</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>回春祭礼-持续回血</szillustration>
+	</item>
+	<item id="50007">
+		<n32type>2</n32type>
+		<szassert>zengyapaiqiguan_buff_top</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>2</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>增压排气管</szillustration>
+	</item>
+	<item id="60001">
+		<n32type>2</n32type>
+		<szassert>ShengJieGuangHuan_cast_bottom</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>圣洁光环-自身</szillustration>
+	</item>
+	<item id="61001">
+		<n32type>2</n32type>
+		<szassert>ShengJieGuangHuan_hit_bottom</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>圣洁光环-友方</szillustration>
 	</item>
 </info>
