@@ -23,14 +23,14 @@ function missions.load (account_id)
 	return missions
 end
 
-function missions.add (account_id, mission)
+function missions.update(account_id, mission, savebg)
 	
 	local connection, key = make_key (account_id)
 	
 	connection:sadd(key, serialize(mission))
 
 	--bgsave
-	if not mission.doNotSavebg  then
+	if not savebg  then
 		sendBgevent("missions", account_id, "R")
 	end
 

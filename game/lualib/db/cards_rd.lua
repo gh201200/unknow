@@ -53,49 +53,10 @@ function cards.loadBySerialId (account_id, serId)
 	return card
 end
 
-function cards.addCard (account_id, card)
-	
-	local connection, key = make_key (account_id)
-	
-	connection:sadd(key, card.uuid)
-
-	connection:hmset (card.uuid, 
-		"dataId", card.dataId, 
-		"count", card.count,
-		"explore", card.explore,
-		"skill0", card.skill0,
-		"skill1", card.skill1,
-		"skill2", card.skill2,
-		"skill3", card.skill3,
-		"skill4", card.skill4,
-		"skill5", card.skill5,
-		"skill6", card.skill6,
-		"skill7", card.skill7
-	
-	)
-	
-	--bgsave
-	if not card.doNotSavebg then
-		sendBgevent("cards", account_id, "R")
-	end
-end
-
-function cards.delCard(account_id, uuid)
-
-	local connection, key = make_key (account_id)
-
-	connection:srem(key, uuid)
-	
-	connection:del(uuid)
-
-	--bgsave
-	if not card.doNotSavebg then
-		sendBgevent("cards", account_id, "R")
-	end
-end
 
 function cards.update(account_id, card, ...)
 	local connection, key = make_key (account_id)
+	connection:sadd(key, card.uuid)
 	connection:hmset(card.uuid, table.packdb(card, ...))
 
 	--bgsave

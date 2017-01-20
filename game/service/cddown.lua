@@ -63,7 +63,7 @@ local function setTime(name, atype, time)
 	if not units[uid] then
 		-- not exist
 		units[uid] = create_cd(name, atype, now + time)
-		skynet.call(database, "lua", "cooldown", "update", units[uid], 'accountId', 'atype', 'value')
+		skynet.call(database, "lua", "cooldown", "update", units[uid])
 	else
 		-- exist
 		if units[uid].value < now + time then
@@ -82,7 +82,7 @@ local function setDate(name, atype, date)
 	if not units[uid] then
 		-- not exist
 		units[uid] = create_cd(name, atype, time)
-		skynet.call(database, "lua", "cooldown", "update",uid, units[uid], 'accountId', 'atype', 'value')
+		skynet.call(database, "lua", "cooldown", "update",uid, units[uid])
 	elseif units[uid].value < time then
 		-- exist
 		units[uid].value = time
@@ -104,11 +104,11 @@ local function RefreshShopCard()
 	
 	for k, v in pairs(g_shareData.shopRepository) do
 		if v.n32Type == 4 then
-			if v.n32Site == 1 then
+			if v.n32Site == 0 then
 				table.insert(st1, v.id)
-			elseif v.n32Site == 2 then
+			elseif v.n32Site == 1 then
 				table.insert(st2, v.id)
-			elseif v.n32Site == 3 then
+			elseif v.n32Site == 2 then
 				table.insert(st3, v.id)
 			end
 		end		

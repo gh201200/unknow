@@ -45,44 +45,13 @@ function skills.loadBySerialId (account_id, serId)
 	return skill
 end
 
-function skills.addSkill (account_id, skill)
-	
-	local connection, key = make_key (account_id)
-	
-	connection:sadd(key, skill.uuid)
-
-	connection:hmset (skill.uuid, 
-		"dataId", skill.dataId, 
-		"count", skill.count
-	)
-	
-	--bgsave
-	if not skill.doNotSavebg  then
-		sendBgevent("skills", account_id, "R")
-	end
-
-end
-
-function skills.delSkill(account_id, uuid)
-
-	local connection, key = make_key (account_id)
-
-	connection:srem(key, uuid)
-	
-	connection:del(uuid)
-	
-	--bgsave
-	if not skill.doNotSavebg  then
-		sendBgevent("skills", account_id, "R")
-	end
-end
-
 function skills.update(account_id, skill, ...)
 	local connection, key = make_key (account_id)
+	connection:sadd(key, skill.uuid)
 	connection:hmset(skill.uuid, table.packdb(skill, ...))
 
 	--bgsave
-	if not skill.doNotSavebg  then
+	if not skill.doNotSavebg then
 		sendBgevent("skills", account_id, "R")
 	end
 end

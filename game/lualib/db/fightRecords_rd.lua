@@ -21,14 +21,14 @@ function fightRecords.load(account_id)
 	return {}	
 end
 
-function fightRecords.add(accounts,record)
+function fightRecords.add(accounts,record, bgsave)
 	local time = os.time()
 	for k,account_id in pairs(accounts) do
 		local connection, key = make_key (account_id)
 		connection:zadd(key,time, serialize(record))
 		connection:EXPIRE(key,expireTime)
 		--bgsave
-		if not record.doNotSavebg  then
+		if not bgsave then
 			sendBgevent("fightrecords", account_id, "R")
 		end
 	end

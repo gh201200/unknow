@@ -47,7 +47,7 @@ local SkillsMethod =
 		self:sendSkillData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "skills", "addSkill", self.account_id, v)
+		skynet.call (database, "lua", "skills", "update", self.account_id, v)
 		--推进任务
 		agentPlayer.missions:AdvanceMission(Quest.MissionContent.GetSkill)
 		agentPlayer.missions:AdvanceMission(Quest.MissionContent.UpgradeSkill, dataId)

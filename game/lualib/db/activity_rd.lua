@@ -26,29 +26,13 @@ function activity.load (name)
 	return unit
 end
 
-function activity.add(uuid, activity)
-	local connection, key = make_key( uuid )
-	print( activity )
-	connection:hmset(key, 
-		'accountId', activity['accountId'],
-		'atype', activity['atype'],
-		'value', activity['value']
-		'expire', activity['expire']
-	)
-
-	--bgsave
-	if not activity.doNotSavebg then
-		sendBgevent("activity", uuid, "R")
-	end
-end
-
 function activity:del( uuid )
 	local connection, key = make_key( uuid )
 	connection:del( key )	
 
 	--bgsave
 	if not activity.doNotSavebg then
-		sendBgevent("activity", uuid, "R")
+		sendBgevent("activity", uuid, "D")
 	end
 end
 

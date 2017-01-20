@@ -41,14 +41,7 @@ function mails.add(who, mail)
 	for k, v in pairs(accounts) do
 		local connection, key = make_key(v)
 		connection:sadd(key, mail.uuid)
-		connection:hmset(mail.uuid,
-			'title', mail['title'],
-			'content', mail['content'],
-			'sender', mail['sender'],
-			'items', mail['items'],
-			'flag', mail['flag'],
-			'time', mail['time']
-		)
+		connection:hmset(mail.uuid, table.packdb(mail))
 		if string.len(mail.items) > 0 then
 			connection:expire(key, LONE_SAVE_TIME)
 			connection:expire(mail.uuid, LONE_SAVE_TIME)
@@ -69,17 +62,17 @@ function mails:del(account_id, uuid)
 	connection:del( uuid )		
 	
 	--bgsave
-	sendBgevent("mails", v, "D")
+	sendBgevent("mails", account_id, "R")
 end
 
 function mails.update(account_id, mail, ...)
 	local connection, key = make_key( account_id )
 	if connection:exists(mail.uuid) then
 		connection:hmset(mail.uuid, table.packdb(mail, ...))
-	end
-	--bgsave
-	if not mail.doNotSavebg then
-		sendBgevent("mails", account_id, "R")
+		--bgsave
+		if not mail.doNotSavebg then
+			sendBgevent("mails", account_id, "R")
+		end
 	end
 end
 

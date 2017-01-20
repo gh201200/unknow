@@ -24,22 +24,6 @@ function cooldown.load (name)
 	return unit
 end
 
-function cooldown.add(uuid, cooldown)
-	local connection, key = make_key( uuid )
-
-	connection:hmset(key, 
-		'accountId', cooldown['accountId'],
-		'atype', cooldown['atype'],
-		'value', cooldown['value']
-	)
-	
-	--bgsave
-	if not cooldown.doNotSavebg then
-		sendBgevent("cooldown", uuid, "R")
-	end
-	
-end
-
 function cooldown:del( uuid )
 	local connection, key = make_key( uuid )
 	connection:del( key )		

@@ -73,14 +73,26 @@ function account.create (account_id, password, nick, icon)
 	sendBgevent("account", account_id, "R")
 end
 
+--only for mysql
+function account.add(account)
+	local connection, key = make_key (account.uuid)
+	assert (connection:hsetnx (key, "account_id", account.uuid) ~= 0, "create account failed")
+	
+	local connset = connection_handler("accountlist")
+	connset:zadd("accountlist", account.expire, account.uuid)
+	
+	account.uuid = nil
+	account.expire = nil
+	
+	connection:hmset(key, table.packdb(account))
+end
+
 function account.update(account_id, account, ...)
 	local connection, key = make_key (account_id)
 	connection:hmset(key, table.packdb(account, ...))
 	
 	--bgsave
-	if not account.doNotSavebg then
-		sendBgevent("account", account_id, "R")
-	end
+	sendBgevent("account", account_id, "R")
 end
 
 function account.hincrby(account_id, field, inc)

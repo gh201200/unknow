@@ -75,7 +75,7 @@ local CardsMethod =
 		self:sendCardData( v )
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards", "addCard", self.account_id, v)
+		skynet.call (database, "lua", "cards", "update", self.account_id, v)
 	
 		--推进任务
 		agentPlayer.missions:AdvanceMission(Quest.MissionContent.GetCard)	

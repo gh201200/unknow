@@ -12,6 +12,7 @@ local dbcmd = { head = 1, tail = 1 }
 local savenum
 local savethread
 local opevent = {}
+local expiretime
 
 
 local function push(v)
@@ -19,7 +20,10 @@ local function push(v)
 	opevent[v.table..v.key] = v
 	dbcmd.tail = dbcmd.tail + 1
 
-	print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
+	if dbcmd.tail-dbcmd.head > 10000 then
+		print('队列大小 = '..dbcmd.tail-dbcmd.head)
+	end
+	--print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
 end
 
 local function pop()
@@ -36,7 +40,7 @@ local function pop()
 		dbcmd.tail = 1
 	end
 	
-	print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
+	--print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
 	return v
 end
 
@@ -56,18 +60,14 @@ local function formatsql( key, name, unit )
 	if name == "cards" or name == "skills" then
 		keys="blobdata"
 		values = "\'" .. serialize(unit) .. "\'"
-		print("blob =" .. values)
 	elseif name == "missions" or name == "fightrecords" then
 		local st = {}
 		for p, q in pairs(unit) do
 			table.insert(st ,load(q)())	--先反序列化
 		end
-		print(st)
 		keys="blobdata"
 		values = "\'" .. serialize(st) .. "\'"
-		print("blob =" .. values)
 	else
-		print(unit)
 		keys, values = table.packsql( unit )
 	end
 	return "replace into ".. tablename(name, key) .. " ( uuid,"..keys..") values('" .. key .."',".. values .. ")"
@@ -172,73 +172,105 @@ end
 
 
 local function loadAllAccount()
-	local res = db:query("select * from account where expire < "..(os.time()-config.mysql.expire))
+	local res = db:query("select * from account where expire < "..expiretime)
 	for k, v in pairs(res) do
-		local account_id = v.uuid
-		v.uuid = nil
-		v.doNotSavebg = 1
-		skynet.call(database, "lua", "account", "update", account_id, v)
+		skynet.call(database, "lua", "account", "add", v)
 	end
 end
 
 local function loadAllCards()
-	local sql = "select a.* from cards as a, account as b where a.uuid=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+	local sql = "select a.* from cards as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
-		print(v['blobdata'])
 		print(unit)
-		local account_id = v['uuid']
-		for p, q in pairs( unit ) do
-			q.doNotSavebg = 1
-			skynet.call(database, "lua", "cards", "addCard", account_id, q)
+		for p, q in pairs(unit) do
+			q.doNotSavebg = true
+			skynet.call(database, "lua", "cards", "update", unit.uuid, q)
 		end
 	end
 end
 
 local function loadAllSkills()
-	local sql = "select a.* from skills as a, account as b where a.uuid=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+	local sql = "select a.* from skills as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
-		print(v['blobdata'])
 		print(unit)
-		local account_id = v['uuid']
 		for p, q in pairs(unit) do
-			q.doNotSavebg = 1
-			skynet.call(database, "lua", "skills", "addSkill", account_id, q)
+			q.doNotSavebg = true
+			skynet.call(database, "lua", "skills", "update", unit.uuid, q)
 		end
 	end
 end
 
 local function loadAllExplore()
-	local sql = "select a.* from explore as a, account as b where a.uuid=b.uuid and b.expire < "..(os.time()-config.mysql.expire)
+	local sql = "select a.* from explore as a, account as b where a.uuid=b.uuid and b.expire < " ..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
-		local account_id = v.uuid
-		v.uuid = nil
-		v.doNotSavebg = 1
-		skynet.call(database, "lua", "explore", "update", account_id, v)
+		v.doNotSavebg = true
+		skynet.call(database, "lua", "explore", "update", v.uuid, v)
 	end
 end
 
 local function loadAllCooldown()
-	local res = db:query("select a.* from cooldown as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..(os.time()-config.mysql.expire)..")")
+	local res = db:query("select a.* from cooldown as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..expiretime..")")
 	for k, v in pairs(res) do
 		v.doNotSavebg = 1
-		skynet.call(database, "lua", "cooldown", "add", v.uuid, v)
+		skynet.call(database, "lua", "cooldown", "update", v.uuid, v)
 	end
 end
 
 local function loadAllActivity()
-	local res = db:query("select a.* from activity as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..(os.time()-config.mysql.expire)..")")
+	local res = db:query("select a.* from activity as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..expiretime..")")
 	for k, v in pairs(res) do
 		v.doNotSavebg = 1
-		skynet.call(database, "lua", "activity", "add", v.uuid, v)
+		skynet.call(database, "lua", "activity", "update", v.uuid, v)
 	end
+end
+
+local function loadAllMissions()
+	local sql = "select a.* from missions as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+
+	local res = db:query( sql )
+	for k, v in pairs(res) do
+		local unit = load(v['blobdata'])()
+		print(unit)
+		for p, q in pairs(unit) do
+			skynet.call(database, "lua", "skills", "update", q.uuid, q, true)
+		end
+	end
+end
+
+local function loadAllMails()
+	local sql = "select a.* from mails as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+
+	local res = db:query( sql )
+	for k, v in pairs(res) do
+		local unit = load(v['blobdata'])()
+		print(unit)
+		for p, q in pairs(unit) do
+			q.doNotSavebg = true
+			skynet.call(database, "lua", "mails", "add", {unit.uuid}, q)
+		end
+	end
+end
+
+local function loadAllFightrecords()
+	local sql = "select a.* from fightrecords as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+
+	local res = db:query( sql )
+	for k, v in pairs(res) do
+		local unit = load(v['blobdata'])()
+		print(unit)
+		for p, q in pairs(unit) do
+			skynet.call(database, "lua", "fightRecords", "add", {q.uuid}, q, true)
+		end
+	end
+
 end
 
 function CMD.loadAccountdata( account_id )
@@ -249,15 +281,18 @@ function CMD.loadAccountdata( account_id )
 end
 
 local function loadAllDatas()
-	--玩家数据
+	expiretime = os.time() - config.mysql.expire
+	
 	loadAllAccount()
 	loadAllCards()
 	loadAllSkills()
-	
-
-	--系统数据
+	loadAllExplore()
 	loadAllCooldown()
 	loadAllActivity()
+	loadAllMissions()
+	loadAllMails()
+	loadAllFightrecords()
+
 end
 
 -----------------------------------------------------------

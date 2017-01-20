@@ -38,7 +38,7 @@ local MissionsMethod =
 		self.units[_serId] =  v
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "missions", "add", self.account_id, v)
+		skynet.call (database, "lua", "missions", "update", self.account_id, v)
 	end;
 	--
 	updateMission = function(self, op, v)
@@ -56,7 +56,7 @@ local MissionsMethod =
 		self:sendMissionData( v )	
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "missions", "add", self.account_id, v)
+		skynet.call (database, "lua", "missions", "update", self.account_id, v)
 	end;
 	--
 	getDailyMission = function(self)
@@ -75,7 +75,7 @@ local MissionsMethod =
 		v.progress = 0
 		
 		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "missions", "add", self.account_id, v)
+		skynet.call (database, "lua", "missions", "update", self.account_id, v)
 	end;
 	--
 	isDailyMission = function( _serId )
