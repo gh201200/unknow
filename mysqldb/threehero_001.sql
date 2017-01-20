@@ -45,7 +45,7 @@ create table cooldown(uuid varchar(50) primary key,
 	value int not null,
 	index cd_accountid(accountId));
 desc cooldown;
-select "创建活动表";
+select "创建activity表";
 create table activity(uuid varchar(50) primary key,
 	accountId varchar(50) not null,
 	atype int not null,
@@ -53,6 +53,18 @@ create table activity(uuid varchar(50) primary key,
 	expire int not null,
 	index activity_accountid(accountId));
 desc activity;
+select "创建mission表";
+create table missions(uuid varchar(50) primary key,
+	 blobdata text not null);
+desc missions;
+select "创建mail表";
+create table mails(uuid varchar(50) primary key,
+	 blobdata text not null);
+desc mails;
+select "创建fight record表";
+create table fightrecords(uuid varchar(50) primary key,
+	 blobdata text not null);
+desc fightrecords;
 select "                      ";
 select "数据库创建完成";
 show tables;

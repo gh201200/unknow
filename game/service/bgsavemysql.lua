@@ -57,6 +57,15 @@ local function formatsql( key, name, unit )
 		keys="blobdata"
 		values = "\'" .. serialize(unit) .. "\'"
 		print("blob =" .. values)
+	elseif name == "missions" or name == "fightrecords" then
+		local st = {}
+		for p, q in pairs(unit) do
+			table.insert(st ,load(q)())	--先反序列化
+		end
+		print(st)
+		keys="blobdata"
+		values = "\'" .. serialize(st) .. "\'"
+		print("blob =" .. values)
 	else
 		print(unit)
 		keys, values = table.packsql( unit )

@@ -56,20 +56,30 @@ function mails.add(who, mail)
 			connection:expire(key, SHORT_SAVE_TIME)
 			connection:expire(mail, SHORT_SAVE_TIME)
 		end
+		--bgsave
+		if not mail.doNotSavebg then
+			sendBgevent("mails", v, "R")
+		end
 	end
 end
 
-function mails:del( account_id, uuid )
+function mails:del(account_id, uuid)
 	local connection, key = make_key( account_id )
 	connection:srem(key, uuid)
 	connection:del( uuid )		
 	
+	--bgsave
+	sendBgevent("mails", v, "D")
 end
 
 function mails.update(account_id, mail, ...)
 	local connection, key = make_key( account_id )
 	if connection:exists(mail.uuid) then
 		connection:hmset(mail.uuid, table.packdb(mail, ...))
+	end
+	--bgsave
+	if not mail.doNotSavebg then
+		sendBgevent("mails", account_id, "R")
 	end
 end
 

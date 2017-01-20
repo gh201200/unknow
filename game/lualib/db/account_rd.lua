@@ -30,6 +30,7 @@ function account.load (account_id, ...)
 			acc.icon = connection:hget (key, "icon")
 			acc.flag = tonumber(connection:hget (key, "flag"))
 			acc.version = connection:hget (key, "version")
+			acc.expire = tonumber(connset:zscore("accountlist", account_id))
 		else
 			acc = connection:hmget(key, ...)
 		end

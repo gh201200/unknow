@@ -72,9 +72,6 @@ function response.addValue(op, name, atype, val, expire)
 		units[uid] = create_activity(name, atype, val, expire)
 		skynet.call (database, "lua", "activity", "update", uid, units[uid])
 	end
-
-	--log record
-	syslog.infof("op[%s]player[%s]:addValue:%d,%d", op, name, atype, val)
 	
 	return units[uid].value
 end
@@ -93,9 +90,6 @@ function response.setValue(op, name, atype, val, expire)
 		units[uid] = create_activity(name, atype, val, expire)
 		skynet.call (database, "lua", "activity", "update", uid, units[uid])
 	end
-
-	--log record
-	syslog.infof("op[%s]player[%s]:setValue:%d,%d", op, name, atype, val)
 	
 	return units[uid].value
 end
@@ -123,9 +117,6 @@ function accept.resetAccountValue(op, types, expire )
 			end
 		end
 	end
-	
-	--log record
-	syslog.infof("op[%s]player[%s]:resetAccountValue:%d", op, 'system', types[1])
 end
 
 
