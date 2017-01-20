@@ -95,6 +95,7 @@ function REQUEST.buyShopItem( args )
 	local cooldown = snax.queryservice 'cddown'
 	local costPrice = 0
 	print( args )
+	print(shopDat)
 	repeat
 		if not shopDat then
 			errorCode = -1

@@ -105,6 +105,90 @@
 		<n32MaxNum>1</n32MaxNum>
 		<szInfo>英雄碎片包</szInfo>
 	</item>
+	<item id="11002">
+		<n32DropId>2002</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*2</szInfo>
+	</item>
+	<item id="11003">
+		<n32DropId>2003</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*4</szInfo>
+	</item>
+	<item id="11004">
+		<n32DropId>2004</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*8</szInfo>
+	</item>
+	<item id="11005">
+		<n32DropId>2005</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*16</szInfo>
+	</item>
+	<item id="11006">
+		<n32DropId>2006</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*32</szInfo>
+	</item>
+	<item id="11012">
+		<n32DropId>2102</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*10</szInfo>
+	</item>
+	<item id="11013">
+		<n32DropId>2103</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*20</szInfo>
+	</item>
+	<item id="11014">
+		<n32DropId>2104</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*40</szInfo>
+	</item>
+	<item id="11015">
+		<n32DropId>2105</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*80</szInfo>
+	</item>
+	<item id="11016">
+		<n32DropId>2106</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>英雄碎片包*160</szInfo>
+	</item>
+	<item id="20004">
+		<n32DropId>2011</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一阶一星技能包</szInfo>
+	</item>
+	<item id="20005">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一阶二星技能包</szInfo>
+	</item>
 	<item id="20001">
 		<n32DropId>2011</n32DropId>
 		<n32Rate>1000</n32Rate>
@@ -126,26 +210,453 @@
 		<n32MaxNum>1</n32MaxNum>
 		<szInfo>普通技能包</szInfo>
 	</item>
-	<item id="20011">
+	<item id="20002">
 		<n32DropId>2012</n32DropId>
 		<n32Rate>100</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 		<szInfo>二星技能包</szInfo>
 	</item>
-	<item id="20011">
+	<item id="20002">
 		<n32DropId>2013</n32DropId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 		<szInfo>二星技能包</szInfo>
 	</item>
-	<item id="20021">
+	<item id="20003">
 		<n32DropId>2013</n32DropId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 		<szInfo>三星技能包</szInfo>
+	</item>
+	<item id="20101">
+		<n32DropId>2011</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*1</szInfo>
+	</item>
+	<item id="20102">
+		<n32DropId>2021</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*2</szInfo>
+	</item>
+	<item id="20103">
+		<n32DropId>2031</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*4</szInfo>
+	</item>
+	<item id="20104">
+		<n32DropId>2041</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*8</szInfo>
+	</item>
+	<item id="20105">
+		<n32DropId>2051</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*16</szInfo>
+	</item>
+	<item id="20106">
+		<n32DropId>2061</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*32</szInfo>
+	</item>
+	<item id="20107">
+		<n32DropId>2071</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*64</szInfo>
+	</item>
+	<item id="20108">
+		<n32DropId>2081</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*128</szInfo>
+	</item>
+	<item id="20109">
+		<n32DropId>2091</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*256</szInfo>
+	</item>
+	<item id="20201">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*1</szInfo>
+	</item>
+	<item id="20202">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20203">
+		<n32DropId>2032</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*4</szInfo>
+	</item>
+	<item id="20204">
+		<n32DropId>2042</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*8</szInfo>
+	</item>
+	<item id="20205">
+		<n32DropId>2052</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*16</szInfo>
+	</item>
+	<item id="20206">
+		<n32DropId>2062</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*32</szInfo>
+	</item>
+	<item id="20207">
+		<n32DropId>2072</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*64</szInfo>
+	</item>
+	<item id="20211">
+		<n32DropId>2011</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*1</szInfo>
+	</item>
+	<item id="20211">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*1</szInfo>
+	</item>
+	<item id="20212">
+		<n32DropId>2021</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*2</szInfo>
+	</item>
+	<item id="20212">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20213">
+		<n32DropId>2031</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*4</szInfo>
+	</item>
+	<item id="20213">
+		<n32DropId>2032</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*4</szInfo>
+	</item>
+	<item id="20214">
+		<n32DropId>2041</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*8</szInfo>
+	</item>
+	<item id="20214">
+		<n32DropId>2042</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*8</szInfo>
+	</item>
+	<item id="20215">
+		<n32DropId>2051</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*16</szInfo>
+	</item>
+	<item id="20215">
+		<n32DropId>2052</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*16</szInfo>
+	</item>
+	<item id="20216">
+		<n32DropId>2061</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*32</szInfo>
+	</item>
+	<item id="20216">
+		<n32DropId>2062</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*32</szInfo>
+	</item>
+	<item id="20217">
+		<n32DropId>2071</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>一星技能*64</szInfo>
+	</item>
+	<item id="20217">
+		<n32DropId>2072</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*64</szInfo>
+	</item>
+	<item id="20301">
+		<n32DropId>2013</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*1</szInfo>
+	</item>
+	<item id="20302">
+		<n32DropId>2023</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*2</szInfo>
+	</item>
+	<item id="20303">
+		<n32DropId>2033</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*4</szInfo>
+	</item>
+	<item id="20304">
+		<n32DropId>2043</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*8</szInfo>
+	</item>
+	<item id="20305">
+		<n32DropId>2053</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*16</szInfo>
+	</item>
+	<item id="20306">
+		<n32DropId>2063</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*32</szInfo>
+	</item>
+	<item id="20307">
+		<n32DropId>2073</n32DropId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*64</szInfo>
+	</item>
+	<item id="20311">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>46</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*1</szInfo>
+	</item>
+	<item id="20311">
+		<n32DropId>2013</n32DropId>
+		<n32Rate>54</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*1</szInfo>
+	</item>
+	<item id="20312">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>46</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20312">
+		<n32DropId>2023</n32DropId>
+		<n32Rate>54</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*2</szInfo>
+	</item>
+	<item id="20313">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>40</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*1</szInfo>
+	</item>
+	<item id="20313">
+		<n32DropId>2013</n32DropId>
+		<n32Rate>60</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*1</szInfo>
+	</item>
+	<item id="20314">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>40</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20314">
+		<n32DropId>2023</n32DropId>
+		<n32Rate>60</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*2</szInfo>
+	</item>
+	<item id="20315">
+		<n32DropId>2012</n32DropId>
+		<n32Rate>66</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*1</szInfo>
+	</item>
+	<item id="20315">
+		<n32DropId>2013</n32DropId>
+		<n32Rate>34</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*1</szInfo>
+	</item>
+	<item id="20316">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>66</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20316">
+		<n32DropId>2023</n32DropId>
+		<n32Rate>34</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*2</szInfo>
+	</item>
+	<item id="20317">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>66</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20317">
+		<n32DropId>2023</n32DropId>
+		<n32Rate>34</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*2</szInfo>
+	</item>
+	<item id="20318">
+		<n32DropId>2032</n32DropId>
+		<n32Rate>66</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*4</szInfo>
+	</item>
+	<item id="20318">
+		<n32DropId>2033</n32DropId>
+		<n32Rate>34</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*4</szInfo>
+	</item>
+	<item id="20319">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>55</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20319">
+		<n32DropId>2023</n32DropId>
+		<n32Rate>45</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*2</szInfo>
+	</item>
+	<item id="20320">
+		<n32DropId>2032</n32DropId>
+		<n32Rate>55</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*4</szInfo>
+	</item>
+	<item id="20320">
+		<n32DropId>2033</n32DropId>
+		<n32Rate>45</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*4</szInfo>
+	</item>
+	<item id="20321">
+		<n32DropId>2022</n32DropId>
+		<n32Rate>49</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*2</szInfo>
+	</item>
+	<item id="20321">
+		<n32DropId>2023</n32DropId>
+		<n32Rate>51</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*2</szInfo>
+	</item>
+	<item id="20322">
+		<n32DropId>2032</n32DropId>
+		<n32Rate>49</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>二星技能*4</szInfo>
+	</item>
+	<item id="20322">
+		<n32DropId>2033</n32DropId>
+		<n32Rate>51</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<szInfo>三星技能*4</szInfo>
 	</item>
 	<item id="30001">
 		<n32DropId>3001</n32DropId>
