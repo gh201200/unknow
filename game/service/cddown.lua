@@ -63,12 +63,12 @@ local function setTime(name, atype, time)
 	if not units[uid] then
 		-- not exist
 		units[uid] = create_cd(name, atype, now + time)
-		skynet.call(database, "lua", "cooldown", "update", units[uid])
+		skynet.call(database, "lua", "cooldown", "update", uid, units[uid])
 	else
 		-- exist
 		if units[uid].value < now + time then
 			units[uid].value = now + time
-			skynet.call(database, "lua", "cooldown", "update", units[uid], 'value')
+			skynet.call(database, "lua", "cooldown", "update", uid, units[uid], 'value')
 		end
 	end
 end

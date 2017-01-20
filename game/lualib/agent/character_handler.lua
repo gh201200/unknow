@@ -264,7 +264,7 @@ function REQUEST.getCardsDatas()
 end
 
 function REQUEST.requestFightRecords()
-	local str = skynet.call(database, "lua", "fightRecords", "load",user.account.account_id)	
+	local str = skynet.call(database, "lua", "fightrecords", "load",user.account.account_id)	
 	return {records = str}
 end
 

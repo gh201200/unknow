@@ -278,7 +278,7 @@ function BattleOverManager:recordResult(winflag)
 			table.insert(accounts,v.account_id)
 		end
 	end			
-	skynet.call(database, "lua", "fightRecords", "add", accounts,tb)
+	skynet.call(database, "lua", "fightrecords", "add", accounts,tb)
 end
 function BattleOverManager:closeRoom()
  	print("close room")

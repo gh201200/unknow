@@ -61,37 +61,37 @@ local function firstRegister(account_id)
 	--添加默认赠送卡牌数据
 	for k, v in pairs(Quest.AutoGainCards) do
 		local card = CardsMethod.initCard( v )
-		skynet.call(database, "lua", "cards", "addCard", account_id, card)
+		skynet.call(database, "lua", "cards", "update", account_id, card)
 	end
 	--添加默认赠送技能数据
 	for k, v in pairs(Quest.AutoGainSkills) do 
 		local skill = SkillsMethod.initSkill( v )
-		skynet.call(database, "lua", "skills", "addSkill", account_id, skill)
+		skynet.call(database, "lua", "skills", "update", account_id, skill)
 	end
 	--添加商城特惠数据
 	for k, v in pairs(g_shareData.shopRepository) do
 		if v.n32Type == 5 then
 			if v.n32ArenaLvUpLimit == 1 then
 				local cd = {accountId=account_id, atype=CoolDownAccountType.TimeLimitSale, value=v.n32Limit}
-				skynet.call(database, "lua", "cooldown", "add", cd)
+				skynet.call(database, "lua", "cooldown", "update", cd.accountId..'$'..cd.atype, cd)
                         	break
                         end
                  end
         end
 	--添加任务数据
 	local mission = MissionsMethod.initMission( Quest.DailyMissionId )
-	skynet.call(database, "lua", "missions", "add", account_id, mission)
+	skynet.call(database, "lua", "missions", "update", account_id, mission)
 	for i=Quest.AchivementsId[1], Quest.AchivementsId[2] do
 		local id = Macro_GetMissionDataId( i, 1 )
 		local mission = MissionsMethod.initMission( id )
 		mission.flag = id
-		skynet.call(database, "lua", "missions", "add", account_id, mission)
+		skynet.call(database, "lua", "missions", "update", account_id, mission)
 	end
 	for i=Quest.AchivementsId[3], Quest.AchivementsId[4] do
 		local id = Macro_GetMissionDataId( i, 1 )
 		local mission = MissionsMethod.initMission( id )
 		mission.flag = id
-		skynet.call(database, "lua", "missions", "add", account_id, mission)
+		skynet.call(database, "lua", "missions", "update", account_id, mission)
 	end
 end
 

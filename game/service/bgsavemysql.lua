@@ -57,12 +57,13 @@ end
 
 local function formatsql( key, name, unit )
 	local keys, values
-	if name == "cards" or name == "skills" then
+	if name == "cards" or name == "skills" or name == "missions" then
 		keys="blobdata"
 		values = "\'" .. serialize(unit) .. "\'"
-	elseif name == "missions" or name == "fightrecords" then
+	elseif name == "fightrecords" then
 		local st = {}
 		for p, q in pairs(unit) do
+			print(q)
 			table.insert(st ,load(q)())	--先反序列化
 		end
 		keys="blobdata"
@@ -267,7 +268,7 @@ local function loadAllFightrecords()
 		local unit = load(v['blobdata'])()
 		print(unit)
 		for p, q in pairs(unit) do
-			skynet.call(database, "lua", "fightRecords", "add", {q.uuid}, q, true)
+			skynet.call(database, "lua", "fightrecords", "add", {q.uuid}, q, true)
 		end
 	end
 

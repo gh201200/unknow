@@ -8,7 +8,7 @@ function fightRecords.init(ch)
 end
 
 local function make_key(name)
-	return connection_handler (name), string.format ("fightRecord:%s", name)
+	return connection_handler (name), string.format ("fightrecord:%s", name)
 end
 
 function fightRecords.load(account_id)

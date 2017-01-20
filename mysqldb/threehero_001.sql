@@ -10,11 +10,13 @@ create table account(uuid varchar(50) primary key,
 	password varchar(50) not null, 
 	gold int not null, 
 	money int not null, 
+	star int not null, 
 	exp int not null, 
+	topexp int not null, 
 	icon varchar(50) not null,
 	flag int  not null, 
 	expire int not null,
-	version int not null);
+	version varchar(50) not null);
 desc account;
 select "创建cards表";
 create table cards(uuid varchar(50) primary key,

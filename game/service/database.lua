@@ -68,7 +68,7 @@ skynet.start (function ()
 	module_init ("skills", skills)
 	module_init ("missions", missions)
 	module_init ("mails", mails)
-	module_init ("fightRecords",fightRecords)
+	module_init ("fightrecords",fightRecords)
 	
 	center = redis.connect (config.center)
 	ngroup = #config.group
@@ -84,7 +84,8 @@ skynet.start (function ()
 		end
 		local f = m[cmd]
 		if not f then
-			skynet.error("cmd is nil: " .. cmd)
+			print(m)
+			skynet.error("mod "..mod.." ".."cmd is nil: "..cmd)
 			return skynet.ret ()
 		end
 		
