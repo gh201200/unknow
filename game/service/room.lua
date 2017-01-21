@@ -146,11 +146,13 @@ function CMD.lockTarget(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local serverid = args.serverid
 	local target = EntityManager:getEntity(serverid)
-	if player.ReadySkillId == 0 then
-		--默认设置普攻
-		player.ReadySkillId = player:getCommonSkill()
+	if target.entityType ~= EntityType.trap then
+		if player.ReadySkillId == 0 then
+			--默认设置普攻
+			player.ReadySkillId = player:getCommonSkill()
+		end
+		player:setTarget(target)
 	end
-	player:setTarget(target)
 	response(true, nil)
 end
 

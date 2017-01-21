@@ -302,7 +302,7 @@ function Ientity:update(dt)
 		self:advanceEventStamp(EventStampType.Stats)
 		self.StatsChange = false
 	end
-	if self.entityType ~= EntityType.building then
+	if self.entityType ~= EntityType.building and self.entityType ~= EntityType.trap then
 		if self.curActionState == ActionState.move then
 			self:onMove2(dt)
 		elseif self.curActionState == ActionState.stand then

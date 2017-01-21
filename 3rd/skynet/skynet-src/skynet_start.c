@@ -106,7 +106,7 @@ thread_monitor(void *p) {
 			sleep(1);
 		}
 	}
-
+	
 	return NULL;
 }
 

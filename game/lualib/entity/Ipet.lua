@@ -20,6 +20,9 @@ function IPet:init(pt,master)
 		self.pt.n32CommonSkill = master.attDat.n32CommonSkillId 
 		self.pt.modolId = master.modelDat.id
 	end
+	if pt.n32Type == 4 then
+		self.entityType = EntityType.trap
+	end
 	self.ai = PetAI.new(self,master)
 	self.camp =  master.camp
 	self.lifeTime = 0
@@ -130,7 +133,6 @@ function IPet:onDead()
 		end
 	end
 	self.coroutine_response = {}
-
 	--reset map
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 end
