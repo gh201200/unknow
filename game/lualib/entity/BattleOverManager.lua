@@ -24,7 +24,7 @@ end
 function BattleOverManager:init( mapDat )
 	database = skynet.uniqueservice("database")
 	self.MapDat = mapDat
-	self.RestTime = 10 * 1000--self.MapDat.n32Time * 1000
+	self.RestTime = self.MapDat.n32Time * 1000
 end
 
 function BattleOverManager:update( dt )
