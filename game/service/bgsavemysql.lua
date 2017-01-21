@@ -23,7 +23,7 @@ local function push(v)
 	if dbcmd.tail-dbcmd.head > 10000 then
 		print('队列大小 = '..dbcmd.tail-dbcmd.head)
 	end
-	--print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
+	print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
 end
 
 local function pop()
@@ -40,7 +40,7 @@ local function pop()
 		dbcmd.tail = 1
 	end
 	
-	--print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
+	print('队列大小 = ' .. (dbcmd.tail-dbcmd.head))
 	return v
 end
 
@@ -55,15 +55,20 @@ local function tablename( name, key )
 	return name
 end
 
+local serialize_one = {
+	cards = true,
+	skills = true,
+	missions = true,
+	mails = true,
+}
 local function formatsql( key, name, unit )
 	local keys, values
-	if name == "cards" or name == "skills" or name == "missions" then
+	if serialize_one[name] then
 		keys="blobdata"
 		values = "\'" .. serialize(unit) .. "\'"
 	elseif name == "fightrecords" then
 		local st = {}
 		for p, q in pairs(unit) do
-			print(q)
 			table.insert(st ,load(q)())	--先反序列化
 		end
 		keys="blobdata"
@@ -173,42 +178,40 @@ end
 
 
 local function loadAllAccount()
-	local res = db:query("select * from account where expire < "..expiretime)
+	local res = db:query("select * from account where expire > "..expiretime)
 	for k, v in pairs(res) do
 		skynet.call(database, "lua", "account", "add", v)
 	end
 end
 
 local function loadAllCards()
-	local sql = "select a.* from cards as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+	local sql = "select a.* from cards as a, account as b where a.uuid=b.uuid and b.expire > "..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
-		print(unit)
 		for p, q in pairs(unit) do
 			q.doNotSavebg = true
-			skynet.call(database, "lua", "cards", "update", unit.uuid, q)
+			skynet.call(database, "lua", "cards", "update", v.uuid, q)
 		end
 	end
 end
 
 local function loadAllSkills()
-	local sql = "select a.* from skills as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+	local sql = "select a.* from skills as a, account as b where a.uuid=b.uuid and b.expire > "..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
-		print(unit)
 		for p, q in pairs(unit) do
 			q.doNotSavebg = true
-			skynet.call(database, "lua", "skills", "update", unit.uuid, q)
+			skynet.call(database, "lua", "skills", "update", v.uuid, q)
 		end
 	end
 end
 
 local function loadAllExplore()
-	local sql = "select a.* from explore as a, account as b where a.uuid=b.uuid and b.expire < " ..expiretime
+	local sql = "select a.* from explore as a, account as b where a.uuid=b.uuid and b.expire > " ..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
@@ -218,7 +221,7 @@ local function loadAllExplore()
 end
 
 local function loadAllCooldown()
-	local res = db:query("select a.* from cooldown as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..expiretime..")")
+	local res = db:query("select a.* from cooldown as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire > "..expiretime..")")
 	for k, v in pairs(res) do
 		v.doNotSavebg = 1
 		skynet.call(database, "lua", "cooldown", "update", v.uuid, v)
@@ -226,7 +229,7 @@ local function loadAllCooldown()
 end
 
 local function loadAllActivity()
-	local res = db:query("select a.* from activity as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire < "..expiretime..")")
+	local res = db:query("select a.* from activity as a, account as b where a.accountId=\'system\' or" .." (a.accountId=b.uuid and b.expire > "..expiretime..")")
 	for k, v in pairs(res) do
 		v.doNotSavebg = 1
 		skynet.call(database, "lua", "activity", "update", v.uuid, v)
@@ -234,39 +237,36 @@ local function loadAllActivity()
 end
 
 local function loadAllMissions()
-	local sql = "select a.* from missions as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+	local sql = "select a.* from missions as a, account as b where a.uuid=b.uuid and b.expire > "..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
-		print(unit)
 		for p, q in pairs(unit) do
-			skynet.call(database, "lua", "skills", "update", q.uuid, q, true)
+			skynet.call(database, "lua", "missions", "update", v.uuid, q, true)
 		end
 	end
 end
 
 local function loadAllMails()
-	local sql = "select a.* from mails as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+	local sql = "select a.* from mails as a, account as b where a.uuid=b.uuid and b.expire > "..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
-		print(unit)
 		for p, q in pairs(unit) do
 			q.doNotSavebg = true
-			skynet.call(database, "lua", "mails", "add", {unit.uuid}, q)
+			skynet.call(database, "lua", "mails", "add", {v.uuid}, q)
 		end
 	end
 end
 
 local function loadAllFightrecords()
-	local sql = "select a.* from fightrecords as a, account as b where a.uuid=b.uuid and b.expire < "..expiretime
+	local sql = "select a.* from fightrecords as a, account as b where a.uuid=b.uuid and b.expire > "..expiretime
 
 	local res = db:query( sql )
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
-		print(unit)
 		for p, q in pairs(unit) do
 			skynet.call(database, "lua", "fightrecords", "add", {q.uuid}, q, true)
 		end

@@ -2,7 +2,9 @@ show databases;
 drop database if exists threehero;
 
 select "创建数据库 threehero";
-create database threehero;
+create database threehero
+	default character set utf8
+	default collate utf8_general_ci;
 use threehero;
 select "创建account表";
 create table account(uuid varchar(50) primary key,

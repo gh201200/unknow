@@ -28,7 +28,7 @@ function uuid.gen ()
 	sequence = sequence + 1
 	assert (sequence < 1024)
 
-	return tostring((timestamp | sequence))
+	return tostring('u'..(timestamp | sequence))
 end
 
 function uuid.split (id)
