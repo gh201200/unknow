@@ -121,9 +121,9 @@ local function RefreshShopCard()
 	activity.req.setValue('RefreshShopCard', 'system', ActivitySysType.ShopCardId3, st3[idx])
 
 	local types = {
+		ActivityAccountType.BuyShopCard0,
 		ActivityAccountType.BuyShopCard1,
 		ActivityAccountType.BuyShopCard2,
-		ActivityAccountType.BuyShopCard3,
 	}
 	local uid = calcUid('system', CoolDownSysType.RefreshShopCard)
 	activity.post.resetAccountValue('RefreshShopCard', types, units[uid].value)

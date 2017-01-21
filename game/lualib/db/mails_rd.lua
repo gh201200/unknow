@@ -32,22 +32,26 @@ end
 
 function mails.add(who, mail)
 	local accounts
+	local conn = connection_handler("accountlist")
 	if #who == 0 then
-		local conn = connection_handler("accountlist")
 		accounts = conn:zrange("accountlist", 0, -1)
 	else
 		accounts = who
 	end
 	for k, v in pairs(accounts) do
 		local connection, key = make_key(v)
+		if not conn:zscore("accountlist", v) then
+			print("send mail,but account not exist:"..v)
+			return
+		end
 		connection:sadd(key, mail.uuid)
 		connection:hmset(mail.uuid, table.packdb(mail))
 		if string.len(mail.items) > 0 then
-			connection:expire(key, LONE_SAVE_TIME)
-			connection:expire(mail.uuid, LONE_SAVE_TIME)
+			connection:expire(key, LONG_SAVE_TIME)
+			connection:expire(mail.uuid, LONG_SAVE_TIME)
 		else
 			connection:expire(key, SHORT_SAVE_TIME)
-			connection:expire(mail, SHORT_SAVE_TIME)
+			connection:expire(mail.uuid, SHORT_SAVE_TIME)
 		end
 		--bgsave
 		if not mail.doNotSavebg then
