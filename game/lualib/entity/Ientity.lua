@@ -86,6 +86,7 @@ function Ientity:ctor(pos,dir)
 	self.affectState = 0
 	self.triggerCast = true	 --是否触发技能
 	self.targetPos = nil
+	self.attackNum = 0
 	--stats about
 	register_stats(self, 'Strength')
 	register_stats(self, 'StrengthPc')
@@ -1115,13 +1116,13 @@ function Ientity:castSkill()
 	local skillTimes = {}
 	local action = ""
 	if skilldata.n32ActionType == 1 then
-		action = "Attack"
-	elseif skilldata.n32ActionType == 2 then
-		action = "Skill1"
-	elseif skilldata.n32ActionType == 3 then
-		action = "Skill2"
-	elseif skilldata.n32ActionType == 4 then
-		action = "Skill3"
+		if (self.attackNum % 2)  == 0 then
+			action = "Attack01"
+		else
+			action = "Attack02"
+		end
+	else
+		action = skilldata.szAction
 	end
 	skillTimes[1] 	= modoldata["n32" .. action  .. "Time1"] or 0  
 	skillTimes[2] 	= modoldata["n32" .. action .. "Time2"] or  0 

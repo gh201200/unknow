@@ -727,8 +727,9 @@ CastingSkill 3001 {
 		skillId 1 : integer
 		state	2 : integer
 		actionTime 3 : integer
-		targetId 4 : integer
-		targetPos 5 : Vector3 
+		attackNum 4 : integer
+		targetId 5 : integer
+		targetPos 6 : Vector3 
 	}
 }
 

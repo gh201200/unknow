@@ -8,11 +8,11 @@
 		<n32Attack01Time1>260</n32Attack01Time1>
 		<n32Attack01Time2>420</n32Attack01Time2>
 		<n32Attack01Time3>1020</n32Attack01Time3>
-		<n32Attack02TriTime>300</n32Attack02TriTime>
+		<n32Attack01TriTime>300</n32Attack01TriTime>
 		<n32Attack02Time1>272</n32Attack02Time1>
 		<n32Attack02Time2>357</n32Attack02Time2>
-		<n32Attack2Time3>1071</n32Attack2Time3>
-		<n32Attack2TriTime>340</n32Attack2TriTime>
+		<n32Attack02Time3>1071</n32Attack02Time3>
+		<n32Attack02TriTime>340</n32Attack02TriTime>
 		<n32CastSelfTime1>137</n32CastSelfTime1>
 		<n32CastSelfTime2>630</n32CastSelfTime2>
 		<n32CastSelfTriTime>207</n32CastSelfTriTime>
@@ -43,11 +43,11 @@
 		<n32Attack01Time1>323</n32Attack01Time1>
 		<n32Attack01Time2>267</n32Attack01Time2>
 		<n32Attack01Time3>1110</n32Attack01Time3>
-		<n32Attack02TriTime>382</n32Attack02TriTime>
+		<n32Attack01TriTime>382</n32Attack01TriTime>
 		<n32Attack02Time1>187</n32Attack02Time1>
 		<n32Attack02Time2>425</n32Attack02Time2>
-		<n32Attack2Time3>1088</n32Attack2Time3>
-		<n32Attack2TriTime>238</n32Attack2TriTime>
+		<n32Attack02Time3>1088</n32Attack02Time3>
+		<n32Attack02TriTime>238</n32Attack02TriTime>
 		<n32CastSelfTime1>205</n32CastSelfTime1>
 		<n32CastSelfTime2>728</n32CastSelfTime2>
 		<n32CastSelfTriTime>317</n32CastSelfTriTime>
@@ -78,11 +78,11 @@
 		<n32Attack01Time1>209</n32Attack01Time1>
 		<n32Attack01Time2>383</n32Attack01Time2>
 		<n32Attack01Time3>341</n32Attack01Time3>
-		<n32Attack02TriTime>373</n32Attack02TriTime>
+		<n32Attack01TriTime>373</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -113,11 +113,11 @@
 		<n32Attack01Time1>213</n32Attack01Time1>
 		<n32Attack01Time2>603</n32Attack01Time2>
 		<n32Attack01Time3>116</n32Attack01Time3>
-		<n32Attack02TriTime>543</n32Attack02TriTime>
+		<n32Attack01TriTime>543</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -148,11 +148,11 @@
 		<n32Attack01Time1>267</n32Attack01Time1>
 		<n32Attack01Time2>345</n32Attack01Time2>
 		<n32Attack01Time3>1088</n32Attack01Time3>
-		<n32Attack02TriTime>314</n32Attack02TriTime>
+		<n32Attack01TriTime>314</n32Attack01TriTime>
 		<n32Attack02Time1>204</n32Attack02Time1>
 		<n32Attack02Time2>306</n32Attack02Time2>
-		<n32Attack2Time3>1190</n32Attack2Time3>
-		<n32Attack2TriTime>357</n32Attack2TriTime>
+		<n32Attack02Time3>1190</n32Attack02Time3>
+		<n32Attack02TriTime>357</n32Attack02TriTime>
 		<n32CastSelfTime1>261</n32CastSelfTime1>
 		<n32CastSelfTime2>672</n32CastSelfTime2>
 		<n32CastSelfTriTime>467</n32CastSelfTriTime>
@@ -183,11 +183,11 @@
 		<n32Attack01Time1>272</n32Attack01Time1>
 		<n32Attack01Time2>238</n32Attack01Time2>
 		<n32Attack01Time3>1190</n32Attack01Time3>
-		<n32Attack02TriTime>340</n32Attack02TriTime>
+		<n32Attack01TriTime>340</n32Attack01TriTime>
 		<n32Attack02Time1>204</n32Attack02Time1>
 		<n32Attack02Time2>306</n32Attack02Time2>
-		<n32Attack2Time3>1190</n32Attack2Time3>
-		<n32Attack2TriTime>255</n32Attack2TriTime>
+		<n32Attack02Time3>1190</n32Attack02Time3>
+		<n32Attack02TriTime>255</n32Attack02TriTime>
 		<n32CastSelfTime1>247</n32CastSelfTime1>
 		<n32CastSelfTime2>986</n32CastSelfTime2>
 		<n32CastSelfTriTime>481</n32CastSelfTriTime>
@@ -218,11 +218,11 @@
 		<n32Attack01Time1>0</n32Attack01Time1>
 		<n32Attack01Time2>0</n32Attack01Time2>
 		<n32Attack01Time3>0</n32Attack01Time3>
-		<n32Attack02TriTime>0</n32Attack02TriTime>
+		<n32Attack01TriTime>0</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -253,11 +253,11 @@
 		<n32Attack01Time1>469</n32Attack01Time1>
 		<n32Attack01Time2>398</n32Attack01Time2>
 		<n32Attack01Time3>833</n32Attack01Time3>
-		<n32Attack02TriTime>850</n32Attack02TriTime>
+		<n32Attack01TriTime>850</n32Attack01TriTime>
 		<n32Attack02Time1>469</n32Attack02Time1>
 		<n32Attack02Time2>398</n32Attack02Time2>
-		<n32Attack2Time3>833</n32Attack2Time3>
-		<n32Attack2TriTime>850</n32Attack2TriTime>
+		<n32Attack02Time3>833</n32Attack02Time3>
+		<n32Attack02TriTime>850</n32Attack02TriTime>
 		<n32CastSelfTime1>469</n32CastSelfTime1>
 		<n32CastSelfTime2>1231</n32CastSelfTime2>
 		<n32CastSelfTriTime>469</n32CastSelfTriTime>
@@ -288,11 +288,11 @@
 		<n32Attack01Time1>340</n32Attack01Time1>
 		<n32Attack01Time2>471</n32Attack01Time2>
 		<n32Attack01Time3>889</n32Attack01Time3>
-		<n32Attack02TriTime>510</n32Attack02TriTime>
+		<n32Attack01TriTime>510</n32Attack01TriTime>
 		<n32Attack02Time1>340</n32Attack02Time1>
 		<n32Attack02Time2>510</n32Attack02Time2>
-		<n32Attack2Time3>850</n32Attack2Time3>
-		<n32Attack2TriTime>510</n32Attack2TriTime>
+		<n32Attack02Time3>850</n32Attack02Time3>
+		<n32Attack02TriTime>510</n32Attack02TriTime>
 		<n32CastSelfTime1>247</n32CastSelfTime1>
 		<n32CastSelfTime2>986</n32CastSelfTime2>
 		<n32CastSelfTriTime>370</n32CastSelfTriTime>
@@ -323,11 +323,11 @@
 		<n32Attack01Time1>279</n32Attack01Time1>
 		<n32Attack01Time2>185</n32Attack01Time2>
 		<n32Attack01Time3>1236</n32Attack01Time3>
-		<n32Attack02TriTime>394</n32Attack02TriTime>
+		<n32Attack01TriTime>394</n32Attack01TriTime>
 		<n32Attack02Time1>255</n32Attack02Time1>
 		<n32Attack02Time2>510</n32Attack02Time2>
-		<n32Attack2Time3>935</n32Attack2Time3>
-		<n32Attack2TriTime>340</n32Attack2TriTime>
+		<n32Attack02Time3>935</n32Attack02Time3>
+		<n32Attack02TriTime>340</n32Attack02TriTime>
 		<n32CastSelfTime1>200</n32CastSelfTime1>
 		<n32CastSelfTime2>800</n32CastSelfTime2>
 		<n32CastSelfTriTime>450</n32CastSelfTriTime>
@@ -358,11 +358,11 @@
 		<n32Attack01Time1>238</n32Attack01Time1>
 		<n32Attack01Time2>272</n32Attack01Time2>
 		<n32Attack01Time3>1190</n32Attack01Time3>
-		<n32Attack02TriTime>408</n32Attack02TriTime>
+		<n32Attack01TriTime>408</n32Attack01TriTime>
 		<n32Attack02Time1>238</n32Attack02Time1>
 		<n32Attack02Time2>357</n32Attack02Time2>
-		<n32Attack2Time3>1105</n32Attack2Time3>
-		<n32Attack2TriTime>408</n32Attack2TriTime>
+		<n32Attack02Time3>1105</n32Attack02Time3>
+		<n32Attack02TriTime>408</n32Attack02TriTime>
 		<n32CastSelfTime1>207</n32CastSelfTime1>
 		<n32CastSelfTime2>826</n32CastSelfTime2>
 		<n32CastSelfTriTime>310</n32CastSelfTriTime>
@@ -393,11 +393,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>136</n32Attack02Time1>
 		<n32Attack02Time2>442</n32Attack02Time2>
-		<n32Attack2Time3>1122</n32Attack2Time3>
-		<n32Attack2TriTime>187</n32Attack2TriTime>
+		<n32Attack02Time3>1122</n32Attack02Time3>
+		<n32Attack02TriTime>187</n32Attack02TriTime>
 		<n32CastSelfTime1>146</n32CastSelfTime1>
 		<n32CastSelfTime2>621</n32CastSelfTime2>
 		<n32CastSelfTriTime>238</n32CastSelfTriTime>
@@ -428,11 +428,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -463,11 +463,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -498,11 +498,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -533,11 +533,11 @@
 		<n32Attack01Time1>170</n32Attack01Time1>
 		<n32Attack01Time2>595</n32Attack01Time2>
 		<n32Attack01Time3>935</n32Attack01Time3>
-		<n32Attack02TriTime>362</n32Attack02TriTime>
+		<n32Attack01TriTime>362</n32Attack01TriTime>
 		<n32Attack02Time1>136</n32Attack02Time1>
 		<n32Attack02Time2>544</n32Attack02Time2>
-		<n32Attack2Time3>1020</n32Attack2Time3>
-		<n32Attack2TriTime>221</n32Attack2TriTime>
+		<n32Attack02Time3>1020</n32Attack02Time3>
+		<n32Attack02TriTime>221</n32Attack02TriTime>
 		<n32CastSelfTime1>250</n32CastSelfTime1>
 		<n32CastSelfTime2>750</n32CastSelfTime2>
 		<n32CastSelfTriTime>330</n32CastSelfTriTime>
@@ -568,11 +568,11 @@
 		<n32Attack01Time1>255</n32Attack01Time1>
 		<n32Attack01Time2>765</n32Attack01Time2>
 		<n32Attack01Time3>680</n32Attack01Time3>
-		<n32Attack02TriTime>646</n32Attack02TriTime>
+		<n32Attack01TriTime>646</n32Attack01TriTime>
 		<n32Attack02Time1>255</n32Attack02Time1>
 		<n32Attack02Time2>680</n32Attack02Time2>
-		<n32Attack2Time3>765</n32Attack2Time3>
-		<n32Attack2TriTime>612</n32Attack2TriTime>
+		<n32Attack02Time3>765</n32Attack02Time3>
+		<n32Attack02TriTime>612</n32Attack02TriTime>
 		<n32CastSelfTime1>320</n32CastSelfTime1>
 		<n32CastSelfTime2>747</n32CastSelfTime2>
 		<n32CastSelfTriTime>534</n32CastSelfTriTime>
@@ -603,11 +603,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>1700</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -638,11 +638,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>204</n32Attack02Time1>
 		<n32Attack02Time2>476</n32Attack02Time2>
-		<n32Attack2Time3>1020</n32Attack2Time3>
-		<n32Attack2TriTime>340</n32Attack2TriTime>
+		<n32Attack02Time3>1020</n32Attack02Time3>
+		<n32Attack02TriTime>340</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>667</n32CastSelfTime2>
 		<n32CastSelfTriTime>267</n32CastSelfTriTime>
@@ -673,11 +673,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>1700</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -708,11 +708,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>1700</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -743,11 +743,11 @@
 		<n32Attack01Time1>275</n32Attack01Time1>
 		<n32Attack01Time2>364</n32Attack01Time2>
 		<n32Attack01Time3>293</n32Attack01Time3>
-		<n32Attack02TriTime>370</n32Attack02TriTime>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
 		<n32Attack02Time1>323</n32Attack02Time1>
 		<n32Attack02Time2>267</n32Attack02Time2>
-		<n32Attack2Time3>1110</n32Attack2Time3>
-		<n32Attack2TriTime>382</n32Attack2TriTime>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>1700</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -778,11 +778,11 @@
 		<n32Attack01Time1>0</n32Attack01Time1>
 		<n32Attack01Time2>0</n32Attack01Time2>
 		<n32Attack01Time3>0</n32Attack01Time3>
-		<n32Attack02TriTime>0</n32Attack02TriTime>
+		<n32Attack01TriTime>0</n32Attack01TriTime>
 		<n32Attack02Time1>0</n32Attack02Time1>
 		<n32Attack02Time2>0</n32Attack02Time2>
-		<n32Attack2Time3>0</n32Attack2Time3>
-		<n32Attack2TriTime>0</n32Attack2TriTime>
+		<n32Attack02Time3>0</n32Attack02Time3>
+		<n32Attack02TriTime>0</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -813,11 +813,11 @@
 		<n32Attack01Time1>0</n32Attack01Time1>
 		<n32Attack01Time2>0</n32Attack01Time2>
 		<n32Attack01Time3>0</n32Attack01Time3>
-		<n32Attack02TriTime>0</n32Attack02TriTime>
+		<n32Attack01TriTime>0</n32Attack01TriTime>
 		<n32Attack02Time1>0</n32Attack02Time1>
 		<n32Attack02Time2>0</n32Attack02Time2>
-		<n32Attack2Time3>0</n32Attack2Time3>
-		<n32Attack2TriTime>0</n32Attack2TriTime>
+		<n32Attack02Time3>0</n32Attack02Time3>
+		<n32Attack02TriTime>0</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>

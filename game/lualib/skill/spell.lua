@@ -221,7 +221,10 @@ function spell:onBegin()
 		self.srcTarget = transfrom.new(pos,nil)
 	end
 	self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
-	self.source:callBackSpellBegin()
+	self.source:callBackSpellBegin()	
+	if self.skilldata.n32SkillType == 0 then
+		self.source.attackNum = self.source.attackNum + 1
+	end
 end
 
 --红蓝消耗是否足够
@@ -282,7 +285,7 @@ end
 --同步技能状态到客户端
 function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 	actionTime = actionTime or 0
-	local t = { srcId = source.serverId,skillId = skilldata.id ,state = state, actionTime = actionTime,targetId = 0,targetPos = nil}
+	local t = { srcId = source.serverId,skillId = skilldata.id ,state = state,attackNum = source.attackNum, actionTime = actionTime,targetId = 0,targetPos = nil}
 	t.targetPos = { x = math.ceil(source.pos.x * GAMEPLAY_PERCENT) ,y = 0 , z = math.ceil(source.pos.z*GAMEPLAY_PERCENT) } 
 	if srcTarget ~= nil then
 		t.targetPos = {x = math.ceil(srcTarget.pos.x * GAMEPLAY_PERCENT) ,y = 0 , z = math.ceil(srcTarget.pos.z*GAMEPLAY_PERCENT) }
