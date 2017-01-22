@@ -178,6 +178,10 @@ function Time.nextDay(nextDate)
 	return target
 end
 
+function Time.tomorrow()
+	return os.time(Time.nextDay({hour=24, min=0, sec=0}))
+end
+
 local DateWday = {"sec", "min", "hour", "wday"}
 function Time.nextWday(nextDate)
 	if not nextDate.wday then return false end

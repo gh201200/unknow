@@ -385,7 +385,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,1;20011,2</szRetain3>
+		<szRetain3>11001,1;20101,2</szRetain3>
 	</item>
 	<item id="62002">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -394,7 +394,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,5;20011,8</szRetain3>
+		<szRetain3>11001,5;20101,8</szRetain3>
 	</item>
 	<item id="62011">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -403,7 +403,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,2;20011,2</szRetain3>
+		<szRetain3>11001,2;20101,2</szRetain3>
 	</item>
 	<item id="62012">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -412,7 +412,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,7;20011,9</szRetain3>
+		<szRetain3>11001,7;20101,9</szRetain3>
 	</item>
 	<item id="62021">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -421,7 +421,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,2;20011,2</szRetain3>
+		<szRetain3>11001,2;20101,2</szRetain3>
 	</item>
 	<item id="62022">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -430,7 +430,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,8;20011,10</szRetain3>
+		<szRetain3>11001,8;20101,10</szRetain3>
 	</item>
 	<item id="62031">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -439,7 +439,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,2;20011,3</szRetain3>
+		<szRetain3>11001,2;20101,3</szRetain3>
 	</item>
 	<item id="62032">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -448,7 +448,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,9;20011,11</szRetain3>
+		<szRetain3>11001,9;20101,11</szRetain3>
 	</item>
 	<item id="62041">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -457,7 +457,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,3;20011,3</szRetain3>
+		<szRetain3>11001,3;20101,3</szRetain3>
 	</item>
 	<item id="62042">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -466,7 +466,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,10;20011,13</szRetain3>
+		<szRetain3>11001,10;20101,13</szRetain3>
 	</item>
 	<item id="62051">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -475,7 +475,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,3;20011,4</szRetain3>
+		<szRetain3>11001,3;20101,4</szRetain3>
 	</item>
 	<item id="62052">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -484,7 +484,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,11;20011,15</szRetain3>
+		<szRetain3>11001,11;20101,15</szRetain3>
 	</item>
 	<item id="62061">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -493,7 +493,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,3;20011,4</szRetain3>
+		<szRetain3>11001,3;20101,4</szRetain3>
 	</item>
 	<item id="62062">
 		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
@@ -502,7 +502,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>11001,12;20011,17</szRetain3>
+		<szRetain3>11001,12;20101,17</szRetain3>
 	</item>
 	<item id="110101">
 		<szIcon></szIcon>

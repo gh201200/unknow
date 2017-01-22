@@ -97,17 +97,35 @@
 		Deads				= 1007,		--累计完成x次死亡
 	},
 	
-	--每日任务重置时间{"sec", "min", "hour", "day", "month", "year"}
-	DailyResetTime = {hour=24,min=0,sec=0},
-	
 	--刷新商城卡牌CD(s)
 	RefreshShopCardCD = 60,
 	
-	--排行榜类
+	--排行榜类型
 	RankType = {
-		Exp					= 1001,		--经验
+		Exp					= 1001,		--竞技场积分
 	},
 	
+	--收集数据
+	CollectionData = {
+		Hero = 18,	--英雄收集上限
+		Skill = 78,	--技能收集上限
+	},
+
+	--说明文字
+	IllustrationContent = {
+		HeroQuality = {
+			[1] = "普通",
+			[2] = "稀有",
+			[3] = "罕见",
+			[4] = "史诗",
+			[5] = "传奇",
+		}, 
+		HeroCamp = {
+			[1] = "赫里斯教会", 
+			[2] = "珀尔瑟联盟",  
+			[4] = "克鲁格财团", 
+		}, 
+	},
 	--竞技场数据
 	Arena = {
 		[1] = {

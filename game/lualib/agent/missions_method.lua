@@ -70,7 +70,7 @@ local MissionsMethod =
 	resetDailyMission = function(self)
 		local _serId = Macro_GetMissionSerialId(Quest.DailyMissionId)
 		local v = self.units[_serId]
-		v.time = os.time(Time.nextDay(Quest.DailyResetTime))
+		v.time = Time.tomorrow()
 		v.flag = 0
 		v.progress = 0
 		

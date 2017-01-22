@@ -8,6 +8,7 @@ local dc = require "datacenter"
 local sharedata = require "sharedata"
 local json = require "cjson"
 local syslog = require "syslog"
+local Time = require "time"
 local protoloader = require "proto.protoloader"
 local character_handler = require "agent.character_handler"
 
@@ -314,15 +315,19 @@ end
 
 --战斗结束产出
 function CMD.giveBattleGains( args )
+	local activity = snax.uniqueservice("activity")
 	if args.exp then
 		user.account:addExp("giveBattleGains", args.exp)
 	end
 	if args.gold then
+		activity.req.addValue("giveBattleGains", user.account.account_id, ActivityAccountType.PvpTimes, 1, Time.tomorrow())
 		user.account:addGold("giveBattleGains", args.gold)
 	end
 	if args.items then
 		CMD.addItems("giveBattleGains", args.items)
+		activity.req.addValue("giveBattleGains", user.account.account_id, ActivityAccountType.PvpWinTimes, 1, Time.tomorrow())
 	end
+
 	--推进任务
 	if args.win==0 then
 		user.missions:AdvanceMission(Quest.MissionContent.WinFight)

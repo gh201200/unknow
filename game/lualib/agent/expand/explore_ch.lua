@@ -97,8 +97,7 @@ function REQUEST.exploreBegin( args )
 			break
 		end
 		--
-		local nextTime = Time.nextDay({hour=24, min=0, sec=0})
-		nextTime = os.time( nextTime )
+		local nextTime = Time.tomorrow()
 		user.cards:setExplore(args.uuid0, nextTime)
 		user.cards:setExplore(args.uuid1, nextTime)
 		user.cards:setExplore(args.uuid2, nextTime)
