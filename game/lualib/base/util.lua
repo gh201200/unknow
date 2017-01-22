@@ -196,6 +196,7 @@ function Macro_GetMissionDataId( _serId, lv )
 	return _serId * 1000 + lv
 end
 function openPackage( strPkg, userLv )
+	print(strPkg, userLv)
 	local drops = {}
 	local str1 = string.split(strPkg, ";")
 	for k, v in pairs( str1 ) do
@@ -204,10 +205,11 @@ function openPackage( strPkg, userLv )
 	end
 
 	local pkgIds = {}
-	
+	print( drops )
 	for k, v in pairs(drops) do
 		for i=1, v do
 			local dropDat = g_shareData.dropPackage[k]
+			print( k, dropDat )
 			local num = math.random(dropDat[1].n32MinNum, dropDat[1].n32MaxNum)
 			for j=1, num do
 				local r = 0
