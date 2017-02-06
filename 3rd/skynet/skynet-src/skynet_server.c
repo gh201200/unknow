@@ -305,7 +305,6 @@ skynet_context_message_dispatch(struct skynet_monitor *sm, struct message_queue 
 			skynet_error(ctx, "May overload, message queue length = %d, %d, %s", overload, msg.source, (char*)msg.data);
 		}
 
-		printf("May overload, message queue length = %d, %d, %s\n", overload, msg.source, (char*)msg.data);
 		skynet_monitor_trigger(sm, msg.source , handle);
 
 		if (ctx->cb == NULL) {
