@@ -302,7 +302,7 @@ skynet_context_message_dispatch(struct skynet_monitor *sm, struct message_queue 
 		}
 		int overload = skynet_mq_overload(q);
 		if (overload) {
-			skynet_error(ctx, "May overload, message queue length = %d", overload);
+			skynet_error(ctx, "May overload, message queue length = %d, %d, %s", overload, msg.source, (char*)msg.data);
 		}
 
 		skynet_monitor_trigger(sm, msg.source , handle);

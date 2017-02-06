@@ -247,22 +247,25 @@ function openPackage( strPkg, userLv )
 		else
 			filterdrops = drop
 		end
-		local rd = math.random(1, filterdrops.totalRate)
-		local r = nil
-		for p, q in pairs(filterdrops) do
-			if type(q) == "table" then
-				if q.n32Rate >= rd then
-					r = q
-					break
+		print(filterdrops.totalRate)
+		if filterdrops.totalRate > 1 then
+			local rd = math.random(1, filterdrops.totalRate)
+			local r = nil
+			for p, q in pairs(filterdrops) do
+				if type(q) == "table" then
+					if q.n32Rate >= rd then
+						r = q
+						break
+					end
 				end
 			end
-		end
-		local itemId = r.n32ItemId
-		local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
-		if not items[itemId]  then
-			items[itemId] = itemNum
-		else
-			items[itemId] = items[itemId] + itemNum
+			local itemId = r.n32ItemId
+			local itemNum = math.random(r.n32MinNum, r.n32MaxNum)
+			if not items[itemId]  then
+				items[itemId] = itemNum
+			else
+				items[itemId] = items[itemId] + itemNum
+			end
 		end
 	end
 	return items
