@@ -20,6 +20,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <sys/time.h>
 
 #ifdef CALLING_CHECK
 
@@ -302,7 +303,12 @@ skynet_context_message_dispatch(struct skynet_monitor *sm, struct message_queue 
 		}
 		int overload = skynet_mq_overload(q);
 		if (overload) {
-			skynet_error(ctx, "May overload, message queue length = %d, %d, %s", overload, msg.source, (char*)msg.data);
+			static struct timeval tv;
+			uint64_t t;
+			gettimeofday(&tv, NULL);
+			t = (uint64_t)tv.tv_sec * 1000;
+			t += tv.tv_usec / 1000;
+			skynet_error(ctx, "[%lu], May overload, message queue length = %d, %d, %s", t, overload, msg.source, (char*)msg.data);
 		}
 
 		skynet_monitor_trigger(sm, msg.source , handle);
