@@ -175,19 +175,15 @@ function REQUEST.buyShopItem( args )
 	return {errorCode = errorCode, shopId = args.id, ids = ids}
 end
 function REQUEST.updateCDData( args )
-	print('updateCDData**************begin ')
 	local uid = args.uid
 	local cooldown = snax.queryservice 'cddown'
 	local val = cooldown.req.getRemainingTime( uid )
-	print('updateCDData**************end')
 	return {uid=uid, value=val}
 end
 function REQUEST.updateActivityData( args )
-	print('updateActivityData*********begin ')
 	local uid = args.uid
 	local activity = snax.queryservice 'activity'
 	local val = activity.req.getValueByUid( uid )
-	print('updateActivityData*********end ')
 	return {uid=uid, value=val}
 end
 
