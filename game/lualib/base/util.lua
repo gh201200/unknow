@@ -205,11 +205,11 @@ function openPackage( strPkg, userLv )
 	end
 
 	local pkgIds = {}
-	print( drops )
+	print("AAAAAA", drops )
 	for k, v in pairs(drops) do
 		for i=1, v do
 			local dropDat = g_shareData.dropPackage[k]
-			print( k, dropDat )
+			print("BBBB", k, dropDat )
 			local num = math.random(dropDat[1].n32MinNum, dropDat[1].n32MaxNum)
 			for j=1, num do
 				local r = 0
@@ -230,7 +230,7 @@ function openPackage( strPkg, userLv )
 	local items = {}
 	for k, v in pairs(pkgIds) do
 		local drop = g_shareData.itemDropPackage[v]
-		print( drop )
+		print("CCCCC", drop )
 		local filterdrops = {}
 		if userLv then
 			local tr = 0
@@ -247,7 +247,7 @@ function openPackage( strPkg, userLv )
 		else
 			filterdrops = drop
 		end
-		print(filterdrops.totalRate)
+		print("DDDDDDDDDDDD", filterdrops.totalRate)
 		if filterdrops.totalRate > 1 then
 			local rd = math.random(1, filterdrops.totalRate)
 			local r = nil

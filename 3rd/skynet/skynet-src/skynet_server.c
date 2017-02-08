@@ -308,9 +308,8 @@ skynet_context_message_dispatch(struct skynet_monitor *sm, struct message_queue 
 			gettimeofday(&tv, NULL);
 			t = (uint64_t)tv.tv_sec * 1000;
 			t += tv.tv_usec / 1000;
-			skynet_error(ctx, "[%lu], May overload, message queue length = %d, %d, %s", t, overload, msg.source, (char*)msg.data);
+			skynet_error(ctx, "[%lu], May overload, message queue length = %d, %x, %s", t, overload, msg.source, (char*)msg.data);
 		}
-
 		skynet_monitor_trigger(sm, msg.source , handle);
 
 		if (ctx->cb == NULL) {
