@@ -243,7 +243,8 @@ local function loadAllMissions()
 	for k, v in pairs(res) do
 		local unit = load(v['blobdata'])()
 		for p, q in pairs(unit) do
-			skynet.call(database, "lua", "missions", "update", v.uuid, q, true)
+			q.doNotSavebg = true
+			skynet.call(database, "lua", "missions", "update", v.uuid, q)
 		end
 	end
 end

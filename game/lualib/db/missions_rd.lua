@@ -16,21 +16,25 @@ function missions.load (account_id)
 	if connection:exists (key) then
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
-			local mission = load( v )()
-			missions[Macro_GetMissionSerialId(mission.id)] = mission
+			local serid = tonumber(v)
+			missions[serid] = {uuid = serid}
+			missions[serid].dataId = tonumber(connection:hget (v, "dataId"))
+			missions[serid].progress = tonumber(connection:hget (v, "progress"))
+			missions[serid].flag = tonumber(connection:hget (v, "flag"))
+			missions[serid].time = tonumber(connection:hget (v, "time"))
+
 		end
 	end
 	return missions
 end
 
-function missions.update(account_id, mission, savebg)
-	
+function missions.update(account_id, mission, ...)
 	local connection, key = make_key (account_id)
+	connection:sadd(key, mission.uuid)
+	connection:hmset(mission.uuid, table.packdb(mission, ...))
 	
-	connection:sadd(key, serialize(mission))
-
 	--bgsave
-	if not savebg  then
+	if not mission.savebg  then
 		sendBgevent("missions", account_id, "R")
 	end
 

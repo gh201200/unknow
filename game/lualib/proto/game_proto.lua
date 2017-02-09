@@ -80,7 +80,7 @@ local types = [[
 }
 
 .Mission {
-	id 0 : integer
+	dataId 0 : integer
 	progress 1 : integer                                                                                
     	flag 2 : integer
 	time 3 : integer
@@ -596,7 +596,7 @@ sendSkill 7 {
 #下发任务数据                                                                                          
 sendMission 8 {                                                                                          
 	request {                                                                                      
-        	missionsList 0 : *Mission(id)                                                             
+        	missionsList 0 : *Mission                                                             
 	}                                                                                              
 }
 
