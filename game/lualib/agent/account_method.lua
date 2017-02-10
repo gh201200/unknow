@@ -63,7 +63,7 @@ local AccountMethod =
 		if _exp == 0 then return end
 		local nv = self.unit.exp + _exp
 		
-		nv = mClamp(nv, 0, 100000)
+		nv = mClamp(nv, 0, math.maxint32)
 		
 		local toprank = snax.uniqueservice("toprank")
 		toprank.post.add(Quest.RankType.Exp, nv, self.account_id)

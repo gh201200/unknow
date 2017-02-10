@@ -28,6 +28,11 @@ CLIENT_GM_CMD['addmoney'] = function( args )
 	CMD.gm_add_money( p )
 end;
 
+CLIENT_GM_CMD['addlevel'] = function( args )
+	local p = { exp=args.params[1], }
+	CMD.gm_add_level( p )
+end;
+
 CLIENT_GM_CMD['addcard'] = function( args )
 	local p = { dataId=args.params[1], cardNum=args.params[2]}
 	CMD.gm_add_card( p )
@@ -84,8 +89,8 @@ function CMD.gm_add_items( args )
 	user.servicecmd.addItems("gm_add_items", args)
 end
 
-
-
-
+function CMD.gm_add_level( args )
+	user.account:addExp("gm_add_exp", args.exp)
+end
 
 return GMCH.new()
