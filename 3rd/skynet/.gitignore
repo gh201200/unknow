@@ -4,7 +4,6 @@
 /skynet.pid
 3rd/lua/lua
 3rd/lua/luac
-/cservice
 /luaclib
 *.dSYM
 .DS_Store
