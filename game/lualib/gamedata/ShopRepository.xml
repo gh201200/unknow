@@ -779,7 +779,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>银刃击</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10001001</n32GoodsID>
@@ -793,7 +793,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>自愈术</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10002001</n32GoodsID>
@@ -807,7 +807,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>践踏</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10003001</n32GoodsID>
@@ -821,7 +821,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>聪智光辉</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10101001</n32GoodsID>
@@ -835,7 +835,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>轻装上阵</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10102001</n32GoodsID>
@@ -849,7 +849,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>盾牌猛击</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_11001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>11001001</n32GoodsID>
@@ -863,7 +863,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>裂空斩</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>12001001</n32GoodsID>
@@ -877,7 +877,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>皎月之辉</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_13001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>13001001</n32GoodsID>
@@ -891,7 +891,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>石肤术</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_20001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>20001001</n32GoodsID>
@@ -905,7 +905,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>剧毒吹箭</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_20002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>20002001</n32GoodsID>
@@ -919,7 +919,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>生机盎然</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_20101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>20101001</n32GoodsID>
@@ -933,7 +933,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>蓄力</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_20102.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>20102001</n32GoodsID>
@@ -947,7 +947,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>震撼大地</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_21001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>21001001</n32GoodsID>
@@ -961,7 +961,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>活力祝福</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_21101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>21101001</n32GoodsID>
@@ -975,7 +975,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>穿云箭</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>22001001</n32GoodsID>
@@ -989,7 +989,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>蛊术药剂</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_23001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>23001001</n32GoodsID>
@@ -1003,7 +1003,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>高爆手雷</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>30001001</n32GoodsID>
@@ -1017,7 +1017,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>快速补给</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>30002001</n32GoodsID>
@@ -1031,7 +1031,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>雷电打击</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>30003001</n32GoodsID>
@@ -1045,7 +1045,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>轻型材料</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>30101001</n32GoodsID>
@@ -1059,7 +1059,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>火焰喷射器I型</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>31001001</n32GoodsID>
@@ -1073,7 +1073,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>弹射弹</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_32001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>32001001</n32GoodsID>
@@ -1087,7 +1087,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>X1自动火炮</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_33001.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>33001001</n32GoodsID>
@@ -1101,7 +1101,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>12102001</n32GoodsID>
@@ -1115,7 +1115,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>寒霜爆发</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_13003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>13003001</n32GoodsID>
@@ -1129,7 +1129,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>绊倒</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_21002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>21002001</n32GoodsID>
@@ -1143,7 +1143,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>孢子粉尘</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>22002001</n32GoodsID>
@@ -1157,7 +1157,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>应急预案</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>31002001</n32GoodsID>
@@ -1171,7 +1171,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>日蚀波纹</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_11003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>11003001</n32GoodsID>
@@ -1185,7 +1185,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>霜月之环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_13004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>13004001</n32GoodsID>
@@ -1199,7 +1199,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>22102001</n32GoodsID>
@@ -1213,7 +1213,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>魔法鹰隼</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_23004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>23004001</n32GoodsID>
@@ -1227,7 +1227,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>无敌铁拳</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>31003001</n32GoodsID>
@@ -1241,7 +1241,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>瞄准训练</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_32102.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>32102001</n32GoodsID>
@@ -1255,7 +1255,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>破晓审判</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_11004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>11004001</n32GoodsID>
@@ -1269,7 +1269,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>猎魔刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>12002001</n32GoodsID>
@@ -1283,7 +1283,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>山崩</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_21004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>21004001</n32GoodsID>
@@ -1297,7 +1297,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>须根缠绕</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_23005.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>23005001</n32GoodsID>
@@ -1311,7 +1311,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>捕兽网</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>22003001</n32GoodsID>
@@ -1325,7 +1325,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>新绿绽华</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_23006.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>23006001</n32GoodsID>
@@ -1339,7 +1339,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>弹射座椅</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31005.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>31005001</n32GoodsID>
@@ -1353,7 +1353,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>破甲弹</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_32003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>32003001</n32GoodsID>
@@ -1367,7 +1367,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>4#霰弹</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_32004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>32004001</n32GoodsID>
@@ -1381,7 +1381,7 @@
 		<n32Limit>10</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城一星技能</szName>
+		<szName>能量护盾</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_33003.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>33003001</n32GoodsID>
@@ -1395,7 +1395,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10103001</n32GoodsID>
@@ -1409,7 +1409,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>勇气赠礼</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>11101001</n32GoodsID>
@@ -1423,7 +1423,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>12101001</n32GoodsID>
@@ -1437,7 +1437,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>沉寂之风</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_13002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>13002001</n32GoodsID>
@@ -1451,7 +1451,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>战斗直觉</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_20103.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>20103001</n32GoodsID>
@@ -1465,7 +1465,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>灵巧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>22101001</n32GoodsID>
@@ -1479,7 +1479,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>回春祭礼</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_23002.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>23002001</n32GoodsID>
@@ -1493,7 +1493,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>短距跃迁</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>30004001</n32GoodsID>
@@ -1507,7 +1507,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>干扰磁场</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30102.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>30102001</n32GoodsID>
@@ -1521,7 +1521,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>31101001</n32GoodsID>
@@ -1535,7 +1535,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>凶残</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_32101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>32101001</n32GoodsID>
@@ -1549,7 +1549,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>圣疗术</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10004001</n32GoodsID>
@@ -1563,7 +1563,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>采撷妙想</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10104.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>10104001</n32GoodsID>
@@ -1577,7 +1577,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>自然援助</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_20104.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>20104001</n32GoodsID>
@@ -1591,7 +1591,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>重型装备</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30103.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>30103001</n32GoodsID>
@@ -1605,7 +1605,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>战神赋礼</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12103.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>12103001</n32GoodsID>
@@ -1619,7 +1619,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>霜冻新星</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_13005.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>13005001</n32GoodsID>
@@ -1633,7 +1633,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>挑衅</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31004.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>31004001</n32GoodsID>
@@ -1647,7 +1647,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>英勇冲锋</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_11005.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>11005001</n32GoodsID>
@@ -1661,7 +1661,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>12104001</n32GoodsID>
@@ -1675,7 +1675,7 @@
 		<n32Limit>5</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>金币商城二星技能</szName>
+		<szName>节能推进器</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_33101.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>33101001</n32GoodsID>
