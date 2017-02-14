@@ -36,7 +36,6 @@ static int luaB_print (lua_State *L) {
       return luaL_error(L, "'tostring' must return a string to 'print'");
     if (i>1) lua_writestring("\t", 1);
     lua_writestring(s, l);
-    lua_writestring(" *fuck", 6);
     lua_pop(L, 1);  /* pop result */
   }
   lua_writeline();
