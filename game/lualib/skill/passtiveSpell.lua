@@ -97,6 +97,7 @@ function passtiveSpell:trigger(_cond)
 		end
 	--施法触发	
 	elseif self.skilldata.n32TriggerCondition == 5 and _cond == 5 then
+		print("============trigger 5")
 		isTrigger =  true
 	--致命触发
 	elseif self.skilldata.n32TriggerCondition == 6 and _cond == 6 then

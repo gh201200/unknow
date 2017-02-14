@@ -145,6 +145,10 @@ function spell:onTrigger(skilldata,source,srcTarget)
 			--受击概率触发
 			srcTarget.spell:onTriggerPasstives(4)
 		end
+	else
+		if skilldata.n32Active == 0 then
+			self:onTriggerPasstives(5)
+		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
 	--print("selects===",#selects)
