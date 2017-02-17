@@ -2,7 +2,8 @@ local Ientity = require "entity.Ientity"
 local vector3 =require "vector3"
 local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
-
+local HateList = require "ai.HateList" 
+local NpcAI = require "ai.NpcAI"
 local IBuilding = class("IBuilding", Ientity)
 
 function IBuilding.create(camp, mapDat)
@@ -22,6 +23,8 @@ function IBuilding:ctor()
 	self.entityType = EntityType.building	
 	self.heroTable = {}
 	self.recvHpMpCD = {}
+	self.ai = NpcAI.new(self)
+	register_class_var(self, "PreSkillData", nil)
 end
 
 function IBuilding:getType()
@@ -55,9 +58,8 @@ function IBuilding:insertHero(entity)
 end
 
 function IBuilding:update(dt)
-
+	--self.ai:update(dt)
 	for k, v in pairs(self.heroTable) do
-		
 		if not v:isDead() and v:getDistance( self ) <= self.attDat.n32AttackRange then
 			if self.recvHpMpCD[v.serverId] <= 0 then
 				v:addHp(v:getLevel() * Quest.BuildingRecvHp, HpMpMask.BuildingHp)
@@ -67,7 +69,19 @@ function IBuilding:update(dt)
 			self.recvHpMpCD[v.serverId] = self.recvHpMpCD[v.serverId] - dt
 		end 
 	end
-
+	local target = nil
+	for k,v in pairs(g_entityManager.entityList) do
+		if self:isKind(v,true) == false and v:getType() == "IMapPlayer" then
+			if  v:getDistance( self ) <= self.attDat.n32AttackRange then
+				target = v		
+				break
+			end
+		end
+	end
+	if target ~= nil and self.spell:isSpellRunning() == false then
+		self.ReadySkillId = self.attDat["n32CommonSkill"] 
+		self:setTarget(target)
+	end
 	--add code before this
 	IBuilding.super.update(self, dt)
 end
@@ -90,6 +104,13 @@ function IBuilding:calcStats()
 	self:calcAttackRange()
 	self:calcRecvHp()
 	self:calcRecvMp()
+end
+function IBuilding:preCastSkill()
+	local castSkill = self.attDat.n32CommonSkill
+	self:setPreSkillData(g_shareData.skillRepository[castSkill])
+end
+function IBuilding:clearPreCastSkill()
+	self:setPreSkillData(nil)
 end
 
 function IBuilding:onDead()
