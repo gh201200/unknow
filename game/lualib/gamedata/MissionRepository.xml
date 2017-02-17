@@ -757,7 +757,7 @@
 	<item id="21007001">
 		<n32SerId>21007</n32SerId>
 		<szName>不驯狂僧</szName>
-		<szContent>使用柯克.李获胜1次</szContent>
+		<szContent>使用柯克·李获胜1次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>1</n32Degree>
 		<n32Con1>2100</n32Con1>
@@ -770,7 +770,7 @@
 	<item id="21007002">
 		<n32SerId>21007</n32SerId>
 		<szName>不驯狂僧</szName>
-		<szContent>使用柯克.李获胜10次</szContent>
+		<szContent>使用柯克·李获胜10次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>2</n32Degree>
 		<n32Con1>2100</n32Con1>
@@ -783,7 +783,7 @@
 	<item id="21007003">
 		<n32SerId>21007</n32SerId>
 		<szName>不驯狂僧</szName>
-		<szContent>使用柯克.李获胜100次</szContent>
+		<szContent>使用柯克·李获胜100次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>3</n32Degree>
 		<n32Con1>2100</n32Con1>

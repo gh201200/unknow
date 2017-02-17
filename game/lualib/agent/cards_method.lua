@@ -58,6 +58,7 @@ local CardsMethod =
 	end;
 	--
 	addCard = function(self, op, dataId, num)
+		if num == 0 then return end
 		if not num then num = 1 end
 		local serId = Macro_GetCardSerialId(dataId)
 		local v = self:getCardBySerialId( serId )

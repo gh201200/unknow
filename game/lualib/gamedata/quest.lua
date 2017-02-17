@@ -72,8 +72,11 @@
 	--可替换技能次数
 	MaxReplaceSkillTimes = 3,
 
-	--探索CD(s)
-	ExploreTime = 2*60,
+	--免费刷新探索次数
+	RefreshExploreTimes = 3,
+	
+	--探索花费钻石
+	RefreshExploreCost = 20,
 	
 	--每日任务初始id
 	DailyMissionId = 10001001,

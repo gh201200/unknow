@@ -16,9 +16,10 @@ function missions.load (account_id)
 	if connection:exists (key) then
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
-			local serid = tonumber(v)
-			missions[serid] = {uuid = serid}
-			missions[serid].dataId = tonumber(connection:hget (v, "dataId"))
+			local dataId = tonumber(connection:hget (v, "dataId"))
+			local serid = Macro_GetMissionSerialId(dataId)
+			missions[serid] = {uuid = v}
+			missions[serid].dataId = dataId
 			missions[serid].progress = tonumber(connection:hget (v, "progress"))
 			missions[serid].flag = tonumber(connection:hget (v, "flag"))
 			missions[serid].time = tonumber(connection:hget (v, "time"))

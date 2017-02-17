@@ -1,13 +1,13 @@
 local skynet = require "skynet"
 local Time = require "time"
-
+local uuid = require "uuid"
 
 ----------------skills func---------------------
 local MissionsMethod = 
 {
 	--
 	initMission = function(_dataId)
-		return {uuid = Macro_GetMissionSerialId(_dataId), dataId=_dataId, progress=0, flag=0,time=0,}
+		return {uuid = uuid.gen(), dataId=_dataId, progress=0, flag=0,time=0,}
 	end;
 	--
 	getMissionBySerialId = function(self, _serId)

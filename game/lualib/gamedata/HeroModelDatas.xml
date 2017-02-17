@@ -775,14 +775,14 @@
 		<szMod_name>Zhucheng_1</szMod_name>
 		<n32Hight>Zhucheng_1</n32Hight>
 		<n32Speed>0</n32Speed>
-		<n32Attack01Time1>0</n32Attack01Time1>
-		<n32Attack01Time2>0</n32Attack01Time2>
-		<n32Attack01Time3>0</n32Attack01Time3>
-		<n32Attack01TriTime>0</n32Attack01TriTime>
-		<n32Attack02Time1>0</n32Attack02Time1>
-		<n32Attack02Time2>0</n32Attack02Time2>
-		<n32Attack02Time3>0</n32Attack02Time3>
-		<n32Attack02TriTime>0</n32Attack02TriTime>
+		<n32Attack01Time1>275</n32Attack01Time1>
+		<n32Attack01Time2>364</n32Attack01Time2>
+		<n32Attack01Time3>293</n32Attack01Time3>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
+		<n32Attack02Time1>323</n32Attack02Time1>
+		<n32Attack02Time2>267</n32Attack02Time2>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -810,14 +810,14 @@
 		<szMod_name>Zhucheng_2</szMod_name>
 		<n32Hight>Zhucheng_2</n32Hight>
 		<n32Speed>0</n32Speed>
-		<n32Attack01Time1>0</n32Attack01Time1>
-		<n32Attack01Time2>0</n32Attack01Time2>
-		<n32Attack01Time3>0</n32Attack01Time3>
-		<n32Attack01TriTime>0</n32Attack01TriTime>
-		<n32Attack02Time1>0</n32Attack02Time1>
-		<n32Attack02Time2>0</n32Attack02Time2>
-		<n32Attack02Time3>0</n32Attack02Time3>
-		<n32Attack02TriTime>0</n32Attack02TriTime>
+		<n32Attack01Time1>275</n32Attack01Time1>
+		<n32Attack01Time2>364</n32Attack01Time2>
+		<n32Attack01Time3>293</n32Attack01Time3>
+		<n32Attack01TriTime>370</n32Attack01TriTime>
+		<n32Attack02Time1>323</n32Attack02Time1>
+		<n32Attack02Time2>267</n32Attack02Time2>
+		<n32Attack02Time3>1110</n32Attack02Time3>
+		<n32Attack02TriTime>382</n32Attack02TriTime>
 		<n32CastSelfTime1>0</n32CastSelfTime1>
 		<n32CastSelfTime2>0</n32CastSelfTime2>
 		<n32CastSelfTriTime>0</n32CastSelfTriTime>
@@ -838,6 +838,6 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>0</n32BSize>
+		<n32BSize>5</n32BSize>
 	</item>
 </info>

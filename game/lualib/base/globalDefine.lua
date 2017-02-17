@@ -126,6 +126,7 @@ ActivityAccountType =
 	BuyShopCard2			= 1003,	--金币商城购买3次数
 	PvpTimes			= 2001, --pvp参加场次
 	PvpWinTimes			= 2002,	--pvp胜利场次
+	RefreshExplore			= 3001,	--刷新探索次数
 }
 
 CoolDownSysType = 
