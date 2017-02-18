@@ -1807,7 +1807,7 @@
 		<szWord>没钱吵吵啥</szWord>
 		<n32Hp>10000</n32Hp>
 		<n32Mp>1000</n32Mp>
-		<n32Attack>0</n32Attack>
+		<n32Attack>30</n32Attack>
 		<n32Defence>0</n32Defence>
 		<n32ASpeed>1</n32ASpeed>
 		<n32MSpeed>0</n32MSpeed>
@@ -1831,7 +1831,7 @@
 		<szWord>没钱吵吵啥</szWord>
 		<n32Hp>10000</n32Hp>
 		<n32Mp>1000</n32Mp>
-		<n32Attack>0</n32Attack>
+		<n32Attack>30</n32Attack>
 		<n32Defence>0</n32Defence>
 		<n32ASpeed>1</n32ASpeed>
 		<n32MSpeed>0</n32MSpeed>

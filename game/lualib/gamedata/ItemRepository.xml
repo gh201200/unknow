@@ -253,7 +253,7 @@
 		<szRetain3>11016,2;11013,2</szRetain3>
 	</item>
 	<item id="61001">
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -262,7 +262,7 @@
 		<szRetain3>20212,1;20211,2;20106,1;20103,1;20204,1</szRetain3>
 	</item>
 	<item id="61002">
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -271,7 +271,7 @@
 		<szRetain3>20213,2;20205,2;20214,1;20108,1;20107,1;20106,1;20105,1</szRetain3>
 	</item>
 	<item id="61011">
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -280,7 +280,7 @@
 		<szRetain3>20311,1;20203,1;20212,2;20106,1;20104,2</szRetain3>
 	</item>
 	<item id="61012">
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -289,7 +289,7 @@
 		<szRetain3>20311,2;20312,2;20205,1;20201,1;20108,2;20104,1;20103,1</szRetain3>
 	</item>
 	<item id="61021">
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -298,7 +298,7 @@
 		<szRetain3>20313,1;20203,1;20202,1;20212,1;20101,1;20102,1;20105,1;20106,1</szRetain3>
 	</item>
 	<item id="61022">
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -307,7 +307,7 @@
 		<szRetain3>20313,2;20314,2;20206,1;20204,1;20215,1;20214,1;20109,1;20106,1;20102,1</szRetain3>
 	</item>
 	<item id="61031">
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -316,7 +316,7 @@
 		<szRetain3>20315,1;20204,1;20202,1;20201,1;20213,1;20212,1;20106,1;20105,1;20103,1</szRetain3>
 	</item>
 	<item id="61032">
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -325,7 +325,7 @@
 		<szRetain3>20315,2;20316,2;20206,1;20205,1;20203,1;20215,1;20213,1;20109,1;20107,1;20103,1</szRetain3>
 	</item>
 	<item id="61041">
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -334,7 +334,7 @@
 		<szRetain3>20317,1;20203,1;20202,1;20201,1;20213,1;20106,2;20101,1</szRetain3>
 	</item>
 	<item id="61042">
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -343,7 +343,7 @@
 		<szRetain3>20317,2;20318,2;20206,1;20205,1;20204,1;20215,1;20214,1;20109,1;20107,1;20106,1;20105,1;20104,1;20103,1</szRetain3>
 	</item>
 	<item id="61051">
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -352,7 +352,7 @@
 		<szRetain3>20319,1;20204,1;20202,1;20213,1;20107,1;20104,1;20102,1</szRetain3>
 	</item>
 	<item id="61052">
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -361,7 +361,7 @@
 		<szRetain3>20319,2;20320,2;20206,1;20205,1;20204,1;20203,1;20216,1;20213,1;20107,1;20106,1;20104,1</szRetain3>
 	</item>
 	<item id="61061">
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -370,7 +370,7 @@
 		<szRetain3>20321,1;20204,1;20202,1;20213,1;20212,1;20107,1;20105,1;20103,1</szRetain3>
 	</item>
 	<item id="61062">
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -388,7 +388,7 @@
 		<szRetain3>11001,1;20101,2</szRetain3>
 	</item>
 	<item id="62002">
-		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/DailyBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -406,7 +406,7 @@
 		<szRetain3>11001,2;20101,2</szRetain3>
 	</item>
 	<item id="62012">
-		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/DailyBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -424,7 +424,7 @@
 		<szRetain3>11001,2;20101,2</szRetain3>
 	</item>
 	<item id="62022">
-		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/DailyBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -442,7 +442,7 @@
 		<szRetain3>11001,2;20101,3</szRetain3>
 	</item>
 	<item id="62032">
-		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/DailyBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -460,7 +460,7 @@
 		<szRetain3>11001,3;20101,3</szRetain3>
 	</item>
 	<item id="62042">
-		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/DailyBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -478,7 +478,7 @@
 		<szRetain3>11001,3;20101,4</szRetain3>
 	</item>
 	<item id="62052">
-		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/DailyBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>
@@ -496,7 +496,7 @@
 		<szRetain3>11001,3;20101,4</szRetain3>
 	</item>
 	<item id="62062">
-		<szIcon>UI/Textures/BoxIcon/VictoryBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/DailyBox.png</szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>4</n32Type>

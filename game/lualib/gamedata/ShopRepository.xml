@@ -164,7 +164,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>米娅碎片</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/HeadPortraits_Square/Miya.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>310100</n32GoodsID>
 	</item>
@@ -234,7 +234,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>肖恩碎片</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/HeadPortraits_Square/Sean.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>320000</n32GoodsID>
 	</item>
@@ -248,7 +248,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>尼尔碎片</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/HeadPortraits_Square/Neil.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>120100</n32GoodsID>
 	</item>
@@ -290,7 +290,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>尤娜碎片</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/HeadPortraits_Square/Una.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>320100</n32GoodsID>
 	</item>
@@ -346,7 +346,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>莫顿碎片</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/HeadPortraits_Square/Morton.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>330000</n32GoodsID>
 	</item>
@@ -374,7 +374,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>修碎片</szName>
-		<szIcon></szIcon>
+		<szIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>330100</n32GoodsID>
 	</item>
@@ -584,7 +584,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61001</n32GoodsID>
 	</item>
@@ -598,7 +598,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶高级技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61002</n32GoodsID>
 	</item>
@@ -612,7 +612,7 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61011</n32GoodsID>
 	</item>
@@ -626,7 +626,7 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶高级技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61012</n32GoodsID>
 	</item>
@@ -640,7 +640,7 @@
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61021</n32GoodsID>
 	</item>
@@ -654,7 +654,7 @@
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶高级技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61022</n32GoodsID>
 	</item>
@@ -668,7 +668,7 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61031</n32GoodsID>
 	</item>
@@ -682,7 +682,7 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶高级技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61032</n32GoodsID>
 	</item>
@@ -696,7 +696,7 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61041</n32GoodsID>
 	</item>
@@ -710,7 +710,7 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶高级技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61042</n32GoodsID>
 	</item>
@@ -724,7 +724,7 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61051</n32GoodsID>
 	</item>
@@ -738,7 +738,7 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶高级技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61052</n32GoodsID>
 	</item>
@@ -752,7 +752,7 @@
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61061</n32GoodsID>
 	</item>
@@ -766,7 +766,7 @@
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶高级技能宝箱</szName>
-		<szIcon>UI/Textures/BoxIcon/AdvHeroBox.png</szIcon>
+		<szIcon>UI/Textures/BoxIcon/AdvSkillBox.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>61062</n32GoodsID>
 	</item>

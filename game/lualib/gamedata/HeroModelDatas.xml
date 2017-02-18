@@ -838,6 +838,6 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>0</n32BSize>
+		<n32BSize>5</n32BSize>
 	</item>
 </info>
