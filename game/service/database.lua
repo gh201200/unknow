@@ -3,7 +3,7 @@ local redis = require "redis"
 local config = require "config.database"
 local account = require "db.account_rd"
 local cards = require "db.cards_rd"
-local explore = require "db.explore_rd"
+local explores = require "db.explore_rd"
 local cooldown = require "db.cooldown_rd"
 local activity = require "db.activity_rd"
 local skills = require "db.skills_rd"
@@ -62,7 +62,7 @@ local traceback = debug.traceback
 skynet.start (function ()
 	module_init ("account", account)
 	module_init ("cards", cards)
-	module_init ("explore", explore)
+	module_init ("explores", explores)
 	module_init ("cooldown", cooldown)
 	module_init ("activity", activity)
 	module_init ("skills", skills)

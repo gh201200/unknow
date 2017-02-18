@@ -84,13 +84,6 @@ SkillsMethod.sendSkillData = function(self, unit)
 	end
 end;
 
-ExploreMethod.sendExploreData = function(self)
-	local explore = table.clone( user.explore.unit )
-	if explore.time ~= 0 then
-		explore.time = explore.time - os.time()
-	end
-	user.send_request("sendExplore", explore)
-end;
 
 MissionsMethod.sendMissionData = function(self, unit)
 	if unit then
@@ -221,7 +214,7 @@ function REQUEST.enterGame(args)
 	setmetatable(user.missions, {__index = MissionsMethod})
 
 	user.explore = { account_id = account_id }
-	user.explore.unit = skynet.call (database, "lua", "explore", "load", account_id, ExploreCharacter.randcon()) --explore
+	user.explore.units = skynet.call (database, "lua", "explores", "load", account_id) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
 
 	user.mails = { account_id = account_id }

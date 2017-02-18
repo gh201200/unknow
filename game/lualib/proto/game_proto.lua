@@ -167,6 +167,21 @@ local types = [[
 	time 6 : integer
 }
 
+.Explore {
+	dataId 0 : integer
+	uuid0 1 : string
+	uuid1 2 : string
+	uuid2 3 : string
+	att0 4 : integer
+	cam0 5 : integer
+	att1 6 : integer
+	cam1 7 : integer
+	att2 8 : integer
+	cam2 9 : integer
+	time 10 : integer
+	uuid  11 : string
+}
+
 ]]
 
 local c2s = [[
@@ -363,11 +378,13 @@ explore_goFight 300 {
 	request {
 		uuid 0 : string
 		index 1 : integer
+		expuuid 2 : string
 	}
 	response {
 		errorCode 0 :integer
 		uuid 1 : string
 		index 2 : integer
+		expuuid 3 : string
 	}
 }
 
@@ -447,22 +464,26 @@ reEnterRoom 3006 {
 }
 
 exploreBegin 3007 {
-	request { 
-		uuid0 0 : string
-		uuid1 1 : string
-		uuid2 2 : string
-		uuid3 3 : string
-		uuid4 4 : string
+	request {
+		uuid 0 : string
+		uuid0 1 : string
+		uuid1 2 : string
+		uuid2 3 : string
 	}
 	response {                                                            
 		errorCode 0 : integer
+		uuid 1 : string
 	} 
 }
 
 exploreEnd 3008 {
+	request {
+		uuid 0 : string
+	}
 	response {                                                            
 		errorCode 0 : integer
-		items 1 : *Vector2
+		uuid 1 : string
+		items 2 : *Vector2
 	} 
 }
 
@@ -526,6 +547,16 @@ recvMailItems 3014 {
 	}
 }
 
+exploreRefresh 3015 {
+	request {
+		uuid 0 : string
+	}
+	response {
+		errorCode 0 : integer 
+		uuid 1 : string
+	}
+}
+
 
 ]]
 
@@ -558,17 +589,7 @@ sendAccount 3 {
 #下发探索数据
 sendExplore 4 {
 	request {
-		time 0 : integer
-		uuid0 1 : string
-		uuid1 2 : string
-		uuid2 3 : string
-		uuid3 4 : string
-		uuid4 5 : string
-		con0 6: integer
-		con1 7 : integer
-		con2 8 : integer
-		con3 9 : integer
-		con4 10 : integer
+		exploresList 0 : *Explore(uuid)
 	}
 }
 

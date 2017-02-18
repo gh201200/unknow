@@ -1,61 +1,46 @@
-local explore = {}
+local explores = {}
 local connection_handler
 
-function explore.init (ch)
+function explores.init (ch)
 	connection_handler = ch
 end
 
 local function make_key (name)
-	return connection_handler (name), string.format ("explore:%s", name)
+	return connection_handler (name), string.format ("explores:%s", name)
 end
 
-function explore.load (account_id, rr)
-
-	local acc = {}
-
+function explores.load (account_id)
+	local units = {}
 	local connection, key = make_key (account_id)
 	
-	if not connection:exists (key) then
-		connection:hset( key, "time", 0)
-		connection:hset( key, "uuid0", "")
-		connection:hset( key, "uuid1", "")
-		connection:hset( key, "uuid2", "")
-		connection:hset( key, "uuid3", "")
-		connection:hset( key, "uuid4", "")
-		connection:hset( key, "con0", rr[1])
-		connection:hset( key, "con1", rr[2])
-		connection:hset( key, "con2", rr[3])
-		connection:hset( key, "con3", rr[4])
-		connection:hset( key, "con4", rr[5])
-
-		--bgsave
-		sendBgevent("explore", account_id, "R")
+	if connection:exists (key) then
+		local st = connection:smembers(key)
+		for k, v in pairs(st) do
+			units[v]  = {uuid = v}	
+			units[v].dataId = tonumber(connection:hget (v, "dataId"))
+			for i=0, 2 do
+				units[v]["uuid"..i] = connection:hget (v, "uuid"..i)
+				units[v]["att"..i] = tonumber(connection:hget (v, "att"..i))
+				units[v]["cam"..i] = tonumber(connection:hget (v, "cam"..i))
+			end
+			units[v].time = tonumber(connection:hget (v, "time"))
+		end
 	end
-	acc.time = tonumber(connection:hget (key, "time"))
-	acc.uuid0 = connection:hget (key, "uuid0")
-	acc.uuid1 = connection:hget (key, "uuid1")
-	acc.uuid2 = connection:hget (key, "uuid2")
-	acc.uuid3 = connection:hget (key, "uuid3")
-	acc.uuid4 = connection:hget (key, "uuid4")
-	acc.con0 = tonumber(connection:hget (key, "con0"))
-	acc.con1 = tonumber(connection:hget (key, "con1"))
-	acc.con2 = tonumber(connection:hget (key, "con2"))
-	acc.con3 = tonumber(connection:hget (key, "con3"))
-	acc.con4 = tonumber(connection:hget (key, "con4"))
 
-	return acc
+	return units
 end
 
-function explore.update(account_id, explore, ...)
+function explores.update(account_id, explore, ...)
 	local connection, key = make_key (account_id)
-	connection:hmset(key, table.packdb(explore, ...))
+	connection:sadd(key, explore.uuid)
+	connection:hmset(explore.uuid, table.packdb(explore, ...))
 	
 	--bgsave
 	if not explore.doNotSavebg then
-		sendBgevent("explore", account_id, "R")
+		sendBgevent("explores", account_id, "R")
 	end
 end
 
 
-return explore
+return explores
 

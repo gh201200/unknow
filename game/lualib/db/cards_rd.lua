@@ -10,23 +10,23 @@ local function make_key (name)
 end
 
 function cards.load (account_id)
-	local cards = {}
+	local units = {}
 	local connection, key = make_key (account_id)
 	
 	if connection:exists (key) then
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
-			cards[v]  = {uuid = v}	
-			cards[v].dataId = tonumber(connection:hget (v, "dataId"))
-			cards[v].count = tonumber(connection:hget (v, "count"))
-			cards[v].explore = tonumber(connection:hget (v, "explore"))
+			units[v]  = {uuid = v}	
+			units[v].dataId = tonumber(connection:hget (v, "dataId"))
+			units[v].count = tonumber(connection:hget (v, "count"))
+			units[v].explore = tonumber(connection:hget (v, "explore"))
 			for i=0, 7 do
-				cards[v]["skill"..i] = tonumber(connection:hget (v, "skill"..i))
+				units[v]["skill"..i] = tonumber(connection:hget (v, "skill"..i))
 			end
 		end
 	end
 
-	return cards
+	return units
 end
 
 function cards.loadBySerialId (account_id, serId)
