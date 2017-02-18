@@ -85,30 +85,6 @@ SkillsMethod.sendSkillData = function(self, unit)
 end;
 
 
-MissionsMethod.sendMissionData = function(self, unit)
-	if unit then
-		if self.isDailyMission( unit ) then
-			local p = table.clone( unit )
-			p.time = p.time - os.time()
-			user.send_request("sendMission", {missionsList = {p}})
-		else
-			user.send_request("sendMission", {missionsList = {unit}})
-		end
-	else
-		local missionsList = {}
-		for k, v in pairs(user.missions.units) do
-			if self.isDailyMission( v ) then
-				local p = table.clone( v )
-				p.time = p.time - os.time()
-				table.insert( missionsList, p )
-			else
-				table.insert( missionsList, v )
-			end
-		end
-		user.send_request("sendMission", {missionsList = missionsList})
-	end
-end;
-
 local function onDataLoadCompleted()
 	--计算竞技场等级
 	user.level = getAccountLevel( user.account:getExp() )

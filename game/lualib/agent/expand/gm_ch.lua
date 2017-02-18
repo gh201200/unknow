@@ -69,8 +69,8 @@ end;
 
 CLIENT_GM_CMD['endmission'] = function( args )
 	for k, v in pairs(user.missions.units) do
-		if g_shareData.missionRepository[v.id].n32Content == tonumber(args.params[1]) then
-			v.progress = g_shareData.missionRepository[v.id].n32Goal
+		if g_shareData.missionRepository[v.dataId].n32Content == tonumber(args.params[1]) then
+			v.progress = g_shareData.missionRepository[v.dataId].n32Goal
 			user.missions:updateMission("endmission", v)
 		end
 	end
