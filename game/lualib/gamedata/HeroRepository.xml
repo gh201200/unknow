@@ -2424,7 +2424,7 @@
 		<n32Quality>0</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -2455,7 +2455,7 @@
 		<n32Quality>1</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -2486,7 +2486,7 @@
 		<n32Quality>2</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -2517,7 +2517,7 @@
 		<n32Quality>3</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -2548,7 +2548,7 @@
 		<n32Quality>4</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -2579,7 +2579,7 @@
 		<n32Quality>5</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -2610,7 +2610,7 @@
 		<n32Quality>6</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -2641,7 +2641,7 @@
 		<n32Quality>7</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -2672,7 +2672,7 @@
 		<n32Quality>8</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -2703,7 +2703,7 @@
 		<n32Quality>9</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -2734,7 +2734,7 @@
 		<n32Quality>10</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -2765,7 +2765,7 @@
 		<n32Quality>11</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -2796,7 +2796,7 @@
 		<n32Quality>12</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -2827,7 +2827,7 @@
 		<n32Quality>13</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -2858,7 +2858,7 @@
 		<n32Quality>14</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -2889,7 +2889,7 @@
 		<n32Quality>15</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -2920,7 +2920,7 @@
 		<n32Quality>16</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -2951,7 +2951,7 @@
 		<n32Quality>17</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -2982,7 +2982,7 @@
 		<n32Quality>18</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -3013,7 +3013,7 @@
 		<n32Quality>19</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -3044,7 +3044,7 @@
 		<n32Quality>20</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -3075,7 +3075,7 @@
 		<n32Quality>21</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -3106,7 +3106,7 @@
 		<n32Quality>22</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -3137,7 +3137,7 @@
 		<n32Quality>23</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -3168,7 +3168,7 @@
 		<n32Quality>24</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -3199,7 +3199,7 @@
 		<n32Quality>25</n32Quality>
 		<szName>尼尔</szName>
 		<n32ModelId>50015</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
@@ -10484,7 +10484,7 @@
 		<n32Quality>0</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -10515,7 +10515,7 @@
 		<n32Quality>1</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
@@ -10546,7 +10546,7 @@
 		<n32Quality>2</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
@@ -10577,7 +10577,7 @@
 		<n32Quality>3</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
@@ -10608,7 +10608,7 @@
 		<n32Quality>4</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
@@ -10639,7 +10639,7 @@
 		<n32Quality>5</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
@@ -10670,7 +10670,7 @@
 		<n32Quality>6</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
@@ -10701,7 +10701,7 @@
 		<n32Quality>7</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
@@ -10732,7 +10732,7 @@
 		<n32Quality>8</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
@@ -10763,7 +10763,7 @@
 		<n32Quality>9</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
@@ -10794,7 +10794,7 @@
 		<n32Quality>10</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
@@ -10825,7 +10825,7 @@
 		<n32Quality>11</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
@@ -10856,7 +10856,7 @@
 		<n32Quality>12</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
@@ -10887,7 +10887,7 @@
 		<n32Quality>13</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
@@ -10918,7 +10918,7 @@
 		<n32Quality>14</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
@@ -10949,7 +10949,7 @@
 		<n32Quality>15</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
@@ -10980,7 +10980,7 @@
 		<n32Quality>16</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
@@ -11011,7 +11011,7 @@
 		<n32Quality>17</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
@@ -11042,7 +11042,7 @@
 		<n32Quality>18</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
@@ -11073,7 +11073,7 @@
 		<n32Quality>19</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
@@ -11104,7 +11104,7 @@
 		<n32Quality>20</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
@@ -11135,7 +11135,7 @@
 		<n32Quality>21</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
@@ -11166,7 +11166,7 @@
 		<n32Quality>22</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
@@ -11197,7 +11197,7 @@
 		<n32Quality>23</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
@@ -11228,7 +11228,7 @@
 		<n32Quality>24</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
@@ -11259,7 +11259,7 @@
 		<n32Quality>25</n32Quality>
 		<szName>米娅</szName>
 		<n32ModelId>50013</n32ModelId>
-		<szModelIcon></szModelIcon>
+		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
