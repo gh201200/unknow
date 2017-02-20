@@ -910,4 +910,39 @@
 		<szRSkillVoice></szRSkillVoice>
 		<n32BSize>3</n32BSize>
 	</item>
+	<item id="60003">
+		<szName>狼法师</szName>
+		<szMod_name>langfashi</szMod_name>
+		<n32Hight>langfashi</n32Hight>
+		<n32Speed>9000</n32Speed>
+		<n32Attack01Time1>340</n32Attack01Time1>
+		<n32Attack01Time2>459</n32Attack01Time2>
+		<n32Attack01Time3>901</n32Attack01Time3>
+		<n32Attack01TriTime>417</n32Attack01TriTime>
+		<n32Attack02Time1>340</n32Attack02Time1>
+		<n32Attack02Time2>459</n32Attack02Time2>
+		<n32Attack02Time3>901</n32Attack02Time3>
+		<n32Attack02TriTime>417</n32Attack02TriTime>
+		<n32CastSelfTime1>0</n32CastSelfTime1>
+		<n32CastSelfTime2>0</n32CastSelfTime2>
+		<n32CastSelfTriTime>0</n32CastSelfTriTime>
+		<n32CastNearTime1>0</n32CastNearTime1>
+		<n32CastNearTime2>0</n32CastNearTime2>
+		<n32CastNearTriTime>0</n32CastNearTriTime>
+		<n32CastRemoteTime1>340</n32CastRemoteTime1>
+		<n32CastRemoteTime2>1360</n32CastRemoteTime2>
+		<n32CastRemoteTriTime>417</n32CastRemoteTriTime>
+		<n32CastBlinkTime1>0</n32CastBlinkTime1>
+		<n32CastBlinkTime2>0</n32CastBlinkTime2>
+		<n32CastBlinkTriTime>0</n32CastBlinkTriTime>
+		<n32CastUniqueTime1>0</n32CastUniqueTime1>
+		<n32CastUniqueTime2>0</n32CastUniqueTime2>
+		<n32CastUniqueTriTime>0</n32CastUniqueTriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>0</n32BSize>
+	</item>
 </info>

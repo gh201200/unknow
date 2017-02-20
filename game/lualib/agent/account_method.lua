@@ -84,6 +84,28 @@ local AccountMethod =
 		syslog.logmy("account", {opt=op, account=self.account_id, atype=1, val=_exp})
 	end;
 	--
+	getAExp = function(self)
+		return self.unit.aexp
+	end;
+	addAExp = function(self, op,  _exp)
+		if _exp == 0 then return end
+		local nv = self.unit.aexp + _exp
+		
+		nv = mClamp(nv, 0, math.maxint32)
+		
+		self.unit.aexp = nv
+
+		self:sendAccountData()
+		
+		local database = skynet.uniqueservice("database")		
+		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "aexp")
+		
+		--log record
+		--syslog.logmy("account", {opt=op, account=self.account_id, atype=1, val=_exp})
+	end;
+	
+
+	--
 	setIcon = function(self, op, _icon)
 		self.unit.icon = _icon		
 

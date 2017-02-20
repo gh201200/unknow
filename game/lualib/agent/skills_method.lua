@@ -34,7 +34,7 @@ local SkillsMethod =
 	end;
 	--
 	addSkill = function(self, op, dataId, num)
-		if not num then num = 1 end
+		if num <= 0 then return end
 		local serId = Macro_GetSkillSerialId(dataId)
 		local v = self:getSkillBySerialId( serId )
 		if v then	--already has the kind of skill
@@ -57,23 +57,15 @@ local SkillsMethod =
 	end;
 	--
 	delSkillByDataId = function(self, op, dataId, num)
-		if num == 0 then return end
-		local v = self:getSkillBySerialId(Macro_GetSkillSerialId(dataId))
-		if not v then return end
-		if v.count < num then return end
-		v.count = v.count - num
-
-		self:sendSkillData( v )	
-		
-		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "skills", "update", self.account_id, v, "count")
-		
-		--log record
-		syslog.infof("op[%s]player[%s]:delSkillByDataId:%d,%d", op, self.account_id, dataId, num)
+		if num >= 0 then return end
+		local unit = self:getSkillByDataId(dataId)
+		if unit then
+			self:delSkillByUuid(op, unit.uuid, num)
+		end
 	end;
 	--
 	delSkillByUuid = function(self, op, uuid, num)
-		if num == 0 then return end
+		if num >= 0 then return end
 		local v = self:getSkillByUuid(uuid)
 		if not v then return end
 		if v.count < num then return end
@@ -84,6 +76,9 @@ local SkillsMethod =
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "skills", "update", self.account_id, v, "count")
 		
+		local dat = g_shareData.skillRepository[v.dataId]
+		agentPlayer.account:addAExp(op, -Quest.ChipsExp["Skill"..(dat.n32Quality+1)]*num)		
+
 		--log record
 		syslog.infof("op[%s]player[%s]:delSkillByUuid:%s,%d:dataId[%d]", op, self.account_id, uuid, num, v.dataId)
 	end;

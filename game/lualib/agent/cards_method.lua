@@ -58,8 +58,7 @@ local CardsMethod =
 	end;
 	--
 	addCard = function(self, op, dataId, num)
-		if num == 0 then return end
-		if not num then num = 1 end
+		if num <= 0 then return end
 		local serId = Macro_GetCardSerialId(dataId)
 		local v = self:getCardBySerialId( serId )
 		if v then	--already has the kind of card
@@ -85,23 +84,13 @@ local CardsMethod =
 	end;
 	--
 	delCardByDataId = function(self, op, dataId, num)
-		if num == 0 then return end
-		local v = self:getCardBySerialId(Macro_GetCardSerialId(dataId))
-		if not v then return end
-		if v.count < num then return end
-		v.count = v.count - num
-
-		self:sendCardData( v )	
-		
-		local database = skynet.uniqueservice ("database")
-		skynet.call (database, "lua", "cards", "update", self.account_id, v, "count")
-		
-		--log record
-		syslog.logmy("card", {opt=op,account=self.account_id,cardId=dataId,cardNum=num,uuid=v.uuid})
+		if num >= 0 then return end
+		local v = self:getCardByDataId(Macro_GetCardSerialId(dataId))
+		self:delCardByUuid(op, v.uuid, num)
 	end;
 	--
 	delCardByUuid = function(self, op, uuid, num)
-		if num == 0 then return end
+		if num >= 0 then return end
 		local v = self:getCardByUuid(uuid)
 		if not v then return end
 		if v.count < num then return end
@@ -111,6 +100,8 @@ local CardsMethod =
 		
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "count")
+		
+		agentPlayer.account:addAExp(op, -Quest.ChipsExp.Hero * num)
 		
 		--log record
 		syslog.logmy("card", {opt=op,account=self.account_id,cardId=v.dataId,cardNum=num,uuid=v.uuid})

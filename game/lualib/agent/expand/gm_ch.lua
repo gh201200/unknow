@@ -33,6 +33,11 @@ CLIENT_GM_CMD['addlevel'] = function( args )
 	CMD.gm_add_level( p )
 end;
 
+CLIENT_GM_CMD['addaexp'] = function( args )
+	local p = { exp=args.params[1], }
+	CMD.gm_add_aexp( p )
+end;
+
 CLIENT_GM_CMD['addcard'] = function( args )
 	local p = { dataId=args.params[1], cardNum=args.params[2]}
 	CMD.gm_add_card( p )
@@ -44,7 +49,6 @@ CLIENT_GM_CMD['additem'] = function( args )
 	CMD.gm_add_items( items )
 end;
 
-
 CLIENT_GM_CMD['addgold'] = function( args )
 	local p = { id=user.account.account_id, gold=args.params[1] }
 	skynet.call(user.MAP, "lua", "addgold", p)
@@ -54,6 +58,7 @@ CLIENT_GM_CMD['addexp'] = function( args )
 	local p = { id=user.account.account_id, exp=args.params[1] }
 	skynet.call(user.MAP, "lua", "addexp", p)
 end;
+
 
 CLIENT_GM_CMD['addskill'] = function( args )
 	local p = { id=user.account.account_id, skillId=math.floor(args.params[1])}
@@ -91,6 +96,10 @@ end
 
 function CMD.gm_add_level( args )
 	user.account:addExp("gm_add_exp", args.exp)
+end
+
+function CMD.gm_add_aexp( args )
+	user.account:addAExp("gm_add_aexp", args.exp)
 end
 
 return GMCH.new()

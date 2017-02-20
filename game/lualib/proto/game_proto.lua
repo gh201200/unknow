@@ -583,6 +583,7 @@ sendAccount 3 {
 		flag 5 : integer
 		topexp 6 : integer
 		star 7 : integer
+		aexp 8 : integer
 	}
 }
 
