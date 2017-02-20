@@ -113,6 +113,14 @@
 		Hero = 18,	--英雄收集上限
 		Skill = 78,	--技能收集上限
 	},
+	
+	--碎片经验产出
+	ChipsExp = {
+		Card = 10,	--英雄碎片
+		Skill1 = 2, --1星技能
+		Skill2 = 10, --2星技能
+		Skill3 = 50, --3星技能
+	},
 
 	--说明文字
 	IllustrationContent = {
