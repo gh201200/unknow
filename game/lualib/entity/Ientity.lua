@@ -205,7 +205,7 @@ end
 function Ientity:setActionState(_speed, _action)
 	self.moveSpeed = _speed
 	self.curActionState = _action
-	--self:advanceEventStamp(EventStampType.Move)
+	self:advanceEventStamp(EventStampType.Move)
 end
 
 function Ientity:canStand()
@@ -243,7 +243,7 @@ function Ientity:pathFind(dx, dz)
 	
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
-	--print(self.pathMove)
+	print(self.pathMove)
 	return self.useAStar
 end
 
@@ -545,7 +545,7 @@ function Ientity:onMove2(dt)
 
 			if not nearBy and not doNotUseAstar then
 				print('use a star to find a path',self.serverId)
-			--	nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
 				if not nearBy then
 					--Map:dump()
 					self:stand()

@@ -164,8 +164,7 @@ local function onEnterGame()
 	user.send_request('reEnterRoom', r)
 end
 
-function REQUEST.enterGame(args)
-	database = skynet.uniqueservice ("database")
+local function loadAccountData()
 	--玩家数据加载
 	local account_id = user.account.account_id 
 	user.account.unit = skynet.call(database, "lua", "account", "load", account_id)	
@@ -201,9 +200,16 @@ function REQUEST.enterGame(args)
 	activity.post.loadAccount( account_id )
 	local cooldown = snax.queryservice 'cddown'
 	cooldown.post.loadAccount( account_id )
-	
-	onDataLoadCompleted()
 
+end
+
+function REQUEST.enterGame(args)
+	if not database then
+		database = skynet.uniqueservice ("database")
+		loadAccountData()
+		onDataLoadCompleted()
+	end
+		
 	onEnterGame()
 end
 
