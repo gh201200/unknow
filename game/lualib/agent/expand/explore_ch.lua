@@ -99,7 +99,6 @@ function REQUEST.exploreEnd( args )
 				if exploreDat.n32Color >= dat.n32Color then
 					color_c = color_c + COLOR_C[exploreDat.n32Color]
 				end
-				local att, cam = user.explore:getCon(i)
 				if unit["qua"..i] == dat.n32MainAtt then
 					con_c = con_c + 5
 				end
@@ -110,9 +109,16 @@ function REQUEST.exploreEnd( args )
 			end
 		end
 		score = score * exploreDat.n32Time / 3600
-		gains[exploreDat.n32CardItemId] = math.floor(score * exploreDat.n32CardC)
-		gains[exploreDat.n32SkillItemId] = math.floor(score * exploreDat.n32SkillC)
-		user.servicecmd.addItems("exploreEnd", gains)
+		local cn = math.floor(score * exploreDat.n32CardC)
+		for i=1, cn do
+			local rets = usePackageItem(exploreDat.n32CardItemId, user.level )
+			user.servicecmd.addItems("exploreEnd", rets)
+		end
+		local sn = math.floor(score * exploreDat.n32SkillC)
+		for i=1, sn do
+			local rets = usePackageItem(exploreDat.n32SkillItemId, user.level )
+			user.servicecmd.addItems("exploreEnd", rets)
+		end
 		user.account:addGold("exploreEnd", math.floor(score * exploreDat.n32GoldC))
 		user.explore:resetExplore("exploreEnd", unit.uuid)	
 	until true

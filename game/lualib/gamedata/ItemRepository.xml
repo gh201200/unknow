@@ -504,6 +504,24 @@
 		<szRetain2></szRetain2>
 		<szRetain3>11001,12;20101,17</szRetain3>
 	</item>
+	<item id="70001">
+		<szIcon>UI/Textures/BoxIcon/HeroBox.png</szIcon>
+		<szModule></szModule>
+		<szPickAni></szPickAni>
+		<n32Type>4</n32Type>
+		<n32Retain1>0</n32Retain1>
+		<szRetain2></szRetain2>
+		<szRetain3>11001,1</szRetain3>
+	</item>
+	<item id="71001">
+		<szIcon>UI/Textures/BoxIcon/SkillBox.png</szIcon>
+		<szModule></szModule>
+		<szPickAni></szPickAni>
+		<n32Type>4</n32Type>
+		<n32Retain1>0</n32Retain1>
+		<szRetain2></szRetain2>
+		<szRetain3>20001,1</szRetain3>
+	</item>
 	<item id="110101">
 		<szIcon></szIcon>
 		<szModule></szModule>

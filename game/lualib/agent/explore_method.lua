@@ -8,7 +8,9 @@ local ExploreMethod =
 	sendExploreData = function(self, unit)
 		if unit then
 			local p = table.clone( unit )
-			p.time = p.time - os.time()
+			if p.time ~= 0 then
+				p.time = p.time - os.time()
+			end
 			agentPlayer.send_request("sendExplore", {exploresList = {p}})
 		else
 			local exploresList = {}
