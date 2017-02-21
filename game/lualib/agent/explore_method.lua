@@ -36,19 +36,20 @@ local ExploreMethod =
 	initExplore = function(level, num)
 		local t = {}
 		local sum = 0
+		local r = 0
 		for k, v in pairs(g_shareData.exploreRepository) do
-			t[k] = v.n32RandC1 + v.n32RandC2 * level
-			sum = sum + t[k]
-			t[k] = sum
+			r = v.n32RandC1 + v.n32RandC2 * level
+			sum = sum + r
+			table.insert(t, {id=k, rate=sum})
 		end
 		local r = {}
 		for i=1, num do
 			local rd = math.random(1, sum)
 			for k, v in pairs(t) do
-				if v >= rd then
-					local dat = g_shareData.exploreRepository[k]
+				if v.rate >= rd then
+					local dat = g_shareData.exploreRepository[v.id]
 					local u = {uuid = uuid.gen()}
-					u.dataId = k
+					u.dataId = v.id
 					u.att0 = math.random(1, 3)
 					u.cam0 = math.random(1, 3)
 					u.cam1 = math.random(1, 3)
