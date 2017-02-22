@@ -117,7 +117,7 @@ local ExploreMethod =
 		self:sendExploreData(unit)
 
 		local database = skynet.uniqueservice("database")
-		skynet.call(database, "lua", "explores", "update", self.account_id, self.unit, "time", "uuid0", "uuid1", "uuid2")
+		skynet.call(database, "lua", "explores", "update", self.account_id, unit, "time", "uuid0", "uuid1", "uuid2")
 	end;
 }
 
