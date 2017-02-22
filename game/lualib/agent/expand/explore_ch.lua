@@ -96,7 +96,7 @@ function REQUEST.exploreEnd( args )
 				local color_c = 3
 				local con_c = 10
 				local dat = g_shareData.heroRepository[card.dataId]
-				if exploreDat.n32Color >= dat.n32Color then
+				if dat.n32Color >= exploreDat.n32Color  then
 					color_c = color_c + COLOR_C[exploreDat.n32Color]
 				end
 				if unit["qua"..i] == dat.n32MainAtt then
