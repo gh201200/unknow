@@ -11,7 +11,6 @@ local syslog = require "syslog"
 local Time = require "time"
 local protoloader = require "proto.protoloader"
 local character_handler = require "agent.character_handler"
-
 agentPlayer = nil
 
 local hijack_msg = {}
@@ -49,7 +48,9 @@ local function writebytes(f,x)
     f:write(b4,b3,b2,b1)
 end
 local function send_msg (fd, msg)
+	if user.isAi == true then return end
 	local package = string.pack (">s2", msg)
+	--[[
 	--开始战斗记录
 	if recordState ==  1 then
 		local time = skynet.now()
@@ -61,6 +62,7 @@ local function send_msg (fd, msg)
 		fightRecorder:flush()
 		recordState = 0
 	end
+	]]
 	socket.write (fd, package)
 end
 
@@ -207,8 +209,8 @@ end
 
 local CMD = {}
 function CMD.Start (conf)
+	print("开启agent",conf)
 	g_shareData = sharedata.query 'gdd'
-	
 	DEF = g_shareData.DEF
 	Quest = g_shareData.Quest
 	local gate = conf.gate
@@ -229,6 +231,7 @@ function CMD.Start (conf)
 		missions = nil,
 		heartBeatTime = os.time(),
 		isOnLine = true,
+		isAi = conf.isAi,
 	}
 	agentPlayer = user
 	user_fd = user.fd
@@ -236,18 +239,27 @@ function CMD.Start (conf)
 	RESPONSE = user.RESPONSE
         user.servicecmd = CMD
 	ref_connect = 1
+	character_handler:register (user)
+	--和网络消息有关服务器全部屏蔽
+	if user.isAi ==  true then return end
 	heartbeat_check()
 	--注册匹配服务
 	local matchserver = skynet.queryservice "match"
 	request_hijack_msg(matchserver)
-	--user.MAP = map
-	character_handler:register (user)
 	skynet.call(gate, "lua", "forward", user_fd)
 	--注册到聊天服务
 	registerToChatserver()
 	--注册到邮件服务
 	local centermail = snax.uniqueservice("centermail")
 	centermail.post.listen(user.account.account_id, skynet.self(), true)
+end
+
+--为ai服务用
+function CMD.Request(name,args)
+	local f = REQUEST[name]
+	if f then
+		local ok, ret = xpcall (f, traceback, args)
+	end
 end
 
 function CMD.reconnect(conf)

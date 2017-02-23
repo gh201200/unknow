@@ -4,8 +4,8 @@ local vector3 = require "vector3"
 local EntityManager = require "entity.EntityManager"
 local BattleOverManager = require "entity.BattleOverManager"
 local passtiveSpell =  require "skill.passtiveSpell"
+local PVPAI = require "ai.PVPAI" 
 local IMapPlayer = class("IMapPlayer", Ientity)
-
 function IMapPlayer.create(arg)
 
 	local player = IMapPlayer.new()
@@ -15,14 +15,15 @@ function IMapPlayer.create(arg)
 	player.nickName = arg.nickname
 	player.color = arg.color 	--红方 蓝方 1 2 3 和 4 5 6表示 以及出生位置
 	player.bornPos:set(arg.bornPos[1]/GAMEPLAY_PERCENT, 0, arg.bornPos[2]/GAMEPLAY_PERCENT)
-	player:init(arg.pickedheroid)
-	player.accountLevel = arg.level
-	player.accountExp = arg.eloValue
 	if player:isRed() then
 		player.camp = CampType.RED
 	else
 		player.camp = CampType.BLUE
 	end
+	player.isAI = arg.isAI
+	player:init(arg.pickedheroid)
+	player.accountLevel = arg.level
+	player.accountExp = arg.eloValue
 	player.bindSkills = skynet.call(player.agent, "lua", "getBindSkills", arg.pickedheroid)
 	return player
 end	
@@ -37,12 +38,15 @@ function IMapPlayer:ctor()
 	self.color = 0
 	self.camp = 0
 	self.pets = {}
+	self.isAI = false
+	self.ai = nil
+	self.hater = nil
+	self.hateTime = 0 
 	self.HonorData = {0,0,0,0,0,0,0} -- 输出伤害 承受伤害 助攻数 击杀数量 死亡数量
 	self.bAttackPlayers = {} --被攻击的玩家
 	self.accountLevel = 0
 	register_class_var(self, 'LoadProgress', 0)
 	register_class_var(self, 'RaiseTime', 0)
-	
 	
 	register_class_var(self, 'GodSkill', 0, self.onGodSkill)
 	register_class_var(self, 'CommonSkill', 0, self.onCommonSkill)
@@ -60,6 +64,12 @@ end
 
 function IMapPlayer:addHp(_hp, mask, source)
 	IMapPlayer.super.addHp(self,_hp,mask,source)
+	if _hp < 0 and source then
+		if source:getType() == "IMapPlayer" or source:getType() == "IBuilding" then
+			self.hater = source
+			self.hateTime = 2000 --2秒cd
+		end
+	end
 	if self:getHp() <= 0 then
 		self.HonorData[5] = self.HonorData[5] + 1
 		if source ~= nil and source:getType() == "IMapPlayer" then
@@ -80,7 +90,12 @@ function IMapPlayer:isSameCamp( v )
 end
 
 function IMapPlayer:update(dt)
-	
+	if self.ai then
+		self.ai:update(dt)
+	end	
+	if self.hateTime <= 0 then
+		self.hater = nil
+	end
 	if self:getRaiseTime() > 0 then
 		self:setRaiseTime( self:getRaiseTime() - dt )
 		if self:getRaiseTime() <= 0 then
@@ -100,6 +115,9 @@ end
 
 
 function IMapPlayer:init(heroId)
+	if self.isAI == true then
+		self.ai = PVPAI.new(self)
+	end
 	self.attDat = g_shareData.heroRepository[heroId]
 	self:setGodSkill( self.attDat.n32GodSkillId)
 	self:setCommonSkill( self.attDat.n32CommonSkillId )
@@ -269,6 +287,8 @@ function IMapPlayer:upgradeSkill(skillId)
 	self:addSkill(skillId, false)
 	return 0, self.skillTable[skillId]
 end
-	
+function IMapPlayer:addHp(_hp, mask, source)  
+	IMapPlayer.super.addHp(self,_hp,mask,source)
+end	
 return IMapPlayer
 

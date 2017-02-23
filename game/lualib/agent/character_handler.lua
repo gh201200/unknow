@@ -234,8 +234,9 @@ function REQUEST.enterGame(args)
 	cooldown.post.loadAccount( account_id )
 	
 	onDataLoadCompleted()
-
-	onEnterGame()
+	if user.isAi == false then
+		onEnterGame()
+	end
 end
 
 function REQUEST.character_list ()

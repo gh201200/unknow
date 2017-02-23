@@ -66,14 +66,26 @@ function SOCKET.data(fd, msg)
 	print('socket data error = ',msg)
 end
 
+function CMD.authAi(name)
+	local s = slave[balance]
+	balance = balance + 1
+	if balance > nslave then balance = 1 end
+	return skynet.call (s, "lua", "authAi", name)
+end 
 function CMD.agentEnter(agent,fd,account,reconnect)
 	print("CMD.agentEnter",agent,fd,account,reconnect)
-	agentfd[fd] = agent
+	if fd ~= nil then
+		agentfd[fd] = agent
+	end
 	if reconnect == true then
 		--重连重置句柄值
-		skynet.call(agentfd[fd],"lua","reconnect",{ gate = gate, client = fd,account = account, watchdog = skynet.self() })
+		skynet.call(agent,"lua","reconnect",{ gate = gate, client = fd,account = account, watchdog = skynet.self() })
 	else
-		skynet.call(agentfd[fd], "lua", "Start", { gate = gate, client = fd,account = account, watchdog = skynet.self() })
+		isAi = false
+		if fd == nil then	
+			isAi = true
+		end
+		skynet.call(agent, "lua", "Start", { gate = gate, client = fd,account = account, watchdog = skynet.self() ,isAi = isAi})
 	end 
 end
 

@@ -156,7 +156,7 @@ function Ientity:isKind(entity,_atk)
 	_atk = _atk or false
 	if _atk == false then
 		if entity:getType() == "IBuilding" then
-			return true
+		--	return true
 		end		
 	end
 	if self.camp == CampType.KIND or entity.camp == CampType.KIND then
@@ -285,7 +285,6 @@ function Ientity:setTargetPos(target)
 	local pos = vector3.create(target.x,0,target.z)
 	self:setTarget(transfrom.new(pos,nil))
 end
-
 function Ientity:update(dt)
 	if self:isDead() == false then
 		self.spell:update(dt)
@@ -313,7 +312,6 @@ function Ientity:update(dt)
 			self:onForceMove(dt)	
 		end
 	end
-	--技能相关
 	if self.ReadySkillId ~= 0  then	
 		local err = self:canCast(self.ReadySkillId)
 		if err == 0 then
@@ -691,6 +689,7 @@ function Ientity:onRaise()
 end
 
 function Ientity:addHp(_hp, mask, source)
+
 	isDelay = isDelay or false 
 	_hp = math.floor(_hp)
 	if _hp == 0 then return end
