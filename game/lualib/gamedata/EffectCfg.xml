@@ -79,7 +79,7 @@
 	</item>
 	<item id="10008">
 		<n32type>2</n32type>
-		<szassert>huichunjili_cast_hand</szassert>
+		<szassert>huichunjili_cast_dhand</szassert>
 		<n32time>1</n32time>
 		<n32speed>0</n32speed>
 		<n32position>4</n32position>
@@ -491,7 +491,7 @@
 		<n32speed>2</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>1.6</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>裂空斩弹道</szillustration>
 	</item>
