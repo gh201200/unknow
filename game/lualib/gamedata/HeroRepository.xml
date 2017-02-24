@@ -5,7 +5,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -36,7 +36,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -67,7 +67,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -98,7 +98,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -129,7 +129,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -160,7 +160,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -191,7 +191,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -222,7 +222,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -253,7 +253,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -284,7 +284,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -315,7 +315,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -346,7 +346,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -377,7 +377,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -408,7 +408,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -439,7 +439,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -470,7 +470,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -501,7 +501,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -532,7 +532,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -563,7 +563,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -594,7 +594,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -625,7 +625,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -656,7 +656,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -687,7 +687,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -718,7 +718,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -749,7 +749,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -780,7 +780,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>厚多</szName>
-		<n32ModelId>50002</n32ModelId>
+		<n32ModelId>51100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hordor.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -811,14 +811,14 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>1</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
@@ -842,14 +842,14 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>10</n32WCardNum>
 		<n32CCardNum>32</n32CCardNum>
 		<n32GoldNum>50</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>30</n32Strength>
@@ -873,14 +873,14 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>15</n32WCardNum>
 		<n32CCardNum>40</n32CCardNum>
 		<n32GoldNum>100</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>31</n32Strength>
@@ -904,14 +904,14 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>20</n32WCardNum>
 		<n32CCardNum>52</n32CCardNum>
 		<n32GoldNum>150</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>33</n32Strength>
@@ -935,14 +935,14 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>25</n32WCardNum>
 		<n32CCardNum>68</n32CCardNum>
 		<n32GoldNum>200</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>35</n32Strength>
@@ -966,14 +966,14 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>30</n32WCardNum>
 		<n32CCardNum>88</n32CCardNum>
 		<n32GoldNum>250</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>37</n32Strength>
@@ -997,14 +997,14 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>35</n32WCardNum>
 		<n32CCardNum>112</n32CCardNum>
 		<n32GoldNum>500</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101001</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>39</n32Strength>
@@ -1028,14 +1028,14 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>40</n32WCardNum>
 		<n32CCardNum>140</n32CCardNum>
 		<n32GoldNum>750</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>41</n32Strength>
@@ -1059,14 +1059,14 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>45</n32WCardNum>
 		<n32CCardNum>172</n32CCardNum>
 		<n32GoldNum>1000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>43</n32Strength>
@@ -1090,14 +1090,14 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>50</n32WCardNum>
 		<n32CCardNum>208</n32CCardNum>
 		<n32GoldNum>1250</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>45</n32Strength>
@@ -1121,14 +1121,14 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>55</n32WCardNum>
 		<n32CCardNum>248</n32CCardNum>
 		<n32GoldNum>1500</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>47</n32Strength>
@@ -1152,14 +1152,14 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>60</n32WCardNum>
 		<n32CCardNum>292</n32CCardNum>
 		<n32GoldNum>1750</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>49</n32Strength>
@@ -1183,14 +1183,14 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>65</n32WCardNum>
 		<n32CCardNum>340</n32CCardNum>
 		<n32GoldNum>3000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101011</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>51</n32Strength>
@@ -1214,14 +1214,14 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>70</n32WCardNum>
 		<n32CCardNum>392</n32CCardNum>
 		<n32GoldNum>4000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>53</n32Strength>
@@ -1245,14 +1245,14 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>75</n32WCardNum>
 		<n32CCardNum>448</n32CCardNum>
 		<n32GoldNum>5000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>56</n32Strength>
@@ -1276,14 +1276,14 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>80</n32WCardNum>
 		<n32CCardNum>508</n32CCardNum>
 		<n32GoldNum>6000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>58</n32Strength>
@@ -1307,14 +1307,14 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>85</n32WCardNum>
 		<n32CCardNum>572</n32CCardNum>
 		<n32GoldNum>7000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>60</n32Strength>
@@ -1338,14 +1338,14 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>90</n32WCardNum>
 		<n32CCardNum>640</n32CCardNum>
 		<n32GoldNum>8000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>62</n32Strength>
@@ -1369,14 +1369,14 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>95</n32WCardNum>
 		<n32CCardNum>712</n32CCardNum>
 		<n32GoldNum>10000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101021</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>65</n32Strength>
@@ -1400,14 +1400,14 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>100</n32WCardNum>
 		<n32CCardNum>788</n32CCardNum>
 		<n32GoldNum>12000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>67</n32Strength>
@@ -1431,14 +1431,14 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>105</n32WCardNum>
 		<n32CCardNum>868</n32CCardNum>
 		<n32GoldNum>14000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>69</n32Strength>
@@ -1462,14 +1462,14 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>110</n32WCardNum>
 		<n32CCardNum>952</n32CCardNum>
 		<n32GoldNum>16000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>72</n32Strength>
@@ -1493,14 +1493,14 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>115</n32WCardNum>
 		<n32CCardNum>1040</n32CCardNum>
 		<n32GoldNum>18000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>74</n32Strength>
@@ -1524,14 +1524,14 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>120</n32WCardNum>
 		<n32CCardNum>1132</n32CCardNum>
 		<n32GoldNum>20000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>77</n32Strength>
@@ -1555,14 +1555,14 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>125</n32WCardNum>
 		<n32CCardNum>1228</n32CCardNum>
 		<n32GoldNum>25000</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101031</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>79</n32Strength>
@@ -1586,14 +1586,14 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>奥斯顿</szName>
-		<n32ModelId>50022</n32ModelId>
+		<n32ModelId>51101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Alston.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
 		<n32WCardNum>0</n32WCardNum>
 		<n32CCardNum>1328</n32CCardNum>
 		<n32GoldNum>0</n32GoldNum>
-		<n32CommonSkillId>911002</n32CommonSkillId>
+		<n32CommonSkillId>911101</n32CommonSkillId>
 		<n32GodSkillId>51101041</n32GodSkillId>
 		<n32MainAtt>1</n32MainAtt>
 		<n32Strength>81</n32Strength>
@@ -1617,7 +1617,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1648,7 +1648,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1679,7 +1679,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1710,7 +1710,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1741,7 +1741,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1772,7 +1772,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1803,7 +1803,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1834,7 +1834,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1865,7 +1865,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1896,7 +1896,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1927,7 +1927,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1958,7 +1958,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -1989,7 +1989,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2020,7 +2020,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2051,7 +2051,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2082,7 +2082,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2113,7 +2113,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2144,7 +2144,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2175,7 +2175,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2206,7 +2206,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2237,7 +2237,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2268,7 +2268,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2299,7 +2299,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2330,7 +2330,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2361,7 +2361,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2392,7 +2392,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>凯文</szName>
-		<n32ModelId>50001</n32ModelId>
+		<n32ModelId>51200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kevin.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2423,7 +2423,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2454,7 +2454,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2485,7 +2485,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2516,7 +2516,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2547,7 +2547,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2578,7 +2578,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2609,7 +2609,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2640,7 +2640,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2671,7 +2671,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2702,7 +2702,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2733,7 +2733,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2764,7 +2764,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2795,7 +2795,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2826,7 +2826,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2857,7 +2857,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2888,7 +2888,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2919,7 +2919,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2950,7 +2950,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -2981,7 +2981,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3012,7 +3012,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3043,7 +3043,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3074,7 +3074,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3105,7 +3105,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3136,7 +3136,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3167,7 +3167,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3198,7 +3198,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>尼尔</szName>
-		<n32ModelId>50015</n32ModelId>
+		<n32ModelId>51201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Neil.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3229,7 +3229,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3260,7 +3260,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3291,7 +3291,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3322,7 +3322,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3353,7 +3353,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3384,7 +3384,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3415,7 +3415,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3446,7 +3446,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3477,7 +3477,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3508,7 +3508,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3539,7 +3539,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3570,7 +3570,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3601,7 +3601,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3632,7 +3632,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3663,7 +3663,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3694,7 +3694,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3725,7 +3725,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3756,7 +3756,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3787,7 +3787,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3818,7 +3818,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3849,7 +3849,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3880,7 +3880,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3911,7 +3911,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3942,7 +3942,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -3973,7 +3973,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4004,7 +4004,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>菲碧</szName>
-		<n32ModelId>50009</n32ModelId>
+		<n32ModelId>51300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Phoebe.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4035,7 +4035,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4066,7 +4066,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4097,7 +4097,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4128,7 +4128,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4159,7 +4159,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4190,7 +4190,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4221,7 +4221,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4252,7 +4252,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4283,7 +4283,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4314,7 +4314,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4345,7 +4345,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4376,7 +4376,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4407,7 +4407,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4438,7 +4438,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4469,7 +4469,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4500,7 +4500,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4531,7 +4531,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4562,7 +4562,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4593,7 +4593,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4624,7 +4624,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4655,7 +4655,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4686,7 +4686,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4717,7 +4717,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4748,7 +4748,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4779,7 +4779,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4810,7 +4810,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>撒缪尔</szName>
-		<n32ModelId>50006</n32ModelId>
+		<n32ModelId>51301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Samuel.png</szModelIcon>
 		<n32Camp>1</n32Camp>
 		<bOpen>1</bOpen>
@@ -4841,7 +4841,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -4872,7 +4872,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -4903,7 +4903,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -4934,7 +4934,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -4965,7 +4965,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -4996,7 +4996,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5027,7 +5027,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5058,7 +5058,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5089,7 +5089,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5120,7 +5120,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5151,7 +5151,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5182,7 +5182,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5213,7 +5213,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5244,7 +5244,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5275,7 +5275,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5306,7 +5306,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5337,7 +5337,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5368,7 +5368,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5399,7 +5399,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5430,7 +5430,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5461,7 +5461,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5492,7 +5492,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5523,7 +5523,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5554,7 +5554,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5585,7 +5585,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5616,7 +5616,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>柯克·李</szName>
-		<n32ModelId>50012</n32ModelId>
+		<n32ModelId>52100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Kirk_Lee.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5647,7 +5647,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5678,7 +5678,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5709,7 +5709,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5740,7 +5740,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5771,7 +5771,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5802,7 +5802,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5833,7 +5833,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5864,7 +5864,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5895,7 +5895,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5926,7 +5926,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5957,7 +5957,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -5988,7 +5988,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6019,7 +6019,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6050,7 +6050,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6081,7 +6081,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6112,7 +6112,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6143,7 +6143,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6174,7 +6174,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6205,7 +6205,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6236,7 +6236,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6267,7 +6267,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6298,7 +6298,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6329,7 +6329,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6360,7 +6360,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6391,7 +6391,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6422,7 +6422,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>格萝利娅</szName>
-		<n32ModelId>50011</n32ModelId>
+		<n32ModelId>52101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Glroria.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6453,7 +6453,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6484,7 +6484,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6515,7 +6515,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6546,7 +6546,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6577,7 +6577,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6608,7 +6608,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6639,7 +6639,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6670,7 +6670,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6701,7 +6701,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6732,7 +6732,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6763,7 +6763,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6794,7 +6794,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6825,7 +6825,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6856,7 +6856,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6887,7 +6887,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6918,7 +6918,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6949,7 +6949,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -6980,7 +6980,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7011,7 +7011,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7042,7 +7042,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7073,7 +7073,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7104,7 +7104,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7135,7 +7135,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7166,7 +7166,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7197,7 +7197,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7228,7 +7228,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>夕巴斯汀</szName>
-		<n32ModelId>50016</n32ModelId>
+		<n32ModelId>52200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sebastian.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7259,7 +7259,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7290,7 +7290,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7321,7 +7321,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7352,7 +7352,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7383,7 +7383,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7414,7 +7414,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7445,7 +7445,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7476,7 +7476,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7507,7 +7507,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7538,7 +7538,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7569,7 +7569,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7600,7 +7600,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7631,7 +7631,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7662,7 +7662,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7693,7 +7693,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7724,7 +7724,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7755,7 +7755,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7786,7 +7786,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7817,7 +7817,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7848,7 +7848,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7879,7 +7879,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7910,7 +7910,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7941,7 +7941,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -7972,7 +7972,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8003,7 +8003,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8034,7 +8034,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>若拉</szName>
-		<n32ModelId>50017</n32ModelId>
+		<n32ModelId>52201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Zora.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8065,7 +8065,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8096,7 +8096,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8127,7 +8127,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8158,7 +8158,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8189,7 +8189,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8220,7 +8220,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8251,7 +8251,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8282,7 +8282,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8313,7 +8313,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8344,7 +8344,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8375,7 +8375,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8406,7 +8406,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8437,7 +8437,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8468,7 +8468,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8499,7 +8499,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8530,7 +8530,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8561,7 +8561,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8592,7 +8592,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8623,7 +8623,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8654,7 +8654,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8685,7 +8685,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8716,7 +8716,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8747,7 +8747,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8778,7 +8778,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8809,7 +8809,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8840,7 +8840,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>西维娅</szName>
-		<n32ModelId>50019</n32ModelId>
+		<n32ModelId>52300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sylvia.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8871,7 +8871,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8902,7 +8902,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8933,7 +8933,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8964,7 +8964,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -8995,7 +8995,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9026,7 +9026,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9057,7 +9057,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9088,7 +9088,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9119,7 +9119,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9150,7 +9150,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9181,7 +9181,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9212,7 +9212,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9243,7 +9243,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9274,7 +9274,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9305,7 +9305,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9336,7 +9336,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9367,7 +9367,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9398,7 +9398,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9429,7 +9429,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9460,7 +9460,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9491,7 +9491,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9522,7 +9522,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9553,7 +9553,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9584,7 +9584,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9615,7 +9615,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9646,7 +9646,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>麦斯威尔</szName>
-		<n32ModelId>50005</n32ModelId>
+		<n32ModelId>52301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Maxwell.png</szModelIcon>
 		<n32Camp>2</n32Camp>
 		<bOpen>1</bOpen>
@@ -9677,7 +9677,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9708,7 +9708,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9739,7 +9739,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9770,7 +9770,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9801,7 +9801,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9832,7 +9832,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9863,7 +9863,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9894,7 +9894,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9925,7 +9925,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9956,7 +9956,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -9987,7 +9987,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10018,7 +10018,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10049,7 +10049,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10080,7 +10080,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10111,7 +10111,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10142,7 +10142,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10173,7 +10173,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10204,7 +10204,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10235,7 +10235,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10266,7 +10266,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10297,7 +10297,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10328,7 +10328,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10359,7 +10359,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10390,7 +10390,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10421,7 +10421,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10452,7 +10452,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>柏德温</szName>
-		<n32ModelId>50010</n32ModelId>
+		<n32ModelId>53100</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Baldwin.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10483,7 +10483,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10514,7 +10514,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10545,7 +10545,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10576,7 +10576,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10607,7 +10607,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10638,7 +10638,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10669,7 +10669,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10700,7 +10700,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10731,7 +10731,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10762,7 +10762,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10793,7 +10793,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10824,7 +10824,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10855,7 +10855,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10886,7 +10886,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10917,7 +10917,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10948,7 +10948,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -10979,7 +10979,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11010,7 +11010,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11041,7 +11041,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11072,7 +11072,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11103,7 +11103,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11134,7 +11134,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11165,7 +11165,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11196,7 +11196,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11227,7 +11227,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11258,7 +11258,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>米娅</szName>
-		<n32ModelId>50013</n32ModelId>
+		<n32ModelId>53101</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Miya.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11289,7 +11289,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11320,7 +11320,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11351,7 +11351,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11382,7 +11382,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11413,7 +11413,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11444,7 +11444,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11475,7 +11475,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11506,7 +11506,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11537,7 +11537,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11568,7 +11568,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11599,7 +11599,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11630,7 +11630,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11661,7 +11661,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11692,7 +11692,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11723,7 +11723,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11754,7 +11754,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11785,7 +11785,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11816,7 +11816,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11847,7 +11847,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11878,7 +11878,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11909,7 +11909,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11940,7 +11940,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -11971,7 +11971,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12002,7 +12002,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12033,7 +12033,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12064,7 +12064,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>肖恩</szName>
-		<n32ModelId>50014</n32ModelId>
+		<n32ModelId>53200</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Sean.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12095,7 +12095,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12126,7 +12126,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12157,7 +12157,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12188,7 +12188,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12219,7 +12219,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12250,7 +12250,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12281,7 +12281,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12312,7 +12312,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12343,7 +12343,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12374,7 +12374,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12405,7 +12405,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12436,7 +12436,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12467,7 +12467,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12498,7 +12498,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12529,7 +12529,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12560,7 +12560,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12591,7 +12591,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12622,7 +12622,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12653,7 +12653,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12684,7 +12684,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12715,7 +12715,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12746,7 +12746,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12777,7 +12777,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12808,7 +12808,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12839,7 +12839,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12870,7 +12870,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>尤娜</szName>
-		<n32ModelId>50018</n32ModelId>
+		<n32ModelId>53201</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Una.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12901,7 +12901,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12932,7 +12932,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12963,7 +12963,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -12994,7 +12994,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13025,7 +13025,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13056,7 +13056,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13087,7 +13087,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13118,7 +13118,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13149,7 +13149,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13180,7 +13180,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13211,7 +13211,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13242,7 +13242,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13273,7 +13273,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13304,7 +13304,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13335,7 +13335,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13366,7 +13366,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13397,7 +13397,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13428,7 +13428,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13459,7 +13459,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13490,7 +13490,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13521,7 +13521,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13552,7 +13552,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13583,7 +13583,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13614,7 +13614,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13645,7 +13645,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13676,7 +13676,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>莫顿</szName>
-		<n32ModelId>50020</n32ModelId>
+		<n32ModelId>53300</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Morton.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13707,7 +13707,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>0</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13738,7 +13738,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>1</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13769,7 +13769,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>2</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13800,7 +13800,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>3</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13831,7 +13831,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>4</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13862,7 +13862,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>5</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13893,7 +13893,7 @@
 		<n32Color>1</n32Color>
 		<n32Quality>6</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13924,7 +13924,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>7</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13955,7 +13955,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>8</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -13986,7 +13986,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>9</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14017,7 +14017,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>10</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14048,7 +14048,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>11</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14079,7 +14079,7 @@
 		<n32Color>2</n32Color>
 		<n32Quality>12</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14110,7 +14110,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>13</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14141,7 +14141,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>14</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14172,7 +14172,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>15</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14203,7 +14203,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>16</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14234,7 +14234,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>17</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14265,7 +14265,7 @@
 		<n32Color>3</n32Color>
 		<n32Quality>18</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14296,7 +14296,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>19</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14327,7 +14327,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>20</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14358,7 +14358,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>21</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14389,7 +14389,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>22</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14420,7 +14420,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>23</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14451,7 +14451,7 @@
 		<n32Color>4</n32Color>
 		<n32Quality>24</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>
@@ -14482,7 +14482,7 @@
 		<n32Color>5</n32Color>
 		<n32Quality>25</n32Quality>
 		<szName>修</szName>
-		<n32ModelId>50021</n32ModelId>
+		<n32ModelId>53301</n32ModelId>
 		<szModelIcon>UI/Textures/HeadPortraits_Square/Hugh.png</szModelIcon>
 		<n32Camp>4</n32Camp>
 		<bOpen>1</bOpen>

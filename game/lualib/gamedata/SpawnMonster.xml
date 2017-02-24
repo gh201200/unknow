@@ -6,6 +6,7 @@
 		<n32CDTime>30</n32CDTime>
 		<szPosition>(34000,79400),(22300,79400),(45300,79400)</szPosition>
 		<n32MapId>1</n32MapId>
+		<n32Attach>2</n32Attach>
 	</item>
 	<item id="112">
 		<szMonsterIds>21004, 21005, 21006</szMonsterIds>
@@ -13,6 +14,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(8000,25000),(17200,25000),(12500,32500)</szPosition>
 		<n32MapId>1</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="113">
 		<szMonsterIds>21007, 21008, 21009</szMonsterIds>
@@ -20,6 +22,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(49900,25000),(59100,25000),(54400,32500)</szPosition>
 		<n32MapId>1</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="114">
 		<szMonsterIds>21010, 21011, 21012</szMonsterIds>
@@ -27,6 +30,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(59000,128800),(49800,128800),(54600,123100)</szPosition>
 		<n32MapId>1</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="115">
 		<szMonsterIds>21013, 21014, 21015</szMonsterIds>
@@ -34,6 +38,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(17100,128600),(7900,128600),(12500,122900)</szPosition>
 		<n32MapId>1</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="121">
 		<szMonsterIds>22001, 22002, 22003</szMonsterIds>
@@ -41,6 +46,7 @@
 		<n32CDTime>30</n32CDTime>
 		<szPosition>(34000,79400),(22300,79400),(45300,79400)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>2</n32Attach>
 	</item>
 	<item id="122">
 		<szMonsterIds>22004, 22005, 22006</szMonsterIds>
@@ -48,6 +54,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(8000,25000),(17200,25000),(12500,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="123">
 		<szMonsterIds>22007, 22008, 22009</szMonsterIds>
@@ -55,6 +62,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(49900,25000),(59100,25000),(54400,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="124">
 		<szMonsterIds>22010, 22011, 22012</szMonsterIds>
@@ -62,6 +70,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(59000,128800),(49800,128800),(54600,123100)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="125">
 		<szMonsterIds>22013, 22014, 22015</szMonsterIds>
@@ -69,6 +78,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(17100,128600),(7900,128600),(12500,122900)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="131">
 		<szMonsterIds>23001, 23002, 23003</szMonsterIds>
@@ -76,6 +86,7 @@
 		<n32CDTime>30</n32CDTime>
 		<szPosition>(34000,79400),(22300,79400),(45300,79400)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>2</n32Attach>
 	</item>
 	<item id="132">
 		<szMonsterIds>23004, 23005, 23006</szMonsterIds>
@@ -83,6 +94,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(8000,25000),(17200,25000),(12500,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="133">
 		<szMonsterIds>23007, 23008, 23009</szMonsterIds>
@@ -90,6 +102,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(49900,25000),(59100,25000),(54400,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="134">
 		<szMonsterIds>23010, 23011, 23012</szMonsterIds>
@@ -97,6 +110,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(59000,128800),(49800,128800),(54600,123100)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="135">
 		<szMonsterIds>23013, 23014, 23015</szMonsterIds>
@@ -104,6 +118,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(17100,128600),(7900,128600),(12500,122900)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="141">
 		<szMonsterIds>24001, 24002, 24003</szMonsterIds>
@@ -111,6 +126,7 @@
 		<n32CDTime>30</n32CDTime>
 		<szPosition>(34000,79400),(22300,79400),(45300,79400)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>2</n32Attach>
 	</item>
 	<item id="142">
 		<szMonsterIds>24004, 24005, 24006</szMonsterIds>
@@ -118,6 +134,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(8000,25000),(17200,25000),(12500,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="143">
 		<szMonsterIds>24007, 24008, 24009</szMonsterIds>
@@ -125,6 +142,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(49900,25000),(59100,25000),(54400,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="144">
 		<szMonsterIds>24010, 24011, 24012</szMonsterIds>
@@ -132,6 +150,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(59000,128800),(49800,128800),(54600,123100)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="145">
 		<szMonsterIds>24013, 24014, 24015</szMonsterIds>
@@ -139,6 +158,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(17100,128600),(7900,128600),(12500,122900)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="151">
 		<szMonsterIds>25001, 25002, 25003</szMonsterIds>
@@ -146,6 +166,7 @@
 		<n32CDTime>30</n32CDTime>
 		<szPosition>(34000,79400),(22300,79400),(45300,79400)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>2</n32Attach>
 	</item>
 	<item id="152">
 		<szMonsterIds>25004, 25005, 25006</szMonsterIds>
@@ -153,6 +174,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(8000,25000),(17200,25000),(12500,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="153">
 		<szMonsterIds>25007, 25008, 25009</szMonsterIds>
@@ -160,6 +182,7 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(49900,25000),(59100,25000),(54400,32500)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>1</n32Attach>
 	</item>
 	<item id="154">
 		<szMonsterIds>25010, 25011, 25012</szMonsterIds>
@@ -167,6 +190,7 @@
 		<n32CDTime>25</n32CDTime>
 		<szPosition>(59000,128800),(49800,128800),(54600,123100)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 	<item id="155">
 		<szMonsterIds>25013, 25014, 25015</szMonsterIds>
@@ -174,5 +198,6 @@
 		<n32CDTime>27</n32CDTime>
 		<szPosition>(17100,128600),(7900,128600),(12500,122900)</szPosition>
 		<n32MapId>0</n32MapId>
+		<n32Attach>0</n32Attach>
 	</item>
 </info>
