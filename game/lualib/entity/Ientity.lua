@@ -1116,9 +1116,9 @@ function Ientity:castSkill()
 	local action = ""
 	if skilldata.n32ActionType == 1 then
 		if (self.attackNum % 2)  == 0 then
-			action = "Attack01"
+			action = "attack01"
 		else
-			action = "Attack02"
+			action = "attack02"
 		end
 	else
 		action = skilldata.szAction
