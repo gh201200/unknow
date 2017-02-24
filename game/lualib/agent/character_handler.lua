@@ -84,37 +84,6 @@ SkillsMethod.sendSkillData = function(self, unit)
 	end
 end;
 
-ExploreMethod.sendExploreData = function(self)
-	local explore = table.clone( user.explore.unit )
-	if explore.time ~= 0 then
-		explore.time = explore.time - os.time()
-	end
-	user.send_request("sendExplore", explore)
-end;
-
-MissionsMethod.sendMissionData = function(self, unit)
-	if unit then
-		if self.isDailyMission( unit ) then
-			local p = table.clone( unit )
-			p.time = p.time - os.time()
-			user.send_request("sendMission", {missionsList = {p}})
-		else
-			user.send_request("sendMission", {missionsList = {unit}})
-		end
-	else
-		local missionsList = {}
-		for k, v in pairs(user.missions.units) do
-			if self.isDailyMission( v ) then
-				local p = table.clone( v )
-				p.time = p.time - os.time()
-				table.insert( missionsList, p )
-			else
-				table.insert( missionsList, v )
-			end
-		end
-		user.send_request("sendMission", {missionsList = missionsList})
-	end
-end;
 
 local function onDataLoadCompleted()
 	--计算竞技场等级
@@ -195,8 +164,7 @@ local function onEnterGame()
 	user.send_request('reEnterRoom', r)
 end
 
-function REQUEST.enterGame(args)
-	database = skynet.uniqueservice ("database")
+local function loadAccountData()
 	--玩家数据加载
 	local account_id = user.account.account_id 
 	user.account.unit = skynet.call(database, "lua", "account", "load", account_id)	
@@ -221,7 +189,7 @@ function REQUEST.enterGame(args)
 	setmetatable(user.missions, {__index = MissionsMethod})
 
 	user.explore = { account_id = account_id }
-	user.explore.unit = skynet.call (database, "lua", "explore", "load", account_id, ExploreCharacter.randcon()) --explore
+	user.explore.units = skynet.call (database, "lua", "explores", "load", account_id) --explore
 	setmetatable(user.explore, {__index = ExploreMethod})
 
 	user.mails = { account_id = account_id }
@@ -236,6 +204,15 @@ function REQUEST.enterGame(args)
 	onDataLoadCompleted()
 	if user.isAi == false then
 		onEnterGame()
+	end
+
+end
+
+function REQUEST.enterGame(args)
+	if not database then
+		database = skynet.uniqueservice ("database")
+		loadAccountData()
+		onDataLoadCompleted()
 	end
 end
 

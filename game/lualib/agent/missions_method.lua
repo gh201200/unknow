@@ -1,13 +1,38 @@
 local skynet = require "skynet"
 local Time = require "time"
-
+local uuid = require "uuid"
 
 ----------------skills func---------------------
 local MissionsMethod = 
 {
 	--
+	sendMissionData = function(self, unit)
+		if unit then
+			if self.isDailyMission( unit ) then
+				local p = table.clone( unit )
+				p.time = p.time - os.time()
+				agentPlayer.send_request("sendMission", {missionsList = {p}})
+			else
+				agentPlayer.send_request("sendMission", {missionsList = {unit}})
+			end
+		else
+			local missionsList = {}
+			for k, v in pairs(self.units) do
+				if self.isDailyMission( k ) then
+					local p = table.clone( v )
+					p.time = p.time - os.time()
+					table.insert( missionsList, p )
+				else
+					table.insert( missionsList, v )
+				end
+			end
+			agentPlayer.send_request("sendMission", {missionsList = missionsList})
+		end
+	end;
+
+	--
 	initMission = function(_dataId)
-		return {uuid = Macro_GetMissionSerialId(_dataId), dataId=_dataId, progress=0, flag=0,time=0,}
+		return {uuid = uuid.gen(), dataId=_dataId, progress=0, flag=0,time=0,}
 	end;
 	--
 	getMissionBySerialId = function(self, _serId)
@@ -42,7 +67,6 @@ local MissionsMethod =
 	end;
 	--
 	updateMission = function(self, op, v)
-		print(op, v)
 		local dat = g_shareData.missionRepository[v.dataId]
 		if dat.n32Type == DEF.MissionType.achivement then
 			if self.isMissionCompleted( v ) then
@@ -79,6 +103,9 @@ local MissionsMethod =
 	end;
 	--
 	isDailyMission = function( _serId )
+		if type(_serId) == "table" then
+			return _serId.dataId == Quest.DailyMissionId
+		end
 		return _serId == Macro_GetMissionSerialId( Quest.DailyMissionId )
 	end;
 	--

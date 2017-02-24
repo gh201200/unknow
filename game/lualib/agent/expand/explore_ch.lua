@@ -6,10 +6,8 @@ local Explore = class("Explore")
 
 local user
 local REQUEST = {}
-local ExploreType = {
-	MainAtt = 1,
-	Camp = 2,
-	Color = 3,
+local COLOR_C = {
+	0,3,6,9,12
 }
 
 
@@ -19,26 +17,6 @@ end
 
 function Explore:init( u )
 	user = u
-end
-
-function Explore.getId(sid, slv)
-	return sid * 1000 + slv
-end
-
-function Explore.getSerId( id )
-	return math.floor(id / 1000)
-end
-
-function Explore.getSerLv( id )
-	return id % 1000
-end
-
-function Explore.randcon()
-	local r = {}
-	for i = 1, 5 do
-		table.insert(r, Explore.getId(i, math.random(#g_shareData.exploreRepository[i])))
-	end 
-	return r
 end
 
 function REQUEST.explore_goFight( args )
@@ -57,134 +35,121 @@ function REQUEST.explore_goFight( args )
 			errorCode = -1
 			break
 		end
-		if args.index > 4 or args.index < 0 then
+		if args.index > 2 or args.index < 0 then
 			errorCode = -1
 			break
 		end
-		local con = user.explore:getCon( args.index )
-		local serId = Explore.getSerId( con )
-		local serLv = Explore.getSerLv( con )
-		local dat = g_shareData.exploreRepository[serId][serLv]
-		if dat.n32Level > user.level then
+		local explore = user.explore:getExplore( args.expuuid )
+		if explore.time ~= 0 then
 			errorCode = -1
 			break
 		end
-
 		--
 		--user.explore:setUuid(index, args.uuid)
 		
 	until true
 	
-	return {errorCode=errorCode, uuid=args.uuid, index=args.index}
+	return {errorCode=errorCode, uuid=args.uuid, index=args.index,expuuid=args.expuuid}
 end
 
 function REQUEST.exploreBegin( args )
 	local errorCode = 0
+	local unit = user.explore:getExplore( args.uuid )
 	repeat
-		for i=0, 4 do
-			local u = user.explore:getUuid( i )
-			if u then
-				errorCode = 0
-				break
-			else
-				errorCode = -1
-			end
+		if string.len(args.uuid0) == 0 and string.len(args.uuid1) == 0 and string.len(args.uuid2) == 0 then
+			errorCode = -1
+			break
 		end
-		if errorCode ~= 0 then break end
-
-		if user.explore:getTime() ~= 0 then
+		if unit.time ~= 0 then
 			errorCode = -1
 			break
 		end
 		--
 		local nextTime = Time.tomorrow()
-		user.cards:setExplore(args.uuid0, nextTime)
-		user.cards:setExplore(args.uuid1, nextTime)
-		user.cards:setExplore(args.uuid2, nextTime)
-		user.cards:setExplore(args.uuid3, nextTime)
-		user.cards:setExplore(args.uuid4, nextTime)
-		user.explore:beginExplore("exploreBegin", args.uuid0, args.uuid1, args.uuid2, args.uuid3, args.uuid4)
+		for i=0, 2 do
+			if string.len(args["uuid"..i]) > 0 then
+				user.cards:setExplore(args["uuid"..i], nextTime)
+			end
+		end
+		user.explore:beginExplore("exploreBegin", args)
 	until true
 	
-	return {errorCode=errorCode}
-end
-
-
-local function isOkForExploreCon(card, conDat)
-	local cardDat = g_shareData.heroRepository[card.dataId]
-	if conDat.n32Type1 == ExploreType.MainAtt then
-		if cardDat.n32MainAtt ~= conDat.n32Value1 then
-			return false
-		end
-	end
-
-	if conDat.n32Type1 == ExploreType.Camp then
-		if cardDat.n32Camp ~= conDat.n32Value1 then
-			return false
-		end
-	end
-	
-	if conDat.n32Type1 == ExploreType.Color then
-		if cardDat.n32Color < conDat.n32Value1 then
-			return false
-		end
-	end
-	
-	if conDat.n32Type2 == ExploreType.MainAtt then
-		if cardDat.n32MainAtt ~= conDat.n32Value2 then
-			return false
-		end
-	end
-
-	if conDat.n32Type2 == ExploreType.Camp then
-		if cardDat.n32Camp ~= conDat.n32Value2 then
-			return false
-		end
-	end
-	
-	if conDat.n32Type2 == ExploreType.Color then
-		if cardDat.n32Color < conDat.n32Value2 then
-			return false
-		end
-	end
-	
-	return true
+	return {errorCode=errorCode, uuid = args.uuid}
 end
 
 function REQUEST.exploreEnd( args )
 	local errorCode = 0
-	local gains = {}
+	local unit = user.explore:getExplore( args.uuid )
 	repeat
-		if user.explore:getTime() > os.time() then
+
+		if unit.time > os.time() then
 			errorCode = -1
 			break
 		end
 		--
-		for i=0, 4 do
-			local uuid = user.explore:getUuid( i )
-			local card =  user.cards:getCardByUuid( uuid )
+		local gains = {}
+		local score = 0
+		local exploreDat = g_shareData.exploreRepository[unit.dataId]
+		for i=0, 2 do
+			local card = user.cards:getCardByUuid( unit['uuid'..i] )
 			if card then
-				local con = user.explore:getCon( i )
-				local serLv = Explore.getSerLv( con )
-				local conDat = g_shareData.exploreRepository[i+1][serLv]
-				if not isOkForExploreCon(card, conDat) then
-					conDat = g_shareData.exploreRepository[i+1][1]
+				local color_c = 3
+				local con_c = 10
+				local dat = g_shareData.heroRepository[card.dataId]
+				if dat.n32Color >= exploreDat.n32Color  then
+					color_c = color_c + COLOR_C[exploreDat.n32Color]
 				end
-
-				local pkgs = usePackageItem( conDat.n32Drop, user.level )
-				for k, v in pairs(pkgs) do
-					table.insert(gains, {itemId=v.itemId, itemNum=v.itemNum})
+				if unit["qua"..i] == dat.n32MainAtt then
+					con_c = con_c + 5
 				end
+				if unit["cam"..i] == dat.n32Camp then
+					con_c = con_c + 5
+				end
+				score = score +  color_c * con_c
 			end
 		end
-		user.servicecmd.addItems("exploreEnd", gains)
-		user.explore:resetExplore("exploreEnd", Explore.randcon())	
+		score = score * exploreDat.n32Time / 3600
+		local cn = math.floor(score * exploreDat.n32CardC)
+		for i=1, cn do
+			local rets = usePackageItem(exploreDat.n32CardItemId, user.level )
+			user.servicecmd.addItems("exploreEnd", rets)
+		end
+		local sn = math.floor(score * exploreDat.n32SkillC)
+		for i=1, sn do
+			local rets = usePackageItem(exploreDat.n32SkillItemId, user.level )
+			user.servicecmd.addItems("exploreEnd", rets)
+		end
+		user.account:addGold("exploreEnd", math.floor(score * exploreDat.n32GoldC))
+		user.explore:resetExplore("exploreEnd", unit.uuid)	
 	until true
-	local vecs = {}
-	for k, v in pairs(gains) do
-		table.insert(vecs, {x=v.itemId,y=v.itemNum})
-	end
-	return {errorCode=errorCode,items=vecs}
+	return {errorCode=errorCode, uuid=args.uuid}
+end
+
+function REQUEST.exploreRefresh( args )
+	local errorCode = 0
+	local unit = user.explore:getExplore( args.uuid )
+	repeat
+		if unit.time ~= 0 then
+			errorCode = -1
+			break
+		end
+		local activity = snax.uniqueservice("activity")
+
+		local costMoney = 0
+		local val = activity.req.getValue(user.account.account_id, ActivityAccountType.RefreshExplore)
+		if val >= Quest.RefreshExploreTimes then 
+			costMoney = Quest.RefreshExploreCost
+		end
+		if costMoney > user.account:getMoney() then
+			errorCode = 1
+			break
+		end
+		--
+		user.account:addMoney("exploreRefresh", -costMoney)
+		activity.req.addValue("exploreRefresh", user.account.account_id, ActivityAccountType.RefreshExplore, 1,Time.tomorrow())
+		user.explore:resetExplore("exploreRefresh", unit.uuid)	
+	until true
+	return {errorCode=errorCode, uuid=args.uuid}
 end
 
 return Explore.new()

@@ -31,6 +31,7 @@ function account.load (account_id, ...)
 			acc.flag = tonumber(connection:hget (key, "flag"))
 			acc.version = connection:hget (key, "version")
 			acc.expire = tonumber(connset:zscore("accountlist", account_id))
+			acc.aexp = tonumber(connection:hget (key, "aexp"))
 		else
 			acc = connection:hmget(key, ...)
 		end
@@ -66,6 +67,7 @@ function account.create (account_id, password, nick, icon)
 		"icon", icon,
 		"flag", 0,
 		"star", 0,
+		"aexp", 0,
 		"version", NOW_SERVER_VERSION
 	)
 

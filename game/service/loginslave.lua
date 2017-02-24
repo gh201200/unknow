@@ -5,6 +5,7 @@ local protoloader = require "proto.protoloader"
 local SkillsMethod = require "agent.skills_method"
 local CardsMethod = require "agent.cards_method"
 local MissionsMethod = require "agent.missions_method"
+local ExploreMethod = require "agent.explore_method"
 local traceback = debug.traceback
 local snax = require "snax"
 
@@ -92,6 +93,11 @@ local function firstRegister(account_id)
 		local mission = MissionsMethod.initMission( id )
 		mission.flag = id
 		skynet.call(database, "lua", "missions", "update", account_id, mission)
+	end
+	--添加探索数据
+	local explores = ExploreMethod.initExplore(1, 3)
+	for k, v in pairs(explores) do
+		skynet.call(database, "lua", "explores", "update", account_id, v)
 	end
 end
 

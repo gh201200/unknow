@@ -72,8 +72,11 @@
 	--可替换技能次数
 	MaxReplaceSkillTimes = 3,
 
-	--探索CD(s)
-	ExploreTime = 2*60,
+	--免费刷新探索次数
+	RefreshExploreTimes = 3,
+	
+	--探索花费钻石
+	RefreshExploreCost = 20,
 	
 	--每日任务初始id
 	DailyMissionId = 10001001,
@@ -109,6 +112,14 @@
 	CollectionData = {
 		Hero = 18,	--英雄收集上限
 		Skill = 78,	--技能收集上限
+	},
+	
+	--碎片经验产出
+	ChipsExp = {
+		Card = 10,	--英雄碎片
+		Skill1 = 2, --1星技能
+		Skill2 = 10, --2星技能
+		Skill3 = 50, --3星技能
 	},
 
 	--说明文字

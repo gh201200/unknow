@@ -32,6 +32,7 @@ function SOCKET.open(fd, addr)
 end
 
 local function close_agent(fd)
+	print("close_agent")
 	local a = agentfd[fd]
 	local account = agentAccount[fd]
 	agentfd[fd] = nil
@@ -101,6 +102,7 @@ function CMD.start(conf)
 end
 
 function CMD.close(fd)
+	print("CMD.close")
 	close_agent(fd)
 end
 
@@ -108,6 +110,7 @@ function CMD.userEnter( accountId, fd )
 	print('user enter ', accountId, fd)
 	for k, v in pairs(agentAccount) do
 		if v and v == accountId then	
+			print("111111111")
 			close_agent( k )
 		end
 	end

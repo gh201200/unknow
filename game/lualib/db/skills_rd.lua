@@ -10,19 +10,19 @@ local function make_key (name)
 end
 
 function skills.load (account_id)
-	local skills = {}
+	local units = {}
 	local connection, key = make_key (account_id)
 	
 	if connection:exists (key) then
 		local st = connection:smembers(key)
 		for k, v in pairs(st) do
-			skills[v] = {uuid = v}
-			skills[v].dataId = tonumber(connection:hget (v, "dataId"))
-			skills[v].count = tonumber(connection:hget (v, "count"))
+			units[v] = {uuid = v}
+			units[v].dataId = tonumber(connection:hget (v, "dataId"))
+			units[v].count = tonumber(connection:hget (v, "count"))
 		end
 	end
 
-	return skills
+	return units
 end
 
 function skills.loadBySerialId (account_id, serId)

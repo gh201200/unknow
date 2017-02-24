@@ -31,18 +31,12 @@ for k, p in pairs(xmlhandler.root.info.item) do
 				else
 					tmpTb[_i] = true
 				end
-			elseif _i == "szDrop" then
-				tmpTb[_i] = {}
-				for w in string.gmatch(_v, "%d+") do
-					table.insert(tmpTb[_i], tonumber(w))
-				end
 			else
 				tmpTb[_i] = _v
 			end 
 		end
 	end
-	if not modolsTable[tmpTb.id] then modolsTable[tmpTb.id] = {} end
-	table.insert(modolsTable[tmpTb.id], tmpTb)
+	modolsTable[tmpTb.id] = tmpTb
 end
 
 return modolsTable
