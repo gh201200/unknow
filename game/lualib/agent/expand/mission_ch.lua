@@ -37,7 +37,7 @@ function REQUEST.recvMissionAward( args )
 				break
 			end
 		elseif dat.n32Type == DEF.MissionType.achivement then
-			if unit.flag > unit.id then
+			if unit.flag > unit.dataId then
 				errorCode = -1	--成就已完成
 				break
 			end
