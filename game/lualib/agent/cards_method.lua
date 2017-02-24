@@ -84,13 +84,11 @@ local CardsMethod =
 	end;
 	--
 	delCardByDataId = function(self, op, dataId, num)
-		if num >= 0 then return end
 		local v = self:getCardByDataId(Macro_GetCardSerialId(dataId))
 		self:delCardByUuid(op, v.uuid, num)
 	end;
 	--
 	delCardByUuid = function(self, op, uuid, num)
-		if num >= 0 then return end
 		local v = self:getCardByUuid(uuid)
 		if not v then return end
 		if v.count < num then return end
