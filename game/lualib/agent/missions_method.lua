@@ -72,7 +72,7 @@ local MissionsMethod =
 			if self.isMissionCompleted( v ) then
 				dat = g_shareData.missionRepository[v.dataId + 1]
 				if dat then
-					v.id = dat.id		
+					v.dataId = dat.id		
 				end
 			end
 		end
