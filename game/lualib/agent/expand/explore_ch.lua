@@ -99,10 +99,10 @@ function REQUEST.exploreEnd( args )
 				if dat.n32Color >= exploreDat.n32Color  then
 					color_c = color_c + COLOR_C[exploreDat.n32Color]
 				end
-				if unit["qua"..i] == dat.n32MainAtt then
+				if unit["att"..i] == dat.n32MainAtt then
 					con_c = con_c + 5
 				end
-				if unit["cam"..i] == dat.n32Camp then
+				if bit_and(unit["cam"..i], dat.n32Camp) ~= 0 then
 					con_c = con_c + 5
 				end
 				score = score +  color_c * con_c
