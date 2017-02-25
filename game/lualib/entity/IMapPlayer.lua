@@ -90,9 +90,10 @@ function IMapPlayer:isSameCamp( v )
 end
 
 function IMapPlayer:update(dt)
-	if self.ai then
+	if self.ai and self:isDead() == false then
 		self.ai:update(dt)
-	end	
+	end
+	self.hateTime =  self.hateTime - dt	
 	if self.hateTime <= 0 then
 		self.hater = nil
 	end
@@ -188,7 +189,9 @@ end
 function IMapPlayer:onRaise()
 	IMapPlayer.super.onRaise(self)
 	print('IMapPlayer:onRaise')
-	
+	if ai then
+		self.ai:reset()
+	end
 	self:setPos(self.bornPos.x, self.bornPos.y, self.bornPos.z)
 	local msg = { sid = self.serverId }
 	EntityManager:sendToAllPlayers("raiseHero" ,msg)
@@ -287,8 +290,25 @@ function IMapPlayer:upgradeSkill(skillId)
 	self:addSkill(skillId, false)
 	return 0, self.skillTable[skillId]
 end
-function IMapPlayer:addHp(_hp, mask, source)  
-	IMapPlayer.super.addHp(self,_hp,mask,source)
-end	
+
+function IMapPlayer:aiCastSkill(target)
+	local skills = {}
+	for skillId,level in pairs(self.skillTable) do
+		local skilldata = g_shareData.skillRepository[skillId + level - 1] 
+		if skilldata and skilldata.n32Active == 0 and skilldata.n32SelectTargetType == 3 and skilldata.n32SkillType ~= 0 then
+				if self:canSetCastSkill(skilldata.id) == 0 then
+					table.insert(skills,skilldata.id)
+				end
+			end
+		end						
+	local skillId = self:getCommonSkill() 
+	if #skills ~= 0 then
+		local index = math.random(1,#skills)
+		skillId = skills[index]
+	end
+	--self:setCastSkillId(skillId)
+	self.ReadySkillId = skillId 
+	self:setTarget(target)
+end
 return IMapPlayer
 

@@ -44,7 +44,6 @@ function IMonster:init(mt)
 	self.HpMpChange = true
 	self.StatsChange = true
 	self.attach = mt.attach
-	print("self.attach===========",self.attach)
 	IMonster.super.init(self)
 end
 

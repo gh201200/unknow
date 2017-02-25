@@ -1,8 +1,11 @@
 local AIBase = require "ai.AIBase"
 local vector3 = require "vector3"
 local Map = require "map.Map"
-local PROTECT_DIS = 2 -- 保护距离
+local TownerProtectR = 2 -- 保护距离
+local TowerHpR = 1 --回血范围
+local TownerProtectR = 2 --保护塔的范围
 local hateR = 2 --仇恨范围
+local assistR = 3
 require "globalDefine"
 
 local PVPAI = class("PVPAI", AIBase)
@@ -18,6 +21,14 @@ local function getTower(entity,isBad)
 	end
 	return nil
 end
+local stateLevel = {}
+stateLevel["runAway"] = 5
+stateLevel["protect"] = 4
+stateLevel["assist"] = 3
+stateLevel["farm"] = 2
+stateLevel["battle"] = 1
+stateLevel["Idle"] = 0
+
 function PVPAI:ctor(entity)
 	PVPAI.super.ctor(self,entity)
 	self.Fsms["Idle"] = {["onEnter"] = self.onEnter_Idle, ["onExec"] = self.onExec_Idle,["onExit"] = self.onExit_Idle}
@@ -32,21 +43,37 @@ function PVPAI:ctor(entity)
 	self.mCurrFsm["onEnter"](self)
 	self.blueTower = getTower(entity,false) 	--我方基地
 	self.redTower = getTower(entity,true)	--敌方基地
+	self.assister = nil
 end
 
+function PVPAI:reset()
+	self.mNextAIState = "Idle"
+	self.mCurrentAIState = "Idle"
+end
 function PVPAI:update(dt)
 	PVPAI.super.update(self,dt)
-	if self:isRunAway() and self.mCurrentAIState ~= "runAway" then
-		self:setNextAiState("runAway") --逃跑状态
-	elseif self:isProtect() == true and self.mCurrentAIState ~= "protect" then
-		self:setNextAiState("protect")
-	elseif self:getAssister() ~= nil and self.mCurrentAIState ~= "assist" then
-		self:setNextAiState("assist")
-	elseif self:isFarm() == true and self.mCurrentAIState ~= "farm" then
-		self:setNextAiState("farm")
+	--print("self.source=",self.source.serverId,self.mCurrentAIState)
+	if self:isRunAway() then
+		if  self.mCurrentAIState ~= "runAway" then
+			self:setNextAiState("runAway") --逃跑状态
+		end
+	elseif self:isProtect() == true then 
+		if self.mCurrentAIState ~= "protect" and  stateLevel["protect"] > stateLevel[self.mCurrentAIState] then
+			self:setNextAiState("protect")
+		end
+	elseif self:isAssist() == true then
+		if self.mCurrentAIState ~= "assist" and stateLevel["assist"] > stateLevel[self.mCurrentAIState] then
+			self:setNextAiState("assist")
+		end
+	elseif self:isFarm() == true then 
+		if self.mCurrentAIState ~= "farm" and stateLevel["farm"] > stateLevel[self.mCurrentAIState] then
+			self:setNextAiState("farm")
+		end
 	else 
-		if self:isFarm() == false and self.mCurrentAIState ~= "battle" then
-			self:setNextAiState("battle")
+		if self:isFarm() == false then 
+			if self.mCurrentAIState ~= "battle" and stateLevel["battle"] > stateLevel[self.mCurrentAIState]  then
+				self:setNextAiState("battle")
+			end
 		end
 	end
 end
@@ -68,12 +95,22 @@ end
 
 function PVPAI:onEnter_runAway()
 	print("PVPAI:onEnter_runAway")
-	self:backToHome()	
+	if self.source:getDistance(self.blueTower) >= TowerHpR then 
+		self.source:setTarget(self.blueTower)
+	end
 end
 
 
 function PVPAI:onExec_runAway()
---	self:setNextAiState("Chase")
+	if self.source:getDistance(self.blueTower) > TowerHpR then
+		self:setNextAiState("runAway")
+		return
+	end
+	self:autoProtectAttack(TowerHpR)	
+	local HpPre = self.source:getHp() / self.source:getHpMax() * 100
+	if HpPre >= 100 then
+		self:setNextAiState("Idle")
+	end	
 end
 
 function PVPAI:onExit_runAway()
@@ -82,12 +119,15 @@ end
 
 function PVPAI:onEnter_protect()
 	print("PVPAI:onEnter_protect")	
-	self:backToHome()	
+--	self:backToHome()	
+	self.source:setTarget(self.blueTower)
 end
 
 
 function PVPAI:onExec_protect()
-	self:autoProtectAttack()
+	if self.source:getDistance(self.blueTower) < TownerProtectR then
+		self:autoProtectAttack(TownerProtectR)
+	end
 end
 
 function PVPAI:onExit_protect()
@@ -100,15 +140,14 @@ function PVPAI:onEnter_battle()
 end
 
 function PVPAI:onExec_battle()
-	local AttackR = 2
 	local target = self.source:getTarget()
-	if target ~= nil and self.source:getDistance(target) < AttackR then
+	if target ~= nil and self.source:getDistance(target) < hateR then
 		return
 	end
 	target = nil
 	for k,v in pairs(g_entityManager.entityList) do
 		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
-			if self.source:getDistance(v) < AttackR then
+			if self.source:getDistance(v) < hateR then
 				target = v
 				break
 			end
@@ -117,8 +156,7 @@ function PVPAI:onExec_battle()
 	if target == nil then
 		target = self.redTower
 	end
-	self.source:setTarget(target)
-	self.source.ReadySkillId = self.source:getCommonSkill()
+	self.source:aiCastSkill(target)
 end
 
 function PVPAI:onExit_battle()
@@ -130,30 +168,35 @@ function PVPAI:onEnter_farm()
 end
 
 function PVPAI:onExec_farm()
-	local AttackR = 2
 	local target = self.source:getTarget()
-	if target ~= nil and self.source:getDistance(target) < AttackR then
+	if target ~= nil and self.source:getDistance(target) < hateR then
+		--print("onExec_farm111")	
 		return 
 	end
 	target = nil 
+	local att = 0 
+	if self.source:isRed() then
+		att = 1 
+	end
 	for k,v in pairs(g_entityManager.entityList) do
-		if self.source:isKind(v,true) == false and v:getType() == "IMonster" then
-			if self.source:getDistance(v) <= AttackR then
-				if target ~= nil then
-					if target.attDat.n32Type >= v.attDat.n32Type then
-						target = v
-					end	
-				else
+		if v:getType() == "IMonster" and (v.attach == att or v.attach == 2) then
+			if self.source:getDistance(v) <= hateR then
+				target = v
+				break
+			else	
+				if v.attach == att then	
+					target = v
+				elseif v.attach == 2 and target == nil then
 					target = v
 				end
 			end
 		end
 	end
 	if target ~= nil then
-		self.source:setTarget(target)
-		self.source.ReadySkillId = self.source:getCommonSkill()
-	end
-
+		self.source:aiCastSkill(target)
+	else
+		self:setNextAiState("Idle")	
+	end	
 end
 
 function PVPAI:onExit_farm()
@@ -162,21 +205,40 @@ end
 --援助
 function PVPAI:onEnter_assist()
 	print("PVPAI:onEnter_assist")
-	local target = self:getAssister()
-	local pos = vector3.create(target.x,0,target.z)
-	self.source:setTargetPos(pos)
+	self.assister = self:getAssister()
 end
 
 function PVPAI:onExec_assist()
-	local target = self:getTarget()
-	if target ~= nil and target:getType() == "IMapPlayer" then return end
+	if self.assister == nil then
+		self:setNextAiState("Idle")
+		return
+	end
+	local num = 0
+	local targets = {}
 	for k,v in pairs(g_entityManager.entityList) do
 		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
-			if self.source:getDistance(v) <= hateR then
-				self.source.ReadySkillId = self.source:getCommonSkill()
-				self.source:setTarget(v)	
-				return
+			if self.assister:getDistance(v) <=  assistR then
+				num = num + 1 
+				targets[num] = v
+				--target = v	
 			end
+		end
+	end
+	if #targets == 0 then
+		self.assister = nil 
+		self:setNextAiState("Idle")
+		return
+	else
+		local target =  self.source:getTarget()
+		local hit = false
+		for k,v in pairs(targets) do
+			if target ~= nil and target:getType() == "IMapPlayer" and v.serverId == target.serverId then
+				hit = true
+				break	
+			end
+		end
+		if hit == false then
+			self.source:aiCastSkill(targets[1])
 		end
 	end
 end
@@ -187,7 +249,6 @@ end
 
 --回家
 function PVPAI:backToHome()
-	local towerR = 2	
 	local tpos = self.blueTower.pos 
 	local pos = vector3.create(tpos.x,0,tpos.z)
 	local rs = {[1] = {x=2,z=0},[2] ={x=-2,z=0},[3] = {x=0,z=2},[4] ={x = 0,z= -2} }
@@ -198,13 +259,14 @@ function PVPAI:backToHome()
 end
 
 --自动保卫攻击
-function PVPAI:autoProtectAttack()
-	local protectR = 3 --保卫半径
+function PVPAI:autoProtectAttack(protectR)
+	--local protectR = 3 --保卫半径
 	if self.source:getDistance(self.blueTower) > protectR then
+		self.source:setTarget(self.blueTower)
 		return
 	end
 	local target = self.source:getTarget()
-	if target:getType() == "IMapPlayer" then
+	if target and target:getType() == "IMapPlayer" then
 		if self.source:getDistance(target) < protectR then
 			return 
 		end
@@ -218,7 +280,11 @@ function PVPAI:autoProtectAttack()
 			end
 		end
 	end
-	self.source:setTarget(target)
+	if target ~= nil then
+		self.source:setTarget(target)
+	else
+		self:setNextAiState("Idle")	
+	end
 end
 
 --逃生
@@ -226,8 +292,8 @@ function PVPAI:isRunAway()
 	local HpPre = self.source:getHp() / self.source:getHpMax() * 100
 	local enemyNum = 0
 	local monsterNum = 0
-	local run_RateA = 10
-	local run_RateB = 5
+	local run_RateA = 20
+	local run_RateB = 10
 	local run_SearchDis = 2
 	for k,v in pairs(g_entityManager.entityList) do
 		if self.source:isKind(v,true) == false then
@@ -254,7 +320,7 @@ function PVPAI:isProtect()
 	local enemyNum = 0
 	for k, v in pairs( g_entityManager.entityList ) do
 		if v:getType() == "IMapPlayer" then
-			if self.blueTower:getDistance(v) <= PROTECT_DIS then
+			if self.blueTower:getDistance(v) <= TownerProtectR then
 				if self.source:isKind(v,true) == false then
 					enemyNum = enemyNum + 1
 				else
@@ -264,7 +330,7 @@ function PVPAI:isProtect()
 		end
 	end
 	if enemyNum > friendNum then
-		print("isProtect true",enemyNum,friendNum)
+		--print("isProtect true",enemyNum,friendNum)
 		return true
 	end
  	if self.redTower:getDistance(self.source) <= 2 then
@@ -283,9 +349,9 @@ function PVPAI:getAssister()
 	local target = nil 
 	local hateTime = 0 
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMapPlayer" then
-			if v.hater ~= nil and v.hateTime > hateTime then
-				hateTime = v.hateTime
+		if v:getType() == "IMapPlayer" and self.source:isKind(v,true) == true then
+			if v.hater ~= nil then
+				--hateTime = v.hateTime
 				target = v
 			end
 		end
@@ -293,10 +359,30 @@ function PVPAI:getAssister()
 	return target
 end
 
+function PVPAI:isAssist()
+	if self.assister ~= nil then
+		return true
+	end
+	local assister = self:getAssister()
+	if assister ~= nil then return true end
+	return false
+end
 --打野
 function PVPAI:isFarm()
+	local att = 0 
+	if self.source:isRed() then
+		att = 1
+	end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMonster" then
+		if v:getType() == "IMapPlayer" and self.source:isKind(v,true) == true then
+			if v.hater ~= nil then
+				return false
+			end
+		end 
+	end
+
+	for k,v in pairs(g_entityManager.entityList) do
+		if v:getType() == "IMonster" and v.attach == 2 or v.attach == att then
 			return true		
 		end
 	end
