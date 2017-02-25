@@ -51,10 +51,10 @@ local ExploreMethod =
 					local u = {uuid = uuid.gen()}
 					u.dataId = v.id
 					u.att0 = math.random(1, 3)
-					u.cam0 = math.random(1, 3)
-					u.cam1 = math.random(1, 3)
+					u.cam0 = bit(math.random(0, 2))
+					u.cam1 = bit(math.random(0, 2))
 					u.att1 = math.random(1, 3)
-					u.cam2 = math.random(1, 3)
+					u.cam2 = bit(math.random(0, 2))
 					u.att2 = math.random(1, 3)
 					u.uuid0 = ""
 					u.uuid1 = ""

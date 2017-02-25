@@ -57,7 +57,7 @@ local SkillsMethod =
 	end;
 	--
 	delSkillByDataId = function(self, op, dataId, num)
-		if num >= 0 then return end
+		if num <= 0 then return end
 		local unit = self:getSkillByDataId(dataId)
 		if unit then
 			self:delSkillByUuid(op, unit.uuid, num)
@@ -65,7 +65,6 @@ local SkillsMethod =
 	end;
 	--
 	delSkillByUuid = function(self, op, uuid, num)
-		if num >= 0 then return end
 		local v = self:getSkillByUuid(uuid)
 		if not v then return end
 		if v.count < num then return end
