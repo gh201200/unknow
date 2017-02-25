@@ -101,7 +101,20 @@ local function firstRegister(account_id)
 	end
 end
 
-
+function CMD.authAi(name)
+	--
+	print("添加pvp机器人 name:",name)
+	local account = skynet.call (database, "lua", "account", "load", name) or error ("load account " .. name .. " failed")
+	account.account_id = name
+	if account.nick == nil then
+		--自动注册账号
+		skynet.call (database, "lua", "account", "create", name,"123456")
+		firstRegister(account.account_id)
+	end
+	agent = skynet.newservice ("agent")
+ 	skynet.call(master,"lua","agentEnter",agent,fd,account.account_id,false)	
+	return agent
+end
 function CMD.auth (fd, addr)
 	print("loginslave auth",fd)
 	connection[fd] = addr

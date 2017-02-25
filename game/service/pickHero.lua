@@ -34,10 +34,13 @@ end
 
 function CMD.init(response,playerTb)
 	local monitor = skynet.monitor "simplemonitor"
+	print("PlayerTb",playerTb)
 	for _k,_v in pairs(playerTb) do
-		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,color = _v.color, level = _v.fightLevel, eloValue=_v.eloValue}
+		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,
+		color = _v.color, level = _v.fightLevel, eloValue=_v.eloValue,isAI = _v.isAI}
 		skynet.call(monitor, "lua", "watch", _v.agent)
 	end
+	
 	response(true,nil)
 end
 
@@ -46,7 +49,7 @@ function CMD.pickHero(response, agent, account ,arg)
 	local ret = {errorcode = 0}
 	for _agent,_v in pairs(players) do
 		if math.floor(arg.heroid / 10) == math.floor(_v.pickedheroid / 10) then
-			ret.errorcode = 1 
+			--ret.errorcode = 1 
 			break
 		end
 	end
@@ -120,13 +123,21 @@ local function update()
 		enterMap()
 		return		
 	end
+	--AI 选角色
+	local roles = {110001,120001,130001,130101}
+	local i = 1;
+	for _agent,_v in pairs(players) do
+		print("=======",_v)
+		if _v.isAI == true and _v.pickedheroid == 0 then
+			print("选择机器人")
+			CMD.pickHero(function(...)end,_agent,_v.account,{heroid = roles[i]} )	
+			CMD.confirmHero(function(...)end,_agent,_v.account,{heroid = roles[i]} )	
+			i = i + 1
+		end
+	end
+
 	max_pickTime = max_pickTime - 1
 	skynet.timeout(100,update)
-	--[[
-	for _agent,_v in pairs(players) do
-		skynet.call(_agent,"lua","sendRequest","synPickTime",{ leftTime = max_pickTime } ) 
-	end
-	]]
 end
 local function init()
 	skynet.timeout(100, update)

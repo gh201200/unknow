@@ -43,6 +43,7 @@ function IMonster:init(mt)
 	self:setMp(self:getMpMax())
 	self.HpMpChange = true
 	self.StatsChange = true
+	self.attach = mt.attach
 	IMonster.super.init(self)
 end
 
@@ -138,7 +139,7 @@ function IMonster:clearPreCastSkill()
 	self:setPreSkillData(nil)
 end
 
-function IMonster:addHp(_hp, mask, source)
+function IMonster:addHp(_hp, mask, source)    
 	if self:getHp()+_hp <= 0 then                                             
                 self.hateList:addHate(source, self:getHp() + math.floor(self:getHpMax() * 0.2))
      	else                                                                  
@@ -150,7 +151,6 @@ function IMonster:addHp(_hp, mask, source)
                         end                                                   
 		end                                                           
         end
-    
 	IMonster.super.addHp(self, _hp, mask, source)
 end
 

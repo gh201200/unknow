@@ -200,6 +200,11 @@ local function loadAccountData()
 	activity.post.loadAccount( account_id )
 	local cooldown = snax.queryservice 'cddown'
 	cooldown.post.loadAccount( account_id )
+	
+	onDataLoadCompleted()
+	if user.isAi == false then
+		onEnterGame()
+	end
 
 end
 
@@ -209,8 +214,6 @@ function REQUEST.enterGame(args)
 		loadAccountData()
 		onDataLoadCompleted()
 	end
-		
-	onEnterGame()
 end
 
 function REQUEST.character_list ()

@@ -36,7 +36,8 @@ function SpawnNpcManager:update(dt)
 						id = q, 
 						px = v.dat.szPosition[p].x/GAMEPLAY_PERCENT, 
 						pz = v.dat.szPosition[p].z/GAMEPLAY_PERCENT,
-						batch = v.batch,			
+						batch = v.batch,
+						attach = v.dat.n32Attach,			
 						})
 					)
 

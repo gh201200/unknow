@@ -52,7 +52,10 @@ skynet.start(function()
 	
 	--启动GM服务
 	snax.uniqueservice("gm", watchdog)
-	
+
+	--开启pvpAi服务
+	local PvpAIServer = skynet.uniqueservice("PvpAIServer")
+	skynet.call(PvpAIServer,"lua","start",watchdog)
 	--CD开始计时
 	CD.post.Start()
 	
