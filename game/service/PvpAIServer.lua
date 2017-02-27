@@ -6,7 +6,7 @@ local match
 local players = {}
 function CMD.getPvpAIs(num)
 	local AIs = {}
-	local accouts = { "robot1" ,"robot2","robot3"}
+	local accouts = { "robot11" ,"robot22","robot33"}
 	--accouts = { "robot1" }
 	for k, v in pairs(accouts) do
 		local agent = skynet.call(watchdog,"lua","authAi",v)

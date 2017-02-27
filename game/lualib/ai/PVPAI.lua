@@ -79,7 +79,7 @@ function PVPAI:update(dt)
 	end
 end
 function PVPAI:onEnter_Idle()
-	print("PVPAI:onEnter_Idle")	
+	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 	self.source:stand()
 	self.blueTower = getTower(self.source,false) 	--我方基地
 	self.redTower = getTower(self.source,true)	--敌方基地
@@ -95,7 +95,7 @@ function PVPAI:onExit_Idle()
 end
 
 function PVPAI:onEnter_runAway()
-	print("PVPAI:onEnter_runAway")
+	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 	if self.source:getDistance(self.blueTower) >= TowerHpR then 
 		self.source:setTarget(self.blueTower)
 	end
@@ -119,7 +119,7 @@ function PVPAI:onExit_runAway()
 end
 
 function PVPAI:onEnter_protect()
-	print("PVPAI:onEnter_protect")	
+	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 --	self:backToHome()	
 	self.source:setTarget(self.blueTower)
 end
@@ -136,7 +136,7 @@ function PVPAI:onExit_protect()
 end
 
 function PVPAI:onEnter_battle()
-	print("PVPAI:onEnter_battle")
+	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 	self.source:stand()
 end
 
@@ -165,7 +165,7 @@ function PVPAI:onExit_battle()
 end
 
 function PVPAI:onEnter_farm()
-	print("PVPAI:onEnter_farm")
+	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 end
 
 function PVPAI:onExec_farm()

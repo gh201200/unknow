@@ -269,10 +269,12 @@ function BattleOverManager:closeRoom()
  	print("close room")
 	local sm = snax.uniqueservice("servermanager")
 	for k, v in pairs(EntityManager.entityList) do
-		v:clear_coroutine()
-		if v.entityType == EntityType.player then
-			if v.agent then
-				skynet.call(v.agent, "lua", "leaveMap", skynet.self())
+		if v.clear_coroutine ~= nil then 
+			v:clear_coroutine()
+			if v.entityType == EntityType.player then
+				if v.agent then
+					skynet.call(v.agent, "lua", "leaveMap", skynet.self())
+				end
 			end
 		end
 	end

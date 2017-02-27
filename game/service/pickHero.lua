@@ -48,7 +48,7 @@ function CMD.pickHero(response, agent, account ,arg)
 	local ret = {errorcode = 0}
 	for _agent,_v in pairs(players) do
 		if math.floor(arg.heroid / 10) == math.floor(_v.pickedheroid / 10) then
-			--ret.errorcode = 1 
+			ret.errorcode = 1 
 			break
 		end
 	end
