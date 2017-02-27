@@ -293,8 +293,6 @@ function PVPAI:isRunAway()
 	local HpPre = self.source:getHp() / self.source:getHpMax() * 100
 	local enemyNum = 0
 	local monsterNum = 0
-	local run_RateA = 20
-	local run_RateB = 10
 	local run_SearchDis = 2
 	for k,v in pairs(g_entityManager.entityList) do
 		if self.source:isKind(v,true) == false then
