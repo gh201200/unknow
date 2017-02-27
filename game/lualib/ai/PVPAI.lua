@@ -49,6 +49,7 @@ end
 
 function PVPAI:reset()
 	self:setNextAiState("Idle")
+	self.source:setTarget(nil)
 end
 function PVPAI:update(dt)
 	PVPAI.super.update(self,dt)
