@@ -219,7 +219,7 @@ function IflyObj:updateTarget(dt)
 	dst:add(self.pos)
 	self.pos:set(dst.x,0,dst.z)
 	local dis = self:getDistance(self.target)
-	if dis <= 0.1 then
+	if dis <= 0.2 then
 		--触发效果
 		local selects = {self.target}
 		local targets = g_entityManager:getSkillAffectEntitys(self.source,selects,self.skilldata)

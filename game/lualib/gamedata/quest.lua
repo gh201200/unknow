@@ -153,7 +153,7 @@
 			EloLimit = 0,					--分数下限
 			BattleGroundID = 1,				--地图id
 			BattleGroundName = "漫雾雨林",--地图名称
-			BattleGroundPreview = "UI/Textures/Arenas/map001.png",		--竞技场预览图资源地址
+			BattleGroundPreview = "UI/Textures/Arenas/Arena001.png",		--竞技场预览图资源地址
 			GoldReward = 50,				--每场战斗（无论输赢）之后的金币奖励
 			GoldRewardLimit = 20,			--每日战斗获得金币奖励的次数上限
 			VictoryReward = 62001,			--每场战斗胜利之后的对应道具ID
@@ -177,8 +177,8 @@
 			Name = "二阶竞技场",			--竞技场名称
 			EloLimit = 400,					--分数下限
 			BattleGroundID = 1,				--地图id
-			BattleGroundName = "发射台旧址",	--地图名称
-			BattleGroundPreview = "UI/Textures/Arenas/map002.png",		--竞技场预览图资源地址
+			BattleGroundName = "废弃矿井",	--地图名称
+			BattleGroundPreview = "UI/Textures/Arenas/Arena002.png",		--竞技场预览图资源地址
 			GoldReward = 60,				--每场战斗（无论输赢）之后的金币奖励
 			GoldRewardLimit = 20,			--每日战斗获得金币奖励的次数上限
 			VictoryReward = 62011,			--每场战斗胜利之后的对应道具ID
@@ -202,8 +202,8 @@
 			Name = "三阶竞技场",			--竞技场名称
 			EloLimit = 800,					--分数下限
 			BattleGroundID = 1,				--地图id
-			BattleGroundName = "发射台旧址",	--地图名称
-			BattleGroundPreview = "UI/Textures/Arenas/map002.png",		--竞技场预览图资源地址
+			BattleGroundName = "熔炉车间",	--地图名称
+			BattleGroundPreview = "UI/Textures/Arenas/Arena003.png",		--竞技场预览图资源地址
 			GoldReward = 75,				--每场战斗（无论输赢）之后的金币奖励
 			GoldRewardLimit = 20,			--每日战斗获得金币奖励的次数上限
 			VictoryReward = 62021,			--每场战斗胜利之后的对应道具ID
@@ -227,8 +227,8 @@
 			Name = "四阶竞技场",			--竞技场名称
 			EloLimit = 1200,				--分数下限
 			BattleGroundID = 1,				--地图id
-			BattleGroundName = "发射台旧址",	--地图名称
-			BattleGroundPreview = "UI/Textures/Arenas/map002.png",		--竞技场预览图资源地址
+			BattleGroundName = "极地冰原",	--地图名称
+			BattleGroundPreview = "UI/Textures/Arenas/Arena004.png",		--竞技场预览图资源地址
 			GoldReward = 100,				--每场战斗（无论输赢）之后的金币奖励
 			GoldRewardLimit = 20,			--每日战斗获得金币奖励的次数上限
 			VictoryReward = 62031,			--每场战斗胜利之后的对应道具ID
@@ -253,7 +253,7 @@
 			EloLimit = 1600,				--分数下限
 			BattleGroundID = 1,				--地图id
 			BattleGroundName = "发射台旧址",	--地图名称
-			BattleGroundPreview = "UI/Textures/Arenas/map002.png",		--竞技场预览图资源地址
+			BattleGroundPreview = "UI/Textures/Arenas/Arena005.png",		--竞技场预览图资源地址
 			GoldReward = 150,				--每场战斗（无论输赢）之后的金币奖励
 			GoldRewardLimit = 20,			--每日战斗获得金币奖励的次数上限
 			VictoryReward = 62041,			--每场战斗胜利之后的对应道具ID
@@ -277,8 +277,8 @@
 			Name = "六阶竞技场",			--竞技场名称
 			EloLimit = 2000,				--分数下限
 			BattleGroundID = 1,				--地图id
-			BattleGroundName = "发射台旧址",	--地图名称
-			BattleGroundPreview = "UI/Textures/Arenas/map002.png",		--竞技场预览图资源地址
+			BattleGroundName = "中心体育馆",	--地图名称
+			BattleGroundPreview = "UI/Textures/Arenas/Arena006.png",		--竞技场预览图资源地址
 			GoldReward = 250,				--每场战斗（无论输赢）之后的金币奖励
 			GoldRewardLimit = 20,			--每日战斗获得金币奖励的次数上限
 			VictoryReward = 62051,			--每场战斗胜利之后的对应道具ID
@@ -302,8 +302,8 @@
 			Name = "七阶竞技场",			--竞技场名称
 			EloLimit = 2400,				--分数下限
 			BattleGroundID = 1,				--地图id
-			BattleGroundName = "发射台旧址",	--地图名称
-			BattleGroundPreview = "UI/Textures/Arenas/map002.png",		--竞技场预览图资源地址
+			BattleGroundName = "列沃德广场",	--地图名称
+			BattleGroundPreview = "UI/Textures/Arenas/Arena007.png",		--竞技场预览图资源地址
 			GoldReward = 400,				--每场战斗（无论输赢）之后的金币奖励
 			GoldRewardLimit = 20,			--每日战斗获得金币奖励的次数上限
 			VictoryReward = 62051,			--每场战斗胜利之后的对应道具ID
