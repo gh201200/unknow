@@ -53,7 +53,7 @@ function PVPAI:reset()
 end
 function PVPAI:update(dt)
 	PVPAI.super.update(self,dt)
-	--print("self.source=",self.source.serverId,self.mCurrentAIState)
+	--print("PVPAI update self.source=",self.source.serverId,self.mCurrentAIState)
 	if self:isRunAway() then
 		if  self.mCurrentAIState ~= "runAway" then
 			self:setNextAiState("runAway") --逃跑状态
@@ -81,8 +81,8 @@ end
 function PVPAI:onEnter_Idle()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 	self.source:stand()
-	self.blueTower = getTower(self.source,false) 	--我方基地
-	self.redTower = getTower(self.source,true)	--敌方基地
+	--self.blueTower = getTower(self.source,false) 	--我方基地
+	--self.redTower = getTower(self.source,true)	--敌方基地
 	self.source:setTarget(nil)
 end
 
@@ -142,7 +142,7 @@ end
 
 function PVPAI:onExec_battle()
 	local target = self.source:getTarget()
-	if target ~= nil and self.source:getDistance(target) < hateR then
+	if target ~= nil and target:getHp() > 0 and elf.source:getDistance(target) < hateR then
 		return
 	end
 	target = nil
@@ -170,7 +170,7 @@ end
 
 function PVPAI:onExec_farm()
 	local target = self.source:getTarget()
-	if target ~= nil and self.source:getDistance(target) < hateR then
+	if target ~= nil and self.source:getDistance(target) < hateR and target:getHp() > 0 then
 	--	print("onExec_farm",self.source.serverId,target.serverId)	
 		return 
 	end
@@ -233,7 +233,7 @@ function PVPAI:onExec_assist()
 		local target =  self.source:getTarget()
 		local hit = false
 		for k,v in pairs(targets) do
-			if target ~= nil and target:getType() == "IMapPlayer" and v.serverId == target.serverId then
+			if target ~= nil and target:getType() == "IMapPlayer" and target:getHp() > 0  and v.serverId == target.serverId then
 				hit = true
 				break	
 			end

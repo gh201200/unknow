@@ -188,8 +188,8 @@ end
 
 function IMapPlayer:onRaise()
 	IMapPlayer.super.onRaise(self)
-	print('IMapPlayer:onRaise')
-	if ai then
+	print('IMapPlayer:onRaise',self.serverId)
+	if self.ai then
 		self.ai:reset()
 	end
 	self:setPos(self.bornPos.x, self.bornPos.y, self.bornPos.z)
@@ -292,6 +292,10 @@ function IMapPlayer:upgradeSkill(skillId)
 end
 
 function IMapPlayer:aiCastSkill(target)
+	if target:getHp() <= 0 then 
+		self:setTarget(nil) 
+		return 
+	end
 	local skills = {}
 	for skillId,level in pairs(self.skillTable) do
 		local skilldata = g_shareData.skillRepository[skillId + level - 1] 
