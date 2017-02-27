@@ -75,7 +75,11 @@ local function send_request (name, args)
 end
 
 local function kick_self ()
-	skynet.call (WATCHDOG, "lua", "close", user_fd)
+	if user_fd and WATCHDOG then
+		skynet.call (WATCHDOG, "lua", "close", user_fd)
+	else
+		print('kick_self ',WATCHDOG, user_fd)
+	end
 end
 
 local function registerToChatserver(name)
