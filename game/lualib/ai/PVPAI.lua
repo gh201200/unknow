@@ -1,11 +1,12 @@
 local AIBase = require "ai.AIBase"
 local vector3 = require "vector3"
 local Map = require "map.Map"
-local TownerProtectR = 2 -- 保护距离
-local TowerHpR = 1 --回血范围
-local TownerProtectR = 2 --保护塔的范围
-local hateR = 2 --仇恨范围
-local assistR = 3
+local TowerHpR = 1 		--回血范围
+local TownerProtectR = 2 	--保护塔的范围
+local hateR = 2 		--仇恨范围(自动攻击的范围)
+local assistR = 3       	 --援助范围
+local run_RateA = 10	 	--逃跑系数A
+local run_RateB = 10	 	--逃跑系数B
 require "globalDefine"
 
 local PVPAI = class("PVPAI", AIBase)
