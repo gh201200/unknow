@@ -109,6 +109,23 @@ function CMD.confirmHero(response,agent,account,arg)
 	end
 end
 
+local function aiPickHero(v)
+	local roles = {110001,120001,130001,130101}
+	local selects = {}
+	for _agent,_v in pairs(players) do
+		if _v.pickedheroid ~= 0 then
+			selects[_v.pickedheroid] = _v.agent
+		end	
+	end
+	local lefts = {}
+	for k, v in pairs(roles) do
+		if selects[v] == nil then
+			table.insert(lefts,v)
+		end
+	end
+	CMD.pickHero(function(...)end,v.agent,v.account,{heroid = lefts[1]} )
+	CMD.confirmHero(function(...)end,v.agent,v.account,{heroid = lefts[1]} )	
+end
 
 local function update()
 	if max_pickTime < 0 then
@@ -124,21 +141,23 @@ local function update()
 		return		
 	end
 	--AI 选角色
-	local roles = {110001,120001,130001,130101}
-	local i = 1;
+--	local roles = {110001,120001,130001,130101}
+--	local i = 1;
 	for _agent,_v in pairs(players) do
 		print("=======",_v)
 		if _v.isAI == true and _v.pickedheroid == 0 then
 			print("选择机器人")
-			CMD.pickHero(function(...)end,_agent,_v.account,{heroid = roles[i]} )	
-			CMD.confirmHero(function(...)end,_agent,_v.account,{heroid = roles[i]} )	
-			i = i + 1
+			--CMD.pickHero(function(...)end,_agent,_v.account,{heroid = roles[i]} )	
+			--CMD.confirmHero(function(...)end,_agent,_v.account,{heroid = roles[i]} )	
+			--i = i + 1
+			aiPickHero(_v)
 		end
 	end
 
 	max_pickTime = max_pickTime - 1
 	skynet.timeout(100,update)
 end
+
 local function init()
 	skynet.timeout(100, update)
 end
