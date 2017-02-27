@@ -48,8 +48,7 @@ function PVPAI:ctor(entity)
 end
 
 function PVPAI:reset()
-	self.mNextAIState = "Idle"
-	self.mCurrentAIState = "Idle"
+	self:setNextAiState("Idle")
 end
 function PVPAI:update(dt)
 	PVPAI.super.update(self,dt)
