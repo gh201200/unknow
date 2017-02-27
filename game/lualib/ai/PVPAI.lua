@@ -170,7 +170,7 @@ end
 function PVPAI:onExec_farm()
 	local target = self.source:getTarget()
 	if target ~= nil and self.source:getDistance(target) < hateR then
-		--print("onExec_farm111")	
+	--	print("onExec_farm",self.source.serverId,target.serverId)	
 		return 
 	end
 	target = nil 
@@ -179,7 +179,7 @@ function PVPAI:onExec_farm()
 		att = 1 
 	end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMonster" and (v.attach == att or v.attach == 2) then
+		if v:getType() == "IMonster" and v:getHp() > 0 and  (v.attach == att or v.attach == 2) then
 			if self.source:getDistance(v) <= hateR then
 				target = v
 				break

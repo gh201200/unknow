@@ -665,6 +665,7 @@ function Ientity:onDead()
 	self:setActionState(0, ActionState.die)
 	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
+			print("onDead===",v.serverId,self.serverId)
 			v:setTarget(nil)
 		end
 		if v.entityType == EntityType.monster then
