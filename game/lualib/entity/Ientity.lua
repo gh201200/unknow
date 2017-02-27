@@ -302,7 +302,7 @@ function Ientity:update(dt)
 		self:advanceEventStamp(EventStampType.Stats)
 		self.StatsChange = false
 	end
-	if self.entityType ~= EntityType.building and self.entityType ~= EntityType.trap then
+	if self:isDead() == false and self.entityType ~= EntityType.building and self.entityType ~= EntityType.trap then
 		if self.curActionState == ActionState.move then
 			self:onMove2(dt)
 		elseif self.curActionState == ActionState.stand then
@@ -662,7 +662,7 @@ end
 function Ientity:onDead()
 	print('Ientity:onDead', self.serverId)
 	self.spell:breakSpell()
-	self:setActionState(0, ActionState.die)
+	--self:setActionState(0, ActionState.die)
 	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
 			print("onDead===",v.serverId,self.serverId)

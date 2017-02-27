@@ -142,7 +142,7 @@ end
 
 function PVPAI:onExec_battle()
 	local target = self.source:getTarget()
-	if target ~= nil and target:getHp() > 0 and elf.source:getDistance(target) < hateR then
+	if target ~= nil and target:getHp() > 0 and self.source:getDistance(target) < hateR then
 		return
 	end
 	target = nil
@@ -169,9 +169,8 @@ function PVPAI:onEnter_farm()
 end
 
 function PVPAI:onExec_farm()
-	local target = self.source:getTarget()
 	if target ~= nil and self.source:getDistance(target) < hateR and target:getHp() > 0 then
-	--	print("onExec_farm",self.source.serverId,target.serverId)	
+		--print("onExec_farm",self.source.serverId,target.serverId)	
 		return 
 	end
 	target = nil 
