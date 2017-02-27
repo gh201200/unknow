@@ -110,6 +110,7 @@ function PVPAI:onExec_runAway()
 	self:autoProtectAttack(TowerHpR)	
 	local HpPre = self.source:getHp() / self.source:getHpMax() * 100
 	if HpPre >= 100 then
+		print("=========1111")
 		self:setNextAiState("Idle")
 	end	
 end
@@ -142,7 +143,7 @@ end
 
 function PVPAI:onExec_battle()
 	local target = self.source:getTarget()
-	if target ~= nil and target:getHp() > 0 and self.source:getDistance(target) < hateR then
+	if target ~= nil and self.source:isKind(v,true) == false and  target:getHp() > 0 and self.source:getDistance(target) < hateR then
 		return
 	end
 	target = nil
@@ -282,8 +283,8 @@ function PVPAI:autoProtectAttack(protectR)
 	end
 	if target ~= nil then
 		self.source:setTarget(target)
-	else
-		self:setNextAiState("Idle")	
+	--else
+	--	self:setNextAiState("Idle")	
 	end
 end
 
