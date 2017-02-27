@@ -34,7 +34,6 @@ end
 
 function CMD.init(response,playerTb)
 	local monitor = skynet.monitor "simplemonitor"
-	print("PlayerTb",playerTb)
 	for _k,_v in pairs(playerTb) do
 		players[_v.agent] = { agent = _v.agent, account = _v.account, nickname = _v.nickname, pickedheroid = 0,confirmheroid = 0,
 		color = _v.color, level = _v.fightLevel, eloValue=_v.eloValue,isAI = _v.isAI}
@@ -110,6 +109,18 @@ function CMD.confirmHero(response,agent,account,arg)
 end
 
 local function aiPickHero(v)
+	--[[
+	local roles = {
+		110001,
+		110101,
+		120001,
+		120101,
+		130001,
+		130101,
+		210001,
+		210101,
+		220001	
+	}]]
 	local roles = {110001,120001,130001,130101}
 	local selects = {}
 	for _agent,_v in pairs(players) do
@@ -123,8 +134,9 @@ local function aiPickHero(v)
 			table.insert(lefts,v)
 		end
 	end
-	CMD.pickHero(function(...)end,v.agent,v.account,{heroid = lefts[1]} )
-	CMD.confirmHero(function(...)end,v.agent,v.account,{heroid = lefts[1]} )	
+	local index = math.random(1,#lefts)
+	CMD.pickHero(function(...)end,v.agent,v.account,{heroid = lefts[index]} )
+	CMD.confirmHero(function(...)end,v.agent,v.account,{heroid = lefts[index]} )	
 end
 
 local function update()
@@ -144,7 +156,6 @@ local function update()
 --	local roles = {110001,120001,130001,130101}
 --	local i = 1;
 	for _agent,_v in pairs(players) do
-		print("=======",_v)
 		if _v.isAI == true and _v.pickedheroid == 0 then
 			print("选择机器人")
 			--CMD.pickHero(function(...)end,_agent,_v.account,{heroid = roles[i]} )	
