@@ -76,7 +76,7 @@ local SkillsMethod =
 		skynet.call (database, "lua", "skills", "update", self.account_id, v, "count")
 		
 		local dat = g_shareData.skillRepository[v.dataId]
-		agentPlayer.account:addAExp(op, -Quest.ChipsExp["Skill"..(dat.n32Quality+1)]*num)		
+		agentPlayer.account:addAExp(op, Quest.ChipsExp["Skill"..(dat.n32Quality+1)]*num)		
 
 		--log record
 		syslog.infof("op[%s]player[%s]:delSkillByUuid:%s,%d:dataId[%d]", op, self.account_id, uuid, num, v.dataId)

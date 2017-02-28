@@ -99,7 +99,7 @@ local CardsMethod =
 		local database = skynet.uniqueservice ("database")
 		skynet.call (database, "lua", "cards", "update", self.account_id, v, "count")
 		
-		agentPlayer.account:addAExp(op, -Quest.ChipsExp.Card * num)
+		agentPlayer.account:addAExp(op, Quest.ChipsExp.Card * num)
 		
 		--log record
 		syslog.logmy("card", {opt=op,account=self.account_id,cardId=v.dataId,cardNum=num,uuid=v.uuid})
