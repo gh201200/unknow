@@ -18,7 +18,7 @@ function SpawnNpcManager:init(mapId)
 end
 local spawnNum = 0
 function SpawnNpcManager:update(dt)
-	if true then return end
+	--if true then return end
 	if EntityManager:getMonsterCountByBatch(self.batch) > 0 then return end 
 	spawnNum = 0
 	for k ,v in pairs(self.groups) do

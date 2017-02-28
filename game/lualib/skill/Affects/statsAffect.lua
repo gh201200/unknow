@@ -11,7 +11,7 @@ function StatsAffect:ctor(entity,source,data,skillId)
 		self.effectId = self.data[7] or 0
 	end
 	if self.effectTime == -1 then
-		self.effectTime = 99999
+		self.eff,self.dataectTime = 99999
 	end
 	self.effectTime = self.effectTime * 1000
 end
@@ -170,7 +170,9 @@ function StatsAffect:onTrigger(_add)
 		if self.data[1] == 'critrate' then
 			self.owner:addMidBaojiRate(_add * self.data[3])
 			self.owner:addMidBaojiTimes(_add * self.data[4])
-			self.owner:calcBaoji()
+			if _add == 1 then
+				self.owner:calcBaoji()
+			end
 			break
 		end
 

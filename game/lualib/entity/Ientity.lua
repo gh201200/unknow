@@ -934,6 +934,11 @@ function Ientity:calcBaoji()
 	self:setBaojiTimes(self:getMidBaojiTimes())
 end
 
+function Ientity:resetBaoji()
+	self:setBaojiRate(0)
+	self:setBaojiTimes(1)
+end
+
 function Ientity:calcHit()
 	self:setHit(self:getMidHit())
 end

@@ -39,7 +39,6 @@ function skillAffect:onExit()
 end
 
 function skillAffect:calAffect()
-	
 	local r = self:getAttributeValue(self.data)
 	if self.data[1] == "damage" then
 		local demage = r - self.owner:getDefence()
@@ -49,6 +48,7 @@ function skillAffect:calAffect()
 			if math.random(0,100) < 100 * self.source:getBaojiRate() then
 				demage = demage * self.source:getBaojiTimes()
 			end
+			self.source:resetBaoji()	
 		end
 		demage = self.owner:getUpdamage() * demage 
 		--伤害计算 分身特殊处理
