@@ -105,34 +105,34 @@
 		<szRSkillVoice></szRSkillVoice>
 		<n32BSize>5</n32BSize>
 	</item>
-	<item id="50015">
+	<item id="51201">
 		<szName>弹弓小子</szName>
-		<szMod_name>dangongxiaozi</szMod_name>
-		<n32Hight>dangongxiaozi</n32Hight>
-		<n32Speed>9000</n32Speed>
-		<n32attack01Time1>136</n32attack01Time1>
-		<n32attack01Time2>1139</n32attack01Time2>
-		<n32attack01Time3>425</n32attack01Time3>
-		<n32attack01TriTime>374</n32attack01TriTime>
-		<n32attack02Time1>136</n32attack02Time1>
-		<n32attack02Time2>1139</n32attack02Time2>
-		<n32attack02Time3>425</n32attack02Time3>
-		<n32attack02TriTime>374</n32attack02TriTime>
-		<n32cast_selfTime1>136</n32cast_selfTime1>
-		<n32cast_selfTime2>1054</n32cast_selfTime2>
-		<n32cast_selfTriTime>578</n32cast_selfTriTime>
-		<n32cast_nearTime1>340</n32cast_nearTime1>
-		<n32cast_nearTime2>935</n32cast_nearTime2>
-		<n32cast_nearTriTime>476</n32cast_nearTriTime>
-		<n32cast_remoteTime1>340</n32cast_remoteTime1>
-		<n32cast_remoteTime2>1020</n32cast_remoteTime2>
-		<n32cast_remoteTriTime>476</n32cast_remoteTriTime>
-		<n32cast_blinkTime1>85</n32cast_blinkTime1>
-		<n32cast_blinkTime2>765</n32cast_blinkTime2>
-		<n32cast_blinkTriTime>187</n32cast_blinkTriTime>
-		<n32cast_uniqueTime1>340</n32cast_uniqueTime1>
-		<n32cast_uniqueTime2>1020</n32cast_uniqueTime2>
-		<n32cast_uniqueTriTime>476</n32cast_uniqueTriTime>
+		<szMod_name>nier</szMod_name>
+		<n32Hight>nier</n32Hight>
+		<n32Speed>11000</n32Speed>
+		<n32attack01Time1>255</n32attack01Time1>
+		<n32attack01Time2>510</n32attack01Time2>
+		<n32attack01Time3>935</n32attack01Time3>
+		<n32attack01TriTime>391</n32attack01TriTime>
+		<n32attack02Time1>255</n32attack02Time1>
+		<n32attack02Time2>510</n32attack02Time2>
+		<n32attack02Time3>935</n32attack02Time3>
+		<n32attack02TriTime>391</n32attack02TriTime>
+		<n32cast_selfTime1>155</n32cast_selfTime1>
+		<n32cast_selfTime2>612</n32cast_selfTime2>
+		<n32cast_selfTriTime>307</n32cast_selfTriTime>
+		<n32cast_nearTime1>156</n32cast_nearTime1>
+		<n32cast_nearTime2>711</n32cast_nearTime2>
+		<n32cast_nearTriTime>251</n32cast_nearTriTime>
+		<n32cast_remoteTime1>149</n32cast_remoteTime1>
+		<n32cast_remoteTime2>918</n32cast_remoteTime2>
+		<n32cast_remoteTriTime>341</n32cast_remoteTriTime>
+		<n32cast_blinkTime1>93</n32cast_blinkTime1>
+		<n32cast_blinkTime2>574</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>213</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>160</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>907</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>341</n32cast_uniqueTriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>
@@ -350,7 +350,7 @@
 		<szRSkillVoice></szRSkillVoice>
 		<n32BSize>5</n32BSize>
 	</item>
-	<item id="52300">
+	<item id="52301">
 		<szName>乌鸦</szName>
 		<szMod_name>Wuya</szMod_name>
 		<n32Hight>Wuya</n32Hight>
@@ -385,7 +385,7 @@
 		<szRSkillVoice></szRSkillVoice>
 		<n32BSize>5</n32BSize>
 	</item>
-	<item id="52301">
+	<item id="52300">
 		<szName>风之旅人</szName>
 		<szMod_name>lvren</szMod_name>
 		<n32Hight>lvren</n32Hight>
@@ -457,32 +457,32 @@
 	</item>
 	<item id="53101">
 		<szName>机甲少女</szName>
-		<szMod_name>jijiashaonv</szMod_name>
-		<n32Hight>jijiashaonv</n32Hight>
+		<szMod_name>miya</szMod_name>
+		<n32Hight>miya</n32Hight>
 		<n32Speed>9000</n32Speed>
-		<n32attack01Time1>136</n32attack01Time1>
-		<n32attack01Time2>1139</n32attack01Time2>
-		<n32attack01Time3>425</n32attack01Time3>
-		<n32attack01TriTime>374</n32attack01TriTime>
-		<n32attack02Time1>136</n32attack02Time1>
-		<n32attack02Time2>1139</n32attack02Time2>
-		<n32attack02Time3>425</n32attack02Time3>
-		<n32attack02TriTime>374</n32attack02TriTime>
-		<n32cast_selfTime1>136</n32cast_selfTime1>
-		<n32cast_selfTime2>1054</n32cast_selfTime2>
-		<n32cast_selfTriTime>578</n32cast_selfTriTime>
-		<n32cast_nearTime1>340</n32cast_nearTime1>
-		<n32cast_nearTime2>935</n32cast_nearTime2>
-		<n32cast_nearTriTime>476</n32cast_nearTriTime>
-		<n32cast_remoteTime1>340</n32cast_remoteTime1>
+		<n32attack01Time1>255</n32attack01Time1>
+		<n32attack01Time2>986</n32attack01Time2>
+		<n32attack01Time3>459</n32attack01Time3>
+		<n32attack01TriTime>646</n32attack01TriTime>
+		<n32attack02Time1>255</n32attack02Time1>
+		<n32attack02Time2>986</n32attack02Time2>
+		<n32attack02Time3>459</n32attack02Time3>
+		<n32attack02TriTime>646</n32attack02TriTime>
+		<n32cast_selfTime1>260</n32cast_selfTime1>
+		<n32cast_selfTime2>607</n32cast_selfTime2>
+		<n32cast_selfTriTime>347</n32cast_selfTriTime>
+		<n32cast_nearTime1>115</n32cast_nearTime1>
+		<n32cast_nearTime2>652</n32cast_nearTime2>
+		<n32cast_nearTriTime>345</n32cast_nearTriTime>
+		<n32cast_remoteTime1>180</n32cast_remoteTime1>
 		<n32cast_remoteTime2>1020</n32cast_remoteTime2>
-		<n32cast_remoteTriTime>476</n32cast_remoteTriTime>
+		<n32cast_remoteTriTime>408</n32cast_remoteTriTime>
 		<n32cast_blinkTime1>85</n32cast_blinkTime1>
-		<n32cast_blinkTime2>765</n32cast_blinkTime2>
-		<n32cast_blinkTriTime>187</n32cast_blinkTriTime>
-		<n32cast_uniqueTime1>340</n32cast_uniqueTime1>
-		<n32cast_uniqueTime2>1020</n32cast_uniqueTime2>
-		<n32cast_uniqueTriTime>476</n32cast_uniqueTriTime>
+		<n32cast_blinkTime2>482</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>227</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>150</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>850</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>560</n32cast_uniqueTriTime>
 		<szScoundEffeect></szScoundEffeect>
 		<szMount1></szMount1>
 		<szMount1Effect></szMount1Effect>

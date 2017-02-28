@@ -9,8 +9,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>6元钻石</szName>
-		<szIcon>UI/Textures/Shop/Yiduizuanshi.png</szIcon>
+		<szName>60钻石</szName>
+		<szIcon>UI/Textures/Shop/zhuanshi1.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -23,8 +23,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>30元钻石</szName>
-		<szIcon>UI/Textures/Shop/Yidaizuanshi.png</szIcon>
+		<szName>300钻石</szName>
+		<szIcon>UI/Textures/Shop/zhuanshi2.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -37,8 +37,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>68元钻石</szName>
-		<szIcon>UI/Textures/Shop/Yidahezuanshi.png</szIcon>
+		<szName>680钻石</szName>
+		<szIcon>UI/Textures/Shop/zhuanshi4.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -51,8 +51,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>128元钻石</szName>
-		<szIcon>UI/Textures/Shop/Yiduizuanshi.png</szIcon>
+		<szName>1280钻石</szName>
+		<szIcon>UI/Textures/Shop/zhuanshi3.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -65,8 +65,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>328元钻石</szName>
-		<szIcon>UI/Textures/Shop/Yidaizuanshi.png</szIcon>
+		<szName>3280钻石</szName>
+		<szIcon>UI/Textures/Shop/zhuanshi5.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -79,8 +79,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>648元钻石</szName>
-		<szIcon>UI/Textures/Shop/Yidahezuanshi.png</szIcon>
+		<szName>6480钻石</szName>
+		<szIcon>UI/Textures/Shop/zhuanshi6.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -94,7 +94,7 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szName>1000金币</szName>
-		<szIcon>UI/Textures/Shop/Yiduijinbi.png</szIcon>
+		<szIcon>UI/Textures/Shop/jinbi1.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -107,8 +107,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>1W金币</szName>
-		<szIcon>UI/Textures/Shop/Yidaijinbi.png</szIcon>
+		<szName>1万金币</szName>
+		<szIcon>UI/Textures/Shop/jinbi2.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
@@ -121,8 +121,8 @@
 		<n32Limit>0</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szName>10w金币</szName>
-		<szIcon>UI/Textures/Shop/Yixiangjinbi.png</szIcon>
+		<szName>10万金币</szName>
+		<szIcon>UI/Textures/Shop/jinbi3.png</szIcon>
 		<szContent></szContent>
 		<n32GoodsID>0</n32GoodsID>
 	</item>
