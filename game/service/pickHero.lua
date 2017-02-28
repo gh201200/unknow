@@ -154,7 +154,7 @@ local function update()
 		return		
 	end
 	--AI 选角色
---	local roles = {110001,120001,130001,130101}
+	local roles = {110001,120001,130001,130101}
 --	local i = 1;
 	for _agent,_v in pairs(players) do
 		if _v.isAI == true and _v.pickedheroid == 0 then
