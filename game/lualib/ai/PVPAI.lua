@@ -1,12 +1,14 @@
 local AIBase = require "ai.AIBase"
 local vector3 = require "vector3"
 local Map = require "map.Map"
+local DropManager = require "drop.DropManager"
 local TowerHpR = 1 		--回血范围
 local TownerProtectR = 2 	--保护塔的范围
 local hateR = 2 		--仇恨范围(自动攻击的范围)
 local assistR = 3       	 --援助范围
 local run_RateA = 10	 	--逃跑系数A
 local run_RateB = 10	 	--逃跑系数B
+
 require "globalDefine"
 
 local PVPAI = class("PVPAI", AIBase)
@@ -23,9 +25,10 @@ local function getTower(entity,isBad)
 	return nil
 end
 local stateLevel = {}
-stateLevel["runAway"] = 5
-stateLevel["protect"] = 4
-stateLevel["assist"] = 3
+stateLevel["runAway"] = 6
+stateLevel["protect"] = 5
+stateLevel["assist"] = 4
+stateLevel["getskill"] = 3
 stateLevel["farm"] = 2
 stateLevel["battle"] = 1
 stateLevel["Idle"] = 0
@@ -36,6 +39,7 @@ function PVPAI:ctor(entity)
 	self.Fsms["runAway"] = {["onEnter"] = self.onEnter_runAway, ["onExec"] = self.onExec_runAway,["onExit"] = self.onExit_runAway}
 	self.Fsms["protect"] = {["onEnter"] = self.onEnter_protect, ["onExec"] = self.onExec_protect,["onExit"] = self.onExit_protect}
 	self.Fsms["assist"] = {["onEnter"] = self.onEnter_assist, ["onExec"] = self.onExec_assist,["onExit"] = self.onExit_assist}
+	self.Fsms["getskill"] = {["onEnter"] = self.onEnter_getskill, ["onExec"] = self.onExec_getskill,["onExit"] = self.onExit_getskill}
 	self.Fsms["farm"] = {["onEnter"] = self.onEnter_farm, ["onExec"] = self.onExec_farm,["onExit"] = self.onExit_farm}
 	self.Fsms["battle"] = {["onEnter"] = self.onEnter_battle, ["onExec"] = self.onExec_battle,["onExit"] = self.onExit_battle}
 	self.mNextAIState = "Idle"
@@ -65,6 +69,10 @@ function PVPAI:update(dt)
 	elseif self:isAssist() == true then
 		if self.mCurrentAIState ~= "assist" and stateLevel["assist"] > stateLevel[self.mCurrentAIState] then
 			self:setNextAiState("assist")
+		end
+	elseif self:isGetSkill() == true then
+		if self.mCurrentAIState ~= "getskill" and stateLevel["getskill"] > stateLevel[self.mCurrentAIState] then
+			self:setNextAiState("getskill")
 		end
 	elseif self:isFarm() == true then 
 		if self.mCurrentAIState ~= "farm" and stateLevel["farm"] > stateLevel[self.mCurrentAIState] then
@@ -164,13 +172,30 @@ end
 function PVPAI:onExit_battle()
 	print("PVPAI:onExit_Battle")
 end
+function PVPAI:onEnter_getskill()
+	print("AIState:",self.mCurrentAIState,self.source.serverId)	
+end
+
+function PVPAI:onExec_getskill()
+	local dis,point = DropManager:getNearestDrop(self.source)
+	if dis < 5 then
+		self.source:setTargetPos(point)	
+	else
+		self:setNextAiState("Idle")	
+	end	
+end
+
+function PVPAI:onExit_getskill()
+
+end
 
 function PVPAI:onEnter_farm()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 end
 
 function PVPAI:onExec_farm()
-	if target ~= nil and self.source:getDistance(target) < hateR and target:getHp() > 0 then
+	local target =  self.source:getTarget()
+	if target ~= nil and target:getType() ~= "transform" and self.source:getDistance(target) < hateR and target:getHp() > 0 then
 		--print("onExec_farm",self.source.serverId,target.serverId)	
 		return 
 	end
@@ -365,6 +390,15 @@ function PVPAI:isAssist()
 	local assister = self:getAssister()
 	if assister ~= nil then return true end
 	return false
+end
+
+function PVPAI:isGetSkill()
+	local dis,vector = DropManager:getNearestDrop(self.source)
+	if dis < 5 then
+		return true
+	else
+		return false	
+	end	
 end
 --打野
 function PVPAI:isFarm()

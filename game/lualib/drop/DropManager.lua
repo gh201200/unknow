@@ -47,6 +47,20 @@ function DropManager:update()
 	end
 end
 
+function DropManager:getNearestDrop(entity)
+	local dis = 999
+	local point = vector3.create() 
+	for i=#self.drops , 1, -1 do 
+		local q = self.drops[i]
+		dropVec:set(q.px/GAMEPLAY_PERCENT,0,q.pz/GAMEPLAY_PERCENT)
+		local len = vector3.len(entity.pos, dropVec)
+		if len <= dis then
+			point:set(q.px/GAMEPLAY_PERCENT,0,q.pz/GAMEPLAY_PERCENT)
+			dis = len
+		end
+	end
+	return dis,point
+end
 local rotate = {
 	[0] = 0,
 	[1] = 90,
