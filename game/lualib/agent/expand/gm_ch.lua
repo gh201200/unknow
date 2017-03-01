@@ -97,6 +97,8 @@ CLIENT_GM_CMD['setcd'] = function( args )
 		cooldown.post.setValue(user.account.account_id, 1001, cdtime)
 	elseif ctype == 4 then
 		user.explore:setTime(cdtime)
+	elseif ctype == 5 then
+		user.missions:setDailyMissionTime(cdtime)
 	end
 end;
 
