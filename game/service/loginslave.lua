@@ -73,7 +73,7 @@ local function firstRegister(account_id)
 	for k, v in pairs(g_shareData.shopRepository) do
 		if v.n32Type == 5 then
 			if v.n32ArenaLvUpLimit == 1 then
-				local cd = {accountId=account_id, atype=CoolDownAccountType.TimeLimitSale, value=v.n32Limit}
+				local cd = {accountId=account_id, atype=CoolDownAccountType.TimeLimitSale, value=os.time()+v.n32Limit}
 				skynet.call(database, "lua", "cooldown", "update", cd.accountId..'$'..cd.atype, cd)
                         	break
                         end
