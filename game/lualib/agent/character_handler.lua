@@ -51,7 +51,7 @@ AccountMethod.onExp = function(self)
 		for k, v in pairs(g_shareData.shopRepository) do
 			if v.n32Type == 5 then
 				if v.n32ArenaLvUpLimit == lv then
-					cd.post.setValue( user.account.account_id, CoolDownAccountType.TimeLimitSale, v.n32Limit) 
+					cd.post.setValue( user.account.account_id, CoolDownAccountType.TimeLimitSale, os.time() + v.n32Limit) 
 					break
 				end
 			end
