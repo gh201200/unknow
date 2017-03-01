@@ -36,7 +36,7 @@ local MissionsMethod =
 	end;
 	--
 	getMissionBySerialId = function(self, _serId)
-		if self:isDailyMission( _serId ) then
+		if self.isDailyMission( _serId ) then
 			return self:getDailyMission()
 		end
 		return self.units[_serId]
