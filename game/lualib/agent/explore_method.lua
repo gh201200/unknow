@@ -32,6 +32,15 @@ local ExploreMethod =
 	getTime = function(self, _uuid)
 		return self.units[_uuid].time
 	end;
+	--only for gm
+	setTime = function(self, _time)
+		for k, v in pairs(self.units) do
+			if v.time > os.time() then
+				v.time = os.time() + _time
+			end
+		end
+		self:sendExploreData() 
+	end;
 	--
 	initExplore = function(level, num)
 		local t = {}

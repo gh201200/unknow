@@ -81,6 +81,25 @@ CLIENT_GM_CMD['endmission'] = function( args )
 	end
 end;
 
+CLIENT_GM_CMD['setcd'] = function( args )
+	local ctype = tonumber(args.params[1])
+	local cdtime = tonumber(args.params[2])
+	local cooldown = snax.uniqueservice("cddown")
+	if ctype == 1 then
+		for k, v in pairs(user.cards.units) do
+			if v.explore > os.time() then
+				user.cards:setExplore(k, cdtime + os.time())
+			end
+		end
+	elseif ctype == 2 then
+		cooldown.post.setValue('system', 1, cdtime)
+	elseif ctype == 3 then
+		cooldown.post.setValue(user.account.account_id, 1001, cdtime)
+	elseif ctype == 4 then
+		user.explore:setTime(cdtime)
+	end
+end;
+
 function CMD.gm_add_money( args )
 	user.account:addGold("gm_add_money", args.gold)
 	user.account:addMoney("gm_add_money", args.money)
