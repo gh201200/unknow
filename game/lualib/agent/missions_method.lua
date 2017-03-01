@@ -90,6 +90,18 @@ local MissionsMethod =
 		end
 		return self.units[_serId]
 	end;
+	--only for gm
+	setDailyMissionTime = function(self, _time)
+		local _serId = Macro_GetMissionSerialId(Quest.DailyMissionId)
+		local v = self.units[_serId]
+		v.time = os.time() + _time
+		
+		self:sendMissionData( v )	
+		
+		local database = skynet.uniqueservice ("database")
+		skynet.call (database, "lua", "missions", "update", self.account_id, v)
+	
+	end;
 	--
 	resetDailyMission = function(self)
 		local _serId = Macro_GetMissionSerialId(Quest.DailyMissionId)
