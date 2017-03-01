@@ -11,7 +11,7 @@ function StatsAffect:ctor(entity,source,data,skillId)
 		self.effectId = self.data[7] or 0
 	end
 	if self.effectTime == -1 then
-		self.eff,self.dataectTime = 99999
+		self.effectTime = 99999
 	end
 	self.effectTime = self.effectTime * 1000
 end

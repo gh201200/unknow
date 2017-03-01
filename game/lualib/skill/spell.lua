@@ -157,6 +157,7 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	end
 	local targets = {}
 	if skilldata.szMyAffect ~= "" then
+		print("====onTrigger",szMyAffect)
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
 	end
 	if skilldata.n32BulletType ~= 0 then

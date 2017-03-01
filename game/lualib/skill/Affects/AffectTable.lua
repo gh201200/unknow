@@ -145,6 +145,7 @@ end
 function AffectTable:removeById(id)
 	for i=#self.affects,1,-1 do 
 		if self.affects[i].projectId == id then
+			self:synClient(self.affects[i],1)	
 			self.affects[i]:onExit() --清除处理
 			table.remove(self.affects,i)
 		end

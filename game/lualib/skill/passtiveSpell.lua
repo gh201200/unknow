@@ -52,7 +52,9 @@ function passtiveSpell:update(dt)
 			local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
 			for _dk,_dv in pairs(dels) do
 				if _dv.affectTable then
-					_dv.affectTable:removeById(uuid)
+					--print("remove======",_dv.serverId,self.skilldata.n32SeriId)
+					_dv.affectTable:removeBySkillId(self.skilldata.id)
+				--	_dv.affectTable:removeById(uuid)
 				end
 			end	
 		end 
@@ -64,7 +66,8 @@ function passtiveSpell:onDead()
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 or self.skilldata.n32TriggerCondition == 9 then
 		local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
 		for _dk,_dv in pairs(self.targets) do
-			_dv.affectTable:removeById(uuid)
+			--_dv.affectTable:removeById(uuid)
+			_dv.affectTable:removeBySkillId(self.skilldata.id)	
 		end	
 	end
 end
