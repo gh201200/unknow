@@ -125,7 +125,7 @@ function handleMatchWithAi(p)
 	PvpAIServer = skynet.uniqueservice("PvpAIServer")
 	local AIs = skynet.call(PvpAIServer,"lua","getPvpAIs",5)
 	print("==========+++AIs",AIs)
-	--AIs ={}
+	AIs ={}
 	table.insert(AIs,p)
 	handleMatch(AIs)	
 end

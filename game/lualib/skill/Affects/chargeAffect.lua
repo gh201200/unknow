@@ -35,6 +35,10 @@ function chargeAffect:onEnter()
 	self.owner.targetPos = tf
 	--进入持续施法状态
 	print("effectTime",self.effectTime)
+	local r = {id = self.owner.serverId,action = 0,dstX = math.floor(self.tgtPos.x * 10000),
+	dstZ = math.floor(self.tgtPos.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
+
+	g_entityManager:sendToAllPlayers("pushForceMove",r)
 	--self.owner.spell:enterChannel(self.effectTime)
 	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
 end
@@ -62,8 +66,6 @@ function chargeAffect:onExec(dt)
 end
 
 function chargeAffect:onExit()
-	--self.owner:stand()
-	
 	self.super.onExit(self)
 end
 

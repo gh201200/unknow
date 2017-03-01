@@ -806,6 +806,17 @@ reSendHaveItems 3008 {
 	}
 }
 
+pushForceMove 3009 {
+	request {
+		id 0 : integer
+		action 1 : integer
+		dstX 2 : integer
+		dstZ 3 : integer
+		dirX 4 : integer
+		dirZ 5 : integer
+		speed 6 : integer
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)

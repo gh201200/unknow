@@ -927,7 +927,7 @@
 	<item id="20015">
 		<n32type>3</n32type>
 		<szassert>chuanyunjian_bullet_body</szassert>
-		<n32time>1</n32time>
+		<n32time>2</n32time>
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
@@ -1839,7 +1839,7 @@
 	</item>
 	<item id="40005">
 		<n32type>1</n32type>
-		<szassert>zhenhandadi_cast_bottom</szassert>
+		<szassert>zhenhandadi_hit_bottom</szassert>
 		<n32time>2</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
@@ -1867,7 +1867,7 @@
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
+		<n32layer>10</n32layer>
 		<szillustration>新绿绽华地点特效</szillustration>
 	</item>
 	<item id="40008">
