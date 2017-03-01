@@ -161,8 +161,12 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
 	end
 	if skilldata.n32BulletType ~= 0 then
-		for _k,_v in pairs(selects) do
-			g_entityManager:createFlyObj(source,_v,skilldata)
+		if skilldata.n32SkillTargetType == 6 then
+			g_entityManager:createFlyObj(source,srcTarget,skilldata)
+		else	
+			for _k,_v in pairs(selects) do
+				g_entityManager:createFlyObj(source,_v,skilldata)
+			end
 		end
 	else
 		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
@@ -181,6 +185,7 @@ function spell:advanceEffect(dt)
 		if self.triggerTime < 0 then
 			if self.isSheule ~= true then
 				self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
+				print("trigger======")
 				self:onTrigger(self.skilldata,self.source,self.srcTarget)
 			end
 		end
