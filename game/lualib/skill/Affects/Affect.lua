@@ -52,6 +52,7 @@ function Affect:getBaseAttributeValue(data)
 		[1] = "Attack",[2] = "Strength",[3] = "Agility",
 		[4] = "Intelligence",[5] = "Defence",[6] = "HpMax",
 		[7] = "MpMax",[8] = "Hp",[9] = "Mp"};
+	print("data=",data)
 	local midValue = entity["getMid" .. attIdToFuns[attId]](entity)
 	local midPecent =  entity["getMid" .. attIdToFuns[attId] .. "Pc"](entity)
 	local finalValue = self:getAttributeValue(data)	
