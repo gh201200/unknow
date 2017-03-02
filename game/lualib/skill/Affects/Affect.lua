@@ -27,7 +27,6 @@ end
 
 function Affect:getAttributeValue(data)
 	attId,rate,value = data[2],data[3],data[4]
-	print("data===",data)
 	local entity = self.source
 	local r = 0
 	local attIdToFuns = {
