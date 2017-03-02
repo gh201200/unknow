@@ -93,7 +93,7 @@ function PVPAI:update(dt)
 		end
 		if skillNum < 6 then
 			--学习技能
-			print("====ai study skill",self.source.serverId)
+		--	print("====ai study skill",self.source.serverId)
 			
 		end
 	end	

@@ -150,7 +150,6 @@ function EntityManager:createPet(id,master,pos)
 	local pets = master.pets
 	for i=#(pets),1,-1 do
 		local v = pets[i]
-		print("v:",v.pt)
 		if v.pt.Serid == pt.Serid then
 			limitNum = limitNum - 1
 			if limitNum <= 0 then

@@ -156,6 +156,7 @@ function AffectTable:clear()
 		self.affects[i]:onExit() 
 		--table.remove(self.affects,i)
 	end
+	self.affects = {}
 	self.bAtkAffects = {}
 	self.AtkAffects = {}
 	

@@ -157,7 +157,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	end
 	local targets = {}
 	if skilldata.szMyAffect ~= "" then
-		print("====onTrigger",szMyAffect)
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
 	end
 	if skilldata.n32BulletType ~= 0 then
@@ -185,7 +184,6 @@ function spell:advanceEffect(dt)
 		if self.triggerTime < 0 then
 			if self.isSheule ~= true then
 				self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
-				print("trigger======")
 				self:onTrigger(self.skilldata,self.source,self.srcTarget)
 			end
 		end
