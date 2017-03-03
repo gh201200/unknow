@@ -304,7 +304,6 @@ function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 			t.targetId = srcTarget.serverId
 		end
 	end
-	print("t===",t)
 	g_entityManager:sendToAllPlayers("CastingSkill",t)
 end
 
