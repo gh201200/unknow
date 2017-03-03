@@ -192,6 +192,7 @@ end
 
 --触发目标效果
 function spell:trgggerAffect(datas,targets,skilldata,isSelf)
+	print("datas:",datas,#targets)
 	isSelf = isSelf or false
 	if isSelf == true then
 		self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)

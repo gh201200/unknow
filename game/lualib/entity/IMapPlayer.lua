@@ -93,7 +93,7 @@ end
 
 function IMapPlayer:update(dt)
 	if self.ai and self:isDead() == false then
-		self.ai:update(dt)
+		--self.ai:update(dt)
 	end
 	self.hateTime =  self.hateTime - dt	
 	if self.hateTime <= 0 then
