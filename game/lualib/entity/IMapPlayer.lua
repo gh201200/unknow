@@ -192,7 +192,7 @@ function IMapPlayer:onDead()
 	else
 		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
 	end
-	Map:add(x, z, 0, self.modelDat.n32BSize)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 end
 
 function IMapPlayer:onRaise()
