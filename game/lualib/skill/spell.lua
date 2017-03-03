@@ -157,12 +157,15 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	end
 	local targets = {}
 	if skilldata.szMyAffect ~= "" then
-		print("====onTrigger",szMyAffect)
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
 	end
 	if skilldata.n32BulletType ~= 0 then
-		for _k,_v in pairs(selects) do
-			g_entityManager:createFlyObj(source,_v,skilldata)
+		if skilldata.n32SkillTargetType == 6 then
+			g_entityManager:createFlyObj(source,srcTarget,skilldata)
+		else	
+			for _k,_v in pairs(selects) do
+				g_entityManager:createFlyObj(source,_v,skilldata)
+			end
 		end
 	else
 		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)

@@ -85,6 +85,18 @@ function PVPAI:update(dt)
 			end
 		end
 	end
+	--判断是否有技能可以学习
+	for k,v in pairs(self.source.pickItems) do
+		local skillNum = 0
+		for sk,sv in pairs(self.source.skillTable) do
+			skillNum = skillNum + 1
+		end
+		if skillNum < 6 then
+			--学习技能
+		--	print("====ai study skill",self.source.serverId)
+			
+		end
+	end	
 end
 function PVPAI:onEnter_Idle()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
@@ -242,7 +254,7 @@ function PVPAI:onExec_assist()
 	local num = 0
 	local targets = {}
 	for k,v in pairs(g_entityManager.entityList) do
-		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
+		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" and v:getHp() > 0  then
 			if self.assister:getDistance(v) <=  assistR then
 				num = num + 1 
 				targets[num] = v

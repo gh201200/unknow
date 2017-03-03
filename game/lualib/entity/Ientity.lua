@@ -205,7 +205,9 @@ end
 function Ientity:setActionState(_speed, _action)
 	self.moveSpeed = _speed
 	self.curActionState = _action
-	self:advanceEventStamp(EventStampType.Move)
+	if _action < ActionState.forcemove then 
+		self:advanceEventStamp(EventStampType.Move)
+	end
 end
 
 function Ientity:canStand()
@@ -621,11 +623,11 @@ function Ientity:onForceMove(dt)
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
 	
-	local len  = vector3.len(self.pos,self.targetPos.pos)
-	if len >= 0.001 then
-		print("self:advance forceMove")
+	--local len  = vector3.len(self.pos,self.targetPos.pos)
+	--if len >= 0.001 then
+		--print("self:advance forceMove")
 		--self:advanceEventStamp(EventStampType.Move)
-	end	
+	--end	
 end
 --闪现
 function Ientity:onBlink(des)

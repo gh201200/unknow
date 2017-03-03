@@ -123,8 +123,10 @@ function DropManager:makeDrop(entity)
 end
 
 function DropManager:useItem(player, sid)
+	print("====useItem",sid)
 	local item = player.pickItems[sid]
 	if not item then
+		print("item",player.pickItems)
 		return 1	--已被使用	
 	end
 	

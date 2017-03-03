@@ -17,8 +17,10 @@ function IMapPlayer.create(arg)
 	player.bornPos:set(arg.bornPos[1]/GAMEPLAY_PERCENT, 0, arg.bornPos[2]/GAMEPLAY_PERCENT)
 	if player:isRed() then
 		player.camp = CampType.RED
+		player.dir:set(0,0,1)
 	else
 		player.camp = CampType.BLUE
+		player.dir:set(0,0,-1)
 	end
 	player.isAI = arg.isAI
 	player:init(arg.pickedheroid)
