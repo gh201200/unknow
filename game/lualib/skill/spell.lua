@@ -38,7 +38,6 @@ function spell:init(skilldata,skillTimes)
 	if self.triggerTime == 0 then
 		self.triggerTime = skillTimes["trigger"]
 	end
-	print("self.triggerTime==",self.triggerTime,self.totalTime)
 	if self.triggerTime > 0 then
 		self.isSheule = true
 		self.triggerTime = self.triggerTime - self.readyTime
