@@ -33,12 +33,13 @@ function spell:init(skilldata,skillTimes)
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
-	self.triggerTime = skilldata.n32TriggerTime or 0
+	self.triggerTime = skilldata.n32TriggerTime * 1000 
 	self.CTriggerTime = self.skilldata.n32AffectGap * 1000 
 	if self.triggerTime == 0 then
 		self.triggerTime = skillTimes["trigger"]
 	end
-	if self.triggerTime > self.totalTime then
+	print("self.triggerTime==",self.triggerTime,self.totalTime)
+	if self.triggerTime > 0 then
 		self.isSheule = true
 		self.triggerTime = self.triggerTime - self.readyTime
 	end
@@ -303,6 +304,7 @@ function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 			t.targetId = srcTarget.serverId
 		end
 	end
+	print("t===",t)
 	g_entityManager:sendToAllPlayers("CastingSkill",t)
 end
 
