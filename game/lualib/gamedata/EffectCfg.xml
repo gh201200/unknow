@@ -839,11 +839,11 @@
 	<item id="20007">
 		<n32type>3</n32type>
 		<szassert>liekongzhan_bullet_body</szassert>
-		<n32time>2</n32time>
+		<n32time>0.8</n32time>
 		<n32speed>3</n32speed>
-		<n32position>0</n32position>
+		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>1.6</n32Redius>
+		<n32Redius>0.8</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>裂空斩弹道</szillustration>
 	</item>
@@ -859,9 +859,9 @@
 		<szillustration>钟表匠普通攻击弹道</szillustration>
 	</item>
 	<item id="20009">
-		<n32type>4</n32type>
+		<n32type>3</n32type>
 		<szassert></szassert>
-		<n32time>0</n32time>
+		<n32time>1</n32time>
 		<n32speed>2</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
@@ -1026,6 +1026,17 @@
 	<item id="20024">
 		<n32type>4</n32type>
 		<szassert>gaobaoshoulei_bullet_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>3</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0.3</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>高爆手雷弹道</szillustration>
+	</item>
+	<item id="20025">
+		<n32type>4</n32type>
+		<szassert>liemofeiren_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
@@ -1620,7 +1631,7 @@
 	<item id="31016">
 		<n32type>2</n32type>
 		<szassert>huichunjili_hit_body</szassert>
-		<n32time>0</n32time>
+		<n32time>2</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
@@ -1658,7 +1669,7 @@
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
+		<n32layer>0</n32layer>
 		<szillustration>挑衅受击</szillustration>
 	</item>
 	<item id="31020">
@@ -1696,13 +1707,13 @@
 	</item>
 	<item id="31023">
 		<n32type>2</n32type>
-		<szassert>zhenhandadi_hit_bottom</szassert>
-		<n32time>2</n32time>
+		<szassert>test</szassert>
+		<n32time>0</n32time>
 		<n32speed>0</n32speed>
-		<n32position>1</n32position>
+		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
+		<n32layer>0</n32layer>
 		<szillustration>震踏大地受击</szillustration>
 	</item>
 	<item id="31024">

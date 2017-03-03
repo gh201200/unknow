@@ -39,7 +39,6 @@ function chargeAffect:onEnter()
 	dstZ = math.floor(self.tgtPos.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
 
 	g_entityManager:sendToAllPlayers("pushForceMove",r)
-	--self.owner.spell:enterChannel(self.effectTime)
 	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
 end
 
@@ -48,21 +47,6 @@ function chargeAffect:onExec(dt)
 	if self.effectTime < 0 then
 		self:onExit()
 	end
-	--[[
-	print("chargeAffect exec",dt)
-	for i=#g_entityManager.entityList, 1, -1 do
-		local v = g_entityManager.entityList[i]
-		if self.targets[v.serverId] == nil and v.serverId ~= self.source.serverId then
-			--if self.owner:isKind(v) == false then
-			local dis = self.owner:getDistance(v)
-			if dis <= self.radius and v.serverId ~= nil then
-				self.targets[v.serverId] = 1
-				v.affectTable:buildAffects(self.owner,self.tgtBuff,self.skillId)
-			end	
-			--end
-		end	 
-	end
-	]]--
 end
 
 function chargeAffect:onExit()

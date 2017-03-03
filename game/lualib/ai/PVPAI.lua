@@ -254,7 +254,7 @@ function PVPAI:onExec_assist()
 	local num = 0
 	local targets = {}
 	for k,v in pairs(g_entityManager.entityList) do
-		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
+		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" and v:getHp() > 0  then
 			if self.assister:getDistance(v) <=  assistR then
 				num = num + 1 
 				targets[num] = v
