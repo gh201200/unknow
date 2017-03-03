@@ -5,7 +5,9 @@ local EntityManager = require "entity.EntityManager"
 local BattleOverManager = require "entity.BattleOverManager"
 local passtiveSpell =  require "skill.passtiveSpell"
 local PVPAI = require "ai.PVPAI" 
+local Map = require "map.Map"
 local IMapPlayer = class("IMapPlayer", Ientity)
+
 function IMapPlayer.create(arg)
 
 	local player = IMapPlayer.new()
