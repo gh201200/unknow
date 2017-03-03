@@ -171,6 +171,10 @@ function IMapPlayer:calcStats()
 	self:calcMiss()
 	self:calUpdamage()
 	self:calShield()	
+
+	print(self.nickName .. ' 计算属性')
+	self:dumpStats()
+
 end
 
 function IMapPlayer:onDead()
@@ -186,6 +190,7 @@ function IMapPlayer:onDead()
 	else
 		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
 	end
+	Map:add(x, z, 0, self.modelDat.n32BSize)
 end
 
 function IMapPlayer:onRaise()
