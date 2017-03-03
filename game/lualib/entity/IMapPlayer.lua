@@ -69,7 +69,7 @@ end
 function IMapPlayer:addHp(_hp, mask, source)
 	IMapPlayer.super.addHp(self,_hp,mask,source)
 	if _hp < 0 and source then
-		if source:getType() == "IMapPlayer" or source:getType() == "IBuilding" then
+		if source:getType() == "IMapPlayer" or source:getType() == "IBuilding"  or source:getType() == "IPet" then
 			self.hater = source
 			self.hateTime = 2000 --2秒cd
 		end

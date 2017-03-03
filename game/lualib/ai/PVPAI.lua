@@ -163,12 +163,13 @@ end
 
 function PVPAI:onExec_battle()
 	local target = self.source:getTarget()
-	if target ~= nil and self.source:isKind(v,true) == false and  target:getHp() > 0 and self.source:getDistance(target) < hateR then
+	if target ~= nil and self:canAttackPlayer(target) and self.source:getDistance(target) < hateR then
 		return
 	end
 	target = nil
 	for k,v in pairs(g_entityManager.entityList) do
-		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
+		--if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
+		if self:canAttackPlayer(v) then
 			if self.source:getDistance(v) < hateR then
 				target = v
 				break
@@ -254,7 +255,7 @@ function PVPAI:onExec_assist()
 	local num = 0
 	local targets = {}
 	for k,v in pairs(g_entityManager.entityList) do
-		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" and v:getHp() > 0  then
+		if self:canAttackPlayer(v) then
 			if self.assister:getDistance(v) <=  assistR then
 				num = num + 1 
 				targets[num] = v
@@ -270,7 +271,8 @@ function PVPAI:onExec_assist()
 		local target =  self.source:getTarget()
 		local hit = false
 		for k,v in pairs(targets) do
-			if target ~= nil and target:getType() == "IMapPlayer" and target:getHp() > 0  and v.serverId == target.serverId then
+			--if target ~= nil and target:getType() == "IMapPlayer" and  target:getHp() > 0  and v.serverId == target.serverId then
+			if self:canAttackPlayer(target) and  v.serverId == target.serverId then
 				hit = true
 				break	
 			end
@@ -304,14 +306,16 @@ function PVPAI:autoProtectAttack(protectR)
 		return
 	end
 	local target = self.source:getTarget()
-	if target and target:getType() == "IMapPlayer" then
+	--if target and target:getType() == "IMapPlayer" then
+	if self:canAttackPlayer(target) then
 		if self.source:getDistance(target) < protectR then
 			return 
 		end
 	end
 	target = nil
 	for k,v in pairs(g_entityManager.entityList) do
-		if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
+		--if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
+		if self:canAttackPlayer(v) then
 			if self.source:getDistance(v) < protectR then
 				target = v
 				break
@@ -385,7 +389,7 @@ function PVPAI:getAssister()
 	local target = nil 
 	local hateTime = 0 
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMapPlayer" and self.source:isKind(v,true) == true then
+		if v:getType() == "IMapPlayer" or v:getType() == "IPet" and self.source:isKind(v,true) == true then
 			if v.hater ~= nil then
 				--hateTime = v.hateTime
 				target = v
@@ -419,7 +423,7 @@ function PVPAI:isFarm()
 		att = 1
 	end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMapPlayer" and self.source:isKind(v,true) == true then
+		if v:getType() == "IMapPlayer" or v:getType() == "IPet" and self.source:isKind(v,true) == true then
 			if v.hater ~= nil then
 				return false
 			end
@@ -436,6 +440,14 @@ end
 --攻击
 function PVPAI:isAttack()
 	
+end
+
+function PVPAI:canAttackPlayer(v)
+	if self.source:isKind(v,true) == false and (v:getType() == "IMapPlayer" or v:getType() == "IPet") and v:getHp() > 0 then 
+		return true
+	else
+		return false
+	end
 end
 return PVPAI
 

@@ -112,6 +112,7 @@ function passtiveSpell:trigger(_cond)
 		isTrigger =  true
 	--致命触发
 	elseif self.skilldata.n32TriggerCondition == 6 and _cond == 6 then
+		print("============trigger 666")
 		isTrigger =  true
 	--敌人碰撞触发
 	elseif self.skilldata.n32TriggerCondition == 7 and _cond == 7 then

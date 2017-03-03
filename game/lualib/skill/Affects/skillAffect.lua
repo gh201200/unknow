@@ -66,8 +66,11 @@ function skillAffect:calAffect()
 			demage = demage - shieldValue
 		end
 		self.owner:calShield()
+		if demage > self.owner:getHp() and self.owner:getType() == "IMapPlayer" then
+			--复活
+			self.owner.spell:onTriggerPasstives(6)
+		end
 		self.owner:addHp(-demage,HpMpMask.SkillHp, self.source)	
-		
 	elseif self.data[1] == "curehp" then
 		self.owner:addHp(r,HpMpMask.SkillHp, self.source)
 	elseif self.data[1] == "curemp" then	

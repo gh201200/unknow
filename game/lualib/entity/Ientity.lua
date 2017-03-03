@@ -707,7 +707,7 @@ function Ientity:addHp(_hp, mask, source)
 	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	--不死状态
-	if self.affectState == AffectState.NoDead then
+	if self.affectState == AffectState.NoDead or self.affectState == AffectState.Invincible then
 		if self:getHp() <= 0 then
 			self:setHp(1)
 		end
