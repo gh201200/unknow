@@ -107,11 +107,14 @@ function IflyObj:updateLink(dt)
 	if self.linkIndex < self.skilldata.szAffectRange[3] then
 	   for i=#g_entityManager.entityList, 1, -1 do
 		local v = g_entityManager.entityList[i]
-		if v:getType() ~= "transform" and self.caster:isKind(v) == false then
-			local dis = self.target:getDistance(v)
-			if isInParentLinkTarget(self,v) == false and self.skilldata.szAffectRange[2] >= dis then
-				tgt = v
-				break
+		if v:getType() ~= "transform" then
+			if (self.skilldata.n32AffectTargetType == 3 and self.caster:isKind(v) == false) or 
+			(self.skilldata.n32AffectTargetType == 1 and self.caster:isKind(v) == true) then
+				local dis = self.target:getDistance(v)
+				if isInParentLinkTarget(self,v) == false and self.skilldata.szAffectRange[2] >= dis then
+					tgt = v
+					break
+				end
 			end
 		end
 	    end	

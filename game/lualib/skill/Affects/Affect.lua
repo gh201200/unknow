@@ -26,8 +26,12 @@ function Affect:onExit()
 end
 
 function Affect:getAttributeValue(data)
+	print("getAttribute:",data)
 	attId,rate,value = data[2],data[3],data[4]
 	local entity = self.source
+	if entity == nil then
+		print("entity is null")
+	end
 	local r = 0
 	local attIdToFuns = {
 		[1] = "getAttack",[2] = "getStrength",[3] = "getAgility",

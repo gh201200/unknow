@@ -195,7 +195,8 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 	print("datas:",datas,#targets)
 	isSelf = isSelf or false
 	if isSelf == true then
-		self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
+		--self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
+		self.source.affectTable:buildAffects(self.source,datas,skilldata.id)
 	else
 		if skilldata.n32SkillType == 0 and self.source:getHit()*100 < math.random(0,100) then
 			--未命中
