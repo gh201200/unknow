@@ -171,6 +171,10 @@ function IMapPlayer:calcStats()
 	self:calcMiss()
 	self:calUpdamage()
 	self:calShield()	
+
+	print(self.nickName .. ' 计算属性')
+	self:dumpStats()
+
 end
 
 function IMapPlayer:onDead()
