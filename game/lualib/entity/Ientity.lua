@@ -606,7 +606,6 @@ end
 
 --强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
-	print("onForceMove====",self.moveSpeed)
 	dt = dt / 1000
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
@@ -624,12 +623,12 @@ function Ientity:onForceMove(dt)
 		return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
-	
-	--local len  = vector3.len(self.pos,self.targetPos.pos)
-	--if len >= 0.001 then
-		--print("self:advance forceMove")
-		--self:advanceEventStamp(EventStampType.Move)
-	--end	
+	--print("onForceMove self.pos:",self.pos.x,self.pos.z)	
+	--print("onForceMove self.targetPos:",self.targetPos.pos.x,self.targetPos.pos.z)	
+	local len  = vector3.len(self.pos,self.targetPos.pos)
+	if len <= 0.1 then
+		self:OnStand()
+	end	
 end
 --闪现
 function Ientity:onBlink(des)

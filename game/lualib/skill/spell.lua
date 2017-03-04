@@ -347,7 +347,6 @@ function spell:onEnd(dt)
 	if self.endTime < 0 then
 		self.status = SpellStatus.None	
 		self.source.CastSkillId = 0
-		self.source:OnStand()
 		self.source:callBackSpellEnd()
 		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
 			if self.source:getTarget() == self.srcTarget then
