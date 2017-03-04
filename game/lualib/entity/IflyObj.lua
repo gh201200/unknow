@@ -53,9 +53,10 @@ function IflyObj:ctor(src,tgt,skilldata,extra1,extra2)
 	r.posZ = tostring(self.pos.z)
 	r.dirX = tostring(self.dir.x)
 	r.dirZ = tostring(self.dir.z)
-	if self.target:getType() ~= "transform" and self.skilldata.n32BulletType ~= 3  then
+	if self.target:getType() ~= "transform" and self.skilldata.n32BulletType ~= 3 and self.skilldata.n32BulletType ~= 4  then
 		r.acceperId = self.target.serverId
 	end
+	print("flyobj===",r)
 	g_entityManager:sendToAllPlayers("pushEffect",r)
 
 end
