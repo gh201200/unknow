@@ -37,6 +37,7 @@ function chargeAffect:onEnter()
 	print("effectTime",self.effectTime)
 	local r = {id = self.owner.serverId,action = 0,dstX = math.floor(self.tgtPos.x * 10000),
 	dstZ = math.floor(self.tgtPos.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
+	--print("charge==:",r)
 	g_entityManager:sendToAllPlayers("pushForceMove",r)
 	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
 end
