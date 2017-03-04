@@ -85,6 +85,7 @@ CLIENT_GM_CMD['setcd'] = function( args )
 	local ctype = tonumber(args.params[1])
 	local cdtime = tonumber(args.params[2])
 	local cooldown = snax.uniqueservice("cddown")
+	local activity = snax.uniqueservice("activity")
 	if ctype == 1 then
 		for k, v in pairs(user.cards.units) do
 			if v.explore > os.time() then
@@ -99,6 +100,14 @@ CLIENT_GM_CMD['setcd'] = function( args )
 		user.explore:setTime(cdtime)
 	elseif ctype == 5 then
 		user.missions:setDailyMissionTime(cdtime)
+	elseif ctype == 6 then
+		local atype = tonumber(args.params[3])
+		local val = tonumber(args.params[4])
+		local name = 'system'
+		if atype > 1000 then
+			name = user.account.account_id
+		end
+		activity.req.setValue("gm", name, atype, val, cdtime + os.time())
 	end
 end;
 

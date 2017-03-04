@@ -434,6 +434,7 @@ updateActivityData 305 {
 	response {                                                            
 		uid 0 : string
        		value 1 : integer 
+		time 2 : integer
 	} 
 }
 
