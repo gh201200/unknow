@@ -79,6 +79,7 @@ end
 
 function REQUEST.exploreEnd( args )
 	local errorCode = 0
+	local r = {}
 	local unit = user.explore:getExplore( args.uuid )
 	repeat
 
@@ -110,19 +111,26 @@ function REQUEST.exploreEnd( args )
 		end
 		score = score * exploreDat.n32Time / 3600
 		local cn = math.floor(score * exploreDat.n32CardC)
+		
 		for i=1, cn do
 			local rets = usePackageItem(exploreDat.n32CardItemId, user.level )
+			for k, v in pairs(rets) do
+				table.insert(r,{x=k, y=v})
+			end
 			user.servicecmd.addItems("exploreEnd", rets)
 		end
 		local sn = math.floor(score * exploreDat.n32SkillC)
 		for i=1, sn do
 			local rets = usePackageItem(exploreDat.n32SkillItemId, user.level )
+			for k, v in pairs(rets) do
+				table.insert(r,{x=k, y=v})
+			end
 			user.servicecmd.addItems("exploreEnd", rets)
 		end
 		user.account:addGold("exploreEnd", math.floor(score * exploreDat.n32GoldC))
 		user.explore:resetExplore("exploreEnd", unit.uuid)	
 	until true
-	return {errorCode=errorCode, uuid=args.uuid}
+	return {errorCode=errorCode, uuid=args.uuid, items=r}
 end
 
 function REQUEST.exploreRefresh( args )
