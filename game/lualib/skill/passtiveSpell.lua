@@ -12,6 +12,12 @@ function passtiveSpell:ctor(src,skilldata)
 		--学习时候触发
 		self:trigger(9)
 	end
+	if self.skilldata.szSelectTargetAffect ~= ""  then
+		--被动技能施法目标都是自己
+		local adds = {}
+		table.insert(adds,self.source)
+		self.source.spell:trgggerAffect(self.skilldata.szSelectTargetAffect,adds,self.skilldata)
+	end
 end
 
 function passtiveSpell:update(dt)
@@ -45,11 +51,13 @@ function passtiveSpell:update(dt)
 		end
 		--adds添加buff
 		if #adds > 0 then
+			print("adds",#adds)
 			self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,adds,self.skilldata)
 		end
 		--dels移除buff
 		if #dels > 0 then
-			local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
+			--local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
+			print("移除buff")
 			for _dk,_dv in pairs(dels) do
 				if _dv.affectTable then
 					--print("remove======",_dv.serverId,self.skilldata.n32SeriId)
@@ -104,6 +112,7 @@ function passtiveSpell:trigger(_cond)
 		isTrigger =  true
 	--致命触发
 	elseif self.skilldata.n32TriggerCondition == 6 and _cond == 6 then
+		print("============trigger 666")
 		isTrigger =  true
 	--敌人碰撞触发
 	elseif self.skilldata.n32TriggerCondition == 7 and _cond == 7 then

@@ -47,7 +47,7 @@ function PetAI:onExec_Chase()
 	if self.source.spell:isSpellRunning() then return end
 	self.source.ReadySkillId = self.source.pt["n32CommonSkill"]
 	local t = self.source:getTarget()
-	if t == nil then
+	if t == nil or t:getHp() <= 0 then
 		self:setNextAiState("Idle")
 		self.source:setTargetVar(nil)
 		return	
@@ -78,7 +78,7 @@ end
 
 function PetAI:canChase()
 	for k, v in pairs( g_entityManager.entityList ) do 
-		if self.master:isKind(v,true) == false then
+		if self.master:isKind(v,true) == false and v:getHp() > 0 then
 			if self.source:getDistance(v) <= self.source.pt["n32HateRange"] then
 				self.source:setTarget(v)
 				return true

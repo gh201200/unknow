@@ -53,10 +53,10 @@ function skillAffect:calAffect()
 		demage = self.owner:getUpdamage() * demage 
 		--伤害计算 分身特殊处理
 		if self.owner:getType() == "IPet" and self.owner.pt.n32Type == 3 then
-			demage = demage * self.owner.pt.DamagePc 
+			demage = demage * self.owner.pt.HurtPc
 		end
 		if self.source:getType() == "IPet" and self.source.pt.n32Type == 3 then
-			demage = demage * self.source.pt.HurtPc
+			demage = demage * self.source.pt.DamagePc 
 		end
 		local shieldValue = self.owner:getShield()
 		if shieldValue > demage then
@@ -66,8 +66,11 @@ function skillAffect:calAffect()
 			demage = demage - shieldValue
 		end
 		self.owner:calShield()
+		if demage > self.owner:getHp() and self.owner:getType() == "IMapPlayer" then
+			--复活
+			self.owner.spell:onTriggerPasstives(6)
+		end
 		self.owner:addHp(-demage,HpMpMask.SkillHp, self.source)	
-		
 	elseif self.data[1] == "curehp" then
 		self.owner:addHp(r,HpMpMask.SkillHp, self.source)
 	elseif self.data[1] == "curemp" then	

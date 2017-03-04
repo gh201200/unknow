@@ -284,8 +284,10 @@ end
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
-	local pos = vector3.create(target.x,0,target.z)
-	self:setTarget(transfrom.new(pos,nil))
+	if self:canMove() == 0 then
+		local pos = vector3.create(target.x,0,target.z)
+		self:setTarget(transfrom.new(pos,nil))
+	end
 end
 function Ientity:update(dt)
 	if self:isDead() == false then
@@ -705,7 +707,7 @@ function Ientity:addHp(_hp, mask, source)
 	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	--不死状态
-	if self.affectState == AffectState.NoDead then
+	if self.affectState == AffectState.NoDead or self.affectState == AffectState.Invincible then
 		if self:getHp() <= 0 then
 			self:setHp(1)
 		end
@@ -998,6 +1000,9 @@ function Ientity:canMove()
 		end
 	end
 	--]]
+	if self.spell.status == SpellStatus.ChannelCast and  self.spell.skilldata.n32NeedCasting == 2 then
+		return ErrorCode.EC_Spell_SkillIsRunning 
+	end
 	if self.spell.status == SpellStatus.Cast and self.spell.skilldata.n32NeedCasting == 0 then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
 end

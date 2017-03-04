@@ -33,12 +33,12 @@ function spell:init(skilldata,skillTimes)
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
-	self.triggerTime = skilldata.n32TriggerTime or 0
+	self.triggerTime = skilldata.n32TriggerTime * 1000 
 	self.CTriggerTime = self.skilldata.n32AffectGap * 1000 
 	if self.triggerTime == 0 then
 		self.triggerTime = skillTimes["trigger"]
 	end
-	if self.triggerTime > self.totalTime then
+	if self.triggerTime > 0 then
 		self.isSheule = true
 		self.triggerTime = self.triggerTime - self.readyTime
 	end
@@ -151,7 +151,7 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
-	--print("selects===",#selects)
+	print("selects===",#selects,skilldata.id)
 	if skilldata.szSelectTargetAffect ~= "" then
 		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
 	end
@@ -194,7 +194,8 @@ end
 function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 	isSelf = isSelf or false
 	if isSelf == true then
-		self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
+		--self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
+		self.source.affectTable:buildAffects(self.source,datas,skilldata.id)
 	else
 		if skilldata.n32SkillType == 0 and self.source:getHit()*100 < math.random(0,100) then
 			--未命中

@@ -5,7 +5,9 @@ local EntityManager = require "entity.EntityManager"
 local BattleOverManager = require "entity.BattleOverManager"
 local passtiveSpell =  require "skill.passtiveSpell"
 local PVPAI = require "ai.PVPAI" 
+local Map = require "map.Map"
 local IMapPlayer = class("IMapPlayer", Ientity)
+
 function IMapPlayer.create(arg)
 
 	local player = IMapPlayer.new()
@@ -67,7 +69,7 @@ end
 function IMapPlayer:addHp(_hp, mask, source)
 	IMapPlayer.super.addHp(self,_hp,mask,source)
 	if _hp < 0 and source then
-		if source:getType() == "IMapPlayer" or source:getType() == "IBuilding" then
+		if source:getType() == "IMapPlayer" or source:getType() == "IBuilding"  or source:getType() == "IPet" then
 			self.hater = source
 			self.hateTime = 2000 --2秒cd
 		end
@@ -190,7 +192,7 @@ function IMapPlayer:onDead()
 	else
 		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
 	end
-	Map:add(x, z, 0, self.modelDat.n32BSize)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 end
 
 function IMapPlayer:onRaise()

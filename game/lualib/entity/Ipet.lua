@@ -37,6 +37,7 @@ function IPet:init(pt,master)
 	self.lifeTime = self.pt.n32LifeTime * 1000 --存活时间
 	self.isbody = 0
 	IPet.super.init(self)
+	self:setPos(self.pos.x,0,self.pos.z)
 	for i=1,3,1 do
 		local skillId = pt["n32Skill0" .. i]
 		if skillId ~= 0 then
@@ -72,7 +73,9 @@ function IPet:calcStats()
 	self.attDat.n32LStrength =  0 
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
-	self.attDat.n32MainAtt = 0
+	if self.pt.n32Type == 3 then
+		self.attDat.n32MainAtt = self.master.attDat.n32MainAtt
+	end
 	self.attDat.n32Strength = self.master:getStrength() * self.pt["StrPc"] + self.pt["Str"]  
 	self.attDat.n32Intelligence = self.master:getIntelligence() * self.pt["IntPc"] + self.pt["Int"]
 	self.attDat.n32Agility = self.master:getAgility() * self.pt["AglPc"] + self.pt["Agl"]
