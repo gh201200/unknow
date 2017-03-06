@@ -71,7 +71,7 @@ function IBuilding:update(dt)
 	end
 	local target = nil
 	for k,v in pairs(g_entityManager.entityList) do
-		if self:isKind(v,true) == false and (v:getType() == "IMapPlayer" or  v:getType() == "IPet") then
+		if self:isKind(v,true) == false and (v:getType() == "IMapPlayer" or  v:getType() == "IPet") and v:getHp() > 0 then
 			if  v:getDistance( self ) <= self.attDat.n32AttackRange then
 				target = v		
 				break
