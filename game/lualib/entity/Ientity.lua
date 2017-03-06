@@ -1020,7 +1020,7 @@ function Ientity:canCast(id)
 	
 	--技能目标类型为敌方
 	if skilldata.n32SkillTargetType == 3 then
-		if self:getTarget() == nil or  self:getTarget():getType() == "transform" or self:isKind(self:getTarget()) == true then
+		if self:getTarget() == nil or  self:getTarget():getType() == "transform" or self:isKind(self:getTarget()) == true or self:getTarget():getHp() <= 0 then
 			return ErrorCode.EC_Spell_NoTarget
 		end
 	--目标类型为地点或者方向
