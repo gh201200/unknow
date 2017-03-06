@@ -180,21 +180,23 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 	local typeTargets = {}
 	for _ek,_ev in pairs(self.entityList) do
 		if _ev.entityType ~= EntityType.trap then
-			--友方（包含自己）
-			if skilldata.n32SelectTargetType  == 1 and source:isKind(_ev) == true then
-				table.insert(typeTargets,_ev)
-			--友方（除掉自己）
-			elseif skilldata.n32SelectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
-				table.insert(typeTargets,_ev)
-			--敌方
-			elseif skilldata.n32SelectTargetType  == 3 and source:isKind(_ev) == false then	
-				table.insert(typeTargets,_ev)
-			--除自己所有人
-			elseif skilldata.n32SelectTargetType  == 4 and source ~= _ev then
-				table.insert(typeTargets,_ev)
-			--所有人
-			elseif skilldata.n32SelectTargetType  == 5 then
-				table.insert(typeTargets,_ev)
+			if (_ev.entityType == EntityType.building and skilldata.n32SkillType == 1) or _ev.entityType ~= EntityType.building  then
+				--友方（包含自己）
+				if skilldata.n32SelectTargetType  == 1 and source:isKind(_ev) == true then
+					table.insert(typeTargets,_ev)
+				--友方（除掉自己）
+				elseif skilldata.n32SelectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
+					table.insert(typeTargets,_ev)
+				--敌方
+				elseif skilldata.n32SelectTargetType  == 3 and source:isKind(_ev) == false then	
+					table.insert(typeTargets,_ev)
+				--除自己所有人
+				elseif skilldata.n32SelectTargetType  == 4 and source ~= _ev then
+					table.insert(typeTargets,_ev)
+				--所有人
+				elseif skilldata.n32SelectTargetType  == 5 then
+					table.insert(typeTargets,_ev)
+				end
 			end
 		end
 	end
@@ -273,21 +275,23 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 	local typeTargets = {}
 	for _ek,_ev in pairs(self.entityList) do
 		if _ev.entityType ~= EntityType.trap then
-			--友方（包含自己）
-			if skilldata.n32AffectTargetType  == 1 and source:isKind(_ev,isAttack) == true then
-				table.insert(typeTargets,_ev)
-			--友方（除掉自己）
-			elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev,isAttack) == true and source ~= _ev then
-				table.insert(typeTargets,_ev)
-			--敌方
-			elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev,isAttack) == false then	
-				table.insert(typeTargets,_ev)
-			--除自己所有人
-			elseif skilldata.n32AffectTargetType  == 4 and source ~= _ev then
-				table.insert(typeTargets,_ev)
-			--所有人
-			elseif skilldata.n32AffectTargetType  == 5 then
-				table.insert(typeTargets,_ev)
+			if (_ev.entityType == EntityType.building and skilldata.n32SkillType == 1) or _ev.entityType ~= EntityType.building  then
+				--友方（包含自己）
+				if skilldata.n32AffectTargetType  == 1 and source:isKind(_ev,isAttack) == true then
+					table.insert(typeTargets,_ev)
+				--友方（除掉自己）
+				elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev,isAttack) == true and source ~= _ev then
+					table.insert(typeTargets,_ev)
+				--敌方
+				elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev,isAttack) == false then	
+					table.insert(typeTargets,_ev)
+				--除自己所有人
+				elseif skilldata.n32AffectTargetType  == 4 and source ~= _ev then
+					table.insert(typeTargets,_ev)
+				--所有人
+				elseif skilldata.n32AffectTargetType  == 5 then
+					table.insert(typeTargets,_ev)
+				end
 			end
 		end
 	end
