@@ -99,8 +99,19 @@ function StatsAffect:onTrigger(_add)
 				self.owner:addMidAttackPc(_add * self.data[3])
 				self.owner:addMidAttack(_add * self.data[4])
 			else
-				local r = self:getBaseAttributeValue(self.data)
-				self.owner:addMidAttack(_add * r)
+				if self.data[2] == 2 then
+					self.owner:addMidAttackStrengthPc(_add * self.data[3])
+					self.owner:addMidAttack(_add * self.data[4])
+				elseif self.data[2] == 3 then
+					self.owner:addMidAttackAgilityPc(_add * self.data[3])
+					self.owner:addMidAttack(_add * self.data[4])
+				elseif self.data[2] == 4 then
+					self.owner:addMidAttackIntelligencePc(_add * self.data[3])
+					self.owner:addMidAttack(_add * self.data[4])
+				else
+					local r = self:getBaseAttributeValue(self.data)
+					self.owner:addMidAttack(_add * r)
+				end
 			end	
 			self.owner:calcAttack()
 			break

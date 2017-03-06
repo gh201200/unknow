@@ -102,6 +102,9 @@ function Ientity:ctor(pos,dir)
 	register_stats(self, 'MpMaxPc')
 	register_stats(self, 'Attack')
 	register_stats(self, 'AttackPc')
+	register_stats(self, 'AttackStrengthPc')
+	register_stats(self, 'AttackAgilityPc')
+	register_stats(self, 'AttackIntelligencePc')
 	register_stats(self, 'Defence')
 	register_stats(self, 'DefencePc')
 	register_stats(self, 'ASpeed')
@@ -869,9 +872,10 @@ function Ientity:calcAttack()
 	elseif self.attDat.n32MainAtt==3 then
 		addVal =  math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32Attack)
 	end
+	local extra = self:getAttackStrengthPc() * self:getAgility() + self:getAttackAgilityPc() * self:getAgility() + self:getAttackIntelligencePc() * self:getIntelligence()
 	self:setAttack(math.floor(
 		(self.attDat.n32Attack  + addVal)* (1.0 + self:getMidAttackPc())) 
-		+ self:getMidAttack() 
+		+ self:getMidAttack() + extra
 	)
 end
 
