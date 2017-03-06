@@ -27,11 +27,12 @@ function REQUEST.recvMissionAward( args )
 			errorCode = -1	--不存在的任务
 			break
 		end
-		if user.missions.isMissionCompleted( unit ) == false then
-			errorCode = 1	--任务未完成
-			break
-		end
+	
 		if dat.n32Type == DEF.MissionType.daily then
+			if user.missions.isMissionCompleted( unit ) == false then
+				errorCode = 1	--任务未完成
+				break
+			end
 			if unit.flag > 0 then
 				errorCode = -1	--奖励已经领取过了
 				break
@@ -41,6 +42,12 @@ function REQUEST.recvMissionAward( args )
 				errorCode = -1	--成就已完成
 				break
 			end
+			
+			if user.missions.isMissionCompleted( unit ) == false and unit.flag == unit.dataId then
+				errorCode = 1	--任务未完成
+				break
+			end
+
 		end
 	until true
 	

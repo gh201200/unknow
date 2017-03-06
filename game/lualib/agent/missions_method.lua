@@ -123,9 +123,6 @@ local MissionsMethod =
 	--
 	isMissionCompleted = function( unit )
 		local dat = g_shareData.missionRepository[unit.dataId]
-		if dat.n32Type == DEF.MissionType.achivement then
-			if unit.flag < unit.dataId then return true end
-		end
 
 		if dat.n32GoalCon ~= 0 then
 			if bit_and(DEF.MissionGoalCon.greater, dat.n32GoalCon) ~= 0 then
