@@ -230,7 +230,6 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 				num  =  num + 1
 			end
 		end		
-	--	print("#slects===",#selects)	
 	elseif skilldata.szSelectRange[1] == 'sector' then
 		for _k,_v in pairs(typeTargets) do
 			local center = source.pos

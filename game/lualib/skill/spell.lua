@@ -151,7 +151,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
-	print("selects===",#selects,skilldata.id)
 	if skilldata.szSelectTargetAffect ~= "" then
 		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
 	end
@@ -169,7 +168,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	else
 		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
-	---	print("targets ==",#targets)	
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end

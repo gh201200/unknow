@@ -95,7 +95,7 @@ end
 
 function IMapPlayer:update(dt)
 	if self.ai and self:isDead() == false then
-	--	self.ai:update(dt)
+		self.ai:update(dt)
 	end
 	self.hateTime =  self.hateTime - dt	
 	if self.hateTime <= 0 then
@@ -174,7 +174,7 @@ function IMapPlayer:calcStats()
 	self:calUpdamage()
 	self:calShield()	
 
-	print(self.nickName .. ' 计算属性')
+	--print(self.nickName .. ' 计算属性')
 	self:dumpStats()
 
 end
