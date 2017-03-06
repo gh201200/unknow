@@ -202,9 +202,6 @@ local function loadAccountData()
 	cooldown.post.loadAccount( account_id )
 	
 	onDataLoadCompleted()
-	if user.isAi == false then
-		onEnterGame()
-	end
 
 end
 
@@ -213,6 +210,9 @@ function REQUEST.enterGame(args)
 		database = skynet.uniqueservice ("database")
 		loadAccountData()
 		onDataLoadCompleted()
+	end
+	if user.isAi == false then
+		onEnterGame()
 	end
 end
 
