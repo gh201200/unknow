@@ -157,6 +157,9 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	local targets = {}
 	if skilldata.szMyAffect ~= "" then
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
+		if skilldata.szMyAffect[1] ~= nil and skilldata.szMyAffect[1][1] == "charge" then
+			return
+		end
 	end
 	if skilldata.n32BulletType ~= 0 then
 		if skilldata.n32SkillTargetType == 6 then

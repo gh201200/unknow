@@ -626,8 +626,8 @@ function Ientity:onForceMove(dt)
 		--return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
---	print("onForceMove self.pos:",self.pos.x,self.pos.z)	
---	print("onForceMove self.targetPos:",self.targetPos.pos.x,self.targetPos.pos.z)	
+	--print("onForceMove self.pos:",self.pos.x,self.pos.z)	
+	--print("onForceMove self.targetPos:",self.targetPos.pos.x,self.targetPos.pos.z)	
 	local len  = vector3.len(self.pos,self.targetPos.pos)
 	if len <= 0.1 then
 		self:OnStand()
