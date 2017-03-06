@@ -210,8 +210,10 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 				elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and skilldata.n32SkillType == 0 then
 					--普攻 魔免状态
 				else
-					if skilldata.n32SkillType == 0 and self.source:getMiss()*100 > math.random(0,100) then
+					if skilldata.n32SkillType == 0 and _v:getMiss()*100 > math.random(0,100) then
 						--闪避
+			         		local r = {acceperId = _v.serverId,producerId = self.source.serverId,effectId = 31005,effectTime = 0,flag = 0}
+         					g_entityManager:sendToAllPlayers("pushEffect",r)		
 					else
 						_v.affectTable:buildAffects(self.source,datas,skilldata.id)
 					end

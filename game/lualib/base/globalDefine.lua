@@ -94,6 +94,7 @@ ErrorCode = {
 	EC_Spell_Camp_Enemy		= 1009, --不能对敌方释放该技能
 	EC_Spell_Camp_Friend		= 1010, --不能对友方释放该技能
 	EC_Spell_NoBuilding		= 1011, --不能使用技能攻击建筑物
+	EC_Spell_ForceMoving		= 1012, --强制移动中
 	EC_Spell_Unkonw			= 1999, --技能未知错误
 }
 

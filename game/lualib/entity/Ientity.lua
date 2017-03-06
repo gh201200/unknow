@@ -610,7 +610,7 @@ function Ientity:onForceMove(dt)
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
 	if Map.IS_SAME_GRID(self.pos,self.targetPos.pos) then
-		self:stand()
+		--self:stand()
 	end
 	self.dir:set(self.targetPos.pos.x, 0, self.targetPos.pos.z)
 	self.dir:sub(self.pos)
@@ -619,12 +619,12 @@ function Ientity:onForceMove(dt)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
 	if Map:isWall(mv_dst.x ,mv_dst.z) == true then
-		self:stand()
-		return
+		--self:stand()
+		--return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
-	--print("onForceMove self.pos:",self.pos.x,self.pos.z)	
-	--print("onForceMove self.targetPos:",self.targetPos.pos.x,self.targetPos.pos.z)	
+	print("onForceMove self.pos:",self.pos.x,self.pos.z)	
+	print("onForceMove self.targetPos:",self.targetPos.pos.x,self.targetPos.pos.z)	
 	local len  = vector3.len(self.pos,self.targetPos.pos)
 	if len <= 0.1 then
 		self:OnStand()
@@ -999,6 +999,9 @@ function Ientity:canMove()
 		end
 	end
 	--]]
+	if self.curActionState == ActionState.chargeing then
+		return ErrorCode.EC_Spell_ForceMoving 
+	end
 	if self.spell.status == SpellStatus.ChannelCast and  self.spell.skilldata.n32NeedCasting == 2 then
 		return ErrorCode.EC_Spell_SkillIsRunning 
 	end
