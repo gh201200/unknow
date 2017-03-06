@@ -183,8 +183,12 @@ end
 function REQUEST.updateActivityData( args )
 	local uid = args.uid
 	local activity = snax.queryservice 'activity'
-	local val = activity.req.getValueByUid( uid )
-	return {uid=uid, value=val}
+	local unit = activity.req.getValueByUid( uid )
+	if unit then
+		return {uid=uid, value=unit.value, time = unit.expire-os.time()}
+	else
+		return {uid=uid,value=0,time=0}
+	end
 end
 
 function REQUEST.reEnterRoom( args )
