@@ -4,7 +4,7 @@ local Map = require "map.Map"
 local DropManager = require "drop.DropManager"
 local TowerHpR = 1 		--回血范围
 local TownerProtectR = 2 	--保护塔的范围
-local hateR = 2 		--仇恨范围(自动攻击的范围)
+local hateR = 3 		--仇恨范围(自动攻击的范围)
 local assistR = 3       	 --援助范围
 local run_RateA = 10	 	--逃跑系数A
 local run_RateB = 10	 	--逃跑系数B
@@ -101,8 +101,6 @@ end
 function PVPAI:onEnter_Idle()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 	self.source:stand()
-	--self.blueTower = getTower(self.source,false) 	--我方基地
-	--self.redTower = getTower(self.source,true)	--敌方基地
 	self.source:setTarget(nil)
 end
 
@@ -116,14 +114,15 @@ end
 
 function PVPAI:onEnter_runAway()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
-	if self.source:getDistance(self.blueTower) >= TowerHpR then 
-		self.source:setTarget(self.blueTower)
-	end
+	--if self.source:getDistance(self.blueTower) >= TowerHpR then 
+	--	self.source:setTarget(self.blueTower)
+	--end
 end
 
 
 function PVPAI:onExec_runAway()
 	if self.source:getDistance(self.blueTower) > TowerHpR then
+		self.source:setTarget(self.blueTower)
 		self:setNextAiState("runAway")
 		return
 	end
@@ -149,6 +148,8 @@ end
 function PVPAI:onExec_protect()
 	if self.source:getDistance(self.blueTower) < TownerProtectR then
 		self:autoProtectAttack(TownerProtectR)
+	else
+		self.source:setTarget(self.blueTower)
 	end
 end
 
@@ -422,16 +423,10 @@ function PVPAI:isFarm()
 	if self.source:isRed() then
 		att = 1
 	end
+	target = self:getAssister()
+	if target ~= nil then return false end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMapPlayer" or v:getType() == "IPet" and self.source:isKind(v,true) == true then
-			if v.hater ~= nil then
-				return false
-			end
-		end 
-	end
-
-	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMonster" and v.attach == 2 or v.attach == att then
+		if v:getType() == "IMonster" and (v.attach == 2 or v.attach == att) then
 			return true		
 		end
 	end
