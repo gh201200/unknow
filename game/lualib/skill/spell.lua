@@ -151,13 +151,15 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
-	print("selects===",#selects,skilldata.id)
 	if skilldata.szSelectTargetAffect ~= "" then
 		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
 	end
 	local targets = {}
 	if skilldata.szMyAffect ~= "" then
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
+		if skilldata.szMyAffect[1] ~= nil and skilldata.szMyAffect[1][1] == "charge" then
+			return
+		end
 	end
 	if skilldata.n32BulletType ~= 0 then
 		if skilldata.n32SkillTargetType == 6 then
@@ -169,7 +171,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	else
 		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
-	---	print("targets ==",#targets)	
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end
@@ -210,8 +211,10 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 				elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and skilldata.n32SkillType == 0 then
 					--普攻 魔免状态
 				else
-					if skilldata.n32SkillType == 0 and self.source:getMiss()*100 > math.random(0,100) then
+					if skilldata.n32SkillType == 0 and _v:getMiss()*100 > math.random(0,100) then
 						--闪避
+			         		local r = {acceperId = _v.serverId,producerId = self.source.serverId,effectId = 31005,effectTime = 0,flag = 0}
+         					g_entityManager:sendToAllPlayers("pushEffect",r)		
 					else
 						_v.affectTable:buildAffects(self.source,datas,skilldata.id)
 					end

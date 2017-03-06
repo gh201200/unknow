@@ -102,6 +102,9 @@ function Ientity:ctor(pos,dir)
 	register_stats(self, 'MpMaxPc')
 	register_stats(self, 'Attack')
 	register_stats(self, 'AttackPc')
+	register_stats(self, 'AttackStrengthPc')
+	register_stats(self, 'AttackAgilityPc')
+	register_stats(self, 'AttackIntelligencePc')
 	register_stats(self, 'Defence')
 	register_stats(self, 'DefencePc')
 	register_stats(self, 'ASpeed')
@@ -610,7 +613,7 @@ function Ientity:onForceMove(dt)
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
 	if Map.IS_SAME_GRID(self.pos,self.targetPos.pos) then
-		self:stand()
+		--self:stand()
 	end
 	self.dir:set(self.targetPos.pos.x, 0, self.targetPos.pos.z)
 	self.dir:sub(self.pos)
@@ -619,8 +622,8 @@ function Ientity:onForceMove(dt)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
 	if Map:isWall(mv_dst.x ,mv_dst.z) == true then
-		self:stand()
-		return
+		--self:stand()
+		--return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
 	--print("onForceMove self.pos:",self.pos.x,self.pos.z)	
@@ -869,9 +872,10 @@ function Ientity:calcAttack()
 	elseif self.attDat.n32MainAtt==3 then
 		addVal =  math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32Attack)
 	end
+	local extra = self:getAttackStrengthPc() * self:getAgility() + self:getAttackAgilityPc() * self:getAgility() + self:getAttackIntelligencePc() * self:getIntelligence()
 	self:setAttack(math.floor(
 		(self.attDat.n32Attack  + addVal)* (1.0 + self:getMidAttackPc())) 
-		+ self:getMidAttack() 
+		+ self:getMidAttack() + extra
 	)
 end
 
@@ -999,6 +1003,9 @@ function Ientity:canMove()
 		end
 	end
 	--]]
+	if self.curActionState == ActionState.chargeing then
+		return ErrorCode.EC_Spell_ForceMoving 
+	end
 	if self.spell.status == SpellStatus.ChannelCast and  self.spell.skilldata.n32NeedCasting == 2 then
 		return ErrorCode.EC_Spell_SkillIsRunning 
 	end
@@ -1013,7 +1020,7 @@ function Ientity:canCast(id)
 	
 	--技能目标类型为敌方
 	if skilldata.n32SkillTargetType == 3 then
-		if self:getTarget() == nil or  self:getTarget():getType() == "transform" or self:isKind(self:getTarget()) == true then
+		if self:getTarget() == nil or  self:getTarget():getType() == "transform" or self:isKind(self:getTarget()) == true or self:getTarget():getHp() <= 0 then
 			return ErrorCode.EC_Spell_NoTarget
 		end
 	--目标类型为地点或者方向

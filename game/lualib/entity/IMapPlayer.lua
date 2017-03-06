@@ -141,7 +141,6 @@ function IMapPlayer:init(heroId)
 end
 
 function IMapPlayer:setTarget(target) 
-	if target == self:getTarget() then return end
 	IMapPlayer.super.setTarget(self,target)
 end
 
@@ -174,7 +173,7 @@ function IMapPlayer:calcStats()
 	self:calUpdamage()
 	self:calShield()	
 
-	print(self.nickName .. ' 计算属性')
+	--print(self.nickName .. ' 计算属性')
 	self:dumpStats()
 
 end
