@@ -8,8 +8,7 @@ function chargeAffect:ctor(owner,source,data,skillId)
 	print("chargeAffect",data)
 	self.super.ctor(self,owner,source,data)
 	self.effectId = data[3] or 0
-	--self.distance = data[2] or 0
-	self.speed = 4 -- 冲锋速度
+	self.speed = 6 -- 冲锋速度
 	local tgt = self.owner:getTarget()
 	self.distance = self.owner:getDistance(tgt) 
 	self.effectTime = math.floor(1000 * self.distance / self.speed) 
