@@ -287,7 +287,7 @@ function spell:onReady(dt)
 		else
 			self.source.cooldown:addItem(self.skilldata.id) --加入cd
 		end
-		if self.source:getType() == "IMapPlayer" and self.skilldata.bCommonSkill == false then
+		if self.source:getType() == "IMapPlayer" and self.skilldata.n32SkillType ~= 0 then
 			self.source:SynSkillCds(self.skilldata.id)
 		end
 		if self.skilldata.n32NeedCasting == 0 then
