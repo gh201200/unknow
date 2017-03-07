@@ -86,6 +86,7 @@ function Ientity:ctor(pos,dir)
 	self.affectState = 0
 	self.triggerCast = true	 --是否触发技能
 	self.targetPos = nil
+	register_class_var(self, 'NewTarget', nil)
 	self.attackNum = 0
 	--stats about
 	register_stats(self, 'Strength')
@@ -260,8 +261,11 @@ function Ientity:setTarget(target)
 	end
 	
 	if self:isDead() then return end
-	
-	self:setTargetVar( target )
+	if self:canMove()  == 0 then	
+		self:setTargetVar( target )
+	else
+		self:setNewTarget(target)
+	end
 	--打断技能
 	if self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
 		self.spell:breakSpell()
@@ -287,9 +291,11 @@ end
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
+	local pos = vector3.create(target.x,0,target.z)
 	if self:canMove() == 0 then
-		local pos = vector3.create(target.x,0,target.z)
 		self:setTarget(transfrom.new(pos,nil))
+	else
+		self:setNewTarget(transfrom.new(pos,nil))
 	end
 end
 function Ientity:update(dt)
@@ -297,6 +303,10 @@ function Ientity:update(dt)
 		self.spell:update(dt)
 		self.cooldown:update(dt)
 		self.affectTable:update(dt)	
+	end
+	if self:getNewTarget() ~= nil and self:canMove() == 0 and  self:getNewTarget() ~= self:getTarget() then
+		self:setTarget(self:getNewTarget())
+		self:setNewTarget(nil)
 	end
 	self:recvHpMp(dt)
 	--add code before this
