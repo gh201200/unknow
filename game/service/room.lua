@@ -128,7 +128,7 @@ function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	args.x = args.x / GAMEPLAY_PERCENT
 	args.z = args.z / GAMEPLAY_PERCENT
-	if Map:isWall( args.x, args.z ) then
+	if Map:isBlock( args.x, args.z ) then
 		Map:lineTest(player.pos, args)
 	end
 	player:setTargetPos(args)
