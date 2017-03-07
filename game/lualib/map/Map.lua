@@ -103,6 +103,12 @@ function Map:isWall(x, z)
 	end
 end
 
+function Map:isBlock(x, z)
+	local gx = Map.POS_2_GRID(x)
+	local gz = Map.POS_2_GRID(z)
+	return self:block(gx, gz) > 0
+end
+
 function Map:block(gx, gz)
 	if not Map.legal(gx, gz) then return 255 end
 	local w = pf.block(self.m, gx, gz)
@@ -186,7 +192,7 @@ function Map:lineTest(sp, ep)
 		dst:add( ep )
 		ep.x = dst.x
 		ep.z = dst.z
-		if self:isWall( dst.x, dst.z ) == false then
+		if self:isBlock( dst.x, dst.z ) == false then
 			break
 		end
 		set = set + 0.2
