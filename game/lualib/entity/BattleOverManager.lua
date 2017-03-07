@@ -248,7 +248,7 @@ function BattleOverManager:recordResult(winflag)
 			item.heroId = v.attDat.id --英雄id
 			item.skillTable = {}
 			for k,v in pairs(v.skillTable) do
-				table.insert(item.skillTable,k)
+				table.insert(item.skillTable,k+v)
 			end
 			item.assistNum = v.HonorData[3] --助攻数
 			item.killNum = v.HonorData[4] --击杀数
