@@ -151,6 +151,9 @@ function PVPAI:onExec_protect()
 	else
 		self.source:setTarget(self.blueTower)
 	end
+	if self:isProtect() == false then
+		self:setNextAiState("Idle")
+	end
 end
 
 function PVPAI:onExit_protect()
@@ -309,7 +312,7 @@ function PVPAI:autoProtectAttack(protectR)
 	local target = self.source:getTarget()
 	--if target and target:getType() == "IMapPlayer" then
 	if self:canAttackPlayer(target) then
-		if self.source:getDistance(target) < protectR then
+		if self.blueTower:getDistance(target) < protectR then
 			return 
 		end
 	end
@@ -317,7 +320,7 @@ function PVPAI:autoProtectAttack(protectR)
 	for k,v in pairs(g_entityManager.entityList) do
 		--if self.source:isKind(v,true) == false and v:getType() == "IMapPlayer" then
 		if self:canAttackPlayer(v) then
-			if self.source:getDistance(v) < protectR then
+			if self.blueTower:getDistance(v) < protectR then
 				target = v
 				break
 			end

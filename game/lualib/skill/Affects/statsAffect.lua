@@ -13,6 +13,7 @@ function StatsAffect:ctor(entity,source,data,skillId)
 		self.effectTime = 99999
 	end
 	self.effectTime = self.effectTime * 1000
+	
 end
 
 function StatsAffect:onTrigger(_add)

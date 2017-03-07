@@ -86,6 +86,7 @@ function Ientity:ctor(pos,dir)
 	self.affectState = 0
 	self.triggerCast = true	 --是否触发技能
 	self.targetPos = nil
+	register_class_var(self, 'NewTarget', nil)
 	self.attackNum = 0
 	--stats about
 	register_stats(self, 'Strength')
@@ -260,8 +261,11 @@ function Ientity:setTarget(target)
 	end
 	
 	if self:isDead() then return end
-	
-	self:setTargetVar( target )
+	if self:canMove()  == 0 then	
+		self:setTargetVar( target )
+	else
+		self:setNewTarget(target)
+	end
 	--打断技能
 	if self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
 		self.spell:breakSpell()
@@ -269,8 +273,17 @@ function Ientity:setTarget(target)
 	if self:canMove() == 0 then
 		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
 			self:castSkill(self.ReadySkillId)
-	else
-			self:setActionState( self:getMSpeed(), ActionState.move)
+		else
+			local skilldata = g_shareData.skillRepository[self.ReadySkillId]
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
+				local dis = self:getDistance(self:getTarget())
+				if dis > skilldata.n32Range then
+					self:setActionState( self:getMSpeed(), ActionState.move)
+				end	
+			else	
+				self:setActionState( self:getMSpeed(), ActionState.move)
+			end
+		
 		end
 	end
 end
@@ -287,9 +300,11 @@ end
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
+	local pos = vector3.create(target.x,0,target.z)
 	if self:canMove() == 0 then
-		local pos = vector3.create(target.x,0,target.z)
 		self:setTarget(transfrom.new(pos,nil))
+	else
+		self:setNewTarget(transfrom.new(pos,nil))
 	end
 end
 function Ientity:update(dt)
@@ -297,6 +312,10 @@ function Ientity:update(dt)
 		self.spell:update(dt)
 		self.cooldown:update(dt)
 		self.affectTable:update(dt)	
+	end
+	if self:getNewTarget() ~= nil and self:canMove() == 0 and  self:getNewTarget() ~= self:getTarget() then
+		self:setTarget(self:getNewTarget())
+		self:setNewTarget(nil)
 	end
 	self:recvHpMp(dt)
 	--add code before this
@@ -981,13 +1000,21 @@ function Ientity:callBackSpellEnd()
 	end
 
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
+		local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 		if self:canCast(self.ReadySkillId)  == 0 then
+		
 		else
-			self:setActionState( self:getMSpeed(), ActionState.move)
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
+				local dis = self:getDistance(self:getTarget())
+				if dis > skilldata.n32Range then
+					self:setActionState( self:getMSpeed(), ActionState.move)
+				end
+			else
+				self:setActionState( self:getMSpeed(), ActionState.move)
+			end
 		end
 	end
-	local data = g_shareData.skillRepository[self.ReadySkillId]
-	if data ~= nil and data.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
+	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
 			self.ReadySkillId = 0
 	end
 end
@@ -1021,7 +1048,10 @@ function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata == nil then return -1 end
-	
+	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+		return ErrorCode.EC_Spell_SkillIsInCd
+	end
+
 	--技能目标类型为敌方
 	if skilldata.n32SkillTargetType == 3 then
 		if self:getTarget() == nil or  self:getTarget():getType() == "transform" or self:isKind(self:getTarget()) == true or self:getTarget():getHp() <= 0 then

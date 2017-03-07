@@ -280,7 +280,13 @@ function spell:onReady(dt)
 			local ss = sheduleSpell.new(self.source,self.srcTarget,self.skilldata,self.triggerTime)
 			table.insert(self.sheduleSpells,ss)
 		end
-		self.source.cooldown:addItem(self.skilldata.id) --加入cd
+		if self.skilldata.n32SkillType == 0 then
+			--普通攻击
+			local time = self.castTime + self.endTime
+			self.source.cooldown:addItem(self.skilldata.id,time)
+		else
+			self.source.cooldown:addItem(self.skilldata.id) --加入cd
+		end
 		if self.source:getType() == "IMapPlayer" and self.skilldata.bCommonSkill == false then
 			self.source:SynSkillCds(self.skilldata.id)
 		end
