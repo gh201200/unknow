@@ -275,13 +275,12 @@ function Ientity:setTarget(target)
 			self:castSkill(self.ReadySkillId)
 		else
 			local skilldata = g_shareData.skillRepository[self.ReadySkillId]
-			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget() ~= "transform" then
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
 				local dis = self:getDistance(self:getTarget())
 				if dis > skilldata.n32Range then
 					self:setActionState( self:getMSpeed(), ActionState.move)
 				end	
 			else	
-				print("222222")
 				self:setActionState( self:getMSpeed(), ActionState.move)
 			end
 		
@@ -1005,7 +1004,7 @@ function Ientity:callBackSpellEnd()
 		if self:canCast(self.ReadySkillId)  == 0 then
 		
 		else
-			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget() ~= "transform" then
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
 				local dis = self:getDistance(self:getTarget())
 				if dis > skilldata.n32Range then
 					self:setActionState( self:getMSpeed(), ActionState.move)
