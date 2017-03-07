@@ -76,7 +76,7 @@ function skillAffect:calAffect()
 	elseif self.data[1] == "curemp" then	
 		self.owner:addMp(r,HpMpMask.SkillMp, self.source)
 	elseif self.data[1] == "burnmp" then	
-		self.owner:addMp(r,HpMpMask.SkillMp, self.source)
+		self.owner:addMp(-r,HpMpMask.SkillMp, self.source)
 	end
 end
 

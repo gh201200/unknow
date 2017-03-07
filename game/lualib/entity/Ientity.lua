@@ -248,7 +248,7 @@ function Ientity:pathFind(dx, dz)
 	
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
-	print(self.pathMove)
+	print(self.pathMove,self.useAStar)
 	return self.useAStar
 end
 
@@ -481,6 +481,10 @@ function Ientity:onMove2(dt)
 	if self.useAStar then
 		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
 	else
+		if self:getTarget() == nil then
+			self:stand()
+			return
+		end
 		self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
 	end
 	self.dir:sub(self.pos)
@@ -626,8 +630,8 @@ function Ientity:onForceMove(dt)
 		--return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
-	--print("onForceMove self.pos:",self.pos.x,self.pos.z)	
-	--print("onForceMove self.targetPos:",self.targetPos.pos.x,self.targetPos.pos.z)	
+	print("onForceMove self.pos:",self.pos.x,self.pos.z)	
+	print("onForceMove self.targetPos:",self.targetPos.pos.x,self.targetPos.pos.z)	
 	local len  = vector3.len(self.pos,self.targetPos.pos)
 	if len <= 0.1 then
 		self:OnStand()
@@ -872,7 +876,7 @@ function Ientity:calcAttack()
 	elseif self.attDat.n32MainAtt==3 then
 		addVal =  math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32Attack)
 	end
-	local extra = self:getAttackStrengthPc() * self:getAgility() + self:getAttackAgilityPc() * self:getAgility() + self:getAttackIntelligencePc() * self:getIntelligence()
+	local extra = self:getMidAttackStrengthPc() * self:getStrength() + self:getMidAttackAgilityPc() * self:getAgility() + self:getMidAttackIntelligencePc() * self:getIntelligence()
 	self:setAttack(math.floor(
 		(self.attDat.n32Attack  + addVal)* (1.0 + self:getMidAttackPc())) 
 		+ self:getMidAttack() + extra

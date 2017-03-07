@@ -3,7 +3,7 @@
 	<item id="10001">
 		<n32type>2</n32type>
 		<szassert>yingyongchongfeng_cast_body</szassert>
-		<n32time>2</n32time>
+		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
@@ -608,7 +608,7 @@
 	<item id="10057">
 		<n32type>2</n32type>
 		<szassert>huoyanpensheqi_cast_bottom</szassert>
-		<n32time>2</n32time>
+		<n32time>5</n32time>
 		<n32speed>0</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
@@ -692,6 +692,17 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>高爆手雷施法</szillustration>
+	</item>
+	<item id="10065">
+		<n32type>2</n32type>
+		<szassert>liemofeiren_cast_rhand</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>4</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>猎魔刃施法</szillustration>
 	</item>
 	<item id="12001">
 		<n32type>1</n32type>
@@ -841,7 +852,7 @@
 		<szassert>liekongzhan_bullet_body</szassert>
 		<n32time>0.8</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.8</n32Redius>
 		<n32layer>0</n32layer>
@@ -942,29 +953,29 @@
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>散弹弹道</szillustration>
+		<szillustration>霰弹弹道</szillustration>
 	</item>
 	<item id="20017">
-		<n32type>4</n32type>
+		<n32type>3</n32type>
 		<szassert>tanshezuoyi_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>弹射座椅弹道</szillustration>
-	</item>
-	<item id="20018">
-		<n32type>4</n32type>
-		<szassert>bushouwang_bullet_body</szassert>
 		<n32time>1</n32time>
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>弹射座椅钢板</szillustration>
+	</item>
+	<item id="20018">
+		<n32type>3</n32type>
+		<szassert>bushouwang_bullet_body</szassert>
+		<n32time>1</n32time>
+		<n32speed>3</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>捕兽网弹道</szillustration>
 	</item>
@@ -1004,7 +1015,7 @@
 	<item id="20022">
 		<n32type>4</n32type>
 		<szassert>chaojudaji_bullet_body</szassert>
-		<n32time>0</n32time>
+		<n32time>2</n32time>
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
@@ -1015,7 +1026,7 @@
 	<item id="20023">
 		<n32type>3</n32type>
 		<szassert>pojiadan_bullet_body</szassert>
-		<n32time>0</n32time>
+		<n32time>0.9</n32time>
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
@@ -2016,13 +2027,13 @@
 	<item id="50015">
 		<n32type>2</n32type>
 		<szassert>ty_pojia_buff_top</szassert>
-		<n32time>0</n32time>
+		<n32time>2</n32time>
 		<n32speed>0</n32speed>
 		<n32position>2</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>受到伤害增加</szillustration>
+		<szillustration>破甲弹受击</szillustration>
 	</item>
 	<item id="51001">
 		<n32type>2</n32type>

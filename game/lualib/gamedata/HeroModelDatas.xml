@@ -33,7 +33,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51101">
 		<szName>殿前骑士</szName>
@@ -68,7 +68,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51200">
 		<szName>闪光</szName>
@@ -103,7 +103,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51201">
 		<szName>弹弓小子</szName>
@@ -138,12 +138,12 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51300">
 		<szName>天女</szName>
 		<szMod_name>Tiannv</szMod_name>
-		<n32Hight>tiannv</n32Hight>
+		<n32Hight>Tiannv</n32Hight>
 		<n32Speed>10000</n32Speed>
 		<n32attack01Time1>204</n32attack01Time1>
 		<n32attack01Time2>986</n32attack01Time2>
@@ -173,7 +173,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51301">
 		<szName>钟表匠</szName>
@@ -208,7 +208,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52100">
 		<szName>狂僧</szName>
@@ -243,7 +243,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52101">
 		<szName>龙女</szName>
@@ -278,12 +278,12 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52200">
 		<szName>修行者</szName>
-		<szMod_name>xiuxingzhe</szMod_name>
-		<n32Hight>xiuxingzhe</n32Hight>
+		<szMod_name>Xiuxingzhe</szMod_name>
+		<n32Hight>Xiuxingzhe</n32Hight>
 		<n32Speed>9000</n32Speed>
 		<n32attack01Time1>170</n32attack01Time1>
 		<n32attack01Time2>680</n32attack01Time2>
@@ -313,7 +313,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52201">
 		<szName>蒂皮</szName>
@@ -348,7 +348,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52301">
 		<szName>乌鸦</szName>
@@ -383,7 +383,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52300">
 		<szName>风之旅人</szName>
@@ -418,7 +418,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53100">
 		<szName>牛博士</szName>
@@ -453,7 +453,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53101">
 		<szName>机甲少女</szName>
@@ -488,7 +488,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53200">
 		<szName>神狙</szName>
@@ -523,7 +523,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53201">
 		<szName>安娜</szName>
@@ -558,7 +558,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53300">
 		<szName>法老</szName>
@@ -593,7 +593,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53301">
 		<szName>科技天才</szName>
@@ -628,7 +628,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50007">
 		<szName>变猪</szName>
@@ -663,7 +663,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="50008">
 		<szName>召唤熊</szName>
@@ -698,7 +698,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="90001">
 		<szName>红方基地</szName>
@@ -733,7 +733,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="90002">
 		<szName>蓝方基地</szName>
@@ -768,7 +768,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>5</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="60001">
 		<szName>飞猪</szName>
@@ -873,7 +873,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>0</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="60004">
 		<szName>战斗狼</szName>
@@ -908,7 +908,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>0</n32BSize>
+		<n32BSize>3</n32BSize>
 	</item>
 	<item id="60005">
 		<szName>麒麟</szName>
@@ -943,7 +943,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>0</n32BSize>
+		<n32BSize>5</n32BSize>
 	</item>
 	<item id="50003">
 		<szName>小僵尸</szName>
@@ -1002,6 +1002,146 @@
 		<n32cast_remoteTime1>0</n32cast_remoteTime1>
 		<n32cast_remoteTime2>0</n32cast_remoteTime2>
 		<n32cast_remoteTriTime>0</n32cast_remoteTriTime>
+		<n32cast_blinkTime1>0</n32cast_blinkTime1>
+		<n32cast_blinkTime2>0</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>0</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>0</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>0</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>0</n32cast_uniqueTriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
+	</item>
+	<item id="70001">
+		<szName>熊</szName>
+		<szMod_name>bear</szMod_name>
+		<n32Hight>bear</n32Hight>
+		<n32Speed>9000</n32Speed>
+		<n32attack01Time1>198</n32attack01Time1>
+		<n32attack01Time2>432</n32attack01Time2>
+		<n32attack01Time3>270</n32attack01Time3>
+		<n32attack01TriTime>342</n32attack01TriTime>
+		<n32attack02Time1>198</n32attack02Time1>
+		<n32attack02Time2>432</n32attack02Time2>
+		<n32attack02Time3>270</n32attack02Time3>
+		<n32attack02TriTime>342</n32attack02TriTime>
+		<n32cast_selfTime1>0</n32cast_selfTime1>
+		<n32cast_selfTime2>0</n32cast_selfTime2>
+		<n32cast_selfTriTime>0</n32cast_selfTriTime>
+		<n32cast_nearTime1>0</n32cast_nearTime1>
+		<n32cast_nearTime2>0</n32cast_nearTime2>
+		<n32cast_nearTriTime>0</n32cast_nearTriTime>
+		<n32cast_remoteTime1>272</n32cast_remoteTime1>
+		<n32cast_remoteTime2>861</n32cast_remoteTime2>
+		<n32cast_remoteTriTime>487</n32cast_remoteTriTime>
+		<n32cast_blinkTime1>0</n32cast_blinkTime1>
+		<n32cast_blinkTime2>0</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>0</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>0</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>0</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>0</n32cast_uniqueTriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
+	</item>
+	<item id="70002">
+		<szName>冰狼</szName>
+		<szMod_name>wolf</szMod_name>
+		<n32Hight>wolf</n32Hight>
+		<n32Speed>9000</n32Speed>
+		<n32attack01Time1>182</n32attack01Time1>
+		<n32attack01Time2>425</n32attack01Time2>
+		<n32attack01Time3>260</n32attack01Time3>
+		<n32attack01TriTime>251</n32attack01TriTime>
+		<n32attack02Time1>182</n32attack02Time1>
+		<n32attack02Time2>425</n32attack02Time2>
+		<n32attack02Time3>260</n32attack02Time3>
+		<n32attack02TriTime>251</n32attack02TriTime>
+		<n32cast_selfTime1>0</n32cast_selfTime1>
+		<n32cast_selfTime2>0</n32cast_selfTime2>
+		<n32cast_selfTriTime>0</n32cast_selfTriTime>
+		<n32cast_nearTime1>0</n32cast_nearTime1>
+		<n32cast_nearTime2>0</n32cast_nearTime2>
+		<n32cast_nearTriTime>0</n32cast_nearTriTime>
+		<n32cast_remoteTime1>90</n32cast_remoteTime1>
+		<n32cast_remoteTime2>810</n32cast_remoteTime2>
+		<n32cast_remoteTriTime>261</n32cast_remoteTriTime>
+		<n32cast_blinkTime1>0</n32cast_blinkTime1>
+		<n32cast_blinkTime2>0</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>0</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>0</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>0</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>0</n32cast_uniqueTriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
+	</item>
+	<item id="70003">
+		<szName>大蜘蛛</szName>
+		<szMod_name>dazhizhu</szMod_name>
+		<n32Hight>dazhizhu</n32Hight>
+		<n32Speed>9000</n32Speed>
+		<n32attack01Time1>222</n32attack01Time1>
+		<n32attack01Time2>184</n32attack01Time2>
+		<n32attack01Time3>561</n32attack01Time3>
+		<n32attack01TriTime>329</n32attack01TriTime>
+		<n32attack02Time1>222</n32attack02Time1>
+		<n32attack02Time2>184</n32attack02Time2>
+		<n32attack02Time3>561</n32attack02Time3>
+		<n32attack02TriTime>329</n32attack02TriTime>
+		<n32cast_selfTime1>0</n32cast_selfTime1>
+		<n32cast_selfTime2>0</n32cast_selfTime2>
+		<n32cast_selfTriTime>0</n32cast_selfTriTime>
+		<n32cast_nearTime1>0</n32cast_nearTime1>
+		<n32cast_nearTime2>0</n32cast_nearTime2>
+		<n32cast_nearTriTime>0</n32cast_nearTriTime>
+		<n32cast_remoteTime1>264</n32cast_remoteTime1>
+		<n32cast_remoteTime2>836</n32cast_remoteTime2>
+		<n32cast_remoteTriTime>429</n32cast_remoteTriTime>
+		<n32cast_blinkTime1>0</n32cast_blinkTime1>
+		<n32cast_blinkTime2>0</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>0</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>0</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>0</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>0</n32cast_uniqueTriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>3</n32BSize>
+	</item>
+	<item id="70004">
+		<szName>小蜘蛛</szName>
+		<szMod_name>xiaozhizhu</szMod_name>
+		<n32Hight>xiaozhizhu</n32Hight>
+		<n32Speed>9000</n32Speed>
+		<n32attack01Time1>264</n32attack01Time1>
+		<n32attack01Time2>506</n32attack01Time2>
+		<n32attack01Time3>330</n32attack01Time3>
+		<n32attack01TriTime>429</n32attack01TriTime>
+		<n32attack02Time1>264</n32attack02Time1>
+		<n32attack02Time2>506</n32attack02Time2>
+		<n32attack02Time3>330</n32attack02Time3>
+		<n32attack02TriTime>429</n32attack02TriTime>
+		<n32cast_selfTime1>0</n32cast_selfTime1>
+		<n32cast_selfTime2>0</n32cast_selfTime2>
+		<n32cast_selfTriTime>0</n32cast_selfTriTime>
+		<n32cast_nearTime1>0</n32cast_nearTime1>
+		<n32cast_nearTime2>0</n32cast_nearTime2>
+		<n32cast_nearTriTime>0</n32cast_nearTriTime>
+		<n32cast_remoteTime1>222</n32cast_remoteTime1>
+		<n32cast_remoteTime2>745</n32cast_remoteTime2>
+		<n32cast_remoteTriTime>329</n32cast_remoteTriTime>
 		<n32cast_blinkTime1>0</n32cast_blinkTime1>
 		<n32cast_blinkTime2>0</n32cast_blinkTime2>
 		<n32cast_blinkTriTime>0</n32cast_blinkTriTime>

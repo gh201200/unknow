@@ -167,20 +167,11 @@ function EntityManager:createPet(id,master,pos)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
 end
-local function getEntityListByType(list,_type)
-
-end
---获取施法目标的范围的目标
-function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
-	extra = extra or source.dir
-	local tgt = target 
-	if skilldata.n32SkillTargetType == 0 then
-		tgt = source
-	end
+function EntityManager:getTypeEntitys(source,skilldata)
 	local typeTargets = {}
 	for _ek,_ev in pairs(self.entityList) do
-		if _ev.entityType ~= EntityType.trap then
-			if (_ev.entityType == EntityType.building and skilldata.n32SkillType == 1) or _ev.entityType ~= EntityType.building  then
+		if _ev ~= nil and (_ev:getType() == "IMapPlayer" or _ev:getType() == "IPet" or _ev:getType() == "IMonster" or  _ev:getType() == "IBuilding") then
+			if _ev:getHp() > 0 and ((_ev.entityType == EntityType.building and skilldata.n32SkillType == 0) or _ev.entityType ~= EntityType.building)  then
 				--友方（包含自己）
 				if skilldata.n32SelectTargetType  == 1 and source:isKind(_ev) == true then
 					table.insert(typeTargets,_ev)
@@ -200,9 +191,22 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 			end
 		end
 	end
+	return typeTargets
+
+end
+--获取施法目标的范围的目标
+function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
+	extra = extra or source.dir
+	local tgt = target 
+	if skilldata.n32SkillTargetType == 0 then
+		tgt = source
+	end
+	local typeTargets = self:getTypeEntitys(source,skilldata)
 	local selects = {}
 	if skilldata.szSelectRange[1] == 'single' then
-		table.insert(selects,tgt)
+		if tgt:getHp() > 0 then
+			table.insert(selects,tgt)
+		end
 	elseif skilldata.szSelectRange[1] == 'circle' then
 		local radius = 	skilldata.szSelectRange[2]
 		local target_uplimit = skilldata.szSelectRange[3]
@@ -271,29 +275,7 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 		table.insert(affects,source)
 		return affects
 	end
-	local typeTargets = {}
-	for _ek,_ev in pairs(self.entityList) do
-		if _ev.entityType ~= EntityType.trap then
-			if (_ev.entityType == EntityType.building and skilldata.n32SkillType == 1) or _ev.entityType ~= EntityType.building  then
-				--友方（包含自己）
-				if skilldata.n32AffectTargetType  == 1 and source:isKind(_ev,isAttack) == true then
-					table.insert(typeTargets,_ev)
-				--友方（除掉自己）
-				elseif skilldata.n32AffectTargetType  == 2 and source:isKind(_ev,isAttack) == true and source ~= _ev then
-					table.insert(typeTargets,_ev)
-				--敌方
-				elseif skilldata.n32AffectTargetType  == 3 and source:isKind(_ev,isAttack) == false then	
-					table.insert(typeTargets,_ev)
-				--除自己所有人
-				elseif skilldata.n32AffectTargetType  == 4 and source ~= _ev then
-					table.insert(typeTargets,_ev)
-				--所有人
-				elseif skilldata.n32AffectTargetType  == 5 then
-					table.insert(typeTargets,_ev)
-				end
-			end
-		end
-	end
+	local typeTargets = self:getTypeEntitys(source,skilldata)
 	--print("#typeTargets",#typeTargets)
 	for _tk,_tv in pairs(typeTargets) do
 		for _sk,_sv in pairs(selects) do
