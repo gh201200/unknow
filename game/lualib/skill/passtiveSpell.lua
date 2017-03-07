@@ -89,6 +89,7 @@ function passtiveSpell:trigger(_cond)
 		end
 	--攻击次数触发
 	elseif self.skilldata.n32TriggerCondition == 2 and _cond == 2 then
+		print("222222")
 		self.attackTicks = self.attackTicks + 1
 		if self.attackTicks >= self.skilldata.n32TriggerInfo then
 			isTrigger =  true
@@ -128,10 +129,10 @@ function passtiveSpell:trigger(_cond)
 			local tgt = nil
 			if self.skilldata.n32SkillTargetType == 0 then
 				tgt = self.source
-			elseif self.skilldata.n32SkillTargetType == 1 then
-				tgt = self.target
+			else
+				--if self.skilldata.n32SkillTargetType == 1 then
+				tgt = self.source:getTarget()
 			end
-			print("trigger ===",self.skilldata.n32CD)
 			self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
 			local _type = self.skilldata.szSelectRange[1]
 			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
