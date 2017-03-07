@@ -36,6 +36,7 @@ function repelAffect:onEnter()
 	
          local r = {id = self.owner.serverId,action = 0,dstX = math.floor(dst.x * 10000),
          dstZ = math.floor(dst.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
+	g_entityManager:sendToAllPlayers("pushForceMove",r)  
 	self.owner.targetPos = transfrom.new(dst,nil)  
 	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
 end
@@ -48,7 +49,7 @@ function repelAffect:onExec(dt)
 end
 
 function repelAffect:onExit()
-	self.owner:stand()
+	--self.owner:stand()
 	self.super.onExit(self)
 end
 
