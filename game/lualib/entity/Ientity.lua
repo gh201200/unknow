@@ -273,8 +273,18 @@ function Ientity:setTarget(target)
 	if self:canMove() == 0 then
 		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
 			self:castSkill(self.ReadySkillId)
-	else
-			self:setActionState( self:getMSpeed(), ActionState.move)
+		else
+			local skilldata = g_shareData.skillRepository[self.ReadySkillId]
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget() ~= "transform" then
+				local dis = self:getDistance(self:getTarget())
+				if dis > skilldata.n32Range then
+					self:setActionState( self:getMSpeed(), ActionState.move)
+				end	
+			else	
+				print("222222")
+				self:setActionState( self:getMSpeed(), ActionState.move)
+			end
+		
 		end
 	end
 end
@@ -991,13 +1001,21 @@ function Ientity:callBackSpellEnd()
 	end
 
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
+		local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 		if self:canCast(self.ReadySkillId)  == 0 then
+		
 		else
-			self:setActionState( self:getMSpeed(), ActionState.move)
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget() ~= "transform" then
+				local dis = self:getDistance(self:getTarget())
+				if dis > skilldata.n32Range then
+					self:setActionState( self:getMSpeed(), ActionState.move)
+				end
+			else
+				self:setActionState( self:getMSpeed(), ActionState.move)
+			end
 		end
 	end
-	local data = g_shareData.skillRepository[self.ReadySkillId]
-	if data ~= nil and data.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
+	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
 			self.ReadySkillId = 0
 	end
 end
@@ -1031,7 +1049,10 @@ function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata == nil then return -1 end
-	
+	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+		return ErrorCode.EC_Spell_SkillIsInCd
+	end
+
 	--技能目标类型为敌方
 	if skilldata.n32SkillTargetType == 3 then
 		if self:getTarget() == nil or  self:getTarget():getType() == "transform" or self:isKind(self:getTarget()) == true or self:getTarget():getHp() <= 0 then
