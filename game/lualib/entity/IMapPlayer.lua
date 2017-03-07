@@ -95,7 +95,7 @@ end
 
 function IMapPlayer:update(dt)
 	if self.ai and self:isDead() == false then
-	--	self.ai:update(dt)
+		self.ai:update(dt)
 	end
 	self.hateTime =  self.hateTime - dt	
 	if self.hateTime <= 0 then
@@ -186,7 +186,7 @@ function IMapPlayer:onDead()
 		_v.HonorData[3] = _v.HonorData[3] + 1	
 	end
 	self.bAttackPlayers = {}
-	self:setRaiseTime(self:getLevel() * Quest.RaiseTime)
+	self:setRaiseTime(10 * Quest.RaiseTime)
 	if self:isRed() then
 		BattleOverManager.BlueKillNum = BattleOverManager.BlueKillNum + 1
 	else

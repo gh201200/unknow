@@ -171,7 +171,7 @@ function EntityManager:getTypeEntitys(source,skilldata)
 	local typeTargets = {}
 	for _ek,_ev in pairs(self.entityList) do
 		if _ev ~= nil and (_ev:getType() == "IMapPlayer" or _ev:getType() == "IPet" or _ev:getType() == "IMonster" or  _ev:getType() == "IBuilding") then
-			if _ev:getHp() > 0 and (_ev.entityType == EntityType.building and skilldata.n32SkillType == 1) or _ev.entityType ~= EntityType.building  then
+			if _ev:getHp() > 0 and ((_ev.entityType == EntityType.building and skilldata.n32SkillType == 1) or _ev.entityType ~= EntityType.building)  then
 				--友方（包含自己）
 				if skilldata.n32SelectTargetType  == 1 and source:isKind(_ev) == true then
 					table.insert(typeTargets,_ev)
