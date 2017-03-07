@@ -112,7 +112,8 @@ function StatsAffect:onTrigger(_add)
 					local r = self:getBaseAttributeValue(self.data)
 					self.owner:addMidAttack(_add * r)
 				end
-			end	
+			end
+			print("attttttttt:",self.owner:getMidAttackAgilityPc())	
 			self.owner:calcAttack()
 			break
 		end

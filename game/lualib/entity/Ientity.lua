@@ -876,7 +876,7 @@ function Ientity:calcAttack()
 	elseif self.attDat.n32MainAtt==3 then
 		addVal =  math.floor((self.attDat.n32Intelligence + self.attDat.n32LIntelligence * (self:getLevel() - 1)) * g_shareData.lzmRepository[3].n32Attack)
 	end
-	local extra = self:getAttackStrengthPc() * self:getAgility() + self:getAttackAgilityPc() * self:getAgility() + self:getAttackIntelligencePc() * self:getIntelligence()
+	local extra = self:getMidAttackStrengthPc() * self:getStrength() + self:getMidAttackAgilityPc() * self:getAgility() + self:getMidAttackIntelligencePc() * self:getIntelligence()
 	self:setAttack(math.floor(
 		(self.attDat.n32Attack  + addVal)* (1.0 + self:getMidAttackPc())) 
 		+ self:getMidAttack() + extra
