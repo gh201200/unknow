@@ -19,7 +19,7 @@ function repelAffect:onEnter()
 	self.super.onEnter(self)
 	self.owner:setActionState(self.speed, ActionState.repel)
 	local dir = vector3.create()
-	--print("repel.onEnter",self.owner.serverId,self.source.serverId)
+	print("repel.onEnter",self.owner.serverId,self.source.serverId)
 	if self.owner == self.source then
 		dir:set(-self.owner.dir.x,0,-self.owner.dir.z)
 	else
@@ -31,9 +31,13 @@ function repelAffect:onEnter()
 	local dst = vector3.create()
 	dst:set(self.owner.pos.x,0,self.owner.pos.z)
 	dst:add(dir)
-	--print("dst==",dst.x,dst.z)
-	--print("ownerpos ==",self.owner.pos.x,self.owner.pos.z)
-        self.owner.targetPos = transfrom.new(dst,nil)  
+	print("dst==",dst.x,dst.z)
+	print("ownerpos ==",self.owner.pos.x,self.owner.pos.z)
+	
+         local r = {id = self.owner.serverId,action = 0,dstX = math.floor(dst.x * 10000),
+         dstZ = math.floor(dst.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
+	self.owner.targetPos = transfrom.new(dst,nil)  
+	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
 end
 
 function repelAffect:onExec(dt)
