@@ -22,6 +22,9 @@ function StatsAffect:onTrigger(_add)
 		local lzm = false
 		if self.data[1] == 'ctrl' then
 			if _add == 1 then
+				if self.data[2] == 1 then
+					self.owner:stand()
+				end
 				self.owner.affectState = bit_or(self.owner.affectState, self.data[2]) -- 控制类型
 			else
 				self.owner.affectState = bit_and(self.owner.affectState, bit_not(self.data[2]))
@@ -114,7 +117,6 @@ function StatsAffect:onTrigger(_add)
 					self.owner:addMidAttack(_add * r)
 				end
 			end
-			print("attttttttt:",self.owner:getMidAttackAgilityPc())	
 			self.owner:calcAttack()
 			break
 		end

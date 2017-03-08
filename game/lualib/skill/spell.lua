@@ -162,9 +162,11 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	if skilldata.n32BulletType ~= 0 then
-		if skilldata.n32SkillTargetType == 6 then
+		if skilldata.n32SkillTargetType == 6 or skilldata.n32SkillTargetType == 4 then
+			print("1111111")
 			g_entityManager:createFlyObj(source,srcTarget,skilldata)
 		else	
+			print("2221111111")
 			for _k,_v in pairs(selects) do
 				g_entityManager:createFlyObj(source,_v,skilldata)
 			end
