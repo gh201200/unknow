@@ -522,7 +522,7 @@
 		<szassert>chuanyunjian_casting_weapon</szassert>
 		<n32time>2</n32time>
 		<n32speed>0</n32speed>
-		<n32position>8</n32position>
+		<n32position>4</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -703,6 +703,28 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>猎魔刃施法</szillustration>
+	</item>
+	<item id="10066">
+		<n32type>2</n32type>
+		<szassert>julongzhenchi_cast_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>巨龙振翅施法</szillustration>
+	</item>
+	<item id="10067">
+		<n32type>2</n32type>
+		<szassert>julongzhenchi_buff_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>巨龙振翅施法</szillustration>
 	</item>
 	<item id="12001">
 		<n32type>1</n32type>
@@ -1201,14 +1223,14 @@
 	</item>
 	<item id="30108">
 		<n32type>2</n32type>
-		<szassert>test</szassert>
-		<n32time>3</n32time>
+		<szassert>julongzhenchi_hit_body</szassert>
+		<n32time>2</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-		<szillustration>受到魔法打击</szillustration>
+		<szillustration>巨龙振翅打击</szillustration>
 	</item>
 	<item id="30109">
 		<n32type>2</n32type>
@@ -2144,6 +2166,17 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>须根缠绕</szillustration>
+	</item>
+	<item id="51011">
+		<n32type>2</n32type>
+		<szassert>julongzhenchi_buff_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>巨龙振翅</szillustration>
 	</item>
 	<item id="60001">
 		<n32type>2</n32type>

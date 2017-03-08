@@ -187,7 +187,7 @@ function BattleOverManager:calcRes()
 			v.BattleGains.cardId = v.attDat.id
 			v.BattleGains.exp = math.ceil( failExp )
 		end
-	else
+	elseif self.OverRes == 2 then
 		for k, v in pairs(blueRunAway) do
 			v.BattleGains.cardId = v.attDat.id
 			v.BattleGains.exp = math.ceil( failExp )
