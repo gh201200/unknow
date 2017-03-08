@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local snax = require "snax"
+local Time = require "time"
 
 local SystemCh = class("SystemCh")
 
@@ -107,6 +108,9 @@ function REQUEST.buyShopItem( args )
 			atype = ActivityAccountType["BuyShopCard"..shopDat.n32Site]
 			hasBuy = activity.req.getValue(user.account.account_id, atype) 
 			costPrice = shopDat.n32Price *(1 + hasBuy) * args.num
+		elseif shopDat.n32Type == 3 then	--宝箱
+			atype = ActivityAccountType["BaoXiang"..shopDat.n32Site]
+			hasBuy = activity.req.getValue(user.account.account_id, atype) 
 		end
 		if shopDat.n32MoneyType == 1 then	--金币
 			if user.account:getGold() < costPrice then
@@ -121,6 +125,11 @@ function REQUEST.buyShopItem( args )
 		end
 		if shopDat.n32Limit > 0 then
 			if shopDat.n32Type == 4 then	--材料
+				if hasBuy + args.num > shopDat.n32Limit then
+					errorCode = 3	--购买数量限制
+			 		break
+				end
+			elseif shopDat.n32Type == 3 then	--宝箱
 				if hasBuy + args.num > shopDat.n32Limit then
 					errorCode = 3	--购买数量限制
 			 		break
@@ -153,6 +162,9 @@ function REQUEST.buyShopItem( args )
 				ids[index+1] = v
 				index = index + 2
 			end
+			--local expire = Time.tomorrow()
+			local expire = os.time() + 60
+			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
 		elseif shopDat.n32Type == 4 then	--材料
 			local items = {}
 			items[shopDat.n32GoodsID] = shopDat.n32Count * args.num

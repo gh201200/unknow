@@ -59,12 +59,15 @@ function response.getValueByUid( uid )
 end
 
 function response.addValue(op, name, atype, val, expire)
-
+	print(op, name, atype, val, expire)
 	local uid = calcUid(name, atype)
 	if not expire then
 		expire = math.maxinteger
 	end
 	if units[uid] then
+		if units[uid].expire <= os.time() then
+			units[uid].value = 0
+		end
 		units[uid].value = units[uid].value + val
 		units[uid].expire = expire
 		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'value')

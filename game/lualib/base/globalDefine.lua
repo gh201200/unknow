@@ -128,6 +128,10 @@ ActivityAccountType =
 	PvpTimes			= 2001, --pvp参加场次
 	PvpWinTimes			= 2002,	--pvp胜利场次
 	RefreshExplore			= 3001,	--刷新探索次数
+	BaoXiang0			= 4001, --宝箱1购买次数
+	BaoXiang1			= 4002, --宝箱2购买次数
+	BaoXiang2			= 4003, --宝箱3购买次数
+	BaoXiang3			= 4004, --宝箱4购买次数
 }
 
 CoolDownSysType = 
