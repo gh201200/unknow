@@ -168,6 +168,7 @@ end
 function PVPAI:onExec_battle()
 	local target = self.source:getTarget()
 	if target ~= nil and self:canAttackPlayer(target) and self.source:getDistance(target) < hateR then
+		self.source:setTarget(target)
 		return
 	end
 	target = nil
@@ -247,7 +248,7 @@ function PVPAI:onExit_farm()
 end
 --援助
 function PVPAI:onEnter_assist()
-	print("PVPAI:onEnter_assist")
+	print("AIState:",self.mCurrentAIState,self.source.serverId)
 	self.assister = self:getAssister()
 end
 
@@ -283,6 +284,8 @@ function PVPAI:onExec_assist()
 		end
 		if hit == false then
 			self.source:aiCastSkill(targets[1])
+		else
+			self.source:setTarget(target)
 		end
 	end
 end

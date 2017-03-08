@@ -204,7 +204,7 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 	local typeTargets = self:getTypeEntitys(source,skilldata)
 	local selects = {}
 	if skilldata.szSelectRange[1] == 'single' then
-		if tgt:getHp() > 0 then
+		if (tgt:getType() ~= "transform" and tgt:getHp() > 0) or tgt:getType() == "transform"  then
 			table.insert(selects,tgt)
 		end
 	elseif skilldata.szSelectRange[1] == 'circle' then

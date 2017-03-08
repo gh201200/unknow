@@ -261,14 +261,15 @@ function Ientity:setTarget(target)
 	end
 	
 	if self:isDead() then return end
+	--打断技能
+	if target ~= self:getTarget() and self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
+		self.spell:breakSpell()
+	end
+
 	if self:canMove()  == 0 then	
 		self:setTargetVar( target )
 	else
 		self:setNewTarget(target)
-	end
-	--打断技能
-	if self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
-		self.spell:breakSpell()
 	end
 	if self:canMove() == 0 then
 		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
@@ -405,6 +406,7 @@ local mv_dst = vector3.create()
 local mv_slep_dir = vector3.create()
 local legal_pos = false
 --进入移动状态
+--[[
 function Ientity:onMove(dt)
 	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
@@ -493,6 +495,7 @@ function Ientity:onMove(dt)
 		self:advanceEventStamp(EventStampType.Move)
 	end
 end
+]]--
 
 function Ientity:onMove2(dt)
 	dt = dt / 1000		--second
@@ -517,8 +520,8 @@ function Ientity:onMove2(dt)
 		
 		if self.useAStar then
 			if self:isLegalGrid( mv_dst ) == false then
-				--legal_pos = false
-				--print('use a star to find a path again',self.serverId)
+				egal_pos = false
+				print('use a star to find a path again 11',self.serverId)
 				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)
 				if not nearBy then
 					self:stand()
@@ -550,6 +553,7 @@ function Ientity:onMove2(dt)
 				end
 			end
 			repeat
+				print("66666:",self.serverId)
 				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 					doNotUseAstar = true
 					break
@@ -576,13 +580,13 @@ function Ientity:onMove2(dt)
 				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
 				if not nearBy then
 					--Map:dump()
+					--print('use a star to find a path stand',self.serverId)
 					self:stand()
-					return
-				else
 					return
 				end
 			end
 			if not nearBy then
+				--print('use a star to find a path again i333',self.serverId)
 				self:stand()
 				break
 			end
@@ -999,8 +1003,8 @@ function Ientity:callBackSpellEnd()
 		return
 	end
 
+	local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
-		local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 		if self:canCast(self.ReadySkillId)  == 0 then
 		
 		else
