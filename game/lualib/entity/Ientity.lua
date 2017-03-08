@@ -330,7 +330,7 @@ function Ientity:update(dt)
 		self.StatsChange = false
 	end
 	if self:isDead() == false and self.entityType ~= EntityType.building and self.entityType ~= EntityType.trap then
-		if self.curActionState == ActionState.move then
+		if self.curActionState == ActionState.move and self:canMove() == 0 then
 			self:onMove2(dt)
 		elseif self.curActionState == ActionState.stand then
 			--站立状态
@@ -553,7 +553,6 @@ function Ientity:onMove2(dt)
 				end
 			end
 			repeat
-				print("66666:",self.serverId)
 				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 					doNotUseAstar = true
 					break

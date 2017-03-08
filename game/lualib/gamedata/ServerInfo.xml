@@ -35,9 +35,4 @@
 		<szIp>192.168.0.132</szIp>
 		<n32Port>8888</n32Port>
 	</item>
-	<item id="8">
-		<szName>外网</szName>
-		<szIp>106.15.60.37</szIp>
-		<n32Port>8888</n32Port>
-	</item>
 </info>
