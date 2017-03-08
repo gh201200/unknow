@@ -999,8 +999,8 @@ function Ientity:callBackSpellEnd()
 		return
 	end
 
+	local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
-		local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 		if self:canCast(self.ReadySkillId)  == 0 then
 		
 		else
