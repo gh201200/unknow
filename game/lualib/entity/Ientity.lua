@@ -553,7 +553,6 @@ function Ientity:onMove2(dt)
 				end
 			end
 			repeat
-				print("66666:",self.serverId)
 				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 					doNotUseAstar = true
 					break
