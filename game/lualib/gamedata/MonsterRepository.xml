@@ -1805,7 +1805,7 @@
 		<szName>红方基地</szName>
 		<n32Type>5</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>10000</n32Hp>
+		<n32Hp>4000</n32Hp>
 		<n32Mp>1000</n32Mp>
 		<n32Attack>30</n32Attack>
 		<n32Defence>0</n32Defence>
@@ -1829,7 +1829,7 @@
 		<szName>蓝方基地</szName>
 		<n32Type>5</n32Type>
 		<szWord>没钱吵吵啥</szWord>
-		<n32Hp>10000</n32Hp>
+		<n32Hp>4000</n32Hp>
 		<n32Mp>1000</n32Mp>
 		<n32Attack>30</n32Attack>
 		<n32Defence>0</n32Defence>
