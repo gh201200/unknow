@@ -2,7 +2,7 @@ local skynet = require "skynet"
 local Time = require "time"
 local json = require "cjson"
 
-local enable = true
+local enable = false
 
 local WRITE_NUM = 2
 local SAVE_NUM = 10
