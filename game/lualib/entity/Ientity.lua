@@ -1124,7 +1124,7 @@ function Ientity:setCastSkillId(id)
 	local skilldata = g_shareData.skillRepository[id]
 	if not skilldata then
 		syslog.warning( 'setCastSkillId failed ' .. id )
-		return
+		return 1
 	end
 	if skilldata.bActive == false then	
 		--测试使用
