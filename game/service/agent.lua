@@ -315,7 +315,7 @@ end
 function CMD.enterMap(map,arg)
 	print("CMD.enterMap")
 	recordState = 1
-	fightRecorder = io.open(user.account.account_id .. "testRecorder.bytes", "wb") 	
+	--fightRecorder = io.open(user.account.account_id .. "testRecorder.bytes", "wb") 	
 	request_hijack_msg(map)
 	user.MAP = map
 	send_request("beginEnterPvpMap", arg) --开始准备切图
