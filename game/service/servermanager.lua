@@ -23,7 +23,14 @@ function response.getroomif(aid)
 end
 
 function response.getAgent(account)
-	return roomAgent[account]
+	local map = roomAccount[account]
+	if map == nil then return nil end
+	local offLinetime = skynet.call(map, "lua", "getOffLineTime", {id=account})
+	if offLinetime < 90 then 
+		return roomAgent[account]
+	else
+		return nil
+	end
 end
 
 
