@@ -178,7 +178,7 @@ function IMapPlayer:calcStats()
 	self:calShield()	
 
 	--print(self.nickName .. ' 计算属性')
-	self:dumpStats()
+	--self:dumpStats()
 
 end
 
