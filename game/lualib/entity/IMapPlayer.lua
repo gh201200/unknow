@@ -7,9 +7,9 @@ local passtiveSpell =  require "skill.passtiveSpell"
 local PVPAI = require "ai.PVPAI" 
 local Map = require "map.Map"
 local IMapPlayer = class("IMapPlayer", Ientity)
+local syslog = require "syslog"
 
 function IMapPlayer.create(arg)
-
 	local player = IMapPlayer.new()
 	player.serverId = assin_server_id() 
 	player.account_id = arg.account
@@ -124,6 +124,9 @@ function IMapPlayer:init(heroId)
 		self.ai = PVPAI.new(self)
 	end
 	self.attDat = g_shareData.heroRepository[heroId]
+	if not self.attDat then
+		syslog.err("IMapPlayer:init: attDat is nil "..heroId)
+	end
 	self:setGodSkill( self.attDat.n32GodSkillId)
 	self:setCommonSkill( self.attDat.n32CommonSkillId )
 	self.skillTable[self.attDat.n32GodSkillId] = 0
