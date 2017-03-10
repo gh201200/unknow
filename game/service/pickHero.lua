@@ -5,7 +5,7 @@ local syslog = require "syslog"
 
 local CMD = {}
 local players = {}
-local max_pickTime = 30000
+local max_pickTime = 3000 
 
 local function enterMap()
 	local mapserver = skynet.newservice ("room")
@@ -15,8 +15,8 @@ end
 
 local function quitPick()
 	for _agent,_v in pairs(players) do
-		if v.agent then
-			skynet.call(_agent,"lua","quitPick")
+		if _v.agent then
+		--	skynet.call(_v.agent,"lua","quitPick")
 		end
 	end
 	skynet.exit()
@@ -166,7 +166,7 @@ local function update()
 		end
 	end
 
-	max_pickTime = max_pickTime - 1
+	max_pickTime = max_pickTime - 100
 	skynet.timeout(100,update)
 end
 
@@ -179,7 +179,9 @@ skynet.start(function ()
 	skynet.dispatch("error", function (address, source, command, ...)
 		for _agent,_v in pairs (players) do
 			if _agent == source then
-				_v.agent = nil
+				quitPick()	
+				break
+				--_v.agent = nil
 			end
 		end
 	end)
