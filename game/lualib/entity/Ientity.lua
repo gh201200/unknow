@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local vector3 = require "vector3"
 local Rect = require "rect"
 local spell =  require "skill.spell"
+local passtiveSpell =  require "skill.passtiveSpell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
@@ -715,19 +716,25 @@ function Ientity:onDead()
 	end
 	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
+	for k,v in pairs(self.spell.passtiveSpells) do
+		v:onDead()
+	end
+	self.spell.passtiveSpells = {}
 end
 
 function Ientity:onRaise()
 	self:addHp(self:getHpMax(), HpMpMask.RaiseHp)
 	self:addMp(self:getMpMax(), HpMpMask.RaiseMp)
+	
 	--学习被动技能
 	for _k,_v in pairs(self.skillTable) do
 		local id = _k + _v - 1
 		local skilldata = g_shareData.skillRepository[id]	
-		if skilldata ~= nil and skilldata.bActive == false then
-			self.spell:onStudyPasstiveSkill(skilldata)	
+		if skilldata ~= nil and skilldata.n32Active == 1 then
+			local ps = passtiveSpell.new(self,skilldata)
+			table.insert(self.spell.passtiveSpells,ps)
 		end
-	end	
+	end
 end
 
 function Ientity:addHp(_hp, mask, source)
@@ -1025,7 +1032,7 @@ function Ientity:callBackSpellEnd()
 		end
 	end
 	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
-			self.ReadySkillId = 0
+			self.ReadySkillId = self:getCommonSkill() 
 	end
 end
 --设置人物状态
