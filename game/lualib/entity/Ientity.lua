@@ -1025,7 +1025,7 @@ function Ientity:callBackSpellEnd()
 		end
 	end
 	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
-			self.ReadySkillId = 0
+			self.ReadySkillId = self:getCommonSkill() 
 	end
 end
 --设置人物状态
