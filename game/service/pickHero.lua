@@ -94,7 +94,6 @@ function CMD.confirmHero(response,agent,account,arg)
 				skynet.call(_agent,"lua","sendRequest","confirmedHero",t)
 			end
 		end
-		--enterMap()
 	end
 	local isReady = true
 	for _agent,_v in pairs(players) do
@@ -142,12 +141,13 @@ end
 
 local function update()
 	if max_pickTime < 0 then
+		print("player:",players)
 		for _agent,_v in pairs(players) do
-			if _v.confirmheroid == 0 and _v.pickheroid == 0 then
+			if _v.confirmheroid == 0 and _v.pickedheroid == 0 then
 				quitPick()
 				return
-			elseif _v.confirmheroid == 0 and _v.pickheroid ~= 0 then
-				_v.confirmheroid = _v.pickheroid
+			elseif _v.confirmheroid == 0 and _v.pickedheroid ~= 0 then
+				_v.confirmheroid = _v.pickedheroid
 			end		
 		end
 		enterMap()
