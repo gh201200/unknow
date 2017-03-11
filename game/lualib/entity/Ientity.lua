@@ -249,7 +249,9 @@ function Ientity:pathFind(dx, dz)
 	
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
-	print(self.pathMove,self.useAStar)
+	if not self.useAStar then
+		print(Map.POS_2_GRID(self.pos.x),Map.POS_2_GRID(self.pos.z),Map.POS_2_GRID(dx),Map.POS_2_GRID(dz))
+	end
 	return self.useAStar
 end
 
@@ -301,7 +303,12 @@ end
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
+	
 	local pos = vector3.create(target.x,0,target.z)
+	
+	if Map:isBlock( pos.x, pos.z ) then
+		Map:lineTest(self.pos, pos)
+	end
 	if self:canMove() == 0 then
 		self:setTarget(transfrom.new(pos,nil))
 	else

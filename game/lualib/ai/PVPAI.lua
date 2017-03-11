@@ -122,7 +122,8 @@ end
 
 function PVPAI:onExec_runAway()
 	if self.source:getDistance(self.blueTower) > TowerHpR then
-		self.source:setTarget(self.blueTower)
+		
+		self.source:setTargetPos(self.blueTower.pos)
 		self:setNextAiState("runAway")
 		return
 	end
@@ -135,13 +136,13 @@ function PVPAI:onExec_runAway()
 end
 
 function PVPAI:onExit_runAway()
-	print("onExit_runAway")
+	print("onExit_runAway",self.source.serverId)
 end
 
 function PVPAI:onEnter_protect()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 --	self:backToHome()	
-	self.source:setTarget(self.blueTower)
+	self.source:setTargetPos(self.blueTower.pos)
 end
 
 
@@ -149,7 +150,7 @@ function PVPAI:onExec_protect()
 	if self.source:getDistance(self.blueTower) < TownerProtectR then
 		self:autoProtectAttack(TownerProtectR)
 	else
-		self.source:setTarget(self.blueTower)
+		self.source:setTargetPos(self.blueTower.pos)
 	end
 	if self:isProtect() == false then
 		self:setNextAiState("Idle")
