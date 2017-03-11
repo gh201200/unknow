@@ -315,6 +315,7 @@ function Ientity:setTargetPos(target)
 	else
 		self:setNewTarget(transfrom.new(pos,nil))
 	end
+	print(self.serverId, pos.x, pos.z)
 end
 function Ientity:update(dt)
 	if self:isDead() == false then
@@ -548,9 +549,9 @@ function Ientity:onMove2(dt)
 				local quadrant = Map:quadrantTest( self.pos )
 				if quadrant == 1 or quadrant == 4 then
 					if self.dir.z > 0 then
-						self.moveQuadrant = 1
-					else
 						self.moveQuadrant = -1
+					else
+						self.moveQuadrant = 1
 					end
 				else
 					if self.dir.z > 0 then
