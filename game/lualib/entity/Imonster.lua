@@ -110,7 +110,9 @@ function IMonster:onDead()
 	--reset map
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 end
-
+function IMonster:getCommonSkill()
+	return self.attDat.n32CommonSkill
+end
 function IMonster:preCastSkill()
 	local castSkill = self.attDat.n32CommonSkill
 	if self.skillCD < 0 then

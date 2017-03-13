@@ -1,5 +1,4 @@
 local skillAffect = require "skill.Affects.skillAffect"
-local dizzyAffect = require "skill.Affects.dizzyAffect"
 local blinkAffect = require "skill.Affects.blinkAffect"
 local invincibleAffect = require "skill.Affects.invincibleAffect"
 local outskillAffect = require "skill.Affects.outskillAffect"
@@ -78,8 +77,6 @@ function AffectTable:addAffect(source,data,skillId,extra)
 	--print("addAffect",data)
 	if data[1] == "curehp" or data[1] == "curemp" or data[1] == "damage" or data[1] == "shield" or data[1] == "burnmp" then
 		aff = skillAffect.new(self.owner,source,data,skillId)
-	elseif data[1] == "dizzy" then
-		aff = dizzyAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "blink" then
 		aff = blinkAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "invincible" then

@@ -22,15 +22,15 @@ function skillAffect:onEnter()
 	
 end
 function skillAffect:onExec(dt)
-	self.leftTime = self.leftTime -  dt
-	if self.leftTime <= 0 then
-		self:onExit()		
-		return
-	end
 	self.triggerTime = self.triggerTime - dt
 	if self.triggerTime <= 0 then
 		self.triggerTime = self.data[5] * 1000
 		self:calAffect()
+	end
+	self.leftTime = self.leftTime -  dt
+	if self.leftTime <= 0 then
+		self:onExit()		
+		return
 	end
 end
 
