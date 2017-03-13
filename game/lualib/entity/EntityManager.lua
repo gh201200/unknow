@@ -226,10 +226,10 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 				table.insert(tSelects,{key = disLen,value = _v})
 			end
 		end
-		if select_mod == 0 then
+		if select_mod == 1 then
 			table.sort(tSelects,function(a,b) return a.key > b.key end)
 		else
-			table.sort(tSelects,function(a,b) return a.key > b.key end)
+			table.sort(tSelects,function(a,b) return a.key <= b.key end)
 		end
 		local num  = 1 
 		for _k,_v in pairs(tSelects) do

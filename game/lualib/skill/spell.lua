@@ -285,7 +285,7 @@ function spell:onReady(dt)
 			local time = self.castTime + self.endTime
 			self.source.cooldown:addItem(self.skilldata.id,time)
 		else
-			self.source.cooldown:addItem(self.skilldata.id) --加入cd
+			--self.source.cooldown:addItem(self.skilldata.id) --加入cd
 		end
 		if self.source:getType() == "IMapPlayer" and self.skilldata.n32SkillType ~= 0 then
 			self.source:SynSkillCds(self.skilldata.id)

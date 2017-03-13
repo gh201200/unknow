@@ -12,7 +12,7 @@ local account_cors = {}
 local s_pickHeros = { } --选角色服务
 local PvpAIServer 	--pvpAI服务
 
-CMD.MATCH_NUM = 2 
+CMD.MATCH_NUM = 6 
 
 local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
@@ -292,8 +292,8 @@ function addtoLooselist(p)
 		table.insert(loose_list,p)
 		p.index_list = #loose_list
 		
-		--table.remove(p.src_list,p.index_list)
-		--handleMatchWithAi(p)
+		table.remove(p.src_list,p.index_list)
+		handleMatchWithAi(p)
 	else
 		print("玩家" .. p.account .. "宽松队列里匹配成功")	
 		local matchers = {}
