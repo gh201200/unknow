@@ -1126,7 +1126,7 @@ function Ientity:canCast(id)
 		end
 	end
 	
-	if self:isAffectState(AffectState.NoAttack) then
+	if self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" and self:getTarget():isAffectState(AffectState.Invincible) then
 		return ErrorCode.EC_Spell_Controled
 	end
 	if self:getHp() <= 0 then return ErrorCode.EC_Dead end

@@ -66,6 +66,11 @@ function spell:enterChannel(time)
 	self.channelTime = time
 	self.status = SpellStatus.ChannelCast
 end
+
+function spell:isSpellCast()
+	return self.status == SpellStatus.Cast
+end
+
 function spell:breakSpell()
 	if self.status == SpellStatus.Ready then
 		--技能准备阶段被打断 不计入cd
