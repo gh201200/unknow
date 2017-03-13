@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="53200">
+		<szName></szName>
+		<n32CostNum>3</n32CostNum>
+		<n32ItemId>71001</n32ItemId>
+	</item>
+	<item id="10001">
+		<szName></szName>
+		<n32CostNum>5</n32CostNum>
+		<n32ItemId>71001</n32ItemId>
+	</item>
+</info>
