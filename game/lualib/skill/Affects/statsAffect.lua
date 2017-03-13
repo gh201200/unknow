@@ -22,7 +22,6 @@ function StatsAffect:onTrigger(_add)
 		local lzm = false
 		if self.data[1] == 'ctrl' then
 			if _add == 1 then
-				self.owner:stand()
 				self.owner:addAffectState(self.data[2],1)
 			else
 				self.owner:addAffectState(self.data[2],-1)

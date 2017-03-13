@@ -95,7 +95,9 @@ end
 
 function IMapPlayer:update(dt)
 	if self.ai and self:isDead() == false then
-	--	self.ai:update(dt)
+		if self.curActionState < ActionState.forcemove then
+		--	self.ai:update(dt)
+		end
 	end
 	self.hateTime =  self.hateTime - dt	
 	if self.hateTime <= 0 then

@@ -303,7 +303,7 @@ function Ientity:clearTarget(mask)
 		self:setTarget(nil)
 	end
 end
- 
+
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
@@ -755,6 +755,9 @@ function Ientity:addAffectState(argState,num)
 	for state,v in pairs(states) do
 		if self.affectStateRefs[state] == nil then
 			self.affectStateRefs[state] = 0 
+		end
+		if num == 1 and AffectState.NoMove == state then
+			self:stand()
 		end
 		self.affectStateRefs[state] = self.affectStateRefs[state] + num
 	end
