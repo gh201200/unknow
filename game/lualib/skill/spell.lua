@@ -160,9 +160,14 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
 	if skilldata.szSelectTargetAffect ~= "" then
 		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
+		
 	end
 	local targets = {}
+	targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
 	if skilldata.szMyAffect ~= "" then
+		if skilldata.szMyAffect[1][1] == "blink" then
+			source.targetPos = targets[1]	
+		end
 		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
 		if skilldata.szMyAffect[1] ~= nil and skilldata.szMyAffect[1][1] == "charge" then
 			return
@@ -177,7 +182,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 			end
 		end
 	else
-		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end
