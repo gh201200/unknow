@@ -9,9 +9,9 @@
 		<szBornPos6>25300,142200</szBornPos6>
 		<szScene>pvp002</szScene>
 		<n32RedMonsterId>200001</n32RedMonsterId>
-		<szRedHomePos>34000,13900</szRedHomePos>
+		<szRedHomePos>33500,9900</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
-		<szBlueHomePos>34000,142000</szBlueHomePos>
+		<szBlueHomePos>33500,140400</szBlueHomePos>
 		<n32Time>600</n32Time>
 		<n32Kills>20</n32Kills>
 	</item>
@@ -24,9 +24,9 @@
 		<szBornPos6>25300,142200</szBornPos6>
 		<szScene>pvp001</szScene>
 		<n32RedMonsterId>200001</n32RedMonsterId>
-		<szRedHomePos>34000,13900</szRedHomePos>
+		<szRedHomePos>33500,9900</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
-		<szBlueHomePos>34000,142000</szBlueHomePos>
+		<szBlueHomePos>33500,140400</szBlueHomePos>
 		<n32Time>600</n32Time>
 		<n32Kills>20</n32Kills>
 	</item>

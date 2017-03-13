@@ -452,7 +452,7 @@
 		<szillustration>新绿绽华施法</szillustration>
 	</item>
 	<item id="10043">
-		<n32type>2</n32type>
+		<n32type>1</n32type>
 		<szassert>shanbeng_hit_bottom</szassert>
 		<n32time>2</n32time>
 		<n32speed>0</n32speed>
@@ -2031,7 +2031,7 @@
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>2</n32Extra>
-		<n32Redius>2</n32Redius>
+		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>寒霜爆发受击</szillustration>
 	</item>
@@ -2231,7 +2231,7 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>抑制光环-自身</szillustration>
+		<szillustration>瞄准训练-自身</szillustration>
 	</item>
 	<item id="61003">
 		<n32type>2</n32type>
@@ -2242,7 +2242,7 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>抑制光环-友方</szillustration>
+		<szillustration>瞄准训练-友方</szillustration>
 	</item>
 	<item id="60004">
 		<n32type>2</n32type>
