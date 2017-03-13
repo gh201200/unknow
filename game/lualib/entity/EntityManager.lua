@@ -231,7 +231,7 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 			end
 		end
 		if select_mod == 1 then
-			table.sort(tSelects,function(a,b) return a.key >= b.key end)
+			table.sort(tSelects,function(a,b) return a.key > b.key end)
 		else
 			table.sort(tSelects,function(a,b) return a.key < b.key end)
 		end
