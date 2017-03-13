@@ -66,7 +66,7 @@ function Ientity:ctor(pos,dir)
 	self.pathMove = nil
 	self.pathNodeIndex = -1
 	self.useAStar = false
-	self.moveQuadrant = nil
+	self.moveQuadrant = 0
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -226,7 +226,7 @@ function Ientity:stand()
 	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
-	self.moveQuadrant = nil
+	self.moveQuadrant = 0
 end
 
 function Ientity:clearPath()
@@ -253,6 +253,7 @@ function Ientity:pathFind(dx, dz)
 	if not self.useAStar then
 		print(Map.POS_2_GRID(self.pos.x),Map.POS_2_GRID(self.pos.z),Map.POS_2_GRID(dx),Map.POS_2_GRID(dz))
 	end
+	print(self.pathMove)
 	return self.useAStar
 end
 
@@ -301,10 +302,11 @@ function Ientity:clearTarget(mask)
 		self:setTarget(nil)
 	end
 end
+ 
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
-	self.moveQuadrant = false
+	self.moveQuadrant = 0
 	local pos = vector3.create(target.x,0,target.z)
 	
 	if Map:isBlock( pos.x, pos.z ) then
@@ -315,7 +317,6 @@ function Ientity:setTargetPos(target)
 	else
 		self:setNewTarget(transfrom.new(pos,nil))
 	end
-	print(self.serverId, pos.x, pos.z)
 end
 function Ientity:update(dt)
 	if self:isDead() == false then
@@ -381,7 +382,7 @@ function Ientity:isCrossWithEntity( entity )
 end
 
 function Ientity:isLegalGrid( pos )
-	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	local gx = Map.POS_2_GRID( pos.x )
 	local gz = Map.POS_2_GRID( pos.z )
 
@@ -405,8 +406,10 @@ end
 --注意：修改entity位置，一律用此函数
 function Ientity:setPos(x, y, z, r)
 	--print('set pos = ',x, y, z)
-	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
-	Map:add(x, z, 1, self.modelDat.n32BSize)
+	if not self:isDead() then
+		Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+		Map:add(x, z, 1, self.modelDat.n32BSize)
+	end
 	self.pos:set(x, y, z)
 	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
 end
@@ -545,7 +548,8 @@ function Ientity:onMove2(dt)
 			local nearBy = false
 			local doNotUseAstar = false
 			local angle = 30
-			if not self.moveQuadrant then
+			--[[
+			if self.moveQuadrant == 0 then	
 				local quadrant = Map:quadrantTest( self.pos )
 				if quadrant == 1 or quadrant == 4 then
 					self.moveQuadrant = -1
@@ -553,6 +557,8 @@ function Ientity:onMove2(dt)
 					self.moveQuadrant = 1
 				end
 			end
+			--]]
+			self.moveQuadrant = 1
 			repeat
 				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 					doNotUseAstar = true

@@ -207,6 +207,8 @@ function IMapPlayer:onRaise()
 	self:setPos(self.bornPos.x, self.bornPos.y, self.bornPos.z)
 	local msg = { sid = self.serverId }
 	EntityManager:sendToAllPlayers("raiseHero" ,msg)
+	
+	Map:add(self.pos.x, self.pos.z, 1, self.modelDat.n32BSize)
 end
 
 function IMapPlayer:onGold()
