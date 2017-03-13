@@ -135,15 +135,17 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	local skillTgt = srcTarget
 	--普通攻击
 	if skilldata.n32SkillType == 0 then
-		--攻击概率出发
-		self:onTriggerPasstives(1)
-		--攻击次数触发
-		self:onTriggerPasstives(2)
-		if srcTarget then
-			--受击概率触发
-			srcTarget.spell:onTriggerPasstives(3)
-			--受击概率触发
-			srcTarget.spell:onTriggerPasstives(4)
+		if skilldata.n32BulletType == 0 then
+			--攻击概率出发
+			self:onTriggerPasstives(1)
+			--攻击次数触发
+			self:onTriggerPasstives(2)
+			if srcTarget then
+				--受击概率触发
+				srcTarget.spell:onTriggerPasstives(3)
+				--受击概率触发
+				srcTarget.spell:onTriggerPasstives(4)
+			end
 		end
 	else
 		if skilldata.n32Active == 0 then
@@ -162,7 +164,7 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	if skilldata.n32BulletType ~= 0 then
-		if skilldata.n32SkillTargetType == 6 then
+		if(skilldata.n32SkillTargetType == 6 or skilldata.n32SkillTargetType == 4) and skilldata.n32BulletType ~= 2 then
 			g_entityManager:createFlyObj(source,srcTarget,skilldata)
 		else	
 			for _k,_v in pairs(selects) do
@@ -216,6 +218,10 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 			         		local r = {acceperId = _v.serverId,producerId = self.source.serverId,effectId = 31005,effectTime = 0,flag = 0}
          					g_entityManager:sendToAllPlayers("pushEffect",r)		
 					else
+						if skilldata.n32BulletType ~= 0 and skilldata.n32SkillType == 0 then
+							self:onTriggerPasstives(1)
+							self:onTriggerPasstives(2)	
+						end
 						_v.affectTable:buildAffects(self.source,datas,skilldata.id)
 					end
 				end
