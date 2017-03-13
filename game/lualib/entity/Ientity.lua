@@ -301,6 +301,7 @@ function Ientity:clearTarget(mask)
 		self:setTarget(nil)
 	end
 end
+ 
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
@@ -315,7 +316,6 @@ function Ientity:setTargetPos(target)
 	else
 		self:setNewTarget(transfrom.new(pos,nil))
 	end
-	print(self.serverId, pos.x, pos.z)
 end
 function Ientity:update(dt)
 	if self:isDead() == false then
@@ -405,8 +405,10 @@ end
 --注意：修改entity位置，一律用此函数
 function Ientity:setPos(x, y, z, r)
 	--print('set pos = ',x, y, z)
-	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
-	Map:add(x, z, 1, self.modelDat.n32BSize)
+	if not self:isDead() then
+		Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+		Map:add(x, z, 1, self.modelDat.n32BSize)
+	end
 	self.pos:set(x, y, z)
 	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
 end

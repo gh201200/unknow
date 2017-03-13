@@ -36,7 +36,6 @@ end
 function IMonster:init(mt)
 	self.attDat = g_shareData.monsterRepository[mt.id]
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
-	self:setPos(mt.px, 0, mt.pz)
 	self.bornPos:set(mt.px, 0, mt.pz)
 	self:calcStats()
 	self:setHp(self:getHpMax())
@@ -44,6 +43,7 @@ function IMonster:init(mt)
 	self.HpMpChange = true
 	self.StatsChange = true
 	self.attach = mt.attach
+	self:setPos(mt.px, 0, mt.pz)
 	IMonster.super.init(self)
 end
 
