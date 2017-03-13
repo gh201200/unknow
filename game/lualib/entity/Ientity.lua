@@ -304,7 +304,7 @@ end
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
-	
+	self.moveQuadrant = false
 	local pos = vector3.create(target.x,0,target.z)
 	
 	if Map:isBlock( pos.x, pos.z ) then
@@ -548,17 +548,9 @@ function Ientity:onMove2(dt)
 			if not self.moveQuadrant then
 				local quadrant = Map:quadrantTest( self.pos )
 				if quadrant == 1 or quadrant == 4 then
-					if self.dir.z > 0 then
-						self.moveQuadrant = -1
-					else
-						self.moveQuadrant = 1
-					end
+					self.moveQuadrant = -1
 				else
-					if self.dir.z > 0 then
-						self.moveQuadrant = -1
-					else
-						self.moveQuadrant = 1
-					end
+					self.moveQuadrant = 1
 				end
 			end
 			repeat
