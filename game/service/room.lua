@@ -128,9 +128,6 @@ function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	args.x = args.x / GAMEPLAY_PERCENT
 	args.z = args.z / GAMEPLAY_PERCENT
-	if Map:isBlock( args.x, args.z ) then
-		Map:lineTest(player.pos, args)
-	end
 	player:setTargetPos(args)
 	response(true, nil)
 end
@@ -146,7 +143,7 @@ function CMD.lockTarget(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local serverid = args.serverid
 	local target = EntityManager:getEntity(serverid)
-	if target ~= nil and target.entityType ~= EntityType.trap then
+	if target ~= nil and target.entityType ~= EntityType.trap and player:isDead() == false then
 		if player.ReadySkillId == 0 then
 			--默认设置普攻
 			player.ReadySkillId = player:getCommonSkill()

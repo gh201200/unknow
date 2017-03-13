@@ -11,7 +11,7 @@ end
 
 function invincibleAffect:onEnter()
 	self.super.onEnter(self)
-	self.owner.affectState = bit_or(self.owner.affectState,self.control)
+	self.owner:addAffectState(self.control,1)
 end
 
 function invincibleAffect:onExec(dt)
@@ -23,7 +23,7 @@ end
 
 function invincibleAffect:onExit()
 	self.super.onExit(self)
-	self.owner.affectState = bit_and(self.owner.affectState,bit_not(self.control))
+	self.owner:addAffectState(self.control,-1)
 end
 
 return invincibleAffect

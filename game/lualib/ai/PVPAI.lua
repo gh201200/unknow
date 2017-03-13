@@ -55,9 +55,13 @@ function PVPAI:reset()
 	self:setNextAiState("Idle")
 	self.source:setTarget(nil)
 end
+
 function PVPAI:update(dt)
 	PVPAI.super.update(self,dt)
 	--print("PVPAI update self.source=",self.source.serverId,self.mCurrentAIState)
+	if self.source.spell:isSpellCast() then
+		return true
+	end
 	if self:isRunAway() then
 		if  self.mCurrentAIState ~= "runAway" then
 			self:setNextAiState("runAway") --逃跑状态
@@ -122,7 +126,8 @@ end
 
 function PVPAI:onExec_runAway()
 	if self.source:getDistance(self.blueTower) > TowerHpR then
-		self.source:setTarget(self.blueTower)
+		
+		self.source:setTargetPos(self.blueTower.pos)
 		self:setNextAiState("runAway")
 		return
 	end
@@ -135,13 +140,13 @@ function PVPAI:onExec_runAway()
 end
 
 function PVPAI:onExit_runAway()
-	print("onExit_runAway")
+	print("onExit_runAway",self.source.serverId)
 end
 
 function PVPAI:onEnter_protect()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
 --	self:backToHome()	
-	self.source:setTarget(self.blueTower)
+	self.source:setTargetPos(self.blueTower.pos)
 end
 
 
@@ -149,7 +154,7 @@ function PVPAI:onExec_protect()
 	if self.source:getDistance(self.blueTower) < TownerProtectR then
 		self:autoProtectAttack(TownerProtectR)
 	else
-		self.source:setTarget(self.blueTower)
+		self.source:setTargetPos(self.blueTower.pos)
 	end
 	if self:isProtect() == false then
 		self:setNextAiState("Idle")
@@ -254,7 +259,9 @@ end
 
 function PVPAI:onExec_assist()
 	if self.assister == nil then
-		self:setNextAiState("Idle")
+		if self.source.spell:isSpellRunning() == false then
+			self:setNextAiState("Idle")
+		end
 		return
 	end
 	local num = 0
@@ -268,10 +275,12 @@ function PVPAI:onExec_assist()
 			end
 		end
 	end
-	if #targets == 0 then
-		self.assister = nil 
-		self:setNextAiState("Idle")
-		return
+	if #targets == 0  then 
+		if self.source.spell:isSpellRunning() == false then
+			self.assister = nil 
+			self:setNextAiState("Idle")
+			return
+		end
 	else
 		local target =  self.source:getTarget()
 		local hit = false
@@ -444,6 +453,9 @@ function PVPAI:isAttack()
 end
 
 function PVPAI:canAttackPlayer(v)
+	--if self.source.spell:isSpellRunning() then
+	--	return false
+	--end
 	if self.source:isKind(v,true) == false and (v:getType() == "IMapPlayer" or v:getType() == "IPet") and v:getHp() > 0 then 
 		return true
 	else

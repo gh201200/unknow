@@ -558,6 +558,17 @@ exploreRefresh 3015 {
 	}
 }
 
+fuseSkill 3016 {                                                                                 
+    request {                                                                                     
+        uuid 0 : string                                                                       
+    }                                                                                             
+    response {                                                                                    
+        errorCode 0 : integer                                                                 
+        uuid 1 : string 
+	skillId 2 : integer
+    }                                                                                             
+}
+
 
 ]]
 
@@ -818,6 +829,7 @@ pushForceMove 3009 {
 		speed 6 : integer
 	}
 }
+
 ]]
 
 game_proto.types = sparser.parse (types)

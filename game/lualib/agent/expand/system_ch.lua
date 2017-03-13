@@ -279,6 +279,56 @@ function REQUEST.strengthSkill( args )
 
 end
 
+function REQUEST.fuseSkill( args )
+	local errorCode = 0
+	local skill = user.skills:getSkillByUuid(args.uuid)
+	local itemId = 0
+	repeat                                                                                 
+        	if not skill then
+			errorCode = -1
+			break
+		end
+		local skillDat = g_shareData.skillRepository[skill.dataId]
+		local nextId = Macro_AddSkillGrade(skill.dataId, 1)
+		local nextSkillDat = g_shareData.skillRepository[nextId]	
+		if  nextSkillDat then
+			errorCode = 3	--还未到最高品质
+			break
+		end
+		local fuseDat = g_shareData.fuseSkillRepository[skillDat.n32SeriId]
+        	if fuseDat.n32CostNum > skill.count then
+			errorCode = 1	--碎片数量不足
+			break
+		end
+	
+		---------开始融合
+		--扣除碎片
+		user.skills:delSkillByUuid("fuseSkill", args.uuid, fuseDat.n32CostNum)
+		--开始融合
+		local items = nil
+		local times = 0
+		repeat
+			times = times + 1
+			if times > 10 then
+				syslog.err("fuse skill usePackageItem too many times ", times, itemId)
+			end
+			items = usePackageItem(fuseDat.n32ItemId, user.level)
+			for k, v in pairs(items) do
+				itemId = k
+				break
+			end
+			local dat = g_shareData.itemRepository[itemId]
+			if skillDat.n32SeriId ~= Macro_GetCardSerialId( dat.n32Retain1 ) then
+				break
+			end
+		until false
+		user.servicecmd.addItems("fuseSkill", items)
+	until true
+
+	return {errorCode = errorCode, uuid = args.uuid, skillId = itemId}
+end
+
+
 function REQUEST.reqTopRank( args )
 	local toprank = snax.uniqueservice("toprank")
 	local items = toprank.req.load( args )

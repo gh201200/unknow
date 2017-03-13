@@ -4,8 +4,8 @@ local json = require "cjson"
 
 local enable = false
 
-local WRITE_NUM = 2
-local SAVE_NUM = 10
+local WRITE_NUM = 10
+local SAVE_NUM = 50000
 
 local accountfile = "../logdb/account"
 local accountHandler
@@ -19,11 +19,11 @@ function init()
 	if enable then return end
 	local timeStr = os.date("%Y-%m-%d-%H-%M")
 	
-	accountfile = accountfile .."_" .. timeStr .. ".log"
-	accountHandler = io.open(accountfile, "a+")
+	local afile = accountfile .."_" .. timeStr .. ".log"
+	accountHandler = io.open(afile, "a+")
 	
-	cardfile = cardfile .. "_" .. timeStr .. ".log"
-	cardHandler = io.open(cardfile, "a+")
+	local cfile = cardfile .. "_" .. timeStr .. ".log"
+	cardHandler = io.open(cfile, "a+")
 end
 
 function exit()
@@ -37,8 +37,8 @@ local function writeAccount( txt )
 	if accountLogNum >= SAVE_NUM then
 		io.close( accountHandler )
 		local timeStr = os.date("%Y-%m-%d-%H-%M")
-		accountfile = accountfile .."_" .. timeStr .. ".log"
-		accountHandler = io.open(accountfile, "a+")
+		local afile = accountfile .."_" .. timeStr .. ".log"
+		accountHandler = io.open(afile, "a+")
 		accountLogNum = 0
 	elseif accountLogNum % WRITE_NUM == 0 then
 		accountHandler:flush()
@@ -51,8 +51,8 @@ local function writeCard( txt )
 	if cardLogNum >= SAVE_NUM then
 		io.close( cardHandler )
 		local timeStr = os.date("%Y-%m-%d-%H-%M")
-		cardfile = cardfile .. "_" .. timeStr .. ".log"
-		cardHandler = io.open(cardfile, "a+")
+		local cfile = cardfile .. "_" .. timeStr .. ".log"
+		cardHandler = io.open(cfile, "a+")
 		cardLogNum = 0
 	elseif cardLogNum % WRITE_NUM == 0 then
 		cardHandler:flush()

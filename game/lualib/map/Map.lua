@@ -185,8 +185,11 @@ function Map:lineTest(sp, ep)
 	dir:set(sp.x, sp.y, sp.z)
 	dir:sub( ep )
 	dir:normalize()
-	local set = 0.2
+	local set = 0.5
+	local step = 0
 	repeat
+		step = step + 1
+		if step > 20 then break end
 		dst:set(dir.x, dir.y, dir.z)
 		dst:mul_num( set * Map.MAP_GRID_SIZE  )
 		dst:add( ep )

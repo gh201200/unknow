@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local vector3 = require "vector3"
 local Rect = require "rect"
 local spell =  require "skill.spell"
+local passtiveSpell =  require "skill.passtiveSpell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
@@ -65,7 +66,7 @@ function Ientity:ctor(pos,dir)
 	self.pathMove = nil
 	self.pathNodeIndex = -1
 	self.useAStar = false
-	self.moveQuadrant = nil
+	self.moveQuadrant = 0
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -83,7 +84,8 @@ function Ientity:ctor(pos,dir)
 	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
-	self.affectState = 0
+	self.affectStateRefs = {} --状态计数
+	
 	self.triggerCast = true	 --是否触发技能
 	self.targetPos = nil
 	register_class_var(self, 'NewTarget', nil)
@@ -225,7 +227,7 @@ function Ientity:stand()
 	if self:canStand() == false then return end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
-	self.moveQuadrant = nil
+	self.moveQuadrant = 0
 end
 
 function Ientity:clearPath()
@@ -249,7 +251,10 @@ function Ientity:pathFind(dx, dz)
 	
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
-	print(self.pathMove,self.useAStar)
+	if not self.useAStar then
+		print(Map.POS_2_GRID(self.pos.x),Map.POS_2_GRID(self.pos.z),Map.POS_2_GRID(dx),Map.POS_2_GRID(dz))
+	end
+	print(self.pathMove)
 	return self.useAStar
 end
 
@@ -298,10 +303,16 @@ function Ientity:clearTarget(mask)
 		self:setTarget(nil)
 	end
 end
+
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
+	self.moveQuadrant = 0
 	local pos = vector3.create(target.x,0,target.z)
+	
+	if Map:isBlock( pos.x, pos.z ) then
+		Map:lineTest(self.pos, pos)
+	end
 	if self:canMove() == 0 then
 		self:setTarget(transfrom.new(pos,nil))
 	else
@@ -372,7 +383,7 @@ function Ientity:isCrossWithEntity( entity )
 end
 
 function Ientity:isLegalGrid( pos )
-	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	local gx = Map.POS_2_GRID( pos.x )
 	local gz = Map.POS_2_GRID( pos.z )
 
@@ -396,8 +407,10 @@ end
 --注意：修改entity位置，一律用此函数
 function Ientity:setPos(x, y, z, r)
 	--print('set pos = ',x, y, z)
-	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
-	Map:add(x, z, 1, self.modelDat.n32BSize)
+	if not self:isDead() then
+		Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+		Map:add(x, z, 1, self.modelDat.n32BSize)
+	end
 	self.pos:set(x, y, z)
 	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
 end
@@ -536,22 +549,17 @@ function Ientity:onMove2(dt)
 			local nearBy = false
 			local doNotUseAstar = false
 			local angle = 30
-			if not self.moveQuadrant then
+			--[[
+			if self.moveQuadrant == 0 then	
 				local quadrant = Map:quadrantTest( self.pos )
 				if quadrant == 1 or quadrant == 4 then
-					if self.dir.z > 0 then
-						self.moveQuadrant = 1
-					else
-						self.moveQuadrant = -1
-					end
+					self.moveQuadrant = -1
 				else
-					if self.dir.z > 0 then
-						self.moveQuadrant = -1
-					else
-						self.moveQuadrant = 1
-					end
+					self.moveQuadrant = 1
 				end
 			end
+			--]]
+			self.moveQuadrant = 1
 			repeat
 				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 					doNotUseAstar = true
@@ -708,19 +716,51 @@ function Ientity:onDead()
 	end
 	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
+	for k,v in pairs(self.spell.passtiveSpells) do
+		v:onDead()
+	end
+	self.spell.passtiveSpells = {}
 end
 
 function Ientity:onRaise()
 	self:addHp(self:getHpMax(), HpMpMask.RaiseHp)
 	self:addMp(self:getMpMax(), HpMpMask.RaiseMp)
+	
 	--学习被动技能
 	for _k,_v in pairs(self.skillTable) do
 		local id = _k + _v - 1
 		local skilldata = g_shareData.skillRepository[id]	
-		if skilldata ~= nil and skilldata.bActive == false then
-			self.spell:onStudyPasstiveSkill(skilldata)	
+		if skilldata ~= nil and skilldata.n32Active == 1 then
+			local ps = passtiveSpell.new(self,skilldata)
+			table.insert(self.spell.passtiveSpells,ps)
 		end
-	end	
+	end
+end
+
+function Ientity:isAffectState(state)
+	if self.affectStateRefs[state] ~= nil and self.affectStateRefs[state] > 0 then 
+		return true
+	else
+		return false
+	end
+end
+
+function Ientity:addAffectState(argState,num)
+	local states = {}
+	for k,v in pairs(AffectState) do
+		if bit_and(argState,v) ~= 0 then
+			states[v] = 1
+		end
+	end
+	for state,v in pairs(states) do
+		if self.affectStateRefs[state] == nil then
+			self.affectStateRefs[state] = 0 
+		end
+		if num == 1 and AffectState.NoMove == state then
+			self:stand()
+		end
+		self.affectStateRefs[state] = self.affectStateRefs[state] + num
+	end
 end
 
 function Ientity:addHp(_hp, mask, source)
@@ -735,7 +775,7 @@ function Ientity:addHp(_hp, mask, source)
 	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	--不死状态
-	if self.affectState == AffectState.NoDead or self.affectState == AffectState.Invincible then
+	if self:isAffectState(AffectState.NoDead) or self:isAffectState(AffectState.Invincible) then
 		if self:getHp() <= 0 then
 			self:setHp(1)
 		end
@@ -1018,7 +1058,7 @@ function Ientity:callBackSpellEnd()
 		end
 	end
 	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
-			self.ReadySkillId = 0
+			self.ReadySkillId = self:getCommonSkill() 
 	end
 end
 --设置人物状态
@@ -1027,7 +1067,7 @@ function Ientity:setState(state)
 end
 
 function Ientity:canMove()
-	if bit_and(self.affectState,AffectState.NoMove) ~= 0 then
+	if self:isAffectState(AffectState.NoMove) == true then
 		return ErrorCode.EC_Spell_Controled
 	end
 	--[[
@@ -1075,7 +1115,7 @@ function Ientity:canCast(id)
 	end
 	--不是普攻
 	if skilldata.n32SkillType ~= 0  then 
-		if bit_and(self.affectState,AffectState.NoSpell) ~= 0 then
+		if self:isAffectState(AffectState.NoSpell) then
 			return ErrorCode.EC_Spell_Controled
 		end
 		
@@ -1086,7 +1126,7 @@ function Ientity:canCast(id)
 		end
 	end
 	
-	if bit_and(self.affectState,AffectState.NoAttack) ~= 0 then 
+	if self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" and self:getTarget():isAffectState(AffectState.Invincible) then
 		return ErrorCode.EC_Spell_Controled
 	end
 	if self:getHp() <= 0 then return ErrorCode.EC_Dead end
@@ -1124,7 +1164,7 @@ function Ientity:setCastSkillId(id)
 	local skilldata = g_shareData.skillRepository[id]
 	if not skilldata then
 		syslog.warning( 'setCastSkillId failed ' .. id )
-		return
+		return 1
 	end
 	if skilldata.bActive == false then	
 		--测试使用

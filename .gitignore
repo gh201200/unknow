@@ -31,3 +31,5 @@
 # other files
 var/
 test_client/anonymous
+*.log
+*.bytes
