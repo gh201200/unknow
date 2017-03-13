@@ -67,6 +67,7 @@ local MissionsMethod =
 	end;
 	--
 	updateMission = function(self, op, v)
+		print(op, v)
 		local dat = g_shareData.missionRepository[v.dataId]
 		if dat.n32Type == DEF.MissionType.achivement then
 			if self.isMissionCompleted( v ) then
@@ -76,7 +77,7 @@ local MissionsMethod =
 				end
 			end
 		end
-
+		print(v)
 		self:sendMissionData( v )	
 		
 		local database = skynet.uniqueservice ("database")
