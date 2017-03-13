@@ -173,6 +173,10 @@ function EntityManager:getTypeEntitys(source,skilldata,isSelect)
 		_type = "n32AffectTargetType" 
 	end
 	local typeTargets = {}
+	if skilldata[_type] == 0 then
+		 table.insert(typeTargets,source)
+		return typeTargets
+	end
 	for _ek,_ev in pairs(self.entityList) do
 		if _ev ~= nil and (_ev:getType() == "IMapPlayer" or _ev:getType() == "IPet" or _ev:getType() == "IMonster" or  _ev:getType() == "IBuilding") then
 			if _ev:getHp() > 0 and ((_ev.entityType == EntityType.building and skilldata.n32SkillType == 0) or _ev.entityType ~= EntityType.building)  then

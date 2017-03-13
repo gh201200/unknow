@@ -1113,10 +1113,10 @@
 	</item>
 	<item id="30004">
 		<n32type>2</n32type>
-		<szassert>test</szassert>
-		<n32time>0</n32time>
+		<szassert>Shanguang_hit_01</szassert>
+		<n32time>2</n32time>
 		<n32speed>0</n32speed>
-		<n32position>0</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>

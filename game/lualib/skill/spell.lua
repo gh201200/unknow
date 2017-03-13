@@ -207,8 +207,8 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 			return
 		end	
 		for _k,_v in pairs(targets) do
-				if _v:isAffectState(AffectState.Invincible) then
-					--无敌状态下]
+				if _v:isAffectState(AffectState.Invincible) and self.source ~= _v then
+					--无敌状态下
 					print("无敌状态")
 				elseif _v:isAffectState(AffectState.OutSkill) and skilldata.n32SkillType == 0 then
 					--普攻 魔免状态
@@ -345,7 +345,6 @@ function spell:onChannelCast(dt)
 	end
 	--持续施法中
 	self.CTriggerTime = self.CTriggerTime - dt
-	print("CTriggerTime<=0:",self.CTriggerTime,dt)
 	if self.CTriggerTime <= 0 then
 		self.CTriggerTime = self.skilldata.n32AffectGap  * 1000--间隔时间
 		self:onTrigger(self.skilldata,self.source,self.srcTarget)
