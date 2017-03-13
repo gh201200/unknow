@@ -290,7 +290,7 @@ function spell:onReady(dt)
 			local time = self.castTime + self.endTime
 			self.source.cooldown:addItem(self.skilldata.id,time)
 		else
-			self.source.cooldown:addItem(self.skilldata.id) --加入cd
+			self.source.cooldown:addItem(self.skilldata.id,0) --加入cd
 		end
 		if self.source:getType() == "IMapPlayer" and self.skilldata.n32SkillType ~= 0 then
 			self.source:SynSkillCds(self.skilldata.id)
@@ -337,18 +337,19 @@ function spell:onCast(dt)
 end
 
 function spell:onChannelCast(dt)
+	--持续施法中
+	self.CTriggerTime = self.CTriggerTime - dt
+	if self.CTriggerTime < 0 then
+		self.CTriggerTime = self.skilldata.n32AffectGap  * 1000--间隔时间
+		self:onTrigger(self.skilldata,self.source,self.srcTarget)
+	end
 	self.channelTime = self.channelTime - dt
 	if self.channelTime < 0 then
 		self.status = SpellStatus.End
 		print("持续 ---结束")
 		return
 	end
-	--持续施法中
-	self.CTriggerTime = self.CTriggerTime - dt
-	if self.CTriggerTime <= 0 then
-		self.CTriggerTime = self.skilldata.n32AffectGap  * 1000--间隔时间
-		self:onTrigger(self.skilldata,self.source,self.srcTarget)
-	end
+
 end
 
 function spell:onEnd(dt)
