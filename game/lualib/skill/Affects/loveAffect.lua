@@ -6,7 +6,6 @@ function loveAffect:ctor(owner,source,data,skillId)
 	self.super.ctor(self,owner,source,data,skillId)
 	self.effectId = data[3] or 0
 	self.effectTime = data[2] or 0
-	--self.control = bit_or(AffectState.NoAttack,AffectState.NoSpell) 
 	self.effectTime = self.effectTime * 1000
 	self.speed = 1 
 end

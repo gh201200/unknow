@@ -84,7 +84,8 @@ function Ientity:ctor(pos,dir)
 	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
-	self.affectState = 0
+	self.affectStateRefs = {} --状态计数
+	
 	self.triggerCast = true	 --是否触发技能
 	self.targetPos = nil
 	register_class_var(self, 'NewTarget', nil)
@@ -736,6 +737,29 @@ function Ientity:onRaise()
 	end
 end
 
+function Ientity:isAffectState(state)
+	if self.affectStateRefs[state] ~= nil and self.affectStateRefs[state] > 0 then 
+		return true
+	else
+		return false
+	end
+end
+
+function Ientity:addAffectState(argState,num)
+	local states = {}
+	for k,v in pairs(AffectState) do
+		if bit_and(argState,v) ~= 0 then
+			states[v] = 1
+		end
+	end
+	for state,v in pairs(states) do
+		if self.affectStateRefs[state] == nil then
+			self.affectStateRefs[state] = 0 
+		end
+		self.affectStateRefs[state] = self.affectStateRefs[state] + num
+	end
+end
+
 function Ientity:addHp(_hp, mask, source)
 
 	isDelay = isDelay or false 
@@ -748,7 +772,7 @@ function Ientity:addHp(_hp, mask, source)
 	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	--不死状态
-	if self.affectState == AffectState.NoDead or self.affectState == AffectState.Invincible then
+	if self:isAffectState(AffectState.NoDead) or self:isAffectState(AffectState.Invincible) then
 		if self:getHp() <= 0 then
 			self:setHp(1)
 		end
@@ -1040,7 +1064,7 @@ function Ientity:setState(state)
 end
 
 function Ientity:canMove()
-	if bit_and(self.affectState,AffectState.NoMove) ~= 0 then
+	if self:isAffectState(AffectState.NoMove) == true then
 		return ErrorCode.EC_Spell_Controled
 	end
 	--[[
@@ -1088,7 +1112,7 @@ function Ientity:canCast(id)
 	end
 	--不是普攻
 	if skilldata.n32SkillType ~= 0  then 
-		if bit_and(self.affectState,AffectState.NoSpell) ~= 0 then
+		if self:isAffectState(AffectState.NoSpell) then
 			return ErrorCode.EC_Spell_Controled
 		end
 		
@@ -1099,7 +1123,7 @@ function Ientity:canCast(id)
 		end
 	end
 	
-	if bit_and(self.affectState,AffectState.NoAttack) ~= 0 then 
+	if self:isAffectState(AffectState.NoAttack) then
 		return ErrorCode.EC_Spell_Controled
 	end
 	if self:getHp() <= 0 then return ErrorCode.EC_Dead end

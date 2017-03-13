@@ -10,7 +10,7 @@ end
 
 function noskillAffect:onEnter()
 	self.super.onEnter(self)
-	self.owner.affectState = bit_or(self.owner.affectState,self.control)
+	self.owner:addAffectState(self.control,1)
 end
 
 function noskillAffect:onExec(dt)
@@ -22,7 +22,7 @@ end
 
 function noskillAffect:onExit()
 	self.super.onExit(self)
-	self.owner.affectState = bit_and(self.owner.affectState,bit_not(self.control))
+	self.owner:addAffectState(self.control,-1)
 end
 
 return noskillAffect

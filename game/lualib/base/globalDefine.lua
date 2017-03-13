@@ -71,6 +71,8 @@ AffectState = {
 	Crit				= 1 << 8, --暴击状态
 }
 
+
+
 SpellStatus = {
 	None 		= 0,	--无
 	Begin 		= 1, 	--开始

@@ -23,9 +23,9 @@ function StatsAffect:onTrigger(_add)
 		if self.data[1] == 'ctrl' then
 			if _add == 1 then
 				self.owner:stand()
-				self.owner.affectState = bit_or(self.owner.affectState, self.data[2]) -- 控制类型
+				self.owner:addAffectState(self.data[2],1)
 			else
-				self.owner.affectState = bit_and(self.owner.affectState, bit_not(self.data[2]))
+				self.owner:addAffectState(self.data[2],-1)
 			end
 		end
 		if self.data[1] == 'upstr' then

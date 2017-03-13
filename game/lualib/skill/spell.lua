@@ -34,7 +34,7 @@ function spell:init(skilldata,skillTimes)
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
 	self.triggerTime = skilldata.n32TriggerTime * 1000 
-	self.CTriggerTime = self.skilldata.n32AffectGap * 1000 
+	self.CTriggerTime = 0 --self.skilldata.n32AffectGap * 1000 
 	if self.triggerTime == 0 then
 		self.triggerTime = skillTimes["trigger"]
 	end
@@ -207,10 +207,10 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 			return
 		end	
 		for _k,_v in pairs(targets) do
-			if _v.affectState then
-				if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
-					--无敌状态下
-				elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and skilldata.n32SkillType == 0 then
+				if _v:isAffectState(AffectState.Invincible) then
+					--无敌状态下]
+					print("无敌状态")
+				elseif _v:isAffectState(AffectState.OutSkill) and skilldata.n32SkillType == 0 then
 					--普攻 魔免状态
 				else
 					if skilldata.n32SkillType == 0 and _v:getMiss()*100 > math.random(0,100) then
@@ -225,7 +225,6 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 						_v.affectTable:buildAffects(self.source,datas,skilldata.id)
 					end
 				end
-			end
 		end
 	end
 end
