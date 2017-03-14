@@ -38,16 +38,18 @@ CLIENT_GM_CMD['addaexp'] = function( args )
 	CMD.gm_add_aexp( p )
 end;
 
-CLIENT_GM_CMD['addcard'] = function( args )
-	local p = { dataId=args.params[1], cardNum=args.params[2]}
-	CMD.gm_add_card( p )
-end;
-
 CLIENT_GM_CMD['additem'] = function( args )
 	local items = {}
 	items[tonumber(args.params[1])] = tonumber(args.params[2])
 	CMD.gm_add_items( items )
 end;
+
+CLIENT_GM_CMD['delitem'] = function( args )
+	local items = {}
+	items[tonumber(args.params[1])] = tonumber(args.params[2])
+	CMD.gm_del_items( items )
+end;
+
 
 CLIENT_GM_CMD['addgold'] = function( args )
 	local p = { id=user.account.account_id, gold=args.params[1] }
@@ -116,12 +118,28 @@ function CMD.gm_add_money( args )
 	user.account:addMoney("gm_add_money", args.money)
 end
 
-function CMD.gm_add_card( args )
-	user.cards:addCard("gm_add_card", args.dataId, args.cardNum)
-end
 
 function CMD.gm_add_items( args )
 	user.servicecmd.addItems("gm_add_items", args)
+end
+
+function CMD.gm_del_items( args )
+	for k, v in pairs(args) do
+		local item = g_shareData.itemRepository[k]
+		if item.n32Type == 3 then	--英雄卡
+			local serId = Macro_GetCardSerialId(item.n32Retain1)
+			local unit = user.cards:getCardBySerialId(serId)
+			if unit then
+				user.cards:delCardByUuid('gm_del_items', unit.uuid, v)
+			end
+		elseif item.n32Type == 7 then	--技能材料
+			local serId = Macro_GetSkillSerialId(item.n32Retain1)
+			local unit = user.skills:getSkillBySerialId(serId)
+			if unit then
+				user.skills:delSkillByUuid('gm_del_items', unit.uuid, v)
+			end
+		end
+	end
 end
 
 function CMD.gm_add_level( args )
