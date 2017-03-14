@@ -8,8 +8,7 @@ local game_config = require "config.gameserver"
 local max_client = 24 
 
 skynet.start(function()
-			
-	math.randomseed(skynet.now())
+	math.randomseed(os.time())
 	local monitor = skynet.monitor "simplemonitor"
 	local console = skynet.newservice("console")
 	skynet.newservice("debug_console",8000)
