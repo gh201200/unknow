@@ -117,7 +117,7 @@ REQUEST.reEnterRoom = function(...)
 	local t = ...
 	if t.isin == false then
 		print(account .. "进入游戏 准备匹配")
-		send_request("requestMatch")
+		--send_request("requestMatch")
 	end
 end
 
