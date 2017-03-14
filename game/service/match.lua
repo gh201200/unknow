@@ -6,13 +6,14 @@ local traceback  = debug.traceback
 local uuid = require "uuid"
 
 local CMD = {}
-local requestMatchers = {}
 local database
 local account_cors = {}
 local s_pickHeros = { } --选角色服务
 local PvpAIServer 	--pvpAI服务
 
 CMD.MATCH_NUM = 6 
+
+local nowInMatchers = {}	--正在参与匹配的玩家[account]=true/false
 
 local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
@@ -36,6 +37,33 @@ function CMD.hijack_msg(response)
 	response(true, ret )
 end
 
+local function removePlayerFromMatch( agent )
+	for i=#(keep_list),1,-1 do
+		local p = keep_list[i]
+		if p.agent == agent then
+			nowInMatchers[p.account] = false
+			table.remove(keep_list,i)
+			return true
+		end
+	end
+	for i=#(strict_list),1,-1 do
+		local p = strict_list[i]
+		if p.agent == agent then
+			nowInMatchers[p.account] = false
+			table.remove(strict_list,i)
+			return true
+		end
+	end
+	for i=#(loose_list),1,-1 do
+		local p = loose_list[i]
+		if p.agent == agent then
+			nowInMatchers[p.account] = false
+			table.remove(loose_list,i)
+			return true
+		end		
+	end	
+	return false
+end
 
 --请求匹配 arg = {agent = ,account = ,modelid = ,nickname= ,time = 
 --eloValue stepTime fightLevel failNum
@@ -52,35 +80,9 @@ end
 --取消匹配
 function CMD.cancelMatch(response,agent)	
 	local errorcode = -1
-	repeat 
-		local hit = false
-		for i=#(keep_list),1,-1 do
-			local p = keep_list[i]
-			if p.agent == agent then
-				table.remove(keep_list,i)
-				errorcode = 0 
-				break
-			end
-		end
-		if hit == true then break end
-		for i=#(strict_list),1,-1 do
-			local p = strict_list[i]
-			if p.agent == agent then
-				table.remove(strict_list,i)
-				errorcode = 0 
-				break
-			end
-		end
-		if hit == true then break end
-		for i=#(loose_list),1,-1 do
-			local p = loose_list[i]
-			if p.agent == agent then
-				table.remove(loose_list,i)
-				errorcode = 0
-				break
-			end
-		end	
-	until true
+	if removePlayerFromMatch( agent ) then	
+		errorcode = 0
+	end
 	local ret = { errorcode = errorcode }
 	response(true,ret)
 end
@@ -110,6 +112,7 @@ function handleMatch(t)
 	
 	local ret = { errorcode = 0 ,matcherNum = 0,matcherList = {} }
 	for _k,_v in pairs(t) do
+		nowInMatchers[_v.account] = false
 		ret.matcherNum = ret.matcherNum + 1
 		local tmp = { account = _v.account,nickname = _v.nickname,color = _v.color }
 		table.insert(ret.matcherList,tmp)
@@ -145,6 +148,14 @@ function updateKeeplist(dt)
 end
 -- 添加到保持队列
 function addtoKeeplist(p)
+	if nowInMatchers[p.account] then
+		syslog.err("player "..p.account.." has already be in matched")
+		return
+	else
+		local monitor = skynet.monitor "simplemonitor"
+		skynet.call(monitor, "lua", "watch", p.agent)
+		nowInMatchers[p.account] = true
+	end
 	print("玩家" .. p.account .. "加入保持队列")
 	if #strict_list == 0 then
 		table.insert(keep_list,p)
@@ -381,6 +392,8 @@ skynet.start(function ()
 			end
 		end
 		]]--
+		print('match cancle agent = ',agent)
+		removePlayerFromMatch( source )
 	end)
 
 	skynet.dispatch("lua", function (_, _, command, ...)
