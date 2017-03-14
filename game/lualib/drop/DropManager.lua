@@ -38,7 +38,7 @@ function DropManager:update()
 			for i=#self.drops , 1, -1 do
 				local q = self.drops[i]
 				dropVec:set(q.px/GAMEPLAY_PERCENT,0,q.pz/GAMEPLAY_PERCENT)
-				if vector3.len(v.pos, dropVec) < 0.4 then
+				if vector3.len(v.pos, dropVec) < 0.5 then
 					givePlayerItem( v, q )
 					table.remove(self.drops, i)	
 				end

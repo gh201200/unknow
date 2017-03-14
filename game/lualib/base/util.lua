@@ -227,22 +227,21 @@ function openPackage( strPkg, userLv )
 	local items = {}
 	for k, v in pairs(pkgIds) do
 		local drop = g_shareData.itemDropPackage[v]
+		local copyDrop = table.copy(drop)
 		local filterdrops = {}
-		if userLv then
-			local tr = 0
-			for p, q in pairs(drop) do
-				if type(q) == "table" then
-					if q.n32ArenaLvUpLimit <= userLv and q.n32ArenaLvLwLimit >= userLv then
-						table.insert(filterdrops, q)
-						tr = tr + q.n32Rate
-						q.n32Rate = tr
-					end
+		local tr = 0
+		for p, q in pairs(copyDrop) do
+			if type(q) == "table" then
+				if not userLv or (q.n32ArenaLvUpLimit <= userLv and q.n32ArenaLvLwLimit >= userLv) then
+					table.insert(filterdrops, q)
+					tr = tr + q.n32Rate
+					q.n32Rate = tr
 				end
 			end
-			filterdrops.totalRate = tr
-		else
-			filterdrops = drop
 		end
+		filterdrops.totalRate = tr
+		
+		print(filterdrops)
 		if filterdrops.totalRate >= 1 then
 			local rd = math.random(1, filterdrops.totalRate)
 			local r = nil

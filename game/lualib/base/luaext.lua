@@ -35,9 +35,6 @@ end
 -- 浅拷贝
 table.clone = function(t, nometa)
     local result = {}
-    if not nometa then
-        setmetatable(result, getmetatable(t))
-    end
     for k, v in pairs (t) do
         result[k] = v
     end
@@ -48,13 +45,9 @@ end
 table.copy = function(t, nometa)   
     local result = {}
 
-    if not nometa then
-        setmetatable(result, getmetatable(t))
-    end
-
     for k, v in pairs(t) do
         if type(v) == "table" then
-            result[k] = copy(v)
+            result[k] = table.copy(v)
         else
             result[k] = v
         end

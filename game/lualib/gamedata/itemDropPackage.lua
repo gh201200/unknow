@@ -39,6 +39,7 @@ for k, p in pairs(xmlhandler.root.info.item) do
 	if not modolsTable[tmpTb.id] then modolsTable[tmpTb.id] = {} end
 	table.insert(modolsTable[tmpTb.id], tmpTb)
 end
+--[[
 for k, v in pairs(modolsTable) do
 	local tr = 0
 	for p, q in pairs(v) do
@@ -47,5 +48,5 @@ for k, v in pairs(modolsTable) do
 	end
 	v.totalRate = tr
 end
-
+--]]
 return modolsTable
