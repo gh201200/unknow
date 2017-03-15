@@ -338,6 +338,15 @@ end
 
 function REQUEST.getOffLineTime(response, args)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
+	if not player then
+		syslog.err("get offline time ",args.id) 
+		for k, v in pairs(EntityManager.entityList) do
+			if v.entityType == EntityType.player  then
+				syslog.err("player list ",v.account_id)
+			end
+		end
+		
+	end
 	local time = player:getOffLineTime()
 	response(true, time)
 end
