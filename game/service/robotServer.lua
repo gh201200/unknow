@@ -8,7 +8,7 @@ skynet.start(function()
 	math.randomseed(skynet.now())
 	for i=1,robotsNum,1 do
 		local a = skynet.newservice("robot")
-		skynet.call(a,"lua","start",{account = "robot" .. i,ip = ip, port = port} )
+		skynet.call(a,"lua","start",{account = "fangrobot" .. i,ip = ip, port = port} )
 	end
 	--skynet.exit()
 end)

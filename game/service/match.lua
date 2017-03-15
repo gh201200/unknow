@@ -92,7 +92,7 @@ end
 function handleMatch(t)
 	--分配队组
 	local function comp_elo(a,b) 
-		if a.eloValue >= b.eloValue then
+		if a.eloValue > b.eloValue then
 			return true
 		end
 		return false
@@ -261,13 +261,13 @@ function addtoStictlist(p)
 			end
 		end
 		local function indexCmp(a,b)
-			if a.index_list >= b.index_list then
+			if a.index_list > b.index_list then
 				return true
 			end
 			return false
 		end
 		table.sort(matchers,indexCmp)
-		for k,v in ipairs(matchers) do
+		for k,v in pairs(matchers) do
 			table.remove(v.src_list,v.index_list)
 		end
 		table.insert(matchers,p)	
