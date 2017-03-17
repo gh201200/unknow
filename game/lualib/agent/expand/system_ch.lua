@@ -47,15 +47,18 @@ end
 
 function REQUEST.upgradeCardColorLevel( args )
 	local errorCode = 0
+	print("REQUEST.upgradeCardColorLevel",args)
 	local card = user.cards:getCardByUuid(args.uuid)
 	repeat                                                                                 
-        	if not card then                                                                                                                                       
+        	print("11111111111111")
+		if not card then                                                                                                                                       
 			errorCode = -1
 			break                                                                                                                               
         	end
 		local cardDat = g_shareData.heroRepository[card.dataId]
 		local nextCardDat = g_shareData.heroRepository[card.dataId+1]	
 		
+        	print("2222222222222")
 		if not nextCardDat then
 			errorCode = 3	--已到最高品质
 			break
@@ -71,16 +74,19 @@ function REQUEST.upgradeCardColorLevel( args )
 			break
 		end
 	
+        	print("33333333333333")
 	
 		---------开始升级
 		--扣除金币
 		user.account:addGold("upgradeCardColorLevel", -cardDat.n32GoldNum)
+        	print("4444444444444")
 		--扣除碎片
 		user.cards:delCardByUuid("upgradeCardColorLevel", args.uuid, cardDat.n32WCardNum)
 		--开始升级
 		user.cards:updateDataId("upgradeCardColorLevel", args.uuid, cardDat.id+1)
 	until true
 	
+	print("REQUEST.upgradeCardColorLevel",{errorCode = errorCode, uuid = args.uuid})
 	return {errorCode = errorCode, uuid = args.uuid}
 end
 

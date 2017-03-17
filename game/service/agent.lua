@@ -24,6 +24,8 @@ local host, proto_request = protoloader.load (protoloader.GAME)
 local fightRecorder
 local recordState = 0
 local fightRecords = {}
+--接受room消息
+local bReceveRoomInfo = false
 --[[
 .user = { 
 		fd = conf.client, 
@@ -266,11 +268,16 @@ function CMD.Request(name,args)
 	end
 end
 
+function CMD.setReceveRoomInfo()
+	print("CMD.setReceveRoomInfo==========================")
+	bReceveRoomInfo = true
+end
 function CMD.reconnect(conf)
 	print("重新登录，重置fd:",conf.client)
 	CMD.addConnectRef(1)
 	user_fd	= conf.client
 	skynet.call(conf.gate, "lua", "forward", user_fd)
+	bReceveRoomInfo = false
 end
 
 function CMD.addConnectRef(r)
@@ -305,6 +312,12 @@ end
 
 function CMD.sendRequest (name, args)
 	send_request(name, args)
+end
+
+function CMD.sendRequest_room(name,args)
+	if bReceveRoomInfo == true then	
+		send_request(name, args)
+	end
 end
 --进入选英雄服务
 function CMD.enterPickHero(s_pickup)

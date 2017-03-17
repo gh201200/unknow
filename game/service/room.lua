@@ -57,6 +57,7 @@ local function playerReConnect(agent, aid)
 	local r = { resttime = BattleOverManager.RestTime }
 	skynet.call(agent, "lua", "sendRequest", "fightBegin", r)
 
+		
 	--monsters
 	local monsters = { spawnList = {} }
 	for k, v in pairs(EntityManager.entityList) do
@@ -103,7 +104,7 @@ local function playerReConnect(agent, aid)
 		end
 	end
 	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=picks})
-	
+	skynet.call(agent,"lua","setReceveRoomInfo")
 end
 
 local CMD = {}
@@ -168,9 +169,9 @@ end
 function waitForLoadingCompleted()
 	
 	if last_update_time then return end
-
+	
 	local r = { resttime = BattleOverManager.RestTime }
-	EntityManager:sendToAllPlayers("fightBegin", r)
+	EntityManager:sendToAllPlayersExt("fightBegin", r)
 	
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then
@@ -202,6 +203,7 @@ function CMD.loadingRes(response, agent, account_id, args)
 		if v.entityType == EntityType.player  then
 			if v:getLoadProgress() >= 100 then
 				num = num + 1
+				skynet.call(v.agent,"lua","setReceveRoomInfo")
 			end
 		end
 	end
@@ -294,7 +296,7 @@ function CMD.start(response, args)
 		rb_sid = redBuilding.serverId,
 		bb_sid = blueBuilding.serverId,
 	}
-	
+		
 	EntityManager:callAllAgents("enterMap", skynet.self(), ret)
 
 	--开始等待客户端加载资源，最多等待6秒
