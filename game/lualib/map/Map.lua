@@ -6,7 +6,7 @@ local Map = class("Map")
 --height 15.6 = 39*0.4
 
 local MAP_XGRID_NUM = 68
-local MAP_ZGRID_NUM = 156
+local MAP_ZGRID_NUM = 158
 Map.MAP_GRID_SIZE = 0.1
 
 local dir = {

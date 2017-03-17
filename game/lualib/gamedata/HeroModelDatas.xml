@@ -1118,7 +1118,7 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>3</n32BSize>
+		<n32BSize>1</n32BSize>
 	</item>
 	<item id="70004">
 		<szName>小蜘蛛</szName>
@@ -1153,6 +1153,6 @@
 		<szMount1Effect></szMount1Effect>
 		<szMoveVoice></szMoveVoice>
 		<szRSkillVoice></szRSkillVoice>
-		<n32BSize>3</n32BSize>
+		<n32BSize>1</n32BSize>
 	</item>
 </info>

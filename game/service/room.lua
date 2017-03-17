@@ -57,7 +57,6 @@ local function playerReConnect(agent, aid)
 	local r = { resttime = BattleOverManager.RestTime }
 	skynet.call(agent, "lua", "sendRequest", "fightBegin", r)
 
-		
 	--monsters
 	local monsters = { spawnList = {} }
 	for k, v in pairs(EntityManager.entityList) do
@@ -104,7 +103,7 @@ local function playerReConnect(agent, aid)
 		end
 	end
 	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=picks})
-	skynet.call(agent,"lua","setReceveRoomInfo")
+	
 end
 
 local CMD = {}
@@ -169,9 +168,9 @@ end
 function waitForLoadingCompleted()
 	
 	if last_update_time then return end
-	
+
 	local r = { resttime = BattleOverManager.RestTime }
-	EntityManager:sendToAllPlayersExt("fightBegin", r)
+	EntityManager:sendToAllPlayers("fightBegin", r)
 	
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then
@@ -203,7 +202,6 @@ function CMD.loadingRes(response, agent, account_id, args)
 		if v.entityType == EntityType.player  then
 			if v:getLoadProgress() >= 100 then
 				num = num + 1
-				skynet.call(v.agent,"lua","setReceveRoomInfo")
 			end
 		end
 	end
@@ -241,13 +239,12 @@ function CMD.start(response, args)
 	local sm = snax.uniqueservice("servermanager")
 	sm.post.roomstart(skynet.self(), args)
 	
-	local roomId = 1
+	local roomId = 3 
 	local mapDat = g_shareData.mapRepository[roomId]
 	
 	BattleOverManager:init( mapDat )
 	
 	room_id = roomId
-
 	--加载地图
 	Map:load("./lualib/map/" .. mapDat.szScene)
 
@@ -296,7 +293,7 @@ function CMD.start(response, args)
 		rb_sid = redBuilding.serverId,
 		bb_sid = blueBuilding.serverId,
 	}
-		
+	
 	EntityManager:callAllAgents("enterMap", skynet.self(), ret)
 
 	--开始等待客户端加载资源，最多等待6秒
