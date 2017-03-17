@@ -725,16 +725,6 @@ end
 function Ientity:onRaise()
 	self:addHp(self:getHpMax(), HpMpMask.RaiseHp)
 	self:addMp(self:getMpMax(), HpMpMask.RaiseMp)
-	
-	--学习被动技能
-	for _k,_v in pairs(self.skillTable) do
-		local id = _k + _v - 1
-		local skilldata = g_shareData.skillRepository[id]	
-		if skilldata ~= nil and skilldata.n32Active == 1 then
-			local ps = passtiveSpell.new(self,skilldata)
-			table.insert(self.spell.passtiveSpells,ps)
-		end
-	end
 end
 
 function Ientity:isAffectState(state)
@@ -1135,7 +1125,15 @@ function Ientity:canCast(id)
 	return 0
 end
 
-
+function Ientity:getSkillNum()
+	local num = 0
+	for k,v in pairs(skillTable) do
+		if v ~= nil then
+			num  = num + 1	
+		end	
+	end
+	return num
+end
 --是否能选中技能
 function Ientity:canSetCastSkill(id)
         local skilldata = g_shareData.skillRepository[id]
