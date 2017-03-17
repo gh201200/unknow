@@ -103,7 +103,7 @@ local function playerReConnect(agent, aid)
 		end
 	end
 	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=picks})
-	
+	skynet.call(agent,"lua","setReceveRoomInfo")	
 end
 
 local CMD = {}
@@ -175,6 +175,7 @@ function waitForLoadingCompleted()
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then
 			v:setLoadProgress(100)
+			skynet.call(v.agent,"lua","setReceveRoomInfo")
 		end
 	end
 
