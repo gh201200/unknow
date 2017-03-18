@@ -321,6 +321,8 @@ move 201 {			#client move
 requestCastSkill 202 {
 	request {
 		skillid 0 : integer
+		playerId 1 : integer
+		isCancel 2 : boolean	
 	}
 	response {
 		errorcode 0 :integer
@@ -351,17 +353,6 @@ usePickItem 204 {
 	}
 }
 
-upgradeSkill 205 {
-	request {
-		skillId 0 : integer
-	}
-	response {
-		errorCode 0 : integer
-		skillId 1 : integer
-		level 2 : integer
-	}
-}
-
 replaceSkill 206 {
 	request {
 		sid 0 : integer
@@ -369,8 +360,7 @@ replaceSkill 206 {
 	}
 	response {
 		errorCode 0 : integer
-		skillId 1 : integer
-		beSkillId 2 : integer
+		SkillId 1 : integer
 	}
 }
 
@@ -725,7 +715,7 @@ emitFlyObj 2005 {
 
 pickDropItem 2006 {
 	request {
-		items 0 : *string
+		sid 0 : integer
 	}
 }
 

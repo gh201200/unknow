@@ -18,18 +18,26 @@ local function givePlayerItem( player, drop )
 	local picks = {}
 	if itemData.n32Type == 1 then
 		player.pickItems[drop.sid] = {itemId = drop.itemId, skillId = 0}
-		table.insert(picks, drop.sid..','..player.serverId..",0")
+		local godSkill = player:getGodSkill()
+		if player.skillTable[godSkill] < Quest.SkillMaxLevel then
+			player:addSkill(godSkill,1,true)	
+		end
 	else
 		for k, v in pairs(EntityManager.entityList) do
 			if v.entityType == EntityType.player and v:isSameCamp(player) then
-				local skillId = v.bindSkills[math.random(1, 8)]
-				v.pickItems[drop.sid] = {itemId = drop.itemId, skillId = skillId}
-				table.insert(picks, drop.sid..','..v.serverId..","..skillId)
+				local reSkills = player:getRegularSkills()
+				local skillId
+				if #reSkills < 4 then
+					skillId = v.bindSkills[math.random(1, 8)]
+				else
+					local index = math.random(1, 4)
+					skillId = reSkills[index]
+				end
+				v:addSkill(skillId,1,true)
 			end
 		end
 	end
-	print("give player item", picks )
-	EntityManager:sendToAllPlayers("pickDropItem", {items = picks})
+	EntityManager:sendToAllPlayers("pickDropItem", {sid = drop.sid})
 end
 	
 function DropManager:update()
@@ -122,105 +130,5 @@ function DropManager:makeDrop(entity)
 	end
 end
 
-function DropManager:useItem(player, sid)
-	print("====useItem",sid)
-	local item = player.pickItems[sid]
-	if not item then
-		print("item",player.pickItems)
-		return 1	--已被使用	
-	end
-	
-	local errorCode = 0
-	local itemData = g_shareData.itemRepository[item.itemId]
-	repeat
-		local skillId
-		
-		if itemData.n32Type == 1 then
-			skillId = player:getGodSkill()
-		else
-			skillId = item.skillId
-		end
-		
-		if itemData.n32Type == 0 or itemData.n32Type == 1 then
-			if player.skillTable[skillId] == Quest.SkillMaxLevel then
-				errorCode = 2	--已达最高等级
-				break
-			end
-			if not player.skillTable[skillId] and table.size(player.skillTable) == Quest.SkillMaxNum then
-				errorCode = 3
-				break
-			end
-		end
-		
-	until true
-	if errorCode ~= 0 then
-		return errorCode
-	end
-	
-	--使用道具
-	if itemData.n32Type == 0 then
-		player:addSkill(item.skillId, true)
-	elseif itemData.n32Type == 1 then
-		player:addSkill(player:getGodSkill(), true)
-	elseif itemData.n32Type == 2 then
-		player.affectTable:buildEffect(player, itemData.szRetain3) 
-	end
-
-	player.pickItems[sid] = nil
-	--tell all teamers, inclue player self
-	EntityManager:sendPlayer(player, "delPickItem", {item_sid = sid, user_sid = player.serverId})
-	
-	return errorCode
-end
-
-function DropManager:replaceSkill(player, sid, skillId)	
-	local item = player.pickItems[sid]
-	if not item then
-		return 1	--已被使用
-	end
-	local errorCode = 0
-	local itemData = g_shareData.itemRepository[item.itemId]
-	repeat
-		if player:getReplaceSkillTimes() >= Quest.MaxReplaceSkillTimes then
-			errorCode = 4	--最多能替换三次技能
-		end
-		if itemData.n32Type ~= 0 then
-			errorCode = 5
-			break
-		end
-		
-		if skillId == player:getGodSkill() then
-			errorCode = -1
-			break
-		end
-		
-		local skillDat = g_shareData.skillRepository[skillId]
-		if skillDat.bActive then
-			if player.cooldown:getCdTime(skillId) > 0 then
-				errorCode = 2	--技能在CD中
-				break
-			end
-		else
-			if player.spell:isSpellRunning() and player:getCommonSkill() == player.spell.skilldata.id then
-				errorCode = 3	--普工释放中
-				break
-			end	
-		end
-		
-	until true
-	if errorCode ~= 0 then
-		return errorCode
-	end
-	--使用道具
-	player:addReplaceSkillTimes(1)
-	player:removeSkill(skillId)
-	player:addSkill(item.skillId)
-
-	player.pickItems[sid] = nil
-	--tell all teamers, inclue player self
-	EntityManager:sendPlayer(player, "delPickItem", {item_sid = sid, user_sid = player.serverId})
-	
-	return errorCode, item.skillId
-end
 
 return DropManager.new()

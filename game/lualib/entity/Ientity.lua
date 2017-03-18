@@ -1125,15 +1125,18 @@ function Ientity:canCast(id)
 	return 0
 end
 
-function Ientity:getSkillNum()
-	local num = 0
-	for k,v in pairs(skillTable) do
-		if v ~= nil then
-			num  = num + 1	
-		end	
+--获取正常技能
+function Ientity:getRegularSkills()
+	local t = {}
+	for k,v in pairs(self.skillTable) do
+		local skilldata = g_shareData.skillRepository[k]
+		if v ~= nil and skilldata.n32SkillType == 1 then
+			table.insert(t,k)
+		end
 	end
-	return num
+	return t
 end
+
 --是否能选中技能
 function Ientity:canSetCastSkill(id)
         local skilldata = g_shareData.skillRepository[id]
@@ -1145,18 +1148,12 @@ function Ientity:canSetCastSkill(id)
 	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then
            return ErrorCode.EC_Spell_SkillIsRunning
         end
-	--[[技能目标类型为敌方
-	if skilldata.n32SkillTargetType == 3 then
-	--目标类型为地点
-	elseif skilldata.n32SkillTargetType == 4 or skilldata.n32SkillTargetType == 5 then
-		if self:getTarget() == nil then
-			return ErrorCode.EC_Spell_NoTarget
-		end
-	end]]--
 	--蓝量不够 
 	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
+	
 	return 0
 end
+
 function Ientity:setCastSkillId(id)
 	print('set cast skill id = ', id)
 	local skilldata = g_shareData.skillRepository[id]
@@ -1164,37 +1161,9 @@ function Ientity:setCastSkillId(id)
 		syslog.warning( 'setCastSkillId failed ' .. id )
 		return 1
 	end
-	if skilldata.bActive == false then	
-		--测试使用
-		self.ReadySkillId = 0
-		self.spell:onStudyPasstiveSkill(skilldata)
-		return 0
-	end
-	if self.ReadySkillId == id then
-		--技能取消
-		self.ReadySkillId = 0
-		print("cancel skill id ")
-		return 0
-	end
 	local errorcode = self:canSetCastSkill(id) 
 	if errorcode ~= 0 then return errorcode end
 	self.ReadySkillId = id
-	--[[
-	if   then
-		--可以立即释放
-		if self.spell:canBreak(ActionState.move) == false then
-			print("can not break")	
-		else
-			if self.spell:isSpellRunning() == true then	
-				self.spell:breakSpell()
-			end
-			self:castSkill()
-			self.ReadySkillId = 0	
-		end
-	else
-		--技能不是立即释放的
-		return -1
-	end]]
 	return 0
 end
 function Ientity:castSkill()
@@ -1202,12 +1171,7 @@ function Ientity:castSkill()
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat 
-	if skilldata == nil then
-		return 
-	end
 	assert( modoldata)
-	local errorcode = self:canCast(id) 
-	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}
 	local action = ""
 	if skilldata.n32ActionType == 1 then

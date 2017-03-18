@@ -61,7 +61,7 @@
 	SkillMaxLevel = 4,
 
 	--英雄技能数量
-	SkillMaxNum = 5,
+	SkillMaxNum = 6,
 
 	--同阵营金币分享百分比
 	ShareGoldPercent = 0.4,

@@ -135,8 +135,19 @@ end
 
 function CMD.requestCastSkill(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local skillId = args.skillid + player.skillTable[args.skillid] - 1	
-	local err = player:setCastSkillId(skillId)
+	local skillId = args.skillid	
+	local serverId = args.playerId
+	local isCancel = args.isCancel
+	local err = 0
+	if isCancel == false then
+		err = player:setCastSkillId(skillId)
+		if err == 0 and targetId ~= 0 then
+			local target = EntityManager:getEntity(serverId)
+			player:setTarget(target)					
+		end
+	else
+		
+	end
 	response(true, { errorcode =  err ,skillid = args.skillid })
 end
 
@@ -220,17 +231,10 @@ function CMD.usePickItem(response, agent, account_id, args)
 	response(true, {errorCode = errorCode, x1=args.x1,y1=args.y1,x2=args.x2,y2=args.y2})
 end
 
-function CMD.upgradeSkill(response, agent, account_id, args)
-	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local errorCode, lv = player:upgradeSkill(args.skillId)
-	response(true, {errorCode = errorCode, skillId = args.skillId, level = lv})
-end
-
 function CMD.replaceSkill(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local errorCode, skillId = DropManager:replaceSkill(player, args.sid, args.skillId)
-	if not skillId then skillId = 0 end
-	response(true, {errorCode = errorCode,skillId = skillId, beSkillId = args.skillId})
+	local errorCode = player:replaceSkill(args.skillId)
+	response(true, {errorCode = errorCode,skillId = args.skillId})
 end
 
 
@@ -241,7 +245,7 @@ function CMD.start(response, args)
 	local sm = snax.uniqueservice("servermanager")
 	sm.post.roomstart(skynet.self(), args)
 	
-	local roomId = 3 
+	local roomId =  1 
 	local mapDat = g_shareData.mapRepository[roomId]
 	
 	BattleOverManager:init( mapDat )
@@ -329,7 +333,7 @@ end
 function REQUEST.addskill(response, args )
 	response(true, nil)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
-	player:addSkill( args.skillId, true )
+	player:addSkill( args.skillId,1, true )
 end
 
 function REQUEST.addOffLineTime(response, args)

@@ -319,6 +319,7 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 	end
 	return affects
 end
+
 return EntityManager.new()
 
 
