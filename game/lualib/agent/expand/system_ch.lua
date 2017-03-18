@@ -16,6 +16,10 @@ function SystemCh:init( u )
 	user = u
 end
 
+function CMD.getActivityValue( atype )
+	return user.activitys:getValue(atype)
+end
+
 function CMD.isBindSkills( heroId )
 	local v = user.cards:getCardByDataId( heroId )
 	if not v then return false end
@@ -89,11 +93,14 @@ function REQUEST.buyShopItem( args )
 	local costMoney = 0
 	local card = nil
 	local ids = {}
+	local expire = nil
 	local shopDat = g_shareData.shopRepository[args.id]
+	if shopDat.n32Type == 4 then	--材料
+		local cooldown = snax.queryservice 'cddown'
+		expire = cooldown.req.getValue( CoolDownSysType.RefreshShopCard )	--may be yiled here 
+	end		
 	local atype = 0
 	local hasBuy = 0
-	local activity = snax.queryservice 'activity'
-	local cooldown = snax.queryservice 'cddown'
 	local costPrice = 0
 	print( args )
 	print(shopDat)
@@ -106,11 +113,11 @@ function REQUEST.buyShopItem( args )
 	
 		if shopDat.n32Type == 4 then	--材料
 			atype = ActivityAccountType["BuyShopCard"..shopDat.n32Site]
-			hasBuy = activity.req.getValue(user.account.account_id, atype) 
+			hasBuy = user.activitys:getValue(atype) 
 			costPrice = shopDat.n32Price *(1 + hasBuy) * args.num
 		elseif shopDat.n32Type == 3 then	--宝箱
 			atype = ActivityAccountType["BaoXiang"..shopDat.n32Site]
-			hasBuy = activity.req.getValue(user.account.account_id, atype) 
+			hasBuy = user.activitys:getValue(atype) 
 		end
 		if shopDat.n32MoneyType == 1 then	--金币
 			if user.account:getGold() < costPrice then
@@ -135,7 +142,7 @@ function REQUEST.buyShopItem( args )
 			 		break
 				end
 			elseif shopDat.n32Type == 5 then	--特惠	
-				local val = cooldown.req.getValue(user.account.account_id, CoolDownAccountType.TimeLimitSale)
+				local val = user.cooldowns:getValue(CoolDownAccountType.TimeLimitSale)
 				if val == 0 then
 					errorCode = -1
 					break
@@ -164,13 +171,12 @@ function REQUEST.buyShopItem( args )
 			end
 			--local expire = Time.tomorrow()
 			local expire = os.time() + 60
-			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
+			user.activitys:addValue('buyShopItem', atype, shopDat.n32Count * args.num, expire)
 		elseif shopDat.n32Type == 4 then	--材料
 			local items = {}
 			items[shopDat.n32GoodsID] = shopDat.n32Count * args.num
 			user.servicecmd.addItems("buyShopItem", items)
-			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
-			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
+			user.activitys:addValue('buyShopItem', atype, shopDat.n32Count * args.num, expire)
 		elseif shopDat.n32Type == 5 then 	--特惠
 			local items = usePackageItem( shopDat.n32GoodsID, user.level )
 			user.servicecmd.addItems("buyShopItem", items)
@@ -180,22 +186,37 @@ function REQUEST.buyShopItem( args )
 				ids[index+1] = v
 				index = index + 2
 			end
-			cooldown.post.setValue(user.account.account_id, CoolDownAccountType.TimeLimitSale, 0)
+			user.cooldowns:setValue(CoolDownAccountType.TimeLimitSale, 0)
 		end
 
 	until true
 	return {errorCode = errorCode, shopId = args.id, ids = ids}
 end
+
 function REQUEST.updateCDData( args )
 	local uid = args.uid
-	local cooldown = snax.queryservice 'cddown'
-	local val = cooldown.req.getRemainingTime( uid )
+	local name, atype = user.cooldowns.calcNameType( uid )
+	print('updateCDData', name, atype)
+	if name == user.account.account_id then
+		val = user.cooldowns:getRemainingTime( atype )
+	else
+		local cooldown = snax.queryservice 'cddown'
+		val = cooldown.req.getRemainingTime( atype )
+	end
 	return {uid=uid, value=val}
 end
+
 function REQUEST.updateActivityData( args )
 	local uid = args.uid
-	local activity = snax.queryservice 'activity'
-	local unit = activity.req.getValueByUid( uid )
+	local name, atype = user.activitys.calcNameType( uid )
+	print('updateActivityData', name, atype)
+	local unit = nil
+	if name == user.account.account_id then
+		unit = user.activitys:getValueByUid( uid )
+	else
+		local activity = snax.queryservice 'activity'
+		unit = activity.req.getValueByUid( uid )
+	end
 	if unit then
 		return {uid=uid, value=unit.value, time = unit.expire-os.time()}
 	else

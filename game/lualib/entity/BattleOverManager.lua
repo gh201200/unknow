@@ -120,10 +120,9 @@ function BattleOverManager:calcRes()
 		failers = bluePlayers
 	end
 	--道具
-	local activity = snax.uniqueservice("activity")
 	for k, v in pairs(winners) do
 		local arena = Quest.Arena[v.accountLevel]
-		local val = activity.req.getValue(v.account_id, ActivityAccountType.PvpWinTimes)
+		local val = skynet.call(v.agent, "lua", "getActivityValue", ActivityAccountType.PvpWinTimes)
 		if val < arena.VictoryRewardLimit then
 			v.BattleGains.items = usePackageItem(arena.VictoryReward, v.accountLevel)
 		end
@@ -131,14 +130,14 @@ function BattleOverManager:calcRes()
 	--金币
 	for k, v in pairs(redPlayers) do
 		local arena = Quest.Arena[v.accountLevel]
-		local val = activity.req.getValue(v.account_id, ActivityAccountType.PvpTimes)
+		local val = skynet.call(v.agent, "lua", "getActivityValue", ActivityAccountType.PvpTimes)
 		if val < arena.GoldRewardLimit then
 			v.BattleGains.gold = arena.GoldReward
 		end
 	end
 	for k, v in pairs(bluePlayers) do
 		local arena = Quest.Arena[v.accountLevel]
-		local val = activity.req.getValue(v.account_id, ActivityAccountType.PvpTimes)
+		local val = skynet.call(v.agent, "lua", "getActivityValue", ActivityAccountType.PvpTimes)
 		if val < arena.GoldRewardLimit then
 			v.BattleGains.gold = arena.GoldReward
 		end

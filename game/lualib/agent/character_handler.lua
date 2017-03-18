@@ -8,6 +8,8 @@ local ExploreMethod = require "agent.explore_method"
 local SkillsMethod = require "agent.skills_method"
 local MissionsMethod = require "agent.missions_method"
 local MailsMethod = require "agent.mails_method"
+local ActivitysMethod = require "agent.activitys_method"
+local CooldownsMethod = require "agent.cooldowns_method"
 local ExploreCharacter = require "agent.expand.explore_ch"
 local SystemCharacter = require "agent.expand.system_ch"
 local MissionCharacter = require "agent.expand.mission_ch"
@@ -47,11 +49,10 @@ end;
 AccountMethod.onExp = function(self)
 	local lv = getAccountLevel( self.unit.exp )
 	if user.level ~= lv then
-		local cd = snax.queryservice 'cddown'
 		for k, v in pairs(g_shareData.shopRepository) do
 			if v.n32Type == 5 then
 				if v.n32ArenaLvUpLimit == lv then
-					cd.post.setValue( user.account.account_id, CoolDownAccountType.TimeLimitSale, os.time() + v.n32Limit) 
+					user.cooldowns:setValue( user.account.account_id, CoolDownAccountType.TimeLimitSale, os.time() + v.n32Limit) 
 					break
 				end
 			end
@@ -102,42 +103,6 @@ local function onDataLoadCompleted()
 		end
 	end
 end
-
-local function sendCDTimeData(key)
-	local cds = snax.queryservice "cddown"
-	local nowTime = os.time()
-	local r = { cds = {} }
-	if key then
-		local val = cds.req.getRemainingTime( key )
-		table.insert(r.cds,  {key=key, val=val-nowTime} )
-	else
-		local datas = cds.req.getCDDatas()
-		for k, v in pairs(datas) do
-			table.insert(r.cds, {key=k, val=v-nowTime})
-		end
-	end
-	user.send_request("sendCDTime", r)
-end
-
-local function sendActivityData( atype )
-	local activity = snax.queryservice 'activity'
-	local r = { activitys = {} }
-	if atype then
-		local unit = activity.req.getValue(user.account.account_id, atype)
-		if unit then
-			table.insert(r.activitys, unit)
-		end
-	else
-		--系统活动
-		r.activitys = activity.req.getAllSystem()
-		--个人活动
-
-	end
-	if next(r.activitys) then
-		user.send_request("sendActivity", r)
-	end
-end
-
 
 local function onEnterGame()
 	--tell watchdog
@@ -196,10 +161,13 @@ local function loadAccountData()
 	user.mails.units =  skynet.call (database, "lua", "mails", "load", account_id) --玩家拥有的邮件
 	setmetatable(user.mails, {__index = MailsMethod})
 
-	local activity = snax.queryservice 'activity'
-	activity.post.loadAccount( account_id )
-	local cooldown = snax.queryservice 'cddown'
-	cooldown.post.loadAccount( account_id )
+	user.activitys = { account_id = account_id }
+	setmetatable(user.activitys, {__index = ActivitysMethod})
+	user.activitys:loadAccount()
+	
+	user.cooldowns = { account_id = account_id }
+	setmetatable(user.cooldowns, {__index = CooldownsMethod})
+	user.cooldowns:loadAccount()
 	
 	onDataLoadCompleted()
 

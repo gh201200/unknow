@@ -141,10 +141,9 @@ function REQUEST.exploreRefresh( args )
 			errorCode = -1
 			break
 		end
-		local activity = snax.uniqueservice("activity")
 
 		local costMoney = 0
-		local val = activity.req.getValue(user.account.account_id, ActivityAccountType.RefreshExplore)
+		local val = user.activitys:getValue(ActivityAccountType.RefreshExplore)
 		if val >= Quest.RefreshExploreTimes then 
 			costMoney = Quest.RefreshExploreCost
 		end
@@ -154,7 +153,7 @@ function REQUEST.exploreRefresh( args )
 		end
 		--
 		user.account:addMoney("exploreRefresh", -costMoney)
-		activity.req.addValue("exploreRefresh", user.account.account_id, ActivityAccountType.RefreshExplore, 1,Time.tomorrow())
+		user.activitys:addValue("exploreRefresh", ActivityAccountType.RefreshExplore, 1,Time.tomorrow())
 		user.explore:resetExplore("exploreRefresh", unit.uuid)	
 	until true
 	return {errorCode=errorCode, uuid=args.uuid}

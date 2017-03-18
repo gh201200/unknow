@@ -548,7 +548,7 @@ function Ientity:onMove2(dt)
 			legal_pos = false
 			local nearBy = false
 			local doNotUseAstar = false
-			local angle = 30
+			local angle = 90
 			--[[
 			if self.moveQuadrant == 0 then	
 				local quadrant = Map:quadrantTest( self.pos )

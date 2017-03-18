@@ -6,7 +6,7 @@ local Map = class("Map")
 --height 15.6 = 39*0.4
 
 local MAP_XGRID_NUM = 68
-local MAP_ZGRID_NUM = 156
+local MAP_ZGRID_NUM = 158
 Map.MAP_GRID_SIZE = 0.1
 
 local dir = {
@@ -69,7 +69,7 @@ function Map:load(terrain)
          	obstacle = obstacle,
  	}
 
---	self:dump()
+	--self:dump()
 end
 
 function Map:dump()
@@ -78,7 +78,9 @@ function Map:dump()
 	for j=MAP_ZGRID_NUM-1,0,-1 do
 		str = ''
 		for i=0, MAP_XGRID_NUM-1 do
-			str = str .. ' ' .. pf.block(self.m, i, j)
+			local a = pf.block(self.m, i, j)
+			if a ~= 0 then a = 1 end
+			str = str .. a
 		end
 		print(str)
 	end  
