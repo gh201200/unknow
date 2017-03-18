@@ -131,8 +131,9 @@ function IMapPlayer:init(heroId)
 	end
 	self:setGodSkill( self.attDat.n32GodSkillId)
 	self:setCommonSkill( self.attDat.n32CommonSkillId )
-	self.skillTable[self.attDat.n32GodSkillId] = 0
-	self.skillTable[self.attDat.n32CommonSkillId] = 1
+	self.skillTable[self.attDat.n32GodSkillId] = -1 	--无限次数
+	self.skillTable[self.attDat.n32CommonSkillId] = -1  	--无限次数
+
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self:setPos(self.bornPos.x, 0, self.bornPos.z)
 	self:calcStats()
@@ -150,16 +151,6 @@ function IMapPlayer:setTarget(target)
 	IMapPlayer.super.setTarget(self,target)
 end
 
-function IMapPlayer:getCommonSkillId()
-	for _k,_v in pairs(self.skillTable) do
-		local id = _k + _v - 1
-		local skilldata = g_shareData.skillRepository[id]
-		if skilldata and skilldata.bCommonSkill == true then
-			return id
-		end	
-	end
-	return 0
-end
 function IMapPlayer:calcStats()
 	self:calcStrength()
 	self:calcIntelligence()
@@ -247,21 +238,7 @@ function IMapPlayer:addSkill(skillId, updateToClient)
 		self.skillTable[skillId] = self.skillTable[skillId] + 1
 	end
 	
-	local skilldata = g_shareData.skillRepository[skillId + self.skillTable[skillId] - 1]	
-	--被动技能
-	if skilldata.n32Active == 1 then
-		for i=#(self.spell.passtiveSpells),1,-1 do
-			local v = self.spell.passtiveSpells[i]
-			if v.skilldata.n32SeriId == skilldata.n32SeriId then
-				--移除旧的被动技能
-				v:onDead()
-				table.remove(self.spell.passtiveSpells,i)
-			end
-		end	
-		local ps = passtiveSpell.new(self,skilldata)
-		table.insert(self.spell.passtiveSpells,ps)
-	end
-	
+	local skilldata = g_shareData.skillRepository[skillId]	
 	if updateToClient then
 		local msg = {
 			skillId = skillId,
@@ -288,7 +265,8 @@ function IMapPlayer:SynSkillCds(id)
 	local msg = self.cooldown:getCdsMsg()	
 	skynet.call(self.agent,"lua","sendRequest","makeSkillCds",msg)	
 end
-	
+
+--仅有大招可以升级	
 function IMapPlayer:upgradeSkill(skillId)
 	if self.skillTable[skillId] == nil or self.skillTable[skillId] == 0 then
 		return -1, 0

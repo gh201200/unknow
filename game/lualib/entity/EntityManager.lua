@@ -8,6 +8,15 @@ function EntityManager:sendToAllPlayers(msg, val, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
 		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil and v.agent ~= nil  then
+			skynet.call(v.agent, "lua", "sendRequest_room", msg, val)
+		end
+	end
+end
+
+function EntityManager:sendToAllPlayersExt(msg, val, except)
+	if not except then except = "" end
+	for k, v in pairs(self.entityList) do
+		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil and v.agent ~= nil  then
 			skynet.call(v.agent, "lua", "sendRequest", msg, val)
 		end
 	end
