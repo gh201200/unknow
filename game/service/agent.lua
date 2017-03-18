@@ -238,6 +238,7 @@ function CMD.Start (conf)
 		heartBeatTime = os.time(),
 		isOnLine = true,
 		isAi = conf.isAi,
+		workQueue = Queue.new(),
 	}
 	agentPlayer = user
 	user_fd = user.fd
@@ -344,17 +345,16 @@ end
 
 --战斗结束产出
 function CMD.giveBattleGains( args )
-	local activity = snax.uniqueservice("activity")
 	if args.exp then
 		user.account:addExp("giveBattleGains", args.exp)
 	end
 	if args.gold then
-		activity.req.addValue("giveBattleGains", user.account.account_id, ActivityAccountType.PvpTimes, 1, Time.tomorrow())
+		user.activitys:addValue("giveBattleGains", ActivityAccountType.PvpTimes, 1, Time.tomorrow())
 		user.account:addGold("giveBattleGains", args.gold)
 	end
 	if args.items then
 		CMD.addItems("giveBattleGains", args.items)
-		activity.req.addValue("giveBattleGains", user.account.account_id, ActivityAccountType.PvpWinTimes, 1, Time.tomorrow())
+		user.activitys:addValue("giveBattleGains", ActivityAccountType.PvpWinTimes, 1, Time.tomorrow())
 	end
 
 	--推进任务

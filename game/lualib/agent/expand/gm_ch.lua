@@ -95,9 +95,9 @@ CLIENT_GM_CMD['setcd'] = function( args )
 			end
 		end
 	elseif ctype == 2 then
-		cooldown.post.setValue('system', 1, cdtime)
+		cooldown.post.setValue(1, cdtime)
 	elseif ctype == 3 then
-		cooldown.post.setValue(user.account.account_id, 1001, cdtime)
+		user.cooldowns:setValue(1001, cdtime)
 	elseif ctype == 4 then
 		user.explore:setTime(cdtime)
 	elseif ctype == 5 then
@@ -109,7 +109,11 @@ CLIENT_GM_CMD['setcd'] = function( args )
 		if atype > 1000 then
 			name = user.account.account_id
 		end
-		activity.req.setValue("gm", name, atype, val, cdtime + os.time())
+		if name == user.account.account_id then
+			user.activitys:setValue("gm", atype, val, cdtime + os.time())
+		else
+			activity.post.setValue("gm", atype, val, cdtime + os.time())
+		end
 	end
 end;
 
