@@ -355,8 +355,7 @@ usePickItem 204 {
 
 replaceSkill 206 {
 	request {
-		sid 0 : integer
-		skillId 1 : integer
+		skillId 0 : integer
 	}
 	response {
 		errorCode 0 : integer
