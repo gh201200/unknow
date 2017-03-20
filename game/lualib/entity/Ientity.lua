@@ -707,8 +707,9 @@ function Ientity:onDead()
 	--self:setActionState(0, ActionState.die)
 	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
-			print("onDead===",v.serverId,self.serverId)
+			print("onDead===",v.serverId,self.serverId,v:getType())
 			v:setTarget(nil)
+			v:setAttackTarget(nil)
 		end
 		if v.entityType == EntityType.monster then
 			v.hateList:removeHate( self )
@@ -716,10 +717,6 @@ function Ientity:onDead()
 	end
 	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
-	for k,v in pairs(self.spell.passtiveSpells) do
-		v:onDead()
-	end
-	self.spell.passtiveSpells = {}
 end
 
 function Ientity:onRaise()

@@ -340,12 +340,17 @@ function IMapPlayer:replaceSkill(id)
 end
 --获取普攻范围内敌人
 function IMapPlayer:autoAttack()
-	local target = self:getTarget()
+	if self:getTarget() ~= nil then 
+		return 
+	end
+	local target = self:getAttackTarget()
 	local newSearch = true 
 	if target ~= nil and self:isKind(target) == false and target:getHp() > 0 then
 		local disLen = self:getDistance(target)
 		if disLen <= 2 then
 			newSearch = false
+		else
+			 self:setAttackTarget(nil)
 		end
 	end
 	if newSearch == true then
@@ -361,10 +366,16 @@ function IMapPlayer:autoAttack()
 		end
 		if newTarget ~= nil then
 			if self.spell:isSpellRunning() == false then
-				self:setTarget(newTarget)
-				self.ReadySkillId = self:getCommonSkill() 
+				self:setAttackTarget(newTarget)
+				--self:setTarget(newTarget)
+				--self.ReadySkillId = self:getCommonSkill() 
 			end	
 		end
+	end
+	if self:getTarget() == nil then
+		local atkTarget = self:getAttackTarget()
+		self:setTarget(atkTarget)
+		self.ReadySkillId = self:getCommonSkill()
 	end
 	
 	return nil

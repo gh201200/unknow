@@ -6,6 +6,7 @@ function transform:ctor(pos, dir)
 	self.pos = pos or vector3.create()
 	self.dir = dir or vector3.create()
 	register_class_var(self, 'TargetVar', nil)	--选中目标实体
+	register_class_var(self, 'AttackTarget', nil) --普攻锁定目标
 end
 function transform:getType()
 	return "transform"
