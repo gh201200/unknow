@@ -336,7 +336,7 @@ function IMapPlayer:replaceSkill(id)
 		local skillId = randSkills[math.random(1,#randSkills)]
 		player:addSkill(skillId,num,true)	
 	end
-	return 0
+	return 0,skillId
 end
 --获取普攻范围内敌人
 function IMapPlayer:autoAttack()
