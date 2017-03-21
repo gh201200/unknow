@@ -209,6 +209,11 @@ function Ientity:onRespClientEventStamp(event)
 end
 
 function Ientity:setActionState(_speed, _action)
+	print("Ientity:setActionState",_speed,_action)
+	if _speed == 0 then
+		local tmp = nil
+		tmp.hello()
+	end
 	self.moveSpeed = _speed
 	self.curActionState = _action
 	if _action < ActionState.forcemove then 
@@ -278,7 +283,7 @@ function Ientity:setTarget(target)
 	end
 	if self:canMove() == 0 then
 		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
-			self:castSkill(self.ReadySkillId)
+			--self:castSkill(self.ReadySkillId)
 		else
 			local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then

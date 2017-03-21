@@ -136,13 +136,13 @@ end
 function CMD.requestCastSkill(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local skillId = args.skillid	
-	local serverId = args.playerId
+	local targetId = args.playerId
 	local isCancel = args.isCancel
 	local err = 0
 	if isCancel == false then
 		err = player:setCastSkillId(skillId)
 		if err == 0 and targetId ~= 0 then
-			local target = EntityManager:getEntity(serverId)
+			local target = EntityManager:getEntity(targetId)
 			player:setTarget(target)					
 		end
 	else

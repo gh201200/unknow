@@ -100,7 +100,7 @@ function IMapPlayer:update(dt)
 		--		self.ai:update(dt)
 			end
 		else
-			self:autoAttack()		
+		--	self:autoAttack()		
 		end
 	end
 	self.hateTime =  self.hateTime - dt	
@@ -333,7 +333,6 @@ function IMapPlayer:replaceSkill(id)
 		end
 		self.skillTable[id] = nil 	
 		nSkillId = randSkills[math.random(1,#randSkills)]
-		print("add skill",num)
 		--self:addSkill(nSkillId,num,true)	
 	end
 	return 0,nSkillId,num
