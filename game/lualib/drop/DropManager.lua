@@ -25,7 +25,7 @@ local function givePlayerItem( player, drop )
 	else
 		for k, v in pairs(EntityManager.entityList) do
 			if v.entityType == EntityType.player and v:isSameCamp(player) then
-				local reSkills = player:getRegularSkills()
+				local reSkills = v:getRegularSkills()
 				local skillId
 				if #reSkills <= 4 then
 					skillId = v.bindSkills[math.random(1, 8)]
