@@ -318,7 +318,6 @@ function IMapPlayer:replaceSkill(id)
 	local num = 0
 	if skilldata.n32SkillType == 1 and  self.skillTable[id] ~= nil then
 		num = self.skillTable[id] - 1
-		self.skillTable[id] = nil 	
 		local randSkills = {}
 		for k,bSkillId in pairs(self.bindSkills) do
 			local bexit = false
@@ -332,6 +331,7 @@ function IMapPlayer:replaceSkill(id)
 				table.insert(randSkills,bSkillId)
 			end
 		end
+		self.skillTable[id] = nil 	
 		nSkillId = randSkills[math.random(1,#randSkills)]
 		print("add skill",num)
 		--self:addSkill(nSkillId,num,true)	
