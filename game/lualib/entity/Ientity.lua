@@ -209,11 +209,6 @@ function Ientity:onRespClientEventStamp(event)
 end
 
 function Ientity:setActionState(_speed, _action)
-	print("Ientity:setActionState",_speed,_action)
-	if _speed == 0 then
-		local tmp = nil
-		tmp.hello()
-	end
 	self.moveSpeed = _speed
 	self.curActionState = _action
 	if _action < ActionState.forcemove then 

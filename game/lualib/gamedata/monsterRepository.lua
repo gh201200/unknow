@@ -34,9 +34,9 @@ for k, p in pairs(xmlhandler.root.info.item) do
 			else
 				if _i == "szLink" then
 					tmpTb[_i] = {}
-					for w in string.gmatch(_v, "%d+") do
-						table.insert(tmpTb[_i], tonumber(w))
-					end
+					--for w in string.gmatch(_v, "%d+") do
+					--	table.insert(tmpTb[_i], tonumber(w))
+					--end
 				elseif _i == "szSkill" then
 					tmpTb[_i] = {}
 					for _skill, _percent in string.gmatch(_v, "(%d+),(%d+)") do
