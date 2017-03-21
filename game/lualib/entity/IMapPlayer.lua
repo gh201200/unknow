@@ -236,13 +236,11 @@ function IMapPlayer:onExp()
 end
 
 function IMapPlayer:addSkill(skillId, num,updateToClient)
-	print("skillid=======",skillId)
 	local skilldata = g_shareData.skillRepository[skillId]	
-	if self.skillTable[skillId]  == nil then
-		self.skillTable[skillId] = 1
-	else
-		self.skillTable[skillId] = self.skillTable[skillId] + num
-	end
+	if self.skillTable[skillId] == nil then
+		self.skillTable[skillId] = 0 
+	end	
+	self.skillTable[skillId] = self.skillTable[skillId] + num
 	
 	if updateToClient then
 		local msg = {
@@ -316,14 +314,14 @@ function IMapPlayer:castSkill(id)
 end
 function IMapPlayer:replaceSkill(id)
 	local skilldata = g_shareData.skillRepository[id]
-	local skillId = 0
+	local nSkillId = 0
+	local num = 0
 	if skilldata.n32SkillType == 1 and  self.skillTable[id] ~= nil then
-		local num = self.skillTable[id] - 1
+		num = self.skillTable[id] - 1
 		self.skillTable[id] = nil 	
 		local randSkills = {}
 		for k,bSkillId in pairs(self.bindSkills) do
 			local bexit = false
-			local skillId = bSkillId
 			for eSkillId,v in pairs(self.skillTable) do
 				if v~= nil and v >=0 and eSkillId == bSkillId then
 					bexit = true
@@ -334,10 +332,11 @@ function IMapPlayer:replaceSkill(id)
 				table.insert(randSkills,bSkillId)
 			end
 		end
-		skillId = randSkills[math.random(1,#randSkills)]
-		self:addSkill(skillId,num,true)	
+		nSkillId = randSkills[math.random(1,#randSkills)]
+		print("add skill",num)
+		--self:addSkill(nSkillId,num,true)	
 	end
-	return 0,skillId
+	return 0,nSkillId,num
 end
 --获取普攻范围内敌人
 function IMapPlayer:autoAttack()
