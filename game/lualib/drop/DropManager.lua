@@ -27,7 +27,7 @@ local function givePlayerItem( player, drop )
 			if v.entityType == EntityType.player and v:isSameCamp(player) then
 				local reSkills = player:getRegularSkills()
 				local skillId
-				if #reSkills < 4 then
+				if #reSkills <= 4 then
 					skillId = v.bindSkills[math.random(1, 8)]
 				else
 					local index = math.random(1, 4)
