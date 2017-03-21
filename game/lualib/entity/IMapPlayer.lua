@@ -334,7 +334,7 @@ function IMapPlayer:replaceSkill(id)
 			end
 		end
 		local skillId = randSkills[math.random(1,#randSkills)]
-		player:addSkill(skillId,num,true)	
+		self:addSkill(skillId,num,true)	
 	end
 	return 0,skillId
 end
