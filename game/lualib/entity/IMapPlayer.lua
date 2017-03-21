@@ -316,6 +316,7 @@ function IMapPlayer:castSkill(id)
 end
 function IMapPlayer:replaceSkill(id)
 	local skilldata = g_shareData.skillRepository[id]
+	local skillId = 0
 	if skilldata.n32SkillType == 1 and  self.skillTable[id] ~= nil then
 		local num = self.skillTable[id] - 1
 		self.skillTable[id] = nil 	
@@ -333,7 +334,7 @@ function IMapPlayer:replaceSkill(id)
 				table.insert(randSkills,bSkillId)
 			end
 		end
-		local skillId = randSkills[math.random(1,#randSkills)]
+		skillId = randSkills[math.random(1,#randSkills)]
 		self:addSkill(skillId,num,true)	
 	end
 	return 0,skillId
