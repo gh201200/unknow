@@ -35,6 +35,7 @@ function IMonster:getType()
 end
 function IMonster:init(mt)
 	self.attDat = g_shareData.monsterRepository[mt.id]
+	self.attDat.szLink = {}
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self.bornPos:set(mt.px, 0, mt.pz)
 	self:calcStats()

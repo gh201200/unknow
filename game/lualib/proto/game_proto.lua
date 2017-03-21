@@ -825,7 +825,12 @@ pushForceMove 3009 {
 		speed 6 : integer
 	}
 }
-
+onPlayerDead 3010 {
+	request {
+		blueDeadNum 0 : integer
+		redDeadNum 1 : integer	
+	}
+}
 ]]
 
 game_proto.types = sparser.parse (types)
