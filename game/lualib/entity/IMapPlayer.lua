@@ -343,6 +343,9 @@ function IMapPlayer:autoAttack()
 	if self:getTarget() ~= nil then 
 		return 
 	end
+	if self.ReadySkillId ~= 0 and self.ReadySkillId ~= self:getCommonSkill() then
+		return
+	end
 	local target = self:getAttackTarget()
 	local newSearch = true 
 	if target ~= nil and self:isKind(target) == false and target:getHp() > 0 then
