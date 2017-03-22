@@ -807,7 +807,7 @@
 		<n32type>4</n32type>
 		<szassert>Tiannv_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -818,7 +818,7 @@
 		<n32type>4</n32type>
 		<szassert>Wuya_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1104,7 +1104,7 @@
 		<n32type>4</n32type>
 		<szassert>lvren_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1115,7 +1115,7 @@
 		<n32type>4</n32type>
 		<szassert>miya_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1126,7 +1126,7 @@
 		<n32type>4</n32type>
 		<szassert>shenju_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1137,7 +1137,7 @@
 		<n32type>4</n32type>
 		<szassert>anna_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
