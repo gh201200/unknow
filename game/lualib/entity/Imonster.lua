@@ -23,6 +23,7 @@ end
 function IMonster:ctor()
 	IMonster.super.ctor(self)
 	self.entityType = EntityType.monster	
+	self.szLink = {}
 	self.hateList = HateList.new(self)
 	self.ai = NpcAI.new(self)
 	self.skillCD = 0
@@ -35,7 +36,6 @@ function IMonster:getType()
 end
 function IMonster:init(mt)
 	self.attDat = g_shareData.monsterRepository[mt.id]
-	self.attDat.szLink = {}
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self.bornPos:set(mt.px, 0, mt.pz)
 	self:calcStats()

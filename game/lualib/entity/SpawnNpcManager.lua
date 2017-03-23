@@ -32,15 +32,15 @@ function SpawnNpcManager:update(dt)
 				local links = {}	
 				for p, q in pairs(v.dat.szMonsterIds) do
 					local sid = assin_server_id()
-					local m = Imonster.create(sid, {
+					local monster = Imonster.create(sid, {
 						id = q, 
 						px = v.dat.szPosition[p].x/GAMEPLAY_PERCENT, 
 						pz = v.dat.szPosition[p].z/GAMEPLAY_PERCENT,
 						batch = v.batch,
 						attach = v.dat.n32Attach,			
 						})
-					links[sid] = m
-					EntityManager:addEntity(m)
+					links[sid] = monster
+					EntityManager:addEntity(monster)
 					local m = {
 						monsterId = q,
 						serverId = sid,
@@ -50,14 +50,12 @@ function SpawnNpcManager:update(dt)
 					table.insert(ret, m)
 				end
 				--添加仇恨链接
-				for k,v in pairs(links) do
-					local lt = {}
-					for lk,lv in pairs(links) do
-						if lv ~= v  then
-							table.insert(lt,lk)
-						end
-					end
-					v.attDat.szLink = lt
+				local lt = {}
+				for _k,_v in pairs(links) do
+					table.insert(lt,_k)
+				end
+				for _k,_v in pairs(links) do
+					_v.szLink = lt 
 				end
 				--tell the clients
 				EntityManager:sendToAllPlayers("spawnMonsters", {spawnList = ret})

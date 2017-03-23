@@ -30,7 +30,6 @@ end
 
 function HateList:addHate(entity,hateValue,source)
 	assert(entity)
-	print("addHate,",self.source.serverId)
 	self.totalHate = self.totalHate + hateValue
 	if self.hateList[entity.serverId] == nil then
 		self.hateList[entity.serverId] = { val = hateValue,upTime = skynet.now() }
@@ -49,9 +48,9 @@ function HateList:addHate(entity,hateValue,source)
 
 	if not source or source < 1000 then
 		--link the hate
-		for k, v in pairs(self.source.attDat.szLink) do
+		for k, v in pairs(self.source.szLink) do
 			local m = EntityManager:getEntity(v)
-			if m and m.hateList:getHate(entity.serverId) == 0 then
+			if m and self.source.serverId ~= v and m.hateList:getHate(entity.serverId) == 0 then
 				m.hateList:addHate(entity, 1, 1001)
 			end 
 		end
