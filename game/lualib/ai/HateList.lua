@@ -83,5 +83,7 @@ function HateList:removeHate(entity)
 	end
 end
 
-
+function HateList:clear()
+	 self.hateList = {}
+end
 return HateList
