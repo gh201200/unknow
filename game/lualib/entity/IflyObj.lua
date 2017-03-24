@@ -242,6 +242,7 @@ function IflyObj:updateTargetBoom(dt)
 		end
                 local selects = { self.target }
                 local targets = g_entityManager:getSkillAffectEntitys(self.source,selects,self.skilldata,self.dir)
+                self.source.spell:trgggerAffect(self.skilldata.szSelectTargetAffect,selects,self.skilldata)	
                 self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,targets,self.skilldata)	
 		self.isDead = true
 	end

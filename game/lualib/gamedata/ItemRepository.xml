@@ -52,7 +52,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>90001,1;90003,1</szRetain3>
+		<szRetain3>90003,1</szRetain3>
 	</item>
 	<item id="20003">
 		<szIcon></szIcon>

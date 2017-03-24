@@ -237,21 +237,6 @@ function IMapPlayer:onExp()
 	end
 end
 
-function IMapPlayer:addSkill(skillId, num,updateToClient)
-	local skilldata = g_shareData.skillRepository[skillId]	
-	if self.skillTable[skillId] == nil then
-		self.skillTable[skillId] = 0 
-	end	
-	self.skillTable[skillId] = self.skillTable[skillId] + num
-	
-	if updateToClient then
-		local msg = {
-			skillId = skillId,
-			level = self.skillTable[skillId] 
-		}
-		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
-	end
-end
 
 function IMapPlayer:removeSkill(skillId)
 	--移除旧技能带的buff效果

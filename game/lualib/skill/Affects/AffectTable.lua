@@ -12,7 +12,8 @@ local chargeAffect = require "skill.Affects.chargeAffect"
 local showAffect =  require "skill.Affects.showAffect"
 local nodeadAffect = require "skill.Affects.nodeadAffect"
 local summonAffect =  require "skill.Affects.summonAffect"
-
+local addskillAffect = require "skill.Affects.addskillAffect"
+local changeatkAffect = require "skill.Affects.changeatkAffect"
 local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
@@ -108,6 +109,10 @@ function AffectTable:addAffect(source,data,skillId,extra)
 		aff = getnewAffect.new(self.owner,source,data,skillId)  
 	elseif data[1] == "summon" then
 		aff = summonAffect.new(self.owner,source,data,skillId)
+	elseif data[1] == "addskill" then
+		aff = addskillAffect.new(self.owner,source,data,skillId) 
+	elseif data[1] == "changeatk" then
+		aff = changeatkAffect.new(self.owner,source,data,skillId)
 	end
 	if not aff then
 		print('data = ',data)

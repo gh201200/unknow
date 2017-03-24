@@ -105,6 +105,7 @@ end
 function spell:updatePasstiveSpells(dt)
 	for i= #self.passtiveSpells,1,-1 do
 		if self.passtiveSpells[i].isDead == true then
+			self.passtiveSpells[i]:onDead()
 			table.remove(self.passtiveSpells,i)
 		else
 			self.passtiveSpells[i]:update(dt)
@@ -165,10 +166,6 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
-	if skilldata.szSelectTargetAffect ~= "" then
-		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
-		
-	end
 	local targets = {}
 	targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
 	if skilldata.szMyAffect ~= "" then
@@ -203,6 +200,9 @@ function spell:onTrigger(skilldata,source,srcTarget)
 			end
 		end
 	else
+		if skilldata.szSelectTargetAffect ~= "" then
+			self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
+		end
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end
