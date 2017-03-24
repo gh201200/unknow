@@ -1314,10 +1314,10 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:0.7,-1,1]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<szAffectRange>[circle:0.8,-1,1]</szAffectRange>
+		<n32AffectTargetType>6</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[damage:1,0.5,0,0,0,30005]</szSelectTargetAffect>
+		<szSelectTargetAffect>[damage:1,1,0,0,0,30005]</szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:1,0.5,0,0,0,30005]</szAffectTargetAffect>
 		<szDescribe>　　对0.7米半径内的敌方单位造成50%溅射伤害</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
@@ -1368,9 +1368,9 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[circle:0.8,-1,1]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>6</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[damage:1,0.5,0,0,0,30005]</szSelectTargetAffect>
+		<szSelectTargetAffect>[damage:1,1,0,0,0,30005]</szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:1,0.5,0,0,0,30005]</szAffectTargetAffect>
 		<szDescribe>　　对0.8米半径内的敌方单位造成50%溅射伤害</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
@@ -1420,10 +1420,10 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:0.9,-1,1]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<szAffectRange>[circle:0.8,-1,1]</szAffectRange>
+		<n32AffectTargetType>6</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[damage:1,0.5,0,0,0,30005]</szSelectTargetAffect>
+		<szSelectTargetAffect>[damage:1,1,0,0,0,30005]</szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:1,0.5,0,0,0,30005]</szAffectTargetAffect>
 		<szDescribe>　　对0.9米半径内的敌方单位造成50%溅射伤害</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
@@ -1473,10 +1473,10 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1,-1,1]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<szAffectRange>[circle:0.8,-1,1]</szAffectRange>
+		<n32AffectTargetType>6</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[damage:1,0.5,0,0,0,30005]</szSelectTargetAffect>
+		<szSelectTargetAffect>[damage:1,1,0,0,0,30005]</szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:1,0.5,0,0,0,30005]</szAffectTargetAffect>
 		<szDescribe>　　对1米半径内的敌方单位造成50%溅射伤害</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
@@ -1526,10 +1526,10 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.1,-1,1]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<szAffectRange>[circle:0.8,-1,1]</szAffectRange>
+		<n32AffectTargetType>6</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[damage:1,0.5,0,0,0,30005]</szSelectTargetAffect>
+		<szSelectTargetAffect>[damage:1,1,0,0,0,30005]</szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:1,0.5,0,0,0,30005]</szAffectTargetAffect>
 		<szDescribe>　　对1.1米半径内的敌方单位造成50%溅射伤害</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
@@ -30990,7 +30990,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -30998,7 +30998,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008001,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,50,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,50,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31043,7 +31043,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31051,7 +31051,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008011,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,60,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,60,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31096,7 +31096,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31104,7 +31104,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008021,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,70,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,70,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31149,7 +31149,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31157,7 +31157,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008031,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,80,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,80,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31202,7 +31202,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31210,7 +31210,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008041,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,90,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,90,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31255,7 +31255,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31263,7 +31263,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008051,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,100,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,100,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31308,7 +31308,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31316,7 +31316,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008061,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,110,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,110,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31361,7 +31361,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31369,7 +31369,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008071,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,120,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,120,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31414,7 +31414,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31422,7 +31422,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008081,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,130,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,130,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -31467,7 +31467,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
-		<n32BulletId>20024</n32BulletId>
+		<n32BulletId>20035</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>40008</n32BulletBombId>
 		<n32BulletRange>2.4</n32BulletRange>
@@ -31475,7 +31475,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[summon:50008091,1,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.8,140,0,0,30132]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.8,140,0,0,30134]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -42369,7 +42369,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42422,7 +42422,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42475,7 +42475,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42528,7 +42528,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42581,7 +42581,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42634,7 +42634,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42687,7 +42687,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42740,7 +42740,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42793,7 +42793,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -42846,7 +42846,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>10062</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
