@@ -78,7 +78,7 @@ function AffectTable:addAffect(source,data,skillId,extra)
 	if data[1] == "curehp" or data[1] == "curemp" or data[1] == "damage" or data[1] == "shield" or data[1] == "burnmp" then
 		aff = skillAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "blink" then
-		aff = blinkAffect.new(self.owner,source,data,skillId)
+		aff = blinkAffect.new(self.owner,source,data,skillId,extra)
 	elseif data[1] == "invincible" then
 		aff = invincibleAffect.new(self.owner,source,data),skillId
 	elseif data[1] == "outskill" then

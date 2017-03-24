@@ -135,6 +135,13 @@ function spell:onTriggerPasstives(_cond)
 	end
 end
 
+--是否是位移效果
+function spell:isDisSpell(str)
+	if str == "blink" or str == "charge" or str == "charge" then
+		return true
+	end
+	return false
+end
 --触发效果
 function spell:onTrigger(skilldata,source,srcTarget)
 	local skillTgt = srcTarget
@@ -165,13 +172,27 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	local targets = {}
 	targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
 	if skilldata.szMyAffect ~= "" then
-		if skilldata.szMyAffect[1][1] == "blink" then
-			source.targetPos = targets[1]	
+		local tgt = nil
+		if self:isDisSpell(skilldata.szMyAffect[1][1]) == true then
+			local flag = skilldata.szMyAffect[1][3]
+			--当前选中地点
+			if flag == 0 then
+				tgt = srcTarget	
+			--当前选中施法中敌人	
+			elseif flag == 1 then
+				tgt = targets[1]
+			--正前方
+			elseif flag == 2 then
+		
+			else
+		
+			end
 		end
-		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
-		if skilldata.szMyAffect[1] ~= nil and skilldata.szMyAffect[1][1] == "charge" then
-			return
-		end
+		self:trgggerAffect(skilldata.szMyAffect,tgt,skilldata,true)
+		
+		--if skilldata.szMyAffect[1] ~= nil and skilldata.szMyAffect[1][1] == "charge" then
+		--	return
+		--end
 	end
 	if skilldata.n32BulletType ~= 0 then
 		if(skilldata.n32SkillTargetType == 6 or skilldata.n32SkillTargetType == 4) and skilldata.n32BulletType ~= 2 then
@@ -206,8 +227,7 @@ end
 function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 	isSelf = isSelf or false
 	if isSelf == true then
-		--self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
-		self.source.affectTable:buildAffects(self.source,datas,skilldata.id)
+		self.source.affectTable:buildAffects(self.source,datas,skilldata.id,targets)
 	else
 		if skilldata.n32SkillType == 0 and self.source:getHit()*100 < math.random(0,100) then
 			--未命中
