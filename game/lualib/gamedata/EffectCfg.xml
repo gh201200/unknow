@@ -1177,6 +1177,8 @@
 		<n32layer>0</n32layer>
 		<szillustration>蜘蛛弹道</szillustration>
 	</item>
+<<<<<<< HEAD
+=======
 	<item id="20035">
 		<n32type>4</n32type>
 		<szassert>ranshaoping_bullet_body</szassert>
@@ -1188,6 +1190,7 @@
 		<n32layer>0</n32layer>
 		<szillustration>燃烧瓶弹道</szillustration>
 	</item>
+>>>>>>> f459c40084b21105622cd43e061640cbcff57ba0
 	<item id="30001">
 		<n32type>2</n32type>
 		<szassert>Tiannv_Bullet_hit_01</szassert>
@@ -2068,6 +2071,8 @@
 		<n32layer>0</n32layer>
 		<szillustration>召唤蛛群特效</szillustration>
 	</item>
+<<<<<<< HEAD
+=======
 	<item id="31029">
 		<n32type>2</n32type>
 		<szassert>guilei_hit_body</szassert>
@@ -2101,6 +2106,7 @@
 		<n32layer>0</n32layer>
 		<szillustration>急救包受击特效</szillustration>
 	</item>
+>>>>>>> f459c40084b21105622cd43e061640cbcff57ba0
 	<item id="32001">
 		<n32type>2</n32type>
 		<szassert>ty_yunxuan_buff_top</szassert>
