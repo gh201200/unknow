@@ -100,7 +100,7 @@ function IMapPlayer:update(dt)
 		--		self.ai:update(dt)
 			end
 		else
-		--	self:autoAttack()		
+			self:autoAttack()		
 		end
 	end
 	self.hateTime =  self.hateTime - dt	
@@ -336,11 +336,12 @@ function IMapPlayer:replaceSkill(id)
 end
 --获取普攻范围内敌人
 function IMapPlayer:autoAttack()
-	if self:getTarget() ~= nil then 
-		return 
-	end
 	if self.ReadySkillId ~= 0 and self.ReadySkillId ~= self:getCommonSkill() then
 		return
+	end
+	if self:getTarget() ~= nil then 
+		self.ReadySkillId = self:getCommonSkill()
+		return 
 	end
 	local target = self:getAttackTarget()
 	local newSearch = true 
