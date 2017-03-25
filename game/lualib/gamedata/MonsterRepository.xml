@@ -1826,6 +1826,28 @@
 		<szSkill></szSkill>
 		<n32ModelId>60001</n32ModelId>
 	</item>
+	<item id="100032">
+		<szName>魔化飞猪</szName>
+		<n32Type>3</n32Type>
+		<szWord></szWord>
+		<n32Hp>320</n32Hp>
+		<n32Mp>50</n32Mp>
+		<n32Attack>35</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.7</n32MSpeed>
+		<n32AttackRange>0.8</n32AttackRange>
+		<n32VisionRange>1</n32VisionRange>
+		<n32HateRange>3</n32HateRange>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>0</n32Gold>
+		<n32Drop>20002</n32Drop>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<szSkill>820001</szSkill>
+		<n32ModelId>60001</n32ModelId>
+	</item>
 	<item id="100112">
 		<szName>狼法</szName>
 		<n32Type>2</n32Type>
@@ -1958,8 +1980,30 @@
 		<szSkill></szSkill>
 		<n32ModelId>60004</n32ModelId>
 	</item>
+	<item id="100133">
+		<szName>魔化恶狼</szName>
+		<n32Type>3</n32Type>
+		<szWord></szWord>
+		<n32Hp>550</n32Hp>
+		<n32Mp>60</n32Mp>
+		<n32Attack>55</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.7</n32MSpeed>
+		<n32AttackRange>0.8</n32AttackRange>
+		<n32VisionRange>1</n32VisionRange>
+		<n32HateRange>3</n32HateRange>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>0</n32Gold>
+		<n32Drop>20002</n32Drop>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<szSkill>820001</szSkill>
+		<n32ModelId>60004</n32ModelId>
+	</item>
 	<item id="100014">
-		<szName>猪怪</szName>
+		<szName>魔化猪怪</szName>
 		<n32Type>2</n32Type>
 		<szWord></szWord>
 		<n32Hp>1550</n32Hp>
@@ -1975,9 +2019,9 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>60</n32Exp>
 		<n32Gold>0</n32Gold>
-		<n32Drop>20001</n32Drop>
+		<n32Drop>20002</n32Drop>
 		<n32CommonSkill>810001</n32CommonSkill>
-		<szSkill></szSkill>
+		<szSkill>820001</szSkill>
 		<n32ModelId>60002</n32ModelId>
 	</item>
 	<item id="100024">
@@ -2091,7 +2135,7 @@
 		<n32ModelId>60001</n32ModelId>
 	</item>
 	<item id="100115">
-		<szName>狼法</szName>
+		<szName>魔化狼法</szName>
 		<n32Type>2</n32Type>
 		<szWord></szWord>
 		<n32Hp>1800</n32Hp>
@@ -2107,9 +2151,9 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>60</n32Exp>
 		<n32Gold>0</n32Gold>
-		<n32Drop>20001</n32Drop>
+		<n32Drop>20002</n32Drop>
 		<n32CommonSkill>810001</n32CommonSkill>
-		<szSkill></szSkill>
+		<szSkill>820001</szSkill>
 		<n32ModelId>60003</n32ModelId>
 	</item>
 	<item id="100125">
@@ -2135,7 +2179,7 @@
 		<n32ModelId>60004</n32ModelId>
 	</item>
 	<item id="100016">
-		<szName>猪怪</szName>
+		<szName>魔化猪怪</szName>
 		<n32Type>2</n32Type>
 		<szWord></szWord>
 		<n32Hp>2240</n32Hp>
@@ -2151,9 +2195,9 @@
 		<n32RecvMp>1</n32RecvMp>
 		<n32Exp>60</n32Exp>
 		<n32Gold>0</n32Gold>
-		<n32Drop>20001</n32Drop>
+		<n32Drop>20002</n32Drop>
 		<n32CommonSkill>810001</n32CommonSkill>
-		<szSkill></szSkill>
+		<szSkill>820001</szSkill>
 		<n32ModelId>60002</n32ModelId>
 	</item>
 	<item id="100026">
@@ -2267,6 +2311,94 @@
 		<n32ModelId>60001</n32ModelId>
 	</item>
 	<item id="100117">
+		<szName>魔化狼法</szName>
+		<n32Type>2</n32Type>
+		<szWord></szWord>
+		<n32Hp>2000</n32Hp>
+		<n32Mp>280</n32Mp>
+		<n32Attack>150</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.7</n32MSpeed>
+		<n32AttackRange>2</n32AttackRange>
+		<n32VisionRange>1</n32VisionRange>
+		<n32HateRange>3</n32HateRange>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
+		<n32Exp>60</n32Exp>
+		<n32Gold>0</n32Gold>
+		<n32Drop>20002</n32Drop>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<szSkill>820001</szSkill>
+		<n32ModelId>60003</n32ModelId>
+	</item>
+	<item id="100127">
+		<szName>恶狼</szName>
+		<n32Type>3</n32Type>
+		<szWord></szWord>
+		<n32Hp>1050</n32Hp>
+		<n32Mp>60</n32Mp>
+		<n32Attack>90</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.5</n32ASpeed>
+		<n32MSpeed>0.7</n32MSpeed>
+		<n32AttackRange>0.8</n32AttackRange>
+		<n32VisionRange>1</n32VisionRange>
+		<n32HateRange>3</n32HateRange>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>0</n32Gold>
+		<n32Drop>20001</n32Drop>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<szSkill></szSkill>
+		<n32ModelId>60004</n32ModelId>
+	</item>
+	<item id="100018">
+		<szName>魔化猪怪</szName>
+		<n32Type>2</n32Type>
+		<szWord></szWord>
+		<n32Hp>2500</n32Hp>
+		<n32Mp>140</n32Mp>
+		<n32Attack>110</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.4</n32ASpeed>
+		<n32MSpeed>0.7</n32MSpeed>
+		<n32AttackRange>0.8</n32AttackRange>
+		<n32VisionRange>1</n32VisionRange>
+		<n32HateRange>3</n32HateRange>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
+		<n32Exp>60</n32Exp>
+		<n32Gold>0</n32Gold>
+		<n32Drop>20002</n32Drop>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<szSkill>820001</szSkill>
+		<n32ModelId>60002</n32ModelId>
+	</item>
+	<item id="100028">
+		<szName>飞猪</szName>
+		<n32Type>3</n32Type>
+		<szWord></szWord>
+		<n32Hp>880</n32Hp>
+		<n32Mp>50</n32Mp>
+		<n32Attack>75</n32Attack>
+		<n32Defence>0</n32Defence>
+		<n32ASpeed>1.2</n32ASpeed>
+		<n32MSpeed>0.7</n32MSpeed>
+		<n32AttackRange>0.8</n32AttackRange>
+		<n32VisionRange>1</n32VisionRange>
+		<n32HateRange>3</n32HateRange>
+		<n32RecvHp>1</n32RecvHp>
+		<n32RecvMp>1</n32RecvMp>
+		<n32Exp>30</n32Exp>
+		<n32Gold>0</n32Gold>
+		<n32Drop>20001</n32Drop>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<szSkill></szSkill>
+		<n32ModelId>60001</n32ModelId>
+	</item>
+	<item id="100118">
 		<szName>狼法</szName>
 		<n32Type>2</n32Type>
 		<szWord></szWord>
@@ -2288,7 +2420,7 @@
 		<szSkill></szSkill>
 		<n32ModelId>60003</n32ModelId>
 	</item>
-	<item id="100127">
+	<item id="100128">
 		<szName>恶狼</szName>
 		<n32Type>3</n32Type>
 		<szWord></szWord>

@@ -1105,7 +1105,7 @@
 		<szassert>lvren_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>1</n32position>
+		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
@@ -1165,6 +1165,17 @@
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>修弹道</szillustration>
+	</item>
+	<item id="20034">
+		<n32type>4</n32type>
+		<szassert>zhaohuanzhizhu_bullet_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>3</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0.3</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>蜘蛛弹道</szillustration>
 	</item>
 	<item id="30001">
 		<n32type>2</n32type>
@@ -1375,6 +1386,17 @@
 		<n32layer>10</n32layer>
 		<szillustration>修普攻受击</szillustration>
 	</item>
+	<item id="30020">
+		<n32type>2</n32type>
+		<szassert>zhaohuanzhizhu_hit_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>10</n32layer>
+		<szillustration>蜘蛛普攻受击</szillustration>
+	</item>
 	<item id="30101">
 		<n32type>2</n32type>
 		<szassert>shuangdongxinxing_hit_bottom</szassert>
@@ -1427,7 +1449,7 @@
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
+		<n32layer>0</n32layer>
 		<szillustration>受到毒液打击</szillustration>
 	</item>
 	<item id="30106">
@@ -2023,6 +2045,17 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
 		<szillustration>日蚀波纹受击</szillustration>
+	</item>
+	<item id="31028">
+		<n32type>2</n32type>
+		<szassert>zhaohuanzhizhu_hit_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>召唤蛛群特效</szillustration>
 	</item>
 	<item id="32001">
 		<n32type>2</n32type>
