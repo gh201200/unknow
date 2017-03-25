@@ -100,7 +100,7 @@ function IMapPlayer:update(dt)
 		--		self.ai:update(dt)
 			end
 		else
-			self:autoAttack()		
+		--	self:autoAttack()		
 		end
 	end
 	self.hateTime =  self.hateTime - dt	
@@ -192,6 +192,16 @@ function IMapPlayer:onDead()
 	else
 		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
 	end
+	if self.hater:getType() == "IMapPlayer" or  self.hater:getType() == "IBuilding" then
+		for k,v in pairs(EntityManager.entityList) do
+			if v.entityType == EntityType.player then
+				if v:isKind( self ) == false then
+					local exp = g_shareData.heroLevel[self:getLevel()]
+					v:addExp( math.floor(exp["n32Reward"]))
+				end
+			end
+		end
+	end
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	local msg = {blueDeadNum = BattleOverManager.RedKillNum,redDeadNum = BattleOverManager.BlueKillNum }
 	EntityManager:sendToAllPlayers("onPlayerDead" ,msg)
@@ -237,21 +247,6 @@ function IMapPlayer:onExp()
 	end
 end
 
-function IMapPlayer:addSkill(skillId, num,updateToClient)
-	local skilldata = g_shareData.skillRepository[skillId]	
-	if self.skillTable[skillId] == nil then
-		self.skillTable[skillId] = 0 
-	end	
-	self.skillTable[skillId] = self.skillTable[skillId] + num
-	
-	if updateToClient then
-		local msg = {
-			skillId = skillId,
-			level = self.skillTable[skillId] 
-		}
-		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
-	end
-end
 
 function IMapPlayer:removeSkill(skillId)
 	--移除旧技能带的buff效果

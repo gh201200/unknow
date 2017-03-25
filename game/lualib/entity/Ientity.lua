@@ -715,6 +715,7 @@ function Ientity:onDead()
 			v.hateList:removeHate( self )
 		end
 	end
+	self.spell.passtiveSpells = {}
 	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
 end
@@ -1024,11 +1025,11 @@ function Ientity:callBackSpellBegin()
 end
 
 function Ientity:callBackSpellEnd()
-	if self.entityType ~= EntityType.player	then
+	--if self.entityType ~= EntityType.player	then
 		self.ReadySkillId = 0
 		return
-	end
-
+	--end
+	--[[
 	local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
 		if self:canCast(self.ReadySkillId)  == 0 then
@@ -1047,6 +1048,7 @@ function Ientity:callBackSpellEnd()
 	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
 			self.ReadySkillId = self:getCommonSkill() 
 	end
+	]]
 end
 --设置人物状态
 function Ientity:setState(state)
@@ -1200,6 +1202,26 @@ function Ientity:castSkill()
 	return 0
 end
 
+function Ientity:addSkill(skillId,extra,updateToClient)
+	print("addskill====",skillId,extra)
+	local skilldata = g_shareData.skillRepository[skillId]	
+	if skilldata.n32Active == 1 then
+		local ps = passtiveSpell.new(self,skilldata,extra)
+		table.insert(self.spell.passtiveSpells,ps) 
+	else
+		if self.skillTable[skillId] == nil then
+			self.skillTable[skillId] = 0 
+		end	
+		self.skillTable[skillId] = self.skillTable[skillId] + extra
+		if updateToClient then
+			local msg = {
+				skillId = skillId,
+				level = self.skillTable[skillId] 
+			}
+			skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+		end
+	end		
+end
 function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
 end

@@ -190,13 +190,13 @@ function EntityManager:getTypeEntitys(source,skilldata,isSelect)
 		if _ev ~= nil and (_ev:getType() == "IMapPlayer" or _ev:getType() == "IPet" or _ev:getType() == "IMonster" or  _ev:getType() == "IBuilding") then
 			if _ev:getHp() > 0 and ((_ev.entityType == EntityType.building and skilldata.n32SkillType == 0) or _ev.entityType ~= EntityType.building)  then
 				--友方（包含自己）
-				if skilldata[_type]  == 1 and source:isKind(_ev) == true then
+				if skilldata[_type]  == 1 or skilldata[_type]  == 7 and source:isKind(_ev) == true then
 					table.insert(typeTargets,_ev)
 				--友方（除掉自己）
 				elseif skilldata[_type]  == 2 and source:isKind(_ev) == true and source ~= _ev then
 					table.insert(typeTargets,_ev)
 				--敌方
-				elseif skilldata[_type]  == 3 and source:isKind(_ev) == false then	
+				elseif skilldata[_type]  == 3 or skilldata[_type]  == 6 and source:isKind(_ev) == false then	
 					table.insert(typeTargets,_ev)
 				--除自己所有人
 				elseif skilldata[_type]  == 4 and source ~= _ev then
@@ -293,6 +293,22 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 		return affects
 	end
 	local typeTargets = self:getTypeEntitys(source,skilldata,false)
+	--6 7 类型不选取施法目标
+	if skilldata.n32AffectTargetType == 6 or skilldata.n32AffectTargetType == 7 then
+		for i=#typeTargets,1,-1 do
+			local t = typeTargets[i]
+			local hit = false
+			for _sk,_sv in pairs(selects) do
+				if _sv == t then
+					hit =  true
+					break
+				end
+			end
+			if hit == true then
+				table.remove(typeTargets,i)
+			end
+		end
+	end
 	--print("#typeTargets",#typeTargets)
 	for _tk,_tv in pairs(typeTargets) do
 		for _sk,_sv in pairs(selects) do
