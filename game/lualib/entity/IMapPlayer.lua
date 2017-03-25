@@ -192,6 +192,16 @@ function IMapPlayer:onDead()
 	else
 		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
 	end
+	if self.hater:getType() == "IMapPlayer" or  self.hater:getType() == "IBuilding" then
+		for k,v in pairs(EntityManager.entityList) do
+			if v.entityType == EntityType.player then
+				if v:isKind( self ) == false then
+					local exp = g_shareData.heroLevel[self:getLevel()]
+					v:addExp( math.floor(exp["n32Reward"]))
+				end
+			end
+		end
+	end
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	local msg = {blueDeadNum = BattleOverManager.RedKillNum,redDeadNum = BattleOverManager.BlueKillNum }
 	EntityManager:sendToAllPlayers("onPlayerDead" ,msg)
