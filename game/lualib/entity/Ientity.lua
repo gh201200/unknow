@@ -1161,6 +1161,7 @@ function Ientity:setCastSkillId(id)
 		return 1
 	end
 	local errorcode = self:canSetCastSkill(id) 
+	print("canSetCastSkill=======",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	self.ReadySkillId = id
 	return 0

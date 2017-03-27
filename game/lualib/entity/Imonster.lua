@@ -106,10 +106,10 @@ function IMonster:onDead()
 	--tell the clients
 	EntityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
 
-	self:clear_coroutine()
-	
+	self:clear_coroutine()	
 	--reset map
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+		
 end
 function IMonster:getCommonSkill()
 	return self.attDat.n32CommonSkill

@@ -829,7 +829,7 @@
 		<n32type>4</n32type>
 		<szassert>Xiuxingzhe_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>8</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -840,7 +840,7 @@
 		<n32type>4</n32type>
 		<szassert>Zhongbiaogong_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>5</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1082,7 +1082,7 @@
 		<n32type>4</n32type>
 		<szassert>nier_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>5</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1093,7 +1093,7 @@
 		<n32type>4</n32type>
 		<szassert>gongzhu_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1126,7 +1126,7 @@
 		<n32type>4</n32type>
 		<szassert>shenju_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>3</n32speed>
+		<n32speed>7</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1137,7 +1137,7 @@
 		<n32type>4</n32type>
 		<szassert>anna_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>3</n32speed>
+		<n32speed>7</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1159,7 +1159,7 @@
 		<n32type>4</n32type>
 		<szassert>kejitiancai_bullet_body</szassert>
 		<n32time>0</n32time>
-		<n32speed>4</n32speed>
+		<n32speed>5</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
