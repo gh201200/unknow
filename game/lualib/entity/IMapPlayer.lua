@@ -192,7 +192,7 @@ function IMapPlayer:onDead()
 	else
 		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
 	end
-	if self.hater:getType() == "IMapPlayer" or  self.hater:getType() == "IBuilding" then
+	if self.hater and (self.hater:getType() == "IMapPlayer" or  self.hater:getType() == "IBuilding") then
 		for k,v in pairs(EntityManager.entityList) do
 			if v.entityType == EntityType.player then
 				if v:isKind( self ) == false then
