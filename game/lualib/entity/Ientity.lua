@@ -1154,14 +1154,13 @@ function Ientity:canSetCastSkill(id)
 end
 
 function Ientity:setCastSkillId(id)
-	print('set cast skill id = ', id)
+	--print('set cast skill id = ', id)
 	local skilldata = g_shareData.skillRepository[id]
 	if not skilldata then
 		syslog.warning( 'setCastSkillId failed ' .. id )
 		return 1
 	end
 	local errorcode = self:canSetCastSkill(id) 
-	print("canSetCastSkill=======",errorcode)
 	if errorcode ~= 0 then return errorcode end
 	self.ReadySkillId = id
 	return 0

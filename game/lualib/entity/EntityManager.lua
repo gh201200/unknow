@@ -135,7 +135,7 @@ function EntityManager:getCloseEntityByType(source, _type)
 	local et = nil
 	local minLen = 0xffffffff
 	for k, v in pairs(self.entityList) do
-		if v.entityType == _type and v ~= source then
+		if v.entityType == _type and v ~= source and v:getHp() > 0 then
 			local ln = vector3.len(source.pos, v.pos)
 			if minLen > ln then
 				minLen = ln
