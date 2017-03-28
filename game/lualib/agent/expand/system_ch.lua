@@ -322,7 +322,7 @@ function REQUEST.fuseSkill( args )
 			errorCode = 3	--还未到最高品质
 			break
 		end
-		local fuseDat = g_shareData.fuseSkillRepository[skillDat.n32SeriId]
+		local fuseDat = g_shareData.fuseSkillRepository[skillDat.n32Quality]
         	if fuseDat.n32CostNum > skill.count then
 			errorCode = 1	--碎片数量不足
 			break
@@ -336,13 +336,13 @@ function REQUEST.fuseSkill( args )
 		local times = 0
 		repeat
 			times = times + 1
-			if times > 10 then
-				syslog.err("fuse skill usePackageItem too many times ", times, itemId)
-			end
 			items = usePackageItem(fuseDat.n32ItemId, user.level)
 			for k, v in pairs(items) do
 				itemId = k
 				break
+			end
+			if times >= 10 then
+				syslog.err("fuse skill usePackageItem too many times ", times, itemId)
 			end
 			local dat = g_shareData.itemRepository[itemId]
 			if skillDat.n32SeriId ~= Macro_GetCardSerialId( dat.n32Retain1 ) then
