@@ -112,16 +112,15 @@ function EntityManager:getPlayerByPlayerId(account_id)
 	return nil
 end
 
-function EntityManager:getMonsterCountByBatch(batch)
+function EntityManager:getMonsterCountByGroupId(gid)
 	local cnt = 0
-	for k, v in pairs(self.entityList) do
-		if v.entityType == EntityType.monster and v.batch == batch then
-			cnt = cnt + 1	
+	for k,v in pairs(self.entityList) do
+		if v.entityType == EntityType.monster and v.batch == gid then 
+			cnt =  cnt + 1	
 		end
 	end
 	return cnt
 end
-
 function EntityManager:getMonsterById(_id)
 	local lt = {}
 	for k, v in pairs(self.entityList) do
