@@ -68,7 +68,6 @@ end
 function accept.log( name, args )
 	args.time = Time.GetCurStringTime()
 	local jt = json.encode( args )
-	print( jt )
 	if enable then return end
 	if name == "account" then
 		writeAccount( jt )

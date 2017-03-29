@@ -115,15 +115,35 @@ function REQUEST.exploreEnd( args )
 		for i=1, cn do
 			local rets = usePackageItem(exploreDat.n32CardItemId, user.level )
 			for k, v in pairs(rets) do
-				table.insert(r,{x=k, y=v})
+				local hit = false
+				for _k,_v in pairs(r) do
+					if _v.x == k then
+						_v.y = _v.y + 1
+						hit = true
+						break
+					end
+				end
+				if hit == false then
+					table.insert(r,{x=k, y=v})
+				end
 			end
 			user.servicecmd.addItems("exploreEnd", rets)
 		end
 		local sn = math.floor(score * exploreDat.n32SkillC)
 		for i=1, sn do
 			local rets = usePackageItem(exploreDat.n32SkillItemId, user.level )
+			local hit = false
 			for k, v in pairs(rets) do
-				table.insert(r,{x=k, y=v})
+				for _k,_v in pairs(r) do
+					if _v.x == k then
+						_v.y = _v.y + 1 
+						hit = true
+						break
+					end
+				end
+				if hit == false then
+					table.insert(r,{x=k, y=v})
+				end
 			end
 			user.servicecmd.addItems("exploreEnd", rets)
 		end
