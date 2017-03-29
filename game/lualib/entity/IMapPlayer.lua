@@ -355,20 +355,19 @@ function IMapPlayer:autoAttack()
 	end
 	if newSearch == true then
 		local newTarget = nil
+		local shortest = 9999
 		for k,v in pairs(EntityManager.entityList) do 
 			if v ~= nil and  self:isKind(v) == false and v:getHp() > 0 then
 				local disLen = self:getDistance(v)
-				if disLen <= 2 then
+				if disLen <= 2 and disLen <= shortest then
+					shortest = disLen
 					newTarget = v
-					break
 				end
 			end
 		end
 		if newTarget ~= nil then
 			if self.spell:isSpellRunning() == false then
 				self:setAttackTarget(newTarget)
-				--self:setTarget(newTarget)
-				--self.ReadySkillId = self:getCommonSkill() 
 			end	
 		end
 	end
