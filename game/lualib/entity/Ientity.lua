@@ -1028,10 +1028,10 @@ function Ientity:callBackSpellBegin()
 end
 
 function Ientity:callBackSpellEnd()
-	--if self.entityType ~= EntityType.player	then
+	if self.entityType ~= EntityType.player	then
 		self.ReadySkillId = 0
 		return
-	--end
+	end
 	--[[
 	local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
@@ -1202,6 +1202,7 @@ function Ientity:castSkill()
 	tmpSpell:init(skilldata,skillTimes)
 	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
+	self.ReadySkillId = 0
 	return 0
 end
 
