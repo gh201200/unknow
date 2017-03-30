@@ -168,12 +168,12 @@ function EntityManager:createPet(id,master,pos)
 	local pet = IPet.new(pos,dir)
 	g_entityManager:addEntity(pet)
 	pet.serverId = assin_server_id()	
-	pet:init(pt,master)
 	table.insert(master.pets,pet)	
 	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,camp = master.camp,masterId = master.serverId}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
 	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
+	pet:init(pt,master)
 end
 function EntityManager:getTypeEntitys(source,skilldata,isSelect)
 	local _type = "n32SelectTargetType" 

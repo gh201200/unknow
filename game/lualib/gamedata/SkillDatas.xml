@@ -67109,8 +67109,8 @@
 		<n32Lv>1</n32Lv>
 		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
@@ -67144,7 +67144,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[rehp:0,0,0,0,20,40010]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:1,0,0,0,20,40010]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -67162,8 +67162,8 @@
 		<n32Lv>1</n32Lv>
 		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
@@ -67197,7 +67197,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[rehp:0,0,0,0,20,40011]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:1,0,0,0,20,40011]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -67215,8 +67215,8 @@
 		<n32Lv>1</n32Lv>
 		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
@@ -67250,7 +67250,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[rehp:0,0,0,0,20,12009]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:1,0,0,0,20,12009]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -67268,8 +67268,8 @@
 		<n32Lv>1</n32Lv>
 		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
@@ -67303,7 +67303,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[rehp:0,0,0,0,60,12013]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:1,0,0,0,60,12013]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
