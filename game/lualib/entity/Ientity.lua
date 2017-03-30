@@ -644,6 +644,9 @@ end
 --强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
 	dt = dt / 1000
+	if self:getHp() <= 0 then
+		return
+	end
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
 	if Map.IS_SAME_GRID(self.pos,self.targetPos.pos) then
