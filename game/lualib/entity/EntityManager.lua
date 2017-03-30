@@ -189,13 +189,13 @@ function EntityManager:getTypeEntitys(source,skilldata,isSelect)
 		if _ev ~= nil and (_ev:getType() == "IMapPlayer" or _ev:getType() == "IPet" or _ev:getType() == "IMonster" or  _ev:getType() == "IBuilding") then
 			if _ev:getHp() > 0 and ((_ev.entityType == EntityType.building and skilldata.n32SkillType == 0) or _ev.entityType ~= EntityType.building)  then
 				--友方（包含自己）
-				if skilldata[_type]  == 1 or skilldata[_type]  == 7 and source:isKind(_ev) == true then
+				if (skilldata[_type]  == 1 or skilldata[_type]  == 7) and source:isKind(_ev) == true then
 					table.insert(typeTargets,_ev)
 				--友方（除掉自己）
 				elseif skilldata[_type]  == 2 and source:isKind(_ev) == true and source ~= _ev then
 					table.insert(typeTargets,_ev)
 				--敌方
-				elseif skilldata[_type]  == 3 or skilldata[_type]  == 6 and source:isKind(_ev) == false then	
+				elseif (skilldata[_type]  == 3 or skilldata[_type]  == 6) and source:isKind(_ev) == false then	
 					table.insert(typeTargets,_ev)
 				--除自己所有人
 				elseif skilldata[_type]  == 4 and source ~= _ev then

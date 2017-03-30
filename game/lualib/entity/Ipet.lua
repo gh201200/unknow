@@ -25,6 +25,7 @@ function IPet:init(pt,master)
 	end
 	self.ai = PetAI.new(self,master)
 	self.camp =  master.camp
+	print("Ipet.camp====",self.camp)	
 	self.lifeTime = 0
 	self.bornPos:set(self.pos.x, 0, self.pos.z)
 	self.attDat = {}
