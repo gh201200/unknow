@@ -52,7 +52,7 @@ function IPet:init(pt,master)
 					end
 				end
 			end	
-			local ps = passtiveSpell.new(self,skilldata)
+			local ps = passtiveSpell.new(self,skilldata,self.lifeTime)
 			table.insert(self.spell.passtiveSpells,ps)
 		end
 	end

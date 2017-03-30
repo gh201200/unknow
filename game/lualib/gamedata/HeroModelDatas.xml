@@ -1260,4 +1260,74 @@
 		<szRSkillVoice></szRSkillVoice>
 		<n32BSize>0</n32BSize>
 	</item>
+	<item id="70009">
+		<szName>麻痹陷阱</szName>
+		<szMod_name>Cube</szMod_name>
+		<n32Hight>Cube</n32Hight>
+		<n32Speed>10000</n32Speed>
+		<n32attack01Time1>0</n32attack01Time1>
+		<n32attack01Time2>0</n32attack01Time2>
+		<n32attack01Time3>0</n32attack01Time3>
+		<n32attack01TriTime>0</n32attack01TriTime>
+		<n32attack02Time1>0</n32attack02Time1>
+		<n32attack02Time2>0</n32attack02Time2>
+		<n32attack02Time3>0</n32attack02Time3>
+		<n32attack02TriTime>0</n32attack02TriTime>
+		<n32cast_selfTime1>0</n32cast_selfTime1>
+		<n32cast_selfTime2>0</n32cast_selfTime2>
+		<n32cast_selfTriTime>0</n32cast_selfTriTime>
+		<n32cast_nearTime1>0</n32cast_nearTime1>
+		<n32cast_nearTime2>0</n32cast_nearTime2>
+		<n32cast_nearTriTime>0</n32cast_nearTriTime>
+		<n32cast_remoteTime1>0</n32cast_remoteTime1>
+		<n32cast_remoteTime2>0</n32cast_remoteTime2>
+		<n32cast_remoteTriTime>0</n32cast_remoteTriTime>
+		<n32cast_blinkTime1>0</n32cast_blinkTime1>
+		<n32cast_blinkTime2>0</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>0</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>0</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>0</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>0</n32cast_uniqueTriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>0</n32BSize>
+	</item>
+	<item id="70010">
+		<szName>守卫塔</szName>
+		<szMod_name>tower</szMod_name>
+		<n32Hight>tower</n32Hight>
+		<n32Speed>10000</n32Speed>
+		<n32attack01Time1>0</n32attack01Time1>
+		<n32attack01Time2>0</n32attack01Time2>
+		<n32attack01Time3>0</n32attack01Time3>
+		<n32attack01TriTime>0</n32attack01TriTime>
+		<n32attack02Time1>0</n32attack02Time1>
+		<n32attack02Time2>0</n32attack02Time2>
+		<n32attack02Time3>0</n32attack02Time3>
+		<n32attack02TriTime>0</n32attack02TriTime>
+		<n32cast_selfTime1>0</n32cast_selfTime1>
+		<n32cast_selfTime2>0</n32cast_selfTime2>
+		<n32cast_selfTriTime>0</n32cast_selfTriTime>
+		<n32cast_nearTime1>0</n32cast_nearTime1>
+		<n32cast_nearTime2>0</n32cast_nearTime2>
+		<n32cast_nearTriTime>0</n32cast_nearTriTime>
+		<n32cast_remoteTime1>0</n32cast_remoteTime1>
+		<n32cast_remoteTime2>0</n32cast_remoteTime2>
+		<n32cast_remoteTriTime>0</n32cast_remoteTriTime>
+		<n32cast_blinkTime1>0</n32cast_blinkTime1>
+		<n32cast_blinkTime2>0</n32cast_blinkTime2>
+		<n32cast_blinkTriTime>0</n32cast_blinkTriTime>
+		<n32cast_uniqueTime1>0</n32cast_uniqueTime1>
+		<n32cast_uniqueTime2>0</n32cast_uniqueTime2>
+		<n32cast_uniqueTriTime>0</n32cast_uniqueTriTime>
+		<szScoundEffeect></szScoundEffeect>
+		<szMount1></szMount1>
+		<szMount1Effect></szMount1Effect>
+		<szMoveVoice></szMoveVoice>
+		<szRSkillVoice></szRSkillVoice>
+		<n32BSize>0</n32BSize>
+	</item>
 </info>

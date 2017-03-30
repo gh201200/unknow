@@ -803,6 +803,171 @@
 		<n32layer>0</n32layer>
 		<szillustration></szillustration>
 	</item>
+	<item id="12008">
+		<n32type>2</n32type>
+		<szassert>anna_skill_cast_bottom</szassert>
+		<n32time>3</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>安娜大招施法</szillustration>
+	</item>
+	<item id="12009">
+		<n32type>1</n32type>
+		<szassert>gongzhu_skill_trap_bottom</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>若拉陷阱施法</szillustration>
+	</item>
+	<item id="12010">
+		<n32type>2</n32type>
+		<szassert>gongzhu_skill_hit_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>若拉陷阱受击施法</szillustration>
+	</item>
+	<item id="12011">
+		<n32type>2</n32type>
+		<szassert>kejitiancai_skill_cast_hand</szassert>
+		<n32time>4</n32time>
+		<n32speed>0</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>科技天才大招施法</szillustration>
+	</item>
+	<item id="12012">
+		<n32type>2</n32type>
+		<szassert>kejitiancai_skill_cast_bottom</szassert>
+		<n32time>4</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>科技天才大招施法</szillustration>
+	</item>
+	<item id="12013">
+		<n32type>1</n32type>
+		<szassert>kejitiancai_tower_cast_top</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>2</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>科技天才召唤塔施法</szillustration>
+	</item>
+	<item id="12014">
+		<n32type>4</n32type>
+		<szassert>kejitiancai_tower_bullet_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>3</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>科技天才召唤塔弹道</szillustration>
+	</item>
+	<item id="12015">
+		<n32type>2</n32type>
+		<szassert>kejitiancai_tower_hit_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>科技天才召唤塔弹道受击</szillustration>
+	</item>
+	<item id="12016">
+		<n32type>2</n32type>
+		<szassert>shenju_skill_hit_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>神狙大招受击</szillustration>
+	</item>
+	<item id="12018">
+		<n32type>2</n32type>
+		<szassert>zhongbiaogong_skill_cast_bottom</szassert>
+		<n32time>4</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>钟表工大招施法</szillustration>
+	</item>
+	<item id="12019">
+		<n32type>4</n32type>
+		<szassert>zhongbiaogong_skill_bullet_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>3</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>钟表工大招弹道</szillustration>
+	</item>
+	<item id="12020">
+		<n32type>2</n32type>
+		<szassert>zhongbiaogong_skill_hit_bottom</szassert>
+		<n32time>12</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>钟表工大招受击</szillustration>
+	</item>
+	<item id="12021">
+		<n32type>2</n32type>
+		<szassert>miya_skill_cast_rhand</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>4</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>米亚大招施法</szillustration>
+	</item>
+	<item id="12022">
+		<n32type>4</n32type>
+		<szassert>miya_skill_bullet_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>3</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>米亚大招弹道</szillustration>
+	</item>
+	<item id="12023">
+		<n32type>2</n32type>
+		<szassert>miya_skill_hit_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>米亚大招受击</szillustration>
+	</item>
 	<item id="20001">
 		<n32type>4</n32type>
 		<szassert>Tiannv_Bullet_01</szassert>

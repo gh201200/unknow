@@ -1054,7 +1054,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:1,1,0,0,0,30015]</szAffectTargetAffect>
-		<szDescribe>　　近战普通攻击</szDescribe>
+		<szDescribe>　　米娅远程普攻</szDescribe>
 		<n32ShowRange>0.8</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo></szInfo>
@@ -1272,59 +1272,6 @@
 		<szInfo></szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
 	</item>
-	<item id="9521001">
-		<n32SeriId>952101</n32SeriId>
-		<szName>吐息攻击</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_10001.png</szIcon>
-		<n32Faction>-1</n32Faction>
-		<n32Quality>2</n32Quality>
-		<n32Upgrade>1</n32Upgrade>
-		<n32NeedStuff>0</n32NeedStuff>
-		<n32Lv>1</n32Lv>
-		<n32SkillType>0</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>1</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>1</n32ActionType>
-		<szAction>attack01,attack02</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>0</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20001</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:0.8,-1,1]</szAffectRange>
-		<n32AffectTargetType>6</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[damage:1,1,0,0,0,30005]</szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.5,0,0,0,30005]</szAffectTargetAffect>
-		<szDescribe>　　对0.7米半径内的敌方单位造成50%溅射伤害</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo></szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
 	<item id="9521011">
 		<n32SeriId>952101</n32SeriId>
 		<szName>吐息攻击</szName>
@@ -1537,6 +1484,112 @@
 		<szInfo></szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
 	</item>
+	<item id="9521051">
+		<n32SeriId>952101</n32SeriId>
+		<szName>吐息攻击</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10001.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>2</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01,attack02</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>20001</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[circle:0.8,-1,1]</szAffectRange>
+		<n32AffectTargetType>6</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect>[damage:1,1,0,0,0,30005]</szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.5,0,0,0,30005]</szAffectTargetAffect>
+		<szDescribe>　　对1.1米半径内的敌方单位造成50%溅射伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo></szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="9531011">
+		<n32SeriId>953101</n32SeriId>
+		<szName>狂暴攻击</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10001.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>2</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01,attack02</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>1.6</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:1,1,0,0,0,12023][getblood:1,0,0]</szAffectTargetAffect>
+		<szDescribe>　　米娅狂暴模式</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo></szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
 	<item id="9522001">
 		<n32SeriId>952201</n32SeriId>
 		<szName>震荡冲击</szName>
@@ -1556,10 +1609,10 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>attack01</szAction>
-		<n32TriggerTime>0.5</n32TriggerTime>
+		<n32TriggerTime>0.3</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12010</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -1609,10 +1662,10 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>attack01</szAction>
-		<n32TriggerTime>0.5</n32TriggerTime>
+		<n32TriggerTime>0.3</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12010</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -1662,10 +1715,10 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>attack01</szAction>
-		<n32TriggerTime>0.5</n32TriggerTime>
+		<n32TriggerTime>0.3</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12010</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -1715,10 +1768,10 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>attack01</szAction>
-		<n32TriggerTime>0.5</n32TriggerTime>
+		<n32TriggerTime>0.3</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12010</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -1768,10 +1821,10 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>1</n32ActionType>
 		<szAction>attack01</szAction>
-		<n32TriggerTime>0.5</n32TriggerTime>
+		<n32TriggerTime>0.3</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12010</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -1798,6 +1851,59 @@
 		<szAffectTargetAffect>[ctrl:7,0,0,2.75,50001]</szAffectTargetAffect>
 		<szDescribe>　　地雷爆炸放出强烈的震荡波，使周围的敌方单位陷入晕眩2.75秒</szDescribe>
 		<n32ShowRange>0.8</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo></szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="9533011">
+		<n32SeriId>953301</n32SeriId>
+		<szName>电塔攻击</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10001.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>2</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12014</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:1,1,0,0,0,12015]</szAffectTargetAffect>
+		<szDescribe>　　电塔的普通攻击</szDescribe>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo></szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48460,27 +48566,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>75</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>300</n32MpCost>
+		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48488,9 +48594,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,1.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48513,27 +48619,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>75</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>400</n32MpCost>
+		<n32MpCost>300</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48541,9 +48647,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,3.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48566,27 +48672,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>75</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>500</n32MpCost>
+		<n32MpCost>400</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48594,9 +48700,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,4.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48619,27 +48725,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>75</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>600</n32MpCost>
+		<n32MpCost>500</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48647,9 +48753,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,5.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,3,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48672,27 +48778,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>70</n32CD>
+		<n32CD>12</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>300</n32MpCost>
+		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48700,9 +48806,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,1.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48725,27 +48831,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>70</n32CD>
+		<n32CD>12</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>400</n32MpCost>
+		<n32MpCost>300</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48753,9 +48859,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,3.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48778,27 +48884,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>70</n32CD>
+		<n32CD>12</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>500</n32MpCost>
+		<n32MpCost>400</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48806,9 +48912,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,4.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48831,27 +48937,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>70</n32CD>
+		<n32CD>12</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>600</n32MpCost>
+		<n32MpCost>500</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48859,9 +48965,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,5.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,3,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48884,27 +48990,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>65</n32CD>
+		<n32CD>10</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>300</n32MpCost>
+		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48912,9 +49018,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,1.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48937,27 +49043,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>65</n32CD>
+		<n32CD>10</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>400</n32MpCost>
+		<n32MpCost>300</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -48965,9 +49071,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,3.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -48990,27 +49096,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>65</n32CD>
+		<n32CD>10</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>500</n32MpCost>
+		<n32MpCost>400</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49018,9 +49124,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,4.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49043,27 +49149,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>65</n32CD>
+		<n32CD>10</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>600</n32MpCost>
+		<n32MpCost>500</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49071,9 +49177,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,5.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,3,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49096,27 +49202,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>8</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>300</n32MpCost>
+		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49124,9 +49230,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,1.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49149,27 +49255,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>8</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>400</n32MpCost>
+		<n32MpCost>300</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49177,9 +49283,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,3.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49202,27 +49308,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>8</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>500</n32MpCost>
+		<n32MpCost>400</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49230,9 +49336,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,4.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49255,27 +49361,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>8</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>600</n32MpCost>
+		<n32MpCost>500</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49283,9 +49389,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,5.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,3,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49308,27 +49414,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>6</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>300</n32MpCost>
+		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49336,9 +49442,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,1.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49361,27 +49467,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>6</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>400</n32MpCost>
+		<n32MpCost>300</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49389,9 +49495,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,3.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49414,27 +49520,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>6</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>500</n32MpCost>
+		<n32MpCost>400</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49442,9 +49548,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,4.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.5,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -49467,27 +49573,27 @@
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
-		<szAction>cast_unique</szAction>
-		<n32TriggerTime>2</n32TriggerTime>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>12004</n32CasterEffect>
+		<n32CasterEffect>12018</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>6</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>600</n32MpCost>
+		<n32MpCost>500</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32HpCostPercent>2.4</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,20,-1,0]</szSelectRange>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12019</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -49495,9 +49601,9 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,5.5,32004]</szAffectTargetAffect>
-		<szDescribe>　　延迟一段时间后，令所有敌方单位静止数秒</szDescribe>
-		<n32ShowRange>20</n32ShowRange>
+		<szAffectTargetAffect>[ctrl:7,0,0,3,12020]</szAffectTargetAffect>
+		<szDescribe>　　令一名敌方单位静止数秒</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　时间对于神来说没有什么意义，他只需要轻轻捏住钟摆，便能让时间静止。\n　　　　　　　　　　　——曲时大师撒缪尔</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -50608,7 +50714,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521001,20,0][atk:0,0,15,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,15,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50661,7 +50767,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521001,20,0][atk:0,0,25,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,25,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50714,7 +50820,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521001,20,0][atk:0,0,35,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,35,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50767,7 +50873,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521001,20,0][atk:0,0,45,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,45,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50820,7 +50926,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,30,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,30,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50873,7 +50979,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,40,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,40,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50926,7 +51032,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,50,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,50,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50979,7 +51085,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,60,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,60,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51032,7 +51138,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,45,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,45,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51085,7 +51191,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,55,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,55,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51138,7 +51244,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,65,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,65,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51191,7 +51297,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,75,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,75,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51244,7 +51350,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,60,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,60,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51297,7 +51403,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,70,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,70,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51350,7 +51456,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,80,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,80,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51403,7 +51509,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,90,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,90,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51456,7 +51562,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,75,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,75,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51509,7 +51615,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,85,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,85,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51562,7 +51668,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,95,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,95,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51615,7 +51721,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,105,0,20,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,105,0,20,0]</szAffectTargetAffect>
 		<szDescribe>　　发动之后，增加攻击距离，且攻击可以对目标及周围单位造成持续伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -56955,12 +57061,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -56968,8 +57074,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,100,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,15,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57008,12 +57114,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57021,8 +57127,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,140,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,25,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57061,12 +57167,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57074,8 +57180,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,180,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,35,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57114,12 +57220,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57127,8 +57233,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,220,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57167,12 +57273,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57180,8 +57286,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,140,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,25,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57220,12 +57326,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57233,8 +57339,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,190,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,35,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57273,12 +57379,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57286,8 +57392,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,240,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57326,12 +57432,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57339,8 +57445,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,290,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57379,12 +57485,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57392,8 +57498,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,180,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,35,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57432,12 +57538,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57445,8 +57551,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,240,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57485,12 +57591,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57498,8 +57604,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,300,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57538,12 +57644,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57551,8 +57657,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,360,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,65,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57591,12 +57697,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57604,8 +57710,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,220,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57644,12 +57750,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57657,8 +57763,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,290,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57697,12 +57803,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57710,8 +57816,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,360,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,65,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57750,12 +57856,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57763,8 +57869,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,430,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,75,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57803,12 +57909,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57816,8 +57922,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,260,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57856,12 +57962,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57869,8 +57975,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,340,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,65,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57909,12 +58015,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57922,8 +58028,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,420,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,75,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -57962,12 +58068,12 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>5</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20005</n32BulletId>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -57975,8 +58081,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,2,500,0,0,30002][ctrl:7,0,0,1.5,50001]</szAffectTargetAffect>
-		<szDescribe>　　发射一枚炮弹，对单个敌方单位造成长时间晕眩和伤害</szDescribe>
+		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,85,0,15,0]</szAffectTargetAffect>
+		<szDescribe>　　启动狂暴模式</szDescribe>
 		<n32ShowRange>5</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　把我可爱大炮的射程设定到这么远就只能听一个人的尖叫了呢，不过总比没有来得强。\n　　　　　　　　　　　——抹杀烈炬米娅</szInfo>
@@ -58028,7 +58134,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,15,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,15,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58081,7 +58187,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,25,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,25,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58134,7 +58240,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,35,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,35,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58187,7 +58293,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,45,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,45,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58240,7 +58346,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,45,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,45,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58293,7 +58399,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,60,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,60,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58346,7 +58452,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,75,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,75,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58399,7 +58505,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,90,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,90,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58452,7 +58558,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,80,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,80,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58505,7 +58611,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,100,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,100,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58558,7 +58664,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,120,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,120,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58611,7 +58717,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,140,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,140,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58664,7 +58770,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,120,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,120,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58717,7 +58823,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,145,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,145,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58770,7 +58876,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,170,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,170,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58823,7 +58929,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,195,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,195,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58876,7 +58982,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,165,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,165,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58929,7 +59035,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,195,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,195,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -58982,7 +59088,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,225,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,225,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -59035,7 +59141,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,255,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,255,0,0,12016]</szAffectTargetAffect>
 		<szDescribe>　　攻击有概率短暂眩晕目标，并造成额外伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -59064,7 +59170,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59117,7 +59223,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59170,7 +59276,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59223,7 +59329,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59276,7 +59382,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59329,7 +59435,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59382,7 +59488,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59435,7 +59541,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59488,7 +59594,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59541,7 +59647,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59594,7 +59700,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59647,7 +59753,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59700,7 +59806,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59753,7 +59859,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59806,7 +59912,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59859,7 +59965,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59912,7 +60018,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -59965,7 +60071,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -60018,7 +60124,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -60071,7 +60177,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12008</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61184,7 +61290,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61237,7 +61343,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61290,7 +61396,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61343,7 +61449,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61396,7 +61502,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61449,7 +61555,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61502,7 +61608,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61555,7 +61661,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61608,7 +61714,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61661,7 +61767,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61714,7 +61820,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61767,7 +61873,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61820,7 +61926,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61873,7 +61979,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61926,7 +62032,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -61979,7 +62085,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -62032,7 +62138,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -62085,7 +62191,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -62138,7 +62244,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -62191,7 +62297,7 @@
 		<n32TriggerTime>0</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
+		<n32CasterEffect>12011,12012</n32CasterEffect>
 		<szCastSound>sound01.mp3</szCastSound>
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
@@ -64881,7 +64987,7 @@
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>2</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64934,7 +65040,7 @@
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>5</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64987,7 +65093,7 @@
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>10</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65040,7 +65146,7 @@
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>20</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65093,7 +65199,7 @@
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>30</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65146,7 +65252,7 @@
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>45</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65199,7 +65305,7 @@
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>60</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65252,7 +65358,7 @@
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>75</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65305,7 +65411,7 @@
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>95</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65358,7 +65464,7 @@
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
+		<n32SkillType>2</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -67038,7 +67144,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0,0,0,40010]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:0,0,0,0,20,40010]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -67091,7 +67197,113 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0,0,0,40011]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:0,0,0,0,20,40011]</szAffectTargetAffect>
+		<szDescribe></szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo></szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="90003001">
+		<n32SeriId>90003</n32SeriId>
+		<szName>麻痹陷阱显示</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
+		<n32Faction>4</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>2</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>2</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[rehp:0,0,0,0,20,12009]</szAffectTargetAffect>
+		<szDescribe></szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo></szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="90004001">
+		<n32SeriId>90004</n32SeriId>
+		<szName>守卫塔显示</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
+		<n32Faction>4</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>2</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>2</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[rehp:0,0,0,0,60,12013]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
