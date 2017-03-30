@@ -1300,7 +1300,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005001</n32Skill01>
+		<n32Skill01>83005001</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1329,7 +1329,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005011</n32Skill01>
+		<n32Skill01>83005011</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1358,7 +1358,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005021</n32Skill01>
+		<n32Skill01>83005021</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1387,7 +1387,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005031</n32Skill01>
+		<n32Skill01>83005031</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1416,7 +1416,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005041</n32Skill01>
+		<n32Skill01>83005041</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1445,7 +1445,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005051</n32Skill01>
+		<n32Skill01>83005051</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1474,7 +1474,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005061</n32Skill01>
+		<n32Skill01>83005061</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1503,7 +1503,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005071</n32Skill01>
+		<n32Skill01>83005071</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1532,7 +1532,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005081</n32Skill01>
+		<n32Skill01>83005081</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1561,7 +1561,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005091</n32Skill01>
+		<n32Skill01>83005091</n32Skill01>
 		<n32Skill02>90001001</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70006</modolId>
@@ -1590,7 +1590,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005001</n32Skill01>
+		<n32Skill01>80005001</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1619,7 +1619,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005011</n32Skill01>
+		<n32Skill01>80005011</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1648,7 +1648,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005021</n32Skill01>
+		<n32Skill01>80005021</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1677,7 +1677,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005031</n32Skill01>
+		<n32Skill01>80005031</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1706,7 +1706,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005041</n32Skill01>
+		<n32Skill01>80005041</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1735,7 +1735,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005051</n32Skill01>
+		<n32Skill01>80005051</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1764,7 +1764,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005061</n32Skill01>
+		<n32Skill01>80005061</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1793,7 +1793,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005071</n32Skill01>
+		<n32Skill01>80005071</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1822,7 +1822,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005081</n32Skill01>
+		<n32Skill01>80005081</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>
@@ -1851,7 +1851,7 @@
 		<HurtPc>0</HurtPc>
 		<n32LifeTime>6</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005091</n32Skill01>
+		<n32Skill01>80005091</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
 		<modolId>70007</modolId>

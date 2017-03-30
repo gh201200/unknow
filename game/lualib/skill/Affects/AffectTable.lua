@@ -75,7 +75,7 @@ end
 
 function AffectTable:addAffect(source,data,skillId,extra)
 	local aff = nil
-	--print("addAffect",data)
+	print("addAffect",data)
 	if data[1] == "curehp" or data[1] == "curemp" or data[1] == "damage" or data[1] == "shield" or data[1] == "burnmp" then
 		aff = skillAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "blink" then
@@ -113,10 +113,14 @@ function AffectTable:addAffect(source,data,skillId,extra)
 		aff = addskillAffect.new(self.owner,source,data,skillId) 
 	elseif data[1] == "changeatk" then
 		aff = changeatkAffect.new(self.owner,source,data,skillId)
+	elseif data[1] == "suicide" then
+		--移除自己 特殊处理
+		source:onDead()
 	end
 	if not aff then
 		print('data = ',data)
 		print('skillid = ',skillId)
+		return nil
 	end
 	aff:onEnter()
 	return self:replaceAdd(aff)

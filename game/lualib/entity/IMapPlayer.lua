@@ -100,7 +100,7 @@ function IMapPlayer:update(dt)
 				--self.ai:update(dt)
 			end
 		else
-			self:autoAttack()		
+		--	self:autoAttack()		
 		end
 	end
 	self.hateTime =  self.hateTime - dt	

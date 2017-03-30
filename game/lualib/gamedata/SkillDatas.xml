@@ -1634,9 +1634,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[suicide:0,0]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,1.75,50001]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,1.75,50001][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe>　　地雷爆炸放出强烈的震荡波，使周围的敌方单位陷入晕眩1.75秒</szDescribe>
 		<n32ShowRange>0.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -1687,9 +1687,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[suicide:0,0]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2,50001]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,2,50001][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe>　　地雷爆炸放出强烈的震荡波，使周围的敌方单位陷入晕眩2秒</szDescribe>
 		<n32ShowRange>0.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -1740,9 +1740,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[suicide:0,0]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.25,50001]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.25,50001][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe>　　地雷爆炸放出强烈的震荡波，使周围的敌方单位陷入晕眩2.25秒</szDescribe>
 		<n32ShowRange>0.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -1793,9 +1793,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[suicide:0,0]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.5,50001]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.5,50001][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe>　　地雷爆炸放出强烈的震荡波，使周围的敌方单位陷入晕眩2.5秒</szDescribe>
 		<n32ShowRange>0.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -1846,9 +1846,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[suicide:0,0]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[ctrl:7,0,0,2.75,50001]</szAffectTargetAffect>
+		<szAffectTargetAffect>[ctrl:7,0,0,2.75,50001][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe>　　地雷爆炸放出强烈的震荡波，使周围的敌方单位陷入晕眩2.75秒</szDescribe>
 		<n32ShowRange>0.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -1901,7 +1901,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,1,0,0,0,12015]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,1,0,0,0,12015][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe>　　电塔的普通攻击</szDescribe>
 		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
@@ -66084,7 +66084,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,450,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,450,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66137,7 +66137,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,500,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,500,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66190,7 +66190,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,550,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,550,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66243,7 +66243,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,600,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,600,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66296,7 +66296,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,650,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,650,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66349,7 +66349,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,700,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,700,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66402,7 +66402,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,750,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,750,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66455,7 +66455,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,800,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,800,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66508,7 +66508,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,850,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,850,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66561,7 +66561,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:1,3,900,0,0,31031]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:1,3,900,0,0,31031][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66614,7 +66614,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,90,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,90,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66667,7 +66667,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,100,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,100,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66720,7 +66720,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,110,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,110,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66773,7 +66773,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,120,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,120,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66826,7 +66826,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,130,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,130,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66879,7 +66879,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,140,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,140,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66932,7 +66932,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,150,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,150,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -66985,7 +66985,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,160,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,160,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -67038,7 +67038,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,170,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,170,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -67091,7 +67091,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,0.6,180,0,0,31030]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,0.6,180,0,0,31030][suicide:0,0]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>

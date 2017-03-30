@@ -710,7 +710,6 @@ function Ientity:onDead()
 	--self:setActionState(0, ActionState.die)
 	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
-			print("onDead===",v.serverId,self.serverId,v:getType())
 			v:setTarget(nil)
 			v:setAttackTarget(nil)
 		end
@@ -755,7 +754,6 @@ function Ientity:addAffectState(argState,num)
 end
 
 function Ientity:addHp(_hp, mask, source)
-
 	isDelay = isDelay or false 
 	_hp = math.floor(_hp)
 	if _hp == 0 then return end

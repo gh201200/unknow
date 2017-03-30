@@ -1345,7 +1345,7 @@
 	<item id="20035">
 		<n32type>4</n32type>
 		<szassert>ranshaoping_bullet_body</szassert>
-		<n32time>0</n32time>
+		<n32time>0.8</n32time>
 		<n32speed>3</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
