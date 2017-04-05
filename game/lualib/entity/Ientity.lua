@@ -1205,24 +1205,35 @@ function Ientity:castSkill()
 end
 
 function Ientity:addSkill(skillId,extra,updateToClient)
-	print("addskill====",skillId,extra)
 	local skilldata = g_shareData.skillRepository[skillId]	
-	if skilldata.n32Active == 1 then
-		local ps = passtiveSpell.new(self,skilldata,extra)
-		table.insert(self.spell.passtiveSpells,ps) 
-	else
+	if skilldata.n32SkillType == 2 then
+		--大招
 		if self.skillTable[skillId] == nil then
-			self.skillTable[skillId] = 0 
-		end	
-		self.skillTable[skillId] = self.skillTable[skillId] + extra
-		if updateToClient then
-			local msg = {
-				skillId = skillId,
-				level = self.skillTable[skillId] 
-			}
-			skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+			self.skillTable[skillId] = 0
 		end
-	end		
+		self.skillTable[skillId] = self.skillTable[skillId] + extra
+		if skilldata.n32Active == 1 then
+			local ps = passtiveSpell.new(self,skilldata,extra)
+			table.insert(self.spell.passtiveSpells,ps)
+		end
+	else
+		if skilldata.n32Active == 1 then
+			local ps = passtiveSpell.new(self,skilldata,extra)
+			table.insert(self.spell.passtiveSpells,ps)
+		else
+			if self.skillTable[skillId] == nil then
+				self.skillTable[skillId] = 0 
+			end	
+			self.skillTable[skillId] = self.skillTable[skillId] + extra
+		end
+	end
+	if updateToClient then
+		local msg = {
+			skillId = skillId,
+			level = self.skillTable[skillId] 
+		}
+		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	end
 end
 function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )

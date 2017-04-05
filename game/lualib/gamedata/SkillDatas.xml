@@ -318,6 +318,59 @@
 		<szInfo></szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
 	</item>
+	<item id="820001">
+		<n32SeriId>820001</n32SeriId>
+		<szName>怪物魔化</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10001.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>1</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>1</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>1</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,0.2,0,0,0,51012][atk:0,0.2,0,0,0,0]</szAffectTargetAffect>
+		<szDescribe>　　怪物魔化，增加20%的血量和攻击力，击败后将掉落天赋石</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo></szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
 	<item id="911001">
 		<n32SeriId>911001</n32SeriId>
 		<szName>厚德普攻</szName>
@@ -49651,7 +49704,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,80,0,0,0]</szAffectTargetAffect>
@@ -49704,7 +49757,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,160,0,0,0]</szAffectTargetAffect>
@@ -49757,7 +49810,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,240,0,0,0]</szAffectTargetAffect>
@@ -49810,7 +49863,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
@@ -49863,7 +49916,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,160,0,0,0]</szAffectTargetAffect>
@@ -49916,7 +49969,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,240,0,0,0]</szAffectTargetAffect>
@@ -49969,7 +50022,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
@@ -50022,7 +50075,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
@@ -50075,7 +50128,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,240,0,0,0]</szAffectTargetAffect>
@@ -50128,7 +50181,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
@@ -50181,7 +50234,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
@@ -50234,7 +50287,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,480,0,0,0]</szAffectTargetAffect>
@@ -50287,7 +50340,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
@@ -50340,7 +50393,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
@@ -50393,7 +50446,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,480,0,0,0]</szAffectTargetAffect>
@@ -50446,7 +50499,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,560,0,0,0]</szAffectTargetAffect>
@@ -50499,7 +50552,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
@@ -50552,7 +50605,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,480,0,0,0]</szAffectTargetAffect>
@@ -50605,7 +50658,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,560,0,0,0]</szAffectTargetAffect>
@@ -50658,7 +50711,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.4,720,0,0,0]</szAffectTargetAffect>
@@ -50711,7 +50764,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,15,0,20,0]</szAffectTargetAffect>
@@ -50764,7 +50817,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,25,0,20,0]</szAffectTargetAffect>
@@ -50817,7 +50870,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,35,0,20,0]</szAffectTargetAffect>
@@ -50870,7 +50923,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521011,20,0][atk:0,0,45,0,20,0]</szAffectTargetAffect>
@@ -50923,7 +50976,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,30,0,20,0]</szAffectTargetAffect>
@@ -50976,7 +51029,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,40,0,20,0]</szAffectTargetAffect>
@@ -51029,7 +51082,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,50,0,20,0]</szAffectTargetAffect>
@@ -51082,7 +51135,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521021,20,0][atk:0,0,60,0,20,0]</szAffectTargetAffect>
@@ -51135,7 +51188,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,45,0,20,0]</szAffectTargetAffect>
@@ -51188,7 +51241,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,55,0,20,0]</szAffectTargetAffect>
@@ -51241,7 +51294,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,65,0,20,0]</szAffectTargetAffect>
@@ -51294,7 +51347,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521031,20,0][atk:0,0,75,0,20,0]</szAffectTargetAffect>
@@ -51347,7 +51400,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,60,0,20,0]</szAffectTargetAffect>
@@ -51400,7 +51453,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,70,0,20,0]</szAffectTargetAffect>
@@ -51453,7 +51506,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,80,0,20,0]</szAffectTargetAffect>
@@ -51506,7 +51559,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521041,20,0][atk:0,0,90,0,20,0]</szAffectTargetAffect>
@@ -51559,7 +51612,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,75,0,20,0]</szAffectTargetAffect>
@@ -51612,7 +51665,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,85,0,20,0]</szAffectTargetAffect>
@@ -51665,7 +51718,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,95,0,20,0]</szAffectTargetAffect>
@@ -51718,7 +51771,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9521051,20,0][atk:0,0,105,0,20,0]</szAffectTargetAffect>
@@ -51771,7 +51824,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:5,0][wsp:0,0,0.30,0,5,0][mov:0,0.15,0,0,5,51003]</szAffectTargetAffect>
@@ -51824,7 +51877,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:6,0][wsp:0,0,0.30,0,6,0][mov:0,0.15,0,0,6,51003]</szAffectTargetAffect>
@@ -51877,7 +51930,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:7,0][wsp:0,0,0.30,0,7,0][mov:0,0.15,0,0,7,51003]</szAffectTargetAffect>
@@ -51930,7 +51983,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:8,0][wsp:0,0,0.30,0,8,0][mov:0,0.15,0,0,8,51003]</szAffectTargetAffect>
@@ -51983,7 +52036,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:5,0][wsp:0,0,0.42,0,5,0][mov:0,0.20,0,0,5,51003]</szAffectTargetAffect>
@@ -52036,7 +52089,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:6,0][wsp:0,0,0.42,0,6,0][mov:0,0.20,0,0,6,51003]</szAffectTargetAffect>
@@ -52089,7 +52142,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:7,0][wsp:0,0,0.42,0,7,0][mov:0,0.20,0,0,7,51003]</szAffectTargetAffect>
@@ -52142,7 +52195,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:8,0][wsp:0,0,0.42,0,8,0][mov:0,0.20,0,0,8,51003]</szAffectTargetAffect>
@@ -52195,7 +52248,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:5,0][wsp:0,0,0.54,0,5,0][mov:0,0.25,0,0,5,51003]</szAffectTargetAffect>
@@ -52248,7 +52301,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:6,0][wsp:0,0,0.54,0,6,0][mov:0,0.25,0,0,6,51003]</szAffectTargetAffect>
@@ -52301,7 +52354,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:7,0][wsp:0,0,0.54,0,7,0][mov:0,0.25,0,0,7,51003]</szAffectTargetAffect>
@@ -52354,7 +52407,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:8,0][wsp:0,0,0.54,0,8,0][mov:0,0.25,0,0,8,51003]</szAffectTargetAffect>
@@ -52407,7 +52460,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:5,0][wsp:0,0,0.66,0,5,0][mov:0,0.30,0,0,5,51003]</szAffectTargetAffect>
@@ -52460,7 +52513,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:6,0][wsp:0,0,0.66,0,6,0][mov:0,0.30,0,0,6,51003]</szAffectTargetAffect>
@@ -52513,7 +52566,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:7,0][wsp:0,0,0.66,0,7,0][mov:0,0.30,0,0,7,51003]</szAffectTargetAffect>
@@ -52566,7 +52619,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:8,0][wsp:0,0,0.66,0,8,0][mov:0,0.30,0,0,8,51003]</szAffectTargetAffect>
@@ -52619,7 +52672,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:5,0][wsp:0,0,0.78,0,5,0][mov:0,0.35,0,0,5,51003]</szAffectTargetAffect>
@@ -52672,7 +52725,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:6,0][wsp:0,0,0.78,0,6,0][mov:0,0.35,0,0,6,51003]</szAffectTargetAffect>
@@ -52725,7 +52778,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:7,0][wsp:0,0,0.78,0,7,0][mov:0,0.35,0,0,7,51003]</szAffectTargetAffect>
@@ -52778,7 +52831,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[outskill:8,0][wsp:0,0,0.78,0,8,0][mov:0,0.35,0,0,8,51003]</szAffectTargetAffect>
@@ -57071,7 +57124,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,15,0,15,0]</szAffectTargetAffect>
@@ -57124,7 +57177,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,25,0,15,0]</szAffectTargetAffect>
@@ -57177,7 +57230,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,35,0,15,0]</szAffectTargetAffect>
@@ -57230,7 +57283,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
@@ -57283,7 +57336,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,25,0,15,0]</szAffectTargetAffect>
@@ -57336,7 +57389,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,35,0,15,0]</szAffectTargetAffect>
@@ -57389,7 +57442,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
@@ -57442,7 +57495,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
@@ -57495,7 +57548,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,35,0,15,0]</szAffectTargetAffect>
@@ -57548,7 +57601,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
@@ -57601,7 +57654,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
@@ -57654,7 +57707,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,65,0,15,0]</szAffectTargetAffect>
@@ -57707,7 +57760,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,45,0,15,0]</szAffectTargetAffect>
@@ -57760,7 +57813,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
@@ -57813,7 +57866,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,65,0,15,0]</szAffectTargetAffect>
@@ -57866,7 +57919,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,75,0,15,0]</szAffectTargetAffect>
@@ -57919,7 +57972,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,55,0,15,0]</szAffectTargetAffect>
@@ -57972,7 +58025,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,65,0,15,0]</szAffectTargetAffect>
@@ -58025,7 +58078,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,75,0,15,0]</szAffectTargetAffect>
@@ -58078,7 +58131,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[changeatk:9531011,15,12021][atk:0,0,85,0,15,0]</szAffectTargetAffect>
@@ -58131,7 +58184,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,15,0,0,12016]</szAffectTargetAffect>
@@ -58184,7 +58237,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,25,0,0,12016]</szAffectTargetAffect>
@@ -58237,7 +58290,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,35,0,0,12016]</szAffectTargetAffect>
@@ -58290,7 +58343,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,45,0,0,12016]</szAffectTargetAffect>
@@ -58343,7 +58396,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,45,0,0,12016]</szAffectTargetAffect>
@@ -58396,7 +58449,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,60,0,0,12016]</szAffectTargetAffect>
@@ -58449,7 +58502,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,75,0,0,12016]</szAffectTargetAffect>
@@ -58502,7 +58555,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,90,0,0,12016]</szAffectTargetAffect>
@@ -58555,7 +58608,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,80,0,0,12016]</szAffectTargetAffect>
@@ -58608,7 +58661,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,100,0,0,12016]</szAffectTargetAffect>
@@ -58661,7 +58714,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,120,0,0,12016]</szAffectTargetAffect>
@@ -58714,7 +58767,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,140,0,0,12016]</szAffectTargetAffect>
@@ -58767,7 +58820,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,120,0,0,12016]</szAffectTargetAffect>
@@ -58820,7 +58873,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,145,0,0,12016]</szAffectTargetAffect>
@@ -58873,7 +58926,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,170,0,0,12016]</szAffectTargetAffect>
@@ -58926,7 +58979,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,195,0,0,12016]</szAffectTargetAffect>
@@ -58979,7 +59032,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.2,0][damage:3,0.25,165,0,0,12016]</szAffectTargetAffect>
@@ -59032,7 +59085,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.25,0][damage:3,0.25,195,0,0,12016]</szAffectTargetAffect>
@@ -59085,7 +59138,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.3,0][damage:3,0.25,225,0,0,12016]</szAffectTargetAffect>
@@ -59138,7 +59191,7 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[ctrl:7,0,0,0.35,0][damage:3,0.25,255,0,0,12016]</szAffectTargetAffect>
@@ -67125,7 +67178,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>2</n32CD>
+		<n32CD>0</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>0</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -67178,7 +67231,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>2</n32CD>
+		<n32CD>0</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>0</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -67231,7 +67284,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>2</n32CD>
+		<n32CD>0</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>0</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -67284,7 +67337,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>2</n32CD>
+		<n32CD>0</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>0</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>

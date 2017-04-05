@@ -10,10 +10,6 @@ function passtiveSpell:ctor(src,skilldata,time)
 		self.targets = {}
 	end
 	
-	if self.skilldata.n32TriggerCondition == 9 then
-		--学习时候触发
-		self:trigger(9)
-	end
 	if self.skilldata.szSelectTargetAffect ~= ""  then
 		--被动技能施法目标都是自己
 		local adds = {}
@@ -75,6 +71,11 @@ function passtiveSpell:update(dt)
 		end 
 		self.targets = targets	
 	end
+	if self.skilldata.n32TriggerCondition == 9 and self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
+		--学习时候触发
+		self:trigger(9)
+	end
+
 end
 
 function passtiveSpell:onDead()
@@ -139,7 +140,11 @@ function passtiveSpell:trigger(_cond)
 				--if self.skilldata.n32SkillTargetType == 1 then
 				tgt = self.source:getTarget()
 			end
-			self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+			if _cond == 9 then
+				self.source.cooldown:resetCd(self.skilldata.id,math.maxinteger);
+			else	
+				self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+			end
 			local _type = self.skilldata.szSelectRange[1]
 			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
 		end
