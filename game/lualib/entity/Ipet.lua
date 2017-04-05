@@ -43,6 +43,7 @@ function IPet:init(pt,master)
 		if skillId ~= 0 then
 			local skilldata = g_shareData.skillRepository[skillId]	
 			if skilldata.n32Active == 1 then
+				self.cooldown:addItem(skillId)
 				for i=#(self.spell.passtiveSpells),1,-1 do
 					local v = self.spell.passtiveSpells[i]
 					if v.skilldata.n32SeriId == skilldata.n32SeriId then
