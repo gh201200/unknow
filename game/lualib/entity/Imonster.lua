@@ -46,6 +46,20 @@ function IMonster:init(mt)
 	self.attach = mt.attach
 	self:setPos(mt.px, 0, mt.pz)
 	IMonster.super.init(self)
+	for k,v in pairs(self.attDat.szSkill) do
+		local skilldata = g_shareData.skillRepository[v]
+		if skilldata and skilldata.n32Active == 1 then
+			self.cooldown:addItem(skillId) 
+			for i=#(self.spell.passtiveSpells),1,-1 do
+				local v = self.spell.passtiveSpells[i]
+				if v.skilldata.n32SeriId == skilldata.n32SeriId then
+					--移除旧的被动技能
+					v:onDead()
+					table.remove(self.spell.passtiveSpells,i)
+				end
+			end
+		end
+	end
 end
 
 

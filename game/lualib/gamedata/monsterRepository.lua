@@ -34,9 +34,10 @@ for k, p in pairs(xmlhandler.root.info.item) do
 			else
 				if _i == "szSkill" then
 					tmpTb[_i] = {}
-					for _skill, _percent in string.gmatch(_v, "(%d+),(%d+)") do
-                                                 table.insert(tmpTb[_i], {skillId=_skill,percent=_percent})
-                                        end
+					local strTb = string.split(_v,",")
+					for k, v in pairs( strTb ) do
+						table.insert(tmpTb[_i],tonumber(v))
+					end
 				else
 					tmpTb[_i] = _v
 				end
