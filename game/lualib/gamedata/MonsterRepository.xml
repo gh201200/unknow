@@ -1669,7 +1669,7 @@
 		<n32Gold>0</n32Gold>
 		<n32Drop>0</n32Drop>
 		<n32CommonSkill>810002</n32CommonSkill>
-		<szSkill></szSkill>
+		<szSkill>820002</szSkill>
 		<n32ModelId>90001</n32ModelId>
 	</item>
 	<item id="200002">
@@ -1691,7 +1691,7 @@
 		<n32Gold>0</n32Gold>
 		<n32Drop>0</n32Drop>
 		<n32CommonSkill>810002</n32CommonSkill>
-		<szSkill></szSkill>
+		<szSkill>820002</szSkill>
 		<n32ModelId>90002</n32ModelId>
 	</item>
 	<item id="100011">

@@ -371,6 +371,59 @@
 		<szInfo></szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
 	</item>
+	<item id="820002">
+		<n32SeriId>820002</n32SeriId>
+		<szName>基地回复</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10001.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>8</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>1</n32SkillTargetType>
+		<szSelectRange>[circle:0.8,-1,1]</szSelectRange>
+		<n32SelectTargetType>2</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>2</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[rehp:6,0.125,0,0,0,0][remp:7,0.125,0,0,0,0]</szAffectTargetAffect>
+		<szDescribe>　　基地周围回血回蓝</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo></szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
 	<item id="911001">
 		<n32SeriId>911001</n32SeriId>
 		<szName>厚德普攻</szName>
@@ -52868,7 +52921,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -52921,7 +52974,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -52974,7 +53027,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53027,7 +53080,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53080,7 +53133,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53133,7 +53186,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53186,7 +53239,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53239,7 +53292,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53292,7 +53345,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53345,7 +53398,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53398,7 +53451,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53451,7 +53504,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53504,7 +53557,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53557,7 +53610,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53610,7 +53663,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53663,7 +53716,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53716,7 +53769,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53769,7 +53822,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53822,7 +53875,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -53875,7 +53928,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>24</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59228,7 +59281,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>20</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59247,8 +59300,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201001,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成25%的伤害，受到300%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201001,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到300%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59281,7 +59334,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>18</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59300,8 +59353,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201001,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成25%的伤害，受到300%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201001,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到300%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59334,7 +59387,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>50</n32CD>
+		<n32CD>16</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59353,8 +59406,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201001,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成25%的伤害，受到300%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201001,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到300%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59387,7 +59440,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>45</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59406,8 +59459,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201001,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成25%的伤害，受到300%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201001,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到300%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59440,7 +59493,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>20</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59459,8 +59512,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201011,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成30%的伤害，受到275%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59493,7 +59546,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>18</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59512,8 +59565,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201011,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成30%的伤害，受到275%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59546,7 +59599,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>50</n32CD>
+		<n32CD>16</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59565,8 +59618,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201011,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成30%的伤害，受到275%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59599,7 +59652,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>45</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59618,8 +59671,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201011,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成30%的伤害，受到275%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59652,7 +59705,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>20</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59671,8 +59724,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201021,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成35%的伤害，受到250%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59705,7 +59758,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>18</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59724,8 +59777,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201021,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成35%的伤害，受到250%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59758,7 +59811,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>50</n32CD>
+		<n32CD>16</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59777,8 +59830,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201021,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成35%的伤害，受到250%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59811,7 +59864,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>45</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59830,8 +59883,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201021,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成35%的伤害，受到250%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59864,7 +59917,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>20</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59883,8 +59936,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201031,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成40%的伤害，受到225%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59917,7 +59970,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>18</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59936,8 +59989,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201031,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成40%的伤害，受到225%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59970,7 +60023,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>50</n32CD>
+		<n32CD>16</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -59989,8 +60042,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201031,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成40%的伤害，受到225%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60023,7 +60076,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>45</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -60042,8 +60095,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201031,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成40%的伤害，受到225%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60076,7 +60129,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>60</n32CD>
+		<n32CD>20</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -60095,8 +60148,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201041,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成45%的伤害，受到200%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60129,7 +60182,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>55</n32CD>
+		<n32CD>18</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -60148,8 +60201,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201041,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成45%的伤害，受到200%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60182,7 +60235,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>50</n32CD>
+		<n32CD>16</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -60201,8 +60254,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201041,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成45%的伤害，受到200%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60235,7 +60288,7 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>45</n32CD>
+		<n32CD>14</n32CD>
 		<n32ChargeCount>0</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
@@ -60254,8 +60307,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[summon:53201041,2,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤两个自己的分身，造成45%的伤害，受到200%的伤害，分身持续20s</szDescribe>
+		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
+		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -67303,7 +67356,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[rehp:1,0,0,0,20,12009]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:1,0,0,0,45,12009]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>

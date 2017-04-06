@@ -46,10 +46,10 @@ function IMonster:init(mt)
 	self.attach = mt.attach
 	self:setPos(mt.px, 0, mt.pz)
 	IMonster.super.init(self)
-	for k,v in pairs(self.attDat.szSkill) do
-		local skilldata = g_shareData.skillRepository[v]
+	for _k,_v in pairs(self.attDat.szSkill) do
+		local skilldata = g_shareData.skillRepository[_v]
 		if skilldata and skilldata.n32Active == 1 then
-			self.cooldown:addItem(skillId) 
+			self.cooldown:addItem(_v) 
 			for i=#(self.spell.passtiveSpells),1,-1 do
 				local v = self.spell.passtiveSpells[i]
 				if v.skilldata.n32SeriId == skilldata.n32SeriId then
