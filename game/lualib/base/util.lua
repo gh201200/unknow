@@ -200,7 +200,7 @@ function openPackage( strPkg, userLv )
 	local str1 = string.split(strPkg, ";")
 	for k, v in pairs( str1 ) do
 		local str2 = string.split(v, ",")
-		drops[tonumber(str2[1])] = tonumber(str2[2])
+		drops[tonumber(str2[0])] = tonumber(str2[2])
 	end
 
 	local pkgIds = {}

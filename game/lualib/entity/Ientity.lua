@@ -1235,6 +1235,21 @@ function Ientity:addSkill(skillId,extra,updateToClient)
 		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
 	end
 end
+
+function Ientity:removeSkill(skillId,updateToClient)
+	local skilldata = g_shareData.skillRepository[skillId]
+	if skilldata.n32Active == 1 then
+		for i=#self.spell.passtiveSpells,1,-1 do
+			local ps = self.spell.passtiveSpells[i]
+			if ps.skilldata.id == skillId then
+				ps.isDead = true
+				break
+			end
+		end
+	else
+		self.skillTable[skillId] = nil
+	end 
+end
 function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
 end

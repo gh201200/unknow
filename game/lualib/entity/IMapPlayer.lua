@@ -248,11 +248,6 @@ function IMapPlayer:onExp()
 end
 
 
-function IMapPlayer:removeSkill(skillId)
-	--移除旧技能带的buff效果
-	self.skillTable[skillId] = nil
-end
-
 function IMapPlayer:castSkill()
 	if self:getHp() >= 0 then
 		IMapPlayer.super.castSkill(self)

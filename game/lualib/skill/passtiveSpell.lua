@@ -60,12 +60,9 @@ function passtiveSpell:update(dt)
 		--dels移除buff
 		if #dels > 0 then
 			--local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
-			print("移除buff")
 			for _dk,_dv in pairs(dels) do
 				if _dv.affectTable then
-					--print("remove======",_dv.serverId,self.skilldata.n32SeriId)
 					_dv.affectTable:removeBySkillId(self.skilldata.id)
-				--	_dv.affectTable:removeById(uuid)
 				end
 			end	
 		end 
@@ -74,16 +71,17 @@ function passtiveSpell:update(dt)
 	if self.skilldata.n32TriggerCondition == 9 and self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
 		--学习时候触发
 		self:trigger(9)
+		self.targets = {self.source}
 	end
 
 end
 
 function passtiveSpell:onDead()
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 or self.skilldata.n32TriggerCondition == 9 then
-		local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
 		for _dk,_dv in pairs(self.targets) do
 			_dv.affectTable:removeBySkillId(self.skilldata.id)	
-		end	
+		end
+		self.source.cooldown:resetCd(self.skilldata.id,0);	
 	end
 end
 
@@ -96,7 +94,6 @@ function passtiveSpell:trigger(_cond)
 		end
 	--攻击次数触发
 	elseif self.skilldata.n32TriggerCondition == 2 and _cond == 2 then
-		print("222222")
 		self.attackTicks = self.attackTicks + 1
 		if self.attackTicks >= self.skilldata.n32TriggerInfo then
 			isTrigger =  true
@@ -116,11 +113,9 @@ function passtiveSpell:trigger(_cond)
 		end
 	--施法触发	
 	elseif self.skilldata.n32TriggerCondition == 5 and _cond == 5 then
-		print("============trigger 5")
 		isTrigger =  true
 	--致命触发
 	elseif self.skilldata.n32TriggerCondition == 6 and _cond == 6 then
-		print("============trigger 666")
 		isTrigger =  true
 	--敌人碰撞触发
 	elseif self.skilldata.n32TriggerCondition == 7 and _cond == 7 then

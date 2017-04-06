@@ -3,7 +3,6 @@ local changeatkAffect = class("addskilAffect",Affect)
 
 function changeatkAffect:ctor(owner,source,data,skillId)
 	self.super.ctor(self,owner,source,data,skillId)
-	print("changeatkAffect=",data)
 	self.newCommonId = data[2]
 	self.effectTime = data[3] * 1000
 	self.effectId = data[4] or 0
