@@ -4,6 +4,7 @@ local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
 local HateList = require "ai.HateList" 
 local NpcAI = require "ai.NpcAI"
+local passtiveSpell = require "skill.passtiveSpell"
 local IBuilding = class("IBuilding", Ientity)
 
 function IBuilding.create(camp, mapDat)
@@ -63,6 +64,8 @@ function IBuilding:init(mapDat)
 				end
 			end
 		end
+		local ps = passtiveSpell.new(self,skilldata,math.maxinteger)
+		table.insert(self.spell.passtiveSpells,ps)
 	end
 end
 

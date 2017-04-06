@@ -5,7 +5,7 @@ local NpcAI = require "ai.NpcAI"
 local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
 local DropManager = require "drop.DropManager"
-
+local passtiveSpell =  require "skill.passtiveSpell"
 local IMonster = class("IMonster", Ientity)
 
 function IMonster.create(serverId, mt)
@@ -46,6 +46,7 @@ function IMonster:init(mt)
 	self.attach = mt.attach
 	self:setPos(mt.px, 0, mt.pz)
 	IMonster.super.init(self)
+	print("=========init",self.attDat)
 	for _k,_v in pairs(self.attDat.szSkill) do
 		local skilldata = g_shareData.skillRepository[_v]
 		if skilldata and skilldata.n32Active == 1 then
@@ -59,6 +60,8 @@ function IMonster:init(mt)
 				end
 			end
 		end
+		local ps = passtiveSpell.new(self,skilldata,math.maxinteger)
+		table.insert(self.spell.passtiveSpells,ps)
 	end
 end
 
@@ -134,7 +137,7 @@ function IMonster:preCastSkill()
 		local skills = {}
 		local sumPercent = 0
 		for k, v in pairs(self.attDat.szSkill) do
-			if self.cooldown:getCdTime(v.skillId) <= 0 then
+			if v and self.cooldown:getCdTime(v.skillId) <= 0 then
 				sumPercent = sumPercent + v.percent
 				table.insert(skills, {skillId=v.skillId, percent=sumPercent})
 			end

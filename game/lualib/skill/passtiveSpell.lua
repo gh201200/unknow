@@ -145,6 +145,7 @@ function passtiveSpell:trigger(_cond)
 			else	
 				self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
 			end
+			print("=========study:",self.skilldata.id)
 			local _type = self.skilldata.szSelectRange[1]
 			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
 		end
