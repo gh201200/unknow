@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <assert.h>
 
-#define SEARCH_DEPTH 5000
+#define SEARCH_DEPTH 2000
 #define BLOCK_WEIGHT 255
 
 struct map {
