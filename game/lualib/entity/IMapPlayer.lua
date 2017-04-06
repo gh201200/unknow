@@ -97,10 +97,10 @@ function IMapPlayer:update(dt)
 	if self:isDead() == false then
 		if self.ai then
 			if self.curActionState < ActionState.forcemove then
-				self.ai:update(dt)
+			--	self.ai:update(dt)
 			end
 		else
-			--self:autoAttack()		
+			self:autoAttack()		
 		end
 	end
 	self.hateTime =  self.hateTime - dt	
@@ -247,11 +247,6 @@ function IMapPlayer:onExp()
 	end
 end
 
-
-function IMapPlayer:removeSkill(skillId)
-	--移除旧技能带的buff效果
-	self.skillTable[skillId] = nil
-end
 
 function IMapPlayer:castSkill()
 	if self:getHp() >= 0 then

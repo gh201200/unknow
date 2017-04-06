@@ -2,10 +2,13 @@ local Affect = require "skill.Affects.Affect"
 local addskillAffect = class("addskilAffect",Affect)
 
 function addskillAffect:ctor(owner,source,data,skillId)
-	print("addskillAffect:ctor==")
 	self.super.ctor(self,owner,source,data,skillId)
 	self.newSkillId = data[2]
-	self.effectTime = data[3] * 1000
+	if data[3] == -1 then
+		self.effectTime = math.maxinteger
+	else
+		self.effectTime = data[3] * 1000
+	end
 	self.effectId = data[4] or 0
 end
 
@@ -24,6 +27,7 @@ end
 
 function addskillAffect:onExit()
 	self.super.onExit(self)
+	self.owner:removeSkill(self.newSkillId,false)
 end
 
 return addskillAffect
