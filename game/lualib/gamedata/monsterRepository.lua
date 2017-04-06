@@ -34,9 +34,11 @@ for k, p in pairs(xmlhandler.root.info.item) do
 			else
 				if _i == "szSkill" then
 					tmpTb[_i] = {}
-					local strTb = string.split(_v,",")
-					for k, v in pairs( strTb ) do
-						table.insert(tmpTb[_i],tonumber(v))
+					if _v ~= "" then
+						local strTb = string.split(_v,",")
+						for k, v in pairs( strTb ) do
+							table.insert(tmpTb[_i],tonumber(v))
+						end
 					end
 				else
 					tmpTb[_i] = _v
