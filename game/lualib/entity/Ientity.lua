@@ -412,7 +412,7 @@ function Ientity:setTarget(target)
 	end
 	if self:canMove() == 0 then
 		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
-			self:castSkill(self.ReadySkillId)
+			--self:castSkill(self.ReadySkillId)
 		else
 			local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
@@ -954,6 +954,9 @@ end
 --强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
 	dt = dt / 1000
+	if self:getHp() <= 0 then
+		return
+	end
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
 	if Map.IS_SAME_GRID(self.pos,self.targetPos.pos) then
@@ -1017,19 +1020,16 @@ function Ientity:onDead()
 	--self:setActionState(0, ActionState.die)
 	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
-			print("onDead===",v.serverId,self.serverId)
 			v:setTarget(nil)
+			v:setAttackTarget(nil)
 		end
 		if v.entityType == EntityType.monster then
 			v.hateList:removeHate( self )
 		end
 	end
+	self.spell.passtiveSpells = {}
 	self.ReadySkillId = 0
 	self.affectTable:clear() --清除所有的buff
-	for k,v in pairs(self.spell.passtiveSpells) do
-		v:onDead()
-	end
-	self.spell.passtiveSpells = {}
 end
 
 function Ientity:onRaise()
@@ -1064,7 +1064,6 @@ function Ientity:addAffectState(argState,num)
 end
 
 function Ientity:addHp(_hp, mask, source)
-
 	isDelay = isDelay or false 
 	_hp = math.floor(_hp)
 	if _hp == 0 then return end
@@ -1341,7 +1340,7 @@ function Ientity:callBackSpellEnd()
 		self.ReadySkillId = 0
 		return
 	end
-
+	--[[
 	local skilldata = g_shareData.skillRepository[self.ReadySkillId]
 	if self:canMove() == 0 and self:getTarget() ~= nil  then
 		if self:canCast(self.ReadySkillId)  == 0 then
@@ -1360,6 +1359,7 @@ function Ientity:callBackSpellEnd()
 	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
 			self.ReadySkillId = self:getCommonSkill() 
 	end
+	]]
 end
 --设置人物状态
 function Ientity:setState(state)
@@ -1435,15 +1435,18 @@ function Ientity:canCast(id)
 	return 0
 end
 
-function Ientity:getSkillNum()
-	local num = 0
-	for k,v in pairs(skillTable) do
-		if v ~= nil then
-			num  = num + 1	
-		end	
+--获取正常技能
+function Ientity:getRegularSkills()
+	local t = {}
+	for k,v in pairs(self.skillTable) do
+		local skilldata = g_shareData.skillRepository[k]
+		if v ~= nil and skilldata.n32SkillType == 1 then
+			table.insert(t,k)
+		end
 	end
-	return num
+	return t
 end
+
 --是否能选中技能
 function Ientity:canSetCastSkill(id)
         local skilldata = g_shareData.skillRepository[id]
@@ -1455,56 +1458,22 @@ function Ientity:canSetCastSkill(id)
 	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then
            return ErrorCode.EC_Spell_SkillIsRunning
         end
-	--[[技能目标类型为敌方
-	if skilldata.n32SkillTargetType == 3 then
-	--目标类型为地点
-	elseif skilldata.n32SkillTargetType == 4 or skilldata.n32SkillTargetType == 5 then
-		if self:getTarget() == nil then
-			return ErrorCode.EC_Spell_NoTarget
-		end
-	end]]--
 	--蓝量不够 
 	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
+	
 	return 0
 end
+
 function Ientity:setCastSkillId(id)
-	print('set cast skill id = ', id)
+	--print('set cast skill id = ', id)
 	local skilldata = g_shareData.skillRepository[id]
 	if not skilldata then
 		syslog.warning( 'setCastSkillId failed ' .. id )
 		return 1
 	end
-	if skilldata.bActive == false then	
-		--测试使用
-		self.ReadySkillId = 0
-		self.spell:onStudyPasstiveSkill(skilldata)
-		return 0
-	end
-	if self.ReadySkillId == id then
-		--技能取消
-		self.ReadySkillId = 0
-		print("cancel skill id ")
-		return 0
-	end
 	local errorcode = self:canSetCastSkill(id) 
 	if errorcode ~= 0 then return errorcode end
 	self.ReadySkillId = id
-	--[[
-	if   then
-		--可以立即释放
-		if self.spell:canBreak(ActionState.move) == false then
-			print("can not break")	
-		else
-			if self.spell:isSpellRunning() == true then	
-				self.spell:breakSpell()
-			end
-			self:castSkill()
-			self.ReadySkillId = 0	
-		end
-	else
-		--技能不是立即释放的
-		return -1
-	end]]
 	return 0
 end
 function Ientity:castSkill()
@@ -1512,12 +1481,7 @@ function Ientity:castSkill()
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat 
-	if skilldata == nil then
-		return 
-	end
 	assert( modoldata)
-	local errorcode = self:canCast(id) 
-	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}
 	local action = ""
 	if skilldata.n32ActionType == 1 then
@@ -1546,9 +1510,41 @@ function Ientity:castSkill()
 	tmpSpell:init(skilldata,skillTimes)
 	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
+	self.ReadySkillId = 0
 	return 0
 end
 
+function Ientity:addSkill(skillId,extra,updateToClient)
+	local skilldata = g_shareData.skillRepository[skillId]	
+	if skilldata.n32SkillType == 2 then
+		--大招
+		if self.skillTable[skillId] == nil then
+			self.skillTable[skillId] = 0
+		end
+		self.skillTable[skillId] = self.skillTable[skillId] + extra
+		if skilldata.n32Active == 1 then
+			local ps = passtiveSpell.new(self,skilldata,extra)
+			table.insert(self.spell.passtiveSpells,ps)
+		end
+	else
+		if skilldata.n32Active == 1 then
+			local ps = passtiveSpell.new(self,skilldata,extra)
+			table.insert(self.spell.passtiveSpells,ps)
+		else
+			if self.skillTable[skillId] == nil then
+				self.skillTable[skillId] = 0 
+			end	
+			self.skillTable[skillId] = self.skillTable[skillId] + extra
+		end
+	end
+	if updateToClient then
+		local msg = {
+			skillId = skillId,
+			level = self.skillTable[skillId] 
+		}
+		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	end
+end
 function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
 end

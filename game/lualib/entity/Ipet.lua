@@ -43,6 +43,7 @@ function IPet:init(pt,master)
 		if skillId ~= 0 then
 			local skilldata = g_shareData.skillRepository[skillId]	
 			if skilldata.n32Active == 1 then
+				self.cooldown:addItem(skillId)
 				for i=#(self.spell.passtiveSpells),1,-1 do
 					local v = self.spell.passtiveSpells[i]
 					if v.skilldata.n32SeriId == skilldata.n32SeriId then
@@ -52,7 +53,7 @@ function IPet:init(pt,master)
 					end
 				end
 			end	
-			local ps = passtiveSpell.new(self,skilldata)
+			local ps = passtiveSpell.new(self,skilldata,self.lifeTime)
 			table.insert(self.spell.passtiveSpells,ps)
 		end
 	end
@@ -73,6 +74,9 @@ function IPet:calcStats()
 	self.attDat.n32LStrength =  0 
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
+	self.attDat.n32RecvHp = 0
+	self.attDat.n32RecvMp = 0
+	
 	if self.pt.n32Type == 3 then
 		self.attDat.n32MainAtt = self.master.attDat.n32MainAtt
 	end

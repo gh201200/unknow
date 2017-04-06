@@ -94,9 +94,13 @@ function IMapPlayer:isSameCamp( v )
 end
 
 function IMapPlayer:update(dt)
-	if self.ai and self:isDead() == false then
-		if self.curActionState < ActionState.forcemove then
-			self.ai:update(dt)
+	if self:isDead() == false then
+		if self.ai then
+			if self.curActionState < ActionState.forcemove then
+				--self.ai:update(dt)
+			end
+		else
+			--self:autoAttack()		
 		end
 	end
 	self.hateTime =  self.hateTime - dt	
@@ -131,8 +135,8 @@ function IMapPlayer:init(heroId)
 	end
 	self:setGodSkill( self.attDat.n32GodSkillId)
 	self:setCommonSkill( self.attDat.n32CommonSkillId )
-	self.skillTable[self.attDat.n32GodSkillId] = -1 	--无限次数
-	self.skillTable[self.attDat.n32CommonSkillId] = -1  	--无限次数
+	self.skillTable[self.attDat.n32GodSkillId] = 0 	--无限次数
+	--self.skillTable[self.attDat.n32CommonSkillId] = -1  	--无限次数
 
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
 	self:setPos(self.bornPos.x, 0, self.bornPos.z)
@@ -188,7 +192,19 @@ function IMapPlayer:onDead()
 	else
 		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
 	end
+	if self.hater and (self.hater:getType() == "IMapPlayer" or  self.hater:getType() == "IBuilding") then
+		for k,v in pairs(EntityManager.entityList) do
+			if v.entityType == EntityType.player then
+				if v:isKind( self ) == false then
+					local exp = g_shareData.heroLevel[self:getLevel()]
+					v:addExp( math.floor(exp["n32Reward"]))
+				end
+			end
+		end
+	end
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+	local msg = {blueDeadNum = BattleOverManager.RedKillNum,redDeadNum = BattleOverManager.BlueKillNum }
+	EntityManager:sendToAllPlayers("onPlayerDead" ,msg)
 end
 
 function IMapPlayer:onRaise()
@@ -231,27 +247,9 @@ function IMapPlayer:onExp()
 	end
 end
 
-function IMapPlayer:addSkill(skillId, updateToClient)
-	if self.skillTable[skillId]  == nil then
-		self.skillTable[skillId] = 1
-	else
-		self.skillTable[skillId] = self.skillTable[skillId] + 1
-	end
-	
-	local skilldata = g_shareData.skillRepository[skillId]	
-	if updateToClient then
-		local msg = {
-			skillId = skillId,
-			level = self.skillTable[skillId] 
-		}
-		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
-	end
-end
 
 function IMapPlayer:removeSkill(skillId)
 	--移除旧技能带的buff效果
-	self.affectTable:removeBySkillId(skillId)
-	
 	self.skillTable[skillId] = nil
 end
 
@@ -262,27 +260,8 @@ function IMapPlayer:castSkill()
 end
 
 function IMapPlayer:SynSkillCds(id)
-	local msg = self.cooldown:getCdsMsg()	
+	local msg = self.cooldown:getCdsMsg()
 	skynet.call(self.agent,"lua","sendRequest","makeSkillCds",msg)	
-end
-
---仅有大招可以升级	
-function IMapPlayer:upgradeSkill(skillId)
-	if self.skillTable[skillId] == nil or self.skillTable[skillId] == 0 then
-		return -1, 0
-	end
-	if self.skillTable[skillId] == Quest.SkillMaxLevel then
-		return -1, 0
-	end
-	local costGold = Quest.GoldSkillLv[self.skillTable[skillId]]
-	if costGold > self:getGold() then
-		return -1, 0
-	end
-	--开始升级
-	--扣除金币
-	self:addGold(-costGold)
-	self:addSkill(skillId, false)
-	return 0, self.skillTable[skillId]
 end
 
 function IMapPlayer:aiCastSkill(target)
@@ -304,9 +283,101 @@ function IMapPlayer:aiCastSkill(target)
 		local index = math.random(1,#skills)
 		skillId = skills[index]
 	end
-	--self:setCastSkillId(skillId)
 	self.ReadySkillId = skillId 
 	self:setTarget(target)
+end
+
+function IMapPlayer:setCastSkillId(id)
+	local skilldata = g_shareData.skillRepository[id]
+	if skilldata.n32SkillType == 1 then	
+		if self.skillTable[id] == nil or self.skillTable[id] <= 0 then
+			return ErrorCode.EC_Spell_NumLow	
+		end
+	end
+	return IMapPlayer.super.setCastSkillId(self,id) 	
+end
+
+function IMapPlayer:castSkill(id)
+	local skilldata = g_shareData.skillRepository[id]
+	if skilldata.n32SkillType == 1 then	
+		self.skillTable[id] = self.skillTable[id] - 1
+		local msg = {
+			skillId = id,
+			level = self.skillTable[id] 
+		}
+		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	end
+	IMapPlayer.super.castSkill(self,id)
+end
+function IMapPlayer:replaceSkill(id)
+	local skilldata = g_shareData.skillRepository[id]
+	local nSkillId = 0
+	local num = 0
+	if skilldata.n32SkillType == 1 and  self.skillTable[id] ~= nil then
+		num = self.skillTable[id] - 1
+		local randSkills = {}
+		for k,bSkillId in pairs(self.bindSkills) do
+			local bexit = false
+			for eSkillId,v in pairs(self.skillTable) do
+				if v~= nil and v >=0 and eSkillId == bSkillId then
+					bexit = true
+					break
+				end
+			end
+			if bexit == false then
+				table.insert(randSkills,bSkillId)
+			end
+		end
+		self.skillTable[id] = nil 	
+		nSkillId = randSkills[math.random(1,#randSkills)]
+		--self:addSkill(nSkillId,num,true)	
+	end
+	return 0,nSkillId,num
+end
+--获取普攻范围内敌人
+function IMapPlayer:autoAttack()
+	if self.ReadySkillId ~= 0 and self.ReadySkillId ~= self:getCommonSkill() then
+		return
+	end
+	if self:getTarget() ~= nil then 
+		self.ReadySkillId = self:getCommonSkill()
+		return 
+	end
+	local target = self:getAttackTarget()
+	local newSearch = true 
+	if target ~= nil and self:isKind(target) == false and target:getHp() > 0 then
+		local disLen = self:getDistance(target)
+		if disLen <= 2 then
+			newSearch = false
+		else
+			 self:setAttackTarget(nil)
+		end
+	end
+	if newSearch == true then
+		local newTarget = nil
+		local shortest = 9999
+		for k,v in pairs(EntityManager.entityList) do 
+			if v ~= nil and  self:isKind(v) == false and v:getHp() > 0 then
+				local disLen = self:getDistance(v)
+				if disLen <= 2 and disLen <= shortest then
+					shortest = disLen
+					newTarget = v
+				end
+			end
+		end
+		if newTarget ~= nil then
+			if self.spell:isSpellRunning() == false then
+				self:setAttackTarget(newTarget)
+			end	
+		end
+	end
+	if self:getTarget() == nil then
+		local atkTarget = self:getAttackTarget()
+		self:setTarget(atkTarget)
+		self.ReadySkillId = self:getCommonSkill()
+	end
+	
+	return nil
 end
 return IMapPlayer
 

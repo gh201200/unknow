@@ -12,7 +12,8 @@ local chargeAffect = require "skill.Affects.chargeAffect"
 local showAffect =  require "skill.Affects.showAffect"
 local nodeadAffect = require "skill.Affects.nodeadAffect"
 local summonAffect =  require "skill.Affects.summonAffect"
-
+local addskillAffect = require "skill.Affects.addskillAffect"
+local changeatkAffect = require "skill.Affects.changeatkAffect"
 local AffectTable = class("AffectTable")
 
 function AffectTable:ctor(entity)
@@ -74,11 +75,10 @@ end
 
 function AffectTable:addAffect(source,data,skillId,extra)
 	local aff = nil
-	--print("addAffect",data)
 	if data[1] == "curehp" or data[1] == "curemp" or data[1] == "damage" or data[1] == "shield" or data[1] == "burnmp" then
 		aff = skillAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "blink" then
-		aff = blinkAffect.new(self.owner,source,data,skillId)
+		aff = blinkAffect.new(self.owner,source,data,skillId,extra)
 	elseif data[1] == "invincible" then
 		aff = invincibleAffect.new(self.owner,source,data),skillId
 	elseif data[1] == "outskill" then
@@ -108,10 +108,18 @@ function AffectTable:addAffect(source,data,skillId,extra)
 		aff = getnewAffect.new(self.owner,source,data,skillId)  
 	elseif data[1] == "summon" then
 		aff = summonAffect.new(self.owner,source,data,skillId)
+	elseif data[1] == "addskill" then
+		aff = addskillAffect.new(self.owner,source,data,skillId) 
+	elseif data[1] == "changeatk" then
+		aff = changeatkAffect.new(self.owner,source,data,skillId)
+	elseif data[1] == "suicide" then
+		--移除自己 特殊处理
+		source:onDead()
 	end
 	if not aff then
 		print('data = ',data)
 		print('skillid = ',skillId)
+		return nil
 	end
 	aff:onEnter()
 	return self:replaceAdd(aff)

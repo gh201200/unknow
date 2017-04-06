@@ -17,7 +17,6 @@ function REQUEST.updateMissionData( args )
 end
 
 function REQUEST.recvMissionAward( args )
-	print( args )
 	local unit = user.missions:getMissionByDataId( args.dataId )
 	local dat = g_shareData.missionRepository[args.dataId]
 	

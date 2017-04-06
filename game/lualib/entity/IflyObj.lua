@@ -12,6 +12,8 @@ end
 function IflyObj:ctor(src,tgt,skilldata,extra1,extra2)
 	self.source = src
 	self.target = tgt
+
+	IflyObj.super.ctor(self,nil,nil)
 	self.pos = vector3.new(0,0,0)
 	self.pos:set(src.pos.x,0,src.pos.z)
 	self.skilldata = skilldata	
@@ -263,6 +265,9 @@ function IflyObj:updateTarget(dt)
 		--触发效果
 		local selects = {self.target}
 		local targets = g_entityManager:getSkillAffectEntitys(self.source,selects,self.skilldata)
+		if self.skilldata.szSelectTargetAffect ~= "" then
+			self.source.spell:trgggerAffect(self.skilldata.szSelectTargetAffect,selects,self.skilldata)	
+		end
 		self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,targets,self.skilldata)
 		self.isDead = true
 	end

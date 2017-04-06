@@ -294,7 +294,9 @@ function PVPAI:onExec_assist()
 		if hit == false then
 			self.source:aiCastSkill(targets[1])
 		else
-			self.source:setTarget(target)
+
+			self.source:aiCastSkill(target)
+			--self.source:setTarget(target)
 		end
 	end
 end

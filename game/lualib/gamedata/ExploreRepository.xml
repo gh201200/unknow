@@ -342,7 +342,7 @@
 		<n32Color>2</n32Color>
 		<n32GoldC>0.1</n32GoldC>
 		<n32CardItemId>70001</n32CardItemId>
-		<n32CardC>0.08</n32CardC>
+		<n32CardC>0.008</n32CardC>
 		<n32SkillItemId>71001</n32SkillItemId>
 		<n32SkillC>0.032</n32SkillC>
 		<n32Time>21600</n32Time>
@@ -398,7 +398,7 @@
 		<n32Color>2</n32Color>
 		<n32GoldC>0.1</n32GoldC>
 		<n32CardItemId>70001</n32CardItemId>
-		<n32CardC>0.08</n32CardC>
+		<n32CardC>0.008</n32CardC>
 		<n32SkillItemId>71001</n32SkillItemId>
 		<n32SkillC>0.032</n32SkillC>
 		<n32Time>32400</n32Time>
@@ -454,7 +454,7 @@
 		<n32Color>2</n32Color>
 		<n32GoldC>0.1</n32GoldC>
 		<n32CardItemId>70001</n32CardItemId>
-		<n32CardC>0.08</n32CardC>
+		<n32CardC>0.008</n32CardC>
 		<n32SkillItemId>71001</n32SkillItemId>
 		<n32SkillC>0.032</n32SkillC>
 		<n32Time>43200</n32Time>

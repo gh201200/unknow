@@ -163,6 +163,7 @@ function NpcAI:onExec_GoHome()
 		self.source:setTargetPos(self.source.bornPos)
 	end
 	if self:isInBornPlace() then
+		self.source.hateList:clear()
 		local bx = Map.POS_2_GRID(self.source.bornPos.x)
 		local bz = Map.POS_2_GRID(self.source.bornPos.z)
 		if bx == Map.POS_2_GRID(self.source.pos.x) and bz == Map.POS_2_GRID(self.source.bornPos.z) then

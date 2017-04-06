@@ -1,17 +1,15 @@
 local passtiveSpell = class("passtiveSpell")
-function passtiveSpell:ctor(src,skilldata)
+function passtiveSpell:ctor(src,skilldata,time)
 	self.skilldata = skilldata
 	self.source = src
 	self.isDead = false
+	self.lifeTime = time
 	self.attackTicks = 0
 	self.bAttackTicks = 0
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition ==8 or self.skilldata.n32TriggerCondition == 9 then
 		self.targets = {}
 	end
-	if self.skilldata.n32TriggerCondition == 9 then
-		--学习时候触发
-		self:trigger(9)
-	end
+	
 	if self.skilldata.szSelectTargetAffect ~= ""  then
 		--被动技能施法目标都是自己
 		local adds = {}
@@ -21,6 +19,11 @@ function passtiveSpell:ctor(src,skilldata)
 end
 
 function passtiveSpell:update(dt)
+	self.lifeTime  = self.lifeTime - dt
+	if self.lifeTime < 0 then
+		self.isDead = true
+		return
+	end
 	--碰撞触发
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 then	
 		local selects = g_entityManager:getSkillSelectsEntitys(self.source,nil,self.skilldata) 
@@ -68,13 +71,17 @@ function passtiveSpell:update(dt)
 		end 
 		self.targets = targets	
 	end
+	if self.skilldata.n32TriggerCondition == 9 and self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
+		--学习时候触发
+		self:trigger(9)
+	end
+
 end
 
 function passtiveSpell:onDead()
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 or self.skilldata.n32TriggerCondition == 9 then
 		local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
 		for _dk,_dv in pairs(self.targets) do
-			--_dv.affectTable:removeById(uuid)
 			_dv.affectTable:removeBySkillId(self.skilldata.id)	
 		end	
 	end
@@ -123,7 +130,7 @@ function passtiveSpell:trigger(_cond)
 		isTrigger =  true
 	elseif self.skilldata.n32TriggerCondition == 9  and _cond == 9 then
 		isTrigger = true
-	end	
+	end
 	if self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
 		if isTrigger == true then
 			local tgt = nil
@@ -133,7 +140,11 @@ function passtiveSpell:trigger(_cond)
 				--if self.skilldata.n32SkillTargetType == 1 then
 				tgt = self.source:getTarget()
 			end
-			self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+			if _cond == 9 then
+				self.source.cooldown:resetCd(self.skilldata.id,math.maxinteger);
+			else
+				self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+			end
 			local _type = self.skilldata.szSelectRange[1]
 			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
 		end

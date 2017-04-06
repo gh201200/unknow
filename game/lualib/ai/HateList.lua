@@ -48,13 +48,11 @@ function HateList:addHate(entity,hateValue,source)
 
 	if not source or source < 1000 then
 		--link the hate
-		for k, v in pairs(self.source.attDat.szLink) do
-			local lt = EntityManager:getMonsterById(v)
-			for p, v in pairs(lt) do
-			--	if v.hateList:getHate(entity.serverId) == 0 then
-					v.hateList:addHate(entity, 1, 1001)
-			--	end 
-			end
+		for k, v in pairs(self.source.szLink) do
+			local m = EntityManager:getEntity(v)
+			if m and self.source.serverId ~= v and m.hateList:getHate(entity.serverId) == 0 then
+				m.hateList:addHate(entity, 1, 1001)
+			end 
 		end
 	end
 end
@@ -85,5 +83,7 @@ function HateList:removeHate(entity)
 	end
 end
 
-
+function HateList:clear()
+	 self.hateList = {}
+end
 return HateList

@@ -196,7 +196,6 @@ function Macro_GetMissionDataId( _serId, lv )
 	return _serId * 1000 + lv
 end
 function openPackage( strPkg, userLv )
-	print("openPackage", strPkg, userLv)
 	local drops = {}
 	local str1 = string.split(strPkg, ";")
 	for k, v in pairs( str1 ) do
@@ -241,7 +240,6 @@ function openPackage( strPkg, userLv )
 		end
 		filterdrops.totalRate = tr
 		
-		print(filterdrops)
 		if filterdrops.totalRate >= 1 then
 			local rd = math.random(1, filterdrops.totalRate)
 			local r = nil
@@ -266,7 +264,6 @@ function openPackage( strPkg, userLv )
 end
 
 function usePackageItem( itemId, lv )
-	print( itemId )
 	local itemDat = g_shareData.itemRepository[itemId]
 	if itemDat.n32Type ~= 4 then
 		return {}

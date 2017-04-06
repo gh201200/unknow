@@ -4,7 +4,6 @@ local repelAffect = class("repelAffect",Affect)
 local transfrom = require "entity.transfrom"
 
 function repelAffect:ctor(owner,source,data)
-	--print("repelAffect")
 	self.super.ctor(self,owner,source,data)
 	self.effectId = data[3] or 0
 	self.distance = data[2] or 0
@@ -17,6 +16,10 @@ end
 
 function repelAffect:onEnter()
 	self.super.onEnter(self)
+	if self.owner:getHp() <= 0 then
+		self:onExit()
+		return
+	end
 	self.owner:setActionState(self.speed, ActionState.repel)
 	local dir = vector3.create()
 	print("repel.onEnter",self.owner.serverId,self.source.serverId)
