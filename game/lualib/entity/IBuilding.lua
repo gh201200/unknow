@@ -50,6 +50,20 @@ function IBuilding:init(mapDat)
 	self.StatsChange = true
 	
 	IBuilding.super.init(self)
+	for _k,_v in pairs(self.attDat.szSkill) do
+		local skilldata = g_shareData.skillRepository[_v]
+		if skilldata and skilldata.n32Active == 1 then
+			self.cooldown:addItem(_v) 
+			for i=#(self.spell.passtiveSpells),1,-1 do
+				local v = self.spell.passtiveSpells[i]
+				if v.skilldata.n32SeriId == skilldata.n32SeriId then
+					--移除旧的被动技能
+					v:onDead()
+					table.remove(self.spell.passtiveSpells,i)
+				end
+			end
+		end
+	end
 end
 
 function IBuilding:insertHero(entity)
