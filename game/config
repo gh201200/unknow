@@ -21,4 +21,4 @@ preload = root.."lualib/base/preload.lua"	-- run preload.lua before every lua se
 snax = skynet_root.."?.lua;"..root.."service/?.lua"
  
 -- snax_interface_g = "snax_g"
--- daemon = root .. "$SERVER_NAME" .. ".pid"
+--daemon = root .. "$SERVER_NAME" .. ".pid"

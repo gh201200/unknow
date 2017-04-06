@@ -12,6 +12,13 @@ local syslog = require "syslog"
 
 local Ientity = class("Ientity" , transfrom)
 
+local AREA = {
+	{1, 6.8, 1.6, 8, 1.3, 7.4},
+	{1, 10.4, 1.6, 11.6, 1.3, 11},
+	{4.6, 7.6, 5.4, 8.8, 5, 8.2},
+	{4.6, 4.2, 5.4, 5.4, 5, 4.8},
+}
+
 local HP_MP_RECOVER_TIMELINE = 1000
 local UI_Stats_Show = {
 	Strength = true,
@@ -67,6 +74,10 @@ function Ientity:ctor(pos,dir)
 	self.pathNodeIndex = -1
 	self.useAStar = false
 	self.moveQuadrant = 0
+	self.moveNode = {}
+	self.moveNode[1] = vector3.create()
+	self.moveNode[2] = vector3.create()
+
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -208,11 +219,133 @@ function Ientity:onRespClientEventStamp(event)
 	end
 end
 
+function Ientity.getArea(pos)
+	if pos.x <= Map.CX then
+		if pos.z <= AREA[1][4] then
+			return 1
+		elseif pos.z <= AREA[2][2] then
+			return 5	--一桥
+		else
+			return 2
+		end
+	else
+		if pos.z <= AREA[4][4] then
+			return 4
+		elseif pos.z <= AREA[3][2] then
+			return 6	--二桥
+		else
+			return 3
+		end
+
+	end
+	return 0
+end
+
 function Ientity:setActionState(_speed, _action)
 	self.moveSpeed = _speed
 	self.curActionState = _action
 	if _action < ActionState.forcemove then 
 		self:advanceEventStamp(EventStampType.Move)
+	end
+
+	if _action == ActionState.move then
+		self.moveNode[1]:set(0, 0, 0)
+		self.moveNode[2]:set(0, 0, 0)
+		local target = self:getTarget().pos
+		local nArea = self.getArea( self.pos )
+		local tArea = self.getArea( self:getTarget().pos )
+		if nArea == 1 then
+			if tArea == 2 then
+				self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+				self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+			elseif tArea == 3 then
+				local slen1 = math.pow2(self.pos.x-AREA[1][5]) + math.pow2(self.pos.z-AREA[1][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[2][5]) + math.pow2(target.z-AREA[2][6])
+				local slen2 = math.pow2(self.pos.x-AREA[4][5]) + math.pow2(self.pos.z-AREA[4][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[3][5]) + math.pow2(target.z-AREA[3][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+				else
+					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+				end
+			end
+		elseif nArea == 2 then
+			if tArea == 1 then
+				self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+				self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+			elseif tArea == 4 then
+				local slen1 = math.pow2(self.pos.x-AREA[2][5]) + math.pow2(self.pos.z-AREA[2][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[1][5]) + math.pow2(target.z-AREA[1][6])
+				local slen2 = math.pow2(self.pos.x-AREA[3][5]) + math.pow2(self.pos.z-AREA[3][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[4][5]) + math.pow2(target.z-AREA[4][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+					self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+				else
+					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+					self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+				end
+			end
+		elseif nArea == 3 then
+			if tArea == 4 then
+				self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+				self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+			elseif tArea == 1 then
+				local slen1 = math.pow2(self.pos.x-AREA[2][5]) + math.pow2(self.pos.z-AREA[2][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[1][5]) + math.pow2(target.z-AREA[1][6])
+				local slen2 = math.pow2(self.pos.x-AREA[3][5]) + math.pow2(self.pos.z-AREA[3][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[4][5]) + math.pow2(target.z-AREA[4][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+					self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+				else
+					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+					self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+				end
+			end
+		elseif nArea == 4 then
+			if tArea == 3 then
+				self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+				self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+			elseif tArea == 2 then
+				local slen1 = math.pow2(self.pos.x-AREA[1][5]) + math.pow2(self.pos.z-AREA[1][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[2][5]) + math.pow2(target.z-AREA[2][6])
+				local slen2 = math.pow2(self.pos.x-AREA[4][5]) + math.pow2(self.pos.z-AREA[4][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[3][5]) + math.pow2(target.z-AREA[3][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+				else
+					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+				end
+			end
+		elseif nArea == 5 then
+			if tArea == 6 then
+				local r = math.random(1, 100) 
+				if r < 50 then
+					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+					self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+				else
+					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+				end
+			end
+		elseif nArea == 6 then
+			if tArea == 5 then
+				local r = math.random(1, 100) 
+				if r < 50 then
+					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+					self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+				else
+					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+				end
+			end
+
+		end
 	end
 end
 
@@ -239,14 +372,14 @@ end
 function Ientity:pathFind(dx, dz)
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	if self:getTarget():getType() ~= "transform" then	--目标是物体
-		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, 0, self:getTarget().modelDat.n32BSize)
+		Map:add(dx, dz, 0, self:getTarget().modelDat.n32BSize)
 	end
 
 	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz, self.modelDat.n32BSize)
 	
 	Map:add(self.pos.x, self.pos.z, 1, self.modelDat.n32BSize)
 	if self:getTarget():getType() ~= "transform" then	--目标是物体
-		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, 1, self:getTarget().modelDat.n32BSize)
+		Map:add(dx, dz, 1, self:getTarget().modelDat.n32BSize)
 	end
 	
 	self.pathNodeIndex = 3
@@ -254,7 +387,7 @@ function Ientity:pathFind(dx, dz)
 	if not self.useAStar then
 		print(Map.POS_2_GRID(self.pos.x),Map.POS_2_GRID(self.pos.z),Map.POS_2_GRID(dx),Map.POS_2_GRID(dz))
 	end
-	print(self.pathMove)
+	--print(self.pathMove)
 	return self.useAStar
 end
 
@@ -265,6 +398,7 @@ function Ientity:setTarget(target)
 		return 
 	end
 	
+	self:clearPath()
 	if self:isDead() then return end
 	--打断技能
 	if target ~= self:getTarget() and self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
@@ -313,12 +447,28 @@ function Ientity:setTargetPos(target)
 	if Map:isBlock( pos.x, pos.z ) then
 		Map:lineTest(self.pos, pos)
 	end
+	local r = Map:circleTest(pos, 1)
+	if r then
+		pos.x = r.x
+		pos.z = r.z
+	end
 	if self:canMove() == 0 then
 		self:setTarget(transfrom.new(pos,nil))
 	else
 		self:setNewTarget(transfrom.new(pos,nil))
 	end
 end
+
+function Ientity:getMoveTarget()
+	if self.moveNode[1].x > 0 then
+		return self.moveNode[1]
+	end
+	if self.moveNode[2].x > 0 then
+		return self.moveNode[2]
+	end
+	return self:getTarget().pos
+end
+
 function Ientity:update(dt)
 	if self:isDead() == false then
 		self.spell:update(dt)
@@ -342,7 +492,7 @@ function Ientity:update(dt)
 	end
 	if self:isDead() == false and self.entityType ~= EntityType.building and self.entityType ~= EntityType.trap then
 		if self.curActionState == ActionState.move and self:canMove() == 0 then
-			self:onMove2(dt)
+			self:onMove3(dt)
 		elseif self.curActionState == ActionState.stand then
 			--站立状态
 		elseif self.curActionState >= ActionState.forcemove then
@@ -410,6 +560,15 @@ function Ientity:setPos(x, y, z, r)
 	if not self:isDead() then
 		Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 		Map:add(x, z, 1, self.modelDat.n32BSize)
+	end
+	if self.moveNode[1].x > 0 then
+		if math.pow2(x - self.moveNode[1].x) < 0.16 and math.pow2(z - self.moveNode[1].z) < 0.36 then
+			self.moveNode[1].x = 0
+		end
+	elseif self.moveNode[2].x > 0 then
+		if math.pow2(x - self.moveNode[2].x) < 0.16 and math.pow2(z - self.moveNode[2].z) < 0.36 then
+			self.moveNode[2].x = 0
+		end
 	end
 	self.pos:set(x, y, z)
 	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
@@ -558,7 +717,7 @@ function Ientity:onMove2(dt)
 					self.moveQuadrant = 1
 				end
 			end
-			--]]
+			]]--
 			self.moveQuadrant = 1
 			repeat
 				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
@@ -640,6 +799,157 @@ function Ientity:onMove2(dt)
 		end
 	end
 end
+
+local dir = {
+	[0] = {0,4},
+	[1] = {4,4},
+	[2] = {4,0},
+	[3] = {4,-4},
+	[4] = {0,-4},
+	[5] = {-4,-4},
+	[6] = {-4,0},
+	[7] = {-4,4}
+}
+
+
+function Ientity:onMove3(dt)
+	dt = dt / 1000		--second
+	if self.moveSpeed <= 0 then return end
+	if self.useAStar then
+		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
+	else
+		if self:getTarget() == nil then
+			self:stand()
+			return
+		end
+		self.dir:set(self:getMoveTarget().x, 0, self:getMoveTarget().z)
+	end
+	self.dir:sub(self.pos)
+	self.dir:normalize()
+	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
+	mv_dst:mul_num(self.moveSpeed * dt)
+	mv_dst:add(self.pos)
+	repeat
+		legal_pos = true
+		--check iegal
+		
+		if self.useAStar then
+			if self:isLegalGrid( mv_dst ) == false then
+				egal_pos = false
+				print('use a star to find a path again ',self.serverId)
+				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+				if not nearBy then
+					self:stand()
+					return
+				end
+			end
+			break
+		end
+		
+		if self:isLegalGrid( mv_dst ) == false then
+			legal_pos = false
+			local nearBy = false
+			local angle = 60
+			repeat
+				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
+				mv_slep_dir:rot(angle)
+				mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				mv_dst:mul_num(self.moveSpeed * dt)
+				mv_dst:add(self.pos)
+				if self:isLegalGrid( mv_dst ) then
+					nearBy = true
+					self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				end
+				if nearBy then 
+					legal_pos = true
+					break 
+				end
+				angle = angle + 30
+
+			until angle > 150
+
+			if not nearBy then
+				print('use a star to find a path',self.serverId)
+				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+				if not nearBy then
+					--Map:dump()
+					--print('use a star to find a path stand',self.serverId)
+					self:stand()
+					return
+				end
+			end
+			if not nearBy then
+				--print('use a star to find a path again i333',self.serverId)
+				self:stand()
+				break
+			end
+		end
+	until true
+	if self.useAStar then
+		--移动到下一节点
+		if self.pathMove[self.pathNodeIndex] == Map.POS_2_GRID(mv_dst.x) and self.pathMove[self.pathNodeIndex+1] == Map.POS_2_GRID(mv_dst.z) then
+			self.pathNodeIndex = self.pathNodeIndex + 2
+		end
+		if self.pathNodeIndex >= #self.pathMove then
+			self:stand()
+			self:clearTarget(1)
+		end
+	elseif self:getTarget() then
+		if self:getTarget():getType() == "transform" then	--目标是物体
+			if math.abs(self.pos.x-self:getTarget().pos.x) < 0.02 and math.abs(self.pos.z-self:getTarget().pos.z) < 0.02 then
+				self:stand()
+				self:clearTarget(1)
+			end
+		end
+	end
+
+	if legal_pos then
+		--move
+		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
+
+		local statechange = true
+		local xx = 0
+		local zz = 0
+		repeat
+			xx = math.ceil(self.dir.x * GAMEPLAY_PERCENT) 
+			zz = math.ceil(self.dir.z * GAMEPLAY_PERCENT) 
+			if self.lastMoveSpeed ~= self.moveSpeed then break end
+			if self.lastMoveDir.x ~= xx then break end
+			if self.lastMoveDir.z ~= zz then break end
+			statechange = false
+		until true
+		if statechange then
+			self.lastMoveDir:set(xx, 0, zz)
+			self.lastMoveSpeed = self.moveSpeed
+			--advance move event stamp
+			self:advanceEventStamp(EventStampType.Move)
+		end
+	end
+end
+
+function Ientity:onMove4(dt)
+	dt = dt / 1000		--second
+	if self.moveSpeed <= 0 then return end
+	self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
+	local x, z = Map:getAgentPosition(self.no)
+	mv_dst:set(x, 0, z)
+	self.dir:sub(mv_dst)
+	Map:setAgentPrefVelocity(self.no, self.dir)
+	
+	self:setPos(x, 0, z)
+--[[
+	if math.abs(self.pos.x-self:getTarget().pos.x) < 0.02 and math.abs(self.pos.z-self:getTarget().pos.z) < 0.02 then
+			self:stand()
+			mv_dst:set(0, 0, 0)
+			Map:setAgentPrefVelocity(self.no, mv_dst)
+			self:clearTarget(1)
+	end
+--]]
+
+	--advance move event stamp
+	self:advanceEventStamp(EventStampType.Move)
+end
+
 
 --强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
