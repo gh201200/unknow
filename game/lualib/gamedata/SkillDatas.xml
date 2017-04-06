@@ -352,19 +352,19 @@
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>1</n32SkillTargetType>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>1</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,0.2,0,0,0,51012][atk:0,0.2,0,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[hp:0,0.2,0,0,-1,51012][atk:0,0.2,0,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　怪物魔化，增加20%的血量和攻击力，击败后将掉落天赋石</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -405,7 +405,7 @@
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
-		<n32SkillTargetType>1</n32SkillTargetType>
+		<n32SkillTargetType>0</n32SkillTargetType>
 		<szSelectRange>[circle:0.8,-1,1]</szSelectRange>
 		<n32SelectTargetType>2</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -417,7 +417,7 @@
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[rehp:6,0.125,0,0,0,0][remp:7,0.125,0,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:6,0.125,0,0,-1,0][remp:7,0.125,0,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　基地周围回血回蓝</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>

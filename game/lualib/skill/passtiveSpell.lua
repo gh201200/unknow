@@ -130,7 +130,7 @@ function passtiveSpell:trigger(_cond)
 		isTrigger =  true
 	elseif self.skilldata.n32TriggerCondition == 9  and _cond == 9 then
 		isTrigger = true
-	end	
+	end
 	if self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
 		if isTrigger == true then
 			local tgt = nil
@@ -142,10 +142,9 @@ function passtiveSpell:trigger(_cond)
 			end
 			if _cond == 9 then
 				self.source.cooldown:resetCd(self.skilldata.id,math.maxinteger);
-			else	
+			else
 				self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
 			end
-			print("=========study:",self.skilldata.id)
 			local _type = self.skilldata.szSelectRange[1]
 			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
 		end

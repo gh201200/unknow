@@ -46,7 +46,6 @@ function IMonster:init(mt)
 	self.attach = mt.attach
 	self:setPos(mt.px, 0, mt.pz)
 	IMonster.super.init(self)
-	print("=========init",self.attDat)
 	for _k,_v in pairs(self.attDat.szSkill) do
 		local skilldata = g_shareData.skillRepository[_v]
 		if skilldata and skilldata.n32Active == 1 then
@@ -133,11 +132,12 @@ function IMonster:getCommonSkill()
 end
 function IMonster:preCastSkill()
 	local castSkill = self.attDat.n32CommonSkill
+	--[[
 	if self.skillCD < 0 then
 		local skills = {}
 		local sumPercent = 0
 		for k, v in pairs(self.attDat.szSkill) do
-			if v and self.cooldown:getCdTime(v.skillId) <= 0 then
+			if self.cooldown:getCdTime(v) <= 0 then
 				sumPercent = sumPercent + v.percent
 				table.insert(skills, {skillId=v.skillId, percent=sumPercent})
 			end
@@ -151,7 +151,7 @@ function IMonster:preCastSkill()
 				end
 			end
 		end
-	end
+	end]]--
 	self:setPreSkillData(g_shareData.skillRepository[castSkill])
 end
 

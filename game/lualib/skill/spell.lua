@@ -52,7 +52,6 @@ function spell:canBreak(ms)
 	if self:isSpellRunning() == false then return true end
 	if self.skilldata.n32NeedCasting == 2 then return false end	--持续施法不能被打断
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
-		self.source.cooldown:resetCd(self.skilldata.id,0) 	
 		return true
 	end
 	if ms == ActionState.move and self.status == SpellStatus.End then 

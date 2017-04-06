@@ -74,7 +74,6 @@ function AffectTable:triggerAtkAffects(tgt,bAtk,skilldata)
 end
 
 function AffectTable:addAffect(source,data,skillId,extra)
-	print("addAffect=",data)
 	local aff = nil
 	if data[1] == "curehp" or data[1] == "curemp" or data[1] == "damage" or data[1] == "shield" or data[1] == "burnmp" then
 		aff = skillAffect.new(self.owner,source,data,skillId)
