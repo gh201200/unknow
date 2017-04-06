@@ -323,7 +323,9 @@ function Ientity:setActionState(_speed, _action, update)
 				end
 			end
 		elseif nArea == 5 then
-			if tArea == 6 then
+			if tArea == 1 or tArea == 4 then
+				self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+			elseif tArea == 6 then
 				local r = math.random(1, 100) 
 				if r < 50 then
 					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
@@ -332,9 +334,13 @@ function Ientity:setActionState(_speed, _action, update)
 					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
 				end
+			else
+				self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 			end
 		elseif nArea == 6 then
-			if tArea == 5 then
+			if tArea == 1 or tArea == 4 then
+				self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+			elseif tArea == 5 then
 				local r = math.random(1, 100) 
 				if r < 50 then
 					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
@@ -343,6 +349,8 @@ function Ientity:setActionState(_speed, _action, update)
 					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
 				end
+			else
+				self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 			end
 
 		end
@@ -1544,21 +1552,6 @@ function Ientity:addSkill(skillId,extra,updateToClient)
 		}
 		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
 	end
-end
-
-function Ientity:removeSkill(skillId,updateToClient)
-	local skilldata = g_shareData.skillRepository[skillId]
-	if skilldata.n32Active == 1 then
-		for i=#self.spell.passtiveSpells,1,-1 do
-			local ps = self.spell.passtiveSpells[i]
-			if ps.skilldata.id == skillId then
-				ps.isDead = true
-				break
-			end
-		end
-	else
-		self.skillTable[skillId] = nil
-	end 
 end
 function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
