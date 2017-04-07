@@ -15,8 +15,8 @@ local Ientity = class("Ientity" , transfrom)
 local AREA = {
 	{1, 6.8, 1.6, 8, 1.3, 7.4},
 	{1, 10.4, 1.6, 11.6, 1.3, 11},
-	{4.6, 7.6, 5.4, 8.8, 5, 8.2},
-	{4.6, 4.2, 5.4, 5.4, 5, 4.8},
+	{4.8, 7.7, 5.4, 8.9, 5.1, 8.3},
+	{4.8, 4.2, 5.4, 5.4, 5.1, 4.8},
 }
 
 local HP_MP_RECOVER_TIMELINE = 1000
@@ -241,10 +241,10 @@ function Ientity.getArea(pos)
 	return 0
 end
 
-function Ientity:setActionState(_speed, _action)
+function Ientity:setActionState(_speed, _action, update)
 	self.moveSpeed = _speed
 	self.curActionState = _action
-	if _action < ActionState.forcemove then 
+	if not update and _action < ActionState.forcemove then 
 		self:advanceEventStamp(EventStampType.Move)
 	end
 
@@ -323,7 +323,9 @@ function Ientity:setActionState(_speed, _action)
 				end
 			end
 		elseif nArea == 5 then
-			if tArea == 6 then
+			if tArea == 1 or tArea == 4 then
+				self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+			elseif tArea == 6 then
 				local r = math.random(1, 100) 
 				if r < 50 then
 					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
@@ -332,9 +334,13 @@ function Ientity:setActionState(_speed, _action)
 					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
 				end
+			else
+				self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 			end
 		elseif nArea == 6 then
-			if tArea == 5 then
+			if tArea == 1 or tArea == 4 then
+				self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+			elseif tArea == 5 then
 				local r = math.random(1, 100) 
 				if r < 50 then
 					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
@@ -343,6 +349,8 @@ function Ientity:setActionState(_speed, _action)
 					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
 				end
+			else
+				self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 			end
 
 		end
@@ -418,10 +426,10 @@ function Ientity:setTarget(target)
 			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
 				local dis = self:getDistance(self:getTarget())
 				if dis > skilldata.n32Range then
-					self:setActionState( self:getMSpeed(), ActionState.move)
+					self:setActionState( self:getMSpeed(), ActionState.move, true)
 				end	
 			else	
-				self:setActionState( self:getMSpeed(), ActionState.move)
+				self:setActionState( self:getMSpeed(), ActionState.move, true)
 			end
 		
 		end
@@ -562,11 +570,11 @@ function Ientity:setPos(x, y, z, r)
 		Map:add(x, z, 1, self.modelDat.n32BSize)
 	end
 	if self.moveNode[1].x > 0 then
-		if math.pow2(x - self.moveNode[1].x) < 0.16 and math.pow2(z - self.moveNode[1].z) < 0.36 then
+		if math.pow2(x - self.moveNode[1].x) < 0.05 and math.pow2(z - self.moveNode[1].z) < 0.05 then
 			self.moveNode[1].x = 0
 		end
 	elseif self.moveNode[2].x > 0 then
-		if math.pow2(x - self.moveNode[2].x) < 0.16 and math.pow2(z - self.moveNode[2].z) < 0.36 then
+		if math.pow2(x - self.moveNode[2].x) < 0.05 and math.pow2(z - self.moveNode[2].z) < 0.05 then
 			self.moveNode[2].x = 0
 		end
 	end
@@ -1544,21 +1552,6 @@ function Ientity:addSkill(skillId,extra,updateToClient)
 		}
 		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
 	end
-end
-
-function Ientity:removeSkill(skillId,updateToClient)
-	local skilldata = g_shareData.skillRepository[skillId]
-	if skilldata.n32Active == 1 then
-		for i=#self.spell.passtiveSpells,1,-1 do
-			local ps = self.spell.passtiveSpells[i]
-			if ps.skilldata.id == skillId then
-				ps.isDead = true
-				break
-			end
-		end
-	else
-		self.skillTable[skillId] = nil
-	end 
 end
 function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
