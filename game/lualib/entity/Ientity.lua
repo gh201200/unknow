@@ -1348,26 +1348,6 @@ function Ientity:callBackSpellEnd()
 		self.ReadySkillId = 0
 		return
 	end
-	--[[
-	local skilldata = g_shareData.skillRepository[self.ReadySkillId]
-	if self:canMove() == 0 and self:getTarget() ~= nil  then
-		if self:canCast(self.ReadySkillId)  == 0 then
-		
-		else
-			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
-				local dis = self:getDistance(self:getTarget())
-				if dis > skilldata.n32Range then
-					self:setActionState( self:getMSpeed(), ActionState.move)
-				end
-			else
-				self:setActionState( self:getMSpeed(), ActionState.move)
-			end
-		end
-	end
-	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
-			self.ReadySkillId = self:getCommonSkill() 
-	end
-	]]
 end
 --设置人物状态
 function Ientity:setState(state)
@@ -1414,7 +1394,7 @@ function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata == nil then return -1 end
-	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+	if self.cooldown:getCdTime(skilldata.id) > 0 and self.cooldown:getChargeCount(id) <= 0 then 
 		return ErrorCode.EC_Spell_SkillIsInCd
 	end
 
@@ -1474,7 +1454,7 @@ end
 function Ientity:canSetCastSkill(id)
         local skilldata = g_shareData.skillRepository[id]
 	--cd状态
-	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+	if self.cooldown:getCdTime(id) > 0 and self.cooldown:getChargeCount(id) <= 0 then 
 		return ErrorCode.EC_Spell_SkillIsInCd
 	end
 	--技能正在释放状态

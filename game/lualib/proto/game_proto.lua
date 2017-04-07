@@ -831,6 +831,13 @@ onPlayerDead 3010 {
 		redDeadNum 1 : integer	
 	}
 }
+sendChargeCount 3011 {
+	request {
+		skillId 0 : integer
+		chargeCount 1 : integer
+	}
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)
