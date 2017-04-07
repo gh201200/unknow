@@ -5,7 +5,7 @@ local Map = require "map.Map"
 require "globalDefine"
 
 function summonAffect:ctor(entity,source,data,skillId)
-	self.super.ctor(self,entity,source,data) 
+	self.super.ctor(self,entity,source,data,skillId) 
 	self.petId = data[2] or 0
 	self.petNum = data[3] or 0
 	--if self.petId == 0 then
@@ -19,9 +19,18 @@ end
 function summonAffect:onEnter()
 	self.super.onEnter(self)
 	local isbody = 0
+	local skilldata = g_shareData.skillRepository[self.skillId]  
+	local dis = 1
+	local posSource = self.source
+	if skilldata.n32SkillTargetType == 4 then
+		dis = 0.3
+		if self.petNum == 1 then
+			dis = 0
+		end
+		posSource = self.source:getTarget()
+	end	
 	for i = 1,self.petNum,1 do
-		print("self.petNum",self.petNum)
-		local pos = self:randomPos(self.source)
+		local pos = self:randomPos(posSource,dis)
 		g_entityManager:createPet(self.petId,self.source,pos,isbody)	
 	end
 end
@@ -37,10 +46,11 @@ function summonAffect:onExit()
 	self.super.onExit(self)
 end
 
-function summonAffect:randomPos(master)
+function summonAffect:randomPos(master,dis)
 	local pts = {}
 	local minx,maxx,minz,maxz = master.pos.x,master.pos.x,master.pos.z,master.pos.z
-	local  dis = 1
+	--local  dis = 1
+	dis = dis or 1
 	local t = {{dis,0},{-dis,0},{0,dis},{0,-dis},{dis,dis},{dis,-dis},{-dis,dis},{-dis,-dis}}
 	local lt = {}
 	local dstx = 0
@@ -48,9 +58,9 @@ function summonAffect:randomPos(master)
 	for _k,_v in pairs(t) do
 		dstx = master.pos.x + _v[1]
 		dstz = master.pos.z + _v[2]
-		if Map:get(dstx,dstz) == 0 then
+	--	if Map:get(dstx,dstz) == 0 then
 			table.insert(lt,_v)
-		end
+	--	end
 	end
 	local i = math.random(1,#lt)
 		

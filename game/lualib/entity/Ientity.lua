@@ -1123,10 +1123,10 @@ function Ientity:recvHpMp()
 	end    
 
 	if (curTime - self.recvTime) * 10  > HP_MP_RECOVER_TIMELINE then
-		local cnt = math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
+		local cnt = 1 --math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
- 		self:addHp(self:getRecvHp() * cnt , HpMpMask.TimeLineHp)
- 		self:addMp(self:getRecvMp() * cnt , HpMpMask.TimeLineMp)
+		self:addHp(self:getRecvHp() * cnt , HpMpMask.TimeLineHp,self)
+ 		self:addMp(self:getRecvMp() * cnt , HpMpMask.TimeLineMp,self)
  	end
 end
 
@@ -1394,6 +1394,21 @@ function Ientity:canMove()
 	end
 	if self.spell.status == SpellStatus.Cast and self.spell.skilldata.n32NeedCasting == 0 then return ErrorCode.EC_Spell_SkillIsRunning end
 	return 0
+end
+
+function Ientity:removeSkill(skillId,updateToClient)
+       local skilldata = g_shareData.skillRepository[skillId]
+       if skilldata.n32Active == 1 then
+               for i=#self.spell.passtiveSpells,1,1 do
+                       local ps = self.spell.passtiveSpells[i]
+                       if ps.skilldata.id == skillId then
+                               ps.isDead = true
+                               break
+                       end
+               end
+       else
+               self.skillTable[skillId] = nil
+       end 
 end
 
 function Ientity:canCast(id)
