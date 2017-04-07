@@ -1122,9 +1122,9 @@ function Ientity:recvHpMp()
 	end    
 
 	if (curTime - self.recvTime) * 10  > HP_MP_RECOVER_TIMELINE then
-		local cnt = math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
+		local cnt = 1 --math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
- 		self:addHp(self:getRecvHp() * cnt , HpMpMask.TimeLineHp,self)
+		self:addHp(self:getRecvHp() * cnt , HpMpMask.TimeLineHp,self)
  		self:addMp(self:getRecvMp() * cnt , HpMpMask.TimeLineMp,self)
  	end
 end

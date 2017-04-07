@@ -159,6 +159,7 @@ function StatsAffect:onTrigger(_add)
 				self.owner:addMidRecvHp(_add * self.data[4])
 			else
 				local r = self:getBaseAttributeValue(self.data)
+				print("r=========",r,_add)
 				self.owner:addMidRecvHp(_add * r)
 			end
 			self.owner:calcRecvHp()
