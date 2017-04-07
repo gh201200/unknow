@@ -16,12 +16,16 @@ function passtiveSpell:ctor(src,skilldata,time)
 		table.insert(adds,self.source)
 		self.source.spell:trgggerAffect(self.skilldata.szSelectTargetAffect,adds,self.skilldata)
 	end
+	self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
 end
 
 function passtiveSpell:update(dt)
 	self.lifeTime  = self.lifeTime - dt
 	if self.lifeTime < 0 then
 		self.isDead = true
+		return
+	end
+	if self.source.cooldown:getCdTime(self.skilldata.id) > 0 then
 		return
 	end
 	--碰撞触发
