@@ -318,7 +318,7 @@ function spell:onReady(dt)
 			local time = self.castTime + self.endTime
 			self.source.cooldown:addItem(self.skilldata.id,time)
 		else
-			if self.source.cooldown:getChargeCount() > 0 then
+			if self.source.cooldown:getChargeCount(self.skilldata.id) > 0 then
 				self.source.cooldown:addChargeCount(self.skilldata.id,true)
 			else
 				self.source.cooldown:addItem(self.skilldata.id) --加入cd

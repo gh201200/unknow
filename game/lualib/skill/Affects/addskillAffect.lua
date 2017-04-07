@@ -5,7 +5,7 @@ function addskillAffect:ctor(owner,source,data,skillId)
 	self.super.ctor(self,owner,source,data,skillId)
 	self.newSkillId = data[2]
 	if data[3] == -1 then
-		self.effectTime = math.maxinteger
+		self.effectTime = 99999999--math.maxinteger
 	else
 		self.effectTime = data[3] * 1000
 	end
