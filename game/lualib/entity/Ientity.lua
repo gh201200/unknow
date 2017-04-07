@@ -1381,7 +1381,7 @@ function Ientity:removeSkill(skillId,updateToClient)
        if skilldata.n32Active == 1 then
                for i=#self.spell.passtiveSpells,1,1 do
                        local ps = self.spell.passtiveSpells[i]
-                       if ps.skilldata.id == skillId then
+                       if ps and ps.skilldata.id == skillId then
                                ps.isDead = true
                                break
                        end
