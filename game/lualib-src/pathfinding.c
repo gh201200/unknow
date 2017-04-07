@@ -149,12 +149,11 @@ ladd_weight(lua_State *L) {
 		y < 0 || y >= m->height) {
 		luaL_error(L, "Position (%d,%d) is out of map", x,y);
 	}
-	if (w < 0)
-		w = 0;
-	else if (w > 255)
-		w = 255;
 
-	map_set(m, x, y, w);
+	if (map_get(m, x, y) != 255) {
+		map_set(m, x, y, w);
+	}
+
 	lua_pushinteger(L, w);
 
 	return 1;

@@ -224,7 +224,11 @@ function Ientity.getArea(pos)
 		if pos.z <= AREA[1][4] then
 			return 1
 		elseif pos.z <= AREA[2][2] then
-			return 5	--一桥
+			if pos.x > AREA[2][3] then
+				return 1
+			else
+				return 5	--一桥
+			end
 		else
 			return 2
 		end
@@ -232,7 +236,11 @@ function Ientity.getArea(pos)
 		if pos.z <= AREA[4][4] then
 			return 4
 		elseif pos.z <= AREA[3][2] then
-			return 6	--二桥
+			if pos.x < AREA[3][1] then
+				return 4
+			else
+				return 6	--二桥
+			end
 		else
 			return 3
 		end
@@ -323,7 +331,7 @@ function Ientity:setActionState(_speed, _action, update)
 				end
 			end
 		elseif nArea == 5 then
-			if tArea == 1 or tArea == 4 then
+			if tArea == 4 then
 				self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
 			elseif tArea == 6 then
 				local r = math.random(1, 100) 
@@ -334,11 +342,11 @@ function Ientity:setActionState(_speed, _action, update)
 					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
 				end
-			elseif tArea == 2 or tArea == 3 then
+			elseif tArea == 3 then
 				self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 			end
 		elseif nArea == 6 then
-			if tArea == 1 or tArea == 4 then
+			if tArea == 1 then
 				self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
 			elseif tArea == 5 then
 				local r = math.random(1, 100) 
@@ -349,7 +357,7 @@ function Ientity:setActionState(_speed, _action, update)
 					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
 				end
-			elseif tArea == 2 or tArea == 3 then
+			elseif tArea == 2 then
 				self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 			end
 
@@ -550,7 +558,12 @@ function Ientity:isLegalGrid( pos )
 	for i=-s, s do
 		for j=-s, s do
 			local w =  Map:block(gx+i, gz+j)
-			if w > 0 then 
+			if w == 255 then
+				if not self.useAStar then
+					legal = false 
+					break 
+				end
+			elseif w > 0 then
 				legal = false 
 				break 
 			end
@@ -558,7 +571,6 @@ function Ientity:isLegalGrid( pos )
 		if not legal then break end
 	end
 	Map:add(self.pos.x, self.pos.z, 1, self.modelDat.n32BSize)
-	--Map:dump()
 	return legal
 end
 
@@ -570,11 +582,11 @@ function Ientity:setPos(x, y, z, r)
 		Map:add(x, z, 1, self.modelDat.n32BSize)
 	end
 	if self.moveNode[1].x > 0 then
-		if math.pow2(x - self.moveNode[1].x) < 0.05 and math.pow2(z - self.moveNode[1].z) < 0.05 then
+		if math.abs(x - self.moveNode[1].x) < 0.3 and math.abs(z - self.moveNode[1].z) < 0.3 then
 			self.moveNode[1].x = 0
 		end
 	elseif self.moveNode[2].x > 0 then
-		if math.pow2(x - self.moveNode[2].x) < 0.05 and math.pow2(z - self.moveNode[2].z) < 0.05 then
+		if math.abs(x - self.moveNode[2].x) < 0.3 and math.abs(z - self.moveNode[2].z) < 0.3 then
 			self.moveNode[2].x = 0
 		end
 	end

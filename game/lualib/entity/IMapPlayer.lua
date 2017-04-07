@@ -139,12 +139,12 @@ function IMapPlayer:init(heroId)
 	--self.skillTable[self.attDat.n32CommonSkillId] = -1  	--无限次数
 
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
-	self:setPos(self.bornPos.x, 0, self.bornPos.z)
 	self:calcStats()
 	self:setHp(self:getHpMax())
 	self:setMp(self:getMpMax())
 	self.HpMpChange = true
 	self.StatsChange = true
+	self:setPos(self.bornPos.x, 0, self.bornPos.z)
 	--self:dumpStats()
 
 	IMapPlayer.super.init(self)
