@@ -35,7 +35,7 @@ end
 
 --获取充能数目
 function cooldown:getChargeCount(id)
-	return self.chargeCountTable[id]
+	return self.chargeCountTable[id] or 0
 end
 
 function cooldown:addChargeCount(id,isReduce)
