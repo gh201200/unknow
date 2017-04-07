@@ -16,7 +16,9 @@ function cooldown:addItem(skillid,cd)
 	--local seriId = skilldata.n32SeriId
 	local cdtime = cd or skilldata.n32CD 
 	self.coolDownTable[skillid] = cdtime
-	self.chargeCountTable[skillid] = 0
+	if self.chargeCountTable[skillid] == nil then
+		self.chargeCountTable[skillid] = 0
+	end
 end
 
 function cooldown:update(dt)
@@ -53,6 +55,9 @@ function cooldown:addChargeCount(id,isReduce)
 		end
 	end
 	if isUpdate == true then
+		--重置技能cd
+		self:addItem(id)	
+		self.entity:SynSkillCds(id)
 		local msg = {skillId = id,chargeCount = self.chargeCountTable[id] }
 		g_entityManager:sendPlayer(self.entity,"sendChargeCount",msg)		
 	end
