@@ -1395,6 +1395,21 @@ function Ientity:canMove()
 	return 0
 end
 
+function Ientity:removeSkill(skillId,updateToClient)
+       local skilldata = g_shareData.skillRepository[skillId]
+       if skilldata.n32Active == 1 then
+               for i=#self.spell.passtiveSpells,1,1 do
+                       local ps = self.spell.passtiveSpells[i]
+                       if ps.skilldata.id == skillId then
+                               ps.isDead = true
+                               break
+                       end
+               end
+       else
+               self.skillTable[skillId] = nil
+       end 
+end
+
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
