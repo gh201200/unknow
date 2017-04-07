@@ -334,7 +334,7 @@ function Ientity:setActionState(_speed, _action, update)
 					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
 				end
-			else
+			elseif tArea == 2 or tArea == 3 then
 				self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
 			end
 		elseif nArea == 6 then
@@ -349,7 +349,7 @@ function Ientity:setActionState(_speed, _action, update)
 					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
 				end
-			else
+			elseif tArea == 2 or tArea == 3 then
 				self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
 			end
 
@@ -858,7 +858,8 @@ function Ientity:onMove3(dt)
 			legal_pos = false
 			local nearBy = false
 			local angle = 60
-			repeat
+			if Map:isWall(mv_dst.x, mv_dst.z) then angle = 200 end
+			while angle < 150 do
 				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
 				mv_slep_dir:rot(angle)
 				mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
@@ -874,7 +875,7 @@ function Ientity:onMove3(dt)
 				end
 				angle = angle + 30
 
-			until angle > 150
+			end
 
 			if not nearBy then
 				print('use a star to find a path',self.serverId)
