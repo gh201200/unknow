@@ -13,10 +13,10 @@ local syslog = require "syslog"
 local Ientity = class("Ientity" , transfrom)
 
 local AREA = {
-	{1, 6.8, 1.6, 8, 1.3, 7.4},
-	{1, 10.4, 1.6, 11.6, 1.3, 11},
-	{4.8, 7.7, 5.4, 8.9, 5.1, 8.3},
-	{4.8, 4.2, 5.4, 5.4, 5.1, 4.8},
+	{1, 6.8, 1.7, 8, 1.3, 7.4},
+	{1, 10.4, 1.7, 11.6, 1.3, 11},
+	{4.8, 7.7, 5.5, 8.9, 5.1, 8.3},
+	{4.8, 4.2, 5.5, 5.4, 5.1, 4.8},
 }
 
 local HP_MP_RECOVER_TIMELINE = 1000
@@ -225,7 +225,7 @@ function Ientity.getArea(pos)
 			return 1
 		elseif pos.z <= AREA[2][2] then
 			if pos.x > AREA[2][3] then
-				return 1
+				return 2
 			else
 				return 5	--一桥
 			end
@@ -459,15 +459,23 @@ function Ientity:setTargetPos(target)
 	if target == nil then return end
 	self.moveQuadrant = 0
 	local pos = vector3.create(target.x,0,target.z)
-	
-	if Map:isBlock( pos.x, pos.z ) then
+	if Map:isWall( pos.x, pos.z ) then
 		Map:lineTest(self.pos, pos)
 	end
+	if math.abs(pos.x-self.pos.x) < 0.05 and math.abs(pos.z-self.pos.z) < 0.05 then
+		return
+	end
+
+	if self:getTarget() and math.abs(pos.x-self:getTarget().pos.x) < 0.05 and math.abs(pos.z-self:getTarget().pos.z) < 0.05 then
+		return
+	end
+
 	local r = Map:circleTest(pos, 1)
 	if r then
 		pos.x = r.x
 		pos.z = r.z
 	end
+		
 	if self:canMove() == 0 then
 		self:setTarget(transfrom.new(pos,nil))
 	else
@@ -869,7 +877,7 @@ function Ientity:onMove3(dt)
 		if self:isLegalGrid( mv_dst ) == false then
 			legal_pos = false
 			local nearBy = false
-			local angle = 60
+			local angle = 30
 			if Map:isWall(mv_dst.x, mv_dst.z) then angle = 200 end
 			while angle < 150 do
 				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
@@ -886,7 +894,6 @@ function Ientity:onMove3(dt)
 					break 
 				end
 				angle = angle + 30
-
 			end
 
 			if not nearBy then

@@ -197,7 +197,7 @@ function Map:lineTest(sp, ep)
 		dst:add( ep )
 		ep.x = dst.x
 		ep.z = dst.z
-		if self:isBlock( dst.x, dst.z ) == false then
+		if self:isWall( dst.x, dst.z ) == false then
 			break
 		end
 		set = set + 0.5
