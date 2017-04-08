@@ -139,6 +139,7 @@ function CMD.requestCastSkill(response,agent, account_id, args)
 	local targetId = args.playerId
 	local isCancel = args.isCancel
 	local err = 0
+	print("arg=====",arg)
 	if isCancel == false then
 		err = player:setCastSkillId(skillId)
 		if err == 0 and targetId ~= 0 then
