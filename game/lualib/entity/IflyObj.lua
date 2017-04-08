@@ -121,7 +121,6 @@ function IflyObj:updateLink(dt)
 			if (self.skilldata.n32AffectTargetType == 3 and self.caster:isKind(v) == false) or 
 			(self.skilldata.n32AffectTargetType <= 2 and self.caster:isKind(v) == true and self.caster.serverId ~= v.serverId) then
 				local dis = self.target:getDistance(v)
-				print("dis=====",dis,self.target.serverId)
 				if isInParentLinkTarget(self,v) == false and self.skilldata.szAffectRange[2] >= dis then
 					tgt = v
 					break

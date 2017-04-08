@@ -5,7 +5,11 @@ function skillAffect:ctor(entity,source,data,skillId)
 	self.super.ctor(self,entity,source,data,skillId)
 	self.triggerTime = data[5] or 0 
 	self.leftTime = data[6] or 0
-	self.triggerTime = self.triggerTime * 1000
+	if self.triggerTime ~= 0 then
+		--持续触发
+		self.triggerTime = -1
+	end
+	--self.triggerTime * 1000
 	self.leftTime = self.leftTime * 1000
 	self.effectId = data[7] or 0
 	self.effectTime = self.leftTime
