@@ -70,13 +70,13 @@ EventStampHandle[EventStampType.Stats] = function (serverId, event)
 			HpMax = math.floor(player:getHpMax()),
 			MpMax = math.floor(player:getMpMax()),
 			Attack = math.floor(player:getAttack()),
-			Defence = math.floor(player:getDefence()),
+			MSpeed = math.floor(player:getMSpeed()*GAMEPLAY_PERCENT),
 			ASpeed = math.floor(player:getASpeed()*GAMEPLAY_PERCENT),
 			exp = player:getExp(),
 			gold = player:getGold(),
 			level = player:getLevel(),
 		}
-	}	
+	}
 	return r
 end
 

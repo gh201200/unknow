@@ -33,7 +33,7 @@ local types = [[
 	HpMax 3 : integer
 	MpMax 4 : integer
   	Attack 5 : integer
-  	Defence 6 : integer
+  	MSpeed 6 : integer
   	ASpeed 7 : integer
 	exp 8 : integer
 	gold 9 : integer

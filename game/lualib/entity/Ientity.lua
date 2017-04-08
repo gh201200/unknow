@@ -27,8 +27,8 @@ local UI_Stats_Show = {
 	HpMax = true,
 	MpMax = true,
 	Attack = true,
-	Defence = true,
 	ASpeed = true,
+	MSpeed = true,
 }
 
 local function register_stats(t, name,dft)
