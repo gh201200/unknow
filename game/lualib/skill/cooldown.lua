@@ -49,7 +49,7 @@ function cooldown:addChargeCount(id,isReduce)
 	end
 	local isUpdate = false
 	if isReduce == false then
-		if  self.chargeCountTable[id] < skilldata.n32ChargeCount then
+		if self.chargeCountTable[id] and self.chargeCountTable[id] < skilldata.n32ChargeCount then
 			self.chargeCountTable[id] = self.chargeCountTable[id] + 1
 			isUpdate = true
 		end
