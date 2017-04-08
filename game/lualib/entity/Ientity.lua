@@ -526,6 +526,7 @@ function Ientity:update(dt)
 	end
 	if self:getReadySkillId() ~= 0  then	
 		local err = self:canCast(self:getReadySkillId())
+		print("err=======",err)
 		if err == 0 then
 			self:castSkill(self:getReadySkillId())
 		end
@@ -1575,6 +1576,10 @@ function Ientity:addSkill(skillId,extra,updateToClient)
 			end	
 			self.skillTable[skillId] = self.skillTable[skillId] + extra
 		end
+	end
+	if skilldata.n32ChargeCount > 0 then
+		self.cooldown:addItem(skillId)
+		self.cooldown:addChargeCount(skillId,false)
 	end
 	if updateToClient then
 		local msg = {
