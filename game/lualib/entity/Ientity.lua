@@ -526,7 +526,6 @@ function Ientity:update(dt)
 	end
 	if self:getReadySkillId() ~= 0  then	
 		local err = self:canCast(self:getReadySkillId())
-		print("err=======",err)
 		if err == 0 then
 			self:castSkill(self:getReadySkillId())
 		end
