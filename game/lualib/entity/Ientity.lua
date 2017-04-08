@@ -1128,7 +1128,7 @@ end
 function Ientity:recvHpMp()
 	if self:getHp() <= 0 then return end
 	if self:getRecvHp() <= 0 and self:getRecvMp() <= 0 then return end
-	if self:getHp() == self:getHpMax() then return end
+	if self:getHp() == self:getHpMax() and self:getMp() == self:getMpMax() then return end
 	local curTime = skynet.now()
 	if self.recvTime == 0 then
 		self.recvTime = curTime
