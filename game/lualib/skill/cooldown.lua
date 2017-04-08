@@ -24,7 +24,7 @@ end
 function cooldown:update(dt)
 	for _k,_v in pairs(self.coolDownTable) do
 		if  self.coolDownTable[_k] ~= 0 then
-			if self.coolDownTable[_k] > 0 and (self.coolDownTable[_k] - dt) <= 0 then
+			if self.entity:getType() == "IMapPlayer" and self.coolDownTable[_k] > 0 and (self.coolDownTable[_k] - dt) <= 0 then
 				self:addChargeCount(_k,false)
 			end
 			self.coolDownTable[_k] = self.coolDownTable[_k] - dt 
