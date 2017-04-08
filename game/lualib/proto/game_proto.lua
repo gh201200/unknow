@@ -810,7 +810,7 @@ reSendSkills 3007 {
 
 reSendHaveItems 3008 {
 	request { 
-		items 0 : *Vector2
+		items 0 : *Vector3
 	}
 }
 
