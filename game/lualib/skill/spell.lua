@@ -397,7 +397,7 @@ function spell:onEnd(dt)
 		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
 			if self.source:getTarget() == self.srcTarget then
 				if self.source:getType() == "IMapPlayer" then 
-					self.source:setTarget( nil )
+					--self.source:setTarget( nil )
 				end
 			end
 		end
