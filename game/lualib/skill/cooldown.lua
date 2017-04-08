@@ -82,11 +82,14 @@ function cooldown:resetAll(except)
 	end
 end
 
-function cooldown:getCdsMsg()
+function cooldown:getCdsMsg(id)
 	local r = { items = {}}
 	for _k,_v in pairs(self.coolDownTable) do
-		local item = {skillId = _k,time = _v}
-		table.insert(r.items,item)
+		if id == _k then
+			local item = {skillId = _k,time = _v}
+			table.insert(r.items,item)
+			break
+		end
 	end	
 	return r
 end

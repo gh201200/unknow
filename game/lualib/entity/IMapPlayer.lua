@@ -100,7 +100,7 @@ function IMapPlayer:update(dt)
 			--	self.ai:update(dt)
 			end
 		else
-			self:autoAttack()		
+		--	self:autoAttack()		
 		end
 	end
 	self.hateTime =  self.hateTime - dt	
@@ -255,7 +255,7 @@ function IMapPlayer:castSkill()
 end
 
 function IMapPlayer:SynSkillCds(id)
-	local msg = self.cooldown:getCdsMsg()
+	local msg = self.cooldown:getCdsMsg(id)
 	skynet.call(self.agent,"lua","sendRequest","makeSkillCds",msg)	
 end
 
@@ -278,8 +278,19 @@ function IMapPlayer:aiCastSkill(target)
 		local index = math.random(1,#skills)
 		skillId = skills[index]
 	end
-	self.ReadySkillId = skillId 
+	self:setReadySkillId(skillId) 
 	self:setTarget(target)
+end
+
+--释放方向或者地点技能
+function IMapPlayer:castPosDirSkill()
+	local skilldata = g_shareData.skillRepository[self:getReadySkillId()]
+	if skilldata then
+		--方向或者地点技能
+		if skilldata.n32SkillTargetType == 4 or skilldata.n32SkillTargetType == 5 then
+				
+		end
+	end
 end
 
 function IMapPlayer:setCastSkillId(id)
@@ -331,11 +342,11 @@ function IMapPlayer:replaceSkill(id)
 end
 --获取普攻范围内敌人
 function IMapPlayer:autoAttack()
-	if self.ReadySkillId ~= 0 and self.ReadySkillId ~= self:getCommonSkill() then
+	if self:getReadySkillId() ~= 0 and self:getReadySkillId() ~= self:getCommonSkill() then
 		return
 	end
 	if self:getTarget() ~= nil then 
-		self.ReadySkillId = self:getCommonSkill()
+		self:setReadySkillId(self:getCommonSkill())
 		return 
 	end
 	local target = self:getAttackTarget()
@@ -369,7 +380,7 @@ function IMapPlayer:autoAttack()
 	if self:getTarget() == nil then
 		local atkTarget = self:getAttackTarget()
 		self:setTarget(atkTarget)
-		self.ReadySkillId = self:getCommonSkill()
+		self:setReadySkillId(self:getCommonSkill())
 	end
 	
 	return nil

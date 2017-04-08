@@ -96,7 +96,7 @@ function IBuilding:update(dt)
 		end
 	end
 	if target ~= nil and self.spell:isSpellRunning() == false then
-		self.ReadySkillId = self.attDat["n32CommonSkill"] 
+		self:setReadySkillId(self.attDat["n32CommonSkill"]) 
 		self:setTarget(target)
 	end
 	--add code before this

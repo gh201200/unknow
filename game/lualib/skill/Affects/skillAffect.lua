@@ -3,7 +3,7 @@ local skillAffect = class("skillAffect",Affect)
 
 function skillAffect:ctor(entity,source,data,skillId)
 	self.super.ctor(self,entity,source,data,skillId)
-	self.triggerTime = 0 --data[5] or 0 
+	self.triggerTime = data[5] or 0 
 	self.leftTime = data[6] or 0
 	self.triggerTime = self.triggerTime * 1000
 	self.leftTime = self.leftTime * 1000

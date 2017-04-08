@@ -48,7 +48,7 @@ function loveAffect:onExec(dt)
 end
 
 function loveAffect:onExit()	
-	self.owner.ReadySkillId = self.owner:getCommonSkill()
+	self.owner:setReadySkillId(self.owner:getCommonSkill())
 	self.owner:setTarget(self.source)
 	self.super.onExit(self)
 end
