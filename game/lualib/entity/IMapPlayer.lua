@@ -366,13 +366,30 @@ function IMapPlayer:autoAttack()
 	end
 	if newSearch == true then
 		local newTarget = nil
-		local shortest = 9999
+		local hplowest = 9999
 		for k,v in pairs(EntityManager.entityList) do 
 			if v ~= nil and  self:isKind(v) == false and v:getHp() > 0 then
 				local disLen = self:getDistance(v)
-				if disLen <= 2 and disLen <= shortest then
-					shortest = disLen
-					newTarget = v
+				if disLen <= 2 then
+					if newTarget == nil then
+						newTarget = v
+						hplowest = v:getHp()
+					else
+						if newTarget:getType() ~= "IMapPlayer" and v:getType() == "IMapPlayer" then
+							newTarget = v
+							hplowest = v:getHp()
+						elseif newTarget:getType() == "IMapPlayer" and v:getType() == "IMapPlayer" then
+							if v:getHp() < hplowest then
+								newTarget = v
+								hplowest = v:getHp()
+							end
+						elseif newTarget:getType() ~= "IMapPlayer" and v:getType() ~= "IMapPlayer" then
+							if v:getHp() < hplowest then
+								newTarget = v
+								hplowest = v:getHp()
+							end
+						end
+					end 
 				end
 			end
 		end

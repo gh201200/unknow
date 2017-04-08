@@ -1156,7 +1156,7 @@
 		<szillustration>无敌铁拳弹道</szillustration>
 	</item>
 	<item id="20012">
-		<n32type>4</n32type>
+		<n32type>7</n32type>
 		<szassert>liaoyuchunfeng_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
@@ -1195,7 +1195,7 @@
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
+		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>穿云箭弹道</szillustration>
 	</item>
@@ -1217,7 +1217,7 @@
 		<n32speed>3</n32speed>
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
+		<n32Redius>0.4</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>弹射座椅钢板</szillustration>
 	</item>
@@ -2410,7 +2410,7 @@
 		<szillustration>践踏特效</szillustration>
 	</item>
 	<item id="40003">
-		<n32type>1</n32type>
+		<n32type>2</n32type>
 		<szassert>hanshuangbaofa_hit_buff</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
@@ -2613,7 +2613,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<n32Extra>2</n32Extra>
+		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>寒霜爆发受击</szillustration>

@@ -298,7 +298,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
+		<n32Range>2</n32Range>
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
@@ -20663,7 +20663,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,18,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -20716,7 +20716,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,20,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -20769,7 +20769,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,22,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -20822,7 +20822,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,24,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -20875,7 +20875,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,26,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -20928,7 +20928,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,28,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -20981,7 +20981,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,30,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -21034,7 +21034,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,32,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -21087,7 +21087,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,34,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -21140,7 +21140,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[upstr:0,0,36,0,10,51011][mov:0,0.5,0,0,10,51003]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,31018]</szAffectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,1,31018]</szAffectTargetAffect>
 		<szDescribe>　　击退自身周围的敌方目标，并在接下来一段时间内增加自身的移动速度和力量</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -25959,7 +25959,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26012,7 +26012,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26065,7 +26065,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26118,7 +26118,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26171,7 +26171,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26224,7 +26224,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26277,7 +26277,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26330,7 +26330,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26383,7 +26383,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26436,7 +26436,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.2,2,0]</szAffectRange>
+		<szAffectRange>[chain:1.2,3,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -26493,7 +26493,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,240,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,10,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,240,0,0,31016][curehp:4,0.3,10,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26546,7 +26546,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,250,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,15,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,250,0,0,31016][curehp:4,0.3,15,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26599,7 +26599,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,260,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,20,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,260,0,0,31016][curehp:4,0.3,20,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26652,7 +26652,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,270,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,25,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,270,0,0,31016][curehp:4,0.3,25,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26705,7 +26705,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,280,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,30,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,280,0,0,31016][curehp:4,0.3,30,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26758,7 +26758,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,290,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,35,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,290,0,0,31016][curehp:4,0.3,35,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26811,7 +26811,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,300,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,40,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,300,0,0,31016][curehp:4,0.3,40,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26864,7 +26864,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,310,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,45,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,310,0,0,31016][curehp:4,0.3,45,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26917,7 +26917,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,320,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,50,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,320,0,0,31016][curehp:4,0.3,50,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -26970,7 +26970,7 @@
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[curehp:4,2.7,330,0,0,31016][curehp:0,0,0,0,0,31017][curehp:4,0.3,55,2,8,51007]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curehp:4,2.7,330,0,0,31016][curehp:4,0.3,55,2,8,51007][curehp:0,0,0,0,0,31017]</szAffectTargetAffect>
 		<szDescribe>　　为目标友方单位持续回复生命</szDescribe>
 		<n32ShowRange>2.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -27019,7 +27019,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,340,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27072,7 +27072,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,375,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27125,7 +27125,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,410,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27178,7 +27178,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,445,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27231,7 +27231,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,480,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27284,7 +27284,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,515,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27337,7 +27337,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,550,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27390,7 +27390,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,585,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27443,7 +27443,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,620,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -27496,7 +27496,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[chain:1.8,3,0]</szAffectRange>
+		<szAffectRange>[chain:1.8,2,0]</szAffectRange>
 		<n32AffectTargetType>2</n32AffectTargetType>
 		<szMyAffect>[curehp:4,3,655,0,0,31026]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
@@ -47693,7 +47693,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.0,30,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.0,-30,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.0,-30,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -47746,7 +47746,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.4,60,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.4,-60,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.4,-60,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -47799,7 +47799,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.8,90,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.8,-90,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.8,-90,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -47852,7 +47852,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,3.2,120,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-3.2,-120,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-3.2,-120,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -47905,7 +47905,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.0,90,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.0,-90,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.0,-90,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -47958,7 +47958,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.4,125,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.4,-125,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.4,-125,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48011,7 +48011,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.8,160,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.8,-160,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.8,-160,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48064,7 +48064,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,3.2,195,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-3.2,-195,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-3.2,-195,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48117,7 +48117,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.0,150,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.0,-150,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.0,-150,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48170,7 +48170,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.4,195,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.4,-195,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.4,-195,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48223,7 +48223,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.8,240,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.8,-240,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.8,-240,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48276,7 +48276,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,3.2,285,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-3.2,-285,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-3.2,-285,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48329,7 +48329,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.0,210,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.0,-210,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.0,-210,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48382,7 +48382,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.4,260,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.4,-260,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.4,-260,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48435,7 +48435,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.8,310,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.8,-310,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.8,-310,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48488,7 +48488,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,3.2,360,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-3.2,-360,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-3.2,-360,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48541,7 +48541,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.0,270,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.0,-270,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.0,-270,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48594,7 +48594,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.4,330,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.4,-330,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.4,-330,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48647,7 +48647,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,2.8,390,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-2.8,-390,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-2.8,-390,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -48700,7 +48700,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[curemp:4,3.2,450,0,0,0,0]</szSelectTargetAffect>
-		<szAffectTargetAffect>[curemp:4,-3.2,-450,0,0,0,0][repel:0.6,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[curemp:4,-3.2,-450,0,0,0,0][repel:0.6,1,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复魔法值，击退其周围的敌方单位并燃烧其魔法值</szDescribe>
 		<n32ShowRange>0.6</n32ShowRange>
 		<szLabel></szLabel>
@@ -64620,7 +64620,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -64673,7 +64673,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -64726,7 +64726,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -64779,7 +64779,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -64832,7 +64832,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -64885,7 +64885,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -64938,7 +64938,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -64991,7 +64991,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -65044,7 +65044,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -65097,7 +65097,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
-		<n32TriggerInfo>6</n32TriggerInfo>
+		<n32TriggerInfo>1</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
