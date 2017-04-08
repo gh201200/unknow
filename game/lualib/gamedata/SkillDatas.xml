@@ -2067,6 +2067,218 @@
 		<szInfo></szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
 	</item>
+	<item id="9523001">
+		<n32SeriId>52300</n32SeriId>
+		<szName>和风咏叹</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_52300.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>2</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[mov:0,0.25,0,0,-1,0][wsp:0,0,0.25,0,-1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<n32ShowRange>1.8</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="9523002">
+		<n32SeriId>52300</n32SeriId>
+		<szName>和风咏叹</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_52300.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>2</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[mov:0,0.35,0,0,-1,0][wsp:0,0,0.35,0,-1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<n32ShowRange>1.8</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="9523003">
+		<n32SeriId>52300</n32SeriId>
+		<szName>和风咏叹</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_52300.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>2</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[mov:0,0.45,0,0,-1,0][wsp:0,0,0.45,0,-1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<n32ShowRange>1.8</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="9523004">
+		<n32SeriId>52300</n32SeriId>
+		<szName>和风咏叹</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_52300.png</szIcon>
+		<n32Faction>-1</n32Faction>
+		<n32Quality>2</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>0</n32SkillType>
+		<n32Active>1</n32Active>
+		<bIngoreImmune>1</bIngoreImmune>
+		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>1</n32ActionType>
+		<szAction>attack01</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>0</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[mov:0,0.55,0,0,-1,0][wsp:0,0,0.55,0,-1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<n32ShowRange>1.8</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
 	<item id="10001001">
 		<n32SeriId>10001</n32SeriId>
 		<szName>银刃击</szName>
@@ -52974,8 +53186,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53027,8 +53239,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53080,8 +53292,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53133,8 +53345,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53186,8 +53398,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53239,8 +53451,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53292,8 +53504,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53345,8 +53557,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53398,8 +53610,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53451,8 +53663,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53504,8 +53716,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53557,8 +53769,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53610,8 +53822,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53663,8 +53875,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53716,8 +53928,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53769,8 +53981,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53822,8 +54034,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53875,8 +54087,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53928,8 +54140,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53981,8 +54193,8 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>30</n32CD>
+		<n32ChargeCount>2</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -54021,9 +54233,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54034,27 +54246,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.25,0,0,0.5,0][wsp:0,0,0.25,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300001,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54074,9 +54286,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54087,27 +54299,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>240</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.35,0,0,0.5,0][wsp:0,0,0.35,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300002,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54127,9 +54339,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54140,27 +54352,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>280</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.45,0,0,0.5,0][wsp:0,0,0.45,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300003,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54180,9 +54392,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54193,27 +54405,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>320</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.55,0,0,0.5,0][wsp:0,0,0.55,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300004,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54233,9 +54445,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54246,27 +54458,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.25,0,0,0.5,0][wsp:0,0,0.25,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300011,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54286,9 +54498,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54299,27 +54511,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>240</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.35,0,0,0.5,0][wsp:0,0,0.35,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300012,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54339,9 +54551,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54352,27 +54564,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>280</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.45,0,0,0.5,0][wsp:0,0,0.45,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300013,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54392,9 +54604,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>5.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54405,27 +54617,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>320</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.55,0,0,0.5,0][wsp:0,0,0.55,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300014,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54445,9 +54657,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54458,27 +54670,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.25,0,0,0.5,0][wsp:0,0,0.25,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300021,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54498,9 +54710,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54511,27 +54723,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>240</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.35,0,0,0.5,0][wsp:0,0,0.35,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300022,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54551,9 +54763,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54564,27 +54776,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>280</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.45,0,0,0.5,0][wsp:0,0,0.45,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300023,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54604,9 +54816,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54617,27 +54829,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>320</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.55,0,0,0.5,0][wsp:0,0,0.55,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300024,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54657,9 +54869,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54670,27 +54882,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.25,0,0,0.5,0][wsp:0,0,0.25,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300031,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54710,9 +54922,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54723,27 +54935,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>240</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.35,0,0,0.5,0][wsp:0,0,0.35,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300032,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54763,9 +54975,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54776,27 +54988,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>280</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.45,0,0,0.5,0][wsp:0,0,0.45,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300033,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54816,9 +55028,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>6.5</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54829,27 +55041,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>320</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.55,0,0,0.5,0][wsp:0,0,0.55,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300034,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54869,9 +55081,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>7</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54882,27 +55094,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>200</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.25,0,0,0.5,0][wsp:0,0,0.25,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300041,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54922,9 +55134,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>7</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54935,27 +55147,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>240</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.35,0,0,0.5,0][wsp:0,0,0.35,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300042,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -54975,9 +55187,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>7</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -54988,27 +55200,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>280</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.45,0,0,0.5,0][wsp:0,0,0.45,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300043,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -55028,9 +55240,9 @@
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>0</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>2</n32NeedCasting>
-		<n32AffectGap>0.5</n32AffectGap>
-		<n32AffectTime>7</n32AffectTime>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_unique</szAction>
 		<n32TriggerTime>0</n32TriggerTime>
@@ -55041,27 +55253,27 @@
 		<n32CTargetEffect>0</n32CTargetEffect>
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32CD>45</n32CD>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>320</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
+		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.55,0,0,0.5,0][wsp:0,0,0.55,0,0.5,0]</szAffectTargetAffect>
-		<szDescribe>　　持续施法，减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
+		<szAffectTargetAffect>[summon:52300044,1,0]</szAffectTargetAffect>
+		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当你未来时，身心已被那相遇的喜悦充盈；当你已去时，连那份因离别而生的惆怅也已被你拭去。\n　　　　　　　　　　　——云游诗人西维娅</szInfo>
@@ -59335,7 +59547,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>20</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59388,7 +59600,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>18</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59441,7 +59653,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>16</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59494,7 +59706,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59547,7 +59759,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>20</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59566,7 +59778,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59600,7 +59812,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>18</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59619,7 +59831,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59653,7 +59865,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>16</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59672,7 +59884,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59706,7 +59918,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59725,7 +59937,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201011,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成22.5%的伤害，受到275%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到275%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59759,7 +59971,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>20</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59778,7 +59990,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59812,7 +60024,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>18</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59831,7 +60043,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59865,7 +60077,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>16</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59884,7 +60096,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59918,7 +60130,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59937,7 +60149,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201021,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成25%的伤害，受到250%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到250%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -59971,7 +60183,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>20</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -59990,7 +60202,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60024,7 +60236,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>18</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -60043,7 +60255,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60077,7 +60289,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>16</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -60096,7 +60308,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60130,7 +60342,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -60149,7 +60361,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201031,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成27.5%的伤害，受到225%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到225%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60183,7 +60395,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>20</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -60202,7 +60414,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60236,7 +60448,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>18</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -60255,7 +60467,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60289,7 +60501,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>16</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -60308,7 +60520,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
@@ -60342,7 +60554,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>14</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -60361,7 +60573,7 @@
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53201041,1,0]</szAffectTargetAffect>
-		<szDescribe>　　召唤一个自己的分身，造成30%的伤害，受到200%的伤害，分身持续30s</szDescribe>
+		<szDescribe>　　召唤一个自己的分身，造成20%的伤害，受到200%的伤害，分身持续30s</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神出鬼没？哼哼……是鬼出神殁！\n　　　　　　　　　　　——匿迹渗透者尤娜</szInfo>
