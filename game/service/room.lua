@@ -103,6 +103,7 @@ local function playerReConnect(agent, aid)
 			table.insert(picks, { x=v.itemId,y=v.skillId,z=k })
 		end
 	end
+	print(picks)
 	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=picks})
 	skynet.call(agent,"lua","setReceveRoomInfo")
 end
