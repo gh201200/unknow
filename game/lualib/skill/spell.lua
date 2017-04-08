@@ -168,9 +168,12 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
 	local targets = {}
-	local dir = vector3.create(srcTarget.pos.x,0,srcTarget.pos.z)
-	dir:sub(source.pos)
-	dir:normalize() 
+	local dir
+	if srcTarget then
+		dir = vector3.create(srcTarget.pos.x,0,srcTarget.pos.z)
+		dir:sub(source.pos)
+		dir:normalize() 
+	end
 	targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata,dir)
 	if skilldata.szMyAffect ~= "" then
 		local tgt = nil
