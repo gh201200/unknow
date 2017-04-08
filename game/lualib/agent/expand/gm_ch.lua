@@ -67,6 +67,11 @@ CLIENT_GM_CMD['addskill'] = function( args )
 	skynet.call(user.MAP, "lua", "addskill", p)
 end;
 
+CLIENT_GM_CMD['addhp'] = function( args )
+	local p = { id=user.account.account_id, hp=math.floor(args.params[1])}
+	skynet.call(user.MAP, "lua", "addhp", p)
+end;
+
 CLIENT_GM_CMD['endbattle'] = function( args )
 	if user.MAP then
 		local p = { id=user.account.account_id, code=tonumber(args.params[1]) }

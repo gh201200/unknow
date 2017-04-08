@@ -71,8 +71,9 @@ function skillAffect:calAffect()
 			demage = demage - shieldValue
 		end
 		self.owner:calShield()
-		if demage > self.owner:getHp() and self.owner:getType() == "IMapPlayer" then
+		if demage >= self.owner:getHp() and self.owner:getType() == "IMapPlayer" then
 			--复活
+			print("触发复活========")
 			self.owner.spell:onTriggerPasstives(6)
 		end
 		self.owner:addHp(-demage,HpMpMask.SkillHp, self.source)	

@@ -1561,8 +1561,14 @@ function Ientity:addSkill(skillId,extra,updateToClient)
 			self.skillTable[skillId] = 0
 		end
 		self.skillTable[skillId] = self.skillTable[skillId] + extra
+		local newSkillId = skillId + self.skillTable[skillId] - 1
 		if skilldata.n32Active == 1 then
-			local ps = passtiveSpell.new(self,skilldata,extra)
+			if self.skillTable[skillId] >= 2 then
+				local oldSkillId = skillId + self.skillTable[skillId] - 2
+				self:removeSkill(oldSkillId,false)	
+			end	
+			local newSkilldata = g_shareData.skillRepository[newSkillId]
+			local ps = passtiveSpell.new(self,newSkilldata,-1)
 			table.insert(self.spell.passtiveSpells,ps)
 		end
 	else

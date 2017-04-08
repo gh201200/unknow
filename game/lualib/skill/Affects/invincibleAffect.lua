@@ -2,6 +2,7 @@ local Affect = require "skill.Affects.Affect"
 local invincibleAffect = class("invincibleAffect",Affect)
 
 function invincibleAffect:ctor(entity,source,data)
+	print("invincibleAffect=====")
 	self.super.ctor(self,entity,source,data)
 	self.effectTime = self.data[2] or 0
 	self.effectTime = self.effectTime * 1000
