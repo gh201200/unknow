@@ -105,14 +105,14 @@ function IPet:preCast()
 		local cd = self.cooldown:getCdTime(skillId)
 		if cd <= 0 then
 			--释放技能
-			self.ReadySkillId = skillId
+			self:setReadySkillId(skillId)
 			return
 		end	
 	end
 	if attackId ~= 0 then
 		local cd =  self.cooldown:getCdTime(attackId)
 		if cd <= 0 then
-			self.ReadySkillId = attackId
+			self:setReadySkillId(attackId)
 		end
 	end
 end

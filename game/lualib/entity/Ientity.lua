@@ -95,6 +95,7 @@ function Ientity:ctor(pos,dir)
 	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
+	self.ReadySkillIdTime = 0 -- 准备释放技能的时间	
 	self.affectStateRefs = {} --状态计数
 	
 	self.triggerCast = true	 --是否触发技能
@@ -427,10 +428,9 @@ function Ientity:setTarget(target)
 		self:setNewTarget(target)
 	end
 	if self:canMove() == 0 then
-		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
-			--self:castSkill(self.ReadySkillId)
+		if self:getReadySkillId() ~= 0 and self:canCast(self:getReadySkillId()) == 0 then
 		else
-			local skilldata = g_shareData.skillRepository[self.ReadySkillId]
+			local skilldata = g_shareData.skillRepository[self:getReadySkillId()]
 			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
 				local dis = self:getDistance(self:getTarget())
 				if dis > skilldata.n32Range then
@@ -516,10 +516,10 @@ function Ientity:update(dt)
 			self:onForceMove(dt)	
 		end
 	end
-	if self.ReadySkillId ~= 0  then	
-		local err = self:canCast(self.ReadySkillId)
+	if self:getReadySkillId() ~= 0  then	
+		local err = self:canCast(self:getReadySkillId())
 		if err == 0 then
-			self:castSkill(self.ReadySkillId)
+			self:castSkill(self:getReadySkillId())
 		end
 	end
 
@@ -1049,7 +1049,7 @@ function Ientity:onDead()
 		end
 	end
 	self.spell.passtiveSpells = {}
-	self.ReadySkillId = 0
+	self:setReadySkillId(0)
 	self.affectTable:clear() --清除所有的buff
 end
 
@@ -1358,7 +1358,7 @@ end
 
 function Ientity:callBackSpellEnd()
 	if self.entityType ~= EntityType.player	then
-		self.ReadySkillId = 0
+		self:setReadySkillId(0)
 		return
 	end
 end
@@ -1421,6 +1421,9 @@ function Ientity:canCast(id)
 		if self:getTarget() == nil then
 			return ErrorCode.EC_Spell_NoTarget
 		end
+		if self:getTarget() ~= nil and self:getTargetTime() < self:getReadySkillIdTime() then
+			return ErrorCode.EC_Spell_NoTarget
+		end 
 	end
 	
 	if skilldata.n32Range ~= 0 then
@@ -1463,6 +1466,19 @@ function Ientity:getRegularSkills()
 	return t
 end
 
+
+function Ientity:setReadySkillId(id)
+	self.ReadySkillId = id
+	self.ReadySkillIdTime = skynet.now()
+end
+
+function Ientity:getReadySkillId()
+	return self.ReadySkillId
+end
+
+function Ientity:getReadySkillIdTime()
+	return self.ReadySkillIdTime
+end
 --是否能选中技能
 function Ientity:canSetCastSkill(id)
         local skilldata = g_shareData.skillRepository[id]
@@ -1489,11 +1505,11 @@ function Ientity:setCastSkillId(id)
 	end
 	local errorcode = self:canSetCastSkill(id) 
 	if errorcode ~= 0 then return errorcode end
-	self.ReadySkillId = id
+	self:setReadySkillId(id)
 	return 0
 end
 function Ientity:castSkill()
-	self.CastSkillId = self.ReadySkillId
+	self.CastSkillId = self:getReadySkillId() 
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat 
@@ -1526,7 +1542,7 @@ function Ientity:castSkill()
 	tmpSpell:init(skilldata,skillTimes)
 	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
-	self.ReadySkillId = 0
+	self:setReadySkillId(0)
 	return 0
 end
 
