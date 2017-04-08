@@ -4,6 +4,8 @@ local spell = class("spell")
 local transfrom = require "entity.transfrom"
 local sheduleSpell = require "skill.sheduleSpell"
 local passtiveSpell = require "skill.passtiveSpell"
+local vector3 = require "vector3"
+
 require "globalDefine"
 
 function spell:ctor(entity)
@@ -166,7 +168,10 @@ function spell:onTrigger(skilldata,source,srcTarget)
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
 	local targets = {}
-	targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
+	local dir = vector3.create(srcTarget.pos.x,0,srcTarget.pos.z)
+	dir:sub(source.pos)
+	dir:normalize() 
+	targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata,dir)
 	if skilldata.szMyAffect ~= "" then
 		local tgt = nil
 		if self:isDisSpell(skilldata.szMyAffect[1][1]) == true then
