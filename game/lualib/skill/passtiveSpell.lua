@@ -16,7 +16,9 @@ function passtiveSpell:ctor(src,skilldata,time)
 		table.insert(adds,self.source)
 		self.source.spell:trgggerAffect(self.skilldata.szSelectTargetAffect,adds,self.skilldata)
 	end
-	self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+	if self.source:getType() ~= "IMapPlayer" then 
+		self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+	end
 end
 
 function passtiveSpell:update(dt)
