@@ -78,6 +78,11 @@ function IMapPlayer:addHp(_hp, mask, source)
 		self.HonorData[5] = self.HonorData[5] + 1
 		if source ~= nil and source:getType() == "IMapPlayer" then
 			source.HonorData[4] = source.HonorData[4] + 1
+			if source:isRed() then
+				BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
+			else
+				BattleOverManager.BlueKillNum = BattleOverManager.BlueKillNum + 1
+			end
 		end
 	end
 end
