@@ -41,6 +41,7 @@ function cooldown:getChargeCount(id)
 end
 
 function cooldown:addChargeCount(id,isReduce)
+	print("addChargeCount====",id)
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata.n32SkillType == 2 and self.entity.skillTable[id] >= 2 then
 		--大招
