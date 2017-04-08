@@ -86,6 +86,7 @@ end;
 CLIENT_GM_CMD['setcd'] = function( args )
 	local ctype = tonumber(args.params[1])
 	local cdtime = tonumber(args.params[2])
+	if cdtime == 0 then cdtime = math.maxint32 end
 	local cooldown = snax.uniqueservice("cddown")
 	local activity = snax.uniqueservice("activity")
 	if ctype == 1 then
