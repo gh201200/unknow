@@ -33,6 +33,7 @@ function AffectTable:update(dt)
 				--self.affects[i].status = "exec"
 				self.affects[i]:onEnter()			
 			elseif self.affects[i].status == "exit" then
+				print("=====AffectTable:update==exit:",self.affects[i].skillId,self.affects[i].owner.serverId)
 				table.remove(self.affects,i)
 			end
 	--	end

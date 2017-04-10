@@ -26,7 +26,7 @@ function Affect:onExit()
 end
 
 function Affect:getAttributeValue(data)
-	attId,rate,value = data[2],data[3],data[4]
+	local attId,rate,value = data[2],data[3],data[4]
 	local entity = self.source
 	if entity == nil then
 		print("entity is null")
@@ -51,7 +51,7 @@ function Affect:getAttributeValue(data)
 end
 
 function Affect:getBaseAttributeValue(data)
-	attId,rate,value = data[2],data[3],data[4]
+	local attId,rate,value = data[2],data[3],data[4]
 	local entity = self.source
 	local attIdToFuns = {
 		[1] = "Attack",[2] = "Strength",[3] = "Agility",
@@ -59,8 +59,11 @@ function Affect:getBaseAttributeValue(data)
 		[7] = "MpMax",[8] = "Hp",[9] = "Mp"};
 	local midValue = entity["getMid" .. attIdToFuns[attId]](entity)
 	local midPecent =  entity["getMid" .. attIdToFuns[attId] .. "Pc"](entity)
-	local finalValue = self:getAttributeValue(data)	
-	local originValue = (finalValue - midValue) * (1.0 / (1 + midPecent))
+	local newdata = {0,data[2],1,0}
+	local finalValue = self:getAttributeValue(newdata)
+	local originValue = rate * (finalValue - midValue) * (1.0 / (1 + midPecent))
+	--print("====getBaseAttributeValue",originValue,finalValue,midValue,midPecent)	
+	--print("======data",data,"rate:",rate)
 	return math.floor(originValue)
 end
 

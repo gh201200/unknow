@@ -74,6 +74,7 @@ function StatsAffect:onTrigger(_add)
 		end
 		if self.data[1] == 'hp' then
 			if self.data[2] == 0 then
+				print("===========hp",self.data,_add)	
 				self.owner:addMidHpMax(_add * (self.data[3] * self.owner:getHpMax() + self.data[4]))
 			else
 				local r = self:getBaseAttributeValue(self.data)
@@ -159,7 +160,7 @@ function StatsAffect:onTrigger(_add)
 				self.owner:addMidRecvHp(_add * self.data[4])
 			else
 				local r = self:getBaseAttributeValue(self.data)
-			--	print("r=========",r,_add)
+				--print("rehp=========",r,_add,self.skillId)
 				self.owner:addMidRecvHp(_add * r)
 			end
 			self.owner:calcRecvHp()
