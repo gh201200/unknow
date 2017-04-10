@@ -457,6 +457,11 @@ end
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
+	local skilldata = g_shareData.skillRepository[self:getReadySkillId()]	
+	--敌人单体类型的技能 点地板取消
+	if skilldata ~= nil and skilldata.n32SkillType == 1 and skilldata.n32SkillTargetType == 3 then
+		self:setReadySkillId(0)	
+	end	
 	self.moveQuadrant = 0
 	local pos = vector3.create(target.x,0,target.z)
 	if Map:isWall( pos.x, pos.z ) then

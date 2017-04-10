@@ -34,9 +34,7 @@ function repelAffect:onEnter()
 	local dst = vector3.create()
 	dst:set(self.owner.pos.x,0,self.owner.pos.z)
 	dst:add(dir)
-	print("dst==",dst.x,dst.z)
-	print("ownerpos ==",self.owner.pos.x,self.owner.pos.z)
-	
+		
          local r = {id = self.owner.serverId,action = 0,dstX = math.floor(dst.x * 10000),
          dstZ = math.floor(dst.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
 	g_entityManager:sendToAllPlayers("pushForceMove",r)  
