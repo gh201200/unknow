@@ -103,7 +103,7 @@ function IMapPlayer:update(dt)
 	if self:isDead() == false then
 		if self.ai then
 			if self.curActionState < ActionState.forcemove then
-				self.ai:update(dt)
+			--	self.ai:update(dt)
 			end
 		else
 			self:autoAttack()		
