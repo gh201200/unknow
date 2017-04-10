@@ -11,8 +11,8 @@ local account_cors = {}
 local s_pickHeros = { } --选角色服务
 local PvpAIServer 	--pvpAI服务
 
-local useAI = true
---local useAI = false
+--local useAI = true
+local useAI = false
 
 CMD.MATCH_NUM = 6 
 
@@ -22,8 +22,8 @@ local keep_list = {} 	--保持队列
 local strict_list = {}	--严格队列
 local loose_list = {}	--宽松队列
 local listTimeoutConfig = {
-	[1] = {["playerNum"] = 20,["keep"] = 1 * 1000,["strict"] = 2 * 1000,["loose"] = 2 *  1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
-	--[1] = {["playerNum"] = 20,["keep"] = 10 * 1000,["strict"] = 20 * 1000,["loose"] = 20 *  1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	--[1] = {["playerNum"] = 20,["keep"] = 1 * 1000,["strict"] = 2 * 1000,["loose"] = 2 *  1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
+	[1] = {["playerNum"] = 20,["keep"] = 10 * 1000,["strict"] = 20 * 1000,["loose"] = 20 *  1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
 	[2] = {["playerNum"] = 50,["keep"] = 30 * 1000,["strict"] = 15 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
 	[3] = {["playerNum"] = 100,["keep"] = 20 * 1000,["strict"] = 10 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000},
 	[3] = {["playerNum"] = math.maxinteger,["keep"] = 10 * 1000,["strict"] = 5 * 1000,["loose"] = 2 * 60 * 1000,["keepStep"] = 1000,["strictStep"] = 1000,["looseStep"] = 1000}
