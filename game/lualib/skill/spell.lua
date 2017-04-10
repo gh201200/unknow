@@ -348,6 +348,7 @@ end
 --同步技能状态到客户端
 function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 	actionTime = actionTime or 0
+	actionTime = math.floor(actionTime)
 	local t = { srcId = source.serverId,skillId = skilldata.id ,state = state,attackNum = source.attackNum, actionTime = actionTime,targetId = 0,targetPos = nil}
 	t.targetPos = { x = math.ceil(source.pos.x * GAMEPLAY_PERCENT) ,y = 0 , z = math.ceil(source.pos.z*GAMEPLAY_PERCENT) } 
 	if srcTarget ~= nil then
