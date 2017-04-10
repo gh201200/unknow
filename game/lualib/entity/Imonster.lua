@@ -160,6 +160,7 @@ function IMonster:clearPreCastSkill()
 end
 
 function IMonster:addHp(_hp, mask, source)    
+	if self:getHp() <= 0 and _hp <= 0 then return end
 	if self:getHp()+_hp <= 0 then                                             
                 self.hateList:addHate(source, self:getHp() + math.floor(self:getHpMax() * 0.2))
      	else                                                                  
