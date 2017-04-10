@@ -35,4 +35,8 @@ end
 function transform:getTargetTime()
 	return self.targetTime
 end
+
+function transform:getHp()
+	return 0
+end
 return transform
