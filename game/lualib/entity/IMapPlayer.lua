@@ -68,10 +68,6 @@ end
 
 function IMapPlayer:addHp(_hp, mask, source)
 	if self:getHp() <= 0 and _hp <= 0 then return end
-	if _hp <= 0 and self:isSameCamp(source) then
-		print('kill same camp: ', self.serverId, source.serverId)
-		skynet.exit()
-	end
 	IMapPlayer.super.addHp(self,_hp,mask,source)
 	if _hp < 0 and source then
 		if source:getType() == "IMapPlayer" or source:getType() == "IBuilding"  or source:getType() == "IPet" then
@@ -107,7 +103,7 @@ function IMapPlayer:update(dt)
 	if self:isDead() == false then
 		if self.ai then
 			if self.curActionState < ActionState.forcemove then
-			--	self.ai:update(dt)
+				self.ai:update(dt)
 			end
 		else
 			self:autoAttack()		
