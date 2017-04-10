@@ -148,6 +148,9 @@ function passtiveSpell:trigger(_cond)
 				self.source.cooldown:resetCd(self.skilldata.id,math.maxinteger);
 			else
 				self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+				if self.dskilldata.n32SkillType == 2 then
+					self.source:SynSkillCds(self.skilldata.id)
+				end
 			end
 			local _type = self.skilldata.szSelectRange[1]
 			self.source.spell:onTrigger(self.skilldata,self.source,tgt)

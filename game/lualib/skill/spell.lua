@@ -106,7 +106,6 @@ end
 function spell:updatePasstiveSpells(dt)
 	for i= #self.passtiveSpells,1,-1 do
 		if self.passtiveSpells[i].isDead == true then
-			print("===updatePasstiveSpells isDead")
 			self.passtiveSpells[i]:onDead()
 			table.remove(self.passtiveSpells,i)
 		else
