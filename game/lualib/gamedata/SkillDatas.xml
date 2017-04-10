@@ -30918,7 +30918,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -30971,7 +30971,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31024,7 +31024,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31077,7 +31077,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31130,7 +31130,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31183,7 +31183,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31236,7 +31236,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31289,7 +31289,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31342,7 +31342,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31395,7 +31395,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>20</n32TriggerTime>
+		<n32TriggerTime>0.2</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -58472,7 +58472,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58525,7 +58525,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58578,7 +58578,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58631,7 +58631,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58684,7 +58684,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58737,7 +58737,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58790,7 +58790,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58843,7 +58843,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58896,7 +58896,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -58949,7 +58949,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59002,7 +59002,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59055,7 +59055,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59108,7 +59108,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59161,7 +59161,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59214,7 +59214,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59267,7 +59267,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59320,7 +59320,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59373,7 +59373,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59426,7 +59426,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
@@ -59479,7 +59479,7 @@
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>1</n32TriggerCondition>
-		<n32TriggerInfo>0.5</n32TriggerInfo>
+		<n32TriggerInfo>20</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
 		<n32AffectTime>0</n32AffectTime>
