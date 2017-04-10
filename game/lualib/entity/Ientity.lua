@@ -1099,6 +1099,7 @@ function Ientity:addHp(_hp, mask, source)
 	if not mask then
 		mask = HpMpMask.SkillHp
 	end
+	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	--不死状态
 	if self:isAffectState(AffectState.NoDead) or self:isAffectState(AffectState.Invincible) then
@@ -1106,7 +1107,6 @@ function Ientity:addHp(_hp, mask, source)
 			self:setHp(1)
 		end
 	end
-	self.lastHp = self:getHp()
 	if  self.lastHp ~= self:getHp() then	
 		self.maskHpMpChange = self.maskHpMpChange | mask
 		--self.HpMpChange = true
