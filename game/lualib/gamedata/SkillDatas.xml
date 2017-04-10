@@ -30918,7 +30918,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -30971,7 +30971,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31024,7 +31024,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31077,7 +31077,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31130,7 +31130,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31183,7 +31183,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31236,7 +31236,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31289,7 +31289,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31342,7 +31342,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
@@ -31395,7 +31395,7 @@
 		<n32AffectTime>0</n32AffectTime>
 		<n32ActionType>2</n32ActionType>
 		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0.2</n32TriggerTime>
+		<n32TriggerTime>20</n32TriggerTime>
 		<n32SingEffect>0</n32SingEffect>
 		<n32WarningEffect>0</n32WarningEffect>
 		<n32CasterEffect>0</n32CasterEffect>
