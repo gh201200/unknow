@@ -1398,10 +1398,10 @@ end
 function Ientity:removeSkill(skillId,updateToClient)
        local skilldata = g_shareData.skillRepository[skillId]
        if skilldata.n32Active == 1 then
-               for i=#self.spell.passtiveSpells,1,1 do
+               for i=#self.spell.passtiveSpells,1,-1 do
                        local ps = self.spell.passtiveSpells[i]
                        if ps and ps.skilldata.id == skillId then
-                               ps.isDead = true
+			       ps.isDead = true
                                break
                        end
                end
