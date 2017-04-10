@@ -24,7 +24,7 @@ end
 function cooldown:update(dt)
 	for _k,_v in pairs(self.coolDownTable) do
 		if  self.coolDownTable[_k] ~= 0 then
-			if self.coolDownTable[_k] > 0 and (self.coolDownTable[_k] - dt) <= 0 then
+			if self.entity:getType() == "IMapPlayer" and self.coolDownTable[_k] > 0 and (self.coolDownTable[_k] - dt) <= 0 then
 				self:addChargeCount(_k,false)
 			end
 			self.coolDownTable[_k] = self.coolDownTable[_k] - dt 
@@ -42,9 +42,15 @@ end
 
 function cooldown:addChargeCount(id,isReduce)
 	local skilldata = g_shareData.skillRepository[id]
+	if skilldata.n32SkillType == 2 and self.entity.skillTable[id] >= 2 then
+		--大招
+		local newId = id + self.entity.skillTable[id] - 1
+		skilldata = g_shareData.skillRepository[newId]
+		assert(skilldata)
+	end
 	local isUpdate = false
 	if isReduce == false then
-		if  self.chargeCountTable[id] < skilldata.n32ChargeCount then
+		if self.chargeCountTable[id] and self.chargeCountTable[id] < skilldata.n32ChargeCount then
 			self.chargeCountTable[id] = self.chargeCountTable[id] + 1
 			isUpdate = true
 		end

@@ -3,6 +3,9 @@ function passtiveSpell:ctor(src,skilldata,time)
 	self.skilldata = skilldata
 	self.source = src
 	self.isDead = false
+	if time == -1 then
+		time = math.maxinteger
+	end
 	self.lifeTime = time
 	self.attackTicks = 0
 	self.bAttackTicks = 0

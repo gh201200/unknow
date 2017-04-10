@@ -13,6 +13,7 @@ function addskillAffect:ctor(owner,source,data,skillId)
 end
 
 function addskillAffect:onEnter()
+	print("addskillAffect:onEnter")
 	self.super.onEnter(self)
 	self.owner:addSkill(self.newSkillId,self.effectTime,false)
 end
@@ -26,6 +27,7 @@ end
 
 
 function addskillAffect:onExit()
+	print("addskillAffect:onExit remove=",self.newSkillId)
 	self.super.onExit(self)
 	self.owner:removeSkill(self.newSkillId,false)
 end

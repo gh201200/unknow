@@ -1398,10 +1398,10 @@ end
 function Ientity:removeSkill(skillId,updateToClient)
        local skilldata = g_shareData.skillRepository[skillId]
        if skilldata.n32Active == 1 then
-               for i=#self.spell.passtiveSpells,1,1 do
+               for i=#self.spell.passtiveSpells,1,-1 do
                        local ps = self.spell.passtiveSpells[i]
                        if ps and ps.skilldata.id == skillId then
-                               ps.isDead = true
+			       ps.isDead = true
                                break
                        end
                end
@@ -1561,8 +1561,14 @@ function Ientity:addSkill(skillId,extra,updateToClient)
 			self.skillTable[skillId] = 0
 		end
 		self.skillTable[skillId] = self.skillTable[skillId] + extra
+		local newSkillId = skillId + self.skillTable[skillId] - 1
 		if skilldata.n32Active == 1 then
-			local ps = passtiveSpell.new(self,skilldata,extra)
+			if self.skillTable[skillId] >= 2 then
+				local oldSkillId = skillId + self.skillTable[skillId] - 2
+				self:removeSkill(oldSkillId,false)	
+			end	
+			local newSkilldata = g_shareData.skillRepository[newSkillId]
+			local ps = passtiveSpell.new(self,newSkilldata,-1)
 			table.insert(self.spell.passtiveSpells,ps)
 		end
 	else

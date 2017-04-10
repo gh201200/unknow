@@ -139,7 +139,6 @@ function CMD.requestCastSkill(response,agent, account_id, args)
 	local targetId = args.playerId
 	local isCancel = args.isCancel
 	local err = 0
-	print("arg=====",arg)
 	if isCancel == false then
 		err = player:setCastSkillId(skillId)
 		if err == 0 and targetId ~= 0 then
@@ -336,6 +335,12 @@ function REQUEST.addskill(response, args )
 	response(true, nil)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
 	player:addSkill( args.skillId,1, true )
+end
+
+function REQUEST.addhp(response, args )
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	player:addHp( args.hp,nil,player )
 end
 
 function REQUEST.addOffLineTime(response, args)
