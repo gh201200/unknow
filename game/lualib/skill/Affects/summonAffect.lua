@@ -58,7 +58,7 @@ function summonAffect:randomPos(master,dis)
 	for _k,_v in pairs(t) do
 		dstx = master.pos.x + _v[1]
 		dstz = master.pos.z + _v[2]
-		if Map:get(dstx,dstz) == 0 then
+		if Map:get(dstx,dstz) ~= 255 then
 			table.insert(lt,_v)
 		end
 	end
