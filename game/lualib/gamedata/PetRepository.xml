@@ -130,11 +130,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>30</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>18</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>12</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -159,11 +159,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>33</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>20</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>14</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -188,11 +188,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>36</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>22</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>16</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -217,11 +217,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>39</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>24</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>18</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -246,11 +246,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>42</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>26</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>20</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -275,11 +275,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>45</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>28</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>22</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -304,11 +304,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>48</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>30</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>24</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -333,11 +333,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>51</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>32</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>26</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -362,11 +362,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>54</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>34</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>28</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -391,11 +391,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>57</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.6</StrPc>
 		<Agl>36</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.4</AglPc>
 		<Int>30</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -420,11 +420,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>18</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>21</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>12</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -449,11 +449,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>20</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>24</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>14</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -478,11 +478,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>22</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>27</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>16</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -507,11 +507,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>24</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>30</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>18</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -536,11 +536,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>26</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>33</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>20</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -565,11 +565,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>28</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>36</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>22</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -594,11 +594,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>30</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>39</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>24</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -623,11 +623,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>32</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>42</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>26</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -652,11 +652,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>34</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>45</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>28</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -681,11 +681,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>36</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.4</StrPc>
 		<Agl>48</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.6</AglPc>
 		<Int>30</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -710,11 +710,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>14</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>12</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>18</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -739,11 +739,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>16</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>14</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>21</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -768,11 +768,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>18</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>16</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>24</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -797,11 +797,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>20</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>18</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>27</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -826,11 +826,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>22</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>20</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>30</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -855,11 +855,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>24</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>22</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>33</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -884,11 +884,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>26</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>24</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>36</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -913,11 +913,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>28</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>26</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>39</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -942,11 +942,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>30</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>28</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>42</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -971,11 +971,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>32</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>30</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>45</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1000,11 +1000,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>10</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>14</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>21</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1029,11 +1029,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>12</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>16</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>24</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1058,11 +1058,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>14</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>18</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>27</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1087,11 +1087,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>16</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>20</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>30</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1116,11 +1116,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>18</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>22</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>33</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1145,11 +1145,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>20</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>24</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>36</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1174,11 +1174,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>22</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>26</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>39</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1203,11 +1203,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>24</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>28</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>42</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1232,11 +1232,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>26</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>30</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>45</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
@@ -1261,11 +1261,11 @@
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
 		<Str>28</Str>
-		<StrPc>0.5</StrPc>
+		<StrPc>0.3</StrPc>
 		<Agl>32</Agl>
-		<AglPc>0.5</AglPc>
+		<AglPc>0.25</AglPc>
 		<Int>48</Int>
-		<IntPc>0.5</IntPc>
+		<IntPc>0.4</IntPc>
 		<n32HateRange>3</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
