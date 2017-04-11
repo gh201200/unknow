@@ -2,6 +2,7 @@ local vector3 = require "vector3"
 local Affect = require "skill.Affects.Affect"
 local repelAffect = class("repelAffect",Affect)
 local transfrom = require "entity.transfrom"
+local Map = require "map.Map"
 
 function repelAffect:ctor(owner,source,data)
 	self.super.ctor(self,owner,source,data)
@@ -34,7 +35,8 @@ function repelAffect:onEnter()
 	local dst = vector3.create()
 	dst:set(self.owner.pos.x,0,self.owner.pos.z)
 	dst:add(dir)
-		
+
+	Map:lineTest(self.owner.pos,dst)		
          local r = {id = self.owner.serverId,action = 0,dstX = math.floor(dst.x * 10000),
          dstZ = math.floor(dst.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
 	g_entityManager:sendToAllPlayers("pushForceMove",r)  
