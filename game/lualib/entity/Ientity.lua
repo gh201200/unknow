@@ -258,6 +258,7 @@ function Ientity:setActionState(_speed, _action, update)
 	end
 
 	if _action == ActionState.move then
+		print("ActionState.move======")
 		self.moveNode[1]:set(0, 0, 0)
 		self.moveNode[2]:set(0, 0, 0)
 		local target = self:getTarget().pos
@@ -433,9 +434,11 @@ function Ientity:setTarget(target)
 			local skilldata = g_shareData.skillRepository[self:getReadySkillId()]
 			--if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
 			if skilldata ~= nil and skilldata.n32SkillType == 0 and target ~= nil and target:getType() ~= "transform" then
-				local dis = self:getDistance(self:getTarget())
+				local dis = self:getDistance(target)
 				if dis > skilldata.n32Range then
 					self:setActionState( self:getMSpeed(), ActionState.move, true)
+				else
+					self:stand()
 				end	
 			else	
 				self:setActionState( self:getMSpeed(), ActionState.move, true)
