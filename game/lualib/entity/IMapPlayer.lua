@@ -409,5 +409,6 @@ function IMapPlayer:autoAttack()
 	
 	return nil
 end
+
 return IMapPlayer
 

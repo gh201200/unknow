@@ -174,8 +174,11 @@ function Ientity:isKind(entity,_atk)
 	_atk = _atk or false
 	if _atk == false then
 		if entity:getType() == "IBuilding" then
-		--	return true
+			return true
 		end		
+	end
+	if entity.entityType == EntityType.trap then
+		return true
 	end
 	if self.camp == CampType.KIND or entity.camp == CampType.KIND then
 		return true
