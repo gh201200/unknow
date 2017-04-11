@@ -137,7 +137,7 @@ function NpcAI:onExec_Battle()
 		self:updatePreCast()
 	end
 
-	if self.source:getTarget() == nil or self.source:getTarget():isAffectState(AffectState.Invincible) then
+	if self.source:getTarget() == nil then
 		self:setNextAiState("Idle")
 		return
 	end

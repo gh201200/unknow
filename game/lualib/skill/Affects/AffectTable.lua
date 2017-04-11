@@ -168,8 +168,10 @@ function AffectTable:clear()
 	
 end
 function AffectTable:removeBySkillId(skillId)
+	print("======removeBySkillId:",skillId)
 	for i=#self.affects,1,-1 do 
 		if self.affects[i].skillId == skillId then
+			print("======removeBySkillId:",skillId,i)
 			self:synClient(self.affects[i],1)
 			self.affects[i]:onExit()
 			table.remove(self.affects,i)

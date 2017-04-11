@@ -88,6 +88,7 @@ end
 function passtiveSpell:onDead()
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 or self.skilldata.n32TriggerCondition == 9 then
 		for _dk,_dv in pairs(self.targets) do
+			print("passtiveSpell:onDead====",self.skilldata.id)
 			_dv.affectTable:removeBySkillId(self.skilldata.id)	
 		end
 		self.source.cooldown:resetCd(self.skilldata.id,0);	

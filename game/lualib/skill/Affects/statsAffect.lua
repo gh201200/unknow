@@ -2,6 +2,7 @@ local Affect = require "skill.Affects.Affect"
 local StatsAffect = class("StatsAffect" ,Affect)
 function StatsAffect:ctor(entity,source,data,skillId)
 	self.super.ctor(self,entity,source,data,skillId)
+	print("====StatsAffect",data,skillId)
 	if self.data[1] == 'ctrl' then
 		self.effectTime = self.data[5] or 0
 		self.effectId = self.data[6] or 0
@@ -74,7 +75,6 @@ function StatsAffect:onTrigger(_add)
 		end
 		if self.data[1] == 'hp' then
 			if self.data[2] == 0 then
-				print("===========hp",self.data,_add)	
 				self.owner:addMidHpMax(_add * (self.data[3] * self.owner:getHpMax() + self.data[4]))
 			else
 				local r = self:getBaseAttributeValue(self.data)
@@ -144,6 +144,7 @@ function StatsAffect:onTrigger(_add)
 	
 		if self.data[1] == 'mov' then
 			if self.data[2] == 0 then
+				print("======mov",_add,self.data)
 				self.owner:addMidMSpeedPc(_add * self.data[3])
 				self.owner:addMidMSpeed(_add * self.data[4])
 			else

@@ -335,7 +335,12 @@ end
 function REQUEST.addskill(response, args )
 	response(true, nil)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
-	player:addSkill( args.skillId,1, true )
+	if args.skillId == -1 then
+		local godSkill = player:getGodSkill()
+		player:addSkill(godSkill,1,true)
+	else
+		player:addSkill( args.skillId,1, true )
+	end
 end
 
 function REQUEST.addhp(response, args )
