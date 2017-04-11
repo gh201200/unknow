@@ -46,7 +46,7 @@ function cooldown:addChargeCount(id,isReduce)
 	if skilldata.n32SkillType == 2 then 
 		if self.entity.skillTable[id] >= 2 then
 			--大招
-			local newId = self.entity.skillTable[base_id] - 1
+			local newId = self.entity.skillTable[id] - 1
 			skilldata = g_shareData.skillRepository[newId]
 			assert(skilldata)
 		end
@@ -73,11 +73,13 @@ function cooldown:addChargeCount(id,isReduce)
 end
 function cooldown:getCdTime(id)
 --	print("getCdtime",self)
+	id = math.floor(id / 10) * 10 + 1
 	return self.coolDownTable[id] or 0
 end
 
 function cooldown:resetCd(id,time)
 	--print("cooldown:resetCd",id,time)
+	id = math.floor(id / 10) * 10 + 1
         local skilldata = g_shareData.skillRepository[id]
 	time = time or 0
 	self.coolDownTable[id] = time
@@ -92,6 +94,8 @@ function cooldown:resetAll(except)
 end
 
 function cooldown:getCdsMsg(id)
+        --local skilldata = g_shareData.skillRepository[id]
+	id = math.floor(id / 10) * 10 + 1
 	local r = { items = {}}
 	for _k,_v in pairs(self.coolDownTable) do
 		if id == _k then
