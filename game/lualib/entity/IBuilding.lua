@@ -88,7 +88,8 @@ function IBuilding:update(dt)
 	end
 	local target = nil
 	for k,v in pairs(g_entityManager.entityList) do
-		if self:isKind(v,true) == false and (v:getType() == "IMapPlayer" or  v:getType() == "IPet") and v:getHp() > 0 then
+		--if self:isKind(v,true) == false and (v:getType() == "IMapPlayer" or  v:getType() == "IPet") and v:getHp() > 0 then
+		  if self:canAttack(v) then
 			if  v:getDistance( self ) <= self.attDat.n32AttackRange then
 				target = v		
 				break
@@ -103,6 +104,16 @@ function IBuilding:update(dt)
 	IBuilding.super.update(self, dt)
 end
 
+function IBuilding:canAttack(v)
+	if v and v:getType() == "IMapPlayer" and self:isKind(v,true) == false and v:getHp() > 0  then
+		return true
+	end
+	
+	if v and v:getType() == "IPet" and self:isKind(v,true) == false and v:getHp() > 0 and v.pt.n32Type ~= 4 then
+		return true
+	end
+	return false
+end
 function IBuilding:calcStats()
 	--仅仅是为了和player保持一样
 	self.attDat.n32LStrength = 0
