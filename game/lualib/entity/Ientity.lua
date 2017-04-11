@@ -258,7 +258,6 @@ function Ientity:setActionState(_speed, _action, update)
 	end
 
 	if _action == ActionState.move then
-		print("ActionState.move======")
 		self.moveNode[1]:set(0, 0, 0)
 		self.moveNode[2]:set(0, 0, 0)
 		local target = self:getTarget().pos
