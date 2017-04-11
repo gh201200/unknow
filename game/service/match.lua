@@ -11,8 +11,8 @@ local account_cors = {}
 local s_pickHeros = { } --选角色服务
 local PvpAIServer 	--pvpAI服务
 
-local useAI = true
---local useAI = false
+--local useAI = true
+local useAI = false
 
 CMD.MATCH_NUM = 2 
 
