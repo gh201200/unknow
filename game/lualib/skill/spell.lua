@@ -388,6 +388,7 @@ function spell:onChannelCast(dt)
 	if self.channelTime < 0 then
 		self.status = SpellStatus.End
 		print("持续 ---结束")
+		self.source:OnStand()
 		return
 	end
 
