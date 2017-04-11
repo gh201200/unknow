@@ -2102,17 +2102,17 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.8,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect>[rehp:1,0,0,0,7,12024]</szSelectTargetAffect>
 		<szAffectTargetAffect>[mov:0,-0.45,0,0,-1,0][wsp:0,0,-0.45,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
@@ -2132,7 +2132,7 @@
 		<n32SkillType>0</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
-		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerCondition>7</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
@@ -2155,17 +2155,17 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.8,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect>[rehp:1,0,0,0,7,12024]</szSelectTargetAffect>
 		<szAffectTargetAffect>[mov:0,-0.55,0,0,-1,0][wsp:0,0,-0.55,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
@@ -2185,7 +2185,7 @@
 		<n32SkillType>0</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
-		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerCondition>7</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
@@ -2208,17 +2208,17 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.8,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect>[rehp:1,0,0,0,7,12024]</szSelectTargetAffect>
 		<szAffectTargetAffect>[mov:0,-0.65,0,0,-1,0][wsp:0,0,-0.65,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
@@ -2238,7 +2238,7 @@
 		<n32SkillType>0</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
-		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerCondition>7</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
@@ -2261,17 +2261,17 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.8,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect>[rehp:1,0,0,0,7,12024]</szSelectTargetAffect>
 		<szAffectTargetAffect>[mov:0,-0.75,0,0,-1,0][wsp:0,0,-0.75,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
@@ -46835,7 +46835,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -46888,7 +46888,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -46941,7 +46941,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -46994,7 +46994,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47047,7 +47047,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47100,7 +47100,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47153,7 +47153,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47206,7 +47206,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47259,7 +47259,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47312,7 +47312,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47365,7 +47365,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47418,7 +47418,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47471,7 +47471,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47524,7 +47524,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47577,7 +47577,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47630,7 +47630,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47683,7 +47683,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47736,7 +47736,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47789,7 +47789,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47842,7 +47842,7 @@
 		<n32Range>2.2</n32Range>
 		<n32SkillTargetType>5</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20036</n32BulletId>
 		<n32BulletTarget>3</n32BulletTarget>
@@ -47892,7 +47892,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -47945,7 +47945,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -47998,7 +47998,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48051,7 +48051,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48104,7 +48104,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48157,7 +48157,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48210,7 +48210,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48263,7 +48263,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48316,7 +48316,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48369,7 +48369,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48422,7 +48422,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48475,7 +48475,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48528,7 +48528,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48581,7 +48581,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48634,7 +48634,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48687,7 +48687,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48740,7 +48740,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48793,7 +48793,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48846,7 +48846,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -48899,7 +48899,7 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
+		<n32Range>2.4</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
@@ -62734,8 +62734,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -62787,8 +62787,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -62840,8 +62840,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -62893,8 +62893,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -62946,8 +62946,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -62999,8 +62999,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -63052,8 +63052,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -63105,8 +63105,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -63158,8 +63158,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -63211,8 +63211,8 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>1</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
@@ -63794,14 +63794,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -63847,14 +63847,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -63900,14 +63900,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -63953,14 +63953,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -64006,14 +64006,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -64059,14 +64059,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -64112,14 +64112,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -64165,14 +64165,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -64218,14 +64218,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
@@ -64271,14 +64271,14 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.6,-1,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[atk:0,0.0,0,0,-1,60002]</szSelectTargetAffect>
