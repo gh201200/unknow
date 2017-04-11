@@ -235,9 +235,8 @@ function CMD.replaceSkill(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local errorCode,skillId,num = player:replaceSkill(args.skillId)
 	response(true, {errorCode = errorCode,beSkillId = args.skillId,SkillId = skillId})
-	if skillId ~= 0 then
-		player:addSkill(skillId,1,true)
-	end
+	print("skillId=====",skillId,num)
+	player:addSkill(skillId,num,true)
 end
 
 
