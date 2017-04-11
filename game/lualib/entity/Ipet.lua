@@ -29,8 +29,13 @@ function IPet:init(pt,master)
 	self.bornPos:set(self.pos.x, 0, self.pos.z)
 	self.attDat = {}
         self:calcStats()
-        self:setHp(self:getHpMax())
-        self:setMp(self:getMpMax())
+	if pt.n32Type == 3 then
+	 	self:setHp(math.floor(self:getHpMax() * self.master:getHp() / self.master:getHpMax()))
+	 	self:setMp(math.floor(self:getMpMax() * self.master:getMp() / self.master:getMpMax()))
+	else
+        	self:setHp(self:getHpMax())
+        	self:setMp(self:getMpMax())
+	end
         self.HpMpChange = true
         self.StatsChange = true
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
