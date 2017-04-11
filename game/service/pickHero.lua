@@ -108,7 +108,6 @@ function CMD.confirmHero(response,agent,account,arg)
 end
 
 local function aiPickHero(v)
-	--[[
 	local roles = {
 		110001,
 		110101,
@@ -119,8 +118,8 @@ local function aiPickHero(v)
 		210001,
 		210101,
 		220001	
-	}]]
-	local roles = {110001,120001,130001,130101,220001,210101,210001}
+	}
+	--local roles = {110001,120001,130001,130101,220001,210101,210001}
 	local selects = {}
 	for _agent,_v in pairs(players) do
 		if _v.pickedheroid ~= 0 then
@@ -143,8 +142,9 @@ local function update()
 		print("player:",players)
 		for _agent,_v in pairs(players) do
 			if _v.confirmheroid == 0 and _v.pickedheroid == 0 then
-				quitPick()
-				return
+				--quitPick()
+				--return
+				aiPickHero(_v)
 			elseif _v.confirmheroid == 0 and _v.pickedheroid ~= 0 then
 				_v.confirmheroid = _v.pickedheroid
 			end		
