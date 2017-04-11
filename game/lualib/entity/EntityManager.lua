@@ -172,7 +172,11 @@ function EntityManager:createPet(id,master,pos)
 	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,camp = master.camp,masterId = master.serverId}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
-	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
+	if pt.n32Type == 4 then
+		g_entityManager:sendToAllPlayersByCamp("summonPet",{pet = _pet },master )	
+	else
+		g_entityManager:sendToAllPlayers("summonPet",{pet = _pet })	
+	end
 	pet:init(pt,master)
 end
 function EntityManager:getTypeEntitys(source,skilldata,isSelect)
