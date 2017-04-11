@@ -1008,8 +1008,8 @@ function Ientity:onForceMove(dt)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
 	if Map:isWall(mv_dst.x ,mv_dst.z) == true then
-		--self:stand()
-		--return
+		self:onStand()
+		return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
 	print("onForceMove self.pos:",self.pos.x,self.pos.z)	
