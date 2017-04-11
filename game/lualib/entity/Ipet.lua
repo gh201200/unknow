@@ -132,7 +132,11 @@ end
 function IPet:onDead()
 	IPet.super.onDead(self)
 	g_entityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
-	
+	for i=#(self.spell.passtiveSpells),1,-1 do
+		local v = self.spell.passtiveSpells[i]
+		v:onDead()
+		table.remove(self.spell.passtiveSpells,i)
+	end
 	--response to agent
 	for k, v in pairs(self.coroutine_response) do
 		for p, q in pairs(v) do
