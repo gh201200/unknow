@@ -157,7 +157,8 @@ function IMapPlayer:init(heroId)
 end
 
 function IMapPlayer:setTarget(target) 
-	if target == self:getTarget() and self.curActionState == ActionState.move then return end
+	--if target == self:getTarget() and self.curActionState == ActionState.move then return end
+	if target == self:getTarget() then return end
 	IMapPlayer.super.setTarget(self,target)
 end
 
