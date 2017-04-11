@@ -1307,7 +1307,7 @@ function Ientity:calcMSpeed()
 		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc())
 		+ self:getMidMSpeed() 
 	)
-	self.moveSpeed = self:getMSpeed()
+	self.moveSpeed = math.max(self:getMSpeed(),0)
 end
 
 function Ientity:calcRecvHp()
