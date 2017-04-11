@@ -146,7 +146,6 @@ function IflyObj:updateCollider(dt)
 	dst:mul_num(self.moveSpeed * dt)
 	dst:add(self.pos)
 	self.pos:set(dst.x,0,dst.z)
-	print("updateCollider=====",dst.x,dst.z,self.effectdata)
 	local _kind = true
 	local _bomb = false
 	if self.skilldata.n32BulletTarget == 0 then _kind = false end --敌方

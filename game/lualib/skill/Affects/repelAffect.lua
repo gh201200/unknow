@@ -37,7 +37,7 @@ function repelAffect:onEnter()
 	Map:lineTest(self.owner.pos,dst)
 		
         self.distance = vector3.len(self.owner.pos,dst)  
-	if  self.distance > 0.1 then 
+	if  self.distance > 0.2 then 
 		self.effectTime = math.floor(1000 * self.distance / self.speed)
 		local r = {id = self.owner.serverId,action = 0,dstX = math.floor(dst.x * 10000),
        		 dstZ = math.floor(dst.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
