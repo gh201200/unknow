@@ -771,7 +771,7 @@
 		<szillustration></szillustration>
 	</item>
 	<item id="12005">
-		<n32type>2</n32type>
+		<n32type>1</n32type>
 		<szassert>Niu_skill_03_juqi</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
@@ -782,7 +782,7 @@
 		<szillustration>牛大招</szillustration>
 	</item>
 	<item id="12006">
-		<n32type>2</n32type>
+		<n32type>1</n32type>
 		<szassert>Niu_skill_03_1</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
@@ -790,10 +790,10 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration></szillustration>
+		<szillustration>牛大招</szillustration>
 	</item>
 	<item id="12007">
-		<n32type>2</n32type>
+		<n32type>1</n32type>
 		<szassert>Niu_skill_03_2</szassert>
 		<n32time>4</n32time>
 		<n32speed>0</n32speed>
@@ -801,7 +801,7 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration></szillustration>
+		<szillustration>牛大招</szillustration>
 	</item>
 	<item id="12008">
 		<n32type>2</n32type>

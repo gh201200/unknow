@@ -102,7 +102,7 @@ function NpcAI:onEnter_Chase()
 end
 
 function NpcAI:onExec_Chase()
-	if self.source:getTarget() == nil or (self.source:getTarget():getType() ~= "transform" and self.source:getTarget():isAffectState(AffectState.Invincible)) then
+	if self.source:getTarget() == nil then
 		self:setNextAiState("GoHome")
 		return
 	end

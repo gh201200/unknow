@@ -406,7 +406,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle:1.2,-1,1]</szSelectRange>
+		<szSelectRange>[circle:1,-1,0]</szSelectRange>
 		<n32SelectTargetType>2</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -2102,7 +2102,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -2111,9 +2111,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.25,0,0,-1,0][wsp:0,0,0.25,0,-1,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[mov:0,-0.45,0,0,-1,0][wsp:0,0,-0.45,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -2155,7 +2155,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -2164,9 +2164,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.35,0,0,-1,0][wsp:0,0,0.35,0,-1,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[mov:0,-0.55,0,0,-1,0][wsp:0,0,-0.55,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -2208,7 +2208,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -2217,9 +2217,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.45,0,0,-1,0][wsp:0,0,0.45,0,-1,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[mov:0,-0.65,0,0,-1,0][wsp:0,0,-0.65,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -2261,7 +2261,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.8,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.8,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -2270,9 +2270,9 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[rehp:1,0,0,0,-1,12024]</szMyAffect>
+		<szMyAffect>[rehp:1,0,0,0,7,12024]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[mov:0,0.55,0,0,-1,0][wsp:0,0,0.55,0,-1,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[mov:0,-0.75,0,0,-1,0][wsp:0,0,-0.75,0,-1,0]</szAffectTargetAffect>
 		<szDescribe>　　减少指定地点周围敌方单位的攻击和移动速度</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -44714,7 +44714,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -44723,7 +44723,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,50,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -44767,7 +44767,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -44776,7 +44776,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,65,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -44820,7 +44820,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -44829,7 +44829,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,80,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -44873,7 +44873,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -44882,7 +44882,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,95,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -44926,7 +44926,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -44935,7 +44935,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,115,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -44979,7 +44979,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -44988,7 +44988,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,135,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45032,7 +45032,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45041,7 +45041,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,155,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45085,7 +45085,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45094,7 +45094,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,175,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45138,7 +45138,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45147,7 +45147,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,180,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45191,7 +45191,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45200,7 +45200,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,205,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45244,7 +45244,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45253,7 +45253,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,230,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45297,7 +45297,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45306,7 +45306,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,255,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45350,7 +45350,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45359,7 +45359,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,250,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45403,7 +45403,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45412,7 +45412,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,280,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45456,7 +45456,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45465,7 +45465,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,310,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45509,7 +45509,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45518,7 +45518,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,340,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45562,7 +45562,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45571,7 +45571,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,325,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45615,7 +45615,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45624,7 +45624,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,360,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45668,7 +45668,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45677,7 +45677,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,395,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -45721,7 +45721,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -45730,7 +45730,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[charge::2,0,0]</szMyAffect>
+		<szMyAffect>[charge:2,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,1.2,430,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　向目标地点发起冲锋，对目标地点周围的敌方目标造成伤害（可以充能3次）</szDescribe>
@@ -47894,7 +47894,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -47947,7 +47947,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48000,7 +48000,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48053,7 +48053,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48106,7 +48106,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48159,7 +48159,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48212,7 +48212,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48265,7 +48265,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48318,7 +48318,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48371,7 +48371,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48424,7 +48424,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48477,7 +48477,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48530,7 +48530,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48583,7 +48583,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48636,7 +48636,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48689,7 +48689,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48742,7 +48742,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48795,7 +48795,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48848,7 +48848,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -48901,7 +48901,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>4</n32SkillTargetType>
-		<szSelectRange>[circle,0.6,1,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>1</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50014,7 +50014,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50022,10 +50022,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,80,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,50,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50067,7 +50067,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50075,10 +50075,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,160,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,65,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50120,7 +50120,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50128,10 +50128,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,240,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,80,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50173,7 +50173,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50181,10 +50181,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,95,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50226,7 +50226,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50234,10 +50234,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,160,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,115,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50279,7 +50279,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50287,10 +50287,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,240,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,135,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50332,7 +50332,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50340,10 +50340,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,155,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50385,7 +50385,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50393,10 +50393,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,175,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50438,7 +50438,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50446,10 +50446,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,240,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,180,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50491,7 +50491,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50499,10 +50499,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,205,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50544,7 +50544,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50552,10 +50552,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,230,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50597,7 +50597,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50605,10 +50605,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,480,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,255,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50650,7 +50650,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50658,10 +50658,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,320,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,250,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50703,7 +50703,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50711,10 +50711,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,280,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50756,7 +50756,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50764,10 +50764,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,480,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,310,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50809,7 +50809,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50817,10 +50817,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,560,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,340,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50862,7 +50862,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50870,10 +50870,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.5,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,400,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,325,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50915,7 +50915,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50923,10 +50923,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.55,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,480,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,360,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -50968,7 +50968,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -50976,10 +50976,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.6,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,560,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,395,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -51021,7 +51021,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
+		<szSelectRange>[circle:0.6,1,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -51029,10 +51029,10 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect>[invincible:0.5,0][curehp:6,0.65,0,0,0,0]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.4,720,0,0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:2,1.2,430,0,0,32002]</szAffectTargetAffect>
 		<szDescribe>　　死亡后复活，回复50%的生命值，并对周围1.8米内目标造成伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -53187,7 +53187,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>1</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53293,7 +53293,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53346,7 +53346,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>4</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53399,7 +53399,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>1</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53505,7 +53505,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53558,7 +53558,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>4</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53611,7 +53611,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>1</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53717,7 +53717,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53770,7 +53770,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>4</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53823,7 +53823,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>1</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53929,7 +53929,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -53982,7 +53982,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>4</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -54035,7 +54035,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>1</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -54141,7 +54141,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>3</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -54194,7 +54194,7 @@
 		<n32ETargetEffect>0</n32ETargetEffect>
 		<szETargetSound>sound01.mp3</szETargetSound>
 		<n32CD>30</n32CD>
-		<n32ChargeCount>2</n32ChargeCount>
+		<n32ChargeCount>4</n32ChargeCount>
 		<n32MpCost>100</n32MpCost>
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
@@ -55314,7 +55314,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55367,7 +55367,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55420,7 +55420,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55473,7 +55473,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55526,7 +55526,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55579,7 +55579,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55632,7 +55632,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55685,7 +55685,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55738,7 +55738,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55791,7 +55791,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55844,7 +55844,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55897,7 +55897,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -55950,7 +55950,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56003,7 +56003,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56056,7 +56056,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56109,7 +56109,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56162,7 +56162,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56215,7 +56215,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56268,7 +56268,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56321,7 +56321,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56374,7 +56374,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56383,7 +56383,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,95,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56427,7 +56427,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56436,7 +56436,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,135,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56480,7 +56480,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56489,7 +56489,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,175,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56533,7 +56533,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56542,7 +56542,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,215,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56586,7 +56586,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56595,7 +56595,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,115,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56639,7 +56639,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56648,7 +56648,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,155,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56692,7 +56692,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56701,7 +56701,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,195,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56745,7 +56745,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56754,7 +56754,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,235,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56798,7 +56798,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56807,7 +56807,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,135,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56851,7 +56851,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56860,7 +56860,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,175,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56904,7 +56904,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56913,7 +56913,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,215,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -56957,7 +56957,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -56966,7 +56966,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,255,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57010,7 +57010,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57019,7 +57019,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,155,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57063,7 +57063,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57072,7 +57072,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,195,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57116,7 +57116,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57125,7 +57125,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,235,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57169,7 +57169,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57178,7 +57178,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,275,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57222,7 +57222,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57231,7 +57231,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,175,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57275,7 +57275,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57284,7 +57284,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,215,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57328,7 +57328,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57337,7 +57337,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,255,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -57381,7 +57381,7 @@
 		<n32HpCostPercent>0</n32HpCostPercent>
 		<n32Range>0</n32Range>
 		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[circle,1.2,-1,0]</szSelectRange>
+		<szSelectRange>[circle:1.2,-1,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
 		<n32BulletId>0</n32BulletId>
@@ -57390,7 +57390,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect>[damage:0,0,0,0,0.5,12007]</szMyAffect>
+		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[damage:2,0.9,275,0,0,32003][ctrl:7,0,0,2,50001]</szAffectTargetAffect>
 		<szDescribe>　　向地壳内注入大量能量造成扭曲，对范围内的敌方单位造成晕眩和伤害</szDescribe>
@@ -67471,7 +67471,7 @@
 	</item>
 	<item id="90001001">
 		<n32SeriId>90001</n32SeriId>
-		<szName>急救显示</szName>
+		<szName>诡雷显示</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
 		<n32Faction>4</n32Faction>
 		<n32Quality>0</n32Quality>
@@ -67515,7 +67515,7 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[rehp:1,0,0,0,20,40010]</szAffectTargetAffect>
+		<szAffectTargetAffect>[rehp:1,0,0,0,60,40010]</szAffectTargetAffect>
 		<szDescribe></szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
@@ -67524,7 +67524,7 @@
 	</item>
 	<item id="90002001">
 		<n32SeriId>90002</n32SeriId>
-		<szName>诡雷显示</szName>
+		<szName>急救包显示</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
 		<n32Faction>4</n32Faction>
 		<n32Quality>0</n32Quality>
