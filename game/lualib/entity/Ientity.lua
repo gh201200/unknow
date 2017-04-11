@@ -431,7 +431,8 @@ function Ientity:setTarget(target)
 		if self:getReadySkillId() ~= 0 and self:canCast(self:getReadySkillId()) == 0 then
 		else
 			local skilldata = g_shareData.skillRepository[self:getReadySkillId()]
-			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
+			--if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and target ~= nil and target:getType() ~= "transform" then
 				local dis = self:getDistance(self:getTarget())
 				if dis > skilldata.n32Range then
 					self:setActionState( self:getMSpeed(), ActionState.move, true)

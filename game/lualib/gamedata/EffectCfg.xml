@@ -1426,7 +1426,7 @@
 		<n32speed>5</n32speed>
 		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
+		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>空弹道速度较快</szillustration>
 	</item>
