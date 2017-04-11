@@ -19,6 +19,7 @@ end
 
 function StatsAffect:onTrigger(_add)
 	if _add ~= 1 and _add ~= -1 then return end
+	print("======StatsAffect:onTrigger",_add,self.data)
 	repeat
 		local lzm = false
 		if self.data[1] == 'ctrl' then
@@ -143,8 +144,8 @@ function StatsAffect:onTrigger(_add)
 		end
 	
 		if self.data[1] == 'mov' then
+			print("======mov",_add,self.data)
 			if self.data[2] == 0 then
-				print("======mov",_add,self.data)
 				self.owner:addMidMSpeedPc(_add * self.data[3])
 				self.owner:addMidMSpeed(_add * self.data[4])
 			else
@@ -238,8 +239,9 @@ function StatsAffect:onExec(dt)
 end
 
 function StatsAffect:onExit()
-	self.super.onExit(self)
+	print("StatsAffect:onExit() self.skillId",self.skillId)
 	self:onTrigger(-1)
+	self.super.onExit(self)
 end
 
 return StatsAffect

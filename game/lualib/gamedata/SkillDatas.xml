@@ -2079,7 +2079,7 @@
 		<n32SkillType>0</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
-		<n32TriggerCondition>9</n32TriggerCondition>
+		<n32TriggerCondition>7</n32TriggerCondition>
 		<n32TriggerInfo>0</n32TriggerInfo>
 		<n32NeedCasting>0</n32NeedCasting>
 		<n32AffectGap>0</n32AffectGap>
