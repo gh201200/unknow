@@ -99,9 +99,7 @@ function passtiveSpell:trigger(_cond)
 	local isTrigger = false
 	--攻击概率触发
 	if self.skilldata.n32TriggerCondition == 1 and _cond == 1 then
-		print("passtiveSpell:trigger====111111")
 		if math.random(0,100) <= self.skilldata.n32TriggerInfo then
-		print("passtiveSpell:trigger====11111 - true")
 			isTrigger =  true
 		end
 	--攻击次数触发
@@ -144,7 +142,6 @@ function passtiveSpell:trigger(_cond)
 			if self.skilldata.n32SkillTargetType == 0 then
 				tgt = self.source
 			else
-				--if self.skilldata.n32SkillTargetType == 1 then
 				tgt = self.source:getTarget()
 			end
 			if _cond == 9 then
@@ -155,8 +152,9 @@ function passtiveSpell:trigger(_cond)
 					self.source:SynSkillCds(self.skilldata.id)
 				end
 			end
-			local _type = self.skilldata.szSelectRange[1]
-			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
+			if tgt ~= nil then 
+				self.source.spell:onTrigger(self.skilldata,self.source,tgt)
+			end
 		end
 	end
 end

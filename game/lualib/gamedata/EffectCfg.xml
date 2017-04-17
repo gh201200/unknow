@@ -991,7 +991,7 @@
 		<szillustration>狂僧大招施法</szillustration>
 	</item>
 	<item id="12026">
-		<n32type>2</n32type>
+		<n32type>1</n32type>
 		<szassert>nier_skill_hit_bottom</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
@@ -1127,7 +1127,7 @@
 		<szassert></szassert>
 		<n32time>1</n32time>
 		<n32speed>2</n32speed>
-		<n32position>0</n32position>
+		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1422,9 +1422,9 @@
 	<item id="20036">
 		<n32type>4</n32type>
 		<szassert></szassert>
-		<n32time>0</n32time>
+		<n32time>0.5</n32time>
 		<n32speed>5</n32speed>
-		<n32position>0</n32position>
+		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
