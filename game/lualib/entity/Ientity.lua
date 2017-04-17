@@ -13,10 +13,10 @@ local syslog = require "syslog"
 local Ientity = class("Ientity" , transfrom)
 
 local AREA = {
-	{1, 6.8, 1.7, 8, 1.3, 7.4},
-	{1, 10.4, 1.7, 11.6, 1.3, 11},
-	{4.8, 7.7, 5.5, 8.9, 5.1, 8.3},
-	{4.8, 4.2, 5.5, 5.4, 5.1, 4.8},
+	{1, 7, 1.7, 8.2, 1.35, 8.2},
+	{1, 10, 1.7, 11.2, 1.35, 10},
+	{4.8, 7.5, 5.5, 8.7, 5.15, 7.5},
+	{4.8, 4.5, 5.5, 5.7, 5.15, 5.7},
 }
 
 local HP_MP_RECOVER_TIMELINE = 1000
@@ -241,7 +241,7 @@ function Ientity.getArea(pos)
 			return 4
 		elseif pos.z <= AREA[3][2] then
 			if pos.x < AREA[3][1] then
-				return 4
+				return 3
 			else
 				return 6	--二桥
 			end
@@ -266,6 +266,7 @@ function Ientity:setActionState(_speed, _action, update)
 		local target = self:getTarget().pos
 		local nArea = self.getArea( self.pos )
 		local tArea = self.getArea( self:getTarget().pos )
+		--print(nArea, tArea)
 		if nArea == 1 then
 			if tArea == 2 then
 				self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
