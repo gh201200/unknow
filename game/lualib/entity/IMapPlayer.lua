@@ -44,6 +44,7 @@ function IMapPlayer:ctor()
 	self.pets = {}
 	self.isAI = false
 	self.ai = nil
+	self.useAutoAttack = true
 	self.hater = nil
 	self.hateTime = 0 
 	self.HonorData = {0,0,0,0,0,0,0} -- 输出伤害 承受伤害 助攻数 击杀数量 死亡数量
@@ -106,7 +107,9 @@ function IMapPlayer:update(dt)
 			--	self.ai:update(dt)
 			end
 		else
-		--	self:autoAttack()		
+			if self.useAutoAttack == true then
+				self:autoAttack()		
+			end	
 		end
 	end
 	self.hateTime =  self.hateTime - dt	

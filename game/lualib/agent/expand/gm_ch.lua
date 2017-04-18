@@ -67,6 +67,11 @@ CLIENT_GM_CMD['addskill'] = function( args )
 	skynet.call(user.MAP, "lua", "addskill", p)
 end;
 
+CLIENT_GM_CMD['openAutoAttack'] = function( args )
+	local p = { id=user.account.account_id}
+	skynet.call(user.MAP, "lua", "openAutoAttack", p)
+end;
+
 CLIENT_GM_CMD['addhp'] = function( args )
 	local p = { id=user.account.account_id, hp=math.floor(args.params[1])}
 	skynet.call(user.MAP, "lua", "addhp", p)

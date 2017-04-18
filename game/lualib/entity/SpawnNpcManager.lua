@@ -17,7 +17,7 @@ function SpawnNpcManager:init(mapId)
 end
 local spawnNum = 0
 function SpawnNpcManager:update(dt)
-	--if true then return end
+	if true then return end
 	for i=#self.groups,1,-1 do
 		local v = self.groups[i]
 		local gid = v.dat.id

@@ -160,7 +160,7 @@ function CMD.lockTarget(response,agent, account_id, args)
 			--默认设置普攻
 			player:setReadySkillId(player:getCommonSkill())
 		end
-		player:setTarget(target)
+		player:setLockTarget(target)
 	end
 	response(true, nil)
 end
@@ -343,6 +343,15 @@ function REQUEST.addskill(response, args )
 	end
 end
 
+function REQUEST.openAutoAttack(response, args )
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	if player.useAutoAttack then
+		player.useAutoAttack = false
+	else
+		player.useAutoAttack = true
+	end	
+end
 function REQUEST.addhp(response, args )
 	response(true, nil)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
