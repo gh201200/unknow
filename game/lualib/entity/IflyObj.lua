@@ -120,10 +120,12 @@ function IflyObj:updateLink(dt)
 		if v:getType() ~= "transform" then
 			if (self.skilldata.n32AffectTargetType == 3 and self.caster:isKind(v) == false) or 
 			(self.skilldata.n32AffectTargetType <= 2 and self.caster:isKind(v) == true and self.caster.serverId ~= v.serverId) and v:getHp() > 0 then
-				local dis = self.target:getDistance(v)
-				if isInParentLinkTarget(self,v) == false and self.skilldata.szAffectRange[2] >= dis then
-					tgt = v
-					break
+				if self.target then
+					local dis = self.target:getDistance(v)
+					if isInParentLinkTarget(self,v) == false and self.skilldata.szAffectRange[2] >= dis then
+						tgt = v
+						break
+					end
 				end
 			end
 		end

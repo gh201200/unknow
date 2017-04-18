@@ -14,7 +14,7 @@ local PvpAIServer 	--pvpAI服务
 local useAI = true
 --local useAI = false
 
-CMD.MATCH_NUM = 6 
+CMD.MATCH_NUM = 6
 
 local nowInMatchers = {}	--正在参与匹配的玩家[account]=true/false
 
