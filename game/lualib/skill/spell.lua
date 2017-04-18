@@ -223,6 +223,7 @@ function spell:advanceEffect(dt)
 		self.triggerTime = self.triggerTime - dt
 		if self.triggerTime < 0 then
 			if self.isSheule ~= true then
+				print("self.totalTime==",self.totalTime)
 				self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
 				self:onTrigger(self.skilldata,self.source,self.srcTarget)
 			end

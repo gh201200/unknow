@@ -254,6 +254,7 @@ function Ientity.getArea(pos)
 end
 
 function Ientity:setActionState(_speed, _action, update)
+	
 	self.moveSpeed = _speed
 	self.curActionState = _action
 	if not update and _action < ActionState.forcemove then 
@@ -489,6 +490,7 @@ function Ientity:setTargetPos(target)
 	end
 		
 	if self:canMove() == 0 then
+		self:setLockTarget(nil)
 		self:setTarget(transfrom.new(pos,nil))
 	else
 		self:setNewTarget(transfrom.new(pos,nil))
@@ -540,6 +542,20 @@ function Ientity:update(dt)
 		local err = self:canCast(self:getReadySkillId())
 		if err == 0 then
 			self:castSkill(self:getReadySkillId())
+		else
+			local locker = self:getLockTarget()
+			if locker ~= nil then
+				local id = self:getReadySkillId()
+				if id ~= 0 then
+					local skilldata = g_shareData.skillRepository[id]
+					if skilldata.n32Range ~= 0 then
+						local dis = self:getDistance(self:getLockTarget())
+						if dis > skilldata.n32Range then
+							self:setActionState( self:getMSpeed(), ActionState.move, true)	
+						end
+					end
+				end
+			end
 		end
 	end
 
@@ -1060,7 +1076,7 @@ function Ientity:onDead()
 	--self:setActionState(0, ActionState.die)
 	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
-			v:setTarget(nil)
+			v:setLockTarget(nil)
 			v:setAttackTarget(nil)
 		end
 		if v.entityType == EntityType.monster then
@@ -1378,7 +1394,6 @@ end
 function Ientity:callBackSpellEnd()
 	if self.entityType ~= EntityType.player	then
 		self:setReadySkillId(0)
-		return
 	end
 end
 --设置人物状态
