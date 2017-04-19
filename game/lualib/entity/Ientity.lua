@@ -1425,7 +1425,8 @@ function Ientity:canMove()
 end
 
 function Ientity:removeSkill(skillId,updateToClient)
-       local skilldata = g_shareData.skillRepository[skillId]
+       print("skillId=======",skillId)
+	local skilldata = g_shareData.skillRepository[skillId]
        if skilldata.n32Active == 1 then
                for i=#self.spell.passtiveSpells,1,-1 do
                        local ps = self.spell.passtiveSpells[i]
@@ -1574,6 +1575,9 @@ function Ientity:castSkill()
 		end
 		skillTimes["trigger"] = math.floor(( skillTimes["trigger"] or 0)  * pc)
 	end
+	print("skillTimes========",skillTimes)
+	print("modeles========",modoldata)
+	print("skilldata========",skilldata)
 	local tmpSpell = self.spell
 	tmpSpell:init(skilldata,skillTimes)
 	self:setActionState(0, ActionState.spell)
