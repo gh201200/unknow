@@ -25,6 +25,7 @@ end
 function changeatkAffect:onExit()
 	self.owner:setCommonSkill(self.oldCommonSkill)
 	if  self.owner:getReadySkillId() == self.newCommonId then
+		print("=========================",self.newCommonId,self.oldCommonSkill)
 		self.owner:setReadySkillId(self.oldCommonSkill)
 	end
 	self.super.onExit(self)
