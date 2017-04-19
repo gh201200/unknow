@@ -4,14 +4,13 @@ require "skynet.manager"	-- import skynet.monitor
 local sprotoloader = require "sprotoloader"
 
 local game_config = require "config.gameserver"
---local login_config = require "config.loginserver"
 local max_client = 24 
 
 skynet.start(function()
 	math.randomseed(os.time())
 	local monitor = skynet.monitor "simplemonitor"
 	local console = skynet.newservice("console")
-	skynet.newservice("debug_console",8000)
+	skynet.newservice("debug_console",game_config.debug_port)
 	
 	--启动mylog服务
 	local mylog = snax.uniqueservice("mylog")
@@ -26,7 +25,7 @@ skynet.start(function()
 	-----------------------------------------------------------
 	------------
 	--启动web server 服务
-	skynet.uniqueservice("simpleweb")
+	skynet.uniqueservice("simpleweb", game_config.web_port)
 	skynet.uniqueservice("match")
 	--启动聊天服务
 	skynet.uniqueservice("chatserver")
