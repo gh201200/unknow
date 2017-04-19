@@ -35,6 +35,7 @@ function spell:init(skilldata,skillTimes)
 	self.castTime = skillTimes[2]
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
+	print("=========tttttt",self.totalTime)
 	self.triggerTime = skilldata.n32TriggerTime * 1000 
 	self.CTriggerTime = 0 --self.skilldata.n32AffectGap * 1000 
 	if self.triggerTime == 0 then

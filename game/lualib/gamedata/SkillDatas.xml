@@ -2052,7 +2052,7 @@
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
 		<n32BulletType>1</n32BulletType>
-		<n32BulletId>12014</n32BulletId>
+		<n32BulletId>20029</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -38889,13 +38889,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,70,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,70,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -38942,13 +38942,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,100,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,100,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -38995,13 +38995,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,130,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,130,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -39048,13 +39048,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,160,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,160,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -39101,13 +39101,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,190,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,190,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -39154,13 +39154,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,220,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,220,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -39207,13 +39207,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,250,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,250,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -39260,13 +39260,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,280,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,280,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -39313,13 +39313,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,310,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,310,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -39366,13 +39366,13 @@
 		<n32BulletType>4</n32BulletType>
 		<n32BulletId>20016</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletBombId>30124</n32BulletBombId>
 		<n32BulletRange>2.8</n32BulletRange>
 		<szAffectRange>[sector:1.2,45,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:3,1.3,340,0,0,30123][damage:0,0,0,0,0,30124]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:3,1.3,340,0,0,30123]</szAffectTargetAffect>
 		<szDescribe>　　向前发射一枚榴弹，碰撞到的敌人时爆炸造成扇形伤害</szDescribe>
 		<n32ShowRange>1.8</n32ShowRange>
 		<szLabel></szLabel>
@@ -47901,11 +47901,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.0,30,0,0,0,0][curehp:4,2.0,30,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,200,0,0,0,0][curehp:4,2.0,120,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -47954,11 +47954,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.4,60,0,0,0,0][curehp:4,2.4,60,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,300,0,0,0,0][curehp:4,2.0,180,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48007,11 +48007,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.8,90,0,0,0,0][curehp:4,2.8,90,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,400,0,0,0,0][curehp:4,2.0,240,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48060,11 +48060,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,3.2,120,0,0,0,0][curehp:4,3.2,120,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,500,0,0,0,0][curehp:4,2.0,300,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48113,11 +48113,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.0,90,0,0,0,0][curehp:4,2.0,90,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,300,0,0,0,0][curehp:4,2.0,180,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48166,11 +48166,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.4,125,0,0,0,0][curehp:4,2.4,125,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,400,0,0,0,0][curehp:4,2.0,240,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48219,11 +48219,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.8,160,0,0,0,0][curehp:4,2.8,160,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,500,0,0,0,0][curehp:4,2.0,300,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48272,11 +48272,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,3.2,195,0,0,0,0][curehp:4,3.2,195,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,600,0,0,0,0][curehp:4,2.0,360,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48325,11 +48325,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.0,150,0,0,0,0][curehp:4,2.0,150,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,400,0,0,0,0][curehp:4,2.0,240,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48378,11 +48378,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.4,195,0,0,0,0][curehp:4,2.4,195,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,500,0,0,0,0][curehp:4,2.0,300,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48431,11 +48431,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.8,240,0,0,0,0][curehp:4,2.8,240,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,600,0,0,0,0][curehp:4,2.0,360,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48484,11 +48484,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,3.2,285,0,0,0,0][curehp:4,3.2,285,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,700,0,0,0,0][curehp:4,2.0,420,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48537,11 +48537,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.0,210,0,0,0,0][curehp:4,2.0,210,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,500,0,0,0,0][curehp:4,2.0,300,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48590,11 +48590,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.4,260,0,0,0,0][curehp:4,2.4,260,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,600,0,0,0,0][curehp:4,2.0,360,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48643,11 +48643,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.8,310,0,0,0,0][curehp:4,2.8,310,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,700,0,0,0,0][curehp:4,2.0,420,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48696,11 +48696,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,3.2,360,0,0,0,0][curehp:4,3.2,360,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,800,0,0,0,0][curehp:4,2.0,480,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48749,11 +48749,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.0,270,0,0,0,0][curehp:4,2.0,270,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,600,0,0,0,0][curehp:4,2.0,360,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48802,11 +48802,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.4,330,0,0,0,0][curehp:4,2.4,330,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,700,0,0,0,0][curehp:4,2.0,420,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48855,11 +48855,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,2.8,390,0,0,0,0][curehp:4,2.8,390,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,800,0,0,0,0][curehp:4,2.0,480,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -48908,11 +48908,11 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
+		<szAffectRange>[circle:1.2,-1,0]</szAffectRange>
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect>[curemp:4,3.2,450,0,0,0,0][curehp:4,3.2,450,0,0,0,12031]</szSelectTargetAffect>
-		<szAffectTargetAffect>[repel:0.6,1,0]</szAffectTargetAffect>
+		<szSelectTargetAffect>[curemp:4,2.0,900,0,0,0,0][curehp:4,2.0,540,0,0,0,12031]</szSelectTargetAffect>
+		<szAffectTargetAffect>[repel:0.6,0,0]</szAffectTargetAffect>
 		<szDescribe>　　为目标地点周围的一名友方单位回复生命魔法值，击退其周围的敌方单位</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
 		<szLabel></szLabel>
@@ -60616,8 +60616,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -60669,8 +60669,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -60722,8 +60722,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -60775,8 +60775,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -60828,8 +60828,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -60881,8 +60881,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -60934,8 +60934,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -60987,8 +60987,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61040,8 +61040,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61093,8 +61093,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61146,8 +61146,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61199,8 +61199,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61252,8 +61252,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61305,8 +61305,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61358,8 +61358,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61411,8 +61411,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61464,8 +61464,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61517,8 +61517,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61570,8 +61570,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -61623,8 +61623,8 @@
 		<n32SkillTargetType>3</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>2</n32BulletType>
-		<n32BulletId>12028</n32BulletId>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>12022</n32BulletId>
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
@@ -62703,12 +62703,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -62756,12 +62756,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -62809,12 +62809,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -62862,12 +62862,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -62915,12 +62915,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -62968,12 +62968,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63021,12 +63021,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63074,12 +63074,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63127,12 +63127,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63180,12 +63180,12 @@
 		<n32SeriId>60103</n32SeriId>
 		<szName>圣洁光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63233,12 +63233,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63286,12 +63286,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63339,12 +63339,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63392,12 +63392,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63445,12 +63445,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63498,12 +63498,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63551,12 +63551,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63604,12 +63604,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63657,12 +63657,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63710,12 +63710,12 @@
 		<n32SeriId>62101</n32SeriId>
 		<szName>热血赞歌</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12101.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -63763,12 +63763,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63816,12 +63816,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63869,12 +63869,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63922,12 +63922,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -63975,12 +63975,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -64028,12 +64028,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -64081,12 +64081,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -64134,12 +64134,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -64187,12 +64187,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -64240,12 +64240,12 @@
 		<n32SeriId>62102</n32SeriId>
 		<szName>抑制光环</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12102.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -64293,12 +64293,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64346,12 +64346,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64399,12 +64399,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64452,12 +64452,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64505,12 +64505,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64558,12 +64558,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64611,12 +64611,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64664,12 +64664,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64717,12 +64717,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64770,12 +64770,12 @@
 		<n32SeriId>62104</n32SeriId>
 		<szName>净化锋刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12104.png</szIcon>
-		<n32Faction>1</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64823,12 +64823,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64876,12 +64876,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64929,12 +64929,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -64982,12 +64982,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65035,12 +65035,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65088,12 +65088,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65141,12 +65141,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65194,12 +65194,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65247,12 +65247,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65300,12 +65300,12 @@
 		<n32SeriId>72102</n32SeriId>
 		<szName>狩猎本能</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_22102.png</szIcon>
-		<n32Faction>2</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65353,12 +65353,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>2</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65406,12 +65406,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>5</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65459,12 +65459,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>10</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65512,12 +65512,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>20</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65565,12 +65565,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>30</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65618,12 +65618,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>45</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65671,12 +65671,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>60</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65724,12 +65724,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>75</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65777,12 +65777,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>95</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65830,12 +65830,12 @@
 		<n32SeriId>81101</n32SeriId>
 		<szName>增压排气管</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_31101.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>2</n32TriggerCondition>
@@ -65883,12 +65883,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -65936,12 +65936,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -65989,12 +65989,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66042,12 +66042,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66095,12 +66095,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66148,12 +66148,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66201,12 +66201,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66254,12 +66254,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66307,12 +66307,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66360,12 +66360,12 @@
 		<n32SeriId>80005</n32SeriId>
 		<szName>地面燃烧</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>1</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66413,12 +66413,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66466,12 +66466,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66519,12 +66519,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66572,12 +66572,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66625,12 +66625,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66678,12 +66678,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66731,12 +66731,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66784,12 +66784,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66837,12 +66837,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66890,12 +66890,12 @@
 		<n32SeriId>83004</n32SeriId>
 		<szName>急救</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>8</n32TriggerCondition>
@@ -66943,12 +66943,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>0</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -66996,12 +66996,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67049,12 +67049,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>2</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67102,12 +67102,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67155,12 +67155,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>4</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67208,12 +67208,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67261,12 +67261,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>6</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67314,12 +67314,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67367,12 +67367,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>8</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67420,12 +67420,12 @@
 		<n32SeriId>83005</n32SeriId>
 		<szName>诡雷爆炸</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
 		<n32TriggerCondition>7</n32TriggerCondition>
@@ -67473,12 +67473,12 @@
 		<n32SeriId>90001</n32SeriId>
 		<szName>诡雷显示</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>9</n32TriggerCondition>
@@ -67526,12 +67526,12 @@
 		<n32SeriId>90002</n32SeriId>
 		<szName>急救包显示</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>9</n32TriggerCondition>
@@ -67579,12 +67579,12 @@
 		<n32SeriId>90003</n32SeriId>
 		<szName>麻痹陷阱显示</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>9</n32TriggerCondition>
@@ -67632,12 +67632,12 @@
 		<n32SeriId>90004</n32SeriId>
 		<szName>守卫塔显示</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_30001.png</szIcon>
-		<n32Faction>4</n32Faction>
+		<n32Faction>-1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>2</n32SkillType>
+		<n32SkillType>1</n32SkillType>
 		<n32Active>1</n32Active>
 		<bIngoreImmune>1</bIngoreImmune>
 		<n32TriggerCondition>9</n32TriggerCondition>

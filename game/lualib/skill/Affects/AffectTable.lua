@@ -114,7 +114,7 @@ function AffectTable:addAffect(source,data,skillId,extra)
 		aff = changeatkAffect.new(self.owner,source,data,skillId)
 	elseif data[1] == "suicide" then
 		--移除自己 特殊处理
-		source:onDead()
+		source:addHp(-999999999,HpMpMask.RaiseHp,source)
 	end
 	if not aff then
 		print('data = ',data)

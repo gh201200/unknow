@@ -1300,14 +1300,14 @@
 		<szMod_name>tower</szMod_name>
 		<n32Hight>tower</n32Hight>
 		<n32Speed>10000</n32Speed>
-		<n32attack01Time1>0</n32attack01Time1>
-		<n32attack01Time2>0</n32attack01Time2>
-		<n32attack01Time3>0</n32attack01Time3>
-		<n32attack01TriTime>0</n32attack01TriTime>
-		<n32attack02Time1>0</n32attack02Time1>
-		<n32attack02Time2>0</n32attack02Time2>
-		<n32attack02Time3>0</n32attack02Time3>
-		<n32attack02TriTime>0</n32attack02TriTime>
+		<n32attack01Time1>250</n32attack01Time1>
+		<n32attack01Time2>450</n32attack01Time2>
+		<n32attack01Time3>700</n32attack01Time3>
+		<n32attack01TriTime>300</n32attack01TriTime>
+		<n32attack02Time1>250</n32attack02Time1>
+		<n32attack02Time2>450</n32attack02Time2>
+		<n32attack02Time3>700</n32attack02Time3>
+		<n32attack02TriTime>300</n32attack02TriTime>
 		<n32cast_selfTime1>0</n32cast_selfTime1>
 		<n32cast_selfTime2>0</n32cast_selfTime2>
 		<n32cast_selfTriTime>0</n32cast_selfTriTime>

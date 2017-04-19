@@ -317,6 +317,7 @@ end
 
 function CMD.sendRequest_room(name,args)
 	if bReceveRoomInfo == true then	
+		print("==========",name,args)
 		send_request(name, args)
 	end
 end

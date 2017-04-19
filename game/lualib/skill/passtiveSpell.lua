@@ -92,6 +92,7 @@ function passtiveSpell:onDead()
 			_dv.affectTable:removeBySkillId(self.skilldata.id)	
 		end
 		self.source.cooldown:resetCd(self.skilldata.id,0);	
+		self.source.affectTable:removeBySkillId(self.skilldata.id)
 	end
 end
 
