@@ -1083,6 +1083,8 @@ function Ientity:onDead()
 			v.hateList:removeHate( self )
 		end
 	end
+	--移除自己的仇恨值
+	self:setLockTarget(nil)
 	self.spell.passtiveSpells = {}
 	self:setReadySkillId(0)
 	self.affectTable:clear() --清除所有的buff
