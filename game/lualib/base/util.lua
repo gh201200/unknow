@@ -61,7 +61,7 @@ function ptInSector(pt,center,udir,r,theta)
 	dz = dz / length
 	local deg = math.deg(math.acos(dx * udir.x + dz * udir.z))
 	--print("deg======:",deg,"theta",theta)
-	return deg < theta
+	return deg <= theta
 end
 --------common func to register get set-----------
 function register_class_var(t, name, iv, callBack)

@@ -263,7 +263,7 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 			if ptInSector(_v.pos,center,uDir,r,theta) then
 				table.insert(selects,_v)
 			end
-		end		
+		end	
 	elseif skilldata.szSelectRange[1] == 'rectangle' then
 		local w = skilldata.szSelectRange[3]
 		local h = skilldata.szSelectRange[2]
@@ -330,7 +330,9 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 				local uDir = extra --附加参数方向
 				local r = skilldata.szAffectRange[2]
 				local theta = skilldata.szAffectRange[3]
-				if ptInSector(_tv.pos,_sv.pos,uDir,r,theta) then
+				if _tv.serverId == _sv.serverId then
+					table.insert(affects,_tv)
+				elseif ptInSector(_tv.pos,_sv.pos,uDir,r,theta) then
 					table.insert(affects,_tv)
 				end	
 			end
