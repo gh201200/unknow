@@ -1,6 +1,6 @@
 local skynet = require "skynet"
 local snax = require "snax"
-local config = require "config.system"
+local config = require "config.gameserver"
 
 local mylog
 
