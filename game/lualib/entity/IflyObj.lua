@@ -186,7 +186,6 @@ function IflyObj:updateCollider(dt)
 			r.dirZ = tostring(self.dir.z)
 			g_entityManager:sendToAllPlayers("pushEffect",r)
 		end
-		print("tgt=========",tgt.serverId)
                 local selects = { tgt }
                 local targets = g_entityManager:getSkillAffectEntitys(self.source,selects,self.skilldata,self.dir)
                 self.source.spell:trgggerAffect(self.skilldata.szAffectTargetAffect,targets,self.skilldata)	
