@@ -1873,6 +1873,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2011">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2011">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -1889,15 +1898,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2011">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2011">
 		<n32ItemId>21101001</n32ItemId>
@@ -1954,6 +1954,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2011">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2011">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -1981,13 +1990,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2011">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2011">
 		<n32ItemId>12102001</n32ItemId>
@@ -2033,6 +2042,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2011">
 		<n32ItemId>11003001</n32ItemId>
@@ -2098,24 +2116,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2011">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2011">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2011">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -2125,49 +2125,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2011">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2011">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2011">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2011">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2011">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2011">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2011">
 		<n32ItemId>33003001</n32ItemId>
@@ -2224,6 +2206,15 @@
 		<szInfo>战斗直觉</szInfo>
 	</item>
 	<item id="2012">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2012">
 		<n32ItemId>22101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -2251,15 +2242,6 @@
 		<szInfo>短距跃迁</szInfo>
 	</item>
 	<item id="2012">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>干扰磁场</szInfo>
-	</item>
-	<item id="2012">
 		<n32ItemId>31101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -2276,6 +2258,15 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
 	</item>
 	<item id="2012">
 		<n32ItemId>10004001</n32ItemId>
@@ -2314,13 +2305,13 @@
 		<szInfo>重型装备</szInfo>
 	</item>
 	<item id="2012">
-		<n32ItemId>12103001</n32ItemId>
+		<n32ItemId>12104001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
-		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>战神赋礼</szInfo>
+		<szInfo>净化锋刃</szInfo>
 	</item>
 	<item id="2012">
 		<n32ItemId>13005001</n32ItemId>
@@ -2332,6 +2323,24 @@
 		<szInfo>霜冻新星</szInfo>
 	</item>
 	<item id="2012">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2012">
 		<n32ItemId>31004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -2339,6 +2348,15 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2012">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
 	</item>
 	<item id="2012">
 		<n32ItemId>11005001</n32ItemId>
@@ -2350,22 +2368,22 @@
 		<szInfo>英勇冲锋</szInfo>
 	</item>
 	<item id="2012">
-		<n32ItemId>12104001</n32ItemId>
+		<n32ItemId>23006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>净化锋刃</szInfo>
+		<szInfo>新绿绽华</szInfo>
 	</item>
 	<item id="2012">
-		<n32ItemId>33101001</n32ItemId>
+		<n32ItemId>32004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
 		<n32MaxNum>1</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>节能推进器</szInfo>
+		<szInfo>4#霰弹</szInfo>
 	</item>
 	<item id="2013">
 		<n32ItemId>11002001</n32ItemId>
@@ -2395,6 +2413,15 @@
 		<szInfo>超距打击</szInfo>
 	</item>
 	<item id="2013">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2013">
 		<n32ItemId>21003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -2413,6 +2440,24 @@
 		<szInfo>闪电风暴</szInfo>
 	</item>
 	<item id="2013">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2013">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>1</n32MinNum>
+		<n32MaxNum>1</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
+	</item>
+	<item id="2013">
 		<n32ItemId>13006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>1</n32MinNum>
@@ -2512,6 +2557,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2021">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2021">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
@@ -2528,15 +2582,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2021">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>2</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2021">
 		<n32ItemId>21101001</n32ItemId>
@@ -2593,6 +2638,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2021">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2021">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
@@ -2620,13 +2674,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2021">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
 		<n32MaxNum>2</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2021">
 		<n32ItemId>12102001</n32ItemId>
@@ -2672,6 +2726,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2021">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2021">
 		<n32ItemId>11003001</n32ItemId>
@@ -2737,24 +2800,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2021">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>2</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2021">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>2</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2021">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
@@ -2764,49 +2809,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2021">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>2</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2021">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>2</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2021">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>2</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2021">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
 		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2021">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
 		<n32MaxNum>2</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2021">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2021">
 		<n32ItemId>33003001</n32ItemId>
@@ -2863,6 +2890,15 @@
 		<szInfo>战斗直觉</szInfo>
 	</item>
 	<item id="2022">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2022">
 		<n32ItemId>22101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
@@ -2890,15 +2926,6 @@
 		<szInfo>短距跃迁</szInfo>
 	</item>
 	<item id="2022">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>2</n32MinNum>
-		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>干扰磁场</szInfo>
-	</item>
-	<item id="2022">
 		<n32ItemId>31101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
@@ -2915,6 +2942,15 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2022">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
 	</item>
 	<item id="2022">
 		<n32ItemId>10004001</n32ItemId>
@@ -2953,13 +2989,13 @@
 		<szInfo>重型装备</szInfo>
 	</item>
 	<item id="2022">
-		<n32ItemId>12103001</n32ItemId>
+		<n32ItemId>12104001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
 		<n32MaxNum>2</n32MaxNum>
-		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>战神赋礼</szInfo>
+		<szInfo>净化锋刃</szInfo>
 	</item>
 	<item id="2022">
 		<n32ItemId>13005001</n32ItemId>
@@ -2971,6 +3007,24 @@
 		<szInfo>霜冻新星</szInfo>
 	</item>
 	<item id="2022">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2022">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2022">
 		<n32ItemId>31004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
@@ -2978,6 +3032,15 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2022">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
 	</item>
 	<item id="2022">
 		<n32ItemId>11005001</n32ItemId>
@@ -2989,22 +3052,22 @@
 		<szInfo>英勇冲锋</szInfo>
 	</item>
 	<item id="2022">
-		<n32ItemId>12104001</n32ItemId>
+		<n32ItemId>23006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
 		<n32MaxNum>2</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>净化锋刃</szInfo>
+		<szInfo>新绿绽华</szInfo>
 	</item>
 	<item id="2022">
-		<n32ItemId>33101001</n32ItemId>
+		<n32ItemId>32004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
 		<n32MaxNum>2</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>节能推进器</szInfo>
+		<szInfo>4#霰弹</szInfo>
 	</item>
 	<item id="2023">
 		<n32ItemId>11002001</n32ItemId>
@@ -3034,6 +3097,15 @@
 		<szInfo>超距打击</szInfo>
 	</item>
 	<item id="2023">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2023">
 		<n32ItemId>21003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>2</n32MinNum>
@@ -3050,6 +3122,24 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2023">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2023">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>2</n32MinNum>
+		<n32MaxNum>2</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
 	</item>
 	<item id="2023">
 		<n32ItemId>13006001</n32ItemId>
@@ -3151,6 +3241,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2031">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2031">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
@@ -3167,15 +3266,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2031">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2031">
 		<n32ItemId>21101001</n32ItemId>
@@ -3232,6 +3322,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2031">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2031">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
@@ -3259,13 +3358,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2031">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
 		<n32MaxNum>4</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2031">
 		<n32ItemId>12102001</n32ItemId>
@@ -3311,6 +3410,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2031">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2031">
 		<n32ItemId>11003001</n32ItemId>
@@ -3376,24 +3484,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2031">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2031">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2031">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
@@ -3403,49 +3493,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2031">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2031">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2031">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2031">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
 		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2031">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
 		<n32MaxNum>4</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2031">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2031">
 		<n32ItemId>33003001</n32ItemId>
@@ -3502,6 +3574,15 @@
 		<szInfo>战斗直觉</szInfo>
 	</item>
 	<item id="2032">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2032">
 		<n32ItemId>22101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
@@ -3529,15 +3610,6 @@
 		<szInfo>短距跃迁</szInfo>
 	</item>
 	<item id="2032">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>4</n32MinNum>
-		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>干扰磁场</szInfo>
-	</item>
-	<item id="2032">
 		<n32ItemId>31101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
@@ -3554,6 +3626,15 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2032">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
 	</item>
 	<item id="2032">
 		<n32ItemId>10004001</n32ItemId>
@@ -3592,13 +3673,13 @@
 		<szInfo>重型装备</szInfo>
 	</item>
 	<item id="2032">
-		<n32ItemId>12103001</n32ItemId>
+		<n32ItemId>12104001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
 		<n32MaxNum>4</n32MaxNum>
-		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>战神赋礼</szInfo>
+		<szInfo>净化锋刃</szInfo>
 	</item>
 	<item id="2032">
 		<n32ItemId>13005001</n32ItemId>
@@ -3610,6 +3691,24 @@
 		<szInfo>霜冻新星</szInfo>
 	</item>
 	<item id="2032">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2032">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2032">
 		<n32ItemId>31004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
@@ -3617,6 +3716,15 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2032">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
 	</item>
 	<item id="2032">
 		<n32ItemId>11005001</n32ItemId>
@@ -3628,22 +3736,22 @@
 		<szInfo>英勇冲锋</szInfo>
 	</item>
 	<item id="2032">
-		<n32ItemId>12104001</n32ItemId>
+		<n32ItemId>23006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
 		<n32MaxNum>4</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>净化锋刃</szInfo>
+		<szInfo>新绿绽华</szInfo>
 	</item>
 	<item id="2032">
-		<n32ItemId>33101001</n32ItemId>
+		<n32ItemId>32004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
 		<n32MaxNum>4</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>节能推进器</szInfo>
+		<szInfo>4#霰弹</szInfo>
 	</item>
 	<item id="2033">
 		<n32ItemId>11002001</n32ItemId>
@@ -3673,6 +3781,15 @@
 		<szInfo>超距打击</szInfo>
 	</item>
 	<item id="2033">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2033">
 		<n32ItemId>21003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>4</n32MinNum>
@@ -3689,6 +3806,24 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2033">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2033">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>4</n32MinNum>
+		<n32MaxNum>4</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
 	</item>
 	<item id="2033">
 		<n32ItemId>13006001</n32ItemId>
@@ -3790,6 +3925,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2041">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2041">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
@@ -3806,15 +3950,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2041">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>8</n32MinNum>
-		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2041">
 		<n32ItemId>21101001</n32ItemId>
@@ -3871,6 +4006,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2041">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2041">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
@@ -3898,13 +4042,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2041">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
 		<n32MaxNum>8</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2041">
 		<n32ItemId>12102001</n32ItemId>
@@ -3950,6 +4094,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2041">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2041">
 		<n32ItemId>11003001</n32ItemId>
@@ -4015,24 +4168,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2041">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>8</n32MinNum>
-		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2041">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>8</n32MinNum>
-		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2041">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
@@ -4042,49 +4177,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2041">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>8</n32MinNum>
-		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2041">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>8</n32MinNum>
-		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2041">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>8</n32MinNum>
-		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2041">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
 		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2041">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
 		<n32MaxNum>8</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2041">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2041">
 		<n32ItemId>33003001</n32ItemId>
@@ -4141,6 +4258,15 @@
 		<szInfo>战斗直觉</szInfo>
 	</item>
 	<item id="2042">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2042">
 		<n32ItemId>22101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
@@ -4168,15 +4294,6 @@
 		<szInfo>短距跃迁</szInfo>
 	</item>
 	<item id="2042">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>8</n32MinNum>
-		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>干扰磁场</szInfo>
-	</item>
-	<item id="2042">
 		<n32ItemId>31101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
@@ -4193,6 +4310,15 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2042">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
 	</item>
 	<item id="2042">
 		<n32ItemId>10004001</n32ItemId>
@@ -4231,13 +4357,13 @@
 		<szInfo>重型装备</szInfo>
 	</item>
 	<item id="2042">
-		<n32ItemId>12103001</n32ItemId>
+		<n32ItemId>12104001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
 		<n32MaxNum>8</n32MaxNum>
-		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>战神赋礼</szInfo>
+		<szInfo>净化锋刃</szInfo>
 	</item>
 	<item id="2042">
 		<n32ItemId>13005001</n32ItemId>
@@ -4249,6 +4375,24 @@
 		<szInfo>霜冻新星</szInfo>
 	</item>
 	<item id="2042">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2042">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2042">
 		<n32ItemId>31004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
@@ -4256,6 +4400,15 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2042">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
 	</item>
 	<item id="2042">
 		<n32ItemId>11005001</n32ItemId>
@@ -4267,22 +4420,22 @@
 		<szInfo>英勇冲锋</szInfo>
 	</item>
 	<item id="2042">
-		<n32ItemId>12104001</n32ItemId>
+		<n32ItemId>23006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
 		<n32MaxNum>8</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>净化锋刃</szInfo>
+		<szInfo>新绿绽华</szInfo>
 	</item>
 	<item id="2042">
-		<n32ItemId>33101001</n32ItemId>
+		<n32ItemId>32004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
 		<n32MaxNum>8</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>节能推进器</szInfo>
+		<szInfo>4#霰弹</szInfo>
 	</item>
 	<item id="2043">
 		<n32ItemId>11002001</n32ItemId>
@@ -4312,6 +4465,15 @@
 		<szInfo>超距打击</szInfo>
 	</item>
 	<item id="2043">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2043">
 		<n32ItemId>21003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>8</n32MinNum>
@@ -4328,6 +4490,24 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2043">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2043">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>8</n32MinNum>
+		<n32MaxNum>8</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
 	</item>
 	<item id="2043">
 		<n32ItemId>13006001</n32ItemId>
@@ -4429,6 +4609,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2051">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2051">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
@@ -4445,15 +4634,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2051">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>16</n32MinNum>
-		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2051">
 		<n32ItemId>21101001</n32ItemId>
@@ -4510,6 +4690,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2051">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2051">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
@@ -4537,13 +4726,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2051">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
 		<n32MaxNum>16</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2051">
 		<n32ItemId>12102001</n32ItemId>
@@ -4589,6 +4778,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2051">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2051">
 		<n32ItemId>11003001</n32ItemId>
@@ -4654,24 +4852,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2051">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>16</n32MinNum>
-		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2051">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>16</n32MinNum>
-		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2051">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
@@ -4681,49 +4861,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2051">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>16</n32MinNum>
-		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2051">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>16</n32MinNum>
-		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2051">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>16</n32MinNum>
-		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2051">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
 		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2051">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
 		<n32MaxNum>16</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2051">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2051">
 		<n32ItemId>33003001</n32ItemId>
@@ -4780,6 +4942,15 @@
 		<szInfo>战斗直觉</szInfo>
 	</item>
 	<item id="2052">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2052">
 		<n32ItemId>22101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
@@ -4807,15 +4978,6 @@
 		<szInfo>短距跃迁</szInfo>
 	</item>
 	<item id="2052">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>16</n32MinNum>
-		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>干扰磁场</szInfo>
-	</item>
-	<item id="2052">
 		<n32ItemId>31101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
@@ -4832,6 +4994,15 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2052">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
 	</item>
 	<item id="2052">
 		<n32ItemId>10004001</n32ItemId>
@@ -4870,13 +5041,13 @@
 		<szInfo>重型装备</szInfo>
 	</item>
 	<item id="2052">
-		<n32ItemId>12103001</n32ItemId>
+		<n32ItemId>12104001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
 		<n32MaxNum>16</n32MaxNum>
-		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>战神赋礼</szInfo>
+		<szInfo>净化锋刃</szInfo>
 	</item>
 	<item id="2052">
 		<n32ItemId>13005001</n32ItemId>
@@ -4888,6 +5059,24 @@
 		<szInfo>霜冻新星</szInfo>
 	</item>
 	<item id="2052">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2052">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2052">
 		<n32ItemId>31004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
@@ -4895,6 +5084,15 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2052">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
 	</item>
 	<item id="2052">
 		<n32ItemId>11005001</n32ItemId>
@@ -4906,22 +5104,22 @@
 		<szInfo>英勇冲锋</szInfo>
 	</item>
 	<item id="2052">
-		<n32ItemId>12104001</n32ItemId>
+		<n32ItemId>23006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
 		<n32MaxNum>16</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>净化锋刃</szInfo>
+		<szInfo>新绿绽华</szInfo>
 	</item>
 	<item id="2052">
-		<n32ItemId>33101001</n32ItemId>
+		<n32ItemId>32004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
 		<n32MaxNum>16</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>节能推进器</szInfo>
+		<szInfo>4#霰弹</szInfo>
 	</item>
 	<item id="2053">
 		<n32ItemId>11002001</n32ItemId>
@@ -4951,6 +5149,15 @@
 		<szInfo>超距打击</szInfo>
 	</item>
 	<item id="2053">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2053">
 		<n32ItemId>21003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>16</n32MinNum>
@@ -4967,6 +5174,24 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2053">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2053">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>16</n32MinNum>
+		<n32MaxNum>16</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
 	</item>
 	<item id="2053">
 		<n32ItemId>13006001</n32ItemId>
@@ -5068,6 +5293,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2061">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2061">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
@@ -5084,15 +5318,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2061">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>32</n32MinNum>
-		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2061">
 		<n32ItemId>21101001</n32ItemId>
@@ -5149,6 +5374,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2061">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2061">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
@@ -5176,13 +5410,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2061">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
 		<n32MaxNum>32</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2061">
 		<n32ItemId>12102001</n32ItemId>
@@ -5228,6 +5462,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2061">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2061">
 		<n32ItemId>11003001</n32ItemId>
@@ -5293,24 +5536,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2061">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>32</n32MinNum>
-		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2061">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>32</n32MinNum>
-		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2061">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
@@ -5320,49 +5545,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2061">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>32</n32MinNum>
-		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2061">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>32</n32MinNum>
-		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2061">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>32</n32MinNum>
-		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2061">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
 		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2061">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
 		<n32MaxNum>32</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2061">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2061">
 		<n32ItemId>33003001</n32ItemId>
@@ -5419,6 +5626,15 @@
 		<szInfo>战斗直觉</szInfo>
 	</item>
 	<item id="2062">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2062">
 		<n32ItemId>22101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
@@ -5446,15 +5662,6 @@
 		<szInfo>短距跃迁</szInfo>
 	</item>
 	<item id="2062">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>32</n32MinNum>
-		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>干扰磁场</szInfo>
-	</item>
-	<item id="2062">
 		<n32ItemId>31101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
@@ -5471,6 +5678,15 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2062">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
 	</item>
 	<item id="2062">
 		<n32ItemId>10004001</n32ItemId>
@@ -5509,13 +5725,13 @@
 		<szInfo>重型装备</szInfo>
 	</item>
 	<item id="2062">
-		<n32ItemId>12103001</n32ItemId>
+		<n32ItemId>12104001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
 		<n32MaxNum>32</n32MaxNum>
-		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>战神赋礼</szInfo>
+		<szInfo>净化锋刃</szInfo>
 	</item>
 	<item id="2062">
 		<n32ItemId>13005001</n32ItemId>
@@ -5527,6 +5743,24 @@
 		<szInfo>霜冻新星</szInfo>
 	</item>
 	<item id="2062">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2062">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2062">
 		<n32ItemId>31004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
@@ -5534,6 +5768,15 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2062">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
 	</item>
 	<item id="2062">
 		<n32ItemId>11005001</n32ItemId>
@@ -5545,22 +5788,22 @@
 		<szInfo>英勇冲锋</szInfo>
 	</item>
 	<item id="2062">
-		<n32ItemId>12104001</n32ItemId>
+		<n32ItemId>23006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
 		<n32MaxNum>32</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>净化锋刃</szInfo>
+		<szInfo>新绿绽华</szInfo>
 	</item>
 	<item id="2062">
-		<n32ItemId>33101001</n32ItemId>
+		<n32ItemId>32004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
 		<n32MaxNum>32</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>节能推进器</szInfo>
+		<szInfo>4#霰弹</szInfo>
 	</item>
 	<item id="2063">
 		<n32ItemId>11002001</n32ItemId>
@@ -5590,6 +5833,15 @@
 		<szInfo>超距打击</szInfo>
 	</item>
 	<item id="2063">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2063">
 		<n32ItemId>21003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>32</n32MinNum>
@@ -5606,6 +5858,24 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2063">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2063">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>32</n32MinNum>
+		<n32MaxNum>32</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
 	</item>
 	<item id="2063">
 		<n32ItemId>13006001</n32ItemId>
@@ -5707,6 +5977,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2071">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2071">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
@@ -5723,15 +6002,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2071">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>64</n32MinNum>
-		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2071">
 		<n32ItemId>21101001</n32ItemId>
@@ -5788,6 +6058,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2071">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2071">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
@@ -5815,13 +6094,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2071">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
 		<n32MaxNum>64</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2071">
 		<n32ItemId>12102001</n32ItemId>
@@ -5867,6 +6146,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2071">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2071">
 		<n32ItemId>11003001</n32ItemId>
@@ -5932,24 +6220,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2071">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>64</n32MinNum>
-		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2071">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>64</n32MinNum>
-		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2071">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
@@ -5959,49 +6229,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2071">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>64</n32MinNum>
-		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2071">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>64</n32MinNum>
-		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2071">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>64</n32MinNum>
-		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2071">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
 		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2071">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
 		<n32MaxNum>64</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2071">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2071">
 		<n32ItemId>33003001</n32ItemId>
@@ -6058,6 +6310,15 @@
 		<szInfo>战斗直觉</szInfo>
 	</item>
 	<item id="2072">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2072">
 		<n32ItemId>22101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
@@ -6085,15 +6346,6 @@
 		<szInfo>短距跃迁</szInfo>
 	</item>
 	<item id="2072">
-		<n32ItemId>30102001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>64</n32MinNum>
-		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>干扰磁场</szInfo>
-	</item>
-	<item id="2072">
 		<n32ItemId>31101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
@@ -6110,6 +6362,15 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2072">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
 	</item>
 	<item id="2072">
 		<n32ItemId>10004001</n32ItemId>
@@ -6148,13 +6409,13 @@
 		<szInfo>重型装备</szInfo>
 	</item>
 	<item id="2072">
-		<n32ItemId>12103001</n32ItemId>
+		<n32ItemId>12104001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
 		<n32MaxNum>64</n32MaxNum>
-		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>战神赋礼</szInfo>
+		<szInfo>净化锋刃</szInfo>
 	</item>
 	<item id="2072">
 		<n32ItemId>13005001</n32ItemId>
@@ -6166,6 +6427,24 @@
 		<szInfo>霜冻新星</szInfo>
 	</item>
 	<item id="2072">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2072">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2072">
 		<n32ItemId>31004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
@@ -6173,6 +6452,15 @@
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2072">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
 	</item>
 	<item id="2072">
 		<n32ItemId>11005001</n32ItemId>
@@ -6184,22 +6472,22 @@
 		<szInfo>英勇冲锋</szInfo>
 	</item>
 	<item id="2072">
-		<n32ItemId>12104001</n32ItemId>
+		<n32ItemId>23006001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
 		<n32MaxNum>64</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>净化锋刃</szInfo>
+		<szInfo>新绿绽华</szInfo>
 	</item>
 	<item id="2072">
-		<n32ItemId>33101001</n32ItemId>
+		<n32ItemId>32004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
 		<n32MaxNum>64</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>节能推进器</szInfo>
+		<szInfo>4#霰弹</szInfo>
 	</item>
 	<item id="2073">
 		<n32ItemId>11002001</n32ItemId>
@@ -6229,6 +6517,15 @@
 		<szInfo>超距打击</szInfo>
 	</item>
 	<item id="2073">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2073">
 		<n32ItemId>21003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>64</n32MinNum>
@@ -6245,6 +6542,24 @@
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2073">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2073">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>64</n32MinNum>
+		<n32MaxNum>64</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
 	</item>
 	<item id="2073">
 		<n32ItemId>13006001</n32ItemId>
@@ -6346,6 +6661,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2081">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2081">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>128</n32MinNum>
@@ -6362,15 +6686,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2081">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>128</n32MinNum>
-		<n32MaxNum>128</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2081">
 		<n32ItemId>21101001</n32ItemId>
@@ -6427,6 +6742,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2081">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2081">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>128</n32MinNum>
@@ -6454,13 +6778,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2081">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>128</n32MinNum>
 		<n32MaxNum>128</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2081">
 		<n32ItemId>12102001</n32ItemId>
@@ -6506,6 +6830,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2081">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2081">
 		<n32ItemId>11003001</n32ItemId>
@@ -6571,24 +6904,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2081">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>128</n32MinNum>
-		<n32MaxNum>128</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2081">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>128</n32MinNum>
-		<n32MaxNum>128</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2081">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>128</n32MinNum>
@@ -6598,49 +6913,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2081">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>128</n32MinNum>
-		<n32MaxNum>128</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2081">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>128</n32MinNum>
-		<n32MaxNum>128</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2081">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>128</n32MinNum>
-		<n32MaxNum>128</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2081">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>128</n32MinNum>
 		<n32MaxNum>128</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2081">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>128</n32MinNum>
 		<n32MaxNum>128</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2081">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2081">
 		<n32ItemId>33003001</n32ItemId>
@@ -6650,6 +6947,312 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>能量护盾</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>10103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣洁光环</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>11101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>勇气赠礼</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>12101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>热血赞歌</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>13002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>沉寂之风</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>20103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战斗直觉</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>22101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>灵巧</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>23002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>回春祭礼</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>30004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>短距跃迁</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>31101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>增压排气管</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>32101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>10004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣疗术</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>10104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>采撷妙想</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>20104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>自然援助</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>30103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>重型装备</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>12104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>净化锋刃</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>13005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>霜冻新星</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>31004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>11005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>英勇冲锋</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>23006001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>新绿绽华</szInfo>
+	</item>
+	<item id="2082">
+		<n32ItemId>32004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>4#霰弹</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>11002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神圣干预</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>23003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>疗愈春风</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>32002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>超距打击</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>21003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>巨龙振翅</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>33002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
+	</item>
+	<item id="2083">
+		<n32ItemId>13006001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>128</n32MinNum>
+		<n32MaxNum>128</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>和平之歌</szInfo>
 	</item>
 	<item id="2091">
 		<n32ItemId>10001001</n32ItemId>
@@ -6742,6 +7345,15 @@
 		<szInfo>剧毒吹箭</szInfo>
 	</item>
 	<item id="2091">
+		<n32ItemId>20003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤蜘蛛</szInfo>
+	</item>
+	<item id="2091">
 		<n32ItemId>20101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>256</n32MinNum>
@@ -6758,15 +7370,6 @@
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>蓄力</szInfo>
-	</item>
-	<item id="2091">
-		<n32ItemId>21001001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>256</n32MinNum>
-		<n32MaxNum>256</n32MaxNum>
-		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>震撼大地</szInfo>
 	</item>
 	<item id="2091">
 		<n32ItemId>21101001</n32ItemId>
@@ -6823,6 +7426,15 @@
 		<szInfo>雷电打击</szInfo>
 	</item>
 	<item id="2091">
+		<n32ItemId>30102001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>干扰磁场</szInfo>
+	</item>
+	<item id="2091">
 		<n32ItemId>30101001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>256</n32MinNum>
@@ -6850,13 +7462,13 @@
 		<szInfo>弹射弹</szInfo>
 	</item>
 	<item id="2091">
-		<n32ItemId>33001001</n32ItemId>
+		<n32ItemId>33004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>256</n32MinNum>
 		<n32MaxNum>256</n32MaxNum>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>X1自动火炮</szInfo>
+		<szInfo>急救包</szInfo>
 	</item>
 	<item id="2091">
 		<n32ItemId>12102001</n32ItemId>
@@ -6902,6 +7514,15 @@
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>应急预案</szInfo>
+	</item>
+	<item id="2091">
+		<n32ItemId>33005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>M4诡雷</szInfo>
 	</item>
 	<item id="2091">
 		<n32ItemId>11003001</n32ItemId>
@@ -6967,24 +7588,6 @@
 		<szInfo>破晓审判</szInfo>
 	</item>
 	<item id="2091">
-		<n32ItemId>12002001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>256</n32MinNum>
-		<n32MaxNum>256</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>猎魔刃</szInfo>
-	</item>
-	<item id="2091">
-		<n32ItemId>21004001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>256</n32MinNum>
-		<n32MaxNum>256</n32MaxNum>
-		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>山崩</szInfo>
-	</item>
-	<item id="2091">
 		<n32ItemId>23005001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>256</n32MinNum>
@@ -6994,49 +7597,31 @@
 		<szInfo>须根缠绕</szInfo>
 	</item>
 	<item id="2091">
-		<n32ItemId>22003001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>256</n32MinNum>
-		<n32MaxNum>256</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>捕兽网</szInfo>
-	</item>
-	<item id="2091">
-		<n32ItemId>23006001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>256</n32MinNum>
-		<n32MaxNum>256</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>新绿绽华</szInfo>
-	</item>
-	<item id="2091">
-		<n32ItemId>31005001</n32ItemId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>256</n32MinNum>
-		<n32MaxNum>256</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
-		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>弹射座椅</szInfo>
-	</item>
-	<item id="2091">
 		<n32ItemId>32003001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>256</n32MinNum>
 		<n32MaxNum>256</n32MaxNum>
-		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>破甲弹</szInfo>
 	</item>
 	<item id="2091">
-		<n32ItemId>32004001</n32ItemId>
+		<n32ItemId>21004001</n32ItemId>
 		<n32Rate>1</n32Rate>
 		<n32MinNum>256</n32MinNum>
 		<n32MaxNum>256</n32MaxNum>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
-		<szInfo>4#霰弹</szInfo>
+		<szInfo>山崩</szInfo>
+	</item>
+	<item id="2091">
+		<n32ItemId>12002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>猎魔刃</szInfo>
 	</item>
 	<item id="2091">
 		<n32ItemId>33003001</n32ItemId>
@@ -7046,6 +7631,312 @@
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
 		<szInfo>能量护盾</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>10103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣洁光环</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>11101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>勇气赠礼</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>12101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>热血赞歌</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>13002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>沉寂之风</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>20103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战斗直觉</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>21001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>震撼大地</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>22101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>灵巧</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>23002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>回春祭礼</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>30004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>短距跃迁</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>31101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>增压排气管</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>32101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>凶残</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>33001001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>X1自动火炮</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>10004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>圣疗术</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>10104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>采撷妙想</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>20104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>自然援助</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>30103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>重型装备</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>12104001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>净化锋刃</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>13005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>霜冻新星</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>21005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤巨熊</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>22004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>召唤霜狼</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>31004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>挑衅</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>33101001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>节能推进器</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>11005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>英勇冲锋</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>23006001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>新绿绽华</szInfo>
+	</item>
+	<item id="2092">
+		<n32ItemId>32004001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>4#霰弹</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>11002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>神圣干预</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>23003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>疗愈春风</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>32002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>超距打击</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>12103001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>战神赋礼</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>21003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>巨龙振翅</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>33002001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>闪电风暴</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>22003001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>捕兽网</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>31005001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>弹射座椅</szInfo>
+	</item>
+	<item id="2093">
+		<n32ItemId>13006001</n32ItemId>
+		<n32Rate>1</n32Rate>
+		<n32MinNum>256</n32MinNum>
+		<n32MaxNum>256</n32MaxNum>
+		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
+		<n32ArenaLvLwLimit>9</n32ArenaLvLwLimit>
+		<szInfo>和平之歌</szInfo>
 	</item>
 	<item id="3001">
 		<n32ItemId>120001</n32ItemId>

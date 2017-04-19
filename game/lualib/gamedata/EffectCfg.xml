@@ -1034,6 +1034,116 @@
 		<n32layer>0</n32layer>
 		<szillustration>法老大招受击</szillustration>
 	</item>
+	<item id="12030">
+		<n32type>2</n32type>
+		<szassert>tiannv_skill_cast_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>天女大招施法</szillustration>
+	</item>
+	<item id="12031">
+		<n32type>2</n32type>
+		<szassert>tiannv_skill_hit_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>天女大招受击</szillustration>
+	</item>
+	<item id="12032">
+		<n32type>2</n32type>
+		<szassert>longnv_skill_buff_dhand</szassert>
+		<n32time>0</n32time>
+		<n32speed>0</n32speed>
+		<n32position>4</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>龙女大招手上BUFF</szillustration>
+	</item>
+	<item id="12033">
+		<n32type>4</n32type>
+		<szassert>longnv_skill_bullet_body</szassert>
+		<n32time>0</n32time>
+		<n32speed>3</n32speed>
+		<n32position>9</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0.3</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>龙女大招弹道</szillustration>
+	</item>
+	<item id="12034">
+		<n32type>2</n32type>
+		<szassert>longnv_skill_cast_bottom</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>龙女大招施法</szillustration>
+	</item>
+	<item id="12035">
+		<n32type>2</n32type>
+		<szassert>longnv_skill_hit_body</szassert>
+		<n32time>2</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>龙女大招受击</szillustration>
+	</item>
+	<item id="12036">
+		<n32type>1</n32type>
+		<szassert>longnv_skill_hit_bottom</szassert>
+		<n32time>1</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>龙女大招受击</szillustration>
+	</item>
+	<item id="12037">
+		<n32type>2</n32type>
+		<szassert>shengdianqishi_skill_cast_rhand</szassert>
+		<n32time>1</n32time>
+		<n32speed>0</n32speed>
+		<n32position>4</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>神殿骑士大招施法</szillustration>
+	</item>
+	<item id="12038">
+		<n32type>2</n32type>
+		<szassert>shengdianqishi_skill_hit_body</szassert>
+		<n32time>0.5</n32time>
+		<n32speed>0</n32speed>
+		<n32position>1</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>神殿骑士大招受击</szillustration>
+	</item>
+	<item id="12039">
+		<n32type>1</n32type>
+		<szassert>shengdianqishi_skill_hit_bottom</szassert>
+		<n32time>3.5</n32time>
+		<n32speed>0</n32speed>
+		<n32position>0</n32position>
+		<n32Extra>0</n32Extra>
+		<n32Redius>0</n32Redius>
+		<n32layer>0</n32layer>
+		<szillustration>神殿骑士大招受击</szillustration>
+	</item>
 	<item id="20001">
 		<n32type>4</n32type>
 		<szassert>Tiannv_Bullet_01</szassert>
