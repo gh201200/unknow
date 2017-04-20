@@ -104,11 +104,11 @@ function IMapPlayer:update(dt)
 	if self:isDead() == false then
 		if self.ai then
 			if self.curActionState < ActionState.forcemove then
-			--	self.ai:update(dt)
+				self.ai:update(dt)
 			end
 		else
 			if self.useAutoAttack == true then
-			--	self:autoAttack()		
+				self:autoAttack()		
 			end	
 		end
 	end
@@ -197,11 +197,6 @@ function IMapPlayer:onDead()
 	end
 	self.bAttackPlayers = {}
 	self:setRaiseTime(self:getLevel() * Quest.RaiseTime)
-	if self:isRed() then
-		BattleOverManager.BlueKillNum = BattleOverManager.BlueKillNum + 1
-	else
-		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
-	end
 	if self.hater and (self.hater:getType() == "IMapPlayer" or  self.hater:getType() == "IBuilding") then
 		for k,v in pairs(EntityManager.entityList) do
 			if v.entityType == EntityType.player then

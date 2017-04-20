@@ -1,6 +1,6 @@
 local config = {
 	name = "gameserver",
-	port = 8888,
+	port = 7777,
 	maxclient = 10000,
 	agent_pool = 10,
 }
