@@ -165,6 +165,11 @@ function IMapPlayer:setTarget(target)
 	IMapPlayer.super.setTarget(self,target)
 end
 
+function IMapPlayer:aisetTarget(target) 
+	if target == self:getTarget() and self.curActionState == ActionState.move then return end
+	IMapPlayer.super.setTarget(self,target)
+end
+
 function IMapPlayer:calcStats()
 	self:calcStrength()
 	self:calcIntelligence()
@@ -284,7 +289,9 @@ function IMapPlayer:aiCastSkill(target)
 		--skillId = skills[index]
 	end
 	self:setReadySkillId(skillId) 
-	self:setTarget(target)
+	if self.spell:isSpellRunning() == false then	
+		self:aisetTarget(target)
+	end
 end
 
 --释放方向或者地点技能

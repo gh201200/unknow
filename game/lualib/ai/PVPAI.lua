@@ -230,14 +230,14 @@ function PVPAI:onExec_farm()
 		att = 1 
 	end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMonster" and v:getHp() > 0 and  (v.attach == att or v.attach == 2) then
+		if v:getType() == "IMonster" and v:getHp() > 0 and  v.attach == att then
 			if self.source:getDistance(v) <= hateR then
 				target = v
 				break
 			else	
 				if v.attach == att then	
 					target = v
-				elseif v.attach == 2 and target == nil then
+				elseif target == nil then
 					target = v
 				end
 			end
@@ -445,7 +445,7 @@ function PVPAI:isFarm()
 	target = self:getAssister()
 	if target ~= nil then return false end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMonster" and (v.attach == 2 or v.attach == att) then
+		if v:getType() == "IMonster" and v.attach == att then
 			return true		
 		end
 	end
