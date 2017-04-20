@@ -270,7 +270,6 @@ function CMD.Request(name,args)
 end
 
 function CMD.setReceveRoomInfo()
-	print("CMD.setReceveRoomInfo==========================")
 	bReceveRoomInfo = true
 end
 function CMD.reconnect(conf)
@@ -317,7 +316,6 @@ end
 
 function CMD.sendRequest_room(name,args)
 	if bReceveRoomInfo == true then	
-		print("==========",name,args)
 		send_request(name, args)
 	end
 end

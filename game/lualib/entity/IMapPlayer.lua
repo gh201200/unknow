@@ -104,7 +104,7 @@ function IMapPlayer:update(dt)
 	if self:isDead() == false then
 		if self.ai then
 			if self.curActionState < ActionState.forcemove then
-			--	self.ai:update(dt)
+				self.ai:update(dt)
 			end
 		else
 			if self.useAutoAttack == true then
@@ -286,7 +286,7 @@ function IMapPlayer:aiCastSkill(target)
 	local skillId = self:getCommonSkill() 
 	if #skills ~= 0 then
 		local index = math.random(1,#skills)
-		skillId = skills[index]
+		--skillId = skills[index]
 	end
 	self:setReadySkillId(skillId) 
 	self:setTarget(target)

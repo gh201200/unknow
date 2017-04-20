@@ -219,7 +219,8 @@ end
 function PVPAI:onExec_farm()
 	local target =  self.source:getTarget()
 	if target ~= nil and target:getType() ~= "transform" and self.source:getDistance(target) < hateR and target:getHp() > 0 then
-	--	print("onExec_farm",self.source.serverId,target.serverId)	
+		self.source:aiCastSkill(target)	
+		--print("onExec_farm",self.source.serverId,target.serverId)	
 		return 
 	end
 	target = nil 

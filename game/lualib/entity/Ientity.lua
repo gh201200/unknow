@@ -541,7 +541,6 @@ function Ientity:update(dt)
 	if self:getReadySkillId() ~= 0  then	
 		local err = self:canCast(self:getReadySkillId())
 		if err == 0 then
-			print("update---cast==",self:getReadySkillId())
 			self:castSkill(self:getReadySkillId())
 		else
 			local locker = self:getLockTarget()
@@ -1466,7 +1465,6 @@ function Ientity:canCast(id)
 	
 	if skilldata.n32Range ~= 0 then
 		local dis = self:getDistance(self:getTarget())
-		print("canCast=======dis===",dis,skilldata.n32Range)
 		if dis > skilldata.n32Range then
 			return ErrorCode.EC_Spell_TargetOutDistance
 		end
