@@ -173,7 +173,8 @@ end
 function PVPAI:onExec_battle()
 	local target = self.source:getTarget()
 	if target ~= nil and self:canAttackPlayer(target) and self.source:getDistance(target) < hateR then
-		self.source:setTarget(target)
+		--self.source:setTarget(target)
+		self.source:aiCastSkill(target)
 		return
 	end
 	target = nil
@@ -342,7 +343,7 @@ function PVPAI:autoProtectAttack(protectR)
 		end
 	end
 	if target ~= nil then
-		self.source:setTarget(target)
+		self.source:aiCastSkill(target)
 	--else
 	--	self:setNextAiState("Idle")	
 	end
