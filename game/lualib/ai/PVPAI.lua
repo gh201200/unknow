@@ -126,8 +126,11 @@ end
 
 function PVPAI:onExec_runAway()
 	if self.source:getDistance(self.blueTower) > TowerHpR then
-		
-		self.source:setTargetPos(self.blueTower.pos)
+		local pos = vector3.create(self.blueTower.pos.x,0,self.blueTower.pos.z)
+		if Map:isBlock( pos.x, pos.z ) then
+			Map:lineTestInv(self.source.pos, pos)
+		end
+		self.source:setTargetPos(pos)
 		self:setNextAiState("runAway")
 		return
 	end

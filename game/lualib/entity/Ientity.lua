@@ -492,8 +492,8 @@ function Ientity:setTargetPos(target)
 	if self:canMove() == 0 then
 		self:setLockTarget(nil)
 		self:setTarget(transfrom.new(pos,nil))
-	else
-		self:setNewTarget(transfrom.new(pos,nil))
+	--else
+	--	self:setNewTarget(transfrom.new(pos,nil))
 	end
 end
 
