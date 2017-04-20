@@ -148,16 +148,21 @@ end
 
 function PVPAI:onEnter_protect()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
---	self:backToHome()	
-	self.source:setTargetPos(self.blueTower.pos)
+	self:toBlueTower()
 end
 
-
+function PVPAI:toBlueTower()
+	local pos = vector3.create(self.blueTower.pos.x,0,self.blueTower.pos.z)
+	if Map:isBlock( pos.x, pos.z ) then
+		Map:lineTestInv(self.source.pos, pos)
+	end
+	self.source:setTargetPos(pos)
+end
 function PVPAI:onExec_protect()
 	if self.source:getDistance(self.blueTower) < TownerProtectR then
 		self:autoProtectAttack(TownerProtectR)
 	else
-		self.source:setTargetPos(self.blueTower.pos)
+		self:toBlueTower()
 	end
 	if self:isProtect() == false then
 		self:setNextAiState("Idle")
@@ -325,7 +330,7 @@ end
 function PVPAI:autoProtectAttack(protectR)
 	--local protectR = 3 --保卫半径
 	if self.source:getDistance(self.blueTower) > protectR then
-		self.source:setTarget(self.blueTower)
+		self:toBlueTower()
 		return
 	end
 	local target = self.source:getTarget()
