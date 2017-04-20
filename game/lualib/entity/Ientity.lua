@@ -386,6 +386,14 @@ function Ientity:stand()
 end
 
 function Ientity:clearPath()
+	if self.useAStar and self:getTarget() then
+		local n = #self.pathMove
+		local pos = self:getTarget().pos
+		if self.pathMove[n-1] == Map.POS_2_GRID(pos.x) and self.pathMove[n] == Map.POS_2_GRID(pos.z) then
+			return
+		end
+	end
+
 	self.pathNodeIndex = -1
 	self.useAStar = false
 	self.pathMove = nil
@@ -420,7 +428,6 @@ function Ientity:setTarget(target)
 		return 
 	end
 	
-	self:clearPath()
 	if self:isDead() then return end
 	--打断技能
 	if target ~= self:getTarget() and self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
@@ -432,6 +439,9 @@ function Ientity:setTarget(target)
 	else
 		self:setNewTarget(target)
 	end
+	
+	self:clearPath()
+	
 	if self:canMove() == 0 then
 		if self:getReadySkillId() ~= 0 and self:canCast(self:getReadySkillId()) == 0 then
 		else
@@ -472,13 +482,13 @@ function Ientity:setTargetPos(target)
 	end	
 	self.moveQuadrant = 0
 	local pos = vector3.create(target.x,0,target.z)
-	if Map:isWall( pos.x, pos.z ) then
+	if Map:isBlock( pos.x, pos.z ) then
 		Map:lineTest(self.pos, pos)
 	end
 	if math.abs(pos.x-self.pos.x) < 0.05 and math.abs(pos.z-self.pos.z) < 0.05 then
 		return
 	end
-
+	--[[
 	if self:getTarget() and math.abs(pos.x-self:getTarget().pos.x) < 0.05 and math.abs(pos.z-self:getTarget().pos.z) < 0.05 then
 		return
 	end
@@ -488,7 +498,7 @@ function Ientity:setTargetPos(target)
 		pos.x = r.x
 		pos.z = r.z
 	end
-		
+	--]]	
 	if self:canMove() == 0 then
 		self:setLockTarget(nil)
 		self:setTarget(transfrom.new(pos,nil))
@@ -871,13 +881,14 @@ local dir = {
 function Ientity:onMove3(dt)
 	dt = dt / 1000		--second
 	if self.moveSpeed <= 0 then return end
+	if self:getTarget() == nil then
+		self:stand()
+		return
+	end
 	if self.useAStar then
 		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
 	else
-		if self:getTarget() == nil then
-			self:stand()
-			return
-		end
+		
 		self.dir:set(self:getMoveTarget().x, 0, self:getMoveTarget().z)
 	end
 	self.dir:sub(self.pos)
@@ -905,7 +916,7 @@ function Ientity:onMove3(dt)
 		if self:isLegalGrid( mv_dst ) == false then
 			legal_pos = false
 			local nearBy = false
-			local angle = 30
+			local angle = 60
 			if Map:isWall(mv_dst.x, mv_dst.z) then angle = 200 end
 			while angle < 150 do
 				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
@@ -929,7 +940,7 @@ function Ientity:onMove3(dt)
 				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
 				if not nearBy then
 					--Map:dump()
-					--print('use a star to find a path stand',self.serverId)
+					print('find path failed , stand',self.serverId)
 					self:stand()
 					return
 				end
@@ -947,6 +958,7 @@ function Ientity:onMove3(dt)
 			self.pathNodeIndex = self.pathNodeIndex + 2
 		end
 		if self.pathNodeIndex >= #self.pathMove then
+			print('end a star ',self.serverId)
 			self:stand()
 			self:clearTarget(1)
 		end

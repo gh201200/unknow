@@ -108,7 +108,7 @@ function IMapPlayer:update(dt)
 			end
 		else
 			if self.useAutoAttack == true then
-				self:autoAttack()		
+			--	self:autoAttack()		
 			end	
 		end
 	end
