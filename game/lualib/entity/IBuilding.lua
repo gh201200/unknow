@@ -39,11 +39,6 @@ function IBuilding:init(mapDat)
 	end
 	self.attDat = g_shareData.monsterRepository[aid]
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
-	if self.camp == CampType.BLUE then
-		self:setPos(mapDat.szBlueHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szBlueHomePos[2]/GAMEPLAY_PERCENT)
-	else
-		self:setPos(mapDat.szRedHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szRedHomePos[2]/GAMEPLAY_PERCENT)
-	end
 	self:calcStats()
 	self:setHp(self:getHpMax())
 	self:setMp(self:getMpMax())
@@ -67,6 +62,12 @@ function IBuilding:init(mapDat)
 		local ps = passtiveSpell.new(self,skilldata,math.maxinteger)
 		table.insert(self.spell.passtiveSpells,ps)
 	end
+	if self.camp == CampType.BLUE then
+		self:setPos(mapDat.szBlueHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szBlueHomePos[2]/GAMEPLAY_PERCENT)
+	else
+		self:setPos(mapDat.szRedHomePos[1]/GAMEPLAY_PERCENT, 0, mapDat.szRedHomePos[2]/GAMEPLAY_PERCENT)
+	end
+
 end
 
 function IBuilding:insertHero(entity)

@@ -77,7 +77,7 @@ end
 function Map:dump()
 	print('map data==================================')
 	local str = ''
-	for j=MAP_ZGRID_NUM-1,0,-1 do
+	for j=0, MAP_ZGRID_NUM-1 do
 		str = ''
 		for i=0, MAP_XGRID_NUM-1 do
 			local a = pf.block(self.m, i, j)
@@ -187,7 +187,7 @@ function Map:lineTest(sp, ep)
 	dir:set(sp.x, sp.y, sp.z)
 	dir:sub( ep )
 	dir:normalize()
-	local set = 0.5
+	local set = 1
 	local step = 0
 	repeat
 		step = step + 1
@@ -197,10 +197,10 @@ function Map:lineTest(sp, ep)
 		dst:add( ep )
 		ep.x = dst.x
 		ep.z = dst.z
-		if self:isWall( dst.x, dst.z ) == false then
+		if self:isBlock( dst.x, dst.z ) == false then
 			break
 		end
-		set = set + 0.5
+		set = set + 1
 	until false
 end
 

@@ -302,7 +302,7 @@ path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x,
 		if (pn->x == end_x && pn->y == end_y)
 			return current;
 		add_closed(&ctx, current);
-		memset(mask, 0, sizeof(mask));
+	//	memset(mask, 0, sizeof(mask));
 		int i;
 		for (i=0;i<8;i++) {
 			int x = pn->x + OFF[i].dx;
@@ -323,16 +323,16 @@ path_finding(struct map *m, struct path *P, int start_x, int start_y, int end_x,
 			}
 			
 			if( p <= bsize ) {
-				mask[i] = 1;
+				//mask[i] = 1;
 				continue;
 			}
-			
+			/*
 			if ( i > 3 ) {
 				if ( mask[i-3==4?0:i-4] || mask[i-4] ) {
 					continue;
 				}
 			}
-			
+			*/
 			
 			int tentative_gscore = pn->gscore + OFF[i].distance + OFF[i].distance/* * weight*/;
 			struct pathnode * neighbor = find_open(&ctx, x, y);

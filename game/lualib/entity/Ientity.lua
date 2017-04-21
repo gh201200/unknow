@@ -77,7 +77,8 @@ function Ientity:ctor(pos,dir)
 	self.moveNode = {}
 	self.moveNode[1] = vector3.create()
 	self.moveNode[2] = vector3.create()
-
+	self.setPosCD = 0
+	
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -379,21 +380,16 @@ function Ientity:canStand()
 end
 
 function Ientity:stand()
-	if self:canStand() == false then return end
+	if self:canStand() == false then 
+		print('can not stand', self.serverId)
+		return 
+	end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
 	self.moveQuadrant = 0
 end
 
 function Ientity:clearPath()
-	if self.useAStar and self:getTarget() then
-		local n = #self.pathMove
-		local pos = self:getTarget().pos
-		if self.pathMove[n-1] == Map.POS_2_GRID(pos.x) and self.pathMove[n] == Map.POS_2_GRID(pos.z) then
-			return
-		end
-	end
-
 	self.pathNodeIndex = -1
 	self.useAStar = false
 	self.pathMove = nil
@@ -433,15 +429,16 @@ function Ientity:setTarget(target)
 	if target ~= self:getTarget() and self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
 		self.spell:breakSpell()
 	end
-
+	if not self:getTarget() or vector3.len_2(target.pos, self:getTarget().pos) > 1 then
+		self:clearPath()
+	end
+	
 	if self:canMove()  == 0 then	
 		self:setTargetVar( target )
 	else
 		self:setNewTarget(target)
 	end
-	
-	self:clearPath()
-	
+
 	if self:canMove() == 0 then
 		if self:getReadySkillId() ~= 0 and self:canCast(self:getReadySkillId()) == 0 then
 		else
@@ -472,9 +469,14 @@ function Ientity:clearTarget(mask)
 	end
 end
 
+
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
+	if self.setPosCD > skynet.now() then 
+		return 
+	end
+	self.setPodCD  = skynet.now() + 10
 	local skilldata = g_shareData.skillRepository[self:getReadySkillId()]	
 	--敌人单体类型的技能 点地板取消
 	if skilldata ~= nil and skilldata.n32SkillType == 1 and skilldata.n32SkillTargetType == 3 then
@@ -489,16 +491,13 @@ function Ientity:setTargetPos(target)
 		return
 	end
 	--[[
-	if self:getTarget() and math.abs(pos.x-self:getTarget().pos.x) < 0.05 and math.abs(pos.z-self:getTarget().pos.z) < 0.05 then
-		return
-	end
-
 	local r = Map:circleTest(pos, 1)
 	if r then
 		pos.x = r.x
 		pos.z = r.z
 	end
-	--]]	
+	--]]
+	
 	if self:canMove() == 0 then
 		self:setLockTarget(nil)
 		self:setTarget(transfrom.new(pos,nil))
@@ -885,6 +884,7 @@ function Ientity:onMove3(dt)
 		self:stand()
 		return
 	end
+
 	if self.useAStar then
 		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
 	else
@@ -900,17 +900,18 @@ function Ientity:onMove3(dt)
 		legal_pos = true
 		--check iegal
 		
-		if self.useAStar then
-			if self:isLegalGrid( mv_dst ) == false then
-				egal_pos = false
-				print('use a star to find a path again ',self.serverId)
-				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
-				if not nearBy then
-					self:stand()
-					return
-				end
+		if self.useAStar and self:isLegalGrid( mv_dst ) == false then
+			print('use a star to find a path again',self.serverId)
+			local nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+			if not nearBy then
+				print('find path again failed, stand',self.serverId)
+				self:stand()
+				return
+			else
+				--advance move event stamp
+				self:advanceEventStamp(EventStampType.Move)
 			end
-			break
+			return
 		end
 		
 		if self:isLegalGrid( mv_dst ) == false then
@@ -939,16 +940,13 @@ function Ientity:onMove3(dt)
 				print('use a star to find a path',self.serverId)
 				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
 				if not nearBy then
-					--Map:dump()
 					print('find path failed , stand',self.serverId)
 					self:stand()
 					return
+				else	
+					--advance move event stamp
+					self:advanceEventStamp(EventStampType.Move)
 				end
-			end
-			if not nearBy then
-				--print('use a star to find a path again i333',self.serverId)
-				self:stand()
-				break
 			end
 		end
 	until true
@@ -974,24 +972,8 @@ function Ientity:onMove3(dt)
 	if legal_pos then
 		--move
 		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
-
-		local statechange = true
-		local xx = 0
-		local zz = 0
-		repeat
-			xx = math.ceil(self.dir.x * GAMEPLAY_PERCENT) 
-			zz = math.ceil(self.dir.z * GAMEPLAY_PERCENT) 
-			if self.lastMoveSpeed ~= self.moveSpeed then break end
-			if self.lastMoveDir.x ~= xx then break end
-			if self.lastMoveDir.z ~= zz then break end
-			statechange = false
-		until true
-		if statechange then
-			self.lastMoveDir:set(xx, 0, zz)
-			self.lastMoveSpeed = self.moveSpeed
-			--advance move event stamp
-			self:advanceEventStamp(EventStampType.Move)
-		end
+		--advance move event stamp
+		self:advanceEventStamp(EventStampType.Move)
 	end
 end
 
