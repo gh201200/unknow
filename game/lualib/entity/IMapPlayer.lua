@@ -85,6 +85,9 @@ function IMapPlayer:addHp(_hp, mask, source)
 			else
 				BattleOverManager.BlueKillNum = BattleOverManager.BlueKillNum + 1
 			end
+		
+			local msg = {blueDeadNum = BattleOverManager.RedKillNum,redDeadNum = BattleOverManager.BlueKillNum }
+			EntityManager:sendToAllPlayers("onPlayerDead" ,msg)
 		end
 	end
 end
@@ -213,8 +216,6 @@ function IMapPlayer:onDead()
 		end
 	end
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
-	local msg = {blueDeadNum = BattleOverManager.RedKillNum,redDeadNum = BattleOverManager.BlueKillNum }
-	EntityManager:sendToAllPlayers("onPlayerDead" ,msg)
 end
 
 function IMapPlayer:onRaise()
