@@ -42,7 +42,7 @@
 		<szRedHomePos>33500,9900</szRedHomePos>
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
 		<szBlueHomePos>33500,140400</szBlueHomePos>
-		<n32Time>100</n32Time>
+		<n32Time>600</n32Time>
 		<n32Kills>20</n32Kills>
 	</item>
 </info>
