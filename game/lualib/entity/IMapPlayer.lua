@@ -80,14 +80,6 @@ function IMapPlayer:addHp(_hp, mask, source)
 		self.HonorData[5] = self.HonorData[5] + 1
 		if source ~= nil and source:getType() == "IMapPlayer" then
 			source.HonorData[4] = source.HonorData[4] + 1
-			if source:isRed() then
-				BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
-			else
-				BattleOverManager.BlueKillNum = BattleOverManager.BlueKillNum + 1
-			end
-		
-			local msg = {blueDeadNum = BattleOverManager.RedKillNum,redDeadNum = BattleOverManager.BlueKillNum }
-			EntityManager:sendToAllPlayers("onPlayerDead" ,msg)
 		end
 	end
 end
@@ -216,6 +208,15 @@ function IMapPlayer:onDead()
 		end
 	end
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+
+	if not self:isRed() then
+		BattleOverManager.RedKillNum = BattleOverManager.RedKillNum + 1
+	else
+		BattleOverManager.BlueKillNum = BattleOverManager.BlueKillNum + 1
+	end
+		
+	local msg = {blueDeadNum = BattleOverManager.RedKillNum,redDeadNum = BattleOverManager.BlueKillNum }
+	EntityManager:sendToAllPlayers("onPlayerDead" ,msg)
 end
 
 function IMapPlayer:onRaise()
