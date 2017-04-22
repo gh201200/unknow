@@ -2296,7 +2296,7 @@
 		<n32Level>1</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>500</HpMax>
 		<MpMax>40</MpMax>
@@ -2325,7 +2325,7 @@
 		<n32Level>2</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>650</HpMax>
 		<MpMax>55</MpMax>
@@ -2354,7 +2354,7 @@
 		<n32Level>3</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>800</HpMax>
 		<MpMax>70</MpMax>
@@ -2383,7 +2383,7 @@
 		<n32Level>4</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>950</HpMax>
 		<MpMax>85</MpMax>
@@ -2412,7 +2412,7 @@
 		<n32Level>1</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>700</HpMax>
 		<MpMax>60</MpMax>
@@ -2441,7 +2441,7 @@
 		<n32Level>2</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>900</HpMax>
 		<MpMax>85</MpMax>
@@ -2470,7 +2470,7 @@
 		<n32Level>3</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1100</HpMax>
 		<MpMax>110</MpMax>
@@ -2499,7 +2499,7 @@
 		<n32Level>4</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1300</HpMax>
 		<MpMax>135</MpMax>
@@ -2528,7 +2528,7 @@
 		<n32Level>1</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1000</HpMax>
 		<MpMax>90</MpMax>
@@ -2557,7 +2557,7 @@
 		<n32Level>2</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1300</HpMax>
 		<MpMax>120</MpMax>
@@ -2586,7 +2586,7 @@
 		<n32Level>3</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1600</HpMax>
 		<MpMax>150</MpMax>
@@ -2615,7 +2615,7 @@
 		<n32Level>4</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1900</HpMax>
 		<MpMax>180</MpMax>
@@ -2644,7 +2644,7 @@
 		<n32Level>1</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1350</HpMax>
 		<MpMax>115</MpMax>
@@ -2673,7 +2673,7 @@
 		<n32Level>2</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1700</HpMax>
 		<MpMax>145</MpMax>
@@ -2702,7 +2702,7 @@
 		<n32Level>3</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>2050</HpMax>
 		<MpMax>175</MpMax>
@@ -2731,7 +2731,7 @@
 		<n32Level>4</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>2200</HpMax>
 		<MpMax>205</MpMax>
@@ -2760,7 +2760,7 @@
 		<n32Level>1</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>1700</HpMax>
 		<MpMax>140</MpMax>
@@ -2789,7 +2789,7 @@
 		<n32Level>2</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>2200</HpMax>
 		<MpMax>175</MpMax>
@@ -2818,7 +2818,7 @@
 		<n32Level>3</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>2700</HpMax>
 		<MpMax>210</MpMax>
@@ -2847,7 +2847,7 @@
 		<n32Level>4</n32Level>
 		<szName>守卫炮台</szName>
 		<n32Type>2</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>3</n32MainAtt>
 		<HpMax>3200</HpMax>
 		<MpMax>245</MpMax>

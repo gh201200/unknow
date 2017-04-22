@@ -2060,7 +2060,7 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:1,1,0,0,0,12015][suicide:0,0]</szAffectTargetAffect>
+		<szAffectTargetAffect>[damage:1,1,0,0,0,12015]</szAffectTargetAffect>
 		<szDescribe>　　电塔的普通攻击</szDescribe>
 		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
@@ -61672,8 +61672,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -61687,7 +61687,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300001,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -61725,8 +61725,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -61740,7 +61740,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300002,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -61778,8 +61778,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -61793,7 +61793,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300003,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -61831,8 +61831,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -61846,7 +61846,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300004,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -61884,8 +61884,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -61899,7 +61899,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300011,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -61937,8 +61937,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -61952,7 +61952,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300012,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -61990,8 +61990,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62005,7 +62005,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300013,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62043,8 +62043,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62058,7 +62058,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300014,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62096,8 +62096,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62111,7 +62111,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300021,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62149,8 +62149,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62164,7 +62164,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300022,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62202,8 +62202,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62217,7 +62217,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300023,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62255,8 +62255,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62270,7 +62270,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300024,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62308,8 +62308,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62323,7 +62323,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300031,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62361,8 +62361,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62376,7 +62376,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300032,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62414,8 +62414,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62429,7 +62429,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300033,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62467,8 +62467,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62482,7 +62482,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300034,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62520,8 +62520,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62535,7 +62535,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300041,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62573,8 +62573,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62588,7 +62588,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300042,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62626,8 +62626,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62641,7 +62641,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300043,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
@@ -62679,8 +62679,8 @@
 		<n32MpCostPercent>0</n32MpCostPercent>
 		<n32HpCost>0</n32HpCost>
 		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
+		<n32Range>2</n32Range>
+		<n32SkillTargetType>4</n32SkillTargetType>
 		<szSelectRange>[single:0,0]</szSelectRange>
 		<n32SelectTargetType>0</n32SelectTargetType>
 		<n32BulletType>0</n32BulletType>
@@ -62694,7 +62694,7 @@
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[summon:53300044,1,0]</szAffectTargetAffect>
 		<szDescribe>　　召唤一门自动攻击的守卫炮台（炮台存在60s，最多同时召唤三门炮台）</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
+		<n32ShowRange>2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　多数兵员的表现难以量化，这对取得战斗的胜利是莫大的阻碍。如果建造机械据点的速度可以提高，就可以抛弃人类兵员这种不稳定的存在了。\n　　　　　　　　　　　——筑造奇才修</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
