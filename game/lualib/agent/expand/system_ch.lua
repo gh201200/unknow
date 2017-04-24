@@ -173,8 +173,8 @@ function REQUEST.buyShopItem( args )
 				ids[index+1] = v
 				index = index + 2
 			end
-			--local expire = Time.tomorrow()
-			local expire = os.time() + 60
+			local expire = Time.tomorrow()
+			--local expire = os.time() + 60
 			user.activitys:addValue('buyShopItem', atype, shopDat.n32Count * args.num, expire)
 		elseif shopDat.n32Type == 4 then	--材料
 			local items = {}
