@@ -110,7 +110,7 @@ local Quest = {
 	},
 	
 	--刷新商城卡牌CD(s)
-	RefreshShopCardCD = 60,
+	RefreshShopCardCD = 60*60*24,
 	
 	--排行榜类型
 	RankType = {
