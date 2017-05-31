@@ -252,7 +252,7 @@ login 101 {
                  client_pub 1 : string         
          }
          response {
-		 user_exists 0 : boolean
+		 error_id 0 : integer
          }
 }
 
