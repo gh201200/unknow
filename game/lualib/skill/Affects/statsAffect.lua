@@ -1,7 +1,7 @@
 local Affect = require "skill.Affects.Affect"
 local StatsAffect = class("StatsAffect" ,Affect)
 function StatsAffect:ctor(entity,source,data,skillId)
-        self.super.ctor(self,entity,source,data,skillId)
+	self.super.ctor(self,entity,source,data,skillId)
 	if self.data[1] == 'ctrl' then
 		self.effectTime = self.data[5] or 0
 		self.effectId = self.data[6] or 0
@@ -22,9 +22,9 @@ function StatsAffect:onTrigger(_add)
 		local lzm = false
 		if self.data[1] == 'ctrl' then
 			if _add == 1 then
-				self.owner.affectState = bit_or(self.owner.affectState, self.data[2]) -- 控制类型
+				self.owner:addAffectState(self.data[2],1)
 			else
-				self.owner.affectState = bit_and(self.owner.affectState, bit_not(self.data[2]))
+				self.owner:addAffectState(self.data[2],-1)
 			end
 		end
 		if self.data[1] == 'upstr' then
@@ -114,7 +114,6 @@ function StatsAffect:onTrigger(_add)
 					self.owner:addMidAttack(_add * r)
 				end
 			end
-			print("attttttttt:",self.owner:getMidAttackAgilityPc())	
 			self.owner:calcAttack()
 			break
 		end
@@ -143,6 +142,7 @@ function StatsAffect:onTrigger(_add)
 		end
 	
 		if self.data[1] == 'mov' then
+			print("======mov",_add,self.data)
 			if self.data[2] == 0 then
 				self.owner:addMidMSpeedPc(_add * self.data[3])
 				self.owner:addMidMSpeed(_add * self.data[4])
@@ -237,8 +237,9 @@ function StatsAffect:onExec(dt)
 end
 
 function StatsAffect:onExit()
-	self.super.onExit(self)
+	print("StatsAffect:onExit() self.skillId",self.skillId)
 	self:onTrigger(-1)
+	self.super.onExit(self)
 end
 
 return StatsAffect

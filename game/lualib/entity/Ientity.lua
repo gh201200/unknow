@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local vector3 = require "vector3"
 local Rect = require "rect"
 local spell =  require "skill.spell"
+local passtiveSpell =  require "skill.passtiveSpell"
 local cooldown = require "skill.cooldown"
 local AffectTable = require "skill.Affects.AffectTable"
 local Map = require "map.Map"
@@ -11,6 +12,13 @@ local syslog = require "syslog"
 
 local Ientity = class("Ientity" , transfrom)
 
+local AREA = {
+	{1, 7, 1.7, 8.2, 1.35, 8.2},
+	{1, 10, 1.7, 11.2, 1.35, 10},
+	{4.8, 7.5, 5.5, 8.7, 5.15, 7.5},
+	{4.8, 4.5, 5.5, 5.7, 5.15, 5.7},
+}
+
 local HP_MP_RECOVER_TIMELINE = 1000
 local UI_Stats_Show = {
 	Strength = true,
@@ -19,8 +27,8 @@ local UI_Stats_Show = {
 	HpMax = true,
 	MpMax = true,
 	Attack = true,
-	Defence = true,
 	ASpeed = true,
+	MSpeed = true,
 }
 
 local function register_stats(t, name,dft)
@@ -65,7 +73,12 @@ function Ientity:ctor(pos,dir)
 	self.pathMove = nil
 	self.pathNodeIndex = -1
 	self.useAStar = false
-	self.moveQuadrant = nil
+	self.moveQuadrant = 0
+	self.moveNode = {}
+	self.moveNode[1] = vector3.create()
+	self.moveNode[2] = vector3.create()
+	self.setPosCD = 0
+	
 	--event stamp handle about
 	self.serverEventStamps = {}		--server event stamp
 	self.newClientReq = {}		
@@ -83,7 +96,9 @@ function Ientity:ctor(pos,dir)
 	self.skillTable = {}	--可以释放的技能表
 	self.CastSkillId = 0 	--正在释放技能的id
 	self.ReadySkillId = 0	--准备释放技能的iastSkillId
-	self.affectState = 0
+	self.ReadySkillIdTime = 0 -- 准备释放技能的时间	
+	self.affectStateRefs = {} --状态计数
+	
 	self.triggerCast = true	 --是否触发技能
 	self.targetPos = nil
 	register_class_var(self, 'NewTarget', nil)
@@ -160,8 +175,11 @@ function Ientity:isKind(entity,_atk)
 	_atk = _atk or false
 	if _atk == false then
 		if entity:getType() == "IBuilding" then
-		--	return true
+			return true
 		end		
+	end
+	if entity.entityType == EntityType.trap then
+		return true
 	end
 	if self.camp == CampType.KIND or entity.camp == CampType.KIND then
 		return true
@@ -206,11 +224,151 @@ function Ientity:onRespClientEventStamp(event)
 	end
 end
 
-function Ientity:setActionState(_speed, _action)
+function Ientity.getArea(pos)
+	if pos.x <= Map.CX then
+		if pos.z <= AREA[1][4] then
+			return 1
+		elseif pos.z <= AREA[2][2] then
+			if pos.x > AREA[2][3] then
+				return 2
+			else
+				return 5	--一桥
+			end
+		else
+			return 2
+		end
+	else
+		if pos.z <= AREA[4][4] then
+			return 4
+		elseif pos.z <= AREA[3][2] then
+			if pos.x < AREA[3][1] then
+				return 3
+			else
+				return 6	--二桥
+			end
+		else
+			return 3
+		end
+
+	end
+	return 0
+end
+
+function Ientity:setActionState(_speed, _action, update)
+	
 	self.moveSpeed = _speed
 	self.curActionState = _action
-	if _action < ActionState.forcemove then 
+	if not update and _action < ActionState.forcemove then 
 		self:advanceEventStamp(EventStampType.Move)
+	end
+
+	if _action == ActionState.move then
+		self.moveNode[1]:set(0, 0, 0)
+		self.moveNode[2]:set(0, 0, 0)
+		local target = self:getTarget().pos
+		local nArea = self.getArea( self.pos )
+		local tArea = self.getArea( self:getTarget().pos )
+		--print(nArea, tArea)
+		if nArea == 1 then
+			if tArea == 2 then
+				self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+				self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+			elseif tArea == 3 then
+				local slen1 = math.pow2(self.pos.x-AREA[1][5]) + math.pow2(self.pos.z-AREA[1][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[2][5]) + math.pow2(target.z-AREA[2][6])
+				local slen2 = math.pow2(self.pos.x-AREA[4][5]) + math.pow2(self.pos.z-AREA[4][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[3][5]) + math.pow2(target.z-AREA[3][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+				else
+					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+				end
+			end
+		elseif nArea == 2 then
+			if tArea == 1 then
+				self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+				self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+			elseif tArea == 4 then
+				local slen1 = math.pow2(self.pos.x-AREA[2][5]) + math.pow2(self.pos.z-AREA[2][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[1][5]) + math.pow2(target.z-AREA[1][6])
+				local slen2 = math.pow2(self.pos.x-AREA[3][5]) + math.pow2(self.pos.z-AREA[3][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[4][5]) + math.pow2(target.z-AREA[4][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+					self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+				else
+					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+					self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+				end
+			end
+		elseif nArea == 3 then
+			if tArea == 4 then
+				self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+				self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+			elseif tArea == 1 then
+				local slen1 = math.pow2(self.pos.x-AREA[2][5]) + math.pow2(self.pos.z-AREA[2][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[1][5]) + math.pow2(target.z-AREA[1][6])
+				local slen2 = math.pow2(self.pos.x-AREA[3][5]) + math.pow2(self.pos.z-AREA[3][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[4][5]) + math.pow2(target.z-AREA[4][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+					self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+				else
+					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+					self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+				end
+			end
+		elseif nArea == 4 then
+			if tArea == 3 then
+				self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+				self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+			elseif tArea == 2 then
+				local slen1 = math.pow2(self.pos.x-AREA[1][5]) + math.pow2(self.pos.z-AREA[1][6])
+				slen1 = slen1 + math.pow2(target.x-AREA[2][5]) + math.pow2(target.z-AREA[2][6])
+				local slen2 = math.pow2(self.pos.x-AREA[4][5]) + math.pow2(self.pos.z-AREA[4][6])
+				slen2 = slen2 + math.pow2(target.x-AREA[3][5]) + math.pow2(target.z-AREA[3][6])
+				if slen1 <= slen2 then
+					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+				else
+					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+				end
+			end
+		elseif nArea == 5 then
+			if tArea == 4 then
+				self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+			elseif tArea == 6 then
+				local r = math.random(1, 100) 
+				if r < 50 then
+					self.moveNode[1]:set(AREA[1][5], 0, AREA[1][6])
+					self.moveNode[2]:set(AREA[4][5], 0, AREA[4][6])
+				else
+					self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+					self.moveNode[2]:set(AREA[3][5], 0, AREA[3][6])
+				end
+			elseif tArea == 3 then
+				self.moveNode[1]:set(AREA[2][5], 0, AREA[2][6])
+			end
+		elseif nArea == 6 then
+			if tArea == 1 then
+				self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+			elseif tArea == 5 then
+				local r = math.random(1, 100) 
+				if r < 50 then
+					self.moveNode[1]:set(AREA[4][5], 0, AREA[4][6])
+					self.moveNode[2]:set(AREA[1][5], 0, AREA[1][6])
+				else
+					self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+					self.moveNode[2]:set(AREA[2][5], 0, AREA[2][6])
+				end
+			elseif tArea == 2 then
+				self.moveNode[1]:set(AREA[3][5], 0, AREA[3][6])
+			end
+
+		end
 	end
 end
 
@@ -222,10 +380,13 @@ function Ientity:canStand()
 end
 
 function Ientity:stand()
-	if self:canStand() == false then return end
+	if self:canStand() == false then 
+		print('can not stand', self.serverId)
+		return 
+	end
 	self:setActionState(0, ActionState.stand)
 	self:clearPath()
-	self.moveQuadrant = nil
+	self.moveQuadrant = 0
 end
 
 function Ientity:clearPath()
@@ -237,19 +398,22 @@ end
 function Ientity:pathFind(dx, dz)
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	if self:getTarget():getType() ~= "transform" then	--目标是物体
-		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, 0, self:getTarget().modelDat.n32BSize)
+		Map:add(dx, dz, 0, self:getTarget().modelDat.n32BSize)
 	end
 
 	self.pathMove = Map:find(self.pos.x, self.pos.z, dx, dz, self.modelDat.n32BSize)
 	
 	Map:add(self.pos.x, self.pos.z, 1, self.modelDat.n32BSize)
 	if self:getTarget():getType() ~= "transform" then	--目标是物体
-		Map:add(self:getTarget().pos.x, self:getTarget().pos.z, 1, self:getTarget().modelDat.n32BSize)
+		Map:add(dx, dz, 1, self:getTarget().modelDat.n32BSize)
 	end
 	
 	self.pathNodeIndex = 3
 	self.useAStar = #self.pathMove > self.pathNodeIndex
-	print(self.pathMove,self.useAStar)
+	if not self.useAStar then
+		print(Map.POS_2_GRID(self.pos.x),Map.POS_2_GRID(self.pos.z),Map.POS_2_GRID(dx),Map.POS_2_GRID(dz))
+	end
+	--print(self.pathMove)
 	return self.useAStar
 end
 
@@ -265,24 +429,30 @@ function Ientity:setTarget(target)
 	if target ~= self:getTarget() and self.spell:isSpellRunning() ==  true and self.spell:canBreak(ActionState.move) == true then
 		self.spell:breakSpell()
 	end
-
+	if not self:getTarget() or vector3.len_2(target.pos, self:getTarget().pos) > 1 then
+		self:clearPath()
+	end
+	
 	if self:canMove()  == 0 then	
 		self:setTargetVar( target )
 	else
 		self:setNewTarget(target)
 	end
+
 	if self:canMove() == 0 then
-		if self.ReadySkillId ~= 0 and self:canCast(self.ReadySkillId) == 0 then
-			self:castSkill(self.ReadySkillId)
+		if self:getReadySkillId() ~= 0 and self:canCast(self:getReadySkillId()) == 0 then
 		else
-			local skilldata = g_shareData.skillRepository[self.ReadySkillId]
-			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
-				local dis = self:getDistance(self:getTarget())
+			local skilldata = g_shareData.skillRepository[self:getReadySkillId()]
+			--if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
+			if skilldata ~= nil and skilldata.n32SkillType == 0 and target ~= nil and target:getType() ~= "transform" then
+				local dis = self:getDistance(target)
 				if dis > skilldata.n32Range then
-					self:setActionState( self:getMSpeed(), ActionState.move)
+					self:setActionState( self:getMSpeed(), ActionState.move, true)
+				else
+					self:stand()
 				end	
 			else	
-				self:setActionState( self:getMSpeed(), ActionState.move)
+				self:setActionState( self:getMSpeed(), ActionState.move, true)
 			end
 		
 		end
@@ -298,16 +468,54 @@ function Ientity:clearTarget(mask)
 		self:setTarget(nil)
 	end
 end
+
+
 function Ientity:setTargetPos(target)
 	if self:isDead() then return end
 	if target == nil then return end
+	if self.setPosCD > skynet.now() then 
+		return 
+	end
+	self.setPodCD  = skynet.now() + 10
+	local skilldata = g_shareData.skillRepository[self:getReadySkillId()]	
+	--敌人单体类型的技能 点地板取消
+	if skilldata ~= nil and skilldata.n32SkillType == 1 and skilldata.n32SkillTargetType == 3 then
+		self:setReadySkillId(0)	
+	end	
+	self.moveQuadrant = 0
 	local pos = vector3.create(target.x,0,target.z)
+	if Map:isBlock( pos.x, pos.z ) then
+		Map:lineTest(self.pos, pos)
+	end
+	if math.abs(pos.x-self.pos.x) < 0.05 and math.abs(pos.z-self.pos.z) < 0.05 then
+		return
+	end
+	--[[
+	local r = Map:circleTest(pos, 1)
+	if r then
+		pos.x = r.x
+		pos.z = r.z
+	end
+	--]]
+	
 	if self:canMove() == 0 then
+		self:setLockTarget(nil)
 		self:setTarget(transfrom.new(pos,nil))
-	else
-		self:setNewTarget(transfrom.new(pos,nil))
+	--else
+	--	self:setNewTarget(transfrom.new(pos,nil))
 	end
 end
+
+function Ientity:getMoveTarget()
+	if self.moveNode[1].x > 0 then
+		return self.moveNode[1]
+	end
+	if self.moveNode[2].x > 0 then
+		return self.moveNode[2]
+	end
+	return self:getTarget().pos
+end
+
 function Ientity:update(dt)
 	if self:isDead() == false then
 		self.spell:update(dt)
@@ -330,8 +538,8 @@ function Ientity:update(dt)
 		self.StatsChange = false
 	end
 	if self:isDead() == false and self.entityType ~= EntityType.building and self.entityType ~= EntityType.trap then
-		if self.curActionState == ActionState.move then
-			self:onMove2(dt)
+		if self.curActionState == ActionState.move and self:canMove() == 0 then
+			self:onMove3(dt)
 		elseif self.curActionState == ActionState.stand then
 			--站立状态
 		elseif self.curActionState >= ActionState.forcemove then
@@ -339,10 +547,24 @@ function Ientity:update(dt)
 			self:onForceMove(dt)	
 		end
 	end
-	if self.ReadySkillId ~= 0  then	
-		local err = self:canCast(self.ReadySkillId)
+	if self:getReadySkillId() ~= 0  then	
+		local err = self:canCast(self:getReadySkillId())
 		if err == 0 then
-			self:castSkill(self.ReadySkillId)
+			self:castSkill(self:getReadySkillId())
+		else
+			local locker = self:getLockTarget()
+			if locker ~= nil then
+				local id = self:getReadySkillId()
+				if id ~= 0 then
+					local skilldata = g_shareData.skillRepository[id]
+					if skilldata.n32Range ~= 0 then
+						local dis = self:getDistance(self:getLockTarget())
+						if dis > skilldata.n32Range then
+							self:setActionState( self:getMSpeed(), ActionState.move, true)	
+						end
+					end
+				end
+			end
 		end
 	end
 
@@ -372,7 +594,7 @@ function Ientity:isCrossWithEntity( entity )
 end
 
 function Ientity:isLegalGrid( pos )
-	Map:add(self.pos.x, self.pos.z, -1, self.modelDat.n32BSize)
+	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
 	local gx = Map.POS_2_GRID( pos.x )
 	local gz = Map.POS_2_GRID( pos.z )
 
@@ -381,7 +603,12 @@ function Ientity:isLegalGrid( pos )
 	for i=-s, s do
 		for j=-s, s do
 			local w =  Map:block(gx+i, gz+j)
-			if w > 0 then 
+			if w == 255 then
+				if not self.useAStar then
+					legal = false 
+					break 
+				end
+			elseif w > 0 then
 				legal = false 
 				break 
 			end
@@ -389,15 +616,25 @@ function Ientity:isLegalGrid( pos )
 		if not legal then break end
 	end
 	Map:add(self.pos.x, self.pos.z, 1, self.modelDat.n32BSize)
-	--Map:dump()
 	return legal
 end
 
 --注意：修改entity位置，一律用此函数
 function Ientity:setPos(x, y, z, r)
 	--print('set pos = ',x, y, z)
-	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
-	Map:add(x, z, 1, self.modelDat.n32BSize)
+	if not self:isDead() then
+		Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+		Map:add(x, z, 1, self.modelDat.n32BSize)
+	end
+	if self.moveNode[1].x > 0 then
+		if math.abs(x - self.moveNode[1].x) < 0.3 and math.abs(z - self.moveNode[1].z) < 0.3 then
+			self.moveNode[1].x = 0
+		end
+	elseif self.moveNode[2].x > 0 then
+		if math.abs(x - self.moveNode[2].x) < 0.3 and math.abs(z - self.moveNode[2].z) < 0.3 then
+			self.moveNode[2].x = 0
+		end
+	end
 	self.pos:set(x, y, z)
 	self.bbox.center:set(self.pos.x, self.pos.y, self.pos.z)
 end
@@ -535,25 +772,19 @@ function Ientity:onMove2(dt)
 			legal_pos = false
 			local nearBy = false
 			local doNotUseAstar = false
-			local angle = 30
-			if not self.moveQuadrant then
+			local angle = 90
+			--[[
+			if self.moveQuadrant == 0 then	
 				local quadrant = Map:quadrantTest( self.pos )
 				if quadrant == 1 or quadrant == 4 then
-					if self.dir.z > 0 then
-						self.moveQuadrant = 1
-					else
-						self.moveQuadrant = -1
-					end
+					self.moveQuadrant = -1
 				else
-					if self.dir.z > 0 then
-						self.moveQuadrant = -1
-					else
-						self.moveQuadrant = 1
-					end
+					self.moveQuadrant = 1
 				end
 			end
+			]]--
+			self.moveQuadrant = 1
 			repeat
-				print("66666:",self.serverId)
 				if Map.IS_NEIGHBOUR_GRID(self.pos, self:getTarget().pos) then
 					doNotUseAstar = true
 					break
@@ -634,9 +865,148 @@ function Ientity:onMove2(dt)
 	end
 end
 
+local dir = {
+	[0] = {0,4},
+	[1] = {4,4},
+	[2] = {4,0},
+	[3] = {4,-4},
+	[4] = {0,-4},
+	[5] = {-4,-4},
+	[6] = {-4,0},
+	[7] = {-4,4}
+}
+
+
+function Ientity:onMove3(dt)
+	dt = dt / 1000		--second
+	if self.moveSpeed <= 0 then return end
+	if self:getTarget() == nil then
+		self:stand()
+		return
+	end
+
+	if self.useAStar then
+		self.dir:set(Map.GRID_2_POS(self.pathMove[self.pathNodeIndex]), 0, Map.GRID_2_POS(self.pathMove[self.pathNodeIndex+1]))
+	else
+		
+		self.dir:set(self:getMoveTarget().x, 0, self:getMoveTarget().z)
+	end
+	self.dir:sub(self.pos)
+	self.dir:normalize()
+	mv_dst:set(self.dir.x, self.dir.y, self.dir.z)
+	mv_dst:mul_num(self.moveSpeed * dt)
+	mv_dst:add(self.pos)
+	repeat
+		legal_pos = true
+		--check iegal
+		
+		if self.useAStar and self:isLegalGrid( mv_dst ) == false then
+			print('use a star to find a path again',self.serverId)
+			local nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+			if not nearBy then
+				print('find path again failed, stand',self.serverId)
+				self:stand()
+				return
+			else
+				--advance move event stamp
+				self:advanceEventStamp(EventStampType.Move)
+			end
+			return
+		end
+		
+		if self:isLegalGrid( mv_dst ) == false then
+			legal_pos = false
+			local nearBy = false
+			local angle = 60
+			if Map:isWall(mv_dst.x, mv_dst.z) then angle = 200 end
+			while angle < 150 do
+				mv_slep_dir:set(self.dir.x, self.dir.y, self.dir.z)
+				mv_slep_dir:rot(angle)
+				mv_dst:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				mv_dst:mul_num(self.moveSpeed * dt)
+				mv_dst:add(self.pos)
+				if self:isLegalGrid( mv_dst ) then
+					nearBy = true
+					self.dir:set(mv_slep_dir.x, mv_slep_dir.y, mv_slep_dir.z)
+				end
+				if nearBy then 
+					legal_pos = true
+					break 
+				end
+				angle = angle + 30
+			end
+
+			if not nearBy then
+				print('use a star to find a path',self.serverId)
+				nearBy = self:pathFind(self:getTarget().pos.x, self:getTarget().pos.z)	
+				if not nearBy then
+					print('find path failed , stand',self.serverId)
+					self:stand()
+					return
+				else	
+					--advance move event stamp
+					self:advanceEventStamp(EventStampType.Move)
+				end
+			end
+		end
+	until true
+	if self.useAStar then
+		--移动到下一节点
+		if self.pathMove[self.pathNodeIndex] == Map.POS_2_GRID(mv_dst.x) and self.pathMove[self.pathNodeIndex+1] == Map.POS_2_GRID(mv_dst.z) then
+			self.pathNodeIndex = self.pathNodeIndex + 2
+		end
+		if self.pathNodeIndex >= #self.pathMove then
+			print('end a star ',self.serverId)
+			self:stand()
+			self:clearTarget(1)
+		end
+	elseif self:getTarget() then
+		if self:getTarget():getType() == "transform" then	--目标是物体
+			if math.abs(self.pos.x-self:getTarget().pos.x) < 0.02 and math.abs(self.pos.z-self:getTarget().pos.z) < 0.02 then
+				self:stand()
+				self:clearTarget(1)
+			end
+		end
+	end
+
+	if legal_pos then
+		--move
+		self:setPos(mv_dst.x, mv_dst.y, mv_dst.z)
+		--advance move event stamp
+		self:advanceEventStamp(EventStampType.Move)
+	end
+end
+
+function Ientity:onMove4(dt)
+	dt = dt / 1000		--second
+	if self.moveSpeed <= 0 then return end
+	self.dir:set(self:getTarget().pos.x, 0, self:getTarget().pos.z)
+	local x, z = Map:getAgentPosition(self.no)
+	mv_dst:set(x, 0, z)
+	self.dir:sub(mv_dst)
+	Map:setAgentPrefVelocity(self.no, self.dir)
+	
+	self:setPos(x, 0, z)
+--[[
+	if math.abs(self.pos.x-self:getTarget().pos.x) < 0.02 and math.abs(self.pos.z-self:getTarget().pos.z) < 0.02 then
+			self:stand()
+			mv_dst:set(0, 0, 0)
+			Map:setAgentPrefVelocity(self.no, mv_dst)
+			self:clearTarget(1)
+	end
+--]]
+
+	--advance move event stamp
+	self:advanceEventStamp(EventStampType.Move)
+end
+
+
 --强制移动（魅惑 嘲讽 冲锋等）
 function Ientity:onForceMove(dt)
 	dt = dt / 1000
+	if self:getHp() <= 0 then
+		return
+	end
 	local fSpeed = self.moveSpeed
 	local mv_dst = vector3.create()
 	if Map.IS_SAME_GRID(self.pos,self.targetPos.pos) then
@@ -649,8 +1019,8 @@ function Ientity:onForceMove(dt)
 	mv_dst:mul_num(fSpeed * dt)
 	mv_dst:add(self.pos)
 	if Map:isWall(mv_dst.x ,mv_dst.z) == true then
-		--self:stand()
-		--return
+		self:onStand()
+		return
 	end
 	self:setPos(mv_dst.x, 0, mv_dst.z)
 	print("onForceMove self.pos:",self.pos.x,self.pos.z)	
@@ -700,32 +1070,52 @@ function Ientity:onDead()
 	--self:setActionState(0, ActionState.die)
 	for k, v in pairs(g_entityManager.entityList) do
 		if v:getTarget() == self then
-			print("onDead===",v.serverId,self.serverId)
-			v:setTarget(nil)
+			v:setLockTarget(nil)
+			v:setAttackTarget(nil)
 		end
 		if v.entityType == EntityType.monster then
 			v.hateList:removeHate( self )
 		end
 	end
-	self.ReadySkillId = 0
+	--移除自己的仇恨值
+	self:setLockTarget(nil)
+	self.spell.passtiveSpells = {}
+	self:setReadySkillId(0)
 	self.affectTable:clear() --清除所有的buff
 end
 
 function Ientity:onRaise()
 	self:addHp(self:getHpMax(), HpMpMask.RaiseHp)
 	self:addMp(self:getMpMax(), HpMpMask.RaiseMp)
-	--学习被动技能
-	for _k,_v in pairs(self.skillTable) do
-		local id = _k + _v - 1
-		local skilldata = g_shareData.skillRepository[id]	
-		if skilldata ~= nil and skilldata.bActive == false then
-			self.spell:onStudyPasstiveSkill(skilldata)	
+end
+
+function Ientity:isAffectState(state)
+	if self.affectStateRefs[state] ~= nil and self.affectStateRefs[state] > 0 then 
+		return true
+	else
+		return false
+	end
+end
+
+function Ientity:addAffectState(argState,num)
+	local states = {}
+	for k,v in pairs(AffectState) do
+		if bit_and(argState,v) ~= 0 then
+			states[v] = 1
 		end
-	end	
+	end
+	for state,v in pairs(states) do
+		if self.affectStateRefs[state] == nil then
+			self.affectStateRefs[state] = 0 
+		end
+		if num == 1 and AffectState.NoMove == state then
+			self:stand()
+		end
+		self.affectStateRefs[state] = self.affectStateRefs[state] + num
+	end
 end
 
 function Ientity:addHp(_hp, mask, source)
-
 	isDelay = isDelay or false 
 	_hp = math.floor(_hp)
 	if _hp == 0 then return end
@@ -736,7 +1126,7 @@ function Ientity:addHp(_hp, mask, source)
 	self.lastHp = self:getHp()
 	self:setHp(mClamp(self.lastHp+_hp, 0, self:getHpMax()))
 	--不死状态
-	if self.affectState == AffectState.NoDead or self.affectState == AffectState.Invincible then
+	if self:isAffectState(AffectState.NoDead) or self:isAffectState(AffectState.Invincible) then
 		if self:getHp() <= 0 then
 			self:setHp(1)
 		end
@@ -769,17 +1159,17 @@ end
 function Ientity:recvHpMp()
 	if self:getHp() <= 0 then return end
 	if self:getRecvHp() <= 0 and self:getRecvMp() <= 0 then return end
-	if self:getHp() == self:getHpMax() then return end
+	if self:getHp() == self:getHpMax() and self:getMp() == self:getMpMax() then return end
 	local curTime = skynet.now()
 	if self.recvTime == 0 then
 		self.recvTime = curTime
 	end    
 
 	if (curTime - self.recvTime) * 10  > HP_MP_RECOVER_TIMELINE then
-		local cnt = math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
+		local cnt = 1 --math.floor((curTime - self.recvTime) * 10 / HP_MP_RECOVER_TIMELINE)
 		self.recvTime = curTime
- 		self:addHp(self:getRecvHp() * cnt , HpMpMask.TimeLineHp)
- 		self:addMp(self:getRecvMp() * cnt , HpMpMask.TimeLineMp)
+		self:addHp(self:getRecvHp() * cnt , HpMpMask.TimeLineHp,self)
+ 		self:addMp(self:getRecvMp() * cnt , HpMpMask.TimeLineMp,self)
  	end
 end
 
@@ -933,7 +1323,7 @@ function Ientity:calcMSpeed()
 		self.attDat.n32MSpeed * (1.0 + self:getMidMSpeedPc())
 		+ self:getMidMSpeed() 
 	)
-	self.moveSpeed = self:getMSpeed()
+	self.moveSpeed = math.max(self:getMSpeed(),0)
 end
 
 function Ientity:calcRecvHp()
@@ -999,27 +1389,7 @@ end
 
 function Ientity:callBackSpellEnd()
 	if self.entityType ~= EntityType.player	then
-		self.ReadySkillId = 0
-		return
-	end
-
-	local skilldata = g_shareData.skillRepository[self.ReadySkillId]
-	if self:canMove() == 0 and self:getTarget() ~= nil  then
-		if self:canCast(self.ReadySkillId)  == 0 then
-		
-		else
-			if skilldata ~= nil and skilldata.n32SkillType == 0 and self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" then
-				local dis = self:getDistance(self:getTarget())
-				if dis > skilldata.n32Range then
-					self:setActionState( self:getMSpeed(), ActionState.move)
-				end
-			else
-				self:setActionState( self:getMSpeed(), ActionState.move)
-			end
-		end
-	end
-	if skilldata ~= nil and skilldata.n32SkillType ~= 0 and self.spell.skilldata.id == self.ReadySkillId then
-			self.ReadySkillId = 0
+		self:setReadySkillId(0)
 	end
 end
 --设置人物状态
@@ -1028,7 +1398,7 @@ function Ientity:setState(state)
 end
 
 function Ientity:canMove()
-	if bit_and(self.affectState,AffectState.NoMove) ~= 0 then
+	if self:isAffectState(AffectState.NoMove) == true then
 		return ErrorCode.EC_Spell_Controled
 	end
 	--[[
@@ -1048,11 +1418,27 @@ function Ientity:canMove()
 	return 0
 end
 
+function Ientity:removeSkill(skillId,updateToClient)
+       print("skillId=======",skillId)
+	local skilldata = g_shareData.skillRepository[skillId]
+       if skilldata.n32Active == 1 then
+               for i=#self.spell.passtiveSpells,1,-1 do
+                       local ps = self.spell.passtiveSpells[i]
+                       if ps and ps.skilldata.id == skillId then
+			       ps.isDead = true
+                               break
+                       end
+               end
+       else
+               self.skillTable[skillId] = nil
+       end 
+end
+
 function Ientity:canCast(id)
 	if self.spell:isSpellRunning() == true then return ErrorCode.EC_Spell_SkillIsRunning end
 	local skilldata = g_shareData.skillRepository[id]
 	if skilldata == nil then return -1 end
-	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+	if self.cooldown:getCdTime(skilldata.id) > 0 and self.cooldown:getChargeCount(id) <= 0 then 
 		return ErrorCode.EC_Spell_SkillIsInCd
 	end
 
@@ -1066,6 +1452,9 @@ function Ientity:canCast(id)
 		if self:getTarget() == nil then
 			return ErrorCode.EC_Spell_NoTarget
 		end
+		if self:getTarget() ~= nil and self:getTargetTime() < self:getReadySkillIdTime() then
+			return ErrorCode.EC_Spell_NoTarget
+		end 
 	end
 	
 	if skilldata.n32Range ~= 0 then
@@ -1076,7 +1465,7 @@ function Ientity:canCast(id)
 	end
 	--不是普攻
 	if skilldata.n32SkillType ~= 0  then 
-		if bit_and(self.affectState,AffectState.NoSpell) ~= 0 then
+		if self:isAffectState(AffectState.NoSpell) then
 			return ErrorCode.EC_Spell_Controled
 		end
 		
@@ -1087,7 +1476,7 @@ function Ientity:canCast(id)
 		end
 	end
 	
-	if bit_and(self.affectState,AffectState.NoAttack) ~= 0 then 
+	if self:getTarget() ~= nil and self:getTarget():getType() ~= "transform" and self:getTarget():isAffectState(AffectState.Invincible) then
 		return ErrorCode.EC_Spell_Controled
 	end
 	if self:getHp() <= 0 then return ErrorCode.EC_Dead end
@@ -1096,81 +1485,66 @@ function Ientity:canCast(id)
 	return 0
 end
 
+--获取正常技能
+function Ientity:getRegularSkills()
+	local t = {}
+	for k,v in pairs(self.skillTable) do
+		local skilldata = g_shareData.skillRepository[k]
+		if v ~= nil and skilldata.n32SkillType == 1 then
+			table.insert(t,k)
+		end
+	end
+	return t
+end
 
+
+function Ientity:setReadySkillId(id)
+	self.ReadySkillId = id
+	self.ReadySkillIdTime = skynet.now()
+end
+
+function Ientity:getReadySkillId()
+	return self.ReadySkillId
+end
+
+function Ientity:getReadySkillIdTime()
+	return self.ReadySkillIdTime
+end
 --是否能选中技能
 function Ientity:canSetCastSkill(id)
         local skilldata = g_shareData.skillRepository[id]
 	--cd状态
-	if self.cooldown:getCdTime(skilldata.id) > 0 then 
+	if self.cooldown:getCdTime(id) > 0 and self.cooldown:getChargeCount(id) <= 0 then 
 		return ErrorCode.EC_Spell_SkillIsInCd
 	end
 	--技能正在释放状态
 	if self.spell:isSpellRunning() and self.spell.skillId == skilldata.id then
            return ErrorCode.EC_Spell_SkillIsRunning
         end
-	--[[技能目标类型为敌方
-	if skilldata.n32SkillTargetType == 3 then
-	--目标类型为地点
-	elseif skilldata.n32SkillTargetType == 4 or skilldata.n32SkillTargetType == 5 then
-		if self:getTarget() == nil then
-			return ErrorCode.EC_Spell_NoTarget
-		end
-	end]]--
 	--蓝量不够 
 	if skilldata.n32MpCost > self:getMp() then return ErrorCode.EC_Spell_MpLow end --蓝量不够
+	
 	return 0
 end
+
 function Ientity:setCastSkillId(id)
-	print('set cast skill id = ', id)
+	--print('set cast skill id = ', id)
 	local skilldata = g_shareData.skillRepository[id]
 	if not skilldata then
 		syslog.warning( 'setCastSkillId failed ' .. id )
-		return
-	end
-	if skilldata.bActive == false then	
-		--测试使用
-		self.ReadySkillId = 0
-		self.spell:onStudyPasstiveSkill(skilldata)
-		return 0
-	end
-	if self.ReadySkillId == id then
-		--技能取消
-		self.ReadySkillId = 0
-		print("cancel skill id ")
-		return 0
+		return 1
 	end
 	local errorcode = self:canSetCastSkill(id) 
 	if errorcode ~= 0 then return errorcode end
-	self.ReadySkillId = id
-	--[[
-	if   then
-		--可以立即释放
-		if self.spell:canBreak(ActionState.move) == false then
-			print("can not break")	
-		else
-			if self.spell:isSpellRunning() == true then	
-				self.spell:breakSpell()
-			end
-			self:castSkill()
-			self.ReadySkillId = 0	
-		end
-	else
-		--技能不是立即释放的
-		return -1
-	end]]
+	self:setReadySkillId(id)
 	return 0
 end
 function Ientity:castSkill()
-	self.CastSkillId = self.ReadySkillId
+	self.CastSkillId = self:getReadySkillId() 
 	local id = self.CastSkillId
 	local skilldata = g_shareData.skillRepository[id]
 	local modoldata = self.modelDat 
-	if skilldata == nil then
-		return 
-	end
 	assert( modoldata)
-	local errorcode = self:canCast(id) 
-	if errorcode ~= 0 then return errorcode end
 	local skillTimes = {}
 	local action = ""
 	if skilldata.n32ActionType == 1 then
@@ -1199,9 +1573,51 @@ function Ientity:castSkill()
 	tmpSpell:init(skilldata,skillTimes)
 	self:setActionState(0, ActionState.spell)
 	tmpSpell:Cast(id,target,pos)
+	self:setReadySkillId(0)
 	return 0
 end
 
+function Ientity:addSkill(skillId,extra,updateToClient)
+	local skilldata = g_shareData.skillRepository[skillId]	
+	if skilldata.n32SkillType == 2 then
+		--大招
+		if self.skillTable[skillId] == nil then
+			self.skillTable[skillId] = 0
+		end
+		self.skillTable[skillId] = self.skillTable[skillId] + extra
+		local newSkillId = skillId + self.skillTable[skillId] - 1
+		if skilldata.n32Active == 1 then
+			if self.skillTable[skillId] >= 2 then
+				local oldSkillId = skillId + self.skillTable[skillId] - 2
+				self:removeSkill(oldSkillId,false)	
+			end	
+			local newSkilldata = g_shareData.skillRepository[newSkillId]
+			local ps = passtiveSpell.new(self,newSkilldata,-1)
+			table.insert(self.spell.passtiveSpells,ps)
+		end
+	else
+		if skilldata.n32Active == 1 then
+			local ps = passtiveSpell.new(self,skilldata,extra)
+			table.insert(self.spell.passtiveSpells,ps)
+		else
+			if self.skillTable[skillId] == nil then
+				self.skillTable[skillId] = 0 
+			end	
+			self.skillTable[skillId] = self.skillTable[skillId] + extra
+		end
+	end
+	if skilldata.n32ChargeCount > 0 then
+		self.cooldown:addItem(skillId)
+		self.cooldown:addChargeCount(skillId,false)
+	end
+	if updateToClient then
+		local msg = {
+			skillId = skillId,
+			level = self.skillTable[skillId] 
+		}
+		skynet.call(self.agent, "lua", "sendRequest", "addSkill", msg)
+	end
+end
 function Ientity:addSkillAffect(tb)
 	table.insert(self.AffectList,{effectId = tb.effectId , AffectType = tb.AffectType ,AffectValue = tb.AffectValue ,AffectTime = tb.AffectTime} )
 end

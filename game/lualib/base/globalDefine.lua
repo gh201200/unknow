@@ -71,6 +71,8 @@ AffectState = {
 	Crit				= 1 << 8, --暴击状态
 }
 
+
+
 SpellStatus = {
 	None 		= 0,	--无
 	Begin 		= 1, 	--开始
@@ -95,6 +97,7 @@ ErrorCode = {
 	EC_Spell_Camp_Friend		= 1010, --不能对友方释放该技能
 	EC_Spell_NoBuilding		= 1011, --不能使用技能攻击建筑物
 	EC_Spell_ForceMoving		= 1012, --强制移动中
+	EC_Spell_NumLow			= 1013, --技能释放次数不足
 	EC_Spell_Unkonw			= 1999, --技能未知错误
 }
 
@@ -128,6 +131,10 @@ ActivityAccountType =
 	PvpTimes			= 2001, --pvp参加场次
 	PvpWinTimes			= 2002,	--pvp胜利场次
 	RefreshExplore			= 3001,	--刷新探索次数
+	BaoXiang0			= 4001, --宝箱1购买次数
+	BaoXiang1			= 4002, --宝箱2购买次数
+	BaoXiang2			= 4003, --宝箱3购买次数
+	BaoXiang3			= 4004, --宝箱4购买次数
 }
 
 CoolDownSysType = 

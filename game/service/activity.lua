@@ -1,127 +1,40 @@
-local skynet = require "skynet"
-local syslog = require "syslog"
+local ActivitysMethod = require "agent.activitys_method"
 
-local units = {} 
-local database = nil
-
-local function calcUid(name, atype)
-	return name .. '$' .. atype
-end
-
-local function calcNameType(uid)
-	local t =  string.split(uid, '$')
-	return t[1], tonumber(t[2])
-end
-
-local function create_activity(aid, atype, val, expire)
-	return {accountId=aid, atype=atype, value=val, expire=expire}
-end
-
-local function loadSystem()
-	database = skynet.uniqueservice("database")
-	for k, v in pairs(ActivitySysType) do
-		local uid = calcUid('system', v)
-		local unit  = skynet.call (database, "lua", "activity", "load", uid)
-		if unit then
-			units[uid] = unit
-		end
-	end
-end
+local activitys = nil
 
 ---------------------------------------------------------
 --GET
 
-function response.getAllSystem()
-	local r = {}
-	for k, v in pairs(ActivitySysType) do
-		local uid = calcUid('system', v)
-		if units[uid] and units[uid].expire > os.time() then
-			table.insert(r, units[uid])
-		end
-	end
-	return r
-end
-
-
-function response.getValue(name, atype)
-	local uid = calcUid(name, atype)
-	if units[uid] and units[uid].expire > os.time() then
-		return units[uid].value
+function response.getValue(atype)
+	local uid = calcUid(activitys.account_id, atype)
+	if activitys.units[uid] and activitys.units[uid].expire > os.time() then
+		return activitys.units[uid].value
 	end
 	return 0
 end
 
 function response.getValueByUid( uid )
-	if units[uid] and units[uid].expire > os.time() then 
-		return units[uid]
-	end
-	return nil
-end
-
-function response.addValue(op, name, atype, val, expire)
-
-	local uid = calcUid(name, atype)
-	if not expire then
-		expire = math.maxinteger
-	end
-	if units[uid] then
-		units[uid].value = units[uid].value + val
-		units[uid].expire = expire
-		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'value')
-	else
-		units[uid] = create_activity(name, atype, val, expire)
-		skynet.call (database, "lua", "activity", "update", uid, units[uid])
-	end
-	
-	return units[uid].value
-end
-
-function response.setValue(op, name, atype, val, expire)
-	local uid = calcUid(name, atype)	
-	if not expire then
-		expire = math.maxint32
-	end
-	if units[uid] then
-		units[uid].value = val
-		units[uid].expire = expire
-		skynet.call (database, "lua", "activity", "update", uid, units[uid], 'value', 'expire')
-	else
-		units[uid] = create_activity(name, atype, val, expire)
-		skynet.call (database, "lua", "activity", "update", uid, units[uid])
-	end
-	return units[uid].value
+	return activitys:getValueByUid( uid )
 end
 
 ------------------------------------------------
 --POST
-function accept.loadAccount( aid )
-	for k, v in pairs(ActivityAccountType) do
-		local uid = calcUid(aid, v)
-		local unit  = skynet.call (database, "lua", "activity", "load", uid)
-		
-		if unit and unit.expire > os.time() then
-			units[uid] = unit
-		end
-	end
+
+function accept.addValue(op, atype, val, expire)
+	activitys:addValue(op, atype, val, expire)
 end
 
-function accept.resetAccountValue(op, types, expire )
-	for k, v in pairs(units) do
-		for p, q in pairs(types) do
-			if v.atype == q then
-				v.value = 0
-				v.expire = expire
-				break
-			end
-		end
-	end
+function accept.setValue(op, atype, val, expire)
+	activitys:setValue(op, atype, val, expire)
 end
 
 
 ----------------------------------------------------------------
 ----------------------
 function init()
-	loadSystem()
+	activitys = { account_id = 'system' }
+	setmetatable(activitys, {__index = ActivitysMethod})
+	activitys:loadSystem()
 end
 
 function exit()

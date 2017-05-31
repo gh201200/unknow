@@ -115,15 +115,35 @@ function REQUEST.exploreEnd( args )
 		for i=1, cn do
 			local rets = usePackageItem(exploreDat.n32CardItemId, user.level )
 			for k, v in pairs(rets) do
-				table.insert(r,{x=k, y=v})
+				local hit = false
+				for _k,_v in pairs(r) do
+					if _v.x == k then
+						_v.y = _v.y + 1
+						hit = true
+						break
+					end
+				end
+				if hit == false then
+					table.insert(r,{x=k, y=v})
+				end
 			end
 			user.servicecmd.addItems("exploreEnd", rets)
 		end
 		local sn = math.floor(score * exploreDat.n32SkillC)
 		for i=1, sn do
 			local rets = usePackageItem(exploreDat.n32SkillItemId, user.level )
+			local hit = false
 			for k, v in pairs(rets) do
-				table.insert(r,{x=k, y=v})
+				for _k,_v in pairs(r) do
+					if _v.x == k then
+						_v.y = _v.y + 1 
+						hit = true
+						break
+					end
+				end
+				if hit == false then
+					table.insert(r,{x=k, y=v})
+				end
 			end
 			user.servicecmd.addItems("exploreEnd", rets)
 		end
@@ -141,10 +161,9 @@ function REQUEST.exploreRefresh( args )
 			errorCode = -1
 			break
 		end
-		local activity = snax.uniqueservice("activity")
 
 		local costMoney = 0
-		local val = activity.req.getValue(user.account.account_id, ActivityAccountType.RefreshExplore)
+		local val = user.activitys:getValue(ActivityAccountType.RefreshExplore)
 		if val >= Quest.RefreshExploreTimes then 
 			costMoney = Quest.RefreshExploreCost
 		end
@@ -154,7 +173,7 @@ function REQUEST.exploreRefresh( args )
 		end
 		--
 		user.account:addMoney("exploreRefresh", -costMoney)
-		activity.req.addValue("exploreRefresh", user.account.account_id, ActivityAccountType.RefreshExplore, 1,Time.tomorrow())
+		user.activitys:addValue("exploreRefresh", ActivityAccountType.RefreshExplore, 1,Time.tomorrow())
 		user.explore:resetExplore("exploreRefresh", unit.uuid)	
 	until true
 	return {errorCode=errorCode, uuid=args.uuid}

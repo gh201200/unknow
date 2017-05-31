@@ -8,6 +8,15 @@ function EntityManager:sendToAllPlayers(msg, val, except)
 	if not except then except = "" end
 	for k, v in pairs(self.entityList) do
 		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil and v.agent ~= nil  then
+			skynet.call(v.agent, "lua", "sendRequest_room", msg, val)
+		end
+	end
+end
+
+function EntityManager:sendToAllPlayersExt(msg, val, except)
+	if not except then except = "" end
+	for k, v in pairs(self.entityList) do
+		if v.entityType == EntityType.player and  string.find(except, v.serverId)==nil and v.agent ~= nil  then
 			skynet.call(v.agent, "lua", "sendRequest", msg, val)
 		end
 	end
@@ -103,16 +112,15 @@ function EntityManager:getPlayerByPlayerId(account_id)
 	return nil
 end
 
-function EntityManager:getMonsterCountByBatch(batch)
+function EntityManager:getMonsterCountByGroupId(gid)
 	local cnt = 0
-	for k, v in pairs(self.entityList) do
-		if v.entityType == EntityType.monster and v.batch == batch then
-			cnt = cnt + 1	
+	for k,v in pairs(self.entityList) do
+		if v.entityType == EntityType.monster and v.batch == gid then 
+			cnt =  cnt + 1	
 		end
 	end
 	return cnt
 end
-
 function EntityManager:getMonsterById(_id)
 	local lt = {}
 	for k, v in pairs(self.entityList) do
@@ -127,7 +135,7 @@ function EntityManager:getCloseEntityByType(source, _type)
 	local et = nil
 	local minLen = 0xffffffff
 	for k, v in pairs(self.entityList) do
-		if v.entityType == _type and v ~= source then
+		if v.entityType == _type and v ~= source and v:getHp() > 0 then
 			local ln = vector3.len(source.pos, v.pos)
 			if minLen > ln then
 				minLen = ln
@@ -160,32 +168,44 @@ function EntityManager:createPet(id,master,pos)
 	local pet = IPet.new(pos,dir)
 	g_entityManager:addEntity(pet)
 	pet.serverId = assin_server_id()	
-	pet:init(pt,master)
 	table.insert(master.pets,pet)	
 	local _pet = {petId = id,serverId = pet.serverId,posx = 0,posz = 0,camp = master.camp,masterId = master.serverId}
 	_pet.posx = math.ceil(pos.x * GAMEPLAY_PERCENT)
 	_pet.posz = math.ceil(pos.z * GAMEPLAY_PERCENT)
-	g_entityManager:sendToAllPlayers("summonPet",{pet = _pet } )
+	if pt.n32Type == 4 then
+		g_entityManager:sendToAllPlayersByCamp("summonPet",{pet = _pet },master )	
+	else
+		g_entityManager:sendToAllPlayers("summonPet",{pet = _pet })	
+	end
+	pet:init(pt,master)
 end
-function EntityManager:getTypeEntitys(source,skilldata)
+function EntityManager:getTypeEntitys(source,skilldata,isSelect)
+	local _type = "n32SelectTargetType" 
+	if isSelect == false then
+		_type = "n32AffectTargetType" 
+	end
 	local typeTargets = {}
+	if skilldata[_type] == 0 then
+		 table.insert(typeTargets,source)
+		return typeTargets
+	end
 	for _ek,_ev in pairs(self.entityList) do
 		if _ev ~= nil and (_ev:getType() == "IMapPlayer" or _ev:getType() == "IPet" or _ev:getType() == "IMonster" or  _ev:getType() == "IBuilding") then
-			if _ev:getHp() > 0 and ((_ev.entityType == EntityType.building and skilldata.n32SkillType == 0) or _ev.entityType ~= EntityType.building)  then
+			if _ev:getHp() > 0 and ((_ev.entityType == EntityType.building and skilldata.n32SkillType == 0) or _ev.entityType ~= EntityType.building) and _ev.entityType ~= EntityType.trap  then
 				--友方（包含自己）
-				if skilldata.n32SelectTargetType  == 1 and source:isKind(_ev) == true then
+				if (skilldata[_type]  == 1 or skilldata[_type]  == 7) and source:isKind(_ev) == true then
 					table.insert(typeTargets,_ev)
 				--友方（除掉自己）
-				elseif skilldata.n32SelectTargetType  == 2 and source:isKind(_ev) == true and source ~= _ev then
+				elseif skilldata[_type]  == 2 and source:isKind(_ev) == true and source ~= _ev then
 					table.insert(typeTargets,_ev)
 				--敌方
-				elseif skilldata.n32SelectTargetType  == 3 and source:isKind(_ev) == false then	
+				elseif (skilldata[_type]  == 3 or skilldata[_type]  == 6) and source:isKind(_ev) == false then	
 					table.insert(typeTargets,_ev)
 				--除自己所有人
-				elseif skilldata.n32SelectTargetType  == 4 and source ~= _ev then
+				elseif skilldata[_type]  == 4 and source ~= _ev then
 					table.insert(typeTargets,_ev)
 				--所有人
-				elseif skilldata.n32SelectTargetType  == 5 then
+				elseif skilldata[_type]  == 5 then
 					table.insert(typeTargets,_ev)
 				end
 			end
@@ -201,7 +221,7 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 	if skilldata.n32SkillTargetType == 0 then
 		tgt = source
 	end
-	local typeTargets = self:getTypeEntitys(source,skilldata)
+	local typeTargets = self:getTypeEntitys(source,skilldata,true)
 	local selects = {}
 	if skilldata.szSelectRange[1] == 'single' then
 		if (tgt:getType() ~= "transform" and tgt:getHp() > 0) or tgt:getType() == "transform"  then
@@ -222,10 +242,10 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 				table.insert(tSelects,{key = disLen,value = _v})
 			end
 		end
-		if select_mod == 0 then
+		if select_mod == 1 then
 			table.sort(tSelects,function(a,b) return a.key > b.key end)
 		else
-			table.sort(tSelects,function(a,b) return a.key > b.key end)
+			table.sort(tSelects,function(a,b) return a.key < b.key end)
 		end
 		local num  = 1 
 		for _k,_v in pairs(tSelects) do
@@ -243,7 +263,7 @@ function EntityManager:getSkillSelectsEntitys(source,target,skilldata,extra)
 			if ptInSector(_v.pos,center,uDir,r,theta) then
 				table.insert(selects,_v)
 			end
-		end		
+		end	
 	elseif skilldata.szSelectRange[1] == 'rectangle' then
 		local w = skilldata.szSelectRange[3]
 		local h = skilldata.szSelectRange[2]
@@ -275,7 +295,23 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 		table.insert(affects,source)
 		return affects
 	end
-	local typeTargets = self:getTypeEntitys(source,skilldata)
+	local typeTargets = self:getTypeEntitys(source,skilldata,false)
+	--6 7 类型不选取施法目标
+	if skilldata.n32AffectTargetType == 6 or skilldata.n32AffectTargetType == 7 then
+		for i=#typeTargets,1,-1 do
+			local t = typeTargets[i]
+			local hit = false
+			for _sk,_sv in pairs(selects) do
+				if _sv == t then
+					hit =  true
+					break
+				end
+			end
+			if hit == true then
+				table.remove(typeTargets,i)
+			end
+		end
+	end
 	--print("#typeTargets",#typeTargets)
 	for _tk,_tv in pairs(typeTargets) do
 		for _sk,_sv in pairs(selects) do
@@ -294,7 +330,9 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 				local uDir = extra --附加参数方向
 				local r = skilldata.szAffectRange[2]
 				local theta = skilldata.szAffectRange[3]
-				if ptInSector(_tv.pos,_sv.pos,uDir,r,theta) then
+				if _tv.serverId == _sv.serverId then
+					table.insert(affects,_tv)
+				elseif ptInSector(_tv.pos,_sv.pos,uDir,r,theta) then
 					table.insert(affects,_tv)
 				end	
 			end
@@ -302,6 +340,7 @@ function EntityManager:getSkillAffectEntitys(source,selects,skilldata,extra)
 	end
 	return affects
 end
+
 return EntityManager.new()
 
 

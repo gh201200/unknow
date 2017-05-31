@@ -26,7 +26,7 @@ local function updateMapEvent()
 	SpawnNpcManager:update( (nt - last_update_time) * 10 )
 	BattleOverManager:update( (nt - last_update_time) * 10 )
 	DropManager:update()
-
+	
 	last_update_time = nt 
 	skynet.timeout(3, updateMapEvent)
 end
@@ -57,6 +57,7 @@ local function playerReConnect(agent, aid)
 	local r = { resttime = BattleOverManager.RestTime }
 	skynet.call(agent, "lua", "sendRequest", "fightBegin", r)
 
+		
 	--monsters
 	local monsters = { spawnList = {} }
 	for k, v in pairs(EntityManager.entityList) do
@@ -103,7 +104,7 @@ local function playerReConnect(agent, aid)
 		end
 	end
 	skynet.call(agent, "lua", "sendRequest", "reSendHaveItems", {items=picks})
-	
+	skynet.call(agent,"lua","setReceveRoomInfo")
 end
 
 local CMD = {}
@@ -128,17 +129,25 @@ function CMD.move(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	args.x = args.x / GAMEPLAY_PERCENT
 	args.z = args.z / GAMEPLAY_PERCENT
-	if Map:isBlock( args.x, args.z ) then
-		Map:lineTest(player.pos, args)
-	end
 	player:setTargetPos(args)
 	response(true, nil)
 end
 
 function CMD.requestCastSkill(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local skillId = args.skillid + player.skillTable[args.skillid] - 1	
-	local err = player:setCastSkillId(skillId)
+	local skillId = args.skillid	
+	local targetId = args.playerId
+	local isCancel = args.isCancel
+	local err = 0
+	if isCancel == false then
+		err = player:setCastSkillId(skillId)
+		if err == 0 and targetId ~= 0 then
+			local target = EntityManager:getEntity(targetId)
+			player:setTarget(target)					
+		end
+	else
+		
+	end
 	response(true, { errorcode =  err ,skillid = args.skillid })
 end
 
@@ -146,12 +155,12 @@ function CMD.lockTarget(response,agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
 	local serverid = args.serverid
 	local target = EntityManager:getEntity(serverid)
-	if target ~= nil and target.entityType ~= EntityType.trap then
-		if player.ReadySkillId == 0 then
+	if target ~= nil and target.entityType ~= EntityType.trap and player:isDead() == false then
+		if player:getReadySkillId() == 0 then
 			--默认设置普攻
-			player.ReadySkillId = player:getCommonSkill()
+			player:setReadySkillId(player:getCommonSkill())
 		end
-		player:setTarget(target)
+		player:setLockTarget(target)
 	end
 	response(true, nil)
 end
@@ -171,9 +180,9 @@ end
 function waitForLoadingCompleted()
 	
 	if last_update_time then return end
-
+	
 	local r = { resttime = BattleOverManager.RestTime }
-	EntityManager:sendToAllPlayers("fightBegin", r)
+	EntityManager:sendToAllPlayersExt("fightBegin", r)
 	
 	for k, v in pairs(EntityManager.entityList) do
 		if v.entityType == EntityType.player  then
@@ -205,6 +214,7 @@ function CMD.loadingRes(response, agent, account_id, args)
 		if v.entityType == EntityType.player  then
 			if v:getLoadProgress() >= 100 then
 				num = num + 1
+				skynet.call(v.agent,"lua","setReceveRoomInfo")
 			end
 		end
 	end
@@ -221,17 +231,12 @@ function CMD.usePickItem(response, agent, account_id, args)
 	response(true, {errorCode = errorCode, x1=args.x1,y1=args.y1,x2=args.x2,y2=args.y2})
 end
 
-function CMD.upgradeSkill(response, agent, account_id, args)
-	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local errorCode, lv = player:upgradeSkill(args.skillId)
-	response(true, {errorCode = errorCode, skillId = args.skillId, level = lv})
-end
-
 function CMD.replaceSkill(response, agent, account_id, args)
 	local player = EntityManager:getPlayerByPlayerId(account_id)
-	local errorCode, skillId = DropManager:replaceSkill(player, args.sid, args.skillId)
-	if not skillId then skillId = 0 end
-	response(true, {errorCode = errorCode,skillId = skillId, beSkillId = args.skillId})
+	local errorCode,skillId,num = player:replaceSkill(args.skillId)
+	response(true, {errorCode = errorCode,beSkillId = args.skillId,SkillId = skillId})
+	print("skillId=====",skillId,num)
+	player:addSkill(skillId,num,true)
 end
 
 
@@ -241,8 +246,8 @@ function CMD.start(response, args)
 	
 	local sm = snax.uniqueservice("servermanager")
 	sm.post.roomstart(skynet.self(), args)
-	
-	local roomId = 1
+
+	local roomId =  3 
 	local mapDat = g_shareData.mapRepository[roomId]
 	
 	BattleOverManager:init( mapDat )
@@ -297,7 +302,7 @@ function CMD.start(response, args)
 		rb_sid = redBuilding.serverId,
 		bb_sid = blueBuilding.serverId,
 	}
-	
+		
 	EntityManager:callAllAgents("enterMap", skynet.self(), ret)
 
 	--开始等待客户端加载资源，最多等待6秒
@@ -330,7 +335,27 @@ end
 function REQUEST.addskill(response, args )
 	response(true, nil)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
-	player:addSkill( args.skillId, true )
+	if args.skillId == -1 then
+		local godSkill = player:getGodSkill()
+		player:addSkill(godSkill,1,true)
+	else
+		player:addSkill( args.skillId,1, true )
+	end
+end
+
+function REQUEST.openAutoAttack(response, args )
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	if player.useAutoAttack then
+		player.useAutoAttack = false
+	else
+		player.useAutoAttack = true
+	end	
+end
+function REQUEST.addhp(response, args )
+	response(true, nil)
+	local player = EntityManager:getPlayerByPlayerId( args.id )
+	player:addHp( args.hp,nil,player )
 end
 
 function REQUEST.addOffLineTime(response, args)
@@ -341,6 +366,15 @@ end
 
 function REQUEST.getOffLineTime(response, args)
 	local player = EntityManager:getPlayerByPlayerId( args.id )
+	if not player then
+		syslog.err("get offline time ",args.id) 
+		for k, v in pairs(EntityManager.entityList) do
+			if v.entityType == EntityType.player  then
+				syslog.err("player list ",v.account_id)
+			end
+		end
+		
+	end
 	local time = player:getOffLineTime()
 	response(true, time)
 end

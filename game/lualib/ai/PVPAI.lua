@@ -55,9 +55,13 @@ function PVPAI:reset()
 	self:setNextAiState("Idle")
 	self.source:setTarget(nil)
 end
+
 function PVPAI:update(dt)
 	PVPAI.super.update(self,dt)
 	--print("PVPAI update self.source=",self.source.serverId,self.mCurrentAIState)
+	if self.source.spell:isSpellCast() then
+		return true
+	end
 	if self:isRunAway() then
 		if  self.mCurrentAIState ~= "runAway" then
 			self:setNextAiState("runAway") --逃跑状态
@@ -114,16 +118,16 @@ end
 
 function PVPAI:onEnter_runAway()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
-	--if self.source:getDistance(self.blueTower) >= TowerHpR then 
-	--	self.source:setTarget(self.blueTower)
-	--end
+	if self.source:getDistance(self.blueTower) >= TowerHpR then 
+		self.source:setTarget(self.blueTower)
+	end
 end
 
 
 function PVPAI:onExec_runAway()
 	if self.source:getDistance(self.blueTower) > TowerHpR then
-		self.source:setTarget(self.blueTower)
-		self:setNextAiState("runAway")
+		--self.source:setTargetPos(self.blueTower.pos)
+		--self.source:setTarget(self.blueTower)
 		return
 	end
 	self:autoProtectAttack(TowerHpR)	
@@ -135,21 +139,23 @@ function PVPAI:onExec_runAway()
 end
 
 function PVPAI:onExit_runAway()
-	print("onExit_runAway")
+	print("onExit_runAway",self.source.serverId)
 end
 
 function PVPAI:onEnter_protect()
 	print("AIState:",self.mCurrentAIState,self.source.serverId)	
---	self:backToHome()	
-	self.source:setTarget(self.blueTower)
+	self:toBlueTower()
 end
 
-
+function PVPAI:toBlueTower()
+	--self.source:setTargetPos(self.blueTower.pos)
+	self.source:setTarget(self.blueTower)
+end
 function PVPAI:onExec_protect()
 	if self.source:getDistance(self.blueTower) < TownerProtectR then
 		self:autoProtectAttack(TownerProtectR)
 	else
-		self.source:setTarget(self.blueTower)
+		self:toBlueTower()
 	end
 	if self:isProtect() == false then
 		self:setNextAiState("Idle")
@@ -168,7 +174,8 @@ end
 function PVPAI:onExec_battle()
 	local target = self.source:getTarget()
 	if target ~= nil and self:canAttackPlayer(target) and self.source:getDistance(target) < hateR then
-		self.source:setTarget(target)
+		--self.source:setTarget(target)
+		self.source:aiCastSkill(target)
 		return
 	end
 	target = nil
@@ -214,7 +221,8 @@ end
 function PVPAI:onExec_farm()
 	local target =  self.source:getTarget()
 	if target ~= nil and target:getType() ~= "transform" and self.source:getDistance(target) < hateR and target:getHp() > 0 then
-	--	print("onExec_farm",self.source.serverId,target.serverId)	
+		self.source:aiCastSkill(target)	
+		--print("onExec_farm",self.source.serverId,target.serverId)	
 		return 
 	end
 	target = nil 
@@ -223,14 +231,14 @@ function PVPAI:onExec_farm()
 		att = 1 
 	end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMonster" and v:getHp() > 0 and  (v.attach == att or v.attach == 2) then
+		if v:getType() == "IMonster" and v:getHp() > 0 and  v.attach == att then
 			if self.source:getDistance(v) <= hateR then
 				target = v
 				break
 			else	
 				if v.attach == att then	
 					target = v
-				elseif v.attach == 2 and target == nil then
+				elseif target == nil then
 					target = v
 				end
 			end
@@ -254,7 +262,9 @@ end
 
 function PVPAI:onExec_assist()
 	if self.assister == nil then
-		self:setNextAiState("Idle")
+		if self.source.spell:isSpellRunning() == false then
+			self:setNextAiState("Idle")
+		end
 		return
 	end
 	local num = 0
@@ -268,10 +278,12 @@ function PVPAI:onExec_assist()
 			end
 		end
 	end
-	if #targets == 0 then
-		self.assister = nil 
-		self:setNextAiState("Idle")
-		return
+	if #targets == 0  then 
+		if self.source.spell:isSpellRunning() == false then
+			self.assister = nil 
+			self:setNextAiState("Idle")
+			return
+		end
 	else
 		local target =  self.source:getTarget()
 		local hit = false
@@ -285,7 +297,9 @@ function PVPAI:onExec_assist()
 		if hit == false then
 			self.source:aiCastSkill(targets[1])
 		else
-			self.source:setTarget(target)
+
+			self.source:aiCastSkill(target)
+			--self.source:setTarget(target)
 		end
 	end
 end
@@ -309,7 +323,7 @@ end
 function PVPAI:autoProtectAttack(protectR)
 	--local protectR = 3 --保卫半径
 	if self.source:getDistance(self.blueTower) > protectR then
-		self.source:setTarget(self.blueTower)
+		self:toBlueTower()
 		return
 	end
 	local target = self.source:getTarget()
@@ -330,7 +344,7 @@ function PVPAI:autoProtectAttack(protectR)
 		end
 	end
 	if target ~= nil then
-		self.source:setTarget(target)
+		self.source:aiCastSkill(target)
 	--else
 	--	self:setNextAiState("Idle")	
 	end
@@ -432,7 +446,7 @@ function PVPAI:isFarm()
 	target = self:getAssister()
 	if target ~= nil then return false end
 	for k,v in pairs(g_entityManager.entityList) do
-		if v:getType() == "IMonster" and (v.attach == 2 or v.attach == att) then
+		if v:getType() == "IMonster" and v.attach == att then
 			return true		
 		end
 	end
@@ -444,6 +458,9 @@ function PVPAI:isAttack()
 end
 
 function PVPAI:canAttackPlayer(v)
+	--if self.source.spell:isSpellRunning() then
+	--	return false
+	--end
 	if self.source:isKind(v,true) == false and (v:getType() == "IMapPlayer" or v:getType() == "IPet") and v:getHp() > 0 then 
 		return true
 	else

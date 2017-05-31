@@ -5,7 +5,7 @@ local NpcAI = require "ai.NpcAI"
 local EntityManager = require "entity.EntityManager"
 local Map = require "map.Map"
 local DropManager = require "drop.DropManager"
-
+local passtiveSpell =  require "skill.passtiveSpell"
 local IMonster = class("IMonster", Ientity)
 
 function IMonster.create(serverId, mt)
@@ -23,6 +23,7 @@ end
 function IMonster:ctor()
 	IMonster.super.ctor(self)
 	self.entityType = EntityType.monster	
+	self.szLink = {}
 	self.hateList = HateList.new(self)
 	self.ai = NpcAI.new(self)
 	self.skillCD = 0
@@ -36,7 +37,6 @@ end
 function IMonster:init(mt)
 	self.attDat = g_shareData.monsterRepository[mt.id]
 	self.modelDat = g_shareData.heroModelRepository[self.attDat.n32ModelId]
-	self:setPos(mt.px, 0, mt.pz)
 	self.bornPos:set(mt.px, 0, mt.pz)
 	self:calcStats()
 	self:setHp(self:getHpMax())
@@ -44,7 +44,24 @@ function IMonster:init(mt)
 	self.HpMpChange = true
 	self.StatsChange = true
 	self.attach = mt.attach
+	self:setPos(mt.px, 0, mt.pz)
 	IMonster.super.init(self)
+	for _k,_v in pairs(self.attDat.szSkill) do
+		local skilldata = g_shareData.skillRepository[_v]
+		if skilldata and skilldata.n32Active == 1 then
+			self.cooldown:addItem(_v) 
+			for i=#(self.spell.passtiveSpells),1,-1 do
+				local v = self.spell.passtiveSpells[i]
+				if v.skilldata.n32SeriId == skilldata.n32SeriId then
+					--移除旧的被动技能
+					v:onDead()
+					table.remove(self.spell.passtiveSpells,i)
+				end
+			end
+		end
+		local ps = passtiveSpell.new(self,skilldata,math.maxinteger)
+		table.insert(self.spell.passtiveSpells,ps)
+	end
 end
 
 
@@ -52,7 +69,7 @@ function IMonster:update(dt)
 	if self:getHp() <= 0 then return end
 	--强制移动状态 ai不更新	
 	if self.curActionState < ActionState.forcemove then
-		--self.ai:update(dt)
+		self.ai:update(dt)
 	end
 	
 	self.skillCD  = self.skillCD - dt
@@ -105,19 +122,22 @@ function IMonster:onDead()
 	--tell the clients
 	EntityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
 
-	self:clear_coroutine()
-	
+	self:clear_coroutine()	
 	--reset map
 	Map:add(self.pos.x, self.pos.z, 0, self.modelDat.n32BSize)
+		
 end
-
+function IMonster:getCommonSkill()
+	return self.attDat.n32CommonSkill
+end
 function IMonster:preCastSkill()
 	local castSkill = self.attDat.n32CommonSkill
+	--[[
 	if self.skillCD < 0 then
 		local skills = {}
 		local sumPercent = 0
 		for k, v in pairs(self.attDat.szSkill) do
-			if self.cooldown:getCdTime(v.skillId) <= 0 then
+			if self.cooldown:getCdTime(v) <= 0 then
 				sumPercent = sumPercent + v.percent
 				table.insert(skills, {skillId=v.skillId, percent=sumPercent})
 			end
@@ -131,7 +151,7 @@ function IMonster:preCastSkill()
 				end
 			end
 		end
-	end
+	end]]--
 	self:setPreSkillData(g_shareData.skillRepository[castSkill])
 end
 
@@ -140,6 +160,7 @@ function IMonster:clearPreCastSkill()
 end
 
 function IMonster:addHp(_hp, mask, source)    
+	if self:getHp() <= 0 and _hp <= 0 then return end
 	if self:getHp()+_hp <= 0 then                                             
                 self.hateList:addHate(source, self:getHp() + math.floor(self:getHpMax() * 0.2))
      	else                                                                  

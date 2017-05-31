@@ -3,7 +3,7 @@
 --@author Manoel Campos da Silva Filho - http://manoelcampos.com
 dofile("../3rd/LuaXMLlib/xml.lua")
 dofile("../3rd/LuaXMLlib/handler.lua")
-local filename = "./lualib/gamedata/MonsterRepository.xml"
+local filename = "./lualib/gamedata/FuseSkillRepository.xml"
 local xmltext = ""
 local f, e = io.open(filename, "r")
 if f then
@@ -32,17 +32,7 @@ for k, p in pairs(xmlhandler.root.info.item) do
 					tmpTb[_i] = true
 				end
 			else
-				if _i == "szSkill" then
-					tmpTb[_i] = {}
-					if _v ~= "" then
-						local strTb = string.split(_v,",")
-						for k, v in pairs( strTb ) do
-							table.insert(tmpTb[_i],tonumber(v))
-						end
-					end
-				else
-					tmpTb[_i] = _v
-				end
+				tmpTb[_i] = _v
 			end 
 		end
 	end

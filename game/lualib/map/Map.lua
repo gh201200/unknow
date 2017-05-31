@@ -6,8 +6,9 @@ local Map = class("Map")
 --height 15.6 = 39*0.4
 
 local MAP_XGRID_NUM = 68
-local MAP_ZGRID_NUM = 156
+local MAP_ZGRID_NUM = 158
 Map.MAP_GRID_SIZE = 0.1
+Map.CX = 3.4
 
 local dir = {
 	[0] = {0,1},
@@ -17,7 +18,8 @@ local dir = {
 	[4] = {0,-1},
 	[5] = {-1,-1},
 	[6] = {-1,0},
-	[7] = {-1,1}
+	[7] = {-1,1},
+	[8] = {0,0}
 }
 
 
@@ -69,16 +71,18 @@ function Map:load(terrain)
          	obstacle = obstacle,
  	}
 
---	self:dump()
+	--self:dump()
 end
 
 function Map:dump()
 	print('map data==================================')
 	local str = ''
-	for j=MAP_ZGRID_NUM-1,0,-1 do
+	for j=0, MAP_ZGRID_NUM-1 do
 		str = ''
 		for i=0, MAP_XGRID_NUM-1 do
-			str = str .. ' ' .. pf.block(self.m, i, j)
+			local a = pf.block(self.m, i, j)
+			if a ~= 0 then a = 1 end
+			str = str .. a
 		end
 		print(str)
 	end  
@@ -146,12 +150,10 @@ end
 
 
 
-function Map:emptyTest(s_px, s_pz, e_px, e_pz)
-	local gx = Map.POS_2_GRID(s_px)
-	local gz = Map.POS_2_GRID(s_pz)
+function Map:emptyTest(gx, gz)
 	for i=0,7 do
-		if Map.legal(gx+dir[i][0], gz+dir[i][1]) then
-			local w = pf.block(self.m, gx, gz)
+		if Map.legal(gx+dir[i][1], gz+dir[i][2]) then
+			local w = pf.block(self.m, gx+dir[i][1], gz+dir[i][2])
 			if w > 0 then
 				return false
 			end
@@ -185,7 +187,30 @@ function Map:lineTest(sp, ep)
 	dir:set(sp.x, sp.y, sp.z)
 	dir:sub( ep )
 	dir:normalize()
-	local set = 0.2
+	local set = 1
+	local step = 0
+	repeat
+		step = step + 1
+		if step > 20 then break end
+		dst:set(dir.x, dir.y, dir.z)
+		dst:mul_num( set * Map.MAP_GRID_SIZE  )
+		dst:add( ep )
+		ep.x = dst.x
+		ep.z = dst.z
+		if self:isBlock( dst.x, dst.z ) == false then
+			break
+		end
+		set = set + 1
+	until false
+end
+
+function Map:lineTestInv(sp, ep)
+	local dir = vector3.create()
+	local dst = vector3.create()
+	dir:set(ep.x, ep.y, ep.z)
+	dir:sub( sp )
+	dir:normalize()
+	local set = 0.5
 	repeat
 		dst:set(dir.x, dir.y, dir.z)
 		dst:mul_num( set * Map.MAP_GRID_SIZE  )
@@ -195,9 +220,29 @@ function Map:lineTest(sp, ep)
 		if self:isBlock( dst.x, dst.z ) == false then
 			break
 		end
-		set = set + 0.2
+		set = set + 0.5
 	until false
 end
+
+function Map:circleTest(sp, t)
+	local gx = Map.POS_2_GRID(sp.x)
+	local gz = Map.POS_2_GRID(sp.z)
+	local ok
+	for i=1, t do
+		for j=8, 0, -1 do
+			local dx = gx+dir[j][1]*i
+			local dz = gz+dir[j][2]*i
+			if self:emptyTest(dx, dz) then
+				local ep = {}
+				ep.x = Map.GRID_2_POS(dx)
+				ep.z = Map.GRID_2_POS(dz)
+				return ep
+			end
+		end
+	end
+	return nil
+end
+
 
 function Map:quadrantTest( pos )
 	if pos.x > self.width / 2 then

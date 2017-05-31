@@ -384,7 +384,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶英雄宝箱</szName>
@@ -398,7 +398,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>3000</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶高级英雄宝箱</szName>
@@ -412,7 +412,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>840</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶英雄宝箱</szName>
@@ -426,7 +426,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>4200</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶高级英雄宝箱</szName>
@@ -440,7 +440,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>960</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶英雄宝箱</szName>
@@ -454,7 +454,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>4800</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶高级英雄宝箱</szName>
@@ -468,7 +468,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>1080</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶英雄宝箱</szName>
@@ -482,7 +482,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>5400</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶高级英雄宝箱</szName>
@@ -496,7 +496,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>1200</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶英雄宝箱</szName>
@@ -510,7 +510,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>6000</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶高级英雄宝箱</szName>
@@ -524,7 +524,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>1320</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶英雄宝箱</szName>
@@ -538,7 +538,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>6600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶高级英雄宝箱</szName>
@@ -552,7 +552,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>1440</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶英雄宝箱</szName>
@@ -566,7 +566,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>7200</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶高级英雄宝箱</szName>
@@ -580,7 +580,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>390</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶技能宝箱</szName>
@@ -594,7 +594,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>2340</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>0</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>1</n32ArenaLvLwLimit>
 		<szName>一阶高级技能宝箱</szName>
@@ -608,7 +608,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>460</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶技能宝箱</szName>
@@ -622,7 +622,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>2760</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>2</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>2</n32ArenaLvLwLimit>
 		<szName>二阶高级技能宝箱</szName>
@@ -636,7 +636,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>530</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶技能宝箱</szName>
@@ -650,7 +650,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>3180</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>3</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>3</n32ArenaLvLwLimit>
 		<szName>三阶高级技能宝箱</szName>
@@ -664,7 +664,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶技能宝箱</szName>
@@ -678,7 +678,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>3600</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>4</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>4</n32ArenaLvLwLimit>
 		<szName>四阶高级技能宝箱</szName>
@@ -692,7 +692,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>680</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶技能宝箱</szName>
@@ -706,7 +706,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>4080</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>5</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>5</n32ArenaLvLwLimit>
 		<szName>五阶高级技能宝箱</szName>
@@ -720,7 +720,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>760</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶技能宝箱</szName>
@@ -734,7 +734,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>4560</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>6</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>6</n32ArenaLvLwLimit>
 		<szName>六阶高级技能宝箱</szName>
@@ -748,7 +748,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>900</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶技能宝箱</szName>
@@ -762,7 +762,7 @@
 		<n32Count>1</n32Count>
 		<n32Price>5400</n32Price>
 		<n32MoneyType>2</n32MoneyType>
-		<n32Limit>0</n32Limit>
+		<n32Limit>20</n32Limit>
 		<n32ArenaLvUpLimit>7</n32ArenaLvUpLimit>
 		<n32ArenaLvLwLimit>7</n32ArenaLvLwLimit>
 		<szName>七阶高级技能宝箱</szName>

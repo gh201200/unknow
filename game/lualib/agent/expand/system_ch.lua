@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local snax = require "snax"
+local Time = require "time"
 
 local SystemCh = class("SystemCh")
 
@@ -13,6 +14,10 @@ end
 
 function SystemCh:init( u )
 	user = u
+end
+
+function CMD.getActivityValue( atype )
+	return user.activitys:getValue(atype)
 end
 
 function CMD.isBindSkills( heroId )
@@ -46,15 +51,18 @@ end
 
 function REQUEST.upgradeCardColorLevel( args )
 	local errorCode = 0
+	print("REQUEST.upgradeCardColorLevel",args)
 	local card = user.cards:getCardByUuid(args.uuid)
 	repeat                                                                                 
-        	if not card then                                                                                                                                       
+        	print("11111111111111")
+		if not card then                                                                                                                                       
 			errorCode = -1
 			break                                                                                                                               
         	end
 		local cardDat = g_shareData.heroRepository[card.dataId]
 		local nextCardDat = g_shareData.heroRepository[card.dataId+1]	
 		
+        	print("2222222222222")
 		if not nextCardDat then
 			errorCode = 3	--已到最高品质
 			break
@@ -70,16 +78,19 @@ function REQUEST.upgradeCardColorLevel( args )
 			break
 		end
 	
+        	print("33333333333333")
 	
 		---------开始升级
 		--扣除金币
 		user.account:addGold("upgradeCardColorLevel", -cardDat.n32GoldNum)
+        	print("4444444444444")
 		--扣除碎片
 		user.cards:delCardByUuid("upgradeCardColorLevel", args.uuid, cardDat.n32WCardNum)
 		--开始升级
 		user.cards:updateDataId("upgradeCardColorLevel", args.uuid, cardDat.id+1)
 	until true
 	
+	print("REQUEST.upgradeCardColorLevel",{errorCode = errorCode, uuid = args.uuid})
 	return {errorCode = errorCode, uuid = args.uuid}
 end
 
@@ -88,14 +99,15 @@ function REQUEST.buyShopItem( args )
 	local costMoney = 0
 	local card = nil
 	local ids = {}
+	local expire = nil
 	local shopDat = g_shareData.shopRepository[args.id]
+	if shopDat.n32Type == 4 then	--材料
+		local cooldown = snax.queryservice 'cddown'
+		expire = cooldown.req.getValue( CoolDownSysType.RefreshShopCard )	--may be yiled here 
+	end		
 	local atype = 0
 	local hasBuy = 0
-	local activity = snax.queryservice 'activity'
-	local cooldown = snax.queryservice 'cddown'
 	local costPrice = 0
-	print( args )
-	print(shopDat)
 	repeat
 		if not shopDat then
 			errorCode = -1
@@ -105,8 +117,11 @@ function REQUEST.buyShopItem( args )
 	
 		if shopDat.n32Type == 4 then	--材料
 			atype = ActivityAccountType["BuyShopCard"..shopDat.n32Site]
-			hasBuy = activity.req.getValue(user.account.account_id, atype) 
+			hasBuy = user.activitys:getValue(atype) 
 			costPrice = shopDat.n32Price *(1 + hasBuy) * args.num
+		elseif shopDat.n32Type == 3 then	--宝箱
+			atype = ActivityAccountType["BaoXiang"..shopDat.n32Site]
+			hasBuy = user.activitys:getValue(atype) 
 		end
 		if shopDat.n32MoneyType == 1 then	--金币
 			if user.account:getGold() < costPrice then
@@ -125,8 +140,13 @@ function REQUEST.buyShopItem( args )
 					errorCode = 3	--购买数量限制
 			 		break
 				end
+			elseif shopDat.n32Type == 3 then	--宝箱
+				if hasBuy + args.num > shopDat.n32Limit then
+					errorCode = 3	--购买数量限制
+			 		break
+				end
 			elseif shopDat.n32Type == 5 then	--特惠	
-				local val = cooldown.req.getValue(user.account.account_id, CoolDownAccountType.TimeLimitSale)
+				local val = user.cooldowns:getValue(CoolDownAccountType.TimeLimitSale)
 				if val == 0 then
 					errorCode = -1
 					break
@@ -153,12 +173,14 @@ function REQUEST.buyShopItem( args )
 				ids[index+1] = v
 				index = index + 2
 			end
+			local expire = Time.tomorrow()
+			--local expire = os.time() + 60
+			user.activitys:addValue('buyShopItem', atype, shopDat.n32Count * args.num, expire)
 		elseif shopDat.n32Type == 4 then	--材料
 			local items = {}
 			items[shopDat.n32GoodsID] = shopDat.n32Count * args.num
 			user.servicecmd.addItems("buyShopItem", items)
-			local expire = cooldown.req.getSysValue( CoolDownSysType.RefreshShopCard )
-			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
+			user.activitys:addValue('buyShopItem', atype, shopDat.n32Count * args.num, expire)
 		elseif shopDat.n32Type == 5 then 	--特惠
 			local items = usePackageItem( shopDat.n32GoodsID, user.level )
 			user.servicecmd.addItems("buyShopItem", items)
@@ -168,22 +190,37 @@ function REQUEST.buyShopItem( args )
 				ids[index+1] = v
 				index = index + 2
 			end
-			cooldown.post.setValue(user.account.account_id, CoolDownAccountType.TimeLimitSale, 0)
+			user.cooldowns:setValue(CoolDownAccountType.TimeLimitSale, 0)
 		end
 
 	until true
 	return {errorCode = errorCode, shopId = args.id, ids = ids}
 end
+
 function REQUEST.updateCDData( args )
 	local uid = args.uid
-	local cooldown = snax.queryservice 'cddown'
-	local val = cooldown.req.getRemainingTime( uid )
+	local name, atype = user.cooldowns.calcNameType( uid )
+	print('updateCDData', name, atype)
+	if name == user.account.account_id then
+		val = user.cooldowns:getRemainingTime( atype )
+	else
+		local cooldown = snax.queryservice 'cddown'
+		val = cooldown.req.getRemainingTime( atype )
+	end
 	return {uid=uid, value=val}
 end
+
 function REQUEST.updateActivityData( args )
 	local uid = args.uid
-	local activity = snax.queryservice 'activity'
-	local unit = activity.req.getValueByUid( uid )
+	local name, atype = user.activitys.calcNameType( uid )
+	print('updateActivityData', name, atype)
+	local unit = nil
+	if name == user.account.account_id then
+		unit = user.activitys:getValueByUid( uid )
+	else
+		local activity = snax.queryservice 'activity'
+		unit = activity.req.getValueByUid( uid )
+	end
 	if unit then
 		return {uid=uid, value=unit.value, time = unit.expire-os.time()}
 	else
@@ -208,7 +245,6 @@ function REQUEST.bindSkill( args )
 	local errorCode = 0
 	local card = user.cards:getCardByUuid( args.uuidcard )
 	local skill = user.skills:getSkillByUuid( args.uuidskill )
-	print( user.skills.units )
 	repeat
 		if not card then
 			errorCode = -1
@@ -267,6 +303,56 @@ function REQUEST.strengthSkill( args )
 
 end
 
+function REQUEST.fuseSkill( args )
+	local errorCode = 0
+	local skill = user.skills:getSkillByUuid(args.uuid)
+	local itemId = 0
+	repeat                                                                                 
+        	if not skill then
+			errorCode = -1
+			break
+		end
+		local skillDat = g_shareData.skillRepository[skill.dataId]
+		local nextId = Macro_AddSkillGrade(skill.dataId, 1)
+		local nextSkillDat = g_shareData.skillRepository[nextId]	
+		if  nextSkillDat then
+			errorCode = 3	--还未到最高品质
+			break
+		end
+		local fuseDat = g_shareData.fuseSkillRepository[skillDat.n32Quality]
+        	if fuseDat.n32CostNum > skill.count then
+			errorCode = 1	--碎片数量不足
+			break
+		end
+	
+		---------开始融合
+		--扣除碎片
+		user.skills:delSkillByUuid("fuseSkill", args.uuid, fuseDat.n32CostNum)
+		--开始融合
+		local items = nil
+		local times = 0
+		repeat
+			times = times + 1
+			items = usePackageItem(fuseDat.n32ItemId, user.level)
+			for k, v in pairs(items) do
+				itemId = k
+				break
+			end
+			if times >= 10 then
+				syslog.err("fuse skill usePackageItem too many times ", times, itemId)
+			end
+			local dat = g_shareData.itemRepository[itemId]
+			if skillDat.n32SeriId ~= Macro_GetCardSerialId( dat.n32Retain1 ) then
+				break
+			end
+		until false
+		user.servicecmd.addItems("fuseSkill", items)
+	until true
+
+	return {errorCode = errorCode, uuid = args.uuid, skillId = itemId}
+end
+
+
 function REQUEST.reqTopRank( args )
 	local toprank = snax.uniqueservice("toprank")
 	local items = toprank.req.load( args )
@@ -291,7 +377,6 @@ end
 function REQUEST.recvMailItems( args )
 	local mail = user.mails:getMail( args.uuid )
 	local errorCode = 0
-	print( mail )
 	repeat
 		if not mail then
 			errorCode = -1

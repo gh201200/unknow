@@ -17,7 +17,6 @@ function REQUEST.updateMissionData( args )
 end
 
 function REQUEST.recvMissionAward( args )
-	print( args )
 	local unit = user.missions:getMissionByDataId( args.dataId )
 	local dat = g_shareData.missionRepository[args.dataId]
 	
@@ -57,8 +56,6 @@ function REQUEST.recvMissionAward( args )
 	
 	local ret = {errorCode = 0, dataId = args.dataId, ids = {}}
 	--发送奖励
-	unit.flag = unit.flag + 1
-	user.missions:updateMission("recvMissionAward", unit)
 	local items = {}
 	if dat.n32Type == DEF.MissionType.daily then
 		items = usePackageItem( Quest.Arena[user.level].DailyReward, user.level )
@@ -66,11 +63,14 @@ function REQUEST.recvMissionAward( args )
 			table.insert(ret.ids, {x=k, y=v})
 		end
 	elseif dat.n32Type == DEF.MissionType.achivement then
-		local st = string.split(dat.szAwards, ",")
+		local awardDat = g_shareData.missionRepository[unit.flag]
+		local st = string.split(awardDat.szAwards, ",")
 		items[tonumber(st[1])] = tonumber(st[2])
 	end
 	user.servicecmd.addItems("recvMissionAward", items)
 
+	unit.flag = unit.flag + 1
+	user.missions:updateMission("recvMissionAward", unit)
 	return ret
 end
 

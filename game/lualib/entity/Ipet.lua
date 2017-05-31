@@ -29,8 +29,13 @@ function IPet:init(pt,master)
 	self.bornPos:set(self.pos.x, 0, self.pos.z)
 	self.attDat = {}
         self:calcStats()
-        self:setHp(self:getHpMax())
-        self:setMp(self:getMpMax())
+	if pt.n32Type == 3 then
+	 	self:setHp(math.floor(self:getHpMax() * self.master:getHp() / self.master:getHpMax()))
+	 	self:setMp(math.floor(self:getMpMax() * self.master:getMp() / self.master:getMpMax()))
+	else
+        	self:setHp(self:getHpMax())
+        	self:setMp(self:getMpMax())
+	end
         self.HpMpChange = true
         self.StatsChange = true
 	self.modelDat = g_shareData.heroModelRepository[self.pt.modolId]
@@ -43,6 +48,7 @@ function IPet:init(pt,master)
 		if skillId ~= 0 then
 			local skilldata = g_shareData.skillRepository[skillId]	
 			if skilldata.n32Active == 1 then
+				self.cooldown:addItem(skillId)
 				for i=#(self.spell.passtiveSpells),1,-1 do
 					local v = self.spell.passtiveSpells[i]
 					if v.skilldata.n32SeriId == skilldata.n32SeriId then
@@ -52,7 +58,7 @@ function IPet:init(pt,master)
 					end
 				end
 			end	
-			local ps = passtiveSpell.new(self,skilldata)
+			local ps = passtiveSpell.new(self,skilldata,self.lifeTime)
 			table.insert(self.spell.passtiveSpells,ps)
 		end
 	end
@@ -73,6 +79,9 @@ function IPet:calcStats()
 	self.attDat.n32LStrength =  0 
 	self.attDat.n32LIntelligence = 0
 	self.attDat.n32LAgility = 0
+	self.attDat.n32RecvHp = 0
+	self.attDat.n32RecvMp = 0
+	
 	if self.pt.n32Type == 3 then
 		self.attDat.n32MainAtt = self.master.attDat.n32MainAtt
 	end
@@ -101,14 +110,14 @@ function IPet:preCast()
 		local cd = self.cooldown:getCdTime(skillId)
 		if cd <= 0 then
 			--释放技能
-			self.ReadySkillId = skillId
+			self:setReadySkillId(skillId)
 			return
 		end	
 	end
 	if attackId ~= 0 then
 		local cd =  self.cooldown:getCdTime(attackId)
 		if cd <= 0 then
-			self.ReadySkillId = attackId
+			self:setReadySkillId(attackId)
 		end
 	end
 end
@@ -126,9 +135,13 @@ function IPet:update(dt)
 end
 
 function IPet:onDead()
-	IPet.super.onDead(self)
 	g_entityManager:sendToAllPlayers("killEntity", {sid=self.serverId})
-	
+	for i=#(self.spell.passtiveSpells),1,-1 do
+		local v = self.spell.passtiveSpells[i]
+		v:onDead()
+		table.remove(self.spell.passtiveSpells,i)
+	end
+	IPet.super.onDead(self)
 	--response to agent
 	for k, v in pairs(self.coroutine_response) do
 		for p, q in pairs(v) do

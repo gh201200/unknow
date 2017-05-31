@@ -2,9 +2,9 @@ local vector3 = require "vector3"
 local Affect = require "skill.Affects.Affect"
 local repelAffect = class("repelAffect",Affect)
 local transfrom = require "entity.transfrom"
+local Map = require "map.Map"
 
 function repelAffect:ctor(owner,source,data)
-	--print("repelAffect")
 	self.super.ctor(self,owner,source,data)
 	self.effectId = data[3] or 0
 	self.distance = data[2] or 0
@@ -17,9 +17,11 @@ end
 
 function repelAffect:onEnter()
 	self.super.onEnter(self)
-	self.owner:setActionState(self.speed, ActionState.repel)
+	if self.owner:getHp() <= 0 then
+		self:onExit()
+		return
+	end
 	local dir = vector3.create()
-	print("repel.onEnter",self.owner.serverId,self.source.serverId)
 	if self.owner == self.source then
 		dir:set(-self.owner.dir.x,0,-self.owner.dir.z)
 	else
@@ -31,14 +33,20 @@ function repelAffect:onEnter()
 	local dst = vector3.create()
 	dst:set(self.owner.pos.x,0,self.owner.pos.z)
 	dst:add(dir)
-	print("dst==",dst.x,dst.z)
-	print("ownerpos ==",self.owner.pos.x,self.owner.pos.z)
 	
-         local r = {id = self.owner.serverId,action = 0,dstX = math.floor(dst.x * 10000),
-         dstZ = math.floor(dst.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
-	g_entityManager:sendToAllPlayers("pushForceMove",r)  
-	self.owner.targetPos = transfrom.new(dst,nil)  
-	self.owner:setActionState(self.speed, ActionState.chargeing) --冲锋状态
+	Map:lineTest(self.owner.pos,dst)
+		
+        self.distance = vector3.len(self.owner.pos,dst)  
+	if  self.distance > 0.2 then 
+		self.effectTime = math.floor(1000 * self.distance / self.speed)
+		local r = {id = self.owner.serverId,action = 0,dstX = math.floor(dst.x * 10000),
+       		 dstZ = math.floor(dst.z * 10000) ,dirX = math.floor(dir.x * 10000) ,dirZ = math.floor(dir.z * 10000),speed = math.floor(self.speed * 10000)}
+		g_entityManager:sendToAllPlayers("pushForceMove",r)  
+		self.owner.targetPos = transfrom.new(dst,nil)  
+		self.owner:setActionState(self.speed, ActionState.chargeing)
+	else
+		 self.effectTime = 0
+	end
 end
 
 function repelAffect:onExec(dt)

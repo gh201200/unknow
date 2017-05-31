@@ -45,7 +45,7 @@ end
 
 function BuildingAI:onExec_Chase()
 	if self.source.spell:isSpellRunning() then return end
-	self.source.ReadySkillId = self.source.pt["n32CommonSkill"]
+	self.source:setReadySkillId(self.source.pt["n32CommonSkill"])
 	local t = self.source:getTarget()
 	if t == nil then
 		self:setNextAiState("Idle")

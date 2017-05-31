@@ -4,6 +4,8 @@ local spell = class("spell")
 local transfrom = require "entity.transfrom"
 local sheduleSpell = require "skill.sheduleSpell"
 local passtiveSpell = require "skill.passtiveSpell"
+local vector3 = require "vector3"
+
 require "globalDefine"
 
 function spell:ctor(entity)
@@ -34,7 +36,7 @@ function spell:init(skilldata,skillTimes)
 	self.endTime = skillTimes[3]
 	self.totalTime = skillTimes[1] + skillTimes[2] + skillTimes[3]
 	self.triggerTime = skilldata.n32TriggerTime * 1000 
-	self.CTriggerTime = self.skilldata.n32AffectGap * 1000 
+	self.CTriggerTime = 0 --self.skilldata.n32AffectGap * 1000 
 	if self.triggerTime == 0 then
 		self.triggerTime = skillTimes["trigger"]
 	end
@@ -52,7 +54,6 @@ function spell:canBreak(ms)
 	if self:isSpellRunning() == false then return true end
 	if self.skilldata.n32NeedCasting == 2 then return false end	--持续施法不能被打断
 	if ms == ActionState.move and self.status == SpellStatus.Ready then
-		self.source.cooldown:resetCd(self.skilldata.id,0) 	
 		return true
 	end
 	if ms == ActionState.move and self.status == SpellStatus.End then 
@@ -66,6 +67,11 @@ function spell:enterChannel(time)
 	self.channelTime = time
 	self.status = SpellStatus.ChannelCast
 end
+
+function spell:isSpellCast()
+	return self.status == SpellStatus.Cast
+end
+
 function spell:breakSpell()
 	if self.status == SpellStatus.Ready then
 		--技能准备阶段被打断 不计入cd
@@ -100,6 +106,7 @@ end
 function spell:updatePasstiveSpells(dt)
 	for i= #self.passtiveSpells,1,-1 do
 		if self.passtiveSpells[i].isDead == true then
+			self.passtiveSpells[i]:onDead()
 			table.remove(self.passtiveSpells,i)
 		else
 			self.passtiveSpells[i]:update(dt)
@@ -130,20 +137,29 @@ function spell:onTriggerPasstives(_cond)
 	end
 end
 
+--是否是位移效果
+function spell:isDisSpell(str)
+	if str == "blink" or str == "charge" or str == "charge" then
+		return true
+	end
+	return false
+end
 --触发效果
 function spell:onTrigger(skilldata,source,srcTarget)
 	local skillTgt = srcTarget
 	--普通攻击
 	if skilldata.n32SkillType == 0 then
-		--攻击概率出发
-		self:onTriggerPasstives(1)
-		--攻击次数触发
-		self:onTriggerPasstives(2)
-		if srcTarget then
-			--受击概率触发
-			srcTarget.spell:onTriggerPasstives(3)
-			--受击概率触发
-			srcTarget.spell:onTriggerPasstives(4)
+		if skilldata.n32BulletType == 0 then
+			--攻击概率出发
+			self:onTriggerPasstives(1)
+			--攻击次数触发
+			self:onTriggerPasstives(2)
+			if srcTarget then
+				--受击概率触发
+				srcTarget.spell:onTriggerPasstives(3)
+				--受击概率触发
+				srcTarget.spell:onTriggerPasstives(4)
+			end
 		end
 	else
 		if skilldata.n32Active == 0 then
@@ -151,26 +167,49 @@ function spell:onTrigger(skilldata,source,srcTarget)
 		end
 	end
 	local selects = g_entityManager:getSkillSelectsEntitys(source,srcTarget,skilldata)
-	if skilldata.szSelectTargetAffect ~= "" then
-		self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
-	end
 	local targets = {}
+	local dir
+	if srcTarget then
+		dir = vector3.create(srcTarget.pos.x,0,srcTarget.pos.z)
+		dir:sub(source.pos)
+		dir:normalize() 
+	end
+	targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata,dir)
 	if skilldata.szMyAffect ~= "" then
-		self:trgggerAffect(skilldata.szMyAffect,targets,skilldata,true)
-		if skilldata.szMyAffect[1] ~= nil and skilldata.szMyAffect[1][1] == "charge" then
-			return
+		local tgt = nil
+		if self:isDisSpell(skilldata.szMyAffect[1][1]) == true then
+			local flag = skilldata.szMyAffect[1][3]
+			--当前选中地点
+			if flag == 0 then
+				tgt = srcTarget	
+			--当前选中施法中敌人	
+			elseif flag == 1 then
+				tgt = targets[1]
+			--正前方
+			elseif flag == 2 then
+		
+			else
+		
+			end
 		end
+		self:trgggerAffect(skilldata.szMyAffect,tgt,skilldata,true)
+		
+		--if skilldata.szMyAffect[1] ~= nil and skilldata.szMyAffect[1][1] == "charge" then
+		--	return
+		--end
 	end
 	if skilldata.n32BulletType ~= 0 then
-		if skilldata.n32SkillTargetType == 6 then
+		if(skilldata.n32SkillTargetType == 6 or skilldata.n32SkillTargetType == 4) and skilldata.n32BulletType ~= 2 then
 			g_entityManager:createFlyObj(source,srcTarget,skilldata)
-		else	
+		else
 			for _k,_v in pairs(selects) do
 				g_entityManager:createFlyObj(source,_v,skilldata)
 			end
 		end
 	else
-		targets = g_entityManager:getSkillAffectEntitys(source,selects,skilldata)
+		if skilldata.szSelectTargetAffect ~= "" then
+			self:trgggerAffect(skilldata.szSelectTargetAffect,selects,skilldata)
+		end
 		if #targets ~= 0 and skilldata.szAffectTargetAffect ~= ""then
 			self:trgggerAffect(skilldata.szAffectTargetAffect,targets,skilldata)
 		end
@@ -184,6 +223,7 @@ function spell:advanceEffect(dt)
 		self.triggerTime = self.triggerTime - dt
 		if self.triggerTime < 0 then
 			if self.isSheule ~= true then
+				print("self.totalTime==",self.totalTime)
 				self:synSpell(self.source,self.srcTarget,self.skilldata,self.status,self.totalTime)
 				self:onTrigger(self.skilldata,self.source,self.srcTarget)
 			end
@@ -195,8 +235,7 @@ end
 function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 	isSelf = isSelf or false
 	if isSelf == true then
-		--self.source.affectTable:buildAffects(targets[1],datas,skilldata.id)
-		self.source.affectTable:buildAffects(self.source,datas,skilldata.id)
+		self.source.affectTable:buildAffects(self.source,datas,skilldata.id,targets)
 	else
 		if skilldata.n32SkillType == 0 and self.source:getHit()*100 < math.random(0,100) then
 			--未命中
@@ -205,10 +244,10 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 			return
 		end	
 		for _k,_v in pairs(targets) do
-			if _v.affectState then
-				if bit_and(_v.affectState,AffectState.Invincible) ~= 0  then
+				if _v:isAffectState(AffectState.Invincible) and self.source ~= _v then
 					--无敌状态下
-				elseif bit_and(_v.affectState,AffectState.OutSkill) ~= 0 and skilldata.n32SkillType == 0 then
+					print("无敌状态")
+				elseif _v:isAffectState(AffectState.OutSkill) and skilldata.n32SkillType == 0 then
 					--普攻 魔免状态
 				else
 					if skilldata.n32SkillType == 0 and _v:getMiss()*100 > math.random(0,100) then
@@ -216,10 +255,13 @@ function spell:trgggerAffect(datas,targets,skilldata,isSelf)
 			         		local r = {acceperId = _v.serverId,producerId = self.source.serverId,effectId = 31005,effectTime = 0,flag = 0}
          					g_entityManager:sendToAllPlayers("pushEffect",r)		
 					else
+						if skilldata.n32BulletType ~= 0 and skilldata.n32SkillType == 0 then
+							self:onTriggerPasstives(1)
+							self:onTriggerPasstives(2)	
+						end
 						_v.affectTable:buildAffects(self.source,datas,skilldata.id)
 					end
 				end
-			end
 		end
 	end
 end
@@ -285,7 +327,11 @@ function spell:onReady(dt)
 			local time = self.castTime + self.endTime
 			self.source.cooldown:addItem(self.skilldata.id,time)
 		else
-			self.source.cooldown:addItem(self.skilldata.id) --加入cd
+			if self.source.cooldown:getChargeCount(self.skilldata.id) > 0 then
+				self.source.cooldown:addChargeCount(self.skilldata.id,true)
+			else
+				self.source.cooldown:addItem(self.skilldata.id) --加入cd
+			end
 		end
 		if self.source:getType() == "IMapPlayer" and self.skilldata.n32SkillType ~= 0 then
 			self.source:SynSkillCds(self.skilldata.id)
@@ -303,6 +349,7 @@ end
 --同步技能状态到客户端
 function spell:synSpell(source,srcTarget,skilldata,state,actionTime)
 	actionTime = actionTime or 0
+	actionTime = math.floor(actionTime)
 	local t = { srcId = source.serverId,skillId = skilldata.id ,state = state,attackNum = source.attackNum, actionTime = actionTime,targetId = 0,targetPos = nil}
 	t.targetPos = { x = math.ceil(source.pos.x * GAMEPLAY_PERCENT) ,y = 0 , z = math.ceil(source.pos.z*GAMEPLAY_PERCENT) } 
 	if srcTarget ~= nil then
@@ -332,19 +379,20 @@ function spell:onCast(dt)
 end
 
 function spell:onChannelCast(dt)
+	--持续施法中
+	self.CTriggerTime = self.CTriggerTime - dt
+	if self.CTriggerTime < 0 then
+		self.CTriggerTime = self.skilldata.n32AffectGap  * 1000--间隔时间
+		self:onTrigger(self.skilldata,self.source,self.srcTarget)
+	end
 	self.channelTime = self.channelTime - dt
 	if self.channelTime < 0 then
 		self.status = SpellStatus.End
 		print("持续 ---结束")
+		self.source:OnStand()
 		return
 	end
-	--持续施法中
-	self.CTriggerTime = self.CTriggerTime - dt
-	print("CTriggerTime<=0:",self.CTriggerTime,dt)
-	if self.CTriggerTime <= 0 then
-		self.CTriggerTime = self.skilldata.n32AffectGap  * 1000--间隔时间
-		self:onTrigger(self.skilldata,self.source,self.srcTarget)
-	end
+
 end
 
 function spell:onEnd(dt)
@@ -360,7 +408,7 @@ function spell:onEnd(dt)
 		if self.source:getTarget() ~= nil and self.source:getTarget():getType() == "transform" then
 			if self.source:getTarget() == self.srcTarget then
 				if self.source:getType() == "IMapPlayer" then 
-					self.source:setTarget( nil )
+					--self.source:setTarget( nil )
 				end
 			end
 		end

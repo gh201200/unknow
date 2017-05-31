@@ -33,7 +33,7 @@ local types = [[
 	HpMax 3 : integer
 	MpMax 4 : integer
   	Attack 5 : integer
-  	Defence 6 : integer
+  	MSpeed 6 : integer
   	ASpeed 7 : integer
 	exp 8 : integer
 	gold 9 : integer
@@ -321,6 +321,8 @@ move 201 {			#client move
 requestCastSkill 202 {
 	request {
 		skillid 0 : integer
+		playerId 1 : integer
+		isCancel 2 : boolean	
 	}
 	response {
 		errorcode 0 :integer
@@ -351,26 +353,14 @@ usePickItem 204 {
 	}
 }
 
-upgradeSkill 205 {
+replaceSkill 206 {
 	request {
 		skillId 0 : integer
 	}
 	response {
 		errorCode 0 : integer
-		skillId 1 : integer
-		level 2 : integer
-	}
-}
-
-replaceSkill 206 {
-	request {
-		sid 0 : integer
-		skillId 1 : integer
-	}
-	response {
-		errorCode 0 : integer
-		skillId 1 : integer
-		beSkillId 2 : integer
+		beSkillId 1 : integer
+		SkillId 2 : integer
 	}
 }
 
@@ -558,6 +548,23 @@ exploreRefresh 3015 {
 	}
 }
 
+fuseSkill 3016 {                                                                                 
+    request {                                                                                     
+        uuid 0 : string                                                                       
+    }                                                                                             
+    response {                                                                                    
+        errorCode 0 : integer                                                                 
+        uuid 1 : string 
+	skillId 2 : integer
+    }                                                                                             
+}
+
+beginRecPush 3017 {
+	request {
+		
+	}
+ }
+
 
 ]]
 
@@ -708,7 +715,7 @@ emitFlyObj 2005 {
 
 pickDropItem 2006 {
 	request {
-		items 0 : *string
+		sid 0 : integer
 	}
 }
 
@@ -803,7 +810,7 @@ reSendSkills 3007 {
 
 reSendHaveItems 3008 {
 	request { 
-		items 0 : *Vector2
+		items 0 : *Vector3
 	}
 }
 
@@ -818,6 +825,19 @@ pushForceMove 3009 {
 		speed 6 : integer
 	}
 }
+onPlayerDead 3010 {
+	request {
+		blueDeadNum 0 : integer
+		redDeadNum 1 : integer	
+	}
+}
+sendChargeCount 3011 {
+	request {
+		skillId 0 : integer
+		chargeCount 1 : integer
+	}
+}
+
 ]]
 
 game_proto.types = sparser.parse (types)

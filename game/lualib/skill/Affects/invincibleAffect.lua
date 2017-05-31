@@ -2,6 +2,7 @@ local Affect = require "skill.Affects.Affect"
 local invincibleAffect = class("invincibleAffect",Affect)
 
 function invincibleAffect:ctor(entity,source,data)
+	print("invincibleAffect=====")
 	self.super.ctor(self,entity,source,data)
 	self.effectTime = self.data[2] or 0
 	self.effectTime = self.effectTime * 1000
@@ -11,7 +12,7 @@ end
 
 function invincibleAffect:onEnter()
 	self.super.onEnter(self)
-	self.owner.affectState = bit_or(self.owner.affectState,self.control)
+	self.owner:addAffectState(self.control,1)
 end
 
 function invincibleAffect:onExec(dt)
@@ -23,7 +24,7 @@ end
 
 function invincibleAffect:onExit()
 	self.super.onExit(self)
-	self.owner.affectState = bit_and(self.owner.affectState,bit_not(self.control))
+	self.owner:addAffectState(self.control,-1)
 end
 
 return invincibleAffect

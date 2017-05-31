@@ -34,9 +34,11 @@ local ExploreMethod =
 	end;
 	--only for gm
 	setTime = function(self, _time)
+		local database = skynet.uniqueservice("database")
 		for k, v in pairs(self.units) do
 			if v.time > os.time() then
 				v.time = os.time() + _time
+				skynet.call(database, "lua", "explores", "update", self.account_id, v, "time") 
 			end
 		end
 		self:sendExploreData() 

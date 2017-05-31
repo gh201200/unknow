@@ -102,7 +102,7 @@ function NpcAI:onEnter_Chase()
 end
 
 function NpcAI:onExec_Chase()
-	if self.source:getTarget() == nil or bit_and(self.source:getTarget().affectState,AffectState.Invincible) ~= 0  then
+	if self.source:getTarget() == nil then
 		self:setNextAiState("GoHome")
 		return
 	end
@@ -137,7 +137,7 @@ function NpcAI:onExec_Battle()
 		self:updatePreCast()
 	end
 
-	if self.source:getTarget() == nil or bit_and(self.source:getTarget().affectState,AffectState.Invincible) ~= 0 then
+	if self.source:getTarget() == nil then
 		self:setNextAiState("Idle")
 		return
 	end
@@ -163,6 +163,7 @@ function NpcAI:onExec_GoHome()
 		self.source:setTargetPos(self.source.bornPos)
 	end
 	if self:isInBornPlace() then
+		self.source.hateList:clear()
 		local bx = Map.POS_2_GRID(self.source.bornPos.x)
 		local bz = Map.POS_2_GRID(self.source.bornPos.z)
 		if bx == Map.POS_2_GRID(self.source.pos.x) and bz == Map.POS_2_GRID(self.source.bornPos.z) then

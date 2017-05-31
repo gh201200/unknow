@@ -19,6 +19,7 @@ local gdd  = {
 	exploreRepository = require "exploreRepository",
 	dropPackage = require "dropPackage",
 	missionRepository = require "missionRepository",
+	fuseSkillRepository = require "fuseSkillRepository",
 }
 
 local CMD = {}

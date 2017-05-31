@@ -53,7 +53,7 @@ EventStampHandle[EventStampType.Move] = function (serverId, event)
 		event_stamp = {id = serverId, type=event, stamp=player.serverEventStamps[event]},
 		pos = {x=math.ceil(player.pos.x*GAMEPLAY_PERCENT), y= math.ceil(player.pos.y*GAMEPLAY_PERCENT),z=math.ceil(player.pos.z*GAMEPLAY_PERCENT)}, 
 		dir = {x=math.ceil(player.dir.x*GAMEPLAY_PERCENT), y=0, z=math.ceil(player.dir.z*GAMEPLAY_PERCENT)},			
-		action = player.curActionState,	
+		action = player.curActionState,
 		speed = math.ceil(player.moveSpeed * GAMEPLAY_PERCENT),
 	}
 	return r
@@ -70,13 +70,13 @@ EventStampHandle[EventStampType.Stats] = function (serverId, event)
 			HpMax = math.floor(player:getHpMax()),
 			MpMax = math.floor(player:getMpMax()),
 			Attack = math.floor(player:getAttack()),
-			Defence = math.floor(player:getDefence()),
+			MSpeed = math.floor(player:getMSpeed()*GAMEPLAY_PERCENT),
 			ASpeed = math.floor(player:getASpeed()*GAMEPLAY_PERCENT),
 			exp = player:getExp(),
 			gold = player:getGold(),
 			level = player:getLevel(),
 		}
-	}	
+	}
 	return r
 end
 

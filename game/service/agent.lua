@@ -24,6 +24,8 @@ local host, proto_request = protoloader.load (protoloader.GAME)
 local fightRecorder
 local recordState = 0
 local fightRecords = {}
+--接受room消息
+local bReceveRoomInfo = false
 --[[
 .user = { 
 		fd = conf.client, 
@@ -236,6 +238,7 @@ function CMD.Start (conf)
 		heartBeatTime = os.time(),
 		isOnLine = true,
 		isAi = conf.isAi,
+		workQueue = Queue.new(),
 	}
 	agentPlayer = user
 	user_fd = user.fd
@@ -266,11 +269,15 @@ function CMD.Request(name,args)
 	end
 end
 
+function CMD.setReceveRoomInfo()
+	bReceveRoomInfo = true
+end
 function CMD.reconnect(conf)
 	print("重新登录，重置fd:",conf.client)
 	CMD.addConnectRef(1)
 	user_fd	= conf.client
 	skynet.call(conf.gate, "lua", "forward", user_fd)
+	bReceveRoomInfo = false
 end
 
 function CMD.addConnectRef(r)
@@ -306,6 +313,12 @@ end
 function CMD.sendRequest (name, args)
 	send_request(name, args)
 end
+
+function CMD.sendRequest_room(name,args)
+	if bReceveRoomInfo == true then	
+		send_request(name, args)
+	end
+end
 --进入选英雄服务
 function CMD.enterPickHero(s_pickup)
 	request_hijack_msg(s_pickup)
@@ -315,7 +328,7 @@ end
 function CMD.enterMap(map,arg)
 	print("CMD.enterMap")
 	recordState = 1
-	fightRecorder = io.open(user.account.account_id .. "testRecorder.bytes", "wb") 	
+	--fightRecorder = io.open(user.account.account_id .. "testRecorder.bytes", "wb") 	
 	request_hijack_msg(map)
 	user.MAP = map
 	send_request("beginEnterPvpMap", arg) --开始准备切图
@@ -331,17 +344,16 @@ end
 
 --战斗结束产出
 function CMD.giveBattleGains( args )
-	local activity = snax.uniqueservice("activity")
 	if args.exp then
 		user.account:addExp("giveBattleGains", args.exp)
 	end
 	if args.gold then
-		activity.req.addValue("giveBattleGains", user.account.account_id, ActivityAccountType.PvpTimes, 1, Time.tomorrow())
+		user.activitys:addValue("giveBattleGains", ActivityAccountType.PvpTimes, 1, Time.tomorrow())
 		user.account:addGold("giveBattleGains", args.gold)
 	end
 	if args.items then
 		CMD.addItems("giveBattleGains", args.items)
-		activity.req.addValue("giveBattleGains", user.account.account_id, ActivityAccountType.PvpWinTimes, 1, Time.tomorrow())
+		user.activitys:addValue("giveBattleGains", ActivityAccountType.PvpWinTimes, 1, Time.tomorrow())
 	end
 
 	--推进任务

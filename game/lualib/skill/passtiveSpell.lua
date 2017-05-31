@@ -1,26 +1,38 @@
 local passtiveSpell = class("passtiveSpell")
-function passtiveSpell:ctor(src,skilldata)
+function passtiveSpell:ctor(src,skilldata,time)
 	self.skilldata = skilldata
 	self.source = src
 	self.isDead = false
+	if time == -1 then
+		time = math.maxinteger
+	end
+	self.lifeTime = time
 	self.attackTicks = 0
 	self.bAttackTicks = 0
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition ==8 or self.skilldata.n32TriggerCondition == 9 then
 		self.targets = {}
 	end
-	if self.skilldata.n32TriggerCondition == 9 then
-		--学习时候触发
-		self:trigger(9)
-	end
+	
 	if self.skilldata.szSelectTargetAffect ~= ""  then
 		--被动技能施法目标都是自己
 		local adds = {}
 		table.insert(adds,self.source)
 		self.source.spell:trgggerAffect(self.skilldata.szSelectTargetAffect,adds,self.skilldata)
 	end
+	if self.source:getType() ~= "IMapPlayer" then 
+		self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+	end
 end
 
 function passtiveSpell:update(dt)
+	self.lifeTime  = self.lifeTime - dt
+	if self.lifeTime < 0 then
+		self.isDead = true
+		return
+	end
+	if self.source.cooldown:getCdTime(self.skilldata.id) > 0 then
+		return
+	end
 	--碰撞触发
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 then	
 		local selects = g_entityManager:getSkillSelectsEntitys(self.source,nil,self.skilldata) 
@@ -57,26 +69,30 @@ function passtiveSpell:update(dt)
 		--dels移除buff
 		if #dels > 0 then
 			--local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
-			print("移除buff")
 			for _dk,_dv in pairs(dels) do
 				if _dv.affectTable then
-					--print("remove======",_dv.serverId,self.skilldata.n32SeriId)
 					_dv.affectTable:removeBySkillId(self.skilldata.id)
-				--	_dv.affectTable:removeById(uuid)
 				end
 			end	
 		end 
 		self.targets = targets	
 	end
+	if self.skilldata.n32TriggerCondition == 9 and self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
+		--学习时候触发
+		self:trigger(9)
+		self.targets = {self.source}
+	end
+
 end
 
 function passtiveSpell:onDead()
 	if self.skilldata.n32TriggerCondition == 7 or self.skilldata.n32TriggerCondition == 8 or self.skilldata.n32TriggerCondition == 9 then
-		local uuid = self.skilldata.n32SeriId * 100 + self.source.serverId
 		for _dk,_dv in pairs(self.targets) do
-			--_dv.affectTable:removeById(uuid)
+			print("passtiveSpell:onDead====",self.skilldata.id)
 			_dv.affectTable:removeBySkillId(self.skilldata.id)	
-		end	
+		end
+		self.source.cooldown:resetCd(self.skilldata.id,0);	
+		self.source.affectTable:removeBySkillId(self.skilldata.id)
 	end
 end
 
@@ -89,7 +105,6 @@ function passtiveSpell:trigger(_cond)
 		end
 	--攻击次数触发
 	elseif self.skilldata.n32TriggerCondition == 2 and _cond == 2 then
-		print("222222")
 		self.attackTicks = self.attackTicks + 1
 		if self.attackTicks >= self.skilldata.n32TriggerInfo then
 			isTrigger =  true
@@ -109,11 +124,9 @@ function passtiveSpell:trigger(_cond)
 		end
 	--施法触发	
 	elseif self.skilldata.n32TriggerCondition == 5 and _cond == 5 then
-		print("============trigger 5")
 		isTrigger =  true
 	--致命触发
 	elseif self.skilldata.n32TriggerCondition == 6 and _cond == 6 then
-		print("============trigger 666")
 		isTrigger =  true
 	--敌人碰撞触发
 	elseif self.skilldata.n32TriggerCondition == 7 and _cond == 7 then
@@ -123,19 +136,26 @@ function passtiveSpell:trigger(_cond)
 		isTrigger =  true
 	elseif self.skilldata.n32TriggerCondition == 9  and _cond == 9 then
 		isTrigger = true
-	end	
+	end
 	if self.source.cooldown:getCdTime(self.skilldata.id) <= 0 then
 		if isTrigger == true then
 			local tgt = nil
 			if self.skilldata.n32SkillTargetType == 0 then
 				tgt = self.source
 			else
-				--if self.skilldata.n32SkillTargetType == 1 then
 				tgt = self.source:getTarget()
 			end
-			self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
-			local _type = self.skilldata.szSelectRange[1]
-			self.source.spell:onTrigger(self.skilldata,self.source,tgt)
+			if _cond == 9 then
+				self.source.cooldown:resetCd(self.skilldata.id,math.maxinteger);
+			else
+				self.source.cooldown:resetCd(self.skilldata.id,self.skilldata.n32CD)
+				if self.skilldata.n32SkillType == 2 then
+					self.source:SynSkillCds(self.skilldata.id)
+				end
+			end
+			if tgt ~= nil then 
+				self.source.spell:onTrigger(self.skilldata,self.source,tgt)
+			end
 		end
 	end
 end

@@ -5,10 +5,14 @@ function skillAffect:ctor(entity,source,data,skillId)
 	self.super.ctor(self,entity,source,data,skillId)
 	self.triggerTime = data[5] or 0 
 	self.leftTime = data[6] or 0
-	self.triggerTime = self.triggerTime * 1000
+	if self.triggerTime ~= 0 then
+		--持续触发
+		self.triggerTime = -1
+	end
+	--self.triggerTime * 1000
 	self.leftTime = self.leftTime * 1000
 	self.effectId = data[7] or 0
-	self.effectTime = self.leftTime 
+	self.effectTime = self.leftTime
 	--self.projectId = skillId * 100000 + self.effectId
 end
 function skillAffect:onEnter()	
@@ -32,6 +36,7 @@ function skillAffect:onExec(dt)
 		self.triggerTime = self.data[5] * 1000
 		self:calAffect()
 	end
+
 end
 
 function skillAffect:onExit()
@@ -66,8 +71,9 @@ function skillAffect:calAffect()
 			demage = demage - shieldValue
 		end
 		self.owner:calShield()
-		if demage > self.owner:getHp() and self.owner:getType() == "IMapPlayer" then
+		if demage >= self.owner:getHp() and self.owner:getType() == "IMapPlayer" then
 			--复活
+			print("触发复活========")
 			self.owner.spell:onTriggerPasstives(6)
 		end
 		self.owner:addHp(-demage,HpMpMask.SkillHp, self.source)	

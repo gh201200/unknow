@@ -61,7 +61,7 @@ function ptInSector(pt,center,udir,r,theta)
 	dz = dz / length
 	local deg = math.deg(math.acos(dx * udir.x + dz * udir.z))
 	--print("deg======:",deg,"theta",theta)
-	return deg < theta
+	return deg <= theta
 end
 --------common func to register get set-----------
 function register_class_var(t, name, iv, callBack)
@@ -196,7 +196,6 @@ function Macro_GetMissionDataId( _serId, lv )
 	return _serId * 1000 + lv
 end
 function openPackage( strPkg, userLv )
-	print("openPackage", strPkg, userLv)
 	local drops = {}
 	local str1 = string.split(strPkg, ";")
 	for k, v in pairs( str1 ) do
@@ -227,22 +226,20 @@ function openPackage( strPkg, userLv )
 	local items = {}
 	for k, v in pairs(pkgIds) do
 		local drop = g_shareData.itemDropPackage[v]
+		local copyDrop = table.copy(drop)
 		local filterdrops = {}
-		if userLv then
-			local tr = 0
-			for p, q in pairs(drop) do
-				if type(q) == "table" then
-					if q.n32ArenaLvUpLimit <= userLv and q.n32ArenaLvLwLimit >= userLv then
-						table.insert(filterdrops, q)
-						tr = tr + q.n32Rate
-						q.n32Rate = tr
-					end
+		local tr = 0
+		for p, q in pairs(copyDrop) do
+			if type(q) == "table" then
+				if not userLv or (q.n32ArenaLvUpLimit <= userLv and q.n32ArenaLvLwLimit >= userLv) then
+					table.insert(filterdrops, q)
+					tr = tr + q.n32Rate
+					q.n32Rate = tr
 				end
 			end
-			filterdrops.totalRate = tr
-		else
-			filterdrops = drop
 		end
+		filterdrops.totalRate = tr
+		
 		if filterdrops.totalRate >= 1 then
 			local rd = math.random(1, filterdrops.totalRate)
 			local r = nil
@@ -267,7 +264,6 @@ function openPackage( strPkg, userLv )
 end
 
 function usePackageItem( itemId, lv )
-	print( itemId )
 	local itemDat = g_shareData.itemRepository[itemId]
 	if itemDat.n32Type ~= 4 then
 		return {}
