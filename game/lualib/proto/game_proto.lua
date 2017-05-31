@@ -245,6 +245,15 @@ query_event_buff 6 {
 	}
 }
 
+create 100 {
+         request {
+                 name 0 : string    
+                 client_pub 1 : string         
+         }
+         response {
+		 error_id 0 : integer
+         }
+}
 
 login 101 {
          request {
@@ -252,7 +261,7 @@ login 101 {
                  client_pub 1 : string         
          }
          response {
-		 user_exists 0 : boolean
+		 error_id 0 : integer
          }
 }
 
@@ -558,17 +567,6 @@ exploreRefresh 3015 {
 	}
 }
 
-fuseSkill 3016 {                                                                                 
-    request {                                                                                     
-        uuid 0 : string                                                                       
-    }                                                                                             
-    response {                                                                                    
-        errorCode 0 : integer                                                                 
-        uuid 1 : string 
-	skillId 2 : integer
-    }                                                                                             
-}
-
 
 ]]
 
@@ -829,7 +827,6 @@ pushForceMove 3009 {
 		speed 6 : integer
 	}
 }
-
 ]]
 
 game_proto.types = sparser.parse (types)

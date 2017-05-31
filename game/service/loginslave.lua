@@ -135,24 +135,55 @@ function CMD.auth (fd, addr)
 	assert (type == "REQUEST")
 	print("auth",type,name,args)
 	isread = true
+	local error_id = 0
 	if name == "login" then
 		assert (args and args.name and args.client_pub, "invalid handshake request")
 		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
 		account.account_id = args.name
 		if account.nick == nil then
-			--自动注册账号
-			skynet.call (database, "lua", "account", "create", args.name,"123456")
-			firstRegister(account.account_id)
+			--帐号不存在
+			-- skynet.call (database, "lua", "account", "create", args.name,)
+			-- firstRegister(account.account_id)
+			error_id = 1
+		elseif args.client_pub ~= account.password then
+			--密码错误
+			error_id = 2
+		else
+			local agent = sm.req.getAgent(account.account_id)
+			local reconnect = true
+			if agent == nil then
+				reconnect = false
+				agent = skynet.newservice ("agent")
+			end
+			skynet.call(master,"lua","agentEnter",agent,fd,account.account_id,reconnect)
 		end
-		local agent = sm.req.getAgent(account.account_id)
-		local reconnect = true
-		if agent == nil then
-			reconnect = false
-			agent = skynet.newservice ("agent")
-		end
-		skynet.call(master,"lua","agentEnter",agent,fd,account.account_id,reconnect)
 		local msg = response {
-			user_exists = false,
+			error_id = error_id,
+		}
+		send_msg (fd, msg)
+	elseif name == "create" then
+		assert (args and args.name and args.client_pub, "invalid handshake request")
+		local account = skynet.call (database, "lua", "account", "load", args.name) or error ("load account " .. args.name .. " failed")
+		account.account_id = args.name
+		if account.nick ~= nil then
+			--帐号不存在
+			-- skynet.call (database, "lua", "account", "create", args.name,)
+			-- firstRegister(account.account_id)
+			error_id = 1
+		else
+			skynet.call (database, "lua", "account", "create", args.name, args.client_pub)
+			firstRegister(account.account_id)
+			
+			local agent = sm.req.getAgent(account.account_id)
+			local reconnect = true
+			if agent == nil then
+				reconnect = false
+				agent = skynet.newservice ("agent")
+			end
+			skynet.call(master,"lua","agentEnter",agent,fd,account.account_id,reconnect)
+		end
+		local msg = response {
+			error_id = error_id,
 		}
 		send_msg (fd, msg)
 	end
