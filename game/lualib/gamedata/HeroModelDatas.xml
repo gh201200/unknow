@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="51100">
-		<szName>厚德</szName>
+		<szName>厚多</szName>
 		<szMod_name>Houde</szMod_name>
 		<n32Hight>Houde</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -36,7 +36,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51101">
-		<szName>殿前骑士</szName>
+		<szName>奥斯顿</szName>
 		<szMod_name>shengdianqishi</szMod_name>
 		<n32Hight>shengdianqishi</n32Hight>
 		<n32Speed>7000</n32Speed>
@@ -71,7 +71,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51200">
-		<szName>闪光</szName>
+		<szName>凯文</szName>
 		<szMod_name>Shanguang</szMod_name>
 		<n32Hight>Shanguang</n32Hight>
 		<n32Speed>8000</n32Speed>
@@ -106,7 +106,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51201">
-		<szName>弹弓小子</szName>
+		<szName>尼尔</szName>
 		<szMod_name>nier</szMod_name>
 		<n32Hight>nier</n32Hight>
 		<n32Speed>11000</n32Speed>
@@ -141,7 +141,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51300">
-		<szName>天女</szName>
+		<szName>菲碧</szName>
 		<szMod_name>Tiannv</szMod_name>
 		<n32Hight>Tiannv</n32Hight>
 		<n32Speed>10000</n32Speed>
@@ -176,7 +176,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="51301">
-		<szName>钟表匠</szName>
+		<szName>撒谬尔</szName>
 		<szMod_name>Zhongbiaogong</szMod_name>
 		<n32Hight>Zhongbiaogong</n32Hight>
 		<n32Speed>10000</n32Speed>
@@ -211,7 +211,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52100">
-		<szName>狂僧</szName>
+		<szName>柯克*李</szName>
 		<szMod_name>Kuangseng</szMod_name>
 		<n32Hight>Kuangseng</n32Hight>
 		<n32Speed>5500</n32Speed>
@@ -246,7 +246,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52101">
-		<szName>龙女</szName>
+		<szName>格萝利娅</szName>
 		<szMod_name>Longnv</szMod_name>
 		<n32Hight>Longnv</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -281,7 +281,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52200">
-		<szName>修行者</szName>
+		<szName>夕巴斯汀</szName>
 		<szMod_name>Xiuxingzhe</szMod_name>
 		<n32Hight>Xiuxingzhe</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -316,7 +316,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52201">
-		<szName>蒂皮</szName>
+		<szName>若拉</szName>
 		<szMod_name>Gongzhu</szMod_name>
 		<n32Hight>Gongzhu</n32Hight>
 		<n32Speed>12000</n32Speed>
@@ -351,7 +351,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52301">
-		<szName>乌鸦</szName>
+		<szName>西维娅</szName>
 		<szMod_name>Wuya</szMod_name>
 		<n32Hight>Wuya</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -386,7 +386,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="52300">
-		<szName>风之旅人</szName>
+		<szName>麦斯威尔</szName>
 		<szMod_name>lvren</szMod_name>
 		<n32Hight>lvren</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -421,7 +421,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53100">
-		<szName>牛博士</szName>
+		<szName>柏德温</szName>
 		<szMod_name>Niu</szMod_name>
 		<n32Hight>Niu</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -456,7 +456,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53101">
-		<szName>机甲少女</szName>
+		<szName>米娅</szName>
 		<szMod_name>miya</szMod_name>
 		<n32Hight>miya</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -491,7 +491,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53200">
-		<szName>神狙</szName>
+		<szName>肖恩</szName>
 		<szMod_name>shenju</szMod_name>
 		<n32Hight>shenju</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -526,7 +526,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53201">
-		<szName>安娜</szName>
+		<szName>尤娜</szName>
 		<szMod_name>anna</szMod_name>
 		<n32Hight>anna</n32Hight>
 		<n32Speed>9000</n32Speed>
@@ -561,7 +561,7 @@
 		<n32BSize>3</n32BSize>
 	</item>
 	<item id="53300">
-		<szName>法老</szName>
+		<szName>莫顿</szName>
 		<szMod_name>falao</szMod_name>
 		<n32Hight>falao</n32Hight>
 		<n32Speed>8000</n32Speed>
