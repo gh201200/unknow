@@ -8682,11 +8682,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,500,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -8735,11 +8735,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,500,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -8788,11 +8788,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,500,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -8841,11 +8841,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,500,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -8894,11 +8894,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,580,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -8947,11 +8947,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,580,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9000,11 +9000,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,580,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9053,11 +9053,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,580,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9106,11 +9106,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,660,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9159,11 +9159,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,660,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9212,11 +9212,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,660,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9265,11 +9265,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,660,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9318,11 +9318,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,740,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9371,11 +9371,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,740,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9424,11 +9424,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,740,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9477,11 +9477,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,740,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9530,11 +9530,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,820,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9583,11 +9583,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,820,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9636,11 +9636,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,820,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9689,11 +9689,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,820,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9742,11 +9742,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,900,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9795,11 +9795,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,900,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9848,11 +9848,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,900,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9901,11 +9901,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,900,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -9954,11 +9954,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1,980,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10007,11 +10007,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,980,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10060,11 +10060,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,980,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10113,11 +10113,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,980,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10166,11 +10166,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,1060,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10219,11 +10219,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,1060,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10272,11 +10272,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,1060,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10325,11 +10325,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,1060,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10378,11 +10378,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,1140,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10431,11 +10431,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,1140,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10484,11 +10484,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,1140,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10537,11 +10537,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,1140,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10590,11 +10590,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,1.5,1220,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10643,11 +10643,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2,1220,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10696,11 +10696,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,2.5,1220,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -10749,11 +10749,11 @@
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
+		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:1,3,1220,0,0,31007]</szAffectTargetAffect>
-		<szDescribe>　　根据攻击力，为自身回复大量生命</szDescribe>
+		<szDescribe>　　根据攻击力，为我方英雄回复大量生命</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　当圣西瑞尔倒在午夜的莹矿镇前，他觉得自己死定了。但在矿工们将他从睡梦中唤醒，他发现满身的疲倦和伤痕全都消失了。\n　　　　　　　——圣西瑞尔大教堂记事第二卷</szInfo>
@@ -15045,8 +15045,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103001,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103002">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103001,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103003">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103001,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103004">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103001,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15098,8 +15257,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103011,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103012">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103011,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103013">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103011,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103014">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103011,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15151,8 +15469,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103021,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103022">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103021,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103023">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103021,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103024">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103021,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15204,8 +15681,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103031,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103032">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103031,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103033">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103031,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103034">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103031,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15257,8 +15893,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103041,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103042">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103041,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103043">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103041,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103044">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103041,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15310,8 +16105,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103051,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103052">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103051,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103053">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103051,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103054">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103051,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15363,8 +16317,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103061,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103062">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103061,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103063">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103061,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103064">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103061,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15416,8 +16529,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103071,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103072">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103071,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103073">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103071,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103074">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103071,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15469,8 +16741,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103081,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103082">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103081,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103083">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103081,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103084">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103081,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -15522,8 +16953,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103091,5,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103092">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103091,8,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103093">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[addskill:60103091,11,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
+		<n32ShowRange>1.6</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10103094">
+		<n32SeriId>10103</n32SeriId>
+		<szName>圣洁之力</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10103.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[addskill:60103091,14,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，增加自身周围1.6米范围内友方单位的生命恢复速度</szDescribe>
+		<szDescribe>　　在接下来的数秒内，增加自身周围2米范围内友方单位的生命恢复速度</szDescribe>
 		<n32ShowRange>1.6</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　神不会抛弃任何信徒，只是有时候他的帮助不那么明显。</szInfo>
@@ -72281,7 +73871,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,12,0,-1,60001]</szSelectTargetAffect>
@@ -72334,7 +73924,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,14,0,-1,60001]</szSelectTargetAffect>
@@ -72387,7 +73977,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,16,0,-1,60001]</szSelectTargetAffect>
@@ -72440,7 +74030,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,18,0,-1,60001]</szSelectTargetAffect>
@@ -72493,7 +74083,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,20,0,-1,60001]</szSelectTargetAffect>
@@ -72546,7 +74136,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,22,0,-1,60001]</szSelectTargetAffect>
@@ -72599,7 +74189,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,24,0,-1,60001]</szSelectTargetAffect>
@@ -72652,7 +74242,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,26,0,-1,60001]</szSelectTargetAffect>
@@ -72705,7 +74295,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,28,0,-1,60001]</szSelectTargetAffect>
@@ -72758,7 +74348,7 @@
 		<n32BulletTarget>0</n32BulletTarget>
 		<n32BulletBombId>0</n32BulletBombId>
 		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[circle:1.6,-1,0]</szAffectRange>
+		<szAffectRange>[circle:2,-1,0]</szAffectRange>
 		<n32AffectTargetType>1</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect>[rehp:0,0,30,0,-1,60001]</szSelectTargetAffect>
