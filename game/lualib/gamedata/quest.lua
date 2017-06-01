@@ -82,7 +82,7 @@
 	MaxReplaceSkillTimes = 3,
 
 	--免费刷新探索次数
-	RefreshExploreTimes = 3,
+	RefreshExploreTimes = 0,
 	
 	--探索花费钻石
 	RefreshExploreCost = 20,
