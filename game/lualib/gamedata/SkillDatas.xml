@@ -7420,7 +7420,7 @@
 		<szInfo>　　如果你觉得祷辞太多软弱，不足以彰显神的力量，我也还有别的办法……\n　　　　　　　　——第九教区首席骑士奥斯顿</szInfo>
 		<n32ShowPortrait>2</n32ShowPortrait>
 	</item>
-	<item id="10003041">
+	<item id="10003042">
 		<n32SeriId>10003</n32SeriId>
 		<szName>践踏</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10003.png</szIcon>
@@ -7473,7 +7473,7 @@
 		<szInfo>　　如果你觉得祷辞太多软弱，不足以彰显神的力量，我也还有别的办法……\n　　　　　　　　——第九教区首席骑士奥斯顿</szInfo>
 		<n32ShowPortrait>2</n32ShowPortrait>
 	</item>
-	<item id="10003041">
+	<item id="10003043">
 		<n32SeriId>10003</n32SeriId>
 		<szName>践踏</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10003.png</szIcon>
@@ -7526,7 +7526,7 @@
 		<szInfo>　　如果你觉得祷辞太多软弱，不足以彰显神的力量，我也还有别的办法……\n　　　　　　　　——第九教区首席骑士奥斯顿</szInfo>
 		<n32ShowPortrait>2</n32ShowPortrait>
 	</item>
-	<item id="10003041">
+	<item id="10003044">
 		<n32SeriId>10003</n32SeriId>
 		<szName>践踏</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_10003.png</szIcon>
