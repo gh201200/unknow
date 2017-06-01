@@ -19285,8 +19285,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,150,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,150,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19338,8 +19338,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,150,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,150,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19391,8 +19391,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,150,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,150,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19444,8 +19444,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,150,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,150,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19497,8 +19497,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,170,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,170,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19550,8 +19550,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,170,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,170,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19603,8 +19603,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,170,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,170,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19656,8 +19656,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,170,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,170,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19709,8 +19709,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,190,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,190,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19762,8 +19762,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,190,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,190,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19815,8 +19815,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,190,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,190,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19868,8 +19868,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,190,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,190,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19921,8 +19921,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,210,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,210,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -19974,8 +19974,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,210,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,210,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20027,8 +20027,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,210,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,210,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20080,8 +20080,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,210,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,210,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20133,8 +20133,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,230,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,230,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20186,8 +20186,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,230,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,230,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20239,8 +20239,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,230,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,230,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20292,8 +20292,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,230,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,230,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20345,8 +20345,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,250,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,250,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20398,8 +20398,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,250,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,250,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20451,8 +20451,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,250,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,250,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20504,8 +20504,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,250,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,250,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20557,8 +20557,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,270,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,270,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20610,8 +20610,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,270,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,270,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20663,8 +20663,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,270,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,270,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20716,8 +20716,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,270,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,270,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20769,8 +20769,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,290,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,290,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20822,8 +20822,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,290,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,290,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20875,8 +20875,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,290,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,290,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20928,8 +20928,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,290,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,290,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -20981,8 +20981,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,310,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,310,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21034,8 +21034,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,310,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,310,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21087,8 +21087,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,310,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,310,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21140,8 +21140,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,310,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,310,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21193,8 +21193,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.6,330,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.6,330,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21246,8 +21246,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,0.8,330,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,0.8,330,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21299,8 +21299,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1,330,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1,330,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21352,8 +21352,8 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[damage:2,1.2,330,0,0,30005][repel:0.6,1,32001]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并击退0.6米</szDescribe>
+		<szAffectTargetAffect>[damage:2,1.2,330,0,0,30005][repel:1,1,32001]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并击退1米</szDescribe>
 		<n32ShowRange>1.2</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　盾牌不仅仅只能带来护卫圣物的勇气，还有真实的力量。\n　　　　　　　　　　　　——独行传教士厚多</szInfo>
@@ -21403,7 +21403,7 @@
 		<n32BulletRange>0</n32BulletRange>
 		<szAffectRange>[single:0,0]</szAffectRange>
 		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect>[invincible:1,51006]</szMyAffect>
+		<szMyAffect>[invincible:5,51006]</szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[curehp:2,0.5,10,0,0,1,31013]</szAffectTargetAffect>
 		<szDescribe>　　持续施法，获得无敌并持续恢复生命</szDescribe>
