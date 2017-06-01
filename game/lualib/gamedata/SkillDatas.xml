@@ -12925,8 +12925,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.15,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.15,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102002">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.15,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102003">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.15,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102004">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.15,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -12978,8 +13137,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.14,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.14,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102012">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.14,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102013">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.14,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102014">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.14,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13031,8 +13349,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.13,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.13,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102022">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.13,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102023">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.13,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102024">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.13,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13084,8 +13561,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.12,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.12,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102032">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.12,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102033">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.12,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102034">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.12,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13137,8 +13773,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.11,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.11,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102042">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.11,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102043">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.11,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102044">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.11,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13190,8 +13985,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.10,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.10,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102052">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.10,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102053">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.10,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102054">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.10,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13243,8 +14197,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.09,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.09,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102062">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.09,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102063">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.09,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102064">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.09,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13296,8 +14409,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.08,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.08,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102072">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.08,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102073">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.08,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102074">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.08,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13349,8 +14621,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.07,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.07,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102082">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.07,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102083">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.07,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102084">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.07,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
@@ -13402,8 +14833,167 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[hp:0,-0.06,0,0,10,0][mov:0,0.15,0,0,10,0]</szAffectTargetAffect>
-		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加移动速度</szDescribe>
+		<szAffectTargetAffect>[hp:0,-0.06,0,0,10,0][atk:0,0.04,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102092">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>2</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.06,0,0,10,0][atk:0,0.06,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102093">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>3</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.06,0,0,10,0][atk:0,0.08,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="10102094">
+		<n32SeriId>10102</n32SeriId>
+		<szName>轻装上阵</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_10102.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>4</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>14</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[hp:0,-0.06,0,0,10,0][atk:0,0.10,0,0,10,0]</szAffectTargetAffect>
+		<szDescribe>　　在接下来的数秒内，减少自身生命上限，增加攻击伤害</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　有时你可能来不及擦亮你的长矛，戴上你的盾牌，但神的眷顾始终与你同行。</szInfo>
