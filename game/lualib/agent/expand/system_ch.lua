@@ -144,7 +144,7 @@ function REQUEST.buyShopItem( args )
 		end
 		
 		if shopDat.n32Type == 3 then	--宝箱
-			if not user.account:haveBuyBoxTimes(-args.num) then
+			if not user.account:haveBuyBoxTimes(args.num) then
 				errorCode = 4	--购买今日购买次数已用完
 				break
 			end
@@ -172,7 +172,7 @@ function REQUEST.buyShopItem( args )
 			local expire = os.time() + 60
 			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
 			
-			user.account:addBuyBoxTimes(args.num)
+			user.account:addBuyBoxTimes(-args.num)
 		elseif shopDat.n32Type == 4 then	--材料
 			local items = {}
 			items[shopDat.n32GoodsID] = shopDat.n32Count * args.num
