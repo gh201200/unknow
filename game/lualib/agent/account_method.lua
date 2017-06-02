@@ -162,12 +162,12 @@ local AccountMethod =
 		return self.unit.exploretimes
 	end;
 	haveExploreTimes = function(self)
-		refreshTimes(self)
+		self:refreshTimes()
 		return self.unit.exploretimes > 0 or self.unit.exploretimes == -1
 	end;
 	addExploreTimes = function(self, _time)
 		if _time == 0 then return end
-		refreshTimes(self)
+		self:refreshTimes()
 		self.unit.exploretimes = self.unit.exploretimes + _time
 		self:sendAccountData()
 		
@@ -176,16 +176,16 @@ local AccountMethod =
 	end;
 	
 	getBuyBoxTimes = function(self)
-		refreshTimes(self)
+		self:refreshTimes()
 		return self.unit.buyboxtimes
 	end;
 	haveBuyBoxTimes = function(self, time)
-		refreshTimes(self)
+		self:refreshTimes()
 		return self.unit.buyboxtimes >= time or self.unit.buyboxtimes == -1
 	end;
 	addBuyBoxTimes = function(self, _time)
 		if _time == 0 then return end
-		refreshTimes(self)
+		self:refreshTimes()
 		self.unit.buyboxtimes = self.unit.buyboxtimes + _time
 		self:sendAccountData()
 		
