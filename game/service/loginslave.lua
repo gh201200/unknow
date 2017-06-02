@@ -170,6 +170,8 @@ function CMD.auth (fd, addr)
 			-- skynet.call (database, "lua", "account", "create", args.name,)
 			-- firstRegister(account.account_id)
 			error_id = 1
+		elseif args.client_pub and #args.client_pub == 0 then--无密码时为客户端请求判断帐号名是否可用
+			error_id = 2
 		else
 			skynet.call (database, "lua", "account", "create", args.name, args.client_pub)
 			firstRegister(account.account_id)

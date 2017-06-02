@@ -108,6 +108,7 @@ local function onEnterGame()
 	--tell watchdog
 	skynet.call(user.watchdog, "lua", "userEnter", user.account.account_id, user.fd)
 
+	user.account:refreshTimes()
 	user.account:sendAccountData()
 	user.cards:sendCardData()
 	user.explore:sendExploreData()

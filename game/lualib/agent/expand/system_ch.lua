@@ -153,7 +153,13 @@ function REQUEST.buyShopItem( args )
 				end 
 			end
 		end
-	
+		
+		if shopDat.n32Type == 3 then	--宝箱
+			if not user.account:haveBuyBoxTimes(args.num) then
+				errorCode = 4	--购买今日购买次数已用完
+				break
+			end
+		end
 		-------------开始购买
 		--扣除货币
 		if shopDat.n32MoneyType == 1 then	--金币
@@ -173,9 +179,11 @@ function REQUEST.buyShopItem( args )
 				ids[index+1] = v
 				index = index + 2
 			end
-			local expire = Time.tomorrow()
-			--local expire = os.time() + 60
-			user.activitys:addValue('buyShopItem', atype, shopDat.n32Count * args.num, expire)
+			--local expire = Time.tomorrow()
+			local expire = os.time() + 60
+			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
+			
+			user.account:addBuyBoxTimes(-args.num)
 		elseif shopDat.n32Type == 4 then	--材料
 			local items = {}
 			items[shopDat.n32GoodsID] = shopDat.n32Count * args.num

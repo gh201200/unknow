@@ -245,6 +245,15 @@ query_event_buff 6 {
 	}
 }
 
+create 100 {
+         request {
+                 name 0 : string    
+                 client_pub 1 : string         
+         }
+         response {
+		 error_id 0 : integer
+         }
+}
 
 login 101 {
          request {
@@ -564,8 +573,6 @@ beginRecPush 3017 {
 		
 	}
  }
-
-
 ]]
 
 local s2c = [[
@@ -592,6 +599,9 @@ sendAccount 3 {
 		topexp 6 : integer
 		star 7 : integer
 		aexp 8 : integer
+		exploretimes 9 : integer
+		buyboxtimes 10 : integer
+		refreshtime 11 : integer
 	}
 }
 
@@ -837,7 +847,6 @@ sendChargeCount 3011 {
 		chargeCount 1 : integer
 	}
 }
-
 ]]
 
 game_proto.types = sparser.parse (types)

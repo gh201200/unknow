@@ -29885,8 +29885,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,12,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
+		<szAffectTargetAffect>[upstr:0,0,18,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
@@ -29951,112 +29951,6 @@
 		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
 		<n32Faction>1</n32Faction>
 		<n32Quality>1</n32Quality>
-		<n32Upgrade>0</n32Upgrade>
-		<n32NeedStuff>2</n32NeedStuff>
-		<n32Lv>3</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,16,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101004">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
-		<n32Upgrade>0</n32Upgrade>
-		<n32NeedStuff>2</n32NeedStuff>
-		<n32Lv>4</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,18,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101011">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
 		<n32Upgrade>1</n32Upgrade>
 		<n32NeedStuff>5</n32NeedStuff>
 		<n32Lv>1</n32Lv>
@@ -30097,167 +29991,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,14,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101012">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
-		<n32Upgrade>1</n32Upgrade>
-		<n32NeedStuff>5</n32NeedStuff>
-		<n32Lv>2</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,16,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101013">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
-		<n32Upgrade>1</n32Upgrade>
-		<n32NeedStuff>5</n32NeedStuff>
-		<n32Lv>3</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,18,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101014">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
-		<n32Upgrade>1</n32Upgrade>
-		<n32NeedStuff>5</n32NeedStuff>
-		<n32Lv>4</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,20,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
+		<szAffectTargetAffect>[upstr:0,0,20,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
@@ -30309,167 +30044,8 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,16,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101022">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
-		<n32Upgrade>2</n32Upgrade>
-		<n32NeedStuff>10</n32NeedStuff>
-		<n32Lv>2</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,18,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101023">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
-		<n32Upgrade>2</n32Upgrade>
-		<n32NeedStuff>10</n32NeedStuff>
-		<n32Lv>3</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,20,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
-		<n32ShowRange>0</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
-		<n32ShowPortrait>2</n32ShowPortrait>
-	</item>
-	<item id="11101024">
-		<n32SeriId>11101</n32SeriId>
-		<szName>勇气赠礼</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>1</n32Quality>
-		<n32Upgrade>2</n32Upgrade>
-		<n32NeedStuff>10</n32NeedStuff>
-		<n32Lv>4</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_self</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>0</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>35</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>0</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>0</n32Range>
-		<n32SkillTargetType>0</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>0</n32SelectTargetType>
-		<n32BulletType>0</n32BulletType>
-		<n32BulletId>0</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>0</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,22,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
+		<szAffectTargetAffect>[upstr:0,0,22,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
@@ -30521,22 +30097,22 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,18,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
+		<szAffectTargetAffect>[upstr:0,0,24,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
 		<n32ShowPortrait>2</n32ShowPortrait>
 	</item>
-	<item id="11101032">
+	<item id="11101041">
 		<n32SeriId>11101</n32SeriId>
 		<szName>勇气赠礼</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
 		<n32Faction>1</n32Faction>
 		<n32Quality>1</n32Quality>
-		<n32Upgrade>3</n32Upgrade>
-		<n32NeedStuff>20</n32NeedStuff>
-		<n32Lv>2</n32Lv>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>1</n32Lv>
 		<n32SkillType>1</n32SkillType>
 		<n32Active>0</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
@@ -30574,13 +30150,442 @@
 		<n32AffectTargetType>0</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[upstr:0,0,20,0,30,0]</szAffectTargetAffect>
-		<szDescribe>　　为自己增加力量,持续30秒</szDescribe>
+		<szAffectTargetAffect>[upstr:0,0,26,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
 		<n32ShowRange>0</n32ShowRange>
 		<szLabel></szLabel>
 		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
 		<n32ShowPortrait>2</n32ShowPortrait>
 	</item>
+	<item id="11101051">
+		<n32SeriId>11101</n32SeriId>
+		<szName>勇气赠礼</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>35</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[upstr:0,0,28,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="11101061">
+		<n32SeriId>11101</n32SeriId>
+		<szName>勇气赠礼</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>35</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[upstr:0,0,30,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="11101071">
+		<n32SeriId>11101</n32SeriId>
+		<szName>勇气赠礼</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>35</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[upstr:0,0,32,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="11101081">
+		<n32SeriId>11101</n32SeriId>
+		<szName>勇气赠礼</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>35</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[upstr:0,0,34,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="11101091">
+		<n32SeriId>11101</n32SeriId>
+		<szName>勇气赠礼</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_11101.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>1</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_self</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>35</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>0</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>0</n32Range>
+		<n32SkillTargetType>0</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>0</n32SelectTargetType>
+		<n32BulletType>0</n32BulletType>
+		<n32BulletId>0</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>0</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[upstr:0,0,36,0,14,0]</szAffectTargetAffect>
+		<szDescribe>　　为自己增加力量</szDescribe>
+		<n32ShowRange>0</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　大天使艾拉思给予我们守护，教会我们英勇，现在我们回报他的时刻到了！\n　　　　　　　　　　——护教军指挥官瓦莱丽</szInfo>
+		<n32ShowPortrait>2</n32ShowPortrait>
+	</item>
+	<item id="12001001">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,120,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001011">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+>>>>>>> f74879574a6ee8697cd2eeaad42112a384b806b1
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,130,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001021">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+<<<<<<< HEAD
+		<n32CD>35</n32CD>
+=======
+		<n32CD>6</n32CD>
+>>>>>>> f74879574a6ee8697cd2eeaad42112a384b806b1
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,140,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+<<<<<<< HEAD
 	<item id="11101033">
 		<n32SeriId>11101</n32SeriId>
 		<szName>勇气赠礼</szName>
@@ -32595,10 +32600,13 @@
 		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
 		<n32ShowPortrait>0</n32ShowPortrait>
 	</item>
+=======
+>>>>>>> f74879574a6ee8697cd2eeaad42112a384b806b1
 	<item id="12001031">
 		<n32SeriId>12001</n32SeriId>
 		<szName>裂空斩</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+<<<<<<< HEAD
 		<n32Faction>1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>3</n32Upgrade>
@@ -35302,11 +35310,649 @@
 		<n32SeriId>12002</n32SeriId>
 		<szName>猎魔刃</szName>
 		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
+=======
+>>>>>>> f74879574a6ee8697cd2eeaad42112a384b806b1
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,150,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001041">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,160,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001051">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
 		<n32Faction>1</n32Faction>
 		<n32Quality>0</n32Quality>
 		<n32Upgrade>5</n32Upgrade>
 		<n32NeedStuff>45</n32NeedStuff>
-		<n32Lv>4</n32Lv>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,170,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001061">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>6</n32Upgrade>
+		<n32NeedStuff>60</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,180,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001071">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>7</n32Upgrade>
+		<n32NeedStuff>75</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,190,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001081">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>8</n32Upgrade>
+		<n32NeedStuff>95</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,200,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12001091">
+		<n32SeriId>12001</n32SeriId>
+		<szName>裂空斩</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12001.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>9</n32Upgrade>
+		<n32NeedStuff>0</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>0</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>5</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>3</n32BulletType>
+		<n32BulletId>20007</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>2.4</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[damage:3,0.6,210,0,0,30006]</szAffectTargetAffect>
+		<szDescribe>　　对正前方2.4米内的敌方单位造成伤害</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　你不该这么晚才回教会的！击剑教头布鲁斯手一挥，廊柱后面亮起一阵闪光，紧接着传来一阵噼啪声和电器烧糊的焦味，下次小心点，别再招惹这些家伙了。</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12002001">
+		<n32SeriId>12002</n32SeriId>
+		<szName>猎魔刃</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>0</n32Upgrade>
+		<n32NeedStuff>2</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>10065</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>20025</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[burnmp:3,1,70,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12002011">
+		<n32SeriId>12002</n32SeriId>
+		<szName>猎魔刃</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>1</n32Upgrade>
+		<n32NeedStuff>5</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>10065</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>20025</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[burnmp:3,1,85,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12002021">
+		<n32SeriId>12002</n32SeriId>
+		<szName>猎魔刃</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>2</n32Upgrade>
+		<n32NeedStuff>10</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>10065</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>20025</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[burnmp:3,1,100,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12002031">
+		<n32SeriId>12002</n32SeriId>
+		<szName>猎魔刃</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>3</n32Upgrade>
+		<n32NeedStuff>20</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>10065</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>20025</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[burnmp:3,1,115,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12002041">
+		<n32SeriId>12002</n32SeriId>
+		<szName>猎魔刃</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>4</n32Upgrade>
+		<n32NeedStuff>30</n32NeedStuff>
+		<n32Lv>1</n32Lv>
+		<n32SkillType>1</n32SkillType>
+		<n32Active>0</n32Active>
+		<bIngoreImmune>0</bIngoreImmune>
+		<n32TriggerCondition>0</n32TriggerCondition>
+		<n32TriggerInfo>0</n32TriggerInfo>
+		<n32NeedCasting>0</n32NeedCasting>
+		<n32AffectGap>0</n32AffectGap>
+		<n32AffectTime>0</n32AffectTime>
+		<n32ActionType>2</n32ActionType>
+		<szAction>cast_remote</szAction>
+		<n32TriggerTime>0</n32TriggerTime>
+		<n32SingEffect>0</n32SingEffect>
+		<n32WarningEffect>0</n32WarningEffect>
+		<n32CasterEffect>10065</n32CasterEffect>
+		<szCastSound>sound01.mp3</szCastSound>
+		<n32CTargetEffect>0</n32CTargetEffect>
+		<n32ETargetEffect>0</n32ETargetEffect>
+		<szETargetSound>sound01.mp3</szETargetSound>
+		<n32CD>6</n32CD>
+		<n32ChargeCount>0</n32ChargeCount>
+		<n32MpCost>100</n32MpCost>
+		<n32MpCostPercent>0</n32MpCostPercent>
+		<n32HpCost>0</n32HpCost>
+		<n32HpCostPercent>0</n32HpCostPercent>
+		<n32Range>2.4</n32Range>
+		<n32SkillTargetType>3</n32SkillTargetType>
+		<szSelectRange>[single:0,0]</szSelectRange>
+		<n32SelectTargetType>3</n32SelectTargetType>
+		<n32BulletType>1</n32BulletType>
+		<n32BulletId>20025</n32BulletId>
+		<n32BulletTarget>0</n32BulletTarget>
+		<n32BulletBombId>0</n32BulletBombId>
+		<n32BulletRange>0</n32BulletRange>
+		<szAffectRange>[single:0,0]</szAffectRange>
+		<n32AffectTargetType>3</n32AffectTargetType>
+		<szMyAffect></szMyAffect>
+		<szSelectTargetAffect></szSelectTargetAffect>
+		<szAffectTargetAffect>[burnmp:3,1,130,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
+		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
+		<n32ShowRange>2.4</n32ShowRange>
+		<szLabel></szLabel>
+		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
+		<n32ShowPortrait>0</n32ShowPortrait>
+	</item>
+	<item id="12002051">
+		<n32SeriId>12002</n32SeriId>
+		<szName>猎魔刃</szName>
+		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
+		<n32Faction>1</n32Faction>
+		<n32Quality>0</n32Quality>
+		<n32Upgrade>5</n32Upgrade>
+		<n32NeedStuff>45</n32NeedStuff>
+		<n32Lv>1</n32Lv>
 		<n32SkillType>1</n32SkillType>
 		<n32Active>0</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
@@ -35397,165 +36043,6 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.7,100,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002062">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>6</n32Upgrade>
-		<n32NeedStuff>60</n32NeedStuff>
-		<n32Lv>2</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.8,120,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002063">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>6</n32Upgrade>
-		<n32NeedStuff>60</n32NeedStuff>
-		<n32Lv>3</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.9,140,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002064">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>6</n32Upgrade>
-		<n32NeedStuff>60</n32NeedStuff>
-		<n32Lv>4</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[burnmp:3,1,160,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
 		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
@@ -35572,165 +36059,6 @@
 		<n32Upgrade>7</n32Upgrade>
 		<n32NeedStuff>75</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.7,115,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002072">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>7</n32Upgrade>
-		<n32NeedStuff>75</n32NeedStuff>
-		<n32Lv>2</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.8,135,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002073">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>7</n32Upgrade>
-		<n32NeedStuff>75</n32NeedStuff>
-		<n32Lv>3</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.9,155,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002074">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>7</n32Upgrade>
-		<n32NeedStuff>75</n32NeedStuff>
-		<n32Lv>4</n32Lv>
 		<n32SkillType>1</n32SkillType>
 		<n32Active>0</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
@@ -35821,165 +36149,6 @@
 		<n32AffectTargetType>3</n32AffectTargetType>
 		<szMyAffect></szMyAffect>
 		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.7,130,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002082">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>8</n32Upgrade>
-		<n32NeedStuff>95</n32NeedStuff>
-		<n32Lv>2</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.8,150,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002083">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>8</n32Upgrade>
-		<n32NeedStuff>95</n32NeedStuff>
-		<n32Lv>3</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.9,170,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002084">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>8</n32Upgrade>
-		<n32NeedStuff>95</n32NeedStuff>
-		<n32Lv>4</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
 		<szAffectTargetAffect>[burnmp:3,1,190,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
 		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
 		<n32ShowRange>2.4</n32ShowRange>
@@ -35996,165 +36165,6 @@
 		<n32Upgrade>9</n32Upgrade>
 		<n32NeedStuff>0</n32NeedStuff>
 		<n32Lv>1</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.7,145,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002092">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>9</n32Upgrade>
-		<n32NeedStuff>0</n32NeedStuff>
-		<n32Lv>2</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.8,165,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002093">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>9</n32Upgrade>
-		<n32NeedStuff>0</n32NeedStuff>
-		<n32Lv>3</n32Lv>
-		<n32SkillType>1</n32SkillType>
-		<n32Active>0</n32Active>
-		<bIngoreImmune>0</bIngoreImmune>
-		<n32TriggerCondition>0</n32TriggerCondition>
-		<n32TriggerInfo>0</n32TriggerInfo>
-		<n32NeedCasting>0</n32NeedCasting>
-		<n32AffectGap>0</n32AffectGap>
-		<n32AffectTime>0</n32AffectTime>
-		<n32ActionType>2</n32ActionType>
-		<szAction>cast_remote</szAction>
-		<n32TriggerTime>0</n32TriggerTime>
-		<n32SingEffect>0</n32SingEffect>
-		<n32WarningEffect>0</n32WarningEffect>
-		<n32CasterEffect>10065</n32CasterEffect>
-		<szCastSound>sound01.mp3</szCastSound>
-		<n32CTargetEffect>0</n32CTargetEffect>
-		<n32ETargetEffect>0</n32ETargetEffect>
-		<szETargetSound>sound01.mp3</szETargetSound>
-		<n32CD>6</n32CD>
-		<n32ChargeCount>0</n32ChargeCount>
-		<n32MpCost>100</n32MpCost>
-		<n32MpCostPercent>0</n32MpCostPercent>
-		<n32HpCost>0</n32HpCost>
-		<n32HpCostPercent>0</n32HpCostPercent>
-		<n32Range>2.4</n32Range>
-		<n32SkillTargetType>3</n32SkillTargetType>
-		<szSelectRange>[single:0,0]</szSelectRange>
-		<n32SelectTargetType>3</n32SelectTargetType>
-		<n32BulletType>1</n32BulletType>
-		<n32BulletId>20025</n32BulletId>
-		<n32BulletTarget>0</n32BulletTarget>
-		<n32BulletBombId>0</n32BulletBombId>
-		<n32BulletRange>0</n32BulletRange>
-		<szAffectRange>[single:0,0]</szAffectRange>
-		<n32AffectTargetType>3</n32AffectTargetType>
-		<szMyAffect></szMyAffect>
-		<szSelectTargetAffect></szSelectTargetAffect>
-		<szAffectTargetAffect>[burnmp:3,0.9,185,0,0,30116][burnmp:0,0,0,0,0,30117]</szAffectTargetAffect>
-		<szDescribe>　　对单个敌方单位造成伤害，并减少其魔法</szDescribe>
-		<n32ShowRange>2.4</n32ShowRange>
-		<szLabel></szLabel>
-		<szInfo>　　真正令人害怕的不是利爪、刀剑或者枪炮，而是潜藏在心底的恶意。\n　　　　　　　　　　　　　——灵愈师艾欧娜</szInfo>
-		<n32ShowPortrait>0</n32ShowPortrait>
-	</item>
-	<item id="12002094">
-		<n32SeriId>12002</n32SeriId>
-		<szName>猎魔刃</szName>
-		<szIcon>UI/Textures/SkillIcon/Skill_12002.png</szIcon>
-		<n32Faction>1</n32Faction>
-		<n32Quality>0</n32Quality>
-		<n32Upgrade>9</n32Upgrade>
-		<n32NeedStuff>0</n32NeedStuff>
-		<n32Lv>4</n32Lv>
 		<n32SkillType>1</n32SkillType>
 		<n32Active>0</n32Active>
 		<bIngoreImmune>0</bIngoreImmune>
