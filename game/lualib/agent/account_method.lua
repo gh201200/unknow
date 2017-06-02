@@ -155,8 +155,7 @@ local AccountMethod =
 			skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "exploretimes", "buyboxtimes")
 			-- skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "buyboxtimes")
 		end
-	end
-	
+	end;
 	
 	getExploreTimes = function(self)
 		refreshTimes(self)
