@@ -64,6 +64,12 @@ function REQUEST.exploreBegin( args )
 			errorCode = -1
 			break
 		end
+		if not user.account:haveExploreTimes() then
+			errorCode = 1
+			break
+		end
+		--扣除次数
+		user.account:addExploreTimes(-1)
 		--
 		local nextTime = Time.tomorrow()
 		for i=0, 2 do

@@ -140,6 +140,59 @@ local AccountMethod =
 	addStar = function(self, num)
 		self.unit.star = self.unit.star + num
 	end;
+	
+	
+	--根据时间刷新 探索和宝箱购买次数
+	refreshTimes = function(self)
+		if self.unit.refreshtime < os.time() then
+			self.unit.exploretimes = 20
+			self.unit.buyboxtimes = 20
+			self.unit.refreshtime = Time.tomorrow()
+			
+			self:sendAccountData()
+			
+			local database = skynet.uniqueservice("database")		
+			skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "exploretimes", "buyboxtimes")
+			-- skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "buyboxtimes")
+		end
+	end
+	
+	
+	getExploreTimes = function(self)
+		refreshTimes(self)
+		return self.unit.exploretimes
+	end;
+	haveExploreTimes = function(self)
+		refreshTimes(self)
+		return self.unit.exploretimes > 0 || self.unit.exploretimes == -1
+	end;
+	addExploreTimes = function(self, _time)
+		if _time == 0 then return end
+		refreshTimes(self)
+		self.unit.exploretimes = self.unit.exploretimes + _time
+		self:sendAccountData()
+		
+		local database = skynet.uniqueservice("database")		
+		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "exploretimes")
+	end;
+	
+	getBuyBoxTimes = function(self)
+		refreshTimes(self)
+		return self.unit.buyboxtimes
+	end;
+	haveBuyBoxTimes = function(self, time)
+		refreshTimes(self)
+		return self.unit.buyboxtimes >= time || self.unit.buyboxtimes == -1
+	end;
+	addBuyBoxTimes = function(self, _time)
+		if _time == 0 then return end
+		refreshTimes(self)
+		self.unit.buyboxtimes = self.unit.buyboxtimes + _time
+		self:sendAccountData()
+		
+		local database = skynet.uniqueservice("database")		
+		skynet.call (database, "lua", "account", "update", self.account_id, self.unit, "buyboxtimes")
+	end;
 }
 
 return AccountMethod
