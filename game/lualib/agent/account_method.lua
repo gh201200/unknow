@@ -158,7 +158,7 @@ local AccountMethod =
 	end;
 	
 	getExploreTimes = function(self)
-		refreshTimes(self)
+		self:refreshTimes()
 		return self.unit.exploretimes
 	end;
 	haveExploreTimes = function(self)
