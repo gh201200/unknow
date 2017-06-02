@@ -594,6 +594,9 @@ sendAccount 3 {
 		topexp 6 : integer
 		star 7 : integer
 		aexp 8 : integer
+		exploretimes 9 : integer
+		buyboxtimes 10 : integer
+		refreshtime 11 : integer
 	}
 }
 
