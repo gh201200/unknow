@@ -64,12 +64,7 @@ function REQUEST.exploreBegin( args )
 			errorCode = -1
 			break
 		end
-		if not user.account:haveExploreTimes() then
-			errorCode = 1
-			break
-		end
-		--扣除次数
-		user.account:addExploreTimes(-1)
+		
 		--
 		local nextTime = Time.tomorrow()
 		for i=0, 2 do
@@ -93,6 +88,7 @@ function REQUEST.exploreEnd( args )
 			errorCode = -1
 			break
 		end
+		
 		--
 		local gains = {}
 		local score = 0
@@ -158,6 +154,17 @@ function REQUEST.exploreRefresh( args )
 			errorCode = 1
 			break
 		end
+		if costMoney ~= 0 then
+			if not user.account:haveExploreTimes() then
+				errorCode = 2
+				break
+			else
+				--扣除次数
+				user.account:addExploreTimes(-1)
+			end
+		end
+		
+		
 		--
 		user.account:addMoney("exploreRefresh", -costMoney)
 		activity.req.addValue("exploreRefresh", user.account.account_id, ActivityAccountType.RefreshExplore, 1,Time.tomorrow())

@@ -144,7 +144,7 @@ function REQUEST.buyShopItem( args )
 		end
 		
 		if shopDat.n32Type == 3 then	--宝箱
-			if not user.account:haveBuyBoxTimes(args.num) then
+			if not user.account:haveBuyBoxTimes(-args.num) then
 				errorCode = 4	--购买今日购买次数已用完
 				break
 			end
