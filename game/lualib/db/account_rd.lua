@@ -36,7 +36,7 @@ function account.load (account_id, ...)
 			acc.aexp = tonumber(connection:hget (key, "aexp"))
 			acc.exploretimes = tonumber(connection:hget (key, "exploretimes") or 20)
 			acc.buyboxtimes = tonumber(connection:hget (key, "buyboxtimes") or 20)
-			acc.refreshtime = tonumber(connection:hget (key, "exploretime") or Time.tomorrow())
+			acc.refreshtime = tonumber(connection:hget (key, "refreshtime") or Time.tomorrow())
 		else
 			acc = connection:hmget(key, ...)
 		end
