@@ -2,7 +2,7 @@
 <info>
 	<item id="1">
 		<name>力量</name>
-		<n32Hp>25</n32Hp>
+		<n32Hp>20</n32Hp>
 		<n32Mp>0</n32Mp>
 		<n32Attack>1</n32Attack>
 		<n32Defence>0</n32Defence>

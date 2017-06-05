@@ -1,28 +1,28 @@
 <?xml version="1.0" ?>
 <info>
 	<item id="1">
-		<szName>魏金龙</szName>
-		<szIp>192.168.0.220</szIp>
+		<szName>公用</szName>
+		<szIp>192.168.0.233</szIp>
 		<n32Port>8888</n32Port>
 	</item>
 	<item id="2">
-		<szName>小潘</szName>
-		<szIp>192.168.0.231</szIp>
+		<szName>高恒</szName>
+		<szIp>192.168.0.129</szIp>
 		<n32Port>8888</n32Port>
 	</item>
 	<item id="3">
-		<szName>方俊</szName>
+		<szName>邢竞</szName>
 		<szIp>192.168.0.150</szIp>
 		<n32Port>8888</n32Port>
 	</item>
 	<item id="4">
-		<szName>高恒</szName>
-		<szIp>192.168.0.233</szIp>
+		<szName>戴俊钦</szName>
+		<szIp>192.168.0.161</szIp>
 		<n32Port>8888</n32Port>
 	</item>
 	<item id="5">
-		<szName>吕譞</szName>
-		<szIp>192.168.0.161</szIp>
+		<szName>吕远辉</szName>
+		<szIp>192.168.0.220</szIp>
 		<n32Port>8888</n32Port>
 	</item>
 	<item id="6">

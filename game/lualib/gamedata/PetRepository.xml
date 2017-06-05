@@ -129,2022 +129,108 @@
 		<Defence>0</Defence>
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
-		<Str>30</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>18</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>12</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002011">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>33</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>20</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>14</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002021">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>36</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>22</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>16</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002031">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>39</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>24</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>18</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002041">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>42</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>26</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>20</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002051">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>45</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>28</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>22</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002061">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
 		<Str>48</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>30</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>24</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002071">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>51</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>32</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>26</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002081">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>54</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>34</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>28</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50002091">
-		<Serid>50002</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨熊</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>1</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>57</Str>
-		<StrPc>0.6</StrPc>
-		<Agl>36</Agl>
-		<AglPc>0.4</AglPc>
-		<Int>30</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810003</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70001</modolId>
-	</item>
-	<item id="50003001">
-		<Serid>50003</Serid>
-		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>18</Str>
-		<StrPc>0.4</StrPc>
-		<Agl>21</Agl>
-		<AglPc>0.6</AglPc>
+		<StrPc>0.5</StrPc>
+		<Agl>18</Agl>
+		<AglPc>0.5</AglPc>
 		<Int>12</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
+		<IntPc>0.5</IntPc>
+		<n32HateRange>4</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<n32Skill01>22102001</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="50003011">
-		<Serid>50003</Serid>
+	<item id="50002002">
+		<Serid>50002</Serid>
 		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
+		<szName>巨熊</szName>
 		<n32Type>1</n32Type>
 		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
+		<n32MainAtt>1</n32MainAtt>
 		<HpMax>150</HpMax>
 		<MpMax>100</MpMax>
 		<Attack>30</Attack>
 		<Defence>0</Defence>
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
-		<Str>20</Str>
-		<StrPc>0.4</StrPc>
+		<Str>64</Str>
+		<StrPc>0.5</StrPc>
 		<Agl>24</Agl>
-		<AglPc>0.6</AglPc>
-		<Int>14</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
-	</item>
-	<item id="50003021">
-		<Serid>50003</Serid>
-		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>22</Str>
-		<StrPc>0.4</StrPc>
-		<Agl>27</Agl>
-		<AglPc>0.6</AglPc>
+		<AglPc>0.5</AglPc>
 		<Int>16</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
+		<IntPc>0.5</IntPc>
+		<n32HateRange>4</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<n32Skill01>22102002</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="50003031">
-		<Serid>50003</Serid>
+	<item id="50002003">
+		<Serid>50002</Serid>
 		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
+		<szName>巨熊</szName>
 		<n32Type>1</n32Type>
 		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
+		<n32MainAtt>1</n32MainAtt>
 		<HpMax>150</HpMax>
 		<MpMax>100</MpMax>
 		<Attack>30</Attack>
 		<Defence>0</Defence>
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
-		<Str>24</Str>
-		<StrPc>0.4</StrPc>
+		<Str>80</Str>
+		<StrPc>0.5</StrPc>
 		<Agl>30</Agl>
-		<AglPc>0.6</AglPc>
-		<Int>18</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
-	</item>
-	<item id="50003041">
-		<Serid>50003</Serid>
-		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>26</Str>
-		<StrPc>0.4</StrPc>
-		<Agl>33</Agl>
-		<AglPc>0.6</AglPc>
+		<AglPc>0.5</AglPc>
 		<Int>20</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
+		<IntPc>0.5</IntPc>
+		<n32HateRange>4</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<n32Skill01>22102003</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="50003051">
-		<Serid>50003</Serid>
+	<item id="50002004">
+		<Serid>50002</Serid>
 		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
+		<szName>巨熊</szName>
 		<n32Type>1</n32Type>
 		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
+		<n32MainAtt>1</n32MainAtt>
 		<HpMax>150</HpMax>
 		<MpMax>100</MpMax>
 		<Attack>30</Attack>
 		<Defence>0</Defence>
 		<Aspeed>1.7</Aspeed>
 		<Mspeed>0.8</Mspeed>
-		<Str>28</Str>
-		<StrPc>0.4</StrPc>
+		<Str>96</Str>
+		<StrPc>0.5</StrPc>
 		<Agl>36</Agl>
-		<AglPc>0.6</AglPc>
-		<Int>22</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
-	</item>
-	<item id="50003061">
-		<Serid>50003</Serid>
-		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>30</Str>
-		<StrPc>0.4</StrPc>
-		<Agl>39</Agl>
-		<AglPc>0.6</AglPc>
+		<AglPc>0.5</AglPc>
 		<Int>24</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
+		<IntPc>0.5</IntPc>
+		<n32HateRange>4</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
+		<n32CommonSkill>810001</n32CommonSkill>
+		<n32Skill01>22102004</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
-	</item>
-	<item id="50003071">
-		<Serid>50003</Serid>
-		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>32</Str>
-		<StrPc>0.4</StrPc>
-		<Agl>42</Agl>
-		<AglPc>0.6</AglPc>
-		<Int>26</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
-	</item>
-	<item id="50003081">
-		<Serid>50003</Serid>
-		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>34</Str>
-		<StrPc>0.4</StrPc>
-		<Agl>45</Agl>
-		<AglPc>0.6</AglPc>
-		<Int>28</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
-	</item>
-	<item id="50003091">
-		<Serid>50003</Serid>
-		<n32Level>1</n32Level>
-		<szName>霜狼</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>36</Str>
-		<StrPc>0.4</StrPc>
-		<Agl>48</Agl>
-		<AglPc>0.6</AglPc>
-		<Int>30</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810004</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70002</modolId>
-	</item>
-	<item id="50004001">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>14</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>12</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>18</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004011">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>16</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>14</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>21</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004021">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>18</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>16</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>24</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004031">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>20</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>18</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>27</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004041">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>22</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>20</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>30</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004051">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>24</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>22</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>33</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004061">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>26</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>24</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>36</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004071">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>28</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>26</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>39</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004081">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>30</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>28</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>42</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50004091">
-		<Serid>50004</Serid>
-		<n32Level>1</n32Level>
-		<szName>巨狼蛛</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>32</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>30</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>45</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810005</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70003</modolId>
-	</item>
-	<item id="50005001">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>10</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>14</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>21</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005011">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>12</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>16</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>24</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005021">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>14</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>18</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>27</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005031">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>16</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>20</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>30</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005041">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>18</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>22</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>33</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005051">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>20</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>24</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>36</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005061">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>22</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>26</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>39</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005071">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>24</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>28</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>42</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005081">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>26</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>30</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>45</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50005091">
-		<Serid>50005</Serid>
-		<n32Level>1</n32Level>
-		<szName>黑寡妇</szName>
-		<n32Type>1</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
-		<n32MainAtt>3</n32MainAtt>
-		<HpMax>150</HpMax>
-		<MpMax>100</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0.8</Mspeed>
-		<Str>28</Str>
-		<StrPc>0.3</StrPc>
-		<Agl>32</Agl>
-		<AglPc>0.25</AglPc>
-		<Int>48</Int>
-		<IntPc>0.4</IntPc>
-		<n32HateRange>3</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>810006</n32CommonSkill>
-		<n32Skill01>0</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70004</modolId>
-	</item>
-	<item id="50007001">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005001</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007011">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005011</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007021">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005021</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007031">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005031</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007041">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005041</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007051">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005051</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007061">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005061</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007071">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005071</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007081">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005081</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50007091">
-		<Serid>50007</Serid>
-		<n32Level>1</n32Level>
-		<szName>诡雷</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83005091</n32Skill01>
-		<n32Skill02>90001001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70006</modolId>
-	</item>
-	<item id="50008001">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005001</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008011">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005011</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008021">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005021</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008031">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005031</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008041">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005041</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008051">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005051</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008061">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005061</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008071">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005071</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008081">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005081</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50008091">
-		<Serid>50008</Serid>
-		<n32Level>1</n32Level>
-		<szName>地面燃烧</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>80005091</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70007</modolId>
-	</item>
-	<item id="50009001">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004001</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009011">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004011</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009021">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004021</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009031">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004031</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009041">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004041</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009051">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004051</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009061">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004061</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009071">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004071</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009081">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004081</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
-	</item>
-	<item id="50009091">
-		<Serid>50009</Serid>
-		<n32Level>1</n32Level>
-		<szName>急救包</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>0</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>50</MpMax>
-		<Attack>30</Attack>
-		<Defence>0</Defence>
-		<Aspeed>1.7</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>1</StrPc>
-		<Agl>0</Agl>
-		<AglPc>1</AglPc>
-		<Int>0</Int>
-		<IntPc>1</IntPc>
-		<n32HateRange>1</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>0</HurtPc>
-		<n32LifeTime>20</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>83004091</n32Skill01>
-		<n32Skill02>90002001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70008</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53201001">
 		<Serid>53201</Serid>
@@ -2166,9 +252,9 @@
 		<Int>0</Int>
 		<IntPc>1</IntPc>
 		<n32HateRange>2</n32HateRange>
-		<DamagePc>0.2</DamagePc>
+		<DamagePc>0.25</DamagePc>
 		<HurtPc>3</HurtPc>
-		<n32LifeTime>30</n32LifeTime>
+		<n32LifeTime>20</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
@@ -2195,9 +281,9 @@
 		<Int>0</Int>
 		<IntPc>1</IntPc>
 		<n32HateRange>2</n32HateRange>
-		<DamagePc>0.225</DamagePc>
+		<DamagePc>0.3</DamagePc>
 		<HurtPc>2.75</HurtPc>
-		<n32LifeTime>30</n32LifeTime>
+		<n32LifeTime>20</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
@@ -2224,9 +310,9 @@
 		<Int>0</Int>
 		<IntPc>1</IntPc>
 		<n32HateRange>2</n32HateRange>
-		<DamagePc>0.25</DamagePc>
+		<DamagePc>0.35</DamagePc>
 		<HurtPc>2.5</HurtPc>
-		<n32LifeTime>30</n32LifeTime>
+		<n32LifeTime>20</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
@@ -2253,9 +339,9 @@
 		<Int>0</Int>
 		<IntPc>1</IntPc>
 		<n32HateRange>2</n32HateRange>
-		<DamagePc>0.275</DamagePc>
+		<DamagePc>0.4</DamagePc>
 		<HurtPc>2.25</HurtPc>
-		<n32LifeTime>30</n32LifeTime>
+		<n32LifeTime>20</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
@@ -2282,9 +368,9 @@
 		<Int>0</Int>
 		<IntPc>1</IntPc>
 		<n32HateRange>2</n32HateRange>
-		<DamagePc>0.3</DamagePc>
+		<DamagePc>0.45</DamagePc>
 		<HurtPc>2</HurtPc>
-		<n32LifeTime>30</n32LifeTime>
+		<n32LifeTime>20</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
@@ -2310,15 +396,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300002">
 		<Serid>53300</Serid>
@@ -2339,15 +425,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300003">
 		<Serid>53300</Serid>
@@ -2368,15 +454,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300004">
 		<Serid>53300</Serid>
@@ -2397,15 +483,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300011">
 		<Serid>53300</Serid>
@@ -2426,15 +512,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300012">
 		<Serid>53300</Serid>
@@ -2455,15 +541,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300013">
 		<Serid>53300</Serid>
@@ -2484,15 +570,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300014">
 		<Serid>53300</Serid>
@@ -2513,15 +599,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300021">
 		<Serid>53300</Serid>
@@ -2542,15 +628,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300022">
 		<Serid>53300</Serid>
@@ -2571,15 +657,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300023">
 		<Serid>53300</Serid>
@@ -2600,15 +686,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300024">
 		<Serid>53300</Serid>
@@ -2629,15 +715,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300031">
 		<Serid>53300</Serid>
@@ -2658,15 +744,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300032">
 		<Serid>53300</Serid>
@@ -2687,15 +773,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300033">
 		<Serid>53300</Serid>
@@ -2716,15 +802,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300034">
 		<Serid>53300</Serid>
@@ -2745,15 +831,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300041">
 		<Serid>53300</Serid>
@@ -2774,15 +860,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300042">
 		<Serid>53300</Serid>
@@ -2803,15 +889,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300043">
 		<Serid>53300</Serid>
@@ -2832,15 +918,15 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="53300044">
 		<Serid>53300</Serid>
@@ -2861,22 +947,22 @@
 		<AglPc>0</AglPc>
 		<Int>0</Int>
 		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
+		<n32HateRange>2.8</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
 		<n32LifeTime>60</n32LifeTime>
-		<n32CommonSkill>9533011</n32CommonSkill>
-		<n32Skill01>90004001</n32Skill01>
+		<n32CommonSkill>810002</n32CommonSkill>
+		<n32Skill01>0</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70010</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201001">
 		<Serid>52201</Serid>
 		<n32Level>1</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>2</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -2893,19 +979,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522001</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201002">
 		<Serid>52201</Serid>
 		<n32Level>2</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>2</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -2922,19 +1008,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522001</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201003">
 		<Serid>52201</Serid>
 		<n32Level>3</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
+		<n32SummonLimit>4</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -2951,19 +1037,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522001</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201004">
 		<Serid>52201</Serid>
 		<n32Level>4</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>4</n32SummonLimit>
+		<n32SummonLimit>5</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -2980,19 +1066,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522001</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201011">
 		<Serid>52201</Serid>
 		<n32Level>1</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>2</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3009,19 +1095,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522011</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201012">
 		<Serid>52201</Serid>
 		<n32Level>2</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>2</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3038,19 +1124,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522011</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201013">
 		<Serid>52201</Serid>
 		<n32Level>3</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
+		<n32SummonLimit>4</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3067,19 +1153,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522011</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201014">
 		<Serid>52201</Serid>
 		<n32Level>4</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>4</n32SummonLimit>
+		<n32SummonLimit>5</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3096,19 +1182,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522011</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201021">
 		<Serid>52201</Serid>
 		<n32Level>1</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>2</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3125,19 +1211,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522021</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201022">
 		<Serid>52201</Serid>
 		<n32Level>2</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>2</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3154,19 +1240,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522021</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201023">
 		<Serid>52201</Serid>
 		<n32Level>3</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
+		<n32SummonLimit>4</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3183,19 +1269,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522021</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201024">
 		<Serid>52201</Serid>
 		<n32Level>4</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>4</n32SummonLimit>
+		<n32SummonLimit>5</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3212,19 +1298,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522021</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201031">
 		<Serid>52201</Serid>
 		<n32Level>1</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>2</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3241,19 +1327,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522031</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201032">
 		<Serid>52201</Serid>
 		<n32Level>2</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>2</n32SummonLimit>
+		<n32SummonLimit>3</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3270,47 +1356,18 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522031</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 	<item id="52201033">
 		<Serid>52201</Serid>
 		<n32Level>3</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9522031</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52201034">
-		<Serid>52201</Serid>
-		<n32Level>4</n32Level>
-		<szName>麻痹陷阱</szName>
-		<n32Type>4</n32Type>
 		<n32SummonLimit>4</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
@@ -3328,19 +1385,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522031</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="52201041">
+	<item id="52201034">
 		<Serid>52201</Serid>
-		<n32Level>1</n32Level>
+		<n32Level>4</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>1</n32SummonLimit>
+		<n32SummonLimit>5</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3357,16 +1414,16 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9522041</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill01>9522031</n32Skill01>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="52201042">
+	<item id="52201041">
 		<Serid>52201</Serid>
-		<n32Level>2</n32Level>
+		<n32Level>1</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
 		<n32SummonLimit>2</n32SummonLimit>
@@ -3386,16 +1443,16 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522041</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="52201043">
+	<item id="52201042">
 		<Serid>52201</Serid>
-		<n32Level>3</n32Level>
+		<n32Level>2</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
 		<n32SummonLimit>3</n32SummonLimit>
@@ -3415,16 +1472,16 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522041</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
+		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="52201044">
+	<item id="52201043">
 		<Serid>52201</Serid>
-		<n32Level>4</n32Level>
+		<n32Level>3</n32Level>
 		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
 		<n32SummonLimit>4</n32SummonLimit>
@@ -3444,106 +1501,19 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>45</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
 		<n32Skill01>9522041</n32Skill01>
-		<n32Skill02>90003001</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300001">
-		<Serid>52300</Serid>
-		<n32Level>1</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523001</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
-	<item id="52300002">
-		<Serid>52300</Serid>
-		<n32Level>2</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523002</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300003">
-		<Serid>52300</Serid>
-		<n32Level>3</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523003</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300004">
-		<Serid>52300</Serid>
+	<item id="52201044">
+		<Serid>52201</Serid>
 		<n32Level>4</n32Level>
-		<szName>和风咏叹</szName>
+		<szName>麻痹陷阱</szName>
 		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
+		<n32SummonLimit>5</n32SummonLimit>
 		<n32MainAtt>2</n32MainAtt>
 		<HpMax>100</HpMax>
 		<MpMax>10</MpMax>
@@ -3560,475 +1530,11 @@
 		<n32HateRange>2</n32HateRange>
 		<DamagePc>1</DamagePc>
 		<HurtPc>1</HurtPc>
-		<n32LifeTime>5</n32LifeTime>
+		<n32LifeTime>30</n32LifeTime>
 		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523004</n32Skill01>
+		<n32Skill01>9522041</n32Skill01>
 		<n32Skill02>0</n32Skill02>
 		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300011">
-		<Serid>52300</Serid>
-		<n32Level>1</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>5.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523001</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300012">
-		<Serid>52300</Serid>
-		<n32Level>2</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>5.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523002</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300013">
-		<Serid>52300</Serid>
-		<n32Level>3</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>5.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523003</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300014">
-		<Serid>52300</Serid>
-		<n32Level>4</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>5.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523004</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300021">
-		<Serid>52300</Serid>
-		<n32Level>1</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523001</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300022">
-		<Serid>52300</Serid>
-		<n32Level>2</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523002</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300023">
-		<Serid>52300</Serid>
-		<n32Level>3</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523003</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300024">
-		<Serid>52300</Serid>
-		<n32Level>4</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523004</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300031">
-		<Serid>52300</Serid>
-		<n32Level>1</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523001</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300032">
-		<Serid>52300</Serid>
-		<n32Level>2</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523002</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300033">
-		<Serid>52300</Serid>
-		<n32Level>3</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523003</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300034">
-		<Serid>52300</Serid>
-		<n32Level>4</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>6.5</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523004</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300041">
-		<Serid>52300</Serid>
-		<n32Level>1</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>7</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523001</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300042">
-		<Serid>52300</Serid>
-		<n32Level>2</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>7</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523002</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300043">
-		<Serid>52300</Serid>
-		<n32Level>3</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>7</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523003</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
-	</item>
-	<item id="52300044">
-		<Serid>52300</Serid>
-		<n32Level>4</n32Level>
-		<szName>和风咏叹</szName>
-		<n32Type>4</n32Type>
-		<n32SummonLimit>3</n32SummonLimit>
-		<n32MainAtt>2</n32MainAtt>
-		<HpMax>100</HpMax>
-		<MpMax>10</MpMax>
-		<Attack>0</Attack>
-		<Defence>0</Defence>
-		<Aspeed>0</Aspeed>
-		<Mspeed>0</Mspeed>
-		<Str>0</Str>
-		<StrPc>0</StrPc>
-		<Agl>0</Agl>
-		<AglPc>0</AglPc>
-		<Int>0</Int>
-		<IntPc>0</IntPc>
-		<n32HateRange>2</n32HateRange>
-		<DamagePc>1</DamagePc>
-		<HurtPc>1</HurtPc>
-		<n32LifeTime>7</n32LifeTime>
-		<n32CommonSkill>0</n32CommonSkill>
-		<n32Skill01>9523004</n32Skill01>
-		<n32Skill02>0</n32Skill02>
-		<n32Skill03>0</n32Skill03>
-		<modolId>70009</modolId>
+		<modolId>50008</modolId>
 	</item>
 </info>

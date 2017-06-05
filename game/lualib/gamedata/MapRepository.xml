@@ -13,7 +13,7 @@
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
 		<szBlueHomePos>33500,140400</szBlueHomePos>
 		<n32Time>600</n32Time>
-		<n32Kills>10</n32Kills>
+		<n32Kills>20</n32Kills>
 	</item>
 	<item id="2">
 		<szBornPos1>34000,27000</szBornPos1>
@@ -28,21 +28,6 @@
 		<n32BlueMonsterId>200002</n32BlueMonsterId>
 		<szBlueHomePos>33500,140400</szBlueHomePos>
 		<n32Time>600</n32Time>
-		<n32Kills>10</n32Kills>
-	</item>
-	<item id="3">
-		<szBornPos1>34000,27000</szBornPos1>
-		<szBornPos2>25100,16900</szBornPos2>
-		<szBornPos3>42600,16900</szBornPos3>
-		<szBornPos4>34000,129400</szBornPos4>
-		<szBornPos5>42100,142200</szBornPos5>
-		<szBornPos6>25300,142200</szBornPos6>
-		<szScene>pvp003</szScene>
-		<n32RedMonsterId>200001</n32RedMonsterId>
-		<szRedHomePos>33500,9900</szRedHomePos>
-		<n32BlueMonsterId>200002</n32BlueMonsterId>
-		<szBlueHomePos>33500,140400</szBlueHomePos>
-		<n32Time>600</n32Time>
-		<n32Kills>10</n32Kills>
+		<n32Kills>20</n32Kills>
 	</item>
 </info>

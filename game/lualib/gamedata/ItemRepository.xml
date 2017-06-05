@@ -52,7 +52,7 @@
 		<n32Type>4</n32Type>
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
-		<szRetain3>90003,1</szRetain3>
+		<szRetain3>90001,1;90003,1</szRetain3>
 	</item>
 	<item id="20003">
 		<szIcon></szIcon>
@@ -521,33 +521,6 @@
 		<n32Retain1>0</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3>20001,1</szRetain3>
-	</item>
-	<item id="80001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>4</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3>40001,1</szRetain3>
-	</item>
-	<item id="80002">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>4</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3>40002,1</szRetain3>
-	</item>
-	<item id="80003">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>4</n32Type>
-		<n32Retain1>0</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3>40003,1</szRetain3>
 	</item>
 	<item id="110101">
 		<szIcon></szIcon>
@@ -1125,15 +1098,6 @@
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
-	<item id="20003001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>20003001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
 	<item id="20101001">
 		<szIcon></szIcon>
 		<szModule></szModule>
@@ -1206,15 +1170,6 @@
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
-	<item id="21005001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>21005001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
 	<item id="21101001">
 		<szIcon></szIcon>
 		<szModule></szModule>
@@ -1248,15 +1203,6 @@
 		<szPickAni></szPickAni>
 		<n32Type>7</n32Type>
 		<n32Retain1>22003001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="22004001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>22004001</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1332,15 +1278,6 @@
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
-	<item id="23007001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>23007001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
 	<item id="30001001">
 		<szIcon></szIcon>
 		<szModule></szModule>
@@ -1374,15 +1311,6 @@
 		<szPickAni></szPickAni>
 		<n32Type>7</n32Type>
 		<n32Retain1>30004001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="30005001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>30005001</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1548,24 +1476,6 @@
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
-	<item id="33004001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>33004001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="33005001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>33005001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
 	<item id="33101001">
 		<szIcon></szIcon>
 		<szModule></szModule>
@@ -1584,30 +1494,12 @@
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
-	<item id="51101001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>51101001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
 	<item id="51200001">
 		<szIcon></szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>7</n32Type>
 		<n32Retain1>51200001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="51201001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>51201001</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
@@ -1629,111 +1521,12 @@
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>
-	<item id="52100001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>52100001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="52101001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>52101001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="52200001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>52200001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="52201001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>52201001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="52300001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>52300001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
 	<item id="52301001">
 		<szIcon></szIcon>
 		<szModule></szModule>
 		<szPickAni></szPickAni>
 		<n32Type>7</n32Type>
 		<n32Retain1>52301001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="53100001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>53100001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="53101001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>53101001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="53200001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>53200001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="53201001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>53201001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="53300001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>53300001</n32Retain1>
-		<szRetain2></szRetain2>
-		<szRetain3></szRetain3>
-	</item>
-	<item id="53301001">
-		<szIcon></szIcon>
-		<szModule></szModule>
-		<szPickAni></szPickAni>
-		<n32Type>7</n32Type>
-		<n32Retain1>53301001</n32Retain1>
 		<szRetain2></szRetain2>
 		<szRetain3></szRetain3>
 	</item>

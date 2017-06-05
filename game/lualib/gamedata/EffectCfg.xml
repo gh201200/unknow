@@ -771,7 +771,7 @@
 		<szillustration></szillustration>
 	</item>
 	<item id="12005">
-		<n32type>1</n32type>
+		<n32type>2</n32type>
 		<szassert>Niu_skill_03_juqi</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
@@ -782,7 +782,7 @@
 		<szillustration>牛大招</szillustration>
 	</item>
 	<item id="12006">
-		<n32type>1</n32type>
+		<n32type>2</n32type>
 		<szassert>Niu_skill_03_1</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
@@ -790,10 +790,10 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>牛大招</szillustration>
+		<szillustration></szillustration>
 	</item>
 	<item id="12007">
-		<n32type>1</n32type>
+		<n32type>2</n32type>
 		<szassert>Niu_skill_03_2</szassert>
 		<n32time>4</n32time>
 		<n32speed>0</n32speed>
@@ -801,354 +801,13 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>牛大招</szillustration>
-	</item>
-	<item id="12008">
-		<n32type>2</n32type>
-		<szassert>anna_skill_cast_bottom</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>安娜大招施法</szillustration>
-	</item>
-	<item id="12009">
-		<n32type>2</n32type>
-		<szassert>gongzhu_skill_trap_bottom</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>若拉陷阱施法</szillustration>
-	</item>
-	<item id="12010">
-		<n32type>2</n32type>
-		<szassert>gongzhu_skill_hit_bottom</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>若拉陷阱受击施法</szillustration>
-	</item>
-	<item id="12011">
-		<n32type>2</n32type>
-		<szassert>kejitiancai_skill_cast_hand</szassert>
-		<n32time>4</n32time>
-		<n32speed>0</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>科技天才大招施法</szillustration>
-	</item>
-	<item id="12012">
-		<n32type>2</n32type>
-		<szassert>kejitiancai_skill_cast_bottom</szassert>
-		<n32time>4</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>科技天才大招施法</szillustration>
-	</item>
-	<item id="12013">
-		<n32type>2</n32type>
-		<szassert>kejitiancai_tower_cast_top</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>2</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>科技天才召唤塔施法</szillustration>
-	</item>
-	<item id="12014">
-		<n32type>4</n32type>
-		<szassert>kejitiancai_tower_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>科技天才召唤塔弹道</szillustration>
-	</item>
-	<item id="12015">
-		<n32type>2</n32type>
-		<szassert>kejitiancai_tower_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>科技天才召唤塔弹道受击</szillustration>
-	</item>
-	<item id="12016">
-		<n32type>2</n32type>
-		<szassert>shenju_skill_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>神狙大招受击</szillustration>
-	</item>
-	<item id="12018">
-		<n32type>2</n32type>
-		<szassert>zhongbiaogong_skill_cast_bottom</szassert>
-		<n32time>4</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>钟表工大招施法</szillustration>
-	</item>
-	<item id="12019">
-		<n32type>4</n32type>
-		<szassert>zhongbiaogong_skill_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>钟表工大招弹道</szillustration>
-	</item>
-	<item id="12020">
-		<n32type>2</n32type>
-		<szassert>zhongbiaogong_skill_hit_bottom</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>钟表工大招受击</szillustration>
-	</item>
-	<item id="12021">
-		<n32type>2</n32type>
-		<szassert>miya_skill_cast_rhand</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>4</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>米亚大招施法</szillustration>
-	</item>
-	<item id="12022">
-		<n32type>4</n32type>
-		<szassert>miya_skill_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>米亚大招弹道</szillustration>
-	</item>
-	<item id="12023">
-		<n32type>2</n32type>
-		<szassert>miya_skill_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>米亚大招受击</szillustration>
-	</item>
-	<item id="12024">
-		<n32type>2</n32type>
-		<szassert>lvren_skill_cast_bottom</szassert>
-		<n32time>60</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>旅人大招施法</szillustration>
-	</item>
-	<item id="12025">
-		<n32type>2</n32type>
-		<szassert>kuangseng_skill_cast_bottom</szassert>
-		<n32time>4</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>狂僧大招施法</szillustration>
-	</item>
-	<item id="12026">
-		<n32type>1</n32type>
-		<szassert>nier_skill_hit_bottom</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>尼尔大招受击</szillustration>
-	</item>
-	<item id="12027">
-		<n32type>2</n32type>
-		<szassert>falao_skill_cast_rhand</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>4</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>法老大招施法</szillustration>
-	</item>
-	<item id="12028">
-		<n32type>7</n32type>
-		<szassert>falao_skill_bullet_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>法老大招弹道</szillustration>
-	</item>
-	<item id="12029">
-		<n32type>2</n32type>
-		<szassert>falao_skill_hit_body</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>法老大招受击</szillustration>
-	</item>
-	<item id="12030">
-		<n32type>2</n32type>
-		<szassert>tiannv_skill_cast_bottom</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>天女大招施法</szillustration>
-	</item>
-	<item id="12031">
-		<n32type>2</n32type>
-		<szassert>tiannv_skill_hit_bottom</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>天女大招受击</szillustration>
-	</item>
-	<item id="12032">
-		<n32type>2</n32type>
-		<szassert>longnv_skill_buff_dhand</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>4</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>龙女大招手上BUFF</szillustration>
-	</item>
-	<item id="12033">
-		<n32type>4</n32type>
-		<szassert>longnv_skill_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>龙女大招弹道</szillustration>
-	</item>
-	<item id="12034">
-		<n32type>2</n32type>
-		<szassert>longnv_skill_cast_bottom</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>龙女大招施法</szillustration>
-	</item>
-	<item id="12035">
-		<n32type>2</n32type>
-		<szassert>longnv_skill_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>龙女大招受击</szillustration>
-	</item>
-	<item id="12036">
-		<n32type>1</n32type>
-		<szassert>longnv_skill_hit_bottom</szassert>
-		<n32time>1</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>龙女大招受击</szillustration>
-	</item>
-	<item id="12037">
-		<n32type>2</n32type>
-		<szassert>shengdianqishi_skill_cast_rhand</szassert>
-		<n32time>1</n32time>
-		<n32speed>0</n32speed>
-		<n32position>4</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>神殿骑士大招施法</szillustration>
-	</item>
-	<item id="12038">
-		<n32type>2</n32type>
-		<szassert>shengdianqishi_skill_hit_body</szassert>
-		<n32time>0.5</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>神殿骑士大招受击</szillustration>
-	</item>
-	<item id="12039">
-		<n32type>1</n32type>
-		<szassert>shengdianqishi_skill_hit_bottom</szassert>
-		<n32time>3.5</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>神殿骑士大招受击</szillustration>
+		<szillustration></szillustration>
 	</item>
 	<item id="20001">
 		<n32type>4</n32type>
 		<szassert>Tiannv_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>3</n32speed>
+		<n32speed>4</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1159,7 +818,7 @@
 		<n32type>4</n32type>
 		<szassert>Wuya_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>3</n32speed>
+		<n32speed>4</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1170,7 +829,7 @@
 		<n32type>4</n32type>
 		<szassert>Xiuxingzhe_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>3</n32speed>
+		<n32speed>8</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1181,7 +840,7 @@
 		<n32type>4</n32type>
 		<szassert>Zhongbiaogong_Bullet_01</szassert>
 		<n32time>0</n32time>
-		<n32speed>3</n32speed>
+		<n32speed>5</n32speed>
 		<n32position>9</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
@@ -1215,7 +874,7 @@
 		<szassert>liekongzhan_bullet_body</szassert>
 		<n32time>0.8</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.8</n32Redius>
 		<n32layer>0</n32layer>
@@ -1226,7 +885,7 @@
 		<szassert>Zhongbiaogong_Bullet_01</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
@@ -1237,7 +896,7 @@
 		<szassert></szassert>
 		<n32time>1</n32time>
 		<n32speed>2</n32speed>
-		<n32position>9</n32position>
+		<n32position>0</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1248,7 +907,7 @@
 		<szassert>gushuyaoji_bullet_hand</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
@@ -1259,7 +918,7 @@
 		<szassert>wuditiequan_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1270,7 +929,7 @@
 		<szassert>liaoyuchunfeng_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1281,7 +940,7 @@
 		<szassert>juduchuijian_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1292,7 +951,7 @@
 		<szassert>yinrenji_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1303,9 +962,9 @@
 		<szassert>chuanyunjian_bullet_body</szassert>
 		<n32time>2</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0.6</n32Redius>
+		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>穿云箭弹道</szillustration>
 	</item>
@@ -1314,7 +973,7 @@
 		<szassert>sandan_bullet_body</szassert>
 		<n32time>1</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
@@ -1325,9 +984,9 @@
 		<szassert>tanshezuoyi_bullet_body</szassert>
 		<n32time>1</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
-		<n32Redius>0.4</n32Redius>
+		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>弹射座椅钢板</szillustration>
 	</item>
@@ -1336,7 +995,7 @@
 		<szassert>bushouwang_bullet_body</szassert>
 		<n32time>1</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
@@ -1347,7 +1006,7 @@
 		<szassert>tanshedan_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>5</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1358,7 +1017,7 @@
 		<szassert>zidonghuopao_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1369,7 +1028,7 @@
 		<szassert>mofayingsun_bullet_body</szassert>
 		<n32time>2</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.6</n32Redius>
 		<n32layer>0</n32layer>
@@ -1380,7 +1039,7 @@
 		<szassert>chaojudaji_bullet_body</szassert>
 		<n32time>10</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
@@ -1391,7 +1050,7 @@
 		<szassert>pojiadan_bullet_body</szassert>
 		<n32time>0.9</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
@@ -1402,7 +1061,7 @@
 		<szassert>gaobaoshoulei_bullet_body</szassert>
 		<n32time>0.8</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
@@ -1413,132 +1072,11 @@
 		<szassert>liemofeiren_bullet_body</szassert>
 		<n32time>0</n32time>
 		<n32speed>3</n32speed>
-		<n32position>9</n32position>
+		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0.3</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>猎魔刃弹道</szillustration>
-	</item>
-	<item id="20026">
-		<n32type>4</n32type>
-		<szassert>nier_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>5</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>弹弓弹道</szillustration>
-	</item>
-	<item id="20027">
-		<n32type>4</n32type>
-		<szassert>gongzhu_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>蒂皮弹道</szillustration>
-	</item>
-	<item id="20028">
-		<n32type>4</n32type>
-		<szassert>lvren_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>旅人弹道</szillustration>
-	</item>
-	<item id="20029">
-		<n32type>4</n32type>
-		<szassert>miya_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>米亚弹道</szillustration>
-	</item>
-	<item id="20030">
-		<n32type>4</n32type>
-		<szassert>shenju_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>7</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>神狙弹道</szillustration>
-	</item>
-	<item id="20031">
-		<n32type>4</n32type>
-		<szassert>anna_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>7</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>安娜弹道</szillustration>
-	</item>
-	<item id="20032">
-		<n32type>4</n32type>
-		<szassert>falao_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>法老弹道</szillustration>
-	</item>
-	<item id="20033">
-		<n32type>4</n32type>
-		<szassert>kejitiancai_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>5</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>修弹道</szillustration>
-	</item>
-	<item id="20034">
-		<n32type>4</n32type>
-		<szassert>zhaohuanzhizhu_bullet_body</szassert>
-		<n32time>0</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.3</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>蜘蛛弹道</szillustration>
-	</item>
-	<item id="20035">
-		<n32type>3</n32type>
-		<szassert>ranshaoping_bullet_body</szassert>
-		<n32time>0.8</n32time>
-		<n32speed>3</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.5</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>燃烧瓶弹道</szillustration>
-	</item>
-	<item id="20036">
-		<n32type>4</n32type>
-		<szassert></szassert>
-		<n32time>0.5</n32time>
-		<n32speed>5</n32speed>
-		<n32position>9</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0.6</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>空弹道速度较快</szillustration>
 	</item>
 	<item id="30001">
 		<n32type>2</n32type>
@@ -1593,7 +1131,7 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
-		<szillustration>盾牌猛击特效</szillustration>
+		<szillustration>眩晕特效</szillustration>
 	</item>
 	<item id="30006">
 		<n32type>2</n32type>
@@ -1605,160 +1143,6 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>10</n32layer>
 		<szillustration>裂空斩击中特效</szillustration>
-	</item>
-	<item id="30007">
-		<n32type>2</n32type>
-		<szassert>houde_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>厚多普攻受击</szillustration>
-	</item>
-	<item id="30008">
-		<n32type>2</n32type>
-		<szassert>shengdianqishi_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>奥斯顿普攻受击</szillustration>
-	</item>
-	<item id="30009">
-		<n32type>2</n32type>
-		<szassert>nier_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>尼尔普攻受击</szillustration>
-	</item>
-	<item id="30010">
-		<n32type>2</n32type>
-		<szassert>kuangseng_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>狂僧普攻受击</szillustration>
-	</item>
-	<item id="30011">
-		<n32type>2</n32type>
-		<szassert>longnv_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>龙女普攻受击</szillustration>
-	</item>
-	<item id="30012">
-		<n32type>2</n32type>
-		<szassert>gongzhu_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>若拉普攻受击</szillustration>
-	</item>
-	<item id="30013">
-		<n32type>2</n32type>
-		<szassert>lvren_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>旅人普攻受击</szillustration>
-	</item>
-	<item id="30014">
-		<n32type>2</n32type>
-		<szassert>niu_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>牛博士普攻受击</szillustration>
-	</item>
-	<item id="30015">
-		<n32type>2</n32type>
-		<szassert>miya_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>米亚普攻受击</szillustration>
-	</item>
-	<item id="30016">
-		<n32type>2</n32type>
-		<szassert>shenju_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>神狙普攻受击</szillustration>
-	</item>
-	<item id="30017">
-		<n32type>2</n32type>
-		<szassert>anna_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>安娜普攻受击</szillustration>
-	</item>
-	<item id="30018">
-		<n32type>2</n32type>
-		<szassert>falao_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>法老普攻受击</szillustration>
-	</item>
-	<item id="30019">
-		<n32type>2</n32type>
-		<szassert>kejitiancai_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>修普攻受击</szillustration>
-	</item>
-	<item id="30020">
-		<n32type>2</n32type>
-		<szassert>zhaohuanzhizhu_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>10</n32layer>
-		<szillustration>蜘蛛普攻受击</szillustration>
 	</item>
 	<item id="30101">
 		<n32type>2</n32type>
@@ -1812,7 +1196,7 @@
 		<n32position>1</n32position>
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
+		<n32layer>10</n32layer>
 		<szillustration>受到毒液打击</szillustration>
 	</item>
 	<item id="30106">
@@ -2014,7 +1398,7 @@
 		<szillustration>霰弹受击</szillustration>
 	</item>
 	<item id="30124">
-		<n32type>1</n32type>
+		<n32type>2</n32type>
 		<szassert>sandan_hit_bottom</szassert>
 		<n32time>2</n32time>
 		<n32speed>0</n32speed>
@@ -2022,7 +1406,7 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>霰弹地面</szillustration>
+		<szillustration>弹射座椅受击</szillustration>
 	</item>
 	<item id="30125">
 		<n32type>2</n32type>
@@ -2033,7 +1417,7 @@
 		<n32Extra>0</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
-		<szillustration>弹射座椅受击</szillustration>
+		<szillustration>霰弹受击</szillustration>
 	</item>
 	<item id="30126">
 		<n32type>2</n32type>
@@ -2409,50 +1793,6 @@
 		<n32layer>10</n32layer>
 		<szillustration>日蚀波纹受击</szillustration>
 	</item>
-	<item id="31028">
-		<n32type>2</n32type>
-		<szassert>zhaohuanzhizhu_hit_bottom</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>召唤蛛群特效</szillustration>
-	</item>
-	<item id="31029">
-		<n32type>2</n32type>
-		<szassert>guilei_hit_body</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>诡雷受击特效</szillustration>
-	</item>
-	<item id="31030">
-		<n32type>2</n32type>
-		<szassert>guilei_hit_bottom</szassert>
-		<n32time>2</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>诡雷受击特效</szillustration>
-	</item>
-	<item id="31031">
-		<n32type>2</n32type>
-		<szassert>jijiubao_hit_bottom</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>急救包受击特效</szillustration>
-	</item>
 	<item id="32001">
 		<n32type>2</n32type>
 		<szassert>ty_yunxuan_buff_top</szassert>
@@ -2520,7 +1860,7 @@
 		<szillustration>践踏特效</szillustration>
 	</item>
 	<item id="40003">
-		<n32type>2</n32type>
+		<n32type>1</n32type>
 		<szassert>hanshuangbaofa_hit_buff</szassert>
 		<n32time>3</n32time>
 		<n32speed>0</n32speed>
@@ -2584,39 +1924,6 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>高爆手雷地点</szillustration>
-	</item>
-	<item id="40009">
-		<n32type>1</n32type>
-		<szassert>ranshaoping_hit_bottom</szassert>
-		<n32time>3</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>燃烧瓶地点</szillustration>
-	</item>
-	<item id="40010">
-		<n32type>2</n32type>
-		<szassert>guilei_cast_scene</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>诡雷释放场景</szillustration>
-	</item>
-	<item id="40011">
-		<n32type>2</n32type>
-		<szassert>jijiubao_cast_scene</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>急救包释放场景</szillustration>
 	</item>
 	<item id="50001">
 		<n32type>2</n32type>
@@ -2723,7 +2030,7 @@
 		<n32time>0</n32time>
 		<n32speed>0</n32speed>
 		<n32position>1</n32position>
-		<n32Extra>0</n32Extra>
+		<n32Extra>2</n32Extra>
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>寒霜爆发受击</szillustration>
@@ -2870,28 +2177,6 @@
 		<n32Redius>0</n32Redius>
 		<n32layer>0</n32layer>
 		<szillustration>巨龙振翅</szillustration>
-	</item>
-	<item id="51012">
-		<n32type>2</n32type>
-		<szassert>nothing</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>1</n32position>
-		<n32Extra>4</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>变大</szillustration>
-	</item>
-	<item id="51013">
-		<n32type>2</n32type>
-		<szassert>ranshaoping_buff_bottom</szassert>
-		<n32time>0</n32time>
-		<n32speed>0</n32speed>
-		<n32position>0</n32position>
-		<n32Extra>0</n32Extra>
-		<n32Redius>0</n32Redius>
-		<n32layer>0</n32layer>
-		<szillustration>燃烧瓶燃烧Buff</szillustration>
 	</item>
 	<item id="60001">
 		<n32type>2</n32type>

@@ -819,39 +819,4 @@
 		<n32MaxNum>1</n32MaxNum>
 		<szInfo>战场掉落天赋石*5</szInfo>
 	</item>
-	<item id="40001">
-		<n32DropId>2011</n32DropId>
-		<n32Rate>2</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<szInfo>一星技能*1</szInfo>
-	</item>
-	<item id="40001">
-		<n32DropId>2012</n32DropId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<szInfo>二星技能*1</szInfo>
-	</item>
-	<item id="40002">
-		<n32DropId>2012</n32DropId>
-		<n32Rate>2</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<szInfo>二星技能*1</szInfo>
-	</item>
-	<item id="40002">
-		<n32DropId>2013</n32DropId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<szInfo>三星技能*1</szInfo>
-	</item>
-	<item id="40003">
-		<n32DropId>2013</n32DropId>
-		<n32Rate>1</n32Rate>
-		<n32MinNum>1</n32MinNum>
-		<n32MaxNum>1</n32MaxNum>
-		<szInfo>三星技能*1</szInfo>
-	</item>
 </info>

@@ -1,18 +1,13 @@
 <?xml version="1.0" ?>
 <info>
-	<item id="0">
-		<n32Quality>0</n32Quality>
+	<item id="53200">
+		<szName></szName>
 		<n32CostNum>3</n32CostNum>
-		<n32ItemId>80001</n32ItemId>
+		<n32ItemId>71001</n32ItemId>
 	</item>
-	<item id="1">
-		<n32Quality>1</n32Quality>
-		<n32CostNum>3</n32CostNum>
-		<n32ItemId>80002</n32ItemId>
-	</item>
-	<item id="2">
-		<n32Quality>2</n32Quality>
-		<n32CostNum>3</n32CostNum>
-		<n32ItemId>80003</n32ItemId>
+	<item id="10001">
+		<szName></szName>
+		<n32CostNum>5</n32CostNum>
+		<n32ItemId>71001</n32ItemId>
 	</item>
 </info>

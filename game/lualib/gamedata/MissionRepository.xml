@@ -445,7 +445,7 @@
 	<item id="20012001">
 		<n32SerId>20012</n32SerId>
 		<szName>猎头人</szName>
-		<szContent>累计完成击杀100次</szContent>
+		<szContent>累计完成击败敌人100次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>1</n32Degree>
 		<n32Con1>0</n32Con1>
@@ -458,7 +458,7 @@
 	<item id="20012002">
 		<n32SerId>20012</n32SerId>
 		<szName>猎头人</szName>
-		<szContent>累计完成击杀1000次</szContent>
+		<szContent>累计完成击败敌人1000次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>2</n32Degree>
 		<n32Con1>0</n32Con1>
@@ -471,7 +471,7 @@
 	<item id="20012003">
 		<n32SerId>20012</n32SerId>
 		<szName>猎头人</szName>
-		<szContent>累计完成击杀10000次</szContent>
+		<szContent>累计完成击败敌人10000次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>3</n32Degree>
 		<n32Con1>0</n32Con1>
@@ -484,7 +484,7 @@
 	<item id="20013001">
 		<n32SerId>20013</n32SerId>
 		<szName>炮灰</szName>
-		<szContent>累计死亡100次</szContent>
+		<szContent>累计被敌人击败100次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>1</n32Degree>
 		<n32Con1>0</n32Con1>
@@ -497,7 +497,7 @@
 	<item id="20013002">
 		<n32SerId>20013</n32SerId>
 		<szName>炮灰</szName>
-		<szContent>累计死亡1000次</szContent>
+		<szContent>累计被敌人击败1000次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>2</n32Degree>
 		<n32Con1>0</n32Con1>
@@ -510,7 +510,7 @@
 	<item id="20013003">
 		<n32SerId>20013</n32SerId>
 		<szName>炮灰</szName>
-		<szContent>累计死亡10000次</szContent>
+		<szContent>累计被敌人击败10000次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>3</n32Degree>
 		<n32Con1>0</n32Con1>
@@ -1029,7 +1029,7 @@
 	</item>
 	<item id="21014001">
 		<n32SerId>21014</n32SerId>
-		<szName>抹杀烈炬</szName>
+		<szName>光辉烈炬</szName>
 		<szContent>使用米娅获胜1次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>1</n32Degree>
@@ -1042,7 +1042,7 @@
 	</item>
 	<item id="21014002">
 		<n32SerId>21014</n32SerId>
-		<szName>抹杀烈炬</szName>
+		<szName>光辉烈炬</szName>
 		<szContent>使用米娅获胜10次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>2</n32Degree>
@@ -1055,7 +1055,7 @@
 	</item>
 	<item id="21014003">
 		<n32SerId>21014</n32SerId>
-		<szName>抹杀烈炬</szName>
+		<szName>光辉烈炬</szName>
 		<szContent>使用米娅获胜100次</szContent>
 		<n32Type>1</n32Type>
 		<n32Degree>3</n32Degree>
