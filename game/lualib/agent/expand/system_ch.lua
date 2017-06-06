@@ -181,7 +181,6 @@ function REQUEST.buyShopItem( args )
 			end
 			--local expire = Time.tomorrow()
 			local expire = os.time() + 60
-			local activity = snax.queryservice 'activity'
 			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
 			
 			user.account:addBuyBoxTimes(-args.num)
