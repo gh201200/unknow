@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<info>
+	<item id="1">
+		<szName>三个英雄</szName>
+		<szIp>106.15.60.37</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="2">
+		<szName>橡木堡</szName>
+		<szIp>106.15.60.37</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="3">
+		<szName>公用</szName>
+		<szIp>192.168.0.233</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="4">
+		<szName>邢竞</szName>
+		<szIp>192.168.0.150</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="5">
+		<szName>戴俊钦</szName>
+		<szIp>192.168.0.161</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="6">
+		<szName>吕远辉</szName>
+		<szIp>192.168.0.220</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="7">
+		<szName>何明</szName>
+		<szIp>192.168.0.132</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="8">
+		<szName>罗汉武</szName>
+		<szIp>192.168.0.155</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+	<item id="9">
+		<szName>高恒</szName>
+		<szIp>192.168.0.129</szIp>
+		<n32Port>8888</n32Port>
+	</item>
+</info>
