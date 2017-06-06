@@ -181,8 +181,8 @@ function REQUEST.buyShopItem( args )
 			end
 			--local expire = Time.tomorrow()
 			local expire = os.time() + 60
-			activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
-			
+			-- activity.req.addValue('buyShopItem', user.account.account_id, atype, shopDat.n32Count * args.num, expire)
+			user.activitys:addValue('buyShopItem', atype, shopDat.n32Count * args.num, expire)
 			user.account:addBuyBoxTimes(-args.num)
 		elseif shopDat.n32Type == 4 then	--材料
 			local items = {}
